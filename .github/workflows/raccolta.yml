@@ -64,12 +64,47 @@ jobs:
           --minuti-totali=160
       - name: Prove del catalogo
         run: node --test tests/catalogo.test.js
+      # Salvataggio a prova di conflitto: niente rebase sui file generati. Si mettono da parte gli stati delle fonti
+      # raccolte in questa esecuzione, si riparte dal main remoto, si rimettono solo quegli stati e si rigenerano
+      # catalogo e registro senza rifare le raccolte (--solo-costruisci). Fino a 5 tentativi.
+      # Gli altri file (data/gallica.json raccolto dal browser, data/autori.json, ecc.) restano quelli del remoto.
       - name: Commit se i dati sono cambiati
+        env:
+          FONTI: ${{ steps.fonti.outputs.fonti }}
         run: |
           git config user.name "emendando-catalogo-bot"
           git config user.email "emendando-catalogo-bot@users.noreply.github.com"
-          git add data/ docs/BIBLIOTECHE.md
-          if git diff --cached --quiet; then echo "Nessuna modifica"; exit 0; fi
-          git commit -m "Catalogo: aggiornamento $(date -u '+%Y-%m-%d %H:%M') UTC"
-          for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && exit 0; sleep 10; done
+          if [ -z "$(git status --porcelain -- data/ docs/BIBLIOTECHE.md)" ]; then echo "Nessuna modifica"; exit 0; fi
+          DA_PARTE="$RUNNER_TEMP/stati"; mkdir -p "$DA_PARTE"
+          STATI=""
+          for f in ${FONTI//,/ }; do
+            case "$f" in
+              vaticana) s=data/vaticana.json ;;
+              bodleian) s=data/bodleian.json ;;
+              heidelberg) s=data/heidelberg-indici.json ;;
+              laurenziana) s=data/laurenziana.json ;;
+              leiden) s=data/leiden.json ;;
+              wolfenbuettel) s=data/wolfenbuettel.json ;;
+              *) s="" ;;   # e-codices, BSB, Berlino: stato in .cache (fuori da git); Gallica: dati del browser
+            esac
+            if [ -n "$s" ] && [ -f "$s" ]; then cp "$s" "$DA_PARTE/"; STATI="$STATI $s"; fi
+          done
+          cp data/raccolte.json "$DA_PARTE/raccolte.json" 2>/dev/null || true
+          echo "Stati di questa esecuzione:$STATI"
+          for i in 1 2 3 4 5; do
+            git fetch origin main && git reset --hard origin/main
+            for s in $STATI; do cp "$DA_PARTE/$(basename "$s")" "$s"; done
+            # esiti delle raccolte: si aggiornano solo le fonti di questa esecuzione
+            if [ -f "$DA_PARTE/raccolte.json" ]; then
+              node -e 'const fs=require("fs");const n=JSON.parse(fs.readFileSync(process.argv[1],"utf8"));let r={};try{r=JSON.parse(fs.readFileSync("data/raccolte.json","utf8"))}catch(e){}
+                for(const f of process.argv[2].split(","))if(n[f])r[f]=n[f];
+                fs.writeFileSync("data/raccolte.json",JSON.stringify(Object.fromEntries(Object.entries(r).sort()),null,1)+"\n")' "$DA_PARTE/raccolte.json" "$FONTI"
+            fi
+            node scripts/raccogli.mjs --solo-costruisci
+            git add data/ docs/BIBLIOTECHE.md
+            if git diff --cached --quiet; then echo "Nessuna modifica rispetto al remoto"; exit 0; fi
+            git commit -q -m "Catalogo: aggiornamento $(date -u '+%Y-%m-%d %H:%M') UTC"
+            if git push origin HEAD:main; then exit 0; fi
+            echo "Push respinto (tentativo $i): riparto dal remoto"; sleep $((i * 15))
+          done
           exit 1
