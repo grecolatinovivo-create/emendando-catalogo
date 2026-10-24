@@ -18,23 +18,36 @@ Come leggere le colonne:
 - **Ultima raccolta**: com'è andata l'ultima volta.
 
 <!-- inizio automatico -->
-Codici nel catalogo, in tutto: **57.660**, di cui **8844** con almeno un autore riconosciuto.
+Codici nel catalogo, in tutto: **63.136**, di cui **9857** con almeno un autore riconosciuto.
 
 | Biblioteca | Città | Codici totali | Di cui con autori riconosciuti | Lingue | Avanzamento della lettura | Come si aggiorna | Ultimo aggiornamento | Ultima raccolta |
 |---|---|---|---|---|---|---|---|---|
-| Universitätsbibliothek Heidelberg | Heidelberg | 7781 | 320 | greco 3359, tedesco 1472, copto 1368, altre 1978 | schede lette tutte (7781); indici 801 su 1238 | ogni notte, da sola | 2026-10-24 | — |
-| e-codices (biblioteche svizzere: San Gallo, Einsiedeln, Bodmer e altre) | Svizzera | 2745 | 1032 | latino 2043, tedesco 674, francese 235, altre 417 | schede lette tutte (2745 schede) | ogni notte, da sola | 2026-10-24 | — |
-| Bayerische Staatsbibliothek | Monaco di Baviera | 28.785 | 2214 | tedesco 11.319, latino 8472, non indicata 5804, altre 4411 | schede lette tutte (29.752 schede) | ogni notte, da sola | 2026-10-24 | — |
-| Staatsbibliothek zu Berlin | Berlino | 3296 | 269 | tedesco 1597, non indicata 734, latino 714, altre 390 | schede lette tutte (3296 schede) | ogni notte, da sola | 2026-10-24 | riuscita |
+| Universitätsbibliothek Heidelberg | Heidelberg | 7781 | 320 | greco 3359, tedesco 1472, copto 1368, altre 1978 | indici 801 | ogni notte, da sola | 2026-10-24 | — |
+| e-codices (biblioteche svizzere: San Gallo, Einsiedeln, Bodmer e altre) | Svizzera | 2745 | 1032 | latino 2043, tedesco 674, francese 235, altre 417 | schede lette tutte ogni 6 giorni | ogni notte, da sola | — | — |
+| Bayerische Staatsbibliothek | Monaco di Baviera | 28.785 | 2214 | tedesco 11.319, latino 8472, non indicata 5804, altre 4411 | schede lette tutte ogni 6 giorni | ogni notte, da sola | — | — |
+| Staatsbibliothek zu Berlin | Berlino | 3296 | 269 | tedesco 1597, non indicata 734, latino 714, altre 390 | schede lette tutte ogni 6 giorni | ogni notte, da sola | 2026-10-24 | riuscita |
 | Bodleian Libraries e college | Oxford | 200 | 97 | latino 195, inglese 15, francese 8, altre 15 | 588 schede lette su 3367; a riprese, ogni notte: mancano circa 3 notti | ogni notte, da sola | 2026-10-24 | — |
 | Bibliothèque nationale de France (Gallica) | Parigi | 1892 | 1600 | latino 1892 | solo i fondi latini (raccolta dal browser del 2026-10-24): per avere tutti i manoscritti va lanciato scripts/browser/gallica.js | va rifatta a mano dal browser (ultima raccolta: 2026-10-24) | 2026-10-24 | — |
 | Biblioteca Medicea Laurenziana | Firenze | 4353 | 2206 | non indicata 3614, latino 725, italiano 5, altre 9 | schede lette tutte (4353 codici) | ogni notte, da sola | 2026-10-24 | — |
 | Universiteitsbibliotheek Leiden (manoscritti, con i Vossiani; Bibliotheca Neerlandica Manuscripta) | Leida | 6226 | 751 | non indicata 2889, nederlandese 2337, latino 634, altre 366 | schede lette tutte (6226 codici) | ogni notte, da sola | 2026-10-24 | riuscita |
-| Herzog August Bibliothek (dati dal Handschriftenportal) | Wolfenbüttel | 1531 | 141 | non indicata 1334, latino 96, tedesco 76, altre 25 | codici digitalizzati letti tutti (1531 su 1534) | ogni notte, da sola | 2026-10-24 | riuscita |
+| Herzog August Bibliothek (dati dal Handschriftenportal) | Wolfenbüttel | 1531 | 141 | non indicata 958, latino 458, tedesco 206, altre 52 | codici digitalizzati letti tutti (1531 su 1534) | ogni notte, da sola | 2026-10-24 | riuscita |
+| Staatsbibliothek Bamberg (dati dal Handschriftenportal) | Bamberga | 165 | 106 | latino 150, non indicata 15, tedesco 2, altre 1 | codici digitalizzati letti tutti (165 su 525) | ogni notte, da sola | 2026-10-24 | riuscita |
+| Badische Landesbibliothek (dati dal Handschriftenportal) | Karlsruhe | 2269 | 257 | non indicata 1172, latino 715, tedesco 550, altre 21 | codici digitalizzati letti tutti (2269 su 2273) | ogni notte, da sola | 2026-10-24 | riuscita |
+| Württembergische Landesbibliothek (dati dal Handschriftenportal) | Stoccarda | 3 | 1 | latino 2, non indicata 1 | codici digitalizzati letti tutti (3 su 786) | ogni notte, da sola | 2026-10-24 | riuscita |
+| Erzbischöfliche Diözesan- und Dombibliothek (dati dal Handschriftenportal) | Colonia | 362 | 107 | non indicata 324, latino 27, tedesco 10, altre 1 | codici digitalizzati letti tutti (363 su 363) | ogni notte, da sola | 2026-10-24 | riuscita |
+| Universitätsbibliothek Leipzig (dati dal Handschriftenportal) | Lipsia | 2677 | 542 | latino 2286, tedesco 428, greco 110, altre 162 | codici digitalizzati letti tutti (2677 su 2678) | ogni notte, da sola | 2026-10-24 | riuscita |
 | Biblioteca Apostolica Vaticana | Città del Vaticano | 851 | 214 | latino 847, francese 2, altre lingue 1, altre 1 | 851 codici letti su 31.121 digitalizzati; fondo in corso: Pal. lat.; restano circa 30.263 manifesti da leggere, cioè circa 5 giorni (un manifesto ogni 10 secondi, come chiede la biblioteca) | ogni 3 ore, da sola | 2026-10-24 | riuscita |
 <!-- fine automatico -->
 
 San Gallo, Einsiedeln e la Fondation Bodmer (Cologny) sono già dentro: arrivano dalla riga e-codices.
+
+Biblioteche lette dal Handschriftenportal (Wolfenbüttel, Bamberga, Karlsruhe, Stoccarda, Colonia, Lipsia; prova di ottobre 2026): entrano solo i codici per cui il portale indica un manifesto IIIF; la lingua è quella indicata dal portale, quando c'è.
+
+- **Bamberga** (Staatsbibliothek): 165 codici su 525 digitalizzati, quelli con il manifesto della Bayerische Staatsbibliothek (`api.digitale-sammlungen.de`, nessuno già presente nella riga della BSB). Gli altri 360 sono solo nel visore DigiTool della rete bavarese (`digital.bib-bvb.de`), che offre METS e non IIIF.
+- **Karlsruhe** (Badische Landesbibliothek): 2269 codici su 2273. Il server della biblioteca (`digital.blb-karlsruhe.de`) risponde «accesso negato» (403) alle richieste che arrivano dai server, robots.txt compreso, come Wolfenbüttel: i manifesti (`digital.blb-karlsruhe.de/i3f/v20/<numero>/manifest`, forma standard di Visual Library) sono quelli dichiarati dal portale e non si sono potuti aprire dal server; le immagini si caricano dal browser di chi usa il catalogo.
+- **Stoccarda** (Württembergische Landesbibliothek): solo 3 codici su 786 digitalizzati, i frammenti di Corvey con il manifesto di Marburgo (`iiif.ub.uni-marburg.de`, che dal server non risponde). Le copie digitali della biblioteca (`digital.wlb-stuttgart.de`, Kitodo) offrono METS e immagini JPEG, non manifesti IIIF: restano fuori finché la biblioteca non pubblica IIIF.
+- **Colonia** (Erzbischöfliche Diözesan- und Dombibliothek, la biblioteca di CEEC): 362 codici su 363 (un manifesto risponde con un errore del server). Il portale dà solo le segnature: titolo, autore e datazione si leggono una volta dal manifesto. L'Historisches Archiv der Stadt Köln è nel portale (circa 1300 schede) ma senza copie digitali.
+- **Lipsia** (Universitätsbibliothek): 2677 codici su 2678; quasi tutti con manifesti della biblioteca, gli ebraici con quelli della National Library of Israel, alcuni con quelli di Dresda.
 
 Tempi delle fonti lette a riprese:
 
@@ -59,12 +72,6 @@ Significato della colonna «Stato»:
 | Biblioteca Ambrosiana | Milano | da verificare | |
 | Biblioteca Nazionale Marciana | Venezia | da verificare | |
 | Cambridge University Library e Parker Library | Cambridge | da verificare | |
-| Staatsbibliothek Bamberg | Bamberga | da verificare | Possibile via Handschriftenportal (come Wolfenbüttel). |
-| Badische Landesbibliothek | Karlsruhe | da verificare | Possibile via Handschriftenportal (come Wolfenbüttel). |
-| Württembergische Landesbibliothek | Stoccarda | da verificare | Possibile via Handschriftenportal (come Wolfenbüttel). |
-| Dombibliothek e biblioteche di Colonia (CEEC) | Colonia | da verificare | Possibile via Handschriftenportal (come Wolfenbüttel). |
-| Stadtbibliothek Trier | Treviri | da verificare | Possibile via Handschriftenportal (come Wolfenbüttel). |
-| Universitätsbibliothek Leipzig | Lipsia | da verificare | Possibile via Handschriftenportal (come Wolfenbüttel). |
 | Biblioteca Nacional de España (BNE) | Madrid | da verificare | |
 | Real Biblioteca del Monasterio de El Escorial | El Escorial | da verificare | |
 | Det Kongelige Bibliotek | Copenaghen | da verificare | |
@@ -120,4 +127,5 @@ Per ora si aspetta: nessuna raccolta apposta di papiri. La scelta in attesa è t
 | Biblioteca | Città | Stato | Perché |
 |---|---|---|---|
 | Österreichische Nationalbibliothek (ÖNB) | Vienna | non si può (per ora) | I server delle copie digitali (iiif.onb.ac.at, digital.onb.ac.at, onb.digital, data.onb.ac.at) chiudono la connessione quando la richiesta arriva da un server (prova di ottobre 2026), come Gallica. Anche manuscripta.at risponde «accesso negato». Il catalogo (OAI-PMH di Alma) risponde, ma non ha un insieme dei soli manoscritti medievali: l'insieme dei manoscritti (HANNA) mescola lettere, lasciti e autografi, centinaia di migliaia di schede, e l'indirizzo del manifesto IIIF non si può controllare. Strada possibile: raccolta dal browser, come per Gallica. |
+| Stadtbibliothek Weberbach e Dombibliothek | Treviri | non si può (per ora) | Nel Handschriftenportal la Stadtbibliothek ha circa 2780 schede ma nessuna copia digitale collegata, e la Dombibliothek non c'è (prova di ottobre 2026). Su dilibri (`dilibri.de`, la biblioteca digitale della Renania-Palatinato) le raccolte di Treviri (Stadtbibliothek, Priesterseminar, Universitätsbibliothek) sono stampati, non manoscritti. Non risulta un servizio IIIF dei manoscritti. |
 | British Library | Londra | non si può | Dopo l'attacco informatico del 2023 i dati IIIF rispondono «accesso negato», anche dal browser (prova di ottobre 2026). Si riprova quando il servizio torna. |
