@@ -1,7 +1,7 @@
 # Raccolta del catalogo dei manoscritti (tutti i manoscritti delle biblioteche agganciate, di ogni lingua), ogni 3 ore.
 # La Vaticana (un manifesto ogni 10 secondi, come chiede il suo robots.txt) legge a ogni esecuzione i codici digitalizzati non ancora letti, dall'elenco
 # salvato in data/vaticana.json; Heidelberg (con gli indici delle miscellanee), e-codices, BSB, Berlino, Bodleian, Gallica, Laurenziana,
-# Leida e Wolfenbüttel si interrogano una volta al giorno (esecuzione delle 03 UTC), ciascuna con un limite di tempo; la Vaticana usa il resto.
+# Leida e le biblioteche del Handschriftenportal (Wolfenbüttel, Bamberga, Karlsruhe, Stoccarda, Colonia, Lipsia) si interrogano una volta al giorno (esecuzione delle 03 UTC), ciascuna con un limite di tempo; la Vaticana usa il resto.
 # Le fonti non interrogate si ricostruiscono dagli stati salvati, senza richieste. Il catalogo è diviso per fonte in data/catalogo/
 # (indice leggero e voci complete); data/manoscritti.json resta per compatibilità. Commit dei dati solo se cambiano.
 name: Raccolta del catalogo
@@ -47,7 +47,7 @@ jobs:
           if [ "$F" = "auto" ]; then
             ORA=$((10#$(date -u +%H)))
             # finestra 03-05 UTC: comprende l'esecuzione delle 03 anche se GitHub la avvia in ritardo
-            if [ "$ORA" -ge 3 ] && [ "$ORA" -lt 6 ]; then F="heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,leiden,wolfenbuettel,vaticana"; else F="vaticana"; fi
+            if [ "$ORA" -ge 3 ] && [ "$ORA" -lt 6 ]; then F="heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,vaticana"; else F="vaticana"; fi
           fi
           echo "Fonti: $F"
           echo "fonti=$F" >> "$GITHUB_OUTPUT"
@@ -87,7 +87,7 @@ jobs:
               heidelberg) s=data/heidelberg-indici.json ;;
               laurenziana) s=data/laurenziana.json ;;
               leiden) s=data/leiden.json ;;
-              wolfenbuettel) s=data/wolfenbuettel.json ;;
+              wolfenbuettel|bamberga|karlsruhe|stoccarda|colonia|lipsia) s=data/$f.json ;;   # Handschriftenportal
               *) s="" ;;   # e-codices, BSB, Berlino: stato in .cache (fuori da git); Gallica: dati del browser
             esac
             if [ -n "$s" ] && [ -f "$s" ]; then cp "$s" "$DA_PARTE/"; STATI="$STATI $s"; fi

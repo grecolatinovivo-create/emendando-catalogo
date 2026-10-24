@@ -6,6 +6,7 @@ import path from "node:path";
 import { CACHE } from "./rete.mjs";
 import { daLeggere, segnaturaLeggibile } from "./fonti/vaticana.mjs";
 import { NOMI_LINGUE } from "./lingue.mjs";
+import { FONTI_HSP } from "./fonti/hsp.mjs";
 
 export const FILE_REGISTRO = "docs/BIBLIOTECHE.md";
 export const FILE_RACCOLTE = "data/raccolte.json";
@@ -21,7 +22,8 @@ export const BIBLIOTECHE = {
   gallica: { biblioteca: "Bibliothèque nationale de France (Gallica)", citta: "Parigi", come: "va rifatta a mano dal browser" },
   laurenziana: { biblioteca: "Biblioteca Medicea Laurenziana", citta: "Firenze", come: "ogni notte, da sola" },
   leiden: { biblioteca: "Universiteitsbibliotheek Leiden (manoscritti, con i Vossiani; Bibliotheca Neerlandica Manuscripta)", citta: "Leida", come: "ogni notte, da sola" },
-  wolfenbuettel: { biblioteca: "Herzog August Bibliothek (dati dal Handschriftenportal)", citta: "Wolfenbüttel", come: "ogni notte, da sola" },
+  // biblioteche lette dal Handschriftenportal (Wolfenbüttel, Bamberga, Karlsruhe, Stoccarda, Colonia, Lipsia)
+  ...Object.fromEntries(Object.entries(FONTI_HSP).map(([f, h]) => [f, { biblioteca: `${h.nome} (dati dal Handschriftenportal)`, citta: h.citta, come: "ogni notte, da sola" }])),
   vaticana: { biblioteca: "Biblioteca Apostolica Vaticana", citta: "Città del Vaticano", come: "ogni 3 ore, da sola" },
 };
 
@@ -65,7 +67,7 @@ export const AVANZAMENTO = {
     if (s.cursore != null) return { testo: `in corso: ${num(n)} codici letti (collezione ${(s.cursore.c ?? 0) + 1} di 2, pagina ${(s.cursore.p ?? 0) + 1})`, data: s.aggiornato };
     return { testo: `schede lette tutte (${num(n)} codici)`, data: s.aggiornato };
   },
-  wolfenbuettel: () => { const a = aRiprese("data/wolfenbuettel.json", 1); return { ...a, testo: a.testo.replace("schede lette tutte", "codici digitalizzati letti tutti") }; },
+  ...Object.fromEntries(Object.keys(FONTI_HSP).map(f => [f, () => { const a = aRiprese(`data/${f}.json`, 1); return { ...a, testo: a.testo.replace("schede lette tutte", "codici digitalizzati letti tutti") }; }])),
   vaticana: () => {
     const s = leggi("data/vaticana.json"); if (!s) return { testo: "non ancora cominciata" };
     const n = Object.keys(s.voci || {}).length;

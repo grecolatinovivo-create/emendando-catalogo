@@ -2,11 +2,12 @@
 // Catalogo dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate: tutti i manoscritti, di ogni lingua ed epoca.
 // Autori e opere riconosciuti (classici latini e greci, cristiani, medievali) sono un'informazione in più, per cercare e filtrare.
 // Uso:
-//   node scripts/raccogli.mjs [--fonti=heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,leiden,wolfenbuettel,vaticana] [--vaticana-minuti=20] [--oai-minuti=60]
+//   node scripts/raccogli.mjs [--fonti=heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,vaticana] [--vaticana-minuti=20] [--oai-minuti=60]
 //        [--bodleian-minuti=30] [--gallica-minuti=30] [--laurenziana-minuti=15] [--leiden-minuti=15] [--hsp-minuti=10] [--berlino-minuti=60] [--indici-minuti=20] [--minuti-totali=160] [--solo-costruisci]
 // Scrive il catalogo diviso per fonte (vedi costruisci.mjs): data/catalogo/indice.json, data/catalogo/indice/<fonte>-<n>.json, data/catalogo/voci/<fonte>-<n>.json,
 // più data/manoscritti.json (compatibilità: solo i codici con autori classici), e gli stati delle scansioni a riprese
-// (data/vaticana.json, data/bodleian.json, data/laurenziana.json, data/leiden.json, data/wolfenbuettel.json, data/heidelberg-indici.json).
+// (data/vaticana.json, data/bodleian.json, data/laurenziana.json, data/leiden.json, data/heidelberg-indici.json; data/<fonte>.json per le fonti del Handschriftenportal: wolfenbuettel, bamberga, karlsruhe, stoccarda, colonia, lipsia).
+// --hsp-minuti: limite di ciascuna fonte del Handschriftenportal.
 // --minuti-totali: tempo complessivo disponibile; la Vaticana usa al massimo quello che resta dopo le altre fonti.
 // --solo-costruisci: nessuna richiesta, si ricostruisce dalle raccolte in cache e dagli stati salvati.
 // Le raccolte OAI riprendono da dove si erano fermate (.cache/catalogo/stato-*.json) e si riusano per 6 giorni;
@@ -22,17 +23,18 @@ import { raccogliGallica } from "./fonti/gallica.mjs";
 import { scansionaLaurenziana, recordLaurenziana } from "./fonti/laurenziana.mjs";
 import { leggiIndiciHeidelberg, conIndici } from "./fonti/heidelberg-indici.mjs";
 import { scansionaLeiden, recordLeiden } from "./fonti/leiden.mjs";
-import { scansionaHsp, recordHsp } from "./fonti/hsp.mjs";
+import { scansionaHsp, recordHsp, FONTI_HSP } from "./fonti/hsp.mjs";
 import { scriviRegistro, registraEsiti } from "./registro.mjs";
 import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
-const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,leiden,wolfenbuettel,vaticana").split(",");
+const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,vaticana").split(",");
 const INIZIO = Date.now();
 export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)", berlino: "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
   bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)",
   laurenziana: "Biblioteca Medicea Laurenziana, Firenze (tecabml.contentdm.oclc.org)", leiden: "Universiteitsbibliotheek Leiden (digitalcollections.universiteitleiden.nl)",
-  wolfenbuettel: "Herzog August Bibliothek Wolfenbüttel (dati dal Handschriftenportal, handschriftenportal.de)", vaticana: "Biblioteca Apostolica Vaticana (digi.vatlib.it)" };
+  ...Object.fromEntries(Object.entries(FONTI_HSP).map(([f, h]) => [f, `${h.biblioteca}${h.biblioteca.includes(h.citta) ? "" : ", " + h.citta} (dati dal Handschriftenportal, handschriftenportal.de)`])),
+  vaticana: "Biblioteca Apostolica Vaticana (digi.vatlib.it)" };
 
 // i tre codici del Truculentus restano sempre nel catalogo, anche se una fonte non li ha ancora restituiti
 export const TRUCULENTUS = [
@@ -134,8 +136,8 @@ async function main() {
     gallica: () => raccogliGallica({ limiteMinuti: min("gallica", +(arg["gallica-minuti"] ?? 30)), soloCache: sc("gallica") }),
     laurenziana: async () => recordLaurenziana(await scansionaLaurenziana({ minuti: min("laurenziana", +(arg["laurenziana-minuti"] ?? 15)), soloCache: sc("laurenziana") })),
     leiden: async () => recordLeiden(await scansionaLeiden({ minuti: min("leiden", +(arg["leiden-minuti"] ?? 15)), soloCache: sc("leiden") })),
-    wolfenbuettel: async () => recordHsp("wolfenbuettel", await scansionaHsp({ fonte: "wolfenbuettel", biblioteca: "Herzog August Bibliothek Wolfenbüttel",
-      minuti: min("wolfenbuettel", +(arg["hsp-minuti"] ?? 10)), soloCache: sc("wolfenbuettel") })),
+    // biblioteche lette dal Handschriftenportal: una fonte ciascuna, con il suo stato in data/<fonte>.json
+    ...Object.fromEntries(Object.keys(FONTI_HSP).map(f => [f, async () => recordHsp(f, await scansionaHsp({ fonte: f, minuti: min(f, +(arg["hsp-minuti"] ?? 10)), soloCache: sc(f) }))])),
     vaticana: async () => {
       let minuti = +(arg["vaticana-minuti"] ?? 20);
       // con un tempo complessivo si lasciano 10 minuti per costruire il catalogo, provarlo e salvarlo

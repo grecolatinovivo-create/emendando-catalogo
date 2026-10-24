@@ -384,3 +384,29 @@ test("Wolfenbüttel: oggetti del Handschriftenportal e manifesti della HAB", asy
   assert.deepEqual(voce(r1, A).autori.map(a => a.id), ["virgilio"]);
   assert.deepEqual(voce(r2, A).autori, []);   // l'Eneide di Veldeke non è Virgilio
 });
+
+test("Handschriftenportal: una fonte per biblioteca, prefissi distinti, un manifesto una volta sola", async () => {
+  const { FONTI_HSP, prefissoHsp, recordHsp } = await import("../scripts/fonti/hsp.mjs");
+  const pref = Object.keys(FONTI_HSP).map(prefissoHsp);
+  assert.equal(new Set(pref).size, pref.length);
+  assert.equal(prefissoHsp("wolfenbuettel"), "wol");   // gli id già pubblicati di Wolfenbüttel non cambiano
+  for (const h of Object.values(FONTI_HSP)) assert.ok(h.biblioteca && h.citta && h.nome);
+  const m = "https://digital.blb-karlsruhe.de/i3f/v20/1465690/manifest";
+  const v = { s: "Cod. Donaueschingen A III 48", t: null, d: "15. Jh.", l: "Karlsruhe", c: "Badische Landesbibliothek", m, p: null };
+  const rs = recordHsp("karlsruhe", { voci: { "HSP-b": v, "HSP-a": { ...v, s: "Cod. Donaueschingen A III 48 (Fragm.)" }, "HSP-c": { ...v, m: m.replace("1465690", "1") } } });
+  assert.deepEqual(rs.map(r => r.id), ["blb-a", "blb-c"]);
+  assert.equal(rs[0].fonte, "karlsruhe"); assert.equal(rs[0].manifest, m);
+  assert.equal(recordHsp("colonia", { voci: { "HSP-x": { ...v, c: "Dombibliothek" } } })[0].id, "ceec-x");
+  // lingua dichiarata dal portale (campo g dello stato), altrimenti dedotta
+  const [l1] = recordHsp("lipsia", { voci: { "HSP-y": { ...v, g: ["grc"] } } });
+  assert.deepEqual(voce(l1, A).lingue, ["grc"]); assert.equal(voce(l1, A).lingua_dedotta, false);
+  const { LINGUE_HSP, metadatiManifesto } = await import("../scripts/fonti/hsp.mjs");
+  // Colonia: metadati in fondo al manifesto
+  const man = JSON.stringify({ label: "x", sequences: [{ canvases: [] }], metadata: [{ label: "Titel", value: "Eusebius Caesariensis:  Historia ecclesiastica (Köln, Erzbischöfliche Diözesan- und Dombibliothek, Cod. 1030)" },
+    { label: "Verfasser", value: "Eusebius Caesariensis translat. Rufino Tyrannio [Aquileiensi]" }, { label: "Entstehung", value: "15. Jh." }] });
+  const md = metadatiManifesto(man);
+  assert.deepEqual(md, { t: "Eusebius Caesariensis: Historia ecclesiastica", a: ["Eusebius Caesariensis translat. Rufino Tyrannio [Aquileiensi]"], d: "15. Jh." });
+  const [k1] = recordHsp("colonia", { voci: { "HSP-k": { s: "Cod. 1030", t: null, d: null, l: "Köln", c: "Dombibliothek", m, p: null, x: 1, tm: md.t, a: md.a, dm: md.d } } });
+  assert.equal(k1.titolo, md.t); assert.equal(k1.datazione, "15. Jh."); assert.deepEqual(k1.autori_fonte, md.a);
+  assert.ok(Object.values(LINGUE_HSP).includes("la") && Object.values(LINGUE_HSP).includes("grc"));
+});
