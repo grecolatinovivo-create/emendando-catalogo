@@ -18,20 +18,20 @@ Come leggere le colonne:
 - **Ultima raccolta**: com'è andata l'ultima volta.
 
 <!-- inizio automatico -->
-Codici nel catalogo, in tutto: **56.874**, di cui **8692** con almeno un autore riconosciuto.
+Codici nel catalogo, in tutto: **57.688**, di cui **8834** con almeno un autore riconosciuto.
 
 | Biblioteca | Città | Codici totali | Di cui con autori riconosciuti | Lingue | Avanzamento della lettura | Come si aggiorna | Ultimo aggiornamento | Ultima raccolta |
 |---|---|---|---|---|---|---|---|---|
-| Universitätsbibliothek Heidelberg | Heidelberg | 7781 | 320 | greco 3359, tedesco 1472, copto 1368, altre 1978 | schede lette tutte (7781); indici 801 su 1238 | ogni notte, da sola | 2026-10-24 | — |
-| e-codices (biblioteche svizzere: San Gallo, Einsiedeln, Bodmer e altre) | Svizzera | 2745 | 1032 | latino 2043, tedesco 674, francese 235, altre 417 | schede lette tutte (2745 schede) | ogni notte, da sola | 2026-10-24 | — |
-| Bayerische Staatsbibliothek | Monaco di Baviera | 28.785 | 2214 | tedesco 11.319, latino 8472, non indicata 5804, altre 4411 | schede lette tutte (29.752 schede) | ogni notte, da sola | 2026-10-24 | — |
-| Staatsbibliothek zu Berlin | Berlino | 3296 | 269 | tedesco 1597, non indicata 734, latino 714, altre 390 | schede lette tutte (3296 schede) | ogni notte, da sola | 2026-10-24 | riuscita |
+| Universitätsbibliothek Heidelberg | Heidelberg | 7781 | 320 | greco 3359, tedesco 1472, copto 1368, altre 1978 | indici 801 | ogni notte, da sola | 2026-10-24 | — |
+| e-codices (biblioteche svizzere: San Gallo, Einsiedeln, Bodmer e altre) | Svizzera | 2745 | 1032 | latino 2043, tedesco 674, francese 235, altre 417 | schede lette tutte ogni 6 giorni | ogni notte, da sola | — | — |
+| Bayerische Staatsbibliothek | Monaco di Baviera | 28.785 | 2214 | tedesco 11.319, latino 8472, non indicata 5804, altre 4411 | schede lette tutte ogni 6 giorni | ogni notte, da sola | — | — |
+| Staatsbibliothek zu Berlin | Berlino | 3296 | 269 | tedesco 1597, non indicata 734, latino 714, altre 390 | schede lette tutte ogni 6 giorni | ogni notte, da sola | 2026-10-24 | riuscita |
 | Bodleian Libraries e college | Oxford | 200 | 97 | latino 195, inglese 15, francese 8, altre 15 | 588 schede lette su 3367; a riprese, ogni notte: mancano circa 3 notti | ogni notte, da sola | 2026-10-24 | — |
 | Bibliothèque nationale de France (Gallica) | Parigi | 1892 | 1600 | latino 1892 | solo i fondi latini (raccolta dal browser del 2026-10-24): per avere tutti i manoscritti va lanciato scripts/browser/gallica.js | va rifatta a mano dal browser (ultima raccolta: 2026-10-24) | 2026-10-24 | — |
 | Biblioteca Medicea Laurenziana | Firenze | 4353 | 2206 | non indicata 3614, latino 725, italiano 5, altre 9 | schede lette tutte (4353 codici) | ogni notte, da sola | 2026-10-24 | — |
 | Universiteitsbibliotheek Leiden (manoscritti, con i Vossiani; Bibliotheca Neerlandica Manuscripta) | Leida | 6226 | 751 | non indicata 2889, nederlandese 2337, latino 634, altre 366 | schede lette tutte (6226 codici) | ogni notte, da sola | 2026-10-24 | riuscita |
 | Herzog August Bibliothek (dati dal Handschriftenportal) | Wolfenbüttel | 1531 | 141 | non indicata 1334, latino 96, tedesco 76, altre 25 | codici digitalizzati letti tutti (1531 su 1534) | ogni notte, da sola | 2026-10-24 | riuscita |
-| Biblioteca Apostolica Vaticana | Città del Vaticano | 65 | 62 | latino 65 | 65 codici letti; fondo in corso: Pal. lat. (dal n. 1536), tratto 4 di 40; restano circa 50.246 segnature da provare, cioè circa 8 giorni (un manifesto ogni 10 secondi, come chiede la biblioteca) | ogni 3 ore, da sola | 2026-10-24 | — |
+| Biblioteca Apostolica Vaticana | Città del Vaticano | 879 | 204 | latino 876, francese 2, italiano 1 | 879 codici letti; fondo in corso: Urb. lat. (dal n. 472), tratto 6 di 40; restano circa 48.912 segnature da provare, cioè circa 8 giorni (un manifesto ogni 10 secondi, come chiede la biblioteca) | ogni 3 ore, da sola | 2026-10-24 | riuscita |
 <!-- fine automatico -->
 
 San Gallo, Einsiedeln e la Fondation Bodmer (Cologny) sono già dentro: arrivano dalla riga e-codices.

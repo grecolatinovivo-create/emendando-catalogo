@@ -1,26 +1,26 @@
 {
- "aggiornato": "2026-10-24T13:16:16.909Z",
+ "aggiornato": "2026-10-24T15:29:50.847Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
    "nome": "Heidelberg (digi.ub.uni-heidelberg.de)",
    "codici": 94,
-   "esito": "ok"
+   "esito": "errore: nessuna raccolta completa in cache"
   },
   "ecodices": {
    "nome": "e-codices",
    "codici": 307,
-   "esito": "ok"
+   "esito": "errore: nessuna raccolta completa in cache"
   },
   "bsb": {
    "nome": "Bayerische Staatsbibliothek (digitale-sammlungen.de)",
    "codici": 943,
-   "esito": "ok"
+   "esito": "errore: nessuna raccolta completa in cache"
   },
   "berlino": {
    "nome": "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
    "codici": 134,
-   "esito": "ok"
+   "esito": "errore: nessuna raccolta completa in cache"
   },
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
@@ -49,11 +49,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 62,
+   "codici": 201,
    "esito": "ok"
   }
  },
- "totale": 5148,
+ "totale": 5287,
  "manoscritti": [
   {
    "id": "bsb-bsb00034122",
@@ -33283,6 +33283,1290 @@
    "immagini": null
   },
   {
+   "id": "bav-pal-lat-1536",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1536",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1536/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1536",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1538",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1538",
+   "datazione": "sec. XIV-XV",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opere filosofiche",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus, 5/4 a.C.-65 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1538/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1538",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1539",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1539",
+   "datazione": "Sec. XIV ",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo ",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus <Philosophus>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1539/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1539",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1540",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1540",
+   "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus <Philosophus>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1540/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1540",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1541",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1541",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo ",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus <Philosophus>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1541/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1541",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1542",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1542",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo ",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus <Philosophus>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1542/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1542",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1543",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1543",
+   "datazione": "Sec. XII",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epistulae ",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus <Philosophus>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1543/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1543",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1544",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1544",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Excerpta controuersarium",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus <Philosophus>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1544/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1544",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1545",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1545",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo ",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus <Philosophus>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1545/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1545",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1548",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1548",
+   "datazione": "12. Jh.",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus (Philosophus)»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1548/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1548",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1549",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1549",
+   "datazione": "13. Jh.",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus (Philosophus)»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1549/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1549",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1550",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1550",
+   "datazione": "12. Jh.",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Epistulae",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus (Philosophus)»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1550/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1550",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1551",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1551",
+   "datazione": "12. Jh. ; 15. Jh.",
+   "secolo": [
+    12,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Epistulae",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus (Philosophus) ; Ps.-Phalaris»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1551/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1551",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1552",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1552",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo ",
+   "autori": [
+    {
+     "id": "luciano",
+     "autore": "Luciano di Samosata",
+     "latino": "Lucianus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…sco ; Guarinus <Veronensis> ; Lucianus <Samosatensis>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1552/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1552",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1553",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1553",
+   "datazione": "14.-15. Jh.",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus <Philosophus>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1553/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1553",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1554",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1554",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Opera",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus <Philosophus>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1554/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1554",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1555",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1555",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Institutio oratoria ",
+   "autori": [
+    {
+     "id": "quintiliano",
+     "autore": "Quintiliano",
+     "latino": "Quintilianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutio oratoria"
+     ],
+     "corrispondenza": "autore: «Quintilianus, Marcus Fabius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1555/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1555",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1556",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1556",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Institutio oratoria",
+   "autori": [
+    {
+     "id": "quintiliano",
+     "autore": "Quintiliano",
+     "latino": "Quintilianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutio oratoria"
+     ],
+     "corrispondenza": "autore: «Quintilianus, Marcus Fabius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1556/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1556",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1557",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1557",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Institutio oratoria",
+   "autori": [
+    {
+     "id": "quintiliano",
+     "autore": "Quintiliano",
+     "latino": "Quintilianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutio oratoria"
+     ],
+     "corrispondenza": "autore: «Quintilianus, Marcus Fabius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1557/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1557",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1558",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1558",
+   "datazione": "Sec. XV-XVI",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Declamationes minores",
+   "autori": [
+    {
+     "id": "quintiliano",
+     "autore": "Quintiliano",
+     "latino": "Quintilianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Declamationes"
+     ],
+     "corrispondenza": "autore: «Quintilianus, Marcus Fabius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1558/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1558",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1559",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1559",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Naturalis historia  ; Plinius Secundus, Gaius ",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «Naturalis historia  ; Plinius Secundus, Gaius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1559/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1559",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1561",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1561",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epistulae (I-VII, IX)",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Plinius Secundus, Gaius»"
+    },
+    {
+     "id": "plinio-giovane",
+     "autore": "Plinio il Giovane",
+     "latino": "Plinius minor",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epistulae"
+     ],
+     "corrispondenza": "autore: «Plinius Secundus, Gaius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1561/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1561",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1562",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1562",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De architectura",
+   "autori": [
+    {
+     "id": "vitruvio",
+     "autore": "Vitruvio",
+     "latino": "Vitruvius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De architectura"
+     ],
+     "corrispondenza": "autore: «Vitruvius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1562/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1562",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1563",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1563",
+   "datazione": "Sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De architectura ; Strategemata",
+   "autori": [
+    {
+     "id": "vitruvio",
+     "autore": "Vitruvio",
+     "latino": "Vitruvius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De architectura"
+     ],
+     "corrispondenza": "autore: «Vitruvius  ; Frontinus, Sextus Iulius»"
+    },
+    {
+     "id": "frontino",
+     "autore": "Frontino",
+     "latino": "Frontinus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Strategemata"
+     ],
+     "corrispondenza": "autore: «Vitruvius  ; Frontinus, Sextus Iulius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1563/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1563",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1565",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1565",
+   "datazione": "1351-1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opus agriculturae",
+   "autori": [
+    {
+     "id": "palladio",
+     "autore": "Palladio",
+     "latino": "Palladius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Opus agriculturae"
+     ],
+     "corrispondenza": "autore: «Palladius, Rutilius Taurus Aemilianus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1565/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1565",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1566",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1566",
+   "datazione": "sec. XIV med",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Opus agriculturae",
+   "autori": [
+    {
+     "id": "palladio",
+     "autore": "Palladio",
+     "latino": "Palladius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Opus agriculturae"
+     ],
+     "corrispondenza": "autore: «Palladius, Rutilius Taurus Aemilianus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1566/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1566",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1569",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1569",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo ",
+   "autori": [
+    {
+     "id": "solino",
+     "autore": "Solino",
+     "latino": "Solinus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Solinus, Gaius Iulius ; Einhardus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1569/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1569",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1570",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1570",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo ",
+   "autori": [
+    {
+     "id": "solino",
+     "autore": "Solino",
+     "latino": "Solinus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Solinus, Gaius Iulius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1570/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1570",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1572",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1572",
+   "datazione": "9. Jh.",
+   "secolo": [
+    9,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Epitoma Rei Militaris",
+   "autori": [
+    {
+     "id": "vegezio",
+     "autore": "Vegezio",
+     "latino": "Vegetius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epitoma rei militaris"
+     ],
+     "corrispondenza": "autore: «Vegetius Renatus, Flavius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1572/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1572",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1573",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1573",
+   "datazione": "12. Jh. ; 13. Jh",
+   "secolo": [
+    12,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…oeta) ; Maximianus Etruscus ; Statius, Publius Papinius ; Claudianu…»"
+    },
+    {
+     "id": "claudiano",
+     "autore": "Claudiano",
+     "latino": "Claudianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…; Statius, Publius Papinius ; Claudianus, Claudius»"
+    },
+    {
+     "id": "vegezio",
+     "autore": "Vegezio",
+     "latino": "Vegetius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Vegetius Renatus, Flavius ; Avianus (P…»"
+    },
+    {
+     "id": "aviano",
+     "autore": "Aviano",
+     "latino": "Avianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Vegetius Renatus, Flavius ; Avianus (Poeta) ; Maximianus Etruscus…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1573/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1573",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1574",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1574",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Metamorphoses",
+   "autori": [
+    {
+     "id": "apuleio",
+     "autore": "Apuleio",
+     "latino": "Apuleius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Metamorfosi"
+     ],
+     "corrispondenza": "autore: «Apuleius <Madaurensis>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1574/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1574",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1575",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1575",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "macrobio",
+     "autore": "Macrobio",
+     "latino": "Macrobius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Macrobius, Ambrosius Theodosius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1575/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1575",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1581",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1581",
+   "datazione": "10. Jh.",
+   "secolo": [
+    10,
+    10
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Philosophiae consolatio (cum glossis Remigii Autissiodorensis) ",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Boethius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1581/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1581",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1583",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1583",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Boethius, Anicius Manlius Torquatus Se…»"
+    },
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…I (Enea Silvio Piccolomoni) ; Plutarchus ;  Bruni, Leonardo‏ ; Bonjoha…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1583/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1583",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1585",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1585",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo ",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…mini ; Petrarca, Francesco  ; Seneca, Lucius Annaeus <Philosophus>»"
+    },
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Boethius, Anicius Manlius Severinus ;…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1585/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1585",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1589",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1589",
+   "datazione": "1453-1458",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "donato",
+     "autore": "Donato",
+     "latino": "Donatus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles ; Donatus, Aelius ; Knab, Erhardus»"
+    },
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles ; Donatus, Aelius ; Knab, Erhardus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1589/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1589",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1594",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1594",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "tibullo",
+     "autore": "Tibullo",
+     "latino": "Tibullus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Luschus, Antonius ; Tibullus, Albius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1594/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1594",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1599",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1599",
+   "datazione": "1448",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Plato ; Isocrates ; Boccaccio, Giovanni ; Lysias»"
+    },
+    {
+     "id": "lisia",
+     "autore": "Lisia",
+     "latino": "Lysias",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Plato ; Isocrates ; Boccaccio, Giovanni ; Lysias»"
+    },
+    {
+     "id": "isocrate",
+     "autore": "Isocrate",
+     "latino": "Isocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Plato ; Isocrates ; Boccaccio, Giovanni ; Lysias»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1599/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1599",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
    "id": "bav-pal-lat-1612",
    "fonte": "vaticana",
    "biblioteca": "Biblioteca Apostolica Vaticana",
@@ -33544,6 +34828,3538 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1620/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1620",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1621",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1621",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Comoediae",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commedie"
+     ],
+     "corrispondenza": "autore: «Terentius Afer, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1621/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1621",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1622",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1622",
+   "datazione": "Sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Comoediae",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commedie"
+     ],
+     "corrispondenza": "autore: «Terentius Afer, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1622/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1622",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1623",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1623",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Comoediae",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commedie"
+     ],
+     "corrispondenza": "autore: «Terentius Afer, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1623/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1623",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1624",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1624",
+   "datazione": "Sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Comoediae ",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commedie"
+     ],
+     "corrispondenza": "autore: «Terentius Afer, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1624/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1624",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1625",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1625",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo ",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Terentius Afer, Publius ; Adolphus Vind…»"
+    },
+    {
+     "id": "sallustio",
+     "autore": "Sallustio",
+     "latino": "Sallustius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…ensis ; Alanus <ab Insulis> ; Sallustius Crispus, Gaius ; Pius <Papst,…»"
+    },
+    {
+     "id": "agostino",
+     "autore": "Agostino",
+     "latino": "Augustinus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…> / Enea Silvio Piccolomini ; Augustinus <Dati> ; Petrarca, Francesco…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1625/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1625",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1626",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1626",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Comoediae ",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commedie"
+     ],
+     "corrispondenza": "autore: «Terentius Afer, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1626/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1626",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1627",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1627",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Comoediae",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commedie"
+     ],
+     "corrispondenza": "autore: «Terentius Afer, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1627/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1627",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1629",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1629",
+   "datazione": "Sec. XV (1474?)",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Commentum in Terentii",
+   "autori": [
+    {
+     "id": "donato",
+     "autore": "Donato",
+     "latino": "Donatus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Donatus, Aelius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1629/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1629",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1630",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1630",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Commentum in Terentii",
+   "autori": [
+    {
+     "id": "donato",
+     "autore": "Donato",
+     "latino": "Donatus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Donatus, Aelius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1630/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1630",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1631",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1631",
+   "datazione": "ca. 500",
+   "secolo": [
+    5,
+    5
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Vergilius Palatinus ",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Vergilius Palatinus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1631/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1631",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1632",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1632",
+   "datazione": "sec. XV med",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": null,
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Vergilius Maro, Publius, 70-19 a.C.; Ov…»"
+    },
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…us Maro, Publius, 70-19 a.C.; Ovidius Naso, Publius, 43 a.C.-17/18…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1632/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1632",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1633",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1633",
+   "datazione": "1451-1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera ",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Vergilius Maro, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1633/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1633",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1634",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1634",
+   "datazione": "14.-15. Jh.",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Aeneis",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eneide"
+     ],
+     "corrispondenza": "autore: «Vergilius Maro, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1634/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1634",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1636",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1636",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aeneis",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eneide"
+     ],
+     "corrispondenza": "autore: «Vergilius Maro, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1636/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1636",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1637",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1637",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera ",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Vergilius Maro, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1637/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1637",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1638",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1638",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera ",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Vergilius Maro, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1638/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1638",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1639",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1639",
+   "datazione": "Sec. XIV",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera ",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Vergilius Maro, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1639/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1639",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1640",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1640",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera ",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Vergilius Maro, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1640/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1640",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1641",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1641",
+   "datazione": "1451-1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aeneis",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eneide"
+     ],
+     "corrispondenza": "autore: «Vergilius Maro, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1641/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1641",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1642",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1642",
+   "datazione": "Sec. XIV-XV ",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera ",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Vergilius Maro, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1642/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1642",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1643",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1643",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Opera",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Vergilius Maro, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1643/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1643",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1644",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1644",
+   "datazione": "1301-1500",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo ",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Vergilius Maro, Publius  ; Ovidius Naso, Publius»"
+    },
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Vergilius Maro, Publius  ; Ovidius Naso, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1644/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1644",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1645",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1645",
+   "datazione": "12.-13. Jh.",
+   "secolo": [
+    12,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "servio",
+     "autore": "Servio",
+     "latino": "Servius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Tullius, Servius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1645/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1645",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1647",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1647",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Commentarii in Vergilium",
+   "autori": [
+    {
+     "id": "servio",
+     "autore": "Servio",
+     "latino": "Servius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commento a Virgilio"
+     ],
+     "corrispondenza": "autore: «Tullius, Servius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1647/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1647",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1648",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1648",
+   "datazione": "13. Jh.",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Aeneis",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eneide"
+     ],
+     "corrispondenza": "autore: «Vergilius Maro, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1648/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1648",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1650",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1650",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Elegiae ",
+   "autori": [
+    {
+     "id": "tibullo",
+     "autore": "Tibullo",
+     "latino": "Tibullus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Elegie"
+     ],
+     "corrispondenza": "autore: «Tibullus, Albius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1650/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1650",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1651",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1651",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Elegiae ",
+   "autori": [
+    {
+     "id": "tibullo",
+     "autore": "Tibullo",
+     "latino": "Tibullus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Elegie"
+     ],
+     "corrispondenza": "autore: «Tibullus, Albius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1651/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1651",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1652",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1652",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "catullo",
+     "autore": "Catullo",
+     "latino": "Catullus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Tibullus, Albius ; Catullus, Gaius Valerius ; Calpurnius Siculus, Titus ; Propertius»"
+    },
+    {
+     "id": "tibullo",
+     "autore": "Tibullo",
+     "latino": "Tibullus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Tibullus, Albius ; Catullus, Gaius Valerius ; Calpurnius Siculus, Titus ; Propertius»"
+    },
+    {
+     "id": "properzio",
+     "autore": "Properzio",
+     "latino": "Propertius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Tibullus, Albius ; Catullus, Gaius Valerius ; Calpurnius Siculus, Titus ; Propertius»"
+    },
+    {
+     "id": "calpurnio",
+     "autore": "Calpurnio Siculo",
+     "latino": "Calpurnius Siculus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Tibullus, Albius ; Catullus, Gaius Valerius ; Calpurnius Siculus, Titus ; Propertius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1652/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1652",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1653",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1653",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Odae seu Carmina ",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Odi"
+     ],
+     "corrispondenza": "autore: «Horatius Flaccus, Quintus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1653/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1653",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1654",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1654",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera ",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Horatius Flaccus, Quintus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1654/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1654",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1655",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1655",
+   "datazione": "12. Jh. ; 13. Jh.",
+   "secolo": [
+    12,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Horatius Flaccus, Quintus ; Ovidius Naso, Publius»"
+    },
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Horatius Flaccus, Quintus ; Ovidius Naso, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1655/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1655",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1656",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1656",
+   "datazione": "1451-1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Horatius Flaccus, Quintus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1656/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1656",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1657",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1657",
+   "datazione": "12.-13. Jh.",
+   "secolo": [
+    12,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Opera",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Horatius Flaccus, Quintus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1657/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1657",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1658",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1658",
+   "datazione": "Sec. XIII-XIV",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epistulae ",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epistole"
+     ],
+     "corrispondenza": "autore: «Horatius Flaccus, Quintus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1658/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1658",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1659",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1659",
+   "datazione": "14. Jh. ; 14.-15. Jh. ; 15. Jh. ; 14.-15. Jh.",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Horatius Flaccus, Quintus ; Persius Flaccus, Aulus»"
+    },
+    {
+     "id": "persio",
+     "autore": "Persio",
+     "latino": "Persius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Horatius Flaccus, Quintus ; Persius Flaccus, Aulus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1659/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1659",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1660",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1660",
+   "datazione": "Sec. XIV",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera ",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Horatius Flaccus, Quintus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1660/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1660",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1662",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1662",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo ",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Ovidius Naso, Publius ; Cicero, Marcus Tullius ; Donatus, Aelius»"
+    },
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Ovidius Naso, Publius ; Cicero, Marcus Tullius ; Donatus, Aelius»"
+    },
+    {
+     "id": "donato",
+     "autore": "Donato",
+     "latino": "Donatus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Ovidius Naso, Publius ; Cicero, Marcus Tullius ; Donatus, Aelius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1662/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1662",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1663",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1663",
+   "datazione": "13. Jh.",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Metamorphosen",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Metamorfosi"
+     ],
+     "corrispondenza": "autore: «Ovidius Naso, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1663/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1663",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1664",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1664",
+   "datazione": "13.-14. Jh.",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Metamorphosen",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Metamorfosi"
+     ],
+     "corrispondenza": "autore: «Ovidius Naso, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1664/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1664",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1665",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1665",
+   "datazione": "Sec. XIV ",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Heroides ",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eroidi"
+     ],
+     "corrispondenza": "autore: «Ovidius Naso, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1665/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1665",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1666",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1666",
+   "datazione": "13. Jh.",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Heroides",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eroidi"
+     ],
+     "corrispondenza": "autore: «Ovidius Naso, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1666/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1666",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1667",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1667",
+   "datazione": "13. Jh.",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Metamorphoses",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Metamorfosi"
+     ],
+     "corrispondenza": "autore: «Ovidius Naso, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1667/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1667",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1668",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1668",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Opera",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Ovidius Naso, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1668/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1668",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1669",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1669",
+   "datazione": "11. Jh.",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Metamorphoses",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Metamorfosi"
+     ],
+     "corrispondenza": "autore: «Ovidius Naso, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1669/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1669",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1670",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1670",
+   "datazione": "Sec. XIV",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Metamorphoses",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Metamorfosi"
+     ],
+     "corrispondenza": "autore: «Ovidius Naso, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1670/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1670",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1671",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1671",
+   "datazione": "sec. XIV med",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Tragoediae  ",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tragedie"
+     ],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus (Philosophus)»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1671/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1671",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1672",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1672",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Tragoediae ",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tragedie"
+     ],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus (Philosophus)»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1672/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1672",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1673",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1673",
+   "datazione": "Sec. XIV-XV",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Tragoediae",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tragedie"
+     ],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus <Philosophus>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1673/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1673",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1674",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1674",
+   "datazione": "Sec. XIV ",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Tragoediae ",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tragedie"
+     ],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus <Philosophus>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1674/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1674",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1676",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1676",
+   "datazione": "1351-1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Tragoediae",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tragedie"
+     ],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus <Philosophus>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1676/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1676",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1677",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1677",
+   "datazione": "sec. XIV ex",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Tragoediae",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tragedie"
+     ],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus, 5/4 a.C.-65…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1677/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1677",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1678",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1678",
+   "datazione": "Sec. XIV ",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De bello civili ",
+   "autori": [
+    {
+     "id": "lucano",
+     "autore": "Lucano",
+     "latino": "Lucanus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Bellum civile"
+     ],
+     "corrispondenza": "autore: «Lucanus, Marcus Annaeus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1678/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1678",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1679",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1679",
+   "datazione": "1351-1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De bello ciuili",
+   "autori": [
+    {
+     "id": "lucano",
+     "autore": "Lucano",
+     "latino": "Lucanus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Bellum civile"
+     ],
+     "corrispondenza": "autore: «Lucanus, Marcus Annaeus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1679/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1679",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1680",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1680",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De bello ciuili ",
+   "autori": [
+    {
+     "id": "lucano",
+     "autore": "Lucano",
+     "latino": "Lucanus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Bellum civile"
+     ],
+     "corrispondenza": "autore: «Lucanus, Marcus Annaeus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1680/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1680",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1681",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1681",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De bello ciuili",
+   "autori": [
+    {
+     "id": "lucano",
+     "autore": "Lucano",
+     "latino": "Lucanus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Bellum civile"
+     ],
+     "corrispondenza": "autore: «Lucanus, Marcus Annaeus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1681/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1681",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1682",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1682",
+   "datazione": "14.-15. Jh.",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De bello ciuili",
+   "autori": [
+    {
+     "id": "lucano",
+     "autore": "Lucano",
+     "latino": "Lucanus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Bellum civile"
+     ],
+     "corrispondenza": "autore: «Lucanus, Marcus Annaeus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1682/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1682",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1683",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1683",
+   "datazione": "12. Jh.",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De bello ciuili",
+   "autori": [
+    {
+     "id": "lucano",
+     "autore": "Lucano",
+     "latino": "Lucanus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Bellum civile"
+     ],
+     "corrispondenza": "autore: «Lucanus, Marcus Annaeus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1683/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1683",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1684",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1684",
+   "datazione": "12. Jh.",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De bello ciuili",
+   "autori": [
+    {
+     "id": "lucano",
+     "autore": "Lucano",
+     "latino": "Lucanus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Bellum civile"
+     ],
+     "corrispondenza": "autore: «Lucanus, Marcus Annaeus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1684/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1684",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1685",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1685",
+   "datazione": "12. Jh.",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De bello ciuili",
+   "autori": [
+    {
+     "id": "lucano",
+     "autore": "Lucano",
+     "latino": "Lucanus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Bellum civile"
+     ],
+     "corrispondenza": "autore: «Lucanus, Marcus Annaeus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1685/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1685",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1686",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1686",
+   "datazione": "12.-13. Jh.",
+   "secolo": [
+    12,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De bello ciuili",
+   "autori": [
+    {
+     "id": "lucano",
+     "autore": "Lucano",
+     "latino": "Lucanus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Bellum civile"
+     ],
+     "corrispondenza": "autore: «Lucanus, Marcus Annaeus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1686/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1686",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1687",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1687",
+   "datazione": "14.-15. Jh.",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Lucanus, Marcus Annaeus ; Ovidius Naso, Publius»"
+    },
+    {
+     "id": "lucano",
+     "autore": "Lucano",
+     "latino": "Lucanus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Lucanus, Marcus Annaeus ; Ovidius Naso, Publius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1687/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1687",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1688",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1688",
+   "datazione": "Sec. XIV-XV ",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Thebais ",
+   "autori": [
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tebaide"
+     ],
+     "corrispondenza": "autore: «Statius, Publius Papinius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1688/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1688",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1689",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1689",
+   "datazione": "12. Jh.",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Thebais",
+   "autori": [
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tebaide"
+     ],
+     "corrispondenza": "autore: «Statius, Publius Papinius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1689/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1689",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1690",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1690",
+   "datazione": "Sec. XIV ",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Thebais ",
+   "autori": [
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tebaide"
+     ],
+     "corrispondenza": "autore: «Statius, Publius Papinius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1690/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1690",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1691",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1691",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Thebais ; Achilleis",
+   "autori": [
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tebaide",
+      "Achilleide"
+     ],
+     "corrispondenza": "autore: «Statius, Publius Papinius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1691/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1691",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1692",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1692",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Thebais; Achilleis ",
+   "autori": [
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tebaide",
+      "Achilleide"
+     ],
+     "corrispondenza": "autore: «Statius, Publius Papinius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1692/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1692",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1693",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1693",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Thebais; Achilleis ",
+   "autori": [
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tebaide",
+      "Achilleide"
+     ],
+     "corrispondenza": "autore: «Statius, Publius Papinius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1693/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1693",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1695",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1695",
+   "datazione": "12. Jh.",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Achilleis",
+   "autori": [
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Achilleide"
+     ],
+     "corrispondenza": "autore: «Statius, Publius Papinius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1695/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1695",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1696",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1696",
+   "datazione": "Sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epigrammata I-XIV",
+   "autori": [
+    {
+     "id": "marziale",
+     "autore": "Marziale",
+     "latino": "Martialis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epigrammi"
+     ],
+     "corrispondenza": "autore: «Martialis, Marcus Valerius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1696/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1696",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1697",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1697",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epigrammata I-XII",
+   "autori": [
+    {
+     "id": "marziale",
+     "autore": "Marziale",
+     "latino": "Martialis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epigrammi"
+     ],
+     "corrispondenza": "autore: «Martialis, Marcus Valerius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1697/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1697",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1698",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1698",
+   "datazione": "1451-1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epigrammata I-XIV",
+   "autori": [
+    {
+     "id": "marziale",
+     "autore": "Marziale",
+     "latino": "Martialis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epigrammi"
+     ],
+     "corrispondenza": "autore: «Martialis, Marcus Valerius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1698/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1698",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1699",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1699",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Saturae",
+   "autori": [
+    {
+     "id": "persio",
+     "autore": "Persio",
+     "latino": "Persius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Satire"
+     ],
+     "corrispondenza": "autore: «Iuvenalis, Decimus Iunius ; Persius Flaccus, Aulus»"
+    },
+    {
+     "id": "giovenale",
+     "autore": "Giovenale",
+     "latino": "Iuvenalis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Satire"
+     ],
+     "corrispondenza": "autore: «Iuvenalis, Decimus Iunius ; Persius Flaccus, Aulus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1699/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1699",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1700",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1700",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Saturae ",
+   "autori": [
+    {
+     "id": "giovenale",
+     "autore": "Giovenale",
+     "latino": "Iuvenalis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Satire"
+     ],
+     "corrispondenza": "autore: «Iuvenalis, Decimus Iunius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1700/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1700",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1702",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1702",
+   "datazione": "Sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Saturae",
+   "autori": [
+    {
+     "id": "giovenale",
+     "autore": "Giovenale",
+     "latino": "Iuvenalis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Satire"
+     ],
+     "corrispondenza": "autore: «Iuvenalis, Decimus Iunius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1702/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1702",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1703",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1703",
+   "datazione": "12. Jh.",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Saturae",
+   "autori": [
+    {
+     "id": "giovenale",
+     "autore": "Giovenale",
+     "latino": "Iuvenalis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Satire"
+     ],
+     "corrispondenza": "autore: «Iuvenalis, Decimus Iunius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1703/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1703",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1704",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1704",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Saturae ",
+   "autori": [
+    {
+     "id": "giovenale",
+     "autore": "Giovenale",
+     "latino": "Iuvenalis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Satire"
+     ],
+     "corrispondenza": "autore: «Iuvenalis, Decimus Iunius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1704/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1704",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1705",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1705",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Saturae ",
+   "autori": [
+    {
+     "id": "giovenale",
+     "autore": "Giovenale",
+     "latino": "Iuvenalis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Satire"
+     ],
+     "corrispondenza": "autore: «Iuvenalis, Decimus Iunius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1705/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1705",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1707",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1707",
+   "datazione": "1451-1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo ",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…s ; Vergilius Maro, Publius ; Cicero, Marcus Tullius»"
+    },
+    {
+     "id": "sallustio",
+     "autore": "Sallustio",
+     "latino": "Sallustius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…Publius ; Tibullus, Albius ; Sallustius Crispus, Gaius ; Vergilius Ma…»"
+    },
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…; Sallustius Crispus, Gaius ; Vergilius Maro, Publius ; Cicero, Marcu…»"
+    },
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Iuvenalis, Decimus Iunius ; Horatius Flaccus, Quintus ; Persius Fl…»"
+    },
+    {
+     "id": "tibullo",
+     "autore": "Tibullo",
+     "latino": "Tibullus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…lus ; Ovidius Naso, Publius ; Tibullus, Albius ; Sallustius Crispus,…»"
+    },
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…us ; Persius Flaccus, Aulus ; Ovidius Naso, Publius ; Tibullus, Alb…»"
+    },
+    {
+     "id": "persio",
+     "autore": "Persio",
+     "latino": "Persius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…; Horatius Flaccus, Quintus ; Persius Flaccus, Aulus ; Ovidius Naso…»"
+    },
+    {
+     "id": "giovenale",
+     "autore": "Giovenale",
+     "latino": "Iuvenalis",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Iuvenalis, Decimus Iunius ; Horatius Fl…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1707/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1707",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1708",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1708",
+   "datazione": "Sec. XIV-XV",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Saturae ",
+   "autori": [
+    {
+     "id": "persio",
+     "autore": "Persio",
+     "latino": "Persius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Satire"
+     ],
+     "corrispondenza": "autore: «Iuvenalis, Decimus Iunius ; Persius Flaccus, Aulus»"
+    },
+    {
+     "id": "giovenale",
+     "autore": "Giovenale",
+     "latino": "Iuvenalis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Satire"
+     ],
+     "corrispondenza": "autore: «Iuvenalis, Decimus Iunius ; Persius Flaccus, Aulus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1708/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1708",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1709",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1709",
+   "datazione": "Sec. XV-XVI",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo ",
+   "autori": [
+    {
+     "id": "sallustio",
+     "autore": "Sallustio",
+     "latino": "Sallustius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…Severinus ; Celtis, Konrad ; Sallustius Crispus, Gaius ; Ovidius Naso…»"
+    },
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…Naso, Publius ; Fridancius ; Vergilius Maro, Publius»"
+    },
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…; Sallustius Crispus, Gaius ; Ovidius Naso, Publius ; Fridancius ;…»"
+    },
+    {
+     "id": "persio",
+     "autore": "Persio",
+     "latino": "Persius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Persius Flaccus, Aulus ; Soloneus ; B…»"
+    },
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…s Flaccus, Aulus ; Soloneus ; Boethius, Anicius Manlius Severinus ;…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1709/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1709",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1710",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1710",
+   "datazione": "9. Jh. ; 11. Jh. ; 14. Jh. ; 14. Jh.",
+   "secolo": [
+    9,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "persio",
+     "autore": "Persio",
+     "latino": "Persius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Persius Flaccus, Aulus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1710/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1710",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1711",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1711",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Astronomica ",
+   "autori": [
+    {
+     "id": "manilio",
+     "autore": "Manilio",
+     "latino": "Manilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Astronomica"
+     ],
+     "corrispondenza": "autore: «Manilius, Marcus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1711/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1711",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1714",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1714",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Carmina",
+   "autori": [
+    {
+     "id": "claudiano",
+     "autore": "Claudiano",
+     "latino": "Claudianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Carmina"
+     ],
+     "corrispondenza": "autore: «Claudianus, Claudius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1714/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1714",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1717",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1717",
+   "datazione": "12. Jh. ; 12.-13. Jh.",
+   "secolo": [
+    12,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Arator ; Statius, Publius Papinius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1717/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1717",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-reg-lat-1500",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Reg. lat. 1500",
+   "datazione": "sec. XIV ex",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Tragoediae (Seneca, Lucius Annaeus, 5/4 a.C.-65 d.C.). Gruppi, scelte",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tragedie"
+     ],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus, 5/4 a.C.-65 d.C., Trevet, Nicolaus, O.P., c. 1258- c. 1334»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Reg.lat.1500/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Reg.lat.1500",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-reg-lat-1512",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Reg. lat. 1512",
+   "datazione": "sec. XIV med",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Epitoma rei militaris",
+   "autori": [
+    {
+     "id": "vegezio",
+     "autore": "Vegezio",
+     "latino": "Vegetius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epitoma rei militaris"
+     ],
+     "corrispondenza": "autore: «Vegetius Renatus, Flavius, c. 400, Aristoteles, 384-322 a.C. Opere spurie e dubbie»"
+    },
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Vegetius Renatus, Flavius, c. 400, Aristoteles, 384-322 a.C. Opere spurie e dubbie»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Reg.lat.1512/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Reg.lat.1512",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-reg-lat-1701",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Reg. lat. 1701",
+   "datazione": "sec. XI",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": null,
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Horatius Flaccus, Quintus, 65-8 a.C.,…»"
+    },
+    {
+     "id": "persio",
+     "autore": "Persio",
+     "latino": "Persius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…Flaccus, Quintus, 65-8 a.C., Persius Flaccus, Aulus, 34-62, Sveton…»"
+    },
+    {
+     "id": "svetonio",
+     "autore": "Svetonio",
+     "latino": "Suetonius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…ersius Flaccus, Aulus, 34-62, Svetonius Tranquillus, Caius, sec. I-II…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Reg.lat.1701/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Reg.lat.1701",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-reg-lat-1705",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Reg. lat. 1705",
+   "datazione": "sec XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In Vergilii carmina commentaria (Servius, grammatico, sec. IV-V)",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «In Vergilii carmina commentaria (Servius, grammatico, sec. IV-V)»"
+    },
+    {
+     "id": "servio",
+     "autore": "Servio",
+     "latino": "Servius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Servius, grammatico, sec. IV-V»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Reg.lat.1705/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Reg.lat.1705",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-308",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 308",
+   "datazione": "sec. XV ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ars grammatica (Diomedes, sec. IV), Ars de orthographia (Agroecius Senonensis, vesc. di Sens, sec. V), Ars grammatica (Alcuinus Turonensis, 732-804), De compendiosa doctrina (Nonius Marcellus, sec. IV)",
+   "autori": [
+    {
+     "id": "nonio",
+     "autore": "Nonio Marcello",
+     "latino": "Nonius Marcellus",
+     "categoria": "classico-latino",
+     "opere": [
+      "De compendiosa doctrina"
+     ],
+     "corrispondenza": "autore: «…Alcuinus Turonensis, 732-804, Nonius Marcellus, sec. IV»"
+    },
+    {
+     "id": "alcuino",
+     "autore": "Alcuino",
+     "latino": "Alcuinus",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «…ensis, vesc. di Sens, sec. V, Alcuinus Turonensis, 732-804, Nonius M…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.308/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.308",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-328",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 328",
+   "datazione": "1481",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "M. Tullii Ciceronis Topica cum commentariis Severini Boetii",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius, 106-43 a.C.…»"
+    },
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…lius Grammaticus, c. sec. V - Boethius, Anicius Manlius Torquatus Se…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.328/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.328",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-329",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 329",
+   "datazione": "sec. XV ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De nuptiis Philologiae et Mercurii (Martianus Capella, sec. IV-V)",
+   "autori": [
+    {
+     "id": "marziano-capella",
+     "autore": "Marziano Capella",
+     "latino": "Martianus Capella",
+     "categoria": "classico-latino",
+     "opere": [
+      "De nuptiis Philologiae et Mercurii"
+     ],
+     "corrispondenza": "autore: «Martianus Capella, sec. IV-V»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.329/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.329",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-349",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 349",
+   "datazione": "1 novembre 1480",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Homeri Ilias per Laurentium Valla in linguam latinam translata",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "autore: «Homerus, sec. VIII a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.349/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.349",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-350",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 350",
+   "datazione": "sec. XV ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Opere (Vergilius Maro, Publius, 70-19 a.C.)",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Vergilius Maro, Publius, 70-19 a.C., Ov…»"
+    },
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…us Maro, Publius, 70-19 a.C., Ovidius Naso, Publius, 43 a.C.-17/18…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.350/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.350",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-355",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 355",
+   "datazione": "sec. XIV in",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Tragoediae (Seneca, Lucius Annaeus, 5/4 a.C.-65 d.C.). Gruppi, scelte",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tragedie"
+     ],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus, 5/4 a.C.-65 d.C., Trevet, Nicolaus, O.P., c. 1258- c. 1334»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.355/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.355",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-356",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 356",
+   "datazione": "sec. XIV ex",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Tragoediae (Seneca, Lucius Annaeus, 5/4 a.C.-65 d.C.). Gruppi, scelte",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tragedie"
+     ],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus, 5/4 a.C.-65 d.C., Trevet, Nicolaus, O.P., c. 1258- c. 1334»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.356/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.356",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-410",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 410",
+   "datazione": "sec. XV med",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Cyropaedia",
+   "autori": [
+    {
+     "id": "senofonte",
+     "autore": "Senofonte",
+     "latino": "Xenophon",
+     "categoria": "classico-greco",
+     "opere": [
+      "Ciropedia"
+     ],
+     "corrispondenza": "autore: «Xenophon, 427/26-c. 353 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.410/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.410",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-423",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 423",
+   "datazione": "sec. XV ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ab Urbe condita (Livius, Titus, 59 a.C.-17 d.C.)",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "autore: «Livius, Titus, 59 a.C.-17 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.423/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.423",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-424",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 424",
+   "datazione": "sec. XV ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ab Urbe condita (Livius, Titus, 59 a.C.-17 d.C.)",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "autore: «Livius, Titus, 59 a.C.-17 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.424/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.424",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-425",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 425",
+   "datazione": "sec. XV ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ab Urbe condita (Livius, Titus, 59 a.C.-17 d.C.)",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "autore: «Livius, Titus, 59 a.C.-17 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.425/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.425",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-426",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 426",
+   "datazione": "sec. XV med",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ab Urbe condita (Livius, Titus, 59 a.C.-17 d.C.). 31-40",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "autore: «Livius, Titus, 59 a.C.-17 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.426/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.426",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-427",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 427",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Historiae Alexandri Magni",
+   "autori": [
+    {
+     "id": "curzio-rufo",
+     "autore": "Curzio Rufo",
+     "latino": "Curtius Rufus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Historiae Alexandri Magni"
+     ],
+     "corrispondenza": "autore: «Curtius Rufus, Quintus, f. 41»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.427/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.427",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },
