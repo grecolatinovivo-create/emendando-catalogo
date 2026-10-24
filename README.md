@@ -12,7 +12,9 @@ Ogni voce indica biblioteca, città, segnatura, datazione, contenuto, autori e o
 - `data/bodleian.json`: stato della scansione dei manifesti della Bodleian (metadati dei codici latini già letti).
 - `data/laurenziana.json`: stato della raccolta della Biblioteca Medicea Laurenziana (metadati compatti dei codici, cursore della raccolta in corso).
 - `data/heidelberg-indici.json`: indici dei contenuti delle miscellanee di Heidelberg (titoli delle sezioni dei manifesti IIIF).
-- `scripts/`: raccolta (`raccogli.mjs`), richieste di rete (`rete.mjs`), riconoscimento degli autori (`riconosci.mjs`), fonti (`fonti/`).
+- `docs/BIBLIOTECHE.md`: registro delle biblioteche (agganciate, da agganciare, non raggiungibili). La tabella delle biblioteche agganciate si rigenera a ogni raccolta; il resto si scrive a mano.
+- `data/raccolte.json`: data ed esito dell'ultima raccolta di ogni fonte (per il registro).
+- `scripts/`: raccolta (`raccogli.mjs`), registro delle biblioteche (`registro.mjs`), richieste di rete (`rete.mjs`), riconoscimento degli autori (`riconosci.mjs`), fonti (`fonti/`).
 
 ## Fonti
 

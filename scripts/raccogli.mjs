@@ -17,6 +17,7 @@ import { scansionaBodleian, recordBodleian } from "./fonti/bodleian.mjs";
 import { raccogliGallica } from "./fonti/gallica.mjs";
 import { scansionaLaurenziana, recordLaurenziana } from "./fonti/laurenziana.mjs";
 import { leggiIndiciHeidelberg, conIndici } from "./fonti/heidelberg-indici.mjs";
+import { scriviRegistro, registraEsiti } from "./registro.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
 const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,bodleian,gallica,laurenziana,vaticana").split(",");
@@ -88,7 +89,7 @@ const naturale = (a, b) => String(a).localeCompare(String(b), "it", { numeric: t
 async function main() {
   const AUTORI = caricaAutori();
   let prima = { manoscritti: [] }; try { prima = JSON.parse(fs.readFileSync(OUT, "utf8")); } catch (e) {}
-  const perFonte = {}, esito = {};
+  const perFonte = {}, esito = {}, dettagli = {};
   // minuti per una fonte: il suo limite, ridotto a quanto resta del tempo complessivo (6 minuti restano per costruire e salvare)
   const tempo = cap => {
     if (!arg["minuti-totali"]) return cap;
@@ -100,6 +101,8 @@ async function main() {
   const lavori = {
     heidelberg: async () => {
       const rs = await raccogliHeidelberg(oai());
+      // per il registro: codici che la scheda OAI da sola non fa riconoscere (candidati alla lettura dell'indice)
+      dettagli.heidelberg = { candidati: rs.filter(r => !riconosci(campiDi(r), AUTORI).length).length };
       let minuti = 0; try { minuti = arg["solo-costruisci"] ? 0 : tempo(+(arg["indici-minuti"] ?? 20)); } catch (e) {}
       if (!arg["solo-costruisci"] && minuti > 0) {
         try { await leggiIndiciHeidelberg(rs, r => riconosci(campiDi(r), AUTORI).length > 0, { minuti }); }
@@ -138,6 +141,9 @@ async function main() {
   log(`riconosciuti grazie all'indice dei contenuti: ${daIndice}`);
   const dati = { aggiornato: new Date().toISOString(), fonti: Object.fromEntries(Object.keys(lavori).map(f => [f, { nome: NOMI_FONTI[f], codici: conteggio[f] || 0, esito: esito[f] }])),
     totale: manoscritti.length, manoscritti };
+  // registro delle biblioteche (docs/BIBLIOTECHE.md): esiti delle raccolte vere e tabella delle fonti agganciate
+  if (!arg["solo-costruisci"]) registraEsiti(Object.fromEntries(Object.keys(lavori).map(f => [f, esito[f]])));
+  if (scriviRegistro({ fonti: Object.keys(lavori), conteggio, dettagli })) log("registro delle biblioteche aggiornato");
   // se il contenuto non cambia, la data resta quella di prima (niente commit settimanali vuoti)
   const senzaData = d => JSON.stringify({ ...d, aggiornato: null, fonti: Object.fromEntries(Object.entries(d.fonti || {}).map(([k, v]) => [k, { ...v, esito: null }])) });
   if (prima.manoscritti.length && senzaData(prima) === senzaData(dati)) { log("catalogo invariato:", manoscritti.length, "codici"); return; }
