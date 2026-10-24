@@ -1,9 +1,9 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-24T13:01:36.942Z",
+ "aggiornato": "2026-10-24T13:16:16.909Z",
  "totale": 56874,
  "con_autori": 8692,
- "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»); il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
+ "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
   "id",
   "segnatura",
@@ -14,25 +14,30 @@
   "autori",
   "titolo",
   "opere",
-  "truculentus"
+  "truculentus",
+  "lingua_dedotta"
  ],
  "hash": "fnv1a-32",
  "lingue": {
-  "?": {
-   "nome": "lingua non indicata",
-   "codici": 18141
-  },
   "la": {
    "nome": "latino",
-   "codici": 15353
+   "codici": 16149
   },
   "de": {
    "nome": "tedesco",
-   "codici": 14857
+   "codici": 15151
+  },
+  "?": {
+   "nome": "lingua non indicata",
+   "codici": 14452
   },
   "grc": {
    "nome": "greco",
-   "codici": 4141
+   "codici": 4212
+  },
+  "nl": {
+   "nome": "nederlandese",
+   "codici": 2421
   },
   "cop": {
    "nome": "copto",
@@ -40,7 +45,11 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 1326
+   "codici": 1328
+  },
+  "ar": {
+   "nome": "arabo",
+   "codici": 795
   },
   "xx": {
    "nome": "altre lingue",
@@ -48,19 +57,11 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 702
+   "codici": 710
   },
   "it": {
    "nome": "italiano",
-   "codici": 666
-  },
-  "ar": {
-   "nome": "arabo",
-   "codici": 625
-  },
-  "nl": {
-   "nome": "nederlandese",
-   "codici": 262
+   "codici": 673
   },
   "zh": {
    "nome": "cinese",
@@ -70,21 +71,25 @@
    "nome": "inglese",
    "codici": 178
   },
+  "bo": {
+   "nome": "tibetano",
+   "codici": 119
+  },
   "tr": {
    "nome": "turco",
-   "codici": 91
+   "codici": 100
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 80
-  },
-  "ja": {
-   "nome": "giapponese",
-   "codici": 72
+   "codici": 88
   },
   "fa": {
    "nome": "persiano",
-   "codici": 68
+   "codici": 77
+  },
+  "ja": {
+   "nome": "giapponese",
+   "codici": 73
   },
   "ru": {
    "nome": "russo",
@@ -98,21 +103,29 @@
    "nome": "sanscrito",
    "codici": 42
   },
+  "ms": {
+   "nome": "malese",
+   "codici": 42
+  },
   "gez": {
    "nome": "etiopico",
-   "codici": 30
-  },
-  "bo": {
-   "nome": "tibetano",
    "codici": 30
   },
   "ca": {
    "nome": "catalano",
    "codici": 22
   },
+  "jv": {
+   "nome": "giavanese",
+   "codici": 21
+  },
   "sv": {
    "nome": "svedese",
    "codici": 15
+  },
+  "syr": {
+   "nome": "siriaco",
+   "codici": 12
   },
   "cs": {
    "nome": "ceco",
@@ -122,17 +135,13 @@
    "nome": "portoghese",
    "codici": 12
   },
-  "syr": {
-   "nome": "siriaco",
-   "codici": 11
-  },
   "hy": {
    "nome": "armeno",
    "codici": 11
   },
-  "ms": {
-   "nome": "malese",
-   "codici": 9
+  "sla": {
+   "nome": "lingue slave (alfabeto cirillico)",
+   "codici": 11
   },
   "pl": {
    "nome": "polacco",
@@ -160,10 +169,6 @@
   },
   "hu": {
    "nome": "ungherese",
-   "codici": 2
-  },
-  "jv": {
-   "nome": "giavanese",
    "codici": 2
   },
   "cy": {
@@ -1540,12 +1545,12 @@
    "codici": 7781,
    "con_autori": 320,
    "lingue": {
-    "de": 1446,
+    "de": 1472,
     "he": 49,
-    "la": 1311,
+    "la": 1313,
     "ar": 308,
     "fr": 18,
-    "?": 100,
+    "?": 72,
     "xx": 153,
     "grc": 3359,
     "cop": 1368,
@@ -1610,14 +1615,14 @@
    "codici": 28785,
    "con_autori": 2214,
    "lingue": {
-    "?": 5944,
+    "?": 5804,
     "it": 529,
-    "de": 11283,
-    "la": 8471,
-    "fr": 957,
+    "de": 11319,
+    "la": 8472,
+    "fr": 958,
     "xx": 421,
     "en": 136,
-    "he": 539,
+    "he": 540,
     "sv": 7,
     "es": 74,
     "nl": 32,
@@ -1637,15 +1642,16 @@
     "hu": 2,
     "pl": 5,
     "is": 3,
-    "ja": 66,
+    "ja": 67,
     "jv": 2,
     "ms": 9,
     "sa": 37,
     "cu": 10,
     "cs": 11,
     "ru": 56,
-    "bo": 30,
-    "da": 1
+    "bo": 119,
+    "da": 1,
+    "sla": 11
    },
    "esito": "ok",
    "prefissi": [
@@ -1662,16 +1668,16 @@
    "codici": 3296,
    "con_autori": 269,
    "lingue": {
-    "la": 710,
-    "de": 1442,
+    "la": 714,
+    "de": 1597,
     "en": 13,
     "fr": 97,
     "xx": 45,
     "he": 7,
     "grc": 22,
     "nl": 34,
-    "it": 93,
-    "?": 894,
+    "it": 94,
+    "?": 734,
     "sv": 8,
     "cu": 47,
     "oc": 1,
@@ -1703,10 +1709,10 @@
     "en": 15,
     "de": 3,
     "it": 2,
-    "?": 5,
+    "?": 2,
     "xx": 1,
     "nl": 1,
-    "grc": 2
+    "grc": 5
    },
    "esito": "ok",
    "prefissi": [
@@ -1738,9 +1744,11 @@
    "codici": 4353,
    "con_autori": 2206,
    "lingue": {
-    "?": 4343,
+    "?": 3614,
+    "la": 725,
     "grc": 3,
-    "la": 4,
+    "es": 3,
+    "it": 5,
     "ar": 3
    },
    "esito": "ok",
@@ -1757,13 +1765,21 @@
    "codici": 6226,
    "con_autori": 751,
    "lingue": {
-    "?": 5415,
-    "la": 592,
-    "grc": 21,
-    "he": 1,
-    "nl": 179,
-    "fr": 11,
-    "de": 8,
+    "?": 2889,
+    "la": 634,
+    "ar": 170,
+    "nl": 2337,
+    "grc": 89,
+    "fr": 12,
+    "de": 10,
+    "es": 4,
+    "jv": 19,
+    "it": 1,
+    "fa": 9,
+    "ms": 33,
+    "tr": 9,
+    "syr": 1,
+    "he": 8,
     "en": 1
    },
    "esito": "ok",
@@ -1780,10 +1796,12 @@
    "codici": 1531,
    "con_autori": 141,
    "lingue": {
-    "la": 70,
-    "?": 1437,
+    "la": 96,
+    "?": 1334,
     "grc": 23,
-    "de": 1
+    "de": 76,
+    "es": 1,
+    "nl": 1
    },
    "esito": "ok",
    "prefissi": [

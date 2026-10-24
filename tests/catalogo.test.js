@@ -10,7 +10,7 @@ import { estraiGallica, segnaturaGallica } from "../scripts/fonti/gallica.mjs";
 import { metadatiBodleian, dividiSegnatura } from "../scripts/fonti/bodleian.mjs";
 import { titoliSezioni, conIndici } from "../scripts/fonti/heidelberg-indici.mjs";
 import { compattaLaurenziana, recordLaurenziana, intervalloAnni, segnaturaLaurenziana } from "../scripts/fonti/laurenziana.mjs";
-import { lingueDa, lingueDaTesto, secoli } from "../scripts/lingue.mjs";
+import { lingueDa, lingueDaTesto, deduciLingue, lingueDaTitolo, secoli } from "../scripts/lingue.mjs";
 import { scriviCatalogo, catalogoPrecedente, fnv1a, pezzoDi, CAMPI } from "../scripts/costruisci.mjs";
 import os from "node:os";
 import path from "node:path";
@@ -76,6 +76,14 @@ test("lingue e secoli", () => {
   assert.deepEqual(lingueDa(["x-unknown"]), []); assert.deepEqual(lingueDa(["Middle English"]), ["en"]); assert.deepEqual(lingueDa(["ger"]), ["de"]);
   assert.deepEqual(lingueDaTesto("Vat. gr. 1", ""), ["grc"]); assert.deepEqual(lingueDaTesto("Clm 305", ""), ["la"]); assert.deepEqual(lingueDaTesto("Cod. Pal. germ. 848", ""), ["de"]);
   assert.deepEqual(lingueDaTesto("Grec 2934", ""), ["grc"]); assert.deepEqual(lingueDaTesto("BPL 100", "Composite manuscript, four parts (Latin)"), ["la"]); assert.deepEqual(lingueDaTesto("Plut. 32.9", "Sophocles"), []);
+  // lingua dedotta: fondo e segnatura, poi alfabeto e parole del titolo; incerta resta vuota
+  for (const [seg, t, attese] of [["Cgm 51", "", ["de"]], ["Cod.graec. 12", "", ["grc"]], ["Cod.hebr. 3", "", ["he"]], ["Cod.jap. 2", "", ["ja"]], ["Cod.sin. 4", "", ["zh"]],
+    ["Vat. ar. 12", "", ["ar"]], ["Vat. copt. 1", "", ["cop"]], ["Chinois 9", "", ["zh"]], ["VGQ 7", "", ["grc"]], ["Plut. 40.1", "Dante, La divina commedia con il commento di Iacopo della Lana", ["it"]],
+    ["Or. 3", "Ὁμήρου Ἰλιάς", ["grc"]], ["Or. 297", "كتاب المختصر", ["ar"]], ["Plut. 39.1", "P. Virgilii Maronis Bucolicorum pars, Georgicorum libri IV et Aeneidos libri XII", ["la"]],
+    ["X", "De rerum natura / Lucretius, and other text(s)", []], ["Cod. Guelf. 1 Aug.", "Breviarium", []]]) assert.deepEqual(deduciLingue(seg, t), attese, seg + " " + t);
+  // titolo latino di catalogo per un autore greco (schede del Bandini): incerta
+  assert.deepEqual(deduciLingue("Plut. 32.9", "Sophoclis tragoediae et alia", [{ categoria: "classico-greco" }]), []);
+  assert.deepEqual(lingueDaTitolo("Gebete und Andachten von der Passion des Herrn"), ["de"]);
   for (const [d, a] of [["10.-11. Jh.", [10, 11]], ["sec. XI?", [11, 11]], ["1463", [15, 15]], ["between about 825 and 849", [9, 9]], ["0801-0900", [9, 9]], ["XIe siècle", [11, 11]],
     ["s. XII-XIII", [12, 13]], ["9th-10th century", [9, 10]], ["1401-1500", [15, 15]], ["[ca. 1200]", [12, 12]]]) assert.deepEqual(secoli(d), a, d);
   assert.equal(secoli(""), null); assert.equal(secoli("  Italien"), null);
@@ -181,10 +189,10 @@ test("Vaticana: metadati dall'inizio del manifesto e segnature leggibili", () =>
   assert.equal(segnaturaLeggibile("Vat.lat.3870"), "Vat. lat. 3870");
   const r = recordVaticana({ voci: { "Vat.lat.3870": { a: ["Plautus, Titus Maccius, m. 184 a.C."], t: ["Comoediae"], d: "sec. XI?" } } })[0];
   assert.equal(r.id, "bav-vat-lat-3870"); assert.equal(r.manifest, "https://digi.vatlib.it/iiif/MSS_Vat.lat.3870/manifest.json"); assert.equal(r.segnatura, "Vat. lat. 3870");
-  assert.deepEqual(r.lingue, ["la"]);
+  assert.deepEqual(voce(r, A).lingue, ["la"]); assert.equal(voce(r, A).lingua_dedotta, true);
   // anche i codici senza autore né titolo, e i fondi greci
   const [g] = recordVaticana({ voci: { "Vat.gr.1": { a: [], t: [], d: null } } });
-  assert.equal(g.id, "bav-vat-gr-1"); assert.equal(g.segnatura, "Vat. gr. 1"); assert.deepEqual(g.lingue, ["grc"]);
+  assert.equal(g.id, "bav-vat-gr-1"); assert.equal(g.segnatura, "Vat. gr. 1"); assert.deepEqual(voce(g, A).lingue, ["grc"]);
 });
 
 test("voci del catalogo: tutti i codici, autori riconosciuti come informazione in più, i tre del Truculentus", () => {

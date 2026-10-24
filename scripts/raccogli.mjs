@@ -14,7 +14,7 @@
 import fs from "node:fs";
 import { log } from "./rete.mjs";
 import { caricaAutori, riconosci } from "./riconosci.mjs";
-import { lingueDaTesto, secoli } from "./lingue.mjs";
+import { deduciLingue, secoli } from "./lingue.mjs";
 import { raccogliHeidelberg, raccogliEcodices, raccogliBsb, raccogliBerlino } from "./fonti/oai.mjs";
 import { scansiona, recordVaticana } from "./fonti/vaticana.mjs";
 import { scansionaBodleian, recordBodleian } from "./fonti/bodleian.mjs";
@@ -57,14 +57,16 @@ export function campiDi(r) {
 }
 
 // record compatto della fonte -> voce del catalogo (tutti i manoscritti; null solo se mancano identificativo o manifesto).
-// lingue: quelle della fonte, altrimenti dalla segnatura o dal titolo; [] se non si sa. secolo: [primo, ultimo] dalla datazione.
+// lingue: quelle della fonte, altrimenti dedotte (scripts/lingue.mjs, deduciLingue); [] se non si sa. secolo: [primo, ultimo] dalla datazione.
 export function voce(r, AUTORI, sigle = new Map(TRUCULENTUS.map(t => [t.manifest, t.sigla]))) {
   if (!r || !r.id || !r.manifest) return null;
   const autori = riconosci(campiDi(r), AUTORI);
   const sigla = sigle.get(r.manifest) || null;
-  const lingue = r.lingue && r.lingue.length ? r.lingue : lingueDaTesto(r.segnatura, r.titolo);
+  // lingue dichiarate dalla fonte; se mancano, dedotte da fondo, segnatura o titolo (lingua_dedotta: true); se incerte, nessuna
+  const dichiarate = r.lingue && r.lingue.length ? r.lingue : null;
+  const lingue = dichiarate || deduciLingue(r.segnatura, r.titolo, autori);
   const v = { id: r.id, fonte: r.fonte, biblioteca: r.biblioteca || null, citta: r.citta || null, segnatura: r.segnatura || r.id, datazione: r.datazione || null,
-    secolo: secoli(r.datazione), lingue, titolo: (r.titolo || "").slice(0, 400) || null, autori, manifest: r.manifest, pagina: r.pagina || null, licenza: r.licenza || null, immagini: r.immagini ?? null };
+    secolo: secoli(r.datazione), lingue, lingua_dedotta: !dichiarate && lingue.length > 0, titolo: (r.titolo || "").slice(0, 400) || null, autori, manifest: r.manifest, pagina: r.pagina || null, licenza: r.licenza || null, immagini: r.immagini ?? null };
   if (r.anteprima) v.anteprima = r.anteprima;
   if (sigla) v.truculentus = sigla;
   return v;
@@ -156,7 +158,11 @@ async function main() {
   const t0 = Date.now();
   for (const f of Object.keys(lavori)) {
     if (perFonte[f]) { for (const r of perFonte[f]) { const v = voce(r, AUTORI, sigle); if (v) voci.set(v.id, v); } }
-    else for (const v of prima.filter(x => x.fonte === f)) voci.set(v.id, v);
+    else for (const v of prima.filter(x => x.fonte === f)) {
+      // voci precedenti senza lingua: si prova la deduzione
+      if (!v.lingue.length) { v.lingue = deduciLingue(v.segnatura, v.titolo, v.autori); v.lingua_dedotta = v.lingue.length > 0; }
+      voci.set(v.id, v);
+    }
   }
   for (const t of TRUCULENTUS) if (![...voci.values()].some(v => v.manifest === t.manifest)) voci.set(t.id, voce(t, AUTORI, sigle));
   log(`riconoscimento: ${voci.size} codici in ${Math.round((Date.now() - t0) / 1000)} secondi`);

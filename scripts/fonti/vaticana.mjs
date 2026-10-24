@@ -120,6 +120,6 @@ export function recordVaticana(st = leggiStato()) {
   return Object.entries(st.voci).map(([seg, v]) => ({
     fonte: "vaticana", id: "bav-" + seg.toLowerCase().replace(/[^a-z0-9]+/g, "-"), citta: "Città del Vaticano", biblioteca: "Biblioteca Apostolica Vaticana",
     segnatura: segnaturaLeggibile(seg), datazione: v.d || null, titolo: (v.t || []).join(" ; ") || null, autori_fonte: v.a || [],
-    lingue: v.g ? lingueDa(v.g) : lingueFondo(seg),
+    lingue: v.g ? lingueDa(v.g) : [],   // senza lingua nel manifesto, la deduce la costruzione dal fondo (lingueFondo, deduciLingue)
     manifest: manifestoDi(seg), pagina: `https://digi.vatlib.it/view/MSS_${seg}`, licenza: "© Biblioteca Apostolica Vaticana" }));
 }

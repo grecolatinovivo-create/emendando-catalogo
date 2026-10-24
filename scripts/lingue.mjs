@@ -7,7 +7,7 @@ export const NOMI_LINGUE = {
   la: "latino", grc: "greco", it: "italiano", fr: "francese", de: "tedesco", en: "inglese", es: "spagnolo", pt: "portoghese", ca: "catalano", oc: "occitano",
   nl: "nederlandese", he: "ebraico", ar: "arabo", syr: "siriaco", cop: "copto", hy: "armeno", ka: "georgiano", gez: "etiopico", fa: "persiano", tr: "turco",
   cu: "slavo ecclesiastico", ru: "russo", cs: "ceco", pl: "polacco", hu: "ungherese", sv: "svedese", da: "danese", is: "islandese e norreno", ga: "irlandese", cy: "gallese",
-  zh: "cinese", ja: "giapponese", ko: "coreano", sa: "sanscrito", bo: "tibetano", ms: "malese", jv: "giavanese", xx: "altre lingue",
+  zh: "cinese", ja: "giapponese", ko: "coreano", sa: "sanscrito", bo: "tibetano", ms: "malese", jv: "giavanese", sla: "lingue slave (alfabeto cirillico)", xx: "altre lingue",
 };
 
 // codici ISO 639-1/2/3 e nomi (latino, italiano, inglese, tedesco, francese) -> codice breve
@@ -56,26 +56,87 @@ export function lingueDa(valori) {
   return out;
 }
 
-// segnatura e titolo -> codici (solo se la fonte non dà la lingua)
-const DA_SEGNATURA = [
-  [/\b(lat|latin|latini?|clm)\b|\bnouvelle acquisition latine\b|\bnal\b|\bgud\.? lat\b|\blat\.\s/i, "la"],
-  [/\b(gr|graec|graecus|grec|greek|gr\.)\b|\bcod\.?\s*graec\b|\bsupplément grec\b|\bcoislin\b/i, "grc"],
-  [/\b(germ|cgm|allemand|deutsch)\b/i, "de"], [/\b(ital|italien)\b/i, "it"], [/\b(gall|français|francais|nouvelle acquisition française|naf)\b/i, "fr"],
-  [/\b(hebr|ebr|hébreu|hebreu)\b/i, "he"], [/\b(arab|arabe|ar)\b(?![.-]?\s*\d+\s*(r|v)\b)/i, "ar"], [/\b(syr|sir|syriaque)\b/i, "syr"], [/\b(copt|copte)\b/i, "cop"],
-  [/\b(arm|arménien)\b/i, "hy"], [/\b(pers|persan)\b/i, "fa"], [/\b(turc|türk|turk)\b/i, "tr"], [/\b(slav|slave)\b/i, "cu"], [/\b(hisp|espagnol)\b/i, "es"], [/\b(et|éthiopien|aeth)\b(?=\.?\s*\d)/i, "gez"],
-];
-const DA_TITOLO = [
-  [/\(latin\b|\bin latin\b|\blateinisch|\blatine\b|\blatinus\b/i, "la"], [/\(greek\b|\bin greek\b|\bgriechisch|\bgraece\b|\bgraecus\b|[Ͱ-Ͽἀ-῿]{4,}/, "grc"],
-  [/\(hebrew\b|\bhebräisch|\bhebraice\b/i, "he"], [/\(arabic\b|\barabisch\b|\barabice\b/i, "ar"], [/\(syriac\b|\bsyrisch\b|\bsyriace\b/i, "syr"],
-  [/\(middle english\b|\(old english\b|\(english\b/i, "en"], [/\(french\b|\(anglo-norman\b|\(old french\b/i, "fr"], [/\(dutch\b|\(middle dutch\b|\bmittelniederländisch/i, "nl"],
-  [/\(german\b|\bmittelhochdeutsch|\bfrühneuhochdeutsch/i, "de"], [/\(italian\b|\bvolgare\b|\bin volgare\b/i, "it"],
-];
-export function lingueDaTesto(segnatura, titolo) {
+// ------------------------------------------------------------------ lingua dedotta (quando la fonte non la dà)
+// 1) dal fondo o dalla segnatura (Clm, Cgm, Cod.graec., Vat. gr., Cod. Pal. germ., Grec 2934, Voss. Lat., BPG ...);
+// 2) dal titolo: segni espliciti («(Latin)», «graece»), poi l'alfabeto (greco, ebraico, arabo, siriaco, cirillico, cinese, giapponese,
+//    coreano, armeno, georgiano, etiopico), poi per l'alfabeto latino parole frequenti, solo se il segnale è netto.
+// Ciò che resta incerto resta senza lingua («non indicata»).
+const FONDI = {
+  la: ["lat", "latin", "latine", "latini", "latina", "latino", "clm", "vlf", "vlq", "vlo", "vlm"],   // BPL di Leida = «Bibliotheca Publica Latina», non la lingua
+  grc: ["gr", "graec", "graeca", "graecus", "grec", "grecque", "greek", "griech", "bpg", "vgf", "vgq", "vgo", "vgm", "coislin", "barocci", "barocc"],
+  de: ["germ", "cgm", "allemand", "deutsch"], fr: ["gall", "francais", "francaise", "naf"], it: ["ital", "italien", "italienne"],
+  es: ["hisp", "espagnol", "espagnole"], en: ["angl", "anglais", "engl"], nl: ["neerl", "neerlandais", "ltk", "bnm"], pt: ["portugais", "lusit"],
+  he: ["hebr", "ebr", "hebreu", "neofiti"], ar: ["arab", "arabe"], syr: ["syr", "sir", "syriaque", "syriac"], cop: ["copt", "copte"],
+  hy: ["arm", "armen", "armenien", "armenienne"], ka: ["georg", "georgien"], gez: ["aethiop", "ethiop", "ethiopien"], fa: ["pers", "persan"],
+  tr: ["turc", "turk"], cu: ["slav", "slave"], zh: ["sinica", "chin", "chinois"], ja: ["jap", "japon", "japonais"], ko: ["kor", "coreen"],
+  sa: ["sanscr", "sansk", "sanscrit", "skt"], bo: ["tibet", "tibetain"], ms: ["malay", "malais", "indon"],
+};
+const TOKEN_FONDO = new Map(Object.entries(FONDI).flatMap(([c, ts]) => ts.map(t => [t, c])));
+export function lingueDaSegnatura(seg) {
+  const toks = String(seg || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().split(/[^a-z]+/).filter(Boolean);
   const out = [];
-  for (const [re, c] of DA_SEGNATURA) if (re.test(segnatura || "") && !out.includes(c)) out.push(c);
-  if (!out.length) for (const [re, c] of DA_TITOLO) if (re.test(titolo || "") && !out.includes(c)) out.push(c);
-  return out;
+  toks.forEach((t, i) => {
+    let c = TOKEN_FONDO.get(t);
+    // abbreviazioni brevi solo dopo un fondo noto: «Vat. ar.», «Borg. et.», «Vat. et.»
+    // («sin» solo nei fondi della BSB: nei Plutei della Laurenziana è «sinistra»)
+    if (!c && i > 0 && /^(vat|borg|barb|reg|ross|ott|urb|pal|cod)$/.test(toks[i - 1])) c = { ar: "ar", et: "gez" }[t];
+    if (!c && i > 0 && toks[i - 1] === "cod" && t === "sin") c = "zh";
+    if (c && !out.includes(c)) out.push(c);
+  });
+  return out.length === 1 ? out : out.length > 1 && out.includes("la") && out.length === 2 && out.includes("grc") ? out : out.slice(0, 1);
 }
+
+const SEGNI = [
+  [/\bin arabic\b/i, "ar"], [/\bin hebrew\b/i, "he"], [/\bin syriac\b/i, "syr"], [/\bin persian\b/i, "fa"], [/\bin (?:ottoman )?turkish\b/i, "tr"], [/\bin malay\b/i, "ms"], [/\bin javanese\b/i, "jv"],
+  [/\(latin\b|\bin latin\b|\blateinisch|\blatine\b|\bin latino\b/i, "la"], [/\(greek\b|\bin greek\b|\bgriechisch|\bgraece\b/i, "grc"],
+  [/\(hebrew\b|\bhebräisch|\bhebraice\b/i, "he"], [/\(arabic\b|\barabisch\b|\barabice\b/i, "ar"], [/\(syriac\b|\bsyrisch\b|\bsyriace\b/i, "syr"],
+  [/\((?:middle |old )?english\b/i, "en"], [/\((?:old |middle )?french\b|\(anglo-norman\b/i, "fr"], [/\((?:middle )?dutch\b|\bmittelniederländisch/i, "nl"],
+  [/\((?:middle high )?german\b|\bmittelhochdeutsch|\bfrühneuhochdeutsch/i, "de"], [/\(italian\b|\bin volgare\b/i, "it"],
+];
+const ALFABETI = [
+  ["grc", /[Ͱ-Ͽἀ-῿]/g], ["he", /[֐-׿]/g], ["ar", /[؀-ۿݐ-ݿ]/g], ["syr", /[܀-ݏ]/g],
+  ["sla", /[Ѐ-ӿ]/g], ["ja", /[぀-ヿ]/g], ["zh", /[一-鿿]/g], ["ko", /[가-힯]/g], ["hy", /[԰-֏]/g],
+  ["ka", /[Ⴀ-ჿ]/g], ["gez", /[ሀ-፿]/g],
+];
+// parole frequenti; non contano le parole tipiche delle schede di catalogo («and other texts», «u.a.», «Sammelhandschrift»)
+const PAROLE = {
+  la: "et in ad cum est quod qui quae sive seu super ex per sancti sancta beati liber libri libellus epistola epistolae epistula epistulae sermo sermones vita opera ac ab non sunt eius secundum contra incipit explicit domini dei",
+  it: "il lo gli della delle dello degli dei che per con nel nella alla sono libro trattato storia lettera lettere opere vita del",
+  fr: "le les des du une sur dans est sont livre traite histoire lettres oeuvres vie roy roi",
+  de: "der die das und von mit zu im des dem den ein eine einer uber aus auf ist nicht buch",
+  es: "el los las del por con una libro historia vida cartas que",
+  nl: "het een van ende boec boek ofte",
+};
+// (niente inglese: è la lingua delle schede di catalogo di Leida e Oxford, non dei testi)
+const PAROLA = new Map(); for (const [c, s] of Object.entries(PAROLE)) for (const w of s.split(" ")) { if (!PAROLA.has(w)) PAROLA.set(w, []); PAROLA.get(w).push(c); }
+const SCHEDA = /,?\s*and other text\(s\)|\[?u\.\s?a\.\]?|\bsammelhandschrift\b|\bcomposite manuscript\b|\bfragment(?:e|s)?\b/gi;
+export function lingueDaTitolo(titolo) {
+  const t = String(titolo || "");
+  for (const [re, c] of SEGNI) if (re.test(t)) return [c];
+  // alfabeti non latini: almeno 3 lettere e più della metà delle lettere del titolo
+  const lettere = (t.match(/\p{L}/gu) || []).length;
+  for (const [c, re] of ALFABETI) { const n = (t.match(re) || []).length; if (n >= 3 && n > lettere / 2) return [c === "zh" && /[぀-ヿ]/.test(t) ? "ja" : c]; }
+  // alfabeto latino: almeno 2 parole della lingua, nessun'altra lingua con più della metà dei suoi segnali
+  const parole = t.replace(SCHEDA, " ").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().split(/[^a-z]+/).filter(Boolean);
+  const conti = {};
+  for (const w of parole) for (const c of PAROLA.get(w) || []) conti[c] = (conti[c] || 0) + 1;
+  const ord = Object.entries(conti).sort((a, b) => b[1] - a[1]);
+  if (ord.length && ord[0][1] >= 2 && (!ord[1] || ord[1][1] * 2 < ord[0][1])) return [ord[0][0]];
+  return [];
+}
+
+// lingue dedotte per un codice senza lingua dichiarata; autori: riconosciuti (se il titolo è un titolo latino di catalogo
+// per un autore greco, come nelle schede del Bandini, la lingua resta incerta)
+export function deduciLingue(segnatura, titolo, autori = []) {
+  const s = lingueDaSegnatura(segnatura); if (s.length) return s;
+  // manoscritti musicali (Mus.ms. della BSB): titoli di brani, le parole non dicono la lingua
+  if (/^Mus\b/i.test(String(segnatura || ""))) { const t = lingueDaTitolo(String(titolo || "").replace(/[A-Za-z]/g, "")); return t; }
+  const t = lingueDaTitolo(titolo);
+  if (t[0] === "la" && autori.length && autori.every(a => a.categoria === "classico-greco" || a.lingua === "grc")) return [];
+  return t;
+}
+// compatibilità
+export const lingueDaTesto = (segnatura, titolo) => deduciLingue(segnatura, titolo);
 
 // --------------------------------------------------------------- secoli
 const ROMANI = { i: 1, v: 5, x: 10, l: 50, c: 100 };
