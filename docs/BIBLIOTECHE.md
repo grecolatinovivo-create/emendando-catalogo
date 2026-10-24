@@ -16,7 +16,7 @@ Come leggere le colonne:
 - **Ultima raccolta**: com'è andata l'ultima volta.
 
 <!-- inizio automatico -->
-Codici nel catalogo, in tutto: **3025**.
+Codici nel catalogo, in tutto: **3419**.
 
 | Biblioteca | Città | Codici nel catalogo | Avanzamento della lettura | Come si aggiorna | Ultimo aggiornamento | Ultima raccolta |
 |---|---|---|---|---|---|---|
@@ -26,6 +26,7 @@ Codici nel catalogo, in tutto: **3025**.
 | Bodleian Libraries e college | Oxford | 41 | 588 schede lette su 3367 | ogni notte, da sola | 2026-10-24 | — |
 | Bibliothèque nationale de France (Gallica) | Parigi | 1376 | 12.015 schede lette (raccolta dal browser del 2026-10-24) | va rifatta a mano dal browser (ultima raccolta: 2026-10-24) | 2026-10-24 | — |
 | Biblioteca Medicea Laurenziana | Firenze | 909 | schede lette tutte (4266 codici) | ogni notte, da sola | 2026-10-24 | — |
+| Universiteitsbibliotheek Leiden (Western Medieval Manuscripts, con i Vossiani latini) | Leida | 394 | schede lette tutte (1151 su 1151) | ogni notte, da sola | 2026-10-24 | riuscita |
 | Biblioteca Apostolica Vaticana | Città del Vaticano | 62 | 299 schede viste; fondo in corso: Pal. lat. (dal n. 1536), tratto 4 di 15 | ogni 3 ore, da sola | 2026-10-24 | — |
 <!-- fine automatico -->
 
@@ -44,8 +45,7 @@ Significato della colonna «Stato»:
 
 | Biblioteca | Città | Stato | Note |
 |---|---|---|---|
-| Universiteitsbibliotheek Leiden (Vossiani latini) | Leida | in lavorazione | |
-| Staatsbibliothek zu Berlin | Berlino | da verificare | |
+| Staatsbibliothek zu Berlin | Berlino | in lavorazione | |
 | Herzog August Bibliothek | Wolfenbüttel | da verificare | |
 | Österreichische Nationalbibliothek (ÖNB) | Vienna | da verificare | |
 | Biblioteca Ambrosiana | Milano | da verificare | |

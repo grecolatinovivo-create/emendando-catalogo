@@ -201,3 +201,23 @@ test("Laurenziana: omonimi e opere moderne non contano", () => {
     assert.deepEqual(ids(ric(t)), [], t);
   assert.deepEqual(ids(ric("Synesius De somniis, Ficino interprete, et Prisciani Lydii varia")), []);
 });
+
+test("Leida: pagina dei risultati della collezione, segnature e voci", async () => {
+  const { leggiPagina, recordLeiden, segnaturaLeiden } = await import("../scripts/fonti/leiden.mjs");
+  const riga = (id, tit, seg, aut, pub) => `<tr class="islandora-solr-search-result clear-block odd bookcmodel"><td><a href="/view/item/${id}?solr_nav" title="${tit}"></a></td>
+    <td class="solr-fields islandora-inline-metadata"><dt>Titel</dt><dd class="solr-value fgs-label-s"><a href="/view/item/${id}">${tit}</a></dd>
+    <dt>Shelfmark</dt><dd class="solr-value mods-relateditem-otherformat-identifier-ms">${seg}</dd>
+    <dt>Creator/other</dt><dd class="solr-value mods-name-personal-namepart-ms">${aut}</dd>
+    <dt>Published</dt><dd class="solr-value mods-relateditem-otherformat-origininfo-publisher-ms">${pub}</dd></td></tr>`;
+  const html = `<div>(1 - 20 of 1,151)</div><table>${riga(4244100, "De rerum natura / Lucretius, VLQ 94", "VLQ 94", "Lucretius Carus, Titus., Vossius, Isaac", "France, 9th century")}
+    ${riga(4244200, "Composite manuscript, four parts (Latin), BPL 100", "BPL 100", "Alcuin, Amalarius, Wulfinus Boethius", "France, 9th century")}</table>`;
+  const p = leggiPagina(html);
+  assert.equal(p.totale, 1151);
+  assert.deepEqual(p.voci["4244100"], { s: "VLQ 94", t: "De rerum natura / Lucretius", a: "Lucretius Carus, Titus., Vossius, Isaac", d: "France, 9th century" });
+  assert.equal(segnaturaLeiden("VLF 30"), "Voss. Lat. F. 30"); assert.equal(segnaturaLeiden("BPL 16 B"), "BPL 16 B");
+  const [r1, r2] = recordLeiden({ voci: p.voci });
+  assert.equal(r1.manifest, "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:4244100/manifest");
+  assert.equal(r1.segnatura, "Voss. Lat. Q. 94");
+  assert.deepEqual(voce(r1, A).autori.map(a => a.id), ["lucrezio"]);
+  assert.equal(voce(r2, A), null);   // «Wulfinus Boethius» non è Boezio
+});

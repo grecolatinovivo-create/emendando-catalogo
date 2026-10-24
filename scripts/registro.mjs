@@ -18,6 +18,7 @@ export const BIBLIOTECHE = {
   bodleian: { biblioteca: "Bodleian Libraries e college", citta: "Oxford", come: "ogni notte, da sola" },
   gallica: { biblioteca: "Bibliothèque nationale de France (Gallica)", citta: "Parigi", come: "va rifatta a mano dal browser" },
   laurenziana: { biblioteca: "Biblioteca Medicea Laurenziana", citta: "Firenze", come: "ogni notte, da sola" },
+  leiden: { biblioteca: "Universiteitsbibliotheek Leiden (Western Medieval Manuscripts, con i Vossiani latini)", citta: "Leida", come: "ogni notte, da sola" },
   vaticana: { biblioteca: "Biblioteca Apostolica Vaticana", citta: "Città del Vaticano", come: "ogni 3 ore, da sola" },
 };
 
@@ -49,12 +50,21 @@ export const AVANZAMENTO = {
     if (s.cursore) return { testo: `in corso: collezione ${s.cursore.collezione}`, data: s.aggiornato };
     return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} codici)`, data: s.aggiornato };
   },
+  leiden: () => aRiprese("data/leiden.json", 20),
   vaticana: () => {
     const s = leggi("data/vaticana.json"); if (!s) return { testo: "non ancora cominciata" };
     const t = PERCORSO[s.passo] || PERCORSO[0];
     return { testo: `${num(s.visti)} schede viste; fondo in corso: ${segnaturaLeggibile(t[0] + ".").trim()} (dal n. ${s.prossimo ?? t[1]}), tratto ${(s.passo || 0) + 1} di ${PERCORSO.length}`, data: s.aggiornato };
   },
 };
+
+// fonti lette a pagine con stato in data/<fonte>.json: { totale, cursore (pagina), completato, voci }
+function aRiprese(file, perPagina) {
+  const s = leggi(file); if (!s) return { testo: "non ancora cominciata" };
+  const n = Object.keys(s.voci || {}).length;
+  if (s.cursore != null) return { testo: `in corso: ${num(Math.min(s.cursore * perPagina, s.totale || 0) || n)} schede lette su ${num(s.totale)}`, data: s.aggiornato };
+  return { testo: `schede lette tutte (${num(n)} su ${num(s.totale)})`, data: s.aggiornato };
+}
 
 function oai(fonte) {
   const c = leggi(path.join(CACHE, `stato-${fonte}.json`));

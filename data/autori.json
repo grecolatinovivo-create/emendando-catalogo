@@ -1333,7 +1333,8 @@
     "Lettres de Sénèque et de s. Paul",
     "Epistolae Senecae ad Paulum",
     "Epistolae Senecae et Pauli",
-    "Senecae et Pauli"
+    "Senecae et Pauli",
+    "Notae Senecae"
    ]
   },
   {
@@ -2116,6 +2117,9 @@
     "Anicius Manlius Severinus Boethius",
     "Severinus Boethius",
     "Manlius Severinus Boethius"
+   ],
+   "escludi": [
+    "Wulfinus Boethius"
    ],
    "opere": [
     {
