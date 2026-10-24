@@ -18,7 +18,7 @@ Come leggere le colonne:
 - **Ultima raccolta**: com'è andata l'ultima volta.
 
 <!-- inizio automatico -->
-Codici nel catalogo, in tutto: **59.333**, di cui **9458** con almeno un autore riconosciuto.
+Codici nel catalogo, in tutto: **69.614**, di cui **10.183** con almeno un autore riconosciuto.
 
 | Biblioteca | Città | Codici totali | Di cui con autori riconosciuti | Lingue | Avanzamento della lettura | Come si aggiorna | Ultimo aggiornamento | Ultima raccolta |
 |---|---|---|---|---|---|---|---|---|
@@ -36,6 +36,8 @@ Codici nel catalogo, in tutto: **59.333**, di cui **9458** con almeno un autore 
 | Württembergische Landesbibliothek (dati dal Handschriftenportal) | Stoccarda | 0 | 0 | — | codici digitalizzati letti tutti (3 su 786) | ogni notte, da sola | 2026-10-24 | riuscita |
 | Erzbischöfliche Diözesan- und Dombibliothek (dati dal Handschriftenportal) | Colonia | 362 | 107 | non indicata 324, latino 27, tedesco 10, altre 1 | codici digitalizzati letti tutti (363 su 363) | ogni notte, da sola | 2026-10-24 | riuscita |
 | Universitätsbibliothek Leipzig (dati dal Handschriftenportal) | Lipsia | 2677 | 542 | latino 2286, tedesco 428, greco 110, altre 162 | codici digitalizzati letti tutti (2677 su 2678) | ogni notte, da sola | 2026-10-24 | riuscita |
+| Yale University Library (Beinecke e altre biblioteche di Yale) | New Haven (Stati Uniti) | 2353 | 503 | latino 1603, arabo 328, inglese 318, altre 884 | prima lettura in corso: tutti i record, 390 pagine su circa 8012 (2353 manoscritti finora); mancano circa 6 giorni | ogni 3 ore finché la prima lettura non è finita, poi ogni 6 giorni | 2026-10-24 | — |
+| University of Pennsylvania Libraries (Kislak Center, Schoenberg, CAJS) | Filadelfia (Stati Uniti) | 7928 | 222 | sanscrito 3805, altre lingue 1609, latino 1064, altre 2270 | schede lette tutte (7928 manoscritti fino al 1800) | ogni notte, da sola | 2026-10-24 | — |
 | Biblioteca Apostolica Vaticana | Città del Vaticano | 851 | 214 | latino 847, francese 2, altre lingue 1, altre 1 | 851 codici letti su 31.121 digitalizzati; fondo in corso: Pal. lat.; restano circa 30.263 manifesti da leggere, cioè circa 5 giorni (un manifesto ogni 10 secondi, come chiede la biblioteca) | ogni 3 ore, da sola | 2026-10-24 | riuscita |
 <!-- fine automatico -->
 
