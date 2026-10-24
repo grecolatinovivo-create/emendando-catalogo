@@ -111,8 +111,8 @@ async function main() {
   const sc = f => !!arg["solo-costruisci"] || !FONTI.includes(f);
   const min = (f, m) => (sc(f) ? 0 : tempo(m));
   const oai = f => ({ limiteMinuti: min(f, +arg["oai-minuti"] || 0), soloCache: sc(f) });
-  // indici delle miscellanee di Heidelberg: solo per i codici latini o greci (o di lingua non indicata) che la scheda non fa riconoscere
-  const daIndice = r => !riconosci(campiDi(r), AUTORI).length && (!(r.lingue || []).length || r.lingue.some(l => l === "la" || l === "grc"));
+  // indici delle miscellanee di Heidelberg: solo per i codici latini (o di lingua non indicata) che la scheda non fa riconoscere; non per i papiri
+  const daIndice = r => !/Papyrussammlung/.test(r.biblioteca || "") && (!(r.lingue || []).length || r.lingue.includes("la")) && !riconosci(campiDi(r), AUTORI).length;
   const lavori = {
     heidelberg: async () => {
       const rs = await raccogliHeidelberg(oai("heidelberg"));

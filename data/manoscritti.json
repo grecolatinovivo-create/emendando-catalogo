@@ -1,11 +1,11 @@
 {
- "aggiornato": "2026-10-24T11:33:11.538Z",
+ "aggiornato": "2026-10-24T12:06:11.933Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
    "nome": "Heidelberg (digi.ub.uni-heidelberg.de)",
    "codici": 94,
-   "esito": "errore: nessuna raccolta completa in cache"
+   "esito": "ok"
   },
   "ecodices": {
    "nome": "e-codices",
@@ -19,8 +19,8 @@
   },
   "berlino": {
    "nome": "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
-   "codici": 108,
-   "esito": "errore: nessuna raccolta completa in cache"
+   "codici": 134,
+   "esito": "ok"
   },
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
@@ -39,7 +39,7 @@
   },
   "leiden": {
    "nome": "Universiteitsbibliotheek Leiden (digitalcollections.universiteitleiden.nl)",
-   "codici": 486,
+   "codici": 526,
    "esito": "ok"
   },
   "wolfenbuettel": {
@@ -53,7 +53,7 @@
    "esito": "ok"
   }
  },
- "totale": 5082,
+ "totale": 5148,
  "manoscritti": [
   {
    "id": "bsb-bsb00034122",
@@ -147684,19 +147684,90 @@
    "immagini": null
   },
   {
+   "id": "sbb-PPN82791573X",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Fragm. 79",
+   "datazione": "0800",
+   "secolo": [
+    8,
+    8
+   ],
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Institutiones grammaticae, l. VII et VIII",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "autore: «Priscianus»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN82791573X/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN82791573X",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN722148100",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Fragm. 83",
+   "datazione": "0900",
+   "secolo": [
+    9,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
+   "titolo": "De consolatione philosophiae",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Boethius, Anicius Manlius Severinus»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN722148100/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN722148100",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
    "id": "sbb-PPN1761243217",
    "fonte": "berlino",
    "biblioteca": "Staatsbibliothek zu Berlin",
    "citta": "Berlin",
    "segnatura": "Hdschr. 62",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Sallustius",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "sallustio",
      "autore": "Sallustio",
      "latino": "Sallustius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Sallustius Crispus, Gaius»"
     }
@@ -147704,9 +147775,109 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1761243217/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1761243217",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN1762596296",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Hdschr. 94",
+   "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "titolo": "Valerius Maximus: Dictorum factorumque memorabilium libri novem, frz.",
+   "autori": [
+    {
+     "id": "valerio-massimo",
+     "autore": "Valerio Massimo",
+     "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Facta et dicta memorabilia"
+     ],
+     "corrispondenza": "autore: «Valerius <Maximus>»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1762596296/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1762596296",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN169894960X",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Hdschr. 104",
+   "datazione": "1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "titolo": "In Platonis Cratylum Commentaria",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «In Platonis Cratylum Commentaria»"
+    },
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Proclus <Diadochus>»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN169894960X/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN169894960X",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN647405121",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Hdschr. 194",
+   "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "titolo": "De animalibus",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Historia animalium"
+     ],
+     "corrispondenza": "autore: «Aristoteles»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN647405121/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN647405121",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
   },
   {
    "id": "sbb-PPN880221534",
@@ -147715,13 +147886,20 @@
    "citta": "Berlin",
    "segnatura": "Hdschr. 301",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Laelius de amicitia - Paradoxa - De senectute",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "cicerone",
      "autore": "Cicerone",
      "latino": "Cicero",
+     "categoria": "classico-latino",
      "opere": [
       "Laelius de amicitia",
       "Cato maior de senectute"
@@ -147732,9 +147910,37 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN880221534/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN880221534",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN1697668666",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Hdschr. 404",
+   "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "de"
+   ],
+   "titolo": "Heinrich von Mügeln: Valerius-Maximus-Auslegung",
+   "autori": [
+    {
+     "id": "valerio-massimo",
+     "autore": "Valerio Massimo",
+     "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Heinrich von Mügeln: Valerius-Maximus-Auslegung»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1697668666/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1697668666",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700097008",
@@ -147743,13 +147949,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 1",
    "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Opera - Pseudo-Ovidiana",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Ovidius Naso, Publius»"
     }
@@ -147757,9 +147970,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700097008/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700097008",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700098519",
@@ -147768,13 +147979,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 2",
    "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Metamorphoses",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Metamorfosi"
      ],
@@ -147784,9 +148002,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700098519/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700098519",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700099558",
@@ -147795,13 +148011,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 3",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Ars amatoria - Remedia amoris - Pseudo-Ovidiana",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Ars amatoria",
       "Remedia amoris"
@@ -147812,9 +148035,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700099558/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700099558",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700102699",
@@ -147823,21 +148044,28 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 4",
    "datazione": "1343",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Poemata varia",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «…rnardus Morlanensis ; Publius Ovidius Naso ; Pindarus Thebanus ; Ma…»"
     },
     {
-     "categoria": "classico-latino",
      "id": "ilias-latina",
      "autore": "Ilias Latina",
      "latino": "Ilias Latina",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «…nsis ; Publius Ovidius Naso ; Pindarus Thebanus ; Matthaeus Vindocinensis»"
     }
@@ -147845,9 +148073,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700102699/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700102699",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700104039",
@@ -147856,13 +148082,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 5",
    "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Metamorphoseon libri XV",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Metamorfosi"
      ],
@@ -147872,9 +148105,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700104039/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700104039",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700105159",
@@ -147883,13 +148114,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 7",
    "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Epistolae Heroidum",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Eroidi"
      ],
@@ -147899,9 +148137,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700105159/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700105159",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700105507",
@@ -147910,13 +148146,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 8",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Poemata varia - Pseudo-Ovidiana",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Ovidius Naso, Publius»"
     }
@@ -147924,9 +148167,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700105507/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700105507",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN170010585X",
@@ -147935,13 +148176,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 9",
    "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Metamorphoses",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Metamorfosi"
      ],
@@ -147951,9 +148199,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN170010585X/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN170010585X",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700106201",
@@ -147962,13 +148208,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 10",
    "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Metamorphoses",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Metamorfosi"
      ],
@@ -147978,9 +148231,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700106201/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700106201",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700106473",
@@ -147989,13 +148240,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 11",
    "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Metamorphoses",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Metamorfosi"
      ],
@@ -148005,9 +148263,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700106473/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700106473",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700106902",
@@ -148016,13 +148272,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 14",
    "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Epistolae Heroidum",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Eroidi"
      ],
@@ -148032,9 +148295,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700106902/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700106902",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700108646",
@@ -148043,13 +148304,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 15",
    "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Artis amatoriae libri - Remedia amoris - Epigrammata - De grammatica",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Remedia amoris"
      ],
@@ -148059,9 +148327,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700108646/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700108646",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN170029489X",
@@ -148070,13 +148336,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 17",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Artis amatoriae libri I et II cum commentario",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Ovidius Naso, Publius»"
     }
@@ -148084,9 +148357,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN170029489X/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN170029489X",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700295292",
@@ -148095,13 +148366,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 18",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Ex Ponto libri IV",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Epistulae ex Ponto"
      ],
@@ -148111,9 +148389,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700295292/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700295292",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700295594",
@@ -148122,13 +148398,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 19",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Epistolae Heroidum - De arte amandi - Remedia amoris",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Eroidi",
       "Ars amatoria",
@@ -148140,9 +148423,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700295594/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700295594",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700295896",
@@ -148151,13 +148432,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 20",
    "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Tristium libri V",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Tristia"
      ],
@@ -148167,9 +148455,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700295896/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700295896",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700297848",
@@ -148178,21 +148464,28 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 21",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Albius Tibullus: Carmina - P. Ovidius Naso: Ibis cum scholiis",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "tibullo",
      "autore": "Tibullo",
      "latino": "Tibullus",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Ovidius Naso, Publius ; Tibullus, Albius»"
     },
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Ibis"
      ],
@@ -148202,9 +148495,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700297848/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700297848",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700298593",
@@ -148213,13 +148504,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 23",
    "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Metamorphoseon libri XV",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Metamorfosi"
      ],
@@ -148229,9 +148527,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700298593/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700298593",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700299263",
@@ -148240,13 +148536,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 24",
    "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Epistolae Heroidum",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Eroidi"
      ],
@@ -148256,9 +148559,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700299263/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700299263",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN170030156X",
@@ -148267,13 +148568,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 25",
    "datazione": "1100",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Fastorum libri VI",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Fasti"
      ],
@@ -148283,9 +148591,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN170030156X/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN170030156X",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700302574",
@@ -148294,13 +148600,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 26",
    "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Ex Ponto libri IV",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Epistulae ex Ponto"
      ],
@@ -148310,9 +148623,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700302574/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700302574",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700303155",
@@ -148321,13 +148632,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 27",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Artis amatoriae libri - Remedia amoris - Pulex - Ibis",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Remedia amoris",
       "Ibis"
@@ -148338,9 +148656,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700303155/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700303155",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700303732",
@@ -148349,13 +148665,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 29",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Opera varia",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Ovidius Naso, Publius»"
     }
@@ -148363,9 +148686,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700303732/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700303732",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700304283",
@@ -148374,13 +148695,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 30",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Ex Ponto libri IV",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Epistulae ex Ponto"
      ],
@@ -148390,9 +148718,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700304283/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700304283",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700314602",
@@ -148401,13 +148727,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 36",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "C. Valerius Catullus: Carmina",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "catullo",
      "autore": "Catullo",
      "latino": "Catullus",
+     "categoria": "classico-latino",
      "opere": [
       "Carmi"
      ],
@@ -148417,9 +148750,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700314602/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700314602",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1002517877",
@@ -148428,13 +148759,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 37",
    "datazione": "1463",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Carmina",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "catullo",
      "autore": "Catullo",
      "latino": "Catullus",
+     "categoria": "classico-latino",
      "opere": [
       "Carmi"
      ],
@@ -148444,9 +148782,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1002517877/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1002517877",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700315552",
@@ -148455,13 +148791,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 39a",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Albius Tibullus: Carminum libri III",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "tibullo",
      "autore": "Tibullo",
      "latino": "Tibullus",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Tibullus, Albius»"
     }
@@ -148469,9 +148812,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700315552/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700315552",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1002518725",
@@ -148480,13 +148821,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 39b",
    "datazione": "1463",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Carminum libri III",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "tibullo",
      "autore": "Tibullo",
      "latino": "Tibullus",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Tibullus, Albius»"
     }
@@ -148494,9 +148842,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1002518725/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1002518725",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700316354",
@@ -148505,13 +148851,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 40",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "C. Valerius Catullus: Carmina",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "catullo",
      "autore": "Catullo",
      "latino": "Catullus",
+     "categoria": "classico-latino",
      "opere": [
       "Carmi"
      ],
@@ -148521,9 +148874,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700316354/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700316354",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700334530",
@@ -148532,23 +148883,38 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 41",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Sextus Propertius: Elegiarum libri IV - Odyssea",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "properzio",
      "autore": "Properzio",
      "latino": "Propertius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Propertius, Sextus»"
+    },
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Odissea"
+     ],
+     "corrispondenza": "titolo: «Sextus Propertius: Elegiarum libri IV - Odyssea»"
     }
    ],
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700334530/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700334530",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700335375",
@@ -148557,13 +148923,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 52",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Sextus Propertius: Elegiarum libri IV",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "properzio",
      "autore": "Properzio",
      "latino": "Propertius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Propertius, Sextus»"
     }
@@ -148571,9 +148944,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700335375/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700335375",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700335952",
@@ -148582,13 +148953,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 53",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Sextus Propertius: Elegiarum libri IV",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "properzio",
      "autore": "Properzio",
      "latino": "Propertius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Propertius, Sextus»"
     }
@@ -148596,9 +148974,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700335952/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700335952",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700336762",
@@ -148607,13 +148983,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 56",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "C. Valerius Catullus: Carmina",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "catullo",
      "autore": "Catullo",
      "latino": "Catullus",
+     "categoria": "classico-latino",
      "opere": [
       "Carmi"
      ],
@@ -148623,9 +149006,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700336762/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700336762",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700341634",
@@ -148634,13 +149015,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 57",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Sextus Propertius: Elegiarum libri IV",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "properzio",
      "autore": "Properzio",
      "latino": "Propertius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Propertius, Sextus»"
     }
@@ -148648,9 +149036,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700341634/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700341634",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700342908",
@@ -148659,21 +149045,28 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 58",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Albius Tibullus: Carminum libri III - Calendarium secundum Fastos Ovidii cum commentario - Vita Tibulli",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "tibullo",
      "autore": "Tibullo",
      "latino": "Tibullus",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Tibullus, Albius»"
     },
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "titolo: «…- Calendarium secundum Fastos Ovidii cum commentario - Vita Tibull…»"
     }
@@ -148681,9 +149074,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700342908/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700342908",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN170034482X",
@@ -148692,13 +149083,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 61",
    "datazione": "1375",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "C. Suetonius Tranquillus: De vita caesarum libri XII",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "svetonio",
      "autore": "Svetonio",
      "latino": "Suetonius",
+     "categoria": "classico-latino",
      "opere": [
       "Vite dei Cesari"
      ],
@@ -148708,9 +149106,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN170034482X/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN170034482X",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1700345702",
@@ -148719,13 +149115,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 62",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "M. Tullius Cicero: Epistolarum ad familiares libri XVI",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "cicerone",
      "autore": "Cicerone",
      "latino": "Cicero",
+     "categoria": "classico-latino",
      "opere": [
       "Epistulae ad familiares"
      ],
@@ -148735,9 +149138,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1700345702/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1700345702",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1724149458",
@@ -148746,13 +149147,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 67",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Bucolica - Georgica",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "virgilio",
      "autore": "Virgilio",
      "latino": "Vergilius",
+     "categoria": "classico-latino",
      "opere": [
       "Georgiche",
       "Bucoliche"
@@ -148763,9 +149171,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1724149458/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1724149458",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1724150111",
@@ -148774,13 +149180,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 68",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Bucolica - Georgica",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "virgilio",
      "autore": "Virgilio",
      "latino": "Vergilius",
+     "categoria": "classico-latino",
      "opere": [
       "Georgiche",
       "Bucoliche"
@@ -148791,9 +149204,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1724150111/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1724150111",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1724151274",
@@ -148802,13 +149213,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 69",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Appendix Vergiliana et Carmina Priapea - P- Vergilius Maro: Bucolica et Georgica - Francesco Petrarca: Bucolicum carmen",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "virgilio",
      "autore": "Virgilio",
      "latino": "Vergilius",
+     "categoria": "classico-latino",
      "opere": [
       "Georgiche",
       "Bucoliche",
@@ -148820,9 +149238,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1724151274/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1724151274",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1672109817",
@@ -148831,13 +149247,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 72",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Orationes in Catilinam et Controversiae Sallustii et Ciceronis",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "cicerone",
      "autore": "Cicerone",
      "latino": "Cicero",
+     "categoria": "classico-latino",
      "opere": [
       "Catilinarie",
       "Orazioni"
@@ -148845,10 +149268,10 @@
      "corrispondenza": "autore: «Cicero, Marcus Tullius»"
     },
     {
-     "categoria": "classico-latino",
      "id": "sallustio",
      "autore": "Sallustio",
      "latino": "Sallustius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "titolo: «Orationes in Catilinam et Controversiae Sallustii et Ciceronis»"
     }
@@ -148856,9 +149279,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1672109817/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1672109817",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1724158309",
@@ -148867,13 +149288,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 73",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "M. Tullius Cicero: Epistolarum ad familiares libri IX - Ps. Aristoteles: Oeconomica Leonardo Bruno Aretino interprete",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "cicerone",
      "autore": "Cicerone",
      "latino": "Cicero",
+     "categoria": "classico-latino",
      "opere": [
       "Epistulae ad familiares"
      ],
@@ -148883,9 +149311,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1724158309/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1724158309",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1724158589",
@@ -148894,13 +149320,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 75",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Epistolarum ad familiares libri XVI",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "cicerone",
      "autore": "Cicerone",
      "latino": "Cicero",
+     "categoria": "classico-latino",
      "opere": [
       "Epistulae ad familiares"
      ],
@@ -148910,9 +149343,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1724158589/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1724158589",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1724158791",
@@ -148921,13 +149352,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 77",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Terentius Afer: Comoediae",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "terenzio",
      "autore": "Terenzio",
      "latino": "Terentius",
+     "categoria": "classico-latino",
      "opere": [
       "Commedie"
      ],
@@ -148937,9 +149375,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1724158791/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1724158791",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1724159488",
@@ -148948,25 +149384,38 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 78",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Cornelius Nepos: De excellentibus ducibus exterarum gentium, De regibus - Verba Corneliae Gracchorum matris - Plutarchus: Vita Sertorii ex translatione Leonardi Bruni Aretini",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "nepote",
      "autore": "Cornelio Nepote",
      "latino": "Cornelius Nepos",
+     "categoria": "classico-latino",
      "opere": [
       "Liber de excellentibus ducibus"
      ],
      "corrispondenza": "titolo: «Cornelius Nepos: De excellentibus ducibus ext…»"
+    },
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Nepos, Cornelius ; Plutarchus»"
     }
    ],
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1724159488/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1724159488",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1724160494",
@@ -148975,13 +149424,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 79",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "De coniuratione Catilinae - De bello Jugurthino",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "sallustio",
      "autore": "Sallustio",
      "latino": "Sallustius",
+     "categoria": "classico-latino",
      "opere": [
       "De coniuratione Catilinae",
       "Bellum Iugurthinum"
@@ -148992,9 +149448,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1724160494/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1724160494",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1888898836",
@@ -149003,13 +149457,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 148e",
    "datazione": "1600",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Nicolaus Heinsius: Collationes ad Ovidium",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "titolo: «Nicolaus Heinsius: Collationes ad Ovidium»"
     }
@@ -149017,9 +149478,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1888898836/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1888898836",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN172416516X",
@@ -149028,13 +149487,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. B Sant. 150",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "M. Tullius Cicero: Opera varia",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "cicerone",
      "autore": "Cicerone",
      "latino": "Cicero",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Cicero, Marcus Tullius»"
     }
@@ -149042,9 +149508,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN172416516X/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN172416516X",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1724380168",
@@ -149053,13 +149517,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. C fol. 4",
    "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Expositio super libros Declamationum L. Annaei Senecae",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "seneca",
      "autore": "Seneca",
      "latino": "Seneca",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "titolo: «Expositio super libros Declamationum L. Annaei Senecae»"
     }
@@ -149067,9 +149538,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1724380168/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1724380168",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1822179726",
@@ -149078,47 +149547,93 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. C fol. 59",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Kolleg- und Studienheft",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "terenzio",
      "autore": "Terenzio",
      "latino": "Terentius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «…ius ; Marcus Tullius Cicero ; Terenz ; Jason de Maino»"
     },
     {
-     "categoria": "classico-latino",
      "id": "cicerone",
      "autore": "Cicerone",
      "latino": "Cicero",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «…s Propertius ; Marcus Tullius Cicero ; Terenz ; Jason de Maino»"
     },
     {
-     "categoria": "classico-latino",
      "id": "virgilio",
      "autore": "Virgilio",
      "latino": "Vergilius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «…ab Insulis ; Pseudo ; Publius Vergilius Maro ; Octavianus Caesar ; Se…»"
     },
     {
-     "categoria": "classico-latino",
      "id": "properzio",
      "autore": "Properzio",
      "latino": "Propertius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «…; Octavianus Caesar ; Sextus Propertius ; Marcus Tullius Cicero ; Ter…»"
+    },
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…; Leonardus Brunus Aretinus ; Aristoteles ; Alanus ab Insulis ; Pseudo…»"
     }
    ],
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1822179726/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1822179726",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN1769934553",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. Diez. C fol. 66",
+   "datazione": "1100",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Flavius Josephus: Antiquitates Judaicae, Bellum Judaicum",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Antichità giudaiche",
+      "Guerra giudaica"
+     ],
+     "corrispondenza": "autore: «Josephus, Flavius»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1769934553/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1769934553",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
   },
   {
    "id": "sbb-PPN1769944303",
@@ -149127,13 +149642,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. C oct. 11",
    "datazione": "1100",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "M. Tullius Cicero: Cato maior, Laelius",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "cicerone",
      "autore": "Cicerone",
      "latino": "Cicero",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Cicero, Marcus Tullius»"
     }
@@ -149141,9 +149663,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1769944303/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1769944303",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1769944710",
@@ -149152,13 +149672,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. C oct. 12",
    "datazione": "1100",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "M. Tullius Cicero: Cato maior, De amicitia",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "cicerone",
      "autore": "Cicerone",
      "latino": "Cicero",
+     "categoria": "classico-latino",
      "opere": [
       "Laelius de amicitia"
      ],
@@ -149168,9 +149695,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1769944710/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1769944710",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1769945075",
@@ -149179,13 +149704,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. C oct. 13",
    "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "M. Tullius Cicero: Laelius de amicitia",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "cicerone",
      "autore": "Cicerone",
      "latino": "Cicero",
+     "categoria": "classico-latino",
      "opere": [
       "Laelius de amicitia"
      ],
@@ -149195,9 +149727,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1769945075/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1769945075",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN176994043X",
@@ -149206,13 +149736,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. C qu. 49",
    "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "C. Sallustius Crispus: De coniuratione Catilinae, De bello Iugurthino",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "sallustio",
      "autore": "Sallustio",
      "latino": "Sallustius",
+     "categoria": "classico-latino",
      "opere": [
       "De coniuratione Catilinae",
       "Bellum Iugurthinum"
@@ -149223,9 +149760,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN176994043X/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN176994043X",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1757033491",
@@ -149234,13 +149769,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. C qu. 50",
    "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Milianus de Spoleto: Commentum in libros factorum et dictorum memorabilium Valerii Maximi",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "valerio-massimo",
      "autore": "Valerio Massimo",
      "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "titolo: «Milianus de Spoleto: Commentum in libros factorum et dictorum memorabilium Valerii Maximi»"
     }
@@ -149248,9 +149790,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1757033491/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1757033491",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1755307381",
@@ -149259,13 +149799,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. C qu. 62",
    "datazione": "1804",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Homerus latinus",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ilias-latina",
      "autore": "Ilias Latina",
      "latino": "Ilias Latina",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "titolo: «Homerus latinus»"
     }
@@ -149273,9 +149820,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1755307381/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1755307381",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1769943498",
@@ -149284,21 +149829,28 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. C qu. 79",
    "datazione": "1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Sammelhandschrift",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Servius ; Bruni, Leonardo ; Ovidius Naso, Publius ; Enschringen,…»"
     },
     {
-     "categoria": "classico-latino",
      "id": "servio",
      "autore": "Servio",
      "latino": "Servius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Servius ; Bruni, Leonardo ; Ovidius N…»"
     }
@@ -149306,9 +149858,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1769943498/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1769943498",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1769943978",
@@ -149317,13 +149867,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Diez. C qu. 82",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Ovidiana",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Ovidius Naso, Publius»"
     }
@@ -149331,9 +149888,99 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1769943978/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1769943978",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN880211296",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. germ. qu. 1299a",
+   "datazione": "1823",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "de"
+   ],
+   "titolo": "Georg W. Fr. Hegel: Logik und Metaphysik, Berlin SS 1823 (unvollst. Nachschrift von Heinrich Hotho)",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica"
+     ],
+     "corrispondenza": "titolo: «Georg W. Fr. Hegel: Logik und Metaphysik, Berlin SS 1823 (unvollst. Na…»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN880211296/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN880211296",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN1920538798",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. Ham. 41",
+   "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "titolo": "Aristoteles",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1920538798/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1920538798",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN1806566419",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. Ham. 76",
+   "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Bessarion: In calumniatorem Platonis liber",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Bessarion: In calumniatorem Platonis liber»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1806566419/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1806566419",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
   },
   {
    "id": "sbb-PPN834736845",
@@ -149342,23 +149989,30 @@
    "citta": "Berlin",
    "segnatura": "Ms. Ham. 154",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Cicero: De legibus - Apuleius: De mundo",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "cicerone",
      "autore": "Cicerone",
      "latino": "Cicero",
+     "categoria": "classico-latino",
      "opere": [
       "De legibus"
      ],
      "corrispondenza": "autore: «Cicero, Marcus Tullius ; Apuleius <Madaurensis>»"
     },
     {
-     "categoria": "classico-latino",
      "id": "apuleio",
      "autore": "Apuleio",
      "latino": "Apuleius",
+     "categoria": "classico-latino",
      "opere": [
       "De mundo"
      ],
@@ -149368,9 +150022,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN834736845/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN834736845",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1761976648",
@@ -149379,13 +150031,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Ham. 158",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Cicero",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "cicerone",
      "autore": "Cicerone",
      "latino": "Cicero",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Cicero, Marcus Tullius»"
     }
@@ -149393,9 +150052,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1761976648/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1761976648",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN812464044",
@@ -149404,13 +150061,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Ham. 166",
    "datazione": "1408",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Epistolae",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "cicerone",
      "autore": "Cicerone",
      "latino": "Cicero",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Cicero, Marcus Tullius»"
     }
@@ -149418,9 +150082,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN812464044/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN812464044",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1878469282",
@@ -149429,13 +150091,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Ham. 168",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Epistolae",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "cicerone",
      "autore": "Cicerone",
      "latino": "Cicero",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Cicero, Marcus Tullius»"
     }
@@ -149443,9 +150112,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1878469282/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1878469282",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN746653263",
@@ -149454,25 +150121,118 @@
    "citta": "Berlin",
    "segnatura": "Ms. Ham. 213",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Periegesis Prisciani - Johannes de Sacrobosco: Algorismus vulgaris - Vita Dionysii Poetae",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "prisciano",
      "autore": "Prisciano",
      "latino": "Priscianus",
+     "categoria": "classico-latino",
      "opere": [
       "Periegesis"
      ],
      "corrispondenza": "autore: «Priscianus <Caesariensis> ; Johannes <de Sacrobosco>»"
+    },
+    {
+     "id": "pausania",
+     "autore": "Pausania",
+     "latino": "Pausanias",
+     "categoria": "classico-greco",
+     "opere": [
+      "Periegesi della Grecia"
+     ],
+     "corrispondenza": "titolo: «Periegesis Prisciani - Johannes de Sacrobosco: Algorismus vulgaris - Vita Dionysii Poetae»"
     }
    ],
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN746653263/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN746653263",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN833273345",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. Ham. 270",
+   "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "titolo": "De placitis Hippocratis et Platonis",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «De placitis Hippocratis et Platonis»"
+    },
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus»"
+    },
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «De placitis Hippocratis et Platonis»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN833273345/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN833273345",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN776925490",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. Ham. 294",
+   "datazione": "1504",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "it"
+   ],
+   "titolo": "Storie",
+   "autori": [
+    {
+     "id": "erodoto",
+     "autore": "Erodoto",
+     "latino": "Herodotus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Storie"
+     ],
+     "corrispondenza": "autore: «Herodotus»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN776925490/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN776925490",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
   },
   {
    "id": "sbb-PPN1833035933",
@@ -149481,13 +150241,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Ham. 332",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Horatius: Opera",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "orazio",
      "autore": "Orazio",
      "latino": "Horatius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Horatius Flaccus, Quintus»"
     }
@@ -149495,9 +150262,71 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1833035933/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1833035933",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN168960168X",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. Ham. 359",
+   "datazione": "1100",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Antiquitates Judaicae, lib. I-XV",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Antichità giudaiche"
+     ],
+     "corrispondenza": "autore: «Josephus, Flavius»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN168960168X/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN168960168X",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN1672105471",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. Ham. 367",
+   "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "it"
+   ],
+   "titolo": "Epitoma Historiarum Philippicarum Pompei Trogi, ital.",
+   "autori": [
+    {
+     "id": "giustino",
+     "autore": "Giustino",
+     "latino": "Iustinus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epitoma historiarum Philippicarum"
+     ],
+     "corrispondenza": "autore: «Iustinus, Marcus Iunianus»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1672105471/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1672105471",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
   },
   {
    "id": "sbb-PPN782766528",
@@ -149506,13 +150335,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Ham. 368",
    "datazione": "1474",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Satyrarum libri IV",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "giovenale",
      "autore": "Giovenale",
      "latino": "Iuvenalis",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Iuvenalis, Decimus Iunius»"
     }
@@ -149520,9 +150356,77 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN782766528/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN782766528",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN1675668159",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. Ham. 404",
+   "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "it"
+   ],
+   "titolo": "Historiae I-X, ital.",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Livius, Titus»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1675668159/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1675668159",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN1678810452",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. Ham. 418",
+   "datazione": "1600",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "it"
+   ],
+   "titolo": "De natura deorum, ital.",
+   "autori": [
+    {
+     "id": "lucrezio",
+     "autore": "Lucrezio",
+     "latino": "Lucretius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Lucretius Carus, Titus»"
+    },
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De natura deorum"
+     ],
+     "corrispondenza": "titolo: «De natura deorum, ital.»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1678810452/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1678810452",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
   },
   {
    "id": "sbb-PPN1844735508",
@@ -149531,13 +150435,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Ham. 471",
    "datazione": "0900",
+   "secolo": [
+    9,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Ovidius: Carmina amatoria",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Ovidius Naso, Publius»"
     }
@@ -149545,9 +150456,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1844735508/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1844735508",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1859095046",
@@ -149556,29 +150465,36 @@
    "citta": "Berlin",
    "segnatura": "Ms. Ham. 491",
    "datazione": "1480",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Persius - Ovidius - Iuvenalis",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Persius Flaccus, Aulus ; Ovidius Naso, Publius ; Iuvenalis, Decimus Iunius»"
     },
     {
-     "categoria": "classico-latino",
      "id": "persio",
      "autore": "Persio",
      "latino": "Persius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Persius Flaccus, Aulus ; Ovidius Naso, Publius ; Iuvenalis, Decimus Iunius»"
     },
     {
-     "categoria": "classico-latino",
      "id": "giovenale",
      "autore": "Giovenale",
      "latino": "Iuvenalis",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Persius Flaccus, Aulus ; Ovidius Naso, Publius ; Iuvenalis, Decimus Iunius»"
     }
@@ -149586,9 +150502,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1859095046/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1859095046",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1757130179",
@@ -149597,13 +150511,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Ham. 517",
    "datazione": "1000",
+   "secolo": [
+    10,
+    10
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Naturalis historia (Lib. I-XXXI)",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "plinio-vecchio",
      "autore": "Plinio il Vecchio",
      "latino": "Plinius maior",
+     "categoria": "classico-latino",
      "opere": [
       "Naturalis historia"
      ],
@@ -149613,9 +150534,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1757130179/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1757130179",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN169962769X",
@@ -149624,23 +150543,36 @@
    "citta": "Berlin",
    "segnatura": "Ms. Ham. 524",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Epitoma librorum Pompei Festi de significatione verborum",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "festo",
      "autore": "Festo",
      "latino": "Festus",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "titolo: «Epitoma librorum Pompei Festi de significatione verborum»"
+    },
+    {
+     "id": "paolo-diacono",
+     "autore": "Paolo Diacono",
+     "latino": "Paulus Diaconus",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «Paulus <Diaconus>»"
     }
    ],
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN169962769X/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN169962769X",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1699684898",
@@ -149649,23 +150581,36 @@
    "citta": "Berlin",
    "segnatura": "Ms. Ham. 525",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Paulus Diaconus: Epitoma Pompei Festi - Petrus de Mantua: Logica",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "festo",
      "autore": "Festo",
      "latino": "Festus",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "titolo: «Paulus Diaconus: Epitoma Pompei Festi - Petrus de Mantua: Logica»"
+    },
+    {
+     "id": "paolo-diacono",
+     "autore": "Paolo Diacono",
+     "latino": "Paulus Diaconus",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «Paulus <Diaconus> ; Petrus <Mantuanus>»"
     }
    ],
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1699684898/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1699684898",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN882706624",
@@ -149674,23 +150619,30 @@
    "citta": "Berlin",
    "segnatura": "Ms. Ham. 607",
    "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Statius: Achilleis - Sallustius: Catilinae coniuratio",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "sallustio",
      "autore": "Sallustio",
      "latino": "Sallustius",
+     "categoria": "classico-latino",
      "opere": [
       "De coniuratione Catilinae"
      ],
      "corrispondenza": "autore: «Statius, Papinius ; Sallustius Crispus, Gaius»"
     },
     {
-     "categoria": "classico-latino",
      "id": "stazio",
      "autore": "Stazio",
      "latino": "Statius",
+     "categoria": "classico-latino",
      "opere": [
       "Achilleide"
      ],
@@ -149700,9 +150652,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN882706624/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN882706624",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN882708112",
@@ -149711,13 +150661,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Ham. 608",
    "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Papinius Statius: Achilleis - Liber quinque clavium",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "stazio",
      "autore": "Stazio",
      "latino": "Statius",
+     "categoria": "classico-latino",
      "opere": [
       "Achilleide"
      ],
@@ -149727,9 +150684,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN882708112/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN882708112",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1789730740",
@@ -149738,13 +150693,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Ham. 616",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Sueton - Jacobus de Cessolis",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "svetonio",
      "autore": "Svetonio",
      "latino": "Suetonius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Suetonius Tranquillus, Gaius ; Jacobus <de Cessolis>»"
     }
@@ -149752,9 +150714,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1789730740/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1789730740",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1902528867",
@@ -149763,23 +150723,30 @@
    "citta": "Berlin",
    "segnatura": "Ms. Ham. 622",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Terentius: Comoediae sex - Quilichinus de Spoleto: Historia Alexandri Magni - Orthographia per alphabetum",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "terenzio",
      "autore": "Terenzio",
      "latino": "Terentius",
+     "categoria": "classico-latino",
      "opere": [
       "Commedie"
      ],
      "corrispondenza": "autore: «Terentius Afer, Publius ; Quilichinus <de Spoleto>»"
     },
     {
-     "categoria": "classico-latino",
      "id": "curzio-rufo",
      "autore": "Curzio Rufo",
      "latino": "Curtius Rufus",
+     "categoria": "classico-latino",
      "opere": [
       "Historiae Alexandri Magni"
      ],
@@ -149789,9 +150756,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1902528867/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1902528867",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1902528018",
@@ -149800,13 +150765,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Ham. 624",
    "datazione": "1458",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Comoediae sex",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "terenzio",
      "autore": "Terenzio",
      "latino": "Terentius",
+     "categoria": "classico-latino",
      "opere": [
       "Commedie"
      ],
@@ -149816,9 +150788,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1902528018/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1902528018",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1748599305",
@@ -149827,13 +150797,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Ham. 637",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Tibullus - Vibius Sequester - De provinciis Italiae - Notitia urbis Romae",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "tibullo",
      "autore": "Tibullo",
      "latino": "Tibullus",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Tibullus, Albius ; Vibius <Sequester>»"
     }
@@ -149841,9 +150818,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1748599305/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1748599305",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN778291812",
@@ -149852,13 +150827,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Ham. 648/I",
    "datazione": "1423",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Factorum et dictorum memorabilium libri IX",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "valerio-massimo",
      "autore": "Valerio Massimo",
      "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
      "opere": [
       "Facta et dicta memorabilia"
      ],
@@ -149868,9 +150850,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN778291812/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN778291812",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN622429647",
@@ -149879,21 +150859,23 @@
    "citta": "Berlin",
    "segnatura": "Ms. Ham. 677",
    "datazione": "14XX",
+   "secolo": null,
+   "lingue": [],
    "titolo": "Vergil - Cicero",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "cicerone",
      "autore": "Cicerone",
      "latino": "Cicero",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "titolo: «Vergil - Cicero»"
     },
     {
-     "categoria": "classico-latino",
      "id": "virgilio",
      "autore": "Virgilio",
      "latino": "Vergilius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "titolo: «Vergil - Cicero»"
     }
@@ -149901,9 +150883,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN622429647/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN622429647",
    "licenza": null,
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN880716673",
@@ -149912,21 +150892,28 @@
    "citta": "Berlin",
    "segnatura": "Ms. lat. fol. 25",
    "datazione": "1483",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Martianus Capella: De nuptiis Philologiae et Mercurii (mit Glosse) - Boethius: De consolatione Philosophiae (mit Glosse)",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "boezio",
      "autore": "Boezio",
      "latino": "Boethius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Martianus <Capella> ; Boethius, Anicius Manlius Severinus»"
     },
     {
-     "categoria": "classico-latino",
      "id": "marziano-capella",
      "autore": "Marziano Capella",
      "latino": "Martianus Capella",
+     "categoria": "classico-latino",
      "opere": [
       "De nuptiis Philologiae et Mercurii"
      ],
@@ -149936,9 +150923,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN880716673/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN880716673",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN750431083",
@@ -149947,29 +150932,33 @@
    "citta": "Berlin",
    "segnatura": "Ms. lat. fol. 34",
    "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
    "titolo": "Commentarii in Lucanum, Vergilium, Statium",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "virgilio",
      "autore": "Virgilio",
      "latino": "Vergilius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Lucanus, Marcus Annaeus ; Vergilius, Publius ; Statius, Publius Papinius»"
     },
     {
-     "categoria": "classico-latino",
      "id": "lucano",
      "autore": "Lucano",
      "latino": "Lucanus",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Lucanus, Marcus Annaeus ; Vergilius, Publius ; Statius, Publius Papinius»"
     },
     {
-     "categoria": "classico-latino",
      "id": "stazio",
      "autore": "Stazio",
      "latino": "Statius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Lucanus, Marcus Annaeus ; Vergilius, Publius ; Statius, Publius Papinius»"
     }
@@ -149977,9 +150966,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN750431083/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN750431083",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN770772765",
@@ -149988,13 +150975,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. lat. fol. 35",
    "datazione": "1000",
+   "secolo": [
+    10,
+    10
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "De bello civili",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "lucano",
      "autore": "Lucano",
      "latino": "Lucanus",
+     "categoria": "classico-latino",
      "opere": [
       "Bellum civile"
      ],
@@ -150004,9 +150998,37 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN770772765/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN770772765",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN859759318",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. lat. fol. 40",
+   "datazione": "1487",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Philosophisch-scholastische Studiensammlung (u.a. Aristoteles latinus, Samuel Karoch)",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles ; Karoch von Lichtenberg, Samuel»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN859759318/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN859759318",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
   },
   {
    "id": "sbb-PPN618545948",
@@ -150015,13 +151037,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. lat. fol. 47",
    "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Opera",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "seneca",
      "autore": "Seneca",
      "latino": "Seneca",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Seneca, Lucius Annaeus»"
     }
@@ -150029,9 +151058,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN618545948/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN618545948",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1749118580",
@@ -150040,13 +151067,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. lat. fol. 252",
    "datazione": "1150",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Cicero: Opera",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "cicerone",
      "autore": "Cicerone",
      "latino": "Cicero",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Cicero, Marcus Tullius»"
     }
@@ -150054,9 +151088,99 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1749118580/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1749118580",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN819595527",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. lat. fol. 263",
+   "datazione": "1000",
+   "secolo": [
+    10,
+    10
+   ],
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Antiquitates Judaicae, lib. I-XII",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Antichità giudaiche"
+     ],
+     "corrispondenza": "autore: «Josephus, Flavius»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN819595527/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN819595527",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN826603920",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. lat. fol. 285",
+   "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Opera varia",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN826603920/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN826603920",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN826611206",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. lat. fol. 286",
+   "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Opera varia",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN826611206/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN826611206",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
   },
   {
    "id": "sbb-PPN826647480",
@@ -150065,13 +151189,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. lat. fol. 290",
    "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "De officiis",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "cicerone",
      "autore": "Cicerone",
      "latino": "Cicero",
+     "categoria": "classico-latino",
      "opere": [
       "De officiis"
      ],
@@ -150081,9 +151212,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN826647480/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN826647480",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN81540493X",
@@ -150092,13 +151221,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. lat. fol. 347",
    "datazione": "1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Heroides XVIII: Leander ad Hero",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Eroidi"
      ],
@@ -150108,9 +151244,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN81540493X/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN81540493X",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1751605523",
@@ -150119,13 +151253,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. lat. fol. 416",
    "datazione": "0300",
+   "secolo": [
+    3,
+    3
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Vergil: Georgica (Vergilius Augusteus)",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "virgilio",
      "autore": "Virgilio",
      "latino": "Vergilius",
+     "categoria": "classico-latino",
      "opere": [
       "Georgiche"
      ],
@@ -150135,9 +151276,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1751605523/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1751605523",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN647731037",
@@ -150146,13 +151285,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. lat. fol. 421",
    "datazione": "0800",
+   "secolo": [
+    8,
+    8
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Aeneis",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "virgilio",
      "autore": "Virgilio",
      "latino": "Vergilius",
+     "categoria": "classico-latino",
      "opere": [
       "Eneide"
      ],
@@ -150162,9 +151308,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN647731037/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN647731037",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN657471216",
@@ -150173,13 +151317,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. lat. fol. 544",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "De rerum natura",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "lucrezio",
      "autore": "Lucrezio",
      "latino": "Lucretius",
+     "categoria": "classico-latino",
      "opere": [
       "De rerum natura"
      ],
@@ -150189,9 +151340,37 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN657471216/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN657471216",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN662336054",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. lat. fol. 625",
+   "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Opera",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Josephus, Flavius»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN662336054/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN662336054",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
   },
   {
    "id": "sbb-PPN768030854",
@@ -150200,13 +151379,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. lat. oct. 68",
    "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Scholiasta Ovidii Metamorphoseos",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Metamorfosi"
      ],
@@ -150216,9 +151402,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN768030854/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN768030854",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN882694103",
@@ -150227,21 +151411,28 @@
    "citta": "Berlin",
    "segnatura": "Ms. lat. oct. 112",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Claudius Claudianus - P. Papinius Statius",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "stazio",
      "autore": "Stazio",
      "latino": "Statius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Claudianus, Claudius ; Statius, Publius Papinius»"
     },
     {
-     "categoria": "classico-latino",
      "id": "claudiano",
      "autore": "Claudiano",
      "latino": "Claudianus",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Claudianus, Claudius ; Statius, Publius Papinius»"
     }
@@ -150249,9 +151440,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN882694103/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN882694103",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN785971513",
@@ -150260,15 +151449,32 @@
    "citta": "Berlin",
    "segnatura": "Ms. lat. oct. 171",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Vita Aesopi - Aesop: Fabulae - Leon Battista Alberti: Apologi - Aulus Gellius: Noctes Atticae",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "gellio",
      "autore": "Aulo Gellio",
      "latino": "Gellius",
+     "categoria": "classico-latino",
      "opere": [
       "Noctes Atticae"
+     ],
+     "corrispondenza": "autore: «Aesopus ; Alberti, Leon Battista ; Gellius, Aulus»"
+    },
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
      ],
      "corrispondenza": "autore: «Aesopus ; Alberti, Leon Battista ; Gellius, Aulus»"
     }
@@ -150276,9 +151482,37 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN785971513/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN785971513",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN77155754X",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. lat. qu. 32",
+   "datazione": "1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Notate zu Euclid-Vorlesungen 1543-1550",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Notate zu Euclid-Vorlesungen 1543-1550»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN77155754X/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN77155754X",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
   },
   {
    "id": "sbb-PPN867097612",
@@ -150287,13 +151521,36 @@
    "citta": "Berlin",
    "segnatura": "Ms. lat. qu. 214",
    "datazione": "1100",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Porphyrius - Aristoteles - Boethius - G. Marius Victorinus et alia",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "boezio",
      "autore": "Boezio",
      "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Porphyrius ; Aristoteles ; Boethius, Anicius Manlius Severinus ; Marius Victorinus, Gaius»"
+    },
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Porphyrius ; Aristoteles ; Boethius, Anicius Manlius Severinus ; Marius Victorinus, Gaius»"
+    },
+    {
+     "id": "porfirio",
+     "autore": "Porfirio",
+     "latino": "Porphyrius",
+     "categoria": "classico-greco",
      "opere": [],
      "corrispondenza": "autore: «Porphyrius ; Aristoteles ; Boethius, Anicius Manlius Severinus ; Marius Victorinus, Gaius»"
     }
@@ -150301,9 +151558,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN867097612/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN867097612",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1768341761",
@@ -150312,21 +151567,28 @@
    "citta": "Berlin",
    "segnatura": "Ms. lat. qu. 215",
    "datazione": "0900",
+   "secolo": [
+    9,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Vergilius Maro et Ps-Vergilius - Ps-Ovidius",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "virgilio",
      "autore": "Virgilio",
      "latino": "Vergilius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Vergilius Maro, Publius ; Ovidius Naso, Publius»"
     },
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Vergilius Maro, Publius ; Ovidius Naso, Publius»"
     }
@@ -150334,9 +151596,67 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1768341761/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1768341761",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN784119988",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. lat. qu. 335",
+   "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Gariopontus - Hippocrates latinus",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Gariopontus ; Hippocrates»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN784119988/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN784119988",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN78529290X",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. lat. qu. 459",
+   "datazione": "1100",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "titolo": "De dynamidiis (Epistula ad Maecenatem)",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN78529290X/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN78529290X",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
   },
   {
    "id": "sbb-PPN722149123",
@@ -150345,13 +151665,28 @@
    "citta": "Berlin",
    "segnatura": "Ms. lat. qu. 503",
    "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Gesta Francorum et aliorum Hierosolymitanorum - Paulus Diaconus - Eutropius",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "eutropio",
      "autore": "Eutropio",
      "latino": "Eutropius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Gesta Francorum et aliorum Hierosolymitanorum - Paulus Diaconus - Eutropius»"
+    },
+    {
+     "id": "paolo-diacono",
+     "autore": "Paolo Diacono",
+     "latino": "Paulus Diaconus",
+     "categoria": "medievale",
      "opere": [],
      "corrispondenza": "titolo: «Gesta Francorum et aliorum Hierosolymitanorum - Paulus Diaconus - Eutropius»"
     }
@@ -150359,9 +151694,39 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN722149123/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN722149123",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN689602758",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. lat. qu. 515",
+   "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Johannes de Muris - Aesopi fabulae - Galfredus de Vinosalvo - Johannes Leland",
+   "autori": [
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "titolo: «Johannes de Muris - Aesopi fabulae - Galfredus de Vinosalvo - Johannes Leland»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN689602758/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN689602758",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
   },
   {
    "id": "sbb-PPN635927195",
@@ -150370,13 +151735,17 @@
    "citta": "Berlin",
    "segnatura": "Ms. lat. qu. 522",
    "datazione": "16XX",
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
    "titolo": "Scholae privatae in Publii Papinii Statii Thebaida",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "stazio",
      "autore": "Stazio",
      "latino": "Statius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "titolo: «Scholae privatae in Publii Papinii Statii Thebaida»"
     }
@@ -150384,9 +151753,37 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN635927195/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN635927195",
    "licenza": null,
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN785293140",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. lat. qu. 525",
+   "datazione": "1100",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Passionarius Galeni",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Passionarius Galeni»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN785293140/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN785293140",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
   },
   {
    "id": "sbb-PPN768028965",
@@ -150395,13 +151792,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. lat. qu. 540",
    "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Glossen zu Johannes de Garlandia, Juvenal und Ovid",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "titolo: «Glossen zu Johannes de Garlandia, Juvenal und Ovid»"
     }
@@ -150409,9 +151813,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN768028965/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN768028965",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN741240149",
@@ -150420,13 +151822,17 @@
    "citta": "Berlin",
    "segnatura": "Ms. lat. qu. 784",
    "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
    "titolo": "Cistellaria",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "plauto",
      "autore": "Plauto",
      "latino": "Plautus",
+     "categoria": "classico-latino",
      "opere": [
       "Cistellaria"
      ],
@@ -150436,9 +151842,67 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN741240149/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN741240149",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN667037985",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. Magdeb. 201",
+   "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Petrus de Rivo - Aristoteles",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Petrus <de Riu> ; Aristoteles»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN667037985/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN667037985",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN782163319",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. Phill. 1507",
+   "datazione": "1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "titolo": "Aristoteles: Opera physicalia",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN782163319/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN782163319",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
   },
   {
    "id": "sbb-PPN829310843",
@@ -150447,13 +151911,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Phill. 1786",
    "datazione": "0900",
+   "secolo": [
+    9,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Marius Victorinus: Liber definitionum - Boethius: Liber divisionum",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "boezio",
      "autore": "Boezio",
      "latino": "Boethius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Marius Victorinus, Gaius ; Boethius, Anicius Manlius Severinus»"
     }
@@ -150461,9 +151932,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN829310843/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN829310843",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN82935641X",
@@ -150472,13 +151941,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Phill. 1787",
    "datazione": "0900",
+   "secolo": [
+    9,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Somnium Scipionis",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "cicerone",
      "autore": "Cicerone",
      "latino": "Cicero",
+     "categoria": "classico-latino",
      "opere": [
       "Somnium Scipionis"
      ],
@@ -150488,9 +151964,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN82935641X/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN82935641X",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1852796510",
@@ -150499,13 +151973,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Phill. 1796,1",
    "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Ovid",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Ovidius Naso, Publius»"
     }
@@ -150513,9 +151994,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1852796510/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1852796510",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN1832615103",
@@ -150524,13 +152003,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Phill. 1812",
    "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Metamorphoseon libri XV cum glossis",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Metamorfosi"
      ],
@@ -150540,9 +152026,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1832615103/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1832615103",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN83198872X",
@@ -150551,13 +152035,20 @@
    "citta": "Berlin",
    "segnatura": "Ms. Phill. 1902",
    "datazione": "1000",
+   "secolo": [
+    10,
+    10
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "De coniuratione Catilinae - De bello Iugurthino",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "sallustio",
      "autore": "Sallustio",
      "latino": "Sallustius",
+     "categoria": "classico-latino",
      "opere": [
       "De coniuratione Catilinae",
       "Bellum Iugurthinum"
@@ -150568,63 +152059,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN83198872X/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN83198872X",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
-  },
-  {
-   "id": "sbb-PPN82791573X",
-   "fonte": "berlino",
-   "biblioteca": "Staatsbibliothek zu Berlin",
-   "citta": "Berlin",
-   "segnatura": "PPN82791573X",
-   "datazione": "0800",
-   "titolo": "Institutiones grammaticae, l. VII et VIII; Fragm. 79",
-   "autori": [
-    {
-     "categoria": "classico-latino",
-     "id": "prisciano",
-     "autore": "Prisciano",
-     "latino": "Priscianus",
-     "opere": [
-      "Institutiones grammaticae"
-     ],
-     "corrispondenza": "autore: «Priscianus»"
-    }
-   ],
-   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN82791573X/manifest",
-   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN82791573X",
-   "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
-  },
-  {
-   "id": "sbb-PPN722148100",
-   "fonte": "berlino",
-   "biblioteca": "Staatsbibliothek zu Berlin",
-   "citta": "Berlin",
-   "segnatura": "PPN722148100",
-   "datazione": "0900",
-   "titolo": "De consolatione philosophiae; Fragm. 83",
-   "autori": [
-    {
-     "categoria": "classico-latino",
-     "id": "boezio",
-     "autore": "Boezio",
-     "latino": "Boethius",
-     "opere": [
-      "De consolatione philosophiae"
-     ],
-     "corrispondenza": "autore: «Boethius, Anicius Manlius Severinus»"
-    }
-   ],
-   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN722148100/manifest",
-   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN722148100",
-   "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN731518365",
@@ -150633,29 +152068,36 @@
    "citta": "Berlin",
    "segnatura": "PPN731518365",
    "datazione": "1553",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "Catvllvs.|| Tibvllvs.|| Propertivs.|| His Accesse=||rvnt || Corn. Galli || Fragmenta.||",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "catullo",
      "autore": "Catullo",
      "latino": "Catullus",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Catullus, Gaius Valerius ; Tibullus, Albius ; Propertius, Sextus ; Gallus, Gaius Cornelius»"
     },
     {
-     "categoria": "classico-latino",
      "id": "tibullo",
      "autore": "Tibullo",
      "latino": "Tibullus",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Catullus, Gaius Valerius ; Tibullus, Albius ; Propertius, Sextus ; Gallus, Gaius Cornelius»"
     },
     {
-     "categoria": "classico-latino",
      "id": "properzio",
      "autore": "Properzio",
      "latino": "Propertius",
+     "categoria": "classico-latino",
      "opere": [],
      "corrispondenza": "autore: «Catullus, Gaius Valerius ; Tibullus, Albius ; Propertius, Sextus ; Gallus, Gaius Cornelius»"
     }
@@ -150663,9 +152105,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN731518365/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN731518365",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "sbb-PPN847427242",
@@ -150674,13 +152114,20 @@
    "citta": "Berlin",
    "segnatura": "PPN847427242",
    "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
    "titolo": "P. Ovidius Naso: Metamorphoseon libri XV; P. Ovidius Naso: Metamorphoseon libri XV",
    "autori": [
     {
-     "categoria": "classico-latino",
      "id": "ovidio",
      "autore": "Ovidio",
      "latino": "Ovidius",
+     "categoria": "classico-latino",
      "opere": [
       "Metamorfosi"
      ],
@@ -150690,9 +152137,7 @@
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN847427242/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN847427242",
    "licenza": "Public Domain Mark 1.0",
-   "immagini": null,
-   "lingue": [],
-   "secolo": null
+   "immagini": null
   },
   {
    "id": "ec-bke-0067",
@@ -159620,7 +161065,6 @@
      "latino": "Cicero",
      "categoria": "classico-latino",
      "opere": [
-      "De officiis",
       "De inventione"
      ],
      "corrispondenza": "indice: «…[Theodoricus Carnotensis,] In ciceronis de inventione rhetorica (I.1.…»"
@@ -159964,6 +161408,78 @@
    "immagini": null
   },
   {
+   "id": "lei-1992667",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "755 H 23",
+   "datazione": "Antverpiae : ex off. Chr. Plantinus, 1569",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [],
+   "titolo": "Catullus, Tibullus, Propertius 755 H 23",
+   "autori": [
+    {
+     "id": "catullo",
+     "autore": "Catullo",
+     "latino": "Catullus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Catullus, C. Valerius»"
+    },
+    {
+     "id": "tibullo",
+     "autore": "Tibullo",
+     "latino": "Tibullus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Catullus, Tibullus, Propertius 755 H 23»"
+    },
+    {
+     "id": "properzio",
+     "autore": "Properzio",
+     "latino": "Propertius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Catullus, Tibullus, Propertius 755 H 23»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1992667/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1992667",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1553852",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "756 B 6",
+   "datazione": "Venetiis : in aedibus Aldi, et Andreae Asulani Soceri, 1525",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [],
+   "titolo": "Omnia quae extant 756 B 6",
+   "autori": [
+    {
+     "id": "senofonte",
+     "autore": "Senofonte",
+     "latino": "Xenophon",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Xenophon, Atheniensis, Asulanus, Franciscus»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1553852/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1553852",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
    "id": "lei-3628652",
    "fonte": "leiden",
    "biblioteca": "Universiteitsbibliotheek Leiden",
@@ -159988,6 +161504,90 @@
    ],
    "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3628652/manifest",
    "pagina": "https://hdl.handle.net/1887.1/item:3628652",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1554610",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "756 B 14",
+   "datazione": "[S.l.] : excudebat Henricus Stephanus, 1581",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [],
+   "titolo": "Xenophontis, (viri armorũ & literarũ laude celeberrimi) qvae exstant opera 756 B 14",
+   "autori": [
+    {
+     "id": "senofonte",
+     "autore": "Senofonte",
+     "latino": "Xenophon",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Xenophon, Atheniensis, Stephanus!, Henricus»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1554610/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1554610",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-2175259",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "758 A 6",
+   "datazione": "Venetiis : Aldus Manutius, 1498",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [],
+   "titolo": "Opera / Aristoteles 758 A 6",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:2175259/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:2175259",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-2042467",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "758 B 29",
+   "datazione": "[Venetiis : Aldus et Andreas socer, 1514]",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [],
+   "titolo": "Dictionarium 758 B 29",
+   "autori": [
+    {
+     "id": "esichio",
+     "autore": "Esichio",
+     "latino": "Hesychius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Hesychius Alexandrinus»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:2042467/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:2042467",
    "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
    "immagini": null
   },
@@ -160044,6 +161644,90 @@
    ],
    "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:2463907/manifest",
    "pagina": "https://hdl.handle.net/1887.1/item:2463907",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-2041919",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "759 B 1",
+   "datazione": "[Florentiae : haeredes Phil. Juntae, 1520]",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [],
+   "titolo": "Dictionarium 759 B 1",
+   "autori": [
+    {
+     "id": "esichio",
+     "autore": "Esichio",
+     "latino": "Hesychius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Hesychius Alexandrinus»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:2041919/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:2041919",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-2208337",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "759 B 5",
+   "datazione": "[Hagenoae : Th. Anshelmus, 1521]",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [],
+   "titolo": "Dictionarium 759 B 5",
+   "autori": [
+    {
+     "id": "esichio",
+     "autore": "Esichio",
+     "latino": "Hesychius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Hesychius Alexandrinus»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:2208337/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:2208337",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1558308",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "759 B 6",
+   "datazione": "[Hagenoae : Th. Anshelmus, 1521]",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [],
+   "titolo": "Dictionarium 759 B 6",
+   "autori": [
+    {
+     "id": "esichio",
+     "autore": "Esichio",
+     "latino": "Hesychius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Hesychius Alexandrinus»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1558308/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1558308",
    "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
    "immagini": null
   },
@@ -160656,6 +162340,34 @@
    ],
    "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1597397/manifest",
    "pagina": "https://hdl.handle.net/1887.1/item:1597397",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1602816",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "BPG 80",
+   "datazione": "[1600-1700?]",
+   "secolo": [
+    16,
+    17
+   ],
+   "lingue": [],
+   "titolo": "Epistulae graecae variorum regum et virorum insignium, ex antiquis scriptoribus (e.g. ex Plutarcho, Diodora Siculo, Arriano, etc.) collectae BPG 80",
+   "autori": [
+    {
+     "id": "arriano",
+     "autore": "Arriano",
+     "latino": "Arrianus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…ex Plutarcho, Diodora Siculo, Arriano, etc.) collectae BPG 80»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1602816/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1602816",
    "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
    "immagini": null
   },
@@ -167297,6 +169009,209 @@
    "immagini": null
   },
   {
+   "id": "lei-1837097",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "item 1837097",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Aristotelis Historia de Animalibus latine SCA 54 - part 7",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Historia animalium"
+     ],
+     "corrispondenza": "titolo: «Aristotelis Historia de Animalibus latine SCA 54 - part 7»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1837097/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1837097",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1837558",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "item 1837558",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Aristotelis Historia de Animalibus latine SCA 54 - part 5",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Historia animalium"
+     ],
+     "corrispondenza": "titolo: «Aristotelis Historia de Animalibus latine SCA 54 - part 5»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1837558/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1837558",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1837925",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "item 1837925",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Aristotelis Historia de Animalibus latine SCA 54 - part 1",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Historia animalium"
+     ],
+     "corrispondenza": "titolo: «Aristotelis Historia de Animalibus latine SCA 54 - part 1»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1837925/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1837925",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1838146",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "item 1838146",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Aristotelis Historia de Animalibus latine SCA 54 - part 2",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Historia animalium"
+     ],
+     "corrispondenza": "titolo: «Aristotelis Historia de Animalibus latine SCA 54 - part 2»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1838146/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1838146",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1839209",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "item 1839209",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Aristotelis Historia de Animalibus latine SCA 54 - part 6",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Historia animalium"
+     ],
+     "corrispondenza": "titolo: «Aristotelis Historia de Animalibus latine SCA 54 - part 6»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1839209/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1839209",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1839430",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "item 1839430",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Aristotelis Historia de Animalibus latine SCA 54 - part 4",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Historia animalium"
+     ],
+     "corrispondenza": "titolo: «Aristotelis Historia de Animalibus latine SCA 54 - part 4»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1839430/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1839430",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1839632",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "item 1839632",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Aristotelis Historia de Animalibus latine SCA 54 - part 3",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Historia animalium"
+     ],
+     "corrispondenza": "titolo: «Aristotelis Historia de Animalibus latine SCA 54 - part 3»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1839632/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1839632",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
    "id": "lei-3230213",
    "fonte": "leiden",
    "biblioteca": "Universiteitsbibliotheek Leiden",
@@ -168001,6 +169916,142 @@
    ],
    "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1616707/manifest",
    "pagina": "https://hdl.handle.net/1887.1/item:1616707",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-2008686",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "Or. 278",
+   "datazione": "Undated, but before Ramaḍān 575 AH/February 1180 according to a reader’s note on f. 209a",
+   "secolo": [
+    3,
+    12
+   ],
+   "lingue": [],
+   "titolo": "Collective volume with [1]: ff. 1b-154b. Commentary by ʿAbd Allāh Ibn al-Ṭayyib al-ʿIrāqī (d. 435/1043), [2]: ff. 155b-2 Or. 278",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…unayn b. Isḥāq al-ʿIbādī, Galenus, Claudius»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:2008686/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:2008686",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1871093",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "Or. 680",
+   "datazione": "[before 615]",
+   "secolo": [
+    7,
+    7
+   ],
+   "lingue": [],
+   "titolo": "al- Miǵisṭī (translation of Ptolemy) Or. 680",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «al- Miǵisṭī (translation of Ptolemy) Or. 680»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1871093/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1871093",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1562703",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "Or. 1269",
+   "datazione": "[Undated, but probably 16th century]",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [],
+   "titolo": "Kitāb al-Fuṣūl, the Arabic translation of Hippocrates’s Aphorisms by Ḥunayn b. Isḥāq. Incomplete at the end Or. 1269",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Aforismi"
+     ],
+     "corrispondenza": "autore: «Hippocrates., Ḥunayn b. Isḥāq al-ʿIbādī»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1562703/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1562703",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-2009813",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "Or. 2075",
+   "datazione": "[Date of production unknown]",
+   "secolo": null,
+   "lingue": [],
+   "titolo": "Collective volumes of Arabic Texts : Kitab al-Sama` wal-`Alam, being Aristotle’s De Coelo et Mundo ; and other texts Or. 2075",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…tab al-Sama` wal-`Alam, being Aristotle’s De Coelo et Mundo ; and oth…»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:2009813/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:2009813",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1567368",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "Or. 2804",
+   "datazione": "[Date of production unknown]",
+   "secolo": null,
+   "lingue": [],
+   "titolo": "Collective volume with texts in Arabic : Ptolemy's al-Miǵisṭī - unidentified abridgment (fragment) ; and other texts Or. 2804",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…volume with texts in Arabic : Ptolemy's al-Miǵisṭī - unidentified a…»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1567368/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1567368",
    "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
    "immagini": null
   },
@@ -168946,6 +170997,33 @@
    "immagini": null
   },
   {
+   "id": "lei-1805562",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "PER Q 85",
+   "datazione": "1760.",
+   "secolo": null,
+   "lingue": [],
+   "titolo": "Aldhelmi opera duo: de Metris, de Pedum Regulis. - Fragmentum Grammatici de Metris et syllabis. - Anonymi fragmentum de modo ac ratione punctandi PER Q 85",
+   "autori": [
+    {
+     "id": "efestione",
+     "autore": "Efestione",
+     "latino": "Hephaestion",
+     "categoria": "classico-greco",
+     "opere": [
+      "Manuale di metrica"
+     ],
+     "corrispondenza": "titolo: «Aldhelmi opera duo: de Metris, de Pedum Regulis. - Fragment…»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1805562/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1805562",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
    "id": "lei-1614181",
    "fonte": "leiden",
    "biblioteca": "Universiteitsbibliotheek Leiden",
@@ -168970,6 +171048,35 @@
    ],
    "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1614181/manifest",
    "pagina": "https://hdl.handle.net/1887.1/item:1614181",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1606625",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "RUH 64",
+   "datazione": "[Date unknown]",
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "titolo": "Platonis Timaeus (graece) RUH 64",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [
+      "Timeo"
+     ],
+     "corrispondenza": "titolo: «Platonis Timaeus (graece) RUH 64»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1606625/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1606625",
    "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
    "immagini": null
   },
@@ -169000,6 +171107,36 @@
    ],
    "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1608216/manifest",
    "pagina": "https://hdl.handle.net/1887.1/item:1608216",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1597296",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "SCA 18",
+   "datazione": "[1500-1600?]",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "titolo": "Cl. Galeni Opera quaedam. - I.C. Scaligeri Carmina. (graece) SCA 18",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Cl. Galeni Opera quaedam. - I.C. Scaligeri Carmina. (graece) SCA 18»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1597296/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1597296",
    "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
    "immagini": null
   },
@@ -169170,6 +171307,38 @@
    "immagini": null
   },
   {
+   "id": "lei-1991410",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "SCA 48",
+   "datazione": "[1575-1600?]",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "titolo": "Euclidis Data. (graece) SCA 48",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Data"
+     ],
+     "corrispondenza": "titolo: «Euclidis Data. (graece) SCA 48»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1991410/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1991410",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
    "id": "lei-3669104",
    "fonte": "leiden",
    "biblioteca": "Universiteitsbibliotheek Leiden",
@@ -169194,6 +171363,38 @@
    ],
    "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3669104/manifest",
    "pagina": "https://hdl.handle.net/1887.1/item:3669104",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1885015",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "SCA 54",
+   "datazione": "[1500-1600?]",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Aristotelis Historia de Animalibus latine SCA 54",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Historia animalium"
+     ],
+     "corrispondenza": "titolo: «Aristotelis Historia de Animalibus latine SCA 54»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1885015/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1885015",
    "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
    "immagini": null
   },
@@ -169250,6 +171451,118 @@
    ],
    "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1669458/manifest",
    "pagina": "https://hdl.handle.net/1887.1/item:1669458",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1913524",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "VCF 16",
+   "datazione": "[1550-1600?]",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [],
+   "titolo": "f. xxvi bis, f.1-6v Theophrastus Paracelsus, De viribus membrorum, Liber primus de [etc.] VCF 16",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «f. xxvi bis, f.1-6v Theophrastus Paracelsus, De viribus membro…»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1913524/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1913524",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1914032",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "VCF 17",
+   "datazione": "[1575-1600?]",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [],
+   "titolo": "p.1-13 H.T.V.R., Farrago alchimiae, 1462 (germanice). - p.13-22 Theophrastus Paracelsus, [etc.] VCF 17",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…, 1462 (germanice). - p.13-22 Theophrastus Paracelsus, [etc.] VCF 17»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1914032/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1914032",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-2028734",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "VCF 24",
+   "datazione": "Duitsland, 1567-1575",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [],
+   "titolo": "[Theophrastus Paracelsus, Opera theologica, I] (germanice) VCF 24",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «[Theophrastus Paracelsus, Opera theologica, I] (germanice) VCF 24»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:2028734/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:2028734",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1989631",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "VCF 25",
+   "datazione": "1567, 1575",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [],
+   "titolo": "Theophrastus Paracelsus, Opera theologica, II (germanice) VCF 25",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Theophrastus Paracelsus, Opera theologica, II (germanice) VCF 25»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1989631/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1989631",
    "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
    "immagini": null
   },
@@ -169330,6 +171643,64 @@
    "immagini": null
   },
   {
+   "id": "lei-1523627",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "VGF 74",
+   "datazione": "[1475-1500?]",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [],
+   "titolo": "Platonis opera nonnula: Minos sive de Lege. - Legum libb. XII. - Epinomis sive Philosophus VGF 74",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Platonis opera nonnula: Minos sive de…»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1523627/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1523627",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1522224",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "VGQ 3",
+   "datazione": "[1200-1300?]",
+   "secolo": [
+    12,
+    13
+   ],
+   "lingue": [],
+   "titolo": "Aristotelis opera physica nonnulla, cum scholiis: de physica auscultatione libb. [etc.] VGQ 3",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Fisica"
+     ],
+     "corrispondenza": "titolo: «Aristotelis opera physica nonnulla, cum s…»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1522224/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1522224",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
    "id": "lei-4169883",
    "fonte": "leiden",
    "biblioteca": "Universiteitsbibliotheek Leiden",
@@ -169390,6 +171761,62 @@
    ],
    "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:4169775/manifest",
    "pagina": "https://hdl.handle.net/1887.1/item:4169775",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1522510",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "VGQ 20",
+   "datazione": "[1200-1300?]",
+   "secolo": [
+    12,
+    13
+   ],
+   "lingue": [],
+   "titolo": "1 (f. 1-232): Miscellanea. - Etymologicum Grammatici Magni. - . - 2 (f. 233-252): . - Explicationes nominum Hebraeicorum. - Nomina apostolorum. - Astrologica: de Moyse, de Ch...",
+   "autori": [
+    {
+     "id": "etymologicum",
+     "autore": "Etymologicum Magnum",
+     "latino": "Etymologicum Magnum",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «1 (f. 1-232): Miscellanea. - Etymologicum Grammatici Magni. - . - 2 (f.…»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1522510/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1522510",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1522874",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "VGQ 32",
+   "datazione": "[1450-1500?]",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [],
+   "titolo": "Ioannis Tzetzes expositio Hesiodi Operum et Dierum VGQ 32",
+   "autori": [
+    {
+     "id": "esiodo",
+     "autore": "Esiodo",
+     "latino": "Hesiodus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Ioannis Tzetzes expositio Hesiodi Operum et Dierum VGQ 32»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1522874/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1522874",
    "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
    "immagini": null
   },
@@ -177115,6 +179542,134 @@
    "immagini": null
   },
   {
+   "id": "lei-1669766",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "VUL 8",
+   "datazione": "[1500-1600?]",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Callimachi Hymni latine. - Moschi et Bionis Idyllia. - Gerarti Falkenburgii Epitaphium I. Flemingii. - Moschi et Bionis Idyllia varia latine. - Callimachi fragmenta. - Gregorii Cyprii Encomium maris cum Bon. Vulcanii Allocutione. - Astrologica q... VUL 8",
+   "autori": [
+    {
+     "id": "teocrito",
+     "autore": "Teocrito",
+     "latino": "Theocritus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Idilli"
+     ],
+     "corrispondenza": "titolo: «…ni latine. - Moschi et Bionis Idyllia. - Gerarti Falkenburgii Epita…»"
+    },
+    {
+     "id": "callimaco",
+     "autore": "Callimaco",
+     "latino": "Callimachus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Inni"
+     ],
+     "corrispondenza": "titolo: «Callimachi Hymni latine. - Moschi et Bio…»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1669766/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1669766",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-361241",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "VUL 9",
+   "datazione": "1500-1600?",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [],
+   "titolo": "Nilus Cabasila de Causis dissidii et de primatu Papae. - Bon. Vulcanii Prolegomena in Scholas de Homeri Iliadis I. - de Vocis Rhapsodiae significatione. - Bon. Vulcanii Prolegomena in Homeri Odysseam. - Bon. Vulcanii Scholae ... VUL 9",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…nii Prolegomena in Scholas de Homeri Iliadis I. - de Vocis Rhapsod…»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:361241/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:361241",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1613252",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "VUL 43",
+   "datazione": "France? : 15th century, second half",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [],
+   "titolo": "Opera (Greek) / Galen, VUL 4",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galen.»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1613252/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1613252",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1889306",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "VUL 45 B",
+   "datazione": "[1500-1600?]",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [],
+   "titolo": "Polybii Historiae lib. VI VUL 45 B",
+   "autori": [
+    {
+     "id": "polibio",
+     "autore": "Polibio",
+     "latino": "Polybius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Storie"
+     ],
+     "corrispondenza": "titolo: «Polybii Historiae lib. VI VUL 45 B»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1889306/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1889306",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
    "id": "lei-877396",
    "fonte": "leiden",
    "biblioteca": "Universiteitsbibliotheek Leiden",
@@ -177289,6 +179844,73 @@
    ],
    "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:4213150/manifest",
    "pagina": "https://hdl.handle.net/1887.1/item:4213150",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1993799",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "VUL 103",
+   "datazione": "[1500-1600?]",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "titolo": "Carmina latinorum et graecorum a diversis conscripta. - Callimachi Hymni latine VUL 103",
+   "autori": [
+    {
+     "id": "callimaco",
+     "autore": "Callimaco",
+     "latino": "Callimachus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Inni"
+     ],
+     "corrispondenza": "titolo: «Carmina latinorum et graecorum a diversis conscripta. - Callimachi Hymni latine VUL 103»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1993799/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1993799",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-1605267",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "WYT 14",
+   "datazione": "[Date unknown]",
+   "secolo": null,
+   "lingue": [],
+   "titolo": "D. Wyttenbachii Emendationes in Platonem de Legibus. - D. Wyttenbachii Excerpta ex Iamblichi et Porphyrii Vita Pythagorae WYT 14",
+   "autori": [
+    {
+     "id": "porfirio",
+     "autore": "Porfirio",
+     "latino": "Porphyrius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…chii Excerpta ex Iamblichi et Porphyrii Vita Pythagorae WYT 14»"
+    },
+    {
+     "id": "giamblico",
+     "autore": "Giamblico",
+     "latino": "Iamblichus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Vita di Pitagora"
+     ],
+     "corrispondenza": "titolo: «…- D. Wyttenbachii Excerpta ex Iamblichi et Porphyrii Vita Pythagorae…»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1605267/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:1605267",
    "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
    "immagini": null
   },

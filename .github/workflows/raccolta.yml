@@ -64,7 +64,7 @@ jobs:
           --leiden-minuti=15
           --hsp-minuti=10
           --berlino-minuti=60
-          --minuti-totali=160
+          --minuti-totali=150
       - name: Prove del catalogo
         run: node --test tests/catalogo.test.js
       # Salvataggio a prova di conflitto: niente rebase sui file generati. Si mettono da parte gli stati delle fonti
