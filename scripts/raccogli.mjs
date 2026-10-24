@@ -158,7 +158,13 @@ async function main() {
   const sigle = new Map(TRUCULENTUS.map(t => [t.manifest, t.sigla]));
   const voci = new Map();
   const t0 = Date.now();
+  // Fonti sospese: entra nel catalogo solo ciò che si apre dentro il sito. Per queste i manifesti o le immagini
+  // non si aprono nemmeno da un browser normale (verificato il 24 ottobre 2026): restano raccolte negli stati
+  // ma non entrano nel catalogo finché non tornano raggiungibili.
+  const SOSPESE = { wolfenbuettel: "server iiif.hab.de non raggiungibile", karlsruhe: "digital.blb-karlsruhe.de risponde 403", stoccarda: "manifesti di Marburgo non raggiungibili" };
+  for (const f of Object.keys(SOSPESE)) if (f in lavori) { esito[f] = "sospesa: " + SOSPESE[f]; log(f, "sospesa:", SOSPESE[f]); }
   for (const f of Object.keys(lavori)) {
+    if (SOSPESE[f]) continue;
     if (perFonte[f]) { for (const r of perFonte[f]) { const v = voce(r, AUTORI, sigle); if (v) voci.set(v.id, v); } }
     else for (const v of prima.filter(x => x.fonte === f)) {
       // voci precedenti senza lingua: si prova la deduzione
