@@ -2,7 +2,18 @@
 // Interfaccia SRU di Gallica (https://gallica.bnf.fr/SRU, risposta in Dublin Core), 50 record per pagina,
 // con ripresa da .cache/catalogo/stato-gallica.json e riuso della raccolta completa per 6 giorni.
 // Manifesto IIIF: https://gallica.bnf.fr/iiif/ark:/12148/<id>/manifest.json
+import fs from "node:fs";
 import { scarica, statoFonte, tag, log } from "../rete.mjs";
+
+// Gallica respinge le richieste dai server (GitHub compreso): la raccolta si fa dal browser di una persona
+// e si salva in data/gallica.json. Se la lettura diretta fallisce si usano quei dati.
+export const RACCOLTA_BROWSER = "data/gallica.json";
+function daBrowser(motivo) {
+  let d = null; try { d = JSON.parse(fs.readFileSync(RACCOLTA_BROWSER, "utf8")); } catch (e) {}
+  if (!d || !Array.isArray(d.voci) || !d.voci.length) throw new Error(motivo);
+  log("gallica", `${motivo}: uso la raccolta fatta dal browser il ${String(d.raccolto || "").slice(0, 10)} (${d.voci.length} codici)`);
+  return d.voci;
+}
 
 export const BASE = "https://gallica.bnf.fr/SRU";
 export const QUERY = 'dc.type all "manuscrit" and (dc.source all "latin" or dc.source all "latine")';
@@ -31,7 +42,12 @@ export function estraiGallica(rec) {
     licenza: /domaine public|public domain/i.test(tag(rec, "dc:rights").join(" ")) ? "Domaine public (Gallica, conditions d'utilisation)" : (tag(rec, "dc:rights")[0] || null) };
 }
 
-export async function raccogliGallica({ limiteMinuti = 0, soloCache = false, giorni = 6 } = {}) {
+export async function raccogliGallica(opz = {}) {
+  try { return await raccogliDiretta(opz); }
+  catch (e) { return daBrowser(e.message); }
+}
+
+async function raccogliDiretta({ limiteMinuti = 0, soloCache = false, giorni = 6 } = {}) {
   const st = statoFonte("gallica"), ora = Date.now();
   let d = st.dati;
   if (soloCache) { if (!d || !d.completato) throw new Error("nessuna raccolta completa in cache"); return d.voci; }
