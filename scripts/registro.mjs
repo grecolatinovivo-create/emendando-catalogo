@@ -24,6 +24,8 @@ export const BIBLIOTECHE = {
   leiden: { biblioteca: "Universiteitsbibliotheek Leiden (manoscritti, con i Vossiani; Bibliotheca Neerlandica Manuscripta)", citta: "Leida", come: "ogni notte, da sola" },
   // biblioteche lette dal Handschriftenportal (Wolfenbüttel, Bamberga, Karlsruhe, Stoccarda, Colonia, Lipsia)
   ...Object.fromEntries(Object.entries(FONTI_HSP).map(([f, h]) => [f, { biblioteca: `${h.nome} (dati dal Handschriftenportal)`, citta: h.citta, come: "ogni notte, da sola" }])),
+  yale: { biblioteca: "Yale University Library (Beinecke e altre biblioteche di Yale)", citta: "New Haven (Stati Uniti)", come: "ogni notte, da sola" },
+  penn: { biblioteca: "University of Pennsylvania Libraries (Kislak Center, Schoenberg, CAJS)", citta: "Filadelfia (Stati Uniti)", come: "ogni notte, da sola" },
   vaticana: { biblioteca: "Biblioteca Apostolica Vaticana", citta: "Città del Vaticano", come: "ogni 3 ore, da sola" },
 };
 
@@ -66,6 +68,24 @@ export const AVANZAMENTO = {
     const n = Object.keys(s.voci || {}).length;
     if (s.cursore != null) return { testo: `in corso: ${num(n)} codici letti (collezione ${(s.cursore.c ?? 0) + 1} di 2, pagina ${(s.cursore.p ?? 0) + 1})`, data: s.aggiornato };
     return { testo: `schede lette tutte (${num(n)} codici)`, data: s.aggiornato };
+  },
+  yale: () => {
+    const s = leggi("data/yale.json"); if (!s) return { testo: "non ancora cominciata" };
+    const n = Object.keys(s.voci || {}).length, pagine = Math.ceil((s.totale || 0) / 25);
+    const pagina = Math.max(s.pagine || 0, s.sospeso ? +(/:(\d+)$/.exec(s.sospeso) || [0, 0])[1] / 25 : 0);
+    if (s.coda && s.coda.length && !s.completato) {
+      // circa 1400 pagine al giorno (15 minuti a ogni esecuzione, 8 esecuzioni, una pagina ogni 5 secondi)
+      const giorni = Math.ceil(Math.max(0, pagine - pagina) / 1400);
+      const fase = s.coda[0] ? `lingue antiche e medievali (insiemi rimasti: ${s.coda.length - 1}), poi tutti i record` : `tutti i record, ${num(pagina)} pagine su circa ${num(pagine)}`;
+      return { testo: `prima lettura in corso: ${fase} (${num(n)} manoscritti finora); mancano circa ${giorni} ${giorni === 1 ? "giorno" : "giorni"}`, data: s.aggiornato };
+    }
+    if (s.coda && s.coda.length) return { testo: `aggiornamento in corso (${num(n)} manoscritti)`, data: s.aggiornato };
+    return { testo: `record letti tutti (${num(n)} manoscritti); poi solo i record cambiati, ogni 6 giorni`, data: s.completato || s.aggiornato };
+  },
+  penn: () => {
+    const s = leggi("data/penn.json"); if (!s) return { testo: "non ancora cominciata" };
+    if (s.cursore) return { testo: `in corso: forma ${(s.cursore.f ?? 0) + 1}, pagina ${s.cursore.p}`, data: s.aggiornato };
+    return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} manoscritti fino al 1800)`, data: s.aggiornato };
   },
   ...Object.fromEntries(Object.keys(FONTI_HSP).map(f => [f, () => { const a = aRiprese(`data/${f}.json`, 1); return { ...a, testo: a.testo.replace("schede lette tutte", "codici digitalizzati letti tutti") }; }])),
   vaticana: () => {

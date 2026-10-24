@@ -410,3 +410,53 @@ test("Handschriftenportal: una fonte per biblioteca, prefissi distinti, un manif
   assert.equal(k1.titolo, md.t); assert.equal(k1.datazione, "15. Jh."); assert.deepEqual(k1.autori_fonte, md.a);
   assert.ok(Object.values(LINGUE_HSP).includes("la") && Object.values(LINGUE_HSP).includes("grc"));
 });
+
+test("Yale: record OAI MODS, solo manoscritti fino al 1800, manifesti dall'identificativo", async () => {
+  const { estraiYale, recordYale, primoAnno } = await import("../scripts/fonti/yale.mjs");
+  const rec = (oid, { genere = "Manuscripts", seg = "Beinecke MS 712.3", data = "[Early 9th century]", editore = "", titolo = "[Lectionary]", nome = "Catholic Church", lingua = "Latin" } = {}) =>
+    `<record><header><identifier>oai:collections.library.yale.edu:${oid}</identifier><datestamp>2023-02-20T18:03:48Z</datestamp></header><metadata><mods xmlns:mods="http://www.loc.gov/mods/v3">
+  <mods:genre>${genere}</mods:genre><mods:note>On parchment.</mods:note><mods:classification>${seg}</mods:classification>
+  <mods:note type="preferred citation">Beinecke Rare Book and Manuscript Library</mods:note><mods:typeOfResource>text</mods:typeOfResource>
+  <mods:language><mods:languageTerm type="text">${lingua}</mods:languageTerm></mods:language><mods:name><mods:namePart>${nome}</mods:namePart></mods:name>
+  <mods:titleInfo><mods:title>${titolo}</mods:title></mods:titleInfo><mods:originInfo>${editore ? `<mods:publisher>${editore}</mods:publisher>` : ""}<mods:dateCreated>${data}</mods:dateCreated></mods:originInfo>
+  <mods:location><mods:url access="preview" xlink:href="https://collections.library.yale.edu/iiif/2/1002430/full/!200,200/0/default.jpg"/></mods:location></mods></metadata></record>`;
+  const x = estraiYale(rec(10269751));
+  assert.equal(x.oid, "10269751");
+  assert.deepEqual(x.v, { s: "Beinecke MS 712.3", t: "[Lectionary]", a: ["Catholic Church"], l: ["Latin"], d: "[Early 9th century]", b: "Beinecke Rare Book and Manuscript Library", g: ["Manuscripts"], p: "1002430" });
+  assert.equal(estraiYale(rec(1, { genere: "Engravings", seg: "1977 Folio 130", editore: "typis Godefridi Kempensis" })).v, null);   // libro a stampa
+  assert.equal(estraiYale(rec(2, { genere: "Typescripts", seg: "YCAL MSS 43", data: "1868-1976" })).v, null);   // carte moderne
+  assert.equal(estraiYale(rec(3, { genere: "Papyri", seg: "P.CtYBR inv. 69" })).v, null);   // papiri: in attesa di decisione
+  assert.equal(estraiYale(rec(4).replace("<header>", '<header status="deleted">')).v, null);
+  assert.equal(primoAnno("176-?]"), 1760); assert.equal(primoAnno("[Early 9th century]"), 800); assert.equal(primoAnno("anno M.cccccvij [15 Mar. 1507]"), 1507);
+  const v = estraiYale(rec(5, { seg: "Beinecke MS 233", titolo: "Bucolica, Georgica, Aeneis", nome: "Virgil", data: "[ca. 1460]" })).v;
+  const [r] = recordYale({ voci: { 5: v } });
+  assert.equal(r.manifest, "https://collections.library.yale.edu/manifests/5");
+  assert.equal(r.pagina, "https://collections.library.yale.edu/catalog/5");
+  assert.equal(r.biblioteca, "Beinecke Rare Book and Manuscript Library");
+  assert.deepEqual(voce(r, A).lingue, ["la"]);
+  assert.deepEqual(voce(r, A).autori.map(a => a.id), ["virgilio"]);
+});
+
+test("Penn: ricerca di Colenda, segnature, filtri e manifesti del repository digitale", async () => {
+  const { compattaPenn, dividiPenn, recordPenn, licenzaPenn } = await import("../scripts/fonti/penn.mjs");
+  const doc = (id, o = {}) => ({ id, uuid_ssi: "3d747a38-9cdb-403d-a2db-abcd703fbf57", iiif_manifest_path_ss: "3d747a38-9cdb-403d-a2db-abcd703fbf57/iiif_manifest",
+    title_ssim: ["[Glossed psalter]"], date_ssim: ["1100"], year_ssim: ["1100"], language_ssim: ["Latin"], item_type_ssim: ["Text"],
+    physical_format_ssim: ["manuscripts (documents)", "codices (bound manuscripts)", "Manuscripts, Medieval"],
+    physical_location_ssim: ["Kislak Center for Special Collections, Rare Books and Manuscripts, Manuscripts, Ms. Codex 1058"],
+    rights_ssim: ["http://rightsstatements.org/vocab/NoC-US/1.0/"], description_tesim: ["The Book of Psalms with glosses."], note_tesim: ["Ms. codex.", "Origin: Laon, circa 1100."], ...o });
+  const v = compattaPenn(doc("81431-p3bz6179x"));
+  assert.equal(v.u, "3d747a38-9cdb-403d-a2db-abcd703fbf57"); assert.equal(v.s, "Kislak Center for Special Collections, Rare Books and Manuscripts, Manuscripts, Ms. Codex 1058");
+  assert.equal(v.c, "The Book of Psalms with glosses. ; Origin: Laon, circa 1100.");
+  assert.equal(compattaPenn(doc("x1", { year_ssim: ["1911"], physical_format_ssim: ["manuscripts (documents)"] })), null);   // carte moderne
+  assert.equal(compattaPenn(doc("x2", { year_ssim: ["1772"], physical_format_ssim: ["manuscripts (documents)", "letters (correspondence)"] })), null);   // lettere
+  assert.equal(compattaPenn(doc("x3", { item_type_ssim: ["Still Image"] })), null);
+  assert.ok(compattaPenn(doc("x4", { year_ssim: ["1615/1797"] })));
+  assert.deepEqual(dividiPenn("Kislak Center for Special Collections, Rare Books and Manuscripts, Manuscripts, Ms. Coll. 788 Folders 161-288, 527-529"),
+    { biblioteca: "University of Pennsylvania Libraries, Kislak Center", segnatura: "Ms. Coll. 788 Folders 161-288, 527-529" });
+  assert.deepEqual(dividiPenn("Library at the Katz Center, Rare Book Manuscripts, CAJS Rar Ms 87"), { biblioteca: "University of Pennsylvania, Library at the Katz Center (CAJS)", segnatura: "CAJS Rar Ms 87" });
+  assert.equal(licenzaPenn("http://rightsstatements.org/vocab/NoC-US/1.0/"), "No Copyright - United States (rightsstatements.org)");
+  const [r] = recordPenn({ voci: { "81431-p3bz6179x": v } });
+  assert.equal(r.id, "upenn-p3bz6179x"); assert.equal(r.segnatura, "Ms. Codex 1058");
+  assert.equal(r.manifest, "https://digitalrepository.library.upenn.edu/iiif/2/items/3d747a38-9cdb-403d-a2db-abcd703fbf57/manifest");
+  assert.deepEqual(voce(r, A).lingue, ["la"]); assert.deepEqual(voce(r, A).secolo, [11, 11]);
+});
