@@ -22,7 +22,7 @@ export const ordineFondi = fondi => [...PRIORITA.filter(f => fondi.includes(f)),
 
 // fondi e numero di codici dalla pagina dei manoscritti
 export function fondiDaHome(html) {
-  const out = {}, re = /<strong>(\d+)<\/strong>\s*ITEMS<\/span>\s*<h2>\s*<a[^>]*data-item-url="\/mss\/ajax\/category\/([^"]+)"/g;
+  const out = {}, re = /<strong>(\d+)<\/strong>\s*ITEMS?<\/span>\s*<h2>\s*<a[^>]*data-item-url="\/mss\/ajax\/category\/([^"]+)"/g;
   let m; while ((m = re.exec(html))) out[decodeURIComponent(m[2].replace(/&#39;/g, "'").replace(/&amp;/g, "&"))] = +m[1];
   return out;
 }

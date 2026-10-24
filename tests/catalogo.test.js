@@ -198,9 +198,9 @@ test("Vaticana: metadati dall'inizio del manifesto e segnature leggibili", () =>
 test("Vaticana: elenco dei digitalizzati (fondi, segnature, ordine, codici da leggere)", () => {
   const html = `<div class="item-thumbnail-list-header"><span><strong>2</strong>ITEMS</span><h2><a href="/mss/Autogr.Paolo.VI"
        data-item-url="/mss/ajax/category/Autogr.Paolo.VI">x</a></h2></div><div class="item-thumbnail-list-header"><span><strong>10388</strong>ITEMS</span><h2><a href="/mss/Vat.lat"
-       data-item-url="/mss/ajax/category/Vat.lat">Vat.lat.</a></h2></div><div class="item-thumbnail-list-header"><span><strong>2</strong>ITEMS</span><h2><a href="/mss/Carte.d&#39;Abbadie"
+       data-item-url="/mss/ajax/category/Vat.lat">Vat.lat.</a></h2></div><div class="item-thumbnail-list-header"><span><strong>1</strong>ITEM</span><h2><a href="/mss/Carte.d&#39;Abbadie"
        data-item-url="/mss/ajax/category/Carte.d&#39;Abbadie">x</a></h2></div>`;
-  assert.deepEqual(fondiDaHome(html), { "Autogr.Paolo.VI": 2, "Vat.lat": 10388, "Carte.d'Abbadie": 2 });
+  assert.deepEqual(fondiDaHome(html), { "Autogr.Paolo.VI": 2, "Vat.lat": 10388, "Carte.d'Abbadie": 1 });
   assert.deepEqual(segnatureDaFondo(`{"fond":[{"path":"digit/MSS_Vat.lat.1/cover/cover.jpg","shelfmark":"Vat.lat.1","limited":false},{"shelfmark":"Vat.lat.414.pt.1","limited":true}]}`),
     ["Vat.lat.1", "Vat.lat.414.pt.1"]);
   assert.deepEqual(ordineFondi(["Chig", "Vat.gr", "Borgh", "Vat.lat", "Pal.lat"]), ["Pal.lat", "Vat.lat", "Chig", "Vat.gr", "Borgh"]);

@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-24T17:50:37.029Z",
- "totale": 57645,
- "con_autori": 8829,
+ "aggiornato": "2026-10-24T17:55:54.036Z",
+ "totale": 57660,
+ "con_autori": 8844,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
   "id",
@@ -21,7 +21,7 @@
  "lingue": {
   "la": {
    "nome": "latino",
-   "codici": 16917
+   "codici": 16931
   },
   "de": {
    "nome": "tedesco",
@@ -53,7 +53,7 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 790
+   "codici": 791
   },
   "he": {
    "nome": "ebraico",
@@ -187,7 +187,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 3355
+   "codici": 3370
   },
   "medievale": {
    "nome": "autori medievali",
@@ -1105,7 +1105,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 1109
+   "codici": 1124
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1563,7 +1563,7 @@
     "es": 3,
     "nl": 10
    },
-   "esito": "errore: nessuna raccolta completa in cache",
+   "esito": "precedente",
    "prefissi": [
     "hd-"
    ],
@@ -1601,7 +1601,7 @@
     "ga": 3,
     "tr": 1
    },
-   "esito": "errore: nessuna raccolta completa in cache",
+   "esito": "precedente",
    "prefissi": [
     "ec-"
    ],
@@ -1653,7 +1653,7 @@
     "da": 1,
     "sla": 11
    },
-   "esito": "errore: nessuna raccolta completa in cache",
+   "esito": "precedente",
    "prefissi": [
     "bsb-"
    ],
@@ -1689,7 +1689,7 @@
     "sa": 1,
     "pl": 3
    },
-   "esito": "errore: nessuna raccolta completa in cache",
+   "esito": "precedente",
    "prefissi": [
     "sbb-"
    ],
@@ -1714,7 +1714,7 @@
     "nl": 1,
     "grc": 5
    },
-   "esito": "ok",
+   "esito": "precedente",
    "prefissi": [
     "bod-"
    ],
@@ -1730,7 +1730,7 @@
    "lingue": {
     "la": 1892
    },
-   "esito": "ok",
+   "esito": "precedente",
    "prefissi": [
     "bnf-"
    ],
@@ -1751,7 +1751,7 @@
     "it": 5,
     "ar": 3
    },
-   "esito": "ok",
+   "esito": "precedente",
    "prefissi": [
     "bml-"
    ],
@@ -1782,7 +1782,7 @@
     "he": 8,
     "en": 1
    },
-   "esito": "ok",
+   "esito": "precedente",
    "prefissi": [
     "lei-"
    ],
@@ -1803,7 +1803,7 @@
     "es": 1,
     "nl": 1
    },
-   "esito": "ok",
+   "esito": "precedente",
    "prefissi": [
     "wol-"
    ],
@@ -1814,10 +1814,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 836,
-   "con_autori": 199,
+   "codici": 851,
+   "con_autori": 214,
    "lingue": {
-    "la": 833,
+    "xx": 1,
+    "la": 847,
     "fr": 2,
     "it": 1
    },
@@ -1885,7 +1886,7 @@
   {
    "file": "indice/vaticana-0.json",
    "fonte": "vaticana",
-   "righe": 836
+   "righe": 851
   }
  ]
 }
