@@ -9,6 +9,7 @@ import { voce, TRUCULENTUS } from "../scripts/raccogli.mjs";
 import { estraiGallica, segnaturaGallica } from "../scripts/fonti/gallica.mjs";
 import { metadatiBodleian, dividiSegnatura } from "../scripts/fonti/bodleian.mjs";
 import { titoliSezioni, conIndici } from "../scripts/fonti/heidelberg-indici.mjs";
+import { compattaLaurenziana, recordLaurenziana, intervalloAnni, segnaturaLaurenziana } from "../scripts/fonti/laurenziana.mjs";
 
 const A = caricaAutori();
 const ric = (titolo, extra = {}) => riconosci([
@@ -176,4 +177,27 @@ test("miscellanee: indice dei contenuti dalle structures del manifesto", () => {
   assert.deepEqual(ids(ric("Ps.-Ausonius, Septem sapientum sententiae ; Pseudo-Boethius, De disciplina scolarium")), []);
   // un commento non è l'autore
   assert.equal(voce(conIndici([r], { voci: { cpl1: ["Glosae super Boethium", "Sermones"] } })[0], A), null);
+});
+
+test("Laurenziana: record di dmQuery, segnature, datazioni e voci", () => {
+  const rec = { collection: "/plutei", pointer: 669574, filetype: "cpd", parentobject: -1, title: "Virgilius . Scilicet P. Virgilii Maronis Bucolicorum pars, Georgicorum libri IV et Aeneidos libri XII",
+    creato: "Virgilius;Virgilius", contri: "", descri: "", date: "401; 402; 403; 500", datazi: "", subjec: "Plut.39.1", rights: "CC BY-NC-SA",
+    source: "I. Bucolica; P. Virgilius Maro; {IT:FI0100_Plutei_39.01_0001}|II. Georgica; s.a.; {IT:FI0100_Plutei_39.01_0002}", conten: "" };
+  assert.equal(compattaLaurenziana({ ...rec, parentobject: 669570 }), null);
+  const c = compattaLaurenziana(rec);
+  assert.equal(c.d, "401-500"); assert.equal(c.c, "I. Bucolica; P. Virgilius Maro | II. Georgica");
+  const [r] = recordLaurenziana({ voci: { "plutei:669574": c } });
+  assert.equal(r.id, "bml-plutei-669574"); assert.equal(r.segnatura, "Plut. 39.1"); assert.equal(r.licenza, "CC BY-NC-SA");
+  assert.equal(r.manifest, "https://tecabml.contentdm.oclc.org/iiif/plutei:669574/manifest.json");
+  assert.equal(r.pagina, "https://tecabml.contentdm.oclc.org/digital/collection/plutei/id/669574");
+  assert.deepEqual(voce(r, A).autori.map(a => a.id), ["virgilio"]);
+  assert.equal(intervalloAnni("1401; 1402; 1500"), "1401-1500");
+  assert.equal(segnaturaLaurenziana("Plut.12 sin.3"), "Plut. 12 sin.3"); assert.equal(segnaturaLaurenziana("Acquisti e Doni 233"), "Acquisti e Doni 233");
+});
+
+test("Laurenziana: omonimi e opere moderne non contano", () => {
+  for (const t of ["Plutarchi Vitae quaedam, et Leonardi Arretini Cicero Novus", "Donati Acciaioli Vita Alcibiadis ex Plutarcho", "Baccii Baldini Oratio de clementia",
+    "Polyaeni Stratagemata Petro Angelio interpr", "Guidonis Columnae De excidio Troiae liber", "Ang. Pol., Marc. Virgilii, Herm. Barbari etc. Opuscula"])
+    assert.deepEqual(ids(ric(t)), [], t);
+  assert.deepEqual(ids(ric("Synesius De somniis, Ficino interprete, et Prisciani Lydii varia")), []);
 });

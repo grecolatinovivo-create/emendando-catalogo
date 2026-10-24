@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 // Catalogo dei manoscritti con testi latini classici (IIIF). Uso:
-//   node scripts/raccogli.mjs [--fonti=heidelberg,ecodices,bsb,bodleian,gallica,vaticana] [--vaticana-minuti=20] [--oai-minuti=60]
-//        [--bodleian-minuti=30] [--gallica-minuti=30] [--indici-minuti=20] [--minuti-totali=160] [--solo-costruisci]
-// Scrive data/manoscritti.json (il catalogo) e gli stati delle scansioni a riprese: data/vaticana.json, data/bodleian.json,
+//   node scripts/raccogli.mjs [--fonti=heidelberg,ecodices,bsb,bodleian,gallica,laurenziana,vaticana] [--vaticana-minuti=20] [--oai-minuti=60]
+//        [--bodleian-minuti=30] [--gallica-minuti=30] [--laurenziana-minuti=15] [--indici-minuti=20] [--minuti-totali=160] [--solo-costruisci]
+// Scrive data/manoscritti.json (il catalogo) e gli stati delle scansioni a riprese: data/vaticana.json, data/bodleian.json, data/laurenziana.json,
 // data/heidelberg-indici.json (indici dei contenuti delle miscellanee di Heidelberg, letti dai manifesti IIIF).
 // --minuti-totali: tempo complessivo disponibile; la Vaticana usa al massimo quello che resta dopo le fonti OAI.
 // --solo-costruisci: nessuna richiesta, si ricostruisce dalle raccolte in cache e dallo stato della Vaticana.
@@ -15,14 +15,16 @@ import { raccogliHeidelberg, raccogliEcodices, raccogliBsb } from "./fonti/oai.m
 import { scansiona, recordVaticana } from "./fonti/vaticana.mjs";
 import { scansionaBodleian, recordBodleian } from "./fonti/bodleian.mjs";
 import { raccogliGallica } from "./fonti/gallica.mjs";
+import { scansionaLaurenziana, recordLaurenziana } from "./fonti/laurenziana.mjs";
 import { leggiIndiciHeidelberg, conIndici } from "./fonti/heidelberg-indici.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
-const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,bodleian,gallica,vaticana").split(",");
+const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,bodleian,gallica,laurenziana,vaticana").split(",");
 const OUT = "data/manoscritti.json";
 const INIZIO = Date.now();
 export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)",
-  bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)", vaticana: "Biblioteca Apostolica Vaticana (digi.vatlib.it)" };
+  bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)",
+  laurenziana: "Biblioteca Medicea Laurenziana, Firenze (tecabml.contentdm.oclc.org)", vaticana: "Biblioteca Apostolica Vaticana (digi.vatlib.it)" };
 
 // i tre codici del Truculentus restano sempre nel catalogo, anche se una fonte non li ha ancora restituiti
 export const TRUCULENTUS = [
@@ -109,6 +111,7 @@ async function main() {
     bsb: async () => unisciBsb(await raccogliBsb(oai())),
     bodleian: async () => recordBodleian(await scansionaBodleian({ minuti: tempo(+(arg["bodleian-minuti"] ?? 30)), soloCache: !!arg["solo-costruisci"] })),
     gallica: () => raccogliGallica({ limiteMinuti: tempo(+(arg["gallica-minuti"] ?? 30)), soloCache: !!arg["solo-costruisci"] }),
+    laurenziana: async () => recordLaurenziana(await scansionaLaurenziana({ minuti: tempo(+(arg["laurenziana-minuti"] ?? 15)), soloCache: !!arg["solo-costruisci"] })),
     vaticana: async () => {
       let minuti = +(arg["vaticana-minuti"] ?? 20);
       // con un tempo complessivo si lasciano 6 minuti per costruire il catalogo, provarlo e salvarlo

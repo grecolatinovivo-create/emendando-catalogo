@@ -622,6 +622,10 @@
       "Speeches"
      ]
     }
+   ],
+   "escludi": [
+    "Cicero novus",
+    "Carmina de amicitia"
    ]
   },
   {
@@ -770,7 +774,16 @@
     "Polydorus Vergilius",
     "Polydore Vergil",
     "Polidoro Virgili",
-    "Virgilio Malvezzi"
+    "Virgilio Malvezzi",
+    "Ioannis de Virgilio",
+    "Giovanni del Virgilio",
+    "Marc. Virgilii",
+    "Marcello Virgilio",
+    "Marcellus Virgilius",
+    "Iohannis de Virgilio",
+    "Iohannes de Virgilio",
+    "Ioannes de Virgilio",
+    "Iohanni de Virgilio"
    ],
    "opere": [
     {
@@ -1313,6 +1326,10 @@
      ],
      "d": true
     }
+   ],
+   "escludi": [
+    "Oratio de clementia",
+    "Quaestiones naturales incerti auctoris"
    ]
   },
   {
@@ -1937,6 +1954,12 @@
       "Periegesis"
      ]
     }
+   ],
+   "escludi": [
+    "Prisciani Lydii",
+    "Priscianus Lydus",
+    "Prisciani philosophi",
+    "Priscianus philosophus"
    ]
   },
   {
@@ -1962,7 +1985,11 @@
     "Donatus Acciaiolus",
     "Donato Acciaiuoli",
     "Francesco Donato",
-    "Donatus ep"
+    "Donatus ep",
+    "Donati Acciaioli",
+    "Donato Acciaiolo",
+    "Donati Acciaiuoli",
+    "Donatus Acciaioli"
    ],
    "opere": [
     {
@@ -2480,6 +2507,11 @@
      ],
      "d": true
     }
+   ],
+   "escludi": [
+    "Polyaeni Stratagemata",
+    "Taktika strategemata",
+    "kai strategematon"
    ]
   },
   {
@@ -3155,6 +3187,11 @@
      ],
      "d": true
     }
+   ],
+   "escludi": [
+    "Columnae De excidio Troiae",
+    "Guidonis de Columnis",
+    "Guido delle Colonne"
    ]
   },
   {
