@@ -52,7 +52,8 @@ function trova(t, frase) {
 }
 const paroleprima = (t, ini, k) => t.slice(0, ini).trim().split(" ").filter(Boolean).slice(-k);
 
-function santo(t, ini) { const p = paroleprima(t, ini, 1); return p.length && SANTI.has(p[0]); }
+// santi omonimi e opere spurie («Ps.-Ausonius», «Pseudo-Boethius»)
+function santo(t, ini) { const p = paroleprima(t, ini, 1); return p.length && (SANTI.has(p[0]) || p[0] === "ps" || p[0] === "pseudo"); }
 // l'autore è l'oggetto del commento: «commentum in Vergilium», «glosae super Boethium», «commentary on Ovid»
 function autoreCommentato(t, ini) {
   const p = paroleprima(t, ini, 5);

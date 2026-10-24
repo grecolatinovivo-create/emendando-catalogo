@@ -1,20 +1,30 @@
 {
- "aggiornato": "2026-10-24T07:32:17.762Z",
+ "aggiornato": "2026-10-24T08:45:45.962Z",
  "fonti": {
   "heidelberg": {
    "nome": "Heidelberg (digi.ub.uni-heidelberg.de)",
-   "codici": 19,
+   "codici": 33,
    "esito": "ok"
   },
   "ecodices": {
    "nome": "e-codices",
    "codici": 220,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "bsb": {
    "nome": "Bayerische Staatsbibliothek (digitale-sammlungen.de)",
    "codici": 384,
+   "esito": "precedente"
+  },
+  "bodleian": {
+   "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
+   "codici": 41,
    "esito": "ok"
+  },
+  "gallica": {
+   "nome": "Bibliothèque nationale de France (gallica.bnf.fr)",
+   "codici": 0,
+   "esito": "precedente"
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
@@ -22,7 +32,7 @@
    "esito": "ok"
   }
  },
- "totale": 685,
+ "totale": 740,
  "manoscritti": [
   {
    "id": "bsb-bsb00120162",
@@ -11071,6 +11081,1014 @@
    "anteprima": "https://e-codices.ch/loris/bge/bge-lat0357/bge-lat0357_152r.jp2/full/,150/0/default/jpg"
   },
   {
+   "id": "bod-6172cfa3-9f7c-4120-9a3a-8751b7913961",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Add. C. 136",
+   "datazione": "15th century",
+   "titolo": "Aeneid.",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "opere": [
+      "Eneide"
+     ],
+     "corrispondenza": "autore: «Virgil»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/6172cfa3-9f7c-4120-9a3a-8751b7913961.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/6172cfa3-9f7c-4120-9a3a-8751b7913961/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-fd920e37-05c1-4f87-885c-9302940fb1f8",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Add. C. 138",
+   "datazione": "c. 1450-1460",
+   "titolo": "Metamorphoses.",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "opere": [
+      "Metamorfosi"
+     ],
+     "corrispondenza": "autore: «Ovid»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/fd920e37-05c1-4f87-885c-9302940fb1f8.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/fd920e37-05c1-4f87-885c-9302940fb1f8/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-12ff66fd-72d1-4867-bcd6-800e5c34d93c",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Add. C. 249",
+   "datazione": "15th century, third quarter",
+   "titolo": "Works.",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "opere": [],
+     "corrispondenza": "autore: «Lucius Annaeus Seneca»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/12ff66fd-72d1-4867-bcd6-800e5c34d93c.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/12ff66fd-72d1-4867-bcd6-800e5c34d93c/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-cff1b466-9d7f-4dc5-918f-cbba65f1564b",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Add. C. 283",
+   "datazione": "14th century",
+   "titolo": "Epitome of Pompeius Trogus.",
+   "autori": [
+    {
+     "id": "giustino",
+     "autore": "Giustino",
+     "latino": "Iustinus",
+     "opere": [
+      "Epitoma historiarum Philippicarum"
+     ],
+     "corrispondenza": "autore: «Justinus, Marcus Junianus»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/cff1b466-9d7f-4dc5-918f-cbba65f1564b.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/cff1b466-9d7f-4dc5-918f-cbba65f1564b/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-0ef9d5bc-06ee-4e66-8694-73af709896b5",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Ashmole 1431",
+   "datazione": "1070s–90s",
+   "titolo": "Herbal with Old English glosses",
+   "autori": [
+    {
+     "id": "apuleio",
+     "autore": "Apuleio",
+     "latino": "Apuleius",
+     "opere": [],
+     "corrispondenza": "autore: «Parker, Matthew, 1504–1575 ; Apuleius, pseudo ; Dioscorides, Pseudo…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/0ef9d5bc-06ee-4e66-8694-73af709896b5.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/0ef9d5bc-06ee-4e66-8694-73af709896b5/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-379cbd34-0d0a-4aaf-bfdf-b5b1b4bf3784",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 1. 11",
+   "datazione": null,
+   "titolo": "First decade.",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "opere": [],
+     "corrispondenza": "autore: «Livy»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/379cbd34-0d0a-4aaf-bfdf-b5b1b4bf3784.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/379cbd34-0d0a-4aaf-bfdf-b5b1b4bf3784/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-4779f35b-26e8-45fc-8de4-f55545d373c9",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 1. 12",
+   "datazione": "Dated 1459",
+   "titolo": "De officiis, and other philosophical works.",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "opere": [
+      "De officiis"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/4779f35b-26e8-45fc-8de4-f55545d373c9.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/4779f35b-26e8-45fc-8de4-f55545d373c9/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-4c987aa5-5626-4344-af76-28409fb9793c",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 1. 13",
+   "datazione": "c. 1460",
+   "titolo": "De rerum natura.",
+   "autori": [
+    {
+     "id": "lucrezio",
+     "autore": "Lucrezio",
+     "latino": "Lucretius",
+     "opere": [
+      "De rerum natura"
+     ],
+     "corrispondenza": "autore: «Lucretius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/4c987aa5-5626-4344-af76-28409fb9793c.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/4c987aa5-5626-4344-af76-28409fb9793c/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-0bbde5cb-8114-4dd2-ba02-d2ae08641d36",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 1. 14",
+   "datazione": null,
+   "titolo": "Tragedies.",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "opere": [
+      "Tragedie"
+     ],
+     "corrispondenza": "autore: «Seneca»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/0bbde5cb-8114-4dd2-ba02-d2ae08641d36.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/0bbde5cb-8114-4dd2-ba02-d2ae08641d36/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-38049e1a-5ecc-419b-830f-b0988f84ecb4",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 1. 15",
+   "datazione": "10th century, end",
+   "titolo": "Boethius, glossed; Persius, with commentary",
+   "autori": [
+    {
+     "id": "persio",
+     "autore": "Persio",
+     "latino": "Persius",
+     "opere": [
+      "Satire"
+     ],
+     "corrispondenza": "autore: «Lupus of Ferrières, approximately 805-approximately 862 ; Boethius, –524 ; Persius»"
+    },
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Lupus of Ferrières, approximately 805-approximately 862 ; Boethius, –524 ; Persius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/38049e1a-5ecc-419b-830f-b0988f84ecb4.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/38049e1a-5ecc-419b-830f-b0988f84ecb4/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-ca18fced-f657-440e-9d8c-09b2e8635235",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 1. 16",
+   "datazione": "10th century",
+   "titolo": "Virgil, Georgics. Servius, Commentary on Virgil. Glosses on Virgil in Latin and Old High German.",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "opere": [
+      "Georgiche"
+     ],
+     "corrispondenza": "autore: «Virgil ; Servius»"
+    },
+    {
+     "id": "servio",
+     "autore": "Servio",
+     "latino": "Servius",
+     "opere": [],
+     "corrispondenza": "autore: «Virgil ; Servius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/ca18fced-f657-440e-9d8c-09b2e8635235.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/ca18fced-f657-440e-9d8c-09b2e8635235/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-d4f9de83-6622-4e04-a2e4-ce219c879dae",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 1. 18",
+   "datazione": "1483",
+   "titolo": "MS. Auct. F. 1. 18",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "opere": [],
+     "corrispondenza": "autore: «Ovid»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/d4f9de83-6622-4e04-a2e4-ce219c879dae.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/d4f9de83-6622-4e04-a2e4-ce219c879dae/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-b90ba0ba-9bc6-46b8-9f25-63b9f9bb0ee4",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 2. 5",
+   "datazione": "15th century, middle",
+   "titolo": "Eclogues, Georgics, Æneid.",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "opere": [
+      "Eneide",
+      "Georgiche",
+      "Bucoliche"
+     ],
+     "corrispondenza": "autore: «Virgil»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/b90ba0ba-9bc6-46b8-9f25-63b9f9bb0ee4.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/b90ba0ba-9bc6-46b8-9f25-63b9f9bb0ee4/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-5084fe4b-b21e-4e0c-a495-331acc0defc2",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 2. 6",
+   "datazione": "15th century, first half",
+   "titolo": "Æneid.",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "opere": [
+      "Eneide"
+     ],
+     "corrispondenza": "autore: «Virgil»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/5084fe4b-b21e-4e0c-a495-331acc0defc2.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/5084fe4b-b21e-4e0c-a495-331acc0defc2/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-d64ed8c5-0b09-48fe-9d40-ab2f6d2edd63",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 2. 8",
+   "datazione": "9th century, first half",
+   "titolo": "Eclogues, Georgics, Æneid.",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "opere": [
+      "Eneide",
+      "Georgiche",
+      "Bucoliche"
+     ],
+     "corrispondenza": "autore: «Virgil»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/d64ed8c5-0b09-48fe-9d40-ab2f6d2edd63.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/d64ed8c5-0b09-48fe-9d40-ab2f6d2edd63/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-ec1066fa-2436-406c-add0-fc41cddc6694",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 2. 9",
+   "datazione": "12th century, first half (?)",
+   "titolo": "Pharsalia.",
+   "autori": [
+    {
+     "id": "lucano",
+     "autore": "Lucano",
+     "latino": "Lucanus",
+     "opere": [
+      "Pharsalia"
+     ],
+     "corrispondenza": "autore: «Lucan»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/ec1066fa-2436-406c-add0-fc41cddc6694.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/ec1066fa-2436-406c-add0-fc41cddc6694/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-05326a90-0a00-4f33-9484-d3668175ea1d",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 2. 13",
+   "datazione": "12th century, middle",
+   "titolo": "Comedies.",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "opere": [
+      "Commedie"
+     ],
+     "corrispondenza": "autore: «Terence»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/05326a90-0a00-4f33-9484-d3668175ea1d.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/05326a90-0a00-4f33-9484-d3668175ea1d/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-2821f4b7-5c81-4bee-a5be-7dbe30648348",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 2. 14",
+   "datazione": "11th century, second half",
+   "titolo": "MS. Auct. F. 2. 14",
+   "autori": [
+    {
+     "id": "persio",
+     "autore": "Persio",
+     "latino": "Persius",
+     "opere": [],
+     "corrispondenza": "autore: «…g Wulfstan, Swithun, Avianus, Persius, Serlo, Statius. Etc.»"
+    },
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "opere": [],
+     "corrispondenza": "autore: «…hun, Avianus, Persius, Serlo, Statius. Etc.»"
+    },
+    {
+     "id": "aviano",
+     "autore": "Aviano",
+     "latino": "Avianus",
+     "opere": [],
+     "corrispondenza": "autore: «…including Wulfstan, Swithun, Avianus, Persius, Serlo, Statius. Etc…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/2821f4b7-5c81-4bee-a5be-7dbe30648348.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/2821f4b7-5c81-4bee-a5be-7dbe30648348/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-dea3ca67-3231-429c-8ac7-c236a0100d90",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 2. 18",
+   "datazione": "15th century, second quarter",
+   "titolo": "De Oratore.",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "opere": [
+      "De oratore"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/dea3ca67-3231-429c-8ac7-c236a0100d90.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/dea3ca67-3231-429c-8ac7-c236a0100d90/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-8c300875-d7c8-410f-b097-7dc9e25ef27b",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 2. 19",
+   "datazione": "15th century, third quarter",
+   "titolo": "Tusculan disputations.",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/8c300875-d7c8-410f-b097-7dc9e25ef27b.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/8c300875-d7c8-410f-b097-7dc9e25ef27b/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-86e72632-da7e-4ba2-861a-473ae729d3ca",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 2. 20",
+   "datazione": "11th century, second half",
+   "titolo": "MS. Auct. F. 2. 20",
+   "autori": [
+    {
+     "id": "macrobio",
+     "autore": "Macrobio",
+     "latino": "Macrobius",
+     "opere": [],
+     "corrispondenza": "autore: «Isidore of Seville ; Macrobius ; Isidore»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/86e72632-da7e-4ba2-861a-473ae729d3ca.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/86e72632-da7e-4ba2-861a-473ae729d3ca/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-f43f64b5-fd29-4608-ae49-1e4a3cb2bcea",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 2. 24",
+   "datazione": null,
+   "titolo": "MS. Auct. F. 2. 24",
+   "autori": [
+    {
+     "id": "tacito",
+     "autore": "Tacito",
+     "latino": "Tacitus",
+     "opere": [],
+     "corrispondenza": "autore: «Tacitus»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/f43f64b5-fd29-4608-ae49-1e4a3cb2bcea.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/f43f64b5-fd29-4608-ae49-1e4a3cb2bcea/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-ee4f1e5d-d3b6-4db9-8f50-52eb4b3ef577",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 2. 25",
+   "datazione": "c. 1440-1450",
+   "titolo": "Historia Alexandri Magni.",
+   "autori": [
+    {
+     "id": "curzio-rufo",
+     "autore": "Curzio Rufo",
+     "latino": "Curtius Rufus",
+     "opere": [
+      "Historiae Alexandri Magni"
+     ],
+     "corrispondenza": "autore: «Quintus Curtius Rufus»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/ee4f1e5d-d3b6-4db9-8f50-52eb4b3ef577.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/ee4f1e5d-d3b6-4db9-8f50-52eb4b3ef577/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-d85bec81-9a93-452d-a5fc-881dafa83536",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 2. 29",
+   "datazione": "15th century, third quarter",
+   "titolo": "Epitome of Pompeius Trogus.",
+   "autori": [
+    {
+     "id": "giustino",
+     "autore": "Giustino",
+     "latino": "Iustinus",
+     "opere": [
+      "Epitoma historiarum Philippicarum"
+     ],
+     "corrispondenza": "autore: «Justinus, Marcus Junianus»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/d85bec81-9a93-452d-a5fc-881dafa83536.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/d85bec81-9a93-452d-a5fc-881dafa83536/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-6f1aa792-9fc6-40ba-9570-f75a0f2ad471",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 3. 13",
+   "datazione": null,
+   "titolo": "MS. Auct. F. 3. 13",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "opere": [],
+     "corrispondenza": "autore: «Anonymous (ascribed to Gerardus Cremonensis) ; Boethius ; Ptolemy»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/6f1aa792-9fc6-40ba-9570-f75a0f2ad471.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/6f1aa792-9fc6-40ba-9570-f75a0f2ad471/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-ad9a27c2-8766-4b08-893c-4c1a55875ae1",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 3. 26",
+   "datazione": "15th century, middle",
+   "titolo": "De Institutione Oratoria.",
+   "autori": [
+    {
+     "id": "quintiliano",
+     "autore": "Quintiliano",
+     "latino": "Quintilianus",
+     "opere": [
+      "Institutio oratoria"
+     ],
+     "corrispondenza": "autore: «Quintilian»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/ad9a27c2-8766-4b08-893c-4c1a55875ae1.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/ad9a27c2-8766-4b08-893c-4c1a55875ae1/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-047068da-6381-4edd-82d0-2b0c72f7a926",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 4. 31",
+   "datazione": "13th century",
+   "titolo": "Metamorphoses",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "opere": [
+      "Metamorfosi"
+     ],
+     "corrispondenza": "autore: «Ovid, 43 B.C.–17 A.D. or 18 A.D.»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/047068da-6381-4edd-82d0-2b0c72f7a926.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/047068da-6381-4edd-82d0-2b0c72f7a926/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-783d604c-a873-4d64-967a-8140cc0eafa5",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 4. 32",
+   "datazione": "850",
+   "titolo": "St. Dunstan's Classbook, Homily on the Invention of the Cross, Liber Commonei, Ars Amatoria",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "opere": [
+      "Ars amatoria"
+     ],
+     "corrispondenza": "titolo: «…of the Cross, Liber Commonei, Ars Amatoria»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/783d604c-a873-4d64-967a-8140cc0eafa5.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/783d604c-a873-4d64-967a-8140cc0eafa5/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-69bbd168-99f2-4b1d-86c1-2598423c714d",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 4. 33",
+   "datazione": "early 1460s",
+   "titolo": "Epigrams.",
+   "autori": [
+    {
+     "id": "marziale",
+     "autore": "Marziale",
+     "latino": "Martialis",
+     "opere": [
+      "Epigrammi"
+     ],
+     "corrispondenza": "autore: «Martial»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/69bbd168-99f2-4b1d-86c1-2598423c714d.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/69bbd168-99f2-4b1d-86c1-2598423c714d/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-0630f701-fd85-475b-8e29-10f3f883841f",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 5. 4",
+   "datazione": null,
+   "titolo": "Satires.",
+   "autori": [
+    {
+     "id": "giovenale",
+     "autore": "Giovenale",
+     "latino": "Iuvenalis",
+     "opere": [
+      "Satire"
+     ],
+     "corrispondenza": "autore: «Juvenal»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/0630f701-fd85-475b-8e29-10f3f883841f.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/0630f701-fd85-475b-8e29-10f3f883841f/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-2b79c8ae-67d9-49a5-9a64-4f4973faf035",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 5. 7",
+   "datazione": "14th century, end",
+   "titolo": "De architectura.",
+   "autori": [
+    {
+     "id": "vitruvio",
+     "autore": "Vitruvio",
+     "latino": "Vitruvius",
+     "opere": [
+      "De architectura"
+     ],
+     "corrispondenza": "autore: «Vitruvius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/2b79c8ae-67d9-49a5-9a64-4f4973faf035.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/2b79c8ae-67d9-49a5-9a64-4f4973faf035/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-c4d996ee-5594-4aca-9f54-3fff4b334ab8",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 5. 15",
+   "datazione": "12th century, first half",
+   "titolo": "De arte rhetorica ad Herennium.",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "opere": [
+      "Rhetorica ad Herennium"
+     ],
+     "corrispondenza": "titolo: «De arte rhetorica ad Herennium.»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/c4d996ee-5594-4aca-9f54-3fff4b334ab8.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/c4d996ee-5594-4aca-9f54-3fff4b334ab8/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-d041268e-3eed-44fb-9e37-1c619fbe7a1d",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 6. 5",
+   "datazione": "12th century, second quarter",
+   "titolo": "De consolatione philosophiae.",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Boethius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/d041268e-3eed-44fb-9e37-1c619fbe7a1d.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/d041268e-3eed-44fb-9e37-1c619fbe7a1d/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-1db87afe-1b6f-4ce7-9bcc-41d70bf4d413",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 6. 27",
+   "datazione": "10th century, late, or 11th century, first half",
+   "titolo": "Comedies",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "opere": [
+      "Commedie",
+      "Andria",
+      "Eunuchus",
+      "Phormio",
+      "Hecyra",
+      "Adelphoe"
+     ],
+     "corrispondenza": "autore: «Terence»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/1db87afe-1b6f-4ce7-9bcc-41d70bf4d413.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/1db87afe-1b6f-4ce7-9bcc-41d70bf4d413/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-48f0af63-6d8b-43f2-9d16-3b6898979d13",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. F. 6. 28",
+   "datazione": "c. 1430-1440; 15th century end (border)",
+   "titolo": "Historia Alexandri Magni.",
+   "autori": [
+    {
+     "id": "curzio-rufo",
+     "autore": "Curzio Rufo",
+     "latino": "Curtius Rufus",
+     "opere": [
+      "Historiae Alexandri Magni"
+     ],
+     "corrispondenza": "autore: «Quintus Curtius Rufus»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/48f0af63-6d8b-43f2-9d16-3b6898979d13.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/48f0af63-6d8b-43f2-9d16-3b6898979d13/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-26e58275-1508-438d-895a-2317d6eedf69",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. T. 1. 24",
+   "datazione": "11th century, first half",
+   "titolo": "First decade.",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "opere": [],
+     "corrispondenza": "autore: «Livy»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/26e58275-1508-438d-895a-2317d6eedf69.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/26e58275-1508-438d-895a-2317d6eedf69/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-a70dd2c9-a21d-4fa9-be54-6407393cc495",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. T. 1. 27",
+   "datazione": "12th century, middle",
+   "titolo": "Natural history, books VI-XV.",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "autore: «Pliny the Elder»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/a70dd2c9-a21d-4fa9-be54-6407393cc495.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/a70dd2c9-a21d-4fa9-be54-6407393cc495/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-24fc7bf8-3dab-4f15-947f-c1ab2756ca50",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. T. 2. 20",
+   "datazione": "9th century, third quarter",
+   "titolo": "MS. Auct. T. 2. 20",
+   "autori": [
+    {
+     "id": "donato",
+     "autore": "Donato",
+     "latino": "Donatus",
+     "opere": [],
+     "corrispondenza": "autore: «Isidorus ; Donatus»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/24fc7bf8-3dab-4f15-947f-c1ab2756ca50.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/24fc7bf8-3dab-4f15-947f-c1ab2756ca50/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-4426e68c-6057-4fbd-b07a-f1e9d1b1deff",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. T. 2. 27",
+   "datazione": "10th century, end",
+   "titolo": "Somnium Scipionis, with Macrobius' Commentary.",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "opere": [
+      "Somnium Scipionis"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    },
+    {
+     "id": "macrobio",
+     "autore": "Macrobio",
+     "latino": "Macrobius",
+     "opere": [],
+     "corrispondenza": "titolo: «Somnium Scipionis, with Macrobius' Commentary.»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/4426e68c-6057-4fbd-b07a-f1e9d1b1deff.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/4426e68c-6057-4fbd-b07a-f1e9d1b1deff/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-59c01468-8e8f-422d-9e22-8d4bfc565126",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Barlow 23",
+   "datazione": "15th century, middle",
+   "titolo": "Silvae",
+   "autori": [
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "opere": [
+      "Silvae"
+     ],
+     "corrispondenza": "autore: «Statius, P. Papinius, (Publius Papinius)»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/59c01468-8e8f-422d-9e22-8d4bfc565126.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/59c01468-8e8f-422d-9e22-8d4bfc565126/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-81fa5c48-1310-4d6d-897a-68205e4013f1",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Barlow 40",
+   "datazione": "12th century, second quarter",
+   "titolo": "De inventione rhetorica.",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "opere": [
+      "De inventione"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/81fa5c48-1310-4d6d-897a-68205e4013f1.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/81fa5c48-1310-4d6d-897a-68205e4013f1/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
    "id": "ec-bbb-0045",
    "fonte": "ecodices",
    "biblioteca": "Burgerbibliothek",
@@ -17014,6 +18032,30 @@
    "immagini": null
   },
   {
+   "id": "hd-cpl1546",
+   "fonte": "heidelberg",
+   "biblioteca": "Universitätsbibliothek Heidelberg",
+   "citta": "Heidelberg",
+   "segnatura": "Cod. Pal. lat. 1546",
+   "datazione": "12. Jh.",
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "opere": [
+      "Epistulae ad Lucilium"
+     ],
+     "corrispondenza": "indice: «Einband vorne ; Seneca, De remediis fortuitorum ; Se…»"
+    }
+   ],
+   "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/cpl1546/manifest.json",
+   "pagina": "https://digi.ub.uni-heidelberg.de/diglit/cpl1546",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
    "id": "hd-cpl1568",
    "fonte": "heidelberg",
    "biblioteca": "Universitätsbibliothek Heidelberg",
@@ -17092,6 +18134,31 @@
    "immagini": null
   },
   {
+   "id": "hd-cpl1912",
+   "fonte": "heidelberg",
+   "biblioteca": "Universitätsbibliothek Heidelberg",
+   "citta": "Heidelberg",
+   "segnatura": "Cod. Pal. lat. 1912",
+   "datazione": "um 1530-1619",
+   "titolo": "Poetischer Sammelband",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "opere": [
+      "Odi",
+      "Ars poetica"
+     ],
+     "corrispondenza": "indice: «…e elegiaco redditus ; Quintus Horatius Flaccus, De Arte poetica cum…»"
+    }
+   ],
+   "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/cpl1912/manifest.json",
+   "pagina": "https://digi.ub.uni-heidelberg.de/diglit/cpl1912",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
    "id": "hd-salIX23",
    "fonte": "heidelberg",
    "biblioteca": "Universitätsbibliothek Heidelberg",
@@ -17134,6 +18201,64 @@
    ],
    "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/salVII16b/manifest.json",
    "pagina": "https://digi.ub.uni-heidelberg.de/diglit/salVII16b",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "hd-salVII103",
+   "fonte": "heidelberg",
+   "biblioteca": "Universitätsbibliothek Heidelberg",
+   "citta": "Heidelberg",
+   "segnatura": "Cod. Sal. VII,103",
+   "datazione": "12. und 13. Jh.",
+   "titolo": "Theologische Texte (Sammelband)",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "opere": [
+      "De officiis",
+      "De inventione"
+     ],
+     "corrispondenza": "indice: «…[Theodoricus Carnotensis,] In ciceronis de inventione rhetorica (I.1.…»"
+    }
+   ],
+   "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/salVII103/manifest.json",
+   "pagina": "https://digi.ub.uni-heidelberg.de/diglit/salVII103",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "hd-salVIII29b",
+   "fonte": "heidelberg",
+   "biblioteca": "Universitätsbibliothek Heidelberg",
+   "citta": "Heidelberg",
+   "segnatura": "Cod. Sal. VIII,29b",
+   "datazione": "um 1450/55 (1452)",
+   "titolo": "Varia Poetica Latina",
+   "autori": [
+    {
+     "id": "plauto",
+     "autore": "Plauto",
+     "latino": "Plautus",
+     "opere": [
+      "Commedie"
+     ],
+     "corrispondenza": "indice: «…a:] Epistolae ; Titus Maccius Plautus: Comoediae ; P. Ovidius Naso:…»"
+    },
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "opere": [
+      "Remedia amoris"
+     ],
+     "corrispondenza": "indice: «…ccius Plautus: Comoediae ; P. Ovidius Naso: De remedia amoris»"
+    }
+   ],
+   "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/salVIII29b/manifest.json",
+   "pagina": "https://digi.ub.uni-heidelberg.de/diglit/salVIII29b",
    "licenza": "Public Domain Mark 1.0",
    "immagini": null
   },
@@ -17208,6 +18333,30 @@
    "immagini": null
   },
   {
+   "id": "hd-mzstb_hs_i_172",
+   "fonte": "heidelberg",
+   "biblioteca": "Wissenschaftliche Stadtbibliothek",
+   "citta": "Mainz",
+   "segnatura": "Hs I 172",
+   "datazione": "Fasz. I: 14. Jh. ; Fasz II: Ende 14. Jh. ; Fasz. III: 1. Hälfte 15. Jh. (1418)",
+   "titolo": "Theologische Sammelhandschrift",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "opere": [
+      "Epistulae ad Lucilium"
+     ],
+     "corrispondenza": "indice: «…sae ; Versus de eucharistia ; Seneca, Epistolae ad Lucilium ; Schn…»"
+    }
+   ],
+   "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_i_172/manifest.json",
+   "pagina": "https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_i_172",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
    "id": "hd-mzstb_hs_i_27",
    "fonte": "heidelberg",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz",
@@ -17252,6 +18401,30 @@
    "immagini": null
   },
   {
+   "id": "hd-mzstb_hs_i_135",
+   "fonte": "heidelberg",
+   "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz",
+   "citta": "Mainz",
+   "segnatura": "Hs I 135",
+   "datazione": "1456; 1458",
+   "titolo": "Theologische Sammelhandschrift",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "opere": [
+      "Ars amatoria"
+     ],
+     "corrispondenza": "indice: «Zwei Verse aus Ovid, Ars amandi ; Inhaltsverzeich…»"
+    }
+   ],
+   "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_i_135/manifest.json",
+   "pagina": "https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_i_135",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
    "id": "hd-mzstb_hs_i_141_a",
    "fonte": "heidelberg",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz",
@@ -17270,6 +18443,30 @@
    ],
    "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_i_141_a/manifest.json",
    "pagina": "https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_i_141_a",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "hd-mzstb_hs_i_161",
+   "fonte": "heidelberg",
+   "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz",
+   "citta": "Mainz",
+   "segnatura": "Hs I 161",
+   "datazione": "Mitte 15. Jh. (1451; Mainz 1458)",
+   "titolo": "Theologische Sammelhandschrift",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "indice: «…Gerson, Donatus spiritualis ; Boethius, De consolatione philosophiae…»"
+    }
+   ],
+   "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_i_161/manifest.json",
+   "pagina": "https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_i_161",
    "licenza": "Public Domain Mark 1.0",
    "immagini": null
   },
@@ -17318,24 +18515,123 @@
    "immagini": null
   },
   {
-   "id": "hd-mzstb_hs_i_255",
+   "id": "hd-mzstb_hs_i_269",
    "fonte": "heidelberg",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz",
    "citta": "Mainz",
-   "segnatura": "Hs I 255",
-   "datazione": "1. Hälfte 14. Jh.",
-   "titolo": "Richardus de Sancto Victore. Hugo de Sancto Victore. Ps.-Seneca. Publilius Syrus. Augustinus",
+   "segnatura": "Hs I 269",
+   "datazione": "2. Hälfte 14. Jh.",
+   "titolo": "Sermones et textus varii",
    "autori": [
     {
-     "id": "seneca",
-     "autore": "Seneca",
-     "latino": "Seneca",
-     "opere": [],
-     "corrispondenza": "titolo: «…. Hugo de Sancto Victore. Ps.-Seneca. Publilius Syrus. Augustinus»"
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "opere": [
+      "Metamorfosi"
+     ],
+     "corrispondenza": "indice: «…ner Hs. des 11. Jh.s: Publius Ovidius Naso, Metamorphoses ; Schnitt…»"
     }
    ],
-   "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_i_255/manifest.json",
-   "pagina": "https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_i_255",
+   "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_i_269/manifest.json",
+   "pagina": "https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_i_269",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "hd-mzstb_hs_i_350",
+   "fonte": "heidelberg",
+   "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz",
+   "citta": "Mainz",
+   "segnatura": "Hs I 350",
+   "datazione": "12.-15. Jh.",
+   "titolo": "Theologische Sammelhandschrift",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "indice: «…ieronymi sowie Bibelstellen ; Boethius, De consolatione philosophiae…»"
+    }
+   ],
+   "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_i_350/manifest.json",
+   "pagina": "https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_i_350",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "hd-mzstb_hs_i_371",
+   "fonte": "heidelberg",
+   "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz",
+   "citta": "Mainz",
+   "segnatura": "Hs I 371",
+   "datazione": "3. Viertel 9. Jh.",
+   "titolo": "Evangeliar",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "opere": [
+      "Commenti ad Aristotele e Porfirio"
+     ],
+     "corrispondenza": "indice: «…ht ab Io 21,17 ; 12. Jh.: aus Boethius, In categorias Aristotelis L.…»"
+    }
+   ],
+   "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_i_371/manifest.json",
+   "pagina": "https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_i_371",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "hd-mzstb_hs_i_542",
+   "fonte": "heidelberg",
+   "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz",
+   "citta": "Mainz",
+   "segnatura": "Hs I 542",
+   "datazione": "1445",
+   "titolo": "Philosophisch–rhetorische Sammelhandschrift",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "opere": [
+      "De officiis",
+      "Orazioni"
+     ],
+     "corrispondenza": "indice: «…es Ciceronis ; Marcus Tullius Cicero, De officiis libri III ; Hint…»"
+    }
+   ],
+   "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_i_542/manifest.json",
+   "pagina": "https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_i_542",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "hd-mzstb_hs_i_553",
+   "fonte": "heidelberg",
+   "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz",
+   "citta": "Mainz",
+   "segnatura": "Hs I 553",
+   "datazione": "Mitte 12.-1. Viertel 15. Jahrhundert",
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "indice: «…. ; Anicius Manlius Severinus Boethius: De consolatione philosophiae…»"
+    }
+   ],
+   "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_i_553/manifest.json",
+   "pagina": "https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_i_553",
    "licenza": "Public Domain Mark 1.0",
    "immagini": null
   },
@@ -17362,6 +18658,39 @@
    "immagini": null
   },
   {
+   "id": "hd-mzstb_hs_i_556",
+   "fonte": "heidelberg",
+   "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz",
+   "citta": "Mainz",
+   "segnatura": "Hs I 556",
+   "datazione": "Mitte 15. Jh. (1450)",
+   "titolo": "Rhetorische Sammelhandschrift",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "opere": [
+      "Paradoxa Stoicorum"
+     ],
+     "corrispondenza": "indice: «…i philosophi ; Marcus Tullius Cicero, Paradoxa stoicorum ; Rhetori…»"
+    },
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "opere": [
+      "Epistulae ad Lucilium"
+     ],
+     "corrispondenza": "indice: «…machinatus … ; Lucius Annaeus Seneca d.J., Epistulae ad Lucilium,…»"
+    }
+   ],
+   "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_i_556/manifest.json",
+   "pagina": "https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_i_556",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
    "id": "hd-mzstb_hs_i_558",
    "fonte": "heidelberg",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz",
@@ -17380,6 +18709,72 @@
    ],
    "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_i_558/manifest.json",
    "pagina": "https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_i_558",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "hd-mzstb_hs_i_559",
+   "fonte": "heidelberg",
+   "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz",
+   "citta": "Mainz",
+   "segnatura": "Hs I 559",
+   "datazione": "3. Viertel 15. Jh.",
+   "titolo": "Studienhandschrift mit klassischen Autoren - Sabellicus",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "opere": [
+      "Epistulae ad familiares"
+     ],
+     "corrispondenza": "indice: «Marcus Tullius Cicero, Epistulae ad familiares mit…»"
+    },
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "opere": [
+      "Eneide"
+     ],
+     "corrispondenza": "indice: «…1 bis 9.16.1 (4.13) ; Publius Vergilius Maro, Aeneis mit Glosse und K…»"
+    },
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "opere": [
+      "Metamorfosi"
+     ],
+     "corrispondenza": "indice: «…er Name Johannes Moguntinus ; Ovidius Naso, Metamorphoses mit Gloss…»"
+    }
+   ],
+   "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_i_559/manifest.json",
+   "pagina": "https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_i_559",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "hd-mzstb_hs_i_560",
+   "fonte": "heidelberg",
+   "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz",
+   "citta": "Mainz",
+   "segnatura": "Hs I 560",
+   "datazione": "1445",
+   "titolo": "Klassisch-rhetorische Studienhandschrift",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "opere": [
+      "Eneide"
+     ],
+     "corrispondenza": "indice: «…Inhaltsverzeichnis ; Publius Vergilius Maro, Aeneis, lib. I-II ; Acc…»"
+    }
+   ],
+   "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_i_560/manifest.json",
+   "pagina": "https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_i_560",
    "licenza": "Public Domain Mark 1.0",
    "immagini": null
   },

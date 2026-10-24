@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 // Catalogo dei manoscritti con testi latini classici (IIIF). Uso:
-//   node scripts/raccogli.mjs [--fonti=heidelberg,ecodices,bsb,vaticana] [--vaticana-minuti=20] [--oai-minuti=60] [--minuti-totali=160] [--solo-costruisci]
-// Scrive data/manoscritti.json (il catalogo) e data/vaticana.json (stato e cursore della scansione della Vaticana).
+//   node scripts/raccogli.mjs [--fonti=heidelberg,ecodices,bsb,bodleian,gallica,vaticana] [--vaticana-minuti=20] [--oai-minuti=60]
+//        [--bodleian-minuti=30] [--gallica-minuti=30] [--indici-minuti=20] [--minuti-totali=160] [--solo-costruisci]
+// Scrive data/manoscritti.json (il catalogo) e gli stati delle scansioni a riprese: data/vaticana.json, data/bodleian.json,
+// data/heidelberg-indici.json (indici dei contenuti delle miscellanee di Heidelberg, letti dai manifesti IIIF).
 // --minuti-totali: tempo complessivo disponibile; la Vaticana usa al massimo quello che resta dopo le fonti OAI.
 // --solo-costruisci: nessuna richiesta, si ricostruisce dalle raccolte in cache e dallo stato della Vaticana.
 // Le raccolte OAI riprendono da dove si erano fermate (.cache/catalogo/stato-*.json) e si riusano per 6 giorni;
@@ -11,12 +13,16 @@ import { log } from "./rete.mjs";
 import { caricaAutori, riconosci } from "./riconosci.mjs";
 import { raccogliHeidelberg, raccogliEcodices, raccogliBsb } from "./fonti/oai.mjs";
 import { scansiona, recordVaticana } from "./fonti/vaticana.mjs";
+import { scansionaBodleian, recordBodleian } from "./fonti/bodleian.mjs";
+import { raccogliGallica } from "./fonti/gallica.mjs";
+import { leggiIndiciHeidelberg, conIndici } from "./fonti/heidelberg-indici.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
-const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,vaticana").split(",");
+const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,bodleian,gallica,vaticana").split(",");
 const OUT = "data/manoscritti.json";
 const INIZIO = Date.now();
-export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)", vaticana: "Biblioteca Apostolica Vaticana (digi.vatlib.it)" };
+export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)",
+  bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)", vaticana: "Biblioteca Apostolica Vaticana (digi.vatlib.it)" };
 
 // i tre codici del Truculentus restano sempre nel catalogo, anche se una fonte non li ha ancora restituiti
 export const TRUCULENTUS = [
@@ -32,6 +38,9 @@ export function campiDi(r) {
   return [
     { campo: "autore", testo: (r.autori_fonte || []).join(" ; "), forte: true },
     { campo: "titolo", testo: r.titolo, forte: true },
+    // titoli delle sezioni del codice (indice dei contenuti delle miscellanee): come le descrizioni, servono nome e opera
+    // insieme (nelle miscellanee ricorrono omonimi: «Donatus ep.», «Iuvenalis episcopus»)
+    { campo: "indice", testo: r.indice, forte: false },
     { campo: "collaboratori", testo: (r.collaboratori || []).join(" ; "), forte: false },
     { campo: "descrizione", testo: r.descrizione, forte: false },
   ];
@@ -78,11 +87,28 @@ async function main() {
   const AUTORI = caricaAutori();
   let prima = { manoscritti: [] }; try { prima = JSON.parse(fs.readFileSync(OUT, "utf8")); } catch (e) {}
   const perFonte = {}, esito = {};
-  const oai = { limiteMinuti: +arg["oai-minuti"] || 0, soloCache: !!arg["solo-costruisci"] };
+  // minuti per una fonte: il suo limite, ridotto a quanto resta del tempo complessivo (6 minuti restano per costruire e salvare)
+  const tempo = cap => {
+    if (!arg["minuti-totali"]) return cap;
+    const resto = +arg["minuti-totali"] - (Date.now() - INIZIO) / 60e3 - 6;
+    if (resto <= 1 && !arg["solo-costruisci"]) throw new Error("tempo complessivo esaurito: fonte rimandata alla prossima esecuzione");
+    return Math.min(cap || Infinity, resto);
+  };
+  const oai = () => ({ limiteMinuti: tempo(+arg["oai-minuti"] || 0), soloCache: !!arg["solo-costruisci"] });
   const lavori = {
-    heidelberg: () => raccogliHeidelberg(oai),
-    ecodices: () => raccogliEcodices(oai),
-    bsb: async () => unisciBsb(await raccogliBsb(oai)),
+    heidelberg: async () => {
+      const rs = await raccogliHeidelberg(oai());
+      let minuti = 0; try { minuti = arg["solo-costruisci"] ? 0 : tempo(+(arg["indici-minuti"] ?? 20)); } catch (e) {}
+      if (!arg["solo-costruisci"] && minuti > 0) {
+        try { await leggiIndiciHeidelberg(rs, r => riconosci(campiDi(r), AUTORI).length > 0, { minuti }); }
+        catch (e) { log("heidelberg-indici", "ERRORE", e.message); }
+      }
+      return conIndici(rs);
+    },
+    ecodices: () => raccogliEcodices(oai()),
+    bsb: async () => unisciBsb(await raccogliBsb(oai())),
+    bodleian: async () => recordBodleian(await scansionaBodleian({ minuti: tempo(+(arg["bodleian-minuti"] ?? 30)), soloCache: !!arg["solo-costruisci"] })),
+    gallica: () => raccogliGallica({ limiteMinuti: tempo(+(arg["gallica-minuti"] ?? 30)), soloCache: !!arg["solo-costruisci"] }),
     vaticana: async () => {
       let minuti = +(arg["vaticana-minuti"] ?? 20);
       // con un tempo complessivo si lasciano 6 minuti per costruire il catalogo, provarlo e salvarlo
@@ -105,6 +131,8 @@ async function main() {
   for (const t of TRUCULENTUS) if (![...voci.values()].some(v => v.manifest === t.manifest)) voci.set(t.id, voce(t, AUTORI, sigle));
   const manoscritti = [...voci.values()].sort((a, b) => naturale(a.biblioteca, b.biblioteca) || naturale(a.segnatura, b.segnatura));
   const conteggio = {}; for (const v of manoscritti) conteggio[v.fonte] = (conteggio[v.fonte] || 0) + 1;
+  const daIndice = manoscritti.filter(v => v.autori.some(a => a.corrispondenza.startsWith("indice:"))).length;
+  log(`riconosciuti grazie all'indice dei contenuti: ${daIndice}`);
   const dati = { aggiornato: new Date().toISOString(), fonti: Object.fromEntries(Object.keys(lavori).map(f => [f, { nome: NOMI_FONTI[f], codici: conteggio[f] || 0, esito: esito[f] }])),
     totale: manoscritti.length, manoscritti };
   // se il contenuto non cambia, la data resta quella di prima (niente commit settimanali vuoti)
