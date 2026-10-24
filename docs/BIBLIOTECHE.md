@@ -94,6 +94,27 @@ Si agganciano dopo aver completato le biblioteche europee. L'ordine della tabell
 | Biblioteca nazionale coreana | Seul (Corea del Sud) | da verificare | |
 | Biblioteca nazionale russa (RNB) e biblioteche di Mosca | San Pietroburgo, Mosca (Russia) | da verificare | Accesso dall'estero difficile. |
 
+### Papiri (in attesa di decisione)
+
+Per ora si aspetta: nessuna raccolta apposta di papiri. La scelta in attesa è tra entrare solo con le raccolte a licenza libera (circa 30.000 papiri) oppure con tutte quelle possibili. Per Berlino, PSI e Ossirinco servirebbe un permesso scritto. I papiri di Heidelberg sono già nel catalogo perché arrivano con la raccolta OAI della biblioteca. I dettagli della verifica (immagini, IIIF, CORS, licenze) sono in [PAPIRI.md](PAPIRI.md).
+
+| Raccolta | Papiri con immagine | Stato | Note |
+|---|---|---|---|
+| Berkeley (Tebtunis) | circa 11.100 | dentro con strumenti | IIIF e CORS aperti, uso libero. |
+| Yale (Beinecke) | circa 6300 | dentro con strumenti | IIIF e CORS aperti; licenza da rileggere caso per caso. |
+| Heidelberg | circa 4700 | dentro con strumenti | Già nel catalogo; immagini pubbliche piccole; per pubblicare serve il permesso dell'Istituto di papirologia. |
+| Colonia (Kölner Papyri) | circa 4500 | dentro con strumenti | Solo con la copia delle immagini sui nostri server (CC BY 4.0, niente CORS). |
+| Duke | circa 1750 | dentro con strumenti | Immagini piccole; solo ricerca e didattica. |
+| Michigan (APIS) | circa 3900 | da provare dal browser | Pubblico dominio, manifesti IIIF pronti; CORS da provare. |
+| Vienna (ÖNB) | circa 4800 | da provare dal browser | Solo uso non commerciale. |
+| Princeton | circa 600 | da provare dal browser | IIIF; licenza e CORS da provare. |
+| Berlino (BerlPap) | circa 9400 | fuori | Vietato ripubblicare: serve un permesso scritto. |
+| Ossirinco (Oxford, P.Oxy.) | circa 3800 | fuori | Diritti riservati (Egypt Exploration Society): serve un permesso scritto. |
+| PSI Firenze (PSIonline) | circa 2200 | fuori | Riproduzione vietata senza permesso scritto. |
+| Ercolano (Napoli) | circa 1800 rotoli | fuori | Diritti riservati, immagini piccole. |
+| British Library | circa 2600 | fuori | Servizio delle immagini spento dal 2023. |
+| Columbia, Leida, Lund, Sorbona, Ginevra | circa 7400 | fuori | Immagini non più online o bloccate. |
+
 ## Non raggiungibili
 
 | Biblioteca | Città | Stato | Perché |
