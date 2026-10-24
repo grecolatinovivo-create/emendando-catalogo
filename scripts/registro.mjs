@@ -4,7 +4,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { CACHE } from "./rete.mjs";
-import { PERCORSO, segnaturaLeggibile } from "./fonti/vaticana.mjs";
+import { daLeggere, segnaturaLeggibile } from "./fonti/vaticana.mjs";
 import { NOMI_LINGUE } from "./lingue.mjs";
 
 export const FILE_REGISTRO = "docs/BIBLIOTECHE.md";
@@ -68,24 +68,20 @@ export const AVANZAMENTO = {
   wolfenbuettel: () => { const a = aRiprese("data/wolfenbuettel.json", 1); return { ...a, testo: a.testo.replace("schede lette tutte", "codici digitalizzati letti tutti") }; },
   vaticana: () => {
     const s = leggi("data/vaticana.json"); if (!s) return { testo: "non ancora cominciata" };
-    const t = PERCORSO[s.passo] || PERCORSO[0];
+    const n = Object.keys(s.voci || {}).length;
+    if (!s.elenco || !s.elenco.totale) return { testo: `${num(n)} codici letti; elenco dei codici digitalizzati non ancora scaricato`, data: s.aggiornato };
     const g = stimaVaticana(s);
-    return { testo: `${num(Object.keys(s.voci || {}).length)} codici letti; fondo in corso: ${segnaturaLeggibile(t[0] + ".").trim()} (dal n. ${s.prossimo ?? t[1]}), tratto ${(s.passo || 0) + 1} di ${PERCORSO.length}; ` +
-      `restano circa ${num(g.manifesti)} segnature da provare, cioè circa ${g.giorni} giorni (un manifesto ogni 10 secondi, come chiede la biblioteca)`, data: s.aggiornato };
+    if (!g.manifesti) return { testo: `codici digitalizzati letti tutti (${num(n)} su ${num(s.elenco.totale)})`, data: s.aggiornato };
+    return { testo: `${num(n)} codici letti su ${num(s.elenco.totale)} digitalizzati; ${g.fondo ? "fondo in corso: " + segnaturaLeggibile(g.fondo + ".").trim() + "; " : ""}` +
+      `restano circa ${num(g.manifesti)} manifesti da leggere, cioè circa ${g.giorni} giorni (un manifesto ogni 10 secondi, come chiede la biblioteca)`, data: s.aggiornato };
   },
 };
 
-// Vaticana: segnature ancora da provare nel percorso (quelle dei tratti successivi e il resto del tratto in corso, meno quelle già viste)
-// e giorni che servono, a circa 6500 manifesti al giorno (8 esecuzioni ogni 3 ore, di cui una divisa con le altre fonti)
+// Vaticana: codici digitalizzati ancora da leggere (dall'elenco della biblioteca) e giorni che servono, a circa 6500 manifesti
+// al giorno (8 esecuzioni ogni 3 ore, di cui una divisa con le altre fonti)
 export function stimaVaticana(s) {
-  const visto = (f, n) => ((s.visti_giro || {})[f] || []).some(([a, b]) => n >= a && n <= b);
-  let manifesti = 0;
-  PERCORSO.forEach(([f, da, a], i) => {
-    if (i < (s.passo || 0)) return;
-    const ini = i === (s.passo || 0) ? (s.prossimo ?? da) : da;
-    for (let n = ini; n <= a; n++) if (!visto(f, n)) manifesti++;
-  });
-  return { manifesti, giorni: Math.ceil(manifesti / 6500) };
+  const d = daLeggere(s), p = d.segnature[0];
+  return { manifesti: d.totale, giorni: Math.ceil(d.totale / 6500), fondo: p ? Object.keys(s.elenco.fondi).filter(f => p.startsWith(f + ".")).sort((a, b) => b.length - a.length)[0] : null };
 }
 
 // fonti lette a pagine con stato in data/<fonte>.json: { totale, cursore (pagina), completato, voci }

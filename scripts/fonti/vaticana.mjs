@@ -1,26 +1,36 @@
-// Biblioteca Apostolica Vaticana (digi.vatlib.it). Il robots.txt vieta ricerca e schede (/mss/search, /mss/detail)
-// e chiede 10 secondi tra le richieste: si leggono solo i manifesti IIIF, un codice alla volta, e di ciascuno
-// solo l'inizio (Range: i metadati Author, Title, Date precedono l'elenco delle immagini).
-// Lo stato della scansione (segnature già viste, metadati letti) è in data/vaticana.json e cresce a ogni
-// esecuzione (ogni 3 ore): prima gli intervalli dove si concentrano i classici latini, poi i fondi latini interi (già in corso),
-// poi i fondi greci (Vat. gr., Pal. gr., Urb. gr., Barb. gr., Ott. gr., Reg. gr.), poi gli altri (orientali, Borgiani, Capponiani, Ferrajoli...).
+// Biblioteca Apostolica Vaticana (digi.vatlib.it). Il robots.txt vieta ricerca e schede (/search, /*/search, /*/index-search,
+// /*/detail/*) e chiede 10 secondi tra le richieste: si rispetta la pausa (scripts/rete.mjs) e non si fanno richieste in parallelo.
+// Niente più segnature provate a vuoto: l'elenco dei codici digitalizzati viene dalla pagina dei manoscritti (digi.vatlib.it/mss/,
+// fondi con il numero di codici) e, per ogni fondo, da digi.vatlib.it/mss/ajax/category/<fondo> (JSON con tutte le segnature,
+// comprese le parti «pt.»): sono le richieste che fa la pagina stessa del fondo, e nessuna è vietata dal robots.txt.
+// L'elenco si aggiorna ogni 7 giorni (un fondo si rilegge anche quando cambia il suo numero di codici); poi si leggono solo i
+// manifesti IIIF dei codici non ancora letti, e di ciascuno solo l'inizio (Range: Author, Title, Date precedono le immagini).
+// Ordine: fondi latini, poi greci, poi tutti gli altri. Stato (elenco, metadati letti) in data/vaticana.json.
 // Entrano tutti i manoscritti con un manifesto, anche senza autore o titolo nei metadati.
 import fs from "node:fs";
 import { scarica, log } from "../rete.mjs";
 import { lingueDa } from "../lingue.mjs";
 
 export const FILE_STATO = "data/vaticana.json";
-// intervalli prioritari (fondi umanistici e altomedievali ricchi di classici), poi i fondi latini principali per intero
-export const PERCORSO = [
-  ["Pal.lat", 1610, 1620], ["Vat.lat", 3860, 3880],
-  ["Vat.lat", 3200, 3420], ["Pal.lat", 1490, 1720], ["Reg.lat", 1480, 1800], ["Urb.lat", 300, 700], ["Ott.lat", 1100, 1500], ["Vat.lat", 1500, 2000],
-  ["Pal.lat", 1, 2050], ["Reg.lat", 1, 2130], ["Urb.lat", 1, 1780], ["Ott.lat", 1, 3420], ["Vat.lat", 1, 15400], ["Barb.lat", 1, 12000], ["Ross", 1, 1200],
-  // fondi greci
-  ["Vat.gr", 1, 2700], ["Pal.gr", 1, 432], ["Urb.gr", 1, 165], ["Barb.gr", 1, 595], ["Ott.gr", 1, 475], ["Reg.gr", 1, 200], ["Reg.gr.Pio.II", 1, 60], ["Borg.gr", 1, 30],
-  // altri fondi
-  ["Borg.lat", 1, 920], ["Vat.ebr", 1, 620], ["Vat.ar", 1, 1000], ["Vat.sir", 1, 630], ["Vat.copt", 1, 100], ["Vat.et", 1, 330], ["Vat.arm", 1, 40], ["Vat.pers", 1, 130],
-  ["Vat.turc", 1, 200], ["Vat.estr.or", 1, 150], ["Borg.ar", 1, 280], ["Borg.sir", 1, 200], ["Barb.or", 1, 170], ["Neofiti", 1, 60], ["Cappon", 1, 300], ["Ferr", 1, 950], ["Vat.slav", 1, 30],
-];
+export const HOME = "https://digi.vatlib.it/mss/";
+export const elencoFondo = f => `https://digi.vatlib.it/mss/ajax/category/${encodeURIComponent(f)}`;
+// ordine di lettura: prima i fondi latini (e i Chigiani, ricchi di classici), poi i greci; gli altri dopo, nell'ordine della pagina
+export const PRIORITA = ["Pal.lat", "Reg.lat", "Urb.lat", "Ott.lat", "Vat.lat", "Barb.lat", "Ross", "Borg.lat", "Pap.Vat.lat", "Chig",
+  "Vat.gr", "Pal.gr", "Urb.gr", "Barb.gr", "Ott.gr", "Reg.gr", "Reg.gr.Pio.II", "Borg.gr", "Pap.Vat.gr"];
+const GIORNI_ELENCO = 7, GIORNI_MANCANTI = 30;
+export const ordineFondi = fondi => [...PRIORITA.filter(f => fondi.includes(f)), ...fondi.filter(f => !PRIORITA.includes(f))];
+
+// fondi e numero di codici dalla pagina dei manoscritti
+export function fondiDaHome(html) {
+  const out = {}, re = /<strong>(\d+)<\/strong>\s*ITEMS<\/span>\s*<h2>\s*<a[^>]*data-item-url="\/mss\/ajax\/category\/([^"]+)"/g;
+  let m; while ((m = re.exec(html))) out[decodeURIComponent(m[2].replace(/&#39;/g, "'").replace(/&amp;/g, "&"))] = +m[1];
+  return out;
+}
+// segnature dal JSON di un fondo ({"fond":[{"shelfmark":"Vat.lat.1",...}]})
+export function segnatureDaFondo(testo) {
+  const j = JSON.parse(testo);
+  return [...new Set((j.fond || []).map(x => x && x.shelfmark).filter(Boolean))];
+}
 // lingua del fondo (quando il manifesto non la indica)
 export function lingueFondo(seg) {
   const f = String(seg).toLowerCase();
@@ -31,13 +41,14 @@ export function lingueFondo(seg) {
   if (/^neofiti/.test(f)) return ["he"];
   return [];
 }
-// 2: tutti i manifesti (prima solo quelli con autore o titolo)
-const VERSIONE = 2;
-export const segnaturaLeggibile = s => s.replace(/\.(?=\S)/g, ". ").replace(/\s+/g, " ").trim();   // Vat.lat.3870 -> Vat. lat. 3870
-export const manifestoDi = s => `https://digi.vatlib.it/iiif/MSS_${s}/manifest.json`;
+// 2: tutti i manifesti (prima solo quelli con autore o titolo); 3: elenco dei digitalizzati al posto delle segnature provate
+const VERSIONE = 3;
+// Vat.lat.3870 -> Vat. lat. 3870; Vat.lat.414.pt.1 -> Vat. lat. 414 pt. 1
+export const segnaturaLeggibile = s => s.replace(/\.(?=\S)/g, ". ").replace(/(\d)\. pt\. /g, "$1 pt. ").replace(/\s+/g, " ").trim();
+export const manifestoDi = s => `https://digi.vatlib.it/iiif/MSS_${encodeURI(s)}/manifest.json`;
 
 export function leggiStato() {
-  try { return JSON.parse(fs.readFileSync(FILE_STATO, "utf8")); } catch (e) { return { giro: 1, passo: 0, prossimo: null, visti: 0, voci: {} }; }
+  try { return JSON.parse(fs.readFileSync(FILE_STATO, "utf8")); } catch (e) { return { versione: VERSIONE, voci: {} }; }
 }
 export function salvaStato(st) {
   const ord = Object.fromEntries(Object.entries(st.voci).sort(([a], [b]) => a.localeCompare(b, "en", { numeric: true })));
@@ -70,48 +81,76 @@ async function leggi(seg) {
   return metadatiDaInizio(r.testo);
 }
 
-/* scansione a tempo: legge i manifesti seguendo PERCORSO e aggiorna lo stato su disco ogni 20 codici.
-   minuti: tempo massimo; extra: segnature da leggere per prime (es. i codici del Truculentus) */
+// codici dell'elenco ancora da leggere, nell'ordine di lettura (fondi senza elenco: si conta il numero della pagina dei manoscritti)
+export function daLeggere(st, ora = Date.now()) {
+  const E = (st.elenco && st.elenco.fondi) || {}, voci = st.voci || {}, manc = st.mancanti || {};
+  const out = [];
+  let stimati = 0;
+  for (const f of ordineFondi(Object.keys(E))) {
+    const x = E[f];
+    if (!x.s) { stimati += Math.max(0, (x.n || 0) - Object.keys(voci).filter(k => k.startsWith(f + ".")).length); continue; }
+    for (const suf of x.s) { const seg = `${f}.${suf}`; if (!voci[seg] && !(manc[seg] && ora - manc[seg] < GIORNI_MANCANTI * 864e5)) out.push(seg); }
+  }
+  return { segnature: out, totale: out.length + stimati };
+}
+
+/* scansione a tempo: aggiorna l'elenco dei digitalizzati quando serve, poi legge i manifesti non ancora letti
+   e salva lo stato su disco ogni 20 codici. minuti: tempo massimo; extra: segnature da leggere per prime */
 export async function scansiona({ minuti = 20, extra = [] } = {}) {
   const st = leggiStato(), fine = Date.now() + minuti * 60e3;
-  st.visti_giro = st.visti_giro || {};
-  if (st.versione !== VERSIONE) {
-    // nella versione 1 i manifesti senza autore né titolo non si conservavano: gli intervalli già visti si riducono ai codici conservati,
-    // così gli altri si rileggono
-    const tenuti = {};
-    for (const seg of Object.keys(st.voci)) { const m = /^(.*)\.(\d+)$/.exec(seg); if (m) (tenuti[m[1]] = tenuti[m[1]] || []).push([+m[2], +m[2]]); }
-    st.visti_giro = Object.fromEntries(Object.entries(tenuti).map(([f, L]) => [f, L.sort((x, y) => x[0] - y[0])]));
-    st.passo = 0; st.prossimo = null; st.versione = VERSIONE;
+  if (st.versione !== VERSIONE) {   // dalle versioni precedenti si tengono solo i metadati letti
+    for (const k of ["giro", "passo", "prossimo", "visti", "visti_giro"]) delete st[k];
+    st.versione = VERSIONE;
   }
+  st.elenco = st.elenco || { home: 0, fondi: {} }; st.mancanti = st.mancanti || {}; st.voci = st.voci || {};
   let letti = 0, trovati = 0;
-  const visto = (f, n) => (st.visti_giro[f] || []).some(([a, b]) => n >= a && n <= b);
-  const segna = (f, n) => {   // intervalli fusi [da, a]
-    const L = st.visti_giro[f] = st.visti_giro[f] || [];
-    L.push([n, n]); L.sort((x, y) => x[0] - y[0]);
-    const out = []; for (const x of L) { const u = out[out.length - 1]; if (u && x[0] <= u[1] + 1) u[1] = Math.max(u[1], x[1]); else out.push([...x]); }
-    st.visti_giro[f] = out;
-  };
   const uno = async seg => {
     let m; try { m = await leggi(seg); } catch (e) { log("vaticana", seg, e.message); return false; }
     letti++;
-    if (m) { st.voci[seg] = m.g.length && !m.g.every(x => /^und$/i.test(x)) ? { a: m.a, t: m.t, d: m.d, g: m.g } : { a: m.a, t: m.t, d: m.d }; trovati++; } else delete st.voci[seg];
+    if (m) { st.voci[seg] = m.g.length && !m.g.every(x => /^und$/i.test(x)) ? { a: m.a, t: m.t, d: m.d, g: m.g } : { a: m.a, t: m.t, d: m.d }; delete st.mancanti[seg]; trovati++; }
+    else { delete st.voci[seg]; st.mancanti[seg] = Date.now(); }
     if (letti % 20 === 0) { salvaStato(st); log("vaticana", `${letti} manifesti letti, ultimo ${seg}`); }
     return true;
   };
+  const fresco = t => t && Date.now() - t < GIORNI_ELENCO * 864e5;
+  let ok = true;
   for (const s of extra) { if (Date.now() > fine) break; if (!st.voci[s]) await uno(s); }
-  while (Date.now() < fine) {
-    if (st.passo >= PERCORSO.length) { st.giro++; st.passo = 0; st.prossimo = null; st.visti_giro = {}; log("vaticana", "percorso completato: nuovo giro", st.giro); }
-    const [f, da, a] = PERCORSO[st.passo];
-    let n = st.prossimo ?? da;
-    while (n <= a && visto(f, n)) n++;
-    if (n > a) { st.passo++; st.prossimo = null; continue; }
-    const ok = await uno(`${f}.${n}`);
-    if (!ok) { st.prossimo = n; break; }                 // server in difficoltà: si riprende la prossima volta da qui
-    segna(f, n); st.prossimo = n + 1; st.visti = (st.visti || 0) + 1;
+  // 1. fondi e numeri dalla pagina dei manoscritti
+  if (!fresco(st.elenco.home) && Date.now() < fine) {
+    try {
+      const r = await scarica(HOME, { timeout: 240000, tentativi: 2 });
+      const F = r.stato === 200 ? fondiDaHome(r.testo) : {};
+      if (Object.keys(F).length < 10) throw new Error(`pagina dei manoscritti: HTTP ${r.stato}, ${Object.keys(F).length} fondi`);
+      for (const [f, n] of Object.entries(F)) { const x = st.elenco.fondi[f] = st.elenco.fondi[f] || {}; if (x.n !== n) x.t = 0; x.n = n; }
+      for (const f of Object.keys(st.elenco.fondi)) if (!(f in F)) delete st.elenco.fondi[f];
+      st.elenco.home = Date.now(); st.elenco.totale = Object.values(F).reduce((a, b) => a + b, 0);
+      log("vaticana", `elenco dei fondi: ${Object.keys(F).length} fondi, ${st.elenco.totale} codici digitalizzati`);
+    } catch (e) { log("vaticana", e.message); }
+  }
+  // 2. fondo per fondo: elenco delle segnature (se manca o è vecchio), poi i manifesti non ancora letti
+  for (const f of ordineFondi(Object.keys(st.elenco.fondi))) {
+    if (!ok || Date.now() > fine) break;
+    const x = st.elenco.fondi[f];
+    if (!x.s || !fresco(x.t)) {
+      try {
+        const r = await scarica(elencoFondo(f), { timeout: 400000, tentativi: 2, accept: "application/json" });
+        if (r.stato !== 200) throw new Error(`HTTP ${r.stato}`);
+        const L = segnatureDaFondo(r.testo), pre = f + ".";
+        x.s = L.filter(s => s.startsWith(pre)).map(s => s.slice(pre.length)); x.t = Date.now();
+        log("vaticana", `elenco ${f}: ${x.s.length} codici`);
+        salvaStato(st);
+      } catch (e) { log("vaticana", `elenco ${f}:`, e.message); if (!x.s) continue; }
+    }
+    for (const suf of x.s) {
+      if (Date.now() > fine) break;
+      const seg = `${f}.${suf}`;
+      if (st.voci[seg] || (st.mancanti[seg] && Date.now() - st.mancanti[seg] < GIORNI_MANCANTI * 864e5)) continue;
+      if (!(await uno(seg))) { ok = false; break; }   // server in difficoltà: si riprende la prossima volta
+    }
   }
   st.aggiornato = new Date().toISOString();
   salvaStato(st);
-  log("vaticana", `fine: ${letti} manifesti letti, ${trovati} codici; percorso ${st.passo + 1}/${PERCORSO.length}`);
+  log("vaticana", `fine: ${letti} manifesti letti, ${trovati} codici; restano ${daLeggere(st).totale} codici da leggere`);
   return st;
 }
 

@@ -4,7 +4,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import { caricaAutori, riconosci, normalizza } from "../scripts/riconosci.mjs";
 import { estraiHeidelberg, estraiEcodices, estraiBsb } from "../scripts/fonti/oai.mjs";
-import { metadatiDaInizio, segnaturaLeggibile, recordVaticana } from "../scripts/fonti/vaticana.mjs";
+import { metadatiDaInizio, segnaturaLeggibile, recordVaticana, fondiDaHome, segnatureDaFondo, ordineFondi, daLeggere } from "../scripts/fonti/vaticana.mjs";
 import { voce, TRUCULENTUS } from "../scripts/raccogli.mjs";
 import { estraiGallica, segnaturaGallica } from "../scripts/fonti/gallica.mjs";
 import { metadatiBodleian, dividiSegnatura } from "../scripts/fonti/bodleian.mjs";
@@ -193,6 +193,25 @@ test("Vaticana: metadati dall'inizio del manifesto e segnature leggibili", () =>
   // anche i codici senza autore né titolo, e i fondi greci
   const [g] = recordVaticana({ voci: { "Vat.gr.1": { a: [], t: [], d: null } } });
   assert.equal(g.id, "bav-vat-gr-1"); assert.equal(g.segnatura, "Vat. gr. 1"); assert.deepEqual(voce(g, A).lingue, ["grc"]);
+});
+
+test("Vaticana: elenco dei digitalizzati (fondi, segnature, ordine, codici da leggere)", () => {
+  const html = `<div class="item-thumbnail-list-header"><span><strong>2</strong>ITEMS</span><h2><a href="/mss/Autogr.Paolo.VI"
+       data-item-url="/mss/ajax/category/Autogr.Paolo.VI">x</a></h2></div><div class="item-thumbnail-list-header"><span><strong>10388</strong>ITEMS</span><h2><a href="/mss/Vat.lat"
+       data-item-url="/mss/ajax/category/Vat.lat">Vat.lat.</a></h2></div><div class="item-thumbnail-list-header"><span><strong>2</strong>ITEMS</span><h2><a href="/mss/Carte.d&#39;Abbadie"
+       data-item-url="/mss/ajax/category/Carte.d&#39;Abbadie">x</a></h2></div>`;
+  assert.deepEqual(fondiDaHome(html), { "Autogr.Paolo.VI": 2, "Vat.lat": 10388, "Carte.d'Abbadie": 2 });
+  assert.deepEqual(segnatureDaFondo(`{"fond":[{"path":"digit/MSS_Vat.lat.1/cover/cover.jpg","shelfmark":"Vat.lat.1","limited":false},{"shelfmark":"Vat.lat.414.pt.1","limited":true}]}`),
+    ["Vat.lat.1", "Vat.lat.414.pt.1"]);
+  assert.deepEqual(ordineFondi(["Chig", "Vat.gr", "Borgh", "Vat.lat", "Pal.lat"]), ["Pal.lat", "Vat.lat", "Chig", "Vat.gr", "Borgh"]);
+  assert.equal(segnaturaLeggibile("Vat.lat.414.pt.1"), "Vat. lat. 414 pt. 1");
+  const ora = Date.now();
+  const st = { voci: { "Vat.lat.1": {} }, mancanti: { "Vat.lat.3": ora, "Vat.lat.4": ora - 40 * 864e5 },
+    elenco: { fondi: { "Vat.gr": { n: 3, s: ["1", "2"] }, "Vat.lat": { n: 5, s: ["1", "2", "3", "4", "414.pt.1"] }, Borgh: { n: 7 } } } };
+  const d = daLeggere(st, ora);
+  // letti e mancanti recenti si saltano; quelli mancanti da più di 30 giorni si riprovano; fondi senza elenco contano col numero della pagina
+  assert.deepEqual(d.segnature, ["Vat.lat.2", "Vat.lat.4", "Vat.lat.414.pt.1", "Vat.gr.1", "Vat.gr.2"]);
+  assert.equal(d.totale, 5 + 7);
 });
 
 test("voci del catalogo: tutti i codici, autori riconosciuti come informazione in più, i tre del Truculentus", () => {
