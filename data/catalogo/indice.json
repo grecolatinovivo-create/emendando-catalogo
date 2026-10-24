@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-24T20:09:06.298Z",
- "totale": 69614,
- "con_autori": 10183,
+ "aggiornato": "2026-10-24T20:24:50.431Z",
+ "totale": 70339,
+ "con_autori": 10335,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
   "id",
@@ -21,7 +21,7 @@
  "lingue": {
   "la": {
    "nome": "latino",
-   "codici": 21965
+   "codici": 22690
   },
   "de": {
    "nome": "tedesco",
@@ -179,19 +179,19 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 4100
+   "codici": 4108
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 2082
+   "codici": 2083
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 3990
+   "codici": 4104
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 1289
+   "codici": 1322
   }
  },
  "autori": {
@@ -223,7 +223,7 @@
    "nome": "Cicerone",
    "latino": "Cicero",
    "categoria": "classico-latino",
-   "codici": 765
+   "codici": 770
   },
   "cesare": {
    "nome": "Cesare",
@@ -235,7 +235,7 @@
    "nome": "Sallustio",
    "latino": "Sallustius",
    "categoria": "classico-latino",
-   "codici": 151
+   "codici": 152
   },
   "virgilio": {
    "nome": "Virgilio",
@@ -277,7 +277,7 @@
    "nome": "Seneca",
    "latino": "Seneca",
    "categoria": "classico-latino",
-   "codici": 317
+   "codici": 320
   },
   "lucano": {
    "nome": "Lucano",
@@ -307,7 +307,7 @@
    "nome": "Stazio",
    "latino": "Statius",
    "categoria": "classico-latino",
-   "codici": 96
+   "codici": 97
   },
   "plinio-vecchio": {
    "nome": "Plinio il Vecchio",
@@ -379,13 +379,13 @@
    "nome": "Macrobio",
    "latino": "Macrobius",
    "categoria": "classico-latino",
-   "codici": 110
+   "codici": 111
   },
   "boezio": {
    "nome": "Boezio",
    "latino": "Boethius",
    "categoria": "classico-latino",
-   "codici": 454
+   "codici": 455
   },
   "ausonio": {
    "nome": "Ausonio",
@@ -1039,7 +1039,7 @@
    "nome": "Flavio Giuseppe",
    "latino": "Flavius Iosephus",
    "categoria": "classico-greco",
-   "codici": 85
+   "codici": 86
   },
   "diogene-laerzio": {
    "nome": "Diogene Laerzio",
@@ -1081,25 +1081,25 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 1166
+   "codici": 1188
   },
   "girolamo": {
    "nome": "Girolamo",
    "latino": "Hieronymus",
    "categoria": "cristiano",
-   "codici": 580
+   "codici": 587
   },
   "ambrogio": {
    "nome": "Ambrogio",
    "latino": "Ambrosius",
    "categoria": "cristiano",
-   "codici": 169
+   "codici": 170
   },
   "gregorio-magno": {
    "nome": "Gregorio Magno",
    "latino": "Gregorius Magnus",
    "categoria": "cristiano",
-   "codici": 413
+   "codici": 431
   },
   "basilio": {
    "nome": "Basilio Magno",
@@ -1117,13 +1117,13 @@
    "nome": "Giovanni Crisostomo",
    "latino": "Iohannes Chrysostomus",
    "categoria": "cristiano",
-   "codici": 197
+   "codici": 199
   },
   "bibbia": {
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 1435
+   "codici": 1493
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1153,7 +1153,7 @@
    "nome": "Lattanzio",
    "latino": "Lactantius",
    "categoria": "cristiano",
-   "codici": 53
+   "codici": 56
   },
   "tertulliano": {
    "nome": "Tertulliano",
@@ -1171,25 +1171,25 @@
    "nome": "Ilario di Poitiers",
    "latino": "Hilarius Pictaviensis",
    "categoria": "cristiano",
-   "codici": 28
+   "codici": 30
   },
   "cassiodoro": {
    "nome": "Cassiodoro",
    "latino": "Cassiodorus",
    "categoria": "cristiano",
-   "codici": 94
+   "codici": 98
   },
   "origene": {
    "nome": "Origene",
    "latino": "Origenes",
    "categoria": "cristiano",
-   "codici": 85
+   "codici": 86
   },
   "eusebio": {
    "nome": "Eusebio di Cesarea",
    "latino": "Eusebius Caesariensis",
    "categoria": "cristiano",
-   "codici": 78
+   "codici": 81
   },
   "atanasio": {
    "nome": "Atanasio",
@@ -1219,25 +1219,25 @@
    "nome": "Isidoro di Siviglia",
    "latino": "Isidorus Hispalensis",
    "categoria": "medievale",
-   "codici": 306
+   "codici": 307
   },
   "beda": {
    "nome": "Beda",
    "latino": "Beda Venerabilis",
    "categoria": "medievale",
-   "codici": 345
+   "codici": 347
   },
   "alcuino": {
    "nome": "Alcuino",
    "latino": "Alcuinus",
    "categoria": "medievale",
-   "codici": 157
+   "codici": 158
   },
   "rabano-mauro": {
    "nome": "Rabano Mauro",
    "latino": "Hrabanus Maurus",
    "categoria": "medievale",
-   "codici": 102
+   "codici": 104
   },
   "paolo-diacono": {
    "nome": "Paolo Diacono",
@@ -1249,19 +1249,19 @@
    "nome": "Pietro Lombardo",
    "latino": "Petrus Lombardus",
    "categoria": "medievale",
-   "codici": 121
+   "codici": 136
   },
   "tommaso-aquino": {
    "nome": "Tommaso d'Aquino",
    "latino": "Thomas de Aquino",
    "categoria": "medievale",
-   "codici": 186
+   "codici": 195
   },
   "bernardo": {
    "nome": "Bernardo di Chiaravalle",
    "latino": "Bernardus Claraevallensis",
    "categoria": "medievale",
-   "codici": 155
+   "codici": 158
   }
  },
  "biblioteche": [
@@ -1972,11 +1972,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 851,
-   "con_autori": 214,
+   "codici": 1576,
+   "con_autori": 366,
    "lingue": {
     "xx": 1,
-    "la": 847,
+    "la": 1572,
     "fr": 2,
     "it": 1
    },
@@ -2064,7 +2064,7 @@
   {
    "file": "indice/vaticana-0.json",
    "fonte": "vaticana",
-   "righe": 851
+   "righe": 1576
   }
  ]
 }

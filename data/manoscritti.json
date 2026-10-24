@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-24T20:09:06.298Z",
+ "aggiornato": "2026-10-24T20:24:50.431Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -69,11 +69,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 196,
+   "codici": 205,
    "esito": "ok"
   }
  },
- "totale": 5868,
+ "totale": 5877,
  "manoscritti": [
   {
    "id": "bsb-bsb00034122",
@@ -39554,6 +39554,335 @@
    "licenza": "CC BY-NC 4.0",
    "immagini": null,
    "anteprima": "https://e-codices.ch/loris/bkm/bkm-SI-0177/bkm-SI-0177_001r.jp2/full/,150/0/default/jpg"
+  },
+  {
+   "id": "bav-pal-lat-264",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 264",
+   "datazione": "14. Jh. (wohl 1. Hälfte)",
+   "secolo": [
+    1,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Theologische Sammelhandschrift",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Gregorius Magnus; Augustinus; Boethius»"
+    },
+    {
+     "id": "agostino",
+     "autore": "Agostino",
+     "latino": "Augustinus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «Gregorius Magnus; Augustinus; Boethius»"
+    },
+    {
+     "id": "gregorio-magno",
+     "autore": "Gregorio Magno",
+     "latino": "Gregorius Magnus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «Gregorius Magnus; Augustinus; Boethius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.264/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.264",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-274",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 274",
+   "datazione": "11. Jh. ; 12. Jh. ; 16. Jh.",
+   "secolo": [
+    11,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius ; Macrobius, Ambrosius Theodosius»"
+    },
+    {
+     "id": "macrobio",
+     "autore": "Macrobio",
+     "latino": "Macrobius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius ; Macrobius, Ambrosius Theodosius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.274/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.274",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-362",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 362",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius ; Seneca, Lucius Annaeus <Philosophus>»"
+    },
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius ; Seneca, Lucius Annaeus <Philosophus>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.362/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.362",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-471",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 471",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Statius, Publius Papinius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.471/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.471",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-598",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 598",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.598/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.598",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-600",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 600",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo ",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius ; Seneca, Lucius Annaeus <Philosophus>»"
+    },
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius ; Seneca, Lucius Annaeus <Philosophus>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.600/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.600",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-607",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 607",
+   "datazione": "Sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo ",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius ; Seneca, Lucius Annaeus <Philosophus>»"
+    },
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius ; Seneca, Lucius Annaeus <Philosophus>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.607/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.607",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-617",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 617",
+   "datazione": "15. Jh. (I) ; 13. Jh. (II) ; 15. Jh. (III)",
+   "secolo": [
+    1,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "sallustio",
+     "autore": "Sallustio",
+     "latino": "Sallustius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Sallustius Crispus, Gaius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.617/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.617",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-816",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 816",
+   "datazione": "1447",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Flavii Iosephi de bello iudaico libri VII",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Guerra giudaica"
+     ],
+     "corrispondenza": "autore: «Iosephus, Flavius, c. 37-c. 100»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.816/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.816",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
   },
   {
    "id": "bav-pal-lat-1490",
