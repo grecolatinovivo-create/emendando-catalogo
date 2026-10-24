@@ -9,30 +9,39 @@ La tabella qui sotto si aggiorna da sola a ogni raccolta.
 
 Come leggere le colonne:
 
-- **Codici nel catalogo**: i manoscritti con almeno un autore latino classico riconosciuto.
-- **Avanzamento della lettura**: quante schede della biblioteca abbiamo già letto.
+- **Codici totali**: tutti i manoscritti digitalizzati della biblioteca letti finora, di ogni lingua ed epoca.
+- **Di cui con autori riconosciuti**: quelli in cui si riconosce almeno un autore della lista (classici latini e greci, cristiani, medievali).
+- **Lingue**: le tre lingue più frequenti, con il numero dei codici («non indicata»: la biblioteca non la dice e la segnatura non basta).
+- **Avanzamento della lettura**: quante schede della biblioteca abbiamo già letto e, per le fonti lette a riprese, quanto manca.
 - **Come si aggiorna**: se la raccolta parte da sola oppure va rifatta a mano dal browser.
 - **Ultimo aggiornamento**: il giorno dell'ultima raccolta riuscita.
 - **Ultima raccolta**: com'è andata l'ultima volta.
 
 <!-- inizio automatico -->
-Codici nel catalogo, in tutto: **3557**.
+Codici nel catalogo, in tutto: **50.677**, di cui **8488** con almeno un autore riconosciuto.
 
-| Biblioteca | Città | Codici nel catalogo | Avanzamento della lettura | Come si aggiorna | Ultimo aggiornamento | Ultima raccolta |
-|---|---|---|---|---|---|---|
-| Universitätsbibliothek Heidelberg | Heidelberg | 33 | schede lette tutte (1368); indici 801 su 1350 | ogni notte, da sola | 2026-10-24 | — |
-| e-codices (biblioteche svizzere: San Gallo, Einsiedeln, Bodmer e altre) | Svizzera | 220 | schede lette tutte ogni 6 giorni | ogni notte, da sola | — | — |
-| Bayerische Staatsbibliothek | Monaco di Baviera | 384 | schede lette tutte ogni 6 giorni | ogni notte, da sola | — | — |
-| Staatsbibliothek zu Berlin | Berlino | 108 | schede lette tutte (1611 manoscritti latini) | ogni notte, da sola | 2026-10-24 | riuscita |
-| Bodleian Libraries e college | Oxford | 41 | 588 schede lette su 3367 | ogni notte, da sola | 2026-10-24 | — |
-| Bibliothèque nationale de France (Gallica) | Parigi | 1376 | 12.015 schede lette (raccolta dal browser del 2026-10-24) | va rifatta a mano dal browser (ultima raccolta: 2026-10-24) | 2026-10-24 | — |
-| Biblioteca Medicea Laurenziana | Firenze | 909 | schede lette tutte (4266 codici) | ogni notte, da sola | 2026-10-24 | — |
-| Universiteitsbibliotheek Leiden (Western Medieval Manuscripts, con i Vossiani latini) | Leida | 394 | schede lette tutte (1151 su 1151) | ogni notte, da sola | 2026-10-24 | riuscita |
-| Herzog August Bibliothek (dati dal Handschriftenportal) | Wolfenbüttel | 30 | codici digitalizzati letti tutti (1531 su 1534) | ogni notte, da sola | 2026-10-24 | riuscita |
-| Biblioteca Apostolica Vaticana | Città del Vaticano | 62 | 299 schede viste; fondo in corso: Pal. lat. (dal n. 1536), tratto 4 di 15 | ogni 3 ore, da sola | 2026-10-24 | — |
+| Biblioteca | Città | Codici totali | Di cui con autori riconosciuti | Lingue | Avanzamento della lettura | Come si aggiorna | Ultimo aggiornamento | Ultima raccolta |
+|---|---|---|---|---|---|---|---|---|
+| Universitätsbibliothek Heidelberg | Heidelberg | 7781 | 328 | greco 3359, tedesco 1446, copto 1368, altre 2004 | schede: 201 pagine lette, in corso; indici 801 | ogni notte, da sola | 2026-10-24 | — |
+| e-codices (biblioteche svizzere: San Gallo, Einsiedeln, Bodmer e altre) | Svizzera | 2745 | 1032 | latino 2043, tedesco 674, francese 235, altre 417 | schede lette tutte (2745 schede) | ogni notte, da sola | 2026-10-24 | — |
+| Bayerische Staatsbibliothek | Monaco di Baviera | 28.785 | 2214 | tedesco 11.283, latino 8471, non indicata 5944, altre 4308 | schede lette tutte (29.752 schede) | ogni notte, da sola | 2026-10-24 | — |
+| Staatsbibliothek zu Berlin | Berlino | 108 | 108 | non indicata 108 | in corso: 63 pagine lette | ogni notte, da sola | 2026-10-24 | riuscita |
+| Bodleian Libraries e college | Oxford | 200 | 97 | latino 195, inglese 15, francese 8, altre 15 | 588 schede lette su 3367; a riprese, ogni notte: mancano circa 3 notti | ogni notte, da sola | 2026-10-24 | — |
+| Bibliothèque nationale de France (Gallica) | Parigi | 1892 | 1600 | latino 1892 | solo i fondi latini (raccolta dal browser del 2026-10-24): per avere tutti i manoscritti va lanciato scripts/browser/gallica.js | va rifatta a mano dal browser (ultima raccolta: 2026-10-24) | 2026-10-24 | — |
+| Biblioteca Medicea Laurenziana | Firenze | 4353 | 2206 | non indicata 4343, latino 4, greco 3, altre 3 | schede lette tutte (4353 codici) | ogni notte, da sola | 2026-10-24 | — |
+| Universiteitsbibliotheek Leiden (manoscritti, con i Vossiani; Bibliotheca Neerlandica Manuscripta) | Leida | 3217 | 700 | non indicata 2432, latino 577, nederlandese 179, altre 30 | in corso: 3316 codici letti (collezione 1 di 2, pagina 147) | ogni notte, da sola | 2026-10-24 | riuscita |
+| Herzog August Bibliothek (dati dal Handschriftenportal) | Wolfenbüttel | 1531 | 141 | non indicata 1437, latino 70, greco 23, altre 1 | codici digitalizzati letti tutti (1531 su 1534) | ogni notte, da sola | 2026-10-24 | riuscita |
+| Biblioteca Apostolica Vaticana | Città del Vaticano | 65 | 62 | latino 65 | 65 codici letti; fondo in corso: Pal. lat. (dal n. 1536), tratto 4 di 40; restano circa 50.246 segnature da provare, cioè circa 8 giorni (un manifesto ogni 10 secondi, come chiede la biblioteca) | ogni 3 ore, da sola | 2026-10-24 | — |
 <!-- fine automatico -->
 
 San Gallo, Einsiedeln e la Fondation Bodmer (Cologny) sono già dentro: arrivano dalla riga e-codices.
+
+Tempi delle fonti lette a riprese:
+
+- **Biblioteca Apostolica Vaticana**: la lettura è lunga. La biblioteca chiede 10 secondi tra una richiesta e l'altra, e ogni segnatura va provata una per una (circa 50.000 tra fondi latini, greci e orientali). Con una raccolta ogni 3 ore servono più o meno 8 giorni. L'ordine: prima i fondi latini già in corso, poi i greci, poi gli altri. La stima aggiornata è nella tabella.
+- **Bodleian**: circa 10.600 manifesti, circa 1000 per notte: una decina di notti.
+- **Leida**: circa 310 pagine dei risultati con 10 secondi di pausa; 15 minuti per notte: 4 o 5 notti per la prima raccolta completa.
+- **Gallica**: la raccolta di tutti i manoscritti si fa dal browser con `scripts/browser/gallica.js` (vedi il README) e dura qualche ora; finché non si rifà, nel catalogo ci sono solo i codici dei fondi latini raccolti il 24 ottobre 2026.
 
 ## Da agganciare
 

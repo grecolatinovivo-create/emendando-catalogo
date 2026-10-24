@@ -1,6 +1,7 @@
 // Biblioteca Medicea Laurenziana, Firenze: Teca Digitale su CONTENTdm (tecabml.contentdm.oclc.org).
 // L'OAI-PMH di CONTENTdm della Teca non funziona; si usa l'API dmwebservices (dmQuery), a pagine di 200 record,
-// collezione per collezione (esclusi i cataloghi a stampa, i documenti del Concilio e i codici orientali).
+// collezione per collezione: tutti i fondi di manoscritti, compresi gli Orientali e i Documenti del Concilio di Firenze
+// (esclusi solo i cataloghi a stampa).
 // Si tengono solo gli oggetti di primo livello (i codici; parentobject = -1), non le singole pagine.
 // Lo stato (cursore e record letti) è in data/laurenziana.json: la raccolta riprende da dove si era fermata
 // e una raccolta completa si riusa per 6 giorni.
@@ -9,7 +10,9 @@ import { scarica, log } from "../rete.mjs";
 
 export const FILE_STATO = "data/laurenziana.json";
 export const BASE = "https://tecabml.contentdm.oclc.org";
-export const COLLEZIONI = ["plutei", "acquisti-doni", "ashburnham", "san-marco", "con-soppressi", "edili", "gaddi", "med-palatino", "amiatino", "pandette"];
+export const COLLEZIONI = ["plutei", "acquisti-doni", "ashburnham", "san-marco", "con-soppressi", "edili", "gaddi", "med-palatino", "amiatino", "pandette", "orientali", "doc-concilio"];
+// 2: con Orientali e Documenti del Concilio (una raccolta di versione diversa si rifà)
+const VERSIONE = 2;
 const CAMPI = ["title", "creato", "contri", "descri", "date", "datazi", "subjec", "rights", "source", "conten"];
 const PAGINA = 200, GIORNI = 6;
 
@@ -19,7 +22,7 @@ export function leggiStato() {
 function salvaStato(st) {
   // una voce per riga: diff leggibili nei commit
   const righe = Object.entries(st.voci).sort(([a], [b]) => a.localeCompare(b, "en", { numeric: true })).map(([k, v]) => JSON.stringify(k) + ":" + JSON.stringify(v));
-  const testa = JSON.stringify({ aggiornato: st.aggiornato || null, completato: st.completato || null, cursore: st.cursore || null, totali: st.totali || {} });
+  const testa = JSON.stringify({ versione: st.versione || null, aggiornato: st.aggiornato || null, completato: st.completato || null, cursore: st.cursore || null, totali: st.totali || {} });
   fs.writeFileSync(FILE_STATO + ".tmp", testa.slice(0, -1) + ',"voci":{\n' + righe.join(",\n") + "\n}}\n");
   fs.renameSync(FILE_STATO + ".tmp", FILE_STATO);
 }
@@ -59,6 +62,7 @@ export async function scansionaLaurenziana({ minuti = 20, soloCache = false } = 
   let st = leggiStato();
   if (soloCache) return st;
   const ora = Date.now();
+  if (st.versione !== VERSIONE) { st.versione = VERSIONE; st.completato = null; st.cursore = null; }
   if (st.completato && !st.cursore && ora - Date.parse(st.completato) < GIORNI * 864e5) { log("laurenziana", `riuso la raccolta del ${st.completato.slice(0, 10)}: ${Object.keys(st.voci).length} codici`); return st; }
   // nuova raccolta: si ricomincia dalla prima collezione, i record letti si sovrascrivono man mano
   if (!st.cursore) st.cursore = { collezione: COLLEZIONI[0], inizio: 1, voci: {} };

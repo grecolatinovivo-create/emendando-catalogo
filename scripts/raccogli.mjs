@@ -1,16 +1,20 @@
 #!/usr/bin/env node
-// Catalogo dei manoscritti con testi latini classici (IIIF). Uso:
+// Catalogo dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate: tutti i manoscritti, di ogni lingua ed epoca.
+// Autori e opere riconosciuti (classici latini e greci, cristiani, medievali) sono un'informazione in più, per cercare e filtrare.
+// Uso:
 //   node scripts/raccogli.mjs [--fonti=heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,leiden,wolfenbuettel,vaticana] [--vaticana-minuti=20] [--oai-minuti=60]
 //        [--bodleian-minuti=30] [--gallica-minuti=30] [--laurenziana-minuti=15] [--leiden-minuti=15] [--hsp-minuti=10] [--berlino-minuti=60] [--indici-minuti=20] [--minuti-totali=160] [--solo-costruisci]
-// Scrive data/manoscritti.json (il catalogo) e gli stati delle scansioni a riprese: data/vaticana.json, data/bodleian.json, data/laurenziana.json,
-// data/heidelberg-indici.json (indici dei contenuti delle miscellanee di Heidelberg, letti dai manifesti IIIF).
-// --minuti-totali: tempo complessivo disponibile; la Vaticana usa al massimo quello che resta dopo le fonti OAI.
-// --solo-costruisci: nessuna richiesta, si ricostruisce dalle raccolte in cache e dallo stato della Vaticana.
+// Scrive il catalogo diviso per fonte (vedi costruisci.mjs): data/catalogo/indice.json, data/catalogo/indice/<fonte>-<n>.json, data/catalogo/voci/<fonte>-<n>.json,
+// più data/manoscritti.json (compatibilità: solo i codici con autori classici), e gli stati delle scansioni a riprese
+// (data/vaticana.json, data/bodleian.json, data/laurenziana.json, data/leiden.json, data/wolfenbuettel.json, data/heidelberg-indici.json).
+// --minuti-totali: tempo complessivo disponibile; la Vaticana usa al massimo quello che resta dopo le altre fonti.
+// --solo-costruisci: nessuna richiesta, si ricostruisce dalle raccolte in cache e dagli stati salvati.
 // Le raccolte OAI riprendono da dove si erano fermate (.cache/catalogo/stato-*.json) e si riusano per 6 giorni;
 // se una fonte non risponde, restano le sue voci del catalogo precedente.
 import fs from "node:fs";
 import { log } from "./rete.mjs";
 import { caricaAutori, riconosci } from "./riconosci.mjs";
+import { lingueDaTesto, secoli } from "./lingue.mjs";
 import { raccogliHeidelberg, raccogliEcodices, raccogliBsb, raccogliBerlino } from "./fonti/oai.mjs";
 import { scansiona, recordVaticana } from "./fonti/vaticana.mjs";
 import { scansionaBodleian, recordBodleian } from "./fonti/bodleian.mjs";
@@ -20,10 +24,10 @@ import { leggiIndiciHeidelberg, conIndici } from "./fonti/heidelberg-indici.mjs"
 import { scansionaLeiden, recordLeiden } from "./fonti/leiden.mjs";
 import { scansionaHsp, recordHsp } from "./fonti/hsp.mjs";
 import { scriviRegistro, registraEsiti } from "./registro.mjs";
+import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
 const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,leiden,wolfenbuettel,vaticana").split(",");
-const OUT = "data/manoscritti.json";
 const INIZIO = Date.now();
 export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)", berlino: "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
   bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -33,11 +37,11 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
 // i tre codici del Truculentus restano sempre nel catalogo, anche se una fonte non li ha ancora restituiti
 export const TRUCULENTUS = [
   { sigla: "B", fonte: "vaticana", id: "bav-pal-lat-1615", citta: "Città del Vaticano", biblioteca: "Biblioteca Apostolica Vaticana", segnatura: "Pal. lat. 1615", datazione: "10.-11. Jh.",
-    titolo: "Comoediae", autori_fonte: ["Plautus, Titus Maccius"], manifest: "https://digi.vatlib.it/iiif/MSS_Pal.lat.1615/manifest.json", pagina: "https://digi.vatlib.it/view/MSS_Pal.lat.1615", licenza: "© Biblioteca Apostolica Vaticana" },
+    titolo: "Comoediae", autori_fonte: ["Plautus, Titus Maccius"], lingue: ["la"], manifest: "https://digi.vatlib.it/iiif/MSS_Pal.lat.1615/manifest.json", pagina: "https://digi.vatlib.it/view/MSS_Pal.lat.1615", licenza: "© Biblioteca Apostolica Vaticana" },
   { sigla: "C", fonte: "heidelberg", id: "hd-cpl1613", citta: "Heidelberg", biblioteca: "Universitätsbibliothek Heidelberg", segnatura: "Cod. Pal. lat. 1613", datazione: "Ende 10. Jh.",
-    titolo: "Comoediae", autori_fonte: ["Plautus, Titus Maccius"], manifest: "https://digi.ub.uni-heidelberg.de/diglit/iiif/cpl1613/manifest.json", pagina: "https://digi.ub.uni-heidelberg.de/diglit/cpl1613", licenza: "Public Domain Mark 1.0" },
+    titolo: "Comoediae", autori_fonte: ["Plautus, Titus Maccius"], lingue: ["la"], manifest: "https://digi.ub.uni-heidelberg.de/diglit/iiif/cpl1613/manifest.json", pagina: "https://digi.ub.uni-heidelberg.de/diglit/cpl1613", licenza: "Public Domain Mark 1.0" },
   { sigla: "D", fonte: "vaticana", id: "bav-vat-lat-3870", citta: "Città del Vaticano", biblioteca: "Biblioteca Apostolica Vaticana", segnatura: "Vat. lat. 3870", datazione: "sec. XI?",
-    titolo: "Comoediae (Plautus, Titus Maccius, m. 184 a.C.). Gruppi, scelte", autori_fonte: ["Plautus, Titus Maccius, m. 184 a.C."], manifest: "https://digi.vatlib.it/iiif/MSS_Vat.lat.3870/manifest.json", pagina: "https://digi.vatlib.it/view/MSS_Vat.lat.3870", licenza: "© Biblioteca Apostolica Vaticana" },
+    titolo: "Comoediae (Plautus, Titus Maccius, m. 184 a.C.). Gruppi, scelte", autori_fonte: ["Plautus, Titus Maccius, m. 184 a.C."], lingue: ["la"], manifest: "https://digi.vatlib.it/iiif/MSS_Vat.lat.3870/manifest.json", pagina: "https://digi.vatlib.it/view/MSS_Vat.lat.3870", licenza: "© Biblioteca Apostolica Vaticana" },
 ];
 
 export function campiDi(r) {
@@ -52,13 +56,15 @@ export function campiDi(r) {
   ];
 }
 
-// record compatto della fonte -> voce del catalogo (null se nessun autore della lista e non è un codice del Truculentus)
+// record compatto della fonte -> voce del catalogo (tutti i manoscritti; null solo se mancano identificativo o manifesto).
+// lingue: quelle della fonte, altrimenti dalla segnatura o dal titolo; [] se non si sa. secolo: [primo, ultimo] dalla datazione.
 export function voce(r, AUTORI, sigle = new Map(TRUCULENTUS.map(t => [t.manifest, t.sigla]))) {
+  if (!r || !r.id || !r.manifest) return null;
   const autori = riconosci(campiDi(r), AUTORI);
   const sigla = sigle.get(r.manifest) || null;
-  if (!autori.length && !sigla) return null;
-  const v = { id: r.id, fonte: r.fonte, biblioteca: r.biblioteca || null, citta: r.citta || null, segnatura: r.segnatura, datazione: r.datazione || null,
-    titolo: (r.titolo || "").slice(0, 400) || null, autori, manifest: r.manifest, pagina: r.pagina || null, licenza: r.licenza || null, immagini: r.immagini ?? null };
+  const lingue = r.lingue && r.lingue.length ? r.lingue : lingueDaTesto(r.segnatura, r.titolo);
+  const v = { id: r.id, fonte: r.fonte, biblioteca: r.biblioteca || null, citta: r.citta || null, segnatura: r.segnatura || r.id, datazione: r.datazione || null,
+    secolo: secoli(r.datazione), lingue, titolo: (r.titolo || "").slice(0, 400) || null, autori, manifest: r.manifest, pagina: r.pagina || null, licenza: r.licenza || null, immagini: r.immagini ?? null };
   if (r.anteprima) v.anteprima = r.anteprima;
   if (sigla) v.truculentus = sigla;
   return v;
@@ -91,75 +97,79 @@ const naturale = (a, b) => String(a).localeCompare(String(b), "it", { numeric: t
 
 async function main() {
   const AUTORI = caricaAutori();
-  let prima = { manoscritti: [] }; try { prima = JSON.parse(fs.readFileSync(OUT, "utf8")); } catch (e) {}
+  const prima = catalogoPrecedente();
   const perFonte = {}, esito = {}, dettagli = {};
-  // minuti per una fonte: il suo limite, ridotto a quanto resta del tempo complessivo (6 minuti restano per costruire e salvare)
+  // minuti per una fonte: il suo limite, ridotto a quanto resta del tempo complessivo (10 minuti restano per costruire, provare e salvare)
   const tempo = cap => {
     if (!arg["minuti-totali"]) return cap;
-    const resto = +arg["minuti-totali"] - (Date.now() - INIZIO) / 60e3 - 6;
+    const resto = +arg["minuti-totali"] - (Date.now() - INIZIO) / 60e3 - 10;
     if (resto <= 1 && !arg["solo-costruisci"]) throw new Error("tempo complessivo esaurito: fonte rimandata alla prossima esecuzione");
     return Math.min(cap || Infinity, resto);
   };
-  const oai = () => ({ limiteMinuti: tempo(+arg["oai-minuti"] || 0), soloCache: !!arg["solo-costruisci"] });
+  // fonti non interrogate in questa esecuzione: si ricostruiscono senza richieste dagli stati salvati (cache o data/*.json), così il riconoscimento
+  // degli autori è sempre quello di data/autori.json; se lo stato non c'è, restano le voci del catalogo precedente
+  const sc = f => !!arg["solo-costruisci"] || !FONTI.includes(f);
+  const min = (f, m) => (sc(f) ? 0 : tempo(m));
+  const oai = f => ({ limiteMinuti: min(f, +arg["oai-minuti"] || 0), soloCache: sc(f) });
+  // indici delle miscellanee di Heidelberg: solo per i codici latini o greci (o di lingua non indicata) che la scheda non fa riconoscere
+  const daIndice = r => !riconosci(campiDi(r), AUTORI).length && (!(r.lingue || []).length || r.lingue.some(l => l === "la" || l === "grc"));
   const lavori = {
     heidelberg: async () => {
-      const rs = await raccogliHeidelberg(oai());
-      // per il registro: codici che la scheda OAI da sola non fa riconoscere (candidati alla lettura dell'indice)
-      dettagli.heidelberg = { candidati: rs.filter(r => !riconosci(campiDi(r), AUTORI).length).length };
-      let minuti = 0; try { minuti = arg["solo-costruisci"] ? 0 : tempo(+(arg["indici-minuti"] ?? 20)); } catch (e) {}
-      if (!arg["solo-costruisci"] && minuti > 0) {
-        try { await leggiIndiciHeidelberg(rs, r => riconosci(campiDi(r), AUTORI).length > 0, { minuti }); }
+      const rs = await raccogliHeidelberg(oai("heidelberg"));
+      dettagli.heidelberg = { candidati: rs.filter(daIndice).length };
+      let minuti = 0; try { minuti = min("heidelberg", +(arg["indici-minuti"] ?? 20)); } catch (e) {}
+      if (minuti > 0) {
+        try { await leggiIndiciHeidelberg(rs, r => !daIndice(r), { minuti }); }
         catch (e) { log("heidelberg-indici", "ERRORE", e.message); }
       }
       return conIndici(rs);
     },
-    ecodices: () => raccogliEcodices(oai()),
-    bsb: async () => unisciBsb(await raccogliBsb(oai())),
+    ecodices: () => raccogliEcodices(oai("ecodices")),
+    bsb: async () => unisciBsb(await raccogliBsb(oai("bsb"))),
     // Berlino risponde lentamente (circa 35 secondi per pagina, 71 pagine): ha un limite suo, così finisce in una sola esecuzione
-    berlino: () => raccogliBerlino({ limiteMinuti: tempo(+(arg["berlino-minuti"] ?? arg["oai-minuti"] ?? 0)), soloCache: !!arg["solo-costruisci"] }),
-    bodleian: async () => recordBodleian(await scansionaBodleian({ minuti: tempo(+(arg["bodleian-minuti"] ?? 30)), soloCache: !!arg["solo-costruisci"] })),
-    gallica: () => raccogliGallica({ limiteMinuti: tempo(+(arg["gallica-minuti"] ?? 30)), soloCache: !!arg["solo-costruisci"] }),
-    laurenziana: async () => recordLaurenziana(await scansionaLaurenziana({ minuti: tempo(+(arg["laurenziana-minuti"] ?? 15)), soloCache: !!arg["solo-costruisci"] })),
-    leiden: async () => recordLeiden(await scansionaLeiden({ minuti: tempo(+(arg["leiden-minuti"] ?? 15)), soloCache: !!arg["solo-costruisci"] })),
+    berlino: () => raccogliBerlino({ limiteMinuti: min("berlino", +(arg["berlino-minuti"] ?? arg["oai-minuti"] ?? 0)), soloCache: sc("berlino") }),
+    bodleian: async () => recordBodleian(await scansionaBodleian({ minuti: min("bodleian", +(arg["bodleian-minuti"] ?? 30)), soloCache: sc("bodleian") })),
+    gallica: () => raccogliGallica({ limiteMinuti: min("gallica", +(arg["gallica-minuti"] ?? 30)), soloCache: sc("gallica") }),
+    laurenziana: async () => recordLaurenziana(await scansionaLaurenziana({ minuti: min("laurenziana", +(arg["laurenziana-minuti"] ?? 15)), soloCache: sc("laurenziana") })),
+    leiden: async () => recordLeiden(await scansionaLeiden({ minuti: min("leiden", +(arg["leiden-minuti"] ?? 15)), soloCache: sc("leiden") })),
     wolfenbuettel: async () => recordHsp("wolfenbuettel", await scansionaHsp({ fonte: "wolfenbuettel", biblioteca: "Herzog August Bibliothek Wolfenbüttel",
-      minuti: tempo(+(arg["hsp-minuti"] ?? 10)), soloCache: !!arg["solo-costruisci"] })),
+      minuti: min("wolfenbuettel", +(arg["hsp-minuti"] ?? 10)), soloCache: sc("wolfenbuettel") })),
     vaticana: async () => {
       let minuti = +(arg["vaticana-minuti"] ?? 20);
-      // con un tempo complessivo si lasciano 6 minuti per costruire il catalogo, provarlo e salvarlo
-      if (arg["minuti-totali"]) minuti = Math.max(0, Math.min(minuti, +arg["minuti-totali"] - (Date.now() - INIZIO) / 60e3 - 6));
-      if (!arg["solo-costruisci"] && minuti > 0) await scansiona({ minuti, extra: ["Pal.lat.1615", "Vat.lat.3870"] });
+      // con un tempo complessivo si lasciano 10 minuti per costruire il catalogo, provarlo e salvarlo
+      if (arg["minuti-totali"]) minuti = Math.max(0, Math.min(minuti, +arg["minuti-totali"] - (Date.now() - INIZIO) / 60e3 - 10));
+      if (!sc("vaticana") && minuti > 0) await scansiona({ minuti, extra: ["Pal.lat.1615", "Vat.lat.3870"] });
       return recordVaticana();
     },
   };
   for (const f of Object.keys(lavori)) {
-    if (!FONTI.includes(f)) { esito[f] = "precedente"; continue; }
-    try { perFonte[f] = await lavori[f](); esito[f] = "ok"; log(f, `${perFonte[f].length} record candidati`); }
-    catch (e) { esito[f] = "errore: " + e.message; log(f, "ERRORE", e.message, "(restano le voci precedenti)"); }
+    try {
+      const rs = await lavori[f]();
+      // una fonte senza stato salvato (prima raccolta mai fatta) non cancella le voci precedenti
+      if (sc(f) && !rs.length) throw new Error("nessun dato salvato");
+      perFonte[f] = rs; esito[f] = FONTI.includes(f) ? "ok" : "precedente"; log(f, `${rs.length} record${FONTI.includes(f) ? "" : " (dagli stati salvati)"}`);
+    }
+    catch (e) { esito[f] = FONTI.includes(f) ? "errore: " + e.message : "precedente"; log(f, FONTI.includes(f) ? "ERRORE" : "nessuno stato salvato:", e.message, "(restano le voci precedenti)"); }
   }
   const sigle = new Map(TRUCULENTUS.map(t => [t.manifest, t.sigla]));
   const voci = new Map();
+  const t0 = Date.now();
   for (const f of Object.keys(lavori)) {
     if (perFonte[f]) { for (const r of perFonte[f]) { const v = voce(r, AUTORI, sigle); if (v) voci.set(v.id, v); } }
-    else for (const v of prima.manoscritti.filter(x => x.fonte === f)) voci.set(v.id, v);
+    else for (const v of prima.filter(x => x.fonte === f)) voci.set(v.id, v);
   }
   for (const t of TRUCULENTUS) if (![...voci.values()].some(v => v.manifest === t.manifest)) voci.set(t.id, voce(t, AUTORI, sigle));
+  log(`riconoscimento: ${voci.size} codici in ${Math.round((Date.now() - t0) / 1000)} secondi`);
   const manoscritti = [...voci.values()].sort((a, b) => naturale(a.biblioteca, b.biblioteca) || naturale(a.segnatura, b.segnatura));
-  const conteggio = {}; for (const v of manoscritti) conteggio[v.fonte] = (conteggio[v.fonte] || 0) + 1;
-  const daIndice = manoscritti.filter(v => v.autori.some(a => a.corrispondenza.startsWith("indice:"))).length;
-  log(`riconosciuti grazie all'indice dei contenuti: ${daIndice}`);
-  const dati = { aggiornato: new Date().toISOString(), fonti: Object.fromEntries(Object.keys(lavori).map(f => [f, { nome: NOMI_FONTI[f], codici: conteggio[f] || 0, esito: esito[f] }])),
-    totale: manoscritti.length, manoscritti };
+  const daIndici = manoscritti.filter(v => v.autori.some(a => a.corrispondenza.startsWith("indice:"))).length;
+  log(`riconosciuti grazie all'indice dei contenuti: ${daIndici}`);
+  const nomiFonti = Object.fromEntries(Object.keys(lavori).map(f => [f, NOMI_FONTI[f]]));
+  const ris = scriviCatalogo(manoscritti, { fonti: Object.keys(lavori), nomi: nomiFonti, esito, autori: AUTORI });
   // registro delle biblioteche (docs/BIBLIOTECHE.md): esiti delle raccolte vere e tabella delle fonti agganciate
   if (!arg["solo-costruisci"]) registraEsiti(Object.fromEntries(Object.keys(lavori).map(f => [f, esito[f]])));
-  if (scriviRegistro({ fonti: Object.keys(lavori), conteggio, dettagli })) log("registro delle biblioteche aggiornato");
-  // se il contenuto non cambia, la data resta quella di prima (niente commit settimanali vuoti)
-  const senzaData = d => JSON.stringify({ ...d, aggiornato: null, fonti: Object.fromEntries(Object.entries(d.fonti || {}).map(([k, v]) => [k, { ...v, esito: null }])) });
-  if (prima.manoscritti.length && senzaData(prima) === senzaData(dati)) { log("catalogo invariato:", manoscritti.length, "codici"); return; }
-  fs.mkdirSync("data", { recursive: true });
-  fs.writeFileSync(OUT, JSON.stringify(dati, null, 1) + "\n");
-  const kb = Math.round(fs.statSync(OUT).size / 1024);
-  log(`catalogo scritto: ${manoscritti.length} codici (${Object.entries(conteggio).map(([k, n]) => k + " " + n).join(", ")}), ${kb} KB`);
-  if (kb > 4096) log("ATTENZIONE: il catalogo supera 4 MB: conviene dividerlo in indice leggero e dettagli");
+  if (scriviRegistro({ fonti: Object.keys(lavori), conteggio: ris.conteggio, conAutori: ris.conAutori, lingue: ris.lingue, dettagli })) log("registro delle biblioteche aggiornato");
+  log(ris.cambiato ? `catalogo scritto: ${manoscritti.length} codici (${Object.entries(ris.conteggio).map(([k, n]) => k + " " + n).join(", ")}), ${ris.kb} KB in ${ris.file} file`
+    : `catalogo invariato: ${manoscritti.length} codici`);
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) main().catch(e => { console.error(e); process.exit(1); });

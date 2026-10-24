@@ -1,5 +1,6 @@
-// Universiteitsbibliotheek Leiden: collezione «Western Medieval Manuscripts» di Digital Collections
-// (Islandora, digitalcollections.universiteitleiden.nl; comprende i Vossiani latini, i BPL e gli altri fondi).
+// Universiteitsbibliotheek Leiden: collezioni «Manuscripts, Archives & Letters» (tutti i manoscritti: occidentali medievali con i Vossiani
+// latini e greci e i BPL, orientali, moderni) e «Bibliotheca Neerlandica Manuscripta» (manoscritti medievali in nederlandese) di Digital Collections
+// (Islandora, digitalcollections.universiteitleiden.nl).
 // Niente OAI-PMH pubblico (quello di Alma risponde «Unauthorized»), e l'API dei manifesti richiede l'accesso:
 // si leggono le pagine dei risultati della collezione (20 codici per pagina), che danno segnatura, titolo, autori e datazione.
 // Il robots.txt chiede 10 secondi tra le richieste (rete.mjs) e non vieta /islandora/search.
@@ -11,15 +12,16 @@ import { scarica, decodifica, log } from "../rete.mjs";
 
 export const FILE_STATO = "data/leiden.json";
 export const BASE = "https://digitalcollections.universiteitleiden.nl";
-const FILTRO = "f%5B0%5D=RELS_EXT_isMemberOfCollection_uri_ms%3A%22info%5C%3Afedora%5C/collection%5C%3Awestern_mediev_manuscripts%22";
-const GIORNI = 6;
+export const COLLEZIONI = ["ubl_manuscripts", "bnm"];
+const filtro = c => `f%5B0%5D=RELS_EXT_isMemberOfCollection_uri_ms%3A%22info%5C%3Afedora%5C/collection%5C%3A${c}%22`;
+const GIORNI = 6, VERSIONE = 2;   // 2: più collezioni (cursore { c: indice della collezione, p: pagina })
 
 export function leggiStato() {
   try { return JSON.parse(fs.readFileSync(FILE_STATO, "utf8")); } catch (e) { return { voci: {} }; }
 }
 function salvaStato(st) {
   const righe = Object.entries(st.voci).sort(([a], [b]) => a.localeCompare(b, "en", { numeric: true })).map(([k, v]) => JSON.stringify(k) + ":" + JSON.stringify(v));
-  const testa = JSON.stringify({ aggiornato: st.aggiornato || null, completato: st.completato || null, cursore: st.cursore ?? null, totale: st.totale || null });
+  const testa = JSON.stringify({ versione: st.versione || null, aggiornato: st.aggiornato || null, completato: st.completato || null, cursore: st.cursore ?? null, totale: st.totale || null, totali: st.totali || {} });
   fs.writeFileSync(FILE_STATO + ".tmp", testa.slice(0, -1) + ',"voci":{\n' + righe.join(",\n") + "\n}}\n");
   fs.renameSync(FILE_STATO + ".tmp", FILE_STATO);
 }
@@ -39,26 +41,31 @@ export function leggiPagina(html) {
   return { totale: tot ? +tot[1].replace(/[,.]/g, "") : null, voci };
 }
 
-/* raccolta a riprese: cursore = numero della prossima pagina (da 0); stato salvato dopo ogni pagina */
+/* raccolta a riprese: cursore = { c: collezione, p: prossima pagina (da 0) }; stato salvato dopo ogni pagina.
+   Un codice che sta in più collezioni si conta una volta sola (chiave: numero dell'oggetto). */
 export async function scansionaLeiden({ minuti = 15, soloCache = false } = {}) {
   const st = leggiStato();
   if (soloCache) return st;
   const ora = Date.now();
+  if (st.versione !== VERSIONE) { st.versione = VERSIONE; st.completato = null; st.cursore = null; st.totali = {}; }
   if (st.completato && st.cursore == null && ora - Date.parse(st.completato) < GIORNI * 864e5) { log("leiden", `riuso la raccolta del ${st.completato.slice(0, 10)}: ${Object.keys(st.voci).length} codici`); return st; }
-  if (st.cursore == null) st.cursore = 0; else log("leiden", `riprendo dalla pagina ${st.cursore + 1}`);
+  if (st.cursore == null || typeof st.cursore !== "object") st.cursore = { c: 0, p: 0 }; else log("leiden", `riprendo da ${COLLEZIONI[st.cursore.c]}, pagina ${st.cursore.p + 1}`);
+  st.totali = st.totali || {};
   const fine = ora + minuti * 60e3;
-  for (;;) {
-    if (Date.now() > fine) { salvaStato(st); throw new Error(`raccolta incompleta (pagina ${st.cursore + 1}): riprenderà alla prossima esecuzione`); }
-    const r = await scarica(`${BASE}/islandora/search?page=${st.cursore}&type=dismax&islandora_solr_search_navigation=0&${FILTRO}`, { timeout: 120000, accept: "text/html" });
+  while (st.cursore.c < COLLEZIONI.length) {
+    const col = COLLEZIONI[st.cursore.c];
+    if (Date.now() > fine) { salvaStato(st); throw new Error(`raccolta incompleta (${col}, pagina ${st.cursore.p + 1}): riprenderà alla prossima esecuzione`); }
+    const r = await scarica(`${BASE}/islandora/search?page=${st.cursore.p}&type=dismax&islandora_solr_search_navigation=0&${filtro(col)}`, { timeout: 120000, accept: "text/html" });
     if (r.stato !== 200) throw new Error(`HTTP ${r.stato}`);
     if (/Access blocked/i.test(r.testo)) throw new Error("richiesta respinta dal sistema di protezione del sito");
     const p = leggiPagina(r.testo);
-    if (p.totale) st.totale = p.totale;
+    if (p.totale) st.totali[col] = p.totale;
     Object.assign(st.voci, p.voci);
-    st.cursore++; st.aggiornato = new Date().toISOString();
+    st.cursore.p++; st.aggiornato = new Date().toISOString();
+    if (st.cursore.p % 10 === 0) log("leiden", `${col}: ${st.cursore.p} pagine, ${Object.keys(st.voci).length} codici`);
+    if (!Object.keys(p.voci).length || st.cursore.p * 20 >= (st.totali[col] || 0)) { log("leiden", `${col}: fine (${st.totali[col]})`); st.cursore = { c: st.cursore.c + 1, p: 0 }; }
+    st.totale = Object.values(st.totali).reduce((a, b) => a + b, 0);
     salvaStato(st);
-    if (st.cursore % 10 === 0) log("leiden", `${st.cursore} pagine, ${Object.keys(st.voci).length} codici su ${st.totale}`);
-    if (!Object.keys(p.voci).length || st.cursore * 20 >= (st.totale || 0)) break;
   }
   st.cursore = null; st.completato = st.aggiornato = new Date().toISOString();
   salvaStato(st);

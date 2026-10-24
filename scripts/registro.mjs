@@ -5,6 +5,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { CACHE } from "./rete.mjs";
 import { PERCORSO, segnaturaLeggibile } from "./fonti/vaticana.mjs";
+import { NOMI_LINGUE } from "./lingue.mjs";
 
 export const FILE_REGISTRO = "docs/BIBLIOTECHE.md";
 export const FILE_RACCOLTE = "data/raccolte.json";
@@ -19,7 +20,7 @@ export const BIBLIOTECHE = {
   bodleian: { biblioteca: "Bodleian Libraries e college", citta: "Oxford", come: "ogni notte, da sola" },
   gallica: { biblioteca: "Bibliothèque nationale de France (Gallica)", citta: "Parigi", come: "va rifatta a mano dal browser" },
   laurenziana: { biblioteca: "Biblioteca Medicea Laurenziana", citta: "Firenze", come: "ogni notte, da sola" },
-  leiden: { biblioteca: "Universiteitsbibliotheek Leiden (Western Medieval Manuscripts, con i Vossiani latini)", citta: "Leida", come: "ogni notte, da sola" },
+  leiden: { biblioteca: "Universiteitsbibliotheek Leiden (manoscritti, con i Vossiani; Bibliotheca Neerlandica Manuscripta)", citta: "Leida", come: "ogni notte, da sola" },
   wolfenbuettel: { biblioteca: "Herzog August Bibliothek (dati dal Handschriftenportal)", citta: "Wolfenbüttel", come: "ogni notte, da sola" },
   vaticana: { biblioteca: "Biblioteca Apostolica Vaticana", citta: "Città del Vaticano", come: "ogni 3 ore, da sola" },
 };
@@ -33,7 +34,8 @@ export const AVANZAMENTO = {
   heidelberg: (det = {}) => {
     const c = leggi(path.join(CACHE, "stato-heidelberg.json")), i = leggi("data/heidelberg-indici.json");
     const parti = [];
-    if (c) parti.push(c.completato ? `schede lette tutte (${num(c.voci.length)})` : `schede: ${num(c.pagine)} pagine lette, in corso`);
+    if (c && c.versione === 2) parti.push(c.completato ? `schede lette tutte (${num(c.voci.length)})` : `schede: ${num(c.pagine)} pagine lette, in corso`);
+    else if (c) parti.push("raccolta da rifare con tutti i manoscritti (alla prossima notte)");
     if (i) parti.push(`indici ${num(Object.keys(i.voci || {}).length)}${det.candidati ? " su " + num(det.candidati) : ""}`);
     return { testo: parti.join("; ") || "schede lette ogni 6 giorni", data: (i && i.aggiornato) || (c && c.aggiornato) };
   },
@@ -42,25 +44,49 @@ export const AVANZAMENTO = {
   berlino: () => oai("berlino"),
   bodleian: () => {
     const s = leggi("data/bodleian.json"); if (!s) return { testo: "non ancora cominciata" };
-    return { testo: `${num(Object.keys(s.voci || {}).length)} schede lette su ${num(s.totale_collezione)}`, data: s.aggiornato };
+    const letti = Object.keys(s.voci || {}).length, resto = Math.max(0, (s.totale_collezione || 0) - letti);
+    // circa 1000 manifesti per notte (45 minuti)
+    const notti = Math.ceil(resto / 1000);
+    return { testo: `${num(letti)} schede lette su ${num(s.totale_collezione)}${resto ? `; a riprese, ogni notte: mancano circa ${notti} ${notti === 1 ? "notte" : "notti"}` : ""}`, data: s.aggiornato };
   },
   gallica: () => {
     const s = leggi("data/gallica.json"); if (!s) return { testo: "nessuna raccolta dal browser" };
-    return { testo: `${num(s.schede_lette)} schede lette (raccolta dal browser del ${giorno(s.raccolto)})`, data: s.raccolto };
+    if (!s.record) return { testo: `solo i fondi latini (raccolta dal browser del ${giorno(s.raccolto)}): per avere tutti i manoscritti va lanciato scripts/browser/gallica.js`, data: s.raccolto };
+    return { testo: `${num(s.schede_lette)} schede lette su ${num(s.totale)}${s.completa ? "" : " (raccolta non completa)"} (raccolta dal browser del ${giorno(s.raccolto)})`, data: s.raccolto };
   },
   laurenziana: () => {
     const s = leggi("data/laurenziana.json"); if (!s) return { testo: "non ancora cominciata" };
     if (s.cursore) return { testo: `in corso: collezione ${s.cursore.collezione}`, data: s.aggiornato };
     return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} codici)`, data: s.aggiornato };
   },
-  leiden: () => aRiprese("data/leiden.json", 20),
+  leiden: () => {
+    const s = leggi("data/leiden.json"); if (!s) return { testo: "non ancora cominciata" };
+    const n = Object.keys(s.voci || {}).length;
+    if (s.cursore != null) return { testo: `in corso: ${num(n)} codici letti (collezione ${(s.cursore.c ?? 0) + 1} di 2, pagina ${(s.cursore.p ?? 0) + 1})`, data: s.aggiornato };
+    return { testo: `schede lette tutte (${num(n)} codici)`, data: s.aggiornato };
+  },
   wolfenbuettel: () => { const a = aRiprese("data/wolfenbuettel.json", 1); return { ...a, testo: a.testo.replace("schede lette tutte", "codici digitalizzati letti tutti") }; },
   vaticana: () => {
     const s = leggi("data/vaticana.json"); if (!s) return { testo: "non ancora cominciata" };
     const t = PERCORSO[s.passo] || PERCORSO[0];
-    return { testo: `${num(s.visti)} schede viste; fondo in corso: ${segnaturaLeggibile(t[0] + ".").trim()} (dal n. ${s.prossimo ?? t[1]}), tratto ${(s.passo || 0) + 1} di ${PERCORSO.length}`, data: s.aggiornato };
+    const g = stimaVaticana(s);
+    return { testo: `${num(Object.keys(s.voci || {}).length)} codici letti; fondo in corso: ${segnaturaLeggibile(t[0] + ".").trim()} (dal n. ${s.prossimo ?? t[1]}), tratto ${(s.passo || 0) + 1} di ${PERCORSO.length}; ` +
+      `restano circa ${num(g.manifesti)} segnature da provare, cioè circa ${g.giorni} giorni (un manifesto ogni 10 secondi, come chiede la biblioteca)`, data: s.aggiornato };
   },
 };
+
+// Vaticana: segnature ancora da provare nel percorso (quelle dei tratti successivi e il resto del tratto in corso, meno quelle già viste)
+// e giorni che servono, a circa 6500 manifesti al giorno (8 esecuzioni ogni 3 ore, di cui una divisa con le altre fonti)
+export function stimaVaticana(s) {
+  const visto = (f, n) => ((s.visti_giro || {})[f] || []).some(([a, b]) => n >= a && n <= b);
+  let manifesti = 0;
+  PERCORSO.forEach(([f, da, a], i) => {
+    if (i < (s.passo || 0)) return;
+    const ini = i === (s.passo || 0) ? (s.prossimo ?? da) : da;
+    for (let n = ini; n <= a; n++) if (!visto(f, n)) manifesti++;
+  });
+  return { manifesti, giorni: Math.ceil(manifesti / 6500) };
+}
 
 // fonti lette a pagine con stato in data/<fonte>.json: { totale, cursore (pagina), completato, voci }
 function aRiprese(file, perPagina) {
@@ -73,7 +99,8 @@ function aRiprese(file, perPagina) {
 function oai(fonte) {
   const c = leggi(path.join(CACHE, `stato-${fonte}.json`));
   if (!c) return { testo: "schede lette tutte ogni 6 giorni" };
-  return { testo: c.completato ? `schede lette tutte (${num(c.voci.length)} manoscritti latini)` : `in corso: ${num(c.pagine)} pagine lette`, data: c.aggiornato };
+  if (c.versione !== 2) return { testo: "raccolta da rifare con tutti i manoscritti (alla prossima notte)", data: c.aggiornato };
+  return { testo: c.completato ? `schede lette tutte (${num(c.voci.length)} schede)` : `in corso: ${num(c.pagine)} pagine lette`, data: c.aggiornato };
 }
 
 // esiti delle raccolte vere: { fonte: { quando, esito, ultimo_ok } }
@@ -98,26 +125,34 @@ export function esitoLeggibile(e) {
   return "non riuscita: " + e.esito.replace(/^errore:\s*/, "").slice(0, 120);
 }
 
+// lingue di una fonte: le tre più frequenti, con il numero di codici
+function lingueTesto(lf = {}) {
+  const arr = Object.entries(lf).sort((a, b) => b[1] - a[1]);
+  if (!arr.length) return "—";
+  const nome = k => (k === "?" ? "non indicata" : NOMI_LINGUE[k] || k);
+  const testa = arr.slice(0, 3).map(([k, n]) => `${nome(k)} ${num(n)}`).join(", ");
+  return arr.length > 3 ? `${testa}, altre ${num(arr.slice(3).reduce((x, y) => x + y[1], 0))}` : testa;
+}
+
 // tabella delle fonti agganciate (testo tra i segnaposto)
-export function tabella({ fonti, conteggio = {}, dettagli = {} } = {}) {
+export function tabella({ fonti, conteggio = {}, conAutori = {}, lingue = {}, dettagli = {} } = {}) {
   const r = leggi(FILE_RACCOLTE) || {};
   const righe = [
-    "| Biblioteca | Città | Codici nel catalogo | Avanzamento della lettura | Come si aggiorna | Ultimo aggiornamento | Ultima raccolta |",
-    "|---|---|---|---|---|---|---|",
+    "| Biblioteca | Città | Codici totali | Di cui con autori riconosciuti | Lingue | Avanzamento della lettura | Come si aggiorna | Ultimo aggiornamento | Ultima raccolta |",
+    "|---|---|---|---|---|---|---|---|---|",
   ];
-  let tot = 0;
+  let tot = 0, totA = 0;
   for (const f of fonti) {
     const b = BIBLIOTECHE[f] || { biblioteca: f, citta: "", come: "ogni notte, da sola" };
     const a = (AVANZAMENTO[f] || (() => ({ testo: "" })))(dettagli[f] || {});
-    const testo = a.testo;
     let come = b.come;
     if (f === "gallica") { const g = leggi("data/gallica.json"); if (g) come += ` (ultima raccolta: ${giorno(g.raccolto)})`; }
     const e = r[f];
     const data = giorno((e && e.ultimo_ok) || a.data) || "—";
-    tot += conteggio[f] || 0;
-    righe.push(`| ${b.biblioteca} | ${b.citta} | ${num(conteggio[f])} | ${testo} | ${come} | ${data} | ${esitoLeggibile(e)} |`);
+    tot += conteggio[f] || 0; totA += conAutori[f] || 0;
+    righe.push(`| ${b.biblioteca} | ${b.citta} | ${num(conteggio[f])} | ${num(conAutori[f])} | ${lingueTesto(lingue[f])} | ${a.testo} | ${come} | ${data} | ${esitoLeggibile(e)} |`);
   }
-  return [`Codici nel catalogo, in tutto: **${num(tot)}**.`, "", ...righe].join("\n");
+  return [`Codici nel catalogo, in tutto: **${num(tot)}**, di cui **${num(totA)}** con almeno un autore riconosciuto.`, "", ...righe].join("\n");
 }
 
 export function scriviRegistro(opz) {

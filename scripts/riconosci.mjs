@@ -1,28 +1,38 @@
-// Riconoscimento prudente di autori e opere latine nei metadati dei manoscritti.
+// Riconoscimento prudente di autori e opere (classici latini e greci, cristiani, medievali) nei metadati dei manoscritti.
+// Il riconoscimento è un'informazione in più sul codice (per cercare e filtrare), non decide chi entra nel catalogo.
 // Regole (data/autori.json):
 //  - un nome «forte» basta nei campi forti (titolo, autore); un nome «debole» vale solo con un'opera dell'autore;
 //  - un'opera «distintiva» basta da sola nei campi forti; le altre valgono solo insieme al nome;
 //  - nei campi deboli (descrizioni lunghe) servono sempre nome e opera insieme;
-//  - non contano: i santi omonimi (s., sanctus, hl., saint...), le frasi di «escludi»,
+//  - non contano: i santi omonimi (s., sanctus, hl., saint...; tranne per gli autori «santi»: Agostino, Girolamo...), le frasi di «escludi»,
 //    l'autore o l'opera commentati («commentum in Vergilium», «Kommentar zu Ovid»: il testo è il commento, non l'autore).
 import fs from "node:fs";
 import { fileURLToPath } from "node:url";
 
 const SANTI = new Set(["s", "st", "ss", "sanctus", "sancti", "sancto", "sanctum", "sancte", "hl", "heilige", "heiligen", "heiliger", "saint", "sainte", "san", "santo", "beatus", "beati", "b"]);
 const COMMENTO = new Set(["commentum", "commenta", "commentarius", "commentarii", "commentaria", "commentariorum", "commentariis", "commentarium", "commento", "commenti", "kommentar", "kommentare", "commentary", "commentaries", "commentaire", "commentaires",
-  "glossae", "glosae", "glossa", "glosa", "glossen", "glosse", "glossulae", "scholia", "scolia", "expositio", "accessus", "lectura", "notae", "annotationes", "interpretatio", "enarratio", "tractatus", "quaestiones"]);
+  "glossae", "glosae", "glossa", "glosa", "glossen", "glosse", "glossulae", "scholia", "scolia", "expositio", "accessus", "lectura", "notae", "annotationes", "interpretatio", "enarratio", "tractatus", "quaestiones",
+  "enarrationes", "expositiones", "sermones", "sermo", "predigten", "homiliae", "homeliae", "homilia", "omelie", "postilla", "postillae", "catena", "catenae", "σχολια", "υπομνημα", "εξηγησισ", "ερμηνεια"]);
 const PREP = new Set(["in", "super", "ad", "on", "zu", "zum", "zur", "sur", "a", "al", "all", "alla", "allo", "agli", "alle", "to", "de", "di", "uber"]);
 
-// minuscole, senza accenti né punteggiatura, u per v e i per j; restituisce anche la mappa verso il testo originale
+// minuscole, senza accenti né spiriti né punteggiatura, u per v e i per j, sigma finale come sigma; lettere latine e greche;
+// restituisce anche la mappa verso il testo originale
+const CAR = new Map();
+function carattere(ch) {
+  let c = CAR.get(ch);
+  if (c === undefined) {
+    c = ch.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/æ/g, "ae").replace(/œ/g, "oe").replace(/ß/g, "ss").replace(/ς/g, "σ").replace(/v/g, "u").replace(/j/g, "i");
+    c = [...c].map(x => (/[a-z0-9\u03b1-\u03c9]/.test(x) ? x : " ")).join("");
+    CAR.set(ch, c);
+  }
+  return c;
+}
 export function normalizza(s) {
   s = String(s || "");
   let t = "", mappa = [], spazio = true;
   for (let i = 0; i < s.length; i++) {
-    let c = s[i].normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
-    c = c.replace(/æ/g, "ae").replace(/œ/g, "oe").replace(/ß/g, "ss");
-    for (let ch of c) {
-      if (ch === "v") ch = "u"; else if (ch === "j") ch = "i";
-      if (/[a-z0-9]/.test(ch)) { t += ch; mappa.push(i); spazio = false; }
+    for (const ch of carattere(s[i])) {
+      if (ch !== " ") { t += ch; mappa.push(i); spazio = false; }
       else if (!spazio) { t += " "; mappa.push(i); spazio = true; }
     }
   }
@@ -34,13 +44,20 @@ const n = s => normalizza(s).t;
 export function caricaAutori(file) {
   const f = file || fileURLToPath(new URL("../data/autori.json", import.meta.url));
   const d = JSON.parse(fs.readFileSync(f, "utf8"));
-  return d.autori.map(a => ({
-    id: a.id, nome: a.nome, latino: a.latino,
+  const autori = d.autori.map(a => ({
+    id: a.id, nome: a.nome, latino: a.latino, categoria: a.categoria || "classico-latino", lingua: a.lingua || "la", santi: !!a.santi, pseudo: !!a.pseudo,
     nomi: [...new Set((a.nomi || []).map(n))].filter(Boolean),
     deboli: [...new Set((a.deboli || []).map(n))].filter(Boolean),
     escludi: (a.escludi || []).map(n).filter(Boolean),
     opere: (a.opere || []).map(o => ({ t: o.t, d: !!o.d, v: [...new Set(o.v.map(n))].filter(Boolean) })),
   }));
+  // indice per parola: un autore si esamina solo se nel record c'è la prima parola di un suo nome o di una sua opera
+  const perParola = new Map();
+  for (const a of autori) for (const v of [...a.nomi, ...a.deboli, ...a.opere.flatMap(o => o.v)]) {
+    const p = v.split(" ")[0]; if (!perParola.has(p)) perParola.set(p, new Set()); perParola.get(p).add(a);
+  }
+  autori.perParola = perParola;
+  return autori;
 }
 
 // posizioni (inizio, fine) di una frase normalizzata nel testo normalizzato, a parole intere
@@ -53,7 +70,11 @@ function trova(t, frase) {
 const paroleprima = (t, ini, k) => t.slice(0, ini).trim().split(" ").filter(Boolean).slice(-k);
 
 // santi omonimi e opere spurie («Ps.-Ausonius», «Pseudo-Boethius»)
-function santo(t, ini) { const p = paroleprima(t, ini, 1); return p.length && (SANTI.has(p[0]) || p[0] === "ps" || p[0] === "pseudo"); }
+function santo(t, ini, a = {}) {
+  const p = paroleprima(t, ini, 1); if (!p.length) return false;
+  if (p[0] === "ps" || p[0] === "pseudo") return !a.pseudo;
+  return SANTI.has(p[0]) && !a.santi;
+}
 // l'autore è l'oggetto del commento: «commentum in Vergilium», «glosae super Boethium», «commentary on Ovid»
 function autoreCommentato(t, ini) {
   const p = paroleprima(t, ini, 5);
@@ -74,16 +95,22 @@ function estratto(orig, norm, span) {
 }
 
 /* campi: [{campo:"titolo", testo:"...", forte:true}]
-   restituisce [{id, autore, latino, opere:[...], corrispondenza:"titolo: «...»"}] */
+   restituisce [{id, autore, latino, categoria, opere:[...], corrispondenza:"titolo: «...»"}] */
 export function riconosci(campi, AUTORI) {
   const C = campi.filter(c => c && c.testo).map(c => ({ ...c, norm: normalizza(c.testo) }));
   const ris = [];
-  for (const a of AUTORI) {
+  let candidati = AUTORI;
+  if (AUTORI.perParola) {
+    const s = new Set();
+    for (const c of C) for (const w of c.norm.t.split(" ")) { const x = AUTORI.perParola.get(w); if (x) for (const a of x) s.add(a); }
+    candidati = AUTORI.filter(a => s.has(a));
+  }
+  for (const a of candidati) {
     const colpi = { forte: [], debole: [], deboleNome: [], operaD: [], opera: new Map() };
     for (const c of C) {
       const t = c.norm.t;
       const esclusi = a.escludi.flatMap(e => trova(t, e));
-      const valido = s => !sovrapposta(s, esclusi) && !santo(t, s[0]) && !autoreCommentato(t, s[0]);
+      const valido = s => !sovrapposta(s, esclusi) && !santo(t, s[0], a) && !autoreCommentato(t, s[0]);
       for (const v of a.nomi) for (const s of trova(t, v)) if (valido(s)) (c.forte ? colpi.forte : colpi.deboleNome).push({ c, s });
       for (const v of a.deboli) for (const s of trova(t, v)) if (valido(s)) colpi.deboleNome.push({ c, s, debole: true });
       for (const o of a.opere) for (const v of o.v) for (const s of trova(t, v)) {
@@ -97,7 +124,7 @@ export function riconosci(campi, AUTORI) {
     let scatto = colpi.forte[0] || colpi.operaD[0] || null;
     if (!scatto && conOpera) scatto = colpi.deboleNome.find(x => x.c.forte) || colpi.deboleNome[0] || null;
     if (!scatto) continue;
-    ris.push({ id: a.id, autore: a.nome, latino: a.latino, opere: [...colpi.opera.keys()],
+    ris.push({ id: a.id, autore: a.nome, latino: a.latino, categoria: a.categoria, opere: [...colpi.opera.keys()],
       corrispondenza: `${scatto.c.campo}: «${estratto(scatto.c.testo, scatto.c.norm, scatto.s)}»` });
   }
   return ris;

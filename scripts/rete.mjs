@@ -74,19 +74,24 @@ export function totale(xml) { const m = /completeListSize="(\d+)"/.exec(xml); re
 
 /* raccolta OAI-PMH con ripresa: salva lo stato dopo ogni pagina; se completata da meno di `giorni`, riusa i record.
    estrai(recordXml) -> oggetto o null */
+// VERSIONE: cambia quando cambia il formato dei record estratti (2: tutti i manoscritti, con le lingue); le raccolte in cache
+// di una versione diversa non si usano e si rifanno
+export const VERSIONE_RACCOLTE = 2;
 export async function raccogliOai({ fonte, base, set, prefisso = "oai_dc", estrai, giorni = 6, limiteMinuti = 0, soloCache = false }) {
   const st = statoFonte(fonte), ora = Date.now();
   let d = st.dati;
+  if (d && d.versione !== VERSIONE_RACCOLTE) d = null;
   if (soloCache) { if (!d || !d.completato) throw new Error("nessuna raccolta completa in cache"); return d.voci; }
   if (d && d.completato && ora - d.completato < giorni * 864e5) { log(fonte, `riuso la raccolta del ${new Date(d.completato).toISOString().slice(0, 10)}: ${d.voci.length} record`); return d.voci; }
-  if (!d || d.completato || !d.token || ora - d.aggiornato > 20 * 3600e3) d = { iniziato: ora, aggiornato: ora, token: null, pagine: 0, voci: [] };
+  // una raccolta interrotta riprende anche il giorno dopo (si rifà da capo se il token è scaduto)
+  if (!d || d.completato || !d.token || ora - d.aggiornato > 30 * 3600e3) d = { versione: VERSIONE_RACCOLTE, iniziato: ora, aggiornato: ora, token: null, pagine: 0, voci: [] };
   else log(fonte, `riprendo dalla pagina ${d.pagine + 1} (${d.voci.length} record già letti)`);
   const fine = limiteMinuti ? ora + limiteMinuti * 60e3 : Infinity;
   for (;;) {
     const url = d.token ? `${base}?verb=ListRecords&resumptionToken=${encodeURIComponent(d.token)}` : `${base}?verb=ListRecords&metadataPrefix=${prefisso}&set=${encodeURIComponent(set)}`;
     const r = await scarica(url, { timeout: 180000 });
     if (r.stato !== 200) throw new Error(`${fonte}: HTTP ${r.stato}`);
-    if (/<error code="badResumptionToken"/.test(r.testo)) { log(fonte, "token scaduto: ricomincio"); d = { iniziato: Date.now(), aggiornato: Date.now(), token: null, pagine: 0, voci: [] }; continue; }
+    if (/<error code="badResumptionToken"/.test(r.testo)) { log(fonte, "token scaduto: ricomincio"); d = { versione: VERSIONE_RACCOLTE, iniziato: Date.now(), aggiornato: Date.now(), token: null, pagine: 0, voci: [] }; continue; }
     for (const rec of records(r.testo)) { if (/status="deleted"/.test(rec)) continue; const v = estrai(rec); if (v) d.voci.push(v); }
     d.pagine++; d.token = token(r.testo); d.aggiornato = Date.now();
     if (d.pagine % 10 === 0) log(fonte, `pagina ${d.pagine}${totale(r.testo) ? " su circa " + Math.ceil(totale(r.testo) / Math.max(1, records(r.testo).length)) : ""}, ${d.voci.length} record utili`);
