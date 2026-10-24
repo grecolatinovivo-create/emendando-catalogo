@@ -1,6 +1,6 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-24T12:06:11.933Z",
+ "aggiornato": "2026-10-24T13:01:36.942Z",
  "totale": 56874,
  "con_autori": 8692,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»); il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
