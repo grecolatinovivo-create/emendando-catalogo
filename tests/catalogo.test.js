@@ -221,3 +221,32 @@ test("Leida: pagina dei risultati della collezione, segnature e voci", async () 
   assert.deepEqual(voce(r1, A).autori.map(a => a.id), ["lucrezio"]);
   assert.equal(voce(r2, A), null);   // «Wulfinus Boethius» non è Boezio
 });
+
+test("Berlino: record OAI con la segnatura in coda al titolo", async () => {
+  const { estraiBerlino } = await import("../scripts/fonti/oai.mjs");
+  const rec = `<record><header><identifier>oai:digital.staatsbibliothek-berlin.de:PPN1002517877</identifier></header><metadata><oai_dc:dc>
+    <dc:title>Carmina; Ms. Diez. B Sant. 37</dc:title><dc:creator>C. Valerius Catullus</dc:creator><dc:type>manuscript</dc:type><dc:type>text</dc:type>
+    <dc:identifier>PPN1002517877</dc:identifier><dc:language>lat</dc:language><dc:date>1463</dc:date><dc:rights>Public Domain Mark 1.0</dc:rights></oai_dc:dc></metadata></record>`;
+  const r = estraiBerlino(rec);
+  assert.equal(r.segnatura, "Ms. Diez. B Sant. 37"); assert.equal(r.titolo, "Carmina");
+  assert.equal(r.manifest, "https://content.staatsbibliothek-berlin.de/dc/PPN1002517877/manifest");
+  assert.equal(r.licenza, "Public Domain Mark 1.0");
+  assert.deepEqual(voce(r, A).autori.map(a => a.id), ["catullo"]);
+  assert.equal(estraiBerlino(rec.replace("<dc:language>lat</dc:language>", "<dc:language>ger</dc:language>")), null);
+  assert.equal(estraiBerlino(rec.replace(/<dc:type>manuscript<\/dc:type>/, "<dc:type>monograph</dc:type>")), null);
+});
+
+test("Wolfenbüttel: oggetti del Handschriftenportal e manifesti della HAB", async () => {
+  const { compattaHsp, manifestoDa, recordHsp } = await import("../scripts/fonti/hsp.mjs");
+  assert.equal(manifestoDa({ "external-url-display": "https://diglib.hab.de/mss/70-gud-lat/start.htm" }), "https://iiif.hab.de/object/mss_70-gud-lat/manifest.json");
+  assert.equal(manifestoDa({ "external-url-display": "https://diglib.hab.de/drucke/71-4-theol/start.htm" }), null);
+  const ogg = (id, seg, tit, url) => ({ hspObject: { id, "idno-display": seg, "title-display": tit, "orig-date-lang-display": ["9. Jh."], "settlement-display": "Wolfenbüttel",
+    "repository-display": "Herzog August Bibliothek Wolfenbüttel" }, hspDescriptions: [{ "title-display": tit }], hspDigitizeds: [{ "external-url-display": url }] });
+  const v = compattaHsp(ogg("HSP-1", "Cod. Guelf. 70 Gud. lat.", "Vergilius, Opera. Vitae Gudianae", "https://diglib.hab.de/mss/70-gud-lat/start.htm"));
+  assert.deepEqual(v, { s: "Cod. Guelf. 70 Gud. lat.", t: "Vergilius, Opera. Vitae Gudianae", d: "9. Jh.", l: "Wolfenbüttel", c: "Herzog August Bibliothek Wolfenbüttel",
+    m: "https://iiif.hab.de/object/mss_70-gud-lat/manifest.json", p: "https://diglib.hab.de/mss/70-gud-lat/start.htm" });
+  const w = compattaHsp(ogg("HSP-2", "Cod. Guelf. 404.9 Novi (4)", "Heinrich von Veldeke: Eneide (Fragm.)", "https://diglib.hab.de/mss/404-9-novi-4/start.htm"));
+  const [r1, r2] = recordHsp("wolfenbuettel", { voci: { "HSP-1": v, "HSP-2": w } });
+  assert.deepEqual(voce(r1, A).autori.map(a => a.id), ["virgilio"]);
+  assert.equal(voce(r2, A), null);   // l'Eneide di Veldeke non è Virgilio
+});

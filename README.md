@@ -11,6 +11,7 @@ Ogni voce indica biblioteca, città, segnatura, datazione, contenuto, autori e o
 - `data/vaticana.json`: stato e cursore della scansione della Biblioteca Apostolica Vaticana.
 - `data/bodleian.json`: stato della scansione dei manifesti della Bodleian (metadati dei codici latini già letti).
 - `data/laurenziana.json`: stato della raccolta della Biblioteca Medicea Laurenziana (metadati compatti dei codici, cursore della raccolta in corso).
+- `data/wolfenbuettel.json`: stato della raccolta della Herzog August Bibliothek dal Handschriftenportal.
 - `data/leiden.json`: stato della raccolta della Universiteitsbibliotheek Leiden (codici letti, pagina della raccolta in corso).
 - `data/heidelberg-indici.json`: indici dei contenuti delle miscellanee di Heidelberg (titoli delle sezioni dei manifesti IIIF).
 - `docs/BIBLIOTECHE.md`: registro delle biblioteche (agganciate, da agganciare, non raggiungibili). La tabella delle biblioteche agganciate si rigenera a ogni raccolta; il resto si scrive a mano.
@@ -22,11 +23,13 @@ Ogni voce indica biblioteca, città, segnatura, datazione, contenuto, autori e o
 - Universitätsbibliothek Heidelberg: OAI-PMH, insieme `handschriften`.
 - e-codices (Biblioteca virtuale dei manoscritti in Svizzera): OAI-PMH, insieme `all`.
 - Bayerische Staatsbibliothek: OAI-PMH, insieme `cerl`, solo segnature Clm.
+- Staatsbibliothek zu Berlin: OAI-PMH (`oai.sbb.berlin`), insieme `handschriften` (circa 3500 record), solo lingua latina o non indicata. La segnatura è in coda al titolo, dopo «; ». Manifesti IIIF: `content.staatsbibliothek-berlin.de/dc/<PPN>/manifest`.
 - Universitätsbibliothek Heidelberg, miscellanee: per i codici latini che la descrizione OAI non fa riconoscere (prima quelli descritti in modo generico, «Sammelhandschrift»), si legge il manifesto IIIF e si usano i titoli delle sezioni («structures») come indice dei contenuti. Nel catalogo la corrispondenza comincia con «indice:».
 - Bodleian Libraries, Oxford: collezione IIIF «Western Medieval Manuscripts» (`iiif.bodleian.ox.ac.uk/iiif/collection/western-medieval-manuscripts`, Bodleian e college); di ogni manifesto si legge solo l'inizio con i metadati (Author, Title, Language, Date Statement, Contents). La lettura avanza ogni giorno dal punto in cui si era fermata.
 - Bibliothèque nationale de France (Gallica): interfaccia SRU, manoscritti dei fondi Latin e Nouvelles acquisitions latines, manifesti IIIF di Gallica. Gallica respinge le richieste che arrivano dai server (GitHub compreso), non quelle dei browser: l'elenco si raccoglie quindi da un normale browser con la stessa interfaccia SRU e si salva in `data/gallica.json`, che la raccolta automatica usa quando la lettura diretta viene respinta. Va rifatto a mano ogni tanto per prendere i codici digitalizzati di recente. Le immagini si caricano senza problemi dal browser di chi usa il catalogo.
 - Biblioteca Medicea Laurenziana, Firenze: Teca Digitale su CONTENTdm (`tecabml.contentdm.oclc.org`). L'OAI-PMH della Teca non funziona; si usa l'API `dmwebservices` (`dmQuery`, pagine di 200 record) sulle collezioni di manoscritti (Plutei, Acquisti e Doni, Ashburnham, San Marco, Conventi Soppressi, Edili, Gaddi, Mediceo Palatino, Amiatino, Pandette; esclusi i cataloghi a stampa, i Documenti del Concilio e gli Orientali). Si leggono solo i codici (oggetti di primo livello), con autore, titolo, datazione, segnatura, diritti e l'elenco delle unità («Comprende»). Manifesti IIIF: `tecabml.contentdm.oclc.org/iiif/<collezione>:<numero>/manifest.json`. Una raccolta completa (circa 25 richieste) si riusa per 6 giorni.
 - Universiteitsbibliotheek Leiden: collezione «Western Medieval Manuscripts» di Digital Collections (circa 1150 codici, con i Vossiani latini e i BPL). Non c'è un OAI-PMH pubblico (quello di Alma risponde «Unauthorized») e l'elenco dell'API dei manifesti richiede l'accesso: si leggono le pagine dei risultati della collezione (`/islandora/search`, 20 codici per pagina, con segnatura, titolo, autori e datazione). Manifesti IIIF: `iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:<n>/manifest` (rimanda al nuovo catalogo). Una raccolta completa (circa 58 pagine) si riusa per 6 giorni. Le segnature VLF/VLQ/VLO si scrivono «Voss. Lat. F./Q./O.».
+- Herzog August Bibliothek, Wolfenbüttel: i server della biblioteca (`diglib.hab.de`, `iiif.hab.de`, `oai.hab.de`) chiudono le connessioni che arrivano dai server; i dati si prendono dal Handschriftenportal (`handschriftenportal.de/api/hspobjects/search`, filtro per biblioteca e per codici digitalizzati, 100 oggetti per richiesta). Manifesti IIIF: quelli indicati dal portale, oppure `iiif.hab.de/object/mss_<sigla>/manifest.json` ricavato dall'indirizzo della copia digitale (`diglib.hab.de/mss/<sigla>/start.htm`), la stessa forma che il portale dichiara. Si riconoscono solo i codici che nel portale hanno un titolo (circa 700 su 1500). Le immagini si caricano dal browser di chi usa il catalogo.
 - Biblioteca Apostolica Vaticana: solo i manifesti IIIF (`digi.vatlib.it/iiif/MSS_<segnatura>/manifest.json`), letti uno alla volta e solo nella parte iniziale con i metadati.
 
 ## Rispetto dei limiti delle biblioteche
@@ -42,16 +45,18 @@ Ogni voce indica biblioteca, città, segnatura, datazione, contenuto, autori e o
 
 - British Library: dopo l'attacco informatico del 2023 gli indirizzi IIIF (`iiif.bl.uk`, `bl.digirati.io`) rispondono «accesso negato» e il visore provvisorio dei manoscritti non offre manifesti né metadati scaricabili. Da riconsiderare quando il servizio IIIF torna disponibile.
 
+- Österreichische Nationalbibliothek, Vienna: i server delle copie digitali (`iiif.onb.ac.at`, `digital.onb.ac.at`, `onb.digital`, `data.onb.ac.at`) chiudono le connessioni che arrivano dai server; l'OAI-PMH del catalogo (Alma) risponde, ma l'insieme dei manoscritti (HANNA) mescola lettere, lasciti e autografi (centinaia di migliaia di schede) e i manifesti non si possono verificare. Strada possibile: raccolta dal browser, come per Gallica.
+
 ## Aggiornamento
 
-GitHub Actions (`.github/workflows/raccolta.yml`) ogni 3 ore: la Vaticana avanza ogni volta dal punto in cui si era fermata (circa 160 minuti, quasi 1000 manifesti per esecuzione); Heidelberg (con gli indici delle miscellanee, 20 minuti), e-codices, BSB (40 minuti ciascuna), Bodleian (45 minuti), Gallica (25 minuti), Laurenziana (15 minuti) e Leida (15 minuti) solo nell'esecuzione delle 03 UTC; la Vaticana usa il tempo che resta. I dati si salvano con un commit solo se cambiano. Due raccolte non girano mai insieme.
+GitHub Actions (`.github/workflows/raccolta.yml`) ogni 3 ore: la Vaticana avanza ogni volta dal punto in cui si era fermata (circa 160 minuti, quasi 1000 manifesti per esecuzione); Heidelberg (con gli indici delle miscellanee, 20 minuti), e-codices, BSB (40 minuti ciascuna), Berlino (60 minuti: il server risponde lentamente), Bodleian (45 minuti), Gallica (25 minuti), Laurenziana (15 minuti), Leida (15 minuti) e Wolfenbüttel (10 minuti) solo nell'esecuzione delle 03 UTC; la Vaticana usa il tempo che resta. I dati si salvano con un commit solo se cambiano. Due raccolte non girano mai insieme.
 
 Per rilanciare a mano: scheda Actions, «Raccolta del catalogo», Run workflow (si possono scegliere fonti e minuti per la Vaticana).
 
 In locale (Node 20 o successivo, nessuna dipendenza):
 
 ```
-node scripts/raccogli.mjs --fonti=heidelberg,ecodices,bsb,bodleian,gallica,laurenziana,leiden,vaticana --vaticana-minuti=20 --bodleian-minuti=30
+node scripts/raccogli.mjs --fonti=heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,leiden,wolfenbuettel,vaticana --vaticana-minuti=20 --bodleian-minuti=30
 node scripts/raccogli.mjs --solo-costruisci   # nessuna richiesta: ricostruisce dai dati già raccolti
 node --test tests/catalogo.test.js
 ```

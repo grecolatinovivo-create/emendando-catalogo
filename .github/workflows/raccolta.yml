@@ -46,7 +46,7 @@ jobs:
           if [ "$F" = "auto" ]; then
             ORA=$((10#$(date -u +%H)))
             # finestra 03-05 UTC: comprende l'esecuzione delle 03 anche se GitHub la avvia in ritardo
-            if [ "$ORA" -ge 3 ] && [ "$ORA" -lt 6 ]; then F="heidelberg,ecodices,bsb,bodleian,gallica,laurenziana,leiden,vaticana"; else F="vaticana"; fi
+            if [ "$ORA" -ge 3 ] && [ "$ORA" -lt 6 ]; then F="heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,leiden,wolfenbuettel,vaticana"; else F="vaticana"; fi
           fi
           echo "Fonti: $F"
           echo "fonti=$F" >> "$GITHUB_OUTPUT"
@@ -61,6 +61,8 @@ jobs:
           --gallica-minuti=25
           --laurenziana-minuti=15
           --leiden-minuti=15
+          --hsp-minuti=10
+          --berlino-minuti=60
           --minuti-totali=160
       - name: Prove del catalogo
         run: node --test tests/catalogo.test.js

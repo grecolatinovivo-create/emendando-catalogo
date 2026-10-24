@@ -15,10 +15,12 @@ export const BIBLIOTECHE = {
   heidelberg: { biblioteca: "Universitätsbibliothek Heidelberg", citta: "Heidelberg", come: "ogni notte, da sola" },
   ecodices: { biblioteca: "e-codices (biblioteche svizzere: San Gallo, Einsiedeln, Bodmer e altre)", citta: "Svizzera", come: "ogni notte, da sola" },
   bsb: { biblioteca: "Bayerische Staatsbibliothek", citta: "Monaco di Baviera", come: "ogni notte, da sola" },
+  berlino: { biblioteca: "Staatsbibliothek zu Berlin", citta: "Berlino", come: "ogni notte, da sola" },
   bodleian: { biblioteca: "Bodleian Libraries e college", citta: "Oxford", come: "ogni notte, da sola" },
   gallica: { biblioteca: "Bibliothèque nationale de France (Gallica)", citta: "Parigi", come: "va rifatta a mano dal browser" },
   laurenziana: { biblioteca: "Biblioteca Medicea Laurenziana", citta: "Firenze", come: "ogni notte, da sola" },
   leiden: { biblioteca: "Universiteitsbibliotheek Leiden (Western Medieval Manuscripts, con i Vossiani latini)", citta: "Leida", come: "ogni notte, da sola" },
+  wolfenbuettel: { biblioteca: "Herzog August Bibliothek (dati dal Handschriftenportal)", citta: "Wolfenbüttel", come: "ogni notte, da sola" },
   vaticana: { biblioteca: "Biblioteca Apostolica Vaticana", citta: "Città del Vaticano", come: "ogni 3 ore, da sola" },
 };
 
@@ -37,6 +39,7 @@ export const AVANZAMENTO = {
   },
   ecodices: () => oai("ecodices"),
   bsb: () => oai("bsb"),
+  berlino: () => oai("berlino"),
   bodleian: () => {
     const s = leggi("data/bodleian.json"); if (!s) return { testo: "non ancora cominciata" };
     return { testo: `${num(Object.keys(s.voci || {}).length)} schede lette su ${num(s.totale_collezione)}`, data: s.aggiornato };
@@ -51,6 +54,7 @@ export const AVANZAMENTO = {
     return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} codici)`, data: s.aggiornato };
   },
   leiden: () => aRiprese("data/leiden.json", 20),
+  wolfenbuettel: () => { const a = aRiprese("data/wolfenbuettel.json", 1); return { ...a, testo: a.testo.replace("schede lette tutte", "codici digitalizzati letti tutti") }; },
   vaticana: () => {
     const s = leggi("data/vaticana.json"); if (!s) return { testo: "non ancora cominciata" };
     const t = PERCORSO[s.passo] || PERCORSO[0];

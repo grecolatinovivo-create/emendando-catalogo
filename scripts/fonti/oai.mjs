@@ -79,3 +79,20 @@ export function estraiBsb(rec) {
     licenza: licenza(tag(rec, "dc:rights")[0]), digitalizzati: urn };
 }
 export const raccogliBsb = (o = {}) => raccogliOai({ fonte: "bsb", base: "https://bdr.oai.bsb-muenchen.de/OAIHandler", set: "cerl", estrai: estraiBsb, ...o });
+
+// ---------------------------------------------------------------- Staatsbibliothek zu Berlin (Digitalisierte Sammlungen, set handschriften)
+// La segnatura è in coda al titolo, dopo «; » («Carmina; Ms. Diez. B Sant. 37»). Manifesto IIIF per PPN.
+const SEGNATURA_SBB = /;\s*((?:Ms|Mss|Hdschr|Mscr|Cod|Libr|Lat|Theol|Diez|Phill|Ham|Fragm)\.?\s.*)$/;
+export function estraiBerlino(rec) {
+  if (!tag(rec, "dc:type").some(t => /manuscript/i.test(t))) return null;
+  if (!latinoPossibile(tag(rec, "dc:language"))) return null;
+  const ppn = tag(rec, "dc:identifier").find(x => /^PPN\w+$/.test(x)); if (!ppn) return null;
+  const tit = tag(rec, "dc:title")[0] || "";
+  const m = SEGNATURA_SBB.exec(tit);
+  return { fonte: "berlino", id: "sbb-" + ppn, citta: "Berlin", biblioteca: "Staatsbibliothek zu Berlin", segnatura: m ? m[1].trim() : ppn,
+    datazione: tag(rec, "dc:date")[0] || null, titolo: (m ? tit.slice(0, m.index) : tit).trim() || null,
+    autori_fonte: tag(rec, "dc:creator"), collaboratori: tag(rec, "dc:contributor"), descrizione: tag(rec, "dc:description").join(" ; ").slice(0, 3000) || null,
+    manifest: `https://content.staatsbibliothek-berlin.de/dc/${ppn}/manifest`, pagina: `https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=${ppn}`,
+    licenza: licenza(tag(rec, "dc:rights")[0]) };
+}
+export const raccogliBerlino = (o = {}) => raccogliOai({ fonte: "berlino", base: "https://oai.sbb.berlin/", set: "handschriften", estrai: estraiBerlino, ...o });

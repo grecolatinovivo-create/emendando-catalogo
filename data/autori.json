@@ -265,6 +265,10 @@
     "Titus Lucretius Carus",
     "Lucretius Carus"
    ],
+   "escludi": [
+    "Etymologiae et De rerum natura",
+    "Etymologien. De rerum natura"
+   ],
    "opere": [
     {
      "t": "De rerum natura",
@@ -651,6 +655,9 @@
     "Cesare",
     "Cesar"
    ],
+   "escludi": [
+    "Heigel, Cäsar"
+   ],
    "opere": [
     {
      "t": "De bello Gallico",
@@ -783,7 +790,8 @@
     "Iohannis de Virgilio",
     "Iohannes de Virgilio",
     "Ioannes de Virgilio",
-    "Iohanni de Virgilio"
+    "Iohanni de Virgilio",
+    "Veldeke: Eneide"
    ],
    "opere": [
     {
@@ -2611,7 +2619,9 @@
    ],
    "escludi": [
     "lex Manilia",
-    "lege Manilia"
+    "lege Manilia",
+    "Rallus, Manilius",
+    "Manilius Cabacius"
    ],
    "opere": [
     {
