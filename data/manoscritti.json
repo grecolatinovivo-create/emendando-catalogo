@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-24T15:29:50.847Z",
+ "aggiornato": "2026-10-24T17:50:37.029Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -49,11 +49,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 201,
+   "codici": 196,
    "esito": "ok"
   }
  },
- "totale": 5287,
+ "totale": 5282,
  "manoscritti": [
   {
    "id": "bsb-bsb00034122",
@@ -38195,171 +38195,6 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.410/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.410",
-   "licenza": "© Biblioteca Apostolica Vaticana",
-   "immagini": null
-  },
-  {
-   "id": "bav-urb-lat-423",
-   "fonte": "vaticana",
-   "biblioteca": "Biblioteca Apostolica Vaticana",
-   "citta": "Città del Vaticano",
-   "segnatura": "Urb. lat. 423",
-   "datazione": "sec. XV ex",
-   "secolo": [
-    15,
-    15
-   ],
-   "lingue": [
-    "la"
-   ],
-   "lingua_dedotta": true,
-   "titolo": "Ab Urbe condita (Livius, Titus, 59 a.C.-17 d.C.)",
-   "autori": [
-    {
-     "id": "livio",
-     "autore": "Livio",
-     "latino": "Livius",
-     "categoria": "classico-latino",
-     "opere": [
-      "Ab urbe condita"
-     ],
-     "corrispondenza": "autore: «Livius, Titus, 59 a.C.-17 d.C.»"
-    }
-   ],
-   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.423/manifest.json",
-   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.423",
-   "licenza": "© Biblioteca Apostolica Vaticana",
-   "immagini": null
-  },
-  {
-   "id": "bav-urb-lat-424",
-   "fonte": "vaticana",
-   "biblioteca": "Biblioteca Apostolica Vaticana",
-   "citta": "Città del Vaticano",
-   "segnatura": "Urb. lat. 424",
-   "datazione": "sec. XV ex",
-   "secolo": [
-    15,
-    15
-   ],
-   "lingue": [
-    "la"
-   ],
-   "lingua_dedotta": true,
-   "titolo": "Ab Urbe condita (Livius, Titus, 59 a.C.-17 d.C.)",
-   "autori": [
-    {
-     "id": "livio",
-     "autore": "Livio",
-     "latino": "Livius",
-     "categoria": "classico-latino",
-     "opere": [
-      "Ab urbe condita"
-     ],
-     "corrispondenza": "autore: «Livius, Titus, 59 a.C.-17 d.C.»"
-    }
-   ],
-   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.424/manifest.json",
-   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.424",
-   "licenza": "© Biblioteca Apostolica Vaticana",
-   "immagini": null
-  },
-  {
-   "id": "bav-urb-lat-425",
-   "fonte": "vaticana",
-   "biblioteca": "Biblioteca Apostolica Vaticana",
-   "citta": "Città del Vaticano",
-   "segnatura": "Urb. lat. 425",
-   "datazione": "sec. XV ex",
-   "secolo": [
-    15,
-    15
-   ],
-   "lingue": [
-    "la"
-   ],
-   "lingua_dedotta": true,
-   "titolo": "Ab Urbe condita (Livius, Titus, 59 a.C.-17 d.C.)",
-   "autori": [
-    {
-     "id": "livio",
-     "autore": "Livio",
-     "latino": "Livius",
-     "categoria": "classico-latino",
-     "opere": [
-      "Ab urbe condita"
-     ],
-     "corrispondenza": "autore: «Livius, Titus, 59 a.C.-17 d.C.»"
-    }
-   ],
-   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.425/manifest.json",
-   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.425",
-   "licenza": "© Biblioteca Apostolica Vaticana",
-   "immagini": null
-  },
-  {
-   "id": "bav-urb-lat-426",
-   "fonte": "vaticana",
-   "biblioteca": "Biblioteca Apostolica Vaticana",
-   "citta": "Città del Vaticano",
-   "segnatura": "Urb. lat. 426",
-   "datazione": "sec. XV med",
-   "secolo": [
-    15,
-    15
-   ],
-   "lingue": [
-    "la"
-   ],
-   "lingua_dedotta": true,
-   "titolo": "Ab Urbe condita (Livius, Titus, 59 a.C.-17 d.C.). 31-40",
-   "autori": [
-    {
-     "id": "livio",
-     "autore": "Livio",
-     "latino": "Livius",
-     "categoria": "classico-latino",
-     "opere": [
-      "Ab urbe condita"
-     ],
-     "corrispondenza": "autore: «Livius, Titus, 59 a.C.-17 d.C.»"
-    }
-   ],
-   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.426/manifest.json",
-   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.426",
-   "licenza": "© Biblioteca Apostolica Vaticana",
-   "immagini": null
-  },
-  {
-   "id": "bav-urb-lat-427",
-   "fonte": "vaticana",
-   "biblioteca": "Biblioteca Apostolica Vaticana",
-   "citta": "Città del Vaticano",
-   "segnatura": "Urb. lat. 427",
-   "datazione": "sec. XV",
-   "secolo": [
-    15,
-    15
-   ],
-   "lingue": [
-    "la"
-   ],
-   "lingua_dedotta": true,
-   "titolo": "Historiae Alexandri Magni",
-   "autori": [
-    {
-     "id": "curzio-rufo",
-     "autore": "Curzio Rufo",
-     "latino": "Curtius Rufus",
-     "categoria": "classico-latino",
-     "opere": [
-      "Historiae Alexandri Magni"
-     ],
-     "corrispondenza": "autore: «Curtius Rufus, Quintus, f. 41»"
-    }
-   ],
-   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.427/manifest.json",
-   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.427",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },

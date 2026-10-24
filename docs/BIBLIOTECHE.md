@@ -18,7 +18,7 @@ Come leggere le colonne:
 - **Ultima raccolta**: com'è andata l'ultima volta.
 
 <!-- inizio automatico -->
-Codici nel catalogo, in tutto: **57.688**, di cui **8834** con almeno un autore riconosciuto.
+Codici nel catalogo, in tutto: **57.645**, di cui **8829** con almeno un autore riconosciuto.
 
 | Biblioteca | Città | Codici totali | Di cui con autori riconosciuti | Lingue | Avanzamento della lettura | Come si aggiorna | Ultimo aggiornamento | Ultima raccolta |
 |---|---|---|---|---|---|---|---|---|
@@ -31,7 +31,7 @@ Codici nel catalogo, in tutto: **57.688**, di cui **8834** con almeno un autore 
 | Biblioteca Medicea Laurenziana | Firenze | 4353 | 2206 | non indicata 3614, latino 725, italiano 5, altre 9 | schede lette tutte (4353 codici) | ogni notte, da sola | 2026-10-24 | — |
 | Universiteitsbibliotheek Leiden (manoscritti, con i Vossiani; Bibliotheca Neerlandica Manuscripta) | Leida | 6226 | 751 | non indicata 2889, nederlandese 2337, latino 634, altre 366 | schede lette tutte (6226 codici) | ogni notte, da sola | 2026-10-24 | riuscita |
 | Herzog August Bibliothek (dati dal Handschriftenportal) | Wolfenbüttel | 1531 | 141 | non indicata 1334, latino 96, tedesco 76, altre 25 | codici digitalizzati letti tutti (1531 su 1534) | ogni notte, da sola | 2026-10-24 | riuscita |
-| Biblioteca Apostolica Vaticana | Città del Vaticano | 879 | 204 | latino 876, francese 2, italiano 1 | 879 codici letti; fondo in corso: Urb. lat. (dal n. 472), tratto 6 di 40; restano circa 48.912 segnature da provare, cioè circa 8 giorni (un manifesto ogni 10 secondi, come chiede la biblioteca) | ogni 3 ore, da sola | 2026-10-24 | riuscita |
+| Biblioteca Apostolica Vaticana | Città del Vaticano | 836 | 199 | latino 833, francese 2, italiano 1 | 836 codici letti; fondo in corso: Urb. lat. (dal n. 412), tratto 6 di 40; restano circa 49.032 segnature da provare, cioè circa 8 giorni (un manifesto ogni 10 secondi, come chiede la biblioteca) | ogni 3 ore, da sola | 2026-10-24 | riuscita |
 <!-- fine automatico -->
 
 San Gallo, Einsiedeln e la Fondation Bodmer (Cologny) sono già dentro: arrivano dalla riga e-codices.
