@@ -1,0 +1,11 @@
+name: prova-fonti
+on: workflow_dispatch
+jobs:
+  prova:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          UA='Mozilla/5.0 (compatible; EmendandoCatalogo/1.0; +https://www.emendando.com)'
+          for u in "https://gallica.bnf.fr/SRU?operation=searchRetrieve&version=1.2&query=dc.type%20all%20%22manuscrit%22&maximumRecords=1" "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8432314m/manifest.json" "https://iiif.biblissima.fr/collections/manifest/edaea52461483192432c331a766b2a31585b108f" "https://tecadigitale.bmlonline.it/" "https://teca.bmlonline.it/"; do
+            echo "$(curl -s -o /dev/null -m 30 -L -A "$UA" -w '%{http_code}' "$u") $u"
+          done
