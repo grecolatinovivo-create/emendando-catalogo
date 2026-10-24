@@ -1,0 +1,69 @@
+# Raccolta del catalogo dei manoscritti, ogni 3 ore.
+# La Vaticana (un manifesto ogni 10 secondi, come chiede il suo robots.txt) avanza a ogni esecuzione dal cursore
+# salvato in data/vaticana.json; Heidelberg, e-codices e BSB si interrogano una volta al giorno (esecuzione delle 03 UTC).
+# Commit dei dati solo se cambiano.
+name: Raccolta del catalogo
+
+on:
+  schedule:
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
+    inputs:
+      fonti:
+        description: "Fonti da interrogare, separate da virgola (auto = Vaticana sempre, le altre solo alle 03 UTC)"
+        default: "auto"
+      vaticana_minuti:
+        description: "Minuti massimi dedicati alla Vaticana"
+        default: "160"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: raccolta-catalogo
+  cancel-in-progress: false
+
+jobs:
+  raccolta:
+    runs-on: ubuntu-latest
+    timeout-minutes: 170
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # stato delle raccolte OAI: permette di riprendere una raccolta interrotta e di riusarla per 6 giorni
+      - uses: actions/cache@v4
+        with:
+          path: .cache/catalogo
+          key: catalogo-${{ github.run_id }}
+          restore-keys: catalogo-
+      - name: Scelta delle fonti
+        id: fonti
+        run: |
+          F="${{ inputs.fonti || 'auto' }}"
+          if [ "$F" = "auto" ]; then
+            ORA=$((10#$(date -u +%H)))
+            # finestra 03-05 UTC: comprende l'esecuzione delle 03 anche se GitHub la avvia in ritardo
+            if [ "$ORA" -ge 3 ] && [ "$ORA" -lt 6 ]; then F="heidelberg,ecodices,bsb,vaticana"; else F="vaticana"; fi
+          fi
+          echo "Fonti: $F"
+          echo "fonti=$F" >> "$GITHUB_OUTPUT"
+      - name: Raccolta
+        run: >
+          node scripts/raccogli.mjs
+          --fonti="${{ steps.fonti.outputs.fonti }}"
+          --vaticana-minuti="${{ inputs.vaticana_minuti || '160' }}"
+          --oai-minuti=60
+          --minuti-totali=160
+      - name: Prove del catalogo
+        run: node --test tests/catalogo.test.js
+      - name: Commit se i dati sono cambiati
+        run: |
+          git config user.name "emendando-catalogo-bot"
+          git config user.email "emendando-catalogo-bot@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then echo "Nessuna modifica"; exit 0; fi
+          git commit -m "Catalogo: aggiornamento $(date -u '+%Y-%m-%d %H:%M') UTC"
+          for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && exit 0; sleep 10; done
+          exit 1

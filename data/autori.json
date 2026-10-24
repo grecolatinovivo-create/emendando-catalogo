@@ -1,0 +1,3182 @@
+{
+ "nota": "Autori latini classici e tardoantichi riconosciuti nel catalogo dei manoscritti. nomi: bastano da soli nei campi forti (titolo, autore, segnatura). deboli: valgono solo se nel record compare anche un'opera dell'autore. escludi: frasi che annullano il riconoscimento (santi, omonimi). opere: t = titolo italiano mostrato, v = varianti (latino, italiano, inglese, tedesco, francese), d = distintiva (basta da sola nei campi forti). Il confronto ignora maiuscole, accenti, punteggiatura, u/v e i/j.",
+ "autori": [
+  {
+   "id": "plauto",
+   "nome": "Plauto",
+   "latino": "Plautus",
+   "nomi": [
+    "Plautus",
+    "Plauti",
+    "Plauto",
+    "Plaute",
+    "Plautum",
+    "Titus Maccius Plautus",
+    "Maccius Plautus"
+   ],
+   "opere": [
+    {
+     "t": "Amphitruo",
+     "v": [
+      "Amphitruo",
+      "Amphitryo",
+      "Amphitruonem",
+      "Anfitrione"
+     ],
+     "d": true
+    },
+    {
+     "t": "Asinaria",
+     "v": [
+      "Asinaria"
+     ],
+     "d": true
+    },
+    {
+     "t": "Aulularia",
+     "v": [
+      "Aulularia"
+     ],
+     "d": true
+    },
+    {
+     "t": "Bacchides",
+     "v": [
+      "Bacchides"
+     ],
+     "d": true
+    },
+    {
+     "t": "Captivi",
+     "v": [
+      "Captivi"
+     ]
+    },
+    {
+     "t": "Casina",
+     "v": [
+      "Casina"
+     ]
+    },
+    {
+     "t": "Cistellaria",
+     "v": [
+      "Cistellaria"
+     ],
+     "d": true
+    },
+    {
+     "t": "Curculio",
+     "v": [
+      "Curculio"
+     ],
+     "d": true
+    },
+    {
+     "t": "Epidicus",
+     "v": [
+      "Epidicus"
+     ],
+     "d": true
+    },
+    {
+     "t": "Menaechmi",
+     "v": [
+      "Menaechmi",
+      "Menechmi"
+     ],
+     "d": true
+    },
+    {
+     "t": "Mercator",
+     "v": [
+      "Mercator"
+     ]
+    },
+    {
+     "t": "Miles gloriosus",
+     "v": [
+      "Miles gloriosus"
+     ],
+     "d": true
+    },
+    {
+     "t": "Mostellaria",
+     "v": [
+      "Mostellaria"
+     ],
+     "d": true
+    },
+    {
+     "t": "Persa",
+     "v": [
+      "Persa"
+     ]
+    },
+    {
+     "t": "Poenulus",
+     "v": [
+      "Poenulus"
+     ],
+     "d": true
+    },
+    {
+     "t": "Pseudolus",
+     "v": [
+      "Pseudolus"
+     ],
+     "d": true
+    },
+    {
+     "t": "Rudens",
+     "v": [
+      "Rudens"
+     ]
+    },
+    {
+     "t": "Stichus",
+     "v": [
+      "Stichus"
+     ],
+     "d": true
+    },
+    {
+     "t": "Trinummus",
+     "v": [
+      "Trinummus"
+     ],
+     "d": true
+    },
+    {
+     "t": "Truculentus",
+     "v": [
+      "Truculentus"
+     ],
+     "d": true
+    },
+    {
+     "t": "Vidularia",
+     "v": [
+      "Vidularia"
+     ],
+     "d": true
+    },
+    {
+     "t": "Commedie",
+     "v": [
+      "Comoediae",
+      "Commedie",
+      "Komodien",
+      "Comedies",
+      "Comoedie"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "terenzio",
+   "nome": "Terenzio",
+   "latino": "Terentius",
+   "nomi": [
+    "Terentius",
+    "Terentii",
+    "Terentio",
+    "Terentium",
+    "Terenzio",
+    "Terence",
+    "Terenz",
+    "Publius Terentius Afer",
+    "Terentius Afer"
+   ],
+   "escludi": [
+    "Terentius Varro",
+    "Terentii Varronis",
+    "Terentius Scaurus",
+    "Terentii Scauri"
+   ],
+   "opere": [
+    {
+     "t": "Andria",
+     "v": [
+      "Andria"
+     ],
+     "d": true
+    },
+    {
+     "t": "Eunuchus",
+     "v": [
+      "Eunuchus"
+     ],
+     "d": true
+    },
+    {
+     "t": "Heautontimorumenos",
+     "v": [
+      "Heautontimorumenos",
+      "Heauton timorumenos",
+      "Heautontimoroumenos"
+     ],
+     "d": true
+    },
+    {
+     "t": "Phormio",
+     "v": [
+      "Phormio"
+     ],
+     "d": true
+    },
+    {
+     "t": "Hecyra",
+     "v": [
+      "Hecyra"
+     ],
+     "d": true
+    },
+    {
+     "t": "Adelphoe",
+     "v": [
+      "Adelphoe",
+      "Adelphi",
+      "Adelphoi"
+     ],
+     "d": true
+    },
+    {
+     "t": "Commedie",
+     "v": [
+      "Comoediae",
+      "Commedie",
+      "Komodien",
+      "Comedies"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lucrezio",
+   "nome": "Lucrezio",
+   "latino": "Lucretius",
+   "nomi": [
+    "Lucretius",
+    "Lucretii",
+    "Lucrezio",
+    "Lucrece",
+    "Lukrez",
+    "Titus Lucretius Carus",
+    "Lucretius Carus"
+   ],
+   "opere": [
+    {
+     "t": "De rerum natura",
+     "v": [
+      "De rerum natura",
+      "Della natura delle cose",
+      "On the Nature of Things",
+      "Uber die Natur der Dinge"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "catullo",
+   "nome": "Catullo",
+   "latino": "Catullus",
+   "nomi": [
+    "Catullus",
+    "Catulli",
+    "Catullo",
+    "Catulle",
+    "Catull",
+    "Gaius Valerius Catullus",
+    "Valerius Catullus"
+   ],
+   "opere": [
+    {
+     "t": "Carmi",
+     "v": [
+      "Carmina",
+      "Carmi",
+      "Gedichte",
+      "Poems"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cicerone",
+   "nome": "Cicerone",
+   "latino": "Cicero",
+   "nomi": [
+    "Cicero",
+    "Ciceronis",
+    "Ciceronem",
+    "Ciceroni",
+    "Cicerone",
+    "Ciceron",
+    "Marcus Tullius Cicero",
+    "Marci Tullii Ciceronis",
+    "Tullius Cicero",
+    "Tully"
+   ],
+   "deboli": [
+    "Tullius",
+    "Tullii",
+    "Tullio",
+    "Tullium"
+   ],
+   "opere": [
+    {
+     "t": "De officiis",
+     "v": [
+      "De officiis",
+      "Dei doveri",
+      "Vom pflichtgemassen Handeln"
+     ]
+    },
+    {
+     "t": "De oratore",
+     "v": [
+      "De oratore"
+     ],
+     "d": true
+    },
+    {
+     "t": "Orator",
+     "v": [
+      "Orator ad Brutum"
+     ],
+     "d": true
+    },
+    {
+     "t": "Brutus",
+     "v": [
+      "Brutus de claris oratoribus",
+      "De claris oratoribus"
+     ],
+     "d": true
+    },
+    {
+     "t": "Laelius de amicitia",
+     "v": [
+      "Laelius de amicitia",
+      "De amicitia",
+      "Dell amicizia",
+      "Uber die Freundschaft"
+     ],
+     "d": true
+    },
+    {
+     "t": "Cato maior de senectute",
+     "v": [
+      "Cato maior de senectute",
+      "De senectute",
+      "Della vecchiaia",
+      "Uber das Greisenalter"
+     ],
+     "d": true
+    },
+    {
+     "t": "Somnium Scipionis",
+     "v": [
+      "Somnium Scipionis",
+      "Sogno di Scipione",
+      "Dream of Scipio"
+     ],
+     "d": true
+    },
+    {
+     "t": "De re publica",
+     "v": [
+      "De re publica",
+      "De republica"
+     ]
+    },
+    {
+     "t": "De legibus",
+     "v": [
+      "De legibus"
+     ]
+    },
+    {
+     "t": "De finibus",
+     "v": [
+      "De finibus bonorum et malorum",
+      "De finibus"
+     ],
+     "d": true
+    },
+    {
+     "t": "Tusculanae disputationes",
+     "v": [
+      "Tusculanae disputationes",
+      "Tusculanae",
+      "Tusculanarum",
+      "Tuscolane"
+     ],
+     "d": true
+    },
+    {
+     "t": "De natura deorum",
+     "v": [
+      "De natura deorum"
+     ],
+     "d": true
+    },
+    {
+     "t": "De divinatione",
+     "v": [
+      "De divinatione"
+     ],
+     "d": true
+    },
+    {
+     "t": "Paradoxa Stoicorum",
+     "v": [
+      "Paradoxa Stoicorum",
+      "Paradoxa ad Brutum"
+     ],
+     "d": true
+    },
+    {
+     "t": "Topica",
+     "v": [
+      "Topica ad Trebatium"
+     ],
+     "d": true
+    },
+    {
+     "t": "De inventione",
+     "v": [
+      "De inventione rhetorica",
+      "Rhetorica vetus",
+      "De inventione"
+     ]
+    },
+    {
+     "t": "Rhetorica ad Herennium",
+     "v": [
+      "Rhetorica ad Herennium",
+      "Ad Herennium",
+      "Rhetorica nova"
+     ],
+     "d": true
+    },
+    {
+     "t": "Partitiones oratoriae",
+     "v": [
+      "Partitiones oratoriae"
+     ],
+     "d": true
+    },
+    {
+     "t": "Academica",
+     "v": [
+      "Academica",
+      "Lucullus"
+     ]
+    },
+    {
+     "t": "Epistulae ad familiares",
+     "v": [
+      "Epistulae ad familiares",
+      "Epistolae ad familiares",
+      "Ad familiares",
+      "Epistulae familiares"
+     ],
+     "d": true
+    },
+    {
+     "t": "Epistulae ad Atticum",
+     "v": [
+      "Epistulae ad Atticum",
+      "Epistolae ad Atticum",
+      "Ad Atticum"
+     ],
+     "d": true
+    },
+    {
+     "t": "Epistulae ad Quintum fratrem",
+     "v": [
+      "Ad Quintum fratrem"
+     ],
+     "d": true
+    },
+    {
+     "t": "Catilinarie",
+     "v": [
+      "In Catilinam",
+      "Catilinariae",
+      "Orationes in Catilinam",
+      "Catilinarie",
+      "Catilinarian"
+     ],
+     "d": true
+    },
+    {
+     "t": "Filippiche",
+     "v": [
+      "Philippicae",
+      "Philippica",
+      "Orationes Philippicae",
+      "Filippiche"
+     ],
+     "d": true
+    },
+    {
+     "t": "Verrine",
+     "v": [
+      "In Verrem",
+      "Verrinae",
+      "Verrine"
+     ],
+     "d": true
+    },
+    {
+     "t": "Pro Milone",
+     "v": [
+      "Pro Milone"
+     ],
+     "d": true
+    },
+    {
+     "t": "Pro Archia",
+     "v": [
+      "Pro Archia"
+     ],
+     "d": true
+    },
+    {
+     "t": "Pro Marcello",
+     "v": [
+      "Pro Marcello"
+     ],
+     "d": true
+    },
+    {
+     "t": "Pro Ligario",
+     "v": [
+      "Pro Ligario"
+     ],
+     "d": true
+    },
+    {
+     "t": "Pro rege Deiotaro",
+     "v": [
+      "Pro rege Deiotaro",
+      "Pro Deiotaro"
+     ],
+     "d": true
+    },
+    {
+     "t": "Pro lege Manilia",
+     "v": [
+      "Pro lege Manilia",
+      "De imperio Cn Pompei"
+     ],
+     "d": true
+    },
+    {
+     "t": "Pro Murena",
+     "v": [
+      "Pro Murena"
+     ],
+     "d": true
+    },
+    {
+     "t": "Pro Sestio",
+     "v": [
+      "Pro Sestio"
+     ],
+     "d": true
+    },
+    {
+     "t": "Pro Caelio",
+     "v": [
+      "Pro Caelio"
+     ],
+     "d": true
+    },
+    {
+     "t": "Pro Cluentio",
+     "v": [
+      "Pro Cluentio"
+     ],
+     "d": true
+    },
+    {
+     "t": "Pro Roscio",
+     "v": [
+      "Pro Sexto Roscio",
+      "Pro Roscio Amerino",
+      "Pro Roscio"
+     ],
+     "d": true
+    },
+    {
+     "t": "Orazioni",
+     "v": [
+      "Orationes",
+      "Orazioni",
+      "Reden",
+      "Speeches"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cesare",
+   "nome": "Cesare",
+   "latino": "Caesar",
+   "nomi": [
+    "Gaius Iulius Caesar",
+    "Gaius Julius Caesar",
+    "C Iulius Caesar",
+    "Caesar Gaius Iulius",
+    "Caesar Gaius Julius",
+    "Iulius Caesar",
+    "Julius Caesar",
+    "Iulii Caesaris",
+    "Giulio Cesare",
+    "Jules Cesar",
+    "Casar"
+   ],
+   "deboli": [
+    "Caesar",
+    "Caesaris",
+    "Cesare",
+    "Cesar"
+   ],
+   "opere": [
+    {
+     "t": "De bello Gallico",
+     "v": [
+      "De bello Gallico",
+      "Commentarii de bello Gallico",
+      "Bellum Gallicum",
+      "Belli Gallici",
+      "Guerra gallica",
+      "Gallischer Krieg",
+      "Guerre des Gaules",
+      "Gallic War"
+     ],
+     "d": true
+    },
+    {
+     "t": "De bello civili",
+     "v": [
+      "De bello civili",
+      "Commentarii de bello civili",
+      "Guerra civile"
+     ]
+    },
+    {
+     "t": "Commentarii",
+     "v": [
+      "Commentarii",
+      "Commentaria"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sallustio",
+   "nome": "Sallustio",
+   "latino": "Sallustius",
+   "nomi": [
+    "Sallustius",
+    "Sallustii",
+    "Sallustio",
+    "Sallustium",
+    "Salustius",
+    "Salustii",
+    "Salustio",
+    "Sallust",
+    "Salluste",
+    "Gaius Sallustius Crispus",
+    "Sallustius Crispus"
+   ],
+   "opere": [
+    {
+     "t": "De coniuratione Catilinae",
+     "v": [
+      "Bellum Catilinae",
+      "De coniuratione Catilinae",
+      "Coniuratio Catilinae",
+      "Catilinae coniuratio",
+      "Catilina",
+      "Congiura di Catilina"
+     ]
+    },
+    {
+     "t": "Bellum Iugurthinum",
+     "v": [
+      "Bellum Iugurthinum",
+      "Bellum Jugurthinum",
+      "De bello Iugurthino",
+      "Iugurtha",
+      "Jugurtha",
+      "Guerra giugurtina",
+      "Jugurthinischer Krieg"
+     ],
+     "d": true
+    },
+    {
+     "t": "Historiae",
+     "v": [
+      "Historiae"
+     ]
+    },
+    {
+     "t": "Invectiva in Ciceronem",
+     "v": [
+      "Invectiva in Ciceronem",
+      "Invectiva in M Tullium"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "virgilio",
+   "nome": "Virgilio",
+   "latino": "Vergilius",
+   "nomi": [
+    "Vergilius",
+    "Vergilii",
+    "Vergilio",
+    "Vergilium",
+    "Virgilius",
+    "Virgilii",
+    "Virgilium",
+    "Vergil",
+    "Virgil",
+    "Virgilio",
+    "Virgile",
+    "Publius Vergilius Maro",
+    "Vergilius Maro",
+    "Virgilius Maro"
+   ],
+   "escludi": [
+    "sanctus Virgilius",
+    "Virgilius episcopus",
+    "Virgilius Salisburgensis",
+    "Virgilius Salzburgensis",
+    "Virgil von Salzburg",
+    "Virgil of Salzburg",
+    "Virgilius von Salzburg",
+    "Virgilius Maro grammaticus",
+    "Virgilius Maro Grammaticus",
+    "Polydorus Vergilius",
+    "Polydore Vergil",
+    "Polidoro Virgili",
+    "Virgilio Malvezzi"
+   ],
+   "opere": [
+    {
+     "t": "Eneide",
+     "v": [
+      "Aeneis",
+      "Aeneidos",
+      "Aeneidem",
+      "Aeneide",
+      "Aeneid",
+      "Eneide",
+      "Eneida",
+      "Eneidos",
+      "Eneidem",
+      "Aneis",
+      "Eneis"
+     ],
+     "d": true
+    },
+    {
+     "t": "Georgiche",
+     "v": [
+      "Georgica",
+      "Georgicon",
+      "Georgicorum",
+      "Georgiche",
+      "Georgics",
+      "Georgiques",
+      "Georgika"
+     ],
+     "d": true
+    },
+    {
+     "t": "Bucoliche",
+     "v": [
+      "Bucolica",
+      "Bucolicon",
+      "Bucoliche",
+      "Eclogae",
+      "Ecloghe",
+      "Eclogues",
+      "Bucoliques",
+      "Eklogen"
+     ]
+    },
+    {
+     "t": "Appendix Vergiliana",
+     "v": [
+      "Appendix Vergiliana",
+      "Culex",
+      "Ciris",
+      "Catalepton",
+      "Copa",
+      "Moretum"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "orazio",
+   "nome": "Orazio",
+   "latino": "Horatius",
+   "nomi": [
+    "Horatius",
+    "Horatii",
+    "Horatio",
+    "Horatium",
+    "Oratius",
+    "Oratii",
+    "Horace",
+    "Horaz",
+    "Orazio",
+    "Quintus Horatius Flaccus",
+    "Horatius Flaccus"
+   ],
+   "escludi": [
+    "Horatius Cocles",
+    "Orazio Coclite",
+    "Horatio Nelson"
+   ],
+   "opere": [
+    {
+     "t": "Odi",
+     "v": [
+      "Carmina",
+      "Odae",
+      "Odi",
+      "Oden",
+      "Odes"
+     ]
+    },
+    {
+     "t": "Epodi",
+     "v": [
+      "Epodi",
+      "Epodon",
+      "Epodes",
+      "Epoden"
+     ]
+    },
+    {
+     "t": "Carmen saeculare",
+     "v": [
+      "Carmen saeculare"
+     ],
+     "d": true
+    },
+    {
+     "t": "Satire",
+     "v": [
+      "Sermones",
+      "Satirae",
+      "Saturae",
+      "Satire",
+      "Satiren",
+      "Satires"
+     ]
+    },
+    {
+     "t": "Epistole",
+     "v": [
+      "Epistulae",
+      "Epistolae",
+      "Epistole"
+     ]
+    },
+    {
+     "t": "Ars poetica",
+     "v": [
+      "Ars poetica",
+      "De arte poetica",
+      "Epistula ad Pisones",
+      "Epistola ad Pisones"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tibullo",
+   "nome": "Tibullo",
+   "latino": "Tibullus",
+   "nomi": [
+    "Tibullus",
+    "Tibulli",
+    "Tibullo",
+    "Tibulle",
+    "Tibull",
+    "Albius Tibullus",
+    "Corpus Tibullianum"
+   ],
+   "opere": [
+    {
+     "t": "Elegie",
+     "v": [
+      "Elegiae",
+      "Elegie",
+      "Elegien",
+      "Elegies"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "properzio",
+   "nome": "Properzio",
+   "latino": "Propertius",
+   "nomi": [
+    "Propertius",
+    "Propertii",
+    "Properzio",
+    "Properce",
+    "Properz",
+    "Sextus Propertius"
+   ],
+   "opere": [
+    {
+     "t": "Elegie",
+     "v": [
+      "Elegiae",
+      "Elegie",
+      "Elegien",
+      "Elegies"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ovidio",
+   "nome": "Ovidio",
+   "latino": "Ovidius",
+   "nomi": [
+    "Ovidius",
+    "Ovidii",
+    "Ovidio",
+    "Ovidium",
+    "Ovid",
+    "Ovide",
+    "Publius Ovidius Naso",
+    "Ovidius Naso",
+    "Ovidii Nasonis"
+   ],
+   "deboli": [
+    "Naso",
+    "Nasonis"
+   ],
+   "escludi": [
+    "Ovide moralise",
+    "Ovidius moralizatus",
+    "Ovidius moralisatus"
+   ],
+   "opere": [
+    {
+     "t": "Metamorfosi",
+     "v": [
+      "Metamorphoses",
+      "Metamorphoseon",
+      "Metamorphosis",
+      "Metamorfosi",
+      "Metamorphosen",
+      "Metamorphoseos"
+     ]
+    },
+    {
+     "t": "Eroidi",
+     "v": [
+      "Heroides",
+      "Epistulae heroidum",
+      "Epistolae heroidum",
+      "Heroidum",
+      "Eroidi",
+      "Heroiden"
+     ],
+     "d": true
+    },
+    {
+     "t": "Ars amatoria",
+     "v": [
+      "Ars amatoria",
+      "Ars amandi",
+      "De arte amandi",
+      "Arte di amare",
+      "Liebeskunst",
+      "Art d aimer",
+      "Art of Love"
+     ],
+     "d": true
+    },
+    {
+     "t": "Remedia amoris",
+     "v": [
+      "Remedia amoris",
+      "De remedio amoris",
+      "Rimedi contro l amore"
+     ],
+     "d": true
+    },
+    {
+     "t": "Amores",
+     "v": [
+      "Amores",
+      "Amori",
+      "Liebesgedichte"
+     ]
+    },
+    {
+     "t": "Fasti",
+     "v": [
+      "Fasti",
+      "Fastorum",
+      "Fastes"
+     ]
+    },
+    {
+     "t": "Tristia",
+     "v": [
+      "Tristia",
+      "Tristium",
+      "Tristes"
+     ]
+    },
+    {
+     "t": "Epistulae ex Ponto",
+     "v": [
+      "Epistulae ex Ponto",
+      "Epistolae ex Ponto",
+      "Ex Ponto",
+      "De Ponto"
+     ],
+     "d": true
+    },
+    {
+     "t": "Ibis",
+     "v": [
+      "Ibis",
+      "In Ibin"
+     ]
+    },
+    {
+     "t": "Medicamina faciei",
+     "v": [
+      "Medicamina faciei",
+      "De medicamine faciei"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "livio",
+   "nome": "Livio",
+   "latino": "Livius",
+   "nomi": [
+    "Titus Livius",
+    "Titi Livii",
+    "Livius",
+    "Livii",
+    "Livio",
+    "Tito Livio",
+    "Livy",
+    "Tite Live",
+    "Livius Patavinus"
+   ],
+   "escludi": [
+    "Livius Andronicus",
+    "Livio Andronico",
+    "Livius Drusus",
+    "Livio Druso",
+    "Titus Livius Frulovisi",
+    "Titus Livius de Frulovisiis",
+    "Tito Livio Frulovisi"
+   ],
+   "opere": [
+    {
+     "t": "Ab urbe condita",
+     "v": [
+      "Ab urbe condita",
+      "Ab urbe condita libri",
+      "Historiae ab urbe condita",
+      "Storia di Roma",
+      "Romische Geschichte",
+      "History of Rome"
+     ],
+     "d": true
+    },
+    {
+     "t": "Deche",
+     "v": [
+      "Decades",
+      "Decas",
+      "Decadi",
+      "Deche",
+      "Dekaden"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "seneca",
+   "nome": "Seneca",
+   "latino": "Seneca",
+   "nomi": [
+    "Seneca",
+    "Senecae",
+    "Senecam",
+    "Seneque",
+    "Lucius Annaeus Seneca",
+    "Annaeus Seneca",
+    "Seneca Lucius Annaeus"
+   ],
+   "opere": [
+    {
+     "t": "Epistulae ad Lucilium",
+     "v": [
+      "Epistulae ad Lucilium",
+      "Epistolae ad Lucilium",
+      "Epistulae morales",
+      "Epistolae morales",
+      "Lettere a Lucilio",
+      "Briefe an Lucilius",
+      "Lettres a Lucilius"
+     ],
+     "d": true
+    },
+    {
+     "t": "De beneficiis",
+     "v": [
+      "De beneficiis"
+     ],
+     "d": true
+    },
+    {
+     "t": "De clementia",
+     "v": [
+      "De clementia"
+     ],
+     "d": true
+    },
+    {
+     "t": "De ira",
+     "v": [
+      "De ira"
+     ]
+    },
+    {
+     "t": "De brevitate vitae",
+     "v": [
+      "De brevitate vitae"
+     ],
+     "d": true
+    },
+    {
+     "t": "De vita beata",
+     "v": [
+      "De vita beata"
+     ],
+     "d": true
+    },
+    {
+     "t": "De tranquillitate animi",
+     "v": [
+      "De tranquillitate animi"
+     ],
+     "d": true
+    },
+    {
+     "t": "De providentia",
+     "v": [
+      "De providentia"
+     ]
+    },
+    {
+     "t": "De constantia sapientis",
+     "v": [
+      "De constantia sapientis"
+     ],
+     "d": true
+    },
+    {
+     "t": "Consolationes",
+     "v": [
+      "Ad Marciam",
+      "Ad Helviam",
+      "Ad Polybium"
+     ],
+     "d": true
+    },
+    {
+     "t": "Naturales quaestiones",
+     "v": [
+      "Naturales quaestiones",
+      "Quaestiones naturales"
+     ],
+     "d": true
+    },
+    {
+     "t": "Tragedie",
+     "v": [
+      "Tragoediae",
+      "Tragedie",
+      "Tragodien",
+      "Tragedies"
+     ]
+    },
+    {
+     "t": "Hercules furens",
+     "v": [
+      "Hercules furens"
+     ],
+     "d": true
+    },
+    {
+     "t": "Thyestes",
+     "v": [
+      "Thyestes",
+      "Tieste"
+     ]
+    },
+    {
+     "t": "Troades",
+     "v": [
+      "Troades"
+     ]
+    },
+    {
+     "t": "Phaedra",
+     "v": [
+      "Phaedra",
+      "Hippolytus"
+     ]
+    },
+    {
+     "t": "Medea",
+     "v": [
+      "Medea"
+     ]
+    },
+    {
+     "t": "Oedipus",
+     "v": [
+      "Oedipus"
+     ]
+    },
+    {
+     "t": "Agamemnon",
+     "v": [
+      "Agamemnon"
+     ]
+    },
+    {
+     "t": "Hercules Oetaeus",
+     "v": [
+      "Hercules Oetaeus"
+     ],
+     "d": true
+    },
+    {
+     "t": "Octavia",
+     "v": [
+      "Octavia"
+     ]
+    },
+    {
+     "t": "Apocolocyntosis",
+     "v": [
+      "Apocolocyntosis",
+      "Ludus de morte Claudii"
+     ],
+     "d": true
+    },
+    {
+     "t": "Controversiae",
+     "v": [
+      "Controversiae"
+     ]
+    },
+    {
+     "t": "Suasoriae",
+     "v": [
+      "Suasoriae"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "lucano",
+   "nome": "Lucano",
+   "latino": "Lucanus",
+   "nomi": [
+    "Lucanus",
+    "Lucani",
+    "Lucano",
+    "Lucanum",
+    "Lucan",
+    "Lucain",
+    "Lukan",
+    "Marcus Annaeus Lucanus",
+    "Annaeus Lucanus"
+   ],
+   "escludi": [
+    "Ocellus Lucanus",
+    "Ocello Lucano"
+   ],
+   "opere": [
+    {
+     "t": "Pharsalia",
+     "v": [
+      "Pharsalia",
+      "Farsaglia",
+      "Pharsale"
+     ],
+     "d": true
+    },
+    {
+     "t": "Bellum civile",
+     "v": [
+      "Bellum civile",
+      "De bello civili"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "persio",
+   "nome": "Persio",
+   "latino": "Persius",
+   "nomi": [
+    "Persius",
+    "Persii",
+    "Persio",
+    "Aulus Persius Flaccus",
+    "Persius Flaccus"
+   ],
+   "deboli": [
+    "Perse"
+   ],
+   "opere": [
+    {
+     "t": "Satire",
+     "v": [
+      "Saturae",
+      "Satirae",
+      "Satire",
+      "Satiren",
+      "Satires"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "giovenale",
+   "nome": "Giovenale",
+   "latino": "Iuvenalis",
+   "nomi": [
+    "Iuvenalis",
+    "Juvenalis",
+    "Iuvenal",
+    "Juvenal",
+    "Giovenale",
+    "Decimus Iunius Iuvenalis",
+    "Decimus Junius Juvenalis"
+   ],
+   "opere": [
+    {
+     "t": "Satire",
+     "v": [
+      "Saturae",
+      "Satirae",
+      "Satire",
+      "Satiren",
+      "Satires"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "marziale",
+   "nome": "Marziale",
+   "latino": "Martialis",
+   "nomi": [
+    "Marcus Valerius Martialis",
+    "Valerius Martialis",
+    "Martialis Marcus Valerius",
+    "Marco Valerio Marziale"
+   ],
+   "deboli": [
+    "Martialis",
+    "Martial",
+    "Marziale"
+   ],
+   "escludi": [
+    "sanctus Martialis",
+    "Martialis Lemovicensis",
+    "Saint Martial",
+    "Martial de Limoges",
+    "Martialis episcopus",
+    "Martialis von Limoges"
+   ],
+   "opere": [
+    {
+     "t": "Epigrammi",
+     "v": [
+      "Epigrammata",
+      "Epigrammaton",
+      "Epigrammi",
+      "Epigramme",
+      "Epigrams"
+     ]
+    },
+    {
+     "t": "Liber spectaculorum",
+     "v": [
+      "Liber spectaculorum",
+      "De spectaculis"
+     ]
+    },
+    {
+     "t": "Xenia e Apophoreta",
+     "v": [
+      "Xenia",
+      "Apophoreta"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stazio",
+   "nome": "Stazio",
+   "latino": "Statius",
+   "nomi": [
+    "Statius",
+    "Statii",
+    "Stazio",
+    "Stace",
+    "Publius Papinius Statius",
+    "Papinius Statius",
+    "Papinii Statii"
+   ],
+   "opere": [
+    {
+     "t": "Tebaide",
+     "v": [
+      "Thebais",
+      "Thebaidos",
+      "Thebaidem",
+      "Thebaid",
+      "Tebaide",
+      "Thebaide"
+     ],
+     "d": true
+    },
+    {
+     "t": "Achilleide",
+     "v": [
+      "Achilleis",
+      "Achilleidos",
+      "Achilleide",
+      "Achilleid"
+     ],
+     "d": true
+    },
+    {
+     "t": "Silvae",
+     "v": [
+      "Silvae",
+      "Selve"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "plinio-vecchio",
+   "nome": "Plinio il Vecchio",
+   "latino": "Plinius maior",
+   "nomi": [
+    "Plinius maior",
+    "Plinius Secundus maior",
+    "Gaius Plinius Secundus",
+    "Plinius Secundus Gaius",
+    "C Plinius Secundus",
+    "Plinio il Vecchio",
+    "Pliny the Elder",
+    "Plinius der Altere",
+    "Pline l Ancien"
+   ],
+   "deboli": [
+    "Plinius",
+    "Plinii",
+    "Plinio",
+    "Pliny",
+    "Pline",
+    "Plinius Secundus"
+   ],
+   "opere": [
+    {
+     "t": "Naturalis historia",
+     "v": [
+      "Naturalis historia",
+      "Naturalis historiae",
+      "Historia naturalis",
+      "Historiae naturalis",
+      "Naturalis historiarum",
+      "Storia naturale",
+      "Natural History",
+      "Naturalis Historia",
+      "Naturkunde",
+      "Histoire naturelle"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "plinio-giovane",
+   "nome": "Plinio il Giovane",
+   "latino": "Plinius minor",
+   "nomi": [
+    "Plinius minor",
+    "Gaius Plinius Caecilius Secundus",
+    "Plinius Caecilius Secundus",
+    "Plinius Caecilius",
+    "Caecilius Secundus",
+    "Plinio il Giovane",
+    "Pliny the Younger",
+    "Plinius der Jungere",
+    "Pline le Jeune"
+   ],
+   "deboli": [
+    "Plinius",
+    "Plinii",
+    "Plinio",
+    "Pliny",
+    "Pline"
+   ],
+   "opere": [
+    {
+     "t": "Epistulae",
+     "v": [
+      "Epistulae",
+      "Epistolae",
+      "Epistole",
+      "Briefe",
+      "Letters"
+     ]
+    },
+    {
+     "t": "Panegyricus",
+     "v": [
+      "Panegyricus Traiano",
+      "Panegyricus Traiani",
+      "Panegyricus"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tacito",
+   "nome": "Tacito",
+   "latino": "Tacitus",
+   "nomi": [
+    "Tacitus",
+    "Taciti",
+    "Tacito",
+    "Tacite",
+    "Publius Cornelius Tacitus",
+    "Cornelius Tacitus",
+    "Cornelii Taciti"
+   ],
+   "opere": [
+    {
+     "t": "Annales",
+     "v": [
+      "Annales",
+      "Annali",
+      "Annalen",
+      "Annals",
+      "Ab excessu divi Augusti"
+     ]
+    },
+    {
+     "t": "Historiae",
+     "v": [
+      "Historiae",
+      "Storie",
+      "Historien",
+      "Histories"
+     ]
+    },
+    {
+     "t": "Germania",
+     "v": [
+      "Germania",
+      "De origine et situ Germanorum"
+     ]
+    },
+    {
+     "t": "Agricola",
+     "v": [
+      "Agricola",
+      "De vita Iulii Agricolae",
+      "De vita et moribus Iulii Agricolae"
+     ]
+    },
+    {
+     "t": "Dialogus de oratoribus",
+     "v": [
+      "Dialogus de oratoribus"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "svetonio",
+   "nome": "Svetonio",
+   "latino": "Suetonius",
+   "nomi": [
+    "Suetonius",
+    "Suetonii",
+    "Svetonio",
+    "Suetone",
+    "Sueton",
+    "Suetonius Tranquillus",
+    "Gaius Suetonius Tranquillus",
+    "Suetonio"
+   ],
+   "opere": [
+    {
+     "t": "Vite dei Cesari",
+     "v": [
+      "De vita Caesarum",
+      "De vita duodecim Caesarum",
+      "Vitae Caesarum",
+      "Vitae duodecim Caesarum",
+      "De vita XII Caesarum",
+      "Vite dei Cesari",
+      "Kaiserviten",
+      "Lives of the Caesars",
+      "Vies des douze Cesars",
+      "Duodecim Caesares"
+     ],
+     "d": true
+    },
+    {
+     "t": "De grammaticis et rhetoribus",
+     "v": [
+      "De grammaticis et rhetoribus",
+      "De grammaticis"
+     ],
+     "d": true
+    },
+    {
+     "t": "De viris illustribus",
+     "v": [
+      "De viris illustribus"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quintiliano",
+   "nome": "Quintiliano",
+   "latino": "Quintilianus",
+   "nomi": [
+    "Quintilianus",
+    "Quintiliani",
+    "Quintiliano",
+    "Quintilian",
+    "Quintilien",
+    "Marcus Fabius Quintilianus",
+    "Fabius Quintilianus"
+   ],
+   "opere": [
+    {
+     "t": "Institutio oratoria",
+     "v": [
+      "Institutio oratoria",
+      "Institutionis oratoriae",
+      "Institutiones oratoriae",
+      "De institutione oratoria",
+      "Institutionum oratoriarum"
+     ],
+     "d": true
+    },
+    {
+     "t": "Declamationes",
+     "v": [
+      "Declamationes",
+      "Declamationes maiores",
+      "Declamationes minores"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "apuleio",
+   "nome": "Apuleio",
+   "latino": "Apuleius",
+   "nomi": [
+    "Apuleius",
+    "Apulei",
+    "Apuleii",
+    "Apuleio",
+    "Apulee",
+    "Apulejus",
+    "Lucius Apuleius",
+    "Apuleius Madaurensis"
+   ],
+   "escludi": [
+    "Pseudo Apuleius",
+    "Pseudo Apuleius Platonicus",
+    "Apuleius Platonicus",
+    "Herbarius Apulei",
+    "Herbarium Apulei",
+    "Herbarius Pseudo Apulei"
+   ],
+   "opere": [
+    {
+     "t": "Metamorfosi",
+     "v": [
+      "Metamorphoses",
+      "Asinus aureus",
+      "Asino d oro",
+      "Golden Ass",
+      "Der goldene Esel",
+      "L ane d or"
+     ]
+    },
+    {
+     "t": "Apologia",
+     "v": [
+      "Apologia",
+      "De magia",
+      "Pro se de magia"
+     ]
+    },
+    {
+     "t": "Florida",
+     "v": [
+      "Florida"
+     ]
+    },
+    {
+     "t": "De deo Socratis",
+     "v": [
+      "De deo Socratis"
+     ],
+     "d": true
+    },
+    {
+     "t": "De Platone et eius dogmate",
+     "v": [
+      "De Platone et eius dogmate",
+      "De dogmate Platonis"
+     ],
+     "d": true
+    },
+    {
+     "t": "De mundo",
+     "v": [
+      "De mundo"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ammiano",
+   "nome": "Ammiano Marcellino",
+   "latino": "Ammianus Marcellinus",
+   "nomi": [
+    "Ammianus Marcellinus",
+    "Ammiani Marcellini",
+    "Ammianus",
+    "Ammiano Marcellino",
+    "Ammien Marcellin",
+    "Ammiano"
+   ],
+   "opere": [
+    {
+     "t": "Res gestae",
+     "v": [
+      "Res gestae",
+      "Rerum gestarum libri",
+      "Rerum gestarum"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "claudiano",
+   "nome": "Claudiano",
+   "latino": "Claudianus",
+   "nomi": [
+    "Claudianus",
+    "Claudiani",
+    "Claudiano",
+    "Claudian",
+    "Claudien",
+    "Claudius Claudianus"
+   ],
+   "escludi": [
+    "Claudianus Mamertus",
+    "Claudiani Mamerti",
+    "Claudien Mamert",
+    "Claudiano Mamerto"
+   ],
+   "opere": [
+    {
+     "t": "De raptu Proserpinae",
+     "v": [
+      "De raptu Proserpinae",
+      "Ratto di Proserpina",
+      "Raptus Proserpinae"
+     ],
+     "d": true
+    },
+    {
+     "t": "In Rufinum",
+     "v": [
+      "In Rufinum"
+     ],
+     "d": true
+    },
+    {
+     "t": "In Eutropium",
+     "v": [
+      "In Eutropium"
+     ],
+     "d": true
+    },
+    {
+     "t": "De bello Gildonico",
+     "v": [
+      "De bello Gildonico"
+     ],
+     "d": true
+    },
+    {
+     "t": "De bello Gothico",
+     "v": [
+      "De bello Gothico",
+      "De bello Getico"
+     ]
+    },
+    {
+     "t": "Carmina",
+     "v": [
+      "Carmina maiora",
+      "Carmina minora",
+      "Carmina"
+     ]
+    },
+    {
+     "t": "Panegirici",
+     "v": [
+      "Panegyricus",
+      "Panegyrici"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "prisciano",
+   "nome": "Prisciano",
+   "latino": "Priscianus",
+   "nomi": [
+    "Priscianus",
+    "Prisciani",
+    "Prisciano",
+    "Priscian",
+    "Priscien",
+    "Priscianus Caesariensis"
+   ],
+   "opere": [
+    {
+     "t": "Institutiones grammaticae",
+     "v": [
+      "Institutiones grammaticae",
+      "Institutionum grammaticarum",
+      "Institutio de arte grammatica",
+      "Institutiones",
+      "Priscianus maior",
+      "Priscianus minor",
+      "De constructione"
+     ]
+    },
+    {
+     "t": "Partitiones",
+     "v": [
+      "Partitiones duodecim versuum Aeneidos",
+      "Partitiones"
+     ]
+    },
+    {
+     "t": "De figuris numerorum",
+     "v": [
+      "De figuris numerorum"
+     ],
+     "d": true
+    },
+    {
+     "t": "Periegesis",
+     "v": [
+      "Periegesis"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "donato",
+   "nome": "Donato",
+   "latino": "Donatus",
+   "nomi": [
+    "Donatus",
+    "Donati",
+    "Donato",
+    "Donat",
+    "Aelius Donatus",
+    "Aelii Donati",
+    "Tiberius Claudius Donatus"
+   ],
+   "escludi": [
+    "sanctus Donatus",
+    "Donatus episcopus",
+    "Donato di Arezzo",
+    "Donatus von Arezzo",
+    "Donatus of Fiesole",
+    "Donato vescovo",
+    "Donatus Acciaiolus",
+    "Donato Acciaiuoli"
+   ],
+   "opere": [
+    {
+     "t": "Ars minor",
+     "v": [
+      "Ars minor",
+      "De octo partibus orationis",
+      "De partibus orationis"
+     ],
+     "d": true
+    },
+    {
+     "t": "Ars maior",
+     "v": [
+      "Ars maior",
+      "Ars grammatica",
+      "Barbarismus"
+     ]
+    },
+    {
+     "t": "Commento a Terenzio",
+     "v": [
+      "Commentum Terenti",
+      "Commentum Terentii"
+     ],
+     "d": true
+    },
+    {
+     "t": "Vita di Virgilio",
+     "v": [
+      "Vita Vergilii",
+      "Vita Virgilii",
+      "Vita Donatiana"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "servio",
+   "nome": "Servio",
+   "latino": "Servius",
+   "nomi": [
+    "Servius",
+    "Servii",
+    "Servio",
+    "Maurus Servius Honoratus",
+    "Servius Honoratus",
+    "Servius grammaticus"
+   ],
+   "escludi": [
+    "Servius Sulpicius",
+    "Servius Tullius",
+    "Servio Tullio"
+   ],
+   "opere": [
+    {
+     "t": "Commento a Virgilio",
+     "v": [
+      "Commentarii in Vergilium",
+      "Commentarius in Vergilium",
+      "In Vergilii carmina commentarii",
+      "In Vergilium commentarii",
+      "Commentarii in Vergilii",
+      "Commentarius in Virgilium",
+      "Commentum in Vergilium"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "macrobio",
+   "nome": "Macrobio",
+   "latino": "Macrobius",
+   "nomi": [
+    "Macrobius",
+    "Macrobii",
+    "Macrobio",
+    "Macrobe",
+    "Ambrosius Theodosius Macrobius",
+    "Macrobius Ambrosius Theodosius"
+   ],
+   "opere": [
+    {
+     "t": "Saturnalia",
+     "v": [
+      "Saturnalia",
+      "Saturnaliorum",
+      "Saturnali"
+     ]
+    },
+    {
+     "t": "Commento al Sogno di Scipione",
+     "v": [
+      "Commentarii in Somnium Scipionis",
+      "Commentarius in Somnium Scipionis",
+      "In Somnium Scipionis",
+      "Commentum in Somnium Scipionis"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "boezio",
+   "nome": "Boezio",
+   "latino": "Boethius",
+   "nomi": [
+    "Boethius",
+    "Boetius",
+    "Boethii",
+    "Boetii",
+    "Boethio",
+    "Boetio",
+    "Boezio",
+    "Boece",
+    "Anicius Manlius Severinus Boethius",
+    "Severinus Boethius",
+    "Manlius Severinus Boethius"
+   ],
+   "opere": [
+    {
+     "t": "De consolatione philosophiae",
+     "v": [
+      "De consolatione philosophiae",
+      "Consolatio philosophiae",
+      "De consolatione",
+      "Consolazione della filosofia",
+      "Trost der Philosophie",
+      "Consolation of Philosophy",
+      "Consolation de philosophie",
+      "Consolation de la philosophie"
+     ],
+     "d": true
+    },
+    {
+     "t": "De institutione arithmetica",
+     "v": [
+      "De institutione arithmetica",
+      "Arithmetica",
+      "De arithmetica"
+     ]
+    },
+    {
+     "t": "De institutione musica",
+     "v": [
+      "De institutione musica",
+      "De musica"
+     ]
+    },
+    {
+     "t": "Opuscula sacra",
+     "v": [
+      "Opuscula sacra",
+      "De trinitate",
+      "De sancta trinitate"
+     ]
+    },
+    {
+     "t": "De topicis differentiis",
+     "v": [
+      "De topicis differentiis",
+      "De differentiis topicis"
+     ],
+     "d": true
+    },
+    {
+     "t": "Commenti ad Aristotele e Porfirio",
+     "v": [
+      "In Isagogen Porphyrii",
+      "In Categorias Aristotelis",
+      "In Perihermeneias",
+      "In librum Aristotelis Peri hermeneias"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ausonio",
+   "nome": "Ausonio",
+   "latino": "Ausonius",
+   "nomi": [
+    "Ausonius",
+    "Ausonii",
+    "Ausonio",
+    "Ausone",
+    "Decimus Magnus Ausonius",
+    "Decimus Ausonius"
+   ],
+   "opere": [
+    {
+     "t": "Mosella",
+     "v": [
+      "Mosella"
+     ],
+     "d": true
+    },
+    {
+     "t": "Ephemeris",
+     "v": [
+      "Ephemeris"
+     ]
+    },
+    {
+     "t": "Parentalia",
+     "v": [
+      "Parentalia"
+     ],
+     "d": true
+    },
+    {
+     "t": "Opuscula",
+     "v": [
+      "Opuscula",
+      "Carmina"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "valerio-massimo",
+   "nome": "Valerio Massimo",
+   "latino": "Valerius Maximus",
+   "nomi": [
+    "Valerius Maximus",
+    "Valerii Maximi",
+    "Valerio Massimo",
+    "Valere Maxime"
+   ],
+   "opere": [
+    {
+     "t": "Facta et dicta memorabilia",
+     "v": [
+      "Facta et dicta memorabilia",
+      "Factorum et dictorum memorabilium",
+      "Factorum ac dictorum memorabilium",
+      "Detti e fatti memorabili",
+      "Dictorum factorumque memorabilium"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "curzio-rufo",
+   "nome": "Curzio Rufo",
+   "latino": "Curtius Rufus",
+   "nomi": [
+    "Quintus Curtius Rufus",
+    "Curtius Rufus",
+    "Curtii Rufi",
+    "Quintus Curtius",
+    "Quinti Curtii",
+    "Curzio Rufo",
+    "Quinte Curce"
+   ],
+   "opere": [
+    {
+     "t": "Historiae Alexandri Magni",
+     "v": [
+      "Historiae Alexandri Magni",
+      "Historiarum Alexandri Magni",
+      "De rebus gestis Alexandri Magni",
+      "Historia Alexandri Magni",
+      "Storie di Alessandro Magno"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "giustino",
+   "nome": "Giustino",
+   "latino": "Iustinus",
+   "nomi": [
+    "Marcus Iunianus Iustinus",
+    "Marcus Junianus Justinus",
+    "Iunianus Iustinus",
+    "Junianus Justinus",
+    "Iustinus Marcus Iunianus",
+    "Justinus Marcus Junianus",
+    "Giustino storico"
+   ],
+   "deboli": [
+    "Iustinus",
+    "Justinus",
+    "Iustini",
+    "Justini",
+    "Giustino",
+    "Justin"
+   ],
+   "opere": [
+    {
+     "t": "Epitoma historiarum Philippicarum",
+     "v": [
+      "Epitoma historiarum Philippicarum",
+      "Epitome historiarum Philippicarum",
+      "Historiae Philippicae",
+      "Historiarum Philippicarum",
+      "Epitoma Pompei Trogi",
+      "Epitome Pompei Trogi",
+      "Pompeius Trogus",
+      "Pompei Trogi",
+      "Trogus Pompeius",
+      "Trogi Pompei"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "floro",
+   "nome": "Floro",
+   "latino": "Florus",
+   "nomi": [
+    "Lucius Annaeus Florus",
+    "Annaeus Florus",
+    "Florus Lucius Annaeus",
+    "Iulius Florus"
+   ],
+   "deboli": [
+    "Florus",
+    "Flori",
+    "Floro"
+   ],
+   "opere": [
+    {
+     "t": "Epitoma de Tito Livio",
+     "v": [
+      "Epitoma de Tito Livio",
+      "Epitome de Tito Livio",
+      "Epitoma rerum Romanarum",
+      "Epitome rerum Romanarum",
+      "Epitoma bellorum",
+      "Bellorum omnium annorum DCC"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "eutropio",
+   "nome": "Eutropio",
+   "latino": "Eutropius",
+   "nomi": [
+    "Eutropius",
+    "Eutropii",
+    "Eutropio",
+    "Eutrope"
+   ],
+   "opere": [
+    {
+     "t": "Breviarium ab urbe condita",
+     "v": [
+      "Breviarium ab urbe condita",
+      "Breviarium historiae Romanae",
+      "Breviarium"
+     ],
+     "d": false
+    }
+   ]
+  },
+  {
+   "id": "vegezio",
+   "nome": "Vegezio",
+   "latino": "Vegetius",
+   "nomi": [
+    "Vegetius",
+    "Vegetii",
+    "Vegezio",
+    "Vegece",
+    "Publius Flavius Vegetius Renatus",
+    "Flavius Vegetius Renatus",
+    "Vegetius Renatus"
+   ],
+   "opere": [
+    {
+     "t": "Epitoma rei militaris",
+     "v": [
+      "Epitoma rei militaris",
+      "Epitome rei militaris",
+      "De re militari",
+      "Epitoma institutorum rei militaris"
+     ]
+    },
+    {
+     "t": "Digesta artis mulomedicinae",
+     "v": [
+      "Digesta artis mulomedicinae",
+      "Mulomedicina"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "columella",
+   "nome": "Columella",
+   "latino": "Columella",
+   "nomi": [
+    "Columella",
+    "Columellae",
+    "Lucius Iunius Moderatus Columella",
+    "Lucius Junius Moderatus Columella",
+    "Iunius Moderatus Columella"
+   ],
+   "opere": [
+    {
+     "t": "De re rustica",
+     "v": [
+      "De re rustica",
+      "Res rustica",
+      "Rei rusticae"
+     ]
+    },
+    {
+     "t": "De arboribus",
+     "v": [
+      "De arboribus"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "varrone",
+   "nome": "Varrone",
+   "latino": "Varro",
+   "nomi": [
+    "Varro",
+    "Varronis",
+    "Varrone",
+    "Varron",
+    "Marcus Terentius Varro",
+    "Terentius Varro",
+    "Terentii Varronis"
+   ],
+   "escludi": [
+    "Varro Atacinus",
+    "Varrone Atacino"
+   ],
+   "opere": [
+    {
+     "t": "De lingua Latina",
+     "v": [
+      "De lingua Latina",
+      "De lingua Latina libri"
+     ],
+     "d": true
+    },
+    {
+     "t": "Res rusticae",
+     "v": [
+      "Res rusticae",
+      "Rerum rusticarum",
+      "De re rustica",
+      "De agricultura"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vitruvio",
+   "nome": "Vitruvio",
+   "latino": "Vitruvius",
+   "nomi": [
+    "Vitruvius",
+    "Vitruvii",
+    "Vitruvio",
+    "Vitruve",
+    "Vitruv",
+    "Marcus Vitruvius Pollio",
+    "Vitruvius Pollio"
+   ],
+   "opere": [
+    {
+     "t": "De architectura",
+     "v": [
+      "De architectura",
+      "De architectura libri decem",
+      "Zehn Bucher uber Architektur"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "frontino",
+   "nome": "Frontino",
+   "latino": "Frontinus",
+   "nomi": [
+    "Frontinus",
+    "Frontini",
+    "Frontino",
+    "Frontin",
+    "Sextus Iulius Frontinus",
+    "Sextus Julius Frontinus",
+    "Iulius Frontinus"
+   ],
+   "opere": [
+    {
+     "t": "Strategemata",
+     "v": [
+      "Strategemata",
+      "Strategematon",
+      "Stratagemata",
+      "Strategemi"
+     ],
+     "d": true
+    },
+    {
+     "t": "De aquaeductu",
+     "v": [
+      "De aquaeductu",
+      "De aquis urbis Romae",
+      "De aquae ductu"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "gellio",
+   "nome": "Aulo Gellio",
+   "latino": "Gellius",
+   "nomi": [
+    "Aulus Gellius",
+    "Auli Gellii",
+    "Gellius",
+    "Gellii",
+    "Aulo Gellio",
+    "Aulu Gelle",
+    "Agellius"
+   ],
+   "opere": [
+    {
+     "t": "Noctes Atticae",
+     "v": [
+      "Noctes Atticae",
+      "Noctium Atticarum",
+      "Notti attiche",
+      "Attische Nachte",
+      "Nuits attiques",
+      "Attic Nights"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "valerio-flacco",
+   "nome": "Valerio Flacco",
+   "latino": "Valerius Flaccus",
+   "nomi": [
+    "Valerius Flaccus",
+    "Valerii Flacci",
+    "Valerio Flacco",
+    "Gaius Valerius Flaccus",
+    "Valerius Flaccus Setinus Balbus"
+   ],
+   "opere": [
+    {
+     "t": "Argonautica",
+     "v": [
+      "Argonautica",
+      "Argonauticon",
+      "Argonautiche"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "silio-italico",
+   "nome": "Silio Italico",
+   "latino": "Silius Italicus",
+   "nomi": [
+    "Silius Italicus",
+    "Silii Italici",
+    "Silio Italico",
+    "Tiberius Catius Asconius Silius Italicus",
+    "Silius"
+   ],
+   "opere": [
+    {
+     "t": "Punica",
+     "v": [
+      "Punica",
+      "Punicorum"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "manilio",
+   "nome": "Manilio",
+   "latino": "Manilius",
+   "nomi": [
+    "Marcus Manilius",
+    "Manilius",
+    "Manilii",
+    "Manilio",
+    "Manile"
+   ],
+   "escludi": [
+    "lex Manilia",
+    "lege Manilia"
+   ],
+   "opere": [
+    {
+     "t": "Astronomica",
+     "v": [
+      "Astronomica",
+      "Astronomicon",
+      "Astronomicon libri"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fedro",
+   "nome": "Fedro",
+   "latino": "Phaedrus",
+   "nomi": [
+    "Phaedrus Augusti libertus",
+    "Fedro",
+    "Phadrus",
+    "Phedre"
+   ],
+   "deboli": [
+    "Phaedrus",
+    "Phaedri"
+   ],
+   "opere": [
+    {
+     "t": "Favole",
+     "v": [
+      "Fabulae Aesopiae",
+      "Fabularum Aesopiarum",
+      "Favole"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "aviano",
+   "nome": "Aviano",
+   "latino": "Avianus",
+   "nomi": [
+    "Avianus",
+    "Aviani",
+    "Aviano",
+    "Avien",
+    "Flavius Avianus"
+   ],
+   "opere": [
+    {
+     "t": "Favole",
+     "v": [
+      "Fabulae",
+      "Favole",
+      "Fabeln",
+      "Fables",
+      "Apologi"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "avieno",
+   "nome": "Avieno",
+   "latino": "Avienus",
+   "nomi": [
+    "Rufius Festus Avienus",
+    "Avienus",
+    "Avieni",
+    "Avieno"
+   ],
+   "opere": [
+    {
+     "t": "Ora maritima",
+     "v": [
+      "Ora maritima"
+     ],
+     "d": true
+    },
+    {
+     "t": "Aratea",
+     "v": [
+      "Aratea",
+      "Phaenomena"
+     ]
+    },
+    {
+     "t": "Descriptio orbis terrae",
+     "v": [
+      "Descriptio orbis terrae"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "marziano-capella",
+   "nome": "Marziano Capella",
+   "latino": "Martianus Capella",
+   "nomi": [
+    "Martianus Capella",
+    "Martiani Capellae",
+    "Marziano Capella",
+    "Martianus Minneus Felix Capella"
+   ],
+   "opere": [
+    {
+     "t": "De nuptiis Philologiae et Mercurii",
+     "v": [
+      "De nuptiis Philologiae et Mercurii",
+      "De nuptiis Mercurii et Philologiae",
+      "De nuptiis",
+      "Nozze di Filologia e Mercurio"
+     ],
+     "d": true
+    }
+   ],
+   "deboli": [
+    "Martianus"
+   ]
+  },
+  {
+   "id": "solino",
+   "nome": "Solino",
+   "latino": "Solinus",
+   "nomi": [
+    "Gaius Iulius Solinus",
+    "Gaius Julius Solinus",
+    "Iulius Solinus",
+    "Solinus",
+    "Solini",
+    "Solino",
+    "Solin"
+   ],
+   "opere": [
+    {
+     "t": "Collectanea rerum memorabilium",
+     "v": [
+      "Collectanea rerum memorabilium",
+      "Polyhistor",
+      "De mirabilibus mundi"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "celso",
+   "nome": "Celso",
+   "latino": "Celsus",
+   "nomi": [
+    "Aulus Cornelius Celsus",
+    "Cornelius Celsus",
+    "Cornelii Celsi",
+    "Aulo Cornelio Celso"
+   ],
+   "deboli": [
+    "Celsus",
+    "Celsi",
+    "Celso"
+   ],
+   "opere": [
+    {
+     "t": "De medicina",
+     "v": [
+      "De medicina",
+      "De re medica",
+      "Artes"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nepote",
+   "nome": "Cornelio Nepote",
+   "latino": "Cornelius Nepos",
+   "nomi": [
+    "Cornelius Nepos",
+    "Cornelii Nepotis",
+    "Cornelio Nepote"
+   ],
+   "opere": [
+    {
+     "t": "De viris illustribus",
+     "v": [
+      "De viris illustribus",
+      "Vitae",
+      "Vitae excellentium imperatorum"
+     ]
+    },
+    {
+     "t": "Liber de excellentibus ducibus",
+     "v": [
+      "Liber de excellentibus ducibus exterarum gentium",
+      "De excellentibus ducibus",
+      "De excellentibus ducibus exterarum gentium"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "velleio",
+   "nome": "Velleio Patercolo",
+   "latino": "Velleius Paterculus",
+   "nomi": [
+    "Velleius Paterculus",
+    "Velleii Paterculi",
+    "Velleio Patercolo",
+    "Marcus Velleius Paterculus"
+   ],
+   "opere": [
+    {
+     "t": "Historiae Romanae",
+     "v": [
+      "Historiae Romanae",
+      "Historia Romana",
+      "Historiarum libri"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "historia-augusta",
+   "nome": "Historia Augusta",
+   "latino": "Historia Augusta",
+   "nomi": [
+    "Historia Augusta",
+    "Scriptores historiae Augustae",
+    "Scriptores Historiae Augustae",
+    "Historiae Augustae scriptores",
+    "Vitae diversorum principum et tyrannorum"
+   ],
+   "opere": []
+  },
+  {
+   "id": "calpurnio",
+   "nome": "Calpurnio Siculo",
+   "latino": "Calpurnius Siculus",
+   "nomi": [
+    "Calpurnius Siculus",
+    "Calpurnii Siculi",
+    "Calpurnio Siculo",
+    "Titus Calpurnius Siculus"
+   ],
+   "opere": [
+    {
+     "t": "Bucoliche",
+     "v": [
+      "Bucolica",
+      "Eclogae",
+      "Ecloghe"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rutilio",
+   "nome": "Rutilio Namaziano",
+   "latino": "Rutilius Namatianus",
+   "nomi": [
+    "Rutilius Namatianus",
+    "Rutilii Namatiani",
+    "Rutilio Namaziano",
+    "Claudius Rutilius Namatianus"
+   ],
+   "opere": [
+    {
+     "t": "De reditu suo",
+     "v": [
+      "De reditu suo",
+      "De reditu"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "disticha-catonis",
+   "nome": "Disticha Catonis",
+   "latino": "Disticha Catonis",
+   "nomi": [
+    "Disticha Catonis",
+    "Dicta Catonis",
+    "Distichia Catonis",
+    "Catonis disticha",
+    "Distica Catonis",
+    "Dionysius Cato",
+    "Cato Dionysius",
+    "Liber Catonis",
+    "Catonis distichorum",
+    "Monosticha Catonis",
+    "Cato novus",
+    "Cato interpretatus",
+    "Catonis dicta"
+   ],
+   "opere": []
+  },
+  {
+   "id": "catone",
+   "nome": "Catone il Censore",
+   "latino": "Cato maior",
+   "nomi": [
+    "Marcus Porcius Cato",
+    "Porcius Cato",
+    "Cato Censorius",
+    "Catone il Censore",
+    "Cato the Elder",
+    "Caton l Ancien",
+    "Cato Marcus Porcius"
+   ],
+   "deboli": [
+    "Cato",
+    "Catonis",
+    "Catone",
+    "Caton"
+   ],
+   "opere": [
+    {
+     "t": "De agri cultura",
+     "v": [
+      "De agri cultura",
+      "De agricultura",
+      "De re rustica"
+     ]
+    }
+   ],
+   "escludi": [
+    "Cato maior de senectute",
+    "Cato maior",
+    "Disticha Catonis",
+    "Dicta Catonis",
+    "Dionysius Cato",
+    "Cato Dionysius",
+    "Liber Catonis",
+    "Catonis disticha",
+    "Cato novus",
+    "Catonis dicta"
+   ]
+  },
+  {
+   "id": "pomponio-mela",
+   "nome": "Pomponio Mela",
+   "latino": "Pomponius Mela",
+   "nomi": [
+    "Pomponius Mela",
+    "Pomponii Melae",
+    "Pomponio Mela"
+   ],
+   "opere": [
+    {
+     "t": "De chorographia",
+     "v": [
+      "De chorographia",
+      "De situ orbis",
+      "Chorographia",
+      "Cosmographia"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "igino",
+   "nome": "Igino",
+   "latino": "Hyginus",
+   "nomi": [
+    "Hyginus",
+    "Hygini",
+    "Igino",
+    "Hygin",
+    "Gaius Iulius Hyginus",
+    "Hyginus Mythographus"
+   ],
+   "escludi": [
+    "Hyginus Gromaticus",
+    "Hyginus gromaticus"
+   ],
+   "opere": [
+    {
+     "t": "De astronomia",
+     "v": [
+      "De astronomia",
+      "Poeticon astronomicon",
+      "Astronomica",
+      "De sideribus"
+     ]
+    },
+    {
+     "t": "Fabulae",
+     "v": [
+      "Fabulae",
+      "Genealogiae"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "censorino",
+   "nome": "Censorino",
+   "latino": "Censorinus",
+   "nomi": [
+    "Censorinus",
+    "Censorini",
+    "Censorino"
+   ],
+   "opere": [
+    {
+     "t": "De die natali",
+     "v": [
+      "De die natali"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "festo",
+   "nome": "Festo",
+   "latino": "Festus",
+   "nomi": [
+    "Sextus Pompeius Festus",
+    "Pompeius Festus",
+    "Pompei Festi"
+   ],
+   "opere": [
+    {
+     "t": "De verborum significatu",
+     "v": [
+      "De verborum significatu",
+      "De verborum significatione"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "nonio",
+   "nome": "Nonio Marcello",
+   "latino": "Nonius Marcellus",
+   "nomi": [
+    "Nonius Marcellus",
+    "Nonii Marcelli",
+    "Nonio Marcello"
+   ],
+   "opere": [
+    {
+     "t": "De compendiosa doctrina",
+     "v": [
+      "De compendiosa doctrina"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "carisio",
+   "nome": "Carisio",
+   "latino": "Charisius",
+   "nomi": [
+    "Flavius Sosipater Charisius",
+    "Sosipater Charisius",
+    "Charisius",
+    "Charisii",
+    "Carisio"
+   ],
+   "opere": [
+    {
+     "t": "Ars grammatica",
+     "v": [
+      "Ars grammatica",
+      "Institutiones grammaticae"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "palladio",
+   "nome": "Palladio",
+   "latino": "Palladius",
+   "nomi": [
+    "Rutilius Taurus Aemilianus Palladius",
+    "Palladius Rutilius Taurus Aemilianus",
+    "Rutilius Palladius",
+    "Palladius Rutilius"
+   ],
+   "deboli": [
+    "Palladius",
+    "Palladii",
+    "Palladio"
+   ],
+   "opere": [
+    {
+     "t": "Opus agriculturae",
+     "v": [
+      "Opus agriculturae",
+      "De agricultura",
+      "De re rustica"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "apicio",
+   "nome": "Apicio",
+   "latino": "Apicius",
+   "nomi": [
+    "Apicius",
+    "Apicii",
+    "Apicio",
+    "Caelius Apicius",
+    "Marcus Gavius Apicius"
+   ],
+   "opere": [
+    {
+     "t": "De re coquinaria",
+     "v": [
+      "De re coquinaria",
+      "De re culinaria"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "aurelio-vittore",
+   "nome": "Aurelio Vittore",
+   "latino": "Aurelius Victor",
+   "nomi": [
+    "Sextus Aurelius Victor",
+    "Aurelius Victor",
+    "Aurelii Victoris",
+    "Aurelio Vittore"
+   ],
+   "opere": [
+    {
+     "t": "De Caesaribus",
+     "v": [
+      "De Caesaribus",
+      "Liber de Caesaribus",
+      "Epitome de Caesaribus"
+     ],
+     "d": true
+    },
+    {
+     "t": "De viris illustribus urbis Romae",
+     "v": [
+      "De viris illustribus urbis Romae"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "ilias-latina",
+   "nome": "Ilias Latina",
+   "latino": "Ilias Latina",
+   "nomi": [
+    "Ilias Latina",
+    "Homerus Latinus",
+    "Baebius Italicus",
+    "Ilias latina",
+    "Pindarus Thebanus"
+   ],
+   "opere": []
+  },
+  {
+   "id": "darete",
+   "nome": "Darete Frigio",
+   "latino": "Dares Phrygius",
+   "nomi": [
+    "Dares Phrygius",
+    "Daretis Phrygii",
+    "Dares Frigius",
+    "Darete Frigio",
+    "Dares der Phrygier",
+    "Dares le Phrygien"
+   ],
+   "opere": [
+    {
+     "t": "De excidio Troiae historia",
+     "v": [
+      "De excidio Troiae historia",
+      "De excidio Troiae",
+      "Historia de excidio Troiae"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "ditti",
+   "nome": "Ditti Cretese",
+   "latino": "Dictys Cretensis",
+   "nomi": [
+    "Dictys Cretensis",
+    "Dictyis Cretensis",
+    "Dictys",
+    "Ditti Cretese",
+    "Dictys von Kreta"
+   ],
+   "opere": [
+    {
+     "t": "Ephemeris belli Troiani",
+     "v": [
+      "Ephemeris belli Troiani",
+      "Ephemeridos belli Troiani",
+      "Bellum Troianum"
+     ],
+     "d": true
+    }
+   ]
+  }
+ ]
+}
