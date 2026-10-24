@@ -67,14 +67,32 @@ Significato della colonna «Stato»:
 | Universitätsbibliothek Leipzig | Lipsia | da verificare | Possibile via Handschriftenportal (come Wolfenbüttel). |
 | Biblioteca Nacional de España (BNE) | Madrid | da verificare | |
 | Real Biblioteca del Monasterio de El Escorial | El Escorial | da verificare | |
-| Harvard (Houghton Library) | Cambridge, Massachusetts | da verificare | |
-| Yale (Beinecke Library) | New Haven | da verificare | |
-| Walters Art Museum | Baltimora | da verificare | |
-| Princeton University Library | Princeton | da verificare | |
 | Det Kongelige Bibliotek | Copenaghen | da verificare | |
 | Koninklijke Bibliotheek (KB) | L'Aia | da verificare | |
 | Uppsala universitetsbibliotek | Uppsala | da verificare | |
 | Biblioteka Jagiellońska | Cracovia | da verificare | |
+
+### Fuori dall'Europa
+
+Si agganciano dopo aver completato le biblioteche europee. L'ordine della tabella è l'ordine di priorità.
+
+| Biblioteca | Città | Stato | Note |
+|---|---|---|---|
+| Harvard (Houghton Library) | Cambridge, Massachusetts (Stati Uniti) | da verificare | |
+| Yale (Beinecke Library) | New Haven (Stati Uniti) | da verificare | |
+| Walters Art Museum | Baltimora (Stati Uniti) | da verificare | |
+| Princeton University Library | Princeton (Stati Uniti) | da verificare | |
+| University of Pennsylvania (OPenn) | Filadelfia (Stati Uniti) | da verificare | |
+| Morgan Library & Museum | New York (Stati Uniti) | da verificare | |
+| Library of Congress | Washington (Stati Uniti) | da verificare | |
+| Getty Research Institute e Getty Museum | Los Angeles (Stati Uniti) | da verificare | |
+| Monastero di Santa Caterina del Sinai | Sinai (Egitto) | da verificare | Sinai Library Digitization Project con la UCLA; Sinai Palimpsests. |
+| Hill Museum & Manuscript Library (vHMML) | Collegeville (Stati Uniti), fondi di Siria, Iraq, Libano, Etiopia, Mali (Timbuctù) | da verificare | Manoscritti siriaci, arabi, armeni, etiopici. |
+| Qatar Digital Library | Doha (Qatar) | da verificare | |
+| National Diet Library | Tokyo (Giappone) | da verificare | |
+| Biblioteca nazionale cinese | Pechino (Cina) | da verificare | |
+| Biblioteca nazionale coreana | Seul (Corea del Sud) | da verificare | |
+| Biblioteca nazionale russa (RNB) e biblioteche di Mosca | San Pietroburgo, Mosca (Russia) | da verificare | Accesso dall'estero difficile. |
 
 ## Non raggiungibili
 
