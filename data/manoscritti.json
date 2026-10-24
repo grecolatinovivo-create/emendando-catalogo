@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-24T20:24:50.431Z",
+ "aggiornato": "2026-10-24T21:50:44.057Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -69,11 +69,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 205,
+   "codici": 254,
    "esito": "ok"
   }
  },
- "totale": 5877,
+ "totale": 5926,
  "manoscritti": [
   {
    "id": "bsb-bsb00034122",
@@ -39881,6 +39881,1676 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.816/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.816",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-862",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 862",
+   "datazione": "12.-15. Jh.",
+   "secolo": [
+    12,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "sallustio",
+     "autore": "Sallustio",
+     "latino": "Sallustius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Sallustius Crispus, Gaius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.862/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.862",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-872",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 872",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ab Urbe condita (Decas III)",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita",
+      "Deche"
+     ],
+     "corrispondenza": "autore: «Tito Livio»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.872/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.872",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-884",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 884",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Sallustius Crispus, Gaius ; Cicero, Marcus Tullius»"
+    },
+    {
+     "id": "sallustio",
+     "autore": "Sallustio",
+     "latino": "Sallustius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Sallustius Crispus, Gaius ; Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.884/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.884",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-891",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 891",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Opera",
+   "autori": [
+    {
+     "id": "sallustio",
+     "autore": "Sallustio",
+     "latino": "Sallustius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Sallustius Crispus, Gaius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.891/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.891",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-895",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 895",
+   "datazione": "sec. XIV ex",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Epitoma de Tito Livio; Ab urbe condita",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "autore: «Florus, Lucius Annaeus ; Livius, Titus»"
+    },
+    {
+     "id": "floro",
+     "autore": "Floro",
+     "latino": "Florus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epitoma de Tito Livio"
+     ],
+     "corrispondenza": "autore: «Florus, Lucius Annaeus ; Livius, Titus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.895/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.895",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-896",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 896",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Vitae Caesarum",
+   "autori": [
+    {
+     "id": "svetonio",
+     "autore": "Svetonio",
+     "latino": "Suetonius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Vite dei Cesari"
+     ],
+     "corrispondenza": "autore: «Suetonius Tranquillus, Gaius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.896/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.896",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-899",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 899",
+   "datazione": "sec. IX med",
+   "secolo": [
+    9,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Historia Augusta",
+   "autori": [
+    {
+     "id": "historia-augusta",
+     "autore": "Historia Augusta",
+     "latino": "Historia Augusta",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Historia Augusta»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.899/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.899",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-904",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 904",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Facta et dicta memorabilia",
+   "autori": [
+    {
+     "id": "valerio-massimo",
+     "autore": "Valerio Massimo",
+     "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Facta et dicta memorabilia"
+     ],
+     "corrispondenza": "autore: «Valerius <Maximus>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.904/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.904",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-908",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 908",
+   "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Facta et dicta memorabilia",
+   "autori": [
+    {
+     "id": "valerio-massimo",
+     "autore": "Valerio Massimo",
+     "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Facta et dicta memorabilia"
+     ],
+     "corrispondenza": "autore: «Valerius <Maximus>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.908/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.908",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-910",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 910",
+   "datazione": "14.-15. Jh.",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "catullo",
+     "autore": "Catullo",
+     "latino": "Catullus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Dares <Phrygius> ; Tibullus, Albius ; Ovidius Naso, Publius ; Catullus, Gaius Valerius»"
+    },
+    {
+     "id": "tibullo",
+     "autore": "Tibullo",
+     "latino": "Tibullus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Dares <Phrygius> ; Tibullus, Albius ; Ovidius Naso, Publius ; Catullus, Gaius Valerius»"
+    },
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Dares <Phrygius> ; Tibullus, Albius ; Ovidius Naso, Publius ; Catullus, Gaius Valerius»"
+    },
+    {
+     "id": "darete",
+     "autore": "Darete Frigio",
+     "latino": "Dares Phrygius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Dares <Phrygius> ; Tibullus, Albius ; Ovidius Naso, Publius ; Catullus, Gaius Valerius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.910/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.910",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-911",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 911",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Polybii historiarum libri V in latinum versi a Nicolao Perotto",
+   "autori": [
+    {
+     "id": "polibio",
+     "autore": "Polibio",
+     "latino": "Polybius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Polybii historiarum libri V in latinum versi a Nicolao Perotto»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.911/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.911",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-914",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 914",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Historiae Alexandri Magni",
+   "autori": [
+    {
+     "id": "curzio-rufo",
+     "autore": "Curzio Rufo",
+     "latino": "Curtius Rufus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Historiae Alexandri Magni"
+     ],
+     "corrispondenza": "autore: «Curtius Rufus, Quintus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.914/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.914",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-916",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 916",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Historiae Alexandri Magni",
+   "autori": [
+    {
+     "id": "curzio-rufo",
+     "autore": "Curzio Rufo",
+     "latino": "Curtius Rufus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Historiae Alexandri Magni"
+     ],
+     "corrispondenza": "autore: «Curtius Rufus, Quintus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.916/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.916",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-917",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 917",
+   "datazione": "Sec. XVI",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biografie di Pirro e Mario ",
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Plutarco»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.917/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.917",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-918",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 918",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Plutarchi vitae in latinum translatae",
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Vite parallele"
+     ],
+     "corrispondenza": "titolo: «Plutarchi vitae in latinum translatae»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.918/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.918",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-923",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 923",
+   "datazione": "15. Jh., nach 1418",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Fons memorabilium universi (Pars I-III) ; Antiquitates Judaicae, XVIII,6.",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Antichità giudaiche"
+     ],
+     "corrispondenza": "autore: «Dominicus Bandinus ; Josephus, Flavius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.923/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.923",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-926",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 926",
+   "datazione": "14. Jh. (nach 1364)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Romuleon sive Mare magnum historiarum ab urbe condita usque ad Constantium et Galerium imperatores",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "titolo: «…sive Mare magnum historiarum ab urbe condita usque ad Constantium et Galer…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.926/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.926",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-932",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 932",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Historia Pistoriensium sive Chronicon Pistoriense (ab urbe condita usque ad annum 1441)",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "titolo: «Historia Pistoriensium sive Chronicon Pistoriense (ab urbe condita usque ad annum 1441)»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.932/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.932",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-945",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 945",
+   "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "vegezio",
+     "autore": "Vegezio",
+     "latino": "Vegetius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Guido <de Columnis> ; Vegetius Renatus, Flavius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.945/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.945",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-959",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 959",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "frontino",
+     "autore": "Frontino",
+     "latino": "Frontinus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Beccadelli, Antonio ; Pius <II., Papa> ; Frontinus, Sextus Iulius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.959/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.959",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-974",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 974",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Bruni, Leonardo ; Plato»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.974/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.974",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-978",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 978",
+   "datazione": "13./14. Jh. (I) ; 15. Jh. (1499) (II)",
+   "secolo": [
+    1,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelband",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Albertus <Magnus> ; Plato ; Arnoldus <de Villa Nova>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.978/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.978",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-983",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 983",
+   "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Thomas <de Aquino> ; Albertus <de Orlamunda> ; Aristoteles»"
+    },
+    {
+     "id": "tommaso-aquino",
+     "autore": "Tommaso d'Aquino",
+     "latino": "Thomas de Aquino",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «Thomas <de Aquino> ; Albertus <de Orlamunda> ; Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.983/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.983",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-986",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 986",
+   "datazione": "Ende 13. Jh. ; 15. Jh.",
+   "secolo": [
+    13,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Thomas <de Aquino> ; Aristoteles»"
+    },
+    {
+     "id": "tommaso-aquino",
+     "autore": "Tommaso d'Aquino",
+     "latino": "Thomas de Aquino",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «Thomas <de Aquino> ; Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.986/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.986",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-987",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 987",
+   "datazione": "Ende 13. Jh.",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Boethius, Anicius Manlius Severinus ; Aristoteles»"
+    },
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Boethius, Anicius Manlius Severinus ; Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.987/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.987",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-988",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 988",
+   "datazione": "Ende 13. Jh.",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Boethius, Anicius Manlius Severinus ; Aristoteles»"
+    },
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Boethius, Anicius Manlius Severinus ; Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.988/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.988",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-989",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 989",
+   "datazione": "13./14. Jh.",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Boethius, Anicius Manlius Severinus ; Aristoteles»"
+    },
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Boethius, Anicius Manlius Severinus ; Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.989/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.989",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-990",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 990",
+   "datazione": "sec. XV med",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Johannes <Argyropulus>; Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.990/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.990",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-992",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 992",
+   "datazione": "Ende 13. Jh.",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.992/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.992",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-995",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 995",
+   "datazione": "1456-57 ; Anfang 14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Petrus Hispanus ; Marsilius <de Ingen> ; Knab, Erhardus ; Aristoteles ; Thomas <de Aquino>»"
+    },
+    {
+     "id": "tommaso-aquino",
+     "autore": "Tommaso d'Aquino",
+     "latino": "Thomas de Aquino",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «Petrus Hispanus ; Marsilius <de Ingen> ; Knab, Erhardus ; Aristoteles ; Thomas <de Aquino>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.995/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.995",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-996",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 996",
+   "datazione": "1275",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles ; Boethius, Anicius Manlius Severinus»"
+    },
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles ; Boethius, Anicius Manlius Severinus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.996/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.996",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-997",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 997",
+   "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.997/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.997",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1006",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1006",
+   "datazione": "Ende 13. Jh.",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Analytica priora ; Analytica posteriora",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Organon"
+     ],
+     "corrispondenza": "autore: «Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1006/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1006",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1009",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1009",
+   "datazione": "um 1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Super Analytica posteriora Aristotelis",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Organon"
+     ],
+     "corrispondenza": "titolo: «Super Analytica posteriora Aristotelis»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1009/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1009",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1010",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1010",
+   "datazione": "Mitte 15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Super Analytica posteriora Aristotelis",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Organon"
+     ],
+     "corrispondenza": "autore: «Bruni, Leonardo ;  Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1010/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1010",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1011",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1011",
+   "datazione": "um 1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles ; Ps.-Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1011/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1011",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1012",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1012",
+   "datazione": "um 1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles ; Ps.-Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1012/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1012",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1013",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1013",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ethica Nicomachea",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Etica Nicomachea"
+     ],
+     "corrispondenza": "autore: «Bruni, Leonardo ; Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1013/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1013",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1014",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1014",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ethica Nicomachea",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Etica Nicomachea"
+     ],
+     "corrispondenza": "autore: «Bruni, Leonardo ; Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1014/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1014",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1015",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1015",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ethica Nicomachea ; Commentum in Ethica Nicomachea Aristotelis",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Etica Nicomachea"
+     ],
+     "corrispondenza": "autore: «Bruni, Leonardo ; Aristoteles ; Thomas <de Aquino>»"
+    },
+    {
+     "id": "tommaso-aquino",
+     "autore": "Tommaso d'Aquino",
+     "latino": "Thomas de Aquino",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «Bruni, Leonardo ; Aristoteles ; Thomas <de Aquino>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1015/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1015",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1016",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1016",
+   "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1016/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1016",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1017",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1017",
+   "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ethica Nicomachea",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Etica Nicomachea"
+     ],
+     "corrispondenza": "autore: «Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1017/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1017",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1020",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1020",
+   "datazione": " Mitte 15. Jh. (I) ; 1482 (II)",
+   "secolo": [
+    1,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ethica Nicomachea ; Commentum in Ethica Nicomachea Aristotelis",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Etica Nicomachea"
+     ],
+     "corrispondenza": "autore: «Aristoteles ; Gerardus Odonis»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1020/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1020",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1021",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1021",
+   "datazione": "1455-1459 und ca. 1473",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles ; Ps.-Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1021/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1021",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1029",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1029",
+   "datazione": "Mitte 15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Bruni, Leonardo ; Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1029/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1029",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1031",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1031",
+   "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Physica ; Metaphysica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica",
+      "Fisica"
+     ],
+     "corrispondenza": "autore: «Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1031/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1031",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1032",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1032",
+   "datazione": "15. Jh. (I) ; um 1387 (II)",
+   "secolo": [
+    1,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelband",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Petrus Dresdensis ;  Albertus de Orlamunda ; Aristoteles ;  Johannes de Erfordia»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1032/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1032",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1033",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1033",
+   "datazione": "Sec. XIV ",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Physica ; De Caelo I,1",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Fisica",
+      "De caelo"
+     ],
+     "corrispondenza": "autore: «Aristoteles ; Averroes»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1033/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1033",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1034",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1034",
+   "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1034/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1034",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },
