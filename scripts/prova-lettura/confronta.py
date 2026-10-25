@@ -25,6 +25,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from comune import chiavi, ngrammi, parole, parole_piene  # noqa: E402
 
 CODICI, LETTURE, INDICE, OUT = sys.argv[1:5]
+PRIMA = sys.argv[5] if len(sys.argv) > 5 else ""  # risultati di un'esecuzione precedente da conservare
 
 CONF_MIN = 0.80      # sotto: pagina «non leggibile»
 LATINO_MIN = 0.55    # quota di parole intere che sono latino noto (le pagine medievali lette bene: 0,65-0,90)
@@ -210,6 +211,21 @@ def main():
             sospetti.append({**row, "interesse": round(interesse, 3), "pagina": p.get("canvas"), "etichetta": p.get("etichetta", ""),
                              "immagine": p.get("immagine", ""), "confidenza": a["confidenza"], "quota_latina": a["quota_latina"],
                              "quota_netta": a.get("quota_netta"), "estratto": estratto(p), "pagina_web": c.get("pagina")})
+    # Unione con i risultati precedenti: si tengono i codici che questa esecuzione non ha riletto.
+    if PRIMA and os.path.exists(os.path.join(PRIMA, "risultati-codici.csv")):
+        nuovi = {r["id"] for r in codici_rows}
+        vecchi = [r for r in csv.DictReader(open(os.path.join(PRIMA, "risultati-codici.csv"))) if r["id"] not in nuovi]
+        if vecchi:
+            tenuti = {r["id"] for r in vecchi}
+            codici_rows += vecchi
+            pagine_rows += [r for r in csv.DictReader(open(os.path.join(PRIMA, "pagine.csv"))) if r["id"] in tenuti]
+            sospetti += [x for x in json.load(open(os.path.join(PRIMA, "sospetti.json"))) if x["id"] in tenuti]
+            letti += len(vecchi)
+            try:
+                secondi += json.load(open(os.path.join(PRIMA, "riepilogo.json"))).get("secondi_lettura", 0)
+            except (OSError, ValueError):
+                pass
+            print(f"uniti {len(vecchi)} codici dall'esecuzione precedente")
     sospetti.sort(key=lambda s: -s["interesse"])
 
     with open(os.path.join(OUT, "pagine.csv"), "w", newline="") as fh:

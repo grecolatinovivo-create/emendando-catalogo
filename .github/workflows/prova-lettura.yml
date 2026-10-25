@@ -20,6 +20,10 @@ on:
         description: "Salvare i risultati nel repository"
         type: boolean
         default: true
+      unisci:
+        description: "Tenere i risultati già salvati dei codici che questa esecuzione non rilegge (per ripetere un lotto)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -160,7 +164,7 @@ jobs:
       - name: Confronto e rapporto
         run: |
           mkdir -p risultati
-          python scripts/prova-lettura/confronta.py "$CODICI" letture indice/indice.npz risultati
+          python scripts/prova-lettura/confronta.py "$CODICI" letture indice/indice.npz risultati ${{ inputs.unisci && 'prove/lettura-2026-10' || '' }}
           python scripts/prova-lettura/rapporto.py "$CODICI" risultati tempi.json "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
       - uses: actions/upload-artifact@v4
         with:

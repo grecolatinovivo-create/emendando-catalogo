@@ -25,6 +25,7 @@ UA = "EmendandoCatalogo-ProvaLettura/0.1 (+https://github.com/grecolatinovivo-cr
 LARGHEZZA = 2000
 PAGINE_MAX = int(os.environ.get("PAGINE_MAX", "10"))
 PAUSA = 1.0
+ALTEZZA_MAX = 3200
 
 COPERTA = re.compile(r"einband|deckel|\bcover|binding|reliure|\bplat\b|\bplats\b|piatto|piatti|legatura|spine|rücken|ruecken|\bdos\b|schnitt|\bedge|farbkeil|colou?r ?(chart|checker|bar)|colorchecker|qp card|ruler|grey ?scale|gr[ae]ukeil|scala|ma(ss|ß)stab|\bboard|\bdorso|taglio|tranche|kapital|clasp|schließe|fermagli|target", re.I)
 GUARDIA = re.compile(r"vorsatz|flyleaf|fly-leaf|fly leaf|guard|guardia|garde|spiegel|paste-?down|contre-?plat|schutzbl", re.I)
@@ -155,7 +156,7 @@ def url_immagine(sid, larghezza, ver, dim=LARGHEZZA):
     if larghezza and int(larghezza) <= dim:
         dim_s = "max" if ver == 3 else "full"
     else:
-        dim_s = f"{dim},"
+        dim_s = f"!{dim},{ALTEZZA_MAX}"  # al massimo 2000 di larghezza e 3200 di altezza (rotoli e strisce lunghe)
     return f"{sid}/full/{dim_s}/0/default.jpg"
 
 
@@ -181,6 +182,8 @@ def _leggi(percorso):
         im.load()
         if im.mode not in ("RGB", "L"):
             im = im.convert("RGB")
+        if im.width > LARGHEZZA or im.height > ALTEZZA_MAX:  # protezione della memoria
+            im.thumbnail((LARGHEZZA, ALTEZZA_MAX))
         seg = blla.segment(im, model=_M["seg"])
         righe = []
         if seg.lines:
