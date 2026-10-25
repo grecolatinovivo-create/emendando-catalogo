@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T21:26:27.933Z",
+ "aggiornato": "2026-10-25T21:38:19.517Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -29,7 +29,7 @@
   },
   "gallica": {
    "nome": "Bibliothèque nationale de France (gallica.bnf.fr)",
-   "codici": 4670,
+   "codici": 4693,
    "esito": "ok"
   },
   "laurenziana": {
@@ -123,7 +123,7 @@
    "esito": "ok"
   }
  },
- "totale": 10189,
+ "totale": 10212,
  "manoscritti": [
   {
    "id": "akl-17669",
@@ -107980,6 +107980,469 @@
    "immagini": null
   },
   {
+   "id": "bnf-btv1b100150711",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque Carré d'art / Nîmes",
+   "citta": null,
+   "segnatura": "Ms_94_1",
+   "datazione": "1769-1775",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Manuscrits de la bibliothèque Carré d'art de Nîmes. Lettres reçues par Séguier contenant des observations sur quelques plantes et autres objets d'histoire naturelle. Lettres à Séguier.",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «…es plantes et autres objets d'histoire naturelle. Lettres à Séguier.»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b100150711/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b100150711",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b10015072g",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque Carré d'art / Nîmes",
+   "citta": null,
+   "segnatura": "Ms_94_2",
+   "datazione": "1774-1775",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Manuscrits de la bibliothèque Carré d'art de Nîmes. Lettres reçues par Séguier contenant des observations sur quelques plantes et autres objets d'histoire naturelle. Lettres à Séguier.",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «…es plantes et autres objets d'histoire naturelle. Lettres à Séguier.»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10015072g/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b10015072g",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b10015073x",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque Carré d'art / Nîmes",
+   "citta": null,
+   "segnatura": "Ms_94_3",
+   "datazione": "1774-1775",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Manuscrits de la bibliothèque Carré d'art de Nîmes. Lettres reçues par Séguier contenant des observations sur quelques plantes et autres objets d'histoire naturelle. Lettres à Séguier.",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «…es plantes et autres objets d'histoire naturelle. Lettres à Séguier.»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10015073x/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b10015073x",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b10015074c",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque Carré d'art / Nîmes",
+   "citta": null,
+   "segnatura": "Ms_94_4",
+   "datazione": "1774-1780",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Manuscrits de la bibliothèque Carré d'art de Nîmes. Lettres reçues par Séguier contenant des observations sur quelques plantes et autres objets d'histoire naturelle. Lettres à Séguier.",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «…es plantes et autres objets d'histoire naturelle. Lettres à Séguier.»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10015074c/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b10015074c",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b10015075t",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque Carré d'art / Nîmes",
+   "citta": null,
+   "segnatura": "Ms_94_5",
+   "datazione": "1751",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Manuscrits de la bibliothèque Carré d'art de Nîmes. Lettres reçues par Séguier contenant des observations sur quelques plantes et autres objets d'histoire naturelle. Lettres à Séguier.",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «…es plantes et autres objets d'histoire naturelle. Lettres à Séguier.»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10015075t/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b10015075t",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b100150768",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque Carré d'art / Nîmes",
+   "citta": null,
+   "segnatura": "Ms_94_6",
+   "datazione": "1781-1784",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Manuscrits de la bibliothèque Carré d'art de Nîmes. Lettres reçues par Séguier contenant des observations sur quelques plantes et autres objets d'histoire naturelle. Lettres à Séguier.",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «…es plantes et autres objets d'histoire naturelle. Lettres à Séguier.»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b100150768/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b100150768",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b10015077q",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque Carré d'art / Nîmes",
+   "citta": null,
+   "segnatura": "Ms_94_7",
+   "datazione": "1766-1772",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Manuscrits de la bibliothèque Carré d'art de Nîmes. Lettres reçues par Séguier contenant des observations sur quelques plantes et autres objets d'histoire naturelle. Lettres à Séguier.",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «…es plantes et autres objets d'histoire naturelle. Lettres à Séguier.»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10015077q/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b10015077q",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b100150785",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque Carré d'art / Nîmes",
+   "citta": null,
+   "segnatura": "Ms_94_8",
+   "datazione": "1768-1777",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Manuscrits de la bibliothèque Carré d'art de Nîmes. Lettres reçues par Séguier contenant des observations sur quelques plantes et autres objets d'histoire naturelle. Lettres à Séguier.",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «…es plantes et autres objets d'histoire naturelle. Lettres à Séguier.»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b100150785/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b100150785",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b10015079m",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque Carré d'art / Nîmes",
+   "citta": null,
+   "segnatura": "Ms_94_9",
+   "datazione": "1759-1767",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Manuscrits de la bibliothèque Carré d'art de Nîmes. Lettres reçues par Séguier contenant des observations sur quelques plantes et autres objets d'histoire naturelle. Lettres à Séguier.",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «…es plantes et autres objets d'histoire naturelle. Lettres à Séguier.»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10015079m/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b10015079m",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b100150800",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque Carré d'art / Nîmes",
+   "citta": null,
+   "segnatura": "Ms_94_10",
+   "datazione": "1774-1776",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Manuscrits de la bibliothèque Carré d'art de Nîmes. Lettres reçues par Séguier contenant des observations sur quelques plantes et autres objets d'histoire naturelle. Lettres à Séguier.",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «…es plantes et autres objets d'histoire naturelle. Lettres à Séguier.»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b100150800/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b100150800",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b10015081f",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque Carré d'art / Nîmes",
+   "citta": null,
+   "segnatura": "Ms_94_11",
+   "datazione": "1779-1780",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "fr",
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Manuscrits de la bibliothèque Carré d'art de Nîmes. Lettres reçues par Séguier contenant des observations sur quelques plantes et autres objets d'histoire naturelle. Lettres à Séguier.",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «…es plantes et autres objets d'histoire naturelle. Lettres à Séguier.»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10015081f/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b10015081f",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b10015082w",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque Carré d'art / Nîmes",
+   "citta": null,
+   "segnatura": "Ms_94_12",
+   "datazione": "1770-1777",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Manuscrits de la bibliothèque Carré d'art de Nîmes. Lettres reçues par Séguier contenant des observations sur quelques plantes et autres objets d'histoire naturelle. Lettres à Séguier.",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «…es plantes et autres objets d'histoire naturelle. Lettres à Séguier.»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10015082w/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b10015082w",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b10015083b",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque Carré d'art / Nîmes",
+   "citta": null,
+   "segnatura": "Ms_94_13",
+   "datazione": "1770-1777",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Manuscrits de la bibliothèque Carré d'art de Nîmes. Lettres reçues par Séguier contenant des observations sur quelques plantes et autres objets d'histoire naturelle. Lettres à Séguier.",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «…es plantes et autres objets d'histoire naturelle. Lettres à Séguier.»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10015083b/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b10015083b",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b10015084s",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque Carré d'art / Nîmes",
+   "citta": null,
+   "segnatura": "Ms_94_14",
+   "datazione": "1765-1780",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Manuscrits de la bibliothèque Carré d'art de Nîmes. Lettres reçues par Séguier contenant des observations sur quelques plantes et autres objets d'histoire naturelle. Lettres à Séguier.",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «…es plantes et autres objets d'histoire naturelle. Lettres à Séguier.»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10015084s/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b10015084s",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
    "id": "bnf-bd6t5267071j",
    "fonte": "gallica",
    "biblioteca": "Bibliothèque Carré d'art / Nîmes",
@@ -108067,6 +108530,68 @@
    ],
    "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bd6t5267083n/manifest.json",
    "pagina": "https://gallica.bnf.fr/ark:/12148/bd6t5267083n",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b10015007t",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque Carré d'art / Nîmes",
+   "citta": null,
+   "segnatura": "Ms_141_25",
+   "datazione": "1759-1765",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Manuscrits de la bibliothèque Carré d'art de Nîmes. Lettres reçues par Séguier. Lettres à Séguier.",
+   "autori": [
+    {
+     "id": "donato",
+     "autore": "Donato",
+     "latino": "Donatus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Donati, Sebastiano (1711-1787). Auteur de lettres»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10015007t/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b10015007t",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b10015280r",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque Carré d'art / Nîmes",
+   "citta": null,
+   "segnatura": "Ms_145_32",
+   "datazione": "1765-1769",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Manuscrits de la bibliothèque Carré d'art de Nîmes. Lettres reçues par Séguier. Lettres à Séguier.",
+   "autori": [
+    {
+     "id": "donato",
+     "autore": "Donato",
+     "latino": "Donatus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Nobili, Ippolito de. Auteur de lettres ; Donati, Sebastiano (1711-1787). Auteur de lettres»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10015280r/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b10015280r",
    "licenza": "Domaine public (Gallica, conditions d'utilisation)",
    "immagini": null
   },
@@ -108338,6 +108863,39 @@
    ],
    "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10015848z/manifest.json",
    "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b10015848z",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b10015852p",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque Carré d'art / Nîmes",
+   "citta": null,
+   "segnatura": "Ms_355_6",
+   "datazione": "1759",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Manuscrits de la bibliothèque Carré d'art de Nîmes. Mélanges d'astronomie et d'histoire naturelle. Lettres à Séguier.",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «…s. Mélanges d'astronomie et d'histoire naturelle. Lettres à Séguier.»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10015852p/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b10015852p",
    "licenza": "Domaine public (Gallica, conditions d'utilisation)",
    "immagini": null
   },
@@ -110889,6 +111447,46 @@
    "immagini": null
   },
   {
+   "id": "bnf-btv1b525091393",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque de l'Arsenal (BnF)",
+   "citta": "Paris",
+   "segnatura": "Ms-1086",
+   "datazione": "1101-1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la",
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Lettres de Sénèque",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Sénèque. Auteur du texte ; Jérôme (Sa…»"
+    },
+    {
+     "id": "girolamo",
+     "autore": "Girolamo",
+     "latino": "Hieronymus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «Sénèque. Auteur du texte ; Jérôme (Saint). Auteur du texte ; Pa…»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525091393/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b525091393",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
    "id": "bnf-btv1b525118164",
    "fonte": "gallica",
    "biblioteca": "Bibliothèque de l'Arsenal (BnF)",
@@ -112731,6 +113329,68 @@
    ],
    "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b550128640/manifest.json",
    "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b550128640",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b52518260n",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque de l'Arsenal (BnF)",
+   "citta": "Paris",
+   "segnatura": "Ms-15078 (2)",
+   "datazione": "1701-1900",
+   "secolo": [
+    18,
+    19
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Papiers de Louis-Sébastien Mercier. I. Documents biographiques et correspondance. Correspondance et papiers. Lettres écrites par Louis-Sébastien Mercier ou reçues par Louis-Sébastien Mercier.",
+   "autori": [
+    {
+     "id": "varrone",
+     "autore": "Varrone",
+     "latino": "Varro",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…a Berlière. Auteur du texte ; Varron. Auteur du texte ; Villers (C…»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52518260n/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b52518260n",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b525181608",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque de l'Arsenal (BnF)",
+   "citta": "Paris",
+   "segnatura": "Ms-15078 (3)",
+   "datazione": "1701-1900",
+   "secolo": [
+    18,
+    19
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Papiers de Louis-Sébastien Mercier. I. Documents biographiques et correspondance. Correspondance et papiers. Papiers de Louis-Sébastien Mercier",
+   "autori": [
+    {
+     "id": "varrone",
+     "autore": "Varrone",
+     "latino": "Varro",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…a Berlière. Auteur du texte ; Varron. Auteur du texte ; Villers (C…»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525181608/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b525181608",
    "licenza": "Domaine public (Gallica, conditions d'utilisation)",
    "immagini": null
   },
@@ -135390,6 +136050,49 @@
    ],
    "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9061269z/manifest.json",
    "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b9061269z",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b9061192v",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque nationale de France",
+   "citta": "Paris",
+   "segnatura": "Français 13059",
+   "datazione": "1501-1700",
+   "secolo": [
+    16,
+    17
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Correspondance et papiers politiques et astronomiques d'Ismaël BOULLIAU (1605-1694). XLI Tables chronologiques : années et mois des Arabes et des Juifs. — Extraits et fragments de mss. grecs : « Ex Josephi historia de bello Judaico », copie du XVIe siècle (fol. 37) ; — Chronologie des Évangiles, etc. (fol. 53).",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Guerra giudaica"
+     ],
+     "corrispondenza": "titolo: «…grecs : « Ex Josephi historia de bello Judaico », copie du XVIe siècle (fol.…»"
+    },
+    {
+     "id": "bibbia",
+     "autore": "Bibbia",
+     "latino": "Biblia",
+     "categoria": "cristiano",
+     "opere": [
+      "Vangeli"
+     ],
+     "corrispondenza": "titolo: «…(fol. 37) ; — Chronologie des Évangiles, etc. (fol. 53).»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9061192v/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b9061192v",
    "licenza": "Domaine public (Gallica, conditions d'utilisation)",
    "immagini": null
   },
@@ -190775,6 +191478,68 @@
    ],
    "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b100338248/manifest.json",
    "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b100338248",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b10033401k",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque nationale de France",
+   "citta": "Paris",
+   "segnatura": "italien 2135",
+   "datazione": "1701-1800",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Lettres originales de Pasquale Paoli, adressées à Orazio Quenza (1767-1796).",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Lettres originales de Pasquale Paoli, adressées à Orazio Quenza (1767-1796).»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10033401k/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b10033401k",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b10033564s",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque nationale de France",
+   "citta": "Paris",
+   "segnatura": "italien 2228",
+   "datazione": "1506-1562",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "[Correspondance adressée à Michel-Ange].",
+   "autori": [
+    {
+     "id": "donato",
+     "autore": "Donato",
+     "latino": "Donatus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…rio. Auteur du texte ; Benti, Donato. Auteur du texte ; Bertini, D…»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10033564s/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b10033564s",
    "licenza": "Domaine public (Gallica, conditions d'utilisation)",
    "immagini": null
   },

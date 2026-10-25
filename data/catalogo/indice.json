@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-25T21:26:27.933Z",
- "totale": 362819,
- "con_autori": 22162,
+ "aggiornato": "2026-10-25T21:38:19.517Z",
+ "totale": 363160,
+ "con_autori": 22205,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
   "id",
@@ -25,23 +25,23 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 47144
+   "codici": 47172
   },
   "fr": {
    "nome": "francese",
-   "codici": 24760
+   "codici": 25061
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 18829
+   "codici": 18832
   },
   "de": {
    "nome": "tedesco",
-   "codici": 16608
+   "codici": 16609
   },
   "ar": {
    "nome": "arabo",
-   "codici": 14170
+   "codici": 14171
   },
   "grc": {
    "nome": "greco",
@@ -49,7 +49,7 @@
   },
   "zh": {
    "nome": "cinese",
-   "codici": 11610
+   "codici": 11618
   },
   "xx": {
    "nome": "altre lingue",
@@ -73,11 +73,11 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 4034
+   "codici": 4061
   },
   "fa": {
    "nome": "persiano",
-   "codici": 2026
+   "codici": 2027
   },
   "cop": {
    "nome": "copto",
@@ -85,11 +85,11 @@
   },
   "tr": {
    "nome": "turco",
-   "codici": 1560
+   "codici": 1564
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 1057
+   "codici": 1059
   },
   "gez": {
    "nome": "etiopico",
@@ -113,7 +113,7 @@
   },
   "ka": {
    "nome": "georgiano",
-   "codici": 263
+   "codici": 264
   },
   "ms": {
    "nome": "malese",
@@ -129,7 +129,7 @@
   },
   "pt": {
    "nome": "portoghese",
-   "codici": 128
+   "codici": 129
   },
   "ru": {
    "nome": "russo",
@@ -183,19 +183,19 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 5485
+   "codici": 5507
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 5126
+   "codici": 5127
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 11323
+   "codici": 11344
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 2444
+   "codici": 2445
   }
  },
  "autori": {
@@ -251,7 +251,7 @@
    "nome": "Orazio",
    "latino": "Horatius",
    "categoria": "classico-latino",
-   "codici": 229
+   "codici": 230
   },
   "tibullo": {
    "nome": "Tibullo",
@@ -281,7 +281,7 @@
    "nome": "Seneca",
    "latino": "Seneca",
    "categoria": "classico-latino",
-   "codici": 386
+   "codici": 387
   },
   "lucano": {
    "nome": "Lucano",
@@ -317,7 +317,7 @@
    "nome": "Plinio il Vecchio",
    "latino": "Plinius maior",
    "categoria": "classico-latino",
-   "codici": 130
+   "codici": 145
   },
   "plinio-giovane": {
    "nome": "Plinio il Giovane",
@@ -371,7 +371,7 @@
    "nome": "Donato",
    "latino": "Donatus",
    "categoria": "classico-latino",
-   "codici": 140
+   "codici": 143
   },
   "servio": {
    "nome": "Servio",
@@ -443,7 +443,7 @@
    "nome": "Varrone",
    "latino": "Varro",
    "categoria": "classico-latino",
-   "codici": 30
+   "codici": 32
   },
   "vitruvio": {
    "nome": "Vitruvio",
@@ -1085,7 +1085,7 @@
    "nome": "Flavio Giuseppe",
    "latino": "Flavius Iosephus",
    "categoria": "classico-greco",
-   "codici": 212
+   "codici": 213
   },
   "diogene-laerzio": {
    "nome": "Diogene Laerzio",
@@ -1127,13 +1127,13 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 2434
+   "codici": 2446
   },
   "girolamo": {
    "nome": "Girolamo",
    "latino": "Hieronymus",
    "categoria": "cristiano",
-   "codici": 1162
+   "codici": 1165
   },
   "ambrogio": {
    "nome": "Ambrogio",
@@ -1145,7 +1145,7 @@
    "nome": "Gregorio Magno",
    "latino": "Gregorius Magnus",
    "categoria": "cristiano",
-   "codici": 775
+   "codici": 776
   },
   "basilio": {
    "nome": "Basilio Magno",
@@ -1169,7 +1169,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 4929
+   "codici": 4933
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1241,7 +1241,7 @@
    "nome": "Atanasio",
    "latino": "Athanasius",
    "categoria": "cristiano",
-   "codici": 331
+   "codici": 332
   },
   "gregorio-nisseno": {
    "nome": "Gregorio di Nissa",
@@ -1295,7 +1295,7 @@
    "nome": "Pietro Lombardo",
    "latino": "Petrus Lombardus",
    "categoria": "medievale",
-   "codici": 247
+   "codici": 248
   },
   "tommaso-aquino": {
    "nome": "Tommaso d'Aquino",
@@ -2446,37 +2446,37 @@
   },
   "gallica": {
    "nome": "Bibliothèque nationale de France (gallica.bnf.fr)",
-   "codici": 83857,
-   "con_autori": 10168,
+   "codici": 84198,
+   "con_autori": 10211,
    "lingue": {
-    "fr": 22270,
-    "la": 15304,
+    "fr": 22571,
+    "la": 15332,
     "grc": 4569,
-    "?": 4618,
+    "?": 4621,
     "he": 2845,
     "syr": 524,
-    "ar": 8646,
+    "ar": 8647,
     "oc": 161,
-    "it": 1155,
-    "es": 471,
+    "it": 1182,
+    "es": 473,
     "en": 205,
     "xx": 3828,
     "ca": 76,
-    "zh": 8276,
+    "zh": 8284,
     "nl": 84,
-    "tr": 1243,
-    "de": 523,
+    "tr": 1247,
+    "de": 524,
     "ru": 51,
-    "fa": 1469,
+    "fa": 1470,
     "cs": 4,
-    "pt": 84,
+    "pt": 85,
     "ko": 784,
     "gez": 854,
     "cop": 230,
     "ja": 555,
     "bo": 6272,
     "sa": 1341,
-    "ka": 44,
+    "ka": 45,
     "jv": 16,
     "hy": 211,
     "ms": 163,
@@ -2491,7 +2491,7 @@
    "prefissi": [
     "bnf-"
    ],
-   "pezzi_voci": 105,
+   "pezzi_voci": 106,
    "indice": [
     "indice/gallica-0.json",
     "indice/gallica-1.json",
@@ -3034,7 +3034,7 @@
   {
    "file": "indice/gallica-4.json",
    "fonte": "gallica",
-   "righe": 3857
+   "righe": 4198
   },
   {
    "file": "indice/laurenziana-0.json",

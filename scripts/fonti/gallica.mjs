@@ -14,6 +14,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { scarica, statoFonte, tag, log } from "../rete.mjs";
 import { lingueDa } from "../lingue.mjs";
+import { caricaAutori, riconosci } from "../riconosci.mjs";
 
 export const CARTELLA_BROWSER = "data";
 export const RACCOLTA_BROWSER = "data/gallica.json";
@@ -164,6 +165,36 @@ const EPISTOLARIO = /(?:^|[.;:\]] )\s*\[?lettres (?:de |d')/i;
 // «Lettres de Juliette Drouet à Victor Hugo»: carteggio anche nei fondi della BnF
 const CARTEGGIO = /(?:^|[.;:\]] )\s*\[?lettres (?:de |d')[^.;]{1,80}? (?:à|au|aux) /i;
 const DM = /D[ée]partement des manuscrits/i;
+// Epistolari d'autore copiati in codici: un titolo da lettera ENTRA se (a) il catalogo riconosce un autore (classici, patristici...),
+// (b) è in un fondo di codici della BnF, (c) è datato prima del 1600, (d) indica una raccolta (epistolae, epistolarium; «Lettres de X»
+// al plurale con un autore antico o medievale). Restano sempre fuori le lettere singole autografe e le raccolte di autografi.
+const FONDI_CODICI = /D[ée]partement des manuscrits[.,]?\s*(?:Latin|Nouvelle acquisition latine|NAL|Grec|Suppl[ée]ment (?:grec|turc|persan)|Coislin|Fran[çc]ais|Italien|Espagnol|Portugais|Allemand|Anglais|N[ée]erlandais|Slave|H[ée]breu|Samaritain|Syriaque|Arabe|Persan|Turc|Arm[ée]nien|G[ée]orgien|Copte|[ÉE]thiopien|Sanscrit|Chinois|Japonais|Cor[ée]en|Celtique et basque)\s+\d/i;
+const AUTOGRAFO = /autographe|\bune lettre\b|\b\d+ lettres?\b|signature|cartes? (?:postales?|de visite)|billets?\b/i;
+const RACCOLTA = /\bepist(?:o|u)l(?:ae|arum|arium|as)\b|\bepistolari/i;
+let AUTORI = null;
+const autoreRiconosciuto = o => {
+  try { AUTORI = AUTORI || caricaAutori(); } catch (e) { return false; }
+  // solo autore e titolo proprio: nelle descrizioni delle carte moderne si citano spesso autori antichi
+  return riconosci([{ campo: "autore", testo: [].concat(o.c || []).join(" ; "), forte: true }, { campo: "titolo", testo: String(o.t || "").split(" ; ")[0], forte: true }], AUTORI).length > 0;
+};
+// anni degli autori (dc:creator: «Sénèque (0004?-0065)»): il primo, se c'è
+const annoAutore = o => Math.min(...[].concat(o.c || []).flatMap(c => [...String(c).matchAll(/\((\d{3,4})\??-/g)].map(m => +m[1])), 9999);
+// primo anno della datazione: «1401-1500» -> 1401, «0901-1000» -> 901, «176?» e «184» -> 1760 e 1840, «17..-18..» -> 1700; 9999 se non c'è
+export function primoAnno(d) {
+  const m = /(\d{3,4})([?.x]*)/i.exec(String(d || ""));
+  if (!m) return 9999;
+  return m[1].length === 3 ? +m[1] * 10 : +m[1];   // Gallica scrive gli anni a 4 cifre («0901»): 3 cifre sono un decennio («184.»)
+}
+export function epistolarioCodice(o, t1, s, anno) {
+  if (AUTOGRAFO.test(t1)) return false;
+  if (FONDI_CODICI.test(s) && anno < 1800) return true;                       // (b) (non i carteggi moderni: «Lettres de Mary Robinson», Anglais 243)
+  if (anno < 1600) return true;                                               // (c)
+  if (RACCOLTA.test(o.t || "") || RACCOLTA.test(o.x || "")) return true;      // (d) epistolae, epistolarium
+  if (EPISTOLARIO.test(t1) && !CARTEGGIO.test(t1) && annoAutore(o) < 1500) return true;   // (d) «Lettres de X», autore antico o medievale
+  // (a) non per le carte moderne (datate dal 1800 o senza data, NAF): «Ollivier, Démosthène», «Horace de Montègre» sono omonimi
+  // e non per una lettera singola («Lettre de M. Leoni à la comtesse d'Albany»)
+  return anno < 1800 && !/(?:^|[.;:\]] )\s*\[?lettre\b/i.test(t1) && !/\bNAF\b|nouvelles acquisitions fran/i.test(s) && autoreRiconosciuto(o);
+}
 const GIORNO = /^(?:\d{8}|\d{4}-\d{2}-\d{2})$/;   // data al giorno («18701003», «1834-06-24»): lettere e atti, non codici
 
 // motivo per cui una scheda resta fuori (null = ammessa)
@@ -180,10 +211,9 @@ export function motivoGallica(o) {
   if (/^\[?Monnaie\b/i.test(t)) return "monete, oggetti e registri del Cabinet des médailles";
   // titolo proprio (prima di « ; »: dopo vengono i contenuti dei codici miscellanei); «Lettres de s. Bernard» è un epistolario, non una lettera
   const t1 = t.split(" ; ")[0];
-  if (LETTERE.test(t1)) return "lettere e autografi";
-  // (un codice medievale di epistole, «Lettres de Sénèque à Lucilius», resta)
-  const anno = +((/\d{3,4}/.exec(String(o.d || "")) || [])[0] || 9999);
-  if (CARTEGGIO.test(t1) && (anno >= 1500 || !DM.test(s)) || EPISTOLARIO.test(t1) && !DM.test(s)) return "lettere e autografi";
+  const anno = primoAnno(o.d);
+  // titolo da lettera: fuori, salvo gli epistolari d'autore copiati in codici (epistolarioCodice)
+  if ((LETTERE.test(t1) || CARTEGGIO.test(t1) || EPISTOLARIO.test(t1) && !DM.test(s)) && !epistolarioCodice(o, t1, s, anno)) return "lettere e autografi";
   if (DOCUMENTI.test(t1)) return "documenti e carte d'archivio";
   if (MODERNO.test(t1)) return "fotografie, disegni, stampe e oggetti";
   // (nei fondi di codici della BnF la data al giorno è quella del colophon: «Liber regalis», Latin 6914, 12 gennaio 1485)

@@ -287,7 +287,10 @@ test("Gallica: filtro dei manoscritti librari e raccolta dal browser in parti", 
   const ms = ["manuscript", "manuscrit"], bnf = f => [`Bibliothèque nationale de France. Département des Manuscrits. ${f}`];
   // entrano: codici di ogni lingua ed epoca, anche datati al giorno dal colophon e gli epistolari medievali; le biblioteche partner col loro nome
   for (const o of [{ k: "a", y: ms, t: "Lettres de s. Bernard.", d: "1201-1300", s: bnf("Latin 14875") }, { k: "b", y: ms, t: "Liber regalis", d: "14850112", s: bnf("Latin 6914") },
-    { k: "c", y: ms, t: "[Ise monogatari]", s: bnf("Smith-Lesouëf japonais 165") }, { k: "d", y: ms, t: "Ovide moralisé", s: ["Bibliothèque municipale de Rouen. Ms O 4"] }]) assert.equal(motivoGallica(o), null, o.t);
+    { k: "c", y: ms, t: "[Ise monogatari]", s: bnf("Smith-Lesouëf japonais 165") },
+    // epistolari d'autore copiati in codici: entrano (autore riconosciuto, fondo di codici, data prima del 1600, raccolta)
+    { k: "s", y: ms, t: "Lettres de Sénèque", c: ["Sénèque. Auteur du texte"], d: "1101-1200", s: ["Bibliothèque nationale de France. Bibliothèque de l'Arsenal. Ms-1086"] },
+    { k: "t", y: ms, t: "Lettres de Clément IV.", d: "1601-1700", s: bnf("Latin 12458") }, { k: "u", y: ms, t: "Correspondance de Dom Luc D'ACHERY", d: "1601-1700", s: bnf("Français 17684") }, { k: "d", y: ms, t: "Ovide moralisé", s: ["Bibliothèque municipale de Rouen. Ms O 4"] }]) assert.equal(motivoGallica(o), null, o.t);
   assert.equal(recordGallica({ k: "d", y: ms, t: "Ovide moralisé", s: ["Bibliothèque municipale de Rouen. Ms O 4"] }).biblioteca, "Bibliothèque municipale de Rouen");
   assert.equal(recordGallica({ k: "e", y: ms, t: "Catalogue", s: ["Ms. 151"] }).biblioteca, "Bibliothèque nationale de France");
   // escono: archivi, lettere, atti, monete, fogli singoli, stampe
