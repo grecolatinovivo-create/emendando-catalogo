@@ -1,0 +1,28 @@
+# Corsia Vaticana: solo la Biblioteca Apostolica Vaticana, per tutto il tempo dell'esecuzione (circa 150 minuti),
+# un manifesto ogni 10 secondi come chiede il robots.txt della biblioteca (pausa in scripts/rete.mjs), mai richieste in parallelo.
+# Ruota: se ha lavorato almeno 30 minuti riparte subito da sola; quando tutti i codici sono letti le esecuzioni durano pochi
+# minuti e la ruota si ferma. Il cron ogni 3 ore è di riserva (riparte se un'esecuzione si è interrotta).
+# Gruppo di concurrency «raccolta-catalogo» (quello della vecchia raccolta unica): due raccolte della Vaticana non girano mai insieme.
+name: "Raccolta: corsia Vaticana"
+
+on:
+  schedule:
+    - cron: "10 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write   # per la ruota
+
+concurrency:
+  group: raccolta-catalogo
+  cancel-in-progress: false
+
+jobs:
+  corsia:
+    uses: ./.github/workflows/corsia.yml
+    with:
+      corsia: vaticana
+      fonti: vaticana
+      argomenti: --vaticana-minuti=160
+      flusso: raccolta-vaticana.yml

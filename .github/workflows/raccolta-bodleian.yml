@@ -1,0 +1,27 @@
+# Corsia Bodleian: solo la Bodleian (Oxford), a riprese finché non sono letti tutti i circa 10.600 manifesti
+# (un manifesto ogni 1,5 secondi circa, solo la parte iniziale con i metadati). Quando sono letti tutti, ogni esecuzione
+# controlla solo l'elenco della collezione e legge i manifesti nuovi: pochi minuti.
+# Ruota: se ha lavorato almeno 30 minuti riparte subito da sola, altrimenti si ferma. Cron di riserva una volta al giorno (04 UTC).
+name: "Raccolta: corsia Bodleian"
+
+on:
+  schedule:
+    - cron: "20 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write   # per la ruota
+
+concurrency:
+  group: raccolta-bodleian
+  cancel-in-progress: false
+
+jobs:
+  corsia:
+    uses: ./.github/workflows/corsia.yml
+    with:
+      corsia: bodleian
+      fonti: bodleian
+      argomenti: --bodleian-minuti=140
+      flusso: raccolta-bodleian.yml

@@ -1,131 +1,19 @@
-# Raccolta del catalogo dei manoscritti (tutti i manoscritti delle biblioteche agganciate, di ogni lingua): a ruota finché c'è lavoro, altrimenti ogni 3 ore.
-# La Vaticana (un manifesto ogni 10 secondi, come chiede il suo robots.txt) legge a ogni esecuzione i codici digitalizzati non ancora letti, dall'elenco
-# salvato in data/vaticana.json; Heidelberg (con gli indici delle miscellanee), e-codices, BSB, Berlino, Bodleian, Gallica, Laurenziana,
-# Leida, le biblioteche del Handschriftenportal (Wolfenbüttel, Bamberga, Karlsruhe, Stoccarda, Colonia, Lipsia) e Penn si interrogano una volta al giorno (esecuzione delle 03 UTC), ciascuna con un limite di tempo;
-# Yale (prima lettura di circa 8000 pagine OAI, poi solo i record cambiati ogni 6 giorni) avanza 15 minuti a ogni esecuzione; la Vaticana usa il resto.
-# Le fonti non interrogate si ricostruiscono dagli stati salvati, senza richieste. Il catalogo è diviso per fonte in data/catalogo/
-# (indice leggero e voci complete); data/manoscritti.json resta per compatibilità. Commit dei dati solo se cambiano.
-name: Raccolta del catalogo
+# Vecchio nome della raccolta unica (fino al 25 ottobre 2026), ora divisa in corsie parallele: raccolta-vaticana.yml,
+# raccolta-yale.yml, raccolta-bodleian.yml, raccolta-giornaliera.yml (vedi il README). Questo file resta solo perché
+# l'ultima esecuzione della vecchia raccolta, alla fine, riavvia «raccolta.yml»: qui si passa la mano alla corsia Vaticana.
+# Nessun orario: non parte mai da solo. Si può cancellare quando la vecchia raccolta non è più in corso.
+name: Raccolta del catalogo (vecchio nome)
 
 on:
-  schedule:
-    - cron: "0 */3 * * *"
   workflow_dispatch:
-    inputs:
-      fonti:
-        description: "Fonti da interrogare, separate da virgola (auto = Vaticana sempre, le altre solo alle 03 UTC)"
-        default: "auto"
-      vaticana_minuti:
-        description: "Minuti massimi dedicati alla Vaticana"
-        default: "160"
 
 permissions:
-  contents: write
-  actions: write   # per far ripartire la raccolta appena finisce (vedi l'ultimo passo)
-
-concurrency:
-  group: raccolta-catalogo
-  cancel-in-progress: false
+  actions: write
 
 jobs:
-  raccolta:
+  passa-la-mano:
     runs-on: ubuntu-latest
-    timeout-minutes: 170
     steps:
-      - run: echo "INIZIO_RACCOLTA=$(date +%s)" >> "$GITHUB_ENV"
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-      # stato delle raccolte OAI: permette di riprendere una raccolta interrotta e di riusarla per 6 giorni
-      - uses: actions/cache@v4
-        with:
-          path: .cache/catalogo
-          key: catalogo-${{ github.run_id }}
-          restore-keys: catalogo-
-      - name: Scelta delle fonti
-        id: fonti
-        run: |
-          F="${{ inputs.fonti || 'auto' }}"
-          if [ "$F" = "auto" ]; then
-            ORA=$((10#$(date -u +%H)))
-            # finestra 03-05 UTC: comprende l'esecuzione delle 03 anche se GitHub la avvia in ritardo
-            if [ "$ORA" -ge 3 ] && [ "$ORA" -lt 6 ]; then F="heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,yale,penn,vaticana"; else F="yale,vaticana"; fi
-          fi
-          echo "Fonti: $F"
-          echo "fonti=$F" >> "$GITHUB_OUTPUT"
-      - name: Raccolta
-        run: >
-          node scripts/raccogli.mjs
-          --fonti="${{ steps.fonti.outputs.fonti }}"
-          --vaticana-minuti="${{ inputs.vaticana_minuti || '160' }}"
-          --oai-minuti=40
-          --indici-minuti=20
-          --bodleian-minuti=45
-          --gallica-minuti=25
-          --laurenziana-minuti=15
-          --leiden-minuti=15
-          --hsp-minuti=10
-          --yale-minuti=15
-          --penn-minuti=10
-          --berlino-minuti=60
-          --minuti-totali=150
-      - name: Prove del catalogo
-        run: node --test tests/catalogo.test.js
-      # Salvataggio a prova di conflitto: niente rebase sui file generati. Si mettono da parte gli stati delle fonti
-      # raccolte in questa esecuzione, si riparte dal main remoto, si rimettono solo quegli stati e si rigenerano
-      # catalogo e registro senza rifare le raccolte (--solo-costruisci). Fino a 5 tentativi.
-      # Gli altri file (data/gallica.json raccolto dal browser, data/autori.json, ecc.) restano quelli del remoto.
-      - name: Commit se i dati sono cambiati
-        env:
-          FONTI: ${{ steps.fonti.outputs.fonti }}
-        run: |
-          git config user.name "emendando-catalogo-bot"
-          git config user.email "emendando-catalogo-bot@users.noreply.github.com"
-          if [ -z "$(git status --porcelain -- data/ docs/BIBLIOTECHE.md)" ]; then echo "Nessuna modifica"; exit 0; fi
-          DA_PARTE="$RUNNER_TEMP/stati"; mkdir -p "$DA_PARTE"
-          STATI=""
-          for f in ${FONTI//,/ }; do
-            case "$f" in
-              vaticana) s=data/vaticana.json ;;
-              bodleian) s=data/bodleian.json ;;
-              heidelberg) s=data/heidelberg-indici.json ;;
-              laurenziana) s=data/laurenziana.json ;;
-              leiden) s=data/leiden.json ;;
-              wolfenbuettel|bamberga|karlsruhe|stoccarda|colonia|lipsia) s=data/$f.json ;;   # Handschriftenportal
-              yale|penn) s=data/$f.json ;;
-              *) s="" ;;   # e-codices, BSB, Berlino: stato in .cache (fuori da git); Gallica: dati del browser
-            esac
-            if [ -n "$s" ] && [ -f "$s" ]; then cp "$s" "$DA_PARTE/"; STATI="$STATI $s"; fi
-          done
-          cp data/raccolte.json "$DA_PARTE/raccolte.json" 2>/dev/null || true
-          echo "Stati di questa esecuzione:$STATI"
-          for i in 1 2 3 4 5; do
-            git fetch origin main && git reset --hard origin/main
-            for s in $STATI; do cp "$DA_PARTE/$(basename "$s")" "$s"; done
-            # esiti delle raccolte: si aggiornano solo le fonti di questa esecuzione
-            if [ -f "$DA_PARTE/raccolte.json" ]; then
-              node -e 'const fs=require("fs");const n=JSON.parse(fs.readFileSync(process.argv[1],"utf8"));let r={};try{r=JSON.parse(fs.readFileSync("data/raccolte.json","utf8"))}catch(e){}
-                for(const f of process.argv[2].split(","))if(n[f])r[f]=n[f];
-                fs.writeFileSync("data/raccolte.json",JSON.stringify(Object.fromEntries(Object.entries(r).sort()),null,1)+"\n")' "$DA_PARTE/raccolte.json" "$FONTI"
-            fi
-            node scripts/raccogli.mjs --solo-costruisci
-            git add data/ docs/BIBLIOTECHE.md
-            if git diff --cached --quiet; then echo "Nessuna modifica rispetto al remoto"; exit 0; fi
-            git commit -q -m "Catalogo: aggiornamento $(date -u '+%Y-%m-%d %H:%M') UTC"
-            if git push origin HEAD:main; then exit 0; fi
-            echo "Push respinto (tentativo $i): riparto dal remoto"; sleep $((i * 15))
-          done
-          exit 1
-      # Raccolte a ruota: se l'esecuzione ha lavorato davvero (almeno 30 minuti, cioè c'erano codici da leggere),
-      # la successiva parte subito invece di aspettare l'orario. Il cron ogni 3 ore resta come riserva e la
-      # concurrency impedisce due raccolte insieme. Quando la Vaticana e Yale sono finite le esecuzioni durano
-      # pochi minuti e la ruota si ferma da sola.
-      - name: Avvio della raccolta successiva
-        if: success() && github.ref == 'refs/heads/main'
-        env:
+      - env:
           GH_TOKEN: ${{ github.token }}
-        run: |
-          DURATA=$(( $(date +%s) - INIZIO_RACCOLTA ))
-          echo "Durata: $((DURATA / 60)) minuti"
-          if [ "$DURATA" -ge 1800 ]; then gh workflow run raccolta.yml --ref main -R "$GITHUB_REPOSITORY" && echo "Raccolta successiva avviata"; else echo "Poco lavoro: si aspetta l'orario"; fi
+        run: gh workflow run raccolta-vaticana.yml --ref main -R "$GITHUB_REPOSITORY" && echo "Avviata la corsia Vaticana"

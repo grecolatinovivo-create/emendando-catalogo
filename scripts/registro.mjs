@@ -18,25 +18,32 @@ export const BIBLIOTECHE = {
   ecodices: { biblioteca: "e-codices (biblioteche svizzere: San Gallo, Einsiedeln, Bodmer e altre)", citta: "Svizzera", come: "ogni notte, da sola" },
   bsb: { biblioteca: "Bayerische Staatsbibliothek", citta: "Monaco di Baviera", come: "ogni notte, da sola" },
   berlino: { biblioteca: "Staatsbibliothek zu Berlin", citta: "Berlino", come: "ogni notte, da sola" },
-  bodleian: { biblioteca: "Bodleian Libraries e college", citta: "Oxford", come: "ogni notte, da sola" },
+  bodleian: { biblioteca: "Bodleian Libraries e college", citta: "Oxford", come: "corsia propria: a ruota finché non sono letti tutti, poi ogni notte" },
   gallica: { biblioteca: "Bibliothèque nationale de France (Gallica)", citta: "Parigi", come: "va rifatta a mano dal browser" },
   laurenziana: { biblioteca: "Biblioteca Medicea Laurenziana", citta: "Firenze", come: "ogni notte, da sola" },
   leiden: { biblioteca: "Universiteitsbibliotheek Leiden (manoscritti, con i Vossiani; Bibliotheca Neerlandica Manuscripta)", citta: "Leida", come: "ogni notte, da sola" },
   // biblioteche lette dal Handschriftenportal (Wolfenbüttel, Bamberga, Karlsruhe, Stoccarda, Colonia, Lipsia)
   ...Object.fromEntries(Object.entries(FONTI_HSP).map(([f, h]) => [f, { biblioteca: `${h.nome} (dati dal Handschriftenportal)`, citta: h.citta, come: "ogni notte, da sola" }])),
-  yale: { biblioteca: "Yale University Library (Beinecke e altre biblioteche di Yale)", citta: "New Haven (Stati Uniti)", come: "ogni 3 ore finché la prima lettura non è finita, poi ogni 6 giorni" },
+  yale: { biblioteca: "Yale University Library (Beinecke e altre biblioteche di Yale)", citta: "New Haven (Stati Uniti)", come: "corsia propria: a ruota finché la prima lettura non è finita, poi ogni 6 giorni" },
   penn: { biblioteca: "University of Pennsylvania Libraries (Kislak Center, Schoenberg, CAJS)", citta: "Filadelfia (Stati Uniti)", come: "ogni notte, da sola" },
-  vaticana: { biblioteca: "Biblioteca Apostolica Vaticana", citta: "Città del Vaticano", come: "ogni 3 ore, da sola" },
+  vaticana: { biblioteca: "Biblioteca Apostolica Vaticana", citta: "Città del Vaticano", come: "corsia propria: a ruota, senza pause tra un'esecuzione e l'altra" },
 };
 
 const leggi = f => { try { return JSON.parse(fs.readFileSync(f, "utf8")); } catch (e) { return null; } };
 const giorno = t => (t ? new Date(t).toISOString().slice(0, 10) : null);
 const num = n => Number(n || 0).toLocaleString("it-IT");
+// tempo che manca, in parole semplici: ore fino a due giorni, poi giorni
+export const durata = ore => (ore <= 48 ? `circa ${Math.max(1, Math.ceil(ore))} ${Math.ceil(ore) <= 1 ? "ora" : "ore"}` : `circa ${Math.ceil(ore / 24)} giorni`);
+// ritmi delle corsie a ruota (circa 150 minuti di lavoro ogni 165 minuti circa): Vaticana un manifesto ogni 10 secondi,
+// Yale una pagina OAI ogni 5 secondi circa, Bodleian un manifesto ogni 2,7 secondi circa
+export const ORARI = { vaticana: 330, yale: 640, bodleian: 1200 };   // al netto delle pause tra un'esecuzione e l'altra, per ora
 
 // avanzamento della lettura, in parole semplici, dagli stati delle raccolte
 export const AVANZAMENTO = {
   heidelberg: (det = {}) => {
     const c = leggi(path.join(CACHE, "stato-heidelberg.json")), i = leggi("data/heidelberg-indici.json");
+    // senza la cache delle raccolte OAI (corsie diverse dalla giornaliera) resta il testo precedente
+    if (!c) return { testo: null };
     const parti = [];
     if (c && c.versione === 2) parti.push(c.completato ? `schede lette tutte (${num(c.voci.length)})` : `schede: ${num(c.pagine)} pagine lette, in corso`);
     else if (c) parti.push("raccolta da rifare con tutti i manoscritti (alla prossima notte)");
@@ -49,9 +56,7 @@ export const AVANZAMENTO = {
   bodleian: () => {
     const s = leggi("data/bodleian.json"); if (!s) return { testo: "non ancora cominciata" };
     const letti = Object.keys(s.voci || {}).length, resto = Math.max(0, (s.totale_collezione || 0) - letti);
-    // circa 1000 manifesti per notte (45 minuti)
-    const notti = Math.ceil(resto / 1000);
-    return { testo: `${num(letti)} schede lette su ${num(s.totale_collezione)}${resto ? `; a riprese, ogni notte: mancano circa ${notti} ${notti === 1 ? "notte" : "notti"}` : ""}`, data: s.aggiornato };
+    return { testo: `${num(letti)} schede lette su ${num(s.totale_collezione)}${resto ? `; a riprese, a ruota: mancano ${durata(resto / ORARI.bodleian)}` : ""}`, data: s.aggiornato };
   },
   gallica: () => {
     const s = leggi("data/gallica.json"); if (!s) return { testo: "nessuna raccolta dal browser" };
@@ -74,10 +79,9 @@ export const AVANZAMENTO = {
     const n = Object.keys(s.voci || {}).length, pagine = Math.ceil((s.totale || 0) / 25);
     const pagina = Math.max(s.pagine || 0, s.sospeso ? +(/:(\d+)$/.exec(s.sospeso) || [0, 0])[1] / 25 : 0);
     if (s.coda && s.coda.length && !s.completato) {
-      // circa 1400 pagine al giorno (15 minuti a ogni esecuzione, 8 esecuzioni, una pagina ogni 5 secondi)
-      const giorni = Math.ceil(Math.max(0, pagine - pagina) / 1400);
+      const ore = Math.max(0, pagine - pagina) / ORARI.yale;
       const fase = s.coda[0] ? `lingue antiche e medievali (insiemi rimasti: ${s.coda.length - 1}), poi tutti i record` : `tutti i record, ${num(pagina)} pagine su circa ${num(pagine)}`;
-      return { testo: `prima lettura in corso: ${fase} (${num(n)} manoscritti finora); mancano circa ${giorni} ${giorni === 1 ? "giorno" : "giorni"}`, data: s.aggiornato };
+      return { testo: `prima lettura in corso: ${fase} (${num(n)} manoscritti finora); mancano ${durata(ore)}`, data: s.aggiornato };
     }
     if (s.coda && s.coda.length) return { testo: `aggiornamento in corso (${num(n)} manoscritti)`, data: s.aggiornato };
     return { testo: `record letti tutti (${num(n)} manoscritti); poi solo i record cambiati, ogni 6 giorni`, data: s.completato || s.aggiornato };
@@ -95,15 +99,15 @@ export const AVANZAMENTO = {
     const g = stimaVaticana(s);
     if (!g.manifesti) return { testo: `codici digitalizzati letti tutti (${num(n)} su ${num(s.elenco.totale)})`, data: s.aggiornato };
     return { testo: `${num(n)} codici letti su ${num(s.elenco.totale)} digitalizzati; ${g.fondo ? "fondo in corso: " + segnaturaLeggibile(g.fondo + ".").trim() + "; " : ""}` +
-      `restano circa ${num(g.manifesti)} manifesti da leggere, cioè circa ${g.giorni} giorni (un manifesto ogni 10 secondi, come chiede la biblioteca)`, data: s.aggiornato };
+      `restano circa ${num(g.manifesti)} manifesti da leggere, cioè ${durata(g.ore)} (un manifesto ogni 10 secondi, come chiede la biblioteca)`, data: s.aggiornato };
   },
 };
 
-// Vaticana: codici digitalizzati ancora da leggere (dall'elenco della biblioteca) e giorni che servono, a circa 6500 manifesti
-// al giorno (8 esecuzioni ogni 3 ore, di cui una divisa con le altre fonti)
+// Vaticana: codici digitalizzati ancora da leggere (dall'elenco della biblioteca) e tempo che serve, a circa 330 manifesti
+// all'ora (corsia propria a ruota: circa 7900 al giorno)
 export function stimaVaticana(s) {
   const d = daLeggere(s), p = d.segnature[0];
-  return { manifesti: d.totale, giorni: Math.ceil(d.totale / 6500), fondo: p ? Object.keys(s.elenco.fondi).filter(f => p.startsWith(f + ".")).sort((a, b) => b.length - a.length)[0] : null };
+  return { manifesti: d.totale, ore: d.totale / ORARI.vaticana, giorni: Math.ceil(d.totale / ORARI.vaticana / 24), fondo: p ? Object.keys(s.elenco.fondi).filter(f => p.startsWith(f + ".")).sort((a, b) => b.length - a.length)[0] : null };
 }
 
 // fonti lette a pagine con stato in data/<fonte>.json: { totale, cursore (pagina), completato, voci }
@@ -116,7 +120,8 @@ function aRiprese(file, perPagina) {
 
 function oai(fonte) {
   const c = leggi(path.join(CACHE, `stato-${fonte}.json`));
-  if (!c) return { testo: "schede lette tutte ogni 6 giorni" };
+  // senza la cache delle raccolte OAI (corsie diverse dalla giornaliera) resta il testo precedente
+  if (!c) return { testo: null };
   if (c.versione !== 2) return { testo: "raccolta da rifare con tutti i manoscritti (alla prossima notte)", data: c.aggiornato };
   return { testo: c.completato ? `schede lette tutte (${num(c.voci.length)} schede)` : `in corso: ${num(c.pagine)} pagine lette`, data: c.aggiornato };
 }
@@ -153,7 +158,14 @@ function lingueTesto(lf = {}) {
 }
 
 // tabella delle fonti agganciate (testo tra i segnaposto)
-export function tabella({ fonti, conteggio = {}, conAutori = {}, lingue = {}, dettagli = {} } = {}) {
+// celle della tabella già scritta, per biblioteca (per tenere l'avanzamento quando lo stato non è disponibile)
+export function righePrecedenti(doc = "") {
+  const m = {};
+  for (const r of doc.split("\n")) if (/^\| /.test(r) && !/^\| (Biblioteca|---)/.test(r)) { const c = r.split(" | "); c[0] = c[0].replace(/^\| /, ""); m[c[0]] = c; }
+  return m;
+}
+
+export function tabella({ fonti, conteggio = {}, conAutori = {}, lingue = {}, dettagli = {}, precedenti = {} } = {}) {
   const r = leggi(FILE_RACCOLTE) || {};
   const righe = [
     "| Biblioteca | Città | Codici totali | Di cui con autori riconosciuti | Lingue | Avanzamento della lettura | Come si aggiorna | Ultimo aggiornamento | Ultima raccolta |",
@@ -163,6 +175,7 @@ export function tabella({ fonti, conteggio = {}, conAutori = {}, lingue = {}, de
   for (const f of fonti) {
     const b = BIBLIOTECHE[f] || { biblioteca: f, citta: "", come: "ogni notte, da sola" };
     const a = (AVANZAMENTO[f] || (() => ({ testo: "" })))(dettagli[f] || {});
+    if (a.testo == null) a.testo = (precedenti[b.biblioteca] || [])[5] || "schede lette ogni 6 giorni";
     let come = b.come;
     if (f === "gallica") { const g = leggi("data/gallica.json"); if (g) come += ` (ultima raccolta: ${giorno(g.raccolto)})`; }
     const e = r[f];
@@ -176,7 +189,8 @@ export function tabella({ fonti, conteggio = {}, conAutori = {}, lingue = {}, de
 export function scriviRegistro(opz) {
   let doc = ""; try { doc = fs.readFileSync(FILE_REGISTRO, "utf8"); } catch (e) {}
   if (!doc.includes(INIZIO) || !doc.includes(FINE)) doc = `# Biblioteche del catalogo\n\n## Agganciate\n\n${INIZIO}\n${FINE}\n` + (doc ? "\n" + doc : "");
-  const nuovo = doc.slice(0, doc.indexOf(INIZIO) + INIZIO.length) + "\n" + tabella(opz) + "\n" + doc.slice(doc.indexOf(FINE));
+  const vecchia = doc.slice(doc.indexOf(INIZIO), doc.indexOf(FINE));
+  const nuovo = doc.slice(0, doc.indexOf(INIZIO) + INIZIO.length) + "\n" + tabella({ ...opz, precedenti: righePrecedenti(vecchia) }) + "\n" + doc.slice(doc.indexOf(FINE));
   if (nuovo !== doc) { fs.mkdirSync(path.dirname(FILE_REGISTRO), { recursive: true }); fs.writeFileSync(FILE_REGISTRO, nuovo); return true; }
   return false;
 }

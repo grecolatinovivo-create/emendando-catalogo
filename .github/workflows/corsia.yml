@@ -1,0 +1,111 @@
+# Una «corsia» della raccolta del catalogo: il lavoro comune a tutte le corsie (raccolta, prove, salvataggio, ruota).
+# Non parte da sola: la chiamano i workflow delle corsie (raccolta-vaticana.yml, raccolta-yale.yml, raccolta-bodleian.yml,
+# raccolta-giornaliera.yml), che decidono quando partire, quali fonti leggere e il gruppo di concurrency.
+# Le corsie leggono biblioteche diverse (server diversi) e girano in parallelo; dentro una corsia le richieste restano in serie,
+# con le pause di sempre (10 secondi per la Vaticana), quindi nessuna biblioteca riceve più richieste di prima.
+# Salvataggio a prova di conflitto, anche con più corsie che salvano quasi insieme: si mettono da parte SOLO gli stati delle
+# fonti della corsia, si riparte dall'ultimo main, si rimettono quegli stati, si ricostruisce il catalogo senza richieste
+# (--solo-costruisci) e si prova a salvare; se un'altra corsia ha salvato prima, si aspetta un po' (a caso) e si rifà, fino a 8 volte.
+# Ruota: se la corsia ha lavorato almeno 30 minuti (c'era ancora lavoro), riparte subito da sola; altrimenti aspetta il suo orario.
+name: Corsia della raccolta (comune)
+
+on:
+  workflow_call:
+    inputs:
+      corsia:
+        description: "Nome della corsia (vaticana, yale, bodleian, giornaliera)"
+        type: string
+        required: true
+      fonti:
+        description: "Fonti lette da questa corsia, separate da virgola"
+        type: string
+        required: true
+      argomenti:
+        description: "Limiti di tempo per scripts/raccogli.mjs (es. --vaticana-minuti=160)"
+        type: string
+        default: ""
+      cache:
+        description: "Usa la cache delle Actions (.cache/catalogo: stati delle raccolte OAI); solo la corsia giornaliera ne ha bisogno"
+        type: boolean
+        default: false
+      ruota:
+        description: "Ripartire subito se l'esecuzione ha lavorato almeno 30 minuti"
+        type: boolean
+        default: true
+      flusso:
+        description: "File del workflow della corsia, per la ruota (es. raccolta-vaticana.yml)"
+        type: string
+        required: true
+
+jobs:
+  raccolta:
+    runs-on: ubuntu-latest
+    timeout-minutes: 170
+    steps:
+      - run: echo "INIZIO_RACCOLTA=$(date +%s)" >> "$GITHUB_ENV"
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # stati delle raccolte OAI (Heidelberg, e-codices, BSB, Berlino): chiave propria della corsia; la prima volta si riprende
+      # la cache della vecchia raccolta unica («catalogo-<numero>»). Le altre corsie non usano la cache: i loro stati sono in data/.
+      - if: inputs.cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/catalogo
+          key: catalogo-${{ inputs.corsia }}-${{ github.run_id }}
+          restore-keys: |
+            catalogo-${{ inputs.corsia }}-
+            catalogo-
+      - name: Raccolta
+        run: node scripts/raccogli.mjs --fonti="${{ inputs.fonti }}" ${{ inputs.argomenti }} --minuti-totali=150
+      - name: Prove del catalogo
+        run: node --test tests/catalogo.test.js
+      - name: Salvataggio (solo se i dati sono cambiati)
+        env:
+          FONTI: ${{ inputs.fonti }}
+          CORSIA: ${{ inputs.corsia }}
+        run: |
+          git config user.name "emendando-catalogo-bot"
+          git config user.email "emendando-catalogo-bot@users.noreply.github.com"
+          if [ -z "$(git status --porcelain -- data/ docs/BIBLIOTECHE.md)" ]; then echo "Nessuna modifica"; exit 0; fi
+          DA_PARTE="$RUNNER_TEMP/stati"; mkdir -p "$DA_PARTE"
+          STATI=""
+          for f in ${FONTI//,/ }; do
+            case "$f" in
+              vaticana|bodleian|laurenziana|leiden|yale|penn) s=data/$f.json ;;
+              heidelberg) s=data/heidelberg-indici.json ;;
+              wolfenbuettel|bamberga|karlsruhe|stoccarda|colonia|lipsia) s=data/$f.json ;;   # Handschriftenportal
+              *) s="" ;;   # e-codices, BSB, Berlino: stato in .cache (fuori da git); Gallica: dati del browser
+            esac
+            if [ -n "$s" ] && [ -f "$s" ]; then cp "$s" "$DA_PARTE/"; STATI="$STATI $s"; fi
+          done
+          cp data/raccolte.json "$DA_PARTE/raccolte.json" 2>/dev/null || true
+          echo "Stati della corsia $CORSIA:$STATI"
+          for i in 1 2 3 4 5 6 7 8; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            for s in $STATI; do cp "$DA_PARTE/$(basename "$s")" "$s"; done
+            # esiti delle raccolte: si aggiornano solo le fonti di questa corsia
+            if [ -f "$DA_PARTE/raccolte.json" ]; then
+              node -e 'const fs=require("fs");const n=JSON.parse(fs.readFileSync(process.argv[1],"utf8"));let r={};try{r=JSON.parse(fs.readFileSync("data/raccolte.json","utf8"))}catch(e){}
+                for(const f of process.argv[2].split(","))if(n[f])r[f]=n[f];
+                fs.writeFileSync("data/raccolte.json",JSON.stringify(Object.fromEntries(Object.entries(r).sort()),null,1)+"\n")' "$DA_PARTE/raccolte.json" "$FONTI"
+            fi
+            node scripts/raccogli.mjs --solo-costruisci
+            git add data/ docs/BIBLIOTECHE.md
+            if git diff --cached --quiet; then echo "Nessuna modifica rispetto al remoto"; exit 0; fi
+            git commit -q -m "Catalogo ($CORSIA): aggiornamento $(date -u '+%Y-%m-%d %H:%M') UTC"
+            if git push -q origin HEAD:main; then echo "Salvato al tentativo $i"; exit 0; fi
+            ATTESA=$(( 10 + RANDOM % 40 ))
+            echo "Push respinto (tentativo $i): un'altra corsia ha salvato prima; riparto dal remoto fra $ATTESA secondi"; sleep "$ATTESA"
+          done
+          exit 1
+      - name: Ruota (avvio della prossima esecuzione della corsia)
+        if: success() && inputs.ruota && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FLUSSO: ${{ inputs.flusso }}
+        run: |
+          DURATA=$(( $(date +%s) - INIZIO_RACCOLTA ))
+          echo "Durata: $((DURATA / 60)) minuti"
+          if [ "$DURATA" -ge 1800 ]; then gh workflow run "$FLUSSO" --ref main -R "$GITHUB_REPOSITORY" && echo "Prossima esecuzione avviata"; else echo "Poco lavoro: la ruota si ferma, si aspetta l'orario"; fi

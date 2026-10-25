@@ -1,0 +1,30 @@
+# Corsia giornaliera: tutte le altre fonti, una volta al giorno alle 03 UTC, ciascuna con il suo limite di tempo:
+# Heidelberg (con gli indici delle miscellanee), e-codices, BSB, Berlino, Gallica, Laurenziana, Leida, le biblioteche del
+# Handschriftenportal (Wolfenbüttel, Bamberga, Karlsruhe, Stoccarda, Colonia, Lipsia) e Penn.
+# Le raccolte OAI riprendono da dove si erano fermate grazie alla cache delle Actions (chiave propria di questa corsia).
+# Niente ruota: queste fonti si leggono una volta al giorno; ciò che resta a metà riprende la notte dopo.
+name: "Raccolta: corsia giornaliera"
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: raccolta-giornaliera
+  cancel-in-progress: false
+
+jobs:
+  corsia:
+    uses: ./.github/workflows/corsia.yml
+    with:
+      corsia: giornaliera
+      fonti: heidelberg,ecodices,bsb,berlino,gallica,laurenziana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,penn
+      argomenti: --oai-minuti=40 --indici-minuti=20 --gallica-minuti=25 --laurenziana-minuti=15 --leiden-minuti=15 --hsp-minuti=10 --penn-minuti=10 --berlino-minuti=60
+      cache: true
+      ruota: false
+      flusso: raccolta-giornaliera.yml

@@ -1,0 +1,27 @@
+# Corsia Yale: solo Yale (OAI-PMH di Digital Collections, una pagina di 25 record ogni 5 secondi circa), per tutto il tempo
+# dell'esecuzione finché la prima lettura (circa 8000 pagine) non è finita. Poi ogni 6 giorni si leggono solo i record cambiati;
+# negli altri giorni l'esecuzione non fa richieste e dura un minuto.
+# Ruota: se ha lavorato almeno 30 minuti riparte subito da sola, altrimenti si ferma. Cron ogni 3 ore di riserva.
+name: "Raccolta: corsia Yale"
+
+on:
+  schedule:
+    - cron: "40 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write   # per la ruota
+
+concurrency:
+  group: raccolta-yale
+  cancel-in-progress: false
+
+jobs:
+  corsia:
+    uses: ./.github/workflows/corsia.yml
+    with:
+      corsia: yale
+      fonti: yale
+      argomenti: --yale-minuti=140
+      flusso: raccolta-yale.yml
