@@ -172,6 +172,12 @@ async function main() {
     }
     catch (e) { esito[f] = FONTI.includes(f) ? "errore: " + e.message : "precedente"; log(f, FONTI.includes(f) ? "ERRORE" : "nessuno stato salvato:", e.message, "(restano le voci precedenti)"); }
   }
+  // ricostruzione senza richieste (salvataggio delle corsie): l'esito di ogni fonte è quello dell'ultima raccolta vera
+  // (data/raccolte.json), non quello della ricostruzione (una corsia senza la cache OAI ricostruisce quelle fonti dal catalogo precedente)
+  if (arg["solo-costruisci"]) {
+    let raccolte = {}; try { raccolte = JSON.parse(fs.readFileSync("data/raccolte.json", "utf8")); } catch (e) {}
+    for (const f of Object.keys(lavori)) if (raccolte[f] && raccolte[f].esito) esito[f] = raccolte[f].esito;
+  }
   const sigle = new Map(TRUCULENTUS.map(t => [t.manifest, t.sigla]));
   const voci = new Map();
   const t0 = Date.now();
