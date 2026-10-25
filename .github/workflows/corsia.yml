@@ -43,7 +43,11 @@ jobs:
     timeout-minutes: 170
     steps:
       - run: echo "INIZIO_RACCOLTA=$(date +%s)" >> "$GITHUB_ENV"
+      # sempre l'ultimo main, non il commit del momento del lancio: un'esecuzione rimasta in coda riparte dagli stati più recenti
+      # (altrimenti rileggerebbe codici già letti da un'esecuzione precedente)
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: 22
