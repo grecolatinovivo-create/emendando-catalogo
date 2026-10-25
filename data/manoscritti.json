@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T12:46:40.404Z",
+ "aggiornato": "2026-10-25T13:03:15.056Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -24,7 +24,7 @@
   },
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
-   "codici": 458,
+   "codici": 476,
    "esito": "ok"
   },
   "gallica": {
@@ -78,7 +78,7 @@
    "esito": "ok"
   }
  },
- "totale": 6636,
+ "totale": 6654,
  "manoscritti": [
   {
    "id": "bsb-bsb00034122",
@@ -163298,6 +163298,37 @@
    "immagini": null
   },
   {
+   "id": "bod-7c03498f-9d5e-46a5-9116-e17dc361c59b",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "Bodleian Library MS.Chin.d.10",
+   "datazione": "1607-1857",
+   "secolo": [
+    17,
+    19
+   ],
+   "lingue": [
+    "zh"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "幾何原本",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Euclid»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/7c03498f-9d5e-46a5-9116-e17dc361c59b.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/7c03498f-9d5e-46a5-9116-e17dc361c59b/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
    "id": "bod-ce397b96-c8bf-46b1-9ccb-569d1b880bd6",
    "fonte": "bodleian",
    "biblioteca": "Bodleian Library",
@@ -177426,6 +177457,166 @@
    "immagini": null
   },
   {
+   "id": "bod-27c4ba7d-6469-4ca3-bfbf-06188ac8f6fb",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Oxfam COM/1/8/298",
+   "datazione": "1985",
+   "secolo": [
+    20,
+    20
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Poster: ‘THINK GLOBALLY ACT LOCALLY’, with an image of the world and clouds. Blue background, white text. Part of Bother posters series.",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Nuvole"
+     ],
+     "corrispondenza": "titolo: «…ith an image of the world and clouds. Blue background, white text.…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/27c4ba7d-6469-4ca3-bfbf-06188ac8f6fb.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/27c4ba7d-6469-4ca3-bfbf-06188ac8f6fb/",
+   "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
+   "id": "bod-f473638c-d732-4bed-8822-92f57979754d",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Oxfam COM/1/8/333",
+   "datazione": "1985",
+   "secolo": [
+    20,
+    20
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Poster: ‘I can’t change anything! I can’t change anything! I can’t change anything! I can’t change anything! I can change anything!’, with five comic strip cartoon images showing a group of characters painting out the T in can’t. Blue and white background, black text. Part of Bother posters series.",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "titolo: «…oon images showing a group of characters painting out the T in can’t.…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/f473638c-d732-4bed-8822-92f57979754d.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/f473638c-d732-4bed-8822-92f57979754d/",
+   "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
+   "id": "bod-f8b1fdfc-8c6d-4524-84f8-64f568a0f47a",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Pococke 17",
+   "datazione": "1476–1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collection of philosophical texts",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Caspi, Joseph ; Aristotle»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/f8b1fdfc-8c6d-4524-84f8-64f568a0f47a.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/f8b1fdfc-8c6d-4524-84f8-64f568a0f47a/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-cf465635-627e-4ad6-bd63-a889996a5cac",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Pococke 319",
+   "datazione": "1352",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "xx"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Fuṣūl fī al-ṭibb (Medical aphorisms)",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Aforismi"
+     ],
+     "corrispondenza": "titolo: «Fuṣūl fī al-ṭibb (Medical aphorisms)»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/cf465635-627e-4ad6-bd63-a889996a5cac.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/cf465635-627e-4ad6-bd63-a889996a5cac/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-5c21787e-b587-4f0d-b81c-8fbd94d21663",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Pococke 369",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Almagest (in the recension of Nāṣir al-Dīn al-Ṭūsī)",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Almagesto"
+     ],
+     "corrispondenza": "autore: «Ptolemy»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/5c21787e-b587-4f0d-b81c-8fbd94d21663.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/5c21787e-b587-4f0d-b81c-8fbd94d21663/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
    "id": "bod-9886c0bb-846c-4889-97f9-938aca6be803",
    "fonte": "bodleian",
    "biblioteca": "Bodleian Library",
@@ -178016,6 +178207,134 @@
    "immagini": null
   },
   {
+   "id": "bod-4f2ea06f-050f-4125-a53a-9b69e2bc1569",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Reggio 47",
+   "datazione": "1499–1825",
+   "secolo": [
+    15,
+    19
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Miscellany",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…bn Tibbon, Jacob ben Machir ; Ptolemy ; Calimani, Simon ; Modena, L…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/4f2ea06f-050f-4125-a53a-9b69e2bc1569.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/4f2ea06f-050f-4125-a53a-9b69e2bc1569/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-7d85689c-f0cb-4284-b36b-f06f91d4ddbd",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Savile 26",
+   "datazione": "Oct. 27-Nov. 11 1568",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Henry Savile's Latin version of the Almagest of Ptolemy, vol. 1",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Almagesto"
+     ],
+     "corrispondenza": "titolo: «Henry Savile's Latin version of the Almagest of Ptolemy, vol. 1»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/7d85689c-f0cb-4284-b36b-f06f91d4ddbd.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/7d85689c-f0cb-4284-b36b-f06f91d4ddbd/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-7c8de337-f6c7-44e4-90d8-ac5e8b2714df",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Savile 27",
+   "datazione": "Oct. 27-Nov. 11, 1568",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Henry Savile's Latin version of the Almagest of Ptolemy, vol. 2",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Almagesto"
+     ],
+     "corrispondenza": "titolo: «Henry Savile's Latin version of the Almagest of Ptolemy, vol. 2»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/7c8de337-f6c7-44e4-90d8-ac5e8b2714df.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/7c8de337-f6c7-44e4-90d8-ac5e8b2714df/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-d173d8f5-880b-4661-ac2c-291729e8b052",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Savile 28",
+   "datazione": "Oct. 27-Nov. 11, 1568",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Henry Savile's Latin version of the Almagest of Ptolemy, vol. 3",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Almagesto"
+     ],
+     "corrispondenza": "titolo: «Henry Savile's Latin version of the Almagest of Ptolemy, vol. 3»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/d173d8f5-880b-4661-ac2c-291729e8b052.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/d173d8f5-880b-4661-ac2c-291729e8b052/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
    "id": "bod-a2b495c9-6f3b-43ea-a642-ffb7eaccd2b6",
    "fonte": "bodleian",
    "biblioteca": "Bodleian Library",
@@ -178117,6 +178436,71 @@
    ],
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/b9971743-ecc3-45ee-9ebf-39da095b3a35.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/b9971743-ecc3-45ee-9ebf-39da095b3a35/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-42f993fd-eed3-439c-a4cc-b67a71f75b90",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Tanner 285",
+   "datazione": "Late 16th-17th century",
+   "secolo": [
+    16,
+    17
+   ],
+   "lingue": [
+    "la",
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Norfolk and Suffolk family papers, bulk: late 16th-17th century",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…34 ; Bowssar, John ; Beeston, Horatio ; Bromwich, Edmund ; Astley,…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/42f993fd-eed3-439c-a4cc-b67a71f75b90.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/42f993fd-eed3-439c-a4cc-b67a71f75b90/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-8636284e-71db-4479-83ed-b63d5090ebae",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Thurston 11",
+   "datazione": "1237",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Elements.",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Elementi"
+     ],
+     "corrispondenza": "autore: «Euclid»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/8636284e-71db-4479-83ed-b63d5090ebae.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/8636284e-71db-4479-83ed-b63d5090ebae/",
    "licenza": "CC BY-NC 4.0",
    "immagini": null
   },
@@ -179938,6 +180322,181 @@
    ],
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/1ee70bea-2479-40d2-b734-98aa27878200.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/1ee70bea-2479-40d2-b734-98aa27878200/",
+   "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
+   "id": "bod-fc762c59-e553-408e-aa31-a1e529059bb8",
+   "fonte": "bodleian",
+   "biblioteca": "Christ Church",
+   "citta": "Oxford",
+   "segnatura": "MS 156",
+   "datazione": "c.1585-1630",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "The Historie of the Warres of Peloponnesus",
+   "autori": [
+    {
+     "id": "tucidide",
+     "autore": "Tucidide",
+     "latino": "Thucydides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Thucydides»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/fc762c59-e553-408e-aa31-a1e529059bb8.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/fc762c59-e553-408e-aa31-a1e529059bb8/",
+   "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
+   "id": "bod-100e29c2-aba8-4961-af4d-978038abf300",
+   "fonte": "bodleian",
+   "biblioteca": "Christ Church",
+   "citta": "Oxford",
+   "segnatura": "MS 187",
+   "datazione": "1490–1510",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collection of philosophical and theological texts",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Johannes Versoris (d. 1485) ; Aristotle (384-322 BC) ; Thomas Aquinas (1225-1274)»"
+    },
+    {
+     "id": "tommaso-aquino",
+     "autore": "Tommaso d'Aquino",
+     "latino": "Thomas de Aquino",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «Johannes Versoris (d. 1485) ; Aristotle (384-322 BC) ; Thomas Aquinas (1225-1274)»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/100e29c2-aba8-4961-af4d-978038abf300.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/100e29c2-aba8-4961-af4d-978038abf300/",
+   "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
+   "id": "bod-c2f22168-0224-485c-a93e-61a5406d2eaf",
+   "fonte": "bodleian",
+   "biblioteca": "Christ Church",
+   "citta": "Oxford",
+   "segnatura": "MS 190",
+   "datazione": "1400–1599",
+   "secolo": [
+    14,
+    16
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Philosophical works",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…evi ben Gershom (1288-1344) ; Aristotle (384-322 BC) ; Averroës (1126…»"
+    },
+    {
+     "id": "tommaso-aquino",
+     "autore": "Tommaso d'Aquino",
+     "latino": "Thomas de Aquino",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «…BC) ; Averroës (1126-1198) ; Thomas Aquinas (1225-1274)»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/c2f22168-0224-485c-a93e-61a5406d2eaf.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/c2f22168-0224-485c-a93e-61a5406d2eaf/",
+   "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
+   "id": "bod-a67a04ea-156a-4eac-97d3-7442faebdac6",
+   "fonte": "bodleian",
+   "biblioteca": "Christ Church",
+   "citta": "Oxford",
+   "segnatura": "MS 200",
+   "datazione": "1401–1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Commentary on Averroes' paraphrase of parts of the Organon by Aristotle",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Organon"
+     ],
+     "corrispondenza": "titolo: «Commentary on Averroes' paraphrase of parts of the Organon by Aristotle»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/a67a04ea-156a-4eac-97d3-7442faebdac6.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/a67a04ea-156a-4eac-97d3-7442faebdac6/",
+   "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
+   "id": "bod-300fe9ff-d1a3-4873-bd22-226a3542c6e6",
+   "fonte": "bodleian",
+   "biblioteca": "Christ Church",
+   "citta": "Oxford",
+   "segnatura": "MS 201",
+   "datazione": "ca. 1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Judah ben Isaac ha-Cohen's commentary on Averroës' paraphrase of the Organon",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Organon"
+     ],
+     "corrispondenza": "autore: «Aristotle»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/300fe9ff-d1a3-4873-bd22-226a3542c6e6.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/300fe9ff-d1a3-4873-bd22-226a3542c6e6/",
    "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
    "immagini": null
   },
@@ -186499,6 +187058,37 @@
    "manifest": "https://iiif.archive.org/iiif/images_Ricketts233_40/manifest.json",
    "pagina": "https://search.digital-scriptorium.org/catalog/DS598",
    "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "bod-d5ab9ab2-97ce-4379-b2e1-6794b3dd95d5",
+   "fonte": "bodleian",
+   "biblioteca": "Jesus College",
+   "citta": "Oxford",
+   "segnatura": "MS. 28",
+   "datazione": "1695",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "cy"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Dares Phrygius & Brut Tysilio",
+   "autori": [
+    {
+     "id": "darete",
+     "autore": "Darete Frigio",
+     "latino": "Dares Phrygius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Dares Phrygius & Brut Tysilio»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/d5ab9ab2-97ce-4379-b2e1-6794b3dd95d5.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/d5ab9ab2-97ce-4379-b2e1-6794b3dd95d5/",
+   "licenza": "CC BY 4.0",
    "immagini": null
   },
   {

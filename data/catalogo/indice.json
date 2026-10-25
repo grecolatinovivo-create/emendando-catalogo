@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-25T12:46:40.404Z",
- "totale": 84281,
- "con_autori": 12464,
+ "aggiornato": "2026-10-25T13:03:15.056Z",
+ "totale": 87134,
+ "con_autori": 12497,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
   "id",
@@ -21,71 +21,71 @@
  "lingue": {
   "la": {
    "nome": "latino",
-   "codici": 29767
+   "codici": 29942
   },
   "de": {
    "nome": "tedesco",
-   "codici": 15939
+   "codici": 15940
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 13220
+   "codici": 13423
   },
   "grc": {
    "nome": "greco",
-   "codici": 5508
+   "codici": 5522
   },
   "ar": {
    "nome": "arabo",
-   "codici": 4516
+   "codici": 4555
   },
   "sa": {
    "nome": "sanscrito",
-   "codici": 4349
-  },
-  "xx": {
-   "nome": "altre lingue",
-   "codici": 3310
-  },
-  "fr": {
-   "nome": "francese",
-   "codici": 2403
-  },
-  "he": {
-   "nome": "ebraico",
-   "codici": 2204
+   "codici": 4373
   },
   "en": {
    "nome": "inglese",
-   "codici": 2089
+   "codici": 3720
+  },
+  "xx": {
+   "nome": "altre lingue",
+   "codici": 3452
+  },
+  "fr": {
+   "nome": "francese",
+   "codici": 2420
+  },
+  "he": {
+   "nome": "ebraico",
+   "codici": 2314
   },
   "it": {
    "nome": "italiano",
-   "codici": 2010
+   "codici": 2035
   },
   "cop": {
    "nome": "copto",
    "codici": 1475
   },
+  "zh": {
+   "nome": "cinese",
+   "codici": 874
+  },
+  "fa": {
+   "nome": "persiano",
+   "codici": 542
+  },
   "nl": {
    "nome": "nederlandese",
    "codici": 518
   },
-  "fa": {
-   "nome": "persiano",
-   "codici": 491
-  },
   "es": {
    "nome": "spagnolo",
-   "codici": 420
-  },
-  "zh": {
-   "nome": "cinese",
-   "codici": 316
+   "codici": 428
   },
   "tr": {
    "nome": "turco",
-   "codici": 299
+   "codici": 306
   },
   "bo": {
    "nome": "tibetano",
@@ -93,11 +93,11 @@
   },
   "hy": {
    "nome": "armeno",
-   "codici": 106
+   "codici": 107
   },
   "ja": {
    "nome": "giapponese",
-   "codici": 103
+   "codici": 104
   },
   "cu": {
    "nome": "slavo ecclesiastico",
@@ -105,27 +105,31 @@
   },
   "ru": {
    "nome": "russo",
-   "codici": 58
+   "codici": 59
   },
   "gez": {
    "nome": "etiopico",
    "codici": 57
   },
+  "syr": {
+   "nome": "siriaco",
+   "codici": 46
+  },
+  "pt": {
+   "nome": "portoghese",
+   "codici": 44
+  },
   "ca": {
    "nome": "catalano",
    "codici": 42
   },
-  "pt": {
-   "nome": "portoghese",
-   "codici": 41
-  },
-  "syr": {
-   "nome": "siriaco",
-   "codici": 39
-  },
   "ms": {
    "nome": "malese",
    "codici": 26
+  },
+  "cy": {
+   "nome": "gallese",
+   "codici": 23
   },
   "cs": {
    "nome": "ceco",
@@ -137,7 +141,7 @@
   },
   "ga": {
    "nome": "irlandese",
-   "codici": 16
+   "codici": 17
   },
   "sv": {
    "nome": "svedese",
@@ -147,24 +151,24 @@
    "nome": "lingue slave (alfabeto cirillico)",
    "codici": 11
   },
-  "cy": {
-   "nome": "gallese",
-   "codici": 11
-  },
   "jv": {
    "nome": "giavanese",
    "codici": 10
+  },
+  "is": {
+   "nome": "islandese e norreno",
+   "codici": 9
   },
   "pl": {
    "nome": "polacco",
    "codici": 9
   },
-  "is": {
-   "nome": "islandese e norreno",
-   "codici": 8
-  },
   "ko": {
    "nome": "coreano",
+   "codici": 8
+  },
+  "ka": {
+   "nome": "georgiano",
    "codici": 7
   },
   "da": {
@@ -174,28 +178,24 @@
   "hu": {
    "nome": "ungherese",
    "codici": 4
-  },
-  "ka": {
-   "nome": "georgiano",
-   "codici": 2
   }
  },
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 4540
+   "codici": 4542
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 2424
+   "codici": 2440
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 5347
+   "codici": 5362
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 1529
+   "codici": 1531
   }
  },
  "autori": {
@@ -251,7 +251,7 @@
    "nome": "Orazio",
    "latino": "Horatius",
    "categoria": "classico-latino",
-   "codici": 187
+   "codici": 188
   },
   "tibullo": {
    "nome": "Tibullo",
@@ -617,7 +617,7 @@
    "nome": "Darete Frigio",
    "latino": "Dares Phrygius",
    "categoria": "classico-latino",
-   "codici": 28
+   "codici": 29
   },
   "ditti": {
    "nome": "Ditti Cretese",
@@ -701,7 +701,7 @@
    "nome": "Aristofane",
    "latino": "Aristophanes",
    "categoria": "classico-greco",
-   "codici": 35
+   "codici": 36
   },
   "menandro": {
    "nome": "Menandro",
@@ -719,7 +719,7 @@
    "nome": "Tucidide",
    "latino": "Thucydides",
    "categoria": "classico-greco",
-   "codici": 15
+   "codici": 16
   },
   "senofonte": {
    "nome": "Senofonte",
@@ -737,13 +737,13 @@
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 922
+   "codici": 927
   },
   "teofrasto": {
    "nome": "Teofrasto",
    "latino": "Theophrastus",
    "categoria": "classico-greco",
-   "codici": 37
+   "codici": 38
   },
   "lisia": {
    "nome": "Lisia",
@@ -899,19 +899,19 @@
    "nome": "Ippocrate",
    "latino": "Hippocrates",
    "categoria": "classico-greco",
-   "codici": 129
+   "codici": 130
   },
   "tolomeo": {
    "nome": "Tolomeo",
    "latino": "Ptolemaeus",
    "categoria": "classico-greco",
-   "codici": 64
+   "codici": 69
   },
   "euclide": {
    "nome": "Euclide",
    "latino": "Euclides",
    "categoria": "classico-greco",
-   "codici": 58
+   "codici": 60
   },
   "archimede": {
    "nome": "Archimede",
@@ -1145,7 +1145,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 2311
+   "codici": 2326
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1277,7 +1277,7 @@
    "nome": "Tommaso d'Aquino",
    "latino": "Thomas de Aquino",
    "categoria": "medievale",
-   "codici": 232
+   "codici": 234
   },
   "bernardo": {
    "nome": "Bernardo di Chiaravalle",
@@ -1378,6 +1378,7 @@
   "Germanisches Nationalmuseum, Nürnberg",
   "Gilmore Music Library, New Haven",
   "Grolier Club, New York",
+  "Harris Manchester College, Oxford",
   "Harry Ransom Center, University of Texas, Austin",
   "Harvard University, Houghton Library, Cambridge (Massachusetts)",
   "Heidelberg",
@@ -1803,48 +1804,49 @@
   },
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
-   "codici": 7215,
-   "con_autori": 1218,
+   "codici": 10068,
+   "con_autori": 1251,
    "lingue": {
-    "la": 3615,
-    "fa": 43,
-    "fr": 295,
-    "cy": 11,
-    "en": 884,
-    "?": 744,
-    "zh": 98,
-    "xx": 309,
-    "sa": 41,
+    "la": 3790,
+    "fa": 94,
+    "fr": 312,
+    "cy": 23,
+    "en": 2515,
+    "?": 947,
+    "zh": 656,
+    "xx": 451,
+    "pt": 6,
+    "ko": 2,
+    "es": 22,
+    "ka": 7,
+    "it": 118,
+    "grc": 984,
+    "sa": 65,
     "bo": 2,
-    "ko": 1,
-    "ar": 134,
-    "it": 93,
-    "de": 105,
+    "ar": 173,
+    "de": 106,
     "gez": 1,
-    "tr": 3,
-    "he": 231,
-    "ga": 12,
-    "es": 14,
-    "grc": 970,
-    "hy": 68,
+    "tr": 10,
+    "he": 341,
+    "ga": 13,
+    "hy": 69,
     "nl": 35,
-    "pt": 3,
     "oc": 1,
     "cu": 10,
     "ca": 4,
-    "is": 2,
+    "is": 3,
     "cop": 64,
     "cs": 1,
     "ms": 2,
-    "ka": 2,
-    "ja": 12,
-    "ru": 1
+    "ja": 13,
+    "ru": 2,
+    "syr": 7
    },
    "esito": "ok",
    "prefissi": [
     "bod-"
    ],
-   "pezzi_voci": 10,
+   "pezzi_voci": 13,
    "indice": [
     "indice/bodleian-0.json"
    ]
@@ -2166,7 +2168,7 @@
   {
    "file": "indice/bodleian-0.json",
    "fonte": "bodleian",
-   "righe": 7215
+   "righe": 10068
   },
   {
    "file": "indice/gallica-0.json",

@@ -18,7 +18,7 @@ Come leggere le colonne:
 - **Ultima raccolta**: com'è andata l'ultima volta.
 
 <!-- inizio automatico -->
-Codici nel catalogo, in tutto: **84.281**, di cui **12.464** con almeno un autore riconosciuto.
+Codici nel catalogo, in tutto: **87.134**, di cui **12.497** con almeno un autore riconosciuto.
 
 | Biblioteca | Città | Codici totali | Di cui con autori riconosciuti | Lingue | Avanzamento della lettura | Come si aggiorna | Ultimo aggiornamento | Ultima raccolta |
 |---|---|---|---|---|---|---|---|---|
@@ -26,7 +26,7 @@ Codici nel catalogo, in tutto: **84.281**, di cui **12.464** con almeno un autor
 | e-codices (biblioteche svizzere: San Gallo, Einsiedeln, Bodmer e altre) | Svizzera | 2745 | 1032 | latino 2043, tedesco 674, francese 235, altre 417 | schede lette tutte (2745 schede) | ogni notte, da sola | 2026-10-25 | riuscita |
 | Bayerische Staatsbibliothek | Monaco di Baviera | 28.785 | 2214 | tedesco 11.319, latino 8472, non indicata 5804, altre 4411 | schede lette tutte (29.752 schede) | ogni notte, da sola | 2026-10-25 | riuscita |
 | Staatsbibliothek zu Berlin | Berlino | 3296 | 269 | tedesco 1597, non indicata 734, latino 714, altre 390 | schede lette tutte (3296 schede) | ogni notte, da sola | 2026-10-25 | riuscita |
-| Bodleian Libraries e college | Oxford | 7215 | 1218 | latino 3615, greco 970, inglese 884, altre 2342 | 7619 schede lette su 10.602; a riprese, a ruota: mancano circa 3 ore | corsia propria: a ruota finché non sono letti tutti, poi ogni notte | 2026-10-25 | riuscita |
+| Bodleian Libraries e college | Oxford | 10.068 | 1251 | latino 3790, inglese 2515, greco 984, altre 3560 | 10.602 schede lette su 10.602 | corsia propria: a ruota finché non sono letti tutti, poi ogni notte | 2026-10-25 | riuscita |
 | Bibliothèque nationale de France (Gallica) | Parigi | 1892 | 1600 | latino 1892 | solo i fondi latini (raccolta dal browser del 2026-10-24): per avere tutti i manoscritti va lanciato scripts/browser/gallica.js | va rifatta a mano dal browser (ultima raccolta: 2026-10-24) | 2026-10-25 | riuscita |
 | Biblioteca Medicea Laurenziana | Firenze | 4353 | 2206 | non indicata 3614, latino 725, italiano 5, altre 9 | schede lette tutte (4353 codici) | ogni notte, da sola | 2026-10-25 | riuscita |
 | Universiteitsbibliotheek Leiden (manoscritti, con i Vossiani; Bibliotheca Neerlandica Manuscripta) | Leida | 2984 | 727 | non indicata 1828, latino 602, nederlandese 291, altre 263 | schede lette tutte (6226); 2984 manoscritti librari fino al 1800 | ogni notte, da sola | 2026-10-25 | riuscita |
