@@ -1,7 +1,7 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-25T14:25:07.546Z",
- "totale": 250149,
+ "aggiornato": "2026-10-25T14:51:44.274Z",
+ "totale": 258121,
  "con_autori": 13155,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
@@ -21,7 +21,7 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 157139
+   "codici": 164545
   },
   "la": {
    "nome": "latino",
@@ -57,7 +57,7 @@
   },
   "zh": {
    "nome": "cinese",
-   "codici": 2606
+   "codici": 3137
   },
   "fr": {
    "nome": "francese",
@@ -111,13 +111,13 @@
    "nome": "tibetano",
    "codici": 121
   },
+  "ko": {
+   "nome": "coreano",
+   "codici": 97
+  },
   "gez": {
    "nome": "etiopico",
    "codici": 84
-  },
-  "ko": {
-   "nome": "coreano",
-   "codici": 62
   },
   "ru": {
    "nome": "russo",
@@ -2611,12 +2611,12 @@
   },
   "ndl": {
    "nome": "National Diet Library, Tokyo (dl.ndl.go.jp)",
-   "codici": 30772,
+   "codici": 39999,
    "con_autori": 0,
    "lingue": {
-    "ja": 28981,
-    "zh": 1732,
-    "ko": 54,
+    "ja": 37642,
+    "zh": 2263,
+    "ko": 89,
     "?": 5,
     "xx": 1
    },
@@ -2624,7 +2624,7 @@
    "prefissi": [
     "ndl-"
    ],
-   "pezzi_voci": 39,
+   "pezzi_voci": 50,
    "indice": [
     "indice/ndl-0.json",
     "indice/ndl-1.json"
@@ -2632,16 +2632,16 @@
   },
   "kokusho": {
    "nome": "Kokusho Database, National Institute of Japanese Literature (kokusho.nijl.ac.jp)",
-   "codici": 128054,
+   "codici": 126799,
    "con_autori": 0,
    "lingue": {
-    "ja": 128054
+    "ja": 126799
    },
    "esito": "ok",
    "prefissi": [
     "nijl-"
    ],
-   "pezzi_voci": 161,
+   "pezzi_voci": 159,
    "indice": [
     "indice/kokusho-0.json",
     "indice/kokusho-1.json",
@@ -2797,7 +2797,7 @@
   {
    "file": "indice/ndl-1.json",
    "fonte": "ndl",
-   "righe": 10772
+   "righe": 19999
   },
   {
    "file": "indice/kokusho-0.json",
@@ -2832,7 +2832,7 @@
   {
    "file": "indice/kokusho-6.json",
    "fonte": "kokusho",
-   "righe": 8054
+   "righe": 6799
   },
   {
    "file": "indice/auckland-0.json",

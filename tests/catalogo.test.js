@@ -796,6 +796,10 @@ test("NDL: record OAI dcndl_porta, solo manoscritti dei libri antichi fino al 18
   const [r] = recordNdl({ voci: { 10300911: v } });
   assert.equal(r.id, "ndl-10300911"); assert.equal(r.segnatura, "238-1, 巻115-116"); assert.deepEqual(r.lingue, ["ja"]);
   assert.equal(r.manifest, "https://dl.ndl.go.jp/api/iiif/10300911/manifest.json"); assert.equal(r.licenza, "Public Domain Mark 1.0");
+  const { ammessaNdl } = await import("../scripts/fonti/ndl.mjs");
+  assert.equal(ammessaNdl({ t: "曲亭馬琴書簡" }), false); assert.equal(ammessaNdl({ t: "東寺百合文書" }), false);
+  assert.equal(ammessaNdl({ t: "乾也粉本", d: "[18--] [写]" }), false); assert.equal(ammessaNdl({ t: "方角重宝記", c: "文政九写 占法秘伝" }), false);
+  assert.equal(ammessaNdl({ t: "上宮聖徳法王帝説", d: "[江戸後期]" }), true);
   assert.deepEqual(lingueNdl({ l: ["chi"] }), ["zh"]); assert.deepEqual(lingueNdl({ t: "あひおひ" }), ["ja"]); assert.deepEqual(lingueNdl({ t: "論語" }), []);
 });
 
@@ -829,4 +833,17 @@ test("Auckland: codici medievali e orientali dalla collezione di CONTENTdm, fuor
   const [r] = recordAuckland({ voci: { 17404: v } });
   assert.equal(r.id, "akl-17404"); assert.equal(r.manifest, "https://kura.aucklandlibraries.govt.nz/iiif/2/manuscripts:17404/manifest.json");
   assert.deepEqual(r.lingue, ["cs"]); assert.deepEqual(voce(r, A).secolo, [15, 15]);
+});
+
+test("State Library Victoria: schede raccolte dal browser, solo manoscritti fino al 1800, manifesti di Rosetta", async () => {
+  const { recordSlv, ammessaSlv, anniSlv } = await import("../scripts/fonti/slv.mjs");
+  const rs = recordSlv({ voci: {
+    IE145082: { s: "RARES 096.1 R66H", t: "Book of hours, use of Rome", d: "[ca. 1470]", f: "manuscript", l: ["lat"], a: [] },
+    IE1: { s: "MS 1", t: "Letters to his brother", d: "1765", f: "manuscript" },
+    IE2: { s: "MS 2", t: "Diario", d: "1850-1855", f: "manuscript" },
+    IE3: { s: "MS 3", t: "Antiphonary leaf", d: "", f: "manuscript" } } });
+  assert.deepEqual(rs.map(r => r.id), ["slv-ie145082", "slv-ie3"]);
+  assert.equal(rs[0].manifest, "https://rosetta.slv.vic.gov.au/delivery/iiif/presentation/2.1/IE145082/manifest"); assert.deepEqual(rs[0].lingue, ["la"]);
+  assert.ok(anniSlv("15th century").includes(1401)); assert.equal(ammessaSlv({ t: "x", d: "18--", f: "manuscript" }), false);
+  assert.deepEqual(recordSlv(null), []);
 });

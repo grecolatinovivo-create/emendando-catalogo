@@ -12,6 +12,7 @@
 import fs from "node:fs";
 import { scarica, log, decodifica } from "../rete.mjs";
 import { lingueDa } from "../lingue.mjs";
+import { annoKokusho, NON_LIBRARI_JA } from "./kokusho.mjs";
 
 export const FILE_STATO = "data/ndl.json";
 export const BASE = "https://dl.ndl.go.jp/api/oaipmh";
@@ -117,8 +118,19 @@ export function lingueNdl(v) {
   return /[぀-ヿ]/.test(v.t || "") ? ["ja"] : [];
 }
 
+// filtro applicato anche in costruzione (basta --solo-costruisci per ripulire le voci già raccolte): fuori le carte del XIX secolo
+// («[18--]», copie datate nella descrizione, «文政九写»), le lettere e i documenti d'archivio («書簡», «文書»)
+export function ammessaNdl(v) {
+  if (!v) return false;
+  if (NON_LIBRARI_JA.test(v.t || "")) return false;
+  if (/\b1[89]--/.test(v.d || "") || /\b19\d\d\b/.test(v.d || "")) return false;
+  const copia = /([^\s;:、，]{2}[0-9０-９元〇一二三四五六七八九十]+)年?(?:[^\s;]{0,3})?写/.exec(v.c || "");
+  const a = copia && annoKokusho(copia[1]);
+  return !(a && a > 1800);
+}
+
 export function recordNdl(st = leggiStato()) {
-  return Object.entries(st.voci || {}).filter(([, v]) => v).map(([pid, v]) => ({
+  return Object.entries(st.voci || {}).filter(([, v]) => ammessaNdl(v)).map(([pid, v]) => ({
     fonte: "ndl", id: "ndl-" + pid, citta: "Tokyo", biblioteca: "National Diet Library (国立国会図書館)",
     segnatura: [v.s, v.v].filter(Boolean).join(", ") || "pid " + pid, datazione: v.d || null, titolo: [v.t, v.v].filter(Boolean).join(". "),
     autori_fonte: v.a || [], descrizione: v.c || null, lingue: lingueNdl(v),

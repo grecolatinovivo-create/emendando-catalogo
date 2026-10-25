@@ -54,10 +54,13 @@ export function annoKokusho(y) {
   return null;
 }
 
+// lettere e documenti d'archivio (non libri): «…書簡», «…書状», «…文書»
+export const NON_LIBRARI_JA = /(書簡|書翰|書状|文書)(\s*[0-9０-９].*)?$/;
+
 // scheda della ricerca -> voce compatta [nome, collezione, segnatura, anno (testo), autore] (null se fuori)
 export function compattaKokusho(x) {
   if (!x || x.image !== "1" || x.kansha !== "写") return null;
-  if (/^国会/.test(x.collection || "")) return null;   // National Diet Library: fonte «ndl»
+  if (/^国会/.test(x.collection || "") || NON_LIBRARI_JA.test(x.name || "")) return null;   // National Diet Library: fonte «ndl»
   const a = annoKokusho(x.year);
   if (a && a > 1800) return null;
   return [x.name || x.wname || null, x.collection || null, x.seikyu || null, x.year || null, x.authorhead || x.wauthor || null];
@@ -95,7 +98,7 @@ export async function scansionaKokusho({ minuti = 30, soloCache = false } = {}) 
 }
 
 export function recordKokusho(st = leggiStato()) {
-  return Object.entries(st.voci || {}).filter(([, v]) => v).map(([bid, v]) => {
+  return Object.entries(st.voci || {}).filter(([, v]) => v && !NON_LIBRARI_JA.test(v[0] || "")).map(([bid, v]) => {
     const anno = annoKokusho(v[3]);
     return { fonte: "kokusho", id: "nijl-" + bid, citta: "Giappone", biblioteca: v[1] ? `${v[1]} (Kokusho Database, NIJL)` : "Kokusho Database (NIJL)",
       segnatura: v[2] || "bid " + bid, datazione: v[3] ? (anno && !/\b1[0-9]{3}\b/.test(v[3]) ? `${v[3]} (${anno})` : v[3]) : null, titolo: v[0],

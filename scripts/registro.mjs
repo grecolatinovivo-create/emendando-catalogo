@@ -35,6 +35,7 @@ export const BIBLIOTECHE = {
   nlg: { biblioteca: "Biblioteca Nazionale di Grecia", citta: "Atene", come: "ogni notte, da sola (elenco ogni 6 giorni; copie dei manifesti scritte dal catalogo)" },
   ndl: { biblioteca: "National Diet Library (国立国会図書館): manoscritti dei libri antichi giapponesi e cinesi", citta: "Tokyo (Giappone)", come: "corsia mondo, ogni notte (solo i record cambiati ogni 6 giorni, raccolta completa ogni 30)" },
   kokusho: { biblioteca: "Kokusho Database (国書データベース) del National Institute of Japanese Literature: manoscritti di biblioteche, templi e collezioni giapponesi", citta: "Giappone", come: "corsia mondo, ogni notte (raccolta completa ogni 14 giorni)" },
+  slv: { biblioteca: "State Library Victoria", citta: "Melbourne (Australia)", come: "va fatta a mano dal browser (scripts/browser/slv.js)" },
   auckland: { biblioteca: "Auckland Libraries, Sir George Grey Special Collections", citta: "Auckland (Nuova Zelanda)", come: "corsia mondo, ogni notte (raccolta completa ogni 6 giorni)" },
   vaticana: { biblioteca: "Biblioteca Apostolica Vaticana", citta: "Città del Vaticano", come: "corsia propria: a ruota, senza pause tra un'esecuzione e l'altra" },
 };
@@ -144,6 +145,10 @@ export const AVANZAMENTO = {
     const n = Object.keys(s.voci || {}).length;
     if (s.cursore) return { testo: `in corso: pagina ${num(s.cursore.p)} di ${num(s.pagine)} (${num(n)} manoscritti finora)`, data: s.aggiornato };
     return { testo: `schede lette tutte (${num(s.totale)} manoscritti con immagini; ${num(n)} con immagini proprie fino al 1800 o senza data; fuori i libri a stampa e la NDL)`, data: s.completato || s.aggiornato };
+  },
+  slv: () => {
+    const s = leggi("data/slv.json"); if (!s) return { testo: "elenco non ancora raccolto: va lanciato scripts/browser/slv.js dal browser" };
+    return { testo: `${num(Object.keys(s.voci || {}).length)} oggetti digitali raccolti dal browser il ${giorno(s.raccolto)} (ricerche: ${(s.ricerche || []).length})`, data: s.raccolto };
   },
   auckland: () => {
     const s = leggi("data/auckland.json"); if (!s) return { testo: "non ancora cominciata" };

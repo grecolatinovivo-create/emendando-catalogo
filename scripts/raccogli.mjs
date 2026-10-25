@@ -37,6 +37,7 @@ import { recordCudl } from "./fonti/cudl.mjs";
 import { scansionaNdl, recordNdl } from "./fonti/ndl.mjs";
 import { scansionaKokusho, recordKokusho } from "./fonti/kokusho.mjs";
 import { scansionaAuckland, recordAuckland } from "./fonti/auckland.mjs";
+import { recordSlv } from "./fonti/slv.mjs";
 import { scriviRegistro, registraEsiti } from "./registro.mjs";
 import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 
@@ -55,6 +56,7 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   nlg: "Biblioteca Nazionale di Grecia, Atene (digitalcollections.nlg.gr; copie dei manifesti scritte dal catalogo)",
   ndl: "National Diet Library, Tokyo (dl.ndl.go.jp)", kokusho: "Kokusho Database, National Institute of Japanese Literature (kokusho.nijl.ac.jp)",
   auckland: "Auckland Libraries, Sir George Grey Special Collections (kura.aucklandlibraries.govt.nz)",
+  slv: "State Library Victoria, Melbourne (find.slv.vic.gov.au; elenco raccolto dal browser)",
   vaticana: "Biblioteca Apostolica Vaticana (digi.vatlib.it)" };
 
 // i tre codici del Truculentus restano sempre nel catalogo, anche se una fonte non li ha ancora restituiti
@@ -188,6 +190,8 @@ async function main() {
     // Asia orientale e Oceania (corsia «mondo»): National Diet Library, Kokusho (NIJL), Auckland
     ndl: async () => recordNdl(await scansionaNdl({ minuti: min("ndl", +(arg["ndl-minuti"] ?? 60)), soloCache: sc("ndl") })),
     kokusho: async () => recordKokusho(await scansionaKokusho({ minuti: min("kokusho", +(arg["kokusho-minuti"] ?? 60)), soloCache: sc("kokusho") })),
+    // State Library Victoria: nessuna richiesta, l'elenco viene dal browser (scripts/browser/slv.js -> data/slv.json)
+    slv: async () => recordSlv(),
     auckland: async () => recordAuckland(await scansionaAuckland({ minuti: min("auckland", +(arg["auckland-minuti"] ?? 10)), soloCache: sc("auckland") })),
     vaticana: async () => {
       let minuti = +(arg["vaticana-minuti"] ?? 20);
