@@ -1,0 +1,193 @@
+# Prova pilota di lettura automatica (ottobre 2026): Kraken legge poche pagine di 500 codici latini «sospetti»
+# (prove/lettura-2026-10/codici.json, scelti da scripts/prova-lettura/seleziona.py) e le letture si confrontano con
+# corpora latini aperti per segnalare i codici con testo leggibile ma non riconosciuto.
+# Solo a mano (workflow_dispatch). Un job per server di immagini (lotto): i lotti girano in parallelo, dentro un lotto
+# le richieste sono in fila con almeno 1 secondo di pausa. Le immagini si scaricano nel runner, si leggono e si cancellano;
+# le letture complete passano tra i job come artefatti di 1 giorno, cancellati alla fine: nel repository vanno solo
+# misure, fonti trovate ed estratti brevi dei sospetti (prove/lettura-2026-10/).
+name: "Prova di lettura (Kraken)"
+
+on:
+  workflow_dispatch:
+    inputs:
+      lotti:
+        description: 'Lotti da leggere: "tutti" oppure lista JSON, es. ["bodleian","lipsia"]'
+        default: "tutti"
+      solo:
+        description: "Codici per lotto (0 = tutti), per le prove"
+        default: "0"
+      salva:
+        description: "Salvare i risultati nel repository"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: prova-lettura
+  cancel-in-progress: false
+
+env:
+  CODICI: prove/lettura-2026-10/codici.json
+  MODELLO_URL: https://zenodo.org/records/21488839/files/catmus-medieval-1.6.0.mlmodel?download=1
+  MODELLO: catmus-medieval-1.6.0.mlmodel
+
+jobs:
+  prepara:
+    runs-on: ubuntu-latest
+    outputs:
+      lotti: ${{ steps.l.outputs.lotti }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            prove/lettura-2026-10
+          sparse-checkout-cone-mode: true
+      - id: l
+        run: |
+          if [ "${{ inputs.lotti }}" = "tutti" ]; then
+            L=$(python3 -c "import json;print(json.dumps(sorted(json.load(open('$CODICI'))['lotti'])))")
+          else
+            L='${{ inputs.lotti }}'
+          fi
+          echo "lotti=$L" >> "$GITHUB_OUTPUT"
+          echo "Lotti: $L"
+
+  corpora:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            scripts/prova-lettura
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - id: cache
+        uses: actions/cache@v4
+        with:
+          path: indice
+          key: corpora-latini-v1-${{ hashFiles('scripts/prova-lettura/corpora.py', 'scripts/prova-lettura/comune.py') }}
+      - name: Corpora aperti e indice
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          pip install -q numpy==2.0.2
+          mkdir -p corp indice
+          git clone -q --depth 1 https://github.com/PerseusDL/canonical-latinLit.git corp/canonical-latinLit
+          git clone -q --depth 1 https://github.com/OpenGreekAndLatin/csel-dev.git corp/csel-dev
+          git clone -q --depth 1 --filter=blob:none --sparse https://github.com/OpenGreekAndLatin/patrologia_latina-dev.git corp/pl
+          (cd corp/pl && git sparse-checkout set --no-cone '/volumes/PL[0-9]*/PL*.xml')
+          curl -sSfL -o corp/Vulgate.txt https://raw.githubusercontent.com/scrollmapper/bible_databases/master/formats/txt/Vulgate.txt
+          python scripts/prova-lettura/corpora.py corp indice/indice.npz
+      - uses: actions/upload-artifact@v4
+        with:
+          name: indice-corpora
+          path: indice/
+          retention-days: 1
+          compression-level: 0
+
+  leggi:
+    needs: prepara
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        lotto: ${{ fromJson(needs.prepara.outputs.lotti) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            scripts/prova-lettura
+            prove/lettura-2026-10
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-kraken-5.3.0-cpu-v1
+      - uses: actions/cache@v4
+        id: modello
+        with:
+          path: modelli
+          key: modello-${{ env.MODELLO }}
+      - name: Modello CATMuS Medieval (CC BY 4.0)
+        if: steps.modello.outputs.cache-hit != 'true'
+        run: mkdir -p modelli && curl -sSfL -o "modelli/$MODELLO" "$MODELLO_URL"
+      - name: Kraken
+        run: pip install -q --extra-index-url https://download.pytorch.org/whl/cpu "kraken==5.3.0" "torch==2.4.1+cpu" "torchvision==0.19.1+cpu"
+      - name: Lettura del lotto ${{ matrix.lotto }}
+        env:
+          PROVA_SOLO: ${{ inputs.solo != '0' && inputs.solo || '' }}
+          PROCESSI: "2"
+        run: python scripts/prova-lettura/leggi.py "$CODICI" "${{ matrix.lotto }}" letture "modelli/$MODELLO" --max-minuti=315
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: letture-${{ matrix.lotto }}
+          path: letture/
+          retention-days: 1
+          if-no-files-found: ignore
+
+  confronta:
+    needs: [leggi, corpora]
+    if: always() && needs.corpora.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q numpy==2.0.2
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: letture-*
+          path: letture
+      - uses: actions/download-artifact@v4
+        with:
+          name: indice-corpora
+          path: indice
+      - name: Tempi dei job
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs?per_page=100" > tempi.json || echo '{}' > tempi.json
+      - name: Confronto e rapporto
+        run: |
+          mkdir -p risultati
+          python scripts/prova-lettura/confronta.py "$CODICI" letture indice/indice.npz risultati
+          python scripts/prova-lettura/rapporto.py "$CODICI" risultati tempi.json "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: risultati
+          path: risultati/
+          retention-days: 7
+      - name: Salvataggio in prove/lettura-2026-10
+        if: inputs.salva
+        run: |
+          git config user.name "emendando-catalogo-bot"
+          git config user.email "emendando-catalogo-bot@users.noreply.github.com"
+          for i in 1 2 3 4 5 6; do
+            git fetch -q origin main:refs/remotes/origin/main
+            git reset -q --hard origin/main
+            cp risultati/* prove/lettura-2026-10/
+            git add prove/lettura-2026-10
+            git diff --cached --quiet && { echo "Nessuna modifica"; break; }
+            git commit -q -m "Prova di lettura (Kraken): risultati $(date -u '+%Y-%m-%d %H:%M') UTC" -m "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+          Claude-Session: https://claude.ai/code/session_01MiwrmNZt4ypsMpraC8a66R"
+            git push -q origin HEAD:main && break
+            sleep $((RANDOM % 30 + 10))
+          done
+      - name: Cancellazione delle letture complete (artefatti)
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for id in $(gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts?per_page=100" --jq '.artifacts[] | select(.name | startswith("letture-")) | .id'); do
+            gh api -X DELETE "repos/${{ github.repository }}/actions/artifacts/$id" && echo "cancellato $id"
+          done
