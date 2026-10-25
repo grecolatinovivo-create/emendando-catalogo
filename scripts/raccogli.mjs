@@ -2,8 +2,9 @@
 // Catalogo dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate: tutti i manoscritti, di ogni lingua ed epoca.
 // Autori e opere riconosciuti (classici latini e greci, cristiani, medievali) sono un'informazione in più, per cercare e filtrare.
 // Uso:
-//   node scripts/raccogli.mjs [--fonti=heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,vaticana] [--vaticana-minuti=20] [--oai-minuti=60]
-//        [--bodleian-minuti=30] [--gallica-minuti=30] [--laurenziana-minuti=15] [--leiden-minuti=15] [--hsp-minuti=10] [--berlino-minuti=60] [--indici-minuti=20]
+//   node scripts/raccogli.mjs [--fonti=heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,vaticana] [--vaticana-minuti=20] [--oai-minuti=60]
+//        [--bodleian-minuti=30] [--gallica-minuti=30] [--laurenziana-minuti=15] [--ambrosiana-minuti=20] [--montecassino-minuti=5] [--casanatense-minuti=5] [--bub-minuti=10]
+//        [--leiden-minuti=15] [--hsp-minuti=10] [--berlino-minuti=60] [--indici-minuti=20]
 //        [--yale-minuti=30] [--penn-minuti=15] [--ds-minuti=15] [--walters-minuti=20] [--loc-minuti=10] [--nlg-minuti=15]
 //        [--ndl-minuti=60] [--kokusho-minuti=60] [--auckland-minuti=10] [--minuti-totali=160] [--solo-costruisci]
 // Scrive il catalogo diviso per fonte (vedi costruisci.mjs): data/catalogo/indice.json, data/catalogo/indice/<fonte>-<n>.json, data/catalogo/voci/<fonte>-<n>.json,
@@ -24,6 +25,10 @@ import { scansiona, recordVaticana } from "./fonti/vaticana.mjs";
 import { scansionaBodleian, recordBodleian } from "./fonti/bodleian.mjs";
 import { raccogliGallica } from "./fonti/gallica.mjs";
 import { scansionaLaurenziana, recordLaurenziana } from "./fonti/laurenziana.mjs";
+import { scansionaAmbrosiana, recordAmbrosiana } from "./fonti/ambrosiana.mjs";
+import { scansionaMontecassino, recordMontecassino } from "./fonti/montecassino.mjs";
+import { scansionaCasanatense, recordCasanatense } from "./fonti/casanatense.mjs";
+import { scansionaBub, recordBub } from "./fonti/bub.mjs";
 import { leggiIndiciHeidelberg, conIndici } from "./fonti/heidelberg-indici.mjs";
 import { scansionaLeiden, recordLeiden } from "./fonti/leiden.mjs";
 import { scansionaHsp, recordHsp, FONTI_HSP } from "./fonti/hsp.mjs";
@@ -42,11 +47,16 @@ import { scriviRegistro, registraEsiti } from "./registro.mjs";
 import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
-const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,vaticana").split(",");
+const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,vaticana").split(",");
 const INIZIO = Date.now();
 export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)", berlino: "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
   bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)",
-  laurenziana: "Biblioteca Medicea Laurenziana, Firenze (tecabml.contentdm.oclc.org)", leiden: "Universiteitsbibliotheek Leiden (digitalcollections.universiteitleiden.nl)",
+  laurenziana: "Biblioteca Medicea Laurenziana, Firenze (tecabml.contentdm.oclc.org)",
+  ambrosiana: "Veneranda Biblioteca Ambrosiana, Milano (ambrosiana.comperio.it; copie digitali digitallibrary.unicatt.it)",
+  montecassino: "Biblioteca statale del Monumento nazionale di Montecassino (omnes.dbseret.com/montecassino)",
+  casanatense: "Biblioteca Casanatense, Roma (casanatense.contentdm.oclc.org)",
+  bub: "Biblioteca Universitaria di Bologna (historica.unibo.it)",
+  leiden: "Universiteitsbibliotheek Leiden (digitalcollections.universiteitleiden.nl)",
   ...Object.fromEntries(Object.entries(FONTI_HSP).map(([f, h]) => [f, `${h.biblioteca}${h.biblioteca.includes(h.citta) ? "" : ", " + h.citta} (dati dal Handschriftenportal, handschriftenportal.de)`])),
   yale: "Yale University Library, Beinecke e altre (collections.library.yale.edu)", penn: "University of Pennsylvania Libraries (colenda.library.upenn.edu)",
   ds: "Digital Scriptorium: istituzioni statunitensi (search.digital-scriptorium.org)",
@@ -158,6 +168,11 @@ async function main() {
     bodleian: async () => recordBodleian(await scansionaBodleian({ minuti: min("bodleian", +(arg["bodleian-minuti"] ?? 30)), soloCache: sc("bodleian") })),
     gallica: () => raccogliGallica({ limiteMinuti: min("gallica", +(arg["gallica-minuti"] ?? 30)), soloCache: sc("gallica") }),
     laurenziana: async () => recordLaurenziana(await scansionaLaurenziana({ minuti: min("laurenziana", +(arg["laurenziana-minuti"] ?? 15)), soloCache: sc("laurenziana") })),
+    // biblioteche italiane (corsia «italia»)
+    ambrosiana: async () => recordAmbrosiana(await scansionaAmbrosiana({ minuti: min("ambrosiana", +(arg["ambrosiana-minuti"] ?? 20)), soloCache: sc("ambrosiana") })),
+    montecassino: async () => recordMontecassino(await scansionaMontecassino({ minuti: min("montecassino", +(arg["montecassino-minuti"] ?? 5)), soloCache: sc("montecassino") })),
+    casanatense: async () => recordCasanatense(await scansionaCasanatense({ minuti: min("casanatense", +(arg["casanatense-minuti"] ?? 5)), soloCache: sc("casanatense") })),
+    bub: async () => recordBub(await scansionaBub({ minuti: min("bub", +(arg["bub-minuti"] ?? 10)), soloCache: sc("bub") })),
     leiden: async () => recordLeiden(await scansionaLeiden({ minuti: min("leiden", +(arg["leiden-minuti"] ?? 15)), soloCache: sc("leiden") })),
     // biblioteche lette dal Handschriftenportal: una fonte ciascuna, con il suo stato in data/<fonte>.json
     ...Object.fromEntries(Object.keys(FONTI_HSP).map(f => [f, async () => recordHsp(f, await scansionaHsp({ fonte: f, minuti: min(f, +(arg["hsp-minuti"] ?? 10)), soloCache: sc(f) }))])),

@@ -1,109 +1,124 @@
 {
- "aggiornato": "2026-10-25T15:38:14.073Z",
+ "aggiornato": "2026-10-25T17:07:59.657Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
    "nome": "Heidelberg (digi.ub.uni-heidelberg.de)",
    "codici": 95,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "ecodices": {
    "nome": "e-codices",
    "codici": 307,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "bsb": {
    "nome": "Bayerische Staatsbibliothek (digitale-sammlungen.de)",
    "codici": 943,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "berlino": {
    "nome": "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
    "codici": 134,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
    "codici": 476,
-   "esito": "errore: fetch failed"
+   "esito": "precedente"
   },
   "gallica": {
    "nome": "Bibliothèque nationale de France (gallica.bnf.fr)",
    "codici": 1410,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "laurenziana": {
    "nome": "Biblioteca Medicea Laurenziana, Firenze (tecabml.contentdm.oclc.org)",
    "codici": 1584,
+   "esito": "precedente"
+  },
+  "montecassino": {
+   "nome": "Biblioteca statale del Monumento nazionale di Montecassino (omnes.dbseret.com/montecassino)",
+   "codici": 9,
+   "esito": "ok"
+  },
+  "casanatense": {
+   "nome": "Biblioteca Casanatense, Roma (casanatense.contentdm.oclc.org)",
+   "codici": 2,
+   "esito": "ok"
+  },
+  "bub": {
+   "nome": "Biblioteca Universitaria di Bologna (historica.unibo.it)",
+   "codici": 13,
    "esito": "ok"
   },
   "leiden": {
    "nome": "Universiteitsbibliotheek Leiden (digitalcollections.universiteitleiden.nl)",
    "codici": 510,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "bamberga": {
    "nome": "Staatsbibliothek Bamberg, Bamberga (dati dal Handschriftenportal, handschriftenportal.de)",
    "codici": 44,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "colonia": {
    "nome": "Erzbischöfliche Diözesan- und Dombibliothek Köln mit Bibliothek St. Albertus Magnus, Colonia (dati dal Handschriftenportal, handschriftenportal.de)",
    "codici": 16,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "lipsia": {
    "nome": "Universitätsbibliothek Leipzig, Lipsia (dati dal Handschriftenportal, handschriftenportal.de)",
    "codici": 179,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "yale": {
    "nome": "Yale University Library, Beinecke e altre (collections.library.yale.edu)",
    "codici": 257,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "penn": {
    "nome": "University of Pennsylvania Libraries (colenda.library.upenn.edu)",
    "codici": 159,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "ds": {
    "nome": "Digital Scriptorium: istituzioni statunitensi (search.digital-scriptorium.org)",
    "codici": 174,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "loc": {
    "nome": "Library of Congress: microfilm del Sinai e dei Patriarcati di Gerusalemme (loc.gov; manifesti scritti dal catalogo)",
    "codici": 34,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "nlg": {
    "nome": "Biblioteca Nazionale di Grecia, Atene (digitalcollections.nlg.gr; copie dei manifesti scritte dal catalogo)",
    "codici": 0,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "ndl": {
    "nome": "National Diet Library, Tokyo (dl.ndl.go.jp)",
    "codici": 0,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "kokusho": {
    "nome": "Kokusho Database, National Institute of Japanese Literature (kokusho.nijl.ac.jp)",
    "codici": 0,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "auckland": {
    "nome": "Auckland Libraries, Sir George Grey Special Collections (kura.aucklandlibraries.govt.nz)",
    "codici": 4,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
    "codici": 381,
-   "esito": "ok"
+   "esito": "precedente"
   }
  },
- "totale": 6707,
+ "totale": 6731,
  "manoscritti": [
   {
    "id": "akl-17669",
@@ -53541,6 +53556,64 @@
    "truculentus": "D"
   },
   {
+   "id": "bcas-13147",
+   "fonte": "casanatense",
+   "biblioteca": "Biblioteca Casanatense",
+   "citta": "Roma",
+   "segnatura": "Ms. 946",
+   "datazione": "1401-1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": null,
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Plutarchus»"
+    }
+   ],
+   "manifest": "https://casanatense.contentdm.oclc.org/iiif/2/manoscritti:13147/manifest.json",
+   "pagina": "https://casanatense.contentdm.oclc.org/digital/collection/manoscritti/id/13147",
+   "licenza": "Biblioteca Casanatense (MiC): accesso pubblico",
+   "immagini": null
+  },
+  {
+   "id": "bcas-12928",
+   "fonte": "casanatense",
+   "biblioteca": "Biblioteca Casanatense",
+   "citta": "Roma",
+   "segnatura": "Ms. 1387",
+   "datazione": "1464",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": null,
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Plutarchus»"
+    }
+   ],
+   "manifest": "https://casanatense.contentdm.oclc.org/iiif/2/manoscritti:12928/manifest.json",
+   "pagina": "https://casanatense.contentdm.oclc.org/digital/collection/manoscritti/id/12928",
+   "licenza": "Biblioteca Casanatense (MiC): accesso pubblico",
+   "immagini": null
+  },
+  {
    "id": "bml-acquisti-doni-587",
    "fonte": "laurenziana",
    "biblioteca": "Biblioteca Medicea Laurenziana",
@@ -106385,6 +106458,696 @@
    "manifest": "https://tecabml.contentdm.oclc.org/iiif/san-marco:11883/manifest.json",
    "pagina": "https://tecabml.contentdm.oclc.org/digital/collection/san-marco/id/11883",
    "licenza": "CC BY-NC-SA",
+   "immagini": null
+  },
+  {
+   "id": "mcas-ams_0009",
+   "fonte": "montecassino",
+   "biblioteca": "Biblioteca statale del Monumento nazionale di Montecassino",
+   "citta": "Montecassino (Cassino)",
+   "segnatura": "Cod. 9",
+   "datazione": "sec. XIV",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Aristotele, Metafisica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica"
+     ],
+     "corrispondenza": "titolo: «Aristotele, Metafisica»"
+    }
+   ],
+   "manifest": "https://omnes.dbseret.com/montecassino/iiif/IT-FR0084_ams_0009/manifest",
+   "pagina": "https://manus.iccu.sbn.it/cnmd/0000313055",
+   "licenza": "Biblioteca statale del Monumento nazionale di Montecassino (MiC); piattaforma OMNES © DB Seret",
+   "immagini": 167
+  },
+  {
+   "id": "mcas-ams_0010",
+   "fonte": "montecassino",
+   "biblioteca": "Biblioteca statale del Monumento nazionale di Montecassino",
+   "citta": "Montecassino (Cassino)",
+   "segnatura": "Cod. 10",
+   "datazione": "sec. XIV",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Aristotele, Etica Nicomachea",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Etica Nicomachea"
+     ],
+     "corrispondenza": "titolo: «Aristotele, Etica Nicomachea»"
+    }
+   ],
+   "manifest": "https://omnes.dbseret.com/montecassino/iiif/IT-FR0084_ams_0010/manifest",
+   "pagina": "https://manus.iccu.sbn.it/cnmd/0000313056",
+   "licenza": "Biblioteca statale del Monumento nazionale di Montecassino (MiC); piattaforma OMNES © DB Seret",
+   "immagini": 325
+  },
+  {
+   "id": "mcas-ams_0188",
+   "fonte": "montecassino",
+   "biblioteca": "Biblioteca statale del Monumento nazionale di Montecassino",
+   "citta": "Montecassino (Cassino)",
+   "segnatura": "Cod. 188",
+   "datazione": "sec. XIII",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Gilberto Porretano, Commentaria in Boetii opuscula sacra",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Opuscula sacra"
+     ],
+     "corrispondenza": "descrizione: «…retano agli Opuscula sacra di Boezio in littera textualis, origina…»"
+    }
+   ],
+   "manifest": "https://omnes.dbseret.com/montecassino/iiif/IT-FR0084_ams_0188/manifest",
+   "pagina": "https://manus.iccu.sbn.it/cnmd/0000420951",
+   "licenza": "Biblioteca statale del Monumento nazionale di Montecassino (MiC); piattaforma OMNES © DB Seret",
+   "immagini": 253
+  },
+  {
+   "id": "mcas-ams_0191",
+   "fonte": "montecassino",
+   "biblioteca": "Biblioteca statale del Monumento nazionale di Montecassino",
+   "citta": "Montecassino (Cassino)",
+   "segnatura": "Cod. 191",
+   "datazione": "sec. XI",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Evangelistario; Boezio, Opere",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Evangelistario; Boezio, Opere»"
+    }
+   ],
+   "manifest": "https://omnes.dbseret.com/montecassino/iiif/IT-FR0084_ams_0191/manifest",
+   "pagina": "https://manus.iccu.sbn.it/cnmd/0000400514",
+   "licenza": "Biblioteca statale del Monumento nazionale di Montecassino (MiC); piattaforma OMNES © DB Seret",
+   "immagini": 215
+  },
+  {
+   "id": "mcas-ams_0332",
+   "fonte": "montecassino",
+   "biblioteca": "Biblioteca statale del Monumento nazionale di Montecassino",
+   "citta": "Montecassino (Cassino)",
+   "segnatura": "Cod. 332",
+   "datazione": "sec. IX/X",
+   "secolo": [
+    9,
+    10
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Marziano Capella, De nuptiis Philologiae et Mercurii",
+   "autori": [
+    {
+     "id": "marziano-capella",
+     "autore": "Marziano Capella",
+     "latino": "Martianus Capella",
+     "categoria": "classico-latino",
+     "opere": [
+      "De nuptiis Philologiae et Mercurii"
+     ],
+     "corrispondenza": "titolo: «Marziano Capella, De nuptiis Philologiae et Mercurii»"
+    }
+   ],
+   "manifest": "https://omnes.dbseret.com/montecassino/iiif/IT-FR0084_ams_0332/manifest",
+   "pagina": "https://manus.iccu.sbn.it/cnmd/0000313575",
+   "licenza": "Biblioteca statale del Monumento nazionale di Montecassino (MiC); piattaforma OMNES © DB Seret",
+   "immagini": 261
+  },
+  {
+   "id": "mcas-ams_0340",
+   "fonte": "montecassino",
+   "biblioteca": "Biblioteca statale del Monumento nazionale di Montecassino",
+   "citta": "Montecassino (Cassino)",
+   "segnatura": "Cod. 340",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Cicerone, Verrine; Divinatio in Caecilium",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Verrine"
+     ],
+     "corrispondenza": "titolo: «Cicerone, Verrine; Divinatio in Caecilium»"
+    }
+   ],
+   "manifest": "https://omnes.dbseret.com/montecassino/iiif/IT-FR0084_ams_0340/manifest",
+   "pagina": "https://manus.iccu.sbn.it/cnmd/0000396704",
+   "licenza": "Biblioteca statale del Monumento nazionale di Montecassino (MiC); piattaforma OMNES © DB Seret",
+   "immagini": 415
+  },
+  {
+   "id": "mcas-ams_0392",
+   "fonte": "montecassino",
+   "biblioteca": "Biblioteca statale del Monumento nazionale di Montecassino",
+   "citta": "Montecassino (Cassino)",
+   "segnatura": "Cod. 392",
+   "datazione": "sec. XIV",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Seneca, Tragedie",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tragedie"
+     ],
+     "corrispondenza": "titolo: «Seneca, Tragedie»"
+    },
+    {
+     "id": "vegezio",
+     "autore": "Vegezio",
+     "latino": "Vegetius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epitoma rei militaris"
+     ],
+     "corrispondenza": "descrizione: «…ne l'Epitoma rei militaris di Vegezio. ; Scrittura: Littera textual…»"
+    }
+   ],
+   "manifest": "https://omnes.dbseret.com/montecassino/iiif/IT-FR0084_ams_0392/manifest",
+   "pagina": "https://manus.iccu.sbn.it/cnmd/0000401014",
+   "licenza": "Biblioteca statale del Monumento nazionale di Montecassino (MiC); piattaforma OMNES © DB Seret",
+   "immagini": 277
+  },
+  {
+   "id": "mcas-ams_0648",
+   "fonte": "montecassino",
+   "biblioteca": "Biblioteca statale del Monumento nazionale di Montecassino",
+   "citta": "Montecassino (Cassino)",
+   "segnatura": "Cod. 648",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Miscellanea filosofica",
+   "autori": [
+    {
+     "id": "porfirio",
+     "autore": "Porfirio",
+     "latino": "Porphyrius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Isagoge"
+     ],
+     "corrispondenza": "descrizione: «…le traduzioni dell'Isagoge di Porfirio e di alcune opere aristotelic…»"
+    }
+   ],
+   "manifest": "https://omnes.dbseret.com/montecassino/iiif/IT-FR0084_ams_0648/manifest",
+   "pagina": "https://manus.iccu.sbn.it/cnmd/0000313325",
+   "licenza": "Biblioteca statale del Monumento nazionale di Montecassino (MiC); piattaforma OMNES © DB Seret",
+   "immagini": 203
+  },
+  {
+   "id": "mcas-ams_0652",
+   "fonte": "montecassino",
+   "biblioteca": "Biblioteca statale del Monumento nazionale di Montecassino",
+   "citta": "Montecassino (Cassino)",
+   "segnatura": "Cod. 652",
+   "datazione": "sec. XV/XVI",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Sulpicio da Veroli, Commento ai Paradoxa stoicorum di Cicerone",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Paradoxa Stoicorum"
+     ],
+     "corrispondenza": "descrizione: «…roli ai Paradoxa stoicorum di Cicerone ; Scrittura: Minuscola umanis…»"
+    }
+   ],
+   "manifest": "https://omnes.dbseret.com/montecassino/iiif/IT-FR0084_ams_0652/manifest",
+   "pagina": "https://manus.iccu.sbn.it/cnmd/0000313334",
+   "licenza": "Biblioteca statale del Monumento nazionale di Montecassino (MiC); piattaforma OMNES © DB Seret",
+   "immagini": 113
+  },
+  {
+   "id": "bub-64e6eb6c-8126-4829-b70b-6b99612a05f6",
+   "fonte": "bub",
+   "biblioteca": "Biblioteca Universitaria di Bologna",
+   "citta": "Bologna",
+   "segnatura": "ms. 919",
+   "datazione": "1451-1475",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Universitaria di Bologna. Fondo manoscritti, mss. 125 - 1043",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Livius, Titus ; Gregorius I»"
+    }
+   ],
+   "manifest": "https://historica.unibo.it/server/iiif/64e6eb6c-8126-4829-b70b-6b99612a05f6/manifest",
+   "pagina": "https://historica.unibo.it/handle/https://historica.unibo.it/handle/20.500.14008/88528",
+   "licenza": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+   "immagini": null
+  },
+  {
+   "id": "bub-0d1ba308-dd96-44bc-9915-0609599df7c3",
+   "fonte": "bub",
+   "biblioteca": "Biblioteca Universitaria di Bologna",
+   "citta": "Bologna",
+   "segnatura": "ms. 2233",
+   "datazione": "1469",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Universitaria di Bologna. Fondo manoscritti, mss. 2201 - 2948 (San Salvatore)",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Livius, Titus»"
+    }
+   ],
+   "manifest": "https://historica.unibo.it/server/iiif/0d1ba308-dd96-44bc-9915-0609599df7c3/manifest",
+   "pagina": "https://historica.unibo.it/handle/https://historica.unibo.it/handle/20.500.14008/88527",
+   "licenza": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+   "immagini": null
+  },
+  {
+   "id": "bub-5e643588-7dbb-44df-8fa7-8184812b07d3",
+   "fonte": "bub",
+   "biblioteca": "Biblioteca Universitaria di Bologna",
+   "citta": "Bologna",
+   "segnatura": "ms. 2241",
+   "datazione": "1469",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Universitaria di Bologna. Fondo manoscritti, mss. 2201 - 2948 (San Salvatore)",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Livius, Titus»"
+    }
+   ],
+   "manifest": "https://historica.unibo.it/server/iiif/5e643588-7dbb-44df-8fa7-8184812b07d3/manifest",
+   "pagina": "https://historica.unibo.it/handle/https://historica.unibo.it/handle/20.500.14008/88529",
+   "licenza": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+   "immagini": null
+  },
+  {
+   "id": "bub-37ab9c63-f5b0-4a54-bbad-7862c3f2fb64",
+   "fonte": "bub",
+   "biblioteca": "Biblioteca Universitaria di Bologna",
+   "citta": "Bologna",
+   "segnatura": "ms. 2245",
+   "datazione": "1469",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Universitaria di Bologna. Fondo manoscritti, mss. 2201 - 2948 (San Salvatore)",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Livius, Titus»"
+    }
+   ],
+   "manifest": "https://historica.unibo.it/server/iiif/37ab9c63-f5b0-4a54-bbad-7862c3f2fb64/manifest",
+   "pagina": "https://historica.unibo.it/handle/https://historica.unibo.it/handle/20.500.14008/88525",
+   "licenza": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+   "immagini": null
+  },
+  {
+   "id": "bub-99b12207-375a-4f9b-8ae2-b94f7ffc047c",
+   "fonte": "bub",
+   "biblioteca": "Biblioteca Universitaria di Bologna",
+   "citta": "Bologna",
+   "segnatura": "ms. 2253",
+   "datazione": "1472-08-13",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Universitaria di Bologna. Fondo manoscritti, mss. 2201 - 2948 (San Salvatore)",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Livius, Titus»"
+    }
+   ],
+   "manifest": "https://historica.unibo.it/server/iiif/99b12207-375a-4f9b-8ae2-b94f7ffc047c/manifest",
+   "pagina": "https://historica.unibo.it/handle/https://historica.unibo.it/handle/20.500.14008/88524",
+   "licenza": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+   "immagini": null
+  },
+  {
+   "id": "bub-d1fb8329-0e4d-4560-bf4a-5c4bf61e338c",
+   "fonte": "bub",
+   "biblioteca": "Biblioteca Universitaria di Bologna",
+   "citta": "Bologna",
+   "segnatura": "ms. 2289",
+   "datazione": "1461-1470",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Universitaria di Bologna. Fondo manoscritti, mss. 2201 - 2948 (San Salvatore)",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Livius, Titus»"
+    }
+   ],
+   "manifest": "https://historica.unibo.it/server/iiif/d1fb8329-0e4d-4560-bf4a-5c4bf61e338c/manifest",
+   "pagina": "https://historica.unibo.it/handle/https://historica.unibo.it/handle/20.500.14008/88526",
+   "licenza": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+   "immagini": null
+  },
+  {
+   "id": "bub-d01b4efe-c3ba-4f62-b0e1-5ae65bbb7de2",
+   "fonte": "bub",
+   "biblioteca": "Biblioteca Universitaria di Bologna",
+   "citta": "Bologna",
+   "segnatura": "ms. 2358",
+   "datazione": "1400-1425",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Universitaria di Bologna. Fondo manoscritti, mss. 2201 - 2948 (San Salvatore)",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Terentius Afer, Publius ; da Moglio, Pietro ; Ptolemaeus, Claudius»"
+    }
+   ],
+   "manifest": "https://historica.unibo.it/server/iiif/d01b4efe-c3ba-4f62-b0e1-5ae65bbb7de2/manifest",
+   "pagina": "https://historica.unibo.it/handle/https://historica.unibo.it/handle/20.500.14008/88521",
+   "licenza": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+   "immagini": null
+  },
+  {
+   "id": "bub-f5f296b8-d536-476a-800c-b3679f35ac2c",
+   "fonte": "bub",
+   "biblioteca": "Biblioteca Universitaria di Bologna",
+   "citta": "Bologna",
+   "segnatura": "ms. 2470",
+   "datazione": "1401-1450",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Universitaria di Bologna. Fondo manoscritti, mss. 2201 - 2948 (San Salvatore)",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Terentius Afer, Publius»"
+    }
+   ],
+   "manifest": "https://historica.unibo.it/server/iiif/f5f296b8-d536-476a-800c-b3679f35ac2c/manifest",
+   "pagina": "https://historica.unibo.it/handle/https://historica.unibo.it/handle/20.500.14008/88523",
+   "licenza": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+   "immagini": null
+  },
+  {
+   "id": "bub-fd02bc46-79dc-4a8e-8e90-75d4f4437728",
+   "fonte": "bub",
+   "biblioteca": "Biblioteca Universitaria di Bologna",
+   "citta": "Bologna",
+   "segnatura": "ms. 2525",
+   "datazione": "1451-1475",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Universitaria di Bologna. Fondo manoscritti, mss. 2201 - 2948 (San Salvatore)",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Terentius Afer, Publius»"
+    }
+   ],
+   "manifest": "https://historica.unibo.it/server/iiif/fd02bc46-79dc-4a8e-8e90-75d4f4437728/manifest",
+   "pagina": "https://historica.unibo.it/handle/https://historica.unibo.it/handle/20.500.14008/88520",
+   "licenza": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+   "immagini": null
+  },
+  {
+   "id": "bub-a0138dc4-e8b3-40df-8913-9d0e2760bfd6",
+   "fonte": "bub",
+   "biblioteca": "Biblioteca Universitaria di Bologna",
+   "citta": "Bologna",
+   "segnatura": "ms. 2613",
+   "datazione": "1451-1475",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Universitaria di Bologna. Fondo manoscritti, mss. 2201 - 2948 (San Salvatore)",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Terentius Afer, Publius»"
+    }
+   ],
+   "manifest": "https://historica.unibo.it/server/iiif/a0138dc4-e8b3-40df-8913-9d0e2760bfd6/manifest",
+   "pagina": "https://historica.unibo.it/handle/https://historica.unibo.it/handle/20.500.14008/88522",
+   "licenza": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+   "immagini": null
+  },
+  {
+   "id": "bub-3c06f67d-cc83-4466-ac74-7344123b5409",
+   "fonte": "bub",
+   "biblioteca": "Biblioteca Universitaria di Bologna",
+   "citta": "Bologna",
+   "segnatura": "ms. 2642",
+   "datazione": "1463-10-14",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Universitaria di Bologna. Fondo manoscritti, mss. 2201 - 2948 (San Salvatore)",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Terentius Afer, Publius»"
+    }
+   ],
+   "manifest": "https://historica.unibo.it/server/iiif/3c06f67d-cc83-4466-ac74-7344123b5409/manifest",
+   "pagina": "https://historica.unibo.it/handle/https://historica.unibo.it/handle/20.500.14008/88532",
+   "licenza": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+   "immagini": null
+  },
+  {
+   "id": "bub-b0ac806b-0552-47e3-b29c-544f739c99cc",
+   "fonte": "bub",
+   "biblioteca": "Biblioteca Universitaria di Bologna",
+   "citta": "Bologna",
+   "segnatura": "ms. 2675",
+   "datazione": "1451-1478",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Universitaria di Bologna. Fondo manoscritti, mss. 2201 - 2948 (San Salvatore)",
+   "autori": [
+    {
+     "id": "floro",
+     "autore": "Floro",
+     "latino": "Florus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Florus, Lucius Annaeus»"
+    }
+   ],
+   "manifest": "https://historica.unibo.it/server/iiif/b0ac806b-0552-47e3-b29c-544f739c99cc/manifest",
+   "pagina": "https://historica.unibo.it/handle/https://historica.unibo.it/handle/20.500.14008/88530",
+   "licenza": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+   "immagini": null
+  },
+  {
+   "id": "bub-671ad89d-283f-4d57-8a4f-3dfc77cd07c8",
+   "fonte": "bub",
+   "biblioteca": "Biblioteca Universitaria di Bologna",
+   "citta": "Bologna",
+   "segnatura": "ms. 4329bis",
+   "datazione": "1426",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Universitaria di Bologna. Fondo manoscritti, mss. 4209 -",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Terentius Afer, Publius»"
+    }
+   ],
+   "manifest": "https://historica.unibo.it/server/iiif/671ad89d-283f-4d57-8a4f-3dfc77cd07c8/manifest",
+   "pagina": "https://historica.unibo.it/handle/https://historica.unibo.it/handle/20.500.14008/88531",
+   "licenza": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
    "immagini": null
   },
   {

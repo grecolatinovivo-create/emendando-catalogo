@@ -19,6 +19,16 @@
   "esito": "ok",
   "ultimo_ok": "2026-10-25T09:26:55.793Z"
  },
+ "bub": {
+  "quando": "2026-10-25T17:07:59.942Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-25T17:07:59.942Z"
+ },
+ "casanatense": {
+  "quando": "2026-10-25T17:07:59.942Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-25T17:07:59.942Z"
+ },
  "colonia": {
   "quando": "2026-10-25T09:26:55.793Z",
   "esito": "ok",
@@ -50,7 +60,7 @@
   "ultimo_ok": "2026-10-25T09:26:55.793Z"
  },
  "karlsruhe": {
-  "quando": "2026-10-25T10:04:47.135Z",
+  "quando": "2026-10-25T17:07:59.942Z",
   "esito": "sospesa: digital.blb-karlsruhe.de risponde 403",
   "ultimo_ok": "2026-10-24T19:49:16.763Z"
  },
@@ -74,6 +84,11 @@
   "esito": "ok",
   "ultimo_ok": "2026-10-25T13:14:23.731Z"
  },
+ "montecassino": {
+  "quando": "2026-10-25T17:07:59.942Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-25T17:07:59.942Z"
+ },
  "nlg": {
   "quando": "2026-10-25T13:14:23.731Z",
   "esito": "ok",
@@ -85,7 +100,7 @@
   "ultimo_ok": "2026-10-25T09:26:55.793Z"
  },
  "stoccarda": {
-  "quando": "2026-10-25T10:04:47.135Z",
+  "quando": "2026-10-25T17:07:59.942Z",
   "esito": "sospesa: manifesti di Marburgo non raggiungibili",
   "ultimo_ok": "2026-10-24T19:49:16.763Z"
  },
@@ -94,8 +109,13 @@
   "esito": "ok",
   "ultimo_ok": "2026-10-25T15:37:24.695Z"
  },
+ "walters": {
+  "quando": "2026-10-25T17:07:59.942Z",
+  "esito": "sospesa: le immagini di thedigitalwalters.org non si caricano nemmeno dal browser (errore 522 del server del museo, 25 ottobre 2026)",
+  "ultimo_ok": null
+ },
  "wolfenbuettel": {
-  "quando": "2026-10-25T10:04:47.135Z",
+  "quando": "2026-10-25T17:07:59.942Z",
   "esito": "sospesa: server iiif.hab.de non raggiungibile",
   "ultimo_ok": "2026-10-24T19:49:16.763Z"
  },

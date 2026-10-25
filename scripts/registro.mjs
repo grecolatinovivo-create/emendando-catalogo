@@ -23,6 +23,10 @@ export const BIBLIOTECHE = {
   bodleian: { biblioteca: "Bodleian Libraries e college", citta: "Oxford", come: "corsia propria: a ruota finché non sono letti tutti, poi ogni notte" },
   gallica: { biblioteca: "Bibliothèque nationale de France (Gallica)", citta: "Parigi", come: "va rifatta a mano dal browser" },
   laurenziana: { biblioteca: "Biblioteca Medicea Laurenziana", citta: "Firenze", come: "ogni notte, da sola" },
+  ambrosiana: { biblioteca: "Veneranda Biblioteca Ambrosiana (Biblioteca Digitale)", citta: "Milano", come: "corsia italia, ogni notte (elenco ogni 6 giorni)" },
+  montecassino: { biblioteca: "Biblioteca statale del Monumento nazionale di Montecassino (Memory of Montecassino)", citta: "Montecassino", come: "corsia italia, ogni notte (raccolta completa ogni 6 giorni)" },
+  casanatense: { biblioteca: "Biblioteca Casanatense", citta: "Roma", come: "corsia italia, ogni notte (raccolta completa ogni 6 giorni)" },
+  bub: { biblioteca: "Biblioteca Universitaria di Bologna (codici in Historica, Università di Bologna)", citta: "Bologna", come: "corsia italia, ogni notte (raccolta completa ogni 6 giorni)" },
   leiden: { biblioteca: "Universiteitsbibliotheek Leiden (manoscritti, con i Vossiani; Bibliotheca Neerlandica Manuscripta)", citta: "Leida", come: "ogni notte, da sola" },
   // biblioteche lette dal Handschriftenportal (Wolfenbüttel, Bamberga, Karlsruhe, Stoccarda, Colonia, Lipsia)
   ...Object.fromEntries(Object.entries(FONTI_HSP).map(([f, h]) => [f, { biblioteca: `${h.nome} (dati dal Handschriftenportal)`, citta: h.citta, come: "ogni notte, da sola" }])),
@@ -78,6 +82,25 @@ export const AVANZAMENTO = {
     const s = leggi("data/laurenziana.json"); if (!s) return { testo: "non ancora cominciata" };
     if (s.cursore) return { testo: `in corso: collezione ${s.cursore.collezione}`, data: s.aggiornato };
     return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} codici)`, data: s.aggiornato };
+  },
+  ambrosiana: () => {
+    const s = leggi("data/ambrosiana.json"); if (!s) return { testo: "non ancora cominciata" };
+    const vs = Object.values(s.voci || {}), conCopia = vs.filter(v => v.u && v.u.length).length, daLeggere = vs.filter(v => !v.u && !v.x).length;
+    if (s.cursore != null) return { testo: `in corso: elenco della Biblioteca Digitale letto fino al codice ${num(s.cursore)} di circa ${num(s.totale)}`, data: s.aggiornato };
+    if (daLeggere) return { testo: `in corso: ${num(vs.length - daLeggere)} schede lette su ${num(vs.length)} codici della Biblioteca Digitale (circa ${Math.max(1, Math.ceil(daLeggere * 1.6 / 60))} minuti di lettura ancora); ${num(conCopia)} con la copia digitale`, data: s.aggiornato };
+    return { testo: `schede lette tutte (${num(vs.length)} codici della Biblioteca Digitale; ${num(conCopia)} con la copia digitale)`, data: s.elenco || s.aggiornato };
+  },
+  montecassino: () => {
+    const s = leggi("data/montecassino.json"); if (!s) return { testo: "non ancora cominciata" };
+    return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} codici su ${num(s.totale)} schede di tipo «Manoscritto»; fuori le pergamene d'archivio)`, data: s.completato || s.aggiornato };
+  },
+  casanatense: () => {
+    const s = leggi("data/casanatense.json"); if (!s) return { testo: "non ancora cominciata" };
+    return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} codici della collezione Manoscritti)`, data: s.completato || s.aggiornato };
+  },
+  bub: () => {
+    const s = leggi("data/bub.json"); if (!s) return { testo: "non ancora cominciata" };
+    return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} codici su ${num(s.totale)} di tipo «codices» in Historica)`, data: s.completato || s.aggiornato };
   },
   leiden: () => {
     const s = leggi("data/leiden.json"); if (!s) return { testo: "non ancora cominciata" };

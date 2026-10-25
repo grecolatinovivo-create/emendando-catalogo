@@ -19,10 +19,11 @@ async function turno(host) {
   ultimo.set(host, Date.now());
 }
 
-/* scarica un testo. opz: {range: byte massimi letti (Range), cache: giorni di validità (0 = nessuna), tentativi}
+/* scarica un testo. opz: {range: byte massimi letti (Range), cache: giorni di validità (0 = nessuna), tentativi,
+   corpo: modulo da inviare con POST (application/x-www-form-urlencoded), per i siti che sfogliano i risultati solo così}
    restituisce {stato, testo}; 404 e 410 non sono errori (stato nel risultato) */
 export async function scarica(url, opz = {}) {
-  const giorni = opz.cache ?? 0, file = path.join(CACHE, "http", crypto.createHash("sha1").update(url + "|" + (opz.range || "")).digest("hex") + ".json");
+  const giorni = opz.cache ?? 0, file = path.join(CACHE, "http", crypto.createHash("sha1").update(url + "|" + (opz.range || "") + (opz.corpo ? "|" + opz.corpo : "")).digest("hex") + ".json");
   if (giorni > 0) {
     try { const c = JSON.parse(fs.readFileSync(file, "utf8")); if (Date.now() - c.quando < giorni * 864e5) return c; } catch (e) {}
   }
@@ -34,7 +35,8 @@ export async function scarica(url, opz = {}) {
       const ctl = new AbortController(), timer = setTimeout(() => ctl.abort(), opz.timeout || 90000);
       const h = { "user-agent": UA, accept: opz.accept || "*/*" };
       if (opz.range) h.range = `bytes=0-${opz.range - 1}`;
-      const r = await fetch(url, { headers: h, signal: ctl.signal, redirect: "follow" });
+      if (opz.corpo) h["content-type"] = "application/x-www-form-urlencoded";
+      const r = await fetch(url, { method: opz.corpo ? "POST" : "GET", body: opz.corpo || undefined, headers: h, signal: ctl.signal, redirect: "follow" });
       let testo = "";
       if (opz.range && r.body) {
         // lettura parziale: ci si ferma appena si ha abbastanza (anche se il server ignora Range)

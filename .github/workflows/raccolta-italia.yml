@@ -1,0 +1,30 @@
+# Corsia «italia»: biblioteche italiane (oltre alla Laurenziana, che resta nella corsia giornaliera), una volta al giorno alle 02:20 UTC
+# (server diversi dalle altre corsie): Ambrosiana (Biblioteca Digitale; prima lettura delle schede circa 40 minuti, poi solo i codici
+# nuovi), Montecassino (Memory of Montecassino), Casanatense (CONTENTdm), Biblioteca Universitaria di Bologna (Historica).
+# Gli stati sono in data/ambrosiana.json, data/montecassino.json, data/casanatense.json, data/bub.json.
+# Niente ruota: ciò che resta a metà riprende la notte dopo.
+name: "Raccolta: corsia italia"
+
+on:
+  schedule:
+    - cron: "20 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: raccolta-italia
+  cancel-in-progress: false
+
+jobs:
+  corsia:
+    uses: ./.github/workflows/corsia.yml
+    with:
+      corsia: italia
+      fonti: ambrosiana,montecassino,casanatense,bub
+      argomenti: --ambrosiana-minuti=60 --montecassino-minuti=5 --casanatense-minuti=5 --bub-minuti=10
+      cache: false
+      ruota: false
+      flusso: raccolta-italia.yml
