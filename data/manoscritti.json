@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T12:40:09.046Z",
+ "aggiornato": "2026-10-25T12:42:51.324Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -72,13 +72,18 @@
    "codici": 174,
    "esito": "ok"
   },
+  "walters": {
+   "nome": "Walters Art Museum, Baltimore (thedigitalwalters.org; manifesti IIIF scritti da Emendando)",
+   "codici": 2,
+   "esito": "ok"
+  },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
    "codici": 366,
    "esito": "ok"
   }
  },
- "totale": 6636,
+ "totale": 6638,
  "manoscritti": [
   {
    "id": "bsb-bsb00034122",
@@ -201390,6 +201395,70 @@
    "pagina": "https://search.digital-scriptorium.org/catalog/DS9977",
    "licenza": null,
    "immagini": null
+  },
+  {
+   "id": "walters-9112",
+   "fonte": "walters",
+   "biblioteca": "The Walters Art Museum",
+   "citta": "Baltimore",
+   "segnatura": "91.12",
+   "datazione": "1200 - 1495 CE",
+   "secolo": [
+    12,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Esopus constructus et moralizatus, bound with manuscript Talmud fragments",
+   "autori": [
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Esopus constructus et moralizatus, bound with manuscript Talmud fragments»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/main/data/manifesti/walters/9112.json",
+   "pagina": "https://www.thedigitalwalters.org/Data/WaltersManuscripts/html/9112/",
+   "licenza": "CC0 1.0 (immagini); descrizione GNU FDL",
+   "immagini": 13,
+   "anteprima": "https://www.thedigitalwalters.org/Data/WaltersManuscripts/9112/data/91.12/thumb/9112_000001_thumb.jpg"
+  },
+  {
+   "id": "walters-93110",
+   "fonte": "walters",
+   "biblioteca": "The Walters Art Museum",
+   "citta": "Baltimore",
+   "segnatura": "93.110",
+   "datazione": "1400 - 1499 CE",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Single leaf from a grammar, Donatus, Aelius",
+   "autori": [
+    {
+     "id": "donato",
+     "autore": "Donato",
+     "latino": "Donatus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Single leaf from a grammar, Donatus, Aelius»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/main/data/manifesti/walters/93110.json",
+   "pagina": "https://www.thedigitalwalters.org/Data/WaltersManuscripts/html/93110/",
+   "licenza": "CC0 1.0 (immagini); descrizione GNU FDL",
+   "immagini": 2,
+   "anteprima": "https://www.thedigitalwalters.org/Data/WaltersManuscripts/93110/data/93.110/thumb/93110_000001_thumb.jpg"
   },
   {
    "id": "ec-ubb-A-IX-0092",
