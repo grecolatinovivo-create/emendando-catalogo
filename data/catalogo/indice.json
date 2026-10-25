@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-25T12:31:05.265Z",
- "totale": 87523,
- "con_autori": 12488,
+ "aggiornato": "2026-10-25T12:40:09.046Z",
+ "totale": 84281,
+ "con_autori": 12464,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
   "id",
@@ -21,23 +21,23 @@
  "lingue": {
   "la": {
    "nome": "latino",
-   "codici": 29799
+   "codici": 29767
   },
   "de": {
    "nome": "tedesco",
-   "codici": 15941
+   "codici": 15939
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 14281
+   "codici": 13220
   },
   "grc": {
    "nome": "greco",
-   "codici": 5514
+   "codici": 5508
   },
   "ar": {
    "nome": "arabo",
-   "codici": 4573
+   "codici": 4516
   },
   "sa": {
    "nome": "sanscrito",
@@ -46,10 +46,6 @@
   "xx": {
    "nome": "altre lingue",
    "codici": 3310
-  },
-  "nl": {
-   "nome": "nederlandese",
-   "codici": 2564
   },
   "fr": {
    "nome": "francese",
@@ -71,9 +67,13 @@
    "nome": "copto",
    "codici": 1475
   },
+  "nl": {
+   "nome": "nederlandese",
+   "codici": 518
+  },
   "fa": {
    "nome": "persiano",
-   "codici": 493
+   "codici": 491
   },
   "es": {
    "nome": "spagnolo",
@@ -111,10 +111,6 @@
    "nome": "etiopico",
    "codici": 57
   },
-  "ms": {
-   "nome": "malese",
-   "codici": 47
-  },
   "ca": {
    "nome": "catalano",
    "codici": 42
@@ -127,9 +123,9 @@
    "nome": "siriaco",
    "codici": 39
   },
-  "jv": {
-   "nome": "giavanese",
-   "codici": 25
+  "ms": {
+   "nome": "malese",
+   "codici": 26
   },
   "cs": {
    "nome": "ceco",
@@ -154,6 +150,10 @@
   "cy": {
    "nome": "gallese",
    "codici": 11
+  },
+  "jv": {
+   "nome": "giavanese",
+   "codici": 10
   },
   "pl": {
    "nome": "polacco",
@@ -183,15 +183,15 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 4541
+   "codici": 4540
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 2439
+   "codici": 2424
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 5355
+   "codici": 5347
   },
   "medievale": {
    "nome": "autori medievali",
@@ -245,7 +245,7 @@
    "nome": "Virgilio",
    "latino": "Vergilius",
    "categoria": "classico-latino",
-   "codici": 346
+   "codici": 345
   },
   "orazio": {
    "nome": "Orazio",
@@ -425,7 +425,7 @@
    "nome": "Eutropio",
    "latino": "Eutropius",
    "categoria": "classico-latino",
-   "codici": 33
+   "codici": 32
   },
   "vegezio": {
    "nome": "Vegezio",
@@ -719,7 +719,7 @@
    "nome": "Tucidide",
    "latino": "Thucydides",
    "categoria": "classico-greco",
-   "codici": 18
+   "codici": 15
   },
   "senofonte": {
    "nome": "Senofonte",
@@ -737,7 +737,7 @@
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 929
+   "codici": 922
   },
   "teofrasto": {
    "nome": "Teofrasto",
@@ -911,13 +911,13 @@
    "nome": "Euclide",
    "latino": "Euclides",
    "categoria": "classico-greco",
-   "codici": 61
+   "codici": 58
   },
   "archimede": {
    "nome": "Archimede",
    "latino": "Archimedes",
    "categoria": "classico-greco",
-   "codici": 12
+   "codici": 10
   },
   "dionisio-trace": {
    "nome": "Dionisio Trace",
@@ -1145,7 +1145,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 2319
+   "codici": 2311
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1888,31 +1888,31 @@
   },
   "leiden": {
    "nome": "Universiteitsbibliotheek Leiden (digitalcollections.universiteitleiden.nl)",
-   "codici": 6226,
-   "con_autori": 751,
+   "codici": 2984,
+   "con_autori": 727,
    "lingue": {
-    "?": 2889,
-    "la": 634,
-    "ar": 170,
-    "nl": 2337,
-    "grc": 89,
+    "?": 1828,
+    "la": 602,
+    "ar": 113,
+    "nl": 291,
+    "grc": 83,
     "fr": 12,
-    "de": 10,
+    "de": 8,
     "es": 4,
-    "jv": 19,
-    "it": 1,
-    "fa": 9,
-    "ms": 33,
+    "jv": 4,
     "tr": 9,
     "syr": 1,
+    "it": 1,
+    "fa": 7,
     "he": 8,
+    "ms": 12,
     "en": 1
    },
    "esito": "ok",
    "prefissi": [
     "lei-"
    ],
-   "pezzi_voci": 8,
+   "pezzi_voci": 4,
    "indice": [
     "indice/leiden-0.json"
    ]
@@ -2181,7 +2181,7 @@
   {
    "file": "indice/leiden-0.json",
    "fonte": "leiden",
-   "righe": 6226
+   "righe": 2984
   },
   {
    "file": "indice/bamberga-0.json",

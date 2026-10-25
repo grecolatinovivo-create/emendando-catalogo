@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T12:31:05.265Z",
+ "aggiornato": "2026-10-25T12:40:09.046Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -39,7 +39,7 @@
   },
   "leiden": {
    "nome": "Universiteitsbibliotheek Leiden (digitalcollections.universiteitleiden.nl)",
-   "codici": 526,
+   "codici": 510,
    "esito": "ok"
   },
   "bamberga": {
@@ -78,7 +78,7 @@
    "esito": "ok"
   }
  },
- "totale": 6652,
+ "totale": 6636,
  "manoscritti": [
   {
    "id": "bsb-bsb00034122",
@@ -211316,6 +211316,36 @@
    "immagini": null
   },
   {
+   "id": "lei-3230213",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "BPG 5",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Platonis Meno BPG 5",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [
+      "Menone"
+     ],
+     "corrispondenza": "titolo: «Platonis Meno BPG 5»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3230213/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:3230213",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
    "id": "lei-359090",
    "fonte": "leiden",
    "biblioteca": "Universiteitsbibliotheek Leiden",
@@ -215539,45 +215569,6 @@
    "immagini": null
   },
   {
-   "id": "lei-1667735",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "BPL 141",
-   "datazione": "Part 1: France ; Reims, 9th century, last quarter - Part 2: France ; Reims, 9th century, third quarter - Part 3: France, northern part?, 9th century, second third",
-   "secolo": [
-    9,
-    9
-   ],
-   "lingue": [
-    "la"
-   ],
-   "lingua_dedotta": true,
-   "titolo": "Composite manuscript, three parts (Latin): 1. (ff. 3-30) Letter to Charles the Bald. - 2. (ff. 31-62) De praedestinatione / Hincmar of Reims. - And other part(s)",
-   "autori": [
-    {
-     "id": "virgilio",
-     "autore": "Virgilio",
-     "latino": "Vergilius",
-     "categoria": "classico-latino",
-     "opere": [],
-     "corrispondenza": "autore: «Eutropius, Hincmar, Virgil.»"
-    },
-    {
-     "id": "eutropio",
-     "autore": "Eutropio",
-     "latino": "Eutropius",
-     "categoria": "classico-latino",
-     "opere": [],
-     "corrispondenza": "autore: «Eutropius, Hincmar, Virgil.»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1667735/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:1667735",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
    "id": "lei-2356986",
    "fonte": "leiden",
    "biblioteca": "Universiteitsbibliotheek Leiden",
@@ -218680,572 +218671,6 @@
    "immagini": null
   },
   {
-   "id": "lei-1837097",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "item 1837097",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [],
-   "lingua_dedotta": false,
-   "titolo": "Aristotelis Historia de Animalibus latine SCA 54 - part 7",
-   "autori": [
-    {
-     "id": "aristotele",
-     "autore": "Aristotele",
-     "latino": "Aristoteles",
-     "categoria": "classico-greco",
-     "opere": [
-      "Historia animalium"
-     ],
-     "corrispondenza": "titolo: «Aristotelis Historia de Animalibus latine SCA 54 - part 7»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1837097/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:1837097",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-1837558",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "item 1837558",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [],
-   "lingua_dedotta": false,
-   "titolo": "Aristotelis Historia de Animalibus latine SCA 54 - part 5",
-   "autori": [
-    {
-     "id": "aristotele",
-     "autore": "Aristotele",
-     "latino": "Aristoteles",
-     "categoria": "classico-greco",
-     "opere": [
-      "Historia animalium"
-     ],
-     "corrispondenza": "titolo: «Aristotelis Historia de Animalibus latine SCA 54 - part 5»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1837558/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:1837558",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-1837925",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "item 1837925",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [],
-   "lingua_dedotta": false,
-   "titolo": "Aristotelis Historia de Animalibus latine SCA 54 - part 1",
-   "autori": [
-    {
-     "id": "aristotele",
-     "autore": "Aristotele",
-     "latino": "Aristoteles",
-     "categoria": "classico-greco",
-     "opere": [
-      "Historia animalium"
-     ],
-     "corrispondenza": "titolo: «Aristotelis Historia de Animalibus latine SCA 54 - part 1»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1837925/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:1837925",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-1838146",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "item 1838146",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [],
-   "lingua_dedotta": false,
-   "titolo": "Aristotelis Historia de Animalibus latine SCA 54 - part 2",
-   "autori": [
-    {
-     "id": "aristotele",
-     "autore": "Aristotele",
-     "latino": "Aristoteles",
-     "categoria": "classico-greco",
-     "opere": [
-      "Historia animalium"
-     ],
-     "corrispondenza": "titolo: «Aristotelis Historia de Animalibus latine SCA 54 - part 2»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1838146/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:1838146",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-1839209",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "item 1839209",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [],
-   "lingua_dedotta": false,
-   "titolo": "Aristotelis Historia de Animalibus latine SCA 54 - part 6",
-   "autori": [
-    {
-     "id": "aristotele",
-     "autore": "Aristotele",
-     "latino": "Aristoteles",
-     "categoria": "classico-greco",
-     "opere": [
-      "Historia animalium"
-     ],
-     "corrispondenza": "titolo: «Aristotelis Historia de Animalibus latine SCA 54 - part 6»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1839209/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:1839209",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-1839430",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "item 1839430",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [],
-   "lingua_dedotta": false,
-   "titolo": "Aristotelis Historia de Animalibus latine SCA 54 - part 4",
-   "autori": [
-    {
-     "id": "aristotele",
-     "autore": "Aristotele",
-     "latino": "Aristoteles",
-     "categoria": "classico-greco",
-     "opere": [
-      "Historia animalium"
-     ],
-     "corrispondenza": "titolo: «Aristotelis Historia de Animalibus latine SCA 54 - part 4»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1839430/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:1839430",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-1839632",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "item 1839632",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [],
-   "lingua_dedotta": false,
-   "titolo": "Aristotelis Historia de Animalibus latine SCA 54 - part 3",
-   "autori": [
-    {
-     "id": "aristotele",
-     "autore": "Aristotele",
-     "latino": "Aristoteles",
-     "categoria": "classico-greco",
-     "opere": [
-      "Historia animalium"
-     ],
-     "corrispondenza": "titolo: «Aristotelis Historia de Animalibus latine SCA 54 - part 3»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1839632/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:1839632",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-3230213",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "item 3230213",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [],
-   "lingua_dedotta": false,
-   "titolo": "Platonis Meno BPG 5",
-   "autori": [
-    {
-     "id": "platone",
-     "autore": "Platone",
-     "latino": "Plato",
-     "categoria": "classico-greco",
-     "opere": [
-      "Menone"
-     ],
-     "corrispondenza": "titolo: «Platonis Meno BPG 5»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3230213/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:3230213",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-3326750",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "item 3326750",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [],
-   "lingua_dedotta": false,
-   "titolo": "Qismat al-Khaṭṭ allaḏī 'staʿmalahā Arśīmīdis fī'l-Maqāla at̲-T̲āniya fī 'l-Kura wa'l-Usṭuwāna - Or. 14: 26",
-   "autori": [
-    {
-     "id": "archimede",
-     "autore": "Archimede",
-     "latino": "Archimedes",
-     "categoria": "classico-greco",
-     "opere": [],
-     "corrispondenza": "autore: «Ibn al-Hait̲am al-Baṣrī, al-Ḥasan, Archimedes»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3326750/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:3326750",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-3326771",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "item 3326771",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [],
-   "lingua_dedotta": false,
-   "titolo": "[Additions to book II of k. al-Kura wa'l-Usṭuwāna] - Or. 14: 25",
-   "autori": [
-    {
-     "id": "archimede",
-     "autore": "Archimede",
-     "latino": "Archimedes",
-     "categoria": "classico-greco",
-     "opere": [],
-     "corrispondenza": "autore: «Kūhī, Abū Sahl Waiǵan b. Rustam al-, Archimedes»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3326771/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:3326771",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-3326914",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "item 3326914",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [],
-   "lingua_dedotta": false,
-   "titolo": "Ḏawāt al-Ismain wa'l-Munfaṣilāt - Or. 14: 20",
-   "autori": [
-    {
-     "id": "euclide",
-     "autore": "Euclide",
-     "latino": "Euclides",
-     "categoria": "classico-greco",
-     "opere": [],
-     "corrispondenza": "autore: «Sulaimān b. ʿUqba, Abū Dāʾūd, Euclid»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3326914/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:3326914",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-3326917",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "item 3326917",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [],
-   "lingua_dedotta": false,
-   "titolo": "[Commentary on the 10th book of the Elementa (Ar. k. al-Uṣūl) of Euclid] - Or. 14: 19",
-   "autori": [
-    {
-     "id": "euclide",
-     "autore": "Euclide",
-     "latino": "Euclides",
-     "categoria": "classico-greco",
-     "opere": [
-      "Elementi"
-     ],
-     "corrispondenza": "autore: «Ahwāzī, Aḥmad b. al-Ḥusain al-, Euclid»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3326917/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:3326917",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-3326935",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "item 3326935",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [],
-   "lingua_dedotta": false,
-   "titolo": "[Commentary on the first part of the 10th book of the Elementa (Ar. k. al-Uṣūl) of Euclid] - Or. 14: 18",
-   "autori": [
-    {
-     "id": "euclide",
-     "autore": "Euclide",
-     "latino": "Euclides",
-     "categoria": "classico-greco",
-     "opere": [
-      "Elementi"
-     ],
-     "corrispondenza": "autore: «Khāzin, Abū Ǵaʿfar al-, Euclid»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3326935/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:3326935",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-3359021",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "item 3359021",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [],
-   "lingua_dedotta": false,
-   "titolo": "Khulāṣat al-Miǵisṭī - Or. 110",
-   "autori": [
-    {
-     "id": "tolomeo",
-     "autore": "Tolomeo",
-     "latino": "Ptolemaeus",
-     "categoria": "classico-greco",
-     "opere": [],
-     "corrispondenza": "autore: «Ibn Abī'ś-Śukr, Yaḥyā b. Muḥammad, Ptolemy»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3359021/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:3359021",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-3370800",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "item 3370800",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [],
-   "lingua_dedotta": false,
-   "titolo": "al-Manāẓir - Or. 133: 5",
-   "autori": [
-    {
-     "id": "euclide",
-     "autore": "Euclide",
-     "latino": "Euclides",
-     "categoria": "classico-greco",
-     "opere": [],
-     "corrispondenza": "autore: «Euclid, Isḥāq b. Ḥunain»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3370800/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:3370800",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-3370878",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "item 3370878",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [],
-   "lingua_dedotta": false,
-   "titolo": "Talkhīṣ nawāmīs Aflāṭūn - Or. 133: 1",
-   "autori": [
-    {
-     "id": "platone",
-     "autore": "Platone",
-     "latino": "Plato",
-     "categoria": "classico-greco",
-     "opere": [],
-     "corrispondenza": "autore: «Fārābī, Muḥammad b. Muḥammad al-, Plato.»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3370878/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:3370878",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-3391344",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "item 3391344",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [],
-   "lingua_dedotta": false,
-   "titolo": "[Solution of a problem in book II of k. al-Kura wa'l-Usṭuwāna] - Or. 168: 8",
-   "autori": [
-    {
-     "id": "archimede",
-     "autore": "Archimede",
-     "latino": "Archimedes",
-     "categoria": "classico-greco",
-     "opere": [],
-     "corrispondenza": "autore: «Archimedes»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3391344/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:3391344",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-3391571",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "item 3391571",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [],
-   "lingua_dedotta": false,
-   "titolo": "al-Ḥayawān - Or. 166",
-   "autori": [
-    {
-     "id": "aristotele",
-     "autore": "Aristotele",
-     "latino": "Aristoteles",
-     "categoria": "classico-greco",
-     "opere": [],
-     "corrispondenza": "autore: «Aristoteles»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3391571/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:3391571",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-3392689",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "item 3392689",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [],
-   "lingua_dedotta": false,
-   "titolo": "Taḥrīr k. al-Maʾkhūḏāt - Or. 162: 1",
-   "autori": [
-    {
-     "id": "archimede",
-     "autore": "Archimede",
-     "latino": "Archimedes",
-     "categoria": "classico-greco",
-     "opere": [],
-     "corrispondenza": "autore: «Naṣīr ad-Dīn aṭ-Ṭūsī, Archimedes»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3392689/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:3392689",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-3413200",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "item 3413200",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [],
-   "lingua_dedotta": false,
-   "titolo": "Risāla fī śarḥ mā aśkala min muṣādarāt kitāb Uqlīdis - Or. 199: 8",
-   "autori": [
-    {
-     "id": "euclide",
-     "autore": "Euclide",
-     "latino": "Euclides",
-     "categoria": "classico-greco",
-     "opere": [],
-     "corrispondenza": "autore: «Khayyāmī, ʿUmar b. Ibrāhīm al-, Euclid»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3413200/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:3413200",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-3418407",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "item 3418407",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [],
-   "lingua_dedotta": false,
-   "titolo": "fī Iqtiṣāṣ ǵumal ḥālāt al-Kawākib al-Mutahayyira - Or. 180",
-   "autori": [
-    {
-     "id": "tolomeo",
-     "autore": "Tolomeo",
-     "latino": "Ptolemaeus",
-     "categoria": "classico-greco",
-     "opere": [],
-     "corrispondenza": "autore: «Ptolemy, T̲ābit b.Qurra»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3418407/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:3418407",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
    "id": "lei-1613412",
    "fonte": "leiden",
    "biblioteca": "Universiteitsbibliotheek Leiden",
@@ -219605,6 +219030,214 @@
    ],
    "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1616707/manifest",
    "pagina": "https://hdl.handle.net/1887.1/item:1616707",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-3359021",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "Or. 110",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Khulāṣat al-Miǵisṭī - Or. 110",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Ibn Abī'ś-Śukr, Yaḥyā b. Muḥammad, Ptolemy»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3359021/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:3359021",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-3370878",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "Or. 133: 1",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Talkhīṣ nawāmīs Aflāṭūn - Or. 133: 1",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Fārābī, Muḥammad b. Muḥammad al-, Plato.»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3370878/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:3370878",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-3370800",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "Or. 133: 5",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "al-Manāẓir - Or. 133: 5",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Euclid, Isḥāq b. Ḥunain»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3370800/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:3370800",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-3392689",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "Or. 162: 1",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Taḥrīr k. al-Maʾkhūḏāt - Or. 162: 1",
+   "autori": [
+    {
+     "id": "archimede",
+     "autore": "Archimede",
+     "latino": "Archimedes",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Naṣīr ad-Dīn aṭ-Ṭūsī, Archimedes»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3392689/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:3392689",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-3391571",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "Or. 166",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "al-Ḥayawān - Or. 166",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3391571/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:3391571",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-3391344",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "Or. 168: 8",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "[Solution of a problem in book II of k. al-Kura wa'l-Usṭuwāna] - Or. 168: 8",
+   "autori": [
+    {
+     "id": "archimede",
+     "autore": "Archimede",
+     "latino": "Archimedes",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Archimedes»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3391344/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:3391344",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-3418407",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "Or. 180",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "fī Iqtiṣāṣ ǵumal ḥālāt al-Kawākib al-Mutahayyira - Or. 180",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Ptolemy, T̲ābit b.Qurra»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3418407/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:3418407",
+   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "lei-3413200",
+   "fonte": "leiden",
+   "biblioteca": "Universiteitsbibliotheek Leiden",
+   "citta": "Leiden",
+   "segnatura": "Or. 199: 8",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Risāla fī śarḥ mā aśkala min muṣādarāt kitāb Uqlīdis - Or. 199: 8",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Khayyāmī, ʿUmar b. Ibrāhīm al-, Euclid»"
+    }
+   ],
+   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:3413200/manifest",
+   "pagina": "https://hdl.handle.net/1887.1/item:3413200",
    "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
    "immagini": null
   },
@@ -220645,96 +220278,6 @@
    ],
    "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1885016/manifest",
    "pagina": "https://hdl.handle.net/1887.1/item:1885016",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-1839818",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "PER Q 40 - part 1",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [
-    "grc"
-   ],
-   "lingua_dedotta": true,
-   "titolo": "De Bello Peloponnesiaco (Greek) / Thucydides",
-   "autori": [
-    {
-     "id": "tucidide",
-     "autore": "Tucidide",
-     "latino": "Thucydides",
-     "categoria": "classico-greco",
-     "opere": [
-      "Guerra del Peloponneso"
-     ],
-     "corrispondenza": "titolo: «De Bello Peloponnesiaco (Greek) / Thucydides»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1839818/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:1839818",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-1840008",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "PER Q 40 - part 2",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [
-    "grc"
-   ],
-   "lingua_dedotta": true,
-   "titolo": "De Bello Peloponnesiaco (Greek) / Thucydides",
-   "autori": [
-    {
-     "id": "tucidide",
-     "autore": "Tucidide",
-     "latino": "Thucydides",
-     "categoria": "classico-greco",
-     "opere": [
-      "Guerra del Peloponneso"
-     ],
-     "corrispondenza": "titolo: «De Bello Peloponnesiaco (Greek) / Thucydides»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1840008/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:1840008",
-   "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
-   "immagini": null
-  },
-  {
-   "id": "lei-1840198",
-   "fonte": "leiden",
-   "biblioteca": "Universiteitsbibliotheek Leiden",
-   "citta": "Leiden",
-   "segnatura": "PER Q 40 - part 3",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [
-    "grc"
-   ],
-   "lingua_dedotta": true,
-   "titolo": "De Bello Peloponnesiaco (Greek) / Thucydides",
-   "autori": [
-    {
-     "id": "tucidide",
-     "autore": "Tucidide",
-     "latino": "Thucydides",
-     "categoria": "classico-greco",
-     "opere": [
-      "Guerra del Peloponneso"
-     ],
-     "corrispondenza": "titolo: «De Bello Peloponnesiaco (Greek) / Thucydides»"
-    }
-   ],
-   "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1840198/manifest",
-   "pagina": "https://hdl.handle.net/1887.1/item:1840198",
    "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
    "immagini": null
   },
