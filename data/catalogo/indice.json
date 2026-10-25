@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-25T13:16:39.320Z",
- "totale": 87880,
- "con_autori": 12498,
+ "aggiornato": "2026-10-25T13:18:41.766Z",
+ "totale": 91283,
+ "con_autori": 13144,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
   "id",
@@ -21,23 +21,23 @@
  "lingue": {
   "la": {
    "nome": "latino",
-   "codici": 30650
+   "codici": 30680
   },
   "de": {
    "nome": "tedesco",
-   "codici": 15940
+   "codici": 15945
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 13423
+   "codici": 13424
   },
   "grc": {
    "nome": "greco",
-   "codici": 5522
+   "codici": 7906
   },
   "ar": {
    "nome": "arabo",
-   "codici": 4555
+   "codici": 4956
   },
   "sa": {
    "nome": "sanscrito",
@@ -45,7 +45,7 @@
   },
   "en": {
    "nome": "inglese",
-   "codici": 3720
+   "codici": 3725
   },
   "xx": {
    "nome": "altre lingue",
@@ -53,7 +53,7 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 2421
+   "codici": 2458
   },
   "he": {
    "nome": "ebraico",
@@ -61,11 +61,11 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 2057
+   "codici": 2127
   },
   "cop": {
    "nome": "copto",
-   "codici": 1475
+   "codici": 1476
   },
   "zh": {
    "nome": "cinese",
@@ -73,7 +73,7 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 542
+   "codici": 547
   },
   "nl": {
    "nome": "nederlandese",
@@ -81,39 +81,43 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 437
+   "codici": 438
   },
   "tr": {
    "nome": "turco",
-   "codici": 306
+   "codici": 314
+  },
+  "syr": {
+   "nome": "siriaco",
+   "codici": 229
+  },
+  "ka": {
+   "nome": "georgiano",
+   "codici": 219
+  },
+  "hy": {
+   "nome": "armeno",
+   "codici": 140
+  },
+  "cu": {
+   "nome": "slavo ecclesiastico",
+   "codici": 135
   },
   "bo": {
    "nome": "tibetano",
    "codici": 121
   },
-  "hy": {
-   "nome": "armeno",
-   "codici": 107
-  },
   "ja": {
    "nome": "giapponese",
    "codici": 104
   },
-  "cu": {
-   "nome": "slavo ecclesiastico",
-   "codici": 73
+  "gez": {
+   "nome": "etiopico",
+   "codici": 84
   },
   "ru": {
    "nome": "russo",
    "codici": 59
-  },
-  "gez": {
-   "nome": "etiopico",
-   "codici": 57
-  },
-  "syr": {
-   "nome": "siriaco",
-   "codici": 46
   },
   "pt": {
    "nome": "portoghese",
@@ -167,10 +171,6 @@
    "nome": "coreano",
    "codici": 8
   },
-  "ka": {
-   "nome": "georgiano",
-   "codici": 7
-  },
   "da": {
    "nome": "danese",
    "codici": 6
@@ -183,19 +183,19 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 4543
+   "codici": 4544
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 2440
+   "codici": 2473
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 5362
+   "codici": 5974
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 1531
+   "codici": 1534
   }
  },
  "autori": {
@@ -425,7 +425,7 @@
    "nome": "Eutropio",
    "latino": "Eutropius",
    "categoria": "classico-latino",
-   "codici": 32
+   "codici": 33
   },
   "vegezio": {
    "nome": "Vegezio",
@@ -629,7 +629,7 @@
    "nome": "Omero",
    "latino": "Homerus",
    "categoria": "classico-greco",
-   "codici": 127
+   "codici": 133
   },
   "esiodo": {
    "nome": "Esiodo",
@@ -695,7 +695,7 @@
    "nome": "Euripide",
    "latino": "Euripides",
    "categoria": "classico-greco",
-   "codici": 33
+   "codici": 37
   },
   "aristofane": {
    "nome": "Aristofane",
@@ -725,19 +725,19 @@
    "nome": "Senofonte",
    "latino": "Xenophon",
    "categoria": "classico-greco",
-   "codici": 47
+   "codici": 48
   },
   "platone": {
    "nome": "Platone",
    "latino": "Plato",
    "categoria": "classico-greco",
-   "codici": 138
+   "codici": 140
   },
   "aristotele": {
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 927
+   "codici": 941
   },
   "teofrasto": {
    "nome": "Teofrasto",
@@ -779,7 +779,7 @@
    "nome": "Antifonte",
    "latino": "Antiphon",
    "categoria": "classico-greco",
-   "codici": 1
+   "codici": 2
   },
   "iseo": {
    "nome": "Iseo",
@@ -821,7 +821,7 @@
    "nome": "Plutarco",
    "latino": "Plutarchus",
    "categoria": "classico-greco",
-   "codici": 130
+   "codici": 131
   },
   "luciano": {
    "nome": "Luciano di Samosata",
@@ -899,7 +899,7 @@
    "nome": "Ippocrate",
    "latino": "Hippocrates",
    "categoria": "classico-greco",
-   "codici": 130
+   "codici": 134
   },
   "tolomeo": {
    "nome": "Tolomeo",
@@ -1019,7 +1019,7 @@
    "nome": "Libanio",
    "latino": "Libanius",
    "categoria": "classico-greco",
-   "codici": 41
+   "codici": 42
   },
   "temistio": {
    "nome": "Temistio",
@@ -1103,7 +1103,7 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 1361
+   "codici": 1362
   },
   "girolamo": {
    "nome": "Girolamo",
@@ -1121,31 +1121,31 @@
    "nome": "Gregorio Magno",
    "latino": "Gregorius Magnus",
    "categoria": "cristiano",
-   "codici": 483
+   "codici": 484
   },
   "basilio": {
    "nome": "Basilio Magno",
    "latino": "Basilius Magnus",
    "categoria": "cristiano",
-   "codici": 88
+   "codici": 97
   },
   "gregorio-nazianzeno": {
    "nome": "Gregorio di Nazianzo",
    "latino": "Gregorius Nazianzenus",
    "categoria": "cristiano",
-   "codici": 93
+   "codici": 102
   },
   "giovanni-crisostomo": {
    "nome": "Giovanni Crisostomo",
    "latino": "Iohannes Chrysostomus",
    "categoria": "cristiano",
-   "codici": 261
+   "codici": 343
   },
   "bibbia": {
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 2326
+   "codici": 2815
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1217,19 +1217,19 @@
    "nome": "Atanasio",
    "latino": "Athanasius",
    "categoria": "cristiano",
-   "codici": 64
+   "codici": 67
   },
   "gregorio-nisseno": {
    "nome": "Gregorio di Nissa",
    "latino": "Gregorius Nyssenus",
    "categoria": "cristiano",
-   "codici": 27
+   "codici": 31
   },
   "giovanni-damasceno": {
    "nome": "Giovanni Damasceno",
    "latino": "Iohannes Damascenus",
    "categoria": "cristiano",
-   "codici": 40
+   "codici": 62
   },
   "dionigi-areopagita": {
    "nome": "Dionigi Areopagita",
@@ -1253,7 +1253,7 @@
    "nome": "Alcuino",
    "latino": "Alcuinus",
    "categoria": "medievale",
-   "codici": 166
+   "codici": 167
   },
   "rabano-mauro": {
    "nome": "Rabano Mauro",
@@ -1277,7 +1277,7 @@
    "nome": "Tommaso d'Aquino",
    "latino": "Thomas de Aquino",
    "categoria": "medievale",
-   "codici": 234
+   "codici": 236
   },
   "bernardo": {
    "nome": "Bernardo di Chiaravalle",
@@ -1320,6 +1320,7 @@
   "Biblioteca Apostolica Vaticana, Vatikan",
   "Biblioteca Estense, Modena",
   "Biblioteca Medicea Laurenziana, Firenze",
+  "Biblioteca Nazionale di Grecia, Atene",
   "Biblioteca non indicata",
   "Bibliotheca Sefarad, Montreux",
   "Bibliothèque cantonale et universitaire - Lausanne",
@@ -1414,6 +1415,7 @@
   "Medical Historical Library, Cushing/Whitney Medical Library, New Haven",
   "Mémoires d'Ici, Saint-Imier",
   "Merton College, Oxford",
+  "Monastero di Santa Caterina del Sinai (microfilm della Library of Congress), Sinai (Egitto)",
   "Musée gruérien, Bulle",
   "Musée historique de Vevey",
   "Musée Jurassien d'Art et d'Histoire, Delémont",
@@ -1566,6 +1568,8 @@
   "P. Heid. Inv. Kopt. 685 (M. Meyer, Heidelberger Papyrussammlung",
   "P. Heid. Inv. Kopt. 686 (A. Kropp, Heidelberger Papyrussammlung",
   "Paroisse catholique Saint-Laurent, Estavayer-le-Lac",
+  "Patriarcato armeno di Gerusalemme (microfilm della Library of Congress)",
+  "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
   "Pembroke College, Oxford",
   "Pepperdine University, Malibu",
   "Pharmaziemuseum der Universität Basel",
@@ -2115,6 +2119,56 @@
     "indice/ds-0.json"
    ]
   },
+  "loc": {
+   "nome": "Library of Congress: microfilm del Sinai e dei Patriarcati di Gerusalemme (loc.gov; manifesti scritti dal catalogo)",
+   "codici": 2638,
+   "con_autori": 646,
+   "lingue": {
+    "ar": 401,
+    "grc": 1730,
+    "cop": 1,
+    "fa": 5,
+    "gez": 27,
+    "ka": 212,
+    "hy": 33,
+    "cu": 62,
+    "la": 2,
+    "syr": 183,
+    "tr": 8,
+    "de": 1
+   },
+   "esito": "ok",
+   "prefissi": [
+    "loc-"
+   ],
+   "pezzi_voci": 4,
+   "indice": [
+    "indice/loc-0.json"
+   ]
+  },
+  "nlg": {
+   "nome": "Biblioteca Nazionale di Grecia, Atene (digitalcollections.nlg.gr; copie dei manifesti scritte dal catalogo)",
+   "codici": 765,
+   "con_autori": 0,
+   "lingue": {
+    "?": 1,
+    "grc": 654,
+    "la": 28,
+    "it": 70,
+    "fr": 37,
+    "en": 5,
+    "es": 1,
+    "de": 4
+   },
+   "esito": "ok",
+   "prefissi": [
+    "nlg-"
+   ],
+   "pezzi_voci": 1,
+   "indice": [
+    "indice/nlg-0.json"
+   ]
+  },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
    "codici": 3735,
@@ -2214,6 +2268,16 @@
    "file": "indice/ds-0.json",
    "fonte": "ds",
    "righe": 8364
+  },
+  {
+   "file": "indice/loc-0.json",
+   "fonte": "loc",
+   "righe": 2638
+  },
+  {
+   "file": "indice/nlg-0.json",
+   "fonte": "nlg",
+   "righe": 765
   },
   {
    "file": "indice/vaticana-0.json",

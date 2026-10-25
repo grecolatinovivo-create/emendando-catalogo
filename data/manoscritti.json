@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T13:16:39.320Z",
+ "aggiornato": "2026-10-25T13:18:41.766Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -72,13 +72,23 @@
    "codici": 174,
    "esito": "ok"
   },
+  "loc": {
+   "nome": "Library of Congress: microfilm del Sinai e dei Patriarcati di Gerusalemme (loc.gov; manifesti scritti dal catalogo)",
+   "codici": 34,
+   "esito": "ok"
+  },
+  "nlg": {
+   "nome": "Biblioteca Nazionale di Grecia, Atene (digitalcollections.nlg.gr; copie dei manifesti scritte dal catalogo)",
+   "codici": 0,
+   "esito": "ok"
+  },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
    "codici": 367,
    "esito": "ok"
   }
  },
- "totale": 6655,
+ "totale": 6689,
  "manoscritti": [
   {
    "id": "bsb-bsb00034122",
@@ -187988,6 +187998,425 @@
    "immagini": null
   },
   {
+   "id": "loc-00279387247-ms",
+   "fonte": "loc",
+   "biblioteca": "Monastero di Santa Caterina del Sinai (microfilm della Library of Congress)",
+   "citta": "Sinai (Egitto)",
+   "segnatura": "Georgian 87",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "ka",
+    "hy"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aristotle's Categoriae with Commentary (Armenian)",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Categorie"
+     ],
+     "corrispondenza": "titolo: «Aristotle's Categoriae with Commentary (Armenian)»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279387247-ms.json",
+   "pagina": "https://www.loc.gov/item/00279387247-ms/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 197
+  },
+  {
+   "id": "loc-0027107671a-ms",
+   "fonte": "loc",
+   "biblioteca": "Monastero di Santa Caterina del Sinai (microfilm della Library of Congress)",
+   "citta": "Sinai (Egitto)",
+   "segnatura": "Greek 1195",
+   "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Euripides",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Euripides»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/0027107671A-ms.json",
+   "pagina": "https://www.loc.gov/item/0027107671A-ms/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 140
+  },
+  {
+   "id": "loc-00271076721-ms",
+   "fonte": "loc",
+   "biblioteca": "Monastero di Santa Caterina del Sinai (microfilm della Library of Congress)",
+   "citta": "Sinai (Egitto)",
+   "segnatura": "Greek 1196",
+   "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Euripides with Scholia",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Euripides with Scholia»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00271076721-ms.json",
+   "pagina": "https://www.loc.gov/item/00271076721-ms/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 54
+  },
+  {
+   "id": "loc-00271076757-ms",
+   "fonte": "loc",
+   "biblioteca": "Monastero di Santa Caterina del Sinai (microfilm della Library of Congress)",
+   "citta": "Sinai (Egitto)",
+   "segnatura": "Greek 1198",
+   "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Libanius",
+   "autori": [
+    {
+     "id": "libanio",
+     "autore": "Libanio",
+     "latino": "Libanius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Libanius»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00271076757-ms.json",
+   "pagina": "https://www.loc.gov/item/00271076757-ms/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 119
+  },
+  {
+   "id": "loc-00271076228-ms",
+   "fonte": "loc",
+   "biblioteca": "Monastero di Santa Caterina del Sinai (microfilm della Library of Congress)",
+   "citta": "Sinai (Egitto)",
+   "segnatura": "Greek 1322",
+   "datazione": "1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Antiphon-Kontakia",
+   "autori": [
+    {
+     "id": "antifonte",
+     "autore": "Antifonte",
+     "latino": "Antiphon",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Antiphon-Kontakia»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00271076228-ms.json",
+   "pagina": "https://www.loc.gov/item/00271076228-ms/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 152
+  },
+  {
+   "id": "loc-00279382481-ms",
+   "fonte": "loc",
+   "biblioteca": "Monastero di Santa Caterina del Sinai (microfilm della Library of Congress)",
+   "citta": "Sinai (Egitto)",
+   "segnatura": "Greek 1386",
+   "datazione": "1700",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Metaphysics",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica"
+     ],
+     "corrispondenza": "titolo: «Metaphysics»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279382481-ms.json",
+   "pagina": "https://www.loc.gov/item/00279382481-ms/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 156
+  },
+  {
+   "id": "loc-0027938247a-ms",
+   "fonte": "loc",
+   "biblioteca": "Monastero di Santa Caterina del Sinai (microfilm della Library of Congress)",
+   "citta": "Sinai (Egitto)",
+   "segnatura": "Greek 1387",
+   "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Hippocrates",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Hippocrates»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/0027938247A-ms.json",
+   "pagina": "https://www.loc.gov/item/0027938247A-ms/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 123
+  },
+  {
+   "id": "loc-00279382687-ms",
+   "fonte": "loc",
+   "biblioteca": "Monastero di Santa Caterina del Sinai (microfilm della Library of Congress)",
+   "citta": "Sinai (Egitto)",
+   "segnatura": "Greek 1397",
+   "datazione": "1700",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Iliad (I-V)",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "titolo: «Iliad (I-V)»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279382687-ms.json",
+   "pagina": "https://www.loc.gov/item/00279382687-ms/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 173
+  },
+  {
+   "id": "loc-0027938278a-ms",
+   "fonte": "loc",
+   "biblioteca": "Monastero di Santa Caterina del Sinai (microfilm della Library of Congress)",
+   "citta": "Sinai (Egitto)",
+   "segnatura": "Greek 1415",
+   "datazione": "1465",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Euripides",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Euripides»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/0027938278A-ms.json",
+   "pagina": "https://www.loc.gov/item/0027938278A-ms/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 142
+  },
+  {
+   "id": "loc-00279382110-ms",
+   "fonte": "loc",
+   "biblioteca": "Monastero di Santa Caterina del Sinai (microfilm della Library of Congress)",
+   "citta": "Sinai (Egitto)",
+   "segnatura": "Greek 1660",
+   "datazione": "1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Hippocrates",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Hippocrates»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279382110-ms.json",
+   "pagina": "https://www.loc.gov/item/00279382110-ms/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 86
+  },
+  {
+   "id": "loc-00279383151-ms",
+   "fonte": "loc",
+   "biblioteca": "Monastero di Santa Caterina del Sinai (microfilm della Library of Congress)",
+   "citta": "Sinai (Egitto)",
+   "segnatura": "Greek 1831",
+   "datazione": "1700",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Plutarch, Homer, et. al",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Plutarch, Homer, et. al»"
+    },
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Plutarch, Homer, et. al»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279383151-ms.json",
+   "pagina": "https://www.loc.gov/item/00279383151-ms/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 227
+  },
+  {
+   "id": "loc-00279383138-ms",
+   "fonte": "loc",
+   "biblioteca": "Monastero di Santa Caterina del Sinai (microfilm della Library of Congress)",
+   "citta": "Sinai (Egitto)",
+   "segnatura": "Greek 1838",
+   "datazione": "1700",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Iliad, Homilies",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "titolo: «Iliad, Homilies»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279383138-ms.json",
+   "pagina": "https://www.loc.gov/item/00279383138-ms/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 246
+  },
+  {
+   "id": "loc-00279383205-ms",
+   "fonte": "loc",
+   "biblioteca": "Monastero di Santa Caterina del Sinai (microfilm della Library of Congress)",
+   "citta": "Sinai (Egitto)",
+   "segnatura": "Greek 1857",
+   "datazione": "1700",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Iliad, Patristica",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "titolo: «Iliad, Patristica»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279383205-ms.json",
+   "pagina": "https://www.loc.gov/item/00279383205-ms/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 312
+  },
+  {
    "id": "ds-ds278",
    "fonte": "ds",
    "biblioteca": "Nelson-Atkins Museum of Art",
@@ -188523,6 +188952,698 @@
    "pagina": "https://digi.ub.uni-heidelberg.de/diglit/p_g_4011",
    "licenza": null,
    "immagini": null
+  },
+  {
+   "id": "loc-00271073720-jo",
+   "fonte": "loc",
+   "biblioteca": "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
+   "citta": "Gerusalemme",
+   "segnatura": "Ethiopic 6",
+   "datazione": "17th cent.",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "gez"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Organon Virginis",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Organon"
+     ],
+     "corrispondenza": "titolo: «Organon Virginis»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00271073720-jo.json",
+   "pagina": "https://www.loc.gov/item/00271073720-jo/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 169
+  },
+  {
+   "id": "loc-00271073811-jo",
+   "fonte": "loc",
+   "biblioteca": "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
+   "citta": "Gerusalemme",
+   "segnatura": "Ethiopic 10",
+   "datazione": "18th cent.",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "gez"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Organon Virginis",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Organon"
+     ],
+     "corrispondenza": "titolo: «Organon Virginis»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00271073811-jo.json",
+   "pagina": "https://www.loc.gov/item/00271073811-jo/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 150
+  },
+  {
+   "id": "loc-00279389487-jo",
+   "fonte": "loc",
+   "biblioteca": "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
+   "citta": "Gerusalemme",
+   "segnatura": "Panagios Taphos 27",
+   "datazione": "15th cent.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Eutropius History (Latin)",
+   "autori": [
+    {
+     "id": "eutropio",
+     "autore": "Eutropio",
+     "latino": "Eutropius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Eutropius History (Latin)»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279389487-jo.json",
+   "pagina": "https://www.loc.gov/item/00279389487-jo/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 137
+  },
+  {
+   "id": "loc-00279389517-jo",
+   "fonte": "loc",
+   "biblioteca": "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
+   "citta": "Gerusalemme",
+   "segnatura": "Panagios Taphos 36",
+   "datazione": "12th cent.",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Old Testament Prophets over text of Euripides",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Old Testament Prophets over text of Euripides»"
+    },
+    {
+     "id": "bibbia",
+     "autore": "Bibbia",
+     "latino": "Biblia",
+     "categoria": "cristiano",
+     "opere": [
+      "Antico Testamento"
+     ],
+     "corrispondenza": "titolo: «Old Testament Prophets over text of Euripides»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279389517-jo.json",
+   "pagina": "https://www.loc.gov/item/00279389517-jo/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 282
+  },
+  {
+   "id": "loc-00271070676-jo",
+   "fonte": "loc",
+   "biblioteca": "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
+   "citta": "Gerusalemme",
+   "segnatura": "Panagios Taphos 94",
+   "datazione": "17th cent.",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "On Aristotle (Anon.)",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «On Aristotle (Anon.)»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00271070676-jo.json",
+   "pagina": "https://www.loc.gov/item/00271070676-jo/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 58
+  },
+  {
+   "id": "loc-0027107069a-jo",
+   "fonte": "loc",
+   "biblioteca": "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
+   "citta": "Gerusalemme",
+   "segnatura": "Panagios Taphos 96",
+   "datazione": "17th cent.",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Theophilos Korydallos on Aristotle",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Theophilos Korydallos on Aristotle»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/0027107069A-jo.json",
+   "pagina": "https://www.loc.gov/item/0027107069A-jo/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 179
+  },
+  {
+   "id": "loc-00279391408-jo",
+   "fonte": "loc",
+   "biblioteca": "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
+   "citta": "Gerusalemme",
+   "segnatura": "Panagios Taphos 102",
+   "datazione": "18th cent.",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Explanation of Hippocratic Aphorisms",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Aforismi"
+     ],
+     "corrispondenza": "titolo: «Explanation of Hippocratic Aphorisms»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279391408-jo.json",
+   "pagina": "https://www.loc.gov/item/00279391408-jo/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 234
+  },
+  {
+   "id": "loc-00279392097-jo",
+   "fonte": "loc",
+   "biblioteca": "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
+   "citta": "Gerusalemme",
+   "segnatura": "Panagios Taphos 150",
+   "datazione": "14th cent.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aristotle",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Aristotle»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279392097-jo.json",
+   "pagina": "https://www.loc.gov/item/00279392097-jo/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 220
+  },
+  {
+   "id": "loc-00279392115-jo",
+   "fonte": "loc",
+   "biblioteca": "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
+   "citta": "Gerusalemme",
+   "segnatura": "Panagios Taphos 163",
+   "datazione": "15th cent.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Michael Psellus on Aristotle",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Michael Psellus on Aristotle»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279392115-jo.json",
+   "pagina": "https://www.loc.gov/item/00279392115-jo/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 143
+  },
+  {
+   "id": "loc-00279393387-jo",
+   "fonte": "loc",
+   "biblioteca": "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
+   "citta": "Gerusalemme",
+   "segnatura": "Panagios Taphos 232",
+   "datazione": "17th cent.",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "John Maimes on Aristotle",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «John Maimes on Aristotle»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279393387-jo.json",
+   "pagina": "https://www.loc.gov/item/00279393387-jo/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 241
+  },
+  {
+   "id": "loc-00279391561-jo",
+   "fonte": "loc",
+   "biblioteca": "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
+   "citta": "Gerusalemme",
+   "segnatura": "Panagios Taphos 257",
+   "datazione": "1748 A.D.",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Introduction to Plato",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Introduction to Plato»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279391561-jo.json",
+   "pagina": "https://www.loc.gov/item/00279391561-jo/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 71
+  },
+  {
+   "id": "loc-00279391639-jo",
+   "fonte": "loc",
+   "biblioteca": "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
+   "citta": "Gerusalemme",
+   "segnatura": "Panagios Taphos 266",
+   "datazione": "18th cent.",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "John of Damascus on Aristotle",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «John of Damascus on Aristotle»"
+    },
+    {
+     "id": "giovanni-damasceno",
+     "autore": "Giovanni Damasceno",
+     "latino": "Iohannes Damascenus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "titolo: «John of Damascus on Aristotle»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279391639-jo.json",
+   "pagina": "https://www.loc.gov/item/00279391639-jo/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 119
+  },
+  {
+   "id": "loc-00279391688-jo",
+   "fonte": "loc",
+   "biblioteca": "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
+   "citta": "Gerusalemme",
+   "segnatura": "Panagios Taphos 277",
+   "datazione": "1748 A.D.",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Alcuin on Plato",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Alcuin on Plato»"
+    },
+    {
+     "id": "alcuino",
+     "autore": "Alcuino",
+     "latino": "Alcuinus",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "titolo: «Alcuin on Plato»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279391688-jo.json",
+   "pagina": "https://www.loc.gov/item/00279391688-jo/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 80
+  },
+  {
+   "id": "loc-00279391858-jo",
+   "fonte": "loc",
+   "biblioteca": "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
+   "citta": "Gerusalemme",
+   "segnatura": "Panagios Taphos 298",
+   "datazione": "18th cent.",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Xenophon: Discipline",
+   "autori": [
+    {
+     "id": "senofonte",
+     "autore": "Senofonte",
+     "latino": "Xenophon",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Xenophon: Discipline»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279391858-jo.json",
+   "pagina": "https://www.loc.gov/item/00279391858-jo/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 181
+  },
+  {
+   "id": "loc-00279391846-jo",
+   "fonte": "loc",
+   "biblioteca": "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
+   "citta": "Gerusalemme",
+   "segnatura": "Panagios Taphos 299",
+   "datazione": "1790 A.D.",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "On Aphorisms of Hippocrates",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Aforismi"
+     ],
+     "corrispondenza": "titolo: «On Aphorisms of Hippocrates»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279391846-jo.json",
+   "pagina": "https://www.loc.gov/item/00279391846-jo/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 254
+  },
+  {
+   "id": "loc-00279391822-jo",
+   "fonte": "loc",
+   "biblioteca": "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
+   "citta": "Gerusalemme",
+   "segnatura": "Panagios Taphos 301",
+   "datazione": "18th cent.",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Matthew Ganochoran on Iliad, etc",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "titolo: «Matthew Ganochoran on Iliad, etc»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279391822-jo.json",
+   "pagina": "https://www.loc.gov/item/00279391822-jo/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 285
+  },
+  {
+   "id": "loc-00279392528-jo",
+   "fonte": "loc",
+   "biblioteca": "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
+   "citta": "Gerusalemme",
+   "segnatura": "Panagios Taphos 417",
+   "datazione": "18th cent.",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "On Aristotle",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «On Aristotle»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279392528-jo.json",
+   "pagina": "https://www.loc.gov/item/00279392528-jo/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 237
+  },
+  {
+   "id": "loc-00279392760-jo",
+   "fonte": "loc",
+   "biblioteca": "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
+   "citta": "Gerusalemme",
+   "segnatura": "Panagios Taphos 484",
+   "datazione": "1716 A.D.",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "On Aristotle",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «On Aristotle»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279392760-jo.json",
+   "pagina": "https://www.loc.gov/item/00279392760-jo/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 41
+  },
+  {
+   "id": "loc-00279392838-jo",
+   "fonte": "loc",
+   "biblioteca": "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
+   "citta": "Gerusalemme",
+   "segnatura": "Panagios Taphos 510",
+   "datazione": "8th-14th cent.",
+   "secolo": [
+    8,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Simplikios on Aristotle, etc. 7th/",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Simplikios on Aristotle, etc. 7th/»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279392838-jo.json",
+   "pagina": "https://www.loc.gov/item/00279392838-jo/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 16
+  },
+  {
+   "id": "loc-00279395104-jo",
+   "fonte": "loc",
+   "biblioteca": "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
+   "citta": "Gerusalemme",
+   "segnatura": "Photios 10",
+   "datazione": "18th cent.",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Homer: Iliad (A-H)",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "titolo: «Homer: Iliad (A-H)»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279395104-jo.json",
+   "pagina": "https://www.loc.gov/item/00279395104-jo/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 172
+  },
+  {
+   "id": "loc-00279395220-jo",
+   "fonte": "loc",
+   "biblioteca": "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
+   "citta": "Gerusalemme",
+   "segnatura": "Photios 45",
+   "datazione": "19th cent.",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aristotle, Physics, etc",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Fisica"
+     ],
+     "corrispondenza": "titolo: «Aristotle, Physics, etc»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00279395220-jo.json",
+   "pagina": "https://www.loc.gov/item/00279395220-jo/",
+   "licenza": "Nessuna restrizione nota all'uso e alla riproduzione (Library of Congress: «no known restrictions on use or reproduction»)",
+   "immagini": 171
   },
   {
    "id": "bod-7cb5d829-baa7-4ee6-aa4f-f8c832a685c8",
