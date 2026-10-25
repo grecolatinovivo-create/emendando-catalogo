@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T11:42:45.519Z",
+ "aggiornato": "2026-10-25T11:47:20.390Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -24,7 +24,7 @@
   },
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
-   "codici": 286,
+   "codici": 458,
    "esito": "ok"
   },
   "gallica": {
@@ -78,7 +78,7 @@
    "esito": "ok"
   }
  },
- "totale": 6587,
+ "totale": 6759,
  "manoscritti": [
   {
    "id": "bsb-bsb00034122",
@@ -166078,6 +166078,37 @@
    "immagini": null
   },
   {
+   "id": "bod-ce397b96-c8bf-46b1-9ccb-569d1b880bd6",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. A. Walker 4",
+   "datazione": "Before 1669. [early 17th century? CE]",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "كتاب المجسطي",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Isḥāq ibn Ḥunayn, 830 or 1-910 or 1 ; Ptolemy, 2nd cent.»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/ce397b96-c8bf-46b1-9ccb-569d1b880bd6.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/ce397b96-c8bf-46b1-9ccb-569d1b880bd6/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
    "id": "bod-569f9616-8df3-4fc4-b845-4d4118f7bd6b",
    "fonte": "bodleian",
    "biblioteca": "Bodleian Library",
@@ -166290,6 +166321,36 @@
    "immagini": null
   },
   {
+   "id": "bod-2a9a14c0-1dc1-4b6b-b4a2-740550aceb1a",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Arab. d. 84",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Maqāla fī aghrāḍ kitāb Ma ba’d al-tabī’ah (On the scope of Aristotle’s Metaphysics)",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica"
+     ],
+     "corrispondenza": "titolo: «Maqāla fī aghrāḍ kitāb Ma ba’d al-tabī’ah (On the scope of Aristotle’s Metaphysics)»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/2a9a14c0-1dc1-4b6b-b4a2-740550aceb1a.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/2a9a14c0-1dc1-4b6b-b4a2-740550aceb1a/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
    "id": "bod-e7c9cf2c-0440-49d1-9eb5-7d50e682a3a1",
    "fonte": "bodleian",
    "biblioteca": "Bodleian Library",
@@ -166361,6 +166422,37 @@
    "immagini": null
   },
   {
+   "id": "bod-a5e2b645-472e-4244-85fa-ae37c7683857",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Ashmole 388",
+   "datazione": "1643",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Pelusiensis de Astrorum Judiciis, aut ut vulgo vocant Quadripartitae Constructionis, liber secundus [et liber tertius*] cum Expositione",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Ptolemy, active 2nd century»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/a5e2b645-472e-4244-85fa-ae37c7683857.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/a5e2b645-472e-4244-85fa-ae37c7683857/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
    "id": "bod-0ef9d5bc-06ee-4e66-8694-73af709896b5",
    "fonte": "bodleian",
    "biblioteca": "Bodleian Library",
@@ -166389,6 +166481,37 @@
    ],
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/0ef9d5bc-06ee-4e66-8694-73af709896b5.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/0ef9d5bc-06ee-4e66-8694-73af709896b5/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-b4d6144f-44a7-4454-9a3d-1878cd2a267a",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Auct. D. 4. 13",
+   "datazione": "11th century, late",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Commentary on the Somnium Scipionis.",
+   "autori": [
+    {
+     "id": "macrobio",
+     "autore": "Macrobio",
+     "latino": "Macrobius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Macrobius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/b4d6144f-44a7-4454-9a3d-1878cd2a267a.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/b4d6144f-44a7-4454-9a3d-1878cd2a267a/",
    "licenza": "CC BY-NC 4.0",
    "immagini": null
   },
@@ -167211,37 +167334,6 @@
    ],
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/047068da-6381-4edd-82d0-2b0c72f7a926.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/047068da-6381-4edd-82d0-2b0c72f7a926/",
-   "licenza": "CC BY-NC 4.0",
-   "immagini": null
-  },
-  {
-   "id": "bod-783d604c-a873-4d64-967a-8140cc0eafa5",
-   "fonte": "bodleian",
-   "biblioteca": "Bodleian Library",
-   "citta": "Oxford",
-   "segnatura": "MS. Auct. F. 4. 32",
-   "datazione": "850",
-   "secolo": [
-    9,
-    9
-   ],
-   "lingue": [],
-   "lingua_dedotta": false,
-   "titolo": "St. Dunstan's Classbook, Homily on the Invention of the Cross, Liber Commonei, Ars Amatoria",
-   "autori": [
-    {
-     "id": "ovidio",
-     "autore": "Ovidio",
-     "latino": "Ovidius",
-     "categoria": "classico-latino",
-     "opere": [
-      "Ars amatoria"
-     ],
-     "corrispondenza": "titolo: «…of the Cross, Liber Commonei, Ars Amatoria»"
-    }
-   ],
-   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/783d604c-a873-4d64-967a-8140cc0eafa5.json",
-   "pagina": "https://digital.bodleian.ox.ac.uk/objects/783d604c-a873-4d64-967a-8140cc0eafa5/",
    "licenza": "CC BY-NC 4.0",
    "immagini": null
   },
@@ -170151,6 +170243,39 @@
    "immagini": null
   },
   {
+   "id": "bod-bf608de6-3381-496a-a076-8ee027b1b9f6",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Bodl. 141",
+   "datazione": "c. 1460",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Parva Naturalia.",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Parva naturalia"
+     ],
+     "corrispondenza": "titolo: «Parva Naturalia.»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/bf608de6-3381-496a-a076-8ee027b1b9f6.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/bf608de6-3381-496a-a076-8ee027b1b9f6/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
    "id": "bod-6491ad4a-c453-4f25-9d94-745ba50b69f8",
    "fonte": "bodleian",
    "biblioteca": "Bodleian Library",
@@ -172051,6 +172176,37 @@
    "immagini": null
   },
   {
+   "id": "bod-77a8180b-ae6b-4e22-bea4-613a084577ae",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Canon. Class. Lat. 187",
+   "datazione": "dated 1434",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ethics, tr. Leonardo Bruni.",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristotle»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/77a8180b-ae6b-4e22-bea4-613a084577ae.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/77a8180b-ae6b-4e22-bea4-613a084577ae/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
    "id": "bod-001bf4ef-34ad-433c-87fd-89e3a5aef045",
    "fonte": "bodleian",
    "biblioteca": "Bodleian Library",
@@ -173350,6 +173506,136 @@
    "immagini": null
   },
   {
+   "id": "bod-3dc64609-7c55-495e-917d-b0bf59874716",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Canonici Or. 7",
+   "datazione": "1501–1525",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "David ben Shmuel ibn Shushan's Hebrew translation of Thomas Bricot's compendium of Aristotle's works",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…Thomas Bricot's compendium of Aristotle's works»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/3dc64609-7c55-495e-917d-b0bf59874716.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/3dc64609-7c55-495e-917d-b0bf59874716/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-6462f8d0-d505-44d8-8e1d-479617c423e0",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Canonici Or. 9",
+   "datazione": "1476–1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Hebrew translation of Aristotle's works",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Alguadez, Meir ben Solomon ; Aristotle»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/6462f8d0-d505-44d8-8e1d-479617c423e0.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/6462f8d0-d505-44d8-8e1d-479617c423e0/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-cc5edeea-ed10-4ab0-8a87-a0133913c6c5",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Canonici Or. 63",
+   "datazione": "1401–1425",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Collection of philosophical texts (Averroës and Themistius on Aristotle)",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Collection of philosophical texts (Averroës and Themistius on Aristotle)»"
+    },
+    {
+     "id": "temistio",
+     "autore": "Temistio",
+     "latino": "Themistius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Averroës ; Themistius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/cc5edeea-ed10-4ab0-8a87-a0133913c6c5.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/cc5edeea-ed10-4ab0-8a87-a0133913c6c5/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-05264019-f1c3-4900-8a54-468fabf03e5f",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Canonici Or. 66",
+   "datazione": "1275–1325",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De Animalibus",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Historia animalium"
+     ],
+     "corrispondenza": "autore: «Aristotle»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/05264019-f1c3-4900-8a54-468fabf03e5f.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/05264019-f1c3-4900-8a54-468fabf03e5f/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
    "id": "bod-ce47a9df-c959-4f76-9702-5c04d6bf47c4",
    "fonte": "bodleian",
    "biblioteca": "Bodleian Library",
@@ -174626,6 +174912,39 @@
    "immagini": null
   },
   {
+   "id": "bod-c0ec591a-227c-4b38-8e66-c262dd30a8df",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Douce 117",
+   "datazione": "after 1531",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Metamorphoses. Translation by Clément Marot, with dedicatory epistle to Francis I.",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Metamorfosi"
+     ],
+     "corrispondenza": "autore: «Ovid»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/c0ec591a-227c-4b38-8e66-c262dd30a8df.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/c0ec591a-227c-4b38-8e66-c262dd30a8df/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
    "id": "bod-0332a53b-c9fc-4abd-99bd-42e252d7f9c2",
    "fonte": "bodleian",
    "biblioteca": "Bodleian Library",
@@ -175299,6 +175618,41 @@
    "immagini": null
   },
   {
+   "id": "bod-fa8369cb-158f-468d-ac94-272d5153560e",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Fairfax 18",
+   "datazione": "1497",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la",
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Comoediae: Phormio",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Phormio",
+      "Commedie"
+     ],
+     "corrispondenza": "autore: «Terence»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/fa8369cb-158f-468d-ac94-272d5153560e.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/fa8369cb-158f-468d-ac94-272d5153560e/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
    "id": "bod-2a85d293-1d4b-4bab-a36b-a1714ef32899",
    "fonte": "bodleian",
    "biblioteca": "Bodleian Library",
@@ -175365,6 +175719,37 @@
    "immagini": null
   },
   {
+   "id": "bod-16a15209-5139-4726-a561-973cc76c9f02",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. a. 4 (P)/1-42",
+   "datazione": "259–258 BC",
+   "secolo": [
+    3,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Revenue Laws of Ptolemy Philadelphus",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Revenue Laws of Ptolemy Philadelphus»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/16a15209-5139-4726-a561-973cc76c9f02.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/16a15209-5139-4726-a561-973cc76c9f02/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
    "id": "bod-74cc30b3-48b9-4cf0-b2fa-b790d222ab03",
    "fonte": "bodleian",
    "biblioteca": "Bodleian Library",
@@ -175396,6 +175781,355 @@
    "immagini": null
   },
   {
+   "id": "bod-65fdc054-7689-4cbf-906f-381fd0bc8037",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. a. 16 (P)/1-3",
+   "datazione": "2nd century, late",
+   "secolo": [
+    2,
+    2
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Fragments",
+   "autori": [
+    {
+     "id": "alceo",
+     "autore": "Alceo",
+     "latino": "Alcaeus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Alcaeus, ca. 7th–6th cent. BCE»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/65fdc054-7689-4cbf-906f-381fd0bc8037.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/65fdc054-7689-4cbf-906f-381fd0bc8037/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-76660de3-5085-48f8-b079-0d9ee50caafd",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. b. 3 (P)/1, 2-4",
+   "datazione": "280–240 BC",
+   "secolo": [
+    3,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Iliad",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/76660de3-5085-48f8-b079-0d9ee50caafd.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/76660de3-5085-48f8-b079-0d9ee50caafd/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-3a716ea2-1d7c-4857-a7b9-249dc0eff4dc",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. b. 10 (P)",
+   "datazione": "1st century - 2nd century",
+   "secolo": [
+    1,
+    2
+   ],
+   "lingue": [
+    "xx",
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Fragments; Illiad",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/3a716ea2-1d7c-4857-a7b9-249dc0eff4dc.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/3a716ea2-1d7c-4857-a7b9-249dc0eff4dc/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-80177efa-3860-4c4f-858d-6c22c78e7e4d",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. b. 13 (P)/1–5 (verso)",
+   "datazione": "2nd century, late or 3rd century, early",
+   "secolo": [
+    2,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Hypsipyle",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Euripides»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/80177efa-3860-4c4f-858d-6c22c78e7e4d.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/80177efa-3860-4c4f-858d-6c22c78e7e4d/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-4fd312b1-f2d4-4e00-b91d-fc8bff61f028",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. b. 18 (P)",
+   "datazione": "2nd century",
+   "secolo": [
+    2,
+    2
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opus incertum (?)",
+   "autori": [
+    {
+     "id": "alceo",
+     "autore": "Alceo",
+     "latino": "Alcaeus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Alcaeus, ca. 7th–6th cent. BCE»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/4fd312b1-f2d4-4e00-b91d-fc8bff61f028.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/4fd312b1-f2d4-4e00-b91d-fc8bff61f028/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-fd1cc502-1004-4609-824a-7115eb646900",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. b. 19 (P)/1-3",
+   "datazione": "2nd century - 3rd century",
+   "secolo": [
+    2,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Lysias, Contra Hippothersem, Contra Theomnestrum etc.",
+   "autori": [
+    {
+     "id": "lisia",
+     "autore": "Lisia",
+     "latino": "Lysias",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Lysias»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/fd1cc502-1004-4609-824a-7115eb646900.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/fd1cc502-1004-4609-824a-7115eb646900/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-9f65404e-1e9b-4d55-acf1-b5517699b387",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. b. 23 (P)",
+   "datazione": "2nd century",
+   "secolo": [
+    2,
+    2
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Colax; Financial account",
+   "autori": [
+    {
+     "id": "menandro",
+     "autore": "Menandro",
+     "latino": "Menander",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Menander, of Athens»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/9f65404e-1e9b-4d55-acf1-b5517699b387.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/9f65404e-1e9b-4d55-acf1-b5517699b387/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-20558ae9-50e7-45cf-a3c7-8f59eb784ac2",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. c. 54 (P)",
+   "datazione": "2nd century",
+   "secolo": [
+    2,
+    2
+   ],
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Military account; Gorgias",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [
+      "Gorgia"
+     ],
+     "corrispondenza": "autore: «Plato»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/20558ae9-50e7-45cf-a3c7-8f59eb784ac2.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/20558ae9-50e7-45cf-a3c7-8f59eb784ac2/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-093321a6-fab0-4524-9009-a13056b6aa09",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. c. 69 (P)",
+   "datazione": "187 BC",
+   "secolo": [
+    2,
+    2
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Notification of shipment of corn by Ptolemy to Lysimachos at the request of Apollonios",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Ptolemy ; Apollonios»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/093321a6-fab0-4524-9009-a13056b6aa09.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/093321a6-fab0-4524-9009-a13056b6aa09/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-dd8ccc42-6edc-4074-85f7-0a404417587e",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. c. 72 (P)/1-7",
+   "datazione": "4th century",
+   "secolo": [
+    4,
+    4
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aitia; Iambi",
+   "autori": [
+    {
+     "id": "callimaco",
+     "autore": "Callimaco",
+     "latino": "Callimachus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Aitia"
+     ],
+     "corrispondenza": "autore: «Callimachus»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/dd8ccc42-6edc-4074-85f7-0a404417587e.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/dd8ccc42-6edc-4074-85f7-0a404417587e/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-92f6eaa7-4ba5-4c33-9888-7827f503e778",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. c. 76 (P)/1-2",
+   "datazione": "2nd century",
+   "secolo": [
+    2,
+    2
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Carmina",
+   "autori": [
+    {
+     "id": "saffo",
+     "autore": "Saffo",
+     "latino": "Sappho",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Sappho, 0612?–0557? BCE»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/92f6eaa7-4ba5-4c33-9888-7827f503e778.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/92f6eaa7-4ba5-4c33-9888-7827f503e778/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
    "id": "bod-3a80751f-3d05-48b4-b7da-70b3e1dee856",
    "fonte": "bodleian",
    "biblioteca": "Bodleian Library",
@@ -175423,6 +176157,1597 @@
    ],
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/3a80751f-3d05-48b4-b7da-70b3e1dee856.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/3a80751f-3d05-48b4-b7da-70b3e1dee856/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-d47f46a2-11a0-46b9-9db5-ff51a64c1e4a",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. c. 77 (P)",
+   "datazione": "1st century",
+   "secolo": [
+    1,
+    1
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aetia",
+   "autori": [
+    {
+     "id": "callimaco",
+     "autore": "Callimaco",
+     "latino": "Callimachus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Aitia"
+     ],
+     "corrispondenza": "autore: «Callimachus»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/d47f46a2-11a0-46b9-9db5-ff51a64c1e4a.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/d47f46a2-11a0-46b9-9db5-ff51a64c1e4a/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-4e0fb848-6f85-4f67-835e-7243de44a7fb",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. d. 20 (P)",
+   "datazione": "1st century - 2nd century",
+   "secolo": [
+    1,
+    2
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Iliad",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/4e0fb848-6f85-4f67-835e-7243de44a7fb.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/4e0fb848-6f85-4f67-835e-7243de44a7fb/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-13b80737-3f7f-4400-ba97-5f96542d0cfd",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. d. 22 (P)",
+   "datazione": "3rd century BC, first half",
+   "secolo": [
+    3,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Laches",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Plato»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/13b80737-3f7f-4400-ba97-5f96542d0cfd.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/13b80737-3f7f-4400-ba97-5f96542d0cfd/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-15e3d984-1905-4d0d-9ee4-c2d0f7ed0b30",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. d. 23 (P)",
+   "datazione": "3rd century BC, first half",
+   "secolo": [
+    3,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Laches",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Plato»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/15e3d984-1905-4d0d-9ee4-c2d0f7ed0b30.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/15e3d984-1905-4d0d-9ee4-c2d0f7ed0b30/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-9e2fe280-cbfc-4ceb-b97b-6c7825116ab1",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. d. 41 (P)",
+   "datazione": "1st century",
+   "secolo": [
+    1,
+    1
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Iliad",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/9e2fe280-cbfc-4ceb-b97b-6c7825116ab1.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/9e2fe280-cbfc-4ceb-b97b-6c7825116ab1/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-1d396943-5852-4afa-b7fb-491e03e22a56",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. d. 45 (P)",
+   "datazione": "2nd century",
+   "secolo": [
+    2,
+    2
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Iliad",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/1d396943-5852-4afa-b7fb-491e03e22a56.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/1d396943-5852-4afa-b7fb-491e03e22a56/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-6423d38e-0645-4555-9d8d-c1bc1067a96e",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. d. 64 (P)",
+   "datazione": "2nd century, second half",
+   "secolo": [
+    2,
+    2
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Laches",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Plato»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/6423d38e-0645-4555-9d8d-c1bc1067a96e.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/6423d38e-0645-4555-9d8d-c1bc1067a96e/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-9fe8a01e-5578-420a-91a7-eeab4ba9e435",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. d. 76 (P)",
+   "datazione": "2nd century",
+   "secolo": [
+    2,
+    2
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Protreptikos",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristotle»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/9fe8a01e-5578-420a-91a7-eeab4ba9e435.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/9fe8a01e-5578-420a-91a7-eeab4ba9e435/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-11db015a-d6bd-4b48-acc8-a5dad799a85f",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. d. 78 (P)/1-3",
+   "datazione": "3rd century BC",
+   "secolo": [
+    3,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "In Theozoditem; Gnomic anthology",
+   "autori": [
+    {
+     "id": "lisia",
+     "autore": "Lisia",
+     "latino": "Lysias",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Lysias»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/11db015a-d6bd-4b48-acc8-a5dad799a85f.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/11db015a-d6bd-4b48-acc8-a5dad799a85f/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-405b121f-b533-47d6-aafa-5a567258b6d1",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. d. 79 (P)",
+   "datazione": "3rd century BC",
+   "secolo": [
+    3,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Sententiae; Account",
+   "autori": [
+    {
+     "id": "simonide",
+     "autore": "Simonide",
+     "latino": "Simonides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Simonides, approximately 556 B.C.–467 B.C.»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/405b121f-b533-47d6-aafa-5a567258b6d1.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/405b121f-b533-47d6-aafa-5a567258b6d1/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-b999a46d-6a41-4aa1-8d0a-563d183d2a81",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. d. 97 (P)",
+   "datazione": "3rd century",
+   "secolo": [
+    3,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Leucippe et Clitophon",
+   "autori": [
+    {
+     "id": "achille-tazio",
+     "autore": "Achille Tazio",
+     "latino": "Achilles Tatius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Leucippe e Clitofonte"
+     ],
+     "corrispondenza": "autore: «Achilles Tatius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/b999a46d-6a41-4aa1-8d0a-563d183d2a81.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/b999a46d-6a41-4aa1-8d0a-563d183d2a81/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-9f8829b3-fc7a-4930-a45b-ca81a22792b7",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. d. 114 (P)",
+   "datazione": "2nd century - 3rd century",
+   "secolo": [
+    2,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Historiae",
+   "autori": [
+    {
+     "id": "erodoto",
+     "autore": "Erodoto",
+     "latino": "Herodotus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Storie"
+     ],
+     "corrispondenza": "autore: «Herodotus»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/9f8829b3-fc7a-4930-a45b-ca81a22792b7.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/9f8829b3-fc7a-4930-a45b-ca81a22792b7/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-7f447e1a-cae3-4b7f-9532-3361bcf06ca6",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. d. 128/1-4 (P)",
+   "datazione": "5th century",
+   "secolo": [
+    5,
+    5
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Idylls",
+   "autori": [
+    {
+     "id": "teocrito",
+     "autore": "Teocrito",
+     "latino": "Theocritus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Idilli"
+     ],
+     "corrispondenza": "autore: «Theocritus»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/7f447e1a-cae3-4b7f-9532-3361bcf06ca6.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/7f447e1a-cae3-4b7f-9532-3361bcf06ca6/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-bd6f5717-c7c9-4e13-8dc5-23ee6c6ba652",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. d. 132 (P)",
+   "datazione": "2nd century",
+   "secolo": [
+    2,
+    2
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Iliad",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/bd6f5717-c7c9-4e13-8dc5-23ee6c6ba652.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/bd6f5717-c7c9-4e13-8dc5-23ee6c6ba652/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-df6b7b69-2400-49f0-a466-13e847763758",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. d. 163 (P)",
+   "datazione": "1st century BC, second half - 1st century, 1st half",
+   "secolo": [
+    1,
+    1
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ad demonicum",
+   "autori": [
+    {
+     "id": "isocrate",
+     "autore": "Isocrate",
+     "latino": "Isocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "A Demonico"
+     ],
+     "corrispondenza": "autore: «Isocrates»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/df6b7b69-2400-49f0-a466-13e847763758.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/df6b7b69-2400-49f0-a466-13e847763758/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-3740fcc3-cf2b-425f-9e4a-fbaa183f9df4",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. e. 21 (P)",
+   "datazione": "3rd century - 4th century",
+   "secolo": [
+    3,
+    4
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Iliad",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/3740fcc3-cf2b-425f-9e4a-fbaa183f9df4.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/3740fcc3-cf2b-425f-9e4a-fbaa183f9df4/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-599b52d9-ca5c-4f4b-ac0d-8085e76af3ac",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. e. 44 (P)",
+   "datazione": "2nd century",
+   "secolo": [
+    2,
+    2
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Lexicon Homericum",
+   "autori": [
+    {
+     "id": "apollonio-rodio",
+     "autore": "Apollonio Rodio",
+     "latino": "Apollonius Rhodius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Apollonius, Rhodius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/599b52d9-ca5c-4f4b-ac0d-8085e76af3ac.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/599b52d9-ca5c-4f4b-ac0d-8085e76af3ac/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-a0e03d85-406b-471d-b554-0161a7be8089",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. e. 58 (P)",
+   "datazione": "2nd century",
+   "secolo": [
+    2,
+    2
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Iliad",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/a0e03d85-406b-471d-b554-0161a7be8089.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/a0e03d85-406b-471d-b554-0161a7be8089/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-892d9f00-4ae3-4810-bed0-8719a949fc72",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. e. 72 (P)",
+   "datazione": "6th century",
+   "secolo": [
+    6,
+    6
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Fabulae; Sententiae",
+   "autori": [
+    {
+     "id": "menandro",
+     "autore": "Menandro",
+     "latino": "Menander",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aesop ; Menander, of Athens»"
+    },
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "autore: «Aesop ; Menander, of Athens»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/892d9f00-4ae3-4810-bed0-8719a949fc72.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/892d9f00-4ae3-4810-bed0-8719a949fc72/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-ce41f74d-8926-4311-aa19-66d47bebe079",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. e. 87 (P)",
+   "datazione": "4th century",
+   "secolo": [
+    4,
+    4
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Lysistrata",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Lisistrata"
+     ],
+     "corrispondenza": "autore: «Aristophanes»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/ce41f74d-8926-4311-aa19-66d47bebe079.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/ce41f74d-8926-4311-aa19-66d47bebe079/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-43b75b50-ffa3-4608-af70-2882c4fb729f",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. e. 89 (P)",
+   "datazione": "3rd century BC",
+   "secolo": [
+    3,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Tyro",
+   "autori": [
+    {
+     "id": "sofocle",
+     "autore": "Sofocle",
+     "latino": "Sophocles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Sophocles»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/43b75b50-ffa3-4608-af70-2882c4fb729f.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/43b75b50-ffa3-4608-af70-2882c4fb729f/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-abdab243-6a4a-4279-867f-0735396c7609",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. e. 99 (P)",
+   "datazione": "3rd century",
+   "secolo": [
+    3,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Perinthia",
+   "autori": [
+    {
+     "id": "menandro",
+     "autore": "Menandro",
+     "latino": "Menander",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Menander, of Athens»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/abdab243-6a4a-4279-867f-0735396c7609.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/abdab243-6a4a-4279-867f-0735396c7609/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-7c496519-0edf-49ab-b3d1-63b81f216f60",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. e. 126 (P)",
+   "datazione": "2nd century - 3rd century",
+   "secolo": [
+    2,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Iliad",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/7c496519-0edf-49ab-b3d1-63b81f216f60.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/7c496519-0edf-49ab-b3d1-63b81f216f60/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-21a20b8a-8604-4e0e-a9e9-f17ddf0af387",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. e. 134 (P)",
+   "datazione": "2nd century or 3rd century",
+   "secolo": [
+    2,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Odyssey; Scholia minora on Homer, Iliad, ii; Literary fragments",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Odissea"
+     ],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/21a20b8a-8604-4e0e-a9e9-f17ddf0af387.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/21a20b8a-8604-4e0e-a9e9-f17ddf0af387/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-f5375744-5cd2-4da9-8364-71921eeb1103",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. f. 17 (P)",
+   "datazione": "146–107 BC",
+   "secolo": [
+    2,
+    2
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Petition from the inhabitants of a town in the Thebaid",
+   "autori": [
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tebaide"
+     ],
+     "corrispondenza": "titolo: «Petition from the inhabitants of a town in the Thebaid»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/f5375744-5cd2-4da9-8364-71921eeb1103.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/f5375744-5cd2-4da9-8364-71921eeb1103/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-f0168372-b2eb-4cbb-b360-1b3aed215fa8",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. f. 24 (P)",
+   "datazione": "2nd century, late - 3rd century, early",
+   "secolo": [
+    2,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Iliad",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/f0168372-b2eb-4cbb-b360-1b3aed215fa8.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/f0168372-b2eb-4cbb-b360-1b3aed215fa8/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-554a3d79-3f05-4501-89c9-7093b471fe07",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. f. 39 (P)",
+   "datazione": "6th century or 7th century",
+   "secolo": [
+    6,
+    7
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Notes on Iliad, xi.88–125",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/554a3d79-3f05-4501-89c9-7093b471fe07.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/554a3d79-3f05-4501-89c9-7093b471fe07/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-994080aa-d99c-44fa-a20f-6621fda1b233",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. f. 41 (P)",
+   "datazione": "5th century",
+   "secolo": [
+    5,
+    5
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Scholia minora on Iliad i.595–604, ii.4–10",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/994080aa-d99c-44fa-a20f-6621fda1b233.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/994080aa-d99c-44fa-a20f-6621fda1b233/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-5e772e53-bbad-4063-9754-69fbc747771e",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. f. 42 (P)",
+   "datazione": "1st century",
+   "secolo": [
+    1,
+    1
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Iliad",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/5e772e53-bbad-4063-9754-69fbc747771e.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/5e772e53-bbad-4063-9754-69fbc747771e/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-b1bdcd93-3f94-4803-9257-3bd1b7410afe",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. f. 43 (P)",
+   "datazione": "2nd century",
+   "secolo": [
+    2,
+    2
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Literary text; Odyssey (?)",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Odissea"
+     ],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/b1bdcd93-3f94-4803-9257-3bd1b7410afe.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/b1bdcd93-3f94-4803-9257-3bd1b7410afe/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-663e000a-584f-4f78-8d0a-a795d044e354",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. f. 46 (P)",
+   "datazione": "1st century - 2nd century",
+   "secolo": [
+    1,
+    2
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Letter; Peri Parapresbeias",
+   "autori": [
+    {
+     "id": "demostene",
+     "autore": "Demostene",
+     "latino": "Demosthenes",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Demosthenes»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/663e000a-584f-4f78-8d0a-a795d044e354.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/663e000a-584f-4f78-8d0a-a795d044e354/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-c4c86dd4-2a5a-4cbf-8df4-2470bdf2a1f7",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. f. 47 (P)",
+   "datazione": "2nd century",
+   "secolo": [
+    2,
+    2
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Contra Phormionem",
+   "autori": [
+    {
+     "id": "demostene",
+     "autore": "Demostene",
+     "latino": "Demosthenes",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Demosthenes»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/c4c86dd4-2a5a-4cbf-8df4-2470bdf2a1f7.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/c4c86dd4-2a5a-4cbf-8df4-2470bdf2a1f7/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-4f7dd848-9656-4b10-bb59-76a9bec86532",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. f. 72 (P)",
+   "datazione": "4th century, second half - 5th century, first half",
+   "secolo": [
+    4,
+    5
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Knights",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Cavalieri"
+     ],
+     "corrispondenza": "autore: «Aristophanes»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/4f7dd848-9656-4b10-bb59-76a9bec86532.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/4f7dd848-9656-4b10-bb59-76a9bec86532/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-cee80959-626b-4d56-9c92-b5d839a10d19",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. f. 74 (P)",
+   "datazione": "2nd century",
+   "secolo": [
+    2,
+    2
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "List of payments for taxes; Hypothesis on Iliad xi.575ff",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "titolo: «List of payments for taxes; Hypothesis on Iliad xi.575ff»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/cee80959-626b-4d56-9c92-b5d839a10d19.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/cee80959-626b-4d56-9c92-b5d839a10d19/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-b2cf26e7-b33a-48a2-a7d6-5d8151cbcb3f",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. f. 75 (P)",
+   "datazione": "2nd century",
+   "secolo": [
+    2,
+    2
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Iliad",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/b2cf26e7-b33a-48a2-a7d6-5d8151cbcb3f.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/b2cf26e7-b33a-48a2-a7d6-5d8151cbcb3f/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-8fea2535-25cc-4921-a095-c4e43842b6d9",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. f. 95 (P)",
+   "datazione": "3rd century",
+   "secolo": [
+    3,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Kolax",
+   "autori": [
+    {
+     "id": "menandro",
+     "autore": "Menandro",
+     "latino": "Menander",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Menander, of Athens»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/8fea2535-25cc-4921-a095-c4e43842b6d9.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/8fea2535-25cc-4921-a095-c4e43842b6d9/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-7f394878-2bf1-456c-bb6e-7bb8b1079e28",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. f. 109 (P)",
+   "datazione": "6th century",
+   "secolo": [
+    6,
+    6
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Hymni",
+   "autori": [
+    {
+     "id": "callimaco",
+     "autore": "Callimaco",
+     "latino": "Callimachus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Inni"
+     ],
+     "corrispondenza": "autore: «Callimachus»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/7f394878-2bf1-456c-bb6e-7bb8b1079e28.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/7f394878-2bf1-456c-bb6e-7bb8b1079e28/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-6d5e78f7-7f6e-42ba-8ff3-d8f54772902a",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. f. 110 (P)",
+   "datazione": "2nd century - 3rd century",
+   "secolo": [
+    2,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Scholia on Iliad i.582 ff.; Iliad",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/6d5e78f7-7f6e-42ba-8ff3-d8f54772902a.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/6d5e78f7-7f6e-42ba-8ff3-d8f54772902a/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-8e4b1345-6627-42f5-9531-2ae0257d3395",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. f. 112 (P)",
+   "datazione": "4th century",
+   "secolo": [
+    4,
+    4
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Argonautica",
+   "autori": [
+    {
+     "id": "apollonio-rodio",
+     "autore": "Apollonio Rodio",
+     "latino": "Apollonius Rhodius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Argonautiche"
+     ],
+     "corrispondenza": "autore: «Apollonius, Rhodius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/8e4b1345-6627-42f5-9531-2ae0257d3395.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/8e4b1345-6627-42f5-9531-2ae0257d3395/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-e1081be6-43bf-4e85-8a23-bf951ef26fbf",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. g. 7 (P)",
+   "datazione": "3rd century",
+   "secolo": [
+    3,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Odyssey",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Odissea"
+     ],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/e1081be6-43bf-4e85-8a23-bf951ef26fbf.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/e1081be6-43bf-4e85-8a23-bf951ef26fbf/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-e10f81a6-9fc9-438e-bb7c-6daed3ee19f7",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. g. 16 (P)",
+   "datazione": "2nd century",
+   "secolo": [
+    2,
+    2
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Iliad",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/e10f81a6-9fc9-438e-bb7c-6daed3ee19f7.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/e10f81a6-9fc9-438e-bb7c-6daed3ee19f7/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-702bc934-e5bd-47ea-aff1-a1eaa8c19ec3",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. g. 44 (P)",
+   "datazione": "2nd century - 3rd century",
+   "secolo": [
+    2,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Document (?); Plutus",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Pluto"
+     ],
+     "corrispondenza": "autore: «Aristophanes»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/702bc934-e5bd-47ea-aff1-a1eaa8c19ec3.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/702bc934-e5bd-47ea-aff1-a1eaa8c19ec3/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-b81e9bdc-74f6-470d-b918-552e63f4e9ac",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. g. 49 (P)",
+   "datazione": "4th century - 5th century",
+   "secolo": [
+    4,
+    5
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Iliad",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/b81e9bdc-74f6-470d-b918-552e63f4e9ac.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/b81e9bdc-74f6-470d-b918-552e63f4e9ac/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-33c3bd32-63be-4b56-8c3e-accb2dd1c754",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. g. 50 (P)",
+   "datazione": "3rd century",
+   "secolo": [
+    3,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Dyscolus",
+   "autori": [
+    {
+     "id": "menandro",
+     "autore": "Menandro",
+     "latino": "Menander",
+     "categoria": "classico-greco",
+     "opere": [
+      "Dyskolos"
+     ],
+     "corrispondenza": "autore: «Menander, of Athens»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/33c3bd32-63be-4b56-8c3e-accb2dd1c754.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/33c3bd32-63be-4b56-8c3e-accb2dd1c754/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-4879f205-f44d-4026-97a9-19dd5960fbb8",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. g. 51 (P)",
+   "datazione": "3rd century",
+   "secolo": [
+    3,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "In Ctesipontem",
+   "autori": [
+    {
+     "id": "eschine",
+     "autore": "Eschine",
+     "latino": "Aeschines",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aeschines»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/4879f205-f44d-4026-97a9-19dd5960fbb8.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/4879f205-f44d-4026-97a9-19dd5960fbb8/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-6f8cb316-6363-46cc-87f6-595241080f47",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. g. 54 (P)",
+   "datazione": "3rd century BC",
+   "secolo": [
+    3,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Niobe",
+   "autori": [
+    {
+     "id": "sofocle",
+     "autore": "Sofocle",
+     "latino": "Sophocles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Sophocles»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/6f8cb316-6363-46cc-87f6-595241080f47.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/6f8cb316-6363-46cc-87f6-595241080f47/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-43044792-d63d-4f48-aeb7-d1efcc2ec10d",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. g. 60 (P)",
+   "datazione": "2nd century, late; 2nd century - 3rd century, early",
+   "secolo": [
+    2,
+    3
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "List; Iambus",
+   "autori": [
+    {
+     "id": "callimaco",
+     "autore": "Callimaco",
+     "latino": "Callimachus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Callimachus»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/43044792-d63d-4f48-aeb7-d1efcc2ec10d.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/43044792-d63d-4f48-aeb7-d1efcc2ec10d/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-cabbffdf-5d83-4806-8639-40e40e7fd27c",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Gr. class. g. 69 (P)",
+   "datazione": "6th century",
+   "secolo": [
+    6,
+    6
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De antidotis",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galen»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/cabbffdf-5d83-4806-8639-40e40e7fd27c.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/cabbffdf-5d83-4806-8639-40e40e7fd27c/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-0abfe7d4-90cf-43cd-8ce7-3148fc407dfe",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Greaves 13",
+   "datazione": "17th century",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "ar",
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "The description of Arabia from the Taqwīm al-buldān",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Ptolemy, active 2nd century ; Abū al-Fidāʼ Ismāʻīl ibn ʻAlī, 1273-1331»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/0abfe7d4-90cf-43cd-8ce7-3148fc407dfe.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/0abfe7d4-90cf-43cd-8ce7-3148fc407dfe/",
    "licenza": "CC BY-NC 4.0",
    "immagini": null
   },
@@ -175589,6 +177914,261 @@
    "immagini": null
   },
   {
+   "id": "bod-1999737a-0e70-4d4c-a15f-8a933add9e1d",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Hunt. 608 [fols. 13b, 21a]",
+   "datazione": "n.d.",
+   "secolo": null,
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Two diagrams from Taḥrīr al-uṣūl al-handasīyah",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Euclid»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/1999737a-0e70-4d4c-a15f-8a933add9e1d.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/1999737a-0e70-4d4c-a15f-8a933add9e1d/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-3bdaec9a-2c1c-42e6-b920-159ec11cb923",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Huntington 16",
+   "datazione": "1401–1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Miscellany of geometrical works",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Euclid ; Menelaus, of Alexandria ; Theodosius, of Bythinia»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/3bdaec9a-2c1c-42e6-b920-159ec11cb923.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/3bdaec9a-2c1c-42e6-b920-159ec11cb923/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-44f225bd-1365-47df-810f-dd520f594ea4",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Huntington 79",
+   "datazione": "15th century, late",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collection of philosophical works by Averroes",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Historia animalium"
+     ],
+     "corrispondenza": "descrizione: «…8a). Averroës, Paraphrase of Aristotle’s De Animalibus, translated i…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/44f225bd-1365-47df-810f-dd520f594ea4.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/44f225bd-1365-47df-810f-dd520f594ea4/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-84dafc64-c6b5-4d0d-acea-e1460d723c25",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Huntington 356",
+   "datazione": "1276–1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Aphorisms (in Arabic)",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Aforismi"
+     ],
+     "corrispondenza": "titolo: «Aphorisms (in Arabic)»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/84dafc64-c6b5-4d0d-acea-e1460d723c25.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/84dafc64-c6b5-4d0d-acea-e1460d723c25/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-03e0362b-0a9f-4af9-8690-9b95dfde6837",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Huntington 435 [fol. 39a]",
+   "datazione": "[v.h. and v.d., the earliest (ff. 1-49) 12th cent.?] CE",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Detail from Elements by Euclid",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Elementi"
+     ],
+     "corrispondenza": "autore: «Hypsicles, of Alexandria ; Euclid»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/03e0362b-0a9f-4af9-8690-9b95dfde6837.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/03e0362b-0a9f-4af9-8690-9b95dfde6837/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-996fd4b1-2247-4681-8661-3cd280ca067d",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Huntington 519",
+   "datazione": "1476–1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Commentary on Averroës's Talkhīṣ Kitāb al-nafs (Paraphrase on Aristotle's Organon)",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Organon"
+     ],
+     "corrispondenza": "titolo: «Commentary on Averroës's Talkhīṣ Kitāb al-nafs (Paraphrase on Aristotle's Organon)»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/996fd4b1-2247-4681-8661-3cd280ca067d.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/996fd4b1-2247-4681-8661-3cd280ca067d/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-f1cec252-9706-47c8-a77c-3bab80c44508",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Huntington 561",
+   "datazione": "1374–1375",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Elements (Hebrew)",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Elementi"
+     ],
+     "corrispondenza": "autore: «Euclid»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/f1cec252-9706-47c8-a77c-3bab80c44508.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/f1cec252-9706-47c8-a77c-3bab80c44508/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-c2557f6a-f0f3-4d1d-81d8-8ec30ce6b89f",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Huntington Donat. 33",
+   "datazione": "1276–1325",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "xx"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aphorisms",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Aforismi"
+     ],
+     "corrispondenza": "titolo: «Aphorisms»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/c2557f6a-f0f3-4d1d-81d8-8ec30ce6b89f.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/c2557f6a-f0f3-4d1d-81d8-8ec30ce6b89f/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
    "id": "bod-65d38612-7a9c-4917-ae4b-cd092ecba05b",
    "fonte": "bodleian",
    "biblioteca": "Bodleian Library",
@@ -175748,6 +178328,2608 @@
    ],
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/b21d6b2d-2bcd-499c-8feb-f7bdb9ada2a7.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/b21d6b2d-2bcd-499c-8feb-f7bdb9ada2a7/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-f698a883-02b5-49c9-ba7e-95376a7bf26c",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Lat. class. d. 8",
+   "datazione": "c. 1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Heroides.",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eroidi"
+     ],
+     "corrispondenza": "autore: «Ovid»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/f698a883-02b5-49c9-ba7e-95376a7bf26c.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/f698a883-02b5-49c9-ba7e-95376a7bf26c/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-0a1909ef-988f-4467-8c52-519e26a0bdf7",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Lat. class. d. 14",
+   "datazione": "14th century, second half (before 1388)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Pharsalia.",
+   "autori": [
+    {
+     "id": "lucano",
+     "autore": "Lucano",
+     "latino": "Lucanus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Pharsalia"
+     ],
+     "corrispondenza": "autore: «Lucan»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/0a1909ef-988f-4467-8c52-519e26a0bdf7.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/0a1909ef-988f-4467-8c52-519e26a0bdf7/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-d4422665-0aa1-4561-84a4-d0ce9ec2dd3c",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Lat. class. d. 28",
+   "datazione": "15th century, before 1449",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Speeches.",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/d4422665-0aa1-4561-84a4-d0ce9ec2dd3c.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/d4422665-0aa1-4561-84a4-d0ce9ec2dd3c/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-0a335809-22a1-4b8f-9c56-ceb9304b8ca0",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Lat. class. d. 37",
+   "datazione": "Dated 1413",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Orator.",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/0a335809-22a1-4b8f-9c56-ceb9304b8ca0.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/0a335809-22a1-4b8f-9c56-ceb9304b8ca0/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-5531d3ef-693d-4b1d-ac79-f1f924dde79a",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Lat. class. e. 20 (P)",
+   "datazione": "5th century",
+   "secolo": [
+    5,
+    5
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Catilina",
+   "autori": [
+    {
+     "id": "sallustio",
+     "autore": "Sallustio",
+     "latino": "Sallustius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De coniuratione Catilinae"
+     ],
+     "corrispondenza": "autore: «Sallust, 86 B.C.-34 B.C.»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/5531d3ef-693d-4b1d-ac79-f1f924dde79a.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/5531d3ef-693d-4b1d-ac79-f1f924dde79a/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-0f2cdea8-53c2-4b4d-9926-56327e5a9c15",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Lat. class. e. 38",
+   "datazione": "1874",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "The odes of Horace",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Odi"
+     ],
+     "corrispondenza": "titolo: «The odes of Horace»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/0f2cdea8-53c2-4b4d-9926-56327e5a9c15.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/0f2cdea8-53c2-4b4d-9926-56327e5a9c15/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-4f0ef4de-ab18-474d-b9b3-328dd7a72e2a",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Lat. class. f. 5 (P)",
+   "datazione": "4th century",
+   "secolo": [
+    4,
+    4
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ab urbe condita",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "autore: «Livy»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/4f0ef4de-ab18-474d-b9b3-328dd7a72e2a.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/4f0ef4de-ab18-474d-b9b3-328dd7a72e2a/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-0b6e3c05-e1b1-447b-a50c-ce01e4e60c45",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Lat. misc. e. 2",
+   "datazione": "13th century, first half",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la",
+    "de"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ars medicinae (Articella) and other medical texts",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Ars medica"
+     ],
+     "corrispondenza": "autore: «…7th cent., writer on urines ; Galen ; Israeli, Isaac, approximate…»"
+    },
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Prognostico"
+     ],
+     "corrispondenza": "autore: «Hippocrates, v460-v370 ; Philaretus ; The…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/0b6e3c05-e1b1-447b-a50c-ce01e4e60c45.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/0b6e3c05-e1b1-447b-a50c-ce01e4e60c45/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-89c27079-bc40-4702-8307-2a617825c876",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Lat. th. d. 18",
+   "datazione": "14th century, second half; 14th century, late; 15th century, early",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Theological texts",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "De interpretatione"
+     ],
+     "corrispondenza": "descrizione: «…bus (ff. 100r–103r). Notes on Aristotle, De interpretatione (ff. 105r…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/89c27079-bc40-4702-8307-2a617825c876.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/89c27079-bc40-4702-8307-2a617825c876/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-9a8ffffd-7c66-49eb-b65d-45fa1638dfb7",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Gr. 5",
+   "datazione": "16th century",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Speeches.",
+   "autori": [
+    {
+     "id": "demostene",
+     "autore": "Demostene",
+     "latino": "Demosthenes",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Demosthenes»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/9a8ffffd-7c66-49eb-b65d-45fa1638dfb7.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/9a8ffffd-7c66-49eb-b65d-45fa1638dfb7/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-fa0ce99e-b1d4-4488-bed7-4ccbcd53dc50",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Gr. 5; Buchanan g.19",
+   "datazione": "16th century, second half",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "xx"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Speeches (manuscript). Bible (printed).",
+   "autori": [
+    {
+     "id": "demostene",
+     "autore": "Demostene",
+     "latino": "Demosthenes",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Demosthenes»"
+    },
+    {
+     "id": "bibbia",
+     "autore": "Bibbia",
+     "latino": "Biblia",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "titolo: «Speeches (manuscript). Bible (printed).»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/fa0ce99e-b1d4-4488-bed7-4ccbcd53dc50.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/fa0ce99e-b1d4-4488-bed7-4ccbcd53dc50/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-6f1cf17f-2a44-47a7-9909-0ddb58a180d3",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Gr. 18",
+   "datazione": "1358",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Proclus Diadochus, In Platonis theologiam; Institutio theologica.",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Proclus Diadochus, In Platonis theologiam; Institutio theologica.»"
+    },
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Elementi di teologia"
+     ],
+     "corrispondenza": "autore: «Proclus Diadochus»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/6f1cf17f-2a44-47a7-9909-0ddb58a180d3.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/6f1cf17f-2a44-47a7-9909-0ddb58a180d3/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-64a66014-d534-4ff3-ac04-6178d105be09",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Lat. 29*",
+   "datazione": "9th century, middle third",
+   "secolo": [
+    9,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Tusculan Disputations (fragment)",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/64a66014-d534-4ff3-ac04-6178d105be09.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/64a66014-d534-4ff3-ac04-6178d105be09/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-138d165a-acb0-4269-ab7a-64babe8ba382",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Lat. 29* (formerly MS. Laud Lat. 29, fol. 171r)",
+   "datazione": "9th century",
+   "secolo": [
+    9,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Tusculan disputations (fragment, containing iv. 114-120).",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/138d165a-acb0-4269-ab7a-64babe8ba382.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/138d165a-acb0-4269-ab7a-64babe8ba382/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-448a8136-e949-45fb-980a-64fc7176232a",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Lat. 46",
+   "datazione": "1425–1460",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Rámon Lull, Margarete Porete, pseudo-Augustine, (pseudo-) Jerome, (pseudo-) Seneca",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…Jerome, Saint, -419 or 420 ; Seneca, the Younger, pseudo ; Llull,…»"
+    },
+    {
+     "id": "agostino",
+     "autore": "Agostino",
+     "latino": "Augustinus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…ohn Chrysostom, Saint, -407 ; Augustine, Saint, Bishop of Hippo, pseu…»"
+    },
+    {
+     "id": "girolamo",
+     "autore": "Girolamo",
+     "latino": "Hieronymus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…x, Saint, 1090 or 1091-1153 ; Jerome, pseudo ; Seneca, Lucius Anna…»"
+    },
+    {
+     "id": "giovanni-crisostomo",
+     "autore": "Giovanni Crisostomo",
+     "latino": "Iohannes Chrysostomus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…pproximately 4 B.C.-65 A.D. ; John Chrysostom, Saint, -407 ; Augustine, Sai…»"
+    },
+    {
+     "id": "bernardo",
+     "autore": "Bernardo di Chiaravalle",
+     "latino": "Bernardus Claraevallensis",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «…te, approximately 1250-1310 ; Bernard, of Clairvaux, Saint, 1090 or 1091-1153 ; J…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/448a8136-e949-45fb-980a-64fc7176232a.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/448a8136-e949-45fb-980a-64fc7176232a/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-4507692b-7372-49bb-8e31-db8585959d1b",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Lat. 47",
+   "datazione": "1190–1341",
+   "secolo": [
+    12,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ps.-Dionysius, Seneca, Hugh of St.-Victor; composite volume, Germany, late 12th and early 14th centuries",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…ately 150-approximately 215 ; Seneca, the Younger, pseudo ; Dionys…»"
+    },
+    {
+     "id": "dionigi-areopagita",
+     "autore": "Dionigi Areopagita",
+     "latino": "Dionysius Areopagita",
+     "categoria": "cristiano",
+     "opere": [
+      "La gerarchia celeste"
+     ],
+     "corrispondenza": "autore: «…Seneca, the Younger, pseudo ; Dionysius, the Areopagite, pseudo ; Philo of Alexandria…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/4507692b-7372-49bb-8e31-db8585959d1b.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/4507692b-7372-49bb-8e31-db8585959d1b/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-e55a7fc7-f000-4cc4-b9db-52c4673e56a3",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Lat. 49",
+   "datazione": "1000–1400",
+   "secolo": [
+    10,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Porphyry, Aristotle, Cicero, with commentaries of Boethius; Speculum fons vitae",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De inventione"
+     ],
+     "corrispondenza": "autore: «Victorinus, Marius ; Cicero, Marcus Tullius ; Aristotle ;…»"
+    },
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epistulae ex Ponto"
+     ],
+     "corrispondenza": "autore: «…ately 234-approximately 305 ; Ovid, 43 B.C.-17 A.D. or 18 A.D. ;…»"
+    },
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commenti ad Aristotele e Porfirio"
+     ],
+     "corrispondenza": "autore: «…annes, of Hildesheim, -1375 ; Boethius, -524 ; Porphyry, approximate…»"
+    },
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Categorie",
+      "De interpretatione",
+      "Retorica"
+     ],
+     "corrispondenza": "autore: «…us ; Cicero, Marcus Tullius ; Aristotle ; Joannes, of Hildesheim, -13…»"
+    },
+    {
+     "id": "porfirio",
+     "autore": "Porfirio",
+     "latino": "Porphyrius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Isagoge"
+     ],
+     "corrispondenza": "autore: «…eim, -1375 ; Boethius, -524 ; Porphyry, approximately 234-approximat…»"
+    },
+    {
+     "id": "alcuino",
+     "autore": "Alcuino",
+     "latino": "Alcuinus",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «…43 B.C.-17 A.D. or 18 A.D. ; Alcuin, 735-804»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/e55a7fc7-f000-4cc4-b9db-52c4673e56a3.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/e55a7fc7-f000-4cc4-b9db-52c4673e56a3/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-74f9e6da-1dc8-48b5-8be0-d602b1e3204d",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Lat. 50",
+   "datazione": "15th century, beginning",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "First decade.",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Livy»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/74f9e6da-1dc8-48b5-8be0-d602b1e3204d.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/74f9e6da-1dc8-48b5-8be0-d602b1e3204d/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-47520b82-e24d-4bdc-b800-a6a559c5a389",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Lat. 51",
+   "datazione": "15th century, first half",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De institutione oratoria.",
+   "autori": [
+    {
+     "id": "quintiliano",
+     "autore": "Quintiliano",
+     "latino": "Quintilianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutio oratoria"
+     ],
+     "corrispondenza": "autore: «Quintilian»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/47520b82-e24d-4bdc-b800-a6a559c5a389.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/47520b82-e24d-4bdc-b800-a6a559c5a389/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-df298559-775d-4e46-9eaf-6dd835a249d2",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Lat. 53",
+   "datazione": "15th century",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De consolatione philosophiae.",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Boethius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/df298559-775d-4e46-9eaf-6dd835a249d2.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/df298559-775d-4e46-9eaf-6dd835a249d2/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-d0d66871-8a87-481e-b0f1-0f53001c3829",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Lat. 54",
+   "datazione": "12th century, end",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De institutione arithmetica.",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De institutione arithmetica"
+     ],
+     "corrispondenza": "autore: «Boethius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/d0d66871-8a87-481e-b0f1-0f53001c3829.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/d0d66871-8a87-481e-b0f1-0f53001c3829/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-dabc8dd7-d626-4af5-9ff8-0b8441f8fc89",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Lat. 55",
+   "datazione": "15th century",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Metamorphoses.",
+   "autori": [
+    {
+     "id": "apuleio",
+     "autore": "Apuleio",
+     "latino": "Apuleius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Metamorfosi"
+     ],
+     "corrispondenza": "autore: «Apuleius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/dabc8dd7-d626-4af5-9ff8-0b8441f8fc89.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/dabc8dd7-d626-4af5-9ff8-0b8441f8fc89/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-3a6184b1-d05e-4bd0-ad7f-19fa067739ca",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Lat. 56",
+   "datazione": "15th century, first quarter",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epitome rei militaris.",
+   "autori": [
+    {
+     "id": "vegezio",
+     "autore": "Vegezio",
+     "latino": "Vegetius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epitoma rei militaris"
+     ],
+     "corrispondenza": "autore: «Vegetius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/3a6184b1-d05e-4bd0-ad7f-19fa067739ca.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/3a6184b1-d05e-4bd0-ad7f-19fa067739ca/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-99d41c10-6572-4e3e-9527-eced72e7d70c",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Lat. 58",
+   "datazione": "1453",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epitome of Livy.",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Epitome of Livy.»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/99d41c10-6572-4e3e-9527-eced72e7d70c.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/99d41c10-6572-4e3e-9527-eced72e7d70c/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-8735b65d-b149-4ffd-b199-197f9a2b140c",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Lat. 63",
+   "datazione": "1455",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epistolae ad familiares (selection).",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epistulae ad familiares"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/8735b65d-b149-4ffd-b199-197f9a2b140c.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/8735b65d-b149-4ffd-b199-197f9a2b140c/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-16b3b5e4-7aab-468a-be41-0a7515640938",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Lat. 68",
+   "datazione": "1340–1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Grammatical texts",
+   "autori": [
+    {
+     "id": "donato",
+     "autore": "Donato",
+     "latino": "Donatus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ars minor"
+     ],
+     "corrispondenza": "autore: «Alexander, de Villa Dei ; Ludolphus, de Luco, ca. 1300 ; Donatus, Aelius, 4th cent.»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/16b3b5e4-7aab-468a-be41-0a7515640938.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/16b3b5e4-7aab-468a-be41-0a7515640938/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-d9d286f7-5fee-44b9-9632-cad75c9ed2a6",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Lat. 73",
+   "datazione": "c. 1430-1440",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Comedies.",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commedie"
+     ],
+     "corrispondenza": "autore: «Terence»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/d9d286f7-5fee-44b9-9632-cad75c9ed2a6.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/d9d286f7-5fee-44b9-9632-cad75c9ed2a6/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-c96668e8-42fd-4e79-9903-743dc6ed80c8",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Lat. 77",
+   "datazione": "c. 1460 - 1470",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "MS. Laud Lat. 77",
+   "autori": [
+    {
+     "id": "tibullo",
+     "autore": "Tibullo",
+     "latino": "Tibullus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Tibullus ; Ovid»"
+    },
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Tibullus ; Ovid»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/c96668e8-42fd-4e79-9903-743dc6ed80c8.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/c96668e8-42fd-4e79-9903-743dc6ed80c8/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-ba49eada-e843-4b6a-a133-001ff4c81417",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Lat. 78",
+   "datazione": "c. 1460-1465 (1460?)",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Carmina.",
+   "autori": [
+    {
+     "id": "catullo",
+     "autore": "Catullo",
+     "latino": "Catullus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Carmi"
+     ],
+     "corrispondenza": "autore: «Catullus»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/ba49eada-e843-4b6a-a133-001ff4c81417.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/ba49eada-e843-4b6a-a133-001ff4c81417/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-c3095019-b99b-4688-9385-f5d08fd239c9",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Lat. 105",
+   "datazione": "1190–1300",
+   "secolo": [
+    12,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Various scholastic works",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "autore: «…is, approximately 1100-1160 ; Priscian, grammarian, 5th-6th cent. ;…»"
+    },
+    {
+     "id": "pietro-lombardo",
+     "autore": "Pietro Lombardo",
+     "latino": "Petrus Lombardus",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «…re, approximately 1110-1175 ; Peter Lombard, Bishop of Paris, approximate…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/c3095019-b99b-4688-9385-f5d08fd239c9.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/c3095019-b99b-4688-9385-f5d08fd239c9/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-46aaba52-f9c3-4231-a8fe-13e1c427dbe5",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Lat. 112",
+   "datazione": "15th century, beginning",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "First, third and fourth decades.",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Deche"
+     ],
+     "corrispondenza": "autore: «Livy»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/46aaba52-f9c3-4231-a8fe-13e1c427dbe5.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/46aaba52-f9c3-4231-a8fe-13e1c427dbe5/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-bd867d62-1d82-4e5d-ae21-7b32dff9dd98",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Lat. 117",
+   "datazione": "1000–1100",
+   "secolo": [
+    10,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Servius; Donatus grammaticus",
+   "autori": [
+    {
+     "id": "donato",
+     "autore": "Donato",
+     "latino": "Donatus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Servius, active 4th century ; Donatus, Aelius, 4th cent.»"
+    },
+    {
+     "id": "servio",
+     "autore": "Servio",
+     "latino": "Servius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Servius, active 4th century ; Donatus, Aelius, 4th cent.»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/bd867d62-1d82-4e5d-ae21-7b32dff9dd98.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/bd867d62-1d82-4e5d-ae21-7b32dff9dd98/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-71eabf20-160e-410e-97b5-8c6e47c0d503",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Misc. 237",
+   "datazione": "1100–1350",
+   "secolo": [
+    11,
+    14
+   ],
+   "lingue": [
+    "la",
+    "de",
+    "xx"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Composite manuscript, 12th-14th centuries",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Prognostico"
+     ],
+     "corrispondenza": "autore: «…ius, Corbeiensis, 1140-1224 ; Hippocrates, c. 460-c. 370 BCE ; Theophil…»"
+    },
+    {
+     "id": "agostino",
+     "autore": "Agostino",
+     "latino": "Augustinus",
+     "categoria": "cristiano",
+     "opere": [
+      "Regola"
+     ],
+     "corrispondenza": "autore: «…BCE ; Theophilus, 7th cent. ; Augustine, Saint, Bishop of Hippo, pseu…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/71eabf20-160e-410e-97b5-8c6e47c0d503.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/71eabf20-160e-410e-97b5-8c6e47c0d503/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-be033494-76e5-4b8d-8580-919d56dc56c3",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Misc. 298",
+   "datazione": "15th century",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De consolatione theologiae.",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "titolo: «De consolatione theologiae.»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/be033494-76e5-4b8d-8580-919d56dc56c3.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/be033494-76e5-4b8d-8580-919d56dc56c3/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-f0e484d2-7549-4962-bae6-69edb5db2f87",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Misc. 323",
+   "datazione": "14th century, early to 14th century, late",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Scala paradisi; Sermons",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…Pope, approximately 540–604 ; Seneca, Lucius Annaeus, the younger,…»"
+    },
+    {
+     "id": "agostino",
+     "autore": "Agostino",
+     "latino": "Augustinus",
+     "categoria": "cristiano",
+     "opere": [
+      "Sermoni"
+     ],
+     "corrispondenza": "autore: «…Jerome, Saint, –419 or 420 ; Augustine, Saint, Bishop of Hippo ; Ber…»"
+    },
+    {
+     "id": "girolamo",
+     "autore": "Girolamo",
+     "latino": "Hieronymus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…op of Canterbury, 1033–1109 ; Jerome, Saint, –419 or 420 ; Augusti…»"
+    },
+    {
+     "id": "bernardo",
+     "autore": "Bernardo di Chiaravalle",
+     "latino": "Bernardus Claraevallensis",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «…ine, Saint, Bishop of Hippo ; Bernard, of Clairvaux, Saint, 1090 or 1091–1153 ; G…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/f0e484d2-7549-4962-bae6-69edb5db2f87.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/f0e484d2-7549-4962-bae6-69edb5db2f87/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-39648490-7d67-4a81-a904-70494a68b1d1",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Misc. 350",
+   "datazione": "1100–1160",
+   "secolo": [
+    11,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Theological texts and sermons",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…enna, approximately 400-450 ; Seneca, the Younger, pseudo ; Caesar…»"
+    },
+    {
+     "id": "agostino",
+     "autore": "Agostino",
+     "latino": "Augustinus",
+     "categoria": "cristiano",
+     "opere": [
+      "Lettere"
+     ],
+     "corrispondenza": "autore: «…aint, Bishop of Milan, -397 ; Augustine, Saint, Bishop of Hippo, pseu…»"
+    },
+    {
+     "id": "giovanni-crisostomo",
+     "autore": "Giovanni Crisostomo",
+     "latino": "Iohannes Chrysostomus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…ine, Saint, Bishop of Hippo ; John Chrysostom, pseudo ; Jerome, pseudo ; Se…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/39648490-7d67-4a81-a904-70494a68b1d1.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/39648490-7d67-4a81-a904-70494a68b1d1/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-16dc4579-b237-4dc3-a357-fda07af8e23e",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Misc. 383",
+   "datazione": "1050–1100",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Augustine, De genesi ad litteram; Ps.-Augustine, Dialogus quaestionum; Regula S. Augustine ad servos dei; Ps.-Seneca; etc.",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…Jerome, Saint, -419 or 420 ; Seneca, the Younger, pseudo»"
+    },
+    {
+     "id": "agostino",
+     "autore": "Agostino",
+     "latino": "Augustinus",
+     "categoria": "cristiano",
+     "opere": [
+      "De Genesi ad litteram",
+      "Regola",
+      "Lettere"
+     ],
+     "corrispondenza": "autore: «…ine, Saint, Bishop of Hippo ; Augustine, Saint, Bishop of Hippo, pseu…»"
+    },
+    {
+     "id": "girolamo",
+     "autore": "Girolamo",
+     "latino": "Hieronymus",
+     "categoria": "cristiano",
+     "opere": [
+      "Lettere",
+      "De viris illustribus"
+     ],
+     "corrispondenza": "descrizione: «…ram (bks. 1-11) (ff. 1r-73r). Jerome; Vita Senecae ( = De viris il…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/16dc4579-b237-4dc3-a357-fda07af8e23e.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/16dc4579-b237-4dc3-a357-fda07af8e23e/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-0e107588-6612-4ef3-b222-eb3226225d50",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Misc. 457",
+   "datazione": "c. 1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "MS. Laud Misc. 457",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «John Chrysostom ; Boethius»"
+    },
+    {
+     "id": "giovanni-crisostomo",
+     "autore": "Giovanni Crisostomo",
+     "latino": "Iohannes Chrysostomus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «John Chrysostom ; Boethius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/0e107588-6612-4ef3-b222-eb3226225d50.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/0e107588-6612-4ef3-b222-eb3226225d50/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-78ea2d5c-01ef-4b0a-87e2-dcb559cea873",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Misc. 493",
+   "datazione": "14th century, second quarter",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Theological treatises, meditations and extracts",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…Pope, approximately 540–604 ; Boethius, –524 ; Hugh, of Saint-Victor…»"
+    },
+    {
+     "id": "girolamo",
+     "autore": "Girolamo",
+     "latino": "Hieronymus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…David, von Augsburg, –1271 ; Jerome, Saint, –419 or 420 ; James,…»"
+    },
+    {
+     "id": "gregorio-magno",
+     "autore": "Gregorio Magno",
+     "latino": "Gregorius Magnus",
+     "categoria": "cristiano",
+     "opere": [
+      "Omelie su Ezechiele"
+     ],
+     "corrispondenza": "descrizione: «…ae caritatis (fols. 57r–63v). Gregory the Great, Homiliae in Ezechielem (fols…»"
+    },
+    {
+     "id": "beda",
+     "autore": "Beda",
+     "latino": "Beda Venerabilis",
+     "categoria": "medievale",
+     "opere": [
+      "Omelie"
+     ],
+     "corrispondenza": "autore: «…of Saint-Victor, 1096?–1141 ; Bede, the Venerable, pseudo ; Guil…»"
+    },
+    {
+     "id": "bernardo",
+     "autore": "Bernardo di Chiaravalle",
+     "latino": "Bernardus Claraevallensis",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «…245 ; Clement, of Llanthony ; Bernard, of Clairvaux, Saint, 1090 or 1091–1153, ps…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/78ea2d5c-01ef-4b0a-87e2-dcb559cea873.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/78ea2d5c-01ef-4b0a-87e2-dcb559cea873/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-aefef404-41c4-40d4-a82d-a94ad92adf2e",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Misc. 684",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Life of Aemilius Paulus.",
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Plutarch»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/aefef404-41c4-40d4-a82d-a94ad92adf2e.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/aefef404-41c4-40d4-a82d-a94ad92adf2e/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-db653f9c-054c-4deb-aefb-553ee71f5208",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Misc. 751",
+   "datazione": "c. 1470-1480",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Historia Alexandri Magni.",
+   "autori": [
+    {
+     "id": "curzio-rufo",
+     "autore": "Curzio Rufo",
+     "latino": "Curtius Rufus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Historiae Alexandri Magni"
+     ],
+     "corrispondenza": "autore: «Quintus Curtius Rufus»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/db653f9c-054c-4deb-aefb-553ee71f5208.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/db653f9c-054c-4deb-aefb-553ee71f5208/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-dc90f124-3209-4fc9-bbbf-0d42ac5a96d8",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Or. 93",
+   "datazione": "1400–1475",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Miscellany",
+   "autori": [
+    {
+     "id": "archimede",
+     "autore": "Archimede",
+     "latino": "Archimedes",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…n Machir ; Tura di Castello ; Archimedes ; Zarqālī, Ibrāhīm ibn Ya…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/dc90f124-3209-4fc9-bbbf-0d42ac5a96d8.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/dc90f124-3209-4fc9-bbbf-0d42ac5a96d8/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-97a487d7-4ca0-41bc-aca2-b66ccf94a781",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Or. 106",
+   "datazione": "1509",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Miscellany",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Asher ben Shelomyah ; Ibn Gabirol ; Aristotle (attributed to) ; Jonah ben Abraham Gerondi»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/97a487d7-4ca0-41bc-aca2-b66ccf94a781.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/97a487d7-4ca0-41bc-aca2-b66ccf94a781/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-46a65602-fbbd-498e-934b-9a3655d539c5",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Or. 113",
+   "datazione": "1441–1600",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Miscellaneous notes on medicine",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…ammad ibn Zakarīyā Rāzī ; Aristotle ; de Saint-Amand, Jean ; Attr…»"
+    },
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…t-Amand, Jean ; Attributed to Hippocrates ; Saʻadia ben Joseph ; Isaak…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/46a65602-fbbd-498e-934b-9a3655d539c5.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/46a65602-fbbd-498e-934b-9a3655d539c5/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-bcc68154-303d-43cb-bee6-c5ddffcd8d39",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Laud Or. 139",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "The Commentary of Galen on the Book of Hippocrates On Prognostics (Tafsīr Jālīnūs li-kitāb Buqrāṭ fī taqdimat al-maʿrifah)",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galen»"
+    },
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…ntary of Galen on the Book of Hippocrates On Prognostics (Tafsīr Jālīnū…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/bcc68154-303d-43cb-bee6-c5ddffcd8d39.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/bcc68154-303d-43cb-bee6-c5ddffcd8d39/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-bac14117-c09d-478a-ac0e-0f9dd1ff7d02",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Lyell 49",
+   "datazione": "12th century, second half",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Boethius with commentaries; Peter Abelard",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Opuscula sacra"
+     ],
+     "corrispondenza": "autore: «…; Abelard, Peter, 1079-1142 ; Boethius, -524»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/bac14117-c09d-478a-ac0e-0f9dd1ff7d02.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/bac14117-c09d-478a-ac0e-0f9dd1ff7d02/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-77a28699-b66d-48df-9d56-1a56b8fe9089",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Lyell 57",
+   "datazione": "11th century",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Hucbald, Palladius, etc.",
+   "autori": [
+    {
+     "id": "palladio",
+     "autore": "Palladio",
+     "latino": "Palladius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Opus agriculturae"
+     ],
+     "corrispondenza": "autore: «…ino, Abbot of Prüm, 840-915 ; Palladius, Rutilius Taurus Aemilianus, 4th cent.»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/77a28699-b66d-48df-9d56-1a56b8fe9089.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/77a28699-b66d-48df-9d56-1a56b8fe9089/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-5fd650dd-76dd-490f-a7a7-3a5aca1b535e",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Lyell 74",
+   "datazione": "c. 1450",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Liber de uerborum significatione.",
+   "autori": [
+    {
+     "id": "festo",
+     "autore": "Festo",
+     "latino": "Festus",
+     "categoria": "classico-latino",
+     "opere": [
+      "De verborum significatu"
+     ],
+     "corrispondenza": "titolo: «Liber de uerborum significatione.»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/5fd650dd-76dd-490f-a7a7-3a5aca1b535e.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/5fd650dd-76dd-490f-a7a7-3a5aca1b535e/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-0dd8c0a0-47f1-4fb9-823b-160f5d2658f5",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Marsh 215",
+   "datazione": "14th century (?)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Compendium by Thabit ibn Qurra of the De marcore.",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Thabit ibn Qurra ; Galen»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/0dd8c0a0-47f1-4fb9-823b-160f5d2658f5.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/0dd8c0a0-47f1-4fb9-823b-160f5d2658f5/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-31d74ea0-313a-46bf-a506-6a7c34c4958b",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Oppenheim Add. 4° 68",
+   "datazione": "1717",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Abuʼalbar (Commentary on the Hebrew translation of Farghānī's compendium of Ptolemy's Almagest)",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Almagesto"
+     ],
+     "corrispondenza": "titolo: «…of Farghānī's compendium of Ptolemy's Almagest)»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/31d74ea0-313a-46bf-a506-6a7c34c4958b.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/31d74ea0-313a-46bf-a506-6a7c34c4958b/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-9886c0bb-846c-4889-97f9-938aca6be803",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Rawl. A. 402",
+   "datazione": "15th century, middle",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Batrachomyomachia.",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Batracomiomachia"
+     ],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/9886c0bb-846c-4889-97f9-938aca6be803.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/9886c0bb-846c-4889-97f9-938aca6be803/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-d20297c2-629b-4b86-ba66-7e418b779f81",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Rawl. C. 447",
+   "datazione": "14th century",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ab urbe condita, first decade",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "autore: «Livy»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/d20297c2-629b-4b86-ba66-7e418b779f81.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/d20297c2-629b-4b86-ba66-7e418b779f81/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-c9c974e7-22b7-49ca-8d65-fd005716f379",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Rawl. C. 988",
+   "datazione": "15th century, end",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Memorabilia.",
+   "autori": [
+    {
+     "id": "valerio-massimo",
+     "autore": "Valerio Massimo",
+     "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Valerius Maximus»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/c9c974e7-22b7-49ca-8d65-fd005716f379.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/c9c974e7-22b7-49ca-8d65-fd005716f379/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-5b765f7a-67a2-4937-a372-e2ec5ea7e3c4",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Rawl. G. 39",
+   "datazione": "12th century, second half",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De consolatione philosophiae.",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Boethius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/5b765f7a-67a2-4937-a372-e2ec5ea7e3c4.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/5b765f7a-67a2-4937-a372-e2ec5ea7e3c4/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-653347d1-b9bf-401e-b7d8-115e8e0c93c2",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Rawl. G. 41",
+   "datazione": "12th century, first half, and 15th century",
+   "secolo": [
+    12,
+    15
+   ],
+   "lingue": [
+    "la",
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De consolatione philosophiae, with extracts from the French version of Jean de Meun added in the 15th century.",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Boethius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/653347d1-b9bf-401e-b7d8-115e8e0c93c2.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/653347d1-b9bf-401e-b7d8-115e8e0c93c2/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-ad3a8934-f0c1-4a63-aae8-950603053c7f",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Rawl. G. 42",
+   "datazione": "c. 1440-1450",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "MS. Rawl. G. 42",
+   "autori": [
+    {
+     "id": "sallustio",
+     "autore": "Sallustio",
+     "latino": "Sallustius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Sallust»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/ad3a8934-f0c1-4a63-aae8-950603053c7f.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/ad3a8934-f0c1-4a63-aae8-950603053c7f/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-7cd0fae1-b6a0-448b-96f6-231eb9fc4dd0",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Rawl. G. 43",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "MS. Rawl. G. 43",
+   "autori": [
+    {
+     "id": "sallustio",
+     "autore": "Sallustio",
+     "latino": "Sallustius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Sallust»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/7cd0fae1-b6a0-448b-96f6-231eb9fc4dd0.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/7cd0fae1-b6a0-448b-96f6-231eb9fc4dd0/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-3359f1e4-e354-46f6-9bbf-37f6907fc8cf",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Rawl. G. 44",
+   "datazione": "11th century, second half",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Catilina.",
+   "autori": [
+    {
+     "id": "sallustio",
+     "autore": "Sallustio",
+     "latino": "Sallustius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De coniuratione Catilinae"
+     ],
+     "corrispondenza": "autore: «Sallust»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/3359f1e4-e354-46f6-9bbf-37f6907fc8cf.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/3359f1e4-e354-46f6-9bbf-37f6907fc8cf/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-e7f9c140-8735-4750-aebc-9cc6d10faa57",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Rawl. G. 47",
+   "datazione": "1441",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "MS. Rawl. G. 47",
+   "autori": [
+    {
+     "id": "senofonte",
+     "autore": "Senofonte",
+     "latino": "Xenophon",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…of Caesarea, P. P. Vergerio, Xenophon ; Lactantius»"
+    },
+    {
+     "id": "basilio",
+     "autore": "Basilio Magno",
+     "latino": "Basilius Magnus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…authors including Lactantius, Basil of Caesarea, P. P. Vergerio, Xenophon ; L…»"
+    },
+    {
+     "id": "lattanzio",
+     "autore": "Lattanzio",
+     "latino": "Lactantius",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…4 ; Various authors including Lactantius, Basil of Caesarea, P. P. Ver…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/e7f9c140-8735-4750-aebc-9cc6d10faa57.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/e7f9c140-8735-4750-aebc-9cc6d10faa57/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-2dbb9a5d-cd03-4ac4-9c85-1458acb671b2",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Rawl. G. 63",
+   "datazione": "15th century, third quarter",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Lives of the philosophers.",
+   "autori": [
+    {
+     "id": "diogene-laerzio",
+     "autore": "Diogene Laerzio",
+     "latino": "Diogenes Laertius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Diogenes Laertius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/2dbb9a5d-cd03-4ac4-9c85-1458acb671b2.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/2dbb9a5d-cd03-4ac4-9c85-1458acb671b2/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-95e11554-0db8-4645-83db-d9c7f538acd5",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Rawl. G. 87",
+   "datazione": "15th century, third quarter",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Lives of Alexander and Caesar, tr. Guarino.",
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Plutarch»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/95e11554-0db8-4645-83db-d9c7f538acd5.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/95e11554-0db8-4645-83db-d9c7f538acd5/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-c9990b5f-8d43-4f1c-ad23-817ab26892ae",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Rawl. G. 97",
+   "datazione": "15th century, third quarter",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Georgics.",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Georgiche"
+     ],
+     "corrispondenza": "autore: «Virgil»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/c9990b5f-8d43-4f1c-ad23-817ab26892ae.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/c9990b5f-8d43-4f1c-ad23-817ab26892ae/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-120ef54d-0129-4314-9b62-6a2b754fe1d1",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Rawl. G. 98",
+   "datazione": "15th century, middle",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Georgics.",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Georgiche"
+     ],
+     "corrispondenza": "autore: «Virgil»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/120ef54d-0129-4314-9b62-6a2b754fe1d1.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/120ef54d-0129-4314-9b62-6a2b754fe1d1/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-72236ae2-fc9f-4d78-84db-a5bf84d43674",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Rawl. G. 134",
+   "datazione": "15th century, beginning",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "MS. Rawl. G. 134",
+   "autori": [
+    {
+     "id": "claudiano",
+     "autore": "Claudiano",
+     "latino": "Claudianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Claudian»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/72236ae2-fc9f-4d78-84db-a5bf84d43674.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/72236ae2-fc9f-4d78-84db-a5bf84d43674/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-551638cb-a704-4101-95f3-9147639b5bbb",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Rawl. G. 135",
+   "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Comedies.",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commedie"
+     ],
+     "corrispondenza": "autore: «Terence»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/551638cb-a704-4101-95f3-9147639b5bbb.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/551638cb-a704-4101-95f3-9147639b5bbb/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-088585f3-9feb-4045-93f4-4817cc708765",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Rawl. G. 138",
+   "datazione": "15th century, third quarter",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Orations.",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/088585f3-9feb-4045-93f4-4817cc708765.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/088585f3-9feb-4045-93f4-4817cc708765/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-85eeb499-4a39-4781-949e-f5d429bfec0a",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Rawl. G. 186",
+   "datazione": "14th century, second half",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Seneca, Declamations, with commentary of Nicholas Trevet, etc.",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epistulae ad Lucilium"
+     ],
+     "corrispondenza": "autore: «Seneca, the Younger, pseudo ; Seneca…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/85eeb499-4a39-4781-949e-f5d429bfec0a.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/85eeb499-4a39-4781-949e-f5d429bfec0a/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-a709a245-d7c7-4a7a-a3ab-82381dfcfb82",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Rawl. G. 187",
+   "datazione": "14th century, second half",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "MS. Rawl. G. 187",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Nicholas Trivet ; Boethius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/a709a245-d7c7-4a7a-a3ab-82381dfcfb82.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/a709a245-d7c7-4a7a-a3ab-82381dfcfb82/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-a2b495c9-6f3b-43ea-a642-ffb7eaccd2b6",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Selden Supra 22",
+   "datazione": "15th century, middle",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Declamationes.",
+   "autori": [
+    {
+     "id": "quintiliano",
+     "autore": "Quintiliano",
+     "latino": "Quintilianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Declamationes"
+     ],
+     "corrispondenza": "autore: «Quintilian»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/a2b495c9-6f3b-43ea-a642-ffb7eaccd2b6.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/a2b495c9-6f3b-43ea-a642-ffb7eaccd2b6/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-8d4f8d3d-bbc2-4f4f-ac6e-88e7384f9447",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Selden Supra 25",
+   "datazione": "12th century",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Somnium Scipionis, with Macrobius' commentary.",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Somnium Scipionis"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    },
+    {
+     "id": "macrobio",
+     "autore": "Macrobio",
+     "latino": "Macrobius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Somnium Scipionis, with Macrobius' commentary.»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/8d4f8d3d-bbc2-4f4f-ac6e-88e7384f9447.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/8d4f8d3d-bbc2-4f4f-ac6e-88e7384f9447/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-b9971743-ecc3-45ee-9ebf-39da095b3a35",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Selden Supra 26",
+   "datazione": "12th century, second half",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "MS. Selden Supra 26",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/b9971743-ecc3-45ee-9ebf-39da095b3a35.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/b9971743-ecc3-45ee-9ebf-39da095b3a35/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-9cb9a257-0ad2-4fff-a677-f02c31ef3113",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "MS. Top. gen. b. 56",
+   "datazione": "16th century",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Coats of arms attributed to characters from Britain's mythical prehistory (Brut, Arthur, etc.), drawn in trick",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "titolo: «Coats of arms attributed to characters from Britain's mythical prehi…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/9cb9a257-0ad2-4fff-a677-f02c31ef3113.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/9cb9a257-0ad2-4fff-a677-f02c31ef3113/",
    "licenza": "CC BY-NC 4.0",
    "immagini": null
   },
@@ -177431,6 +182613,115 @@
    "immagini": null
   },
   {
+   "id": "bod-34eea5fd-a8c2-48ef-9844-e91dfff62078",
+   "fonte": "bodleian",
+   "biblioteca": "Christ Church",
+   "citta": "Oxford",
+   "segnatura": "MS 99",
+   "datazione": "c. 1200-1399",
+   "secolo": [
+    12,
+    14
+   ],
+   "lingue": [
+    "la",
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Historical Miscellanies",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…e 12th century-13th century ; Aristotle ; Aristotle, pseudo ; William…»"
+    },
+    {
+     "id": "beda",
+     "autore": "Beda",
+     "latino": "Beda Venerabilis",
+     "categoria": "medievale",
+     "opere": [
+      "Storia ecclesiastica degli Angli"
+     ],
+     "corrispondenza": "autore: «Bede, the Venerable, Saint, 673-73…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/34eea5fd-a8c2-48ef-9844-e91dfff62078.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/34eea5fd-a8c2-48ef-9844-e91dfff62078/",
+   "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
+   "id": "bod-9628b4a0-0429-4e81-8959-7e7b8c0dbfc6",
+   "fonte": "bodleian",
+   "biblioteca": "Christ Church",
+   "citta": "Oxford",
+   "segnatura": "MS 114",
+   "datazione": "1456",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Virgil's Eclogues and Georgics",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Georgiche",
+      "Bucoliche"
+     ],
+     "corrispondenza": "autore: «Vergilius Maro, Publius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/9628b4a0-0429-4e81-8959-7e7b8c0dbfc6.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/9628b4a0-0429-4e81-8959-7e7b8c0dbfc6/",
+   "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
+   "id": "bod-1ee70bea-2479-40d2-b734-98aa27878200",
+   "fonte": "bodleian",
+   "biblioteca": "Christ Church",
+   "citta": "Oxford",
+   "segnatura": "MS 151",
+   "datazione": "1401–1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Consolatio Philosophiae",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Boethius (c.480-524)»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/1ee70bea-2479-40d2-b734-98aa27878200.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/1ee70bea-2479-40d2-b734-98aa27878200/",
+   "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
    "id": "ds-ds6485",
    "fonte": "ds",
    "biblioteca": "Columbia University, Rare Book & Manuscript Library",
@@ -178277,6 +183568,177 @@
    "manifest": "https://digital.dombibliothek-koeln.de/hs/i3f/v20/183400/manifest",
    "pagina": "https://resolver.staatsbibliothek-berlin.de/HSP00068B9000000000",
    "licenza": "Erzbischöfliche Diözesan- und Dombibliothek Köln mit Bibliothek St. Albertus Magnus: condizioni d'uso nel manifesto",
+   "immagini": null
+  },
+  {
+   "id": "bod-985ab988-1276-46b5-8431-e32b189ee728",
+   "fonte": "bodleian",
+   "biblioteca": "Exeter College",
+   "citta": "Oxford",
+   "segnatura": "MS 4",
+   "datazione": "1100-1110",
+   "secolo": [
+    11,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Priscian, Institutiones I-XVI",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "autore: «Priscian, active approximately 500-530»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/985ab988-1276-46b5-8431-e32b189ee728.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/985ab988-1276-46b5-8431-e32b189ee728/",
+   "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
+   "id": "bod-7a7d7d30-54f2-46c3-a343-7ca7fb61ed7b",
+   "fonte": "bodleian",
+   "biblioteca": "Exeter College",
+   "citta": "Oxford",
+   "segnatura": "MS 14",
+   "datazione": "15th century",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Thomas Hanney, Memoriale juniorum; Disticha Catonis",
+   "autori": [
+    {
+     "id": "disticha-catonis",
+     "autore": "Disticha Catonis",
+     "latino": "Disticha Catonis",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Thomas Hanney, Memoriale juniorum; Disticha Catonis»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/7a7d7d30-54f2-46c3-a343-7ca7fb61ed7b.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/7a7d7d30-54f2-46c3-a343-7ca7fb61ed7b/",
+   "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
+   "id": "bod-65f814c5-6bee-4390-925e-da481aa2b3a2",
+   "fonte": "bodleian",
+   "biblioteca": "Exeter College",
+   "citta": "Oxford",
+   "segnatura": "MS 25",
+   "datazione": "1175-1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Josephus, Antiquitates Judaicae",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Antichità giudaiche"
+     ],
+     "corrispondenza": "autore: «Josephus, Flavius»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/65f814c5-6bee-4390-925e-da481aa2b3a2.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/65f814c5-6bee-4390-925e-da481aa2b3a2/",
+   "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
+   "id": "bod-91a3b904-d1c8-4175-85f0-dd0822964ab4",
+   "fonte": "bodleian",
+   "biblioteca": "Exeter College",
+   "citta": "Oxford",
+   "segnatura": "MS 35",
+   "datazione": "13th century, middle to 14th century, early",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "en",
+    "fr",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Medica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…dical writer (c. 1162–1242) ; Aristotle, pseudo ; Gerard of Montpelli…»"
+    },
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…hardus, Anglicus, –1252 (?) ; Hippocrates, pseudo ; Hugh of Lucca, –125…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/91a3b904-d1c8-4175-85f0-dd0822964ab4.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/91a3b904-d1c8-4175-85f0-dd0822964ab4/",
+   "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
+   "id": "bod-5ff708ce-429f-4393-b7c3-128134387e3c",
+   "fonte": "bodleian",
+   "biblioteca": "Exeter College",
+   "citta": "Oxford",
+   "segnatura": "MS 186",
+   "datazione": "c. 1350",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De vita caesarum",
+   "autori": [
+    {
+     "id": "svetonio",
+     "autore": "Svetonio",
+     "latino": "Suetonius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Vite dei Cesari"
+     ],
+     "corrispondenza": "autore: «Suetonius, c. 69-c. 122»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/5ff708ce-429f-4393-b7c3-128134387e3c.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/5ff708ce-429f-4393-b7c3-128134387e3c/",
+   "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
    "immagini": null
   },
   {
@@ -184521,6 +189983,226 @@
    "immagini": null
   },
   {
+   "id": "bod-ac663596-5660-4549-8e15-f893f44d36fd",
+   "fonte": "bodleian",
+   "biblioteca": "Lincoln College",
+   "citta": "Oxford",
+   "segnatura": "MS. Lat. 27",
+   "datazione": "12th century, early to 12th century, late",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Miscellanea theologica",
+   "autori": [
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Achilleide"
+     ],
+     "corrispondenza": "autore: «…ine, Saint, Bishop of Hippo ; Statius, P. Papinius, (Publius Papini…»"
+    },
+    {
+     "id": "macrobio",
+     "autore": "Macrobio",
+     "latino": "Macrobius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…pproximately 515–579 or 580 ; Macrobius, Ambrosius Aurelius Theodosiu…»"
+    },
+    {
+     "id": "agostino",
+     "autore": "Agostino",
+     "latino": "Augustinus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…brosius Aurelius Theodosius ; Augustine, Saint, Bishop of Hippo ; Sta…»"
+    },
+    {
+     "id": "bernardo",
+     "autore": "Bernardo di Chiaravalle",
+     "latino": "Bernardus Claraevallensis",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «…apinius, (Publius Papinius) ; Bernard, of Clairvaux, Saint, 1090 or 1091–1153 ; M…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/ac663596-5660-4549-8e15-f893f44d36fd.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/ac663596-5660-4549-8e15-f893f44d36fd/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-ce7070be-9462-4caa-807d-b6d1a2f52116",
+   "fonte": "bodleian",
+   "biblioteca": "Lincoln College",
+   "citta": "Oxford",
+   "segnatura": "MS. Lat. 92",
+   "datazione": "14th century",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Tragoediae",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tragedie"
+     ],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus, approximately 4 B.C.-65 A.D.»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/ce7070be-9462-4caa-807d-b6d1a2f52116.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/ce7070be-9462-4caa-807d-b6d1a2f52116/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-0de9f803-4b21-47b0-a62e-18bb1177f9d6",
+   "fonte": "bodleian",
+   "biblioteca": "Magdalen College",
+   "citta": "Oxford",
+   "segnatura": "MS Gr 13",
+   "datazione": "1569–1570",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Harmonica, In Ptolemaei Harmonica commentarius",
+   "autori": [
+    {
+     "id": "porfirio",
+     "autore": "Porfirio",
+     "latino": "Porphyrius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Porphyry ; Byrennius, Manuel»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/0de9f803-4b21-47b0-a62e-18bb1177f9d6.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/0de9f803-4b21-47b0-a62e-18bb1177f9d6/",
+   "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
+   "id": "bod-59da0eec-4d8b-423d-bf72-d1a97f292a60",
+   "fonte": "bodleian",
+   "biblioteca": "Magdalen College",
+   "citta": "Oxford",
+   "segnatura": "MS Gr 15",
+   "datazione": "1275–1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De Interpretatione with commentary",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "De interpretatione"
+     ],
+     "corrispondenza": "autore: «Aristotle»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/59da0eec-4d8b-423d-bf72-d1a97f292a60.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/59da0eec-4d8b-423d-bf72-d1a97f292a60/",
+   "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
+   "id": "bod-430334f7-b6c2-4587-a45c-34df593922bf",
+   "fonte": "bodleian",
+   "biblioteca": "Magdalen College",
+   "citta": "Oxford",
+   "segnatura": "MS Lat 18",
+   "datazione": "1100-1159",
+   "secolo": [
+    11,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Thebais",
+   "autori": [
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tebaide"
+     ],
+     "corrispondenza": "autore: «Gregory I, Pope, approximately 540-604 ; Statius, P. Papinius (Publius Papinius)»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/430334f7-b6c2-4587-a45c-34df593922bf.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/430334f7-b6c2-4587-a45c-34df593922bf/",
+   "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
+   "id": "bod-5ab1a26a-7ce3-422a-8b81-e50ec99bc700",
+   "fonte": "bodleian",
+   "biblioteca": "Magdalen College",
+   "citta": "Oxford",
+   "segnatura": "MS Lat 19",
+   "datazione": "1110-1130",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De institutione musica",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De institutione musica"
+     ],
+     "corrispondenza": "autore: «Boethius, –524»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/5ab1a26a-7ce3-422a-8b81-e50ec99bc700.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/5ab1a26a-7ce3-422a-8b81-e50ec99bc700/",
+   "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
    "id": "yale-11777063",
    "fonte": "yale",
    "biblioteca": "Manuscripts and Archives",
@@ -185463,6 +191145,37 @@
    "immagini": null
   },
   {
+   "id": "bod-7cb5d829-baa7-4ee6-aa4f-f8c832a685c8",
+   "fonte": "bodleian",
+   "biblioteca": "Pembroke College",
+   "citta": "Oxford",
+   "segnatura": "MS 21",
+   "datazione": "c.13th-15th century",
+   "secolo": [
+    13,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Medica",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galen ; Galieno ; John Tolet, Cardi…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/7cb5d829-baa7-4ee6-aa4f-f8c832a685c8.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/7cb5d829-baa7-4ee6-aa4f-f8c832a685c8/",
+   "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
    "id": "ds-ds2220",
    "fonte": "ds",
    "biblioteca": "Princeton University Library",
@@ -185624,6 +191337,84 @@
    "immagini": null
   },
   {
+   "id": "bod-e5c4604e-5657-43de-88c1-c39aa03ce3bc",
+   "fonte": "bodleian",
+   "biblioteca": "Queen's College",
+   "citta": "Oxford",
+   "segnatura": "MS 202",
+   "datazione": "1175-1200",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "grc",
+    "la",
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Horace, Opera, with glosses",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Odi",
+      "Epodi",
+      "Satire",
+      "Ars poetica"
+     ],
+     "corrispondenza": "autore: «Horace»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/e5c4604e-5657-43de-88c1-c39aa03ce3bc.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/e5c4604e-5657-43de-88c1-c39aa03ce3bc/",
+   "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
+   "id": "bod-a0caff7e-24fa-4070-a481-d58936cbe067",
+   "fonte": "bodleian",
+   "biblioteca": "Queen's College",
+   "citta": "Oxford",
+   "segnatura": "MS 304",
+   "datazione": "15th century, first quarter",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la",
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Chronicles, Genealogies, etc., by English authors",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…Adam of Murimuth, 1275–1347 ; Priscian, active approximately 500-530…»"
+    },
+    {
+     "id": "donato",
+     "autore": "Donato",
+     "latino": "Donatus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…nk of Glastonbury, fl. 1406 ; Donatus, Aelius ; Petrus, de Ykham, –…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/a0caff7e-24fa-4070-a481-d58936cbe067.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/a0caff7e-24fa-4070-a481-d58936cbe067/",
+   "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
    "id": "ds-ds16470",
    "fonte": "ds",
    "biblioteca": "Rochester Institute of Technology, Cary Graphic Arts Collection",
@@ -185753,6 +191544,121 @@
    "manifest": "https://iiif.archive.org/iiif/images_MC122007_6/manifest.json",
    "pagina": "https://search.digital-scriptorium.org/catalog/DS470",
    "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "bod-326e89d8-7d40-4cf4-8d65-246fa3e294de",
+   "fonte": "bodleian",
+   "biblioteca": "St John's College",
+   "citta": "Oxford",
+   "segnatura": "MS 30",
+   "datazione": "c. 1552; c. 1549; c. 1562",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Miscellany",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Ptolemy, active 2nd century ; Anthemi…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/326e89d8-7d40-4cf4-8d65-246fa3e294de.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/326e89d8-7d40-4cf4-8d65-246fa3e294de/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-45d784be-148e-4ff4-b539-fdf122fa7241",
+   "fonte": "bodleian",
+   "biblioteca": "St John's College",
+   "citta": "Oxford",
+   "segnatura": "MS 178",
+   "datazione": "ca. 1225 to 1350",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "fr",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Miscellany: medicine and astronomy; Bestiary; Guillaume de Conches, Dragmaticon; Cato and glossaries in Anglo-Norman",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…es, 1080–approximately 1150 ; Aristotle, pseudo ; Elias of Winchester…»"
+    },
+    {
+     "id": "isidoro",
+     "autore": "Isidoro di Siviglia",
+     "latino": "Isidorus Hispalensis",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «…inchester (twelfth century) ; Isidore, of Seville, Saint, –636 ; Neckam, Alexan…»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/45d784be-148e-4ff4-b539-fdf122fa7241.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/45d784be-148e-4ff4-b539-fdf122fa7241/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-c50c228e-60db-4df5-a64f-0aefcbf14e3b",
+   "fonte": "bodleian",
+   "biblioteca": "St John's College",
+   "citta": "Oxford",
+   "segnatura": "MS 192",
+   "datazione": "Between 1440 and 1460",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Juvenal; Horace, Ars poetica",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ars poetica",
+      "Satire"
+     ],
+     "corrispondenza": "autore: «Juvenal ; Horace»"
+    },
+    {
+     "id": "giovenale",
+     "autore": "Giovenale",
+     "latino": "Iuvenalis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Satire"
+     ],
+     "corrispondenza": "autore: «Juvenal ; Horace»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/c50c228e-60db-4df5-a64f-0aefcbf14e3b.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/c50c228e-60db-4df5-a64f-0aefcbf14e3b/",
+   "licenza": "CC BY-NC 4.0",
    "immagini": null
   },
   {
