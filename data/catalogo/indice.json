@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-25T15:38:14.073Z",
- "totale": 258853,
- "con_autori": 13178,
+ "aggiornato": "2026-10-25T15:46:02.024Z",
+ "totale": 260407,
+ "con_autori": 13179,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
   "id",
@@ -21,19 +21,19 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 164545
+   "codici": 165480
   },
   "la": {
    "nome": "latino",
-   "codici": 31433
+   "codici": 31439
   },
   "de": {
    "nome": "tedesco",
-   "codici": 15946
+   "codici": 15947
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 13429
+   "codici": 13931
   },
   "grc": {
    "nome": "greco",
@@ -41,55 +41,55 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 4962
+   "codici": 5025
   },
   "sa": {
    "nome": "sanscrito",
-   "codici": 4373
+   "codici": 4374
   },
   "en": {
    "nome": "inglese",
-   "codici": 3726
+   "codici": 3709
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 3461
+   "codici": 3463
   },
   "zh": {
    "nome": "cinese",
-   "codici": 3137
+   "codici": 3155
   },
   "fr": {
    "nome": "francese",
-   "codici": 2459
+   "codici": 2460
   },
   "he": {
    "nome": "ebraico",
-   "codici": 2315
+   "codici": 2316
   },
   "it": {
    "nome": "italiano",
-   "codici": 2130
+   "codici": 2131
   },
   "cop": {
    "nome": "copto",
-   "codici": 1476
+   "codici": 1477
   },
   "fa": {
    "nome": "persiano",
-   "codici": 552
+   "codici": 554
   },
   "nl": {
    "nome": "nederlandese",
-   "codici": 519
+   "codici": 527
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 438
+   "codici": 439
   },
   "tr": {
    "nome": "turco",
-   "codici": 314
+   "codici": 316
   },
   "syr": {
    "nome": "siriaco",
@@ -109,19 +109,23 @@
   },
   "bo": {
    "nome": "tibetano",
-   "codici": 121
+   "codici": 122
   },
   "ko": {
    "nome": "coreano",
-   "codici": 97
+   "codici": 98
   },
   "gez": {
    "nome": "etiopico",
-   "codici": 84
+   "codici": 87
   },
   "ru": {
    "nome": "russo",
    "codici": 59
+  },
+  "ms": {
+   "nome": "malese",
+   "codici": 47
   },
   "pt": {
    "nome": "portoghese",
@@ -131,16 +135,16 @@
    "nome": "catalano",
    "codici": 42
   },
-  "ms": {
-   "nome": "malese",
-   "codici": 26
-  },
   "cy": {
    "nome": "gallese",
    "codici": 23
   },
   "cs": {
    "nome": "ceco",
+   "codici": 19
+  },
+  "jv": {
+   "nome": "giavanese",
    "codici": 19
   },
   "oc": {
@@ -158,10 +162,6 @@
   "sla": {
    "nome": "lingue slave (alfabeto cirillico)",
    "codici": 11
-  },
-  "jv": {
-   "nome": "giavanese",
-   "codici": 10
   },
   "is": {
    "nome": "islandese e norreno",
@@ -191,7 +191,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 5988
+   "codici": 5989
   },
   "medievale": {
    "nome": "autori medievali",
@@ -1145,7 +1145,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 2824
+   "codici": 2825
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -2334,31 +2334,31 @@
   },
   "leiden": {
    "nome": "Universiteitsbibliotheek Leiden (digitalcollections.universiteitleiden.nl)",
-   "codici": 2984,
+   "codici": 3586,
    "con_autori": 727,
    "lingue": {
-    "?": 1828,
-    "la": 602,
-    "ar": 113,
-    "nl": 291,
+    "?": 2332,
+    "la": 607,
+    "ar": 165,
+    "nl": 299,
     "grc": 83,
     "fr": 12,
-    "de": 8,
+    "de": 9,
     "es": 4,
-    "jv": 4,
+    "jv": 13,
+    "ms": 33,
     "tr": 9,
+    "fa": 9,
     "syr": 1,
     "it": 1,
-    "fa": 7,
     "he": 8,
-    "ms": 12,
     "en": 1
    },
    "esito": "ok",
    "prefissi": [
     "lei-"
    ],
-   "pezzi_voci": 4,
+   "pezzi_voci": 5,
    "indice": [
     "indice/leiden-0.json"
    ]
@@ -2430,37 +2430,38 @@
   },
   "yale": {
    "nome": "Yale University Library, Beinecke e altre (collections.library.yale.edu)",
-   "codici": 2745,
-   "con_autori": 540,
+   "codici": 2759,
+   "con_autori": 541,
    "lingue": {
-    "fr": 136,
-    "ar": 296,
+    "fr": 137,
+    "ar": 307,
     "syr": 9,
-    "?": 37,
-    "tr": 20,
+    "?": 35,
+    "tr": 22,
     "fa": 73,
-    "xx": 59,
-    "it": 191,
+    "xx": 61,
+    "it": 192,
     "jv": 2,
-    "en": 544,
-    "la": 1403,
+    "en": 527,
+    "la": 1404,
     "de": 72,
-    "es": 35,
+    "es": 36,
     "nl": 16,
     "da": 1,
     "grc": 81,
-    "he": 16,
+    "he": 17,
     "is": 1,
     "cs": 2,
     "oc": 3,
     "cu": 2,
-    "cop": 4,
-    "ja": 3,
-    "ko": 1,
-    "gez": 3,
+    "cop": 5,
+    "ja": 18,
+    "ko": 2,
+    "gez": 6,
     "hy": 3,
     "sv": 1,
-    "sa": 1
+    "sa": 2,
+    "bo": 1
    },
    "esito": "ok",
    "prefissi": [
@@ -2611,11 +2612,11 @@
   },
   "ndl": {
    "nome": "National Diet Library, Tokyo (dl.ndl.go.jp)",
-   "codici": 39999,
+   "codici": 40937,
    "con_autori": 0,
    "lingue": {
-    "ja": 37642,
-    "zh": 2263,
+    "ja": 38562,
+    "zh": 2281,
     "ko": 89,
     "?": 5,
     "xx": 1
@@ -2624,10 +2625,11 @@
    "prefissi": [
     "ndl-"
    ],
-   "pezzi_voci": 50,
+   "pezzi_voci": 52,
    "indice": [
     "indice/ndl-0.json",
-    "indice/ndl-1.json"
+    "indice/ndl-1.json",
+    "indice/ndl-2.json"
    ]
   },
   "kokusho": {
@@ -2747,7 +2749,7 @@
   {
    "file": "indice/leiden-0.json",
    "fonte": "leiden",
-   "righe": 2984
+   "righe": 3586
   },
   {
    "file": "indice/bamberga-0.json",
@@ -2767,7 +2769,7 @@
   {
    "file": "indice/yale-0.json",
    "fonte": "yale",
-   "righe": 2745
+   "righe": 2759
   },
   {
    "file": "indice/penn-0.json",
@@ -2797,7 +2799,12 @@
   {
    "file": "indice/ndl-1.json",
    "fonte": "ndl",
-   "righe": 19999
+   "righe": 20000
+  },
+  {
+   "file": "indice/ndl-2.json",
+   "fonte": "ndl",
+   "righe": 937
   },
   {
    "file": "indice/kokusho-0.json",

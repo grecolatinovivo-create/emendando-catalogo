@@ -12,8 +12,8 @@
 // Se la scheda si chiude basta riaprire CUDL e incollare di nuovo il file: riprende da dove si era fermato (avanzamento in IndexedDB).
 // EmendandoCudl.salva() scarica subito quello che c'è; EmendandoCudl.azzera() ricomincia da capo.
 // Collezioni: tutte quelle elencate nella pagina /collections, tranne quelle in ESCLUSE (archivi e carte moderne: Darwin, Newton,
-// Longitude e simili; la Genizah, circa 200.000 frammenti, si può aggiungere togliendola da ESCLUSE). I codici dopo il 1800, le lettere
-// e le carte non librarie restano fuori anche nel catalogo (scripts/fonti/cudl.mjs).
+// Longitude e simili; la Genizah, circa 200.000 frammenti, si può aggiungere togliendola da ESCLUSE). Le lettere e le carte non librarie
+// restano fuori anche nel catalogo (scripts/fonti/cudl.mjs); nessun limite di data.
 //
 // Formato di data/cudl.json: { formato: 1, raccolto, collezioni: [slug], voci: { <id>: scheda } }
 // scheda: { s: segnatura, t: titolo, u: titolo uniforme, d: datazione, a0, a1: anni, l: codici di lingua, x: lingue, f: forma,

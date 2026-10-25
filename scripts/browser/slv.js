@@ -14,7 +14,7 @@
 // Si possono fare più ricerche una dopo l'altra (per esempio «manuscript», poi «Koran», poi «book of hours»): lo script aggiunge le
 // schede nuove a quelle già raccolte (avanzamento in IndexedDB) e scarica ogni volta il file completo.
 // EmendandoSlv.salva() scarica subito quello che c'è; EmendandoSlv.azzera() cancella tutto.
-// Entrano nel catalogo (scripts/fonti/slv.mjs) solo le schede con un oggetto digitale Rosetta (IE…), datate fino al 1800 circa,
+// Entrano nel catalogo (scripts/fonti/slv.mjs) solo le schede con un oggetto digitale Rosetta (IE…), di ogni data,
 // non lettere né carte d'archivio.
 //
 // Formato di data/slv.json: { formato: 1, raccolto, ricerche: [testo], voci: { <IE…>: scheda } }

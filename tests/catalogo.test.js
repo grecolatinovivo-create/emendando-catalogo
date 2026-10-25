@@ -356,7 +356,7 @@ test("Leida: pagina dei risultati della collezione, segnature e voci", async () 
   assert.deepEqual(voce(r2, A).lingue, ["la"]);   // «(Latin)» nel titolo
 });
 
-test("Leida: filtro dei manoscritti librari (fuori schede BNM, lettere, archivi, carte dopo il 1800, parti doppie)", async () => {
+test("Leida: filtro dei manoscritti librari, di ogni data (fuori schede BNM, lettere, archivi, parti doppie)", async () => {
   const { motivoLeiden, contestoLeiden, segnaturaVoce, dataCristiana, recordLeiden } = await import("../scripts/fonti/leiden.mjs");
   // voci vere dello stato di Leida
   const voci = {
@@ -380,13 +380,14 @@ test("Leida: filtro dei manoscritti librari (fuori schede BNM, lettere, archivi,
     1525512: { s: "D Or. 786", t: "D Or. 786", a: null, d: "1972-1974" },
   };
   const ctx = contestoLeiden(voci);
-  for (const id of [1520736, 1606764, 3445669, 274332, 2691167, 3521434, 3311028, 2705133]) assert.equal(motivoLeiden(voci[id], ctx), null, id + " " + voci[id].t);
-  for (const id of [1905186, 3326750, 376879, 3273821, 361341, 2032598, 1576996, 2042852, 1525512]) assert.ok(motivoLeiden(voci[id], ctx), id + " " + voci[id].t);
+  // nessun limite di data: entrano anche i codici dell'Ottocento (3273821, 1576996, 2042852); i fondi d'archivio del KITLV restano fuori (1525512)
+  for (const id of [1520736, 1606764, 3445669, 274332, 2691167, 3521434, 3311028, 2705133, 3273821, 1576996, 2042852]) assert.equal(motivoLeiden(voci[id], ctx), null, id + " " + voci[id].t);
+  for (const id of [1905186, 3326750, 376879, 361341, 2032598, 1525512]) assert.ok(motivoLeiden(voci[id], ctx), id + " " + voci[id].t);
   assert.deepEqual(segnaturaVoce(voci[3521434]), { seg: "Or. 863", base: "Or. 863", parte: false });
   assert.equal(segnaturaVoce(voci[3326750]).base, "Or. 14");
   assert.equal(dataCristiana("1245 H. [1829]"), "[1829]");
   const r = recordLeiden({ voci });
-  assert.equal(r.length, 8);
+  assert.equal(r.length, 11);
   assert.equal(r.find(x => x.id === "lei-3521434").segnatura, "Or. 863");
 });
 
@@ -445,7 +446,7 @@ test("Handschriftenportal: una fonte per biblioteca, prefissi distinti, un manif
   assert.ok(Object.values(LINGUE_HSP).includes("la") && Object.values(LINGUE_HSP).includes("grc"));
 });
 
-test("Yale: record OAI MODS, solo manoscritti fino al 1800, manifesti dall'identificativo", async () => {
+test("Yale: record OAI MODS, solo manoscritti librari, manifesti dall'identificativo", async () => {
   const { estraiYale, recordYale, primoAnno } = await import("../scripts/fonti/yale.mjs");
   const rec = (oid, { genere = "Manuscripts", seg = "Beinecke MS 712.3", data = "[Early 9th century]", editore = "", titolo = "[Lectionary]", nome = "Catholic Church", lingua = "Latin" } = {}) =>
     `<record><header><identifier>oai:collections.library.yale.edu:${oid}</identifier><datestamp>2023-02-20T18:03:48Z</datestamp></header><metadata><mods xmlns:mods="http://www.loc.gov/mods/v3">
@@ -471,7 +472,7 @@ test("Yale: record OAI MODS, solo manoscritti fino al 1800, manifesti dall'ident
   assert.deepEqual(voce(r, A).autori.map(a => a.id), ["virgilio"]);
 });
 
-test("Yale: filtro dei manoscritti librari (fuori archivi, lettere, fotografie e carte dopo il 1800)", async () => {
+test("Yale: filtro dei manoscritti librari, di ogni data (fuori archivi, lettere, fotografie, dattiloscritti)", async () => {
   const { motivoYale, ammessaYale, anniDa, primoAnno } = await import("../scripts/fonti/yale.mjs");
   assert.equal(primoAnno("[14--]"), 1400); assert.equal(primoAnno("s. XV"), 1401); assert.equal(primoAnno("[before 1395]"), 1395);
   assert.equal(primoAnno("2000 August"), 2000); assert.equal(primoAnno("c1980."), 1980); assert.equal(primoAnno("[mid-19th cent.]"), 1801);
@@ -488,6 +489,10 @@ test("Yale: filtro dei manoscritti librari (fuori archivi, lettere, fotografie e
     { s: "Zi +5140", t: "Psalter (fragment).", d: "[unidentified date]", g: ["Manuscripts, Medieval", "Medieval and Renaissance Manuscript Fragments in Beinecke Library"] },
     { s: "Manuscript 10 Vault", t: "Cirurgia magistri Rogerii. Chirurgia Salernitana \"Bamberg\".", d: "between 1150 and 1199.", g: ["Early works to 1800"] },
     { s: "Beinecke MS 909 1", t: "Latin letters", d: "[ca. 1450]", g: ["Manuscripts, Medieval Italy 15th century"] },
+    // nessun limite di data
+    { s: "Japanese Mss D25", t: "Sukekatsu-kyō ki, [19th cent.?] / Hino Sukekatsu cho.", d: null, g: ["Manuscripts"] },
+    { s: "Osborn d6 1", t: "Occasional discourse on the nigger question, [1849-1853].", d: null, g: ["Manuscripts"] },
+    { s: "Ethiopic MSS 28", t: "[Ethiopian scroll of spiritual healing].", d: "[19th century]", g: ["Handscrolls", "Manuscripts, Ethiopic--Ethiopia--19th century."] },
   ];
   for (const v of tenute) assert.equal(motivoYale(v), null, v.s + " " + v.t);
   // scartate
@@ -504,7 +509,7 @@ test("Yale: filtro dei manoscritti librari (fuori archivi, lettere, fotografie e
     { s: "Tibet MSS 62", t: "Tanka of Gautama Buddha", d: "circa 1700-circa 1800", g: [] },
     { s: "Beinecke MS 1042.4", t: "Léopold Delisle letters to Count Ernest Armand, 1879", d: null, g: [] },
     { s: "Folio S1 40", t: "Vollständige Faksimile-Ausgabe im Originalformat von Codex Vaticanus", d: "c1980.", g: ["Facsimiles (Reproductions)", "Manuscripts"] },
-    { s: "Japanese Mss D25", t: "Sukekatsu-kyō ki, [19th cent.?] / Hino Sukekatsu cho.", d: null, g: ["Manuscripts"] },
+    { s: "Osborn b429 1", t: "Household account book for Draycott House, 1710 September-1711", d: null, g: ["Account books", "Manuscripts"] },
     { s: "Ms Coll 6", t: "Manuscript in Chinese", d: "n.d.", g: [] },
   ];
   for (const v of scartate) assert.ok(!ammessaYale(v), v.s + " " + v.t);
@@ -520,7 +525,8 @@ test("Penn: ricerca di Colenda, segnature, filtri e manifesti del repository dig
   const v = compattaPenn(doc("81431-p3bz6179x"));
   assert.equal(v.u, "3d747a38-9cdb-403d-a2db-abcd703fbf57"); assert.equal(v.s, "Kislak Center for Special Collections, Rare Books and Manuscripts, Manuscripts, Ms. Codex 1058");
   assert.equal(v.c, "The Book of Psalms with glosses. ; Origin: Laon, circa 1100.");
-  assert.equal(compattaPenn(doc("x1", { year_ssim: ["1911"], physical_format_ssim: ["manuscripts (documents)"] })), null);   // carte moderne
+  assert.equal(compattaPenn(doc("x1", { year_ssim: ["1911"], physical_format_ssim: ["manuscripts (documents)", "typescripts"] })), null);   // dattiloscritto
+  assert.ok(compattaPenn(doc("x1b", { year_ssim: ["1911"] })));   // nessun limite di data
   assert.equal(compattaPenn(doc("x2", { year_ssim: ["1772"], physical_format_ssim: ["manuscripts (documents)", "letters (correspondence)"] })), null);   // lettere
   assert.equal(compattaPenn(doc("x3", { item_type_ssim: ["Still Image"] })), null);
   assert.ok(compattaPenn(doc("x4", { year_ssim: ["1615/1797"] })));
@@ -716,7 +722,8 @@ test("Library of Congress: microfilm del Sinai e di Gerusalemme, segnature, escl
   const v = compattaLoc(item(), "sinai");
   assert.equal(v.sv, "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00271074384-ms"); assert.equal(v.n, 3); assert.equal(v.w, 5029); assert.equal(v.f, "greek");
   assert.equal(compattaLoc(item({ title: "Arabic Firmans 3. Firman of Sultan Selim." }), "sinai"), null);
-  assert.equal(compattaLoc(item({ date: "1912", dates: ["[1912 TO 1925]"] }), "sinai"), null);   // cataloghi moderni
+  assert.equal(compattaLoc(item({ title: "[MS SUPPL3]. [Assorted Catalogs of Manuscripts at St. Catherine's Monastery]", date: "1912", dates: ["[1912 TO 1925]"] }), "sinai"), null);   // cataloghi moderni
+  assert.ok(compattaLoc(item({ date: "1825", dates: ["1825"] }), "sinai"));   // nessun limite di data
   assert.equal(compattaLoc(item({ resources: [] }), "sinai"), null);
   // Gerusalemme: l'inglese dei dati è la lingua della scheda; i fondi greci hanno il nome della biblioteca
   assert.deepEqual(lingueLoc({ c: "gerusalemme", f: "hagios sabas", l: ["english"] }), ["grc"]);
@@ -781,7 +788,7 @@ test("manifesti scritti dal catalogo: si scrivono solo se cambiano, quelli dei c
   assert.deepEqual(fs.readdirSync(dir), ["a.json"]);
 });
 
-test("NDL: record OAI dcndl_porta, solo manoscritti dei libri antichi fino al 1800, manifesti IIIF", async () => {
+test("NDL: record OAI dcndl_porta, solo manoscritti dei libri antichi, manifesti IIIF", async () => {
   const { estraiNdl, recordNdl, lingueNdl } = await import("../scripts/fonti/ndl.mjs");
   const rec = (pid, tipi, extra = "") => `<record><header><identifier>oai:dl.ndl.go.jp:info:ndljp/pid/${pid}</identifier></header><metadata><dcndl_porta:dc>` +
     `<dcterms:title>鶯宿雑記</dcterms:title><dcndl:partTitle>俳家奇人談 下</dcndl:partTitle><dcndl:volume>巻115-116</dcndl:volume><dc:creator>[駒井乗邨] [編]</dc:creator>` +
@@ -791,19 +798,19 @@ test("NDL: record OAI dcndl_porta, solo manoscritti dei libri antichi fino al 18
   assert.equal(pid, "10300911"); assert.equal(v.s, "238-1"); assert.equal(v.v, "巻115-116"); assert.deepEqual(v.a, ["[駒井乗邨] [編]"]); assert.match(v.c, /俳家奇人談/);
   assert.equal(estraiNdl(rec(1, ["Book", "Manuscript"]))[1], null);   // manoscritto moderno («稿本»)
   assert.equal(estraiNdl(rec(2, ["JapaneseClassicalBook"]).replace("<dc:publisher>写</dc:publisher>", "<dc:publisher>山本平吉</dc:publisher>"))[1], null);   // stampa
-  assert.equal(estraiNdl(rec(3, ["JapaneseClassicalBook", "Manuscript"], "<dcterms:issued>文政11 [1828]</dcterms:issued>"))[1], null);   // dopo il 1800
+  assert.ok(estraiNdl(rec(3, ["JapaneseClassicalBook", "Manuscript"], "<dcterms:issued>文政11 [1828]</dcterms:issued>"))[1]);   // nessun limite di data
   assert.ok(estraiNdl(rec(4, ["JapaneseClassicalBook", "Manuscript"], "<dcterms:issued>宝暦12 [1762]</dcterms:issued>"))[1]);
   const [r] = recordNdl({ voci: { 10300911: v } });
   assert.equal(r.id, "ndl-10300911"); assert.equal(r.segnatura, "238-1, 巻115-116"); assert.deepEqual(r.lingue, ["ja"]);
   assert.equal(r.manifest, "https://dl.ndl.go.jp/api/iiif/10300911/manifest.json"); assert.equal(r.licenza, "Public Domain Mark 1.0");
   const { ammessaNdl } = await import("../scripts/fonti/ndl.mjs");
   assert.equal(ammessaNdl({ t: "曲亭馬琴書簡" }), false); assert.equal(ammessaNdl({ t: "東寺百合文書" }), false);
-  assert.equal(ammessaNdl({ t: "乾也粉本", d: "[18--] [写]" }), false); assert.equal(ammessaNdl({ t: "方角重宝記", c: "文政九写 占法秘伝" }), false);
+  assert.equal(ammessaNdl({ t: "乾也粉本", d: "[18--] [写]" }), true); assert.equal(ammessaNdl({ t: "方角重宝記", c: "文政九写 占法秘伝" }), true);
   assert.equal(ammessaNdl({ t: "上宮聖徳法王帝説", d: "[江戸後期]" }), true);
   assert.deepEqual(lingueNdl({ l: ["chi"] }), ["zh"]); assert.deepEqual(lingueNdl({ t: "あひおひ" }), ["ja"]); assert.deepEqual(lingueNdl({ t: "論語" }), []);
 });
 
-test("Kokusho (NIJL): ere giapponesi, solo manoscritti con immagini proprie fino al 1800, fuori la NDL", async () => {
+test("Kokusho (NIJL): ere giapponesi, solo manoscritti con immagini proprie, fuori la NDL", async () => {
   const { annoKokusho, compattaKokusho, recordKokusho } = await import("../scripts/fonti/kokusho.mjs");
   assert.equal(annoKokusho("文政１１"), 1828); assert.equal(annoKokusho("元禄元"), 1688); assert.equal(annoKokusho("寛政十二"), 1800);
   assert.equal(annoKokusho("享和二"), 1802); assert.equal(annoKokusho("［江戸後期］"), null); assert.equal(annoKokusho("1790"), 1790); assert.equal(annoKokusho(""), null);
@@ -811,7 +818,7 @@ test("Kokusho (NIJL): ere giapponesi, solo manoscritti con immagini proprie fino
   assert.deepEqual(compattaKokusho(s), ["あひおひ", "大洲図矢野", "364-0173-006", "宝暦１２", "伴／直方"]);
   assert.equal(compattaKokusho({ ...s, image: "0" }), null);
   assert.equal(compattaKokusho({ ...s, kansha: "刊" }), null);
-  assert.equal(compattaKokusho({ ...s, year: "慶応４" }), null);
+  assert.ok(compattaKokusho({ ...s, year: "慶応４" }));   // nessun limite di data
   assert.equal(compattaKokusho({ ...s, collection: "国会" }), null);
   const [r] = recordKokusho({ voci: { 100227349: [...compattaKokusho(s), 1] } });
   assert.equal(r.id, "nijl-100227349"); assert.equal(r.manifest, "https://kokusho.nijl.ac.jp/biblio/100227349/manifest");
@@ -827,7 +834,7 @@ test("Auckland: codici medievali e orientali dalla collezione di CONTENTdm, fuor
   assert.equal(compattaAuckland({ ...med, filetype: "url" }), null);
   assert.equal(compattaAuckland({ ...base, identi: "GNZMA-676", title: "Letter to the Governor", langua: "Māori", collea: "Grey New Zealand Maori letters - Ngā reta Māori" }), null);
   assert.ok(compattaAuckland({ ...base, identi: "GMS-169", title: "Mir'at al-Anvar", datec: "18 Rabi' al - Akhir 1072 AH (circa 1662)", langua: "Persian", collea: "Grey manuscripts" }));
-  assert.equal(compattaAuckland({ ...base, identi: "GMS-170", title: "Durr al-Majalis", datec: "Early 19th century", langua: "Persian", collea: "Grey manuscripts" }), null);
+  assert.ok(compattaAuckland({ ...base, identi: "GMS-170", title: "Durr al-Majalis", datec: "Early 19th century", langua: "Persian", collea: "Grey manuscripts" }));   // nessun limite di data
   assert.equal(compattaAuckland({ ...base, identi: "GMS-104", title: "Log-book", datec: "1179 AH", langua: "Arabic", collea: "Grey manuscripts" }), null);
   assert.ok(anniAuckland("1072 AH").includes(1662));
   const [r] = recordAuckland({ voci: { 17404: v } });
@@ -835,15 +842,16 @@ test("Auckland: codici medievali e orientali dalla collezione di CONTENTdm, fuor
   assert.deepEqual(r.lingue, ["cs"]); assert.deepEqual(voce(r, A).secolo, [15, 15]);
 });
 
-test("State Library Victoria: schede raccolte dal browser, solo manoscritti fino al 1800, manifesti di Rosetta", async () => {
+test("State Library Victoria: schede raccolte dal browser, solo manoscritti librari, manifesti di Rosetta", async () => {
   const { recordSlv, ammessaSlv, anniSlv } = await import("../scripts/fonti/slv.mjs");
   const rs = recordSlv({ voci: {
     IE145082: { s: "RARES 096.1 R66H", t: "Book of hours, use of Rome", d: "[ca. 1470]", f: "manuscript", l: ["lat"], a: [] },
     IE1: { s: "MS 1", t: "Letters to his brother", d: "1765", f: "manuscript" },
     IE2: { s: "MS 2", t: "Diario", d: "1850-1855", f: "manuscript" },
-    IE3: { s: "MS 3", t: "Antiphonary leaf", d: "", f: "manuscript" } } });
-  assert.deepEqual(rs.map(r => r.id), ["slv-ie145082", "slv-ie3"]);
+    IE3: { s: "MS 3", t: "Antiphonary leaf", d: "", f: "manuscript" },
+    IE4: { s: "MS 4", t: "Poems", d: "1850", f: "manuscript" } } });
+  assert.deepEqual(rs.map(r => r.id), ["slv-ie145082", "slv-ie3", "slv-ie4"]);
   assert.equal(rs[0].manifest, "https://rosetta.slv.vic.gov.au/delivery/iiif/presentation/2.1/IE145082/manifest"); assert.deepEqual(rs[0].lingue, ["la"]);
-  assert.ok(anniSlv("15th century").includes(1401)); assert.equal(ammessaSlv({ t: "x", d: "18--", f: "manuscript" }), false);
+  assert.ok(anniSlv("15th century").includes(1401)); assert.equal(ammessaSlv({ t: "x", d: "18--", f: "manuscript" }), true);
   assert.deepEqual(recordSlv(null), []);
 });

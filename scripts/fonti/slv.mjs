@@ -1,13 +1,13 @@
 // State Library Victoria, Melbourne: elenco raccolto dal browser (scripts/browser/slv.js -> data/slv.json), perché i server della
 // biblioteca (rosetta.slv.vic.gov.au) rispondono 403 alle richieste che arrivano dai server e il catalogo (Primo) vieta la ricerca ai robot.
 // Nessuna richiesta da qui. Manifesti IIIF Presentation 2.1: rosetta.slv.vic.gov.au/delivery/iiif/presentation/2.1/<IE…>/manifest
-// (aperti dal browser con CORS, verificato il 25 ottobre 2026). Entrano solo i manoscritti datati fino al 1800 circa (senza data
-// entrano solo se il tipo di risorsa è «manuscript» e il titolo non è di una lettera o di carte d'archivio).
+// (aperti dal browser con CORS, verificato il 25 ottobre 2026). Entrano i manoscritti di ogni data (dal 25 ottobre 2026 nessun
+// limite cronologico) il cui titolo non è di una lettera, di carte d'archivio o di un dattiloscritto; senza data solo se il tipo di risorsa è «manuscript».
 import fs from "node:fs";
 import { lingueDa } from "../lingue.mjs";
 
 export const FILE = "data/slv.json";
-const NON_LIBRARI = /\b(letters?|correspondence|papers|diary|diaries|records|accounts?|minutes|journal of|photograph|deeds?|receipts?|certificate|telegram)\b/i;
+const NON_LIBRARI = /\b(letters?|correspondence|papers|diary|diaries|diario|records|accounts?|minutes|journal of|photograph|deeds?|receipts?|certificate|telegram|typescripts?)\b/i;
 
 export function leggiSlv(file = FILE) { try { return JSON.parse(fs.readFileSync(file, "utf8")); } catch (e) { return null; } }
 
@@ -21,8 +21,7 @@ export function anniSlv(d) {
 export function ammessaSlv(v) {
   if (!v || !v.t) return false;
   if (NON_LIBRARI.test(v.t)) return false;
-  const a = anniSlv(v.d);
-  if (a.length) return Math.min(...a) <= 1800;
+  if (anniSlv(v.d).length) return true;
   return /manuscript/i.test(v.f || "");
 }
 

@@ -3,7 +3,7 @@
 // Gli insiemi sono solo per lingua: prima si leggono quelli delle lingue antiche e medievali, poi tutto, e si tengono i manoscritti (genere «Manuscripts» o segnatura «MS»/«MSS»,
 // senza editore: i libri a stampa hanno l'editore), esclusi i papiri (in attesa di decisione, vedi docs/BIBLIOTECHE.md).
 // Poi il filtro dei manoscritti librari (ammessaYale, applicato in raccolta e in costruzione): fuori archivi, corrispondenza, fotografie,
-// carte personali e tutto quello che è datato dopo il 1800; senza data entrano solo le voci dei fondi di codici.
+// dattiloscritti e carte personali; nessun limite di data (dal 25 ottobre 2026); senza data entrano solo le voci dei fondi di codici.
 // Il robots.txt di Yale vieta ai programmi di raccolta /manifests/: i manifesti non si leggono mai, si ricavano dall'identificativo
 // (collections.library.yale.edu/manifests/<oid>, CORS aperto) e li apre solo il browser di chi usa il catalogo.
 // Lo stato (token di ripresa e manoscritti letti) è in data/yale.json: la prima raccolta (circa 8000 pagine) va a riprese
@@ -104,8 +104,8 @@ export async function scansionaYale({ minuti = 30, soloCache = false } = {}) {
 }
 
 /* filtro dei manoscritti librari */
-// Regola del catalogo: entrano i manoscritti librari medievali e della prima età moderna (codici, frammenti, rotoli, manoscritti orientali);
-// restano fuori archivi, corrispondenza, fotografie, carte personali e documenti dopo il 1800. A Yale l'OAI dà come «Manuscripts»
+// Regola del catalogo: entrano i manoscritti librari di ogni data (codici, frammenti, rotoli, manoscritti orientali e moderni);
+// restano fuori archivi, corrispondenza, fotografie, dattiloscritti, carte personali e documenti. A Yale l'OAI dà come «Manuscripts»
 // anche le carte dei fondi d'archivio (GEN MSS, YCAL, WA, JWJ, OSB MSS, MS <numero> di Manuscripts and Archives...), quasi sempre
 // senza data («n.d.») o del Novecento: qui si tengono fuori.
 
@@ -133,7 +133,7 @@ export function primoAnno(d) { const a = anniDa(d); return a.length ? Math.min(.
 
 // fondi di codici: le voci senza data sono ammesse (codici e frammenti medievali, manoscritti orientali, raccolte Osborn rilegate)
 export const FONDI_CODICI = /^(?:Beinecke MS|Marston MS|Takamiya MS|Mellon MS|Landberg MSS|(?:Arabic|Persian|Hebrew|Turkish|Syriac|Coptic|Ethiopic|Armenian|Georgian|Greek|Latin|Sanskrit|Indic|Malay|Javanese|Batak|Burmese|Siamese|Pali|Tibet) MSS|Hartford Seminary \w+ MSS|Music Deposit|Manuscript Arabic)\b|^Osborn (?:[a-g]|f[a-g])\s?\d/;
-// fondi d'archivio e di stampe: dentro solo i veri manoscritti librari, datati tutti entro il 1800
+// fondi d'archivio e di stampe: dentro solo i veri manoscritti librari (generi dei codici o titoli come «codex», «commonplace book»)
 export const FONDI_ARCHIVIO = /^(?:YCAL|WA|JWJ|LWL|GEN|OSB|YCGL|YAJ|Uncat|BrSides|MS \d|MSS \d|Ms Coll|MS Coll|Folio|Quarto|\d{4} (?:Folio|Quarto|\+|\d))|^(?:Folio|Quarto) LWL/i;
 // lettere singole (sempre fuori, in ogni fondo): sigle dei cataloghi angloamericani (ALS, LS, TLS...), «Letter to...», «Norton Nicholls to Jane Floyer Nicholls. Eton.»
 const LETTERA_SINGOLA = /^\[?(?:\d+|two|three|four|five|six|seven|eight|nine|ten)?\s*(?:autograph |love |signet )?letters?\b(?! patent)(?!.*\b(?:and|treatises?|orations?|collection|book|epistolae)\b)|^(?:carta|lettera|lettre)\s+(?:al|a|à|to)\b|\bautograph letter\b|^(?:[A-Z][\w'’()-]*\.?\s){2,6}to (?:[A-Z][\w'’().,-]*\s?){1,8}\.\s/i;
@@ -161,24 +161,21 @@ export function motivoYale(v) {
   // data: dalla datazione, altrimenti dal titolo («Commonplace book, [1599-1608]», «Kitāb ... / 1737»)
   let anni = anniDa(v.d);
   if (!anni.length) anni = anniDa(t, { titolo: true });
-  const primo = anni.length ? Math.min(...anni) : null, ultimo = anni.length ? Math.max(...anni) : null;
-  if (primo != null && primo > 1800) return "dopo il 1800";
+  const primo = anni.length ? Math.min(...anni) : null;
   const librario = g.some(x => GENERI_LIBRARI.test(x));
   const lettere = SIGLE_LETTERE.test(t) || /\b(?:letters?|correspondence|papers)\b/i.test(t) || g.some(x => /^(?:Correspondence|Letters)/i.test(x));
   const carte = lettere || TITOLO_ARCHIVIO.test(t) || g.some(x => GENERI_ARCHIVIO.test(x));
   if (codici) {
-    // fondi di codici: entrano anche i documenti e gli epistolari medievali e della prima età moderna, se datati tutti entro il 1800,
-    // ma le lettere sciolte solo se Yale le cataloga tra i manoscritti medievali, rinascimentali o orientali
-    if (carte && !(primo != null && ultimo <= 1800 && (librario || !lettere))) return "archivio, corrispondenza, carte personali";
+    // fondi di codici: documenti, epistolari e lettere solo se Yale li cataloga tra i manoscritti medievali, rinascimentali o orientali
+    // (prima la data entro il 1800 bastava per i documenti: senza limite di data restano fuori)
+    if (carte && !librario) return "archivio, corrispondenza, carte personali";
     return null;
   }
   // fuori dai fondi di codici: carte d'archivio fuori, tranne i codici che Yale cataloga tra i manoscritti medievali e rinascimentali
-  // (per esempio un epistolario umanistico miniato), datati tutti entro il 1800
-  if (carte && !(librario && primo != null && ultimo <= 1800)) return "archivio, corrispondenza, carte personali";
+  // (per esempio un epistolario umanistico miniato)
+  if (carte && !librario) return "archivio, corrispondenza, carte personali";
   if (g.some(x => GENERI_FOGLI.test(x))) return "fogli sciolti: disegni, ritratti, carte geografiche, musica";
   if (archivio) {
-    if (primo == null) return "fondo d'archivio, senza data";
-    if (ultimo > 1800) return "fondo d'archivio, carte anche dopo il 1800";
     if (!librario && !TITOLO_LIBRARIO.test(t)) return "fondo d'archivio, non un manoscritto librario";
     return null;
   }

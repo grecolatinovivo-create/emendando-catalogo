@@ -81,14 +81,14 @@ export const AVANZAMENTO = {
   },
   leiden: () => {
     const s = leggi("data/leiden.json"); if (!s) return { testo: "non ancora cominciata" };
-    // solo i manoscritti librari che passano il filtro (fuori schede BNM, lettere, archivi, carte dopo il 1800, parti doppie)
+    // solo i manoscritti librari che passano il filtro (fuori schede BNM, lettere, archivi, parti doppie; nessun limite di data)
     const ctx = contestoLeiden(s.voci), tutte = Object.values(s.voci || {}), n = tutte.filter(v => motivoLeiden(v, ctx) == null).length;
     if (s.cursore != null) return { testo: `in corso: ${num(n)} codici su ${num(tutte.length)} schede lette (collezione ${(s.cursore.c ?? 0) + 1} di 2, pagina ${(s.cursore.p ?? 0) + 1})`, data: s.aggiornato };
-    return { testo: `schede lette tutte (${num(tutte.length)}); ${num(n)} manoscritti librari fino al 1800`, data: s.aggiornato };
+    return { testo: `schede lette tutte (${num(tutte.length)}); ${num(n)} manoscritti librari`, data: s.aggiornato };
   },
   yale: () => {
     const s = leggi("data/yale.json"); if (!s) return { testo: "non ancora cominciata" };
-    // solo i manoscritti librari che passano il filtro (fuori archivi, lettere, fotografie e carte dopo il 1800)
+    // solo i manoscritti librari che passano il filtro (fuori archivi, lettere, fotografie e dattiloscritti; nessun limite di data)
     const n = Object.values(s.voci || {}).filter(ammessaYale).length, pagine = Math.ceil((s.totale || 0) / 25);
     const pagina = Math.max(s.pagine || 0, s.sospeso ? +(/:(\d+)$/.exec(s.sospeso) || [0, 0])[1] / 25 : 0);
     if (s.coda && s.coda.length && !s.completato) {
@@ -102,7 +102,7 @@ export const AVANZAMENTO = {
   penn: () => {
     const s = leggi("data/penn.json"); if (!s) return { testo: "non ancora cominciata" };
     if (s.cursore) return { testo: `in corso: forma ${(s.cursore.f ?? 0) + 1}, pagina ${s.cursore.p}`, data: s.aggiornato };
-    return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} manoscritti fino al 1800)`, data: s.aggiornato };
+    return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} manoscritti)`, data: s.aggiornato };
   },
   ds: () => {
     const s = leggi("data/ds.json"); if (!s) return { testo: "non ancora cominciata" };
@@ -138,13 +138,13 @@ export const AVANZAMENTO = {
     const s = leggi("data/ndl.json"); if (!s) return { testo: "non ancora cominciata" };
     const n = Object.keys(s.voci || {}).length;
     if (s.cursore) return { testo: `in corso: ${num(s.letti)} record letti${s.cursore.completa && s.totale ? " su " + num(s.totale) : " (record cambiati)"}; ${num(n)} manoscritti finora`, data: s.aggiornato };
-    return { testo: `record letti tutti (${num(s.totale)} libri antichi digitalizzati; ${num(n)} manoscritti fino al 1800 o senza data; fuori i libri a stampa)`, data: s.completato || s.aggiornato };
+    return { testo: `record letti tutti (${num(s.totale)} libri antichi digitalizzati; ${num(n)} manoscritti; fuori i libri a stampa)`, data: s.completato || s.aggiornato };
   },
   kokusho: () => {
     const s = leggi("data/kokusho.json"); if (!s) return { testo: "non ancora cominciata" };
     const n = Object.keys(s.voci || {}).length;
     if (s.cursore) return { testo: `in corso: pagina ${num(s.cursore.p)} di ${num(s.pagine)} (${num(n)} manoscritti finora)`, data: s.aggiornato };
-    return { testo: `schede lette tutte (${num(s.totale)} manoscritti con immagini; ${num(n)} con immagini proprie fino al 1800 o senza data; fuori i libri a stampa e la NDL)`, data: s.completato || s.aggiornato };
+    return { testo: `schede lette tutte (${num(s.totale)} manoscritti con immagini; ${num(n)} con immagini proprie; fuori i libri a stampa e la NDL)`, data: s.completato || s.aggiornato };
   },
   slv: () => {
     const s = leggi("data/slv.json"); if (!s) return { testo: "elenco non ancora raccolto: va lanciato scripts/browser/slv.js dal browser" };
@@ -152,7 +152,7 @@ export const AVANZAMENTO = {
   },
   auckland: () => {
     const s = leggi("data/auckland.json"); if (!s) return { testo: "non ancora cominciata" };
-    return { testo: `oggetti letti tutti (${num(s.totale)}; ${num(Object.keys(s.voci || {}).length)} codici: medievali e orientali fino al 1800, fuori lettere e carte d'archivio)`, data: s.completato || s.aggiornato };
+    return { testo: `oggetti letti tutti (${num(s.totale)}; ${num(Object.keys(s.voci || {}).length)} codici: medievali e orientali, fuori lettere e carte d'archivio)`, data: s.completato || s.aggiornato };
   },
   ...Object.fromEntries(Object.keys(FONTI_HSP).map(f => [f, () => { const a = aRiprese(`data/${f}.json`, 1); return { ...a, testo: a.testo.replace("schede lette tutte", "codici digitalizzati letti tutti") }; }])),
   vaticana: () => {

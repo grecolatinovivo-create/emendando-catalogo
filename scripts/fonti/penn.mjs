@@ -5,7 +5,8 @@
 // OPenn (openn.library.upenn.edu) pubblica gli stessi codici con TEI e immagini, ma senza manifesti IIIF:
 // i manifesti sono quelli del repository digitale di Penn (digitalrepository.library.upenn.edu/iiif/2/items/<uuid>/manifest, CORS aperto).
 // Il nuovo sito digitalcollections.library.upenn.edu vieta nel robots.txt le ricerche con parametri: non si usa.
-// Entrano i manoscritti fino al 1800 (fuori lettere, ricevute e carte d'archivio moderne).
+// Entrano i manoscritti librari di ogni data (dal 25 ottobre 2026 nessun limite cronologico): fuori lettere, ricevute, dattiloscritti
+// e carte d'archivio e amministrative.
 // Lo stato (cursore e record letti) è in data/penn.json; una raccolta completa si riusa per 6 giorni.
 import fs from "node:fs";
 import { scarica, log } from "../rete.mjs";
@@ -17,7 +18,7 @@ export const FORME = ["codices (bound manuscripts)", "Manuscripts, Medieval", "M
   "Manuscripts, Arabic", "Manuscripts, Hebrew", "Manuscripts, Persian", "Manuscripts, Greek", "Manuscripts, Latin", "manuscripts (documents)"];
 const PAGINA = 100, GIORNI = 6;
 // carte non librarie
-const CARTE = /letters \(correspondence\)|receipts|trade cards|billheads|photographs|programs \(documents\)|clippings|postcards|invitations|telegrams/i;
+const CARTE = /letters \(correspondence\)|receipts|trade cards|billheads|photographs|programs \(documents\)|clippings|postcards|invitations|telegrams|typescripts|minutes \(administrative records\)|financial records|certificates|scrapbooks/i;
 
 export function leggiStato() {
   try { return JSON.parse(fs.readFileSync(FILE_STATO, "utf8")); } catch (e) { return { voci: {} }; }
@@ -30,20 +31,17 @@ function salvaStato(st) {
 }
 
 const uno = x => (Array.isArray(x) ? x[0] : x) || null;
-const anni = d => (d.year_ssim || []).flatMap(y => String(y).split("/")).map(Number).filter(n => n > 0);
 
-// documento della ricerca -> voce compatta (null se fuori: carte d'archivio, materiale dopo il 1800, niente manifesto)
+// documento della ricerca -> voce compatta (null se fuori: carte d'archivio, niente manifesto)
 export function compattaPenn(d) {
   if (!d || !d.uuid_ssi || !d.iiif_manifest_path_ss) return null;
   const forme = d.physical_format_ssim || [];
   const tipi = d.item_type_ssim || [];
   if (tipi.length && !tipi.includes("Text")) return null;
-  const a = anni(d);
-  if (a.length && Math.min(...a) > 1800) return null;
   if (!forme.some(f => /codices/i.test(f)) && forme.some(f => CARTE.test(f))) return null;
   // carte d'archivio: lettere e documenti in scatole e cartelle, archivi dell'università
   const luogo = uno(d.physical_location_ssim) || "";
-  if (/^(Letter|Document relat|Telegram)/i.test(uno(d.title_ssim) || "") || /\b(Box|Folder) \d/.test(luogo) || /^University Archives/.test(luogo)) return null;
+  if (/^(Letter|Document relat|Telegram|Typescript)/i.test(uno(d.title_ssim) || "") || /\b(Box|Folder) \d/.test(luogo) || /^University Archives/.test(luogo)) return null;
   const v = { u: d.uuid_ssi, s: uno(d.physical_location_ssim), t: uno(d.title_ssim), d: (d.date_ssim || []).join(" ; ") || null,
     i: uno(d.identifier_ssim), l: d.language_ssim || [], a: [...(d.creator_ssim || []), ...(d.name_ssim || [])].slice(0, 12), r: uno(d.rights_ssim) };
   const desc = [...(d.description_tesim || []), ...(d.note_tesim || []).filter(n => !/^(Ms\. codex|Title supplied)/i.test(n))].join(" ; ").slice(0, 1500);

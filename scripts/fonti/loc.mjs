@@ -11,7 +11,8 @@
 // funzionano anche gli strumenti del visore): data/manifesti/loc/<id>.json, serviti da raw.githubusercontent.com.
 // Le immagini di un item sono numerate di seguito, 0001 ... <files> (verificato su campioni); le misure di ogni fotogramma
 // sono quelle del fotogramma rappresentativo dato dall'elenco (i fotogrammi di un microfilm hanno tutti la stessa misura).
-// Fuori: firmani e rotoli turchi (documenti d'archivio), pagine di servizio della collezione, cataloghi moderni (dopo il 1800).
+// Fuori: firmani e rotoli turchi (documenti d'archivio), pagine di servizio della collezione (compresa la scheda della collezione
+// stessa, «Manuscripts in …»), cataloghi moderni dei manoscritti del Sinai (MS SUPPL). Nessun limite di data (dal 25 ottobre 2026).
 // Lo stato è in data/loc.json; una raccolta completa (circa 28 pagine) si riusa per 6 giorni.
 import fs from "node:fs";
 import { scarica, log } from "../rete.mjs";
@@ -65,9 +66,8 @@ export function compattaLoc(r, collezione) {
   const res = (r.resources || [])[0];
   if (!res || !res.files || !res.image) return null;
   const titolo = String(r.title || "");
-  if (/firman|scroll|^related resources|^rights and access|^articles and essays|^abbreviations/i.test(titolo)) return null;
+  if (/firman|scroll|^related resources|^rights and access|^articles and essays|^abbreviations|^\[MS SUPPL|^Manuscripts in (?:St\.? Catherine|the Libraries)/i.test(titolo)) return null;
   const a = anno(r);
-  if (a && a > 1800) return null;
   const m = /(https:\/\/tile\.loc\.gov\/image-services\/iiif\/service:[^/]+):(\d{4})\//.exec(res.image);
   const mis = misure(r);
   if (!m || !mis) return null;

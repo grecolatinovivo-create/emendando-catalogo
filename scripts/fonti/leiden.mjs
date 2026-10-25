@@ -7,9 +7,9 @@
 // Manifesto IIIF: https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:<n>/manifest (rimanda al catalogo, con CORS aperto).
 // Lo stato (cursore e codici letti) è in data/leiden.json: la raccolta riprende da dove si era fermata
 // e una raccolta completa si riusa per 6 giorni.
-// In costruzione (recordLeiden) un filtro tiene solo i manoscritti librari fino al 1800 (motivoLeiden): fuori le schede di documentazione
-// della Bibliotheca Neerlandica Manuscripta (BNM, senza manifesto), le lettere, i documenti d'archivio, le carte dopo il 1800
-// e le parti di codici già presenti con la loro segnatura (stesse immagini).
+// In costruzione (recordLeiden) un filtro tiene solo i manoscritti librari, di ogni data (motivoLeiden; dal 25 ottobre 2026 nessun limite
+// cronologico): fuori le schede di documentazione della Bibliotheca Neerlandica Manuscripta (BNM, senza manifesto), le lettere,
+// i documenti d'archivio, i fondi d'archivio del KITLV (D H, D Or.) e le parti di codici già presenti con la loro segnatura (stesse immagini).
 import fs from "node:fs";
 import { scarica, decodifica, log } from "../rete.mjs";
 import { anniDa } from "./yale.mjs";
@@ -108,7 +108,7 @@ export function segnaturaVoce(v) {
   return { seg: null, base: null, parte: !!p, titoloBase: p ? (p[1] || p[2]).trim() : null };
 }
 
-// fondi d'archivio (KITLV: D H, D Or.) e documentazione (BNM): niente voci senza data, e solo carte tutte entro il 1800
+// fondi d'archivio del KITLV (D H, D Or.): sempre fuori (prima entravano le carte datate entro il 1800; senza limite di data restano fuori tutte)
 const FONDI_ARCHIVIO = /^(?:D H|D Or\.|N \d)/;
 const LETTERE = /^\[?letters?\]?(?:\s|$)|\bbrie(?:f|ven|fje)\b|\bcorrespond\w*|\bletters? (?:from|to)\b|\bbusiness letter|\bepistolae (?:autographae |apographae )?ad (?!Atticum|familiares|Quintum|Brutum|Lucilium)/i;
 const ARCHIVIO = /\b(?:rapport|documenten|stukken|contracten|slavencontracten|testament van|het testament|akten?|rekening(?:en)?|notulen|kwitanties?|dagboek|dagverhaal|journaal|memoriaal|geslachtsregisters?|stamboom|levensverhaal|plattegrond\w*|fiches|klapper|knipsels|bijlagen|doos)\b/i;
@@ -141,12 +141,8 @@ export function motivoLeiden(v, { presenti = new Set(), titoli = [] } = {}) {
   const d = dataCristiana(v.d);
   let anni = anniDa(d);
   if (!anni.length) anni = anniDa(t.replace(RE_SEGNATURA, " ").replace(s, " "), { titolo: true });
-  const primo = anni.length ? Math.min(...anni) : null, ultimo = anni.length ? Math.max(...anni) : null;
-  if (primo != null && primo > 1800) return "dopo il 1800";
-  if (FONDI_ARCHIVIO.test(sg.seg || "")) {
-    if (primo == null) return "fondo d'archivio, senza data";
-    if (ultimo > 1800) return "fondo d'archivio, carte anche dopo il 1800";
-  }
+  const primo = anni.length ? Math.min(...anni) : null;
+  if (FONDI_ARCHIVIO.test(sg.seg || "")) return "fondo d'archivio";
   if (sg.parte && sg.base && presenti.has(sg.base)) return "parte di un codice già presente (stesse immagini)";
   if (sg.parte && !sg.base && sg.titoloBase && titoli.some(x => x.startsWith(sg.titoloBase))) return "parte di un codice già presente (stesse immagini)";
   if (!sg.seg && primo == null) return "senza segnatura né data";

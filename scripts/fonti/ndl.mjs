@@ -4,7 +4,7 @@
 // tipo di materiale, segnatura, lingua, datazione, diritti). 200 record per pagina, circa 1,2 MB e 10 secondi per pagina.
 // Entrano solo i manoscritti (materialType «Manuscript», editore «写»): i libri a stampa xilografici («刊») restano fuori.
 // Ogni volume digitalizzato è un oggetto con il suo manifesto (le opere in più volumi danno più voci, con il volume in segnatura).
-// Fuori le carte datate dopo il 1800; i manoscritti senza data entrano (sono per la maggior parte di età Edo, fino al 1868).
+// Nessun limite di data (dal 25 ottobre 2026 il catalogo tiene anche i manoscritti moderni); fuori lettere e documenti d'archivio.
 // Il robots.txt di dl.ndl.go.jp non pone limiti; pausa di 1,5 secondi. Manifesti IIIF Presentation 2:
 // dl.ndl.go.jp/api/iiif/<pid>/manifest.json (CORS aperto su manifesti e immagini), dominio pubblico (PDM) quasi sempre.
 // Stato in data/ndl.json; il token OAI codifica la posizione, quindi la raccolta riprende anche il giorno dopo.
@@ -12,7 +12,7 @@
 import fs from "node:fs";
 import { scarica, log, decodifica } from "../rete.mjs";
 import { lingueDa } from "../lingue.mjs";
-import { annoKokusho, NON_LIBRARI_JA } from "./kokusho.mjs";
+import { NON_LIBRARI_JA } from "./kokusho.mjs";
 
 export const FILE_STATO = "data/ndl.json";
 export const BASE = "https://dl.ndl.go.jp/api/oaipmh";
@@ -35,9 +35,8 @@ function valori(xml, nome, tipo) {
   while ((m = re.exec(xml))) { if (tipo != null && !String(m[1] || "").includes(tipo)) continue; if (tipo === "" && m[1] && /xsi:type/.test(m[1])) continue; out.push(decodifica(m[2])); }
   return out.filter(Boolean);
 }
-const anniDa = s => (String(s || "").match(/\b1[0-9]{3}\b|\b[5-9][0-9]{2}\b/g) || []).map(Number);
 
-/* record OAI dcndl_porta -> [pid, voce compatta] (voce null se non è un manoscritto o è datato dopo il 1800) */
+/* record OAI dcndl_porta -> [pid, voce compatta] (voce null se non è un manoscritto dei libri antichi o non è aperto in rete) */
 export function estraiNdl(rec) {
   const pid = (/<identifier>oai:dl\.ndl\.go\.jp:info:ndljp\/pid\/(\d+)<\/identifier>/.exec(rec) || [])[1];
   if (!pid) return null;
@@ -47,8 +46,6 @@ export function estraiNdl(rec) {
   const manoscritto = tipi.includes("Manuscript") || editori.some(e => /^写/.test(e));
   if (!manoscritto || !tipi.some(t => /Classical/i.test(t))) return [pid, null];
   const date = valori(rec, "dcterms:issued");
-  const anni = date.flatMap(anniDa);
-  if (anni.length && Math.min(...anni) > 1800) return [pid, null];
   // pubblicazione solo in biblioteca (non su Internet): niente immagini aperte
   const diritti = valori(rec, "dcterms:rights");
   const accesso = valori(rec, "dcterms:accessRights");
@@ -118,15 +115,11 @@ export function lingueNdl(v) {
   return /[぀-ヿ]/.test(v.t || "") ? ["ja"] : [];
 }
 
-// filtro applicato anche in costruzione (basta --solo-costruisci per ripulire le voci già raccolte): fuori le carte del XIX secolo
-// («[18--]», copie datate nella descrizione, «文政九写»), le lettere e i documenti d'archivio («書簡», «文書»)
+// filtro applicato anche in costruzione (basta --solo-costruisci per ripulire le voci già raccolte): fuori le lettere
+// e i documenti d'archivio («書簡», «文書»); nessun limite di data
 export function ammessaNdl(v) {
   if (!v) return false;
-  if (NON_LIBRARI_JA.test(v.t || "")) return false;
-  if (/\b1[89]--/.test(v.d || "") || /\b19\d\d\b/.test(v.d || "")) return false;
-  const copia = /([^\s;:、，]{2}[0-9０-９元〇一二三四五六七八九十]+)年?(?:[^\s;]{0,3})?写/.exec(v.c || "");
-  const a = copia && annoKokusho(copia[1]);
-  return !(a && a > 1800);
+  return !NON_LIBRARI_JA.test(v.t || "");
 }
 
 export function recordNdl(st = leggiStato()) {

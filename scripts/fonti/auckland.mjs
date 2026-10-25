@@ -3,8 +3,8 @@
 // quasi tutti lettere e carte d'archivio neozelandesi). Si usa l'API dmwebservices (dmQuery, pagine di 200 record), che il
 // robots.txt non vieta (vieta solo le pagine di ricerca del sito). Entrano solo i manoscritti librari con immagini (oggetti
 // composti, «cpd»): tutti i «Medieval manuscripts» (i codici medievali e rinascimentali donati da Grey e altri, de Hamel),
-// e i codici orientali (arabi, persiani, turchi, ebraici…) delle raccolte Grey e internazionali fino al 1800 circa
-// (fuori lettere, note, pagine sciolte, giornali di bordo e ciò che è datato al XIX secolo o dopo).
+// e i codici orientali (arabi, persiani, turchi, ebraici…) delle raccolte Grey e internazionali, di ogni data (dal 25 ottobre 2026)
+// (fuori lettere, note, pagine sciolte, giornali di bordo, carte d'archivio).
 // Manifesti IIIF Presentation 2 di CONTENTdm: kura.aucklandlibraries.govt.nz/iiif/2/manuscripts:<numero>/manifest.json (CORS aperto).
 // Diritti: «No known copyright restrictions». Stato in data/auckland.json; una raccolta completa (circa 33 richieste) si riusa per 6 giorni.
 import fs from "node:fs";
@@ -39,15 +39,13 @@ export function anniAuckland(d) {
   return out;
 }
 
-// record di dmQuery -> voce compatta (null se non è un manoscritto librario con immagini fino al 1800 circa)
+// record di dmQuery -> voce compatta (null se non è un manoscritto librario con immagini)
 export function compattaAuckland(r) {
   if (!r || r.parentobject !== -1 || r.filetype !== "cpd") return null;
   const coll = pulito(r.collea), titolo = pulito(r.title), lingue = pulito(r.langua), data = pulito(r.datec);
   const medievale = /^Medieval manuscripts$/i.test(coll);
   if (!medievale) {
     if (!ORIENTALI.test(lingue) || /M[aā]ori/i.test(lingue) || NON_LIBRARI.test(titolo) || /letters?$/i.test(coll)) return null;
-    const a = anniAuckland(data);
-    if (/\b(19th|20th)\b/i.test(data) || (a.length && Math.min(...a) > 1800)) return null;
   }
   const v = { s: pulito(r.identi) || null, t: titolo || null, d: data || null, l: lingue ? lingue.split(/;\s*/) : [], k: coll || null };
   const autori = pulito(r.creato).split(";").map(x => x.trim()).filter(Boolean); if (autori.length) v.a = autori;

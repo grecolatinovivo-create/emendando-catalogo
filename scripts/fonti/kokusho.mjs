@@ -3,8 +3,8 @@
 // digitalizzate (spesso da microfilm) servite dal NIJL. Elenco: l'API JSON della ricerca avanzata che usa il sito
 // (kokusho.nijl.ac.jp/api/biblioAdvanceSearch, 100 schede per pagina; il robots.txt non pone limiti), con i filtri
 // «写» (kansha=copy: solo manoscritti, i libri a stampa «刊» restano fuori) e «con immagini» (image≠all), in ordine di bid.
-// Entrano solo le schede con immagini proprie (image = "1": le altre hanno un manifesto vuoto) e non datate dopo il 1800
-// (le date sono per lo più in ere giapponesi, «文政１１», convertite qui; senza data o con ere sconosciute entrano).
+// Entrano solo le schede con immagini proprie (image = "1": le altre hanno un manifesto vuoto), di ogni data (dal 25 ottobre 2026
+// nessun limite cronologico; le date in ere giapponesi, «文政１１», si convertono qui solo per mostrarle), fuori lettere e documenti d'archivio.
 // Fuori le schede della National Diet Library (fonte «ndl»). Manifesti IIIF Presentation 2: kokusho.nijl.ac.jp/biblio/<bid>/manifest
 // (CORS aperto). Condizioni d'uso diverse per proprietario (pubblico dominio, CC, All Rights Reserved): il catalogo ne dà solo i riferimenti.
 // Stato in data/kokusho.json (raccolta a riprese, pagina per pagina); una raccolta completa si riusa per 14 giorni.
@@ -61,8 +61,6 @@ export const NON_LIBRARI_JA = /(書簡|書翰|書状|文書)(\s*[0-9０-９].*)?
 export function compattaKokusho(x) {
   if (!x || x.image !== "1" || x.kansha !== "写") return null;
   if (/^国会/.test(x.collection || "") || NON_LIBRARI_JA.test(x.name || "")) return null;   // National Diet Library: fonte «ndl»
-  const a = annoKokusho(x.year);
-  if (a && a > 1800) return null;
   return [x.name || x.wname || null, x.collection || null, x.seikyu || null, x.year || null, x.authorhead || x.wauthor || null];
 }
 
