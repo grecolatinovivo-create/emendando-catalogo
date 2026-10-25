@@ -120,7 +120,7 @@ did = np.concatenate([p[1] for p in pezzi])
 ordine = np.argsort(codici, kind="stable")
 codici, did = codici[ordine], did[ordine]
 u, idx, cont = np.unique(codici, return_index=True, return_counts=True)
-voc = np.array(sorted(w for w, c in vocab.items() if c >= 2))
+voc = np.array(sorted(w for w, c in vocab.items() if c >= 3))  # le forme rarissime sono spesso errori di OCR delle edizioni
 np.savez_compressed(OUT, codici=u, doc=did[idx], diffusione=np.minimum(cont, 65535).astype(np.uint16), vocab=voc)
 json.dump({"documenti": docs, "parole": tot_parole, "ngrammi": int(len(u))}, open(OUT.replace(".npz", ".json"), "w"), ensure_ascii=False)
 print("fatto:", len(docs), "documenti,", tot_parole, "parole,", len(u), "6-grammi,", len(voc), "voci nel vocabolario,", round(time.time() - t0), "s")

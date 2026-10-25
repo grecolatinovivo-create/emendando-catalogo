@@ -39,6 +39,21 @@ VOC = set(ix["vocab"].tolist())
 DOCS = json.load(open(INDICE.replace(".npz", ".json")))["documenti"]
 
 
+# Parole funzionali: servono a distinguere il latino dal volgare (tedesco, inglese, francese, italiano)
+# nei codici misti, che il vocabolario dei corpora da solo non separa bene (die, de, in, est...).
+LAT_F = set("et in est non ad cum quod qui que quia sed ut enim autem uel sunt ab ex per quam sicut nec ergo eius ideo uero tamen atque item".split())
+VOLG_F = set("und der das ist mit nicht ein eine einen dem den sich auch uon uff daz wir ir sie wol uber dise disem ouch the and of to tat wit for is was tis be le les des du une il lo gli di del della una uno pour par".split()) - LAT_F
+
+
+def lingua(ws):
+    """Quota di parole funzionali latine e volgari tra le parole lette."""
+    if not ws:
+        return 0.0, 0.0
+    lat = sum(1 for w in ws if w in LAT_F)
+    vol = sum(1 for w in ws if w in VOLG_F)
+    return lat / len(ws), vol / len(ws)
+
+
 def presenti(g):
     if len(g) == 0:
         return np.zeros(0, dtype=bool), np.zeros(0, dtype=np.int64)
@@ -75,8 +90,9 @@ def analizza(pag):
     ws = parole(testo)
     piene = parole_piene(testo)
     latino = (sum(1 for w in piene if w in VOC) / len(piene)) if piene else 0.0
+    f_lat, f_vol = lingua(ws)
     r = {"righe": len(righe), "caratteri": ncar, "confidenza": round(conf, 3), "parole": len(ws),
-         "quota_latina": round(latino, 3)}
+         "quota_latina": round(latino, 3), "funzionali_latine": round(f_lat, 3), "funzionali_volgari": round(f_vol, 3)}
     if pag.get("errore") and not righe:
         r["stato"] = "errore"
         r["errore"] = pag["errore"]
@@ -103,7 +119,9 @@ def analizza(pag):
         r["fonte_ngrammi"] = int(cont[j])
     if ncar < CAR_MIN or len(ws) < PAROLE_MIN:
         r["stato"] = "vuota"
-    elif conf < CONF_MIN or latino < LATINO_MIN:
+    elif f_vol >= 0.04 and f_vol > f_lat:
+        r["stato"] = "altra lingua"
+    elif conf < CONF_MIN or latino < LATINO_MIN or f_lat < 0.03:
         r["stato"] = "non leggibile"
     elif netta >= ID_MIN and ok.sum() >= 4:
         r["stato"] = "identificata"
@@ -165,6 +183,8 @@ def main():
         n_legg = n_id + n_sosp + stati.count("incerta")
         if rec.get("errore") and not rec["pagine"]:
             esito = "errore"
+        elif n_legg == 0 and stati.count("altra lingua"):
+            esito = "altra lingua"
         elif n_legg == 0:
             esito = "non leggibile"
         elif n_id and n_id >= n_sosp:

@@ -43,9 +43,10 @@ L.append(f"Esecuzione: {RUN}\n")
 L.append("## In breve\n")
 L.append(f"- Codici scelti: {cod['totale']}; codici letti: **{n}**.")
 L.append(f"- Pagine lette: {rie['pagine_totali']} (vuote o quasi: {pg.get('vuota', 0)}; non leggibili: {pg.get('non leggibile', 0)}; "
-         f"riconosciute: {pg.get('identificata', 0)}; incerte: {pg.get('incerta', 0)}; sospette: {pg.get('sospetta', 0)}; errori: {pg.get('errore', 0)}).")
+         f"in volgare: {pg.get('altra lingua', 0)}; riconosciute: {pg.get('identificata', 0)}; incerte: {pg.get('incerta', 0)}; sospette: {pg.get('sospetta', 0)}; errori: {pg.get('errore', 0)}).")
 L.append(f"- Codici **non leggibili** (nessuna pagina letta bene): **{q('non leggibile') + q('errore')}**"
          f" (di cui {q('errore')} per errori di rete o di manifesto).")
+L.append(f"- Codici in un'altra lingua (volgare) nelle pagine lette: {q('altra lingua')}.")
 L.append(f"- Codici **identificati** (le pagine lette corrispondono a testi noti): **{q('identificato')}**; "
          f"misti (alcune pagine note, altre no): {q('misto')}.")
 L.append(f"- Codici **sospetti** (latino letto bene ma nessuna corrispondenza): **{q('sospetto')}**; incerti: {q('incerto')}.")
@@ -97,8 +98,9 @@ L.append("- **Confronto**: corpora aperti PerseusDL canonical-latinLit (CC BY-SA
          "sequenze di sei parole ridotte alle prime due lettere, dopo aver uniformato u/v, i/j, ae/e, h: le abbreviazioni "
          "medievali tagliano l'interno e la fine delle parole, quasi mai l'inizio. Alla quota trovata si toglie quella che "
          "si ottiene con le stesse parole mescolate a caso (di solito 0-2%).")
-L.append("- **Soglie**: pagina vuota sotto 120 caratteri; non leggibile se la confidenza media è sotto 0,80 o se meno del 55% "
-         "delle parole intere sono latino noto; identificata dall'8% di corrispondenza netta in su; sospetta sotto il 3%.")
+L.append("- **Soglie**: pagina vuota sotto 120 caratteri; in volgare se le parole funzionali volgari (und, der, the, and...) "
+         "superano le latine (et, in, est, quod...); non leggibile se la confidenza media è sotto 0,80, se meno del 55% "
+         "delle parole intere sono latino noto o se mancano le parole funzionali latine; identificata dall'8% di corrispondenza netta in su; sospetta sotto il 3%.")
 L.append("")
 L.append("## Limiti (da leggere prima di fidarsi dei sospetti)\n")
 L.append("- I corpora aperti coprono classici, Bibbia, CSEL e la Patrologia Latina fino all'VIII secolo circa: mancano la "
