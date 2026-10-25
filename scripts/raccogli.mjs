@@ -197,11 +197,7 @@ async function main() {
   // Fonti sospese: entra nel catalogo solo ciò che si apre dentro il sito. Per queste i manifesti o le immagini
   // non si aprono nemmeno da un browser normale (verificato il 24 ottobre 2026): restano raccolte negli stati
   // ma non entrano nel catalogo finché non tornano raggiungibili.
-  // Walters: i manifesti (scritti da noi) hanno solo immagini statiche, senza servizio IIIF Image, e sono in Presentation 3;
-  // il visore del sito (public/assets/foto.js, leggiManifesto e urlPagina) legge solo manifesti Presentation 2 con servizio
-  // IIIF Image: i codici entrano quando il visore li apre.
-  const SOSPESE = { wolfenbuettel: "server iiif.hab.de non raggiungibile", karlsruhe: "digital.blb-karlsruhe.de risponde 403", stoccarda: "manifesti di Marburgo non raggiungibili",
-    walters: "il visore del sito non apre ancora manifesti IIIF Presentation 3 con sole immagini statiche (senza servizio IIIF Image)" };
+  const SOSPESE = { wolfenbuettel: "server iiif.hab.de non raggiungibile", karlsruhe: "digital.blb-karlsruhe.de risponde 403", stoccarda: "manifesti di Marburgo non raggiungibili" };
   for (const f of Object.keys(SOSPESE)) if (f in lavori) { esito[f] = "sospesa: " + SOSPESE[f]; log(f, "sospesa:", SOSPESE[f]); }
   for (const f of Object.keys(lavori)) {
     if (SOSPESE[f]) continue;
