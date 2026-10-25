@@ -8,6 +8,7 @@ import { daLeggere, segnaturaLeggibile } from "./fonti/vaticana.mjs";
 import { NOMI_LINGUE } from "./lingue.mjs";
 import { FONTI_HSP } from "./fonti/hsp.mjs";
 import { ammessaYale } from "./fonti/yale.mjs";
+import { motivoLeiden, contestoLeiden } from "./fonti/leiden.mjs";
 
 export const FILE_REGISTRO = "docs/BIBLIOTECHE.md";
 export const FILE_RACCOLTE = "data/raccolte.json";
@@ -72,9 +73,10 @@ export const AVANZAMENTO = {
   },
   leiden: () => {
     const s = leggi("data/leiden.json"); if (!s) return { testo: "non ancora cominciata" };
-    const n = Object.keys(s.voci || {}).length;
-    if (s.cursore != null) return { testo: `in corso: ${num(n)} codici letti (collezione ${(s.cursore.c ?? 0) + 1} di 2, pagina ${(s.cursore.p ?? 0) + 1})`, data: s.aggiornato };
-    return { testo: `schede lette tutte (${num(n)} codici)`, data: s.aggiornato };
+    // solo i manoscritti librari che passano il filtro (fuori schede BNM, lettere, archivi, carte dopo il 1800, parti doppie)
+    const ctx = contestoLeiden(s.voci), tutte = Object.values(s.voci || {}), n = tutte.filter(v => motivoLeiden(v, ctx) == null).length;
+    if (s.cursore != null) return { testo: `in corso: ${num(n)} codici su ${num(tutte.length)} schede lette (collezione ${(s.cursore.c ?? 0) + 1} di 2, pagina ${(s.cursore.p ?? 0) + 1})`, data: s.aggiornato };
+    return { testo: `schede lette tutte (${num(tutte.length)}); ${num(n)} manoscritti librari fino al 1800`, data: s.aggiornato };
   },
   yale: () => {
     const s = leggi("data/yale.json"); if (!s) return { testo: "non ancora cominciata" };

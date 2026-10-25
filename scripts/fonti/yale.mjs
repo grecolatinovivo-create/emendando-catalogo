@@ -122,8 +122,8 @@ export function anniDa(d, { titolo = false } = {}) {
   for (const m of s.matchAll(/\b(?:s|saec|sec|sæc)\.\s*([IVXL]{1,6})\b|\b([IVXL]{1,6})(?:th|e)?\s+(?:cent|siècle|secolo)/g)) {
     const n = romano(m[1] || m[2]); if (n >= 1 && n <= 21) anni.push((n - 1) * 100 + 1, n * 100);
   }
-  // «14--», «15--?», «176-», «16uu»: secolo o decennio
-  for (const m of s.matchAll(/(?<!\d)(1\d)(?:--|uu)(?!\d)/g)) anni.push(+m[1] * 100, +m[1] * 100 + 99);
+  // «14--», «15--?», «15XX», «176-», «16uu»: secolo o decennio
+  for (const m of s.matchAll(/(?<!\d)(1\d)(?:--|uu|XX|xx)(?!\d)/g)) anni.push(+m[1] * 100, +m[1] * 100 + 99);
   for (const m of s.matchAll(/(?<!\d)(1\d{2})(?:-|u)(?![\d-])/g)) anni.push(+m[1] * 10, +m[1] * 10 + 9);
   const re = titolo ? /(?<!\d)(1\d{3}|20\d{2})(?!\d)/g : /(?<![\d\/])(\d{3,4})(?!\d)/g;
   for (const m of s.matchAll(re)) { const n = +m[1]; if (n >= 300 && n <= 2099) anni.push(n); }

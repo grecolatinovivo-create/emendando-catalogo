@@ -7,8 +7,12 @@
 // Manifesto IIIF: https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:<n>/manifest (rimanda al catalogo, con CORS aperto).
 // Lo stato (cursore e codici letti) è in data/leiden.json: la raccolta riprende da dove si era fermata
 // e una raccolta completa si riusa per 6 giorni.
+// In costruzione (recordLeiden) un filtro tiene solo i manoscritti librari fino al 1800 (motivoLeiden): fuori le schede di documentazione
+// della Bibliotheca Neerlandica Manuscripta (BNM, senza manifesto), le lettere, i documenti d'archivio, le carte dopo il 1800
+// e le parti di codici già presenti con la loro segnatura (stesse immagini).
 import fs from "node:fs";
 import { scarica, decodifica, log } from "../rete.mjs";
+import { anniDa } from "./yale.mjs";
 
 export const FILE_STATO = "data/leiden.json";
 export const BASE = "https://digitalcollections.universiteitleiden.nl";
@@ -79,9 +83,91 @@ export function segnaturaLeiden(s) {
   return m ? `Voss. Lat. ${m[1]}. ${m[2]}` : String(s || "").trim();
 }
 
+/* filtro dei manoscritti librari */
+// prefissi delle segnature di Leida (per ricavare la segnatura dal titolo quando la scheda non la dà)
+const PREFISSI = "(?:Or\\.|BPL|BPG|LTK|VL[FQO]|VC[FQO]|VG[GQFO]|VMI|PAP|D H|D Or\\.|VUL|GRO|SCA|PER|BUR|SINOL\\.(?: [A-Za-z]+)?|LIP|Ser\\.|MAR|Acad\\.|NBG-Kl\\.|NBG-Boeg|NBG|OUD|THYSIA|BOL|ABL|BA|WYT|RUH|AHM|BWA|ROS|MEY|BCB|RF-|CUN|ZZU|SEM|PK-|VCO|ATH|BET|KORT|Kort)";
+const RE_SEGNATURA = new RegExp(`(?:^|[\\s,(\\[])(${PREFISSI}\\s?(?:[FQO]\\s)?\\d[\\d.]*[a-z]?(?:\\s?[a-dA-D](?:\\s?-\\s?[a-dA-D])?\\b)?)`, "g");
+const PARTE = /^\s*(?:,|-)?\s*(?:part|vol\.?|volume)\s*[\w()]+|^\s*:\s*[\w.]+|^\s*(?:-\s*)?(?:recto|verso)\b/i;
+
+// segnatura della voce: { seg (da mostrare), base (del codice intero), parte (true se è una parte o un volume del codice) }
+export function segnaturaVoce(v) {
+  const t = v.t || "";
+  if (v.s) {
+    const seg = v.s.trim().replace(/\s+/g, " ");
+    const m = /^(.*?)(?:\s*(?:,|-)\s*part\b.*|\s*:\s*[\w.]+)$/i.exec(seg);
+    return { seg, base: m ? m[1].trim() : seg, parte: !!m };
+  }
+  const tutte = [...t.matchAll(RE_SEGNATURA)];
+  if (tutte.length) {
+    const m = tutte[tutte.length - 1], base = m[1].trim(), resto = t.slice(m.index + m[0].length);
+    const p = PARTE.exec(resto);
+    return { seg: p ? (base + resto.slice(0, p[0].length).replace(/^\s*-\s*/, " - ")).trim() : base, base, parte: !!p || /\bpart\s+\w+\s*$/i.test(t.slice(0, m.index)) };
+  }
+  // nessuna segnatura: parte o volume di un codice riconoscibile dal titolo («La Galigo - Part 2», «Kitab al-Muqaffa, volume IV»)
+  const p = /^(.*?)\s*(?:,|-)\s*(?:part|vol\.?|volume)\s*[\w()]+\s*$|^(.*?)\s+(?:recto|verso)\s*$/i.exec(t);
+  return { seg: null, base: null, parte: !!p, titoloBase: p ? (p[1] || p[2]).trim() : null };
+}
+
+// fondi d'archivio (KITLV: D H, D Or.) e documentazione (BNM): niente voci senza data, e solo carte tutte entro il 1800
+const FONDI_ARCHIVIO = /^(?:D H|D Or\.|N \d)/;
+const LETTERE = /^\[?letters?\]?(?:\s|$)|\bbrie(?:f|ven|fje)\b|\bcorrespond\w*|\bletters? (?:from|to)\b|\bbusiness letter|\bepistolae (?:autographae |apographae )?ad (?!Atticum|familiares|Quintum|Brutum|Lucilium)/i;
+const ARCHIVIO = /\b(?:rapport|documenten|stukken|contracten|slavencontracten|testament van|het testament|akten?|rekening(?:en)?|notulen|kwitanties?|dagboek|dagverhaal|journaal|memoriaal|geslachtsregisters?|stamboom|levensverhaal|plattegrond\w*|fiches|klapper|knipsels|bijlagen|doos)\b/i;
+const GIORNO = /\b\d{1,2}(?:\s+|-)(?:januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december|jan|feb|mrt|apr|jun|jul|aug|sep|sept|okt|oct|nov|dec|janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre|january|february|march|may|june|july|august|october)\.?\s+1\d{3}\b/i;
+const MODERNO = /\b(?:foto\w*|photo\w*|sound recording|recordings?|cartoon|cards of an index|prints database|portrait|typoscript|typescript|microfilm|kopie)\b/i;
+
+// anni dell'egira: se c'è l'anno cristiano tra parentesi si usa quello («1245 H. [1829]», «678/[9 November 1279]»),
+// altrimenti si converte («575 H», «6 Rabīʿ I 1334»)
+const MESI_EGIRA = /rab[iī]|ǧum|jum[aā]d|cemaz|mu[hḥ]arr|[sṣ]afar|safer|ra[ǧj]ab|receb|[sšş]a[ʿ']?b[aā]n|rama[dḍz]|[sšş]aww[aā]l|şevval|[ḏd]h?[uū][ -]?l|zilka|zilhic/i;
+export function dataCristiana(d) {
+  let x = String(d || "").replace(/(?<!\d)(\d{3,4})\s*(?:H\.?|A\.?H\.?)?\s*\/?\s*\[(?:[^\]\d]*?)(\d{4})/g, "[$2");
+  x = x.replace(/(?<!\d)(\d{3,4})\s*(?:H\b\.?|A\.H\.|\(Islamic)/g, (_, n) => String(Math.round(+n * 0.97 + 622)));
+  // anno giavanese (Anno Javanico, circa 70 anni indietro rispetto all'anno cristiano nell'Ottocento)
+  x = x.replace(/(?<!\d)(1\d{3})\s*\(Javanese/g, (_, n) => String(+n + 70));
+  if (MESI_EGIRA.test(x)) x = x.replace(/(?<![\d\[])(\d{3,4})(?![\d\]])/g, (m, n) => (+n < 1500 ? String(Math.round(+n * 0.97 + 622)) : m));
+  return x;
+}
+
+// motivo per cui una voce resta fuori (null = ammessa); presenti = segnature dei codici interi presenti, titoli = loro titoli
+export function motivoLeiden(v, { presenti = new Set(), titoli = [] } = {}) {
+  const s = (v.s || "").trim(), t = v.t || "";
+  if (/^BNM\b/.test(s)) return "documentazione della Bibliotheca Neerlandica Manuscripta (schede, non manoscritti)";
+  if (MODERNO.test(t)) return "fotografie, stampe e materiali moderni";
+  if (LETTERE.test(t)) return "lettere";
+  if (ARCHIVIO.test(t)) return "documenti d'archivio e carte personali";
+  // datazione al giorno («Rotterdam, 9 februari 1678»): lettere e atti, non codici (ma non le date dei colofoni orientali)
+  if (GIORNO.test(v.d || "") && !/dated|colophon|\//i.test(v.d) && !/^(?:Or\.|Acad\.|SINOL|Ser\.|NBG)/.test(s)) return "lettere";
+  const sg = segnaturaVoce(v);
+  // anni: dalla datazione (anno dell'egira seguito da quello cristiano tra parentesi: si usa il secondo), altrimenti dal titolo senza le segnature
+  const d = dataCristiana(v.d);
+  let anni = anniDa(d);
+  if (!anni.length) anni = anniDa(t.replace(RE_SEGNATURA, " ").replace(s, " "), { titolo: true });
+  const primo = anni.length ? Math.min(...anni) : null, ultimo = anni.length ? Math.max(...anni) : null;
+  if (primo != null && primo > 1800) return "dopo il 1800";
+  if (FONDI_ARCHIVIO.test(sg.seg || "")) {
+    if (primo == null) return "fondo d'archivio, senza data";
+    if (ultimo > 1800) return "fondo d'archivio, carte anche dopo il 1800";
+  }
+  if (sg.parte && sg.base && presenti.has(sg.base)) return "parte di un codice già presente (stesse immagini)";
+  if (sg.parte && !sg.base && sg.titoloBase && titoli.some(x => x.startsWith(sg.titoloBase))) return "parte di un codice già presente (stesse immagini)";
+  if (!sg.seg && primo == null) return "senza segnatura né data";
+  return null;
+}
+
+// segnature e titoli dei codici interi presenti (per riconoscere le parti doppie)
+export function contestoLeiden(voci) {
+  const presenti = new Set(), titoli = [];
+  for (const v of Object.values(voci || {})) {
+    if (!v || !v.s || /^BNM\b/.test(v.s)) continue;
+    const sg = segnaturaVoce(v);
+    if (!sg.parte) { presenti.add(sg.seg); if (v.t) titoli.push(v.t); }
+  }
+  return { presenti, titoli };
+}
+
 export function recordLeiden(st = leggiStato()) {
-  return Object.entries(st.voci || {}).map(([id, v]) => ({
-    fonte: "leiden", id: "lei-" + id, citta: "Leiden", biblioteca: "Universiteitsbibliotheek Leiden", segnatura: segnaturaLeiden(v.s || "item " + id),
+  const ctx = contestoLeiden(st.voci);
+  return Object.entries(st.voci || {}).filter(([, v]) => motivoLeiden(v, ctx) == null).map(([id, v]) => ({
+    fonte: "leiden", id: "lei-" + id, citta: "Leiden", biblioteca: "Universiteitsbibliotheek Leiden", segnatura: segnaturaLeiden(segnaturaVoce(v).seg || "item " + id),
     datazione: v.d, titolo: v.t, autori_fonte: v.a ? [v.a] : [],
     manifest: `https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:${id}/manifest`, pagina: `https://hdl.handle.net/1887.1/item:${id}`,
     licenza: "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)" }));

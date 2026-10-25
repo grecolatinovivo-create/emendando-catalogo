@@ -356,6 +356,40 @@ test("Leida: pagina dei risultati della collezione, segnature e voci", async () 
   assert.deepEqual(voce(r2, A).lingue, ["la"]);   // «(Latin)» nel titolo
 });
 
+test("Leida: filtro dei manoscritti librari (fuori schede BNM, lettere, archivi, carte dopo il 1800, parti doppie)", async () => {
+  const { motivoLeiden, contestoLeiden, segnaturaVoce, dataCristiana, recordLeiden } = await import("../scripts/fonti/leiden.mjs");
+  // voci vere dello stato di Leida
+  const voci = {
+    1520736: { s: "VLQ 5", t: "Chronica / Fredegar", a: "Fredegarius", d: "German regions, southern part ; Bodensee region, 8th/9th century" },
+    1606764: { s: "BPG 109", t: "Fabulae Aesopeae (Greek) / Babrius, and other text(s)", a: "Babrius., Hesiod.", d: "Middle East ; Syria ; Palmyra, 3rd century, before 273" },
+    3445669: { s: "LTK 187", t: "Fragment (Dutch): Der leken spiegel / Jan van Boendale", a: null, d: "Low Countries, 14th century, second half" },
+    274332: { s: "BPL 917", t: "De Iure praedae Commentarius", a: "Groot, Hugo de", d: "[Netherlands], [1604-1605]" },
+    2691167: { s: "Or. 433", t: "Fil-Quwa al-Tabi`iyya Or. 433", a: null, d: "572 H [1176/1177]" },
+    3521434: { s: null, t: "aṣ-Ṣaḥāḥ al-‘Ajamīya - Or. 863", a: null, d: null },
+    3311028: { s: null, t: "Raiḥānat al-Kuttāb wa-Nuǵʿat al-Muntāb - Or. 11: 1", a: null, d: null },
+    2705133: { s: "Or. 14", t: "Collective volume with texts in Arabic and Persian (1-26) : Translation of the Conica by Apollonius of Pergae (Books 5-7) ; and other texts Or. 14", a: null, d: null },
+    // fuori
+    1905186: { s: "BNM 753", t: "Wenen, Universitätsbibliothek — Hss./Varia", a: null, d: null },
+    3326750: { s: null, t: "Qismat al-Khaṭṭ allaḏī 'staʿmalahā Arśīmīdis fī'l-Maqāla at̲-T̲āniya fī 'l-Kura wa'l-Usṭuwāna - Or. 14: 26", a: null, d: null },
+    376879: { s: "PAP 1 B", t: "Brieven van Christina (1626-1689) aan Samuel Bochart (1599-1667) PAP 1 B", a: "Christina", d: "Stockholm, 1650" },
+    3273821: { s: "Ser. 63", t: "Hollandsch en Japansch woordenboek Ser. 63", a: null, d: "[S.l.] : [s.n.], [c. 1820]" },
+    361341: { s: "BPL 1185", t: "Uitvoerig Rapport van S. Scotte en J. Campe, gecommitteerden wegens Zeeland nopens de Dordrechtse Synode", a: null, d: "[Date unknown]" },
+    2032598: { s: "BPL 1886", t: "BPL 1886", a: null, d: "Rotterdam, 9 februari 1678" },
+    1576996: { s: "Ser. 93", t: "Ezogashima gengo Ser. 93", a: "Mogami, Tokunai, Siebold, Philipp Franz von", d: "[ca. 1827-1829]" },
+    2042852: { s: "Or. 3306", t: "[Collective volume with texts in Malay", a: null, d: "Barus : Van der Tuuk, 1269 H. [1853]" },
+    1525512: { s: "D Or. 786", t: "D Or. 786", a: null, d: "1972-1974" },
+  };
+  const ctx = contestoLeiden(voci);
+  for (const id of [1520736, 1606764, 3445669, 274332, 2691167, 3521434, 3311028, 2705133]) assert.equal(motivoLeiden(voci[id], ctx), null, id + " " + voci[id].t);
+  for (const id of [1905186, 3326750, 376879, 3273821, 361341, 2032598, 1576996, 2042852, 1525512]) assert.ok(motivoLeiden(voci[id], ctx), id + " " + voci[id].t);
+  assert.deepEqual(segnaturaVoce(voci[3521434]), { seg: "Or. 863", base: "Or. 863", parte: false });
+  assert.equal(segnaturaVoce(voci[3326750]).base, "Or. 14");
+  assert.equal(dataCristiana("1245 H. [1829]"), "[1829]");
+  const r = recordLeiden({ voci });
+  assert.equal(r.length, 8);
+  assert.equal(r.find(x => x.id === "lei-3521434").segnatura, "Or. 863");
+});
+
 test("Berlino: record OAI con la segnatura in coda al titolo", async () => {
   const { estraiBerlino } = await import("../scripts/fonti/oai.mjs");
   const rec = `<record><header><identifier>oai:digital.staatsbibliothek-berlin.de:PPN1002517877</identifier></header><metadata><oai_dc:dc>
