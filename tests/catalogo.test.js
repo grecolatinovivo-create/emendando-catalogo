@@ -460,3 +460,38 @@ test("Penn: ricerca di Colenda, segnature, filtri e manifesti del repository dig
   assert.equal(r.manifest, "https://digitalrepository.library.upenn.edu/iiif/2/items/3d747a38-9cdb-403d-a2db-abcd703fbf57/manifest");
   assert.deepEqual(voce(r, A).lingue, ["la"]); assert.deepEqual(voce(r, A).secolo, [11, 11]);
 });
+
+test("Digital Scriptorium: elenco, SPARQL, biblioteca vera, doppioni di Penn e domini da verificare", async () => {
+  const { rigaElenco, unisciDs, daPagina, recordDs, esistentiDa, manifestoDs, ammesso, DOMINI_CONFERMATI } = await import("../scripts/fonti/ds.mjs");
+  const riga = rigaElenco({ id: "DS10399", attributes: { title: "Harvard University, MS Lat 441.2", title_facet: { attributes: { value: "Book of Esther" } }, date_meta: { attributes: { value: "circa 1240." } } } });
+  assert.deepEqual(riga, { e: "Harvard University, MS Lat 441.2", t: "Book of Esther", d: "circa 1240.", p: null });
+  const righe = {
+    base: [{ ds: "DS10399", m: "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:34902812:MANIFEST:2", ist: "Harvard University", seg: "MS Lat 441.2", link: "https://id.lib.harvard.edu/alma/990145774860203941/catalog" },
+      { ds: "DS1", m: "https://digitalrepository.library.upenn.edu/iiif/2/items/aaa/manifest", ist: "University of Pennsylvania", seg: "Ms. Codex 1" },
+      { ds: "DS2", m: "https://preserve.lehigh.edu/node/1/book-manifest", ist: "Lehigh University", seg: "Codex 2" },
+      { ds: "DS3", m: "https://iiif.archive.org/iiif/x/manifest.json", ist: "California State Library", seg: "Sutro Collection MS 07" },
+      { ds: "DS3", m: "https://iiif.archive.org/iiif/x/manifest.json", ist: "California State Library", seg: "Sutro Library M000130" }],
+    titoli: [{ ds: "DS10399", v: "Book of Esther", u: "Bible" }],
+    nomi: [{ ds: "DS10399", v: "Hieronymus", ruolo: "Author" }, { ds: "DS10399", v: "Minkoff, George", ruolo: "Former owner" }],
+    lingue: [{ ds: "DS10399", v: "In Latin", l: "Latin" }],
+    date: [{ ds: "DS10399", v: "circa 1240.", a0: "+1201-01-01T00:00:00Z", a1: "+1300-01-01T00:00:00Z" }],
+  };
+  const v = unisciDs(righe, { DS10399: riga, DS3: { e: "California State Library, Sutro Library M000130" } });
+  assert.equal(v.DS10399.s, "MS Lat 441.2"); assert.equal(v.DS10399.t, "Book of Esther ; Bible");
+  assert.deepEqual(v.DS10399.a, ["Hieronymus"]); assert.deepEqual(v.DS10399.c, ["Minkoff, George (former owner)"]);
+  assert.equal(v.DS3.s, "Sutro Library M000130");
+  const scarti = {};
+  const rs = recordDs({ voci: v }, { esistenti: esistentiDa([{ fonte: "penn", segnatura: "Ms. Codex 1", manifest: "https://altro" }]), scarti });
+  assert.deepEqual(rs.map(r => r.id).sort(), ["ds-ds10399", "ds-ds3"]);
+  assert.deepEqual(scarti, { doppioni: 1, dominio: 1 });
+  const h = rs.find(r => r.id === "ds-ds10399");
+  assert.equal(h.fonte, "ds"); assert.equal(h.biblioteca, "Harvard University, Houghton Library"); assert.equal(h.citta, "Cambridge (Massachusetts)");
+  assert.deepEqual(h.lingue, ["la"]); assert.equal(h.pagina, "https://search.digital-scriptorium.org/catalog/DS10399");
+  // domini da verificare: fuori finché non sono confermati (una riga in ds.mjs)
+  assert.ok(ammesso("https://nrs.lib.harvard.edu/x")); assert.ok(!ammesso("https://nrs.lib.harvard.edu/x", []));
+  assert.ok(DOMINI_CONFERMATI.includes("figgy.princeton.edu"));
+  assert.ok(!ammesso("https://repository.wellesley.edu/node/1/manifest")); assert.ok(!ammesso("https://colenda.library.upenn.edu/phalt/iiif/2/x/manifest"));
+  assert.equal(manifestoDs("http://www.archive.org/details/abc/manifest"), "https://iiif.archive.org/iiif/abc/manifest.json");
+  const p = daPagina(`<script>"loadedManifest": "https://x.org/m"</script><dt class="blacklight-shelfmark_display col-md-3"><strong>Shelfmark:</strong></dt><dd class="col-md-9">MS Lat 441.2</dd>`);
+  assert.equal(p.m, "https://x.org/m"); assert.equal(p.s, "MS Lat 441.2");
+});

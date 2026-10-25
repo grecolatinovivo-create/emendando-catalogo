@@ -1,79 +1,84 @@
 {
- "aggiornato": "2026-10-25T06:23:37.250Z",
+ "aggiornato": "2026-10-25T10:04:46.888Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
    "nome": "Heidelberg (digi.ub.uni-heidelberg.de)",
    "codici": 95,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "ecodices": {
    "nome": "e-codices",
    "codici": 307,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "bsb": {
    "nome": "Bayerische Staatsbibliothek (digitale-sammlungen.de)",
    "codici": 943,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "berlino": {
    "nome": "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
    "codici": 134,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
    "codici": 286,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "gallica": {
    "nome": "Bibliothèque nationale de France (gallica.bnf.fr)",
    "codici": 1410,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "laurenziana": {
    "nome": "Biblioteca Medicea Laurenziana, Firenze (tecabml.contentdm.oclc.org)",
    "codici": 1584,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "leiden": {
    "nome": "Universiteitsbibliotheek Leiden (digitalcollections.universiteitleiden.nl)",
    "codici": 526,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "bamberga": {
    "nome": "Staatsbibliothek Bamberg, Bamberga (dati dal Handschriftenportal, handschriftenportal.de)",
    "codici": 44,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "colonia": {
    "nome": "Erzbischöfliche Diözesan- und Dombibliothek Köln mit Bibliothek St. Albertus Magnus, Colonia (dati dal Handschriftenportal, handschriftenportal.de)",
    "codici": 16,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "lipsia": {
    "nome": "Universitätsbibliothek Leipzig, Lipsia (dati dal Handschriftenportal, handschriftenportal.de)",
    "codici": 179,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "yale": {
    "nome": "Yale University Library, Beinecke e altre (collections.library.yale.edu)",
    "codici": 244,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "penn": {
    "nome": "University of Pennsylvania Libraries (colenda.library.upenn.edu)",
    "codici": 159,
+   "esito": "precedente"
+  },
+  "ds": {
+   "nome": "Digital Scriptorium: istituzioni statunitensi (search.digital-scriptorium.org)",
+   "codici": 174,
    "esito": "ok"
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
    "codici": 366,
-   "esito": "ok"
+   "esito": "precedente"
   }
  },
- "totale": 6293,
+ "totale": 6467,
  "manoscritti": [
   {
    "id": "bsb-bsb00034122",
@@ -172557,6 +172562,328 @@
    "immagini": null
   },
   {
+   "id": "ds-ds3334",
+   "fonte": "ds",
+   "biblioteca": "Boston Public Library",
+   "citta": "Boston",
+   "segnatura": "MS f Med.15",
+   "datazione": "between 1100 and 1150",
+   "secolo": [
+    11,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De statu animae ; Libellus cuiusda[m] ignoti auctoris de anima cont[ra] que[n] Claudianus trib[us] seq[uen]tib[us] libris disputat Claudiam De statu anime. ; De anima ; Medieval and Early Renaissance Manuscripts (Collection of Distinction) ; De anima.",
+   "autori": [
+    {
+     "id": "claudiano",
+     "autore": "Claudiano",
+     "latino": "Claudianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…oris de anima cont[ra] que[n] Claudianus trib[us] seq[uen]tib[us] libr…»"
+    }
+   ],
+   "manifest": "https://ark.digitalcommonwealth.org/ark:/50959/qb98qh782/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS3334",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds3338",
+   "fonte": "ds",
+   "biblioteca": "Boston Public Library",
+   "citta": "Boston",
+   "segnatura": "MS f Med.19",
+   "datazione": "5 November 1440.",
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Medieval and Early Renaissance Manuscripts (Collection of Distinction) ; [De officiis].",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De officiis"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://ark.digitalcommonwealth.org/ark:/50959/d504vn953/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS3338",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds3339",
+   "fonte": "ds",
+   "biblioteca": "Boston Public Library",
+   "citta": "Boston",
+   "segnatura": "MS f Med.21",
+   "datazione": "25 July?] 1453.",
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Medieval and Early Renaissance Manuscripts (Collection of Distinction) ; [Epigrammata].",
+   "autori": [
+    {
+     "id": "marziale",
+     "autore": "Marziale",
+     "latino": "Martialis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epigrammi"
+     ],
+     "corrispondenza": "autore: «Martial»"
+    }
+   ],
+   "manifest": "https://ark.digitalcommonwealth.org/ark:/50959/bn99dc782/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS3339",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds3340",
+   "fonte": "ds",
+   "biblioteca": "Boston Public Library",
+   "citta": "Boston",
+   "segnatura": "MS f Med.22",
+   "datazione": "ca. 1450",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Medieval and Early Renaissance Manuscripts (Collection of Distinction) ; [De re militari].",
+   "autori": [
+    {
+     "id": "vegezio",
+     "autore": "Vegezio",
+     "latino": "Vegetius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epitoma rei militaris"
+     ],
+     "corrispondenza": "autore: «Vegetius Renatus, Flavius»"
+    }
+   ],
+   "manifest": "https://ark.digitalcommonwealth.org/ark:/50959/4168bm13f/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS3340",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds3321",
+   "fonte": "ds",
+   "biblioteca": "Boston Public Library",
+   "citta": "Boston",
+   "segnatura": "MS f Med.112",
+   "datazione": "between 1400 and 1499",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Medieval and Early Renaissance Manuscripts (Collection of Distinction) ; [Tragedies : in Latin].",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tragedie"
+     ],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus, approximately 4 B.C.-65 A.D»"
+    }
+   ],
+   "manifest": "https://ark.digitalcommonwealth.org/ark:/50959/jw82cc29k/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS3321",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds3443",
+   "fonte": "ds",
+   "biblioteca": "Boston Public Library",
+   "citta": "Boston",
+   "segnatura": "MS pb Med.98",
+   "datazione": "between ca. 1425 and 1450",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Factorum et dictorum memorabilium libri IX ; Medieval and Early Renaissance Manuscripts (Collection of Distinction) ; [Single leaf from Les fais et les dis des Romains et de autres gens :",
+   "autori": [
+    {
+     "id": "valerio-massimo",
+     "autore": "Valerio Massimo",
+     "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Facta et dicta memorabilia"
+     ],
+     "corrispondenza": "autore: «Valerius Maximus»"
+    }
+   ],
+   "manifest": "https://ark.digitalcommonwealth.org/ark:/50959/nc581517d/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS3443",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds3490",
+   "fonte": "ds",
+   "biblioteca": "Boston Public Library",
+   "citta": "Boston",
+   "segnatura": "MS q Med.20",
+   "datazione": "1461.",
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Medieval and Early Renaissance Manuscripts (Collection of Distinction) ; [Astronomica / ; In morbis a capite ad pedes ; Liber medicinalis.",
+   "autori": [
+    {
+     "id": "manilio",
+     "autore": "Manilio",
+     "latino": "Manilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Astronomica"
+     ],
+     "corrispondenza": "autore: «Manilius, Marcus»"
+    }
+   ],
+   "manifest": "https://ark.digitalcommonwealth.org/ark:/50959/66835d872/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS3490",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds3545",
+   "fonte": "ds",
+   "biblioteca": "Boston Public Library",
+   "citta": "Boston",
+   "segnatura": "MS q Med.79",
+   "datazione": "between 1325 and 1375].",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Organon. ; Medieval and Early Renaissance Manuscripts (Collection of Distinction) ; [Miscellany of works of logic and philosophy : in Latin / ; Categoriae. ; De fallaciis. ; De interpretatione. ; De sex principiis. ; De sophisticis elenchis. ; Isagoge in Aristotelis praedicamenta. ; Prior analytics. ; Topics.",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Organon",
+      "Categorie",
+      "De interpretatione"
+     ],
+     "corrispondenza": "titolo: «…sticis elenchis. ; Isagoge in Aristotelis praedicamenta. ; Prior analyt…»"
+    }
+   ],
+   "manifest": "https://ark.digitalcommonwealth.org/ark:/50959/j3863z79w/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS3545",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds3521",
+   "fonte": "ds",
+   "biblioteca": "Boston Public Library",
+   "citta": "Boston",
+   "segnatura": "MS q Med.270",
+   "datazione": "ca. 1475",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "[Leaf from the Comedies of Terence in the hand of Giuliano d'Antonio da Prata]. ; Acta ludis romanis sex Iulio cesare CN cornelio edilibus ; Echira ; Hecyra. ; Incipit Echira ; Medieval and Early Renaissance Manuscripts (Collection of Distinction)",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Hecyra",
+      "Commedie"
+     ],
+     "corrispondenza": "autore: «Terence»"
+    }
+   ],
+   "manifest": "https://ark.digitalcommonwealth.org/ark:/50959/nc581d06b/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS3521",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds3565",
+   "fonte": "ds",
+   "biblioteca": "Boston Public Library",
+   "citta": "Boston",
+   "segnatura": "MS q Med.295",
+   "datazione": "1465?-1475?",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "[Comoediae]. ; Medieval and Early Renaissance Manuscripts (Collection of Distinction)",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commedie"
+     ],
+     "corrispondenza": "autore: «Terence»"
+    }
+   ],
+   "manifest": "https://ark.digitalcommonwealth.org/ark:/50959/70799087m/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS3565",
+   "licenza": null,
+   "immagini": null
+  },
+  {
    "id": "ec-bc-b-0093",
    "fonte": "ecodices",
    "biblioteca": "Braginsky Collection",
@@ -172624,6 +172951,80 @@
    "licenza": "CC BY-NC 4.0",
    "immagini": null,
    "anteprima": "https://e-codices.ch/loris/bc/bc-b-0125/bc-b-0125_001r.jp2/full/,150/0/default/jpg"
+  },
+  {
+   "id": "ds-ds16509",
+   "fonte": "ds",
+   "biblioteca": "Bryn Mawr College",
+   "citta": "Bryn Mawr",
+   "segnatura": "MS 6",
+   "datazione": "1432-1456",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la",
+    "it",
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epistolae ad familiares; Rime, Trionfi, etc.",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epistulae ad familiares"
+     ],
+     "corrispondenza": "autore: «Petrarca, Francesco, 1304-1374 ; Cicero, Marcus Tullius ; Pseudo-Cicero ; Pseudo-Seneca»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/BMC_MS6/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS16509",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds16521",
+   "fonte": "ds",
+   "biblioteca": "Bryn Mawr College",
+   "citta": "Bryn Mawr",
+   "segnatura": "MS 18",
+   "datazione": "1100-1299",
+   "secolo": [
+    11,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Canticum canticorum, with glossa ordinaria",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…1096?-1141 ; Pseudo-Seneca ; Seneca, Lucius Annaeus, approximatel…»"
+    },
+    {
+     "id": "giovanni-crisostomo",
+     "autore": "Giovanni Crisostomo",
+     "latino": "Iohannes Chrysostomus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…A.D. ; de Lucedio, Ogerius ; John Chrysostom, Saint, -407»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/BMC_MS18/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS16521",
+   "licenza": null,
+   "immagini": null
   },
   {
    "id": "ec-bbb-0045",
@@ -173805,6 +174206,229 @@
    "licenza": "Public Domain Mark 1.0",
    "immagini": null,
    "anteprima": "https://e-codices.ch/loris/bbb/bbb-0611/bbb-0611_013r.jp2/full/,150/0/default/jpg"
+  },
+  {
+   "id": "ds-ds258",
+   "fonte": "ds",
+   "biblioteca": "California State Library, Sutro Library",
+   "citta": "San Francisco",
+   "segnatura": "CSL v091 B29",
+   "datazione": "s. XV; 1400-1499 ; s. XV(2); 1450-1499",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Rhetorica ad Herennium ; Summa de casibus conscientiae",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Rhetorica ad Herennium"
+     ],
+     "corrispondenza": "titolo: «Rhetorica ad Herennium ; Summa de casibus conscientiae»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_CSLv091B29_9/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS258",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds6485",
+   "fonte": "ds",
+   "biblioteca": "Columbia University, Rare Book & Manuscript Library",
+   "citta": "New York",
+   "segnatura": "MS Or 30 - FOLIO/FLAT",
+   "datazione": "1348.",
+   "secolo": null,
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Uṣūl al-handasah wa-al-ḥisāb / ; Elements",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Elementi"
+     ],
+     "corrispondenza": "autore: «Euclid»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/ldpd_13604039_000/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS6485",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds6700",
+   "fonte": "ds",
+   "biblioteca": "Columbia University, Rare Book & Manuscript Library",
+   "citta": "New York",
+   "segnatura": "MS Or 49",
+   "datazione": "between 1830 and 1899?",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Kitāb Uṣū̄l al-handasah wa-al-ḥisāb / ; Elements",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Elementi"
+     ],
+     "corrispondenza": "autore: «Euclid»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/ldpd_15265560_000/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS6700",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds6517",
+   "fonte": "ds",
+   "biblioteca": "Columbia University, Rare Book & Manuscript Library",
+   "citta": "New York",
+   "segnatura": "MS Or 64",
+   "datazione": "1638.",
+   "secolo": null,
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Uṣūl al-handasah wa-al-ḥisāb. Fī bayān al-murabbaʻāt ; Elements",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Elementi"
+     ],
+     "corrispondenza": "autore: «Euclid»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/ldpd_13892533_000/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS6517",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds26207",
+   "fonte": "ds",
+   "biblioteca": "Columbia University, Rare Book & Manuscript Library",
+   "citta": "New York",
+   "segnatura": "MS Or 303 - FOLIO",
+   "datazione": "A.H. 1283 [1867",
+   "secolo": [
+    13,
+    19
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Kitāb al-Majisṭī ; Almagest",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Almagesto"
+     ],
+     "corrispondenza": "autore: «Ptolemy, active 2nd century»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/ldpd_18336812_000/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS26207",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds19056",
+   "fonte": "ds",
+   "biblioteca": "Columbia University, Rare Book & Manuscript Library",
+   "citta": "New York",
+   "segnatura": "MS X893 P95",
+   "datazione": "14-- (1400-1400)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ha-mavaṭim; melekhet kele ha-itsṭolvvi le-yediʻat matsav ha-galgal le-khol ʻet she-yirtsu / ; Maʻasʹe kele ha-habaṭah",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Ptolemy, active 2nd century»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/ldpd_14945021_000/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS19056",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds160",
+   "fonte": "ds",
+   "biblioteca": "Conception Abbey and Seminary",
+   "citta": "Conception (Missouri)",
+   "segnatura": "CA 35",
+   "datazione": "s. XIV; 1300-1399",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Meteorologica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Meteorologica"
+     ],
+     "corrispondenza": "autore: «Aristotle»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_CA35_15/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS160",
+   "licenza": null,
+   "immagini": null
   },
   {
    "id": "ec-fcc-0061",
@@ -176883,6 +177507,2340 @@
    "anteprima": "https://e-codices.ch/loris/fmb/fmb-cb-0186/fmb-cb-0186_001r.jp2/full/,150/0/default/jpg"
   },
   {
+   "id": "ds-ds26246",
+   "fonte": "ds",
+   "biblioteca": "Fordham University",
+   "citta": "New York",
+   "segnatura": "MS 01",
+   "datazione": "1475?; s. XV(4/4); 1475-1499 ; s. XV; 1400-1499 ; s. XV(2); 1450-1499",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la",
+    "de"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Verses ; De Officiis ; Document? ; Formula honestae vitae ; Marci Tulii ciceronis arpinatis consulisque romani ac oratoris maximi ad M.T.C. filium suum officiorum liber incipit.",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De officiis"
+     ],
+     "corrispondenza": "autore: «Marcus Tullius Cicero ; Martin of Braga»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/marcituliicicero00cice/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS26246",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds26241",
+   "fonte": "ds",
+   "biblioteca": "Fordham University",
+   "citta": "New York",
+   "segnatura": "MS 02",
+   "datazione": "s. XV; 1400-1499",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De Officiis",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De officiis"
+     ],
+     "corrispondenza": "autore: «Marcus Tullius Cicero»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/deofficiis00cice_1/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS26241",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds4351",
+   "fonte": "ds",
+   "biblioteca": "Free Library of Philadelphia",
+   "citta": "Philadelphia",
+   "segnatura": "Horace MS 1a",
+   "datazione": "1475-1499",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ars Poetica and Epistulae",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epistole",
+      "Ars poetica"
+     ],
+     "corrispondenza": "autore: «Horace»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/horace_ms_1a/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS4351",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds4352",
+   "fonte": "ds",
+   "biblioteca": "Free Library of Philadelphia",
+   "citta": "Philadelphia",
+   "segnatura": "Horace MS 1b",
+   "datazione": "1475-1499",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Laelius de Amicitia",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Laelius de amicitia"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius.»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/horace_ms_1b/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS4352",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds4353",
+   "fonte": "ds",
+   "biblioteca": "Free Library of Philadelphia",
+   "citta": "Philadelphia",
+   "segnatura": "Horace MS 2",
+   "datazione": "1475-1499",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ars Poetica (Art of Poetry); Carmen seculare; Epistolae (Epistles); Odes",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Odi",
+      "Epistole",
+      "Ars poetica"
+     ],
+     "corrispondenza": "autore: «Horace»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/horace_ms_2/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS4353",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds4369",
+   "fonte": "ds",
+   "biblioteca": "Free Library of Philadelphia",
+   "citta": "Philadelphia",
+   "segnatura": "Lewis E 2",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De consolatione philosophiae; De mirabilis mundi; Grammatical treatise ?; Unidentified theological treatise; Miscellany",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Albertus, Magnus, Saint, 1193?-1280 ; Boethius, -524»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/lewis_e_002/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS4369",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds4381",
+   "fonte": "ds",
+   "biblioteca": "Free Library of Philadelphia",
+   "citta": "Philadelphia",
+   "segnatura": "Lewis E 15",
+   "datazione": "1285-1299",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Organon and related texts",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Organon"
+     ],
+     "corrispondenza": "autore: «Aristotle»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/lewis_e_015/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS4381",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds4411",
+   "fonte": "ds",
+   "biblioteca": "Free Library of Philadelphia",
+   "citta": "Philadelphia",
+   "segnatura": "Lewis E 47",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Bible Commentary",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Jerome, Saint, d. 419 or 420 ; Seneca, Lucius Annaeus, approximately 4 B.C.-65 A.D.»"
+    },
+    {
+     "id": "girolamo",
+     "autore": "Girolamo",
+     "latino": "Hieronymus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «Jerome, Saint, d. 419 or 420 ; Seneca, Lucius Annaeus, approximately 4 B.C.-65 A.D.»"
+    },
+    {
+     "id": "bibbia",
+     "autore": "Bibbia",
+     "latino": "Biblia",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "titolo: «Bible Commentary»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/lewis_e_047/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS4411",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds4417",
+   "fonte": "ds",
+   "biblioteca": "Free Library of Philadelphia",
+   "citta": "Philadelphia",
+   "segnatura": "Lewis E 53",
+   "datazione": "1250-1280",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "it",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biography of Petrarch; Glosse de libris meteororum (Gloss on the Book of Meteors); Glosse de libris meteororum IV (Gloss on the Book of Meteors IV)",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…94 ; Breton, John le, -1275 ; Aristotle»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/lewis_e_053/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS4417",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds4424",
+   "fonte": "ds",
+   "biblioteca": "Free Library of Philadelphia",
+   "citta": "Philadelphia",
+   "segnatura": "Lewis E 66",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epistolae ad familiares (Letters to friends)",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epistulae ad familiares"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/lewis_e_066/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS4424",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds4428",
+   "fonte": "ds",
+   "biblioteca": "Free Library of Philadelphia",
+   "citta": "Philadelphia",
+   "segnatura": "Lewis E 71",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Excerpta orationum Demosthenis et Aeschini (Excerpts of the Orations of Demosthenes and Aeschines); Historia Romana (History of Rome)",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "titolo: «…Aeschines); Historia Romana (History of Rome)»"
+    },
+    {
+     "id": "eutropio",
+     "autore": "Eutropio",
+     "latino": "Eutropius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…area, approximately 329-379 ; Eutropius, active 4th century»"
+    },
+    {
+     "id": "demostene",
+     "autore": "Demostene",
+     "latino": "Demosthenes",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…(Excerpts of the Orations of Demosthenes and Aeschines); Historia Roma…»"
+    },
+    {
+     "id": "eschine",
+     "autore": "Eschine",
+     "latino": "Aeschines",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…e Orations of Demosthenes and Aeschines); Historia Romana (History of…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/lewis_e_071/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS4428",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds4493",
+   "fonte": "ds",
+   "biblioteca": "Free Library of Philadelphia",
+   "citta": "Philadelphia",
+   "segnatura": "Lewis E 139",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Excerpts from De viris illustribus (On Famous Men); Excerpts from the Supplementum chronicarum; Excerpts from the Vita Henrici Quinti (Life of Henry V); Excerpts from works on Venice; Rumores e venetiis allati...",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Titus Livius of Forli ; Boccaccio, Giovann…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/lewis_e_139/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS4493",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds4501",
+   "fonte": "ds",
+   "biblioteca": "Free Library of Philadelphia",
+   "citta": "Philadelphia",
+   "segnatura": "Lewis E 150",
+   "datazione": "1460-1470",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Periochae",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Livy»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/lewis_e_150/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS4501",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds4537",
+   "fonte": "ds",
+   "biblioteca": "Free Library of Philadelphia",
+   "citta": "Philadelphia",
+   "segnatura": "Lewis E 190",
+   "datazione": "1400-1415",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Complementum in partem III Summae S. Thomae de Aquino (Complement to the third part of the Summae of St. Thomas Aquinas)",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…century ; Reynoldus Romanus ; Priscian, active approximately 500-530»"
+    },
+    {
+     "id": "tommaso-aquino",
+     "autore": "Tommaso d'Aquino",
+     "latino": "Thomas de Aquino",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "titolo: «…entum in partem III Summae S. Thomae de Aquino (Complement to the third part…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/lewis_e_190/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS4537",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds4540",
+   "fonte": "ds",
+   "biblioteca": "Free Library of Philadelphia",
+   "citta": "Philadelphia",
+   "segnatura": "Lewis E 195",
+   "datazione": "1400-1499 ; 1500-1599",
+   "secolo": [
+    14,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Vitae XII caesarium (Lives of the twelve caesars), fragment and Book of Hours leaf",
+   "autori": [
+    {
+     "id": "svetonio",
+     "autore": "Svetonio",
+     "latino": "Suetonius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Suetonius, approximately 69-approximately 122»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/lewis_e_195/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS4540",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds4541",
+   "fonte": "ds",
+   "biblioteca": "Free Library of Philadelphia",
+   "citta": "Philadelphia",
+   "segnatura": "Lewis E 196",
+   "datazione": "1190-1210",
+   "secolo": [
+    12,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Comediae",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Terence»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/lewis_e_196/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS4541",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds4543",
+   "fonte": "ds",
+   "biblioteca": "Free Library of Philadelphia",
+   "citta": "Philadelphia",
+   "segnatura": "Lewis E 198",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Virgil»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/lewis_e_198/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS4543",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10608",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Gr 17",
+   "datazione": "149-",
+   "secolo": [
+    2,
+    2
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Works of Aristotle, Theophrastus, Ammonius, Porphyrius, and Pseudo-Galen ; Works",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristotle»"
+    },
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Works of Aristotle, Theophrastus, Ammonius, Porphyrius, and Pseudo-Galen ; Works»"
+    },
+    {
+     "id": "porfirio",
+     "autore": "Porfirio",
+     "latino": "Porphyrius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Works of Aristotle, Theophrastus, Ammonius, Porphyrius, and Pseudo-Galen ; Works»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:4879466:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10608",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10938",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Gr 20",
+   "datazione": "1500-1525",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Works and days; The shield of Heracles ; Theogony ; Works",
+   "autori": [
+    {
+     "id": "esiodo",
+     "autore": "Esiodo",
+     "latino": "Hesiodus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Opere e giorni",
+      "Teogonia",
+      "Scudo di Eracle"
+     ],
+     "corrispondenza": "autore: «Hesiod»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:3290521:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10938",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10508",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 3",
+   "datazione": "ca. 1492-ca. 1516",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ad praetantissimum patrem et meritissimum Rhavenatem antistitem Philiam Roverellam Angeli Callimachi Siculi; in libellum de oratione",
+   "autori": [
+    {
+     "id": "callimaco",
+     "autore": "Callimaco",
+     "latino": "Callimachus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Callimachus, Angelus, de Monteviridi, active 15th century»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:22565894:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10508",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds11172",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 12",
+   "datazione": "1442.",
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Expositio in artem veterem Porphyrii et Aristotelis",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Expositio in artem veterem Porphyrii et Aristotelis»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:4178300:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS11172",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds11118",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 37",
+   "datazione": "ca. 1425-ca. 1450",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Rhetorica ad Herennium",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Rhetorica ad Herennium"
+     ],
+     "corrispondenza": "titolo: «Rhetorica ad Herennium»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:4207965:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS11118",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds11122",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 38",
+   "datazione": "ca. 1275-ca. 1325",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Organon, or logical treatises ; Works",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Organon"
+     ],
+     "corrispondenza": "autore: «Aristotle»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:1086278:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS11122",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds11102",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 40",
+   "datazione": "1462 July 23.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Iunii Iuvenalis Aquinatis poete satyrici ; Works",
+   "autori": [
+    {
+     "id": "giovenale",
+     "autore": "Giovenale",
+     "latino": "Iuvenalis",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Juvenal»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:1202088:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS11102",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds11100",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 42",
+   "datazione": "before 1471",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Works",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Ovid, 43 B.C.-17 A.D. or 18 A.D.»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:3593979:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS11100",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10997",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 43",
+   "datazione": "between 1475 and 1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Nobilissimi Plauti poetae comici prima comedia Amphitrio ; Works",
+   "autori": [
+    {
+     "id": "plauto",
+     "autore": "Plauto",
+     "latino": "Plautus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Plautus, Titus Maccius»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:881140:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10997",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds11099",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 44",
+   "datazione": "between 1125 and 1150",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ars gramatici caesariensis ; Institutio de arte grammatica",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "autore: «Priscian, active approximately 500-530»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:16092339:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS11099",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds11094",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 45",
+   "datazione": "between 1450 and 1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Comoediae ; Works",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commedie"
+     ],
+     "corrispondenza": "autore: «Terence»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:4107319:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS11094",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds11098",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 46",
+   "datazione": "ca. 1460",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Carmina ; Eligiae",
+   "autori": [
+    {
+     "id": "tibullo",
+     "autore": "Tibullo",
+     "latino": "Tibullus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Tibullus»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:881141:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS11098",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10476",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 49",
+   "datazione": "between 1425 and 1450",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Magni oratoris Guarini Veronensis in Plutarchum de liberis educandis ; De liberis educandis",
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [
+      "De liberis educandis"
+     ],
+     "corrispondenza": "titolo: «…rini Veronensis in Plutarchum de liberis educandis ; De liberis educandis»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:11350559:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10476",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds11077",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 51",
+   "datazione": "between 1300 and 1350",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Notabilia Boecii de consolatione ; De consolatione philosophiae",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Boethius, -524»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:4211587:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS11077",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds11071",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 119",
+   "datazione": "between 1250 and 1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Physica ; Physics",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Fisica"
+     ],
+     "corrispondenza": "autore: «Aristotle»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:34903076:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS11071",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10492",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 136",
+   "datazione": "1471.",
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Iunii Iuvenalis Aquinatis satyricorum poetarum facetissimi et gravissimi libri satyrarum principium foeliciter ; Saturae",
+   "autori": [
+    {
+     "id": "giovenale",
+     "autore": "Giovenale",
+     "latino": "Iuvenalis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Satire"
+     ],
+     "corrispondenza": "autore: «Juvenal»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:4249630:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10492",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10493",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 137",
+   "datazione": "between 1400 and 1425",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Nec fonte labra prolui caballino ; Works",
+   "autori": [
+    {
+     "id": "persio",
+     "autore": "Persio",
+     "latino": "Persius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Persius»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:4262989:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10493",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10494",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 138",
+   "datazione": "between 1475 and 1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Auli persii vulterani vel arentini secundum aliquos; Satyrarum liber incipit ; Works",
+   "autori": [
+    {
+     "id": "persio",
+     "autore": "Persio",
+     "latino": "Persius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Persius»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:4260895:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10494",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds11046",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 139",
+   "datazione": "between 1450 and 1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Nec labra fonte prolui caballino ; Works",
+   "autori": [
+    {
+     "id": "persio",
+     "autore": "Persio",
+     "latino": "Persius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Persius»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:4312713:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS11046",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds11023",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 155",
+   "datazione": "ca. 1475",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Auli Flacci Persii; Poete satyrarum opus ; Works",
+   "autori": [
+    {
+     "id": "persio",
+     "autore": "Persio",
+     "latino": "Persius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Persius»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:886637:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS11023",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds11003",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 174",
+   "datazione": "between 1400 and 1450",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Etsi negotiis familiaribus impediti vix satis ocium studio suppeditare possiumus ; Rhetorica ad Herennium",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Rhetorica ad Herennium"
+     ],
+     "corrispondenza": "titolo: «…tudio suppeditare possiumus ; Rhetorica ad Herennium»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:4433940:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS11003",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds11011",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 176",
+   "datazione": "between 1475 and 1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Marci Tullii Ciceronis tusculanarum questionum ; Tusculanae disputationes",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tusculanae disputationes"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:886644:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS11011",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds11008",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 177",
+   "datazione": "ca. 1450",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "M. T. Ciceronis officiorum ad Marcum Ciceronem filium ; De officiis",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De officiis"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:886645:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS11008",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds11007",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 178",
+   "datazione": "between 1400 and 1425",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Anicii Severini Boecii, viri consolatorii de philosophica (sic) consolatione ; De consolatione philosophiae",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Boethius, -524»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:4645502:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS11007",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds11006",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 179",
+   "datazione": "between 1350 and 1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Boetii de consolatione ; De consolatione philosophiae",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Boethius, -524»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:4622125:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS11006",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10506",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 266",
+   "datazione": "ca. 1440",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Omnis ars et omnis doctrina ; Nicomachean ethics",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Etica Nicomachea"
+     ],
+     "corrispondenza": "autore: «Aristotle»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:887760:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10506",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10840",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 270",
+   "datazione": "1467 Mar. 26.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Corduba me genuit ; Pharsalia",
+   "autori": [
+    {
+     "id": "lucano",
+     "autore": "Lucano",
+     "latino": "Lucanus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Pharsalia"
+     ],
+     "corrispondenza": "autore: «Lucan, 39-65»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:4686811:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10840",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10837",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 274",
+   "datazione": "1455 Sept. 14.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectaneorum liber de mirabilibus mundi ; Polyhistor",
+   "autori": [
+    {
+     "id": "solino",
+     "autore": "Solino",
+     "latino": "Solinus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Collectanea rerum memorabilium"
+     ],
+     "corrispondenza": "autore: «Solinus, C. Julius, active 3rd century»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:4645784:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10837",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10808",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 286",
+   "datazione": "ca. 1450",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Omnis ars omnisque doctrina ; Nicomachean ethics",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Etica Nicomachea"
+     ],
+     "corrispondenza": "autore: «Aristotle»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:4547507:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10808",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds11180",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 336",
+   "datazione": "between 1075 and 1100",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Satiricus liber Persii ; Works",
+   "autori": [
+    {
+     "id": "persio",
+     "autore": "Persio",
+     "latino": "Persius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Persius»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:13002475:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS11180",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds11219",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 375",
+   "datazione": "ca. 1465-1491",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ephemeridos belli Troiani ; Dictys Cretensis Ephemeris Belli Troiani",
+   "autori": [
+    {
+     "id": "ditti",
+     "autore": "Ditti Cretese",
+     "latino": "Dictys Cretensis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ephemeris belli Troiani"
+     ],
+     "corrispondenza": "titolo: «Ephemeridos belli Troiani ; Dictys Cretensis Ephemeris Belli Troiani»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:11815347:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS11219",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10623",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Richardson 15",
+   "datazione": "1545-1547.",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Toxaris ; Dialogi",
+   "autori": [
+    {
+     "id": "luciano",
+     "autore": "Luciano di Samosata",
+     "latino": "Lucianus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Dialoghi"
+     ],
+     "corrispondenza": "autore: «Lucian, of Samosata»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:4319661:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10623",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10452",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Richardson 17",
+   "datazione": "ca. 1490",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De bello Catilinae; De bello Iugurthino",
+   "autori": [
+    {
+     "id": "sallustio",
+     "autore": "Sallustio",
+     "latino": "Sallustius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Bellum Iugurthinum"
+     ],
+     "corrispondenza": "autore: «Sallust, 86 B.C.-34 B.C.»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:939443:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10452",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10772",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Richardson 18",
+   "datazione": "ca. 1490",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De officiis",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De officiis"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:939444:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10772",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10767",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Richardson 20",
+   "datazione": "ca. 1150",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Artis Prisciani viri eloquentissimi grammatici Cesariensis ; Institutio de arte grammatica",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "autore: «Priscian, active approximately 500-530»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:939446:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10767",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10759",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Richardson 32",
+   "datazione": "ca. 1415-1430",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Les décades ; Ab urbe condita",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita",
+      "Deche"
+     ],
+     "corrispondenza": "autore: «Livy»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:2641171:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10759",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10459",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Richardson 38",
+   "datazione": "ca. 1460-1470, ca. 1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Eclogues, Georgics and the Aeneid ; Works",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eneide",
+      "Georgiche",
+      "Bucoliche"
+     ],
+     "corrispondenza": "autore: «Virgil»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:26540598:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10459",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10949",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Typ 2",
+   "datazione": "ca. 1450",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Suetonii Tranquillini de vita et moribus duodecim principum Romanorum libri duodecim ; De vita Caesarum",
+   "autori": [
+    {
+     "id": "svetonio",
+     "autore": "Svetonio",
+     "latino": "Suetonius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Vite dei Cesari"
+     ],
+     "corrispondenza": "autore: «Suetonius, approximately 69-approximately 122»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:787258:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10949",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10951",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Typ 5",
+   "datazione": "ca. 1400-1415",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Cosmographia ; Geographia",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Geografia"
+     ],
+     "corrispondenza": "autore: «Ptolemy, active 2nd century»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:26540629:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10951",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10948",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Typ 7",
+   "datazione": "1469 Feb. 7.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Comentum Macrobii Ambrosii in somnium Scipionis",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Somnium Scipionis"
+     ],
+     "corrispondenza": "titolo: «Comentum Macrobii Ambrosii in somnium Scipionis»"
+    },
+    {
+     "id": "macrobio",
+     "autore": "Macrobio",
+     "latino": "Macrobius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commento al Sogno di Scipione"
+     ],
+     "corrispondenza": "autore: «Macrobius, Ambrosius Aurelius Theodosius»"
+    },
+    {
+     "id": "ambrogio",
+     "autore": "Ambrogio",
+     "latino": "Ambrosius",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "titolo: «Comentum Macrobii Ambrosii in somnium Scipionis»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:26540648:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10948",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10947",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Typ 8",
+   "datazione": "ca. 1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Heroides",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eroidi"
+     ],
+     "corrispondenza": "autore: «Ovid, 43 B.C.-17 A.D. or 18 A.D.»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:26560082:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10947",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10535",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Typ 69",
+   "datazione": "ca. 1470",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Le quistioni Tusculanae ; Tusculanae disputationes",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tusculanae disputationes"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:786700:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10535",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10554",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Typ 123",
+   "datazione": "before 1508",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Justini historici in Pompeii Trogi historias liber ; Historiae Philippicae",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Filippiche"
+     ],
+     "corrispondenza": "titolo: «Justini historici in Pompeii Trogi historias liber ; Historiae Philippicae»"
+    },
+    {
+     "id": "giustino",
+     "autore": "Giustino",
+     "latino": "Iustinus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epitoma historiarum Philippicarum"
+     ],
+     "corrispondenza": "autore: «Justinus, Marcus Junianus»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:787012:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10554",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10562",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Typ 137",
+   "datazione": "ca. 1480",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Lystoria de Alexandro magno figlio di Philippo Re di Macedonia; scripta da Quinto Curcio Ruffo eloquentissimo e traduta in vulgare fidelmente da P. Candido ; Historia Alexandri Magni",
+   "autori": [
+    {
+     "id": "curzio-rufo",
+     "autore": "Curzio Rufo",
+     "latino": "Curtius Rufus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Historiae Alexandri Magni"
+     ],
+     "corrispondenza": "autore: «Curtius Rufus, Quintus»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:787019:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10562",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10579",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Typ 144",
+   "datazione": "between 1535 and 1550",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Bios kai monarchia Oktaouiou Kaisaros; ek tōn tēs Diōnos Rōmaïkēs historias ; Monarchia Oktaouiou Kaisaros Augoustou : ek tōn tēs Diōnos Rōmaïkēs historias ; Roman history",
+   "autori": [
+    {
+     "id": "cassio-dione",
+     "autore": "Cassio Dione",
+     "latino": "Cassius Dio",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Cassius Dio Cocceianus»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:3535523:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10579",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10570",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Typ 153",
+   "datazione": "ca. 1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De officiis and other works",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De officiis"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:787074:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10570",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10589",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Typ 176",
+   "datazione": "ca. 1475",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Caii Claudiani nobilissimi poetae Florentini de Laudibus Stiliconis liber primus ; Works",
+   "autori": [
+    {
+     "id": "claudiano",
+     "autore": "Claudiano",
+     "latino": "Claudianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Claudianus, Claudius»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:795188:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10589",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10592",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Typ 181",
+   "datazione": "ca. 1480",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De bello Catelinario; De bello Jugurtino",
+   "autori": [
+    {
+     "id": "sallustio",
+     "autore": "Sallustio",
+     "latino": "Sallustius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Sallust, 86 B.C.-34 B.C.»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:795192:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10592",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds11129",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Typ 322",
+   "datazione": "ca. 1495",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Satirae ; Works",
+   "autori": [
+    {
+     "id": "giovenale",
+     "autore": "Giovenale",
+     "latino": "Iuvenalis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Satire"
+     ],
+     "corrispondenza": "autore: «Juvenal»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:26540639:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS11129",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10827",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Typ 425",
+   "datazione": "1463.",
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Publii Terentii Afri clarissimi poetae comici liber ; Works",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Terence»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:4627481:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10827",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds11109",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Typ 447",
+   "datazione": "1460.",
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De agricultura ; De re rustica",
+   "autori": [
+    {
+     "id": "palladio",
+     "autore": "Palladio",
+     "latino": "Palladius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Opus agriculturae"
+     ],
+     "corrispondenza": "autore: «Palladius, Rutilius Taurus Aemilianus»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:845099:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS11109",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds11087",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Typ 479",
+   "datazione": "ca. 1380",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aesop's fables and other secular works in Italian ; Aesop's fables",
+   "autori": [
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "titolo: «Aesop's fables and other secular works in Italian ; Aesop's fables»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:1202246:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS11087",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds10552",
+   "fonte": "ds",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Typ 486",
+   "datazione": "ca. 1460",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De Tiberio Cesare ; De vita Caesarum",
+   "autori": [
+    {
+     "id": "svetonio",
+     "autore": "Svetonio",
+     "latino": "Suetonius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Vite dei Cesari"
+     ],
+     "corrispondenza": "autore: «Suetonius, approximately 69-approximately 122»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:864058:MANIFEST:2",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS10552",
+   "licenza": null,
+   "immagini": null
+  },
+  {
    "id": "hd-p_g_51",
    "fonte": "heidelberg",
    "biblioteca": "Heidelberger Papyrussammlung",
@@ -177328,6 +180286,315 @@
    ],
    "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/p_g_3073/manifest.json",
    "pagina": "https://digi.ub.uni-heidelberg.de/diglit/p_g_3073",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds523",
+   "fonte": "ds",
+   "biblioteca": "Indiana University, Lilly Library",
+   "citta": "Bloomington",
+   "segnatura": "Medieval and Renaissance 14",
+   "datazione": "s. XII/XIII; 1190-1210",
+   "secolo": [
+    12,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Describit iter suum ad brundisi, sermo Vus ; Satires",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Horace»"
+    },
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "collaboratori: «…ed from use as a pastedown in Boethius, De consolatione philosophiae…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_MedievalandRenaissance14_40/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS523",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds564",
+   "fonte": "ds",
+   "biblioteca": "Indiana University, Lilly Library",
+   "citta": "Bloomington",
+   "segnatura": "Poole 11",
+   "datazione": "s. XV(3/4); 1450-1475",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Chomincia lo libro di lamore di troiolo & da chriseida, Capitulum primum, ; Il Filostrato ; The romance of Troilus and Criseida",
+   "autori": [
+    {
+     "id": "filostrato",
+     "autore": "Filostrato",
+     "latino": "Philostratus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…seida, Capitulum primum, ; Il Filostrato ; The romance of Troilus and…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_Poole11_40/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS564",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds571",
+   "fonte": "ds",
+   "biblioteca": "Indiana University, Lilly Library",
+   "citta": "Bloomington",
+   "segnatura": "Poole 13",
+   "datazione": "s. XV(3/4); 1450-1475",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epitome ; Epitome historiarum Trogi Pompeii",
+   "autori": [
+    {
+     "id": "giustino",
+     "autore": "Giustino",
+     "latino": "Iustinus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epitoma historiarum Philippicarum"
+     ],
+     "corrispondenza": "autore: «Justinus»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_Poole13_40/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS571",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds545",
+   "fonte": "ds",
+   "biblioteca": "Indiana University, Lilly Library",
+   "citta": "Bloomington",
+   "segnatura": "Poole 16",
+   "datazione": "s. XIV(2/4); 1325-1350 ; s. XIII/XIV; 1290-1310",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Breviary ; De intellectu ; Missale estivalis quem comparavit Johannes laicus de rastorf quondam mrg’ coq’ne felicis memorie qui obit in vigilia s. margarethe ac cuius anniversarium datur dominis xxx solidi annuatim ad caritatem. ; Summer Missale",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristotle»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_Poole16_40/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS545",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds578",
+   "fonte": "ds",
+   "biblioteca": "Indiana University, Lilly Library",
+   "citta": "Bloomington",
+   "segnatura": "Poole 24",
+   "datazione": "s. XV(3/4); 1450-1475",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Facta et dicta memorabilia ; Sayings",
+   "autori": [
+    {
+     "id": "valerio-massimo",
+     "autore": "Valerio Massimo",
+     "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Facta et dicta memorabilia"
+     ],
+     "corrispondenza": "autore: «Valerius Maximus»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_Poole24_40/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS578",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds532",
+   "fonte": "ds",
+   "biblioteca": "Indiana University, Lilly Library",
+   "citta": "Bloomington",
+   "segnatura": "Ricketts 215",
+   "datazione": "s. XIII(4/4); 1275-1299",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "de memoria et reminiscentia ; de somno et vigilia ; Explicit liber de memoria & reminiscentia. Incipit liber de sompno & vigilia",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristotle»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_Ricketts215_40/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS532",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds569",
+   "fonte": "ds",
+   "biblioteca": "Indiana University, Lilly Library",
+   "citta": "Bloomington",
+   "segnatura": "Ricketts 222",
+   "datazione": "s. XV(3/4); 1450-1475",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De finibus ; De legibus ; Tusculanae disputationes",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De legibus",
+      "De finibus",
+      "Tusculanae disputationes"
+     ],
+     "corrispondenza": "autore: «Cicero»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_Ricketts222_40/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS569",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds570",
+   "fonte": "ds",
+   "biblioteca": "Indiana University, Lilly Library",
+   "citta": "Bloomington",
+   "segnatura": "Ricketts 225",
+   "datazione": "s. XV(3/4); 1450-1475",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De Vita Imperatorum ; Familie nobiles Romanorum, Familie eorundem plebeie ; List of noble families of Rome ; Lives of the Caesars",
+   "autori": [
+    {
+     "id": "svetonio",
+     "autore": "Svetonio",
+     "latino": "Suetonius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Vite dei Cesari"
+     ],
+     "corrispondenza": "autore: «Suetonius»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_Ricketts225_40/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS570",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds598",
+   "fonte": "ds",
+   "biblioteca": "Indiana University, Lilly Library",
+   "citta": "Bloomington",
+   "segnatura": "Ricketts 233",
+   "datazione": "s. XVI(med); 1540-1560",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Carmen de nuptiis Pauli Sfortiae et Lucretiae Piae ; DE NUPTIIS PAULLI SFORTIAE ET LU/ CRETIAE PIAE/ ACHILLIS STATII LUSITANI/ CARMEN ; Wedding poem",
+   "autori": [
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…ET LU/ CRETIAE PIAE/ ACHILLIS STATII LUSITANI/ CARMEN ; Wedding po…»"
+    },
+    {
+     "id": "marziano-capella",
+     "autore": "Marziano Capella",
+     "latino": "Martianus Capella",
+     "categoria": "classico-latino",
+     "opere": [
+      "De nuptiis Philologiae et Mercurii"
+     ],
+     "corrispondenza": "titolo: «Carmen de nuptiis Pauli Sfortiae et Lucretiae P…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_Ricketts233_40/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS598",
    "licenza": null,
    "immagini": null
   },
@@ -177968,6 +181235,333 @@
    "immagini": null
   },
   {
+   "id": "ds-ds278",
+   "fonte": "ds",
+   "biblioteca": "Nelson-Atkins Museum of Art",
+   "citta": "Kansas City",
+   "segnatura": "KG 07",
+   "datazione": "1482, August 5; s. XV; 1450-1499",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Horatius Flaccus, Quintus, Opera, with Commentary by Christopher Landinus (Incunable Leaf)",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Horatius Flaccus, Quintus, Opera, with Commentary by Christopher Landinus (Incunable Leaf)»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_KG07_46/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS278",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds279",
+   "fonte": "ds",
+   "biblioteca": "Nelson-Atkins Museum of Art",
+   "citta": "Kansas City",
+   "segnatura": "KG 08",
+   "datazione": "1482, August 5; s. XV; 1450-1499",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Horatius Flaccus, Quintus, Opera, with Commentary by Christophorus Landinus",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Horatius Flaccus, Quintus, Opera, with Commentary by Christophorus Landinus»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_KG08_46/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS279",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds17916",
+   "fonte": "ds",
+   "biblioteca": "Newberry Library",
+   "citta": "Chicago",
+   "segnatura": "VAULT Ayer 6 .P9 M5 1518",
+   "datazione": "1518?",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Manuscript maps derived from an early 16th-century edition of Ptolemy's Geographia ; Geographia",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Geografia"
+     ],
+     "corrispondenza": "autore: «Ptolemy, active 2nd century»"
+    }
+   ],
+   "manifest": "https://collections.newberry.org/IIIF3/Presentation/Manifest/2KXJ8ZF908T7",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS17916",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds17810",
+   "fonte": "ds",
+   "biblioteca": "Newberry Library",
+   "citta": "Chicago",
+   "segnatura": "VAULT Ayer MS 740",
+   "datazione": "between 1425 and 1475",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Cosmographia ; Geographia",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Geografia"
+     ],
+     "corrispondenza": "autore: «Ptolemy, active 2nd century»"
+    }
+   ],
+   "manifest": "https://collections.newberry.org/IIIF3/Presentation/Manifest/2KXJ8ZSQXA9CR",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS17810",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds17890",
+   "fonte": "ds",
+   "biblioteca": "Newberry Library",
+   "citta": "Chicago",
+   "segnatura": "VAULT Case MS 4A 32 no. 2",
+   "datazione": "1578",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Parer di Lodouico Casteluetro sopra una comedia di Aristophano, & sopra ciascuna di Plauto",
+   "autori": [
+    {
+     "id": "plauto",
+     "autore": "Plauto",
+     "latino": "Plautus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Parer di Lodouico Casteluetro sopra una comedia di Aristophano, & sopra ciascuna di Plauto»"
+    }
+   ],
+   "manifest": "https://collections.newberry.org/IIIF3/Presentation/Manifest/2KXJ8ZPBTHPK",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS17890",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds17957",
+   "fonte": "ds",
+   "biblioteca": "Newberry Library",
+   "citta": "Chicago",
+   "segnatura": "VAULT Case MS 6A 29",
+   "datazione": "between 1500 and 1599",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Dell' Iliade d'Homero lib. p⁰[-vij] in lingua toscana composto [i.e. tradotto] p Ms Girmo Baccelli ; Iliad",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://collections.newberry.org/IIIF3/Presentation/Manifest/2KXJ8Z9UZMXO",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS17957",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds18071",
+   "fonte": "ds",
+   "biblioteca": "Newberry Library",
+   "citta": "Chicago",
+   "segnatura": "VAULT Case MS 95.5",
+   "datazione": "between 1450 and 1499",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Bucolic, Georgics, Aeneid] /",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eneide",
+      "Georgiche"
+     ],
+     "corrispondenza": "autore: «Virgil»"
+    }
+   ],
+   "manifest": "https://collections.newberry.org/IIIF3/Presentation/Manifest/2KXJ8Z9UZ2YI",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS18071",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds18126",
+   "fonte": "ds",
+   "biblioteca": "Newberry Library",
+   "citta": "Chicago",
+   "segnatura": "VAULT folio Case MS 9",
+   "datazione": "between 1050 and 1150",
+   "secolo": [
+    11,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Boethius De musica, etc. ; De institutione musica",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De institutione musica"
+     ],
+     "corrispondenza": "autore: «Boethius, -524»"
+    }
+   ],
+   "manifest": "https://collections.newberry.org/IIIF3/Presentation/Manifest/2KXJ8ZPBTLR8",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS18126",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds18152",
+   "fonte": "ds",
+   "biblioteca": "Newberry Library",
+   "citta": "Chicago",
+   "segnatura": "VAULT folio Case MS 23",
+   "datazione": "between 1300 and 1350",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aristotle, Physica, De caelo et Mundo, Metaphysica, Parva naturalis, etc.",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica",
+      "Fisica",
+      "De caelo"
+     ],
+     "corrispondenza": "autore: «Aristotle»"
+    }
+   ],
+   "manifest": "https://collections.newberry.org/IIIF3/Presentation/Manifest/2KXJ8ZPBT0IO",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS18152",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds30522",
+   "fonte": "ds",
+   "biblioteca": "Ohio University Libraries",
+   "citta": "Athens (Ohio)",
+   "segnatura": "ege-39",
+   "datazione": "1400s",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ege leaf 39: History of Rome, Italy, 1400s",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "autore: «Livy»"
+    }
+   ],
+   "manifest": "https://media.library.ohio.edu/iiif/2/p15808coll19:147/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS30522",
+   "licenza": null,
+   "immagini": null
+  },
+  {
    "id": "hd-p_g_219",
    "fonte": "heidelberg",
    "biblioteca": "P. Heid. Inv. G. 219 (G.A. Gerhard",
@@ -178174,6 +181768,299 @@
    ],
    "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/p_g_4011/manifest.json",
    "pagina": "https://digi.ub.uni-heidelberg.de/diglit/p_g_4011",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds2220",
+   "fonte": "ds",
+   "biblioteca": "Princeton University Library",
+   "citta": "Princeton",
+   "segnatura": "Garrett MS. 105",
+   "datazione": "1450?",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Diodori Siculi Historiarum Priscarum / ; Bibliotheca historica",
+   "autori": [
+    {
+     "id": "diodoro",
+     "autore": "Diodoro Siculo",
+     "latino": "Diodorus Siculus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Biblioteca storica"
+     ],
+     "corrispondenza": "autore: «Diodorus, Siculus»"
+    }
+   ],
+   "manifest": "https://figgy.princeton.edu/concern/scanned_resources/746d3629-62c9-4fa1-adb7-28fa73b0ef6d/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS2220",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds2221",
+   "fonte": "ds",
+   "biblioteca": "Princeton University Library",
+   "citta": "Princeton",
+   "segnatura": "Garrett MS. 116",
+   "datazione": "between 1100 and 1200",
+   "secolo": [
+    11,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De Consolatione Philosophie / ; De consolatione philosophiae",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Boethius, -524»"
+    }
+   ],
+   "manifest": "https://figgy.princeton.edu/concern/scanned_resources/fe31353f-2754-4d85-ac78-0f114becf487/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS2221",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds29093",
+   "fonte": "ds",
+   "biblioteca": "Princeton University Library",
+   "citta": "Princeton",
+   "segnatura": "Islamic Manuscripts New Series no. 1532",
+   "datazione": "1651",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Kitāb al-ʻIlal wa-al-aʻrāḍ ... [etc. ; Works",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galen»"
+    }
+   ],
+   "manifest": "https://figgy.princeton.edu/concern/scanned_resources/edc2c81f-1f47-441e-85a4-bac160187f28/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS29093",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds2230",
+   "fonte": "ds",
+   "biblioteca": "Princeton University Library",
+   "citta": "Princeton",
+   "segnatura": "Kane MS. 50",
+   "datazione": "between 1200 and 1400",
+   "secolo": [
+    12,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Institutionum Arithmeticorum / ; De institutione arithmetica",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De institutione arithmetica"
+     ],
+     "corrispondenza": "autore: «Boethius, -524»"
+    }
+   ],
+   "manifest": "https://figgy.princeton.edu/concern/scanned_resources/7fdf02d4-5aab-40f0-ab50-4d3a523688e0/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS2230",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds2234",
+   "fonte": "ds",
+   "biblioteca": "Princeton University Library",
+   "citta": "Princeton",
+   "segnatura": "Princeton MS. 178",
+   "datazione": "1436?",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ouidius de remediis amoris ... [etc",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Ouidius de remediis amoris ... [etc»"
+    }
+   ],
+   "manifest": "https://figgy.princeton.edu/concern/scanned_resources/f5f7a6ae-4ccb-4621-957f-041d9d399693/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS2234",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds16470",
+   "fonte": "ds",
+   "biblioteca": "Rochester Institute of Technology, Cary Graphic Arts Collection",
+   "citta": "Rochester",
+   "segnatura": "PORTFOLIO BOX 2-39",
+   "datazione": "ca. 1460",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ab Urbe Condita",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "autore: «Titus Livius»"
+    }
+   ],
+   "manifest": "https://digitalcollections.rit.edu/luna/servlet/iiif/m/RIT~1~1~75~2456/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS16470",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds468",
+   "fonte": "ds",
+   "biblioteca": "Rutgers University Libraries",
+   "citta": "New Brunswick (New Jersey)",
+   "segnatura": "MC 1220:04",
+   "datazione": "s. XV(3/4); 1450-1475",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De finibus",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De finibus"
+     ],
+     "corrispondenza": "autore: «Cicero»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_MC122004_6/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS468",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds469",
+   "fonte": "ds",
+   "biblioteca": "Rutgers University Libraries",
+   "citta": "New Brunswick (New Jersey)",
+   "segnatura": "MC 1220:05",
+   "datazione": "s. XV(med); 1440-1460",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Hecyra",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Hecyra"
+     ],
+     "corrispondenza": "autore: «Terence»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_MC122005_6/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS469",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds470",
+   "fonte": "ds",
+   "biblioteca": "Rutgers University Libraries",
+   "citta": "New Brunswick (New Jersey)",
+   "segnatura": "MC 1220:07",
+   "datazione": "s. XV(3/4); 1450-1475",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ab urbe condita",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "autore: «Livy»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_MC122007_6/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS470",
    "licenza": null,
    "immagini": null
   },
@@ -190431,6 +194318,724 @@
    "licenza": "CC BY-NC 4.0",
    "immagini": null,
    "anteprima": "https://e-codices.ch/loris/sbb/sbb-C0014/sbb-C0014_001r.jp2/full/,150/0/default/jpg"
+  },
+  {
+   "id": "ds-ds9995",
+   "fonte": "ds",
+   "biblioteca": "The Huntington Library",
+   "citta": "San Marino (California)",
+   "segnatura": "86438a",
+   "datazione": "between 1485 and 1499",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Selections from De re rustica ; De re rustica",
+   "autori": [
+    {
+     "id": "palladio",
+     "autore": "Palladio",
+     "latino": "Palladius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Opus agriculturae"
+     ],
+     "corrispondenza": "autore: «Palladius, Rutilius Taurus Aemilianus»"
+    }
+   ],
+   "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:52863/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS9995",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds9996",
+   "fonte": "ds",
+   "biblioteca": "The Huntington Library",
+   "citta": "San Marino (California)",
+   "segnatura": "87637a",
+   "datazione": "between 1485 and 1499",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Selections from Cicero, Scriptores historiae Augustae and Petrarch",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Selections from Cicero, Scriptores historiae Augustae and Petrarch»"
+    },
+    {
+     "id": "historia-augusta",
+     "autore": "Historia Augusta",
+     "latino": "Historia Augusta",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Selections from Cicero, Scriptores historiae Augustae and Petrarch»"
+    }
+   ],
+   "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:52800/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS9996",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds9804",
+   "fonte": "ds",
+   "biblioteca": "The Huntington Library",
+   "citta": "San Marino (California)",
+   "segnatura": "mssEL 9 H 11",
+   "datazione": "between 1125 and 1150",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Prisciani grammatici viri disertissimi apocrisarii cesariensis urbis Rome constantinopolitane liber primus de arte grammatica incipit ; Institutio de arte grammatica",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "autore: «Priscian, active approximately 500-530»"
+    }
+   ],
+   "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:49275/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS9804",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds9810",
+   "fonte": "ds",
+   "biblioteca": "The Huntington Library",
+   "citta": "San Marino (California)",
+   "segnatura": "mssEL 34 B 6",
+   "datazione": "15th century (1400-1499)",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Satires by Persius and Juvenal",
+   "autori": [
+    {
+     "id": "persio",
+     "autore": "Persio",
+     "latino": "Persius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Satire"
+     ],
+     "corrispondenza": "titolo: «Satires by Persius and Juvenal»"
+    },
+    {
+     "id": "giovenale",
+     "autore": "Giovenale",
+     "latino": "Iuvenalis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Satire"
+     ],
+     "corrispondenza": "titolo: «Satires by Persius and Juvenal»"
+    }
+   ],
+   "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:49289/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS9810",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds9851",
+   "fonte": "ds",
+   "biblioteca": "The Huntington Library",
+   "citta": "San Marino (California)",
+   "segnatura": "mssHM 50",
+   "datazione": "between 1485 and 1499",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Satires of Juvenal and Persius",
+   "autori": [
+    {
+     "id": "persio",
+     "autore": "Persio",
+     "latino": "Persius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Satire"
+     ],
+     "corrispondenza": "titolo: «Satires of Juvenal and Persius»"
+    },
+    {
+     "id": "giovenale",
+     "autore": "Giovenale",
+     "latino": "Iuvenalis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Satire"
+     ],
+     "corrispondenza": "titolo: «Satires of Juvenal and Persius»"
+    }
+   ],
+   "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:51018/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS9851",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds9856",
+   "fonte": "ds",
+   "biblioteca": "The Huntington Library",
+   "citta": "San Marino (California)",
+   "segnatura": "mssHM 60",
+   "datazione": "between 1490 and 1510",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Les XXI epistres des dames illustes traduicttes d'Ovide; par le Reverend Pere en Dieu Monseigneur l'Evesque de Angoulesme ; Heroides",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eroidi"
+     ],
+     "corrispondenza": "autore: «Ovid, 43 B.C.-18 A.D.»"
+    }
+   ],
+   "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:49400/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS9856",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds9867",
+   "fonte": "ds",
+   "biblioteca": "The Huntington Library",
+   "citta": "San Marino (California)",
+   "segnatura": "mssHM 65",
+   "datazione": "1279",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Almagest",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Almagesto"
+     ],
+     "corrispondenza": "autore: «Ptolemy, active 2nd century»"
+    }
+   ],
+   "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:52698/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS9867",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds9908",
+   "fonte": "ds",
+   "biblioteca": "The Huntington Library",
+   "citta": "San Marino (California)",
+   "segnatura": "mssHM 1026",
+   "datazione": "between 1350 and 1399",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Factorum et dictorum memorabilium libri novem ; Factorum et dictorum memorabilium libri IX",
+   "autori": [
+    {
+     "id": "valerio-massimo",
+     "autore": "Valerio Massimo",
+     "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Facta et dicta memorabilia"
+     ],
+     "corrispondenza": "autore: «Valerius Maximus»"
+    }
+   ],
+   "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:50894/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS9908",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds9909",
+   "fonte": "ds",
+   "biblioteca": "The Huntington Library",
+   "citta": "San Marino (California)",
+   "segnatura": "mssHM 1027",
+   "datazione": "15th century (1400-1499)",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De oratore",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De oratore"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:51118/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS9909",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds9910",
+   "fonte": "ds",
+   "biblioteca": "The Huntington Library",
+   "citta": "San Marino (California)",
+   "segnatura": "mssHM 1028",
+   "datazione": "between 1485 and 1499",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epistolae ad familiares",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epistulae ad familiares"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:52996/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS9910",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds9911",
+   "fonte": "ds",
+   "biblioteca": "The Huntington Library",
+   "citta": "San Marino (California)",
+   "segnatura": "mssHM 1029",
+   "datazione": "between 1440 and 1460",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Vita Bruti ; Brutus",
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Plutarch»"
+    }
+   ],
+   "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:51131/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS9911",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds9912",
+   "fonte": "ds",
+   "biblioteca": "The Huntington Library",
+   "citta": "San Marino (California)",
+   "segnatura": "mssHM 1030",
+   "datazione": "between 1340 and 1360",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aeneid ; Aeneis",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eneide"
+     ],
+     "corrispondenza": "autore: «Virgil»"
+    }
+   ],
+   "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:52720/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS9912",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds9913",
+   "fonte": "ds",
+   "biblioteca": "The Huntington Library",
+   "citta": "San Marino (California)",
+   "segnatura": "mssHM 1031",
+   "datazione": "between 1450 and 1499",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Eloquentię principis M. Tullii Ciceronis Ad Brutum Tusculanarum Quęstionum ; Tusculanae disputationes",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tusculanae disputationes"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:51523/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS9913",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds9914",
+   "fonte": "ds",
+   "biblioteca": "The Huntington Library",
+   "citta": "San Marino (California)",
+   "segnatura": "mssHM 1032",
+   "datazione": "between 1300 and 1350",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Pharsalia",
+   "autori": [
+    {
+     "id": "lucano",
+     "autore": "Lucano",
+     "latino": "Lucanus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Pharsalia"
+     ],
+     "corrispondenza": "autore: «Lucan, 39-65»"
+    }
+   ],
+   "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:51500/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS9914",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds9915",
+   "fonte": "ds",
+   "biblioteca": "The Huntington Library",
+   "citta": "San Marino (California)",
+   "segnatura": "mssHM 1033",
+   "datazione": "between 1400 and 1415",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Nicomachean ethics",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Etica Nicomachea"
+     ],
+     "corrispondenza": "autore: «Aristotle»"
+    }
+   ],
+   "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:51537/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS9915",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds9917",
+   "fonte": "ds",
+   "biblioteca": "The Huntington Library",
+   "citta": "San Marino (California)",
+   "segnatura": "mssHM 1035",
+   "datazione": "between 1250 and 1299",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la",
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De animalibus",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Historia animalium"
+     ],
+     "corrispondenza": "autore: «Aristotle»"
+    }
+   ],
+   "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:52102/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS9917",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds9918",
+   "fonte": "ds",
+   "biblioteca": "The Huntington Library",
+   "citta": "San Marino (California)",
+   "segnatura": "mssHM 1036",
+   "datazione": "between 1400 and 1450",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Georgics ; Aeneid ; and other Latin verse",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eneide",
+      "Georgiche"
+     ],
+     "corrispondenza": "autore: «Virgil»"
+    }
+   ],
+   "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:51533/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS9918",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds9920",
+   "fonte": "ds",
+   "biblioteca": "The Huntington Library",
+   "citta": "San Marino (California)",
+   "segnatura": "mssHM 1038",
+   "datazione": "between 1485 and 1499",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Works by and attributed to Ovid",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Ovid, 43 B.C.-17 A.D. or 18 A.D.»"
+    }
+   ],
+   "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:51507/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS9920",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds9921",
+   "fonte": "ds",
+   "biblioteca": "The Huntington Library",
+   "citta": "San Marino (California)",
+   "segnatura": "mssHM 1039",
+   "datazione": "15th century (1400-1499)",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De coniuratione Catiline et Bellum Jugurthinum ; Bellum Catilinae",
+   "autori": [
+    {
+     "id": "sallustio",
+     "autore": "Sallustio",
+     "latino": "Sallustius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De coniuratione Catilinae",
+      "Bellum Iugurthinum"
+     ],
+     "corrispondenza": "autore: «Sallust, 86 B.C.-34 B.C.»"
+    }
+   ],
+   "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:52054/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS9921",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds9791",
+   "fonte": "ds",
+   "biblioteca": "The Huntington Library",
+   "citta": "San Marino (California)",
+   "segnatura": "mssHM 1092",
+   "datazione": "between 1475 and 1499",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ptolemy, Geographia; cartographic material ; Geographia",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Geografia"
+     ],
+     "corrispondenza": "autore: «Ptolemy, active 2nd century»"
+    }
+   ],
+   "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:46314/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS9791",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds9977",
+   "fonte": "ds",
+   "biblioteca": "The Huntington Library",
+   "citta": "San Marino (California)",
+   "segnatura": "mssHM 45717",
+   "datazione": "between 1185 and 1199",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De vita Caesarum",
+   "autori": [
+    {
+     "id": "svetonio",
+     "autore": "Svetonio",
+     "latino": "Suetonius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Vite dei Cesari"
+     ],
+     "corrispondenza": "autore: «Suetonius, approximately 69-approximately 122»"
+    }
+   ],
+   "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:51784/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS9977",
+   "licenza": null,
+   "immagini": null
   },
   {
    "id": "ec-ubb-A-IX-0092",
@@ -218957,6 +223562,1131 @@
    "immagini": null
   },
   {
+   "id": "ds-ds12630",
+   "fonte": "ds",
+   "biblioteca": "University of California, Berkeley, Bancroft Library",
+   "citta": "Berkeley",
+   "segnatura": "BANC MS UCB 61",
+   "datazione": "between 1450 and 1475",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Laelius, sive, De amicitia ; Cato major, vel, De senectute ; Laelius de amicitia (Ms. UCB 61)",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Laelius de amicitia",
+      "Cato maior de senectute"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digicoll.lib.berkeley.edu/nanna/proxy/iiif/manifest/228905/",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS12630",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds12631",
+   "fonte": "ds",
+   "biblioteca": "University of California, Berkeley, Bancroft Library",
+   "citta": "Berkeley",
+   "segnatura": "BANC MS UCB 62",
+   "datazione": "ca. 1430",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Laelius, sive, De amicitia ; Paradoxa stoicorum ; De officiis ; Laelius de amicitia (Ms. UCB 62)",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De officiis",
+      "Laelius de amicitia",
+      "Paradoxa Stoicorum"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digicoll.lib.berkeley.edu/nanna/proxy/iiif/manifest/228906/",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS12631",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds12632",
+   "fonte": "ds",
+   "biblioteca": "University of California, Berkeley, Bancroft Library",
+   "citta": "Berkeley",
+   "segnatura": "BANC MS UCB 63",
+   "datazione": "13-- (1300-1300)",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Cato maior, vel, De senectute ; Paradoxa stoicorum ; Cato maior de senectute (Ms. UCB 63)",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Cato maior de senectute",
+      "Paradoxa Stoicorum"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digicoll.lib.berkeley.edu/nanna/proxy/iiif/manifest/228907/",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS12632",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds12633",
+   "fonte": "ds",
+   "biblioteca": "University of California, Berkeley, Bancroft Library",
+   "citta": "Berkeley",
+   "segnatura": "BANC MS UCB 64",
+   "datazione": "between 1200 and 1324",
+   "secolo": [
+    12,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ars poetica ; Sermones ; Epistulae; with scholia ; Ars poetica (Ms. UCB 64)",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Satire",
+      "Ars poetica"
+     ],
+     "corrispondenza": "autore: «Horace»"
+    }
+   ],
+   "manifest": "https://digicoll.lib.berkeley.edu/nanna/proxy/iiif/manifest/228908/",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS12633",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds12634",
+   "fonte": "ds",
+   "biblioteca": "University of California, Berkeley, Bancroft Library",
+   "citta": "Berkeley",
+   "segnatura": "BANC MS UCB 65",
+   "datazione": "14-- (1400-1400)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ars poetica ; Ars poetica (Ms. UCB 65)",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ars poetica"
+     ],
+     "corrispondenza": "autore: «Horace»"
+    }
+   ],
+   "manifest": "https://digicoll.lib.berkeley.edu/nanna/proxy/iiif/manifest/228909/",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS12634",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds12635",
+   "fonte": "ds",
+   "biblioteca": "University of California, Berkeley, Bancroft Library",
+   "citta": "Berkeley",
+   "segnatura": "BANC MS UCB 66",
+   "datazione": "14-- (1400-1400)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Odes and Epodes ; Carmina (Ms. UCB 66)",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Odi",
+      "Epodi"
+     ],
+     "corrispondenza": "autore: «Horace»"
+    }
+   ],
+   "manifest": "https://digicoll.lib.berkeley.edu/nanna/proxy/iiif/manifest/228910/",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS12635",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds12636",
+   "fonte": "ds",
+   "biblioteca": "University of California, Berkeley, Bancroft Library",
+   "citta": "Berkeley",
+   "segnatura": "BANC MS UCB 67",
+   "datazione": "14-- (1400-1400)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Carmina ; Ars poetica ; Carmina (Ms. UCB 67)",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Odi",
+      "Ars poetica"
+     ],
+     "corrispondenza": "autore: «Horace»"
+    }
+   ],
+   "manifest": "https://digicoll.lib.berkeley.edu/nanna/proxy/iiif/manifest/228911/",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS12636",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds12638",
+   "fonte": "ds",
+   "biblioteca": "University of California, Berkeley, Bancroft Library",
+   "citta": "Berkeley",
+   "segnatura": "BANC MS UCB 69",
+   "datazione": "ca. 1425",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De vita XII Caesarum ; De vita Caesarum (Ms. UCB 69)",
+   "autori": [
+    {
+     "id": "svetonio",
+     "autore": "Svetonio",
+     "latino": "Suetonius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Vite dei Cesari"
+     ],
+     "corrispondenza": "autore: «Suetonius, approximately 69-approximately 122»"
+    }
+   ],
+   "manifest": "https://digicoll.lib.berkeley.edu/nanna/proxy/iiif/manifest/228913/",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS12638",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds12639",
+   "fonte": "ds",
+   "biblioteca": "University of California, Berkeley, Bancroft Library",
+   "citta": "Berkeley",
+   "segnatura": "BANC MS UCB 70",
+   "datazione": "14-- (1400-1400)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la",
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera ; Works (Ms. UCB 70)",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Virgil»"
+    }
+   ],
+   "manifest": "https://digicoll.lib.berkeley.edu/nanna/proxy/iiif/manifest/228914/",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS12639",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds12640",
+   "fonte": "ds",
+   "biblioteca": "University of California, Berkeley, Bancroft Library",
+   "citta": "Berkeley",
+   "segnatura": "BANC MS UCB 71",
+   "datazione": "14-- (1400-1400)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Bucolica ; [Georgica ; Bucolica (Ms. UCB 71)",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Georgiche",
+      "Bucoliche"
+     ],
+     "corrispondenza": "autore: «Virgil»"
+    }
+   ],
+   "manifest": "https://digicoll.lib.berkeley.edu/nanna/proxy/iiif/manifest/228915/",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS12640",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds12647",
+   "fonte": "ds",
+   "biblioteca": "University of California, Berkeley, Bancroft Library",
+   "citta": "Berkeley",
+   "segnatura": "BANC MS UCB 79",
+   "datazione": "approxmately 1460",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Euclidis Geometre [sic] / ; Elements",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Elementi"
+     ],
+     "corrispondenza": "autore: «Euclid»"
+    }
+   ],
+   "manifest": "https://digicoll.lib.berkeley.edu/nanna/proxy/iiif/manifest/228923/",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS12647",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds12383",
+   "fonte": "ds",
+   "biblioteca": "University of California, Berkeley, Bancroft Library",
+   "citta": "Berkeley",
+   "segnatura": "BANC MS UCB 96",
+   "datazione": "approximately 1450",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "La prima guerra Punica ... intra il popolo Romano et i Cartaginesi",
+   "autori": [
+    {
+     "id": "silio-italico",
+     "autore": "Silio Italico",
+     "latino": "Silius Italicus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Punica"
+     ],
+     "corrispondenza": "titolo: «La prima guerra Punica ... intra il popolo Romano et i Cartaginesi»"
+    }
+   ],
+   "manifest": "https://digicoll.lib.berkeley.edu/nanna/proxy/iiif/manifest/228992/",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS12383",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds12385",
+   "fonte": "ds",
+   "biblioteca": "University of California, Berkeley, Bancroft Library",
+   "citta": "Berkeley",
+   "segnatura": "BANC MS UCB 100",
+   "datazione": "13-- (1300-1300)",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la",
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De consolatione philosophiae ; De consolatione philosophiae (Ms. UCB 100)",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Boethius, -524»"
+    }
+   ],
+   "manifest": "https://digicoll.lib.berkeley.edu/nanna/proxy/iiif/manifest/228996/",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS12385",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds12689",
+   "fonte": "ds",
+   "biblioteca": "University of California, Berkeley, Bancroft Library",
+   "citta": "Berkeley",
+   "segnatura": "BANC MS UCB 142",
+   "datazione": "between 1475 and 1499].",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Laelius, sive, De amicitia ; Cato maior, vel, De senectute ; Paradoxa ; Laelius de amicitia (Ms. UCB 142)",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Laelius de amicitia",
+      "Cato maior de senectute"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digicoll.lib.berkeley.edu/nanna/proxy/iiif/manifest/229491/",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS12689",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds12734",
+   "fonte": "ds",
+   "biblioteca": "University of California, Berkeley, Bancroft Library",
+   "citta": "Berkeley",
+   "segnatura": "BANC MS UCB 143 v.40",
+   "datazione": "15-- (1500-1500)",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "es"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Arquitectu[ra ; De architectura",
+   "autori": [
+    {
+     "id": "vitruvio",
+     "autore": "Vitruvio",
+     "latino": "Vitruvius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De architectura"
+     ],
+     "corrispondenza": "autore: «Vitruvius Pollio»"
+    }
+   ],
+   "manifest": "https://digicoll.lib.berkeley.edu/nanna/proxy/iiif/manifest/229498/",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS12734",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds12348",
+   "fonte": "ds",
+   "biblioteca": "University of California, Berkeley, Bancroft Library",
+   "citta": "Berkeley",
+   "segnatura": "BANC MS UCB 157",
+   "datazione": "1450-1499",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "en",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Works ; Works (Ms. UCB 157)",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Horace»"
+    }
+   ],
+   "manifest": "https://digicoll.lib.berkeley.edu/nanna/proxy/iiif/manifest/229529/",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS12348",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds12609",
+   "fonte": "ds",
+   "biblioteca": "University of California, Berkeley, Bancroft Library",
+   "citta": "Berkeley",
+   "segnatura": "BANC MS UCB 159",
+   "datazione": "between 1375 and 1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Volgarizzamento della prima deca di Tito Livio; e citato del vocabolario della Crusca ; Ab urbe condita",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "autore: «Livy»"
+    }
+   ],
+   "manifest": "https://digicoll.lib.berkeley.edu/nanna/proxy/iiif/manifest/229531/",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS12609",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds12715",
+   "fonte": "ds",
+   "biblioteca": "University of California, Berkeley, Bancroft Library",
+   "citta": "Berkeley",
+   "segnatura": "BANC MS UCB 160",
+   "datazione": "between 1470 and 1480",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "ca"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De consolacio ; De consolatione philosophiae",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Boethius, -524»"
+    }
+   ],
+   "manifest": "https://digicoll.lib.berkeley.edu/nanna/proxy/iiif/manifest/229532/",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS12715",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds12694",
+   "fonte": "ds",
+   "biblioteca": "University of California, Berkeley, Bancroft Library",
+   "citta": "Berkeley",
+   "segnatura": "BANC MS UCB 166",
+   "datazione": "14-- (1400-1400)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ars amatoria ; Remedia amoris ; Epistola Sapphus (Heroides) ; Ars amatoria (Ms. UCB 166)",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eroidi",
+      "Ars amatoria",
+      "Remedia amoris"
+     ],
+     "corrispondenza": "autore: «Ovid, 43 B.C.-17 A.D. or 18 A.D.»"
+    }
+   ],
+   "manifest": "https://digicoll.lib.berkeley.edu/nanna/proxy/iiif/manifest/229537/",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS12694",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds20104",
+   "fonte": "ds",
+   "biblioteca": "University of Chicago Library",
+   "citta": "Chicago",
+   "segnatura": "Codex Ms. 686.27",
+   "datazione": "11th century (1000-1099)",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De consolatione philosophiae, 1b V prosa 4",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Boethius»"
+    }
+   ],
+   "manifest": "https://iiif-collection.lib.uchicago.edu/object/ark:/61001/b2t72t32c90x.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS20104",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds20130",
+   "fonte": "ds",
+   "biblioteca": "University of Chicago Library",
+   "citta": "Chicago",
+   "segnatura": "Codex Ms. 686.53",
+   "datazione": "14th century (1300-1399)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "?? De barbarionis (Comm. in Donat.)",
+   "autori": [
+    {
+     "id": "donato",
+     "autore": "Donato",
+     "latino": "Donatus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «?? De barbarionis (Comm. in Donat.)»"
+    }
+   ],
+   "manifest": "https://iiif-collection.lib.uchicago.edu/object/ark:/61001/b2924v55r82c.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS20130",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds20149",
+   "fonte": "ds",
+   "biblioteca": "University of Chicago Library",
+   "citta": "Chicago",
+   "segnatura": "Codex Ms. 686.72",
+   "datazione": "12th or 13th century (1100-1299)",
+   "secolo": [
+    12,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De Grammatica, XIV, 28-34",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Priscianus»"
+    }
+   ],
+   "manifest": "https://iiif-collection.lib.uchicago.edu/object/ark:/61001/b2qd7gs6nj6w.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS20149",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds1302",
+   "fonte": "ds",
+   "biblioteca": "University of Kansas, Kenneth Spencer Research Library",
+   "citta": "Lawrence (Kansas)",
+   "segnatura": "MS 9/1:B1",
+   "datazione": "1200-1299",
+   "secolo": [
+    12,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Tabula Ethicorum Aristotelis",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Tabula Ethicorum Aristotelis»"
+    },
+    {
+     "id": "tommaso-aquino",
+     "autore": "Tommaso d'Aquino",
+     "latino": "Thomas de Aquino",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «Thomas, Aquinas, Saint, 1225?-1274»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_1B1_30/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS1302",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds1158",
+   "fonte": "ds",
+   "biblioteca": "University of Kansas, Kenneth Spencer Research Library",
+   "citta": "Lawrence (Kansas)",
+   "segnatura": "MS C68",
+   "datazione": "between 1401-1434",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De vita tirannica / ; Hieron",
+   "autori": [
+    {
+     "id": "senofonte",
+     "autore": "Senofonte",
+     "latino": "Xenophon",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Xenophon»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_MSC68_30/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS1158",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds1175",
+   "fonte": "ds",
+   "biblioteca": "University of Kansas, Kenneth Spencer Research Library",
+   "citta": "Lawrence (Kansas)",
+   "segnatura": "MS C189",
+   "datazione": "between 1301 and 1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collection of works by Aristotle and commentaries on Aristotle's works",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Porphyry, approximately 234-approximately 305 ; Aristotle»"
+    },
+    {
+     "id": "porfirio",
+     "autore": "Porfirio",
+     "latino": "Porphyrius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Porphyry, approximately 234-approximately 305 ; Aristotle»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_MSC189_30/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS1175",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds1178",
+   "fonte": "ds",
+   "biblioteca": "University of Kansas, Kenneth Spencer Research Library",
+   "citta": "Lawrence (Kansas)",
+   "segnatura": "MS C210",
+   "datazione": "1450-1499",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Commentaries on Aristotle; on the Physica, De generatione et corruptione, De celo et mundo, De anima",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Fisica",
+      "De anima",
+      "De generatione et corruptione"
+     ],
+     "corrispondenza": "titolo: «…on Aristotle; on the Physica, De generatione et corruptione, De celo et mundo, De anima»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_MSC210_30/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS1178",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds1219",
+   "fonte": "ds",
+   "biblioteca": "University of Kansas, Kenneth Spencer Research Library",
+   "citta": "Lawrence (Kansas)",
+   "segnatura": "MS D2",
+   "datazione": "October 19, 1470",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epigrammata / ; Epigrammata",
+   "autori": [
+    {
+     "id": "marziale",
+     "autore": "Marziale",
+     "latino": "Martialis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epigrammi"
+     ],
+     "corrispondenza": "autore: «Pliny, the Younger ; Martial»"
+    },
+    {
+     "id": "plinio-giovane",
+     "autore": "Plinio il Giovane",
+     "latino": "Plinius minor",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Pliny, the Younger ; Martial»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_MSD2_30/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS1219",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds1203",
+   "fonte": "ds",
+   "biblioteca": "University of Kansas, Kenneth Spencer Research Library",
+   "citta": "Lawrence (Kansas)",
+   "segnatura": "MS E12",
+   "datazione": "1400-1499",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epistulae ad lucilium ; Epistulae morales ad Lucilium",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epistulae ad Lucilium"
+     ],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus, approximately 4 B.C.-65 A.D»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_MSE12_30/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS1203",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds1208",
+   "fonte": "ds",
+   "biblioteca": "University of Kansas, Kenneth Spencer Research Library",
+   "citta": "Lawrence (Kansas)",
+   "segnatura": "MS E17",
+   "datazione": "between 1401-1415",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Cicero Rhetorica ; Rhetorica ad Herennium",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Rhetorica ad Herennium"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_MSE17_30/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS1208",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds1274",
+   "fonte": "ds",
+   "biblioteca": "University of Kansas, Kenneth Spencer Research Library",
+   "citta": "Lawrence (Kansas)",
+   "segnatura": "MS E20",
+   "datazione": "September 26, 1467",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Bucolica; Georgica; Aeneis / ; Works",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eneide",
+      "Georgiche",
+      "Bucoliche"
+     ],
+     "corrispondenza": "autore: «Virgil»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_MSE20_30/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS1274",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds1205",
+   "fonte": "ds",
+   "biblioteca": "University of Kansas, Kenneth Spencer Research Library",
+   "citta": "Lawrence (Kansas)",
+   "segnatura": "MS E71",
+   "datazione": "between 1401 and 1426",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Virgilii Aeneidos ; Aeneis",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eneide"
+     ],
+     "corrispondenza": "autore: «Virgil»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/images_MSE71_30/manifest.json",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS1205",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds25677",
+   "fonte": "ds",
+   "biblioteca": "University of Pennsylvania Libraries",
+   "citta": "Philadelphia",
+   "segnatura": "Halper 446",
+   "datazione": "11th century-13th century? (1000-1299)",
+   "secolo": [
+    11,
+    13
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Al-maqāl al-awwal min fuṣūl Abūqrāṭ al-ḥakim ; Aphorisms",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Aforismi"
+     ],
+     "corrispondenza": "autore: «Hippocrates»"
+    }
+   ],
+   "manifest": "https://digitalrepository.library.upenn.edu/iiif/2/items/6e2d8d22-daa8-4929-b473-2e01ba6c65bc/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS25677",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds1773",
+   "fonte": "ds",
+   "biblioteca": "University of Pennsylvania Libraries",
+   "citta": "Philadelphia",
+   "segnatura": "Ms. Coll. 591 Folder 20",
+   "datazione": "between 1275 and 1299.",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Manuscript leaf from In libros De caelo et mundo Aristotelis ; In libros De caelo et mundo Aristotelis",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "De caelo"
+     ],
+     "corrispondenza": "titolo: «…m In libros De caelo et mundo Aristotelis ; In libros De caelo et mundo…»"
+    },
+    {
+     "id": "tommaso-aquino",
+     "autore": "Tommaso d'Aquino",
+     "latino": "Thomas de Aquino",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «Thomas, Aquinas, Saint, 1225?-1274»"
+    }
+   ],
+   "manifest": "https://digitalrepository.library.upenn.edu/iiif/2/items/725243b5-6aab-42f1-bbad-63407ac3d4d9/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS1773",
+   "licenza": null,
+   "immagini": null
+  },
+  {
    "id": "upenn-p3833nf29",
    "fonte": "penn",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center",
@@ -224587,6 +230317,105 @@
    "manifest": "https://digitalrepository.library.upenn.edu/iiif/2/items/9a46df45-fe49-4449-abf7-f7829c99dbca/manifest",
    "pagina": "https://digitalcollections.library.upenn.edu/items/9a46df45-fe49-4449-abf7-f7829c99dbca",
    "licenza": "No Copyright - United States (rightsstatements.org)",
+   "immagini": null
+  },
+  {
+   "id": "ds-ds6465",
+   "fonte": "ds",
+   "biblioteca": "Western Michigan University",
+   "citta": "Kalamazoo",
+   "segnatura": "WMU MS 176",
+   "datazione": "1463].",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De Finibus bonorum et malorum ; Leaf from De finibus bonorum et malorum. ; visset evelli iussit eam",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De finibus"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://luna.library.wmich.edu/luna/servlet/iiif/m/WMUwmu~77~77~1222511~160219/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS6465",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds6473",
+   "fonte": "ds",
+   "biblioteca": "Western Michigan University",
+   "citta": "Kalamazoo",
+   "segnatura": "WMU MS 184",
+   "datazione": "between 1450 and 1475].",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ab Urbe Condita Libri XXIV ('On the History of Rome') in Latin ; Ab urbe condita. ; discurritur et urbis ; Leaf from Ab urbe condita.",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "autore: «Livy»"
+    }
+   ],
+   "manifest": "https://luna.library.wmich.edu/luna/servlet/iiif/m/WMUwmu~77~77~1222517~160225/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS6473",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds6458",
+   "fonte": "ds",
+   "biblioteca": "Western Michigan University",
+   "citta": "Kalamazoo",
+   "segnatura": "WMU MS 206",
+   "datazione": "between 1150 and 1399",
+   "secolo": [
+    12,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "[Leaf from a Missal]. ; Et dum irent per uiam uenerunt ad aquam quandam et ait eunuchus",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eunuchus"
+     ],
+     "corrispondenza": "titolo: «[Leaf from a Missal]. ; Et dum irent per uiam uenerunt ad aquam quandam et ait eunuchus»"
+    }
+   ],
+   "manifest": "https://luna.library.wmich.edu/luna/servlet/iiif/m/WMUwmu~77~77~1222633~162545/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS6458",
+   "licenza": null,
    "immagini": null
   },
   {

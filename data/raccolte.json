@@ -24,6 +24,11 @@
   "esito": "ok",
   "ultimo_ok": "2026-10-25T09:26:55.793Z"
  },
+ "ds": {
+  "quando": "2026-10-25T10:04:47.135Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-25T10:04:47.135Z"
+ },
  "ecodices": {
   "quando": "2026-10-25T09:26:55.793Z",
   "esito": "ok",
@@ -40,7 +45,7 @@
   "ultimo_ok": "2026-10-25T09:26:55.793Z"
  },
  "karlsruhe": {
-  "quando": "2026-10-25T09:26:55.793Z",
+  "quando": "2026-10-25T10:04:47.135Z",
   "esito": "sospesa: digital.blb-karlsruhe.de risponde 403",
   "ultimo_ok": "2026-10-24T19:49:16.763Z"
  },
@@ -65,7 +70,7 @@
   "ultimo_ok": "2026-10-25T09:26:55.793Z"
  },
  "stoccarda": {
-  "quando": "2026-10-25T09:26:55.793Z",
+  "quando": "2026-10-25T10:04:47.135Z",
   "esito": "sospesa: manifesti di Marburgo non raggiungibili",
   "ultimo_ok": "2026-10-24T19:49:16.763Z"
  },
@@ -75,7 +80,7 @@
   "ultimo_ok": "2026-10-25T06:22:34.383Z"
  },
  "wolfenbuettel": {
-  "quando": "2026-10-25T09:26:55.793Z",
+  "quando": "2026-10-25T10:04:47.135Z",
   "esito": "sospesa: server iiif.hab.de non raggiungibile",
   "ultimo_ok": "2026-10-24T19:49:16.763Z"
  },

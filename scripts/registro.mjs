@@ -26,6 +26,7 @@ export const BIBLIOTECHE = {
   ...Object.fromEntries(Object.entries(FONTI_HSP).map(([f, h]) => [f, { biblioteca: `${h.nome} (dati dal Handschriftenportal)`, citta: h.citta, come: "ogni notte, da sola" }])),
   yale: { biblioteca: "Yale University Library (Beinecke e altre biblioteche di Yale)", citta: "New Haven (Stati Uniti)", come: "corsia propria: a ruota finché la prima lettura non è finita, poi ogni 6 giorni" },
   penn: { biblioteca: "University of Pennsylvania Libraries (Kislak Center, Schoenberg, CAJS)", citta: "Filadelfia (Stati Uniti)", come: "ogni notte, da sola" },
+  ds: { biblioteca: "Digital Scriptorium (istituzioni statunitensi: Princeton, Columbia, Harvard, Huntington, Free Library e altre; dettaglio sotto la tabella)", citta: "Stati Uniti", come: "ogni notte, da sola (raccolta completa ogni 6 giorni)" },
   vaticana: { biblioteca: "Biblioteca Apostolica Vaticana", citta: "Città del Vaticano", come: "corsia propria: a ruota, senza pause tra un'esecuzione e l'altra" },
 };
 
@@ -90,6 +91,12 @@ export const AVANZAMENTO = {
     const s = leggi("data/penn.json"); if (!s) return { testo: "non ancora cominciata" };
     if (s.cursore) return { testo: `in corso: forma ${(s.cursore.f ?? 0) + 1}, pagina ${s.cursore.p}`, data: s.aggiornato };
     return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} manoscritti fino al 1800)`, data: s.aggiornato };
+  },
+  ds: () => {
+    const s = leggi("data/ds.json"); if (!s) return { testo: "non ancora cominciata" };
+    const n = Object.keys(s.voci || {}).length;
+    if (s.cursore) return { testo: `in corso: ${s.cursore.fase}${s.cursore.fase === "elenco" ? ", pagina " + s.cursore.p : ""}`, data: s.aggiornato };
+    return { testo: `schede con immagini lette tutte (${num(n)} con manifesto su ${num(s.totale)}); fuori i doppioni di Penn e Yale e i domini non verificati`, data: s.completato || s.aggiornato };
   },
   ...Object.fromEntries(Object.keys(FONTI_HSP).map(f => [f, () => { const a = aRiprese(`data/${f}.json`, 1); return { ...a, testo: a.testo.replace("schede lette tutte", "codici digitalizzati letti tutti") }; }])),
   vaticana: () => {
@@ -161,6 +168,7 @@ function lingueTesto(lf = {}) {
 // celle della tabella già scritta, per biblioteca (per tenere l'avanzamento quando lo stato non è disponibile)
 export function righePrecedenti(doc = "") {
   const m = {};
+  for (const r of doc.split("\n")) if (/^Digital Scriptorium, codici per istituzione/.test(r)) m.__ds = r;
   for (const r of doc.split("\n")) if (/^\| /.test(r) && !/^\| (Biblioteca|---)/.test(r)) { const c = r.split(" | "); c[0] = c[0].replace(/^\| /, ""); m[c[0]] = c; }
   return m;
 }
@@ -183,7 +191,14 @@ export function tabella({ fonti, conteggio = {}, conAutori = {}, lingue = {}, de
     tot += conteggio[f] || 0; totA += conAutori[f] || 0;
     righe.push(`| ${b.biblioteca} | ${b.citta} | ${num(conteggio[f])} | ${num(conAutori[f])} | ${lingueTesto(lingue[f])} | ${a.testo} | ${come} | ${data} | ${esitoLeggibile(e)} |`);
   }
-  return [`Codici nel catalogo, in tutto: **${num(tot)}**, di cui **${num(totA)}** con almeno un autore riconosciuto.`, "", ...righe].join("\n");
+  const dopo = [];
+  const ds = dettagli.ds && dettagli.ds.perIstituzione;
+  if (ds && Object.keys(ds).length) {
+    const sc = dettagli.ds.scarti || {};
+    dopo.push("", `Digital Scriptorium, codici per istituzione: ${Object.entries(ds).sort((a, b) => b[1] - a[1]).map(([k, n]) => `${k} ${num(n)}`).join("; ")}` +
+      `${sc.doppioni ? `. Lasciati alle fonti Penn e Yale (doppioni): ${num(sc.doppioni)}` : ""}${sc.dominio ? `. Fuori per manifesto non raggiungibile o da verificare: ${num(sc.dominio)}` : ""}.`);
+  } else if (precedenti.__ds) dopo.push("", precedenti.__ds);
+  return [`Codici nel catalogo, in tutto: **${num(tot)}**, di cui **${num(totA)}** con almeno un autore riconosciuto.`, "", ...righe, ...dopo].join("\n");
 }
 
 export function scriviRegistro(opz) {
