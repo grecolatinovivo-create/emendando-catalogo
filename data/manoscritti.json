@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T21:38:19.517Z",
+ "aggiornato": "2026-10-25T22:46:10.913Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -119,11 +119,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 386,
+   "codici": 388,
    "esito": "ok"
   }
  },
- "totale": 10212,
+ "totale": 10214,
  "manoscritti": [
   {
    "id": "akl-17669",
@@ -40660,6 +40660,78 @@
    "licenza": "CC BY-NC 4.0",
    "immagini": null,
    "anteprima": "https://e-codices.ch/loris/bkm/bkm-SI-0177/bkm-SI-0177_001r.jp2/full/,150/0/default/jpg"
+  },
+  {
+   "id": "bav-ott-lat-1190",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Ott. lat. 1190",
+   "datazione": "sec. XII",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Rhetorici libri",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius, 106-43 a.C.,…»"
+    },
+    {
+     "id": "cassiodoro",
+     "autore": "Cassiodoro",
+     "latino": "Cassiodorus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…Marcus Tullius, 106-43 a.C., Cassiodorus Senator, Flavius Magnus Aurel…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Ott.lat.1190/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Ott.lat.1190",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-ott-lat-1210",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Ott. lat. 1210",
+   "datazione": "sec. XI-XII",
+   "secolo": [
+    11,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De bello civili",
+   "autori": [
+    {
+     "id": "lucano",
+     "autore": "Lucano",
+     "latino": "Lucanus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Bellum civile"
+     ],
+     "corrispondenza": "autore: «Lucanus, Marcus Annaeus, 39-65»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Ott.lat.1210/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Ott.lat.1210",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
   },
   {
    "id": "bav-pal-lat-264",

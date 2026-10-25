@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-25T21:38:19.517Z",
- "totale": 363160,
- "con_autori": 22205,
+ "aggiornato": "2026-10-25T22:46:10.913Z",
+ "totale": 363888,
+ "con_autori": 22207,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
   "id",
@@ -25,7 +25,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 47172
+   "codici": 47900
   },
   "fr": {
    "nome": "francese",
@@ -183,7 +183,7 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 5507
+   "codici": 5509
   },
   "classico-greco": {
    "nome": "classici greci",
@@ -191,7 +191,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 11344
+   "codici": 11345
   },
   "medievale": {
    "nome": "autori medievali",
@@ -227,7 +227,7 @@
    "nome": "Cicerone",
    "latino": "Cicero",
    "categoria": "classico-latino",
-   "codici": 976
+   "codici": 977
   },
   "cesare": {
    "nome": "Cesare",
@@ -287,7 +287,7 @@
    "nome": "Lucano",
    "latino": "Lucanus",
    "categoria": "classico-latino",
-   "codici": 138
+   "codici": 139
   },
   "persio": {
    "nome": "Persio",
@@ -1223,7 +1223,7 @@
    "nome": "Cassiodoro",
    "latino": "Cassiodorus",
    "categoria": "cristiano",
-   "codici": 175
+   "codici": 176
   },
   "origene": {
    "nome": "Origene",
@@ -2958,10 +2958,10 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 5938,
-   "con_autori": 583,
+   "codici": 6666,
+   "con_autori": 585,
    "lingue": {
-    "la": 5651,
+    "la": 6379,
     "xx": 18,
     "it": 231,
     "de": 3,
@@ -2974,7 +2974,7 @@
    "prefissi": [
     "bav-"
    ],
-   "pezzi_voci": 8,
+   "pezzi_voci": 9,
    "indice": [
     "indice/vaticana-0.json"
    ]
@@ -3164,7 +3164,7 @@
   {
    "file": "indice/vaticana-0.json",
    "fonte": "vaticana",
-   "righe": 5938
+   "righe": 6666
   }
  ]
 }
