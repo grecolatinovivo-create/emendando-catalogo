@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T13:18:41.766Z",
+ "aggiornato": "2026-10-25T14:25:07.546Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -82,14 +82,163 @@
    "codici": 0,
    "esito": "ok"
   },
+  "ndl": {
+   "nome": "National Diet Library, Tokyo (dl.ndl.go.jp)",
+   "codici": 0,
+   "esito": "ok"
+  },
+  "kokusho": {
+   "nome": "Kokusho Database, National Institute of Japanese Literature (kokusho.nijl.ac.jp)",
+   "codici": 0,
+   "esito": "ok"
+  },
+  "auckland": {
+   "nome": "Auckland Libraries, Sir George Grey Special Collections (kura.aucklandlibraries.govt.nz)",
+   "codici": 4,
+   "esito": "ok"
+  },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
    "codici": 367,
    "esito": "ok"
   }
  },
- "totale": 6689,
+ "totale": 6693,
  "manoscritti": [
+  {
+   "id": "akl-17669",
+   "fonte": "auckland",
+   "biblioteca": "Auckland Libraries, Sir George Grey Special Collections",
+   "citta": "Auckland (Nuova Zelanda)",
+   "segnatura": "MedMS-G119",
+   "datazione": "About 1425 to 1430",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Le livre de Boèce de consolacion",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Boethius, -524»"
+    }
+   ],
+   "manifest": "https://kura.aucklandlibraries.govt.nz/iiif/2/manuscripts:17669/manifest.json",
+   "pagina": "https://kura.aucklandlibraries.govt.nz/digital/collection/manuscripts/id/17669",
+   "licenza": "No known copyright restrictions",
+   "immagini": null
+  },
+  {
+   "id": "akl-18944",
+   "fonte": "auckland",
+   "biblioteca": "Auckland Libraries, Sir George Grey Special Collections",
+   "citta": "Auckland (Nuova Zelanda)",
+   "segnatura": "MedMS-G126",
+   "datazione": "Between 1300 and 1325",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Metaphysica, Physica and Meteoris",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica",
+      "Fisica"
+     ],
+     "corrispondenza": "autore: «Aristotle»"
+    }
+   ],
+   "manifest": "https://kura.aucklandlibraries.govt.nz/iiif/2/manuscripts:18944/manifest.json",
+   "pagina": "https://kura.aucklandlibraries.govt.nz/digital/collection/manuscripts/id/18944",
+   "licenza": "No known copyright restrictions",
+   "immagini": null
+  },
+  {
+   "id": "akl-21131",
+   "fonte": "auckland",
+   "biblioteca": "Auckland Libraries, Sir George Grey Special Collections",
+   "citta": "Auckland (Nuova Zelanda)",
+   "segnatura": "MedMS-G135",
+   "datazione": "Between 1450 and 1475",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De Divinatione [and] De Natura Deorum",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De natura deorum",
+      "De divinatione"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://kura.aucklandlibraries.govt.nz/iiif/2/manuscripts:21131/manifest.json",
+   "pagina": "https://kura.aucklandlibraries.govt.nz/digital/collection/manuscripts/id/21131",
+   "licenza": "No known copyright restrictions",
+   "immagini": null
+  },
+  {
+   "id": "akl-23172",
+   "fonte": "auckland",
+   "biblioteca": "Auckland Libraries, Sir George Grey Special Collections",
+   "citta": "Auckland (Nuova Zelanda)",
+   "segnatura": "MedMS-G147",
+   "datazione": "Between about 1445 and 1459",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De bello Judaico",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Guerra giudaica"
+     ],
+     "corrispondenza": "autore: «Josephus, Flavius»"
+    }
+   ],
+   "manifest": "https://kura.aucklandlibraries.govt.nz/iiif/2/manuscripts:23172/manifest.json",
+   "pagina": "https://kura.aucklandlibraries.govt.nz/digital/collection/manuscripts/id/23172",
+   "licenza": "No known copyright restrictions",
+   "immagini": null
+  },
   {
    "id": "bsb-bsb00034122",
    "fonte": "bsb",

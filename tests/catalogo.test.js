@@ -780,3 +780,53 @@ test("manifesti scritti dal catalogo: si scrivono solo se cambiano, quelli dei c
   assert.deepEqual(scriviManifesti({ a: 1 }, dir, f), { scritti: 0, tolti: 1, totale: 1 });
   assert.deepEqual(fs.readdirSync(dir), ["a.json"]);
 });
+
+test("NDL: record OAI dcndl_porta, solo manoscritti dei libri antichi fino al 1800, manifesti IIIF", async () => {
+  const { estraiNdl, recordNdl, lingueNdl } = await import("../scripts/fonti/ndl.mjs");
+  const rec = (pid, tipi, extra = "") => `<record><header><identifier>oai:dl.ndl.go.jp:info:ndljp/pid/${pid}</identifier></header><metadata><dcndl_porta:dc>` +
+    `<dcterms:title>鶯宿雑記</dcterms:title><dcndl:partTitle>俳家奇人談 下</dcndl:partTitle><dcndl:volume>巻115-116</dcndl:volume><dc:creator>[駒井乗邨] [編]</dc:creator>` +
+    `<dc:creator xsi:type="dcndl:NDLNA">駒井, 乗邨, 1766-1846</dc:creator><dc:publisher>写</dc:publisher><dc:subject>叢書</dc:subject><dc:language xsi:type="dcterms:ISO639-2">jpn</dc:language>` +
+    tipi.map(t => `<dcndl:materialType>${t}</dcndl:materialType>`).join("") + extra + `<dcterms:accessRights>S01P99U99</dcterms:accessRights><dcterms:rights>PDM</dcterms:rights><dcndl:callNumber>238-1</dcndl:callNumber></dcndl_porta:dc></metadata></record>`;
+  const [pid, v] = estraiNdl(rec(10300911, ["JapaneseClassicalBook", "Manuscript"]));
+  assert.equal(pid, "10300911"); assert.equal(v.s, "238-1"); assert.equal(v.v, "巻115-116"); assert.deepEqual(v.a, ["[駒井乗邨] [編]"]); assert.match(v.c, /俳家奇人談/);
+  assert.equal(estraiNdl(rec(1, ["Book", "Manuscript"]))[1], null);   // manoscritto moderno («稿本»)
+  assert.equal(estraiNdl(rec(2, ["JapaneseClassicalBook"]).replace("<dc:publisher>写</dc:publisher>", "<dc:publisher>山本平吉</dc:publisher>"))[1], null);   // stampa
+  assert.equal(estraiNdl(rec(3, ["JapaneseClassicalBook", "Manuscript"], "<dcterms:issued>文政11 [1828]</dcterms:issued>"))[1], null);   // dopo il 1800
+  assert.ok(estraiNdl(rec(4, ["JapaneseClassicalBook", "Manuscript"], "<dcterms:issued>宝暦12 [1762]</dcterms:issued>"))[1]);
+  const [r] = recordNdl({ voci: { 10300911: v } });
+  assert.equal(r.id, "ndl-10300911"); assert.equal(r.segnatura, "238-1, 巻115-116"); assert.deepEqual(r.lingue, ["ja"]);
+  assert.equal(r.manifest, "https://dl.ndl.go.jp/api/iiif/10300911/manifest.json"); assert.equal(r.licenza, "Public Domain Mark 1.0");
+  assert.deepEqual(lingueNdl({ l: ["chi"] }), ["zh"]); assert.deepEqual(lingueNdl({ t: "あひおひ" }), ["ja"]); assert.deepEqual(lingueNdl({ t: "論語" }), []);
+});
+
+test("Kokusho (NIJL): ere giapponesi, solo manoscritti con immagini proprie fino al 1800, fuori la NDL", async () => {
+  const { annoKokusho, compattaKokusho, recordKokusho } = await import("../scripts/fonti/kokusho.mjs");
+  assert.equal(annoKokusho("文政１１"), 1828); assert.equal(annoKokusho("元禄元"), 1688); assert.equal(annoKokusho("寛政十二"), 1800);
+  assert.equal(annoKokusho("享和二"), 1802); assert.equal(annoKokusho("［江戸後期］"), null); assert.equal(annoKokusho("1790"), 1790); assert.equal(annoKokusho(""), null);
+  const s = { bid: 100227349, name: "あひおひ", collection: "大洲図矢野", seikyu: "364-0173-006", kansha: "写", year: "宝暦１２", image: "1", authorhead: "伴／直方" };
+  assert.deepEqual(compattaKokusho(s), ["あひおひ", "大洲図矢野", "364-0173-006", "宝暦１２", "伴／直方"]);
+  assert.equal(compattaKokusho({ ...s, image: "0" }), null);
+  assert.equal(compattaKokusho({ ...s, kansha: "刊" }), null);
+  assert.equal(compattaKokusho({ ...s, year: "慶応４" }), null);
+  assert.equal(compattaKokusho({ ...s, collection: "国会" }), null);
+  const [r] = recordKokusho({ voci: { 100227349: [...compattaKokusho(s), 1] } });
+  assert.equal(r.id, "nijl-100227349"); assert.equal(r.manifest, "https://kokusho.nijl.ac.jp/biblio/100227349/manifest");
+  assert.equal(r.datazione, "宝暦１２ (1762)"); assert.deepEqual(r.autori_fonte, ["伴 直方"]); assert.deepEqual(voce(r, A).secolo, [18, 18]);
+});
+
+test("Auckland: codici medievali e orientali dalla collezione di CONTENTdm, fuori lettere e carte d'archivio", async () => {
+  const { compattaAuckland, recordAuckland, anniAuckland } = await import("../scripts/fonti/auckland.mjs");
+  const base = { parentobject: -1, filetype: "cpd", rights: "No known copyright restrictions" };
+  const med = { ...base, pointer: 17404, identi: "MedMS-G111", title: "Kroniky Trojanske", datec: "Between about 1465 and 1485", langua: "Czech", collea: "Medieval manuscripts", creato: "Guido de Columna" };
+  const v = compattaAuckland(med);
+  assert.equal(v.s, "MedMS-G111"); assert.deepEqual(v.a, ["Guido de Columna"]);
+  assert.equal(compattaAuckland({ ...med, filetype: "url" }), null);
+  assert.equal(compattaAuckland({ ...base, identi: "GNZMA-676", title: "Letter to the Governor", langua: "Māori", collea: "Grey New Zealand Maori letters - Ngā reta Māori" }), null);
+  assert.ok(compattaAuckland({ ...base, identi: "GMS-169", title: "Mir'at al-Anvar", datec: "18 Rabi' al - Akhir 1072 AH (circa 1662)", langua: "Persian", collea: "Grey manuscripts" }));
+  assert.equal(compattaAuckland({ ...base, identi: "GMS-170", title: "Durr al-Majalis", datec: "Early 19th century", langua: "Persian", collea: "Grey manuscripts" }), null);
+  assert.equal(compattaAuckland({ ...base, identi: "GMS-104", title: "Log-book", datec: "1179 AH", langua: "Arabic", collea: "Grey manuscripts" }), null);
+  assert.ok(anniAuckland("1072 AH").includes(1662));
+  const [r] = recordAuckland({ voci: { 17404: v } });
+  assert.equal(r.id, "akl-17404"); assert.equal(r.manifest, "https://kura.aucklandlibraries.govt.nz/iiif/2/manuscripts:17404/manifest.json");
+  assert.deepEqual(r.lingue, ["cs"]); assert.deepEqual(voce(r, A).secolo, [15, 15]);
+});

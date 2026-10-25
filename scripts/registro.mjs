@@ -33,6 +33,9 @@ export const BIBLIOTECHE = {
   loc: { biblioteca: "Library of Congress: microfilm del Monastero di Santa Caterina del Sinai e dei Patriarcati greco-ortodosso e armeno di Gerusalemme", citta: "Sinai (Egitto) e Gerusalemme", come: "ogni notte, da sola (elenco completo ogni 6 giorni; manifesti scritti dal catalogo)" },
   cudl: { biblioteca: "Cambridge Digital Library (University Library e college)", citta: "Cambridge", come: "va fatta a mano dal browser (scripts/browser/cudl.js)" },
   nlg: { biblioteca: "Biblioteca Nazionale di Grecia", citta: "Atene", come: "ogni notte, da sola (elenco ogni 6 giorni; copie dei manifesti scritte dal catalogo)" },
+  ndl: { biblioteca: "National Diet Library (国立国会図書館): manoscritti dei libri antichi giapponesi e cinesi", citta: "Tokyo (Giappone)", come: "corsia mondo, ogni notte (solo i record cambiati ogni 6 giorni, raccolta completa ogni 30)" },
+  kokusho: { biblioteca: "Kokusho Database (国書データベース) del National Institute of Japanese Literature: manoscritti di biblioteche, templi e collezioni giapponesi", citta: "Giappone", come: "corsia mondo, ogni notte (raccolta completa ogni 14 giorni)" },
+  auckland: { biblioteca: "Auckland Libraries, Sir George Grey Special Collections", citta: "Auckland (Nuova Zelanda)", come: "corsia mondo, ogni notte (raccolta completa ogni 6 giorni)" },
   vaticana: { biblioteca: "Biblioteca Apostolica Vaticana", citta: "Città del Vaticano", come: "corsia propria: a ruota, senza pause tra un'esecuzione e l'altra" },
 };
 
@@ -129,6 +132,22 @@ export const AVANZAMENTO = {
     const s = leggi("data/nlg.json"); if (!s) return { testo: "non ancora cominciata" };
     const v = Object.values(s.voci || {}), letti = v.filter(x => x.p).length, err = v.filter(x => x.x).length;
     return { testo: `${num(letti)} manifesti letti su ${num(v.length)} manoscritti${err ? `; ${num(err)} con il manifesto non leggibile` : ""}${letti + err < v.length ? "; gli altri alla prossima" : ""}`, data: s.aggiornato };
+  },
+  ndl: () => {
+    const s = leggi("data/ndl.json"); if (!s) return { testo: "non ancora cominciata" };
+    const n = Object.keys(s.voci || {}).length;
+    if (s.cursore) return { testo: `in corso: ${num(s.letti)} record letti${s.cursore.completa && s.totale ? " su " + num(s.totale) : " (record cambiati)"}; ${num(n)} manoscritti finora`, data: s.aggiornato };
+    return { testo: `record letti tutti (${num(s.totale)} libri antichi digitalizzati; ${num(n)} manoscritti fino al 1800 o senza data; fuori i libri a stampa)`, data: s.completato || s.aggiornato };
+  },
+  kokusho: () => {
+    const s = leggi("data/kokusho.json"); if (!s) return { testo: "non ancora cominciata" };
+    const n = Object.keys(s.voci || {}).length;
+    if (s.cursore) return { testo: `in corso: pagina ${num(s.cursore.p)} di ${num(s.pagine)} (${num(n)} manoscritti finora)`, data: s.aggiornato };
+    return { testo: `schede lette tutte (${num(s.totale)} manoscritti con immagini; ${num(n)} con immagini proprie fino al 1800 o senza data; fuori i libri a stampa e la NDL)`, data: s.completato || s.aggiornato };
+  },
+  auckland: () => {
+    const s = leggi("data/auckland.json"); if (!s) return { testo: "non ancora cominciata" };
+    return { testo: `oggetti letti tutti (${num(s.totale)}; ${num(Object.keys(s.voci || {}).length)} codici: medievali e orientali fino al 1800, fuori lettere e carte d'archivio)`, data: s.completato || s.aggiornato };
   },
   ...Object.fromEntries(Object.keys(FONTI_HSP).map(f => [f, () => { const a = aRiprese(`data/${f}.json`, 1); return { ...a, testo: a.testo.replace("schede lette tutte", "codici digitalizzati letti tutti") }; }])),
   vaticana: () => {

@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-25T13:18:41.766Z",
- "totale": 91283,
- "con_autori": 13144,
+ "aggiornato": "2026-10-25T14:25:07.546Z",
+ "totale": 250149,
+ "con_autori": 13155,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
   "id",
@@ -19,25 +19,29 @@
  ],
  "hash": "fnv1a-32",
  "lingue": {
+  "ja": {
+   "nome": "giapponese",
+   "codici": 157139
+  },
   "la": {
    "nome": "latino",
-   "codici": 30680
+   "codici": 30704
   },
   "de": {
    "nome": "tedesco",
-   "codici": 15945
+   "codici": 15946
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 13424
+   "codici": 13429
   },
   "grc": {
    "nome": "greco",
-   "codici": 7906
+   "codici": 7908
   },
   "ar": {
    "nome": "arabo",
-   "codici": 4956
+   "codici": 4962
   },
   "sa": {
    "nome": "sanscrito",
@@ -45,39 +49,39 @@
   },
   "en": {
    "nome": "inglese",
-   "codici": 3725
+   "codici": 3726
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 3458
+   "codici": 3460
+  },
+  "zh": {
+   "nome": "cinese",
+   "codici": 2606
   },
   "fr": {
    "nome": "francese",
-   "codici": 2458
+   "codici": 2459
   },
   "he": {
    "nome": "ebraico",
-   "codici": 2314
+   "codici": 2315
   },
   "it": {
    "nome": "italiano",
-   "codici": 2127
+   "codici": 2128
   },
   "cop": {
    "nome": "copto",
    "codici": 1476
   },
-  "zh": {
-   "nome": "cinese",
-   "codici": 874
-  },
   "fa": {
    "nome": "persiano",
-   "codici": 547
+   "codici": 552
   },
   "nl": {
    "nome": "nederlandese",
-   "codici": 518
+   "codici": 519
   },
   "es": {
    "nome": "spagnolo",
@@ -107,13 +111,13 @@
    "nome": "tibetano",
    "codici": 121
   },
-  "ja": {
-   "nome": "giapponese",
-   "codici": 104
-  },
   "gez": {
    "nome": "etiopico",
    "codici": 84
+  },
+  "ko": {
+   "nome": "coreano",
+   "codici": 62
   },
   "ru": {
    "nome": "russo",
@@ -137,7 +141,7 @@
   },
   "cs": {
    "nome": "ceco",
-   "codici": 18
+   "codici": 19
   },
   "oc": {
    "nome": "occitano",
@@ -167,10 +171,6 @@
    "nome": "polacco",
    "codici": 9
   },
-  "ko": {
-   "nome": "coreano",
-   "codici": 8
-  },
   "da": {
    "nome": "danese",
    "codici": 6
@@ -183,19 +183,19 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 4544
+   "codici": 4546
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 2473
+   "codici": 2475
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 5974
+   "codici": 5980
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 1534
+   "codici": 1535
   }
  },
  "autori": {
@@ -227,7 +227,7 @@
    "nome": "Cicerone",
    "latino": "Cicero",
    "categoria": "classico-latino",
-   "codici": 869
+   "codici": 870
   },
   "cesare": {
    "nome": "Cesare",
@@ -389,7 +389,7 @@
    "nome": "Boezio",
    "latino": "Boethius",
    "categoria": "classico-latino",
-   "codici": 499
+   "codici": 500
   },
   "ausonio": {
    "nome": "Ausonio",
@@ -737,7 +737,7 @@
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 941
+   "codici": 942
   },
   "teofrasto": {
    "nome": "Teofrasto",
@@ -1061,7 +1061,7 @@
    "nome": "Flavio Giuseppe",
    "latino": "Flavius Iosephus",
    "categoria": "classico-greco",
-   "codici": 90
+   "codici": 91
   },
   "diogene-laerzio": {
    "nome": "Diogene Laerzio",
@@ -1103,13 +1103,13 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 1362
+   "codici": 1363
   },
   "girolamo": {
    "nome": "Girolamo",
    "latino": "Hieronymus",
    "categoria": "cristiano",
-   "codici": 667
+   "codici": 668
   },
   "ambrogio": {
    "nome": "Ambrogio",
@@ -1121,7 +1121,7 @@
    "nome": "Gregorio Magno",
    "latino": "Gregorius Magnus",
    "categoria": "cristiano",
-   "codici": 484
+   "codici": 485
   },
   "basilio": {
    "nome": "Basilio Magno",
@@ -1145,7 +1145,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 2815
+   "codici": 2818
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1175,7 +1175,7 @@
    "nome": "Lattanzio",
    "latino": "Lactantius",
    "categoria": "cristiano",
-   "codici": 68
+   "codici": 69
   },
   "tertulliano": {
    "nome": "Tertulliano",
@@ -1277,7 +1277,7 @@
    "nome": "Tommaso d'Aquino",
    "latino": "Thomas de Aquino",
    "categoria": "medievale",
-   "codici": 236
+   "codici": 237
   },
   "bernardo": {
    "nome": "Bernardo di Chiaravalle",
@@ -1309,6 +1309,7 @@
   "Archivio parrocchiale, Tesserete",
   "Archivio parrocchiale, Torre",
   "armarium codicum bibliophilorum, Utopia",
+  "Auckland Libraries, Sir George Grey Special Collections, Auckland (Nuova Zelanda)",
   "Balliol College, Oxford",
   "Bayerische Staatsbibliothek, München",
   "Beinecke Rare Book and Manuscript Library, New Haven",
@@ -1421,6 +1422,7 @@
   "Musée Jurassien d'Art et d'Histoire, Delémont",
   "Museen der Stadt Jurjewetz (Юрьевец",
   "Nachlass H. Emmenegger, Zentral- und Hochschulbibliothek Luzern",
+  "National Diet Library (国立国会図書館), Tokyo",
   "National Library of Russia, St. Petersburg",
   "Nelson-Atkins Museum of Art, Kansas City",
   "New York University",
@@ -1645,7 +1647,445 @@
   "Wissenschaftliche Stadtbibliothek, Mainz",
   "Zentral- und Hochschulbibliothek, Luzern",
   "Zentralbibliothek, Solothurn",
-  "Zentralbibliothek, Zürich"
+  "Zentralbibliothek, Zürich",
+  "アドミュージアム東京 (Kokusho Database, NIJL), Giappone",
+  "オーバリン大エインズワース (Kokusho Database, NIJL), Giappone",
+  "お茶大図 (Kokusho Database, NIJL), Giappone",
+  "かごしま近代文島尾原稿 (Kokusho Database, NIJL), Giappone",
+  "かごしま近代文梅崎原稿 (Kokusho Database, NIJL), Giappone",
+  "カンザス大図 (Kokusho Database, NIJL), Giappone",
+  "だて歴史文化Ｍｕｓ (Kokusho Database, NIJL), Giappone",
+  "チューリッヒ大図 (Kokusho Database, NIJL), Giappone",
+  "ノートルダム清心 (Kokusho Database, NIJL), Giappone",
+  "ノートルダム特殊 (Kokusho Database, NIJL), Giappone",
+  "バークレー三井 (Kokusho Database, NIJL), Giappone",
+  "ベルリン国図 (Kokusho Database, NIJL), Giappone",
+  "ポーラ文研 (Kokusho Database, NIJL), Giappone",
+  "一橋大小平明治 (Kokusho Database, NIJL), Giappone",
+  "一橋大幸田 (Kokusho Database, NIJL), Giappone",
+  "一橋大青木 (Kokusho Database, NIJL), Giappone",
+  "三の丸尚蔵館蔵 (Kokusho Database, NIJL), Giappone",
+  "三康図 (Kokusho Database, NIJL), Giappone",
+  "三重大図 (Kokusho Database, NIJL), Giappone",
+  "上田図花春 (Kokusho Database, NIJL), Giappone",
+  "上田図花月 (Kokusho Database, NIJL), Giappone",
+  "上田図花月（柏屋別荘） (Kokusho Database, NIJL), Giappone",
+  "上田図花月近代 (Kokusho Database, NIJL), Giappone",
+  "世田谷文宇野原稿 (Kokusho Database, NIJL), Giappone",
+  "世田谷文梅崎原稿 (Kokusho Database, NIJL), Giappone",
+  "中京大図 (Kokusho Database, NIJL), Giappone",
+  "中津市歴博 (Kokusho Database, NIJL), Giappone",
+  "中野三敏 (Kokusho Database, NIJL), Giappone",
+  "丹波篠山市青山 (Kokusho Database, NIJL), Giappone",
+  "九大医図 (Kokusho Database, NIJL), Giappone",
+  "九大図 (Kokusho Database, NIJL), Giappone",
+  "九大支子 (Kokusho Database, NIJL), Giappone",
+  "九大文学 (Kokusho Database, NIJL), Giappone",
+  "九大春日 (Kokusho Database, NIJL), Giappone",
+  "九大桑木 (Kokusho Database, NIJL), Giappone",
+  "九大江崎 (Kokusho Database, NIJL), Giappone",
+  "九大碩水 (Kokusho Database, NIJL), Giappone",
+  "九大筑紫 (Kokusho Database, NIJL), Giappone",
+  "九大細川 (Kokusho Database, NIJL), Giappone",
+  "九大萩野 (Kokusho Database, NIJL), Giappone",
+  "九大読本 (Kokusho Database, NIJL), Giappone",
+  "九大雅俗 (Kokusho Database, NIJL), Giappone",
+  "二松学舎大図 (Kokusho Database, NIJL), Giappone",
+  "二松学舎大寄託大西巨人 (Kokusho Database, NIJL), Giappone",
+  "二松学舎大東アジア研 (Kokusho Database, NIJL), Giappone",
+  "京大中院 (Kokusho Database, NIJL), Giappone",
+  "京大図 (Kokusho Database, NIJL), Giappone",
+  "京大大惣本 (Kokusho Database, NIJL), Giappone",
+  "京大富士川 (Kokusho Database, NIJL), Giappone",
+  "京大島田 (Kokusho Database, NIJL), Giappone",
+  "京大平松 (Kokusho Database, NIJL), Giappone",
+  "京大文学 (Kokusho Database, NIJL), Giappone",
+  "京大菊亭 (Kokusho Database, NIJL), Giappone",
+  "京大蔵経 (Kokusho Database, NIJL), Giappone",
+  "京大谷村 (Kokusho Database, NIJL), Giappone",
+  "京女大蘆庵 (Kokusho Database, NIJL), Giappone",
+  "京都市歴資山本 (Kokusho Database, NIJL), Giappone",
+  "京都府歴彩 (Kokusho Database, NIJL), Giappone",
+  "京都観世浅野 (Kokusho Database, NIJL), Giappone",
+  "今治市河野美 (Kokusho Database, NIJL), Giappone",
+  "今西祐一郎 (Kokusho Database, NIJL), Giappone",
+  "仙台図 (Kokusho Database, NIJL), Giappone",
+  "佐賀大小城鍋島 (Kokusho Database, NIJL), Giappone",
+  "佐賀大市場 (Kokusho Database, NIJL), Giappone",
+  "佐賀大鍋島 (Kokusho Database, NIJL), Giappone",
+  "信州大図デジタル (Kokusho Database, NIJL), Giappone",
+  "信州大繊維図 (Kokusho Database, NIJL), Giappone",
+  "個人蔵２ (Kokusho Database, NIJL), Giappone",
+  "個人蔵３ (Kokusho Database, NIJL), Giappone",
+  "個人蔵１３ (Kokusho Database, NIJL), Giappone",
+  "光市文化セ (Kokusho Database, NIJL), Giappone",
+  "光藤益子 (Kokusho Database, NIJL), Giappone",
+  "八戸図 (Kokusho Database, NIJL), Giappone",
+  "八戸図近代 (Kokusho Database, NIJL), Giappone",
+  "共立女大図 (Kokusho Database, NIJL), Giappone",
+  "内閣文庫 (Kokusho Database, NIJL), Giappone",
+  "函館中央図 (Kokusho Database, NIJL), Giappone",
+  "加賀中央図聖藩 (Kokusho Database, NIJL), Giappone",
+  "北大図 (Kokusho Database, NIJL), Giappone",
+  "北方博 (Kokusho Database, NIJL), Giappone",
+  "千葉大古医書 (Kokusho Database, NIJL), Giappone",
+  "千葉大図 (Kokusho Database, NIJL), Giappone",
+  "千葉大園芸 (Kokusho Database, NIJL), Giappone",
+  "千葉県博黙斎 (Kokusho Database, NIJL), Giappone",
+  "南丹市博小出（園部町旧蔵） (Kokusho Database, NIJL), Giappone",
+  "同志社大 (Kokusho Database, NIJL), Giappone",
+  "名古屋鶴舞図 (Kokusho Database, NIJL), Giappone",
+  "名大図 (Kokusho Database, NIJL), Giappone",
+  "名大小林 (Kokusho Database, NIJL), Giappone",
+  "名大旧国文 (Kokusho Database, NIJL), Giappone",
+  "名大皇学館 (Kokusho Database, NIJL), Giappone",
+  "周南鹿野図岩崎 (Kokusho Database, NIJL), Giappone",
+  "味の素食文化セ (Kokusho Database, NIJL), Giappone",
+  "和歌山大紀州藩 (Kokusho Database, NIJL), Giappone",
+  "和歌山大紀州藩近代 (Kokusho Database, NIJL), Giappone",
+  "善通寺 (Kokusho Database, NIJL), Giappone",
+  "四国大凌霄 (Kokusho Database, NIJL), Giappone",
+  "四天王寺大恩頼 (Kokusho Database, NIJL), Giappone",
+  "国学院大河野 (Kokusho Database, NIJL), Giappone",
+  "国文研 (Kokusho Database, NIJL), Giappone",
+  "国文研いけのや（寄託） (Kokusho Database, NIJL), Giappone",
+  "国文研はやり唄 (Kokusho Database, NIJL), Giappone",
+  "国文研三井 (Kokusho Database, NIJL), Giappone",
+  "国文研不二（寄託） (Kokusho Database, NIJL), Giappone",
+  "国文研久松 (Kokusho Database, NIJL), Giappone",
+  "国文研井上 (Kokusho Database, NIJL), Giappone",
+  "国文研初雁 (Kokusho Database, NIJL), Giappone",
+  "国文研北野 (Kokusho Database, NIJL), Giappone",
+  "国文研千峰小林 (Kokusho Database, NIJL), Giappone",
+  "国文研千峰小林（特コレ） (Kokusho Database, NIJL), Giappone",
+  "国文研印譜 (Kokusho Database, NIJL), Giappone",
+  "国文研古典籍セ (Kokusho Database, NIJL), Giappone",
+  "国文研唐本袖珍 (Kokusho Database, NIJL), Giappone",
+  "国文研国学者 (Kokusho Database, NIJL), Giappone",
+  "国文研坂田 (Kokusho Database, NIJL), Giappone",
+  "国文研大橋 (Kokusho Database, NIJL), Giappone",
+  "国文研実録 (Kokusho Database, NIJL), Giappone",
+  "国文研山鹿 (Kokusho Database, NIJL), Giappone",
+  "国文研岩津 (Kokusho Database, NIJL), Giappone",
+  "国文研川瀬 (Kokusho Database, NIJL), Giappone",
+  "国文研川瀬（特コレ） (Kokusho Database, NIJL), Giappone",
+  "国文研広瀬 (Kokusho Database, NIJL), Giappone",
+  "国文研庵逧 (Kokusho Database, NIJL), Giappone",
+  "国文研懐風弄月 (Kokusho Database, NIJL), Giappone",
+  "国文研日本漢詩文 (Kokusho Database, NIJL), Giappone",
+  "国文研早歌 (Kokusho Database, NIJL), Giappone",
+  "国文研杉浦 (Kokusho Database, NIJL), Giappone",
+  "国文研松野 (Kokusho Database, NIJL), Giappone",
+  "国文研松野（特コレ） (Kokusho Database, NIJL), Giappone",
+  "国文研林 (Kokusho Database, NIJL), Giappone",
+  "国文研橋本 (Kokusho Database, NIJL), Giappone",
+  "国文研洒落本 (Kokusho Database, NIJL), Giappone",
+  "国文研渡辺 (Kokusho Database, NIJL), Giappone",
+  "国文研烏丸村田 (Kokusho Database, NIJL), Giappone",
+  "国文研田安 (Kokusho Database, NIJL), Giappone",
+  "国文研石川（寄託） (Kokusho Database, NIJL), Giappone",
+  "国文研石野 (Kokusho Database, NIJL), Giappone",
+  "国文研碧洋臼田 (Kokusho Database, NIJL), Giappone",
+  "国文研祭魚洞 (Kokusho Database, NIJL), Giappone",
+  "国文研福井 (Kokusho Database, NIJL), Giappone",
+  "国文研篠田 (Kokusho Database, NIJL), Giappone",
+  "国文研臼杵吉田家 (Kokusho Database, NIJL), Giappone",
+  "国文研諸大名 (Kokusho Database, NIJL), Giappone",
+  "国文研貴重書 (Kokusho Database, NIJL), Giappone",
+  "国文研近代 (Kokusho Database, NIJL), Giappone",
+  "国文研連歌 (Kokusho Database, NIJL), Giappone",
+  "国文研野間 (Kokusho Database, NIJL), Giappone",
+  "国文研金子（寄託） (Kokusho Database, NIJL), Giappone",
+  "国文研鉄心斎 (Kokusho Database, NIJL), Giappone",
+  "国文研長井 (Kokusho Database, NIJL), Giappone",
+  "国文研長谷 (Kokusho Database, NIJL), Giappone",
+  "国文研風月亭鈴木（特コレ） (Kokusho Database, NIJL), Giappone",
+  "国文研高乗 (Kokusho Database, NIJL), Giappone",
+  "国文研鵜飼 (Kokusho Database, NIJL), Giappone",
+  "国立アジア美プルヴェラー (Kokusho Database, NIJL), Giappone",
+  "国立劇場 (Kokusho Database, NIJL), Giappone",
+  "国立天文台 (Kokusho Database, NIJL), Giappone",
+  "国語研 (Kokusho Database, NIJL), Giappone",
+  "園田大吉永 (Kokusho Database, NIJL), Giappone",
+  "城西大水田図 (Kokusho Database, NIJL), Giappone",
+  "夢望庵文庫 (Kokusho Database, NIJL), Giappone",
+  "大和文華 (Kokusho Database, NIJL), Giappone",
+  "大妻女大テキスト研 (Kokusho Database, NIJL), Giappone",
+  "大洲図矢野 (Kokusho Database, NIJL), Giappone",
+  "大英図 (Kokusho Database, NIJL), Giappone",
+  "大谷大図 (Kokusho Database, NIJL), Giappone",
+  "大阪公大中百舌鳥図 (Kokusho Database, NIJL), Giappone",
+  "大阪公大杉本図森 (Kokusho Database, NIJL), Giappone",
+  "大阪大谷大図 (Kokusho Database, NIJL), Giappone",
+  "大阪樟蔭大図 (Kokusho Database, NIJL), Giappone",
+  "大高洋司 (Kokusho Database, NIJL), Giappone",
+  "奈良女大学情セ (Kokusho Database, NIJL), Giappone",
+  "奈良県図 (Kokusho Database, NIJL), Giappone",
+  "姫路文学金井 (Kokusho Database, NIJL), Giappone",
+  "学習院大史料 (Kokusho Database, NIJL), Giappone",
+  "学習院大日語日文 (Kokusho Database, NIJL), Giappone",
+  "宇和島伊達文化 (Kokusho Database, NIJL), Giappone",
+  "宇大日光 (Kokusho Database, NIJL), Giappone",
+  "安田女大稲賀 (Kokusho Database, NIJL), Giappone",
+  "実践女大図 (Kokusho Database, NIJL), Giappone",
+  "宮城学院女大図 (Kokusho Database, NIJL), Giappone",
+  "宮城県図 (Kokusho Database, NIJL), Giappone",
+  "宮城県図伊達 (Kokusho Database, NIJL), Giappone",
+  "宮崎県図杉田 (Kokusho Database, NIJL), Giappone",
+  "宮教大図 (Kokusho Database, NIJL), Giappone",
+  "家政学院大江 (Kokusho Database, NIJL), Giappone",
+  "家政学院大江巻子 (Kokusho Database, NIJL), Giappone",
+  "富加町郷資 (Kokusho Database, NIJL), Giappone",
+  "富山大ヘルン (Kokusho Database, NIJL), Giappone",
+  "富山市図山田孝雄 (Kokusho Database, NIJL), Giappone",
+  "富山県図中島 (Kokusho Database, NIJL), Giappone",
+  "専修大図 (Kokusho Database, NIJL), Giappone",
+  "射和文庫 (Kokusho Database, NIJL), Giappone",
+  "小泉吉永 (Kokusho Database, NIJL), Giappone",
+  "小浜図信友デジタル (Kokusho Database, NIJL), Giappone",
+  "就実大図 (Kokusho Database, NIJL), Giappone",
+  "山口大棲息 (Kokusho Database, NIJL), Giappone",
+  "山口大紫蘭 (Kokusho Database, NIJL), Giappone",
+  "山梨県図 (Kokusho Database, NIJL), Giappone",
+  "岐阜大図 (Kokusho Database, NIJL), Giappone",
+  "岐阜市図 (Kokusho Database, NIJL), Giappone",
+  "岐阜県図 (Kokusho Database, NIJL), Giappone",
+  "岡山大池田 (Kokusho Database, NIJL), Giappone",
+  "岡山大蔵池田 (Kokusho Database, NIJL), Giappone",
+  "岩国徴古 (Kokusho Database, NIJL), Giappone",
+  "岩手県図 (Kokusho Database, NIJL), Giappone",
+  "島根大桑原 (Kokusho Database, NIJL), Giappone",
+  "島根県古代文化セ (Kokusho Database, NIJL), Giappone",
+  "嵐牛俳諧資 (Kokusho Database, NIJL), Giappone",
+  "川崎市Ｍｕｓ (Kokusho Database, NIJL), Giappone",
+  "帯広畜産図 (Kokusho Database, NIJL), Giappone",
+  "広島大図 (Kokusho Database, NIJL), Giappone",
+  "広島大福井 (Kokusho Database, NIJL), Giappone",
+  "府中之島図 (Kokusho Database, NIJL), Giappone",
+  "府中之島図柏原 (Kokusho Database, NIJL), Giappone",
+  "府中之島図森田 (Kokusho Database, NIJL), Giappone",
+  "府中之島図浄瑠璃 (Kokusho Database, NIJL), Giappone",
+  "府中之島図玄武洞 (Kokusho Database, NIJL), Giappone",
+  "府中之島図石崎 (Kokusho Database, NIJL), Giappone",
+  "廣瀬資 (Kokusho Database, NIJL), Giappone",
+  "弘前市博 (Kokusho Database, NIJL), Giappone",
+  "弘前市弘前図 (Kokusho Database, NIJL), Giappone",
+  "弘前市弘前図近代 (Kokusho Database, NIJL), Giappone",
+  "弘前藩歴史 (Kokusho Database, NIJL), Giappone",
+  "徳島県図森 (Kokusho Database, NIJL), Giappone",
+  "徳島県図眉城 (Kokusho Database, NIJL), Giappone",
+  "徳島県図阿波 (Kokusho Database, NIJL), Giappone",
+  "愛媛大堀内 (Kokusho Database, NIJL), Giappone",
+  "愛媛大鈴鹿 (Kokusho Database, NIJL), Giappone",
+  "愛知教大図 (Kokusho Database, NIJL), Giappone",
+  "慶大囲碁 (Kokusho Database, NIJL), Giappone",
+  "慶大奈良 (Kokusho Database, NIJL), Giappone",
+  "慶大富士川 (Kokusho Database, NIJL), Giappone",
+  "慶大斯道 (Kokusho Database, NIJL), Giappone",
+  "慶大斯道大曽根 (Kokusho Database, NIJL), Giappone",
+  "慶大斯道安井 (Kokusho Database, NIJL), Giappone",
+  "慶大斯道浜野 (Kokusho Database, NIJL), Giappone",
+  "慶大斯道貴重書 (Kokusho Database, NIJL), Giappone",
+  "慶大赤木 (Kokusho Database, NIJL), Giappone",
+  "成城大民俗研 (Kokusho Database, NIJL), Giappone",
+  "手錢美 (Kokusho Database, NIJL), Giappone",
+  "新城図情報牧野 (Kokusho Database, NIJL), Giappone",
+  "新日吉蘆庵 (Kokusho Database, NIJL), Giappone",
+  "新潟大佐野 (Kokusho Database, NIJL), Giappone",
+  "日体大図 (Kokusho Database, NIJL), Giappone",
+  "日体大民和 (Kokusho Database, NIJL), Giappone",
+  "日女大図 (Kokusho Database, NIJL), Giappone",
+  "日文研 (Kokusho Database, NIJL), Giappone",
+  "日文研宗田 (Kokusho Database, NIJL), Giappone",
+  "日本学士院 (Kokusho Database, NIJL), Giappone",
+  "日本学士院和算 (Kokusho Database, NIJL), Giappone",
+  "日本学士院川本幸民 (Kokusho Database, NIJL), Giappone",
+  "日鍼会 (Kokusho Database, NIJL), Giappone",
+  "早大演博 (Kokusho Database, NIJL), Giappone",
+  "早大演博安田 (Kokusho Database, NIJL), Giappone",
+  "早大演博青々園 (Kokusho Database, NIJL), Giappone",
+  "明治新聞雑誌文庫 (Kokusho Database, NIJL), Giappone",
+  "星槎ラボ眞山 (Kokusho Database, NIJL), Giappone",
+  "春日大社 (Kokusho Database, NIJL), Giappone",
+  "書陵部 (Kokusho Database, NIJL), Giappone",
+  "書陵部蔵 (Kokusho Database, NIJL), Giappone",
+  "東京学芸大教育史 (Kokusho Database, NIJL), Giappone",
+  "東京学芸大望月 (Kokusho Database, NIJL), Giappone",
+  "東京都個人蔵１ (Kokusho Database, NIJL), Giappone",
+  "東北大医図 (Kokusho Database, NIJL), Giappone",
+  "東北大和算 (Kokusho Database, NIJL), Giappone",
+  "東北大図 (Kokusho Database, NIJL), Giappone",
+  "東北大狩野デジタル (Kokusho Database, NIJL), Giappone",
+  "東北大狩野マイクロ (Kokusho Database, NIJL), Giappone",
+  "東外大図 (Kokusho Database, NIJL), Giappone",
+  "東大医図 (Kokusho Database, NIJL), Giappone",
+  "東大図 (Kokusho Database, NIJL), Giappone",
+  "東大国文 (Kokusho Database, NIJL), Giappone",
+  "東大宗教 (Kokusho Database, NIJL), Giappone",
+  "東大工情図 (Kokusho Database, NIJL), Giappone",
+  "東大教養国文漢文 (Kokusho Database, NIJL), Giappone",
+  "東大教養国文漢文黒木 (Kokusho Database, NIJL), Giappone",
+  "東大東洋研 (Kokusho Database, NIJL), Giappone",
+  "東大洒竹 (Kokusho Database, NIJL), Giappone",
+  "東大理図 (Kokusho Database, NIJL), Giappone",
+  "東大理学植物 (Kokusho Database, NIJL), Giappone",
+  "東大知十 (Kokusho Database, NIJL), Giappone",
+  "東大竹冷 (Kokusho Database, NIJL), Giappone",
+  "東大経済図 (Kokusho Database, NIJL), Giappone",
+  "東大農生図 (Kokusho Database, NIJL), Giappone",
+  "東大連歌俳諧 (Kokusho Database, NIJL), Giappone",
+  "東大霞亭 (Kokusho Database, NIJL), Giappone",
+  "東大駒場図 (Kokusho Database, NIJL), Giappone",
+  "東奥義塾高 (Kokusho Database, NIJL), Giappone",
+  "東書文庫 (Kokusho Database, NIJL), Giappone",
+  "東洋大古典 (Kokusho Database, NIJL), Giappone",
+  "東洋大哲学堂 (Kokusho Database, NIJL), Giappone",
+  "東洋大百人一首 (Kokusho Database, NIJL), Giappone",
+  "東洋大稲葉 (Kokusho Database, NIJL), Giappone",
+  "東海大桃園 (Kokusho Database, NIJL), Giappone",
+  "東海学園名古屋哲誠 (Kokusho Database, NIJL), Giappone",
+  "松井屋酒造資料 (Kokusho Database, NIJL), Giappone",
+  "松浦史料 (Kokusho Database, NIJL), Giappone",
+  "横山邦治 (Kokusho Database, NIJL), Giappone",
+  "横浜大図 (Kokusho Database, NIJL), Giappone",
+  "正宗文庫 (Kokusho Database, NIJL), Giappone",
+  "武井和人（濱口博章旧蔵） (Kokusho Database, NIJL), Giappone",
+  "武庫川女大図 (Kokusho Database, NIJL), Giappone",
+  "武者小路記念近代 (Kokusho Database, NIJL), Giappone",
+  "武雄歴資鍋島 (Kokusho Database, NIJL), Giappone",
+  "民博 (Kokusho Database, NIJL), Giappone",
+  "江川文庫 (Kokusho Database, NIJL), Giappone",
+  "法大古川 (Kokusho Database, NIJL), Giappone",
+  "法大鴻山 (Kokusho Database, NIJL), Giappone",
+  "海洋大図 (Kokusho Database, NIJL), Giappone",
+  "清泉女大図 (Kokusho Database, NIJL), Giappone",
+  "滋賀大弘道館 (Kokusho Database, NIJL), Giappone",
+  "濱口博章 (Kokusho Database, NIJL), Giappone",
+  "烏犀圓 (Kokusho Database, NIJL), Giappone",
+  "熊本大北岡（永青） (Kokusho Database, NIJL), Giappone",
+  "熊本大教育 (Kokusho Database, NIJL), Giappone",
+  "熊本大日文 (Kokusho Database, NIJL), Giappone",
+  "琉球大仲原 (Kokusho Database, NIJL), Giappone",
+  "琉球大伊波 (Kokusho Database, NIJL), Giappone",
+  "琉球大図 (Kokusho Database, NIJL), Giappone",
+  "琉球大宮良 (Kokusho Database, NIJL), Giappone",
+  "琉球大島袋 (Kokusho Database, NIJL), Giappone",
+  "理科大下浦 (Kokusho Database, NIJL), Giappone",
+  "瑞光寺 (Kokusho Database, NIJL), Giappone",
+  "白百合女大図 (Kokusho Database, NIJL), Giappone",
+  "皇学館神道研柳家 (Kokusho Database, NIJL), Giappone",
+  "皇學館大南総道学 (Kokusho Database, NIJL), Giappone",
+  "皇學館大図 (Kokusho Database, NIJL), Giappone",
+  "皇學館大澤瀉 (Kokusho Database, NIJL), Giappone",
+  "皇學館神道博千束 (Kokusho Database, NIJL), Giappone",
+  "盛岡公民 (Kokusho Database, NIJL), Giappone",
+  "相愛大春曙 (Kokusho Database, NIJL), Giappone",
+  "相愛大柿谷 (Kokusho Database, NIJL), Giappone",
+  "県長野図 (Kokusho Database, NIJL), Giappone",
+  "県長野図威徳 (Kokusho Database, NIJL), Giappone",
+  "県長野図関口 (Kokusho Database, NIJL), Giappone",
+  "真田宝物 (Kokusho Database, NIJL), Giappone",
+  "真福寺大須文庫 (Kokusho Database, NIJL), Giappone",
+  "矢口丹波記念文庫 (Kokusho Database, NIJL), Giappone",
+  "石川県図李花亭 (Kokusho Database, NIJL), Giappone",
+  "石水博 (Kokusho Database, NIJL), Giappone",
+  "研医会図 (Kokusho Database, NIJL), Giappone",
+  "磐田中央図 (Kokusho Database, NIJL), Giappone",
+  "祐徳稲荷中川 (Kokusho Database, NIJL), Giappone",
+  "祐徳稲荷中川近代 (Kokusho Database, NIJL), Giappone",
+  "神戸大住田近代 (Kokusho Database, NIJL), Giappone",
+  "神戸大図 (Kokusho Database, NIJL), Giappone",
+  "神戸女大伊藤 (Kokusho Database, NIJL), Giappone",
+  "神戸女大古典研 (Kokusho Database, NIJL), Giappone",
+  "神戸女大吉田 (Kokusho Database, NIJL), Giappone",
+  "神戸女大志水 (Kokusho Database, NIJL), Giappone",
+  "神戸女大橘 (Kokusho Database, NIJL), Giappone",
+  "神戸松蔭大 (Kokusho Database, NIJL), Giappone",
+  "福井市図 (Kokusho Database, NIJL), Giappone",
+  "福井県文松平 (Kokusho Database, NIJL), Giappone",
+  "福岡市上野英信資料 (Kokusho Database, NIJL), Giappone",
+  "福島大図 (Kokusho Database, NIJL), Giappone",
+  "秋田大図 (Kokusho Database, NIJL), Giappone",
+  "科博和田 (Kokusho Database, NIJL), Giappone",
+  "立命館西園寺 (Kokusho Database, NIJL), Giappone",
+  "立教大乱歩 (Kokusho Database, NIJL), Giappone",
+  "立教大図 (Kokusho Database, NIJL), Giappone",
+  "筑波大図 (Kokusho Database, NIJL), Giappone",
+  "篠山鳳鳴高青山 (Kokusho Database, NIJL), Giappone",
+  "群馬大図 (Kokusho Database, NIJL), Giappone",
+  "肥前松平文庫 (Kokusho Database, NIJL), Giappone",
+  "臼田甚五郎蔵 (Kokusho Database, NIJL), Giappone",
+  "興風図将棋 (Kokusho Database, NIJL), Giappone",
+  "興風図絵図 (Kokusho Database, NIJL), Giappone",
+  "舞鶴市郷資 (Kokusho Database, NIJL), Giappone",
+  "茨城大図 (Kokusho Database, NIJL), Giappone",
+  "茨城大菅 (Kokusho Database, NIJL), Giappone",
+  "茨城県図暮鳥 (Kokusho Database, NIJL), Giappone",
+  "茨城県歴史 (Kokusho Database, NIJL), Giappone",
+  "藝大図 (Kokusho Database, NIJL), Giappone",
+  "藝大図脇本 (Kokusho Database, NIJL), Giappone",
+  "藝大図貴重書 (Kokusho Database, NIJL), Giappone",
+  "藝大美一本松狩野家 (Kokusho Database, NIJL), Giappone",
+  "藝大美狩野家縮図 (Kokusho Database, NIJL), Giappone",
+  "藤村記念 (Kokusho Database, NIJL), Giappone",
+  "西厳寺 (Kokusho Database, NIJL), Giappone",
+  "西尾市岩瀬 (Kokusho Database, NIJL), Giappone",
+  "諏訪文庫 (Kokusho Database, NIJL), Giappone",
+  "谷川好一 (Kokusho Database, NIJL), Giappone",
+  "谷川好一上田 (Kokusho Database, NIJL), Giappone",
+  "豊田図 (Kokusho Database, NIJL), Giappone",
+  "豊田高専 (Kokusho Database, NIJL), Giappone",
+  "賀茂真淵記念 (Kokusho Database, NIJL), Giappone",
+  "道明寺 (Kokusho Database, NIJL), Giappone",
+  "道明寺天満 (Kokusho Database, NIJL), Giappone",
+  "都中央加賀 (Kokusho Database, NIJL), Giappone",
+  "都中央特別 (Kokusho Database, NIJL), Giappone",
+  "都中央誌料 (Kokusho Database, NIJL), Giappone",
+  "酒田光丘 (Kokusho Database, NIJL), Giappone",
+  "金城学院図 (Kokusho Database, NIJL), Giappone",
+  "金沢図稼堂 (Kokusho Database, NIJL), Giappone",
+  "金沢図藤本 (Kokusho Database, NIJL), Giappone",
+  "長崎大図 (Kokusho Database, NIJL), Giappone",
+  "長崎大経済 (Kokusho Database, NIJL), Giappone",
+  "長崎大経済武藤 (Kokusho Database, NIJL), Giappone",
+  "長野県大図 (Kokusho Database, NIJL), Giappone",
+  "関大中村 (Kokusho Database, NIJL), Giappone",
+  "関大図 (Kokusho Database, NIJL), Giappone",
+  "阪大和古書目録 (Kokusho Database, NIJL), Giappone",
+  "阪大図 (Kokusho Database, NIJL), Giappone",
+  "阪大図石濵 (Kokusho Database, NIJL), Giappone",
+  "阪大小野 (Kokusho Database, NIJL), Giappone",
+  "阪大忍頂寺 (Kokusho Database, NIJL), Giappone",
+  "阪大忍頂寺近代 (Kokusho Database, NIJL), Giappone",
+  "阪大懐徳堂 (Kokusho Database, NIJL), Giappone",
+  "阪大赤木 (Kokusho Database, NIJL), Giappone",
+  "阪大適塾記念セ (Kokusho Database, NIJL), Giappone",
+  "青森郷土 (Kokusho Database, NIJL), Giappone",
+  "静嘉堂 (Kokusho Database, NIJL), Giappone",
+  "静嘉堂作成 (Kokusho Database, NIJL), Giappone",
+  "静嘉堂蔵 (Kokusho Database, NIJL), Giappone",
+  "静岡県図一般 (Kokusho Database, NIJL), Giappone",
+  "静岡県図一般貴重 (Kokusho Database, NIJL), Giappone",
+  "静岡県図久能 (Kokusho Database, NIJL), Giappone",
+  "静岡県図地域 (Kokusho Database, NIJL), Giappone",
+  "静岡県図地域貴重 (Kokusho Database, NIJL), Giappone",
+  "静岡県図葵 (Kokusho Database, NIJL), Giappone",
+  "韓国中央図 (Kokusho Database, NIJL), Giappone",
+  "願泉寺 (Kokusho Database, NIJL), Giappone",
+  "香川大神原 (Kokusho Database, NIJL), Giappone",
+  "香川大神原近代 (Kokusho Database, NIJL), Giappone",
+  "高岡図 (Kokusho Database, NIJL), Giappone",
+  "高知城歴博山内文庫 (Kokusho Database, NIJL), Giappone",
+  "高知市図近森近代 (Kokusho Database, NIJL), Giappone",
+  "鬪雞神社 (Kokusho Database, NIJL), Giappone",
+  "鳥取県図 (Kokusho Database, NIJL), Giappone",
+  "鳥取県図中村 (Kokusho Database, NIJL), Giappone",
+  "鳥取県図栗谿 (Kokusho Database, NIJL), Giappone",
+  "鳥取県図郷土 (Kokusho Database, NIJL), Giappone",
+  "鳥取県図飯田 (Kokusho Database, NIJL), Giappone",
+  "鹿児島大玉里 (Kokusho Database, NIJL), Giappone",
+  "麗沢大田中 (Kokusho Database, NIJL), Giappone",
+  "龍野歴文資 (Kokusho Database, NIJL), Giappone"
  ],
  "fonti": {
   "heidelberg": {
@@ -2169,6 +2609,76 @@
     "indice/nlg-0.json"
    ]
   },
+  "ndl": {
+   "nome": "National Diet Library, Tokyo (dl.ndl.go.jp)",
+   "codici": 30772,
+   "con_autori": 0,
+   "lingue": {
+    "ja": 28981,
+    "zh": 1732,
+    "ko": 54,
+    "?": 5,
+    "xx": 1
+   },
+   "esito": "ok",
+   "prefissi": [
+    "ndl-"
+   ],
+   "pezzi_voci": 39,
+   "indice": [
+    "indice/ndl-0.json",
+    "indice/ndl-1.json"
+   ]
+  },
+  "kokusho": {
+   "nome": "Kokusho Database, National Institute of Japanese Literature (kokusho.nijl.ac.jp)",
+   "codici": 128054,
+   "con_autori": 0,
+   "lingue": {
+    "ja": 128054
+   },
+   "esito": "ok",
+   "prefissi": [
+    "nijl-"
+   ],
+   "pezzi_voci": 161,
+   "indice": [
+    "indice/kokusho-0.json",
+    "indice/kokusho-1.json",
+    "indice/kokusho-2.json",
+    "indice/kokusho-3.json",
+    "indice/kokusho-4.json",
+    "indice/kokusho-5.json",
+    "indice/kokusho-6.json"
+   ]
+  },
+  "auckland": {
+   "nome": "Auckland Libraries, Sir George Grey Special Collections (kura.aucklandlibraries.govt.nz)",
+   "codici": 40,
+   "con_autori": 11,
+   "lingue": {
+    "ar": 6,
+    "fa": 5,
+    "xx": 1,
+    "cs": 1,
+    "fr": 1,
+    "it": 1,
+    "grc": 2,
+    "la": 24,
+    "de": 1,
+    "en": 1,
+    "nl": 1,
+    "he": 1
+   },
+   "esito": "ok",
+   "prefissi": [
+    "akl-"
+   ],
+   "pezzi_voci": 1,
+   "indice": [
+    "indice/auckland-0.json"
+   ]
+  },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
    "codici": 3735,
@@ -2278,6 +2788,56 @@
    "file": "indice/nlg-0.json",
    "fonte": "nlg",
    "righe": 765
+  },
+  {
+   "file": "indice/ndl-0.json",
+   "fonte": "ndl",
+   "righe": 20000
+  },
+  {
+   "file": "indice/ndl-1.json",
+   "fonte": "ndl",
+   "righe": 10772
+  },
+  {
+   "file": "indice/kokusho-0.json",
+   "fonte": "kokusho",
+   "righe": 20000
+  },
+  {
+   "file": "indice/kokusho-1.json",
+   "fonte": "kokusho",
+   "righe": 20000
+  },
+  {
+   "file": "indice/kokusho-2.json",
+   "fonte": "kokusho",
+   "righe": 20000
+  },
+  {
+   "file": "indice/kokusho-3.json",
+   "fonte": "kokusho",
+   "righe": 20000
+  },
+  {
+   "file": "indice/kokusho-4.json",
+   "fonte": "kokusho",
+   "righe": 20000
+  },
+  {
+   "file": "indice/kokusho-5.json",
+   "fonte": "kokusho",
+   "righe": 20000
+  },
+  {
+   "file": "indice/kokusho-6.json",
+   "fonte": "kokusho",
+   "righe": 8054
+  },
+  {
+   "file": "indice/auckland-0.json",
+   "fonte": "auckland",
+   "righe": 40
   },
   {
    "file": "indice/vaticana-0.json",

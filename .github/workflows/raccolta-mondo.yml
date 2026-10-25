@@ -1,0 +1,30 @@
+# Corsia «mondo»: biblioteche fuori dall'Europa e dagli Stati Uniti, una volta al giorno alle 05 UTC (server diversi dalle altre corsie):
+# National Diet Library (Tokyo; OAI-PMH, solo i manoscritti dei libri antichi), Kokusho Database del NIJL (manoscritti giapponesi
+# di centinaia di biblioteche), Auckland Libraries (Sir George Grey Special Collections). Le raccolte lunghe (NDL completa ogni 30 giorni,
+# Kokusho ogni 14) vanno a riprese, 60 minuti per notte ciascuna; gli stati sono in data/ndl.json, data/kokusho.json, data/auckland.json.
+# Niente ruota: ciò che resta a metà riprende la notte dopo.
+name: "Raccolta: corsia mondo"
+
+on:
+  schedule:
+    - cron: "0 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: raccolta-mondo
+  cancel-in-progress: false
+
+jobs:
+  corsia:
+    uses: ./.github/workflows/corsia.yml
+    with:
+      corsia: mondo
+      fonti: ndl,kokusho,auckland
+      argomenti: --ndl-minuti=60 --kokusho-minuti=60 --auckland-minuti=10
+      cache: false
+      ruota: false
+      flusso: raccolta-mondo.yml
