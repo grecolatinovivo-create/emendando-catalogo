@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T18:00:07.097Z",
+ "aggiornato": "2026-10-25T19:10:43.493Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -84,7 +84,7 @@
   },
   "penn": {
    "nome": "University of Pennsylvania Libraries (colenda.library.upenn.edu)",
-   "codici": 159,
+   "codici": 169,
    "esito": "ok"
   },
   "ds": {
@@ -123,7 +123,7 @@
    "esito": "ok"
   }
  },
- "totale": 6918,
+ "totale": 6928,
  "manoscritti": [
   {
    "id": "akl-17669",
@@ -233825,6 +233825,37 @@
    "immagini": null
   },
   {
+   "id": "upenn-p3t43k475",
+   "fonte": "penn",
+   "biblioteca": "University of Pennsylvania Libraries",
+   "citta": "Philadelphia",
+   "segnatura": "Helen Kate Furness Free Library, Wallingford, PA",
+   "datazione": "1850",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Helen Kate Rogers Diary, 1850",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Furness, Horace Howard, Mrs., 1837-1883»"
+    }
+   ],
+   "manifest": "https://digitalrepository.library.upenn.edu/iiif/2/items/b8305d52-60c0-441e-a13c-188b597a4979/manifest",
+   "pagina": "https://digitalcollections.library.upenn.edu/items/b8305d52-60c0-441e-a13c-188b597a4979",
+   "licenza": "No Copyright - United States (rightsstatements.org)",
+   "immagini": null
+  },
+  {
    "id": "ds-ds1773",
    "fonte": "ds",
    "biblioteca": "University of Pennsylvania Libraries",
@@ -233863,6 +233894,167 @@
    "manifest": "https://digitalrepository.library.upenn.edu/iiif/2/items/725243b5-6aab-42f1-bbad-63407ac3d4d9/manifest",
    "pagina": "https://search.digital-scriptorium.org/catalog/DS1773",
    "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "upenn-p3930p22z",
+   "fonte": "penn",
+   "biblioteca": "University of Pennsylvania Libraries, Kislak Center",
+   "citta": "Philadelphia",
+   "segnatura": "378.748 POM 5.16",
+   "datazione": "1827",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "An Inaugural Dissertation on Podagra or Gout. : Submitted to the examination of the Medical Professors in the University of Pennsylvania",
+   "autori": [
+    {
+     "id": "luciano",
+     "autore": "Luciano di Samosata",
+     "latino": "Lucianus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Tragodopodagra"
+     ],
+     "corrispondenza": "titolo: «An Inaugural Dissertation on Podagra or Gout. : Submitted to the e…»"
+    }
+   ],
+   "manifest": "https://digitalrepository.library.upenn.edu/iiif/2/items/2f5b3093-3c77-4ba4-8304-c54cc3cd09de/manifest",
+   "pagina": "https://digitalcollections.library.upenn.edu/items/2f5b3093-3c77-4ba4-8304-c54cc3cd09de",
+   "licenza": "No Copyright - United States (rightsstatements.org)",
+   "immagini": null
+  },
+  {
+   "id": "upenn-p37p8tp5d",
+   "fonte": "penn",
+   "biblioteca": "University of Pennsylvania Libraries, Kislak Center",
+   "citta": "Philadelphia",
+   "segnatura": "378.748 POM 33.6 Pt.1",
+   "datazione": "1824",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Inaugural Essay on the characters of certain Ingesta",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "titolo: «Inaugural Essay on the characters of certain Ingesta»"
+    }
+   ],
+   "manifest": "https://digitalrepository.library.upenn.edu/iiif/2/items/9b2c0b28-31bb-46ed-96ba-faa11a138186/manifest",
+   "pagina": "https://digitalcollections.library.upenn.edu/items/9b2c0b28-31bb-46ed-96ba-faa11a138186",
+   "licenza": "No Copyright - United States (rightsstatements.org)",
+   "immagini": null
+  },
+  {
+   "id": "upenn-p3fq9qc1s",
+   "fonte": "penn",
+   "biblioteca": "University of Pennsylvania Libraries, Kislak Center",
+   "citta": "Philadelphia",
+   "segnatura": "378.748 POM 45.8",
+   "datazione": "1829",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Inaugural Dissertation on Digestion, : Submitted for the degree of M.D. in the University of Pennsylvania",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Morris, Horatio N.»"
+    }
+   ],
+   "manifest": "https://digitalrepository.library.upenn.edu/iiif/2/items/ee0dcc9f-4b6b-40c3-93f3-6777dd88397b/manifest",
+   "pagina": "https://digitalcollections.library.upenn.edu/items/ee0dcc9f-4b6b-40c3-93f3-6777dd88397b",
+   "licenza": "No Copyright - United States (rightsstatements.org)",
+   "immagini": null
+  },
+  {
+   "id": "upenn-p31j97f3d",
+   "fonte": "penn",
+   "biblioteca": "University of Pennsylvania Libraries, Kislak Center",
+   "citta": "Philadelphia",
+   "segnatura": "378.748 POM 45.19",
+   "datazione": "1828",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "An Inaugural Essay: for the degree of Doctor of Medicine; in the University of Pennsylvania, on Digitalis Purpurea",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Glentworth, Horatio N.»"
+    }
+   ],
+   "manifest": "https://digitalrepository.library.upenn.edu/iiif/2/items/2053ac59-450e-41f8-8170-ee6f04cf5e5c/manifest",
+   "pagina": "https://digitalcollections.library.upenn.edu/items/2053ac59-450e-41f8-8170-ee6f04cf5e5c",
+   "licenza": "No Copyright - United States (rightsstatements.org)",
+   "immagini": null
+  },
+  {
+   "id": "upenn-p3qj78j05",
+   "fonte": "penn",
+   "biblioteca": "University of Pennsylvania Libraries, Kislak Center",
+   "citta": "Philadelphia",
+   "segnatura": "378.748 POP.42.7",
+   "datazione": "1880",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "A Thesis on the Myology of the Birds : For the Degree of Doctor of Philosophy in the University of Pennsylvania",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Uccelli"
+     ],
+     "corrispondenza": "titolo: «…Thesis on the Myology of the Birds : For the Degree of Doctor of…»"
+    }
+   ],
+   "manifest": "https://digitalrepository.library.upenn.edu/iiif/2/items/50014e52-454c-4188-8a26-0f843d6b60ee/manifest",
+   "pagina": "https://digitalcollections.library.upenn.edu/items/50014e52-454c-4188-8a26-0f843d6b60ee",
+   "licenza": "No Copyright - United States (rightsstatements.org)",
    "immagini": null
   },
   {
@@ -235373,6 +235565,39 @@
    ],
    "manifest": "https://digitalrepository.library.upenn.edu/iiif/2/items/0e7d90dc-f661-423c-9e35-987ae2a245de/manifest",
    "pagina": "https://digitalcollections.library.upenn.edu/items/0e7d90dc-f661-423c-9e35-987ae2a245de",
+   "licenza": "No Copyright - United States (rightsstatements.org)",
+   "immagini": null
+  },
+  {
+   "id": "upenn-p3599zb5j",
+   "fonte": "penn",
+   "biblioteca": "University of Pennsylvania Libraries, Kislak Center",
+   "citta": "Philadelphia",
+   "segnatura": "Ms. Codex 700",
+   "datazione": "1872",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "es"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Relacion de la provincia i tierra de la Vera Paz i de las cosas contenidas en ella como son montes, fuentes, animales, aves i plantas, i arboles, del numero de los pueblos i distancia de las yglesias i fundacion dellas, i de lo que cada uno tiene, i finalmente del numero de gente sus lenguas su policia i cristiandad desde el año de 1544 hasta este de 1574",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Uccelli"
+     ],
+     "corrispondenza": "titolo: «…on montes, fuentes, animales, aves i plantas, i arboles, del num…»"
+    }
+   ],
+   "manifest": "https://digitalrepository.library.upenn.edu/iiif/2/items/77c74e27-f69b-4367-97ce-c37a063c8de2/manifest",
+   "pagina": "https://digitalcollections.library.upenn.edu/items/77c74e27-f69b-4367-97ce-c37a063c8de2",
    "licenza": "No Copyright - United States (rightsstatements.org)",
    "immagini": null
   },
@@ -238295,6 +238520,108 @@
    ],
    "manifest": "https://digitalrepository.library.upenn.edu/iiif/2/items/33c6602b-ff72-45e5-96dc-c58fffdcba7b/manifest",
    "pagina": "https://digitalcollections.library.upenn.edu/items/33c6602b-ff72-45e5-96dc-c58fffdcba7b",
+   "licenza": "No Copyright - United States (rightsstatements.org)",
+   "immagini": null
+  },
+  {
+   "id": "upenn-p36970j6p",
+   "fonte": "penn",
+   "biblioteca": "University of Pennsylvania Libraries, Kislak Center",
+   "citta": "Philadelphia",
+   "segnatura": "Ms. Coll. 685",
+   "datazione": "1830",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "The satires of Persius : manuscript, 1830",
+   "autori": [
+    {
+     "id": "persio",
+     "autore": "Persio",
+     "latino": "Persius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Satire"
+     ],
+     "corrispondenza": "autore: «Persius»"
+    }
+   ],
+   "manifest": "https://digitalrepository.library.upenn.edu/iiif/2/items/b03f1a30-c492-41d0-80d4-2dc79b54ef09/manifest",
+   "pagina": "https://digitalcollections.library.upenn.edu/items/b03f1a30-c492-41d0-80d4-2dc79b54ef09",
+   "licenza": "No Copyright - United States (rightsstatements.org)",
+   "immagini": null
+  },
+  {
+   "id": "upenn-p3zw1966b",
+   "fonte": "penn",
+   "biblioteca": "University of Pennsylvania Libraries, Kislak Center",
+   "citta": "Philadelphia",
+   "segnatura": "Ms. Coll. 687",
+   "datazione": "1880",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "en",
+    "zh",
+    "ja"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Notes on the natural history, philology, archaeology, geography of China and Japan, no. 2, 1880-1898",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «Notes on the natural history, philology, archaeology, geog…»"
+    }
+   ],
+   "manifest": "https://digitalrepository.library.upenn.edu/iiif/2/items/ba7bd1fd-8f39-4c1b-9d11-201d41ca7ec3/manifest",
+   "pagina": "https://digitalcollections.library.upenn.edu/items/ba7bd1fd-8f39-4c1b-9d11-201d41ca7ec3",
+   "licenza": "No Copyright - United States (rightsstatements.org)",
+   "immagini": null
+  },
+  {
+   "id": "upenn-p35m62t70",
+   "fonte": "penn",
+   "biblioteca": "University of Pennsylvania Libraries, Kislak Center",
+   "citta": "Philadelphia",
+   "segnatura": "Ms. Coll. 700 Item 243",
+   "datazione": "1853",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "es",
+    "xx"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Extracto de un cuaderno m[anu]s[crito] \"Metodo de confesar en lengua maya,\" an[n]o de 1803",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [
+      "Critone"
+     ],
+     "corrispondenza": "titolo: «Extracto de un cuaderno m[anu]s[crito] \"Metodo de confesar en lengua maya,\" an[n]o de 1803»"
+    }
+   ],
+   "manifest": "https://digitalrepository.library.upenn.edu/iiif/2/items/23058122-ca2c-45c7-a40a-467b32aa4d14/manifest",
+   "pagina": "https://digitalcollections.library.upenn.edu/items/23058122-ca2c-45c7-a40a-467b32aa4d14",
    "licenza": "No Copyright - United States (rightsstatements.org)",
    "immagini": null
   },

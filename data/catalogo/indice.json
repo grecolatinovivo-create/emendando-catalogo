@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-25T18:00:07.097Z",
- "totale": 263431,
- "con_autori": 13580,
+ "aggiornato": "2026-10-25T19:10:43.493Z",
+ "totale": 265607,
+ "con_autori": 13591,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
   "id",
@@ -21,71 +21,71 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 165480
+   "codici": 165483
   },
   "la": {
    "nome": "latino",
-   "codici": 33029
+   "codici": 33041
   },
   "de": {
    "nome": "tedesco",
-   "codici": 15948
+   "codici": 16085
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 14208
+   "codici": 14210
   },
   "grc": {
    "nome": "greco",
-   "codici": 8159
+   "codici": 8184
   },
   "ar": {
    "nome": "arabo",
-   "codici": 5497
-  },
-  "sa": {
-   "nome": "sanscrito",
-   "codici": 4374
+   "codici": 5522
   },
   "en": {
    "nome": "inglese",
-   "codici": 3709
+   "codici": 4997
+  },
+  "sa": {
+   "nome": "sanscrito",
+   "codici": 4463
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 3463
+   "codici": 4107
   },
   "zh": {
    "nome": "cinese",
-   "codici": 3155
+   "codici": 3156
   },
   "it": {
    "nome": "italiano",
-   "codici": 2841
-  },
-  "fr": {
-   "nome": "francese",
-   "codici": 2469
+   "codici": 2847
   },
   "he": {
    "nome": "ebraico",
-   "codici": 2334
+   "codici": 2531
+  },
+  "fr": {
+   "nome": "francese",
+   "codici": 2490
   },
   "cop": {
    "nome": "copto",
    "codici": 1477
   },
+  "es": {
+   "nome": "spagnolo",
+   "codici": 586
+  },
   "fa": {
    "nome": "persiano",
-   "codici": 555
+   "codici": 556
   },
   "nl": {
    "nome": "nederlandese",
-   "codici": 527
-  },
-  "es": {
-   "nome": "spagnolo",
-   "codici": 448
+   "codici": 529
   },
   "tr": {
    "nome": "turco",
@@ -93,7 +93,7 @@
   },
   "syr": {
    "nome": "siriaco",
-   "codici": 240
+   "codici": 241
   },
   "ka": {
    "nome": "georgiano",
@@ -105,7 +105,7 @@
   },
   "cu": {
    "nome": "slavo ecclesiastico",
-   "codici": 135
+   "codici": 136
   },
   "bo": {
    "nome": "tibetano",
@@ -117,11 +117,11 @@
   },
   "gez": {
    "nome": "etiopico",
-   "codici": 89
+   "codici": 90
   },
   "ru": {
    "nome": "russo",
-   "codici": 59
+   "codici": 70
   },
   "ms": {
    "nome": "malese",
@@ -163,12 +163,12 @@
    "nome": "lingue slave (alfabeto cirillico)",
    "codici": 11
   },
-  "is": {
-   "nome": "islandese e norreno",
-   "codici": 9
-  },
   "pl": {
    "nome": "polacco",
+   "codici": 10
+  },
+  "is": {
+   "nome": "islandese e norreno",
    "codici": 9
   },
   "da": {
@@ -177,21 +177,21 @@
   },
   "hu": {
    "nome": "ungherese",
-   "codici": 4
+   "codici": 6
   }
  },
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 4659
+   "codici": 4664
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 2597
+   "codici": 2602
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 6161
+   "codici": 6162
   },
   "medievale": {
    "nome": "autori medievali",
@@ -251,7 +251,7 @@
    "nome": "Orazio",
    "latino": "Horatius",
    "categoria": "classico-latino",
-   "codici": 193
+   "codici": 196
   },
   "tibullo": {
    "nome": "Tibullo",
@@ -293,7 +293,7 @@
    "nome": "Persio",
    "latino": "Persius",
    "categoria": "classico-latino",
-   "codici": 100
+   "codici": 101
   },
   "giovenale": {
    "nome": "Giovenale",
@@ -317,7 +317,7 @@
    "nome": "Plinio il Vecchio",
    "latino": "Plinius maior",
    "categoria": "classico-latino",
-   "codici": 59
+   "codici": 60
   },
   "plinio-giovane": {
    "nome": "Plinio il Giovane",
@@ -701,7 +701,7 @@
    "nome": "Aristofane",
    "latino": "Aristophanes",
    "categoria": "classico-greco",
-   "codici": 38
+   "codici": 40
   },
   "menandro": {
    "nome": "Menandro",
@@ -731,7 +731,7 @@
    "nome": "Platone",
    "latino": "Plato",
    "categoria": "classico-greco",
-   "codici": 147
+   "codici": 148
   },
   "aristotele": {
    "nome": "Aristotele",
@@ -743,7 +743,7 @@
    "nome": "Teofrasto",
    "latino": "Theophrastus",
    "categoria": "classico-greco",
-   "codici": 41
+   "codici": 42
   },
   "lisia": {
    "nome": "Lisia",
@@ -827,7 +827,7 @@
    "nome": "Luciano di Samosata",
    "latino": "Lucianus",
    "categoria": "classico-greco",
-   "codici": 51
+   "codici": 52
   },
   "pausania": {
    "nome": "Pausania",
@@ -1103,7 +1103,7 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 1388
+   "codici": 1392
   },
   "girolamo": {
    "nome": "Girolamo",
@@ -1145,7 +1145,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 2890
+   "codici": 2887
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1311,6 +1311,7 @@
   "armarium codicum bibliophilorum, Utopia",
   "Auckland Libraries, Sir George Grey Special Collections, Auckland (Nuova Zelanda)",
   "Balliol College, Oxford",
+  "Barbara Bates Center for the Study of the History of Nursing, Philadelphia",
   "Bayerische Staatsbibliothek, München",
   "Beinecke Rare Book and Manuscript Library, New Haven",
   "Benediktinerinnenkloster St. Johann, Müstair",
@@ -1411,6 +1412,7 @@
   "Leihgabe der Paul Wolfgang Merkel’schen Familienstiftung, Germanisches Nationalmuseum Nürnberg",
   "Leopold-Sophien-Bibliothek, Überlingen",
   "Lewis Walpole Library, New Haven",
+  "LIBRA, Philadelphia",
   "Libraries, Stanford",
   "Lillian Goldman Law Library, New Haven",
   "Lincoln College, Oxford",
@@ -1424,6 +1426,7 @@
   "Musée historique de Vevey",
   "Musée Jurassien d'Art et d'Histoire, Delémont",
   "Museen der Stadt Jurjewetz (Юрьевец",
+  "Museum Library, Philadelphia",
   "Nachlass H. Emmenegger, Zentral- und Hochschulbibliothek Luzern",
   "National Diet Library (国立国会図書館), Tokyo",
   "National Library of Russia, St. Petersburg",
@@ -2561,75 +2564,78 @@
   },
   "penn": {
    "nome": "University of Pennsylvania Libraries (colenda.library.upenn.edu)",
-   "codici": 7928,
-   "con_autori": 222,
+   "codici": 10626,
+   "con_autori": 239,
    "lingue": {
-    "xx": 1609,
-    "sa": 3805,
-    "es": 189,
-    "en": 325,
-    "la": 1064,
-    "de": 163,
-    "grc": 63,
-    "he": 176,
-    "it": 747,
-    "fr": 310,
-    "?": 1,
-    "ar": 177,
-    "tr": 17,
-    "fa": 31,
-    "cop": 8,
-    "zh": 3,
+    "en": 1613,
+    "xx": 2342,
+    "sa": 4341,
+    "es": 325,
+    "la": 1067,
+    "de": 301,
+    "grc": 65,
+    "he": 386,
+    "nl": 21,
+    "it": 752,
+    "fr": 331,
+    "hu": 3,
+    "ar": 215,
+    "syr": 1,
+    "ru": 11,
+    "?": 3,
+    "tr": 20,
+    "fa": 36,
+    "gez": 3,
+    "cop": 11,
+    "zh": 4,
     "hy": 1,
-    "ja": 6,
-    "nl": 17,
+    "ja": 10,
     "pt": 18,
     "ca": 5,
     "cs": 1,
     "ga": 1,
     "oc": 6,
-    "hu": 1,
     "da": 1,
-    "gez": 2,
-    "pl": 1
+    "pl": 2,
+    "cu": 1
    },
    "esito": "ok",
    "prefissi": [
     "upenn-"
    ],
-   "pezzi_voci": 10,
+   "pezzi_voci": 14,
    "indice": [
     "indice/penn-0.json"
    ]
   },
   "ds": {
    "nome": "Digital Scriptorium: istituzioni statunitensi (search.digital-scriptorium.org)",
-   "codici": 8364,
-   "con_autori": 805,
+   "codici": 7810,
+   "con_autori": 799,
    "lingue": {
-    "la": 2520,
-    "it": 278,
+    "la": 2529,
+    "it": 279,
     "fr": 310,
     "en": 172,
-    "es": 91,
-    "de": 86,
-    "xx": 533,
-    "nl": 66,
-    "ar": 3170,
+    "es": 93,
+    "de": 85,
+    "xx": 444,
+    "nl": 64,
+    "ar": 3148,
     "hy": 23,
     "grc": 104,
-    "fa": 269,
+    "fa": 265,
     "oc": 3,
-    "he": 969,
+    "he": 956,
     "pt": 8,
-    "tr": 159,
-    "cop": 9,
-    "sa": 460,
+    "tr": 156,
+    "cop": 6,
+    "sa": 13,
     "syr": 18,
     "zh": 9,
     "cu": 3,
     "ca": 11,
-    "ja": 9,
+    "ja": 8,
     "jv": 2,
     "?": 26,
     "ms": 3,
@@ -2642,20 +2648,20 @@
    "prefissi": [
     "ds-"
    ],
-   "pezzi_voci": 11,
+   "pezzi_voci": 10,
    "indice": [
     "indice/ds-0.json"
    ]
   },
   "loc": {
    "nome": "Library of Congress: microfilm del Sinai e dei Patriarcati di Gerusalemme (loc.gov; manifesti scritti dal catalogo)",
-   "codici": 2638,
+   "codici": 2670,
    "con_autori": 646,
    "lingue": {
-    "ar": 401,
-    "grc": 1730,
-    "cop": 1,
+    "ar": 410,
+    "grc": 1753,
     "fa": 5,
+    "cop": 1,
     "gez": 27,
     "ka": 212,
     "hy": 33,
@@ -2881,17 +2887,17 @@
   {
    "file": "indice/penn-0.json",
    "fonte": "penn",
-   "righe": 7928
+   "righe": 10626
   },
   {
    "file": "indice/ds-0.json",
    "fonte": "ds",
-   "righe": 8364
+   "righe": 7810
   },
   {
    "file": "indice/loc-0.json",
    "fonte": "loc",
-   "righe": 2638
+   "righe": 2670
   },
   {
    "file": "indice/nlg-0.json",
