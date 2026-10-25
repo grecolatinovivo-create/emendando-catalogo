@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-24T21:50:44.057Z",
+ "aggiornato": "2026-10-25T02:00:36.535Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -59,7 +59,7 @@
   },
   "yale": {
    "nome": "Yale University Library, Beinecke e altre (collections.library.yale.edu)",
-   "codici": 227,
+   "codici": 229,
    "esito": "ok"
   },
   "penn": {
@@ -69,11 +69,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 254,
+   "codici": 358,
    "esito": "ok"
   }
  },
- "totale": 5926,
+ "totale": 6032,
  "manoscritti": [
   {
    "id": "bsb-bsb00034122",
@@ -37265,6 +37265,36 @@
    "immagini": null
   },
   {
+   "id": "yale-16708192",
+   "fonte": "yale",
+   "biblioteca": "Beinecke Rare Book and Manuscript Library",
+   "citta": "New Haven",
+   "segnatura": "GEN MSS 1526",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Viaggio tra le nuvole : collage.",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Nuvole"
+     ],
+     "corrispondenza": "titolo: «Viaggio tra le nuvole : collage.»"
+    }
+   ],
+   "manifest": "https://collections.library.yale.edu/manifests/16708192",
+   "pagina": "https://collections.library.yale.edu/catalog/16708192",
+   "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
+   "immagini": null
+  },
+  {
    "id": "yale-2056044",
    "fonte": "yale",
    "biblioteca": "Beinecke Rare Book and Manuscript Library",
@@ -37350,6 +37380,32 @@
    ],
    "manifest": "https://collections.library.yale.edu/manifests/11105656",
    "pagina": "https://collections.library.yale.edu/catalog/11105656",
+   "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
+   "immagini": null
+  },
+  {
+   "id": "yale-2026628",
+   "fonte": "yale",
+   "biblioteca": "Beinecke Rare Book and Manuscript Library",
+   "citta": "New Haven",
+   "segnatura": "Jax 099",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "The title page of this book is printed in three colours - it was Kirgate's own Little Unique",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Kirgate, Thomas, 1734?-1810, printer ; Walpole, Horace, 1717-1797»"
+    }
+   ],
+   "manifest": "https://collections.library.yale.edu/manifests/2026628",
+   "pagina": "https://collections.library.yale.edu/catalog/2026628",
    "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
    "immagini": null
   },
@@ -41551,6 +41607,3208 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1034/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1034",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1036",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1036",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Commentum in Physica Aristotelis ; Commentum in libros I-II de caelo Aristotelis",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "De caelo"
+     ],
+     "corrispondenza": "titolo: «Commentum in Physica Aristotelis ; Commentum in libros I-II de caelo Aristotelis»"
+    },
+    {
+     "id": "tommaso-aquino",
+     "autore": "Tommaso d'Aquino",
+     "latino": "Thomas de Aquino",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «Thomas de Aquino»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1036/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1036",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1041",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1041",
+   "datazione": "1512-1537",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In libros naturales Aristotelis",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «In libros naturales Aristotelis»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1041/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1041",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1042",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1042",
+   "datazione": "12. Jh.",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "plauto",
+     "autore": "Plauto",
+     "latino": "Plautus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Plautus, Titus Maccius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1042/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1042",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1044",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1044",
+   "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Commentum in libros de generatione et corruptione Aristotelis",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Commentum in libros de generatione et corruptione Aristotelis»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1044/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1044",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1055",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1055",
+   "datazione": "um 1488",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…Gaius ; Propertius, Sextus ; Cicero, Marcus Tullius ; Vergilius M…»"
+    },
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…us ; Cicero, Marcus Tullius ; Vergilius Maro, Publius»"
+    },
+    {
+     "id": "properzio",
+     "autore": "Properzio",
+     "latino": "Propertius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…accus Setinus Balbus, Gaius ; Propertius, Sextus ; Cicero, Marcus Tull…»"
+    },
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Ovidius Naso, Publius; Aristoteles ;…»"
+    },
+    {
+     "id": "valerio-flacco",
+     "autore": "Valerio Flacco",
+     "latino": "Valerius Flaccus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…Naso, Publius; Aristoteles ; Valerius Flaccus Setinus Balbus, Gaius ; Prope…»"
+    },
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Ovidius Naso, Publius; Aristoteles ; Valerius Flaccus Setinus Ba…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1055/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1055",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1060",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1060",
+   "datazione": "Ende 13. Jh.",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Metaphysica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica"
+     ],
+     "corrispondenza": "autore: «Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1060/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1060",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1061",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1061",
+   "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Metaphysica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica"
+     ],
+     "corrispondenza": "autore: «Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1061/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1061",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1063",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1063",
+   "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Metaphysica (Translatio media), Lib. I-X, XII ; Commentum in Metaphysica Aristotelis",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica"
+     ],
+     "corrispondenza": "autore: «Aristoteles ; Thomas de Aquino»"
+    },
+    {
+     "id": "tommaso-aquino",
+     "autore": "Tommaso d'Aquino",
+     "latino": "Thomas de Aquino",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles ; Thomas de Aquino»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1063/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1063",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1068",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1068",
+   "datazione": "13. Jh.",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Historia animalium ; De partibus animalium ; De generatione animalium",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Historia animalium"
+     ],
+     "corrispondenza": "autore: «Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1068/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1068",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1079",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1079",
+   "datazione": "13. / 14. Jh.",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Medizinische Sammelhandschrift: Articella",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus ; Hippocrates ; Ibn-Riḍwān, ʿAlī ; Johannes <Philoponus>»"
+    },
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus ; Hippocrates ; Ibn-Riḍwān, ʿAlī ; Johannes <Philoponus>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1079/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1079",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1081",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1081",
+   "datazione": "15. Jh. (1452)",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Medizinische Sammelhandschrift",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Hippocrates ; Galenus ; Ḥunain Ibn-Isḥāq ; Avicenna ; Christophorus Barzizius»"
+    },
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Hippocrates ; Galenus ; Ḥunain Ibn-Isḥāq ; Avicenna ; Christophorus Barzizius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1081/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1081",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1082",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1082",
+   "datazione": "13./14. Jh.",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift: Articella ",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus ; Hippocrates ; Ibn-Riḍwān, ʿAlī  Medizinische»"
+    },
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus ; Hippocrates ; Ibn-Riḍwān, ʿAlī  Medizinische»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1082/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1082",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1083",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1083",
+   "datazione": "1457/1458",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Medizinische Sammelhandschrift: Articella  ",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Hippocrates ; Knab, Erhardus ; Bernardus de Gordonio»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1083/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1083",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1084",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1084",
+   "datazione": "13./14. Jh.",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Medizinische Sammelhandschrift",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus ; Archimatthaeus ; Baron, Rog…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1084/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1084",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1088",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1088",
+   "datazione": "9./10. Jh.",
+   "secolo": [
+    9,
+    10
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Medizinische Sammelhandschrift",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus ; Serenus, Quintus ; Vindicianus <Afer>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1088/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1088",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1089",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1089",
+   "datazione": "1. Drittel 14. Jh.",
+   "secolo": [
+    1,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Medizinische Sammelhandschrift: Articella",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Johanntitius ; Hippocrates ; Theophilus ; Philaretus ; Galenus»"
+    },
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Johanntitius ; Hippocrates ; Theophilus ; Philaretus ; Galenus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1089/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1089",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1090",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1090",
+   "datazione": "Mitte 15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Medizinische Sammelhandschrift",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus ; Gessius Iatrosophista ; Cel…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1090/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1090",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1091",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1091",
+   "datazione": "letztes Viertel 15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Liber collecorii",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1091/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1091",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1092",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1092",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus, Claudius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1092/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1092",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1093",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1093",
+   "datazione": "Sec. XIV",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo (medicina)",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galeno»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1093/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1093",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1094",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1094",
+   "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1094/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1094",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1095",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1095",
+   "datazione": "Sec. XIV ",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo (medicina)",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galeno»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1095/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1095",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1096",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1096",
+   "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Medizinische Sammelhandschrift",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus ; Hippocrates»"
+    },
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus ; Hippocrates»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1096/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1096",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1097",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1097",
+   "datazione": "Ende 13. Jh. (I) ; Anfang 14. Jh. (II)",
+   "secolo": [
+    1,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelband",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus ; Aristoteles»"
+    },
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus ; Aristoteles»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1097/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1097",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1098",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1098",
+   "datazione": "2. Hälfte 15. Jh. (1464)",
+   "secolo": [
+    2,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Medizinische Sammelhandschrift",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus ; Hippocrates ; Isrāʾīlī, Isḥ…»"
+    },
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus ; Hippocrates ; Isrāʾīlī, Isḥāq Ibn-Sulaimā…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1098/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1098",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1099",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1099",
+   "datazione": "Sec. XV (seconda metà)",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo (medicina)",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus ; Avicenna ; Albertus <Magnus>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1099/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1099",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1100",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1100",
+   "datazione": "2. Hälfte 14. Jh.",
+   "secolo": [
+    2,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Medizinische Sammelhandschrift",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…ain Ibn-Isḥāq (Johannitius) ; Galenus ; Averroes ; Arnoldus de Vill…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1100/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1100",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1101",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1101",
+   "datazione": "2. Hälfte 13. Jh.",
+   "secolo": [
+    2,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Medizinische Sammelhandschrift: Articella",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Ibn-Riḍwān,ʿAlī ; Galenus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1101/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1101",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1102",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1102",
+   "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Medizinische Sammelhandschrift: Articella",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus ; Ibn-Riḍwān, ʿAlī»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1102/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1102",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1103",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1103",
+   "datazione": "1. Hälfte 14. Jh.",
+   "secolo": [
+    1,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Medizinische Sammelhandschrift: Articella",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus ; Ibn-Riḍwān, ʿAlī»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1103/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1103",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1104",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1104",
+   "datazione": "1. Hälfte 14. Jh.",
+   "secolo": [
+    1,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Medizinische Sammelhandschrift: Articella  ",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus ; Ibn-Māsawaih, Abū-Zakarīyā Yūḥannā ; Guilelmus de Saliceto»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1104/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1104",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1105",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1105",
+   "datazione": "15. Jh. (I) ; Ende 13. Jh. (II)",
+   "secolo": [
+    1,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Medizinischer Sammelband",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Ḥunain Ibn-Isḥāq ; Hippocrates ; Aegidius Corbeiensis»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1105/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1105",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1115",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1115",
+   "datazione": "1430-1431",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Medizinische Sammelhandschrift",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Avicenna ; Hippocrates ; Isrāʾīlī, Isḥāq Ibn-Sulaimā…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1115/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1115",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1148",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1148",
+   "datazione": "1301-1450",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Libri de consolatione medicinarum simplicium solutivarum",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "titolo: «Libri de consolatione medicinarum simplicium solutivarum»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1148/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1148",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1176",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1176",
+   "datazione": "Sec.XIV ",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo (medicina) ",
+   "autori": [
+    {
+     "id": "palladio",
+     "autore": "Palladio",
+     "latino": "Palladius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Palladius, Rutilius Taurus Aemilianus ; Graecus, Marcus ; Gentilis…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1176/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1176",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1184",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1184",
+   "datazione": "Sec. XIV ",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo (medicina) ",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Bernardus <de Gordonio> ; Galenus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1184/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1184",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1188",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1188",
+   "datazione": "1450-1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo ",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Avicenna ; Hippocrates ; Copho ; Arnoldus <de Villa…»"
+    },
+    {
+     "id": "agostino",
+     "autore": "Agostino",
+     "latino": "Augustinus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…a> ; Hermes ; Ps.-Vergilius ; Augustinus Bathus Senensis ; Antonius de…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1188/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1188",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1208",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1208",
+   "datazione": "13. Jh.",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Lucidarius I-III ; Almagestum",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Almagesto"
+     ],
+     "corrispondenza": "titolo: «Lucidarius I-III ; Almagestum»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1208/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1208",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1210",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1210",
+   "datazione": "1450-1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo (medicina) ",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Bernardus <de Gordonio> ; Arnoldus <de Villa Nova> ; Jacoby, Johannes ; Galenus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1210/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1210",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1211",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1211",
+   "datazione": "letztes Drittel 14. Jh. ; um 1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Medizinische Sammelband",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…; Nicolaus de Sancta Sophi ; Galenus ; Rasis ; Mundinus Lucius ; H…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1211/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1211",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1215",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1215",
+   "datazione": "13. Jh. ; 12. Jh.",
+   "secolo": [
+    12,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Medizinische Sammelhandschrift",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Pseudo-Apuleius ; Johannitius (Ḥunain Ibn-Isḥāq) ; Hippocrates ; Teophilus ; Philaretus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1215/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1215",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1222-pt-1",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1222 pt. 1",
+   "datazione": "1356",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo di medicina (prima parte) ",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus ; Thomas del Garbo ; Avicenna  ; Gentilis <de Fulgineo> ; Albertus de Zancariis»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1222.pt.1/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1222.pt.1",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1222-pt-2",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1222 pt. 2",
+   "datazione": "1356",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo di medicina (parte 2) ",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus  ; Thomas del Garbo ; Avicenna ; Gentilis <de Fulgineo> ; Albertus de Zancariis»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1222.pt.2/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1222.pt.2",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1230",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1230",
+   "datazione": "1351-1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo (medicina) ",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Gentilis <de Fulgineo> ; Galenus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1230/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1230",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1231",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1231",
+   "datazione": "Sec. XIII-XIV",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Compositio (medicina) ",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…Archimatthaeus ; Gerardus  ; Hippocrates»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1231/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1231",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1244",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1244",
+   "datazione": "1450-1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ars parva seu Tegni cum commento",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Ars medica"
+     ],
+     "corrispondenza": "autore: «Galenus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1244/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1244",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1245",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1245",
+   "datazione": "1351-1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo (medicina) ",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…e Parma> ; Michael <Scotus> ; Hippocrates ; Rāzī, Muḥammad Ibn-Zakarīyā…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1245/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1245",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1248",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1248",
+   "datazione": "1470-1511",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo (medicina) ",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…Muḥammad Ibn-Zakarīyā /ar- ; Hippocrates ; Albertus Magnus ; Sidrach»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1248/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1248",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1252",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1252",
+   "datazione": "1401-1450",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo (medicina) ",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus ; Rāzī, Muḥammad Ibn-Zakarīyā /ar- ; Avicenna  ; Conradus <de Megenberg>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1252/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1252",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1254",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1254",
+   "datazione": "1400 circa ",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectanea practicae medicinalis, Vol. III",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Hippocrates ; Benevenutus <Grapheus>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1254/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1254",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1298",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1298",
+   "datazione": "1464",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo (medicina)",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…; Arnoldus <de Villa Nova> ; Galenus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1298/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1298",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1315",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1315",
+   "datazione": "Sec. XIV ",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Manoscritto composito ",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Bruno <Longoburgensis> ; Galenus ; Nicolaus Salernitanus ; Odo <Magdunensis>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1315/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1315",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1316",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1316",
+   "datazione": "1451 ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo (medicina) ",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…Bartholomaeus de Montagnana ; Hippocrates ; Johannes <Parisiensis> ; Pe…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1316/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1316",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1320",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1320",
+   "datazione": "1384",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo (medicina) ",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…is ; Benevenutus <Grapheus> ; Galenus ; u.a.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1320/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1320",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1323",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1323",
+   "datazione": "1407",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo (medicina) ",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus  ; Bruno <Longoburgensis> ; Theodericus de Cervia ; Avicenna ; u.a.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1323/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1323",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1328",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1328",
+   "datazione": "1351-1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo (alchemico) ",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…Muḥammad Ibn-Zakarīyā /ar- ; Galenus  ; Kindī, ʿAbd-al-Masīḥ Ibn-I…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1328/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1328",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1342",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1342",
+   "datazione": "10./ 11. Jh.",
+   "secolo": [
+    10,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift zur Musiktheorie: Musica Enchiriadis",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Boethius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1342/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1342",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1348",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1348",
+   "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Elementa I-V",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Elementi"
+     ],
+     "corrispondenza": "autore: «Euclides»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1348/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1348",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1349",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1349",
+   "datazione": "1360-1370",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Miscellanea",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…s ; Bartholomaeus de Brugis ; Galenus ; Rāzī, Muḥammad Ibn-Zakarīyā…»"
+    },
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Euclides ; Johannes Andreae ; Petrus B…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1349/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1349",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1351",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1351",
+   "datazione": "um 1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Mathematische Sammelhandschrift",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Euclides ; Theodosius <Bithynius> ; Menelaus <Alexandrinus>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1351/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1351",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1352",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1352",
+   "datazione": "2. Hälfte 15. Jh.",
+   "secolo": [
+    2,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Elementa",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Elementi"
+     ],
+     "corrispondenza": "autore: «Euclides»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1352/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1352",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1356",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1356",
+   "datazione": "12.-16. Jh.",
+   "secolo": [
+    12,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelband zum Quadrivium",
+   "autori": [
+    {
+     "id": "marziano-capella",
+     "autore": "Marziano Capella",
+     "latino": "Martianus Capella",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…II.) ; Hermannus Augiensis ; Martianus Capella ; Helpericus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1356/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1356",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1357",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1357",
+   "datazione": "13. Jh.",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Geographisch-historische Sammelhandschrift",
+   "autori": [
+    {
+     "id": "solino",
+     "autore": "Solino",
+     "latino": "Solinus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…bilis ; Wilhelm von Conches ; Solinus, Gaius Iulius ; Pseudo Aethic…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1357/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1357",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1360",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1360",
+   "datazione": "1431-1466",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Strabonis Geographica ",
+   "autori": [
+    {
+     "id": "strabone",
+     "autore": "Strabone",
+     "latino": "Strabo",
+     "categoria": "classico-greco",
+     "opere": [
+      "Geografia"
+     ],
+     "corrispondenza": "autore: «Strabo»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1360/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1360",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1365",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1365",
+   "datazione": "1385",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Almagestum",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Almagesto"
+     ],
+     "corrispondenza": "titolo: «Almagestum»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1365/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1365",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1419",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1419",
+   "datazione": "1430-1466",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opus quadripartitum",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Quadripartito"
+     ],
+     "corrispondenza": "autore: «Ptolemaeus, Claudius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1419/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1419",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1459",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1459",
+   "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Rhetorica ad Herennium ; De inuentione",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De inventione",
+      "Rhetorica ad Herennium"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1459/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1459",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1460",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1460",
+   "datazione": "15. Jh.; 12. Jh.; 15. Jh.",
+   "secolo": [
+    12,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Rhetorica ad Herennium",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Rhetorica ad Herennium"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1460/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1460",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1461",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1461",
+   "datazione": "1450-1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Rhetorica ad Herennium",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Rhetorica ad Herennium"
+     ],
+     "corrispondenza": "titolo: «Rhetorica ad Herennium»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1461/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1461",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1462",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1462",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De inuentione",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De inventione"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1462/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1462",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1463",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1463",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De inuentione ; De oficiis",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De inventione"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1463/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1463",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1464",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1464",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De inuentione ; Rhetorica ad Herennium",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De inventione",
+      "Rhetorica ad Herennium"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1464/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1464",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1465",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1465",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Opera",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1465/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1465",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1466",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1466",
+   "datazione": "Italien",
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De oratore",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De oratore"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1466/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1466",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1467",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1467",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1467/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1467",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1468",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1468",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De oratore",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De oratore"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1468/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1468",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1469",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1469",
+   "datazione": "Latino",
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1469/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1469",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1470",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1470",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De oratore",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De oratore"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1470/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1470",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1471",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1471",
+   "datazione": "Sec. XV ",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera ",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1471/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1471",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1472",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1472",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Opera",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1472/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1472",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1473",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1473",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Opera",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1473/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1473",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1474",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1474",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De oratore",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De oratore"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1474/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1474",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1475",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1475",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Sammelhandschrift",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Victorinus, Gaius Marius ; Hieronymus ; Seneca, Lucius Annaeus <Philosophus>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1475/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1475",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1476",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1476",
+   "datazione": "Sec. XIV ",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Orationes ",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1476/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1476",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1477",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1477",
+   "datazione": "Ende 14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Orationes",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1477/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1477",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1478",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1478",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Orationes",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius ; Loschi, Antonio ; Polentone, Sicco»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1478/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1478",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1479",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1479",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Orationes",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1479/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1479",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1480",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1480",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Orationes",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1480/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1480",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1481",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1481",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Orationes",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1481/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1481",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1482",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1482",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Orationes",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1482/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1482",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1483",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1483",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Orationes",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1483/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1483",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1484",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1484",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Orationes",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1484/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1484",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1485",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1485",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Orationes",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1485/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1485",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1486",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1486",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Orationes",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1486/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1486",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1487",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1487",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Orationes",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1487/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1487",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1488",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1488",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Orationes",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1488/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1488",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1489",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1489",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Orationes",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1489/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1489",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },
@@ -47360,6 +50618,235 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1717/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1717",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1727",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1727",
+   "datazione": "Sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Codice miscellaneo ",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Alanus <ab Insulis> ; Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1727/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1727",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1747",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1747",
+   "datazione": "14.-15. Jh.",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Institutiones grammaticae (I-XVI)",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "autore: «Priscianus (Grammatiker)»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1747/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1747",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1748",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1748",
+   "datazione": "12. Jh.",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Institutiones grammaticae (I-XVI)",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "autore: «Priscianus (Grammatiker)»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1748/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1748",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1749",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1749",
+   "datazione": "11. Jh.",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Institutiones grammaticae (I-XVI)",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "autore: «Priscianus (Grammatiker)»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1749/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1749",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1750",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1750",
+   "datazione": "12. Jh.",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Institutiones grammaticae (I-XVI)",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "autore: «Priscianus (Grammatiker)»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1750/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1750",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1751",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1751",
+   "datazione": "12. Jh.",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Institutiones grammaticae (I-XVI)",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "autore: «Priscianus (Grammatiker)»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1751/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1751",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-lat-1752",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. lat. 1752",
+   "datazione": "12.-13. Jh.",
+   "secolo": [
+    12,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Institutiones grammaticae (I-XVI)",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "autore: «Priscianus (Grammatiker)»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1752/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1752",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },
