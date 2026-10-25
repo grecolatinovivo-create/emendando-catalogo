@@ -30,6 +30,9 @@ export const BIBLIOTECHE = {
   penn: { biblioteca: "University of Pennsylvania Libraries (Kislak Center, Schoenberg, CAJS)", citta: "Filadelfia (Stati Uniti)", come: "ogni notte, da sola" },
   ds: { biblioteca: "Digital Scriptorium (istituzioni statunitensi: Princeton, Columbia, Harvard, Huntington, Free Library e altre; dettaglio sotto la tabella)", citta: "Stati Uniti", come: "ogni notte, da sola (raccolta completa ogni 6 giorni)" },
   walters: { biblioteca: "The Walters Art Museum (manifesti IIIF scritti da Emendando)", citta: "Baltimora (Stati Uniti)", come: "ogni notte, da sola (elenco ogni 6 giorni)" },
+  loc: { biblioteca: "Library of Congress: microfilm del Monastero di Santa Caterina del Sinai e dei Patriarcati greco-ortodosso e armeno di Gerusalemme", citta: "Sinai (Egitto) e Gerusalemme", come: "ogni notte, da sola (elenco completo ogni 6 giorni; manifesti scritti dal catalogo)" },
+  cudl: { biblioteca: "Cambridge Digital Library (University Library e college)", citta: "Cambridge", come: "va fatta a mano dal browser (scripts/browser/cudl.js)" },
+  nlg: { biblioteca: "Biblioteca Nazionale di Grecia", citta: "Atene", come: "ogni notte, da sola (elenco ogni 6 giorni; copie dei manifesti scritte dal catalogo)" },
   vaticana: { biblioteca: "Biblioteca Apostolica Vaticana", citta: "Città del Vaticano", come: "corsia propria: a ruota, senza pause tra un'esecuzione e l'altra" },
 };
 
@@ -111,6 +114,21 @@ export const AVANZAMENTO = {
     // circa 100 secondi per codice (descrizione e una misura): circa 36 codici per notte
     if (n < (s.totale || 0)) return { testo: `in corso: ${num(n)} codici letti su ${num(s.totale)} (mancano circa ${num(Math.ceil((s.totale - n) / 36))} notti); ${misure}`, data: s.aggiornato };
     return { testo: `codici letti tutti (${num(n)}); ${misure}`, data: s.aggiornato };
+  },
+  loc: () => {
+    const s = leggi("data/loc.json"); if (!s) return { testo: "non ancora cominciata" };
+    const n = Object.keys(s.voci || {}).length, tot = Object.values(s.totali || {}).reduce((a, b) => a + b, 0);
+    if (s.cursore) return { testo: `in corso: ${s.cursore.c ? "Gerusalemme" : "Sinai"}, pagina ${s.cursore.p}`, data: s.aggiornato };
+    return { testo: `item letti tutti (${num(n)} codici su ${num(tot)} item delle due collezioni; fuori firmani, rotoli, cataloghi moderni)`, data: s.completato || s.aggiornato };
+  },
+  cudl: () => {
+    const s = leggi("data/cudl.json"); if (!s) return { testo: "elenco non ancora raccolto: va lanciato scripts/browser/cudl.js dal browser" };
+    return { testo: `${num(Object.keys(s.voci || {}).length)} schede raccolte dal browser il ${giorno(s.raccolto)}`, data: s.raccolto };
+  },
+  nlg: () => {
+    const s = leggi("data/nlg.json"); if (!s) return { testo: "non ancora cominciata" };
+    const v = Object.values(s.voci || {}), letti = v.filter(x => x.p).length, err = v.filter(x => x.x).length;
+    return { testo: `${num(letti)} manifesti letti su ${num(v.length)} manoscritti${err ? `; ${num(err)} con il manifesto non leggibile` : ""}${letti + err < v.length ? "; gli altri alla prossima" : ""}`, data: s.aggiornato };
   },
   ...Object.fromEntries(Object.keys(FONTI_HSP).map(f => [f, () => { const a = aRiprese(`data/${f}.json`, 1); return { ...a, testo: a.testo.replace("schede lette tutte", "codici digitalizzati letti tutti") }; }])),
   vaticana: () => {

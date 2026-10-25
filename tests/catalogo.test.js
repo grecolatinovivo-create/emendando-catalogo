@@ -703,3 +703,80 @@ test("Walters: manifesti pubblicati nel repo validi (Presentation 3)", () => {
     assert.equal(m.id, urlManifesto(n.replace(/\.json$/, "")), n);
   }
 });
+
+test("Library of Congress: microfilm del Sinai e di Gerusalemme, segnature, esclusioni e manifesti scritti da noi", async () => {
+  const { dividiTitolo, compattaLoc, recordLoc, manifestoScritto, lingueLoc } = await import("../scripts/fonti/loc.mjs");
+  assert.deepEqual(dividiTitolo("Greek Manuscripts 792. Parakletike."), { s: "Greek 792", t: "Parakletike", d: null });
+  assert.deepEqual(dividiTitolo("Georgian 96. John Climacus. 11th cent. 209 f. Pg. 29 ft."), { s: "Georgian 96", t: "John Climacus", d: "11th cent." });
+  assert.deepEqual(dividiTitolo("Arabic 135.Four Gospels. 1618 A.D. 173 f. Pa. 20 ft."), { s: "Arabic 135", t: "Four Gospels", d: "1618 A.D." });
+  const item = (o = {}) => ({ id: "http://www.loc.gov/item/00271074384-ms/", title: "Greek Manuscripts 792. Parakletike.", date: "1000", dates: ["1000"], language: ["greek, ancient (to 1453)"],
+    partof: ["manuscripts in st. catherine's monastery, mount sinai", "manuscripts in st. catherine's monastery, mount sinai: microfilm 5010: greek"],
+    image_url: ["https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00271074384-ms:0005/full/pct:100/0/default.jpg#h=3426&w=5029"],
+    resources: [{ files: 3, image: "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00271074384-ms:0005/full/pct:6.25/0/default.jpg" }], item: { notes: ["Copied on vellum."] }, ...o });
+  const v = compattaLoc(item(), "sinai");
+  assert.equal(v.sv, "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00271074384-ms"); assert.equal(v.n, 3); assert.equal(v.w, 5029); assert.equal(v.f, "greek");
+  assert.equal(compattaLoc(item({ title: "Arabic Firmans 3. Firman of Sultan Selim." }), "sinai"), null);
+  assert.equal(compattaLoc(item({ date: "1912", dates: ["[1912 TO 1925]"] }), "sinai"), null);   // cataloghi moderni
+  assert.equal(compattaLoc(item({ resources: [] }), "sinai"), null);
+  // Gerusalemme: l'inglese dei dati è la lingua della scheda; i fondi greci hanno il nome della biblioteca
+  assert.deepEqual(lingueLoc({ c: "gerusalemme", f: "hagios sabas", l: ["english"] }), ["grc"]);
+  const arm = compattaLoc(item({ id: "http://www.loc.gov/item/00271070001-jo/", title: "Armenian 5. Gospels. 13th cent. 200 f.", language: ["armenian"],
+    partof: ["manuscripts in the libraries of the greek and armenian patriarchates in jerusalem: microfilm 5018: armenian"] }), "gerusalemme");
+  const [r, a] = recordLoc({ voci: { "00271074384-ms": v, "00271070001-jo": arm } });
+  assert.equal(r.id, "loc-00271074384-ms"); assert.equal(r.segnatura, "Greek 792"); assert.deepEqual(r.lingue, ["grc"]);
+  assert.match(r.biblioteca, /Santa Caterina del Sinai/); assert.match(a.biblioteca, /Patriarcato armeno/); assert.equal(a.datazione, "13th cent.");
+  assert.equal(r.manifest, "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/loc/00271074384-ms.json");
+  assert.deepEqual(voce(a, A).secolo, [13, 13]);
+  const m = manifestoScritto("00271074384-ms", v);
+  assert.equal(m["@id"], r.manifest); assert.equal(m.sequences[0].canvases.length, 3);
+  const c = m.sequences[0].canvases[2];
+  assert.equal(c.images[0].resource.service["@id"], "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00271074384-ms:0003");
+  assert.equal(c["@id"], "https://www.loc.gov/resource/amedmonastery.00271074384-ms/?sp=3"); assert.equal(c.images[0].on, c["@id"]);
+});
+
+test("Biblioteca Nazionale di Grecia: OAI, lingue in greco, pagine compatte e copie dei manifesti senza servizio Image", async () => {
+  const { estraiNlg, lingueNlg, pagineDaManifesto, compattaPagine, espandiPagine, recordNlg, manifestoScritto } = await import("../scripts/fonti/nlg.mjs");
+  const rec = `<record><header><identifier>oai:nlg.gr:1692464</identifier><setSpec>manuscript</setSpec><datestamp>2018-12-03 11:18:10</datestamp></header><metadata><oai_dc:dc>
+    <dc:type>manuscript</dc:type><dc:title xml:lang="el">ΕΒΕ 3449 (Codex Atheniensis 3449)</dc:title><dc:subject xml:lang="el">Σύμμεικτο</dc:subject><dc:date>1700 - 1799</dc:date>
+    <dc:format xml:lang="el">Χαρτί</dc:format><dc:language xml:lang="el">Ελληνική, Αρχαία</dc:language></oai_dc:dc></metadata></record>`;
+  const x = estraiNlg(rec);
+  assert.equal(x.id, "1692464"); assert.equal(x.v.s, "ΕΒΕ 3449 (Codex Atheniensis 3449)"); assert.equal(x.v.d, "1700 - 1799");
+  assert.deepEqual(lingueNlg(["Ελληνική, Αρχαία", "Λατινική"]), ["grc", "la"]);
+  const can = n => ({ images: [{ resource: { "@id": `https://digitalcollections.nlg.gr/iiif/1692464/EBE3449-0000${n}.tif/full/full/0/default.jpg`, width: 2000 + n, height: 2600,
+    service: { "@id": `https://digitalcollections.nlg.gr/iiif/1692464/EBE3449-0000${n}.tif` } } }] });
+  const p = pagineDaManifesto({ sequences: [{ canvases: [can(1), can(2), can(3)] }], metadata: [{ label: [{ "@value": "Rights holder", "@language": "en" }], value: "Εθνική Βιβλιοθήκη της Ελλάδος" }] }, "1692464");
+  assert.deepEqual(p.pagine[1], ["EBE3449-00002.tif", 2002, 2600]); assert.match(p.titolare, /Εθνική/);
+  const cp = compattaPagine(p.pagine);
+  assert.ok(cp.q); assert.equal(cp.n, undefined); assert.deepEqual(espandiPagine(cp), p.pagine);
+  assert.deepEqual(espandiPagine(compattaPagine([["a_x.jpg", 1, 2], ["a_y.jpg", 3, 4]])), [["a_x.jpg", 1, 2], ["a_y.jpg", 3, 4]]);
+  const v = { ...x.v, p: cp, t: p.titolare };
+  const [r] = recordNlg({ voci: { 1692464: v, 99: { s: "senza pagine" } } });
+  assert.equal(r.id, "nlg-1692464"); assert.equal(r.biblioteca, "Biblioteca Nazionale di Grecia"); assert.deepEqual(r.lingue, ["grc"]); assert.equal(r.immagini, 3);
+  assert.equal(r.manifest, "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/nlg/1692464.json");
+  const m = manifestoScritto("1692464", v), res = m.sequences[0].canvases[0].images[0].resource;
+  assert.equal(res["@id"], "https://digitalcollections.nlg.gr/iiif/1692464/EBE3449-00001.tif/full/2000,/0/default.jpg"); assert.equal(res.service, undefined);
+  assert.equal(m.sequences[0].canvases[0].width, 2001);
+});
+
+test("Cambridge: schede raccolte dal browser, segnature, filtri e manifesti di CUDL", async () => {
+  const { dividiCudl, recordCudl } = await import("../scripts/fonti/cudl.mjs");
+  assert.deepEqual(dividiCudl("Cambridge, University Library, MS Nn.2.41"), { biblioteca: "Cambridge University Library", segnatura: "MS Nn.2.41" });
+  assert.deepEqual(dividiCudl("Cambridge, Trinity College, MS O.4.17"), { biblioteca: "Trinity College", segnatura: "MS O.4.17" });
+  const rs = recordCudl({ voci: {
+    "MS-NN-00002-00041": { s: "Cambridge, University Library, MS Nn.2.41", t: "Codex Bezae", u: "New Testament and Acts of the Apostles", d: "Late 4th or early 5th Century", a0: 390, a1: 410, l: ["grc", "la"], f: "Codex" },
+    "MS-DAR-00001": { s: "Cambridge, University Library, MS DAR 1", t: "Letter to Hooker", a0: 1850, f: "Letter" } } });
+  assert.equal(rs.length, 1);
+  assert.equal(rs[0].manifest, "https://cudl.lib.cam.ac.uk/iiif/MS-NN-00002-00041"); assert.deepEqual(rs[0].lingue, ["grc", "la"]);
+  assert.equal(rs[0].id, "cudl-ms-nn-00002-00041"); assert.deepEqual(voce(rs[0], A).secolo, [4, 5]);
+  assert.deepEqual(recordCudl(null), []);
+});
+
+test("manifesti scritti dal catalogo: si scrivono solo se cambiano, quelli dei codici usciti si tolgono", async () => {
+  const { scriviManifesti } = await import("../scripts/manifesti.mjs");
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), "manifesti-"));
+  const f = (id, v) => ({ id, v });
+  assert.deepEqual(scriviManifesti({ a: 1, b: 2 }, dir, f), { scritti: 2, tolti: 0, totale: 2 });
+  assert.deepEqual(scriviManifesti({ a: 1, b: 3 }, dir, f), { scritti: 1, tolti: 0, totale: 2 });
+  assert.deepEqual(scriviManifesti({ a: 1 }, dir, f), { scritti: 0, tolti: 1, totale: 1 });
+  assert.deepEqual(fs.readdirSync(dir), ["a.json"]);
+});

@@ -1,0 +1,44 @@
+# Manifesti IIIF scritti dal catalogo (Library of Congress, Biblioteca Nazionale di Grecia): si scrivono senza richieste dagli
+# stati delle raccolte in main (data/loc.json, data/nlg.json) con scripts/manifesti.mjs e si salvano nel ramo «manifesti»
+# (non in main: sono circa 400 MB di JSON che le corsie non devono scaricare). Il catalogo punta a
+# raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/<fonte>/<id>.json.
+# Una volta al giorno, dopo la corsia giornaliera; si salva solo se qualcosa cambia.
+name: "Manifesti scritti dal catalogo"
+
+on:
+  schedule:
+    - cron: "30 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: manifesti
+  cancel-in-progress: false
+
+jobs:
+  manifesti:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Copia del ramo manifesti
+        run: |
+          git fetch -q --depth=1 origin manifesti && git worktree add -q ../manifesti FETCH_HEAD || { git worktree add -q --detach ../manifesti && (cd ../manifesti && git checkout -q --orphan manifesti && git rm -rfq . || true); }
+      - name: Scrittura
+        run: node scripts/manifesti.mjs --dir=../manifesti
+      - name: Salvataggio (solo se cambia)
+        working-directory: ../manifesti
+        run: |
+          git config user.name "emendando-catalogo-bot"
+          git config user.email "emendando-catalogo-bot@users.noreply.github.com"
+          git add -A data/manifesti
+          if git diff --cached --quiet; then echo "Nessuna modifica"; exit 0; fi
+          git commit -q -m "Manifesti scritti dal catalogo: aggiornamento $(date -u '+%Y-%m-%d %H:%M') UTC"
+          git push -q origin HEAD:manifesti
