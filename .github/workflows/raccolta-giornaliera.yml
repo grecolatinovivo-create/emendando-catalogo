@@ -1,10 +1,11 @@
 # Corsia giornaliera: tutte le altre fonti, una volta al giorno alle 03 UTC, ciascuna con il suo limite di tempo:
 # Heidelberg (con gli indici delle miscellanee), e-codices, BSB, Berlino, Gallica, Laurenziana, Leida, le biblioteche del
-# Handschriftenportal (Wolfenbüttel, Bamberga, Karlsruhe, Stoccarda, Colonia, Lipsia), Penn, Digital Scriptorium (dopo Penn: i doppioni restano a Penn) e Walters (manifesti IIIF scritti da noi).
-# Handschriftenportal (Wolfenbüttel, Bamberga, Karlsruhe, Stoccarda, Colonia, Lipsia), Penn e Digital Scriptorium (dopo Penn: i doppioni restano a Penn),
-# Library of Congress (microfilm del Sinai e di Gerusalemme) e Biblioteca Nazionale di Grecia (i loro manifesti si scrivono con manifesti.yml).
+# Handschriftenportal (Wolfenbüttel, Bamberga, Karlsruhe, Stoccarda, Colonia, Lipsia), Digital Scriptorium (i doppioni di Penn
+# e Yale restano a quelle fonti) e Biblioteca Nazionale di Grecia (manifesti scritti con manifesti.yml).
+# Penn, Library of Congress e Walters sono passate il 25 ottobre 2026 alla corsia «usa» (raccolta-usa.yml), che lavora a ruota.
 # Le raccolte OAI riprendono da dove si erano fermate grazie alla cache delle Actions (chiave propria di questa corsia).
-# Niente ruota: queste fonti si leggono una volta al giorno; ciò che resta a metà riprende la notte dopo.
+# Ruota fino a lettura completa: se una fonte con stato in data/ rimette la prima lettura da capo, la corsia riparte subito da sola
+# finché quella lettura non è finita, purché nel giro ci siano stati progressi (scripts/ruota.mjs); altrimenti una volta per notte.
 name: "Raccolta: corsia giornaliera"
 
 on:
@@ -14,7 +15,7 @@ on:
 
 permissions:
   contents: write
-  actions: write
+  actions: write   # per la ruota
 
 concurrency:
   group: raccolta-giornaliera
@@ -25,8 +26,9 @@ jobs:
     uses: ./.github/workflows/corsia.yml
     with:
       corsia: giornaliera
-      fonti: heidelberg,ecodices,bsb,berlino,gallica,laurenziana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,penn,ds,walters,loc,nlg
-      argomenti: --oai-minuti=40 --indici-minuti=20 --gallica-minuti=25 --laurenziana-minuti=15 --leiden-minuti=15 --hsp-minuti=10 --penn-minuti=10 --ds-minuti=15 --walters-minuti=60 --loc-minuti=10 --nlg-minuti=15 --berlino-minuti=60
+      fonti: heidelberg,ecodices,bsb,berlino,gallica,laurenziana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,ds,nlg
+      argomenti: --oai-minuti=40 --indici-minuti=20 --gallica-minuti=25 --laurenziana-minuti=15 --leiden-minuti=15 --hsp-minuti=10 --ds-minuti=15 --nlg-minuti=15 --berlino-minuti=60
       cache: true
       ruota: false
+      completa: true
       flusso: raccolta-giornaliera.yml

@@ -1,8 +1,11 @@
-# Corsia «mondo»: biblioteche fuori dall'Europa e dagli Stati Uniti, una volta al giorno alle 05 UTC (server diversi dalle altre corsie):
+# Corsia «mondo»: biblioteche fuori dall'Europa e dagli Stati Uniti (server diversi dalle altre corsie):
 # National Diet Library (Tokyo; OAI-PMH, solo i manoscritti dei libri antichi), Kokusho Database del NIJL (manoscritti giapponesi
-# di centinaia di biblioteche), Auckland Libraries (Sir George Grey Special Collections). Le raccolte lunghe (NDL completa ogni 30 giorni,
-# Kokusho ogni 14) vanno a riprese, 60 minuti per notte ciascuna; gli stati sono in data/ndl.json, data/kokusho.json, data/auckland.json.
-# Niente ruota: ciò che resta a metà riprende la notte dopo.
+# di centinaia di biblioteche), Auckland Libraries (Sir George Grey Special Collections). Gli stati sono in data/ndl.json,
+# data/kokusho.json, data/auckland.json. Richieste in serie, una biblioteca dopo l'altra, con le pause di sempre (scripts/rete.mjs).
+# Ruota fino a lettura completa: finché una delle tre non ha finito la prima lettura completa, la corsia lavora circa 150 minuti
+# per esecuzione (NDL 65, Kokusho 65, Auckland 10) e riparte subito da sola, purché nel giro ci siano stati progressi
+# (scripts/ruota.mjs). Poi torna al giro notturno delle 05 UTC, che prende solo i codici nuovi (raccolte complete periodiche:
+# NDL ogni 30 giorni, Kokusho ogni 14, a riprese da una notte all'altra).
 name: "Raccolta: corsia mondo"
 
 on:
@@ -12,7 +15,7 @@ on:
 
 permissions:
   contents: write
-  actions: write
+  actions: write   # per la ruota
 
 concurrency:
   group: raccolta-mondo
@@ -24,7 +27,8 @@ jobs:
     with:
       corsia: mondo
       fonti: ndl,kokusho,auckland
-      argomenti: --ndl-minuti=60 --kokusho-minuti=60 --auckland-minuti=10
+      argomenti: --ndl-minuti=65 --kokusho-minuti=65 --auckland-minuti=10
       cache: false
       ruota: false
+      completa: true
       flusso: raccolta-mondo.yml

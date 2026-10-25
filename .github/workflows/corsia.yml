@@ -1,19 +1,23 @@
 # Una «corsia» della raccolta del catalogo: il lavoro comune a tutte le corsie (raccolta, prove, salvataggio, ruota).
 # Non parte da sola: la chiamano i workflow delle corsie (raccolta-vaticana.yml, raccolta-yale.yml, raccolta-bodleian.yml,
-# raccolta-giornaliera.yml), che decidono quando partire, quali fonti leggere e il gruppo di concurrency.
+# raccolta-giornaliera.yml, raccolta-italia.yml, raccolta-mondo.yml, raccolta-usa.yml), che decidono quando partire, quali fonti leggere e il gruppo di concurrency.
 # Le corsie leggono biblioteche diverse (server diversi) e girano in parallelo; dentro una corsia le richieste restano in serie,
 # con le pause di sempre (10 secondi per la Vaticana), quindi nessuna biblioteca riceve più richieste di prima.
 # Salvataggio a prova di conflitto, anche con più corsie che salvano quasi insieme: si mettono da parte SOLO gli stati delle
 # fonti della corsia, si riparte dall'ultimo main, si rimettono quegli stati, si ricostruisce il catalogo senza richieste
 # (--solo-costruisci) e si prova a salvare; se un'altra corsia ha salvato prima, si aspetta un po' (a caso) e si rifà, fino a 8 volte.
 # Ruota: se la corsia ha lavorato almeno 30 minuti (c'era ancora lavoro), riparte subito da sola; altrimenti aspetta il suo orario.
+# Ruota «fino a lettura completa» (corsie mondo, usa, italia, giornaliera): riparte subito finché una delle sue fonti non ha finito
+# la prima lettura completa (scripts/ruota.mjs), ma solo se in questo giro almeno una di quelle fonti ha fatto progressi: una fonte
+# in errore non fa girare la corsia all'infinito. Quando tutte hanno finito, la corsia torna al suo orario notturno (codici nuovi).
+# Un nuovo giro non parte se ce n'è già uno in coda; il gruppo di concurrency della corsia lo fa aspettare finché questo non è finito.
 name: Corsia della raccolta (comune)
 
 on:
   workflow_call:
     inputs:
       corsia:
-        description: "Nome della corsia (vaticana, yale, bodleian, giornaliera)"
+        description: "Nome della corsia (vaticana, yale, bodleian, giornaliera, italia, mondo, usa)"
         type: string
         required: true
       fonti:
@@ -32,6 +36,10 @@ on:
         description: "Ripartire subito se l'esecuzione ha lavorato almeno 30 minuti"
         type: boolean
         default: true
+      completa:
+        description: "Ruota fino a lettura completa: ripartire subito finché una fonte della corsia non ha finito la prima lettura completa e c'è stato un progresso"
+        type: boolean
+        default: false
       flusso:
         description: "File del workflow della corsia, per la ruota (es. raccolta-vaticana.yml)"
         type: string
@@ -61,6 +69,9 @@ jobs:
           restore-keys: |
             catalogo-${{ inputs.corsia }}-
             catalogo-
+      - name: Stati prima del giro (per la ruota fino a lettura completa)
+        if: inputs.completa
+        run: node scripts/ruota.mjs --fonti="${{ inputs.fonti }}" > "$RUNNER_TEMP/ruota-prima.json" && cat "$RUNNER_TEMP/ruota-prima.json"
       - name: Raccolta
         run: node scripts/raccogli.mjs --fonti="${{ inputs.fonti }}" ${{ inputs.argomenti }} --minuti-totali=150
       - name: Prove del catalogo
@@ -105,11 +116,19 @@ jobs:
           done
           exit 1
       - name: Ruota (avvio della prossima esecuzione della corsia)
-        if: success() && inputs.ruota && github.ref == 'refs/heads/main'
+        if: success() && (inputs.ruota || inputs.completa) && github.ref == 'refs/heads/main'
         env:
           GH_TOKEN: ${{ github.token }}
           FLUSSO: ${{ inputs.flusso }}
+          FONTI: ${{ inputs.fonti }}
+          COMPLETA: ${{ inputs.completa }}
         run: |
           DURATA=$(( $(date +%s) - INIZIO_RACCOLTA ))
           echo "Durata: $((DURATA / 60)) minuti"
-          if [ "$DURATA" -ge 1800 ]; then gh workflow run "$FLUSSO" --ref main -R "$GITHUB_REPOSITORY" && echo "Prossima esecuzione avviata"; else echo "Poco lavoro: la ruota si ferma, si aspetta l'orario"; fi
+          if [ "$COMPLETA" = "true" ]; then
+            DECISIONE=$(node scripts/ruota.mjs --fonti="$FONTI" --prima="$RUNNER_TEMP/ruota-prima.json")
+          elif [ "$DURATA" -ge 1800 ]; then DECISIONE=riparti; else DECISIONE=ferma; fi
+          if [ "$DECISIONE" != "riparti" ]; then echo "La ruota si ferma: si aspetta l'orario"; exit 0; fi
+          IN_CODA=$(gh run list -R "$GITHUB_REPOSITORY" --workflow "$FLUSSO" --json status --jq '[.[] | select(.status == "queued" or .status == "pending" or .status == "waiting" or .status == "requested")] | length' || echo 0)
+          if [ "${IN_CODA:-0}" -gt 0 ]; then echo "C'è già un giro in coda: non ne avvio un altro"; exit 0; fi
+          gh workflow run "$FLUSSO" --ref main -R "$GITHUB_REPOSITORY" && echo "Prossima esecuzione avviata"

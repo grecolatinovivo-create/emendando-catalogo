@@ -1,8 +1,9 @@
-# Corsia «italia»: biblioteche italiane (oltre alla Laurenziana, che resta nella corsia giornaliera), una volta al giorno alle 02:20 UTC
-# (server diversi dalle altre corsie): Ambrosiana (Biblioteca Digitale; prima lettura delle schede circa 40 minuti, poi solo i codici
-# nuovi), Montecassino (Memory of Montecassino), Casanatense (CONTENTdm), Biblioteca Universitaria di Bologna (Historica).
-# Gli stati sono in data/ambrosiana.json, data/montecassino.json, data/casanatense.json, data/bub.json.
-# Niente ruota: ciò che resta a metà riprende la notte dopo.
+# Corsia «italia»: biblioteche italiane (oltre alla Laurenziana, che resta nella corsia giornaliera; server diversi dalle altre corsie):
+# Ambrosiana (Biblioteca Digitale), Montecassino (Memory of Montecassino), Casanatense (CONTENTdm), Biblioteca Universitaria
+# di Bologna (Historica). Gli stati sono in data/ambrosiana.json, data/montecassino.json, data/casanatense.json, data/bub.json.
+# Ruota fino a lettura completa: finché una di queste non ha finito la prima lettura (oggi l'Ambrosiana: elenco e schede), la corsia
+# lavora fino a circa 150 minuti per esecuzione (Ambrosiana 120) e riparte subito da sola, purché nel giro ci siano stati progressi
+# (scripts/ruota.mjs). Poi torna al giro notturno delle 02:20 UTC, che legge solo i codici nuovi.
 name: "Raccolta: corsia italia"
 
 on:
@@ -12,7 +13,7 @@ on:
 
 permissions:
   contents: write
-  actions: write
+  actions: write   # per la ruota
 
 concurrency:
   group: raccolta-italia
@@ -24,7 +25,8 @@ jobs:
     with:
       corsia: italia
       fonti: ambrosiana,montecassino,casanatense,bub
-      argomenti: --ambrosiana-minuti=60 --montecassino-minuti=5 --casanatense-minuti=5 --bub-minuti=10
+      argomenti: --ambrosiana-minuti=120 --montecassino-minuti=5 --casanatense-minuti=5 --bub-minuti=10
       cache: false
       ruota: false
+      completa: true
       flusso: raccolta-italia.yml

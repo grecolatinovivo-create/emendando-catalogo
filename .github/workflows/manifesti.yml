@@ -2,7 +2,7 @@
 # stati delle raccolte in main (data/loc.json, data/nlg.json) con scripts/manifesti.mjs e si salvano nel ramo «manifesti»
 # (non in main: sono circa 400 MB di JSON che le corsie non devono scaricare). Il catalogo punta a
 # raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/<fonte>/<id>.json.
-# Una volta al giorno, dopo la corsia giornaliera; si salva solo se qualcosa cambia.
+# Una volta al giorno, dopo le corsie giornaliera (Biblioteca Nazionale di Grecia) e usa (Library of Congress); si salva solo se qualcosa cambia.
 name: "Manifesti scritti dal catalogo"
 
 on:

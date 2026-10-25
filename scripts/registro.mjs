@@ -23,24 +23,24 @@ export const BIBLIOTECHE = {
   bodleian: { biblioteca: "Bodleian Libraries e college", citta: "Oxford", come: "corsia propria: a ruota finché non sono letti tutti, poi ogni notte" },
   gallica: { biblioteca: "Bibliothèque nationale de France (Gallica)", citta: "Parigi", come: "va rifatta a mano dal browser" },
   laurenziana: { biblioteca: "Biblioteca Medicea Laurenziana", citta: "Firenze", come: "ogni notte, da sola" },
-  ambrosiana: { biblioteca: "Veneranda Biblioteca Ambrosiana (Biblioteca Digitale)", citta: "Milano", come: "corsia italia, ogni notte (elenco ogni 6 giorni)" },
-  montecassino: { biblioteca: "Biblioteca statale del Monumento nazionale di Montecassino (Memory of Montecassino)", citta: "Montecassino", come: "corsia italia, ogni notte (raccolta completa ogni 6 giorni)" },
-  casanatense: { biblioteca: "Biblioteca Casanatense", citta: "Roma", come: "corsia italia, ogni notte (raccolta completa ogni 6 giorni)" },
-  bub: { biblioteca: "Biblioteca Universitaria di Bologna (codici in Historica, Università di Bologna)", citta: "Bologna", come: "corsia italia, ogni notte (raccolta completa ogni 6 giorni)" },
+  ambrosiana: { biblioteca: "Veneranda Biblioteca Ambrosiana (Biblioteca Digitale)", citta: "Milano", come: "corsia italia: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 6 giorni)" },
+  montecassino: { biblioteca: "Biblioteca statale del Monumento nazionale di Montecassino (Memory of Montecassino)", citta: "Montecassino", come: "corsia italia, ogni notte (raccolta completa ogni 6 giorni; a ruota se la prima lettura non è finita)" },
+  casanatense: { biblioteca: "Biblioteca Casanatense", citta: "Roma", come: "corsia italia, ogni notte (raccolta completa ogni 6 giorni; a ruota se la prima lettura non è finita)" },
+  bub: { biblioteca: "Biblioteca Universitaria di Bologna (codici in Historica, Università di Bologna)", citta: "Bologna", come: "corsia italia, ogni notte (raccolta completa ogni 6 giorni; a ruota se la prima lettura non è finita)" },
   leiden: { biblioteca: "Universiteitsbibliotheek Leiden (manoscritti, con i Vossiani; Bibliotheca Neerlandica Manuscripta)", citta: "Leida", come: "ogni notte, da sola" },
   // biblioteche lette dal Handschriftenportal (Wolfenbüttel, Bamberga, Karlsruhe, Stoccarda, Colonia, Lipsia)
   ...Object.fromEntries(Object.entries(FONTI_HSP).map(([f, h]) => [f, { biblioteca: `${h.nome} (dati dal Handschriftenportal)`, citta: h.citta, come: "ogni notte, da sola" }])),
   yale: { biblioteca: "Yale University Library (Beinecke e altre biblioteche di Yale)", citta: "New Haven (Stati Uniti)", come: "corsia propria: a ruota finché la prima lettura non è finita, poi ogni 6 giorni" },
-  penn: { biblioteca: "University of Pennsylvania Libraries (Kislak Center, Schoenberg, CAJS)", citta: "Filadelfia (Stati Uniti)", come: "ogni notte, da sola" },
+  penn: { biblioteca: "University of Pennsylvania Libraries (Kislak Center, Schoenberg, CAJS)", citta: "Filadelfia (Stati Uniti)", come: "corsia usa: a ruota finché la prima lettura non è finita, poi ogni notte (raccolta completa ogni 6 giorni)" },
   ds: { biblioteca: "Digital Scriptorium (istituzioni statunitensi: Princeton, Columbia, Harvard, Huntington, Free Library e altre; dettaglio sotto la tabella)", citta: "Stati Uniti", come: "ogni notte, da sola (raccolta completa ogni 6 giorni)" },
-  walters: { biblioteca: "The Walters Art Museum (manifesti IIIF scritti da Emendando)", citta: "Baltimora (Stati Uniti)", come: "ogni notte, da sola (elenco ogni 6 giorni)" },
-  loc: { biblioteca: "Library of Congress: microfilm del Monastero di Santa Caterina del Sinai e dei Patriarcati greco-ortodosso e armeno di Gerusalemme", citta: "Sinai (Egitto) e Gerusalemme", come: "ogni notte, da sola (elenco completo ogni 6 giorni; manifesti scritti dal catalogo)" },
+  walters: { biblioteca: "The Walters Art Museum (manifesti IIIF scritti da Emendando)", citta: "Baltimora (Stati Uniti)", come: "corsia usa: a ruota finché non sono letti tutti i codici, poi ogni notte (elenco ogni 6 giorni; misure delle immagini)" },
+  loc: { biblioteca: "Library of Congress: microfilm del Monastero di Santa Caterina del Sinai e dei Patriarcati greco-ortodosso e armeno di Gerusalemme", citta: "Sinai (Egitto) e Gerusalemme", come: "corsia usa: a ruota finché la prima lettura non è finita, poi ogni notte (elenco completo ogni 6 giorni; manifesti scritti dal catalogo)" },
   cudl: { biblioteca: "Cambridge Digital Library (University Library e college)", citta: "Cambridge", come: "va fatta a mano dal browser (scripts/browser/cudl.js)" },
   nlg: { biblioteca: "Biblioteca Nazionale di Grecia", citta: "Atene", come: "ogni notte, da sola (elenco ogni 6 giorni; copie dei manifesti scritte dal catalogo)" },
-  ndl: { biblioteca: "National Diet Library (国立国会図書館): manoscritti dei libri antichi giapponesi e cinesi", citta: "Tokyo (Giappone)", come: "corsia mondo, ogni notte (solo i record cambiati ogni 6 giorni, raccolta completa ogni 30)" },
-  kokusho: { biblioteca: "Kokusho Database (国書データベース) del National Institute of Japanese Literature: manoscritti di biblioteche, templi e collezioni giapponesi", citta: "Giappone", come: "corsia mondo, ogni notte (raccolta completa ogni 14 giorni)" },
+  ndl: { biblioteca: "National Diet Library (国立国会図書館): manoscritti dei libri antichi giapponesi e cinesi", citta: "Tokyo (Giappone)", come: "corsia mondo: a ruota finché la prima lettura completa non è finita, poi ogni notte (solo i record cambiati ogni 6 giorni, raccolta completa ogni 30)" },
+  kokusho: { biblioteca: "Kokusho Database (国書データベース) del National Institute of Japanese Literature: manoscritti di biblioteche, templi e collezioni giapponesi", citta: "Giappone", come: "corsia mondo: a ruota finché la prima lettura completa non è finita, poi ogni notte (raccolta completa ogni 14 giorni)" },
   slv: { biblioteca: "State Library Victoria", citta: "Melbourne (Australia)", come: "va fatta a mano dal browser (scripts/browser/slv.js)" },
-  auckland: { biblioteca: "Auckland Libraries, Sir George Grey Special Collections", citta: "Auckland (Nuova Zelanda)", come: "corsia mondo, ogni notte (raccolta completa ogni 6 giorni)" },
+  auckland: { biblioteca: "Auckland Libraries, Sir George Grey Special Collections", citta: "Auckland (Nuova Zelanda)", come: "corsia mondo: a ruota finché la prima lettura completa non è finita, poi ogni notte (raccolta completa ogni 6 giorni)" },
   vaticana: { biblioteca: "Biblioteca Apostolica Vaticana", citta: "Città del Vaticano", come: "corsia propria: a ruota, senza pause tra un'esecuzione e l'altra" },
 };
 
@@ -124,6 +124,7 @@ export const AVANZAMENTO = {
   },
   penn: () => {
     const s = leggi("data/penn.json"); if (!s) return { testo: "non ancora cominciata" };
+    if (!s.cursore && !s.completato) return { testo: "lettura completa da rifare: riparte a ruota (corsia usa)", data: s.aggiornato };
     if (s.cursore) return { testo: `in corso: forma ${(s.cursore.f ?? 0) + 1}, pagina ${s.cursore.p}`, data: s.aggiornato };
     return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} manoscritti)`, data: s.aggiornato };
   },
@@ -138,12 +139,13 @@ export const AVANZAMENTO = {
     const vs = Object.values(s.voci || {}), n = vs.length, imm = vs.flatMap(v => v.p || []), mis = imm.filter(x => x[4] !== 0).length;
     const ore = (imm.length - mis) * 15 / 3600, giorni = Math.ceil(ore);   // circa 15 secondi per misura, 60 minuti per notte
     const misure = `misure delle immagini: ${num(mis)} su ${num(imm.length)} vere${imm.length > mis ? `, le altre stimate dal tipo di pagina (mancano circa ${num(giorni)} notti)` : ""}`;
-    // circa 100 secondi per codice (descrizione e una misura): circa 36 codici per notte
-    if (n < (s.totale || 0)) return { testo: `in corso: ${num(n)} codici letti su ${num(s.totale)} (mancano circa ${num(Math.ceil((s.totale - n) / 36))} notti); ${misure}`, data: s.aggiornato };
+    // circa 100 secondi per codice (descrizione e una misura): circa 36 codici all'ora, 60 minuti per giro della corsia usa a ruota
+    if (n < (s.totale || 0)) return { testo: `in corso, a ruota: ${num(n)} codici letti su ${num(s.totale)} (mancano ${durata((s.totale - n) / 36 * 1.1)}); ${misure}`, data: s.aggiornato };
     return { testo: `codici letti tutti (${num(n)}); ${misure}`, data: s.aggiornato };
   },
   loc: () => {
     const s = leggi("data/loc.json"); if (!s) return { testo: "non ancora cominciata" };
+    if (!s.cursore && !s.completato) return { testo: "lettura completa da rifare: riparte a ruota (corsia usa)", data: s.aggiornato };
     const n = Object.keys(s.voci || {}).length, tot = Object.values(s.totali || {}).reduce((a, b) => a + b, 0);
     if (s.cursore) return { testo: `in corso: ${s.cursore.c ? "Gerusalemme" : "Sinai"}, pagina ${s.cursore.p}`, data: s.aggiornato };
     return { testo: `item letti tutti (${num(n)} codici su ${num(tot)} item delle due collezioni; fuori firmani, rotoli, cataloghi moderni)`, data: s.completato || s.aggiornato };
@@ -159,12 +161,14 @@ export const AVANZAMENTO = {
   },
   ndl: () => {
     const s = leggi("data/ndl.json"); if (!s) return { testo: "non ancora cominciata" };
+    if (!s.cursore && !s.completato) return { testo: "lettura completa da rifare: riparte a ruota (corsia mondo)", data: s.aggiornato };
     const n = Object.keys(s.voci || {}).length;
     if (s.cursore) return { testo: `in corso: ${num(s.letti)} record letti${s.cursore.completa && s.totale ? " su " + num(s.totale) : " (record cambiati)"}; ${num(n)} manoscritti finora`, data: s.aggiornato };
     return { testo: `record letti tutti (${num(s.totale)} libri antichi digitalizzati; ${num(n)} manoscritti; fuori i libri a stampa)`, data: s.completato || s.aggiornato };
   },
   kokusho: () => {
     const s = leggi("data/kokusho.json"); if (!s) return { testo: "non ancora cominciata" };
+    if (!s.cursore && !s.completato) return { testo: "lettura completa da rifare: riparte a ruota (corsia mondo)", data: s.aggiornato };
     const n = Object.keys(s.voci || {}).length;
     if (s.cursore) return { testo: `in corso: pagina ${num(s.cursore.p)} di ${num(s.pagine)} (${num(n)} manoscritti finora)`, data: s.aggiornato };
     return { testo: `schede lette tutte (${num(s.totale)} manoscritti con immagini; ${num(n)} con immagini proprie; fuori i libri a stampa e la NDL)`, data: s.completato || s.aggiornato };
@@ -175,6 +179,8 @@ export const AVANZAMENTO = {
   },
   auckland: () => {
     const s = leggi("data/auckland.json"); if (!s) return { testo: "non ancora cominciata" };
+    if (s.cursore) return { testo: `in corso, a ruota: record ${num(s.cursore.inizio)} di ${num(s.totale)}`, data: s.aggiornato };
+    if (!s.cursore && !s.completato) return { testo: "lettura completa da rifare: riparte a ruota (corsia mondo)", data: s.aggiornato };
     return { testo: `oggetti letti tutti (${num(s.totale)}; ${num(Object.keys(s.voci || {}).length)} codici: medievali e orientali, fuori lettere e carte d'archivio)`, data: s.completato || s.aggiornato };
   },
   ...Object.fromEntries(Object.keys(FONTI_HSP).map(f => [f, () => { const a = aRiprese(`data/${f}.json`, 1); return { ...a, testo: a.testo.replace("schede lette tutte", "codici digitalizzati letti tutti") }; }])),
