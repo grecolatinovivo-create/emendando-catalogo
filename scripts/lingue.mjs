@@ -158,7 +158,8 @@ export function secoli(datazione) {
   }
   // anni: «1463», «0801-0900», «ca. 825», «1401-1500» (fine secolo: 1500 è nel XV)
   if (!sec.length) {
-    for (const m of s.matchAll(/(?<![\d.])(\d{3,4})(?![\d.]|\s*(?:\.|th|st)\s*(?:jh|cent))/g)) {
+    // anni dell'egira («935 AH / 1529 CE») esclusi: conta l'anno dell'era cristiana
+    for (const m of s.matchAll(/(?<![\d.])(\d{3,4})(?![\d.]|\s*(?:\.|th|st)\s*(?:jh|cent)|\s*A\.?H\.?(?![a-z]))/gi)) {
       const y = +m[1]; if (y >= 100 && y <= 2030) sec.push(Math.floor((y - 1) / 100) + 1);
     }
   }

@@ -568,3 +568,138 @@ test("Digital Scriptorium: elenco, SPARQL, biblioteca vera, doppioni di Penn e d
   const p = daPagina(`<script>"loadedManifest": "https://x.org/m"</script><dt class="blacklight-shelfmark_display col-md-3"><strong>Shelfmark:</strong></dt><dd class="col-md-9">MS Lat 441.2</dd>`);
   assert.equal(p.m, "https://x.org/m"); assert.equal(p.s, "MS Lat 441.2");
 });
+
+// ---------------------------------------------------------------- Walters Art Museum: manifesti IIIF scritti da noi
+import { elencoDaPagina, datiDaRiga, datiDaTei, datiDaPaginaImmagini, misuraJpeg, stima, campioni, campionePrincipale, tipoPagina,
+  manifestoWalters, recordWalters, scriviManifestiWalters, urlManifesto, CC0 } from "../scripts/fonti/walters.mjs";
+
+// validazione minima di un manifesto IIIF Presentation 3 (struttura richiesta dalla specifica per Manifest, Canvas, Annotation)
+function validaP3(m) {
+  const errori = [];
+  const lingue = (x, dove) => { if (!x || typeof x !== "object" || Array.isArray(x) || !Object.values(x).length || !Object.values(x).every(a => Array.isArray(a) && a.every(s => typeof s === "string"))) errori.push(dove + ": non è una mappa di lingue"); };
+  const uri = (x, dove) => { if (typeof x !== "string" || !/^https?:\/\/[^\s#]+$/.test(x)) errori.push(dove + ": id non valido " + x); };
+  const ctx = [].concat(m["@context"]); if (ctx[ctx.length - 1] !== "http://iiif.io/api/presentation/3/context.json") errori.push("@context");
+  uri(m.id, "manifest"); if (m.type !== "Manifest") errori.push("type"); lingue(m.label, "label");
+  if (m.rights && !/^https?:\/\/(creativecommons\.org|rightsstatements\.org)\//.test(m.rights)) errori.push("rights");
+  if (m.requiredStatement) { lingue(m.requiredStatement.label, "requiredStatement.label"); lingue(m.requiredStatement.value, "requiredStatement.value"); }
+  for (const md of m.metadata || []) { lingue(md.label, "metadata.label"); lingue(md.value, "metadata.value"); }
+  if (!Array.isArray(m.items) || !m.items.length) errori.push("items vuoto");
+  const ids = new Set();
+  for (const [i, c] of (m.items || []).entries()) {
+    uri(c.id, "canvas " + i); if (ids.has(c.id)) errori.push("canvas doppio " + c.id); ids.add(c.id);
+    if (c.type !== "Canvas") errori.push("canvas type " + i);
+    if (!Number.isInteger(c.width) || !Number.isInteger(c.height) || c.width <= 0 || c.height <= 0) errori.push("canvas dimensioni " + i);
+    if (c.label) lingue(c.label, "canvas label " + i);
+    const ap = c.items && c.items[0];
+    if (!ap || ap.type !== "AnnotationPage") { errori.push("AnnotationPage " + i); continue; }
+    uri(ap.id, "annotationpage " + i);
+    for (const a of ap.items || []) {
+      uri(a.id, "annotation " + i);
+      if (a.type !== "Annotation" || a.motivation !== "painting" || a.target !== c.id) errori.push("annotation " + i);
+      const b = a.body || {}; uri(b.id, "body " + i);
+      if (b.type !== "Image" || !/^image\//.test(b.format || "") || b.width !== c.width || b.height !== c.height) errori.push("body " + i);
+    }
+    for (const t of c.thumbnail || []) { uri(t.id, "thumbnail " + i); if (t.type !== "Image") errori.push("thumbnail type " + i); }
+  }
+  return errori;
+}
+
+const TEI_W = `<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><fileDesc><titleStmt>
+<title type="common" xml:id="a1">Walters Ms. W.1, Gospel Book</title><title type="work" n="item 1">Gospel of St. Matthew</title><title type="work">Gospel of St. Mark</title>
+<author xml:id="au"><name type="authority">Hieronymus, Saint, -419 or 420</name><name type="vernacular" xml:lang="lat">Hieronymus</name></author></titleStmt></fileDesc>
+<sourceDesc><msDesc><msIdentifier><settlement>Baltimore</settlement><repository>The Walters Art Museum</repository><idno xml:id="i">W.1</idno></msIdentifier>
+<msContents><textLang mainLang="lat" otherLangs="gre">Latin</textLang></msContents><history><origin><origDate>23 Dhū al-Qaʿdah 935 AH / 1529 CE</origDate><origPlace>Brittany</origPlace></origin></history></msDesc></sourceDesc></teiHeader>
+<facsimile><surface n="Upper board outside" xml:id="s1"><graphic url="master/W1_000001_600.tif"/><graphic url="sap/W1_000001_sap.jpg"/><graphic url="thumb/W1_000001_thumb.jpg"/></surface>
+<surface xml:id="s2" n="fol. 1r"><graphic url="sap/W1_000002_sap.jpg" xml:id="g" width="1300px" height="1800px"/></surface>
+<surface n="fol. 1v"><graphic url="sap/W1_000003_sap.jpg"/></surface><surface n="fol. 2r"><graphic url="sap/W1_000004_sap.jpg"/></surface>
+<surface n="Spine"><graphic url="sap/W1_000005_sap.jpg"/></surface></facsimile></TEI>`;
+
+test("Walters: elenco, TEI, pagina delle immagini, intestazione JPEG", () => {
+  const el = elencoDaPagina(`<ul><li> <span class="shelf_mark">W.105</span>, Butler Hours, Latin (1340 - 1355 CE, Probably Shropshire, England) <br /> <a href="./Data/WaltersManuscripts/html/W105/">Browse images</a> | Cataloging in process | <a href="http://art.thewalters.org/detail/25556">art</a> </li>
+    <li> <span class="shelf_mark">W.1</span>, Gospel Book, Latin (900 - 925 CE, Brittany) <br /> <a href="./Data/WaltersManuscripts/html/W1/">Browse images</a> | <a href="./Data/WaltersManuscripts/ManuscriptDescriptions/W1_tei.xml">TEI</a> </li></ul>`);
+  assert.deepEqual(Object.keys(el), ["W105", "W1"]);
+  assert.equal(el.W105.s, "W.105"); assert.equal(el.W105.tei, 0); assert.equal(el.W1.tei, 1);
+  assert.deepEqual(datiDaRiga(el.W105.r), { titolo: "Butler Hours", datazione: "1340 - 1355 CE", luogo: "Probably Shropshire, England", lingue: ["la"] });
+  assert.deepEqual(datiDaRiga("Bible pictures, W. de Brailes, French, Old (842-ca.1400) (1240 - 1260 CE, Oxford, England)").lingue, ["fr"]);
+  const d = datiDaTei(TEI_W);
+  assert.equal(d.s, "W.1"); assert.equal(d.t, "Gospel Book"); assert.deepEqual(d.a, ["Hieronymus, Saint, -419 or 420"]);
+  assert.deepEqual(d.w, ["Gospel of St. Matthew", "Gospel of St. Mark"]); assert.deepEqual(d.l, ["la", "grc"]); assert.equal(d.o, "Brittany");
+  assert.equal(d.p.length, 5); assert.deepEqual(d.p[1], ["fol. 1r", "W1_000002", 1300, 1800, 1]); assert.deepEqual(d.p[0], ["Upper board outside", "W1_000001", 0, 0, 0]);
+  // anni dell'egira: conta l'anno dell'era cristiana
+  assert.deepEqual(secoli(d.d), [16, 16]);
+  const pi = datiDaPaginaImmagini(`<a href="./../../../../Data/WaltersManuscripts/W622/data/W.622/sap/W622_000001_sap.jpg" title="Large JPEG image of W.622, Upper board outside"><img alt="x"/></a>
+    <a href="./../../../../Data/WaltersManuscripts/W622/data/W.622/sap/W622_000001_sap.jpg">W622_000001_sap.jpg</a>
+    <a href="./../../../../Data/WaltersManuscripts/W622/data/W.622/sap/W622_000003_sap.jpg" title="Large JPEG image of W.622, fol. 1a">`, "W.622");
+  assert.equal(pi.dir, "Data/WaltersManuscripts/W622/data/W.622"); assert.deepEqual(pi.p.map(x => x[0]), ["Upper board outside", "fol. 1a"]);
+  // intestazione JPEG: SOI, APP0, SOF0 con altezza 1800 e larghezza 1109
+  const app0 = Buffer.from([0xff, 0xe0, 0x00, 0x10, ...Buffer.from("JFIF\0"), 1, 1, 0, 0, 1, 0, 1, 0, 0]);
+  const sof = Buffer.from([0xff, 0xc0, 0x00, 0x11, 8, 0x07, 0x08, 0x04, 0x55, 3, 1, 0x22, 0, 2, 0x11, 1, 3, 0x11, 1]);
+  assert.deepEqual(misuraJpeg(Buffer.concat([Buffer.from([0xff, 0xd8]), app0, sof])), { w: 1109, h: 1800 });
+  assert.equal(misuraJpeg(Buffer.from([0xff, 0xd8, 0xff, 0xe0, 0x00, 0x10])), null);
+  assert.equal(misuraJpeg(Buffer.from("GIF89a")), null);
+});
+
+test("Walters: stime delle misure per tipo di pagina", () => {
+  assert.equal(tipoPagina("fol. 12r"), "fol. #r"); assert.equal(tipoPagina("Front flyleaf ii, v"), "front flyleaf #, v");
+  const p = [["Upper board outside", "a", 0, 0, 0], ["fol. 1r", "b", 1300, 1800, 1], ["fol. 1v", "c", 0, 0, 0], ["fol. 2r", "d", 0, 0, 0], ["fol. 3r", "e", 0, 0, 0], ["Spine", "f", 0, 0, 0], ["fol. 4r", "g", 0, 0, 2]];
+  assert.equal(campionePrincipale(p), 4);   // gruppo più numeroso (fol. #r: 1, 3, 4, 6), quella di mezzo
+  assert.deepEqual(campioni(p).map(i => p[i][0]), ["Upper board outside", "fol. 1v", "Spine"]);
+  stima(p);
+  assert.deepEqual(p[3], ["fol. 2r", "d", 1300, 1800, 0]);   // stesso tipo
+  assert.deepEqual(p[2].slice(2), [1300, 1800, 0]);          // tipo senza misure: la misurata più vicina
+  assert.deepEqual(p[6], ["fol. 4r", "g", 0, 0, 2]);          // immagine mancante: resta fuori
+});
+
+test("Walters: manifesti IIIF Presentation 3 e voci del catalogo", () => {
+  const v = { ...datiDaTei(TEI_W), dir: "Data/WaltersManuscripts/W1/data/W.1" };
+  stima(v.p);
+  v.p[4] = ["Spine", "W1_000005", 400, 1800, 1];
+  v.p.push(["fol. 3r", "W1_000006", 0, 0, 2]);
+  const testo = manifestoWalters("W1", v, { tei: 1 });
+  const m = JSON.parse(testo);
+  assert.deepEqual(validaP3(m), []);
+  assert.equal(m.id, "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/main/data/manifesti/walters/W1.json");
+  assert.equal(m.id, urlManifesto("W1"));
+  assert.equal(m.rights, CC0); assert.match(m.requiredStatement.value.it[0], /Walters Art Museum.*CC0/);
+  assert.equal(m.items.length, 5);   // l'immagine mancante resta fuori
+  assert.deepEqual(m.items.map(c => c.label.none[0]), ["Upper board outside", "fol. 1r", "fol. 1v", "fol. 2r", "Spine"]);
+  const c = m.items[1], b = c.items[0].items[0].body;
+  assert.equal(b.id, "https://www.thedigitalwalters.org/Data/WaltersManuscripts/W1/data/W.1/sap/W1_000002_sap.jpg");
+  assert.equal(b.format, "image/jpeg"); assert.equal(c.width, 1300); assert.equal(c.height, 1800);
+  assert.equal(c.thumbnail[0].id, "https://www.thedigitalwalters.org/Data/WaltersManuscripts/W1/data/W.1/thumb/W1_000002_thumb.jpg");
+  assert.equal(Math.max(c.thumbnail[0].width, c.thumbnail[0].height), 190);
+  assert.equal(m.items[4].width, 400);
+  assert.equal(m.thumbnail[0].id, c.thumbnail[0].id);   // miniatura: il primo foglio numerato
+  assert.ok(!m.items.some(x => x.items[0].items[0].body.service));   // immagini statiche, senza servizio IIIF Image
+  // un foglio per riga e nessuna proprietà sconosciuta in testa
+  assert.equal(testo.split("\n").length, m.items.length + 3);
+  // la validazione rileva gli errori
+  assert.ok(validaP3({ ...m, items: [{ ...m.items[0], width: 0 }] }).length > 0);
+  assert.ok(validaP3({ ...m, type: "Collection" }).length > 0);
+  // voce del catalogo
+  const st = { elenco: { W1: { s: "W.1", tei: 1 } }, voci: { W1: v } };
+  const [r] = recordWalters(st);
+  assert.equal(r.id, "walters-w1"); assert.equal(r.fonte, "walters"); assert.equal(r.segnatura, "W.1"); assert.equal(r.manifest, urlManifesto("W1"));
+  assert.equal(r.immagini, 5); assert.deepEqual(r.lingue, ["la", "grc"]);
+  const x = voce(r, A);
+  assert.equal(x.biblioteca, "The Walters Art Museum"); assert.deepEqual(x.secolo, [16, 16]);
+  // scrittura su disco: solo se cambia; i manifesti dei codici usciti dall'elenco si cancellano; uno stato vuoto non cancella niente
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), "walters-"));
+  fs.writeFileSync(path.join(dir, "W999.json"), "{}");
+  assert.deepEqual(scriviManifestiWalters(st, dir), { manifesti: 1, cambiati: 2 });
+  assert.deepEqual(scriviManifestiWalters(st, dir), { manifesti: 1, cambiati: 0 });
+  assert.deepEqual(fs.readdirSync(dir), ["W1.json"]);
+  assert.deepEqual(scriviManifestiWalters({ voci: {} }, dir), { manifesti: 0, cambiati: 0 });
+  assert.deepEqual(fs.readdirSync(dir), ["W1.json"]);
+  fs.rmSync(dir, { recursive: true });
+});
+
+test("Walters: manifesti pubblicati nel repo validi (Presentation 3)", () => {
+  const dir = "data/manifesti/walters";
+  let nomi = []; try { nomi = fs.readdirSync(dir).filter(n => n.endsWith(".json")); } catch (e) {}
+  for (const n of nomi) {
+    const m = JSON.parse(fs.readFileSync(path.join(dir, n), "utf8"));
+    assert.deepEqual(validaP3(m), [], n);
+    assert.equal(m.id, urlManifesto(n.replace(/\.json$/, "")), n);
+  }
+});

@@ -29,6 +29,7 @@ export const BIBLIOTECHE = {
   yale: { biblioteca: "Yale University Library (Beinecke e altre biblioteche di Yale)", citta: "New Haven (Stati Uniti)", come: "corsia propria: a ruota finché la prima lettura non è finita, poi ogni 6 giorni" },
   penn: { biblioteca: "University of Pennsylvania Libraries (Kislak Center, Schoenberg, CAJS)", citta: "Filadelfia (Stati Uniti)", come: "ogni notte, da sola" },
   ds: { biblioteca: "Digital Scriptorium (istituzioni statunitensi: Princeton, Columbia, Harvard, Huntington, Free Library e altre; dettaglio sotto la tabella)", citta: "Stati Uniti", come: "ogni notte, da sola (raccolta completa ogni 6 giorni)" },
+  walters: { biblioteca: "The Walters Art Museum (manifesti IIIF scritti da Emendando)", citta: "Baltimora (Stati Uniti)", come: "ogni notte, da sola (elenco ogni 6 giorni)" },
   vaticana: { biblioteca: "Biblioteca Apostolica Vaticana", citta: "Città del Vaticano", come: "corsia propria: a ruota, senza pause tra un'esecuzione e l'altra" },
 };
 
@@ -101,6 +102,14 @@ export const AVANZAMENTO = {
     const n = Object.keys(s.voci || {}).length;
     if (s.cursore) return { testo: `in corso: ${s.cursore.fase}${s.cursore.fase === "elenco" ? ", pagina " + s.cursore.p : ""}`, data: s.aggiornato };
     return { testo: `schede con immagini lette tutte (${num(n)} con manifesto su ${num(s.totale)}); fuori i doppioni di Penn e Yale e i domini non verificati`, data: s.completato || s.aggiornato };
+  },
+  walters: () => {
+    const s = leggi("data/walters.json"); if (!s) return { testo: "non ancora cominciata" };
+    const vs = Object.values(s.voci || {}), n = vs.length, imm = vs.flatMap(v => v.p || []), mis = imm.filter(x => x[4] !== 0).length;
+    const ore = (imm.length - mis) * 1.5 / 3600, giorni = Math.ceil(ore / (20 / 60));
+    const misure = `misure delle immagini: ${num(mis)} su ${num(imm.length)} vere${imm.length > mis ? `, le altre stimate dal tipo di pagina (mancano circa ${num(giorni)} notti)` : ""}`;
+    if (n < (s.totale || 0)) return { testo: `in corso: ${num(n)} codici letti su ${num(s.totale)}; ${misure}`, data: s.aggiornato };
+    return { testo: `codici letti tutti (${num(n)}); ${misure}`, data: s.aggiornato };
   },
   ...Object.fromEntries(Object.keys(FONTI_HSP).map(f => [f, () => { const a = aRiprese(`data/${f}.json`, 1); return { ...a, testo: a.testo.replace("schede lette tutte", "codici digitalizzati letti tutti") }; }])),
   vaticana: () => {

@@ -2,12 +2,13 @@
 // Catalogo dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate: tutti i manoscritti, di ogni lingua ed epoca.
 // Autori e opere riconosciuti (classici latini e greci, cristiani, medievali) sono un'informazione in più, per cercare e filtrare.
 // Uso:
-//   node scripts/raccogli.mjs [--fonti=heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,yale,penn,ds,vaticana] [--vaticana-minuti=20] [--oai-minuti=60]
+//   node scripts/raccogli.mjs [--fonti=heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,yale,penn,ds,walters,vaticana] [--vaticana-minuti=20] [--oai-minuti=60]
 //        [--bodleian-minuti=30] [--gallica-minuti=30] [--laurenziana-minuti=15] [--leiden-minuti=15] [--hsp-minuti=10] [--berlino-minuti=60] [--indici-minuti=20]
-//        [--yale-minuti=30] [--penn-minuti=15] [--ds-minuti=15] [--minuti-totali=160] [--solo-costruisci]
+//        [--yale-minuti=30] [--penn-minuti=15] [--ds-minuti=15] [--walters-minuti=20] [--minuti-totali=160] [--solo-costruisci]
 // Scrive il catalogo diviso per fonte (vedi costruisci.mjs): data/catalogo/indice.json, data/catalogo/indice/<fonte>-<n>.json, data/catalogo/voci/<fonte>-<n>.json,
 // più data/manoscritti.json (compatibilità: solo i codici con autori classici), e gli stati delle scansioni a riprese
-// (data/vaticana.json, data/bodleian.json, data/laurenziana.json, data/leiden.json, data/heidelberg-indici.json; data/<fonte>.json per le fonti del Handschriftenportal: wolfenbuettel, bamberga, karlsruhe, stoccarda, colonia, lipsia; data/yale.json, data/penn.json).
+// (data/vaticana.json, data/bodleian.json, data/laurenziana.json, data/leiden.json, data/heidelberg-indici.json; data/<fonte>.json per le fonti del Handschriftenportal: wolfenbuettel, bamberga, karlsruhe, stoccarda, colonia, lipsia; data/yale.json, data/penn.json, data/walters.json).
+// Walters: i manifesti IIIF li scriviamo noi dallo stato (data/manifesti/walters/<cartella>.json), anche con --solo-costruisci.
 // --hsp-minuti: limite di ciascuna fonte del Handschriftenportal.
 // --minuti-totali: tempo complessivo disponibile; la Vaticana usa al massimo quello che resta dopo le altre fonti.
 // --solo-costruisci: nessuna richiesta, si ricostruisce dalle raccolte in cache e dagli stati salvati.
@@ -28,11 +29,12 @@ import { scansionaHsp, recordHsp, FONTI_HSP } from "./fonti/hsp.mjs";
 import { scansionaYale, recordYale } from "./fonti/yale.mjs";
 import { scansionaPenn, recordPenn } from "./fonti/penn.mjs";
 import { scansionaDs, recordDs, esistentiDa } from "./fonti/ds.mjs";
+import { scansionaWalters, recordWalters, scriviManifestiWalters, leggiStato as statoWalters } from "./fonti/walters.mjs";
 import { scriviRegistro, registraEsiti } from "./registro.mjs";
 import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
-const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,yale,penn,ds,vaticana").split(",");
+const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,yale,penn,ds,walters,vaticana").split(",");
 const INIZIO = Date.now();
 export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)", berlino: "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
   bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -40,6 +42,7 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   ...Object.fromEntries(Object.entries(FONTI_HSP).map(([f, h]) => [f, `${h.biblioteca}${h.biblioteca.includes(h.citta) ? "" : ", " + h.citta} (dati dal Handschriftenportal, handschriftenportal.de)`])),
   yale: "Yale University Library, Beinecke e altre (collections.library.yale.edu)", penn: "University of Pennsylvania Libraries (colenda.library.upenn.edu)",
   ds: "Digital Scriptorium: istituzioni statunitensi (search.digital-scriptorium.org)",
+  walters: "Walters Art Museum, Baltimore (thedigitalwalters.org; manifesti IIIF scritti da Emendando)",
   vaticana: "Biblioteca Apostolica Vaticana (digi.vatlib.it)" };
 
 // i tre codici del Truculentus restano sempre nel catalogo, anche se una fonte non li ha ancora restituiti
@@ -155,6 +158,16 @@ async function main() {
       dettagli.ds = { scarti, perIstituzione: per };
       return rs;
     },
+    // Walters: niente IIIF presso il museo; i manifesti si scrivono dallo stato (anche quando la fonte è sospesa)
+    walters: async () => {
+      let st, errore = null;
+      try { st = await scansionaWalters({ minuti: min("walters", +(arg["walters-minuti"] ?? 20)), soloCache: sc("walters") }); }
+      catch (e) { errore = e; }
+      const m = scriviManifestiWalters(st || statoWalters());
+      log("walters", `manifesti IIIF: ${m.manifesti} (${m.cambiati} cambiati)`);
+      if (errore) throw errore;
+      return recordWalters(st);
+    },
     vaticana: async () => {
       let minuti = +(arg["vaticana-minuti"] ?? 20);
       // con un tempo complessivo si lasciano 10 minuti per costruire il catalogo, provarlo e salvarlo
@@ -184,7 +197,11 @@ async function main() {
   // Fonti sospese: entra nel catalogo solo ciò che si apre dentro il sito. Per queste i manifesti o le immagini
   // non si aprono nemmeno da un browser normale (verificato il 24 ottobre 2026): restano raccolte negli stati
   // ma non entrano nel catalogo finché non tornano raggiungibili.
-  const SOSPESE = { wolfenbuettel: "server iiif.hab.de non raggiungibile", karlsruhe: "digital.blb-karlsruhe.de risponde 403", stoccarda: "manifesti di Marburgo non raggiungibili" };
+  // Walters: i manifesti (scritti da noi) hanno solo immagini statiche, senza servizio IIIF Image, e sono in Presentation 3;
+  // il visore del sito (public/assets/foto.js, leggiManifesto e urlPagina) legge solo manifesti Presentation 2 con servizio
+  // IIIF Image: i codici entrano quando il visore li apre.
+  const SOSPESE = { wolfenbuettel: "server iiif.hab.de non raggiungibile", karlsruhe: "digital.blb-karlsruhe.de risponde 403", stoccarda: "manifesti di Marburgo non raggiungibili",
+    walters: "il visore del sito non apre ancora manifesti IIIF Presentation 3 con sole immagini statiche (senza servizio IIIF Image)" };
   for (const f of Object.keys(SOSPESE)) if (f in lavori) { esito[f] = "sospesa: " + SOSPESE[f]; log(f, "sospesa:", SOSPESE[f]); }
   for (const f of Object.keys(lavori)) {
     if (SOSPESE[f]) continue;

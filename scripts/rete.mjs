@@ -52,6 +52,30 @@ export async function scarica(url, opz = {}) {
   throw errore;
 }
 
+/* scarica solo i primi `byte` byte di un file binario (richiesta Range; ci si ferma comunque dopo `byte` byte se il server
+   ignora Range), con le stesse pause e gli stessi tentativi di scarica(). Restituisce {stato, dati: Buffer} */
+export async function scaricaByte(url, { byte = 4096, timeout = 90000, tentativi = 4 } = {}) {
+  const host = new URL(url).hostname;
+  let errore;
+  for (let k = 0; k < tentativi; k++) {
+    await turno(host);
+    try {
+      const ctl = new AbortController(), timer = setTimeout(() => ctl.abort(), timeout);
+      const r = await fetch(url, { headers: { "user-agent": UA, accept: "*/*", range: `bytes=0-${byte - 1}` }, signal: ctl.signal, redirect: "follow" });
+      const parti = []; let n = 0;
+      if (r.body && (r.ok || r.status === 206)) {
+        const rd = r.body.getReader();
+        while (n < byte) { const { done, value } = await rd.read(); if (done) break; parti.push(value); n += value.length; }
+        try { await rd.cancel(); } catch (e) {}
+      } else { try { await r.body?.cancel(); } catch (e) {} }
+      clearTimeout(timer);
+      if (r.status === 429 || r.status >= 500) { errore = new Error(`HTTP ${r.status} ${url}`); await attendi(5000 * 2 ** k); continue; }
+      return { stato: r.status, dati: Buffer.concat(parti.map(p => Buffer.from(p))).subarray(0, byte) };
+    } catch (e) { errore = e; await attendi(5000 * 2 ** k); }
+  }
+  throw errore;
+}
+
 // stato di ripresa di una fonte (.cache/catalogo/stato-<fonte>.json)
 export function statoFonte(fonte) {
   const f = path.join(CACHE, `stato-${fonte}.json`);
