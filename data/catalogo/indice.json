@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-25T13:03:15.056Z",
- "totale": 87134,
- "con_autori": 12497,
+ "aggiornato": "2026-10-25T13:16:39.320Z",
+ "totale": 87880,
+ "con_autori": 12498,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
   "id",
@@ -21,7 +21,7 @@
  "lingue": {
   "la": {
    "nome": "latino",
-   "codici": 29942
+   "codici": 30650
   },
   "de": {
    "nome": "tedesco",
@@ -49,11 +49,11 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 3452
+   "codici": 3458
   },
   "fr": {
    "nome": "francese",
-   "codici": 2420
+   "codici": 2421
   },
   "he": {
    "nome": "ebraico",
@@ -61,7 +61,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 2035
+   "codici": 2057
   },
   "cop": {
    "nome": "copto",
@@ -81,7 +81,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 428
+   "codici": 437
   },
   "tr": {
    "nome": "turco",
@@ -183,7 +183,7 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 4542
+   "codici": 4543
   },
   "classico-greco": {
    "nome": "classici greci",
@@ -275,7 +275,7 @@
    "nome": "Livio",
    "latino": "Livius",
    "categoria": "classico-latino",
-   "codici": 138
+   "codici": 139
   },
   "seneca": {
    "nome": "Seneca",
@@ -1842,7 +1842,7 @@
     "ru": 2,
     "syr": 7
    },
-   "esito": "ok",
+   "esito": "errore: fetch failed",
    "prefissi": [
     "bod-"
    ],
@@ -2117,23 +2117,23 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 2989,
-   "con_autori": 550,
+   "codici": 3735,
+   "con_autori": 551,
    "lingue": {
-    "xx": 11,
-    "la": 2941,
-    "it": 14,
+    "xx": 17,
+    "la": 3649,
+    "it": 36,
     "de": 3,
     "grc": 1,
-    "fr": 22,
-    "es": 1,
+    "fr": 23,
+    "es": 10,
     "en": 1
    },
    "esito": "ok",
    "prefissi": [
     "bav-"
    ],
-   "pezzi_voci": 4,
+   "pezzi_voci": 5,
    "indice": [
     "indice/vaticana-0.json"
    ]
@@ -2218,7 +2218,7 @@
   {
    "file": "indice/vaticana-0.json",
    "fonte": "vaticana",
-   "righe": 2989
+   "righe": 3735
   }
  ]
 }

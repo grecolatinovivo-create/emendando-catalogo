@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T13:03:15.056Z",
+ "aggiornato": "2026-10-25T13:16:39.320Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -25,7 +25,7 @@
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
    "codici": 476,
-   "esito": "ok"
+   "esito": "errore: fetch failed"
   },
   "gallica": {
    "nome": "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -74,11 +74,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 366,
+   "codici": 367,
    "esito": "ok"
   }
  },
- "totale": 6654,
+ "totale": 6655,
  "manoscritti": [
   {
    "id": "bsb-bsb00034122",
@@ -52007,6 +52007,39 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.lat.1891/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Pal.lat.1891",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-reg-lat-762",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Reg. lat. 762",
+   "datazione": "sec. VIII-IX",
+   "secolo": [
+    8,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ab Urbe condita",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "autore: «Livius, Titus, 59 a.C.-17 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Reg.lat.762/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Reg.lat.762",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },
