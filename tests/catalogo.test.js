@@ -282,6 +282,29 @@ test("Gallica: segnature di tutti i fondi e record SRU", async () => {
   assert.equal(recordGallica({ k: "x", y: ["monographie imprimée"], s: ["Latin 1"] }), null);
 });
 
+test("Gallica: filtro dei manoscritti librari e raccolta dal browser in parti", async () => {
+  const { motivoGallica, leggiBrowser, snellisci, recordGallica } = await import("../scripts/fonti/gallica.mjs");
+  const ms = ["manuscript", "manuscrit"], bnf = f => [`Bibliothèque nationale de France. Département des Manuscrits. ${f}`];
+  // entrano: codici di ogni lingua ed epoca, anche datati al giorno dal colophon e gli epistolari medievali; le biblioteche partner col loro nome
+  for (const o of [{ k: "a", y: ms, t: "Lettres de s. Bernard.", d: "1201-1300", s: bnf("Latin 14875") }, { k: "b", y: ms, t: "Liber regalis", d: "14850112", s: bnf("Latin 6914") },
+    { k: "c", y: ms, t: "[Ise monogatari]", s: bnf("Smith-Lesouëf japonais 165") }, { k: "d", y: ms, t: "Ovide moralisé", s: ["Bibliothèque municipale de Rouen. Ms O 4"] }]) assert.equal(motivoGallica(o), null, o.t);
+  assert.equal(recordGallica({ k: "d", y: ms, t: "Ovide moralisé", s: ["Bibliothèque municipale de Rouen. Ms O 4"] }).biblioteca, "Bibliothèque municipale de Rouen");
+  assert.equal(recordGallica({ k: "e", y: ms, t: "Catalogue", s: ["Ms. 151"] }).biblioteca, "Bibliothèque nationale de France");
+  // escono: archivi, lettere, atti, monete, fogli singoli, stampe
+  for (const o of [{ k: "f", y: ["archival material", "document d'archives"], t: "Scénario", s: ["Bibliothèque nationale de France, département Arts du spectacle, 4-COL-3"] },
+    { k: "g", y: ms, t: "Collection d'autographes de Jean Girardin. Une lettre autographe signée de Delattre", d: "18590523", s: ["Bibliothèque municipale de Rouen. Ms. Girardin 363"] },
+    { k: "h", y: ms, t: "55 n° pour 91 pièces. Bretagne. Vente faite à Olivier de Rohan", s: bnf("Chappée 13, 1") }, { k: "i", y: ms, t: "[Monnaie : tétradrachme]", s: ["Bibliothèque nationale de France, département Monnaies, médailles et antiques, R 2039"] },
+    { k: "j", y: [...ms, "dessin"], t: "Fonds Victor Hugo. Albums", s: bnf("NAF 13355, f. 42 (4)") }, { k: "l", y: ms, t: "Lettres de Juliette Drouet à Victor Hugo, 1833-1882.", s: bnf("NAF 16365") },
+    { k: "m", y: ["text", "texte"], t: "Lettre à Vuillaume", s: ["Médiathèques de Plaine Commune. RC MSS897"] }, { y: ms, t: "Senza ark", s: bnf("Latin 1") }]) assert.ok(motivoGallica(o), o.t);
+  // parti data/gallica-<n>.json, schede uniche per ark
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), "gallica-"));
+  fs.writeFileSync(path.join(dir, "gallica-2.json"), JSON.stringify({ formato: 2, raccolto: "2026-10-25T00:00:00Z", completa: true, parte: 2, parti: 2, record: [{ k: "b" }, { k: "c" }] }));
+  fs.writeFileSync(path.join(dir, "gallica-1.json"), JSON.stringify({ formato: 2, raccolto: "2026-10-25T00:00:00Z", completa: true, parte: 1, parti: 2, record: [{ k: "a" }, { k: "b" }] }));
+  const d = leggiBrowser(dir);
+  assert.equal(d.parti, 2); assert.deepEqual(d.record.map(o => o.k), ["a", "b", "c"]);
+  assert.deepEqual(snellisci({ k: "a", c: [], x: "Numérisation effectuée à partir d'un document original. ; Contient : Térence ; Appartient à l'ensemble documentaire : X", r: "domaine public public domain" }), { k: "a", x: "Contient : Térence", r: "dp" });
+});
+
 test("Bodleian: metadati dall'inizio del manifesto", () => {
   const m = metadatiBodleian(`{"@id":"x","label":"Bodleian Library MS. Auct. F. 1. 15","description":"Boethius, glossed; Persius, with commentary","metadata":[
     {"label":"Title","value":"Boethius, glossed; Persius, with commentary"},{"label":"Shelfmark","value":"Bodleian Library MS. Auct. F. 1. 15"},

@@ -9,6 +9,7 @@ import { NOMI_LINGUE } from "./lingue.mjs";
 import { FONTI_HSP } from "./fonti/hsp.mjs";
 import { ammessaYale } from "./fonti/yale.mjs";
 import { motivoLeiden, contestoLeiden } from "./fonti/leiden.mjs";
+import { leggiBrowser as leggiGallica, motivoGallica } from "./fonti/gallica.mjs";
 
 export const FILE_REGISTRO = "docs/BIBLIOTECHE.md";
 export const FILE_RACCOLTE = "data/raccolte.json";
@@ -74,9 +75,14 @@ export const AVANZAMENTO = {
     return { testo: `${num(letti)} schede lette su ${num(s.totale_collezione)}${resto ? `; a riprese, a ruota: mancano ${durata(resto / ORARI.bodleian)}` : ""}`, data: s.aggiornato };
   },
   gallica: () => {
-    const s = leggi("data/gallica.json"); if (!s) return { testo: "nessuna raccolta dal browser" };
-    if (!s.record) return { testo: `solo i fondi latini (raccolta dal browser del ${giorno(s.raccolto)}): per avere tutti i manoscritti va lanciato scripts/browser/gallica.js`, data: s.raccolto };
-    return { testo: `${num(s.schede_lette)} schede lette su ${num(s.totale)}${s.completa ? "" : " (raccolta non completa)"} (raccolta dal browser del ${giorno(s.raccolto)})`, data: s.raccolto };
+    // parti data/gallica-<n>.json (e data/gallica.json se c'è): schede raccolte dal browser, poi il filtro dei manoscritti librari
+    const s = leggiGallica(); if (!s.parti) return { testo: "nessuna raccolta dal browser" };
+    if (!s.record.length) return { testo: `solo i fondi latini (raccolta dal browser del ${giorno(s.raccolto)}): per avere tutti i manoscritti va lanciato scripts/browser/gallica.js`, data: s.raccolto };
+    const sc = {}; let n = 0;
+    for (const o of s.record) { const m = motivoGallica(o); if (m) sc[m] = (sc[m] || 0) + 1; else n++; }
+    const fuori = Object.values(sc).reduce((a, b) => a + b, 0), principali = Object.entries(sc).sort((a, b) => b[1] - a[1]).slice(0, 4).map(([m, k]) => `${m} ${num(k)}`).join(", ");
+    return { testo: `${num(s.record.length)} schede raccolte dal browser il ${giorno(s.raccolto)} (${s.completa ? "raccolta completa" : "raccolta non completa"}, ${s.parti} file); ` +
+      `${num(n)} manoscritti librari; fuori ${num(fuori)} schede (${principali}, altre ${num(fuori - Object.entries(sc).sort((a, b) => b[1] - a[1]).slice(0, 4).reduce((a, [, k]) => a + k, 0))})`, data: s.raccolto };
   },
   laurenziana: () => {
     const s = leggi("data/laurenziana.json"); if (!s) return { testo: "non ancora cominciata" };
@@ -270,7 +276,7 @@ export function tabella({ fonti, conteggio = {}, conAutori = {}, lingue = {}, de
     const a = (AVANZAMENTO[f] || (() => ({ testo: "" })))(dettagli[f] || {});
     if (a.testo == null) a.testo = (precedenti[b.biblioteca] || [])[5] || "schede lette ogni 6 giorni";
     let come = b.come;
-    if (f === "gallica") { const g = leggi("data/gallica.json"); if (g) come += ` (ultima raccolta: ${giorno(g.raccolto)})`; }
+    if (f === "gallica") { const g = leggiGallica(); if (g.raccolto) come += ` (ultima raccolta: ${giorno(g.raccolto)})`; }
     const e = r[f];
     const data = giorno((e && e.ultimo_ok) || a.data) || "—";
     tot += conteggio[f] || 0; totA += conAutori[f] || 0;

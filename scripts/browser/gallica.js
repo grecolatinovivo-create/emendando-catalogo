@@ -5,18 +5,23 @@
 //   1. aprire https://gallica.bnf.fr/ in una scheda;
 //   2. aprire la console (F12, scheda «Console»), incollare tutto questo file e premere Invio;
 //   3. lasciare la scheda aperta: il titolo della scheda mostra l'avanzamento (una pagina di 50 schede ogni 3 secondi circa);
-//   4. alla fine il browser scarica «gallica.json»: va messo in data/gallica.json del repository emendando-catalogo e salvato con un commit.
+//   4. alla fine la raccolta è divisa in parti sotto i 40 MB (GitHub rifiuta i file oltre 100 MB) e il browser scarica la prima,
+//      «gallica-1.json»; Chrome blocca i download multipli, quindi le altre si scaricano una per volta dalla console:
+//      EmendandoGallica.salva(2), EmendandoGallica.salva(3) ... (la console dice quante sono);
+//   5. i file gallica-1.json ... gallica-N.json vanno messi in data/ del repository emendando-catalogo (al posto delle parti vecchie,
+//      togliendo quelle in più se ora sono meno) e salvati con un commit.
 // Se la scheda si chiude o il computer si spegne, basta riaprire Gallica e incollare di nuovo il file: la raccolta riprende da dove
-// si era fermata (l'avanzamento resta nel browser, in IndexedDB). Per scaricare subito quello che c'è: EmendandoGallica.salva().
+// si era fermata (l'avanzamento resta nel browser, in IndexedDB). Per scaricare subito quello che c'è: EmendandoGallica.salva(1), salva(2) ...
 // Per ricominciare da capo: EmendandoGallica.azzera(), poi incollare di nuovo il file.
 //
-// Formato di data/gallica.json (formato 2): { formato: 2, raccolto, query, totale, schede_lette, record: [scheda, ...] }
-// scheda: { k: ark, y: tipi, t: titolo, c: autori, d: data, s: fonti (fondo e segnatura), l: lingue, x: descrizione e soggetti, r: diritti }.
-// La conversione nelle voci del catalogo la fa scripts/fonti/gallica.mjs (recordGallica), con la stessa logica per tutte le raccolte.
+// Formato di data/gallica-<n>.json (formato 2): { formato: 2, raccolto, query, totale, schede_lette, completa, parte, parti, record: [scheda, ...] }
+// scheda: { k: ark, y: tipi, t: titolo, c: autori, d: data, s: fonti (fondo e segnatura), l: lingue, x: descrizione e soggetti, r: diritti («dp» = domaine public) },
+// snellita come fa snellisci in scripts/fonti/gallica.mjs (via le note ripetute in ogni scheda e i campi vuoti).
+// La conversione nelle voci del catalogo e il filtro dei manoscritti librari li fa scripts/fonti/gallica.mjs (recordGallica, motivoGallica).
 (async function () {
   "use strict";
   const QUERY = 'dc.type all "manuscrit"';   // la stessa di scripts/fonti/gallica.mjs
-  const PAGINA = 50, PAUSA = 3000, DB = "emendando-gallica", VERSIONE = 2;
+  const PAGINA = 50, PAUSA = 3000, DB = "emendando-gallica", VERSIONE = 2, MAX_PARTE = 40e6;   // byte per parte (sotto i 50 MB)
   if (!/(^|\.)gallica\.bnf\.fr$/.test(location.hostname)) { console.error("Apri prima https://gallica.bnf.fr/ e incolla lo script nella console di quella scheda."); return; }
 
   // ------------------------------------------------------------ archivio nel browser (IndexedDB): stato e pagine lette
@@ -28,12 +33,19 @@
 
   // ------------------------------------------------------------ lettura di una pagina SRU
   const testi = (el, nome) => [...el.getElementsByTagName(nome)].map(n => n.textContent.replace(/\s+/g, " ").trim()).filter(Boolean);
+  // la stessa di snellisci in scripts/fonti/gallica.mjs
+  function snellisci(o) {
+    const x = String(o.x || "").split(" ; ").filter(p => !/^\s*(?:Num[ée]risation effectu[ée]e|Appartient [àa] l.ensemble documentaire)/i.test(p)).join(" ; ");
+    const out = { ...o, x, r: /domaine public|public domain/i.test(o.r || "") ? "dp" : o.r };
+    for (const [k, v] of Object.entries(out)) if (v == null || v === "" || (Array.isArray(v) && !v.length)) delete out[k];
+    return out;
+  }
   function scheda(rec) {
     const id = testi(rec, "dc:identifier").find(x => /gallica\.bnf\.fr\/ark:\/12148\//.test(x)); if (!id) return null;
     const k = /ark:\/12148\/([a-z0-9]+)/i.exec(id)[1];
-    return { k, y: testi(rec, "dc:type"), t: testi(rec, "dc:title").join(" ; ").slice(0, 600), c: testi(rec, "dc:creator"), d: testi(rec, "dc:date")[0] || null,
+    return snellisci({ k, y: testi(rec, "dc:type"), t: testi(rec, "dc:title").join(" ; ").slice(0, 600), c: testi(rec, "dc:creator"), d: testi(rec, "dc:date")[0] || null,
       s: testi(rec, "dc:source"), l: testi(rec, "dc:language"), x: [...testi(rec, "dc:description"), ...testi(rec, "dc:subject")].join(" ; ").slice(0, 1500),
-      r: testi(rec, "dc:rights").join(" ") };
+      r: testi(rec, "dc:rights").join(" ") });
   }
   const attendi = ms => new Promise(r => setTimeout(r, ms));
   async function pagina(inizio) {
@@ -53,15 +65,30 @@
     throw new Error(`la pagina dal record ${inizio} non arriva: rilanciare lo script più tardi (riprende da qui)`);
   }
 
-  async function salva() {
+  // parti sotto MAX_PARTE byte, sempre nello stesso ordine (chiavi delle pagine): salva(n) scarica la parte n, una per chiamata
+  async function parti() {
+    const record = [...new Map((await tutte()).map(o => [o.k, snellisci(o)])).values()];
+    const out = [[]]; let peso = 0;
+    for (const o of record) {
+      const p = JSON.stringify(o).length + 1;
+      if (peso + p > MAX_PARTE && out[out.length - 1].length) { out.push([]); peso = 0; }
+      out[out.length - 1].push(o); peso += p;
+    }
+    return out;
+  }
+  async function salva(n = 1) {
     const st = await leggi("stato") || {};
-    const record = [...new Map((await tutte()).map(o => [o.k, o])).values()];
-    const dati = { formato: 2, nota: "Raccolta fatta dal browser con scripts/browser/gallica.js (Gallica respinge le richieste dai server). Si rifà ogni tanto per prendere i codici digitalizzati di recente.",
-      raccolto: new Date().toISOString(), query: QUERY, totale: st.totale || null, schede_lette: Math.min((st.inizio || 1) - 1, st.totale || Infinity), completa: !!st.completa, record };
+    const ps = await parti();
+    n = Math.round(+n);
+    if (!(n >= 1 && n <= ps.length)) { console.error(`Le parti sono ${ps.length}: EmendandoGallica.salva(1) ... EmendandoGallica.salva(${ps.length}).`); return; }
+    const dati = { formato: 2, nota: "Raccolta fatta dal browser con scripts/browser/gallica.js, divisa in parti. Si rifà ogni tanto per prendere i codici digitalizzati di recente.",
+      raccolto: new Date().toISOString(), query: QUERY, totale: st.totale || null, schede_lette: Math.min((st.inizio || 1) - 1, st.totale || Infinity), completa: !!st.completa,
+      parte: n, parti: ps.length, record: ps[n - 1] };
     const a = document.createElement("a");
     a.href = URL.createObjectURL(new Blob([JSON.stringify(dati)], { type: "application/json" }));
-    a.download = "gallica.json"; document.body.append(a); a.click(); a.remove();
-    console.log(`Scaricato gallica.json: ${record.length} schede${st.completa ? " (raccolta completa)" : " (raccolta NON completa: rilanciare lo script per continuare)"}.`);
+    a.download = `gallica-${n}.json`; document.body.append(a); a.click(); a.remove();
+    console.log(`Scaricato gallica-${n}.json (parte ${n} di ${ps.length}, ${ps[n - 1].length} schede)${st.completa ? "" : " (raccolta NON completa: rilanciare lo script per continuare)"}.` +
+      (n < ps.length ? ` Per la parte successiva: EmendandoGallica.salva(${n + 1})` : " Era l'ultima parte."));
   }
   async function azzera() { db.close(); await new Promise(ok => { const r = indexedDB.deleteDatabase(DB); r.onsuccess = r.onerror = r.onblocked = () => ok(); }); console.log("Avanzamento cancellato: incolla di nuovo lo script per ricominciare."); }
   window.EmendandoGallica = { salva, azzera };
@@ -69,7 +96,7 @@
   // ------------------------------------------------------------ raccolta
   let st = await leggi("stato");
   if (!st || st.versione !== VERSIONE || st.query !== QUERY) st = { versione: VERSIONE, query: QUERY, inizio: 1, totale: null, completa: false };
-  if (st.completa) { console.log("La raccolta è già completa: scarico il file. Per rifarla da capo: EmendandoGallica.azzera()."); await salva(); return; }
+  if (st.completa) { console.log("La raccolta è già completa: scarico la parte 1 (le altre con EmendandoGallica.salva(2), salva(3) ...). Per rifarla da capo: EmendandoGallica.azzera()."); await salva(1); return; }
   console.log(st.inizio > 1 ? `Riprendo dal record ${st.inizio} su ${st.totale}.` : "Comincio la raccolta di tutti i manoscritti di Gallica.");
   const titolo = document.title, t0 = Date.now(), inizio0 = st.inizio;
   for (;;) {
@@ -88,5 +115,5 @@
   }
   document.title = titolo;
   console.log("Raccolta completa.");
-  await salva();
+  await salva(1);
 })();
