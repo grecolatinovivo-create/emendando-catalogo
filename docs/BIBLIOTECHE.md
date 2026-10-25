@@ -18,7 +18,7 @@ Come leggere le colonne:
 - **Ultima raccolta**: com'è andata l'ultima volta.
 
 <!-- inizio automatico -->
-Codici nel catalogo, in tutto: **261.567**, di cui **13.305** con almeno un autore riconosciuto.
+Codici nel catalogo, in tutto: **262.683**, di cui **13.574** con almeno un autore riconosciuto.
 
 | Biblioteca | Città | Codici totali | Di cui con autori riconosciuti | Lingue | Avanzamento della lettura | Come si aggiorna | Ultimo aggiornamento | Ultima raccolta |
 |---|---|---|---|---|---|---|---|---|
@@ -29,7 +29,7 @@ Codici nel catalogo, in tutto: **261.567**, di cui **13.305** con almeno un auto
 | Bodleian Libraries e college | Oxford | 10.068 | 1251 | latino 3790, inglese 2515, greco 984, altre 3560 | 10.602 schede lette su 10.602 | corsia propria: a ruota finché non sono letti tutti, poi ogni notte | 2026-10-25 | non riuscita: fetch failed |
 | Bibliothèque nationale de France (Gallica) | Parigi | 1892 | 1600 | latino 1892 | solo i fondi latini (raccolta dal browser del 2026-10-24): per avere tutti i manoscritti va lanciato scripts/browser/gallica.js | va rifatta a mano dal browser (ultima raccolta: 2026-10-24) | 2026-10-25 | riuscita |
 | Biblioteca Medicea Laurenziana | Firenze | 4353 | 2206 | non indicata 3614, latino 725, italiano 5, altre 9 | schede lette tutte (4353 codici) | ogni notte, da sola | 2026-10-25 | riuscita |
-| Veneranda Biblioteca Ambrosiana (Biblioteca Digitale) | Milano | 0 | 0 | — | non ancora cominciata | corsia italia, ogni notte (elenco ogni 6 giorni) | — | — |
+| Veneranda Biblioteca Ambrosiana (Biblioteca Digitale) | Milano | 1116 | 269 | latino 596, italiano 334, greco 192, altre 118 | schede lette tutte (1365 codici della Biblioteca Digitale; 1115 con la copia digitale) | corsia italia, ogni notte (elenco ogni 6 giorni) | 2026-10-25 | riuscita |
 | Biblioteca statale del Monumento nazionale di Montecassino (Memory of Montecassino) | Montecassino | 210 | 106 | non indicata 202, latino 8 | schede lette tutte (210 codici su 210 schede di tipo «Manoscritto»; fuori le pergamene d'archivio) | corsia italia, ogni notte (raccolta completa ogni 6 giorni) | 2026-10-25 | riuscita |
 | Biblioteca Casanatense | Roma | 43 | 6 | non indicata 41, latino 2 | schede lette tutte (43 codici della collezione Manoscritti) | corsia italia, ogni notte (raccolta completa ogni 6 giorni) | 2026-10-25 | riuscita |
 | Biblioteca Universitaria di Bologna (codici in Historica, Università di Bologna) | Bologna | 907 | 14 | arabo 429, latino 402, italiano 215, altre 65 | schede lette tutte (907 codici su 907 di tipo «codices» in Historica) | corsia italia, ogni notte (raccolta completa ogni 6 giorni) | 2026-10-25 | riuscita |
