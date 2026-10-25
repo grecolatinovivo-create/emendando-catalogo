@@ -427,7 +427,7 @@ test("Yale: record OAI MODS, solo manoscritti fino al 1800, manifesti dall'ident
   assert.equal(estraiYale(rec(2, { genere: "Typescripts", seg: "YCAL MSS 43", data: "1868-1976" })).v, null);   // carte moderne
   assert.equal(estraiYale(rec(3, { genere: "Papyri", seg: "P.CtYBR inv. 69" })).v, null);   // papiri: in attesa di decisione
   assert.equal(estraiYale(rec(4).replace("<header>", '<header status="deleted">')).v, null);
-  assert.equal(primoAnno("176-?]"), 1760); assert.equal(primoAnno("[Early 9th century]"), 800); assert.equal(primoAnno("anno M.cccccvij [15 Mar. 1507]"), 1507);
+  assert.equal(primoAnno("176-?]"), 1760); assert.equal(primoAnno("[Early 9th century]"), 801); assert.equal(primoAnno("anno M.cccccvij [15 Mar. 1507]"), 1507);
   const v = estraiYale(rec(5, { seg: "Beinecke MS 233", titolo: "Bucolica, Georgica, Aeneis", nome: "Virgil", data: "[ca. 1460]" })).v;
   const [r] = recordYale({ voci: { 5: v } });
   assert.equal(r.manifest, "https://collections.library.yale.edu/manifests/5");
@@ -435,6 +435,45 @@ test("Yale: record OAI MODS, solo manoscritti fino al 1800, manifesti dall'ident
   assert.equal(r.biblioteca, "Beinecke Rare Book and Manuscript Library");
   assert.deepEqual(voce(r, A).lingue, ["la"]);
   assert.deepEqual(voce(r, A).autori.map(a => a.id), ["virgilio"]);
+});
+
+test("Yale: filtro dei manoscritti librari (fuori archivi, lettere, fotografie e carte dopo il 1800)", async () => {
+  const { motivoYale, ammessaYale, anniDa, primoAnno } = await import("../scripts/fonti/yale.mjs");
+  assert.equal(primoAnno("[14--]"), 1400); assert.equal(primoAnno("s. XV"), 1401); assert.equal(primoAnno("[before 1395]"), 1395);
+  assert.equal(primoAnno("2000 August"), 2000); assert.equal(primoAnno("c1980."), 1980); assert.equal(primoAnno("[mid-19th cent.]"), 1801);
+  assert.deepEqual([Math.min(...anniDa("1450-1500")), Math.max(...anniDa("1450-1500"))], [1450, 1500]);
+  // voci vere dello stato di Yale: tenute
+  const tenute = [
+    { s: "Beinecke MS 1207 1", t: "Commentaria super quarto libro Sententiarum Petri Lombardi", d: "[between 1300 and 1350]", g: ["Early works to 1800", "Manuscripts, Medieval Italy 13th century"] },
+    { s: "Marston MS 67 1", t: "Grammatica minor", d: "[between 1175 and 1200]", g: ["Manuscripts, Medieval France 12th century"] },
+    { s: "Takamiya MS 32 1", t: "Canterbury tales", d: "[ca. 1425-1450]", g: [] },
+    { s: "Beinecke MS 482.125", t: "Hymnal (fragment).", d: "[14--].", g: ["Manuscripts, Medieval Germany 15th century"] },
+    { s: "Arabic MSS 430 1", t: "al-Qurʼān. -- 1261 or 1262", d: null, g: ["Manuscripts, Arabic 13th century"] },
+    { s: "Landberg MSS 2 1", t: "Kitāb minhāj al-sunnah al-Nabawīyah", d: null, g: ["Manuscripts", "Marginalia"] },
+    { s: "Osborn b106 1", t: "[Commonplace book], [1599-1608].", d: null, g: ["Commonplace books", "Manuscripts"] },
+    { s: "Zi +5140", t: "Psalter (fragment).", d: "[unidentified date]", g: ["Manuscripts, Medieval", "Medieval and Renaissance Manuscript Fragments in Beinecke Library"] },
+    { s: "Manuscript 10 Vault", t: "Cirurgia magistri Rogerii. Chirurgia Salernitana \"Bamberg\".", d: "between 1150 and 1199.", g: ["Early works to 1800"] },
+    { s: "Beinecke MS 909 1", t: "Latin letters", d: "[ca. 1450]", g: ["Manuscripts, Medieval Italy 15th century"] },
+  ];
+  for (const v of tenute) assert.equal(motivoYale(v), null, v.s + " " + v.t);
+  // scartate
+  const scartate = [
+    { s: "WA MSS S-2957", t: "Roof Detail, Corn Crib and Barn on Farm Belonging to John Pihl", d: "2000 August", g: [] },
+    { s: "YCAL MSS 152", t: "Recipe from Marianne Moore: Beaten egg and oil dressing", d: "n.d.", g: [] },
+    { s: "GEN MSS 310", t: "4 ALS to William Johnston Temple", d: "1767-87", g: [] },
+    { s: "OSB MSS FILE", t: "ALS to Edmund Burke. London.", d: "1796 Dec 2", g: [] },
+    { s: "JWJ MSS 54", t: "Unknown photographer Half-length portrait, seated lady with lace collar", d: "circa1860", g: [] },
+    { s: "LWL MSS 33", t: "Act 4, scene 2 / Stodhart [i.e., Stothard] delt.; A. Smith sculpt.", d: "1795 June 1", g: [] },
+    { s: "MS 1776", t: "Libro 1", d: "1529-1907", g: [] },
+    { s: "OSB MSS 176", t: "2. Diary", d: "1751", g: [] },
+    { s: "Osborn c467", t: "Norton Nicholls to Jane Floyer Nicholls. Eton. Concerns Eton College", d: "1759 Nov 27", g: [] },
+    { s: "Tibet MSS 62", t: "Tanka of Gautama Buddha", d: "circa 1700-circa 1800", g: [] },
+    { s: "Beinecke MS 1042.4", t: "Léopold Delisle letters to Count Ernest Armand, 1879", d: null, g: [] },
+    { s: "Folio S1 40", t: "Vollständige Faksimile-Ausgabe im Originalformat von Codex Vaticanus", d: "c1980.", g: ["Facsimiles (Reproductions)", "Manuscripts"] },
+    { s: "Japanese Mss D25", t: "Sukekatsu-kyō ki, [19th cent.?] / Hino Sukekatsu cho.", d: null, g: ["Manuscripts"] },
+    { s: "Ms Coll 6", t: "Manuscript in Chinese", d: "n.d.", g: [] },
+  ];
+  for (const v of scartate) assert.ok(!ammessaYale(v), v.s + " " + v.t);
 });
 
 test("Penn: ricerca di Colenda, segnature, filtri e manifesti del repository digitale", async () => {

@@ -7,6 +7,7 @@ import { CACHE } from "./rete.mjs";
 import { daLeggere, segnaturaLeggibile } from "./fonti/vaticana.mjs";
 import { NOMI_LINGUE } from "./lingue.mjs";
 import { FONTI_HSP } from "./fonti/hsp.mjs";
+import { ammessaYale } from "./fonti/yale.mjs";
 
 export const FILE_REGISTRO = "docs/BIBLIOTECHE.md";
 export const FILE_RACCOLTE = "data/raccolte.json";
@@ -77,7 +78,8 @@ export const AVANZAMENTO = {
   },
   yale: () => {
     const s = leggi("data/yale.json"); if (!s) return { testo: "non ancora cominciata" };
-    const n = Object.keys(s.voci || {}).length, pagine = Math.ceil((s.totale || 0) / 25);
+    // solo i manoscritti librari che passano il filtro (fuori archivi, lettere, fotografie e carte dopo il 1800)
+    const n = Object.values(s.voci || {}).filter(ammessaYale).length, pagine = Math.ceil((s.totale || 0) / 25);
     const pagina = Math.max(s.pagine || 0, s.sospeso ? +(/:(\d+)$/.exec(s.sospeso) || [0, 0])[1] / 25 : 0);
     if (s.coda && s.coda.length && !s.completato) {
       const ore = Math.max(0, pagine - pagina) / ORARI.yale;
