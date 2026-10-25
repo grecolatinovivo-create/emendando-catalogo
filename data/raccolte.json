@@ -10,8 +10,8 @@
   "ultimo_ok": "2026-10-25T09:26:55.793Z"
  },
  "bodleian": {
-  "quando": "2026-10-25T13:02:46.466Z",
-  "esito": "ok",
+  "quando": "2026-10-25T13:05:50.985Z",
+  "esito": "errore: fetch failed",
   "ultimo_ok": "2026-10-25T13:02:46.466Z"
  },
  "bsb": {
