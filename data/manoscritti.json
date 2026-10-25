@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T17:49:48.891Z",
+ "aggiornato": "2026-10-25T18:00:07.097Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -119,11 +119,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 381,
+   "codici": 385,
    "esito": "ok"
   }
  },
- "totale": 6914,
+ "totale": 6918,
  "manoscritti": [
   {
    "id": "akl-17669",
@@ -53132,6 +53132,158 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.427/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.427",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-642",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 642",
+   "datazione": "sec. XV med",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Bucolica, Georgica, Aeneis (Vergilius Maro, Publius, 70-19 a.C.), Argumenta (Ovidius Naso, Publius, 43 a.C.-17/18 d.C. Opere spurie e dubbie)",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eneide",
+      "Georgiche",
+      "Bucoliche"
+     ],
+     "corrispondenza": "autore: «Vergilius Maro, Publius, 70-19 a.C., Ov…»"
+    },
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…us Maro, Publius, 70-19 a.C., Ovidius Naso, Publius, 43 a.C.-17/18…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.642/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.642",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-651",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 651",
+   "datazione": "1471",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Comoediae I-VI",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commedie"
+     ],
+     "corrispondenza": "autore: «Terentius Afer, Publius, c. 195-159 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.651/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.651",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-1146",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 1146",
+   "datazione": "sec. IX med",
+   "secolo": [
+    9,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De re coquinaria (Apicius, Caelius, sec. I)",
+   "autori": [
+    {
+     "id": "apicio",
+     "autore": "Apicio",
+     "latino": "Apicius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De re coquinaria"
+     ],
+     "corrispondenza": "autore: «Apicius, Caelius, sec. I»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.1146/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.1146",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-1221",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 1221",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Frontinus, Stratagemata; Vegetius, Epitoma de re militari",
+   "autori": [
+    {
+     "id": "vegezio",
+     "autore": "Vegezio",
+     "latino": "Vegetius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epitoma rei militaris"
+     ],
+     "corrispondenza": "autore: «Frontinus, Sextus Iulius, 30-114 - Vegetius Renatus, Flavius, c. 400»"
+    },
+    {
+     "id": "frontino",
+     "autore": "Frontino",
+     "latino": "Frontinus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Strategemata"
+     ],
+     "corrispondenza": "autore: «Frontinus, Sextus Iulius, 30-114 - Vegetius Renatus, Flavius, c. 400»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.1221/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.1221",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },

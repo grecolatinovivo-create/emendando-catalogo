@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-25T17:49:48.891Z",
- "totale": 262683,
- "con_autori": 13574,
+ "aggiornato": "2026-10-25T18:00:07.097Z",
+ "totale": 263431,
+ "con_autori": 13580,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
   "id",
@@ -25,7 +25,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 32447
+   "codici": 33029
   },
   "de": {
    "nome": "tedesco",
@@ -61,7 +61,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 2680
+   "codici": 2841
   },
   "fr": {
    "nome": "francese",
@@ -85,7 +85,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 443
+   "codici": 448
   },
   "tr": {
    "nome": "turco",
@@ -183,7 +183,7 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 4655
+   "codici": 4659
   },
   "classico-greco": {
    "nome": "classici greci",
@@ -191,7 +191,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 6159
+   "codici": 6161
   },
   "medievale": {
    "nome": "autori medievali",
@@ -209,7 +209,7 @@
    "nome": "Terenzio",
    "latino": "Terentius",
    "categoria": "classico-latino",
-   "codici": 176
+   "codici": 177
   },
   "lucrezio": {
    "nome": "Lucrezio",
@@ -245,7 +245,7 @@
    "nome": "Virgilio",
    "latino": "Vergilius",
    "categoria": "classico-latino",
-   "codici": 349
+   "codici": 350
   },
   "orazio": {
    "nome": "Orazio",
@@ -269,7 +269,7 @@
    "nome": "Ovidio",
    "latino": "Ovidius",
    "categoria": "classico-latino",
-   "codici": 431
+   "codici": 432
   },
   "livio": {
    "nome": "Livio",
@@ -431,7 +431,7 @@
    "nome": "Vegezio",
    "latino": "Vegetius",
    "categoria": "classico-latino",
-   "codici": 65
+   "codici": 66
   },
   "columella": {
    "nome": "Columella",
@@ -455,7 +455,7 @@
    "nome": "Frontino",
    "latino": "Frontinus",
    "categoria": "classico-latino",
-   "codici": 22
+   "codici": 23
   },
   "gellio": {
    "nome": "Aulo Gellio",
@@ -599,7 +599,7 @@
    "nome": "Apicio",
    "latino": "Apicius",
    "categoria": "classico-latino",
-   "codici": 7
+   "codici": 8
   },
   "aurelio-vittore": {
    "nome": "Aurelio Vittore",
@@ -1145,13 +1145,13 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 2889
+   "codici": 2890
   },
   "prudenzio": {
    "nome": "Prudenzio",
    "latino": "Prudentius",
    "categoria": "cristiano",
-   "codici": 58
+   "codici": 59
   },
   "sedulio": {
    "nome": "Sedulio",
@@ -2770,23 +2770,23 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 4467,
-   "con_autori": 574,
+   "codici": 5215,
+   "con_autori": 580,
    "lingue": {
     "xx": 18,
-    "la": 4378,
-    "it": 38,
+    "la": 4960,
+    "it": 199,
     "de": 3,
     "grc": 1,
     "fr": 23,
-    "es": 10,
+    "es": 15,
     "en": 1
    },
    "esito": "ok",
    "prefissi": [
     "bav-"
    ],
-   "pezzi_voci": 6,
+   "pezzi_voci": 7,
    "indice": [
     "indice/vaticana-0.json"
    ]
@@ -2956,7 +2956,7 @@
   {
    "file": "indice/vaticana-0.json",
    "fonte": "vaticana",
-   "righe": 4467
+   "righe": 5215
   }
  ]
 }
