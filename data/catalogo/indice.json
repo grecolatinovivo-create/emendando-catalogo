@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-25T12:42:51.324Z",
- "totale": 84315,
- "con_autori": 12474,
+ "aggiornato": "2026-10-25T12:46:40.404Z",
+ "totale": 84281,
+ "con_autori": 12464,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
   "id",
@@ -21,7 +21,7 @@
  "lingue": {
   "la": {
    "nome": "latino",
-   "codici": 29779
+   "codici": 29767
   },
   "de": {
    "nome": "tedesco",
@@ -29,11 +29,11 @@
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 13225
+   "codici": 13220
   },
   "grc": {
    "nome": "greco",
-   "codici": 5509
+   "codici": 5508
   },
   "ar": {
    "nome": "arabo",
@@ -49,19 +49,19 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 2410
+   "codici": 2403
   },
   "he": {
    "nome": "ebraico",
-   "codici": 2205
+   "codici": 2204
   },
   "en": {
    "nome": "inglese",
-   "codici": 2091
+   "codici": 2089
   },
   "it": {
    "nome": "italiano",
-   "codici": 2012
+   "codici": 2010
   },
   "cop": {
    "nome": "copto",
@@ -77,7 +77,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 422
+   "codici": 420
   },
   "zh": {
    "nome": "cinese",
@@ -103,13 +103,13 @@
    "nome": "slavo ecclesiastico",
    "codici": 73
   },
-  "gez": {
-   "nome": "etiopico",
-   "codici": 59
-  },
   "ru": {
    "nome": "russo",
    "codici": 58
+  },
+  "gez": {
+   "nome": "etiopico",
+   "codici": 57
   },
   "ca": {
    "nome": "catalano",
@@ -183,15 +183,15 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 4541
+   "codici": 4540
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 2425
+   "codici": 2424
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 5355
+   "codici": 5347
   },
   "medievale": {
    "nome": "autori medievali",
@@ -371,7 +371,7 @@
    "nome": "Donato",
    "latino": "Donatus",
    "categoria": "classico-latino",
-   "codici": 123
+   "codici": 122
   },
   "servio": {
    "nome": "Servio",
@@ -1055,7 +1055,7 @@
    "nome": "Esopo",
    "latino": "Aesopus",
    "categoria": "classico-greco",
-   "codici": 35
+   "codici": 34
   },
   "flavio-giuseppe": {
    "nome": "Flavio Giuseppe",
@@ -1103,13 +1103,13 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 1362
+   "codici": 1361
   },
   "girolamo": {
    "nome": "Girolamo",
    "latino": "Hieronymus",
    "categoria": "cristiano",
-   "codici": 668
+   "codici": 667
   },
   "ambrogio": {
    "nome": "Ambrogio",
@@ -1145,7 +1145,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 2318
+   "codici": 2311
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1211,7 +1211,7 @@
    "nome": "Eusebio di Cesarea",
    "latino": "Eusebius Caesariensis",
    "categoria": "cristiano",
-   "codici": 95
+   "codici": 94
   },
   "atanasio": {
    "nome": "Atanasio",
@@ -1611,7 +1611,6 @@
   "Stiftskirche St. Michael, Beromünster",
   "The Cleveland Museum of Art",
   "The Huntington Library, San Marino (California)",
-  "The Walters Art Museum, Baltimore",
   "Tiroler Landesmuseum Ferdinandeum, Innsbruck",
   "Universität Heidelberg",
   "Universitäts- und Landesbibliothek, Darmstadt",
@@ -2114,30 +2113,6 @@
     "indice/ds-0.json"
    ]
   },
-  "walters": {
-   "nome": "Walters Art Museum, Baltimore (thedigitalwalters.org; manifesti IIIF scritti da Emendando)",
-   "codici": 34,
-   "con_autori": 10,
-   "lingue": {
-    "?": 5,
-    "la": 12,
-    "fr": 7,
-    "it": 2,
-    "es": 2,
-    "en": 2,
-    "he": 1,
-    "gez": 2,
-    "grc": 1
-   },
-   "esito": "ok",
-   "prefissi": [
-    "walters-"
-   ],
-   "pezzi_voci": 1,
-   "indice": [
-    "indice/walters-0.json"
-   ]
-  },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
    "codici": 2989,
@@ -2237,11 +2212,6 @@
    "file": "indice/ds-0.json",
    "fonte": "ds",
    "righe": 8364
-  },
-  {
-   "file": "indice/walters-0.json",
-   "fonte": "walters",
-   "righe": 34
   },
   {
    "file": "indice/vaticana-0.json",
