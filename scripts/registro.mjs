@@ -106,9 +106,10 @@ export const AVANZAMENTO = {
   walters: () => {
     const s = leggi("data/walters.json"); if (!s) return { testo: "non ancora cominciata" };
     const vs = Object.values(s.voci || {}), n = vs.length, imm = vs.flatMap(v => v.p || []), mis = imm.filter(x => x[4] !== 0).length;
-    const ore = (imm.length - mis) * 1.5 / 3600, giorni = Math.ceil(ore / (20 / 60));
+    const ore = (imm.length - mis) * 15 / 3600, giorni = Math.ceil(ore);   // circa 15 secondi per misura, 60 minuti per notte
     const misure = `misure delle immagini: ${num(mis)} su ${num(imm.length)} vere${imm.length > mis ? `, le altre stimate dal tipo di pagina (mancano circa ${num(giorni)} notti)` : ""}`;
-    if (n < (s.totale || 0)) return { testo: `in corso: ${num(n)} codici letti su ${num(s.totale)}; ${misure}`, data: s.aggiornato };
+    // circa 100 secondi per codice (descrizione e una misura): circa 36 codici per notte
+    if (n < (s.totale || 0)) return { testo: `in corso: ${num(n)} codici letti su ${num(s.totale)} (mancano circa ${num(Math.ceil((s.totale - n) / 36))} notti); ${misure}`, data: s.aggiornato };
     return { testo: `codici letti tutti (${num(n)}); ${misure}`, data: s.aggiornato };
   },
   ...Object.fromEntries(Object.keys(FONTI_HSP).map(f => [f, () => { const a = aRiprese(`data/${f}.json`, 1); return { ...a, testo: a.testo.replace("schede lette tutte", "codici digitalizzati letti tutti") }; }])),
