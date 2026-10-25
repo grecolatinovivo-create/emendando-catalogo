@@ -5,9 +5,9 @@
   "ultimo_ok": "2026-10-25T17:49:08.826Z"
  },
  "auckland": {
-  "quando": "2026-10-25T19:53:05.773Z",
+  "quando": "2026-10-25T20:08:11.321Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-25T19:53:05.773Z"
+  "ultimo_ok": "2026-10-25T20:08:11.321Z"
  },
  "bamberga": {
   "quando": "2026-10-25T09:26:55.793Z",
@@ -75,9 +75,9 @@
   "ultimo_ok": "2026-10-24T19:49:16.763Z"
  },
  "kokusho": {
-  "quando": "2026-10-25T19:53:05.773Z",
+  "quando": "2026-10-25T20:08:11.321Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-25T19:53:05.773Z"
+  "ultimo_ok": "2026-10-25T20:08:11.321Z"
  },
  "laurenziana": {
   "quando": "2026-10-25T09:26:55.793Z",
@@ -105,9 +105,9 @@
   "ultimo_ok": "2026-10-25T17:49:08.826Z"
  },
  "ndl": {
-  "quando": "2026-10-25T19:53:05.773Z",
-  "esito": "errore: raccolta incompleta (94400 record letti su 114703): riprenderà alla prossima esecuzione",
-  "ultimo_ok": null
+  "quando": "2026-10-25T20:08:11.321Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-25T20:08:11.321Z"
  },
  "nlg": {
   "quando": "2026-10-25T13:14:23.731Z",

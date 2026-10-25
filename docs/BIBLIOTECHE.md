@@ -18,7 +18,7 @@ Come leggere le colonne:
 - **Ultima raccolta**: com'è andata l'ultima volta.
 
 <!-- inizio automatico -->
-Codici nel catalogo, in tutto: **279.988**, di cui **13.591** con almeno un autore riconosciuto.
+Codici nel catalogo, in tutto: **280.131**, di cui **13.591** con almeno un autore riconosciuto.
 
 | Biblioteca | Città | Codici totali | Di cui con autori riconosciuti | Lingue | Avanzamento della lettura | Come si aggiorna | Ultimo aggiornamento | Ultima raccolta |
 |---|---|---|---|---|---|---|---|---|
@@ -47,7 +47,7 @@ Codici nel catalogo, in tutto: **279.988**, di cui **13.591** con almeno un auto
 | Library of Congress: microfilm del Monastero di Santa Caterina del Sinai e dei Patriarcati greco-ortodosso e armeno di Gerusalemme | Sinai (Egitto) e Gerusalemme | 2670 | 646 | greco 1753, arabo 410, georgiano 212, altre 322 | item letti tutti (2670 codici su 2700 item delle due collezioni; fuori firmani, rotoli, cataloghi moderni) | corsia usa: a ruota finché la prima lettura non è finita, poi ogni notte (elenco completo ogni 6 giorni; manifesti scritti dal catalogo) | 2026-10-25 | riuscita |
 | Biblioteca Nazionale di Grecia | Atene | 765 | 0 | greco 654, italiano 70, francese 37, altre 39 | 765 manifesti letti su 784 manoscritti; 19 con il manifesto non leggibile | ogni notte, da sola (elenco ogni 6 giorni; copie dei manifesti scritte dal catalogo) | 2026-10-25 | riuscita |
 | Cambridge Digital Library (University Library e college) | Cambridge | 0 | 0 | — | elenco non ancora raccolto: va lanciato scripts/browser/cudl.js dal browser | va fatta a mano dal browser (scripts/browser/cudl.js) | 2026-10-25 | riuscita |
-| National Diet Library (国立国会図書館): manoscritti dei libri antichi giapponesi e cinesi | Tokyo (Giappone) | 42.729 | 0 | giapponese 40.189, cinese 2445, coreano 89, altre 7 | in corso: 94.400 record letti su 114.703; 43.208 manoscritti finora | corsia mondo: a ruota finché la prima lettura completa non è finita, poi ogni notte (solo i record cambiati ogni 6 giorni, raccolta completa ogni 30) | 2026-10-25 | in corso, riprende alla prossima |
+| National Diet Library (国立国会図書館): manoscritti dei libri antichi giapponesi e cinesi | Tokyo (Giappone) | 42.872 | 0 | giapponese 40.318, cinese 2459, coreano 89, altre 7 | record letti tutti (114.703 libri antichi digitalizzati; 43.352 manoscritti; fuori i libri a stampa) | corsia mondo: a ruota finché la prima lettura completa non è finita, poi ogni notte (solo i record cambiati ogni 6 giorni, raccolta completa ogni 30) | 2026-10-25 | riuscita |
 | Kokusho Database (国書データベース) del National Institute of Japanese Literature: manoscritti di biblioteche, templi e collezioni giapponesi | Giappone | 139.385 | 0 | giapponese 139.385 | schede lette tutte (206.989 manoscritti con immagini; 139.385 con immagini proprie; fuori i libri a stampa e la NDL) | corsia mondo: a ruota finché la prima lettura completa non è finita, poi ogni notte (raccolta completa ogni 14 giorni) | 2026-10-25 | riuscita |
 | State Library Victoria | Melbourne (Australia) | 0 | 0 | — | elenco non ancora raccolto: va lanciato scripts/browser/slv.js dal browser | va fatta a mano dal browser (scripts/browser/slv.js) | — | — |
 | Auckland Libraries, Sir George Grey Special Collections | Auckland (Nuova Zelanda) | 43 | 11 | latino 24, arabo 8, persiano 6, altre 10 | oggetti letti tutti (6561; 43 codici: medievali e orientali, fuori lettere e carte d'archivio) | corsia mondo: a ruota finché la prima lettura completa non è finita, poi ogni notte (raccolta completa ogni 6 giorni) | 2026-10-25 | riuscita |

@@ -1,7 +1,7 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-25T19:53:50.426Z",
- "totale": 279988,
+ "aggiornato": "2026-10-25T20:08:56.390Z",
+ "totale": 280131,
  "con_autori": 13591,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
@@ -21,7 +21,7 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 179696
+   "codici": 179825
   },
   "la": {
    "nome": "latino",
@@ -57,7 +57,7 @@
   },
   "zh": {
    "nome": "cinese",
-   "codici": 3320
+   "codici": 3334
   },
   "it": {
    "nome": "italiano",
@@ -2713,16 +2713,16 @@
   },
   "ndl": {
    "nome": "National Diet Library, Tokyo (dl.ndl.go.jp)",
-   "codici": 42729,
+   "codici": 42872,
    "con_autori": 0,
    "lingue": {
-    "ja": 40189,
-    "zh": 2445,
+    "ja": 40318,
+    "zh": 2459,
     "ko": 89,
     "?": 6,
     "xx": 1
    },
-   "esito": "errore: raccolta incompleta (94400 record letti su 114703): riprenderà alla prossima esecuzione",
+   "esito": "ok",
    "prefissi": [
     "ndl-"
    ],
@@ -2925,7 +2925,7 @@
   {
    "file": "indice/ndl-2.json",
    "fonte": "ndl",
-   "righe": 2729
+   "righe": 2872
   },
   {
    "file": "indice/kokusho-0.json",
