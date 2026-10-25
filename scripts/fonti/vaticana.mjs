@@ -102,18 +102,18 @@ export async function scansiona({ minuti = 20, extra = [] } = {}) {
     for (const k of ["giro", "passo", "prossimo", "visti", "visti_giro"]) delete st[k];
     st.versione = VERSIONE;
   }
-  st.elenco = st.elenco || { home: 0, fondi: {} }; st.mancanti = st.mancanti || {}; st.voci = st.voci || {};
+  st.elenco = st.elenco || { home: 0, fondi: {} }; st.mancanti = st.mancanti || {}; st.voci = st.voci || {}; st.errori = st.errori || {};
   let letti = 0, trovati = 0;
   const uno = async seg => {
-    let m; try { m = await leggi(seg); } catch (e) { log("vaticana", seg, e.message); return false; }
-    letti++;
+    let m; try { m = await leggi(seg); } catch (e) { log("vaticana", seg, e.message); st.errori[seg] = Date.now(); return false; }
+    letti++; delete st.errori[seg];
     if (m) { st.voci[seg] = m.g.length && !m.g.every(x => /^und$/i.test(x)) ? { a: m.a, t: m.t, d: m.d, g: m.g } : { a: m.a, t: m.t, d: m.d }; delete st.mancanti[seg]; trovati++; }
     else { delete st.voci[seg]; st.mancanti[seg] = Date.now(); }
     if (letti % 20 === 0) { salvaStato(st); log("vaticana", `${letti} manifesti letti, ultimo ${seg}`); }
     return true;
   };
   const fresco = t => t && Date.now() - t < GIORNI_ELENCO * 864e5;
-  let ok = true;
+  let ok = true, difficolta = 0;
   for (const s of extra) { if (Date.now() > fine) break; if (!st.voci[s]) await uno(s); }
   // 1. fondi e numeri dalla pagina dei manoscritti
   if (!fresco(st.elenco.home) && Date.now() < fine) {
@@ -145,7 +145,12 @@ export async function scansiona({ minuti = 20, extra = [] } = {}) {
       if (Date.now() > fine) break;
       const seg = `${f}.${suf}`;
       if (st.voci[seg] || (st.mancanti[seg] && Date.now() - st.mancanti[seg] < GIORNI_MANCANTI * 864e5)) continue;
-      if (!(await uno(seg))) { ok = false; break; }   // server in difficoltà: si riprende la prossima volta
+      if (st.errori[seg] && Date.now() - st.errori[seg] < 864e5) continue;   // errore di rete recente: si riprova domani
+      if (await uno(seg)) { difficolta = 0; continue; }
+      // un errore isolato non ferma la raccolta: si salta il codice e si aspetta un minuto;
+      // dopo 5 errori di fila il server è in difficoltà e si riprende alla prossima esecuzione
+      if (++difficolta >= 5) { ok = false; break; }
+      await new Promise(z => setTimeout(z, 60000));
     }
   }
   st.aggiornato = new Date().toISOString();
