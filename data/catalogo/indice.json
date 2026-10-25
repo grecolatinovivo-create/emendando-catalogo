@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-25T10:04:46.888Z",
- "totale": 82589,
- "con_autori": 11890,
+ "aggiornato": "2026-10-25T10:53:36.063Z",
+ "totale": 83674,
+ "con_autori": 11903,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
   "id",
@@ -21,7 +21,7 @@
  "lingue": {
   "la": {
    "nome": "latino",
-   "codici": 26877
+   "codici": 27485
   },
   "de": {
    "nome": "tedesco",
@@ -29,7 +29,7 @@
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 13714
+   "codici": 13715
   },
   "grc": {
    "nome": "greco",
@@ -45,19 +45,19 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 3254
+   "codici": 3258
+  },
+  "it": {
+   "nome": "italiano",
+   "codici": 2917
   },
   "nl": {
    "nome": "nederlandese",
    "codici": 2570
   },
-  "it": {
-   "nome": "italiano",
-   "codici": 2526
-  },
   "fr": {
    "nome": "francese",
-   "codici": 2514
+   "codici": 2534
   },
   "he": {
    "nome": "ebraico",
@@ -65,7 +65,7 @@
   },
   "en": {
    "nome": "inglese",
-   "codici": 1499
+   "codici": 1560
   },
   "cop": {
    "nome": "copto",
@@ -77,7 +77,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 428
+   "codici": 429
   },
   "tr": {
    "nome": "turco",
@@ -179,15 +179,15 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 4464
+   "codici": 4468
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 2330
+   "codici": 2334
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 4987
+   "codici": 4993
   },
   "medievale": {
    "nome": "autori medievali",
@@ -217,7 +217,7 @@
    "nome": "Catullo",
    "latino": "Catullus",
    "categoria": "classico-latino",
-   "codici": 39
+   "codici": 40
   },
   "cicerone": {
    "nome": "Cicerone",
@@ -241,7 +241,7 @@
    "nome": "Virgilio",
    "latino": "Vergilius",
    "categoria": "classico-latino",
-   "codici": 346
+   "codici": 348
   },
   "orazio": {
    "nome": "Orazio",
@@ -277,7 +277,7 @@
    "nome": "Seneca",
    "latino": "Seneca",
    "categoria": "classico-latino",
-   "codici": 331
+   "codici": 332
   },
   "lucano": {
    "nome": "Lucano",
@@ -625,7 +625,7 @@
    "nome": "Omero",
    "latino": "Homerus",
    "categoria": "classico-greco",
-   "codici": 106
+   "codici": 107
   },
   "esiodo": {
    "nome": "Esiodo",
@@ -721,7 +721,7 @@
    "nome": "Platone",
    "latino": "Plato",
    "categoria": "classico-greco",
-   "codici": 135
+   "codici": 136
   },
   "aristotele": {
    "nome": "Aristotele",
@@ -733,7 +733,7 @@
    "nome": "Teofrasto",
    "latino": "Theophrastus",
    "categoria": "classico-greco",
-   "codici": 34
+   "codici": 36
   },
   "lisia": {
    "nome": "Lisia",
@@ -1129,7 +1129,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 2119
+   "codici": 2124
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1183,7 +1183,7 @@
    "nome": "Cassiodoro",
    "latino": "Cassiodorus",
    "categoria": "cristiano",
-   "codici": 100
+   "codici": 101
   },
   "origene": {
    "nome": "Origene",
@@ -1342,6 +1342,7 @@
   "Dorfarchiv Sils i.E. / Segl, Sils / Segl Maria",
   "Draiflessen Collection (Liberna)",
   "Eisenbibliothek, Schlatt",
+  "Elizabethan Club, New Haven",
   "Erzbischöfliche Diözesan- und Dombibliothek Köln mit Bibliothek St. Albertus Magnus",
   "Fondation Barbier-Mueller pour l'étude de la poésie italienne de la Renaissance, Genève",
   "Fondation Martin Bodmer, Cologny",
@@ -1634,7 +1635,7 @@
     "es": 3,
     "nl": 10
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "hd-"
    ],
@@ -1672,7 +1673,7 @@
     "ga": 3,
     "tr": 1
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "ec-"
    ],
@@ -1724,7 +1725,7 @@
     "da": 1,
     "sla": 11
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "bsb-"
    ],
@@ -1760,7 +1761,7 @@
     "sa": 1,
     "pl": 3
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "sbb-"
    ],
@@ -1794,7 +1795,7 @@
     "ar": 1,
     "cop": 1
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "bod-"
    ],
@@ -1810,7 +1811,7 @@
    "lingue": {
     "la": 1892
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "bnf-"
    ],
@@ -1831,7 +1832,7 @@
     "it": 5,
     "ar": 3
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "bml-"
    ],
@@ -1862,7 +1863,7 @@
     "he": 8,
     "en": 1
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "lei-"
    ],
@@ -1881,7 +1882,7 @@
     "de": 2,
     "grc": 1
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "bam-"
    ],
@@ -1900,7 +1901,7 @@
     "de": 10,
     "nl": 1
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "ceec-"
    ],
@@ -1927,7 +1928,7 @@
     "cu": 1,
     "ar": 1
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "ubl-"
    ],
@@ -1938,18 +1939,18 @@
   },
   "yale": {
    "nome": "Yale University Library, Beinecke e altre (collections.library.yale.edu)",
-   "codici": 3819,
-   "con_autori": 523,
+   "codici": 4262,
+   "con_autori": 532,
    "lingue": {
     "fr": 394,
-    "en": 606,
+    "en": 666,
     "nl": 38,
-    "xx": 280,
+    "xx": 281,
     "la": 1604,
     "de": 55,
     "es": 50,
-    "it": 740,
-    "?": 196,
+    "it": 1121,
+    "?": 197,
     "grc": 68,
     "syr": 7,
     "ar": 328,
@@ -1973,11 +1974,11 @@
     "sa": 1,
     "hu": 61
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "yale-"
    ],
-   "pezzi_voci": 5,
+   "pezzi_voci": 6,
    "indice": [
     "indice/yale-0.json"
    ]
@@ -2016,7 +2017,7 @@
     "gez": 2,
     "pl": 1
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "upenn-"
    ],
@@ -2072,21 +2073,23 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 2347,
-   "con_autori": 546,
+   "codici": 2989,
+   "con_autori": 550,
    "lingue": {
-    "xx": 8,
-    "la": 2333,
-    "it": 4,
+    "xx": 11,
+    "la": 2941,
+    "it": 14,
     "de": 3,
     "grc": 1,
-    "fr": 2
+    "fr": 22,
+    "es": 1,
+    "en": 1
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "bav-"
    ],
-   "pezzi_voci": 3,
+   "pezzi_voci": 4,
    "indice": [
     "indice/vaticana-0.json"
    ]
@@ -2156,7 +2159,7 @@
   {
    "file": "indice/yale-0.json",
    "fonte": "yale",
-   "righe": 3819
+   "righe": 4262
   },
   {
    "file": "indice/penn-0.json",
@@ -2171,7 +2174,7 @@
   {
    "file": "indice/vaticana-0.json",
    "fonte": "vaticana",
-   "righe": 2347
+   "righe": 2989
   }
  ]
 }

@@ -1,71 +1,71 @@
 {
- "aggiornato": "2026-10-25T10:04:46.888Z",
+ "aggiornato": "2026-10-25T10:53:36.063Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
    "nome": "Heidelberg (digi.ub.uni-heidelberg.de)",
    "codici": 95,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "ecodices": {
    "nome": "e-codices",
    "codici": 307,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "bsb": {
    "nome": "Bayerische Staatsbibliothek (digitale-sammlungen.de)",
    "codici": 943,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "berlino": {
    "nome": "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
    "codici": 134,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
    "codici": 286,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "gallica": {
    "nome": "Bibliothèque nationale de France (gallica.bnf.fr)",
    "codici": 1410,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "laurenziana": {
    "nome": "Biblioteca Medicea Laurenziana, Firenze (tecabml.contentdm.oclc.org)",
    "codici": 1584,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "leiden": {
    "nome": "Universiteitsbibliotheek Leiden (digitalcollections.universiteitleiden.nl)",
    "codici": 526,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "bamberga": {
    "nome": "Staatsbibliothek Bamberg, Bamberga (dati dal Handschriftenportal, handschriftenportal.de)",
    "codici": 44,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "colonia": {
    "nome": "Erzbischöfliche Diözesan- und Dombibliothek Köln mit Bibliothek St. Albertus Magnus, Colonia (dati dal Handschriftenportal, handschriftenportal.de)",
    "codici": 16,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "lipsia": {
    "nome": "Universitätsbibliothek Leipzig, Lipsia (dati dal Handschriftenportal, handschriftenportal.de)",
    "codici": 179,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "yale": {
    "nome": "Yale University Library, Beinecke e altre (collections.library.yale.edu)",
-   "codici": 244,
-   "esito": "precedente"
+   "codici": 251,
+   "esito": "ok"
   },
   "penn": {
    "nome": "University of Pennsylvania Libraries (colenda.library.upenn.edu)",
    "codici": 159,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "ds": {
    "nome": "Digital Scriptorium: istituzioni statunitensi (search.digital-scriptorium.org)",
@@ -75,10 +75,10 @@
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
    "codici": 366,
-   "esito": "precedente"
+   "esito": "ok"
   }
  },
- "totale": 6467,
+ "totale": 6474,
  "manoscritti": [
   {
    "id": "bsb-bsb00034122",
@@ -37357,6 +37357,36 @@
    "immagini": null
   },
   {
+   "id": "yale-10651589",
+   "fonte": "yale",
+   "biblioteca": "Beinecke Rare Book and Manuscript Library",
+   "citta": "New Haven",
+   "segnatura": "GEN MSS 475",
+   "datazione": "no date",
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Anonymous. “Il grande Signor Lorens.” No source. Text is a kind of novel-play presenting Il Poeta Futurista, among other characters, in a dialogue between several persons. With drawing entitled “Gli effetti psicopatici della luna.” [2070-1]-[2085-1]",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "titolo: «…Poeta Futurista, among other characters, in a dialogue between severa…»"
+    }
+   ],
+   "manifest": "https://collections.library.yale.edu/manifests/10651589",
+   "pagina": "https://collections.library.yale.edu/catalog/10651589",
+   "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
+   "immagini": null
+  },
+  {
    "id": "yale-10651677",
    "fonte": "yale",
    "biblioteca": "Beinecke Rare Book and Manuscript Library",
@@ -37383,6 +37413,36 @@
    ],
    "manifest": "https://collections.library.yale.edu/manifests/10651677",
    "pagina": "https://collections.library.yale.edu/catalog/10651677",
+   "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
+   "immagini": null
+  },
+  {
+   "id": "yale-10651678",
+   "fonte": "yale",
+   "biblioteca": "Beinecke Rare Book and Manuscript Library",
+   "citta": "New Haven",
+   "segnatura": "GEN MSS 475",
+   "datazione": "no date",
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Anonymous. “Il grande Signor Lorens.” No source. Text is a kind of novel-play presenting Il Poeta Futurista, among other characters, in a dialogue between several persons. [2141-1]-[2155-1]",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "titolo: «…Poeta Futurista, among other characters, in a dialogue between severa…»"
+    }
+   ],
+   "manifest": "https://collections.library.yale.edu/manifests/10651678",
+   "pagina": "https://collections.library.yale.edu/catalog/10651678",
    "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
    "immagini": null
   },
@@ -37467,6 +37527,92 @@
    ],
    "manifest": "https://collections.library.yale.edu/manifests/10653608",
    "pagina": "https://collections.library.yale.edu/catalog/10653608",
+   "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
+   "immagini": null
+  },
+  {
+   "id": "yale-10653778",
+   "fonte": "yale",
+   "biblioteca": "Beinecke Rare Book and Manuscript Library",
+   "citta": "New Haven",
+   "segnatura": "GEN MSS 475",
+   "datazione": "no date",
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Filippo Tommaso Marinetti. “Le Beffe dell... (Dal \"carnet\" d...) No source. [3251-1] . With a photo of Jane Catulle-Mendes. [3252-1]",
+   "autori": [
+    {
+     "id": "catullo",
+     "autore": "Catullo",
+     "latino": "Catullus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…251-1] . With a photo of Jane Catulle-Mendes. [3252-1]»"
+    }
+   ],
+   "manifest": "https://collections.library.yale.edu/manifests/10653778",
+   "pagina": "https://collections.library.yale.edu/catalog/10653778",
+   "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
+   "immagini": null
+  },
+  {
+   "id": "yale-10654208",
+   "fonte": "yale",
+   "biblioteca": "Beinecke Rare Book and Manuscript Library",
+   "citta": "New Haven",
+   "segnatura": "GEN MSS 475",
+   "datazione": "no date",
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Unidentified illustration. [3459-1] ; Photo with caption: “Une belle illumination dans le port de Los Angeles.” [3459-2] ; Photo with caption: ”Will New York confirm verdict.” [3459-3] ; Unidentified illustration. [3459-4] ; Dessin humoristique. [3459-5] ; Three illustrations by Virgilio Marchi. [3459-6]",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…9-5] ; Three illustrations by Virgilio Marchi. [3459-6]»"
+    }
+   ],
+   "manifest": "https://collections.library.yale.edu/manifests/10654208",
+   "pagina": "https://collections.library.yale.edu/catalog/10654208",
+   "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
+   "immagini": null
+  },
+  {
+   "id": "yale-10656075",
+   "fonte": "yale",
+   "biblioteca": "Beinecke Rare Book and Manuscript Library",
+   "citta": "New Haven",
+   "segnatura": "GEN MSS 475",
+   "datazione": "no date",
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Filippo Tommaso Marinetti. “Nostra inchiesta: L'Arte fascista sarà l'arte futurista! L'Arte fascista sarà Futurismo: pià¹ o meno audace.” L'Arte Futurista. [Partially Illegible Image] [4649-1]",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [
+      "Menone"
+     ],
+     "corrispondenza": "titolo: «…scista sarà Futurismo: pià¹ o meno audace.” L'Arte Futurista. [P…»"
+    }
+   ],
+   "manifest": "https://collections.library.yale.edu/manifests/10656075",
+   "pagina": "https://collections.library.yale.edu/catalog/10656075",
    "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
    "immagini": null
   },
@@ -37679,6 +37825,42 @@
    ],
    "manifest": "https://collections.library.yale.edu/manifests/10659205",
    "pagina": "https://collections.library.yale.edu/catalog/10659205",
+   "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
+   "immagini": null
+  },
+  {
+   "id": "yale-10659555",
+   "fonte": "yale",
+   "biblioteca": "Beinecke Rare Book and Manuscript Library",
+   "citta": "New Haven",
+   "segnatura": "GEN MSS 475",
+   "datazione": "no date",
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Carlo Podesta. “Di alcune famose intemperanze.” No source. Text about Marinetti and Dante, Virgilio, Omero, etc. [6880-1]-[6882-1]",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…xt about Marinetti and Dante, Virgilio, Omero, etc. [6880-1]-[6882-1…»"
+    },
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…arinetti and Dante, Virgilio, Omero, etc. [6880-1]-[6882-1]»"
+    }
+   ],
+   "manifest": "https://collections.library.yale.edu/manifests/10659555",
+   "pagina": "https://collections.library.yale.edu/catalog/10659555",
    "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
    "immagini": null
   },
@@ -174496,6 +174678,37 @@
    "licenza": "CC BY-NC 4.0",
    "immagini": null,
    "anteprima": "https://e-codices.ch/loris/ebs/ebs-0020/ebs-0020_001r.jp2/full/,150/0/default/jpg"
+  },
+  {
+   "id": "yale-32597224",
+   "fonte": "yale",
+   "biblioteca": "Elizabethan Club",
+   "citta": "New Haven",
+   "segnatura": "Eliz 294",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Tragedie called Oedipus, [circa 1596-1603].",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tragedie",
+      "Oedipus"
+     ],
+     "corrispondenza": "descrizione: «…eville's verse translation of Seneca's Oedipus (1581), and also co…»"
+    }
+   ],
+   "manifest": "https://collections.library.yale.edu/manifests/32597224",
+   "pagina": "https://collections.library.yale.edu/catalog/32597224",
+   "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
+   "immagini": null
   },
   {
    "id": "ceec-d189c33e-2ebe-3789-b8a2-309f9c615332",
