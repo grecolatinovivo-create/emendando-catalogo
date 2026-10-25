@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T05:26:06.833Z",
+ "aggiornato": "2026-10-25T06:23:37.250Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -59,7 +59,7 @@
   },
   "yale": {
    "nome": "Yale University Library, Beinecke e altre (collections.library.yale.edu)",
-   "codici": 231,
+   "codici": 244,
    "esito": "ok"
   },
   "penn": {
@@ -73,7 +73,7 @@
    "esito": "ok"
   }
  },
- "totale": 6280,
+ "totale": 6293,
  "manoscritti": [
   {
    "id": "bsb-bsb00034122",
@@ -37292,6 +37292,388 @@
    ],
    "manifest": "https://collections.library.yale.edu/manifests/2033691",
    "pagina": "https://collections.library.yale.edu/catalog/2033691",
+   "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
+   "immagini": null
+  },
+  {
+   "id": "yale-10648185",
+   "fonte": "yale",
+   "biblioteca": "Beinecke Rare Book and Manuscript Library",
+   "citta": "New Haven",
+   "segnatura": "GEN MSS 475",
+   "datazione": "no date",
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "J. Joseph-Renaud. Poesia. With short articles on \"Roi Bombance\" by Fersen, Mme. Catulle Mendes and Adrien Frissant. [0039-1]",
+   "autori": [
+    {
+     "id": "catullo",
+     "autore": "Catullo",
+     "latino": "Catullus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…Roi Bombance\" by Fersen, Mme. Catulle Mendes and Adrien Frissant. […»"
+    }
+   ],
+   "manifest": "https://collections.library.yale.edu/manifests/10648185",
+   "pagina": "https://collections.library.yale.edu/catalog/10648185",
+   "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
+   "immagini": null
+  },
+  {
+   "id": "yale-10649889",
+   "fonte": "yale",
+   "biblioteca": "Beinecke Rare Book and Manuscript Library",
+   "citta": "New Haven",
+   "segnatura": "GEN MSS 475",
+   "datazione": "no date",
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Persio Falchi. “Contro Natura.” La Forca, [1914?]. [983-1]",
+   "autori": [
+    {
+     "id": "persio",
+     "autore": "Persio",
+     "latino": "Persius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Persio Falchi. “Contro Natura.” La Forca, [1914?]. [983-1]»"
+    }
+   ],
+   "manifest": "https://collections.library.yale.edu/manifests/10649889",
+   "pagina": "https://collections.library.yale.edu/catalog/10649889",
+   "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
+   "immagini": null
+  },
+  {
+   "id": "yale-10651677",
+   "fonte": "yale",
+   "biblioteca": "Beinecke Rare Book and Manuscript Library",
+   "citta": "New Haven",
+   "segnatura": "GEN MSS 475",
+   "datazione": "no date",
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Anonymous. “Il grande Signor Lorens.” No source. Text is a kind of novel-play presenting Il Poeta Futurista, among other characters, in a dialogue between several persons. [2140-1]",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "titolo: «…Poeta Futurista, among other characters, in a dialogue between severa…»"
+    }
+   ],
+   "manifest": "https://collections.library.yale.edu/manifests/10651677",
+   "pagina": "https://collections.library.yale.edu/catalog/10651677",
+   "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
+   "immagini": null
+  },
+  {
+   "id": "yale-10653387",
+   "fonte": "yale",
+   "biblioteca": "Beinecke Rare Book and Manuscript Library",
+   "citta": "New Haven",
+   "segnatura": "GEN MSS 475",
+   "datazione": "no date",
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Roberto Papini. “Virgilio Marchi Architetto.” No source. [3005-1] ; Alberto Bragaglia. “Una mostra d'architettura moderna.” Popolo Romano, [1922]. [3005-2] ; Ugo Giannattasio. “Risposta a Virfilio Marchi.” No source. [3005-3] ; Vige. “Architettura futurista.” No source. [3005-4] ; Ugo Giannattasio. \"Per una mostra d'architettura.\" No source. [3005-5] ; Virgilio Marchi. “Per una mostra d'architettu",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Roberto Papini. “Virgilio Marchi Architetto.” No source…»"
+    }
+   ],
+   "manifest": "https://collections.library.yale.edu/manifests/10653387",
+   "pagina": "https://collections.library.yale.edu/catalog/10653387",
+   "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
+   "immagini": null
+  },
+  {
+   "id": "yale-10653561",
+   "fonte": "yale",
+   "biblioteca": "Beinecke Rare Book and Manuscript Library",
+   "citta": "New Haven",
+   "segnatura": "GEN MSS 475",
+   "datazione": "no date",
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Virgilio Marchi. “Con la spada di cartone. La Lettera di Marchi.” No source. [3102-1]",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Virgilio Marchi. “Con la spada di cartone. La Lettera di Marchi.” No source. [3102-1]»"
+    }
+   ],
+   "manifest": "https://collections.library.yale.edu/manifests/10653561",
+   "pagina": "https://collections.library.yale.edu/catalog/10653561",
+   "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
+   "immagini": null
+  },
+  {
+   "id": "yale-10653608",
+   "fonte": "yale",
+   "biblioteca": "Beinecke Rare Book and Manuscript Library",
+   "citta": "New Haven",
+   "segnatura": "GEN MSS 475",
+   "datazione": "no date",
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Unsigned article. “Catulle Mendes.” No source. With a photo: One of the last portraits of Catulle Mendes. [3131-1]",
+   "autori": [
+    {
+     "id": "catullo",
+     "autore": "Catullo",
+     "latino": "Catullus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Unsigned article. “Catulle Mendes.” No source. With a ph…»"
+    }
+   ],
+   "manifest": "https://collections.library.yale.edu/manifests/10653608",
+   "pagina": "https://collections.library.yale.edu/catalog/10653608",
+   "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
+   "immagini": null
+  },
+  {
+   "id": "yale-10656428",
+   "fonte": "yale",
+   "biblioteca": "Beinecke Rare Book and Manuscript Library",
+   "citta": "New Haven",
+   "segnatura": "GEN MSS 475",
+   "datazione": "no date",
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Alessandro de Stefani. \"Vent'anni meno. Novella di Alessandro de Stefani.\" No source. [04873-1]",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [
+      "Menone"
+     ],
+     "corrispondenza": "titolo: «…sandro de Stefani. \"Vent'anni meno. Novella di Alessandro de Ste…»"
+    }
+   ],
+   "manifest": "https://collections.library.yale.edu/manifests/10656428",
+   "pagina": "https://collections.library.yale.edu/catalog/10656428",
+   "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
+   "immagini": null
+  },
+  {
+   "id": "yale-10656562",
+   "fonte": "yale",
+   "biblioteca": "Beinecke Rare Book and Manuscript Library",
+   "citta": "New Haven",
+   "segnatura": "GEN MSS 475",
+   "datazione": "no date",
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Filippo Tommaso Marinetti. \"Nostra inchiesta: L'Arte fascista sara l'arte futurista! L'Arte fascista sara Futurismo: piàŒ_ o meno audace.\" L'Arte Futurista. [04952-1]",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [
+      "Menone"
+     ],
+     "corrispondenza": "titolo: «…cista sara Futurismo: piàŒ_ o meno audace.\" L'Arte Futurista. [0…»"
+    }
+   ],
+   "manifest": "https://collections.library.yale.edu/manifests/10656562",
+   "pagina": "https://collections.library.yale.edu/catalog/10656562",
+   "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
+   "immagini": null
+  },
+  {
+   "id": "yale-10656566",
+   "fonte": "yale",
+   "biblioteca": "Beinecke Rare Book and Manuscript Library",
+   "citta": "New Haven",
+   "segnatura": "GEN MSS 475",
+   "datazione": "no date",
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Clipping. No date, no source but quite interesting. Contains three groups of words: [(Left) Bellezza, (Center) Dignita, and (Center) Dominia]. I caratteri tipografici sono come le faccie umane, interprendo nei loro silenziosi lineamenti ogni sottigli",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "titolo: «…ita, and (Center) Dominia]. I caratteri tipografici sono come le facc…»"
+    }
+   ],
+   "manifest": "https://collections.library.yale.edu/manifests/10656566",
+   "pagina": "https://collections.library.yale.edu/catalog/10656566",
+   "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
+   "immagini": null
+  },
+  {
+   "id": "yale-10656741",
+   "fonte": "yale",
+   "biblioteca": "Beinecke Rare Book and Manuscript Library",
+   "citta": "New Haven",
+   "segnatura": "GEN MSS 475",
+   "datazione": "no date",
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Filippo Tommaso Marinetti. \"Battaglie Futuriste.\" No source. With aphorisms by Marinetti. [05095-1]",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Aforismi"
+     ],
+     "corrispondenza": "titolo: «…e Futuriste.\" No source. With aphorisms by Marinetti. [05095-1]»"
+    }
+   ],
+   "manifest": "https://collections.library.yale.edu/manifests/10656741",
+   "pagina": "https://collections.library.yale.edu/catalog/10656741",
+   "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
+   "immagini": null
+  },
+  {
+   "id": "yale-10657522",
+   "fonte": "yale",
+   "biblioteca": "Beinecke Rare Book and Manuscript Library",
+   "citta": "New Haven",
+   "segnatura": "GEN MSS 475",
+   "datazione": "no date",
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Anonymous. \"Recensioni.\" No source [Augustea?]. Review of Orazio Pedrazzi's Terra de Dio (1934). [5607-1]",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…source [Augustea?]. Review of Orazio Pedrazzi's Terra de Dio (1934…»"
+    }
+   ],
+   "manifest": "https://collections.library.yale.edu/manifests/10657522",
+   "pagina": "https://collections.library.yale.edu/catalog/10657522",
+   "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
+   "immagini": null
+  },
+  {
+   "id": "yale-10658930",
+   "fonte": "yale",
+   "biblioteca": "Beinecke Rare Book and Manuscript Library",
+   "citta": "New Haven",
+   "segnatura": "GEN MSS 475",
+   "datazione": "no date",
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Carlo Podesta. “Di alcune famose intemperanze.” No source. Text about Marinetti and Dante, Virgilio, Omero, etc. [6513-1]",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…xt about Marinetti and Dante, Virgilio, Omero, etc. [6513-1]»"
+    },
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…arinetti and Dante, Virgilio, Omero, etc. [6513-1]»"
+    }
+   ],
+   "manifest": "https://collections.library.yale.edu/manifests/10658930",
+   "pagina": "https://collections.library.yale.edu/catalog/10658930",
+   "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
+   "immagini": null
+  },
+  {
+   "id": "yale-10659205",
+   "fonte": "yale",
+   "biblioteca": "Beinecke Rare Book and Manuscript Library",
+   "citta": "New Haven",
+   "segnatura": "GEN MSS 475",
+   "datazione": "no date",
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Carlo De Martino. “Da Virgilio al Futurismo di Alfredo Baccelli.” Il Pensiero. [06656-1]",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Carlo De Martino. “Da Virgilio al Futurismo di Alfredo Baccelli.” Il Pensiero. [06656-1]»"
+    }
+   ],
+   "manifest": "https://collections.library.yale.edu/manifests/10659205",
+   "pagina": "https://collections.library.yale.edu/catalog/10659205",
    "licenza": "Yale University Library: condizioni d'uso nella pagina del codice",
    "immagini": null
   },

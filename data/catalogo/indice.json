@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-25T05:26:06.833Z",
- "totale": 73257,
- "con_autori": 11071,
+ "aggiornato": "2026-10-25T06:23:37.250Z",
+ "totale": 74225,
+ "con_autori": 11085,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
   "id",
@@ -25,11 +25,11 @@
   },
   "de": {
    "nome": "tedesco",
-   "codici": 15775
+   "codici": 15776
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 13679
+   "codici": 13688
   },
   "grc": {
    "nome": "greco",
@@ -41,31 +41,31 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 2536
+   "codici": 2721
   },
   "nl": {
    "nome": "nederlandese",
    "codici": 2504
   },
-  "fr": {
-   "nome": "francese",
-   "codici": 2019
-  },
   "it": {
    "nome": "italiano",
-   "codici": 1595
+   "codici": 2248
+  },
+  "fr": {
+   "nome": "francese",
+   "codici": 2204
   },
   "cop": {
    "nome": "copto",
    "codici": 1404
   },
+  "en": {
+   "nome": "inglese",
+   "codici": 1327
+  },
   "ar": {
    "nome": "arabo",
    "codici": 1302
-  },
-  "en": {
-   "nome": "inglese",
-   "codici": 1211
   },
   "he": {
    "nome": "ebraico",
@@ -73,11 +73,11 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 333
+   "codici": 337
   },
   "zh": {
    "nome": "cinese",
-   "codici": 210
+   "codici": 214
   },
   "fa": {
    "nome": "persiano",
@@ -179,15 +179,15 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 4325
+   "codici": 4333
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 2280
+   "codici": 2286
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 4390
+   "codici": 4391
   },
   "medievale": {
    "nome": "autori medievali",
@@ -217,7 +217,7 @@
    "nome": "Catullo",
    "latino": "Catullus",
    "categoria": "classico-latino",
-   "codici": 37
+   "codici": 39
   },
   "cicerone": {
    "nome": "Cicerone",
@@ -241,13 +241,13 @@
    "nome": "Virgilio",
    "latino": "Vergilius",
    "categoria": "classico-latino",
-   "codici": 333
+   "codici": 337
   },
   "orazio": {
    "nome": "Orazio",
    "latino": "Horatius",
    "categoria": "classico-latino",
-   "codici": 175
+   "codici": 176
   },
   "tibullo": {
    "nome": "Tibullo",
@@ -289,7 +289,7 @@
    "nome": "Persio",
    "latino": "Persius",
    "categoria": "classico-latino",
-   "codici": 91
+   "codici": 92
   },
   "giovenale": {
    "nome": "Giovenale",
@@ -625,7 +625,7 @@
    "nome": "Omero",
    "latino": "Homerus",
    "categoria": "classico-greco",
-   "codici": 104
+   "codici": 105
   },
   "esiodo": {
    "nome": "Esiodo",
@@ -721,7 +721,7 @@
    "nome": "Platone",
    "latino": "Plato",
    "categoria": "classico-greco",
-   "codici": 133
+   "codici": 135
   },
   "aristotele": {
    "nome": "Aristotele",
@@ -733,7 +733,7 @@
    "nome": "Teofrasto",
    "latino": "Theophrastus",
    "categoria": "classico-greco",
-   "codici": 31
+   "codici": 33
   },
   "lisia": {
    "nome": "Lisia",
@@ -889,7 +889,7 @@
    "nome": "Ippocrate",
    "latino": "Hippocrates",
    "categoria": "classico-greco",
-   "codici": 121
+   "codici": 122
   },
   "tolomeo": {
    "nome": "Tolomeo",
@@ -1129,7 +1129,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 1642
+   "codici": 1643
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1342,6 +1342,7 @@
   "Generallandesarchiv, Karlsruhe",
   "Germanisches Nationalmuseum Nürnberg",
   "Germanisches Nationalmuseum, Nürnberg",
+  "Gilmore Music Library, New Haven",
   "Heidelberg",
   "Heidelberger Papyrussammlung",
   "Herzog August Bibliothek Wolfenbüttel",
@@ -1903,18 +1904,18 @@
   },
   "yale": {
    "nome": "Yale University Library, Beinecke e altre (collections.library.yale.edu)",
-   "codici": 2851,
-   "con_autori": 509,
+   "codici": 3819,
+   "con_autori": 523,
    "lingue": {
-    "fr": 209,
-    "en": 490,
+    "fr": 394,
+    "en": 606,
     "nl": 38,
-    "xx": 95,
+    "xx": 280,
     "la": 1604,
-    "de": 54,
-    "es": 46,
-    "it": 87,
-    "?": 187,
+    "de": 55,
+    "es": 50,
+    "it": 740,
+    "?": 196,
     "grc": 68,
     "syr": 7,
     "ar": 328,
@@ -1931,7 +1932,7 @@
     "ja": 19,
     "gez": 6,
     "pl": 1,
-    "zh": 1,
+    "zh": 5,
     "ko": 1,
     "pt": 1,
     "hy": 3,
@@ -1942,7 +1943,7 @@
    "prefissi": [
     "yale-"
    ],
-   "pezzi_voci": 4,
+   "pezzi_voci": 5,
    "indice": [
     "indice/yale-0.json"
    ]
@@ -2076,7 +2077,7 @@
   {
    "file": "indice/yale-0.json",
    "fonte": "yale",
-   "righe": 2851
+   "righe": 3819
   },
   {
    "file": "indice/penn-0.json",

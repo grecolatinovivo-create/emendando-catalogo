@@ -18,7 +18,7 @@ Come leggere le colonne:
 - **Ultima raccolta**: com'è andata l'ultima volta.
 
 <!-- inizio automatico -->
-Codici nel catalogo, in tutto: **73.257**, di cui **11.071** con almeno un autore riconosciuto.
+Codici nel catalogo, in tutto: **74.225**, di cui **11.085** con almeno un autore riconosciuto.
 
 | Biblioteca | Città | Codici totali | Di cui con autori riconosciuti | Lingue | Avanzamento della lettura | Come si aggiorna | Ultimo aggiornamento | Ultima raccolta |
 |---|---|---|---|---|---|---|---|---|
@@ -36,7 +36,7 @@ Codici nel catalogo, in tutto: **73.257**, di cui **11.071** con almeno un autor
 | Württembergische Landesbibliothek (dati dal Handschriftenportal) | Stoccarda | 0 | 0 | — | codici digitalizzati letti tutti (3 su 786) | ogni notte, da sola | 2026-10-24 | non riuscita: sospesa: manifesti di Marburgo non raggiungibili |
 | Erzbischöfliche Diözesan- und Dombibliothek (dati dal Handschriftenportal) | Colonia | 362 | 107 | non indicata 324, latino 27, tedesco 10, altre 1 | codici digitalizzati letti tutti (363 su 363) | ogni notte, da sola | 2026-10-25 | riuscita |
 | Universitätsbibliothek Leipzig (dati dal Handschriftenportal) | Lipsia | 2677 | 542 | latino 2286, tedesco 428, greco 110, altre 162 | codici digitalizzati letti tutti (2677 su 2678) | ogni notte, da sola | 2026-10-25 | riuscita |
-| Yale University Library (Beinecke e altre biblioteche di Yale) | New Haven (Stati Uniti) | 2851 | 509 | latino 1604, inglese 490, arabo 328, altre 1224 | prima lettura in corso: tutti i record, 2063 pagine su circa 8012 (2851 manoscritti finora); mancano circa 5 giorni | ogni 3 ore finché la prima lettura non è finita, poi ogni 6 giorni | 2026-10-25 | riuscita |
+| Yale University Library (Beinecke e altre biblioteche di Yale) | New Haven (Stati Uniti) | 3819 | 523 | latino 1604, italiano 740, inglese 606, altre 1853 | prima lettura in corso: tutti i record, 2643 pagine su circa 8012 (3819 manoscritti finora); mancano circa 4 giorni | ogni 3 ore finché la prima lettura non è finita, poi ogni 6 giorni | 2026-10-25 | riuscita |
 | University of Pennsylvania Libraries (Kislak Center, Schoenberg, CAJS) | Filadelfia (Stati Uniti) | 7928 | 222 | sanscrito 3805, altre lingue 1609, latino 1064, altre 2270 | schede lette tutte (7928 manoscritti fino al 1800) | ogni notte, da sola | 2026-10-25 | riuscita |
 | Biblioteca Apostolica Vaticana | Città del Vaticano | 2347 | 546 | latino 2333, altre lingue 8, italiano 4, altre 6 | 2347 codici letti su 31.127 digitalizzati; fondo in corso: Pal. lat.; restano circa 28.554 manifesti da leggere, cioè circa 5 giorni (un manifesto ogni 10 secondi, come chiede la biblioteca) | ogni 3 ore, da sola | 2026-10-25 | riuscita |
 <!-- fine automatico -->
