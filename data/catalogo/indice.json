@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-25T14:51:44.274Z",
- "totale": 258121,
- "con_autori": 13155,
+ "aggiornato": "2026-10-25T15:38:14.073Z",
+ "totale": 258853,
+ "con_autori": 13178,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
   "id",
@@ -25,7 +25,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 30704
+   "codici": 31433
   },
   "de": {
    "nome": "tedesco",
@@ -53,7 +53,7 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 3460
+   "codici": 3461
   },
   "zh": {
    "nome": "cinese",
@@ -69,7 +69,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 2128
+   "codici": 2130
   },
   "cop": {
    "nome": "copto",
@@ -183,19 +183,19 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 4546
+   "codici": 4555
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 2475
+   "codici": 2480
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 5980
+   "codici": 5988
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 1535
+   "codici": 1536
   }
  },
  "autori": {
@@ -245,7 +245,7 @@
    "nome": "Virgilio",
    "latino": "Vergilius",
    "categoria": "classico-latino",
-   "codici": 345
+   "codici": 346
   },
   "orazio": {
    "nome": "Orazio",
@@ -269,13 +269,13 @@
    "nome": "Ovidio",
    "latino": "Ovidius",
    "categoria": "classico-latino",
-   "codici": 415
+   "codici": 416
   },
   "livio": {
    "nome": "Livio",
    "latino": "Livius",
    "categoria": "classico-latino",
-   "codici": 139
+   "codici": 143
   },
   "seneca": {
    "nome": "Seneca",
@@ -341,7 +341,7 @@
    "nome": "Quintiliano",
    "latino": "Quintilianus",
    "categoria": "classico-latino",
-   "codici": 72
+   "codici": 73
   },
   "apuleio": {
    "nome": "Apuleio",
@@ -407,7 +407,7 @@
    "nome": "Curzio Rufo",
    "latino": "Curtius Rufus",
    "categoria": "classico-latino",
-   "codici": 47
+   "codici": 48
   },
   "giustino": {
    "nome": "Giustino",
@@ -449,7 +449,7 @@
    "nome": "Vitruvio",
    "latino": "Vitruvius",
    "categoria": "classico-latino",
-   "codici": 22
+   "codici": 23
   },
   "frontino": {
    "nome": "Frontino",
@@ -515,7 +515,7 @@
    "nome": "Celso",
    "latino": "Celsus",
    "categoria": "classico-latino",
-   "codici": 8
+   "codici": 9
   },
   "nepote": {
    "nome": "Cornelio Nepote",
@@ -731,19 +731,19 @@
    "nome": "Platone",
    "latino": "Plato",
    "categoria": "classico-greco",
-   "codici": 140
+   "codici": 141
   },
   "aristotele": {
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 942
+   "codici": 944
   },
   "teofrasto": {
    "nome": "Teofrasto",
    "latino": "Theophrastus",
    "categoria": "classico-greco",
-   "codici": 38
+   "codici": 39
   },
   "lisia": {
    "nome": "Lisia",
@@ -893,7 +893,7 @@
    "nome": "Galeno",
    "latino": "Galenus",
    "categoria": "classico-greco",
-   "codici": 148
+   "codici": 149
   },
   "ippocrate": {
    "nome": "Ippocrate",
@@ -1103,13 +1103,13 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 1363
+   "codici": 1364
   },
   "girolamo": {
    "nome": "Girolamo",
    "latino": "Hieronymus",
    "categoria": "cristiano",
-   "codici": 668
+   "codici": 671
   },
   "ambrogio": {
    "nome": "Ambrogio",
@@ -1145,7 +1145,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 2818
+   "codici": 2824
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1277,7 +1277,7 @@
    "nome": "Tommaso d'Aquino",
    "latino": "Thomas de Aquino",
    "categoria": "medievale",
-   "codici": 237
+   "codici": 238
   },
   "bernardo": {
    "nome": "Bernardo di Chiaravalle",
@@ -2681,12 +2681,12 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 3735,
-   "con_autori": 551,
+   "codici": 4467,
+   "con_autori": 574,
    "lingue": {
-    "xx": 17,
-    "la": 3649,
-    "it": 36,
+    "xx": 18,
+    "la": 4378,
+    "it": 38,
     "de": 3,
     "grc": 1,
     "fr": 23,
@@ -2697,7 +2697,7 @@
    "prefissi": [
     "bav-"
    ],
-   "pezzi_voci": 5,
+   "pezzi_voci": 6,
    "indice": [
     "indice/vaticana-0.json"
    ]
@@ -2842,7 +2842,7 @@
   {
    "file": "indice/vaticana-0.json",
    "fonte": "vaticana",
-   "righe": 3735
+   "righe": 4467
   }
  ]
 }

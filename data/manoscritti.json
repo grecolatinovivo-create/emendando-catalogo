@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T14:25:07.546Z",
+ "aggiornato": "2026-10-25T15:38:14.073Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -99,11 +99,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 367,
+   "codici": 381,
    "esito": "ok"
   }
  },
- "totale": 6693,
+ "totale": 6707,
  "manoscritti": [
   {
    "id": "akl-17669",
@@ -52363,6 +52363,310 @@
    "immagini": null
   },
   {
+   "id": "bav-reg-lat-1881",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Reg. lat. 1881",
+   "datazione": "sec. XV med",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Institutio oratoria (Quintilianus, Marcus Fabius, c.35-c. 96)",
+   "autori": [
+    {
+     "id": "quintiliano",
+     "autore": "Quintiliano",
+     "latino": "Quintilianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutio oratoria"
+     ],
+     "corrispondenza": "autore: «Quintilianus, Marcus Fabius, c.35-c. 96»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Reg.lat.1881/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Reg.lat.1881",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-reg-lat-1988",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Reg. lat. 1988",
+   "datazione": "sec. XV med",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Bucolica, Georgica, Aeneis (Vergilius Maro, Publius, 70-19 a.C.), Argumenta (Ovidius Naso, Publius, 43 a.C.-17/18 d.C. Opere spurie e dubbie)",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eneide",
+      "Georgiche",
+      "Bucoliche"
+     ],
+     "corrispondenza": "autore: «Vergilius Maro, Publius, 70-19 a.C., Ov…»"
+    },
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…us Maro, Publius, 70-19 a.C., Ovidius Naso, Publius, 43 a.C.-17/18…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Reg.lat.1988/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Reg.lat.1988",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-185",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 185",
+   "datazione": "1482",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Dialogi Platonis cum argumentis Marsilii Ficini",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Plato, 427-347 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.185/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.185",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-187",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 187",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Avicennae Metaphysica, de anima et abbreviationes de animalibus, variis interpretibus",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica",
+      "De anima",
+      "Historia animalium"
+     ],
+     "corrispondenza": "titolo: «Avicennae Metaphysica, de anima et abbreviationes de animalibus, variis interpretibus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.187/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.187",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-206",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 206",
+   "datazione": "1253",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Aristotelis opera nonnulla cum commentariis",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.206/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.206",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-248",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 248",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De simplicium medicamentorum temperamentis ac facultatibus",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus, Claudius, 129-199»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.248/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.248",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-249",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 249",
+   "datazione": "sec. XV ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De medicina (Celsus, Aulus Cornelius, sec. I)",
+   "autori": [
+    {
+     "id": "celso",
+     "autore": "Celso",
+     "latino": "Celsus",
+     "categoria": "classico-latino",
+     "opere": [
+      "De medicina"
+     ],
+     "corrispondenza": "autore: «Celsus, Aulus Cornelius, sec. I»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.249/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.249",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-250",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 250",
+   "datazione": "sec. XV med",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Historia plantarum et De causis plantarum",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Historia plantarum",
+      "De causis plantarum"
+     ],
+     "corrispondenza": "autore: «Theophrastus, c. 371-c. 286 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.250/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.250",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-293",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 293",
+   "datazione": "Sec. XII",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De architectura",
+   "autori": [
+    {
+     "id": "vitruvio",
+     "autore": "Vitruvio",
+     "latino": "Vitruvius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De architectura"
+     ],
+     "corrispondenza": "autore: «Vitruvius Pollio, sec. I a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.293/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.293",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
    "id": "bav-urb-lat-308",
    "fonte": "vaticana",
    "biblioteca": "Biblioteca Apostolica Vaticana",
@@ -52643,6 +52947,171 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.410/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.410",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-423",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 423",
+   "datazione": "sec. XV ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ab Urbe condita (Livius, Titus, 59 a.C.-17 d.C.)",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "autore: «Livius, Titus, 59 a.C.-17 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.423/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.423",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-424",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 424",
+   "datazione": "sec. XV ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ab Urbe condita (Livius, Titus, 59 a.C.-17 d.C.)",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "autore: «Livius, Titus, 59 a.C.-17 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.424/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.424",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-425",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 425",
+   "datazione": "sec. XV ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ab Urbe condita (Livius, Titus, 59 a.C.-17 d.C.)",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "autore: «Livius, Titus, 59 a.C.-17 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.425/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.425",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-426",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 426",
+   "datazione": "sec. XV med",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ab Urbe condita (Livius, Titus, 59 a.C.-17 d.C.). 31-40",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "autore: «Livius, Titus, 59 a.C.-17 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.426/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.426",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-427",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 427",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Historiae Alexandri Magni",
+   "autori": [
+    {
+     "id": "curzio-rufo",
+     "autore": "Curzio Rufo",
+     "latino": "Curtius Rufus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Historiae Alexandri Magni"
+     ],
+     "corrispondenza": "autore: «Curtius Rufus, Quintus, f. 41»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.427/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.427",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },
