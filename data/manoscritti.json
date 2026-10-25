@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T19:10:43.493Z",
+ "aggiornato": "2026-10-25T20:22:14.370Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -119,11 +119,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 385,
+   "codici": 386,
    "esito": "ok"
   }
  },
- "totale": 6928,
+ "totale": 6929,
  "manoscritti": [
   {
    "id": "akl-17669",
@@ -53284,6 +53284,39 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.1221/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.1221",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-lat-1324",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. lat. 1324",
+   "datazione": "sec. XV med",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ethica Nicomachea",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Etica Nicomachea"
+     ],
+     "corrispondenza": "autore: «Aristoteles, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.1324/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.1324",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },

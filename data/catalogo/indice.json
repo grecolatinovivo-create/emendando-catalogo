@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-25T20:08:56.390Z",
- "totale": 280131,
- "con_autori": 13591,
+ "aggiornato": "2026-10-25T20:22:14.370Z",
+ "totale": 280854,
+ "con_autori": 13594,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
   "id",
@@ -25,7 +25,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 33041
+   "codici": 33732
   },
   "de": {
    "nome": "tedesco",
@@ -61,7 +61,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 2847
+   "codici": 2879
   },
   "he": {
    "nome": "ebraico",
@@ -187,11 +187,11 @@
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 2602
+   "codici": 2603
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 6162
+   "codici": 6164
   },
   "medievale": {
    "nome": "autori medievali",
@@ -737,7 +737,7 @@
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 978
+   "codici": 979
   },
   "teofrasto": {
    "nome": "Teofrasto",
@@ -1145,7 +1145,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 2887
+   "codici": 2889
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -2784,12 +2784,12 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 5215,
-   "con_autori": 580,
+   "codici": 5938,
+   "con_autori": 583,
    "lingue": {
+    "la": 5651,
     "xx": 18,
-    "la": 4960,
-    "it": 199,
+    "it": 231,
     "de": 3,
     "grc": 1,
     "fr": 23,
@@ -2800,7 +2800,7 @@
    "prefissi": [
     "bav-"
    ],
-   "pezzi_voci": 7,
+   "pezzi_voci": 8,
    "indice": [
     "indice/vaticana-0.json"
    ]
@@ -2970,7 +2970,7 @@
   {
    "file": "indice/vaticana-0.json",
    "fonte": "vaticana",
-   "righe": 5215
+   "righe": 5938
   }
  ]
 }
