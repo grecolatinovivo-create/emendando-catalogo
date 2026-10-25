@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-25T10:53:36.063Z",
- "totale": 83674,
- "con_autori": 11903,
+ "aggiornato": "2026-10-25T11:42:45.519Z",
+ "totale": 102051,
+ "con_autori": 12064,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
   "id",
@@ -23,61 +23,69 @@
    "nome": "latino",
    "codici": 27485
   },
+  "en": {
+   "nome": "inglese",
+   "codici": 18494
+  },
   "de": {
    "nome": "tedesco",
-   "codici": 15862
+   "codici": 18392
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 13715
+   "codici": 13730
+  },
+  "fr": {
+   "nome": "francese",
+   "codici": 5125
   },
   "grc": {
    "nome": "greco",
-   "codici": 4878
+   "codici": 4893
+  },
+  "it": {
+   "nome": "italiano",
+   "codici": 4786
   },
   "ar": {
    "nome": "arabo",
    "codici": 4472
   },
-  "sa": {
-   "nome": "sanscrito",
-   "codici": 4308
-  },
   "xx": {
    "nome": "altre lingue",
-   "codici": 3258
+   "codici": 4430
   },
-  "it": {
-   "nome": "italiano",
-   "codici": 2917
+  "sa": {
+   "nome": "sanscrito",
+   "codici": 4363
   },
   "nl": {
    "nome": "nederlandese",
-   "codici": 2570
-  },
-  "fr": {
-   "nome": "francese",
-   "codici": 2534
+   "codici": 2594
   },
   "he": {
    "nome": "ebraico",
    "codici": 2112
   },
-  "en": {
-   "nome": "inglese",
-   "codici": 1560
-  },
   "cop": {
    "nome": "copto",
    "codici": 1413
+  },
+  "es": {
+   "nome": "spagnolo",
+   "codici": 1046
+  },
+  "ru": {
+   "nome": "russo",
+   "codici": 569
   },
   "fa": {
    "nome": "persiano",
    "codici": 452
   },
-  "es": {
-   "nome": "spagnolo",
-   "codici": 429
+  "ja": {
+   "nome": "giapponese",
+   "codici": 366
   },
   "tr": {
    "nome": "turco",
@@ -85,19 +93,15 @@
   },
   "zh": {
    "nome": "cinese",
-   "codici": 223
+   "codici": 235
   },
-  "ru": {
-   "nome": "russo",
-   "codici": 129
+  "pl": {
+   "nome": "polacco",
+   "codici": 183
   },
   "bo": {
    "nome": "tibetano",
-   "codici": 119
-  },
-  "ja": {
-   "nome": "giapponese",
-   "codici": 107
+   "codici": 174
   },
   "cu": {
    "nome": "slavo ecclesiastico",
@@ -105,7 +109,11 @@
   },
   "hu": {
    "nome": "ungherese",
-   "codici": 65
+   "codici": 69
+  },
+  "pt": {
+   "nome": "portoghese",
+   "codici": 60
   },
   "gez": {
    "nome": "etiopico",
@@ -115,57 +123,49 @@
    "nome": "malese",
    "codici": 45
   },
+  "syr": {
+   "nome": "siriaco",
+   "codici": 43
+  },
   "ca": {
    "nome": "catalano",
    "codici": 40
-  },
-  "pt": {
-   "nome": "portoghese",
-   "codici": 39
   },
   "hy": {
    "nome": "armeno",
    "codici": 38
   },
-  "syr": {
-   "nome": "siriaco",
-   "codici": 37
-  },
   "jv": {
    "nome": "giavanese",
    "codici": 25
+  },
+  "cs": {
+   "nome": "ceco",
+   "codici": 18
   },
   "oc": {
    "nome": "occitano",
    "codici": 18
   },
-  "cs": {
-   "nome": "ceco",
-   "codici": 17
-  },
   "sv": {
    "nome": "svedese",
-   "codici": 15
+   "codici": 18
+  },
+  "ko": {
+   "nome": "coreano",
+   "codici": 16
   },
   "sla": {
    "nome": "lingue slave (alfabeto cirillico)",
    "codici": 11
   },
-  "pl": {
-   "nome": "polacco",
-   "codici": 10
-  },
   "is": {
    "nome": "islandese e norreno",
    "codici": 8
   },
-  "ko": {
-   "nome": "coreano",
-   "codici": 6
-  },
   "da": {
    "nome": "danese",
-   "codici": 5
+   "codici": 8
   },
   "ga": {
    "nome": "irlandese",
@@ -179,15 +179,15 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 4468
+   "codici": 4526
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 2334
+   "codici": 2392
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 4993
+   "codici": 5041
   },
   "medievale": {
    "nome": "autori medievali",
@@ -199,13 +199,13 @@
    "nome": "Plauto",
    "latino": "Plautus",
    "categoria": "classico-latino",
-   "codici": 68
+   "codici": 69
   },
   "terenzio": {
    "nome": "Terenzio",
    "latino": "Terentius",
    "categoria": "classico-latino",
-   "codici": 164
+   "codici": 165
   },
   "lucrezio": {
    "nome": "Lucrezio",
@@ -217,19 +217,19 @@
    "nome": "Catullo",
    "latino": "Catullus",
    "categoria": "classico-latino",
-   "codici": 40
+   "codici": 42
   },
   "cicerone": {
    "nome": "Cicerone",
    "latino": "Cicero",
    "categoria": "classico-latino",
-   "codici": 860
+   "codici": 861
   },
   "cesare": {
    "nome": "Cesare",
    "latino": "Caesar",
    "categoria": "classico-latino",
-   "codici": 68
+   "codici": 71
   },
   "sallustio": {
    "nome": "Sallustio",
@@ -241,13 +241,13 @@
    "nome": "Virgilio",
    "latino": "Vergilius",
    "categoria": "classico-latino",
-   "codici": 348
+   "codici": 357
   },
   "orazio": {
    "nome": "Orazio",
    "latino": "Horatius",
    "categoria": "classico-latino",
-   "codici": 186
+   "codici": 209
   },
   "tibullo": {
    "nome": "Tibullo",
@@ -265,7 +265,7 @@
    "nome": "Ovidio",
    "latino": "Ovidius",
    "categoria": "classico-latino",
-   "codici": 409
+   "codici": 413
   },
   "livio": {
    "nome": "Livio",
@@ -277,25 +277,25 @@
    "nome": "Seneca",
    "latino": "Seneca",
    "categoria": "classico-latino",
-   "codici": 332
+   "codici": 333
   },
   "lucano": {
    "nome": "Lucano",
    "latino": "Lucanus",
    "categoria": "classico-latino",
-   "codici": 123
+   "codici": 124
   },
   "persio": {
    "nome": "Persio",
    "latino": "Persius",
    "categoria": "classico-latino",
-   "codici": 99
+   "codici": 100
   },
   "giovenale": {
    "nome": "Giovenale",
    "latino": "Iuvenalis",
    "categoria": "classico-latino",
-   "codici": 102
+   "codici": 103
   },
   "marziale": {
    "nome": "Marziale",
@@ -313,7 +313,7 @@
    "nome": "Plinio il Vecchio",
    "latino": "Plinius maior",
    "categoria": "classico-latino",
-   "codici": 56
+   "codici": 57
   },
   "plinio-giovane": {
    "nome": "Plinio il Giovane",
@@ -325,7 +325,7 @@
    "nome": "Tacito",
    "latino": "Tacitus",
    "categoria": "classico-latino",
-   "codici": 18
+   "codici": 19
   },
   "svetonio": {
    "nome": "Svetonio",
@@ -343,7 +343,7 @@
    "nome": "Apuleio",
    "latino": "Apuleius",
    "categoria": "classico-latino",
-   "codici": 68
+   "codici": 69
   },
   "ammiano": {
    "nome": "Ammiano Marcellino",
@@ -367,7 +367,7 @@
    "nome": "Donato",
    "latino": "Donatus",
    "categoria": "classico-latino",
-   "codici": 119
+   "codici": 120
   },
   "servio": {
    "nome": "Servio",
@@ -385,7 +385,7 @@
    "nome": "Boezio",
    "latino": "Boethius",
    "categoria": "classico-latino",
-   "codici": 487
+   "codici": 488
   },
   "ausonio": {
    "nome": "Ausonio",
@@ -397,13 +397,13 @@
    "nome": "Valerio Massimo",
    "latino": "Valerius Maximus",
    "categoria": "classico-latino",
-   "codici": 81
+   "codici": 82
   },
   "curzio-rufo": {
    "nome": "Curzio Rufo",
    "latino": "Curtius Rufus",
    "categoria": "classico-latino",
-   "codici": 44
+   "codici": 46
   },
   "giustino": {
    "nome": "Giustino",
@@ -469,7 +469,7 @@
    "nome": "Silio Italico",
    "latino": "Silius Italicus",
    "categoria": "classico-latino",
-   "codici": 14
+   "codici": 15
   },
   "manilio": {
    "nome": "Manilio",
@@ -571,7 +571,7 @@
    "nome": "Festo",
    "latino": "Festus",
    "categoria": "classico-latino",
-   "codici": 19
+   "codici": 20
   },
   "nonio": {
    "nome": "Nonio Marcello",
@@ -625,7 +625,7 @@
    "nome": "Omero",
    "latino": "Homerus",
    "categoria": "classico-greco",
-   "codici": 107
+   "codici": 114
   },
   "esiodo": {
    "nome": "Esiodo",
@@ -643,7 +643,7 @@
    "nome": "Saffo",
    "latino": "Sappho",
    "categoria": "classico-greco",
-   "codici": 7
+   "codici": 10
   },
   "anacreonte": {
    "nome": "Anacreonte",
@@ -655,7 +655,7 @@
    "nome": "Simonide",
    "latino": "Simonides",
    "categoria": "classico-greco",
-   "codici": 1
+   "codici": 2
   },
   "teognide": {
    "nome": "Teognide",
@@ -673,13 +673,13 @@
    "nome": "Eschilo",
    "latino": "Aeschylus",
    "categoria": "classico-greco",
-   "codici": 19
+   "codici": 21
   },
   "sofocle": {
    "nome": "Sofocle",
    "latino": "Sophocles",
    "categoria": "classico-greco",
-   "codici": 23
+   "codici": 24
   },
   "euripide": {
    "nome": "Euripide",
@@ -691,7 +691,7 @@
    "nome": "Aristofane",
    "latino": "Aristophanes",
    "categoria": "classico-greco",
-   "codici": 32
+   "codici": 52
   },
   "menandro": {
    "nome": "Menandro",
@@ -727,13 +727,13 @@
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 908
+   "codici": 912
   },
   "teofrasto": {
    "nome": "Teofrasto",
    "latino": "Theophrastus",
    "categoria": "classico-greco",
-   "codici": 36
+   "codici": 44
   },
   "lisia": {
    "nome": "Lisia",
@@ -793,7 +793,7 @@
    "nome": "Diodoro Siculo",
    "latino": "Diodorus Siculus",
    "categoria": "classico-greco",
-   "codici": 17
+   "codici": 18
   },
   "dionigi-alicarnasso": {
    "nome": "Dionigi di Alicarnasso",
@@ -817,7 +817,7 @@
    "nome": "Luciano di Samosata",
    "latino": "Lucianus",
    "categoria": "classico-greco",
-   "codici": 49
+   "codici": 51
   },
   "pausania": {
    "nome": "Pausania",
@@ -883,13 +883,13 @@
    "nome": "Galeno",
    "latino": "Galenus",
    "categoria": "classico-greco",
-   "codici": 143
+   "codici": 146
   },
   "ippocrate": {
    "nome": "Ippocrate",
    "latino": "Hippocrates",
    "categoria": "classico-greco",
-   "codici": 123
+   "codici": 126
   },
   "tolomeo": {
    "nome": "Tolomeo",
@@ -925,7 +925,7 @@
    "nome": "Erodiano",
    "latino": "Herodianus",
    "categoria": "classico-greco",
-   "codici": 12
+   "codici": 13
   },
   "efestione": {
    "nome": "Efestione",
@@ -1081,19 +1081,19 @@
    "nome": "Filostrato",
    "latino": "Philostratus",
    "categoria": "classico-greco",
-   "codici": 29
+   "codici": 31
   },
   "agostino": {
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 1267
+   "codici": 1280
   },
   "girolamo": {
    "nome": "Girolamo",
    "latino": "Hieronymus",
    "categoria": "cristiano",
-   "codici": 624
+   "codici": 630
   },
   "ambrogio": {
    "nome": "Ambrogio",
@@ -1105,7 +1105,7 @@
    "nome": "Gregorio Magno",
    "latino": "Gregorius Magnus",
    "categoria": "cristiano",
-   "codici": 463
+   "codici": 465
   },
   "basilio": {
    "nome": "Basilio Magno",
@@ -1129,13 +1129,13 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 2124
+   "codici": 2148
   },
   "prudenzio": {
    "nome": "Prudenzio",
    "latino": "Prudentius",
    "categoria": "cristiano",
-   "codici": 56
+   "codici": 57
   },
   "sedulio": {
    "nome": "Sedulio",
@@ -1189,7 +1189,7 @@
    "nome": "Origene",
    "latino": "Origenes",
    "categoria": "cristiano",
-   "codici": 89
+   "codici": 90
   },
   "eusebio": {
    "nome": "Eusebio di Cesarea",
@@ -1201,7 +1201,7 @@
    "nome": "Atanasio",
    "latino": "Athanasius",
    "categoria": "cristiano",
-   "codici": 63
+   "codici": 64
   },
   "gregorio-nisseno": {
    "nome": "Gregorio di Nissa",
@@ -1383,6 +1383,7 @@
   "Leopold-Sophien-Bibliothek, Überlingen",
   "Lewis Walpole Library, New Haven",
   "Libraries, Stanford",
+  "Lillian Goldman Law Library, New Haven",
   "Manuscripts and Archives, New Haven",
   "Médiathèque Valais, Sion/Sitten",
   "Medical Historical Library, Cushing/Whitney Medical Library, New Haven",
@@ -1635,7 +1636,7 @@
     "es": 3,
     "nl": 10
    },
-   "esito": "ok",
+   "esito": "errore: nessuna raccolta completa in cache",
    "prefissi": [
     "hd-"
    ],
@@ -1673,7 +1674,7 @@
     "ga": 3,
     "tr": 1
    },
-   "esito": "ok",
+   "esito": "errore: nessuna raccolta completa in cache",
    "prefissi": [
     "ec-"
    ],
@@ -1725,7 +1726,7 @@
     "da": 1,
     "sla": 11
    },
-   "esito": "ok",
+   "esito": "errore: nessuna raccolta completa in cache",
    "prefissi": [
     "bsb-"
    ],
@@ -1761,7 +1762,7 @@
     "sa": 1,
     "pl": 3
    },
-   "esito": "ok",
+   "esito": "errore: nessuna raccolta completa in cache",
    "prefissi": [
     "sbb-"
    ],
@@ -1939,48 +1940,52 @@
   },
   "yale": {
    "nome": "Yale University Library, Beinecke e altre (collections.library.yale.edu)",
-   "codici": 4262,
-   "con_autori": 532,
+   "codici": 22639,
+   "con_autori": 693,
    "lingue": {
-    "fr": 394,
-    "en": 666,
-    "nl": 38,
-    "xx": 281,
+    "fr": 2985,
+    "en": 17600,
+    "nl": 62,
+    "xx": 1453,
     "la": 1604,
-    "de": 55,
-    "es": 50,
-    "it": 1121,
-    "?": 197,
-    "grc": 68,
-    "syr": 7,
+    "de": 2585,
+    "es": 667,
+    "it": 2990,
+    "?": 212,
+    "grc": 83,
+    "syr": 13,
     "ar": 328,
     "tr": 23,
     "fa": 75,
     "jv": 2,
+    "pt": 22,
+    "da": 3,
     "he": 155,
     "is": 1,
-    "cs": 1,
+    "cs": 2,
     "oc": 3,
     "cu": 2,
-    "ru": 72,
+    "ru": 512,
     "cop": 5,
-    "ja": 19,
+    "ja": 278,
+    "ko": 11,
     "gez": 6,
-    "pl": 1,
-    "zh": 5,
-    "ko": 1,
-    "pt": 1,
+    "hu": 65,
+    "pl": 174,
+    "zh": 17,
+    "sa": 56,
     "hy": 3,
-    "sa": 1,
-    "hu": 61
+    "sv": 3,
+    "bo": 55
    },
    "esito": "ok",
    "prefissi": [
     "yale-"
    ],
-   "pezzi_voci": 6,
+   "pezzi_voci": 29,
    "indice": [
-    "indice/yale-0.json"
+    "indice/yale-0.json",
+    "indice/yale-1.json"
    ]
   },
   "penn": {
@@ -2159,7 +2164,12 @@
   {
    "file": "indice/yale-0.json",
    "fonte": "yale",
-   "righe": 4262
+   "righe": 20000
+  },
+  {
+   "file": "indice/yale-1.json",
+   "fonte": "yale",
+   "righe": 2639
   },
   {
    "file": "indice/penn-0.json",
