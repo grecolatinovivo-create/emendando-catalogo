@@ -1,7 +1,7 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T18:42:38.288Z",
- "totale": 499635,
+ "aggiornato": "2026-10-26T18:50:01.268Z",
+ "totale": 499649,
  "con_autori": 27652,
  "miniati": 10497,
  "musica": 13595,
@@ -58,7 +58,7 @@
   },
   "zh": {
    "nome": "cinese",
-   "codici": 14110
+   "codici": 14121
   },
   "grc": {
    "nome": "greco",
@@ -166,7 +166,7 @@
   },
   "ms": {
    "nome": "malese",
-   "codici": 297
+   "codici": 298
   },
   "ka": {
    "nome": "georgiano",
@@ -194,7 +194,7 @@
   },
   "mnc": {
    "nome": "mancese",
-   "codici": 121
+   "codici": 122
   },
   "cy": {
    "nome": "gallese",
@@ -248,13 +248,13 @@
    "nome": "balinese",
    "codici": 8
   },
+  "btk": {
+   "nome": "batak",
+   "codici": 7
+  },
   "be": {
    "nome": "be",
    "codici": 6
-  },
-  "btk": {
-   "nome": "batak",
-   "codici": 5
   },
   "su": {
    "nome": "sundanese",
@@ -310,7 +310,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 497955
+   "codici": 497969
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -3893,7 +3893,7 @@
     "ru": 2,
     "da": 1
    },
-   "esito": "errore: schede lette in parte (1601 su 1651): riprenderà alla prossima esecuzione",
+   "esito": "ok",
    "prefissi": [
     "bl-"
    ],
@@ -4012,7 +4012,7 @@
   },
   "cbl": {
    "nome": "Chester Beatty, Dublino (viewer.cbl.ie)",
-   "codici": 1199,
+   "codici": 1213,
    "carte": 2,
    "carte_stampa": 0,
    "miniati": 645,
@@ -4023,6 +4023,8 @@
     "?": 44,
     "hy": 51,
     "my": 4,
+    "zh": 11,
+    "mnc": 1,
     "xx": 99,
     "cop": 66,
     "grc": 19,
@@ -4030,6 +4032,8 @@
     "fa": 427,
     "sa": 3,
     "tr": 54,
+    "btk": 2,
+    "ms": 1,
     "syr": 4,
     "la": 227,
     "bo": 1,
@@ -4042,7 +4046,7 @@
     "en": 1,
     "gez": 1
    },
-   "esito": "errore: manifesti letti in parte (mancano 1583): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 1222): riprenderà alla prossima esecuzione",
    "prefissi": [
     "cbl-"
    ],
@@ -5276,7 +5280,7 @@
   {
    "file": "indice/cbl-0.json",
    "fonte": "cbl",
-   "righe": 1199
+   "righe": 1213
   },
   {
    "file": "indice/parker-0.json",
