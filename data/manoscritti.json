@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T20:36:21.709Z",
+ "aggiornato": "2026-10-26T20:43:19.312Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -349,11 +349,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 507,
+   "codici": 509,
    "esito": "ok"
   }
  },
- "totale": 12319,
+ "totale": 12321,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -58403,6 +58403,72 @@
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null,
    "truculentus": "D"
+  },
+  {
+   "id": "bav-vat-lat-5951",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 5951",
+   "datazione": "sec. VIII-IX",
+   "secolo": [
+    8,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De medicina",
+   "autori": [
+    {
+     "id": "celso",
+     "autore": "Celso",
+     "latino": "Celsus",
+     "categoria": "classico-latino",
+     "opere": [
+      "De medicina"
+     ],
+     "corrispondenza": "autore: «Celsus, Aulus Cornelius, sec. I»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.5951/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.5951",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-5958",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 5958",
+   "datazione": "sec. XV ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De verborum significatione (Festus, Sextus Pompeius, sec. II)",
+   "autori": [
+    {
+     "id": "festo",
+     "autore": "Festo",
+     "latino": "Festus",
+     "categoria": "classico-latino",
+     "opere": [
+      "De verborum significatu"
+     ],
+     "corrispondenza": "titolo: «De verborum significatione (Festus, Sextus Pompeius, sec. II)»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.5958/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.5958",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
   },
   {
    "id": "bcas-13147",
