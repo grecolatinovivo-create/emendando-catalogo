@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T10:07:49.332Z",
+ "aggiornato": "2026-10-26T10:54:38.717Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -189,11 +189,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 410,
+   "codici": 428,
    "esito": "ok"
   }
  },
- "totale": 10531,
+ "totale": 10549,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -54399,6 +54399,581 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1647/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1647",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1742",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1742",
+   "datazione": "sec. XV med",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Orationes (Cicero, Marcus Tullius, 106-43 a.C.). Gruppi, scelte",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius, 106-43 a.C.,…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1742/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1742",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1766",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1766",
+   "datazione": "sec. XV med",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Institutio oratoria (Quintilianus, Marcus Fabius, c.35-c. 96). Gruppi, scelte",
+   "autori": [
+    {
+     "id": "quintiliano",
+     "autore": "Quintiliano",
+     "latino": "Quintilianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutio oratoria"
+     ],
+     "corrispondenza": "autore: «Quintilianus, Marcus Fabius, c.35-c. 96»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1766/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1766",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1801",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1801",
+   "datazione": "Sec. XV med.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De bello peloponnesiaco",
+   "autori": [
+    {
+     "id": "tucidide",
+     "autore": "Tucidide",
+     "latino": "Thucydides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Guerra del Peloponneso"
+     ],
+     "corrispondenza": "autore: «Thucydides, c. 465-395 a.C. ; Valla, Lorenzo, 1406-1457»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1801/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1801",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1811",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1811",
+   "datazione": "1461",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Diodori Siculi bibliothecae historicae libri quo supersunt I-VI, Poggio Florentino interprete",
+   "autori": [
+    {
+     "id": "diodoro",
+     "autore": "Diodoro Siculo",
+     "latino": "Diodorus Siculus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Diodorus Siculus, f. c. 60-30 a.C»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1811/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1811",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1819",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1819",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Dionysii Halicarnassensis antiquitatum romanarum libri qui supersunt I-XI, <Lappo Birago> interprete",
+   "autori": [
+    {
+     "id": "dionigi-alicarnasso",
+     "autore": "Dionigi di Alicarnasso",
+     "latino": "Dionysius Halicarnassensis",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Dionysius Halicarnassensis, sec. I a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1819/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1819",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1848",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1848",
+   "datazione": "sec. XV ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ab Urbe condita (Livius, Titus, 59 a.C.-17 d.C.). 21-30",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "autore: «Livius, Titus, 59 a.C.-17 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1848/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1848",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1853",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1853",
+   "datazione": "sec. XV ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ab Urbe condita (Livius, Titus, 59 a.C.-17 d.C.). 31-40",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "autore: «Livius, Titus, 59 a.C.-17 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1853/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1853",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1873",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1873",
+   "datazione": "Sec. IX ex.",
+   "secolo": [
+    9,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Rerum gestarum lib. XIV-XXXI",
+   "autori": [
+    {
+     "id": "ammiano",
+     "autore": "Ammiano Marcellino",
+     "latino": "Ammianus Marcellinus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Res gestae"
+     ],
+     "corrispondenza": "autore: «Ammianus Marcellinus, 330-395»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1873/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1873",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1894",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1894",
+   "datazione": "Sec. XV <med.>",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De vitis philosophorum",
+   "autori": [
+    {
+     "id": "diogene-laerzio",
+     "autore": "Diogene Laerzio",
+     "latino": "Diogenes Laertius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Vite dei filosofi"
+     ],
+     "corrispondenza": "autore: «Diogenes Laertius, sec. III?»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1894/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1894",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1895",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1895",
+   "datazione": "1456",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Diogenis Laërtii vitarum philosophorum libri et Ioannis Boccacci geographica quaedam",
+   "autori": [
+    {
+     "id": "diogene-laerzio",
+     "autore": "Diogene Laerzio",
+     "latino": "Diogenes Laertius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Diogenis Laërtii vitarum philosophorum libri et Ioannis Boccacci geographica quaedam»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1895/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1895",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1903",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1903",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Historia Augusta",
+   "autori": [
+    {
+     "id": "historia-augusta",
+     "autore": "Historia Augusta",
+     "latino": "Historia Augusta",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Historia Augusta»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1903/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1903",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1995",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1995",
+   "datazione": "Sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Antiquitates Judaicae",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Antichità giudaiche"
+     ],
+     "corrispondenza": "autore: «Iosephus, Flavius, c. 37-c. 100»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1995/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1995",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1997",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1997",
+   "datazione": "Sec. XII med.",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Antiquitatum Iudaicarum et de bello Iudaico libri in latinam linguam translati",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Guerra giudaica"
+     ],
+     "corrispondenza": "autore: «Iosephus, Flavius, c. 37-c. 100»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1997/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1997",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-2063",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 2063",
+   "datazione": "sec. XIV (ff. 1-68). sec. XV in (ff. 69-115)",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Platonis Timaeus a Chalcidio Latino sermone translatus. Platonis Phaedro a Henrico Aristippo Latino sermone traslatus",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [
+      "Timeo"
+     ],
+     "corrispondenza": "autore: «Plato, 427-347 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.2063/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.2063",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-2098",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 2098",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Liber duplicem, auro depictam, inscriptionem ostendit; (f. 6v): Aristotelis De moribus. Iulii II Pont. Max. Bibliothecae secretae dicatus; (f. 7r): Aristoteles De moribus per Ioannem Argiropulum Byzantium traductus.",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…ae secretae dicatus; (f. 7r): Aristoteles De moribus per Ioannem Argiro…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.2098/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.2098",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-2106",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 2106",
+   "datazione": "Sec. XIV in.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aristotelis Politicorum libri VIII interprete Guillelmo de Moerbeka, cum Expositione s. Thomae Aquinatis in libros I-II et Petri de Alvernia in libros III-VIII",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Aristotelis Politicorum libri VIII interp…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.2106/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.2106",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-2193",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 2193",
+   "datazione": "sec. XIV med",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Apulei opera nonnula",
+   "autori": [
+    {
+     "id": "apuleio",
+     "autore": "Apuleio",
+     "latino": "Apuleius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Apuleius, sec. II»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.2193/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.2193",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-2194",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 2194",
+   "datazione": "sec. XIV med",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Metamorphoseon",
+   "autori": [
+    {
+     "id": "apuleio",
+     "autore": "Apuleio",
+     "latino": "Apuleius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Apuleius, sec. II»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.2194/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.2194",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },
