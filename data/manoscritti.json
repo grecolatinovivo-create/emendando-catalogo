@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T23:05:57.964Z",
+ "aggiornato": "2026-10-26T23:11:29.950Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -349,11 +349,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 509,
+   "codici": 511,
    "esito": "ok"
   }
  },
- "totale": 12337,
+ "totale": 12339,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -58467,6 +58467,83 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.5958/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.5958",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-7319",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 7319",
+   "datazione": "sec. XV in",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Tragoediae (Seneca, Lucius Annaeus, 5/4 a.C.-65 d.C.). Gruppi, scelte. De illustribus viris (Hieronymus, s., 342/347-419). Epistulae Senecae ad Paulum et Pauli ad Senecam (Seneca, Lucius Annaeus, 5/4 a.C.-65 d.C. Opere spurie e dubbie). Epistulae ad Lucilium (Seneca, Annaeus, 5/4 a.C.-65 d.C.)",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epistulae ad Lucilium",
+      "Tragedie"
+     ],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus, 5/4 a.C.-65…»"
+    },
+    {
+     "id": "girolamo",
+     "autore": "Girolamo",
+     "latino": "Hieronymus",
+     "categoria": "cristiano",
+     "opere": [
+      "Lettere"
+     ],
+     "corrispondenza": "autore: «…5 d.C. Opere spurie e dubbie, Hieronymus, s., 342/347-419»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.7319/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.7319",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-7320",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 7320",
+   "datazione": "sec. XV in",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Factorum et dictorum memorabilium",
+   "autori": [
+    {
+     "id": "valerio-massimo",
+     "autore": "Valerio Massimo",
+     "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Facta et dicta memorabilia"
+     ],
+     "corrispondenza": "autore: «Valerius Maximus, f. 14-31, aut=Giovanni d'Andrea, c.1270-1348»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.7320/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.7320",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },
