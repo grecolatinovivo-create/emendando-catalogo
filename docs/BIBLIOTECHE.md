@@ -270,6 +270,26 @@ Per ora si aspetta: nessuna raccolta apposta di papiri. La scelta in attesa è t
 | British Library | circa 2600 | fuori | Servizio delle immagini spento dal 2023. |
 | Columbia, Leida, Lund, Sorbona, Ginevra | circa 7400 | fuori | Immagini non più online o bloccate. |
 
+## Richieste da fare con la lettera dell'Università di Urbino
+
+Biblioteche che non si possono raccogliere da sole (registrazione, verifiche anti-robot, divieto nel robots.txt, elenco solo dalla ricerca vietata ai programmi). La richiesta partirà con una lettera dell'Università di Urbino quando il progetto avrà un valore istituzionale; per ora nessun contatto. Cosa chiedere a ciascuna: l'elenco dei manoscritti digitalizzati con l'indirizzo del manifesto IIIF (o un accesso per programmi), e il permesso di mostrarli dentro Emendando. Annotato il 26 ottobre 2026.
+
+| Biblioteca | Città | Perché serve chiedere |
+|---|---|---|
+| Sinai Manuscripts Digital Library (UCLA) | Los Angeles, per il Monastero di Santa Caterina del Sinai | Immagini solo per utenti registrati (circa 985 codici). |
+| ICCU, Internet Culturale | Roma, per le biblioteche statali italiane (Marciana, Angelica, Cava, Genova e altre) | Manifesti aperti, ma l'elenco passa dalla ricerca, vietata ai programmi dal robots.txt. |
+| Biblioteca Estense Universitaria | Modena | IIIF aperto, ma la ricerca del sito è vietata ai programmi; l'unico elenco è il sistema interno, che mescola manoscritti e stampati. |
+| Biblioteca Comunale degli Intronati | Siena | 551 manoscritti con IIIF; l'elenco solo dalla ricerca, vietata dal robots.txt. |
+| Biblioteca dell'Archiginnasio | Bologna | Ricerca vietata dal robots.txt. |
+| Biblioteca Apostolica Vaticana | Città del Vaticano | Raccolta in corso a un manifesto ogni 10 secondi (giorni): un elenco completo dei manifesti farebbe risparmiare molto tempo. |
+| Parker Library, Corpus Christi College | Cambridge | Elenco dietro verifica anti-robot (Cloudflare) anche dal browser; i manifesti di Stanford sono aperti. |
+| Trinity College Library | Dublino | CAPTCHA anche dal browser (i codici irlandesi entrano già tramite ISOS). |
+| National Library of Wales | Aberystwyth | Manifesti aperti, ma sito e catalogo dietro Cloudflare anche dal browser. |
+| National Library of Scotland | Edimburgo | Protezioni anti-robot anche dal browser (i codici gaelici entrano già tramite ISOS). |
+| Durham, cattedrale e università | Durham | Il robots.txt di iiif.durham.ac.uk vieta tutto. |
+| University of British Columbia | Vancouver | Verifica anti-robot anche dal browser. |
+| John Carter Brown Library | Providence | Il robots.txt chiede 500 secondi tra una richiesta e l'altra e vieta la ricerca. |
+
 ## Non raggiungibili
 
 | Biblioteca | Città | Stato | Perché |
