@@ -30,9 +30,9 @@
   "ultimo_ok": "2026-10-26T15:09:57.343Z"
  },
  "bl": {
-  "quando": "2026-10-26T20:59:57.998Z",
+  "quando": "2026-10-26T22:07:57.201Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-26T20:59:57.998Z"
+  "ultimo_ok": "2026-10-26T22:07:57.201Z"
  },
  "bncf": {
   "quando": "2026-10-26T12:00:13.435Z",
@@ -60,8 +60,8 @@
   "ultimo_ok": "2026-10-26T12:00:13.435Z"
  },
  "cbl": {
-  "quando": "2026-10-26T20:59:57.998Z",
-  "esito": "errore: manifesti letti in parte (mancano 500): riprenderà alla prossima esecuzione",
+  "quando": "2026-10-26T22:07:57.201Z",
+  "esito": "errore: manifesti letti in parte (mancano 139): riprenderà alla prossima esecuzione",
   "ultimo_ok": null
  },
  "colonia": {
@@ -75,9 +75,9 @@
   "ultimo_ok": "2026-10-26T15:30:55.341Z"
  },
  "cudl": {
-  "quando": "2026-10-26T20:59:57.998Z",
+  "quando": "2026-10-26T22:07:57.201Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-26T20:59:57.998Z"
+  "ultimo_ok": "2026-10-26T22:07:57.201Z"
  },
  "darmstadt": {
   "quando": "2026-10-26T16:55:08.567Z",
@@ -130,9 +130,9 @@
   "ultimo_ok": "2026-10-26T15:09:57.343Z"
  },
  "isos": {
-  "quando": "2026-10-26T20:59:57.998Z",
+  "quando": "2026-10-26T22:07:57.201Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-26T20:59:57.998Z"
+  "ultimo_ok": "2026-10-26T22:07:57.201Z"
  },
  "karlsruhe": {
   "quando": "2026-10-26T15:09:57.343Z",
@@ -180,9 +180,9 @@
   "ultimo_ok": null
  },
  "manchester": {
-  "quando": "2026-10-26T20:59:57.998Z",
+  "quando": "2026-10-26T22:07:57.201Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-26T20:59:57.998Z"
+  "ultimo_ok": "2026-10-26T22:07:57.201Z"
  },
  "manuscriptorium": {
   "quando": "2026-10-26T16:55:08.567Z",
@@ -215,9 +215,9 @@
   "ultimo_ok": null
  },
  "nlw": {
-  "quando": "2026-10-26T20:59:57.998Z",
+  "quando": "2026-10-26T22:07:57.201Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-26T20:59:57.998Z"
+  "ultimo_ok": "2026-10-26T22:07:57.201Z"
  },
  "nomfoundation": {
   "quando": "2026-10-26T15:30:55.341Z",
@@ -235,9 +235,9 @@
   "ultimo_ok": null
  },
  "parker": {
-  "quando": "2026-10-26T20:59:57.998Z",
+  "quando": "2026-10-26T22:07:57.201Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-26T20:59:57.998Z"
+  "ultimo_ok": "2026-10-26T22:07:57.201Z"
  },
  "penn": {
   "quando": "2026-10-26T16:33:45.662Z",
@@ -305,9 +305,9 @@
   "ultimo_ok": null
  },
  "wellcome": {
-  "quando": "2026-10-26T20:59:57.998Z",
+  "quando": "2026-10-26T22:07:57.201Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-26T20:59:57.998Z"
+  "ultimo_ok": "2026-10-26T22:07:57.201Z"
  },
  "wolfenbuettel": {
   "quando": "2026-10-26T15:09:57.343Z",
