@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T13:00:19.168Z",
- "totale": 444389,
- "con_autori": 25914,
+ "aggiornato": "2026-10-26T13:19:05.760Z",
+ "totale": 445230,
+ "con_autori": 25995,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
   "id",
@@ -26,7 +26,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 67662
+   "codici": 68503
   },
   "fr": {
    "nome": "francese",
@@ -224,15 +224,15 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 6232
+   "codici": 6310
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 5857
+   "codici": 5859
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 13262
+   "codici": 13264
   },
   "medievale": {
    "nome": "autori medievali",
@@ -242,7 +242,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 442734
+   "codici": 443575
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -258,13 +258,13 @@
    "nome": "Plauto",
    "latino": "Plautus",
    "categoria": "classico-latino",
-   "codici": 77
+   "codici": 79
   },
   "terenzio": {
    "nome": "Terenzio",
    "latino": "Terentius",
    "categoria": "classico-latino",
-   "codici": 211
+   "codici": 212
   },
   "lucrezio": {
    "nome": "Lucrezio",
@@ -282,7 +282,7 @@
    "nome": "Cicerone",
    "latino": "Cicero",
    "categoria": "classico-latino",
-   "codici": 1103
+   "codici": 1104
   },
   "cesare": {
    "nome": "Cesare",
@@ -300,19 +300,19 @@
    "nome": "Virgilio",
    "latino": "Vergilius",
    "categoria": "classico-latino",
-   "codici": 460
+   "codici": 461
   },
   "orazio": {
    "nome": "Orazio",
    "latino": "Horatius",
    "categoria": "classico-latino",
-   "codici": 254
+   "codici": 266
   },
   "tibullo": {
    "nome": "Tibullo",
    "latino": "Tibullus",
    "categoria": "classico-latino",
-   "codici": 56
+   "codici": 57
   },
   "properzio": {
    "nome": "Properzio",
@@ -324,7 +324,7 @@
    "nome": "Ovidio",
    "latino": "Ovidius",
    "categoria": "classico-latino",
-   "codici": 530
+   "codici": 544
   },
   "livio": {
    "nome": "Livio",
@@ -342,31 +342,31 @@
    "nome": "Lucano",
    "latino": "Lucanus",
    "categoria": "classico-latino",
-   "codici": 152
+   "codici": 162
   },
   "persio": {
    "nome": "Persio",
    "latino": "Persius",
    "categoria": "classico-latino",
-   "codici": 107
+   "codici": 111
   },
   "giovenale": {
    "nome": "Giovenale",
    "latino": "Iuvenalis",
    "categoria": "classico-latino",
-   "codici": 137
+   "codici": 144
   },
   "marziale": {
    "nome": "Marziale",
    "latino": "Martialis",
    "categoria": "classico-latino",
-   "codici": 45
+   "codici": 49
   },
   "stazio": {
    "nome": "Stazio",
    "latino": "Statius",
    "categoria": "classico-latino",
-   "codici": 122
+   "codici": 123
   },
   "plinio-vecchio": {
    "nome": "Plinio il Vecchio",
@@ -384,7 +384,7 @@
    "nome": "Tacito",
    "latino": "Tacitus",
    "categoria": "classico-latino",
-   "codici": 46
+   "codici": 47
   },
   "svetonio": {
    "nome": "Svetonio",
@@ -414,13 +414,13 @@
    "nome": "Claudiano",
    "latino": "Claudianus",
    "categoria": "classico-latino",
-   "codici": 75
+   "codici": 78
   },
   "prisciano": {
    "nome": "Prisciano",
    "latino": "Priscianus",
    "categoria": "classico-latino",
-   "codici": 235
+   "codici": 244
   },
   "donato": {
    "nome": "Donato",
@@ -432,7 +432,7 @@
    "nome": "Servio",
    "latino": "Servius",
    "categoria": "classico-latino",
-   "codici": 127
+   "codici": 128
   },
   "macrobio": {
    "nome": "Macrobio",
@@ -444,7 +444,7 @@
    "nome": "Boezio",
    "latino": "Boethius",
    "categoria": "classico-latino",
-   "codici": 682
+   "codici": 683
   },
   "ausonio": {
    "nome": "Ausonio",
@@ -528,7 +528,7 @@
    "nome": "Silio Italico",
    "latino": "Silius Italicus",
    "categoria": "classico-latino",
-   "codici": 25
+   "codici": 27
   },
   "manilio": {
    "nome": "Manilio",
@@ -630,13 +630,13 @@
    "nome": "Festo",
    "latino": "Festus",
    "categoria": "classico-latino",
-   "codici": 26
+   "codici": 31
   },
   "nonio": {
    "nome": "Nonio Marcello",
    "latino": "Nonius Marcellus",
    "categoria": "classico-latino",
-   "codici": 40
+   "codici": 41
   },
   "carisio": {
    "nome": "Carisio",
@@ -666,7 +666,7 @@
    "nome": "Ilias Latina",
    "latino": "Ilias Latina",
    "categoria": "classico-latino",
-   "codici": 14
+   "codici": 15
   },
   "darete": {
    "nome": "Darete Frigio",
@@ -684,7 +684,7 @@
    "nome": "Omero",
    "latino": "Homerus",
    "categoria": "classico-greco",
-   "codici": 330
+   "codici": 332
   },
   "esiodo": {
    "nome": "Esiodo",
@@ -1224,7 +1224,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 5950
+   "codici": 5952
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -4248,12 +4248,12 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 10489,
+   "codici": 11330,
    "carte": 2,
    "carte_stampa": 0,
-   "con_autori": 841,
+   "con_autori": 922,
    "lingue": {
-    "la": 10200,
+    "la": 11041,
     "it": 233,
     "xx": 18,
     "de": 3,
@@ -4266,7 +4266,7 @@
    "prefissi": [
     "bav-"
    ],
-   "pezzi_voci": 14,
+   "pezzi_voci": 15,
    "indice": [
     "indice/vaticana-0.json"
    ]
@@ -4626,7 +4626,7 @@
   {
    "file": "indice/vaticana-0.json",
    "fonte": "vaticana",
-   "righe": 10489
+   "righe": 11330
   }
  ],
  "luoghi": {
