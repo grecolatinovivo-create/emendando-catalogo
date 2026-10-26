@@ -14,11 +14,11 @@ In tutto 196 nazioni: i 193 stati dell'ONU, la Città del Vaticano, la Palestina
 
 | Stato | Nazioni |
 |---|---|
-| agganciata | 28 |
+| agganciata | 31 |
 | controllata, niente da agganciare | 52 |
-| controllata, bloccata | 14 |
+| controllata, bloccata | 17 |
 | in corso | 25 |
-| non ancora controllata | 77 |
+| non ancora controllata | 71 |
 | **totale** | **196** |
 
 Che cosa vuol dire ogni stato:
@@ -72,6 +72,7 @@ Aggiornamento del 26 ottobre 2026 (Asia orientale e Sud-est asiatico, corsia «a
 Aggiornamento del 26 ottobre 2026 (Internet Archive, fonte «archive», corsia mondo): entrano 15.677 manoscritti che le biblioteche pubblicano su Internet Archive, letti per caricatore istituzionale con un filtro ciascuno (campione di 40 voci controllato a mano: 95% di manoscritti librari sicuri). Nuove nazioni agganciate: Thailandia (Fragile Palm Leaves Foundation, Nonthaburi, 6.988 manoscritti su foglia di palma) e Canada (McGill, Montréal, 829, oltre a Toronto). Si aggiungono India (Ramtek 3.003, Chennai 924, Haridwar 196), Italia (Joppi di Udine 1.296; Federiciana di Fano, 69 carte disegnate a mano), Francia (BULAC 774, Sainte-Geneviève 208) e Stati Uniti (Starr di Berkeley 1.230, Smithsonian 68, Columbia 59, Haverford 19, Boston Public Library 13). Dettaglio in docs/BIBLIOTECHE.md, «Internet Archive».
 
 Aggiornamento del 26 ottobre 2026 (Copenaghen, L'Aia, Utrecht, Amsterdam, Madrid; corsia `raccolta-europa.yml`): agganciati il Det Kongelige Bibliotek di Copenaghen (4.118 codici e frammenti: GKS, NKS, Additamenta e altre collezioni, 3.328 frammenti medievali della Fragmentsamlingen, manoscritti orientali ed ebraici; fuori 260 lettere e carte d'archivio; manifesti scritti dal catalogo con le immagini IIIF della biblioteca) e l'Allard Pierson dell'Università di Amsterdam (105 codici: Bibliotheca Philosophica Hermetica, libri d'ore, Moninckx Atlas, Max Havelaar; fuori circa 10.000 lettere). Non entrano la Koninklijke Bibliotheek dell'Aia (niente IIIF, Delpher chiuso dal robots.txt), l'Università di Utrecht (robots.txt che vieta manifesti e immagini) e la Biblioteca Nacional de España (robots.txt che vieta tutto); El Escorial era già nel catalogo con la Real Biblioteca.
+Aggiornamento del 26 ottobre 2026 (Russia, Caucaso, Turchia, Iran, Balcani; corsia `raccolta-est.yml`): agganciate la Biblioteca Nazionale «Santi Cirillo e Metodio» di Sofia (296 codici, manifesti scritti dal catalogo) e, tramite lib-fond.ru della Trinità-San Sergio, i libri manoscritti del Reparto manoscritti della Biblioteca Statale Russa e dell'Accademia Teologica di Mosca (circa 20.000 schede, lettura a riprese; manifesti scritti dal catalogo). Non entrano (motivi in `docs/BIBLIOTECHE.md`, quasi tutte nella lista della lettera dell'Università di Urbino): Biblioteca nazionale russa, Museo Storico Statale, БАН, Matenadaran, Centro Nazionale dei Manoscritti di Tbilisi, Yazma Eserler Kurumu e Milli Kütüphane, Topkapı, le biblioteche iraniane, BNR Digitală, Biblioteca nazionale di Serbia (solo carte scelte), Vernadsky.
 
 Restano fuori da questa lista perché sono già nel registro: Cambridge Digital Library (in lavorazione), British Library (agganciata in parte dal 26 ottobre 2026), Det Kongelige Bibliotek (agganciata il 26 ottobre 2026), Koninklijke Bibliotheek (non si può), Uppsala e Biblioteka Jagiellońska (da verificare), Qatar Digital Library (entra per i manoscritti della British Library) e National Library of Israel (bloccata).
 
@@ -211,12 +212,12 @@ Polonia, Cechia, Slovacchia, Ungheria, Romania, Bulgaria, Moldavia, Ucraina, Bie
 | Repubblica Ceca | agganciata | Dal 26 ottobre 2026 Manuscriptorium (corsia europa): 6352 codici di biblioteche ceche (Národní knihovna, Strahov, Museo nazionale, Moravská zemská knihovna, Olomouc, Plzeň e altre) | Manuscriptorium: fuori gli stampati, le carte geografiche, le lettere e le copie di biblioteche già nel catalogo. | nessuna di rilievo |
 | Slovacchia | non ancora controllata | nessuna | nessuna | Slovakiana |
 | Ungheria | non ancora controllata | nessuna | nessuna | Bibliotheca Corvina Virtualis, Hungaricana |
-| Romania | non ancora controllata | nessuna | nessuna | Biblioteca dell'Accademia Romena (biblioteca digitale non trovata) |
-| Bulgaria | non ancora controllata | nessuna | nessuna | Biblioteca nazionale Santi Cirillo e Metodio |
+| Romania | agganciata | Dal 26 ottobre 2026 Biblioteca nazionale della Romania (Bucarest) e Batthyaneum (Alba Iulia) tramite Manuscriptorium: circa 280 codici | BNR Digitală (digitool.bibnat.ro): verifica Cloudflare Turnstile (26 ottobre 2026). | Biblioteca dell'Accademia Romena (biblioteca digitale non trovata) |
+| Bulgaria | agganciata | Dal 26 ottobre 2026 Biblioteca Nazionale «Santi Cirillo e Metodio», Sofia (fonte «nbkm», corsia est): 296 codici slavi, greci, armeni, georgiani, ebraici, latini e musicali, manifesti scritti dal catalogo | nessuna | nessuna di rilievo |
 | Moldavia | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
-| Ucraina | non ancora controllata | nessuna | nessuna | Biblioteca nazionale Vernadsky |
+| Ucraina | controllata, bloccata | nessuna | Biblioteca nazionale Vernadsky: biblioteca digitale dietro la verifica di Cloudflare (26 ottobre 2026). | nessuna in più |
 | Bielorussia | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
-| Russia | agganciata | National Library of Russia, St. Petersburg: 1; Museen der Stadt Jurjewetz (Юрьевец: 1. **Totale: 2 codici** (pochi codici, arrivati da un'altra fonte) | Biblioteca nazionale russa e Biblioteca statale russa: bloccate (la prima non risponde, la seconda vieta tutto nel robots.txt). | Le altre biblioteche russe (Accademia delle Scienze, Museo storico) non sono state provate: probabile lo stesso blocco. |
+| Russia | agganciata | Dal 26 ottobre 2026 Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca tramite lib-fond.ru, le copie digitali pubblicate dalla Trinità-San Sergio (fonte «libfond», corsia est): circa 20.000 schede di libri manoscritti, lettura in corso. Prima: National Library of Russia, St. Petersburg: 1; Museen der Stadt Jurjewetz: 1 (da altre fonti) | Biblioteca nazionale russa: non risponde nemmeno dal browser; dlib.rsl.ru: il robots.txt vieta tutto; Museo Storico Statale: catalog.shm.ru 403 anche dal browser; БАН: nessuna biblioteca digitale dei manoscritti (prova del 26 ottobre 2026). | nessuna in più che si possa leggere |
 
 ### Biblioteche che mancano
 
@@ -226,8 +227,6 @@ Polonia, Cechia, Slovacchia, Ungheria, Romania, Bulgaria, Moldavia, Ucraina, Bie
 | Ungheria | Bibliotheca Corvina Virtualis (Biblioteca nazionale Széchényi): i codici di Mattia Corvino | corvina.hu | non si sa | circa 200 (stima) | media |
 | Ungheria | Hungaricana (archivi, biblioteche e musei ungheresi) | hungaricana.hu | non si sa | molti documenti, pochi codici | bassa |
 | Romania | Biblioteca dell'Accademia Romena (manoscritti slavi, greci, romeni) | non trovato | non si sa | non si sa | bassa |
-| Bulgaria | Biblioteca nazionale Santi Cirillo e Metodio (manoscritti slavi) | digilib.nationallibrary.bg | non si sa | alcune centinaia | media |
-| Ucraina | Biblioteca nazionale Vernadsky | www.nbuv.gov.ua | non si sa | alcune centinaia | bassa |
 
 ## Balcani
 
@@ -240,7 +239,7 @@ Ex Jugoslavia e Albania.
 | Slovenia | non ancora controllata | nessuna | nessuna | dLib.si |
 | Croazia | non ancora controllata | nessuna | nessuna | Biblioteca nazionale e universitaria di Zagabria |
 | Bosnia ed Erzegovina | non ancora controllata | nessuna | nessuna | Biblioteca Gazi Husrev-beg |
-| Serbia | non ancora controllata | nessuna | nessuna | Biblioteca nazionale di Serbia |
+| Serbia | agganciata | Dal 26 ottobre 2026 Biblioteca nazionale di Serbia tramite Manuscriptorium: 39 codici | digitalna.nb.rs: solo poche carte scelte per codice (prova del 26 ottobre 2026). | nessuna in più |
 | Montenegro | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
 | Macedonia del Nord | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
 | Albania | non ancora controllata | nessuna | nessuna | Archivio centrale dello Stato (Codici di Berat): poco |
@@ -252,7 +251,6 @@ Ex Jugoslavia e Albania.
 | Slovenia | dLib.si, Biblioteca nazionale e universitaria | www.dlib.si | non si sa | alcune centinaia | bassa |
 | Croazia | Biblioteca nazionale e universitaria di Zagabria, collezioni digitali (glagolitici, latini) | digitalna.nsk.hr | non si sa | alcune centinaia | media |
 | Bosnia ed Erzegovina | Biblioteca Gazi Husrev-beg, Sarajevo (arabi, turchi, persiani; in rete solo in parte) | www.ghb.ba | non si sa | non si sa | bassa |
-| Serbia | Biblioteca nazionale di Serbia, biblioteca digitale (manoscritti slavi) | digitalna.nb.rs | non si sa | alcune centinaia | media |
 | Albania | Archivio centrale dello Stato (Codex Purpureus Beratinus e altri) | non trovato | non si sa | poche decine | bassa |
 
 ## Medio Oriente e Caucaso
@@ -263,11 +261,11 @@ Turchia, Caucaso, Iran, paesi arabi del Vicino Oriente e del Golfo, Israele e Pa
 
 | Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
 |---|---|---|---|---|
-| Turchia | controllata, bloccata | nessuna | Yazma Eserler Kurumu (Süleymaniye) e Università di Istanbul: non rispondono. | Nessuna in più: i fondi turchi passano da Yazma Eserler. |
-| Armenia | non ancora controllata | nessuna | nessuna | Matenadaran |
-| Georgia | non ancora controllata | nessuna | nessuna | Centro nazionale dei manoscritti |
+| Turchia | controllata, bloccata | nessuna | Yazma Eserler Kurumu (portal.yek.gov.tr): risponde dal browser, ma il robots.txt vieta IIIF e visore; Milli Kütüphane: immagini solo dopo l'accesso; Topkapı: nessuna biblioteca digitale (26 ottobre 2026). | Nessuna in più: i fondi turchi passano da Yazma Eserler. |
+| Armenia | controllata, bloccata | nessuna (codici armeni di altre biblioteche: Gerusalemme, Sofia, Bodleian e altre) | Matenadaran: immagini dei codici non pubbliche, piattaforma annunciata per il 2026 non ancora in rete (26 ottobre 2026). | nessuna in più |
+| Georgia | controllata, bloccata | nessuna (codici georgiani del Sinai, di Gerusalemme e di Sofia da altre fonti) | Centro Nazionale dei Manoscritti: solo immagini scelte e copie a pagamento; Iverieli (Biblioteca nazionale): solo carte moderne (26 ottobre 2026). | nessuna in più |
 | Azerbaigian | non ancora controllata | nessuna | nessuna | Istituto dei manoscritti (biblioteca digitale non trovata) |
-| Iran | controllata, bloccata | nessuna | Biblioteca nazionale dell'Iran: non risponde. | Biblioteca del Parlamento (Majlis), Astan Quds Razavi |
+| Iran | controllata, bloccata | nessuna | Biblioteca del Parlamento (dlib.ical.ir), Biblioteca nazionale (nlai.ir), Astan Quds Razavi: non rispondono né dal server né dal browser (26 ottobre 2026). | nessuna in più |
 | Iraq | non ancora controllata | nessuna | vHMML (fondi dell'Iraq): bloccato da robots.txt e condizioni d'uso. | Nessuna in più nota. |
 | Siria | non ancora controllata | nessuna | vHMML (fondi della Siria): bloccato. | Nessuna in più nota. |
 | Libano | agganciata | Bibliothèque Orientale de l'Université Saint-Joseph de Beyrouth: 4 codici (pochi codici, arrivati da un'altra fonte) | vHMML (fondi del Libano): bloccato. | American University of Beirut; Bibliothèque Orientale dell'Université Saint-Joseph (sito proprio) |
@@ -286,11 +284,7 @@ Turchia, Caucaso, Iran, paesi arabi del Vicino Oriente e del Golfo, Israele e Pa
 
 | Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
 |---|---|---|---|---|---|
-| Armenia | Matenadaran, Erevan (nuovo portale di tutti i manoscritti armeni annunciato per il 2026) | matenadaran.am | non si sa | il fondo ha circa 23.000 manoscritti; in rete non si sa quanti | media |
-| Georgia | Centro nazionale dei manoscritti Korneli Kekelidze, Tbilisi | manuscript.ge (non verificato) | non si sa | non si sa | media |
 | Azerbaigian | Istituto dei manoscritti Fuzuli, Baku | non trovato | non si sa | non si sa | bassa |
-| Iran | Biblioteca del Parlamento (Majlis), Teheran | dlib.ical.ir | non si sa | alcune migliaia (stima) | media |
-| Iran | Biblioteca di Astan Quds Razavi, Mashhad | non trovato | non si sa | non si sa | bassa |
 | Libano | American University of Beirut, manoscritti arabi | libraries.aub.edu.lb | non si sa | alcune centinaia | media |
 | Libano | Bibliothèque Orientale, Université Saint-Joseph (oggi solo 4 codici nel catalogo, arrivati da Gallica) | www.bibliothequeorientale.usj.edu.lb | non si sa | alcune centinaia | media |
 | Palestina | Biblioteca della moschea al-Aqsa, Gerusalemme | non trovato | non si sa | non si sa | bassa |

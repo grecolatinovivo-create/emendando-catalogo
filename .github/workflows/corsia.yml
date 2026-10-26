@@ -1,13 +1,13 @@
 # Una «corsia» della raccolta del catalogo: il lavoro comune a tutte le corsie (raccolta, prove, salvataggio, ruota).
 # Non parte da sola: la chiamano i workflow delle corsie (raccolta-vaticana.yml, raccolta-yale.yml, raccolta-bodleian.yml,
-# raccolta-giornaliera.yml, raccolta-italia.yml, raccolta-mondo.yml, raccolta-usa.yml, raccolta-uk.yml, raccolta-iberia.yml, raccolta-europa.yml, raccolta-asia.yml), che decidono quando partire, quali fonti leggere e il gruppo di concurrency.
+# raccolta-giornaliera.yml, raccolta-italia.yml, raccolta-mondo.yml, raccolta-usa.yml, raccolta-uk.yml, raccolta-iberia.yml, raccolta-europa.yml, raccolta-asia.yml, raccolta-est.yml), che decidono quando partire, quali fonti leggere e il gruppo di concurrency.
 # Le corsie leggono biblioteche diverse (server diversi) e girano in parallelo; dentro una corsia le richieste restano in serie,
 # con le pause di sempre (10 secondi per la Vaticana), quindi nessuna biblioteca riceve più richieste di prima.
 # Salvataggio a prova di conflitto, anche con più corsie che salvano quasi insieme: si mettono da parte SOLO gli stati delle
 # fonti della corsia, si riparte dall'ultimo main, si rimettono quegli stati, si ricostruisce il catalogo senza richieste
 # (--solo-costruisci) e si prova a salvare; se un'altra corsia ha salvato prima, si aspetta un po' (a caso) e si rifà, fino a 8 volte.
 # Ruota: se la corsia ha lavorato almeno 30 minuti (c'era ancora lavoro), riparte subito da sola; altrimenti aspetta il suo orario.
-# Ruota «fino a lettura completa» (corsie mondo, usa, italia, giornaliera, uk, europa): riparte subito finché una delle sue fonti non ha finito
+# Ruota «fino a lettura completa» (corsie mondo, usa, italia, giornaliera, uk, europa, est): riparte subito finché una delle sue fonti non ha finito
 # la prima lettura completa (scripts/ruota.mjs), ma solo se in questo giro almeno una di quelle fonti ha fatto progressi: una fonte
 # in errore non fa girare la corsia all'infinito. Quando tutte hanno finito, la corsia torna al suo orario notturno (codici nuovi).
 # Un nuovo giro non parte se ce n'è già uno in coda; il gruppo di concurrency della corsia lo fa aspettare finché questo non è finito.
@@ -91,6 +91,7 @@ jobs:
               vaticana|bodleian|laurenziana|leiden|yale|penn|ds|walters|loc|nlg|ndl|kokusho|auckland|toronto|ambrosiana|montecassino|casanatense|bub|wellcome|bl|isos|manchester|cudl|cbl|parker|nlw|mdc|ub|realbiblioteca|ucm|sevilla|rah|pergamos|rousanou|onb|bncf|vallicelliana|malatestiana|archive|nli|getty|harvard) s=data/$f.json ;;
               handrit|polona|manuscriptorium) s=data/$f.json ;;   # corsia europa
               crossasia|sbbasia|sbbor|nomfoundation) s=data/$f.json ;;   # corsia asia
+              nbkm|libfond) s=data/$f.json ;;   # corsia est
               heidelberg) s=data/heidelberg-indici.json ;;
               wolfenbuettel|bamberga|karlsruhe|stoccarda|colonia|lipsia|francoforte|dresda|tubinga|darmstadt) s=data/$f.json ;;   # Handschriftenportal
               *) s="" ;;   # e-codices, BSB, Berlino: stato in .cache (fuori da git); Gallica: parti data/gallica-<n>.json dal browser, prese dal main e mai cancellate

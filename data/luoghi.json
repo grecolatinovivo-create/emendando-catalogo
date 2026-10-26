@@ -12242,6 +12242,29 @@
    "lat": 32.08227,
    "lon": 34.81065,
    "geonames": 293788
+  },
+  "sofia": {
+   "nome": "Sofia",
+   "paese": "BG",
+   "lat": 42.6975,
+   "lon": 23.3242,
+   "geonames": 727011
+  },
+  "mosca": {
+   "nome": "Mosca",
+   "en": "Moscow",
+   "paese": "RU",
+   "lat": 55.752,
+   "lon": 37.6178,
+   "geonames": 524901
+  },
+  "sergiev-posad": {
+   "nome": "Sergiev Posad",
+   "en": "Sergiyev Posad",
+   "paese": "RU",
+   "lat": 56.312,
+   "lon": 38.1387,
+   "geonames": 496638
   }
  },
  "citta": {
@@ -14338,7 +14361,14 @@
   "Los Angeles": "los-angeles",
   "Los Angeles (Stati Uniti)": "los-angeles",
   "Tel Aviv": "tel-aviv",
-  "Ramat Gan": "ramat-gan"
+  "Ramat Gan": "ramat-gan",
+  "Sofia": "sofia",
+  "София": "sofia",
+  "Mosca": "mosca",
+  "Moscow": "mosca",
+  "Москва": "mosca",
+  "Sergiev Posad": "sergiev-posad",
+  "Сергиев Посад": "sergiev-posad"
  },
  "biblioteche": {
   "Bibliothèque Carré d'art / Nîmes": "nimes",
@@ -14432,6 +14462,8 @@
   "uva": "amsterdam",
   "nli": "gerusalemme",
   "getty": "los-angeles",
-  "harvard": "cambridge-ma"
+  "harvard": "cambridge-ma",
+  "nbkm": "sofia",
+  "libfond": "mosca"
  }
 }

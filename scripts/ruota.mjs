@@ -23,7 +23,7 @@ export const INCOMPLETA = {
   ...Object.fromEntries(["ndl", "kokusho", "penn", "loc", "auckland", "toronto", "ds", "montecassino", "casanatense", "bub", "laurenziana", "leiden",
     "wolfenbuettel", "bamberga", "karlsruhe", "stoccarda", "colonia", "lipsia", "francoforte", "dresda", "tubinga",
     "handrit", "polona", "manuscriptorium", "onb", "kbdk", "uva",
-    "wellcome", "bl", "isos", "manchester", "cudl", "cbl", "parker", "nlw", "mdc", "ub", "realbiblioteca", "ucm", "sevilla", "pergamos", "auc", "northwestern", "archive", "getty"].map(f => [f, s => !s || !s.completato]),
+    "wellcome", "bl", "isos", "manchester", "cudl", "cbl", "parker", "nlw", "mdc", "ub", "realbiblioteca", "ucm", "sevilla", "pergamos", "auc", "northwestern", "archive", "nbkm", "libfond", "getty"].map(f => [f, s => !s || !s.completato]),
   ),
   // Berlino, manoscritti non europei: lettura OAI finita (nessun token in sospeso)
   // National Library of Israel: elenco finito (nessuna fase di ricerca in sospeso)

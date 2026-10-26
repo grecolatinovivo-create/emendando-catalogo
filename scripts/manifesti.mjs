@@ -17,7 +17,10 @@
 //   - Darmstadt (TUdigit, dal Handschriftenportal): manifesti con immagini in http e servizio Image che non risponde: copie P2
 //     con le immagini https a misura fissa (scripts/fonti/hsp.mjs, manifestoCopiaHsp);
 //   - Det Kgl. Bibliotek, Copenaghen: nessun manifesto IIIF presso la biblioteca, immagini IIIF Image 2 aperte (kb-images.kb.dk, CORS *):
-//     manifesti P2 con il servizio Image della biblioteca (scripts/fonti/kbdk.mjs).
+//     manifesti P2 con il servizio Image della biblioteca (scripts/fonti/kbdk.mjs);
+//   - Biblioteca Nazionale di Bulgaria (scripts/fonti/nbkm.mjs): niente IIIF, JPEG della biblioteca digitale caricabili come <img>:
+//     manifesti P2 a misura fissa;
+//   - lib-fond.ru (scripts/fonti/libfond.mjs): niente IIIF, JPEG di anteprima caricabili come <img>: manifesti P2 a misura fissa;
 // Nessuna richiesta di rete: si scrivono dagli stati delle raccolte (data/loc.json, data/nlg.json, data/malatestiana.json, data/handrit.json, data/darmstadt.json e gli altri).
 // I manifesti stanno nel ramo «manifesti» del repository, non in main (circa 400 MB di JSON): il workflow manifesti.yml
 // li rigenera ogni giorno in una copia di quel ramo e salva solo se cambiano.
@@ -34,6 +37,8 @@ import * as handrit from "./fonti/handrit.mjs";
 import * as hsp from "./fonti/hsp.mjs";
 import * as nom from "./fonti/nomfoundation.mjs";
 import * as kbdk from "./fonti/kbdk.mjs";
+import * as nbkm from "./fonti/nbkm.mjs";
+import * as libfond from "./fonti/libfond.mjs";
 
 // scrive i manifesti che mancano o sono cambiati e toglie quelli dei codici usciti (solo se lo stato ha voci)
 export function scriviManifesti(voci, cartella, scrivi) {
@@ -68,6 +73,10 @@ export function scriviTutti(dir = ".") {
     ...Object.fromEntries(Object.entries(latam.voci()).map(([f, vs]) => [f, scriviManifesti(vs, path.join(dir, "data/manifesti/" + f),
       (c, dims) => latam.manifestoLatam(f, c, dims))])),
     malatestiana: scriviManifesti(vociMl, path.join(dir, "data/manifesti/malatestiana"), (k, x) => malatestiana.manifestoScritto(x.id, x.v)),
+    // Biblioteca Nazionale di Bulgaria: JPEG della biblioteca digitale a misura fissa (misure della prima immagine)
+    nbkm: scriviManifesti(nbkm.leggiStato().voci || {}, path.join(dir, "data/manifesti/nbkm"), (id, v) => (nbkm.ammessaNbkm(v) ? nbkm.manifestoScritto(id, v) : null)),
+    // lib-fond.ru (Biblioteca Statale Russa, Accademia Teologica di Mosca): JPEG di anteprima del sito a misura fissa
+    libfond: scriviManifesti(libfond.leggiStato().voci || {}, path.join(dir, "data/manifesti/libfond"), (id, v) => (libfond.ammessaLibfond(v) ? libfond.manifestoScritto(id, v) : null)),
     handrit: scriviManifesti(handrit.leggiStato().voci || {}, path.join(dir, "data/manifesti/handrit"), (id, v) => (v && handrit.numeroPagine(v) ? handrit.manifestoScritto(id, v) : null)),
     // Fondazione per la conservazione del Nôm (Vietnam): immagini JPEG del sito a misura fissa; un file per volume, col nome dell'identificativo («nlvnpf-0106.json»)
     nomfoundation: scriviManifesti(Object.fromEntries(Object.entries(nom.leggiStato().voci || {}).filter(([, v]) => nom.ammessaNom(v)).map(([k, v]) => [v.img.toLowerCase(), { k, v }])),
