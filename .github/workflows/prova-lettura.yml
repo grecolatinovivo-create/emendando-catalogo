@@ -2,9 +2,14 @@
 # (prove/lettura-2026-10/codici.json, scelti da scripts/prova-lettura/seleziona.py) e le letture si confrontano con
 # corpora latini aperti per segnalare i codici con testo leggibile ma non riconosciuto.
 # Solo a mano (workflow_dispatch). Un job per server di immagini (lotto): i lotti girano in parallelo, dentro un lotto
-# le richieste sono in fila con almeno 1 secondo di pausa. Le immagini si scaricano nel runner, si leggono e si cancellano;
-# le letture complete passano tra i job come artefatti di 1 giorno, cancellati alla fine: nel repository vanno solo
-# misure, fonti trovate ed estratti brevi dei sospetti (prove/lettura-2026-10/).
+# le richieste sono in fila con almeno 1 secondo di pausa; un lotto che finisce il tempo riprende in un secondo job
+# (seguito) solo dopo che tutti i job di lettura sono finiti, così una biblioteca non ha mai due job insieme.
+# Le immagini si scaricano nel runner, si leggono e si cancellano. Le letture complete restano negli artefatti
+# letture-* per 90 giorni (per rifare il confronto: input da_run); nel repository vanno solo misure, fonti trovate ed
+# estratti brevi dei sospetti (prove/lettura-2026-10/).
+# Confronto: metodo della prima versione (confronta.py, solo per paragone) e confronto tollerante verso le
+# abbreviazioni (riconfronta.py) su tutte le pagine, in finestre di 25 parole divise in parti parallele;
+# riclassifica_tutte.py scrive la terza versione dei risultati, salvata su main con fetch, applica e push con retry.
 name: "Prova di lettura (Kraken)"
 
 on:
@@ -20,17 +25,19 @@ on:
         description: "Salvare i risultati nel repository"
         type: boolean
         default: true
+      ramo:
+        description: "Ramo su cui salvare (main; un altro nome per le prove)"
+        default: "main"
       da_run:
         description: "Solo confronto: id di un'esecuzione precedente da cui prendere le letture (vuoto = leggere ora)"
         default: ""
-      unisci:
-        description: "Tenere i risultati già salvati dei codici che questa esecuzione non rilegge (per ripetere un lotto)"
-        type: boolean
-        default: false
+      parti:
+        description: "Parti parallele del confronto nuovo"
+        default: "8"
 
 permissions:
   contents: write
-  actions: write
+  actions: read
 
 concurrency:
   group: prova-lettura
@@ -40,12 +47,14 @@ env:
   CODICI: prove/lettura-2026-10/codici.json
   MODELLO_URL: https://zenodo.org/records/21488839/files/catmus-medieval-1.6.0.mlmodel?download=1
   MODELLO: catmus-medieval-1.6.0.mlmodel
+  PROVA_SOLO: ${{ inputs.solo != '0' && inputs.solo || '' }}
 
 jobs:
   prepara:
     runs-on: ubuntu-latest
     outputs:
       lotti: ${{ steps.l.outputs.lotti }}
+      parti: ${{ steps.l.outputs.parti }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -59,9 +68,12 @@ jobs:
           else
             L='${{ inputs.lotti }}'
           fi
+          P=$(python3 -c "import json;print(json.dumps(list(range(max(1, int('${{ inputs.parti }}'))))))")
           echo "lotti=$L" >> "$GITHUB_OUTPUT"
-          echo "Lotti: $L"
+          echo "parti=$P" >> "$GITHUB_OUTPUT"
+          echo "Lotti: $L; parti del confronto: $P"
 
+  # indice dei 6-grammi per il metodo della prima versione (solo per paragone)
   corpora:
     runs-on: ubuntu-latest
     timeout-minutes: 60
@@ -95,6 +107,48 @@ jobs:
           path: indice/
           retention-days: 1
           compression-level: 0
+
+  # testi normalizzati per il confronto nuovo (riconfronta.py): i corpora della prima versione più The Latin Library
+  # (CLTK) e Divinum Officium; restano in cache e le parti del confronto li prendono da lì
+  corpora-nuovi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            scripts/prova-lettura
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - id: cache
+        uses: actions/cache@v4
+        with:
+          path: testi
+          key: corpora-riconfronta-v1-${{ hashFiles('scripts/prova-lettura/riconfronta.py') }}
+      - name: Corpora aperti e testi normalizzati
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          pip install -q numpy==2.0.2
+          mkdir -p corp testi
+          git clone -q --depth 1 https://github.com/PerseusDL/canonical-latinLit.git corp/perseus
+          git clone -q --depth 1 https://github.com/OpenGreekAndLatin/csel-dev.git corp/csel
+          git clone -q --depth 1 --filter=blob:none --sparse https://github.com/OpenGreekAndLatin/patrologia_latina-dev.git corp/pl
+          (cd corp/pl && git sparse-checkout set --no-cone '/volumes/PL[0-9]*/PL*.xml')
+          git clone -q --depth 1 https://github.com/cltk/lat_text_latin_library.git corp/ll
+          git clone -q --depth 1 --filter=blob:none --sparse https://github.com/DivinumOfficium/divinum-officium.git corp/divinum-officium
+          (cd corp/divinum-officium && git sparse-checkout set web/www/horas/Latin web/www/missa/Latin)
+          curl -sSfL -o corp/Vulgate.txt https://raw.githubusercontent.com/scrollmapper/bible_databases/master/formats/txt/Vulgate.txt
+          python scripts/prova-lettura/riconfronta.py corpora corp testi/testi.npz
+          rm -rf corp
+      - name: Misure dei corpora
+        run: |
+          python3 -c "import json;t=json.load(open('testi/testi.json'));json.dump({k:t[k] for k in ('parole','pezzi','per_corpus')},open('corpora-info.json','w'),ensure_ascii=False);print(open('corpora-info.json').read())"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: corpora-info
+          path: corpora-info.json
+          retention-days: 7
 
   leggi:
     needs: prepara
@@ -131,20 +185,103 @@ jobs:
         run: pip install -q --extra-index-url https://download.pytorch.org/whl/cpu "kraken==5.3.0" "torch==2.4.1+cpu" "torchvision==0.19.1+cpu"
       - name: Lettura del lotto ${{ matrix.lotto }}
         env:
-          PROVA_SOLO: ${{ inputs.solo != '0' && inputs.solo || '' }}
           PROCESSI: "2"
         run: python scripts/prova-lettura/leggi.py "$CODICI" "${{ matrix.lotto }}" letture "modelli/$MODELLO" --max-minuti=315
-      - uses: actions/upload-artifact@v4
+      - name: Letture complete (conservate 90 giorni)
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: letture-${{ matrix.lotto }}
           path: letture/
-          retention-days: 1
+          retention-days: 90
+          compression-level: 9
+          if-no-files-found: ignore
+
+  # Un lotto che non ha finito nel tempo (o il cui job si è rotto) riprende da dove era arrivato: parte solo quando
+  # tutti i job di lettura sono finiti, quindi mai insieme a un altro job sulla stessa biblioteca.
+  seguito:
+    needs: [prepara, leggi]
+    if: always() && inputs.da_run == '' && needs.prepara.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        lotto: ${{ fromJson(needs.prepara.outputs.lotti) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            scripts/prova-lettura
+            prove/lettura-2026-10
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: letture-${{ matrix.lotto }}
+          path: gia
+      - name: Codici ancora da leggere
+        id: manca
+        env:
+          LOTTO: ${{ matrix.lotto }}
+        run: |
+          mkdir -p gia letture
+          cp gia/*.json letture/ 2>/dev/null || true
+          python3 - <<'EOF'
+          import json, os
+          c = [x for x in json.load(open(os.environ["CODICI"]))["codici"] if x["lotto"] == os.environ["LOTTO"]]
+          if os.environ.get("PROVA_SOLO"):
+              c = c[: int(os.environ["PROVA_SOLO"])]
+          m = [x["id"] for x in c if not os.path.exists(os.path.join("letture", x["id"] + ".json"))]
+          print(f"{len(m)} codici su {len(c)} ancora da leggere")
+          open(os.environ["GITHUB_OUTPUT"], "a").write(f"n={len(m)}\n")
+          EOF
+      - uses: actions/setup-python@v5
+        if: steps.manca.outputs.n != '0'
+        with:
+          python-version: "3.11"
+      - uses: actions/cache@v4
+        if: steps.manca.outputs.n != '0'
+        with:
+          path: ~/.cache/pip
+          key: pip-kraken-5.3.0-cpu-v1
+      - uses: actions/cache@v4
+        if: steps.manca.outputs.n != '0'
+        id: modello
+        with:
+          path: modelli
+          key: modello-${{ env.MODELLO }}
+      - name: Modello CATMuS Medieval (CC BY 4.0)
+        if: steps.manca.outputs.n != '0' && steps.modello.outputs.cache-hit != 'true'
+        run: mkdir -p modelli && curl -sSfL -o "modelli/$MODELLO" "$MODELLO_URL"
+      - name: Kraken
+        if: steps.manca.outputs.n != '0'
+        run: pip install -q --extra-index-url https://download.pytorch.org/whl/cpu "kraken==5.3.0" "torch==2.4.1+cpu" "torchvision==0.19.1+cpu"
+      - name: Seguito della lettura del lotto ${{ matrix.lotto }}
+        if: steps.manca.outputs.n != '0'
+        env:
+          PROCESSI: "2"
+        run: python scripts/prova-lettura/leggi.py "$CODICI" "${{ matrix.lotto }}" letture "modelli/$MODELLO" --max-minuti=315
+      - name: Solo le letture nuove
+        if: always() && steps.manca.outputs.n != '0'
+        run: |
+          mkdir -p nuove
+          for f in letture/*.json; do
+            if [ -e "$f" ] && [ ! -e "gia/$(basename "$f")" ]; then cp "$f" nuove/; fi
+          done
+          echo "$(ls nuove | wc -l) letture nuove"
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.manca.outputs.n != '0'
+        with:
+          name: letture-${{ matrix.lotto }}-seguito
+          path: nuove/
+          retention-days: 90
+          compression-level: 9
           if-no-files-found: ignore
 
   confronta:
-    needs: [leggi, corpora]
-    if: always() && needs.corpora.result == 'success'
+    needs: [prepara, leggi, seguito, corpora]
+    if: always() && needs.prepara.result == 'success' && needs.corpora.result == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
@@ -167,37 +304,129 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs?per_page=100" > tempi.json || echo '{}' > tempi.json
-      - name: Confronto e rapporto
+      - name: Metodo della prima versione sulle letture (per paragone)
         run: |
           mkdir -p risultati
-          python scripts/prova-lettura/confronta.py "$CODICI" letture indice/indice.npz risultati ${{ inputs.unisci && 'prove/lettura-2026-10' || '' }}
+          python scripts/prova-lettura/confronta.py "$CODICI" letture indice/indice.npz risultati
           python scripts/prova-lettura/rapporto.py "$CODICI" risultati tempi.json "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+      - name: Finestre di 25 parole per il confronto nuovo
+        run: python scripts/prova-lettura/riclassifica_tutte.py finestre letture risultati/pagine.csv "${{ inputs.parti }}" finestre
       - uses: actions/upload-artifact@v4
         with:
-          name: risultati
+          name: risultati-metodo-vecchio
           path: risultati/
           retention-days: 7
-      - name: Salvataggio in prove/lettura-2026-10
-        if: inputs.salva
+      - uses: actions/upload-artifact@v4
+        with:
+          name: finestre
+          path: finestre/
+          retention-days: 7
+
+  riconfronta:
+    needs: [prepara, confronta, corpora-nuovi]
+    if: always() && needs.confronta.result == 'success' && needs.corpora-nuovi.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        parte: ${{ fromJson(needs.prepara.outputs.parti) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            scripts/prova-lettura
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q numpy==2.0.2
+      - uses: actions/cache/restore@v4
+        with:
+          path: testi
+          key: corpora-riconfronta-v1-${{ hashFiles('scripts/prova-lettura/riconfronta.py') }}
+          fail-on-cache-miss: true
+      - uses: actions/download-artifact@v4
+        with:
+          name: finestre
+          path: finestre
+      - name: Confronto nuovo, parte ${{ matrix.parte }}
+        run: |
+          mkdir -p confronti
+          python scripts/prova-lettura/riconfronta.py cerca testi/testi.npz "finestre/finestre-${{ matrix.parte }}.json" "confronti/confronti-${{ matrix.parte }}.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: confronti-${{ matrix.parte }}
+          path: confronti/
+          retention-days: 7
+
+  salva:
+    needs: [confronta, riconfronta, corpora-nuovi]
+    if: always() && needs.confronta.result == 'success' && needs.riconfronta.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q numpy==2.0.2
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: letture-*
+          path: letture
+          run-id: ${{ inputs.da_run || github.run_id }}
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: risultati-metodo-vecchio
+          path: risultati
+      - uses: actions/download-artifact@v4
+        with:
+          name: finestre
+          path: finestre
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: confronti-*
+          path: confronti
+      - uses: actions/download-artifact@v4
+        with:
+          name: corpora-info
+          path: info
+      - name: Terza versione e salvataggio (fetch, applica, push con retry)
+        env:
+          RAMO: ${{ inputs.ramo || 'main' }}
+          SALVA: ${{ inputs.salva }}
+          URL_RUN: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          RUN_LETTURE: ${{ inputs.da_run || github.run_id }}
         run: |
           git config user.name "emendando-catalogo-bot"
           git config user.email "emendando-catalogo-bot@users.noreply.github.com"
-          for i in 1 2 3 4 5 6; do
-            git fetch -q origin main:refs/remotes/origin/main
-            git reset -q --hard origin/main
-            cp risultati/* prove/lettura-2026-10/
+          S=scripts/prova-lettura/riclassifica_tutte.py
+          cp "$S" "$RUNNER_TEMP/" && cp scripts/prova-lettura/riconfronta.py "$RUNNER_TEMP/"
+          applica() {
+            python "$RUNNER_TEMP/riclassifica_tutte.py" rapporto "$CODICI" letture risultati finestre confronti \
+              prove/lettura-2026-10 info/corpora-info.json "$URL_RUN" "$RUN_LETTURE"
+          }
+          if [ "$SALVA" != "true" ]; then applica; mkdir -p uscita; cp prove/lettura-2026-10/* uscita/; exit 0; fi
+          for i in 1 2 3 4 5 6 7 8; do
+            if git ls-remote --exit-code --heads origin "$RAMO" >/dev/null; then BASE="$RAMO"; else BASE=main; fi
+            git fetch -q origin "$BASE" && git reset -q --hard FETCH_HEAD
+            applica
+            mkdir -p uscita && cp prove/lettura-2026-10/* uscita/
             git add prove/lettura-2026-10
-            git diff --cached --quiet && { echo "Nessuna modifica"; break; }
-            git commit -q -m "Prova di lettura (Kraken): risultati $(date -u '+%Y-%m-%d %H:%M') UTC" -m "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+            if git diff --cached --quiet; then echo "Nessuna modifica rispetto al remoto"; exit 0; fi
+            git commit -q -m "Prova di lettura (Kraken), terza versione: confronto nuovo su tutte le pagine $(date -u '+%Y-%m-%d %H:%M') UTC" -m "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
           Claude-Session: https://claude.ai/code/session_01MiwrmNZt4ypsMpraC8a66R"
-            git push -q origin HEAD:main && break
-            sleep $((RANDOM % 30 + 10))
+            if git push -q origin "HEAD:refs/heads/$RAMO"; then echo "Salvato su $RAMO al tentativo $i"; exit 0; fi
+            ATTESA=$(( 10 + RANDOM % 40 ))
+            echo "Push respinto (tentativo $i): qualcun altro ha salvato prima; riparto dal remoto fra $ATTESA secondi"; sleep "$ATTESA"
           done
-      - name: Cancellazione delle letture complete (artefatti)
+          exit 1
+      - uses: actions/upload-artifact@v4
         if: always()
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          for id in $(gh api "repos/${{ github.repository }}/actions/runs/${{ inputs.da_run || github.run_id }}/artifacts?per_page=100" --jq '.artifacts[] | select(.name | startswith("letture-")) | .id'); do
-            gh api -X DELETE "repos/${{ github.repository }}/actions/artifacts/$id" && echo "cancellato $id"
-          done
+        with:
+          name: risultati
+          path: uscita/
+          retention-days: 7
+          if-no-files-found: ignore
