@@ -1,6 +1,7 @@
 # Corsia «italia»: biblioteche italiane (oltre alla Laurenziana, che resta nella corsia giornaliera; server diversi dalle altre corsie):
 # Ambrosiana (Biblioteca Digitale), Montecassino (Memory of Montecassino), Casanatense (CONTENTdm), Biblioteca Universitaria
-# di Bologna (Historica). Gli stati sono in data/ambrosiana.json, data/montecassino.json, data/casanatense.json, data/bub.json.
+# di Bologna (Historica); dal 26 ottobre 2026 Nazionale Centrale di Firenze (copie su Internet Archive), Vallicelliana (OMNES) e
+# Malatestiana (Catalogo aperto; manifesti scritti con manifesti.yml). Gli stati sono in data/<fonte>.json.
 # Ruota fino a lettura completa: finché una di queste non ha finito la prima lettura (oggi l'Ambrosiana: elenco e schede), la corsia
 # lavora fino a circa 150 minuti per esecuzione (Ambrosiana 120) e riparte subito da sola, purché nel giro ci siano stati progressi
 # (scripts/ruota.mjs). Poi torna al giro notturno delle 02:20 UTC, che legge solo i codici nuovi.
@@ -24,8 +25,8 @@ jobs:
     uses: ./.github/workflows/corsia.yml
     with:
       corsia: italia
-      fonti: ambrosiana,montecassino,casanatense,bub
-      argomenti: --ambrosiana-minuti=120 --montecassino-minuti=5 --casanatense-minuti=5 --bub-minuti=10
+      fonti: ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana
+      argomenti: --ambrosiana-minuti=120 --montecassino-minuti=5 --casanatense-minuti=5 --bub-minuti=10 --bncf-minuti=5 --vallicelliana-minuti=5 --malatestiana-minuti=20
       cache: false
       ruota: false
       completa: true

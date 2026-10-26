@@ -1,5 +1,5 @@
-# Manifesti IIIF scritti dal catalogo (Library of Congress, Biblioteca Nazionale di Grecia): si scrivono senza richieste dagli
-# stati delle raccolte in main (data/loc.json, data/nlg.json) con scripts/manifesti.mjs e si salvano nel ramo «manifesti»
+# Manifesti IIIF scritti dal catalogo (Library of Congress, Biblioteca Nazionale di Grecia, Biblioteca Malatestiana): si scrivono senza richieste dagli
+# stati delle raccolte in main (data/loc.json, data/nlg.json, data/malatestiana.json) con scripts/manifesti.mjs e si salvano nel ramo «manifesti»
 # (non in main: sono circa 400 MB di JSON che le corsie non devono scaricare). Il catalogo punta a
 # raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/<fonte>/<id>.json.
 # Una volta al giorno, dopo le corsie giornaliera (Biblioteca Nazionale di Grecia) e usa (Library of Congress); si salva solo se qualcosa cambia.

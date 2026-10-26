@@ -297,6 +297,13 @@
    "lon": 8.9278,
    "geonames": 2661250
   },
+  "cesena": {
+   "nome": "Cesena",
+   "paese": "IT",
+   "lat": 44.1391,
+   "lon": 12.2432,
+   "geonames": 3178957
+  },
   "champs-sur-marne": {
    "nome": "Champs-sur-Marne",
    "paese": "FR",
@@ -11108,6 +11115,13 @@
    "lon": 8.7111,
    "geonames": 2659118
   },
+  "ravenna": {
+   "nome": "Ravenna",
+   "paese": "IT",
+   "lat": 44.4134,
+   "lon": 12.2012,
+   "geonames": 3169561
+  },
   "reims": {
    "nome": "Reims",
    "paese": "FR",
@@ -11629,6 +11643,7 @@
   "Cassation": "parigi",
   "Cassino": "montecassino",
   "Castro": "castro",
+  "Cesena": "cesena",
   "Chatan": "jp-chatan",
   "Chavannes-près-Renens": "chavannes",
   "Chiba": "jp-chiba",
@@ -12762,6 +12777,7 @@
   "Providence": "providence",
   "Quinto": "quinto",
   "Ranzan": "jp-ranzan",
+  "Ravenna": "ravenna",
   "Reims": "reims",
   "Rifu": "jp-rifu",
   "Rikuzen-Takata": "jp-rikuzen-takata",
@@ -13239,6 +13255,7 @@
   "Vatikan": "citta-del-vaticano",
   "Vesoul": "vesoul",
   "Vevey": "vevey",
+  "Vienna": "vienna",
   "Vilanova i la Geltrú": "vilanova-i-la-geltru",
   "Villeneuve-Loubet": "villeneuve-loubet",
   "Wadayama": "jp-wadayama",
@@ -13504,6 +13521,11 @@
   "bnchile": "santiago-del-cile",
   "bnv": "caracas",
   "pergamos": "atene",
-  "rousanou": "meteore"
+  "rousanou": "meteore",
+  "onb": "vienna",
+  "bncf": "firenze",
+  "vallicelliana": "roma",
+  "malatestiana": "cesena",
+  "classense": "ravenna"
  }
 }

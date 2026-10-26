@@ -34,6 +34,8 @@ export const INCOMPLETA = {
   rousanou: s => !s || !s.elenco || Object.values(s.voci || {}).some(v => v && !v.n && !v.x),
   // Real Academia de la Historia: elenco OAI finito e misure delle immagini prese (quelle che non si leggono restano segnate con «x»)
   rah: s => !s || !s.elenco || !!s.token || Object.values(s.voci || {}).some(v => v && !v.w && !v.x),
+  // Malatestiana: schede e visore di tutti i codici dell'elenco letti
+  malatestiana: s => !s || !s.completato,
 };
 
 function impronta(f) {

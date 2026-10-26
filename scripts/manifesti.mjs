@@ -7,8 +7,10 @@
 //   - Biblioteca Nazionale di Grecia: manifesti e info.json senza CORS, immagini caricabili come <img>: copie P2 con immagini
 //     a misura fissa, senza servizio Image (scripts/fonti/nlg.mjs);
 //   - Università di Atene, Pergamos (scripts/fonti/pergamos.mjs): niente IIIF, immagini JPEG con CORS aperto: manifesti P2 a misura fissa;
-//   - America Latina, siti solo PDF (scripts/fonti/latam_pdf.mjs): manifesti P3 con le pagine estratte dai PDF nel ramo «immagini».
-// Nessuna richiesta di rete: si scrivono dagli stati delle raccolte (data/loc.json, data/nlg.json).
+//   - America Latina, siti solo PDF (scripts/fonti/latam_pdf.mjs): manifesti P3 con le pagine estratte dai PDF nel ramo «immagini»;
+//   - Biblioteca Malatestiana (Cesena): nessun IIIF, carte del visore caricabili come <img>: manifesti P2 con immagini a misura
+//     fissa, senza servizio Image (scripts/fonti/malatestiana.mjs).
+// Nessuna richiesta di rete: si scrivono dagli stati delle raccolte (data/loc.json, data/nlg.json, data/malatestiana.json e gli altri).
 // I manifesti stanno nel ramo «manifesti» del repository, non in main (circa 400 MB di JSON): il workflow manifesti.yml
 // li rigenera ogni giorno in una copia di quel ramo e salva solo se cambiano.
 // Uso: node scripts/manifesti.mjs [--dir=<cartella radice della copia del ramo manifesti>]   (scrive <dir>/data/manifesti/<fonte>/<id>.json)
@@ -19,6 +21,7 @@ import * as nlg from "./fonti/nlg.mjs";
 import * as digibib from "./fonti/digibib.mjs";
 import * as latam from "./fonti/latam_pdf.mjs";
 import * as pergamos from "./fonti/pergamos.mjs";
+import * as malatestiana from "./fonti/malatestiana.mjs";
 
 // scrive i manifesti che mancano o sono cambiati e toglie quelli dei codici usciti (solo se lo stato ha voci)
 export function scriviManifesti(voci, cartella, scrivi) {
@@ -37,7 +40,9 @@ export function scriviManifesti(voci, cartella, scrivi) {
 }
 
 export function scriviTutti(dir = ".") {
-  const l = loc.leggiStato(), n = nlg.leggiStato();
+  const l = loc.leggiStato(), n = nlg.leggiStato(), ml = malatestiana.leggiStato();
+  // Malatestiana: un file per codice, col nome del visore («DX.21.05.json»)
+  const vociMl = Object.fromEntries(Object.entries(ml.voci || {}).filter(([, v]) => malatestiana.ammessaMalatestiana(v)).map(([id, v]) => [v.k, { id, v }]));
   return {
     loc: scriviManifesti(l.voci || {}, path.join(dir, "data/manifesti/loc"), (id, v) => (v ? loc.manifestoScritto(id, v) : null)),
     nlg: scriviManifesti(n.voci || {}, path.join(dir, "data/manifesti/nlg"), (id, v) => (v && nlg.numeroPagine(v.p) ? nlg.manifestoScritto(id, v) : null)),
@@ -50,6 +55,7 @@ export function scriviTutti(dir = ".") {
     // estratte dai PDF e salvate nel ramo «immagini»
     ...Object.fromEntries(Object.entries(latam.voci()).map(([f, vs]) => [f, scriviManifesti(vs, path.join(dir, "data/manifesti/" + f),
       (c, dims) => latam.manifestoLatam(f, c, dims))])),
+    malatestiana: scriviManifesti(vociMl, path.join(dir, "data/manifesti/malatestiana"), (k, x) => malatestiana.manifestoScritto(x.id, x.v)),
   };
 }
 

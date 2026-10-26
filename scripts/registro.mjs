@@ -45,6 +45,11 @@ export const BIBLIOTECHE = {
   ndl: { biblioteca: "National Diet Library (国立国会図書館): manoscritti dei libri antichi giapponesi e cinesi", citta: "Tokyo (Giappone)", come: "corsia mondo: a ruota finché la prima lettura completa non è finita, poi ogni notte (solo i record cambiati ogni 6 giorni, raccolta completa ogni 30)" },
   kokusho: { biblioteca: "Kokusho Database (国書データベース) del National Institute of Japanese Literature: manoscritti di biblioteche, templi e collezioni giapponesi", citta: "Giappone", come: "corsia mondo: a ruota finché la prima lettura completa non è finita, poi ogni notte (raccolta completa ogni 14 giorni)" },
   slv: { biblioteca: "State Library Victoria", citta: "Melbourne (Australia)", come: "va fatta a mano dal browser (scripts/browser/slv.js)" },
+  onb: { biblioteca: "Österreichische Nationalbibliothek (codici della Sammlung von Handschriften in ÖNB Digital)", citta: "Vienna", come: "corsia giornaliera: manifesti a riprese finché non sono letti tutti, poi solo i nuovi (elenco ogni 6 giorni); di riserva dal browser (scripts/browser/onb.js)" },
+  bncf: { biblioteca: "Biblioteca Nazionale Centrale di Firenze (manoscritti pubblicati dalla Biblioteca su Internet Archive)", citta: "Firenze", come: "corsia italia, ogni notte (ricerca ogni 6 giorni)" },
+  vallicelliana: { biblioteca: "Biblioteca Vallicelliana (lascito di Achille Stazio su OMNES)", citta: "Roma", come: "corsia italia, ogni notte (raccolta completa ogni 6 giorni)" },
+  malatestiana: { biblioteca: "Biblioteca Malatestiana (Catalogo aperto; manifesti IIIF scritti da Emendando)", citta: "Cesena", come: "corsia italia: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 6 giorni)" },
+  classense: { biblioteca: "Biblioteca Classense (Collezioni Digitali Classensi, insieme «Manoscritti»)", citta: "Ravenna", come: "va fatta a mano dal browser (scripts/browser/classense.js)" },
   auckland: { biblioteca: "Auckland Libraries, Sir George Grey Special Collections", citta: "Auckland (Nuova Zelanda)", come: "corsia mondo: a ruota finché la prima lettura completa non è finita, poi ogni notte (raccolta completa ogni 6 giorni)" },
   toronto: { biblioteca: "University of Toronto, Thomas Fisher Rare Book Library", citta: "Toronto (Canada)", come: "corsia mondo: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 6 giorni, manifesti nuovi)" },
   // Grecia (corsia «mondo», dal 26 ottobre 2026)
@@ -213,6 +218,28 @@ export const AVANZAMENTO = {
   slv: () => {
     const s = leggi("data/slv.json"); if (!s) return { testo: "elenco non ancora raccolto: va lanciato scripts/browser/slv.js dal browser" };
     return { testo: `${num(Object.keys(s.voci || {}).length)} oggetti digitali raccolti dal browser il ${giorno(s.raccolto)} (ricerche: ${(s.ricerche || []).length})`, data: s.raccolto };
+  },
+  onb: () => {
+    const s = leggi("data/onb.json"); if (!s) return { testo: "non ancora cominciata" };
+    const v = Object.values(s.voci || {}), letti = v.filter(x => x.s || x.x).length, codici = v.filter(x => x.s && !x.x).length;
+    return { testo: `${num(letti)} manifesti letti su ${num(v.length)} candidati (${num(codici)} codici; fuori lettere, autografi, musica, fotografie di singole carte)${letti < v.length ? "; gli altri alle prossime esecuzioni" : ""}`, data: s.completato || s.aggiornato };
+  },
+  bncf: () => {
+    const s = leggi("data/bncf.json"); if (!s) return { testo: "non ancora cominciata" };
+    return { testo: `${num(Object.keys(s.voci || {}).length)} oggetti «BNCF - Manuscripts» su Internet Archive (fuori lettere sciolte, carte nautiche, disegni, inventari)`, data: s.completato || s.aggiornato };
+  },
+  vallicelliana: () => {
+    const s = leggi("data/vallicelliana.json"); if (!s) return { testo: "non ancora cominciata" };
+    return { testo: `${num(Object.keys(s.voci || {}).length)} volumi su OMNES (fuori i libri a stampa)`, data: s.completato || s.aggiornato };
+  },
+  malatestiana: () => {
+    const s = leggi("data/malatestiana.json"); if (!s) return { testo: "non ancora cominciata" };
+    const v = Object.values(s.voci || {}), letti = v.filter(x => x.p != null || x.x).length;
+    return { testo: `${num(letti)} schede lette su ${num(v.length)} codici${letti < v.length ? "; le altre alle prossime esecuzioni" : ""}`, data: s.completato || s.aggiornato };
+  },
+  classense: () => {
+    const s = leggi("data/classense.json"); if (!s) return { testo: "elenco non ancora raccolto: va lanciato scripts/browser/classense.js dal browser" };
+    return { testo: `${num(Object.keys(s.voci || {}).length)} schede dell'insieme «Manoscritti» raccolte dal browser il ${giorno(s.raccolto)}`, data: s.raccolto };
   },
   auckland: () => {
     const s = leggi("data/auckland.json"); if (!s) return { testo: "non ancora cominciata" };

@@ -23,7 +23,9 @@ L = {
  "friburgo-ch": ("Friburgo (Svizzera)", "Fribourg", "Fribourg", "CH", "FR", ["Fribourg/Freiburg", "Fribourg"]),
  "chicago": ("Chicago", None, "Chicago", "US", "IL", ["Chicago"]),
  "berlino": ("Berlino", "Berlin", "Berlin", "DE", "16", ["Berlin", "Berlino", "Berlino (Germania)"]),
- "vienna": ("Vienna", None, "Vienna", "AT", "09", ["Wien"]),
+ "vienna": ("Vienna", None, "Vienna", "AT", "09", ["Wien", "Vienna"]),
+ "cesena": ("Cesena", None, "Cesena", "IT", "05", ["Cesena"]),
+ "ravenna": ("Ravenna", None, "Ravenna", "IT", "05", ["Ravenna"]),
  "strasburgo": ("Strasburgo", "Strasbourg", "Strasbourg", "FR", "44", ["Strasbourg", "Saint Thomas"]),
  "sarnen": ("Sarnen", None, "Sarnen", "CH", "OW", ["Sarnen"]),
  "rouen": ("Rouen", None, "Rouen", "FR", "28", ["Rouen"]),
@@ -253,4 +255,5 @@ FONTI = {"gallica": "parigi", "heidelberg": "heidelberg", "vaticana": "citta-del
          "bsb": "monaco-di-baviera", "ndl": "tokyo", "berlino": "berlino", "lipsia": "lipsia", "leiden": "leida", "ambrosiana": "milano",
          "bub": "bologna", "nlg": "atene", "colonia": "colonia", "montecassino": "montecassino", "bamberga": "bamberga", "casanatense": "roma", "auckland": "auckland", "toronto": "toronto",
          "wellcome": "londra", "manchester": "manchester", "cbl": "dublino", "cudl": "cambridge",
-         "mdc": "barcellona", "ub": "barcellona", "realbiblioteca": "madrid", "ucm": "madrid", "sevilla": "siviglia", "rah": "madrid"}
+         "mdc": "barcellona", "ub": "barcellona", "realbiblioteca": "madrid", "ucm": "madrid", "sevilla": "siviglia", "rah": "madrid",
+         "onb": "vienna", "bncf": "firenze", "vallicelliana": "roma", "malatestiana": "cesena", "classense": "ravenna"}

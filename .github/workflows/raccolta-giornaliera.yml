@@ -1,7 +1,8 @@
 # Corsia giornaliera: tutte le altre fonti, una volta al giorno alle 03 UTC, ciascuna con il suo limite di tempo:
 # Heidelberg (con gli indici delle miscellanee), e-codices, BSB, Berlino, Gallica, Laurenziana, Leida, le biblioteche del
 # Handschriftenportal (Wolfenbüttel, Bamberga, Karlsruhe, Stoccarda, Colonia, Lipsia), Digital Scriptorium (i doppioni di Penn
-# e Yale restano a quelle fonti) e Biblioteca Nazionale di Grecia (manifesti scritti con manifesti.yml).
+# e Yale restano a quelle fonti), Biblioteca Nazionale di Grecia (manifesti scritti con manifesti.yml) e Österreichische Nationalbibliothek
+# (dal 26 ottobre 2026: manifesti letti a riprese, 30 minuti per notte, finché non sono letti tutti).
 # Penn, Library of Congress e Walters sono passate il 25 ottobre 2026 alla corsia «usa» (raccolta-usa.yml), che lavora a ruota.
 # Le raccolte OAI riprendono da dove si erano fermate grazie alla cache delle Actions (chiave propria di questa corsia).
 # Ruota fino a lettura completa: se una fonte con stato in data/ rimette la prima lettura da capo, la corsia riparte subito da sola
@@ -26,8 +27,8 @@ jobs:
     uses: ./.github/workflows/corsia.yml
     with:
       corsia: giornaliera
-      fonti: heidelberg,ecodices,bsb,berlino,gallica,laurenziana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,ds,nlg
-      argomenti: --oai-minuti=40 --indici-minuti=20 --gallica-minuti=25 --laurenziana-minuti=15 --leiden-minuti=15 --hsp-minuti=10 --ds-minuti=15 --nlg-minuti=15 --berlino-minuti=60
+      fonti: heidelberg,ecodices,bsb,berlino,gallica,laurenziana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,ds,nlg,onb
+      argomenti: --oai-minuti=40 --indici-minuti=20 --gallica-minuti=25 --laurenziana-minuti=15 --leiden-minuti=15 --hsp-minuti=10 --ds-minuti=15 --nlg-minuti=15 --onb-minuti=30 --berlino-minuti=60
       cache: true
       ruota: false
       completa: true

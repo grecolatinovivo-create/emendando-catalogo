@@ -2,7 +2,7 @@
 // Catalogo dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate: tutti i manoscritti, di ogni lingua ed epoca.
 // Autori e opere riconosciuti (classici latini e greci, cristiani, medievali) sono un'informazione in più, per cercare e filtrare.
 // Uso:
-//   node scripts/raccogli.mjs [--fonti=heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,vaticana] [--vaticana-minuti=20] [--oai-minuti=60]
+//   node scripts/raccogli.mjs [--fonti=heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,vaticana] [--vaticana-minuti=20] [--oai-minuti=60]
 //        [--bodleian-minuti=30] [--gallica-minuti=30] [--laurenziana-minuti=15] [--ambrosiana-minuti=20] [--montecassino-minuti=5] [--casanatense-minuti=5] [--bub-minuti=10]
 //        [--leiden-minuti=15] [--hsp-minuti=10] [--berlino-minuti=60] [--indici-minuti=20]
 //        [--yale-minuti=30] [--penn-minuti=15] [--ds-minuti=15] [--walters-minuti=20] [--loc-minuti=10] [--nlg-minuti=15]
@@ -10,6 +10,7 @@
 //        [--wellcome-minuti=10] [--isos-minuti=20] [--manchester-minuti=30] [--cudl-minuti=30] [--cbl-minuti=60] [--minuti-totali=160] [--solo-costruisci]
 //        [--mdc-minuti=10] [--ub-minuti=10] [--realbiblioteca-minuti=15] [--ucm-minuti=15] [--sevilla-minuti=5] [--rah-minuti=30]
 //        [--pergamos-minuti=10] [--rousanou-minuti=5]
+//        [--onb-minuti=30] [--bncf-minuti=5] [--vallicelliana-minuti=5] [--malatestiana-minuti=20]
 // Scrive il catalogo diviso per fonte (vedi costruisci.mjs): data/catalogo/indice.json, data/catalogo/indice/<fonte>-<n>.json, data/catalogo/voci/<fonte>-<n>.json,
 // più data/manoscritti.json (compatibilità: solo i codici con autori classici), e gli stati delle scansioni a riprese
 // (data/vaticana.json, data/bodleian.json, data/laurenziana.json, data/leiden.json, data/heidelberg-indici.json; data/<fonte>.json per le fonti del Handschriftenportal: wolfenbuettel, bamberga, karlsruhe, stoccarda, colonia, lipsia; data/yale.json, data/penn.json, data/walters.json).
@@ -58,11 +59,16 @@ import { scansionaDigibib, recordDigibib } from "./fonti/digibib.mjs";
 import { recordLatam } from "./fonti/latam_pdf.mjs";
 import { scansionaPergamos, recordPergamos } from "./fonti/pergamos.mjs";
 import { scansionaRousanou, recordRousanou } from "./fonti/rousanou.mjs";
+import { scansionaOnb, recordOnb } from "./fonti/onb.mjs";
+import { scansionaBncf, recordBncf } from "./fonti/bncf.mjs";
+import { scansionaVallicelliana, recordVallicelliana } from "./fonti/vallicelliana.mjs";
+import { scansionaMalatestiana, recordMalatestiana } from "./fonti/malatestiana.mjs";
+import { recordClassense } from "./fonti/classense.mjs";
 import { scriviRegistro, registraEsiti } from "./registro.mjs";
 import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
-const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,vaticana").split(",");
+const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,vaticana").split(",");
 const INIZIO = Date.now();
 export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)", berlino: "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
   bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -71,6 +77,11 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   montecassino: "Biblioteca statale del Monumento nazionale di Montecassino (omnes.dbseret.com/montecassino)",
   casanatense: "Biblioteca Casanatense, Roma (casanatense.contentdm.oclc.org)",
   bub: "Biblioteca Universitaria di Bologna (historica.unibo.it)",
+  bncf: "Biblioteca Nazionale Centrale di Firenze (manoscritti pubblicati dalla Biblioteca su Internet Archive, archive.org)",
+  vallicelliana: "Biblioteca Vallicelliana, Roma (omnes.dbseret.com/vallicelliana)",
+  malatestiana: "Biblioteca Malatestiana, Cesena (Catalogo aperto dei manoscritti malatestiani; manifesti scritti dal catalogo)",
+  classense: "Biblioteca Classense, Ravenna (www.cdc.classense.ra.it; elenco raccolto dal browser)",
+  onb: "Österreichische Nationalbibliothek, Vienna (onb.digital; manifesti api.onb.ac.at)",
   leiden: "Universiteitsbibliotheek Leiden (digitalcollections.universiteitleiden.nl)",
   ...Object.fromEntries(Object.entries(FONTI_HSP).map(([f, h]) => [f, `${h.biblioteca}${h.biblioteca.includes(h.citta) ? "" : ", " + h.citta} (dati dal Handschriftenportal, handschriftenportal.de)`])),
   yale: "Yale University Library, Beinecke e altre (collections.library.yale.edu)", penn: "University of Pennsylvania Libraries (colenda.library.upenn.edu)",
@@ -206,9 +217,17 @@ async function main() {
     montecassino: async () => recordMontecassino(await scansionaMontecassino({ minuti: min("montecassino", +(arg["montecassino-minuti"] ?? 5)), soloCache: sc("montecassino") })),
     casanatense: async () => recordCasanatense(await scansionaCasanatense({ minuti: min("casanatense", +(arg["casanatense-minuti"] ?? 5)), soloCache: sc("casanatense") })),
     bub: async () => recordBub(await scansionaBub({ minuti: min("bub", +(arg["bub-minuti"] ?? 10)), soloCache: sc("bub") })),
+    // Firenze (copie della Biblioteca su Internet Archive), Vallicelliana (OMNES), Malatestiana (manifesti scritti dal catalogo)
+    bncf: async () => recordBncf(await scansionaBncf({ minuti: min("bncf", +(arg["bncf-minuti"] ?? 5)), soloCache: sc("bncf") })),
+    vallicelliana: async () => recordVallicelliana(await scansionaVallicelliana({ minuti: min("vallicelliana", +(arg["vallicelliana-minuti"] ?? 5)), soloCache: sc("vallicelliana") })),
+    malatestiana: async () => recordMalatestiana(await scansionaMalatestiana({ minuti: min("malatestiana", +(arg["malatestiana-minuti"] ?? 20)), soloCache: sc("malatestiana") })),
+    // Classense: nessuna richiesta, l'elenco viene dal browser (scripts/browser/classense.js -> data/classense.json)
+    classense: async () => recordClassense(),
     leiden: async () => recordLeiden(await scansionaLeiden({ minuti: min("leiden", +(arg["leiden-minuti"] ?? 15)), soloCache: sc("leiden") })),
     // biblioteche lette dal Handschriftenportal: una fonte ciascuna, con il suo stato in data/<fonte>.json
     ...Object.fromEntries(Object.keys(FONTI_HSP).map(f => [f, async () => recordHsp(f, await scansionaHsp({ fonte: f, minuti: min(f, +(arg["hsp-minuti"] ?? 10)), soloCache: sc(f) }))])),
+    // Österreichische Nationalbibliothek: elenco da ÖNB Digital, poi un manifesto per candidato (a riprese)
+    onb: async () => recordOnb(await scansionaOnb({ minuti: min("onb", +(arg["onb-minuti"] ?? 30)), soloCache: sc("onb") })),
     yale: async () => recordYale(await scansionaYale({ minuti: min("yale", +(arg["yale-minuti"] ?? 30)), soloCache: sc("yale") })),
     penn: async () => recordPenn(await scansionaPenn({ minuti: min("penn", +(arg["penn-minuti"] ?? 15)), soloCache: sc("penn") })),
     // Digital Scriptorium: la biblioteca è quella vera; i codici che Penn e Yale danno già restano a quelle fonti
