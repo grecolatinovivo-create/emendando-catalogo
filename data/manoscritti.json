@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T16:35:03.576Z",
+ "aggiornato": "2026-10-26T17:41:55.323Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -140,7 +140,7 @@
   "harvard": {
    "nome": "Harvard Library: Houghton, Harvard-Yenching, Islamic Heritage Project (LibraryCloud, elenco raccolto dal browser; manifesti nrs.lib.harvard.edu)",
    "codici": 10,
-   "esito": "errore: LibraryCloud: HTTP 403 (resta il file raccolto dal browser, se c'è)"
+   "esito": "ok"
   },
   "loc": {
    "nome": "Library of Congress: microfilm del Sinai e dei Patriarcati di Gerusalemme (loc.gov; manifesti scritti dal catalogo)",
@@ -159,8 +159,8 @@
   },
   "bl": {
    "nome": "British Library, Londra (catalogo searcharchives.bl.uk; manifesti bl.digirati.io e, per i codici orientali e scientifici, Qatar Digital Library)",
-   "codici": 67,
-   "esito": "ok"
+   "codici": 168,
+   "esito": "errore: schede lette in parte (1601 su 1651): riprenderà alla prossima esecuzione"
   },
   "isos": {
    "nome": "Irish Script on Screen: Royal Irish Academy, National Library of Ireland, Trinity College Dublin e altre (isos.dias.ie)",
@@ -174,13 +174,13 @@
   },
   "cudl": {
    "nome": "Cambridge Digital Library: University Library e college (cudl.lib.cam.ac.uk)",
-   "codici": 70,
-   "esito": "errore: manifesti letti in parte (mancano 1330): riprenderà alla prossima esecuzione"
+   "codici": 126,
+   "esito": "ok"
   },
   "cbl": {
    "nome": "Chester Beatty, Dublino (viewer.cbl.ie)",
-   "codici": 7,
-   "esito": "errore: manifesti letti in parte (mancano 1944): riprenderà alla prossima esecuzione"
+   "codici": 11,
+   "esito": "errore: manifesti letti in parte (mancano 1583): riprenderà alla prossima esecuzione"
   },
   "parker": {
    "nome": "Parker Library, Corpus Christi College, Cambridge (manifesti di Stanford, dms-data.stanford.edu; elenco da Biblissima)",
@@ -305,7 +305,7 @@
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
    "codici": 0,
-   "esito": "errore: manifesti letti in parte (mancano 12499): riprenderà alla prossima esecuzione"
+   "esito": "errore: manifesti letti in parte (mancano 11317): riprenderà alla prossima esecuzione"
   },
   "getty": {
    "nome": "J. Paul Getty Museum, Los Angeles: manoscritti (data.getty.edu; manifesti media.getty.edu)",
@@ -353,7 +353,7 @@
    "esito": "ok"
   }
  },
- "totale": 12155,
+ "totale": 12316,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -326172,6 +326172,42 @@
    "anteprima": "https://e-codices.ch/loris/bc/bc-b-0125/bc-b-0125_001r.jp2/full/,150/0/default/jpg"
   },
   {
+   "id": "bl-032-003851768",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Add MS 5266",
+   "datazione": "Late 17th century-18th century",
+   "secolo": [
+    17,
+    18
+   ],
+   "lingue": [
+    "nl",
+    "en",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Drawings of birds with inscriptions in Hans Sloane's and Thomas Browne's hand",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Uccelli"
+     ],
+     "corrispondenza": "titolo: «Drawings of birds with inscriptions in Hans Sloane's and Thomas Browne's hand»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100164744059.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/032-003851768",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "miniato": true
+  },
+  {
    "id": "bl-032-002430440",
    "fonte": "bl",
    "biblioteca": "British Library",
@@ -326504,6 +326540,91 @@
    "immagini": null
   },
   {
+   "id": "bl-040-002041650",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Add MS 11943",
+   "datazione": "1st half of the 12th century",
+   "secolo": [
+    1,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Macrobius, Commentarii in Ciceronis Somnium Scipionis",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De re publica"
+     ],
+     "corrispondenza": "descrizione: «…beginning: 'Inter Platonis et Ciceronis libros quos de Re Publica ute…»"
+    },
+    {
+     "id": "macrobio",
+     "autore": "Macrobio",
+     "latino": "Macrobius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Theodosius Macrobius, Ambrosius, c 370-c 435, (Aut…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100055969304.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002041650",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "miniato": true
+  },
+  {
+   "id": "bl-040-002041690",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Add MS 11983",
+   "datazione": "c 1075-c 1125",
+   "secolo": [
+    11,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Seneca the Younger, De Clementia , Apocolocyntosis or Ludus de Morte Claudii , Proverbia , De Beneficiis ; Publilius Syrus, Proverbia Senecae Secundum Ordinem Alphabeti ; Ausonius, Versus de Duodecim Caesarum , Tetrasticha ; Epitaphium Senecae ; anonymous verses in praise of England; Marbod of Rennes, De Ornamentis Verborum ; Hermes Trismegistus, Asclepius",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "De beneficiis",
+      "De clementia",
+      "Apocolocyntosis"
+     ],
+     "corrispondenza": "autore: «Annaeus Seneca, Lucius, also known as Seneca…»"
+    },
+    {
+     "id": "ausonio",
+     "autore": "Ausonio",
+     "latino": "Ausonius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…&nbsp;&nbsp;see also ; Magnus Ausonius, Decimus, c 310-c 395, (Autho…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100064356864.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002041690",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
    "id": "bl-032-002086450",
    "fonte": "bl",
    "biblioteca": "British Library",
@@ -326682,6 +326803,39 @@
    ],
    "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100055978736.0x000001",
    "pagina": "https://searcharchives.bl.uk/catalog/032-002094779",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-001780120",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Add MS 17211",
+   "datazione": "6th century",
+   "secolo": [
+    6,
+    6
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "'Codex Nitriensis', a palimpsest, 9th century, containing Severus, Patriarch of Antioch, Treatise against John Grammatikos, chapters I-VIII, XX-XXI (Syriac) written over parts of the Gospel of Luke (Greek) (Gregory-Aland R = Gregory-Aland 027) and Euclid, Elementa (Greek) - (TM nr 61740; LDAB id 2892)",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Elementi"
+     ],
+     "corrispondenza": "titolo: «…nd R = Gregory-Aland 027) and Euclid, Elementa (Greek) - (TM nr 61…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100165144329.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-001780120",
    "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
    "immagini": null
   },
@@ -327050,6 +327204,37 @@
    "miniato": true
   },
   {
+   "id": "bl-032-003477104",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Add MS 23488",
+   "datazione": "1841 (12 Rabīʻ II 1257)",
+   "secolo": [
+    13,
+    19
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Kitāb al-suʾl wa-al-umnīyah fī taʿlīm al-furūsīyah كتاب السؤل والامنية في تعلم أعمال الفروسية ; Aqsarā’ī, Muḥammad ibn ʿĪsá أقسرائي، محمد بن عيسى",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…1238 or 1239-1295 (Author) ; Euclid, fl 300 BC (Author) ; Kindī,…»"
+    }
+   ],
+   "manifest": "https://www.qdl.qa/en/iiif/81055/vdc_100099022943.0x000001/manifest",
+   "pagina": "https://searcharchives.bl.uk/catalog/032-003477104",
+   "licenza": "British Library, copia digitale nella Qatar Digital Library (condizioni d'uso nella scheda della QDL)",
+   "immagini": null
+  },
+  {
    "id": "bl-032-002097587",
    "fonte": "bl",
    "biblioteca": "British Library",
@@ -327190,6 +327375,114 @@
    "miniato": true
   },
   {
+   "id": "bl-040-002058175",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Add MS 38818",
+   "datazione": "4th quarter of the 12th century-1st quarter of the 14th century",
+   "secolo": [
+    1,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "A collection of works by Palladius, Marcus Vitruvius Pollio, Flavius Vegetius Renatus, Justinian, St Augustine, Prosper of Aquitaine, Isidore of Seville, and Robert of Basevorn",
+   "autori": [
+    {
+     "id": "vegezio",
+     "autore": "Vegezio",
+     "latino": "Vegetius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epitoma rei militaris"
+     ],
+     "corrispondenza": "titolo: «…cus Vitruvius Pollio, Flavius Vegetius Renatus, Justinian, St August…»"
+    },
+    {
+     "id": "vitruvio",
+     "autore": "Vitruvio",
+     "latino": "Vitruvius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De architectura"
+     ],
+     "corrispondenza": "titolo: «…of works by Palladius, Marcus Vitruvius Pollio, Flavius Vegetius Rena…»"
+    },
+    {
+     "id": "palladio",
+     "autore": "Palladio",
+     "latino": "Palladius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Opus agriculturae"
+     ],
+     "corrispondenza": "titolo: «A collection of works by Palladius, Marcus Vitruvius Pollio, Fla…»"
+    },
+    {
+     "id": "agostino",
+     "autore": "Agostino",
+     "latino": "Augustinus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "titolo: «…getius Renatus, Justinian, St Augustine, Prosper of Aquitaine, Isidor…»"
+    },
+    {
+     "id": "isidoro",
+     "autore": "Isidoro di Siviglia",
+     "latino": "Isidorus Hispalensis",
+     "categoria": "medievale",
+     "opere": [
+      "Synonyma"
+     ],
+     "corrispondenza": "titolo: «…ustine, Prosper of Aquitaine, Isidore of Seville, and Robert of Basevorn»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056000380.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002058175",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002104026",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Add MS 47678",
+   "datazione": "1st quarter of the 9th century",
+   "secolo": [
+    1,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Marcus Tullius Cicero, In Catilinam, Pro Ligario, Pro rege Deiotaro, In Verrem",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Catilinarie",
+      "Verrine",
+      "Pro Ligario",
+      "Pro rege Deiotaro",
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «…Hall (Former owner) ; Tullius Cicero, Marcus, 106 BC-43 BC, (Autho…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056002648.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002104026",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
    "id": "bl-032-001962954",
    "fonte": "bl",
    "biblioteca": "British Library",
@@ -327223,6 +327516,191 @@
    "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
    "immagini": null,
    "tipo": "carta"
+  },
+  {
+   "id": "bl-032-004265011",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Add MS 89486",
+   "datazione": "12 Dec 1829-17 Dec 1829",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Charlotte Brontë, 'Characters of the Celebrated Men of the Present Time by Captain Tree'",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "titolo: «Charlotte Brontë, 'Characters of the Celebrated Men of the Present Time by Captain Tree'»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100174812255.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/032-004265011",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002039375",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Arundel MS 94",
+   "datazione": "2nd or 3rd quarter of the 12th century",
+   "secolo": [
+    2,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Flavius Josephus, Antiquitates iudaicae ; De bello judaico",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Antichità giudaiche",
+      "Guerra giudaica"
+     ],
+     "corrispondenza": "autore: «Josephus Flavius, c 37-c 100, (Author) ; &nbsp…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100059144544.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002039375",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002039379",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Arundel MS 98",
+   "datazione": "2nd or 3rd quarter of the 12th century",
+   "secolo": [
+    2,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Excerpt on Pliny the Elder from Suetonius Tranquillus, De viris illustribus ; Prefatory epistle to the Historia Naturalis , Pliny the Elder, Epistula ad Vespasianum; Pliny the Elder, Historia naturalis (books 1-18)",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "autore: «…ecundus, Caius, also known as Pliny the Elder, 23-79, (Author) ; &nbsp;&nbs…»"
+    },
+    {
+     "id": "svetonio",
+     "autore": "Svetonio",
+     "latino": "Suetonius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De viris illustribus"
+     ],
+     "corrispondenza": "autore: «…&nbsp;&nbsp;&nbsp;see also ; Suetonius Tranquillus, Caius, c 69-afte…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100058423199.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002039379",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002039449",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Arundel MS 166",
+   "datazione": "1st half of the 9th century",
+   "secolo": [
+    1,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Marcellus Empiricus, De medicamentis (extracts); Liber Teropetici; recipes and short medical texts",
+   "autori": [
+    {
+     "id": "celso",
+     "autore": "Celso",
+     "latino": "Celsus",
+     "categoria": "classico-latino",
+     "opere": [
+      "De medicina"
+     ],
+     "corrispondenza": "autore: «Cornelius Celsus, Aulus, 29 BC-37 AD, (Author)…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056659536.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002039449",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002039631",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Arundel MS 348",
+   "datazione": "12th century",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Marcus Tullius Cicero, De Inventione; Pseudo-Cicero, Rhetorica ad Herennium; Thierry of Chartres, Commentary on Cicero's De Inventione; Boethius, Commentary on Aristotle's De Interpretatione",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De inventione",
+      "Rhetorica ad Herennium"
+     ],
+     "corrispondenza": "titolo: «Marcus Tullius Cicero, De Inventione; Pseudo-Cicero…»"
+    },
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…ry on Cicero's De Inventione; Boethius, Commentary on Aristotle's De…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056659868.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002039631",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
   },
   {
    "id": "bl-032-002409588",
@@ -327320,6 +327798,614 @@
    "immagini": null
   },
   {
+   "id": "bl-040-002237097",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Burney MS 216",
+   "datazione": "3rd quarter of the 12th century",
+   "secolo": [
+    3,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Paulus Orosius, Historia Adversus Paganos (imperfect); Pseudo-Dares Phrygius, De Excidio Troiae Historia ; Constantinus Africanus, De Melancholia; Peter Abelard, Carmen ad Astralabium",
+   "autori": [
+    {
+     "id": "darete",
+     "autore": "Darete Frigio",
+     "latino": "Dares Phrygius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De excidio Troiae historia"
+     ],
+     "corrispondenza": "autore: «…&nbsp;&nbsp;&nbsp;see also ; Dares Phrygius, priest of Hephaestus and wri…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056012610.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002237097",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "miniato": true
+  },
+  {
+   "id": "bl-040-002237156",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Burney MS 275",
+   "datazione": "1309-1316",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Scholastic miscellany",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De inventione",
+      "Rhetorica ad Herennium"
+     ],
+     "corrispondenza": "descrizione: «…struction ). ; ff. 120r-143r: Cicero, Institutiones ( Institutions…»"
+    },
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "descrizione: «…ents: ; ff. 3r-93r: Priscian (Priscianus Caesariensis), Institutiones…»"
+    },
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commenti ad Aristotele e Porfirio"
+     ],
+     "corrispondenza": "descrizione: «…Herennius ). ; ff. 166r-169v: Boethius's translation of Porphyry's I…»"
+    },
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Categorie",
+      "De interpretatione",
+      "Retorica"
+     ],
+     "corrispondenza": "descrizione: «…phyry's Isagoge in Categorias Aristotelis ( Introduction to Aristotle's…»"
+    },
+    {
+     "id": "porfirio",
+     "autore": "Porfirio",
+     "latino": "Porphyrius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Isagoge"
+     ],
+     "corrispondenza": "descrizione: «…9v: Boethius's translation of Porphyry's Isagoge in Categorias Arist…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100057739791.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002237156",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "musica": true
+  },
+  {
+   "id": "bl-040-001103793",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Cotton MS Cleopatra D I",
+   "datazione": "1st quarter of the 11th century-12th century",
+   "secolo": [
+    1,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Marcus Vitruvius Pollio, De Architectura ; Extracts from Proper of Aquitaine, Epigrammata ex Sententiis Sancti Augustini; Epitaph of Vitalis; Vegetius, De Re Militari; Solinus, Collectanea Rerum Memorabilium",
+   "autori": [
+    {
+     "id": "vegezio",
+     "autore": "Vegezio",
+     "latino": "Vegetius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epitoma rei militaris"
+     ],
+     "corrispondenza": "titolo: «…ugustini; Epitaph of Vitalis; Vegetius, De Re Militari; Solinus, Col…»"
+    },
+    {
+     "id": "vitruvio",
+     "autore": "Vitruvio",
+     "latino": "Vitruvius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De architectura"
+     ],
+     "corrispondenza": "titolo: «Marcus Vitruvius Pollio, De Architectura ; Ext…»"
+    },
+    {
+     "id": "solino",
+     "autore": "Solino",
+     "latino": "Solinus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Collectanea rerum memorabilium"
+     ],
+     "corrispondenza": "titolo: «…is; Vegetius, De Re Militari; Solinus, Collectanea Rerum Memorabili…»"
+    },
+    {
+     "id": "agostino",
+     "autore": "Agostino",
+     "latino": "Augustinus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "titolo: «…grammata ex Sententiis Sancti Augustini; Epitaph of Vitalis; Vegetius…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100066369987.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-001103793",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-001101594",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Cotton MS Julius A II",
+   "datazione": "Mid-11th century to 2nd half of the 12th century",
+   "secolo": [
+    2,
+    12
+   ],
+   "lingue": [
+    "en",
+    "fr",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Bede, De temporum ratione ; Ælfric, Grammar and Glossary ; Disticha Catonis",
+   "autori": [
+    {
+     "id": "disticha-catonis",
+     "autore": "Disticha Catonis",
+     "latino": "Disticha Catonis",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Bede, De temporum ratione ; Ælfric, Grammar and Glossary ; Disticha Catonis»"
+    },
+    {
+     "id": "beda",
+     "autore": "Beda",
+     "latino": "Beda Venerabilis",
+     "categoria": "medievale",
+     "opere": [
+      "De temporum ratione"
+     ],
+     "corrispondenza": "titolo: «Bede, De temporum ratione ; Ælfric, Grammar and Glossary ; Disticha Catonis»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100060432971.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-001101594",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-001102604",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Cotton MS Nero A VII",
+   "datazione": "c 1075-c 1571",
+   "secolo": [
+    11,
+    16
+   ],
+   "lingue": [
+    "ga",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Lanfranc, Epistolae ; Anselm of Canterbury, Epistolae ; Henry of Saltrey, Tractatus de Purgatorio Sancti Patricii; Alexander of Canterbury, Liber ex Dictis Beati Anselmi; Bretha Nemed toísech",
+   "autori": [
+    {
+     "id": "giustino",
+     "autore": "Giustino",
+     "latino": "Iustinus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epitoma historiarum Philippicarum"
+     ],
+     "corrispondenza": "descrizione: «…Histories of King Philip) by Iunianus Iustinus (fl. 3rd century). The third…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100062968260.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-001102604",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "miniato": true
+  },
+  {
+   "id": "bl-040-001102832",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Cotton MS Otho A VI",
+   "datazione": "2nd or 3rd quarter of the 10th century",
+   "secolo": [
+    2,
+    10
+   ],
+   "lingue": [
+    "en",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Old English prose and verse translation of Boethius, De consolatione philosophiae ; Aelred of Rievaulx, Vita Sancti Edwardi Regis et Confessoris ; fragment of an account of a pilgrimage to Edward the Confessor's shrine",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "titolo: «…rose and verse translation of Boethius, De consolatione philosophiae…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100064361917.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-001102832",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-001102234",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Cotton MS Tiberius C I",
+   "datazione": "11th century-12th century",
+   "secolo": [
+    11,
+    12
+   ],
+   "lingue": [
+    "en",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Cicero, Aratea with scholia; Germano-Roman Pontifical",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Cicero, Aratea with scholia; Germano-Roman Pontifical»"
+    },
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "descrizione: «…onomical texts; excerpts from Pliny's Natural History, Martianus…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100066370052.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-001102234",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-001103234",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Cotton MS Vespasian B X",
+   "datazione": "4th quarter of the 10th century-4th quarter of the 13th century",
+   "secolo": [
+    4,
+    13
+   ],
+   "lingue": [
+    "fr",
+    "en",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Benedeit, 'Voyage of St Brendan'; Navigatio sancti Brendani ; Vita Longini martyris; De quindecim signis diei judicii; Robert Kilwardby, De ortu scientiarum ; Pseudo-Aristotle, De morte Aristotelis sive de pomo ; Cosmographia (Cosmography of Aethicus Ister) .",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…; Pseudo-Aristotle, De morte Aristotelis sive de pomo ; Cosmographia (…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100063650401.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-001103234",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-001103264",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Cotton MS Vespasian B XXV",
+   "datazione": "1st quarter of the 12th century",
+   "secolo": [
+    1,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Solinus, Collectanea Rerum Mirabilium ; Priscian, De Situ Orbis ; Pseudo-Dares, De Excidio Troiae Historia ; Pseudo-Jerome, De Mobilitate Mentis Humanae ; Prophetia Sybillae; Pseudo-Ausonius, Sententiae Septem Sapientum ; (?) Segardus junior of St Omer, De Miseria Hominis ; Roger of Caen, De Contemptu Mundi (excerpt); Hildebert of Lavardin, De Mysterio Missae (excerpts); De Tribus Mortibus ; Pseud",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Periegesis"
+     ],
+     "corrispondenza": "autore: «…&nbsp;&nbsp;&nbsp;see also ; Priscian, fl 500-530, (Author)»"
+    },
+    {
+     "id": "solino",
+     "autore": "Solino",
+     "latino": "Solinus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…&nbsp;&nbsp;&nbsp;see also ; Julius Solinus, Gaius, fl 3rd century , (Aut…»"
+    },
+    {
+     "id": "darete",
+     "autore": "Darete Frigio",
+     "latino": "Dares Phrygius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De excidio Troiae historia"
+     ],
+     "corrispondenza": "autore: «Dares Phrygius, priest of Hephaestus and wri…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100062969167.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-001103264",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-001103301",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Cotton MS Vespasian D VI",
+   "datazione": "Mid-10th century - late 11th century",
+   "secolo": [
+    10,
+    11
+   ],
+   "lingue": [
+    "en",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Book of Proverbs ( Parabole Salomonis ); Alcuin, De virtutibus et vitiis ; note on Abbot Macarius; ‘Kentish hymn’; note on the ages of the world; 'Kentish Psalm' (a paraphrase of Psalm 50); Disticha Catonis ; hymns for St Augustine of Canterbury and others; Stephen's Vita S Wilfridi",
+   "autori": [
+    {
+     "id": "disticha-catonis",
+     "autore": "Disticha Catonis",
+     "latino": "Disticha Catonis",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…' (a paraphrase of Psalm 50); Disticha Catonis ; hymns for St Augustine of C…»"
+    },
+    {
+     "id": "alcuino",
+     "autore": "Alcuino",
+     "latino": "Alcuinus",
+     "categoria": "medievale",
+     "opere": [
+      "De virtutibus et vitiis"
+     ],
+     "corrispondenza": "titolo: «…verbs ( Parabole Salomonis ); Alcuin, De virtutibus et vitiis ; no…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100101103367.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-001103301",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-001103327",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Cotton MS Vespasian D XI",
+   "datazione": "2nd half of the 12th century",
+   "secolo": [
+    2,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Lawrence of Durham, Consolatio de Morte Amici ; Hypognosticon ; Oratio pro Laurentio ; Oratio pro Naufragis ; Oratio pro Iuvenibus Compeditis (imperfect); Oratio pro Milone (imperfect); Maledictio",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Pro Milone"
+     ],
+     "corrispondenza": "titolo: «…ompeditis (imperfect); Oratio pro Milone (imperfect); Maledictio»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100062419968.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-001103327",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-001103342",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Cotton MS Vespasian D XIV",
+   "datazione": "Mid 9th century-12th century",
+   "secolo": [
+    9,
+    12
+   ],
+   "lingue": [
+    "en",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "A collection of Homilies; Isidore of Seville, Synonyma; Boethius, De consolatione philosophie (excerpts); Fides sancti Ambrosii episcopi; Fides sancti Gregorii pape; Fides beati Gregorii Neocesariae ; Pelagius, Libellus fidei calculation for the year 912.",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "titolo: «…Isidore of Seville, Synonyma; Boethius, De consolatione philosophie…»"
+    },
+    {
+     "id": "ambrogio",
+     "autore": "Ambrogio",
+     "latino": "Ambrosius",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "titolo: «…phie (excerpts); Fides sancti Ambrosii episcopi; Fides sancti Gregor…»"
+    },
+    {
+     "id": "isidoro",
+     "autore": "Isidoro di Siviglia",
+     "latino": "Isidorus Hispalensis",
+     "categoria": "medievale",
+     "opere": [
+      "Synonyma"
+     ],
+     "corrispondenza": "titolo: «A collection of Homilies; Isidore of Seville, Synonyma; Boethius, De conso…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100101103375.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-001103342",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-001103368",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Cotton MS Vespasian D XX",
+   "datazione": "mid-10th century-late 12th century",
+   "secolo": [
+    10,
+    12
+   ],
+   "lingue": [
+    "en",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Fragments of Ovid's Metamorphoses on medieval endleaves; Penitential manual; Confessional prayer; charm against toothache.",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Metamorfosi"
+     ],
+     "corrispondenza": "titolo: «Fragments of Ovid's Metamorphoses on medieval e…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100060438502.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-001103368",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-001103004",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Cotton MS Vitellius C III",
+   "datazione": "3rd quarter of the 9th century-1st half of the 17th century",
+   "secolo": [
+    1,
+    17
+   ],
+   "lingue": [
+    "fr",
+    "en",
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "(1) Old English Illustrated Herbal and Medicina de quadrupedibus in Old English; (2) Peter of Poitiers, Compendium in Genealogia Christi ; (3) Macrobius, Saturnalia , books i–ii; (4) notes by William Harvey",
+   "autori": [
+    {
+     "id": "macrobio",
+     "autore": "Macrobio",
+     "latino": "Macrobius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Saturnalia"
+     ],
+     "corrispondenza": "titolo: «…m in Genealogia Christi ; (3) Macrobius, Saturnalia , books i–ii; (4)…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100059906235.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-001103004",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "miniato": true
+  },
+  {
    "id": "bl-032-003315581",
    "fonte": "bl",
    "biblioteca": "British Library",
@@ -327334,7 +328420,7 @@
     "ar"
    ],
    "lingua_dedotta": false,
-   "titolo": "Geometrical texts related to Euclid's Elements",
+   "titolo": "Geometrical texts related to Euclid's Elements ; Taḥrīr uṣūl al-handasah wa-al-ḥisāb تحرير أصول الهندسة والحساب ; Euclid أقليدس ; Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad طوسي، نصير الدين محمد بن محمد ; Three short texts related to Euclid's Elements ; Ziyādāt fī maqālah al-khāmisah min kitāb Uqlīdis زيادات في المقالة الخامسة من كتاب أقليدس ; Jawharī, al-‘Abbās ibn Sa‘īd جوهري، العباس بن سعيد",
    "autori": [
     {
      "id": "euclide",
@@ -327597,6 +328683,2060 @@
    "miniato": true
   },
   {
+   "id": "bl-040-002045887",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 59",
+   "datazione": "2nd or 3rd quarter of the 12th century",
+   "secolo": [
+    2,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Pseudo-Hegesippus, Historia Iosephi de Bello Iudaico et Excidio Urbis Hierosolymitanae",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Guerra giudaica"
+     ],
+     "corrispondenza": "titolo: «Pseudo-Hegesippus, Historia Iosephi de Bello Iudaico et Excidio Urbis Hierosolymitanae»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100059466858.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002045887",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002045932",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 104",
+   "datazione": "1st quarter of the 13th century",
+   "secolo": [
+    1,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Stephen Langton, Expositio Libri Duodecim Prophetarum ; Gregory the Great, De C ura Pastorali ; Richard of St-Victor, Allegoriae Novi Testamenti and De Oratione Dominica ; Innocent III , De Missarum Mysteriis and Sermo VI",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "autore: «…Harley, collector of art and natural history specimens and patron of arts…»"
+    },
+    {
+     "id": "gregorio-magno",
+     "autore": "Gregorio Magno",
+     "latino": "Gregorius Magnus",
+     "categoria": "cristiano",
+     "opere": [
+      "Regola pastorale"
+     ],
+     "corrispondenza": "titolo: «…Libri Duodecim Prophetarum ; Gregory the Great, De C ura Pastorali ; Richard…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100059913789.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002045932",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002046089",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 261",
+   "datazione": "4th quarter of the 12th century-1st quarter of the 13th century",
+   "secolo": [
+    1,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "William of Malmesbury, Gesta Regum Anglorum and Gesta Pontificum Anglorum ; Henry of Saltrey, Tractatus de Purgatorio Sancti Patricii",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…;see also ; Juventinus, Albus Ovidius, (Author) ; &nbsp;&nbsp;&nbsp…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100059309165.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002046089",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002046378",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 549",
+   "datazione": "3rd quarter of the 12th century",
+   "secolo": [
+    3,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Boethius, De institutione arithmetica",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De institutione arithmetica"
+     ],
+     "corrispondenza": "autore: «Boethius, Anicius Manlius Torquatus Se…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056057854.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002046378",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "miniato": true
+  },
+  {
+   "id": "bl-040-002046432",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 603",
+   "datazione": "1st half of the 11th century",
+   "secolo": [
+    1,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Psalter (the 'Harley Psalter')",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "autore: «…Harley, collector of art and natural history specimens and patron of arts…»"
+    },
+    {
+     "id": "bibbia",
+     "autore": "Bibbia",
+     "latino": "Biblia",
+     "categoria": "cristiano",
+     "opere": [
+      "Salterio"
+     ],
+     "corrispondenza": "titolo: «Psalter (the 'Harley Psalter')»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100165169769.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002046432",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "miniato": true
+  },
+  {
+   "id": "bl-040-002046462",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 633",
+   "datazione": "4th quarter of the 12th century",
+   "secolo": [
+    4,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Pseudo-Anastasius Bibliothecarius, Liber pontificalis ; Pseudo-Isidore, Decretales pseudo-Isidorianae",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "autore: «…Harley, collector of art and natural history specimens and patron of arts…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100059468560.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002046462",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002046694",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 865",
+   "datazione": "4th quarter of the 11th century",
+   "secolo": [
+    4,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ambrose, De Mysteriis and De Sacramentis ; Jerome, Contra Jovinianum ; and other theological works",
+   "autori": [
+    {
+     "id": "giamblico",
+     "autore": "Giamblico",
+     "latino": "Iamblichus",
+     "categoria": "classico-greco",
+     "opere": [
+      "De mysteriis"
+     ],
+     "corrispondenza": "titolo: «Ambrose, De Mysteriis and De Sacramentis ; Jerome,…»"
+    },
+    {
+     "id": "girolamo",
+     "autore": "Girolamo",
+     "latino": "Hieronymus",
+     "categoria": "cristiano",
+     "opere": [
+      "Contro Gioviniano"
+     ],
+     "corrispondenza": "autore: «…&nbsp;&nbsp;&nbsp;see also ; Jerome, Saint, c 345-420, (Author) ;…»"
+    },
+    {
+     "id": "ambrogio",
+     "autore": "Ambrogio",
+     "latino": "Ambrosius",
+     "categoria": "cristiano",
+     "opere": [
+      "De mysteriis",
+      "De sacramentis"
+     ],
+     "corrispondenza": "autore: «Ambrose of Milan, Saint, Archbishop of Milan,…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056059068.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002046694",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "miniato": true
+  },
+  {
+   "id": "bl-040-002047163",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 1334",
+   "datazione": "2nd half of the 12th century",
+   "secolo": [
+    2,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Pseudo-Hegesippus, Historia Iosephi de Bello Iudaico et Excidio Urbis Hierosolymitanae",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Guerra giudaica"
+     ],
+     "corrispondenza": "titolo: «Pseudo-Hegesippus, Historia Iosephi de Bello Iudaico et Excidio Urbis Hierosolymitanae»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100059307472.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002047163",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002048439",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 2608",
+   "datazione": "2nd or 3rd quarter of the 12th century",
+   "secolo": [
+    2,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Publius Papinius Statius, Thebais",
+   "autori": [
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tebaide"
+     ],
+     "corrispondenza": "autore: «…&nbsp;&nbsp;&nbsp;see also ; Statius Papinius, Publius, c 45-c 96,…»"
+    },
+    {
+     "id": "sedulio",
+     "autore": "Sedulio",
+     "latino": "Sedulius",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «Sedulius, fl 450, (Author) ; &nbsp;&nb…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100059308782.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002048439",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002048455",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 2624",
+   "datazione": "1st quarter of the 12th century",
+   "secolo": [
+    1,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Cicero, De inventione ; Pseudo-Cicero, Rhetorica ad Herennium",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De inventione",
+      "Rhetorica ad Herennium"
+     ],
+     "corrispondenza": "autore: «…nbsp;&nbsp;see also ; Tullius Cicero, Marcus, 106 BC-43 BC, (Autho…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056035271.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002048455",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002048468",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 2637",
+   "datazione": "9th century-10th century",
+   "secolo": [
+    9,
+    10
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Cassiodorus, Oratio ( Institutiones 1, 32); Cassiodorus, Institutiones, book 2; added chants; Helisachar, Epistola ad Nibridium archiepiscopum Narbonensem; a list of verbs; Smaragdus, Liber in Partibus Donati",
+   "autori": [
+    {
+     "id": "donato",
+     "autore": "Donato",
+     "latino": "Donatus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…Smaragdus, Liber in Partibus Donati»"
+    },
+    {
+     "id": "cassiodoro",
+     "autore": "Cassiodoro",
+     "latino": "Cassiodorus",
+     "categoria": "cristiano",
+     "opere": [
+      "Institutiones"
+     ],
+     "corrispondenza": "autore: «Cassiodorus, Flavius Magnus Aurelius Sena…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056035277.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002048468",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "musica": true
+  },
+  {
+   "id": "bl-040-002048483",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 2652",
+   "datazione": "4th quarter of the 11th century",
+   "secolo": [
+    4,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Cicero, Somnium Scipionis ; Ambrosius Theodosius Macrobius, Commentary on Cicero's Somnium Scipionis ; Calcidius, Commentary on Plato's Timaeus",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Somnium Scipionis",
+      "De re publica"
+     ],
+     "corrispondenza": "autore: «…nbsp;&nbsp;see also ; Tullius Cicero, Marcus, 106 BC-43 BC, (Autho…»"
+    },
+    {
+     "id": "macrobio",
+     "autore": "Macrobio",
+     "latino": "Macrobius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…4 (Former owner) ; Theodosius Macrobius, Ambrosius, c 370-c 435, (Aut…»"
+    },
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [
+      "Timeo"
+     ],
+     "corrispondenza": "descrizione: «…(4th century)’s commentary of Plato (b. 429 BC, d. 347 BC)’s dial…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100059309874.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002048483",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002048490",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 2659",
+   "datazione": "2nd or 3rd quarter of the 12th century",
+   "secolo": [
+    2,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Lucius Annaeus Seneca, Epistolae morales ad Lucilium ; Pseudo-Seneca, Proverbia, Epistolae Senecae ad Paulum et Pauli ad Senecam; Epitaphium Senecae",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epistulae ad Lucilium"
+     ],
+     "corrispondenza": "autore: «Annaeus Seneca, Lucius, also known as Seneca…»"
+    },
+    {
+     "id": "girolamo",
+     "autore": "Girolamo",
+     "latino": "Hieronymus",
+     "categoria": "cristiano",
+     "opere": [
+      "Lettere"
+     ],
+     "corrispondenza": "descrizione: «…auli ad Senecam , preceded by Jerome’s prologue, beginning: ‘Credo…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056035309.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002048490",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "miniato": true
+  },
+  {
+   "id": "bl-040-002048497",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 2666",
+   "datazione": "2nd quarter of the 9th century",
+   "secolo": [
+    2,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Sextus Iulius Frontinus, Strategemata",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "autore: «…Harley, collector of art and natural history specimens and patron of arts…»"
+    },
+    {
+     "id": "frontino",
+     "autore": "Frontino",
+     "latino": "Frontinus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Strategemata"
+     ],
+     "corrispondenza": "titolo: «Sextus Iulius Frontinus, Strategemata»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056035465.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002048497",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002048505",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 2674",
+   "datazione": "3rd quarter of the 9th century-10th century",
+   "secolo": [
+    3,
+    10
+   ],
+   "lingue": [
+    "en",
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Priscian, Institutiones grammaticae",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "autore: «…Harley, collector of art and natural history specimens and patron of arts…»"
+    },
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "titolo: «Priscian, Institutiones grammaticae»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056035537.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002048505",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002048516",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 2685",
+   "datazione": "4th quarter of the 9th century",
+   "secolo": [
+    4,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Boethius, Consolatio philosophiae; Fulgentius Mythographus, Mythologiae; Fulgentius Mythographus, Expositio Virgilianae Continentiae; Martianus Capella, De nuptiis Philologiae et Mercurii",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Boethius, Anicius Manlius Torquatus Se…»"
+    },
+    {
+     "id": "marziano-capella",
+     "autore": "Marziano Capella",
+     "latino": "Martianus Capella",
+     "categoria": "classico-latino",
+     "opere": [
+      "De nuptiis Philologiae et Mercurii"
+     ],
+     "corrispondenza": "autore: «…&nbsp;&nbsp;&nbsp;see also ; Martianus Capella, fl 410-420, (Author) ; &nbsp…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056035808.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002048516",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-001612920",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 2688",
+   "datazione": "9th century-12th century",
+   "secolo": [
+    9,
+    12
+   ],
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "A collection of fragments including Liutprand of Cremona, Antapodosis; a Miscellany; Quintus Horatius Flaccus Epodes; Quintus Horatius Flaccus Carmen saeculare; Quintus Horatius Flaccus Epistles; Quintus Horatius Flaccus Satires; Priscian, Institutiones grammaticae, Boethius, De musica",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epodi",
+      "Carmen saeculare",
+      "Satire"
+     ],
+     "corrispondenza": "titolo: «…odosis; a Miscellany; Quintus Horatius Flaccus Epodes; Quintus Horat…»"
+    },
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "titolo: «…tus Horatius Flaccus Satires; Priscian, Institutiones grammaticae, B…»"
+    },
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De institutione musica"
+     ],
+     "corrispondenza": "titolo: «…n, Institutiones grammaticae, Boethius, De musica»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100059909473.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-001612920",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "musica": true
+  },
+  {
+   "id": "bl-040-002048531",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 2700",
+   "datazione": "12th century",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Martial, Epigrams",
+   "autori": [
+    {
+     "id": "marziale",
+     "autore": "Marziale",
+     "latino": "Martialis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epigrammi"
+     ],
+     "corrispondenza": "autore: «Valerius Martialis, Marcus, c 41-c 102 , (Author…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100059310143.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002048531",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002048544",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 2713",
+   "datazione": "9th century-12th century",
+   "secolo": [
+    9,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Isidore of Seville, Etymologiae (excerpts from books 1-2); Glosulae super Priscianum minorem ; Boethius's commentary on Porphyry's Isagoge",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "descrizione: «…Priscianum minorem (Gloss on Priscianus Minor) [see Kneepkens, 'Maste…»"
+    },
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Boethius, Anicius Manlius Torquatus Se…»"
+    },
+    {
+     "id": "isidoro",
+     "autore": "Isidoro di Siviglia",
+     "latino": "Isidorus Hispalensis",
+     "categoria": "medievale",
+     "opere": [
+      "Etimologie"
+     ],
+     "corrispondenza": "autore: «…&nbsp;&nbsp;&nbsp;see also ; Isidore of Seville, Saint, Bishop of Seville, c…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056036209.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002048544",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002048550",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 2719",
+   "datazione": "3rd quarter of the 9th century",
+   "secolo": [
+    3,
+    9
+   ],
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Nonius Marcellus, De Compendiosa Doctrina, with glosses",
+   "autori": [
+    {
+     "id": "nonio",
+     "autore": "Nonio Marcello",
+     "latino": "Nonius Marcellus",
+     "categoria": "classico-latino",
+     "opere": [
+      "De compendiosa doctrina"
+     ],
+     "corrispondenza": "autore: «Nonius Marcellus, Roman grammarian, fl. early…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056036405.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002048550",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002048556",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 2725",
+   "datazione": "4th quarter of the 9th century",
+   "secolo": [
+    4,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Quintus Horatius Flaccus, Opera",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Odi",
+      "Epodi",
+      "Carmen saeculare",
+      "Satire",
+      "Epistole",
+      "Ars poetica"
+     ],
+     "corrispondenza": "autore: «Horatius Flaccus, Quintus, also known…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056036869.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002048556",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002048560",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 2729",
+   "datazione": "4th quarter of the 11th century",
+   "secolo": [
+    4,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Frontinus, Strategemata , Paul the Deacon, Historia Romana",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "autore: «…Harley, collector of art and natural history specimens and patron of arts…»"
+    },
+    {
+     "id": "eutropio",
+     "autore": "Eutropio",
+     "latino": "Eutropius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Breviarium ab urbe condita"
+     ],
+     "corrispondenza": "autore: «…y, 1083-1539 (Former owner) ; Eutropius, Flavius, fl 370, (Author) ;…»"
+    },
+    {
+     "id": "frontino",
+     "autore": "Frontino",
+     "latino": "Frontinus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Strategemata"
+     ],
+     "corrispondenza": "titolo: «Frontinus, Strategemata , Paul the Deacon, Historia Romana»"
+    },
+    {
+     "id": "paolo-diacono",
+     "autore": "Paolo Diacono",
+     "latino": "Paulus Diaconus",
+     "categoria": "medievale",
+     "opere": [
+      "Historia Romana"
+     ],
+     "corrispondenza": "titolo: «Frontinus, Strategemata , Paul the Deacon, Historia Romana»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100063647996.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002048560",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002048567",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 2736",
+   "datazione": "2nd quarter of the 9th century",
+   "secolo": [
+    2,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Marcus Tullius Cicero, De oratore; Lupus of Ferrières, Carmina 8; excerpts from Venantius Fortunatus's Carmina",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De oratore"
+     ],
+     "corrispondenza": "autore: «…nbsp;&nbsp;see also ; Tullius Cicero, Marcus, 106 BC-43 BC, (Autho…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056038199.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002048567",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002048594",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 2763",
+   "datazione": "11th century",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Priscian: Institutiones grammaticae (1-16); Ausonius: Idyllium 20",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "autore: «…&nbsp;&nbsp;&nbsp;see also ; Priscian, fl 500-530, (Author) ; &nbsp…»"
+    },
+    {
+     "id": "ausonio",
+     "autore": "Ausonio",
+     "latino": "Ausonius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Magnus Ausonius, Decimus, c 310-c 395, (Autho…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100059310831.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002048594",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "miniato": true
+  },
+  {
+   "id": "bl-040-002048598",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 2767",
+   "datazione": "1st quarter of the 9th century",
+   "secolo": [
+    1,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Vitruvius, De Architectura",
+   "autori": [
+    {
+     "id": "vitruvio",
+     "autore": "Vitruvio",
+     "latino": "Vitruvius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De architectura"
+     ],
+     "corrispondenza": "autore: «Vitruvius Pollio, Marcus, fl 40 BC, (Au…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056038850.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002048598",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002048728",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 2897",
+   "datazione": "c 1410-c 1440",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "fr",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Breviary (the 'Breviary of John the Fearless and Margaret of Bavaria')",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "autore: «…Harley, collector of art and natural history specimens and patron of arts…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100161511640.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002048728",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002048823",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 2992",
+   "datazione": "Late 9th century-Early 10th century",
+   "secolo": [
+    9,
+    10
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Gregorian sacramentary",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "autore: «…Harley, collector of art and natural history specimens and patron of arts…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056047954.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002048823",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002048903",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 3072",
+   "datazione": "3rd quarter of the 9th century-11th century",
+   "secolo": [
+    3,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Servius, Commentary on Virgil's Eclogues; Sedulius, Carmen Paschale ; Hymns; Arator, Historia Apostolica ; Pirminius, sermons; Prudentius, Cathemerinon ; Servius, Commentary on Georgics; Priscian, Institutio de Nomine et Pronomine et Verbo (imperfect)",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…&nbsp;&nbsp;&nbsp;see also ; Priscian, fl 500-530, (Author) ; &nbsp…»"
+    },
+    {
+     "id": "servio",
+     "autore": "Servio",
+     "latino": "Servius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Servius, Commentary on Virgil's Eclog…»"
+    },
+    {
+     "id": "prudenzio",
+     "autore": "Prudenzio",
+     "latino": "Prudentius",
+     "categoria": "cristiano",
+     "opere": [
+      "Cathemerinon"
+     ],
+     "corrispondenza": "autore: «…&nbsp;&nbsp;&nbsp;see also ; Prudentius, Aurelius Clemens, 348-c 405,…»"
+    },
+    {
+     "id": "sedulio",
+     "autore": "Sedulio",
+     "latino": "Sedulius",
+     "categoria": "cristiano",
+     "opere": [
+      "Carmen paschale"
+     ],
+     "corrispondenza": "titolo: «…Virgil's Eclogues; Sedulius, Carmen Paschale ; Hymns; Arator, Historia Apo…»"
+    },
+    {
+     "id": "aratore",
+     "autore": "Aratore",
+     "latino": "Arator",
+     "categoria": "cristiano",
+     "opere": [
+      "De actibus apostolorum"
+     ],
+     "corrispondenza": "titolo: «…men Paschale ; Hymns; Arator, Historia Apostolica ; Pirminius, sermons; Prudent…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100057809820.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002048903",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002048926",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 3095",
+   "datazione": "2nd quarter of the 10th century",
+   "secolo": [
+    2,
+    10
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Vita Boethii ; Cassiodorus Senator, Anecdoton Holderi ; Boethius, De consolatione philosophiae ; Bovo II of Corvey, Commentary on Boethius's De consolatione philosophiae ; Boethius, De consolatione philosophiae (excerpt); List of Byzantine offices; Eugenius of Toledo, Libellus carminum (excerpt); Notated Greek Cherubic Hymn (Latin translation); Boethius, De sancta trinitate ; Utrum Pater et Filius",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae",
+      "Opuscula sacra"
+     ],
+     "corrispondenza": "autore: «Boethius, Anicius Manlius Torquatus Se…»"
+    },
+    {
+     "id": "cassiodoro",
+     "autore": "Cassiodoro",
+     "latino": "Cassiodorus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…&nbsp;&nbsp;&nbsp;see also ; Cassiodorus, Flavius Magnus Aurelius Sena…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056053466.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002048926",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "musica": true
+  },
+  {
+   "id": "bl-040-002049072",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 3241",
+   "datazione": "4th quarter of the 12th century",
+   "secolo": [
+    4,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Peter Lombard , Sententiae",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "autore: «…Harley, collector of art and natural history specimens and patron of arts…»"
+    },
+    {
+     "id": "pietro-lombardo",
+     "autore": "Pietro Lombardo",
+     "latino": "Petrus Lombardus",
+     "categoria": "medievale",
+     "opere": [
+      "Sentenze"
+     ],
+     "corrispondenza": "titolo: «Peter Lombard , Sententiae»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100059347692.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002049072",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002049207",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 3376",
+   "datazione": "975-1050",
+   "secolo": [
+    10,
+    11
+   ],
+   "lingue": [
+    "en",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Latin-Old English Glossary",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "autore: «…Harley, collector of art and natural history specimens and patron of arts…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100058098560.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002049207",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002049340",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 3509",
+   "datazione": "12th century",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Cicero, De inventione; Boethius, Topica ; Pseudo-Cicero, Rhetorica ad Herennium",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De inventione",
+      "Rhetorica ad Herennium"
+     ],
+     "corrispondenza": "autore: «…nbsp;&nbsp;see also ; Tullius Cicero, Marcus, 106 BC-43 BC, (Autho…»"
+    },
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Boethius, Anicius Manlius Torquatus Se…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100064919859.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002049340",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002049366",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 3534",
+   "datazione": "4th quarter of the 12th century",
+   "secolo": [
+    4,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Horace, Carmina , Epodae , Carmen saeculare , Ars poetica , Epistulae, Sermones",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Odi",
+      "Carmen saeculare",
+      "Satire",
+      "Epistole",
+      "Ars poetica",
+      "Epodi"
+     ],
+     "corrispondenza": "autore: «Horatius Flaccus, Quintus, also known…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056054259.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002049366",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002049662",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 3826",
+   "datazione": "late 10th-early 11th century",
+   "secolo": [
+    10,
+    11
+   ],
+   "lingue": [
+    "en",
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Alcuin, De orthographia ; Bede, De orthographia ; Abbo of Saint-Germain-des-Prés, Bella Parisiacae urbis ; and other grammatical texts",
+   "autori": [
+    {
+     "id": "giovenale",
+     "autore": "Giovenale",
+     "latino": "Iuvenalis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Satire"
+     ],
+     "corrispondenza": "descrizione: «…metrical terms and glosses to Juvenal's Satirae ; ; f. 168r: blank;…»"
+    },
+    {
+     "id": "marziano-capella",
+     "autore": "Marziano Capella",
+     "latino": "Martianus Capella",
+     "categoria": "classico-latino",
+     "opere": [
+      "De nuptiis Philologiae et Mercurii"
+     ],
+     "corrispondenza": "descrizione: «…pidibus ...'; ; ff. 87r-149r: Martianus Capella, De nuptiis Philologiae et Me…»"
+    },
+    {
+     "id": "beda",
+     "autore": "Beda",
+     "latino": "Beda Venerabilis",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "titolo: «Alcuin, De orthographia ; Bede, De orthographia ; Abbo of Sa…»"
+    },
+    {
+     "id": "alcuino",
+     "autore": "Alcuino",
+     "latino": "Alcuinus",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "titolo: «Alcuin, De orthographia ; Bede, De o…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100058107372.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002049662",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002049695",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 3859",
+   "datazione": "Early 12th century",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la",
+    "cy"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Vegetius, De rei militari ; Macrobius, Saturnalia ; Pseudo-Sallust, Investiva in Ciceronem ; Historia Brittonum and Annales Cambriae ; Augustine, De heresibus ; Solinus, Collectanea rerum memorabilium ; Pseudo-Ovid, Cantus avium ; De bestiis ; Cosmographia ; Pollio, De architectura",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…Pseudo-Sallust, Investiva in Ciceronem ; Historia Brittonum and Anna…»"
+    },
+    {
+     "id": "macrobio",
+     "autore": "Macrobio",
+     "latino": "Macrobius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Saturnalia"
+     ],
+     "corrispondenza": "titolo: «Vegetius, De rei militari ; Macrobius, Saturnalia ; Pseudo-Sallust,…»"
+    },
+    {
+     "id": "vegezio",
+     "autore": "Vegezio",
+     "latino": "Vegetius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Vegetius, De rei militari ; Macrobius,…»"
+    },
+    {
+     "id": "vitruvio",
+     "autore": "Vitruvio",
+     "latino": "Vitruvius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De architectura"
+     ],
+     "corrispondenza": "titolo: «…tiis ; Cosmographia ; Pollio, De architectura»"
+    },
+    {
+     "id": "solino",
+     "autore": "Solino",
+     "latino": "Solinus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Collectanea rerum memorabilium"
+     ],
+     "corrispondenza": "autore: «…&nbsp;&nbsp;&nbsp;see also ; Julius Solinus, Gaius, fl 3rd century , (Aut…»"
+    },
+    {
+     "id": "agostino",
+     "autore": "Agostino",
+     "latino": "Augustinus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…&nbsp;&nbsp;&nbsp;see also ; Augustine of Hippo, Saint, Bishop of Hi…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056055489.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002049695",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002049719",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 3883",
+   "datazione": "4th quarter of the 12th century",
+   "secolo": [
+    4,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Flavius Josephus, Antiquitates iudaicae",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Antichità giudaiche"
+     ],
+     "corrispondenza": "autore: «Josephus Flavius, c 37-c 100, (Author) ; &nbsp…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100059463724.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002049719",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002049829",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 3992",
+   "datazione": "Mid 14th century",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Jacques de Longuyon, Les Voeux du Paon",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "autore: «…Harley, collector of art and natural history specimens and patron of arts…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100057738127.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002049829",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002050209",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 4372",
+   "datazione": "c. 1460-1487",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Valerius Maximus, translated by Simon de Hesdin and Nicolas de Gonesse, Les Fais et les Dis des Romains et de autres gens , books 1 to 5",
+   "autori": [
+    {
+     "id": "valerio-massimo",
+     "autore": "Valerio Massimo",
+     "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Facta et dicta memorabilia"
+     ],
+     "corrispondenza": "titolo: «Valerius Maximus, translated by Simon de Hesdi…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100057740208.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002050209",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002050210",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 4373",
+   "datazione": "c. 1460-1487",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Valerius Maximus, translated by Simon de Hesdin and Nicolas de Gonesse Les Fais et les Dis des Romains et de autres gens , books 6 to 9",
+   "autori": [
+    {
+     "id": "valerio-massimo",
+     "autore": "Valerio Massimo",
+     "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Facta et dicta memorabilia"
+     ],
+     "corrispondenza": "titolo: «Valerius Maximus, translated by Simon de Hesdi…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100057740280.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002050210",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002050246",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 4409",
+   "datazione": "c 1420",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Vie de saint Denys et ses compaignons",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "autore: «…Harley, collector of art and natural history specimens and patron of arts…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100058017960.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002050246",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "miniato": true
+  },
+  {
+   "id": "bl-040-002050255",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 4418",
+   "datazione": "c 1440-c 1450",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Jean d'Arras, Roman de Mélusine",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "autore: «…Harley, collector of art and natural history specimens and patron of arts…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100058018018.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002050255",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "miniato": true
+  },
+  {
+   "id": "bl-040-002050320",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 4482",
+   "datazione": "c. 1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Le Roman de Troie",
+   "autori": [
+    {
+     "id": "darete",
+     "autore": "Darete Frigio",
+     "latino": "Dares Phrygius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De excidio Troiae historia"
+     ],
+     "corrispondenza": "descrizione: «…n de Troie , an adaptation of Dares Phrygius, De excidio Troiae historia.…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100057740358.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002050320",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "miniato": true
+  },
+  {
+   "id": "bl-040-002050674",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 4831",
+   "datazione": "1st or 2nd quarter of the 9th century",
+   "secolo": [
+    1,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Paulinus of Nola, Letters and Poems",
+   "autori": [
+    {
+     "id": "ausonio",
+     "autore": "Ausonio",
+     "latino": "Ausonius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Opuscula"
+     ],
+     "corrispondenza": "autore: «Magnus Ausonius, Decimus, c 310-c 395, (Autho…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056057046.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002050674",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002050771",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 4927",
+   "datazione": "2nd half of the 12th century",
+   "secolo": [
+    2,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Cicero, various speeches, De amicitia and Paradoxa Stoicorum ; Pseudo-Sallust, Invectiva in Ciceronem",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Laelius de amicitia",
+      "Paradoxa Stoicorum",
+      "Orazioni",
+      "Cato maior de senectute",
+      "Catilinarie",
+      "Pro Caelio"
+     ],
+     "corrispondenza": "autore: «…nbsp;&nbsp;see also ; Tullius Cicero, Marcus, 106 BC-43 BC, (Autho…»"
+    },
+    {
+     "id": "sallustio",
+     "autore": "Sallustio",
+     "latino": "Sallustius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Invectiva in Ciceronem",
+      "De coniuratione Catilinae"
+     ],
+     "corrispondenza": "titolo: «…a Stoicorum ; Pseudo-Sallust, Invectiva in Ciceronem»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100059466150.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002050771",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002050811",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 4967",
+   "datazione": "4th quarter of the 12th century-1250",
+   "secolo": [
+    4,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Peter of Blois, Speculum Iuris Canonici ; Justinian, Institutiones ; Liber Catonianus",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "autore: «…Harley, collector of art and natural history specimens and patron of arts…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100063648375.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002050811",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002050823",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 4979",
+   "datazione": "c 1290-c 1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Roman d'Alexandre in prose",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "autore: «…Harley, collector of art and natural history specimens and patron of arts…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100057738715.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002050823",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "miniato": true
+  },
+  {
+   "id": "bl-040-002050828",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 4984",
+   "datazione": "4th quarter of the 12th century",
+   "secolo": [
+    4,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collection of texts about St Martin of Tours: Sulpicius Severus, Vita Sancti Martini , Epistolae , Dialogi (books 1-3); Gregory of Tours, De Virtutibus Sancti Martini and Libri Octo Miraculorum",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "autore: «…Harley, collector of art and natural history specimens and patron of arts…»"
+    },
+    {
+     "id": "gregorio-magno",
+     "autore": "Gregorio Magno",
+     "latino": "Gregorius Magnus",
+     "categoria": "cristiano",
+     "opere": [
+      "Dialoghi"
+     ],
+     "corrispondenza": "autore: «…r, 1666-1723 (Former owner) ; Gregory of Tours, Bishop of Tours, ?5…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100064572778.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002050828",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002051081",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 5237",
+   "datazione": "4th quarter of the 12th century",
+   "secolo": [
+    4,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Boethius, De institutione musica (imperfect)",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De institutione musica"
+     ],
+     "corrispondenza": "autore: «Boethius, Anicius Manlius Torquatus Se…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056057696.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002051081",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "musica": true
+  },
+  {
+   "id": "bl-040-002051095",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 5251",
+   "datazione": "4th quarter of the 9th century",
+   "secolo": [
+    4,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Pseudo-Fredegarius Scholasticus, Chronicon",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Priscian, fl 500-530, (Author) ; &nbsp…»"
+    },
+    {
+     "id": "girolamo",
+     "autore": "Girolamo",
+     "latino": "Hieronymus",
+     "categoria": "cristiano",
+     "opere": [
+      "Chronicon"
+     ],
+     "corrispondenza": "descrizione: «…a (b. c. 260, d. 339), and St Jerome (b. c. 347, d. 420). It also…»"
+    },
+    {
+     "id": "eusebio",
+     "autore": "Eusebio di Cesarea",
+     "latino": "Eusebius Caesariensis",
+     "categoria": "cristiano",
+     "opere": [
+      "Cronaca"
+     ],
+     "corrispondenza": "descrizione: «…from chronicles attributed to Eusebius of Caesarea (b. c. 260, d. 339), and St J…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056057761.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002051095",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002053222",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Harley MS 7368",
+   "datazione": "1590-1604",
+   "secolo": [
+    16,
+    17
+   ],
+   "lingue": [
+    "en",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "The Booke of Sir Thomas Moore , by Anthony Munday and others, possibly including William Shakespeare",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "autore: «…Harley, collector of art and natural history specimens and patron of arts…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100165170029.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002053222",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
    "id": "bl-032-003311703",
    "fonte": "bl",
    "biblioteca": "British Library",
@@ -327757,6 +330897,42 @@
    "pagina": "https://searcharchives.bl.uk/catalog/032-002560174",
    "licenza": "British Library, copia digitale nella Qatar Digital Library (condizioni d'uso nella scheda della QDL)",
    "immagini": null
+  },
+  {
+   "id": "bl-040-002016940",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Kings MS 24",
+   "datazione": "1483-1485",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "P. Vergilius Maro, Opera (‘the King’s Virgil’)",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eneide",
+      "Georgiche",
+      "Bucoliche"
+     ],
+     "corrispondenza": "titolo: «P. Vergilius Maro, Opera (‘the King’s Virgil’)»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100165170629.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002016940",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "miniato": true
   },
   {
    "id": "bl-032-003433014",
@@ -327921,6 +331097,39 @@
    "miniato": true
   },
   {
+   "id": "bl-032-003719811",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Or 4636",
+   "datazione": "Early 19th century",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Mukhtaṣar nuzhat al-mushtāq fī ikhtirāq al-āfāq مختصر نزهة المشتاق في اختراق الآفاق ; Idrīsī إدريسي",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Geografia"
+     ],
+     "corrispondenza": "descrizione: «…ctions (جزء). Al-Idrīsī cites Ptolemy via al-Khwārizmī, as well as…»"
+    }
+   ],
+   "manifest": "https://www.qdl.qa/en/iiif/81055/vdc_100110633422.0x000001/manifest",
+   "pagina": "https://searcharchives.bl.uk/catalog/032-003719811",
+   "licenza": "British Library, copia digitale nella Qatar Digital Library (condizioni d'uso nella scheda della QDL)",
+   "immagini": null
+  },
+  {
    "id": "bl-032-002360259",
    "fonte": "bl",
    "biblioteca": "British Library",
@@ -327953,6 +331162,38 @@
    "licenza": "British Library, copia digitale nella Qatar Digital Library (condizioni d'uso nella scheda della QDL)",
    "immagini": null,
    "miniato": true
+  },
+  {
+   "id": "bl-032-003477110",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Or 5591",
+   "datazione": "0867",
+   "secolo": [
+    9,
+    9
+   ],
+   "lingue": [
+    "ar",
+    "fa"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collection of Arabic astrological and divinatory texts, and a fragment of a Persian manuscript ; al-Kitāb fīhi manāzil al-qamar wa-mā fīhā min al-ikhtīyārāt wa-al-aʻmāl wa-dhālika min qawl Hirmis al-ḥakīm wa-ghayrih الكتاب فيه منازل القمر وما فيها من الاختيارات والأعمال وذلك من قول هرمس الحكيم وغيره ; Aristotle أرسطاطاليس ; Anonymous treatise on the exaltations and falls of the seven planets ; Her",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…لك من قول هرمس الحكيم وغيره ; Aristotle أرسطاطاليس ; Anonymous treati…»"
+    }
+   ],
+   "manifest": "https://www.qdl.qa/en/iiif/81055/vdc_100099023112.0x000001/manifest",
+   "pagina": "https://searcharchives.bl.uk/catalog/032-003477110",
+   "licenza": "British Library, copia digitale nella Qatar Digital Library (condizioni d'uso nella scheda della QDL)",
+   "immagini": null
   },
   {
    "id": "bl-032-002754844",
@@ -328147,6 +331388,39 @@
    ],
    "manifest": "https://www.qdl.qa/en/iiif/81055/vdc_100054614610.0x000001/manifest",
    "pagina": "https://searcharchives.bl.uk/catalog/032-003393192",
+   "licenza": "British Library, copia digitale nella Qatar Digital Library (condizioni d'uso nella scheda della QDL)",
+   "immagini": null
+  },
+  {
+   "id": "bl-032-003464767",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Or 6429",
+   "datazione": "Early 15th century",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "al-Jāmiʿ li-quwá al-adwiyah wa-al-aghdhiyah الجامع لقوى الأدوية والأغذية ; Ibn al-Bayṭār, ʻAbd Allāh ibn Aḥmad ابن البيطار، عبد الله بن أحمد",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Aforismi"
+     ],
+     "corrispondenza": "autore: «…cian, c 1721-c 1812 (Owner) ; Hippocrates, 460-380 BC, (Author) ; &nbsp…»"
+    }
+   ],
+   "manifest": "https://www.qdl.qa/en/iiif/81055/vdc_100088051994.0x000001/manifest",
+   "pagina": "https://searcharchives.bl.uk/catalog/032-003464767",
    "licenza": "British Library, copia digitale nella Qatar Digital Library (condizioni d'uso nella scheda della QDL)",
    "immagini": null
   },
@@ -328479,6 +331753,862 @@
    "immagini": null
   },
   {
+   "id": "bl-040-001948624",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "R.M.20.b.3",
+   "datazione": "1723",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "George Frideric Handel: Giulio Cesare (dramma per musica by Niccolò Francesco Haym after a libretto by Giacomo Francesco Bussani), HWV 17. Autograph",
+   "autori": [
+    {
+     "id": "cesare",
+     "autore": "Cesare",
+     "latino": "Caesar",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «George Frideric Handel: Giulio Cesare (dramma per musica by Niccolò…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100156350530.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-001948624",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-001948667",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "R.M.20.e.8",
+   "datazione": "1744",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "George Frideric Handel: Hercules (a ‘musical drama’ by Thomas Broughton, after texts by Sophocles and Ovidius), HWV 60. Autograph",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…omposer, 1685-1759 (Author) ; Ovidius Naso, Publius, Roman poet, 43…»"
+    },
+    {
+     "id": "sofocle",
+     "autore": "Sofocle",
+     "latino": "Sophocles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…&nbsp;&nbsp;&nbsp;see also ; Sophocles, tragedian, 497 BC-405 BC (Su…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100156352798.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-001948667",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-001948693",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "R.M.20.g.9",
+   "datazione": "c 1707-c 1745",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "en",
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "George Frideric Handel: Miscellaneous collections and selections vol. I. Autograph",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…omposer, 1685-1759 (Author) ; Horatius Flaccus, Quintus, also known…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100156352059.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-001948693",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "musica": true
+  },
+  {
+   "id": "bl-040-002106156",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Royal MS 6 B VI",
+   "datazione": "1st quarter of the 12th century",
+   "secolo": [
+    1,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "St Ambrose, De Mysteriis ; St Ambrose, De Sacramentis ; St Ivo of Chartres, De ecclesiasticis sacramentis ; St Bruno of Segni, De sacramentis ecclesiae; St Ivo of Chartres, Epistulae",
+   "autori": [
+    {
+     "id": "giamblico",
+     "autore": "Giamblico",
+     "latino": "Iamblichus",
+     "categoria": "classico-greco",
+     "opere": [
+      "De mysteriis"
+     ],
+     "corrispondenza": "titolo: «St Ambrose, De Mysteriis ; St Ambrose, De Sacramentis…»"
+    },
+    {
+     "id": "ambrogio",
+     "autore": "Ambrogio",
+     "latino": "Ambrosius",
+     "categoria": "cristiano",
+     "opere": [
+      "De mysteriis",
+      "De sacramentis"
+     ],
+     "corrispondenza": "autore: «Ambrose of Milan, Saint, Archbishop of Milan,…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056065175.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002106156",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002106774",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Royal MS 12 E XX",
+   "datazione": "1st half of the 12th century",
+   "secolo": [
+    1,
+    12
+   ],
+   "lingue": [
+    "en",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "A commentary on Hippocrates, Aphorism attributed to Aptalio; Galen, De arte curativa a d Glauconem; Pseudo-Galen, Ad Glauconem liber tertius; Liber Aureliani; Liber Esculapii; De podagra ; Pseudo-Oribasius, commentary on Hippocrates's Aphorims; Medicina Plinii; Gargilius Martialis, Medicina ex oleribus et pomis; Liber dietarum diversorum medicorum; Excerpt from Isidore of Seville, Etymologiae; an ",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…ecundus, Caius, also known as Pliny the Elder, 23-79, (Author)»"
+    },
+    {
+     "id": "luciano",
+     "autore": "Luciano di Samosata",
+     "latino": "Lucianus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Tragodopodagra"
+     ],
+     "corrispondenza": "titolo: «…ureliani; Liber Esculapii; De podagra ; Pseudo-Oribasius, commentar…»"
+    },
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus, Claudius, called Galen of Pe…»"
+    },
+    {
+     "id": "isidoro",
+     "autore": "Isidoro di Siviglia",
+     "latino": "Isidorus Hispalensis",
+     "categoria": "medievale",
+     "opere": [
+      "Etimologie"
+     ],
+     "corrispondenza": "autore: «…&nbsp;&nbsp;&nbsp;see also ; Isidore of Seville, Saint, Bishop of Seville, c…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056059358.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002106774",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002106822",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Royal MS 13 A X",
+   "datazione": "10th century-12th century",
+   "secolo": [
+    10,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Vita Sancti Johannis Eleemosynarii; Passio Sancti Albani; Vita Sancti Runwoldi; Bili of Aleth, Vita Sancti Machuti; Homelia in natale Sancti Machutis; Eutropius, Breviarium Historiae Romanae (fragment).",
+   "autori": [
+    {
+     "id": "eutropio",
+     "autore": "Eutropio",
+     "latino": "Eutropius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Breviarium ab urbe condita"
+     ],
+     "corrispondenza": "titolo: «…ia in natale Sancti Machutis; Eutropius, Breviarium Historiae Romanae…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100059911176.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002106822",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002106878",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Royal MS 13 D VI",
+   "datazione": "2nd quarter of the 12th century",
+   "secolo": [
+    2,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Excerpt from St Jerome, De viris illustribus; Josephus Flavius, Antiquitates iudaicae (books 1-14)",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Antichità giudaiche",
+      "Guerra giudaica"
+     ],
+     "corrispondenza": "autore: «…&nbsp;&nbsp;&nbsp;see also ; Josephus Flavius, c 37-c 100, (Author) ; &nbsp…»"
+    },
+    {
+     "id": "girolamo",
+     "autore": "Girolamo",
+     "latino": "Hieronymus",
+     "categoria": "cristiano",
+     "opere": [
+      "De viris illustribus"
+     ],
+     "corrispondenza": "autore: «Jerome, Saint, c 345-420, (Author) ;…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056060931.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002106878",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002106879",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Royal MS 13 D VII",
+   "datazione": "2nd quarter of the 12th century",
+   "secolo": [
+    2,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Josephus Flavius, Antiquitates Iudicae; Josephus Flavius, De Bello Iudaico",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Guerra giudaica",
+      "Antichità giudaiche"
+     ],
+     "corrispondenza": "autore: «Josephus Flavius, c 37-c 100, (Author) ; &nbsp…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056061197.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002106879",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002107009",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Royal MS 15 A II",
+   "datazione": "3rd quarter of the 16th century",
+   "secolo": [
+    3,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Jane Lumley, translation of Isocrates, Evagoras",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "descrizione: «…written in Latin, beginning, 'Cicero pater honoratissime illustris…»"
+    },
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Ifigenia"
+     ],
+     "corrispondenza": "descrizione: «…socrates’ other Orationes and Euripides’ play Iphigenia at Aulis (now…»"
+    },
+    {
+     "id": "isocrate",
+     "autore": "Isocrate",
+     "latino": "Isocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «…I, 1594-1612 (Former owner) ; Isocrates, Attic orator, 436 BC-338 BC…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100172082266.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002107009",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002107016",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Royal MS 15 A IX",
+   "datazione": "3rd quarter of the 16th century",
+   "secolo": [
+    3,
+    16
+   ],
+   "lingue": [
+    "en",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Jane Lumley, translations of Isocrates, Orationes , and Euripides, Iphigenia at Aulis",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Ifigenia"
+     ],
+     "corrispondenza": "autore: «Euripides, playwright, 484 BC-406 BC, (…»"
+    },
+    {
+     "id": "isocrate",
+     "autore": "Isocrate",
+     "latino": "Isocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Orazioni",
+      "A Demonico",
+      "A Nicocle"
+     ],
+     "corrispondenza": "autore: «…I, 1594-1612 (Former owner) ; Isocrates, Attic orator, 436 BC-338 BC…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100172082348.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002107016",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002107014",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Royal MS 15 A VII",
+   "datazione": "2nd half of the 13th century-1st half of the 14th century",
+   "secolo": [
+    1,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collection of Latin poetry and fables, including Statius, Achilleis , and Claudian, De raptu Proserpinae",
+   "autori": [
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Achilleide"
+     ],
+     "corrispondenza": "titolo: «…poetry and fables, including Statius, Achilleis , and Claudian, De…»"
+    },
+    {
+     "id": "claudiano",
+     "autore": "Claudiano",
+     "latino": "Claudianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "De raptu Proserpinae",
+      "Carmina"
+     ],
+     "corrispondenza": "titolo: «…ding Statius, Achilleis , and Claudian, De raptu Proserpinae»"
+    },
+    {
+     "id": "aviano",
+     "autore": "Aviano",
+     "latino": "Avianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "descrizione: «…own as the Catonis Disticha ; Avianus' collection of Latin Fabulae…»"
+    },
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "descrizione: «…Norman French translations of Aesop's Fables made by Marie de Fra…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100174688006.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002107014",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002107054",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Royal MS 15 B XII",
+   "datazione": "1st half of the 10th century",
+   "secolo": [
+    1,
+    10
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Juvenal, Saturae, with interlinear and marginal glosses",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Cato maior de senectute"
+     ],
+     "corrispondenza": "descrizione: «…ipio was formerly preceded by Cicero's De senectute (On Old Age),…»"
+    },
+    {
+     "id": "giovenale",
+     "autore": "Giovenale",
+     "latino": "Iuvenalis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Satire"
+     ],
+     "corrispondenza": "autore: «Junius Juvenalis, Decimus, Late 1st century-Ea…»"
+    },
+    {
+     "id": "macrobio",
+     "autore": "Macrobio",
+     "latino": "Macrobius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commento al Sogno di Scipione"
+     ],
+     "corrispondenza": "autore: «…p;&nbsp;see also ; Theodosius Macrobius, Ambrosius, c 370-c 435, (Aut…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100059472453.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002107054",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-001614761",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Royal MS 15 B XIX",
+   "datazione": "10th century-11th century",
+   "secolo": [
+    10,
+    11
+   ],
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Sedulius, Carmen Paschale and other poems; Two acrostics poems in praise of Sedulius; Bede, De Temporum Ratione ; A collection of Latin verses and short prose texts; Persius, Saturae; Sibylline verses; Life of Persius; Pseudo-Cornutus, Commentary on Persius; Lupus of Ferrières, Quid sit Ceroma ?; Symposius, Enigmata ; Boniface IV, Enigmata de Virtutibus et Vitiis. Musical settings among the collec",
+   "autori": [
+    {
+     "id": "persio",
+     "autore": "Persio",
+     "latino": "Persius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Satire"
+     ],
+     "corrispondenza": "titolo: «…verses and short prose texts; Persius, Saturae; Sibylline verses; L…»"
+    },
+    {
+     "id": "sedulio",
+     "autore": "Sedulio",
+     "latino": "Sedulius",
+     "categoria": "cristiano",
+     "opere": [
+      "Carmen paschale"
+     ],
+     "corrispondenza": "titolo: «Sedulius, Carmen Paschale and other po…»"
+    },
+    {
+     "id": "beda",
+     "autore": "Beda",
+     "latino": "Beda Venerabilis",
+     "categoria": "medievale",
+     "opere": [
+      "De temporum ratione"
+     ],
+     "corrispondenza": "titolo: «…poems in praise of Sedulius; Bede, De Temporum Ratione ; A coll…»"
+    },
+    {
+     "id": "alcuino",
+     "autore": "Alcuino",
+     "latino": "Alcuinus",
+     "categoria": "medievale",
+     "opere": [
+      "De virtutibus et vitiis"
+     ],
+     "corrispondenza": "titolo: «…gmata ; Boniface IV, Enigmata de Virtutibus et Vitiis. Musical settings among the c…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100059911485.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-001614761",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "musica": true
+  },
+  {
+   "id": "bl-040-002107074",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Royal MS 15 C X",
+   "datazione": "2nd half of 10th century",
+   "secolo": [
+    2,
+    10
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Vita Statii and Statius' Thebais",
+   "autori": [
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tebaide"
+     ],
+     "corrispondenza": "titolo: «Vita Statii and Statius' Thebais»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100058101812.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002107074",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002402986",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Royal MS 16 A VIII",
+   "datazione": "15th-16th century",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Taḥrīr kitāb al-majisṭī تحرير كتاب المجسطي ; Ptolemy بطلميوس ; Ṭūsī, Naṣīr al-Dīn Muḥammad ibn Muḥammad ; طوسي، نصير الدين محمد بن محمد",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Almagesto"
+     ],
+     "corrispondenza": "autore: «Ptolemaeus (Ptolemy), Claudius, astronomer, c 90-…»"
+    }
+   ],
+   "manifest": "https://www.qdl.qa/en/iiif/81055/vdc_100000001598.0x0000f0/manifest",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002402986",
+   "licenza": "British Library, copia digitale nella Qatar Digital Library (condizioni d'uso nella scheda della QDL)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002112343",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Sloane MS 6",
+   "datazione": "2nd quarter of the 15th century",
+   "secolo": [
+    2,
+    15
+   ],
+   "lingue": [
+    "en",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Medical treatises in Middle English by Hunain Ibn Ishak, Al-'Ibadi, William of Saliceto, John Arderne and others",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…surgeon, 1307-1378 (Author) ; Galenus, Claudius, called Galen of Pe…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100165173066.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002112343",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002112609",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Sloane MS 263",
+   "datazione": "11th century",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Helperic of Auxerre, De computo ; Bede, De duodecim mensibus, Hymnus de anno et mensibus; Priscian, Versus de sideribus; computistical tables and diagrams; an astronomical treatise about constellations and stars",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…&nbsp;&nbsp;&nbsp;see also ; Priscian, fl 500-530, (Author) ; &nbsp…»"
+    },
+    {
+     "id": "beda",
+     "autore": "Beda",
+     "latino": "Beda Venerabilis",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «Bede the Venerable, Saint, c 673-7…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100059473362.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002112609",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002114131",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Sloane MS 1777",
+   "datazione": "12th century",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Thomas Becket, Epistolae ; hymns; a compilation of theological texts; Querolus or Aulularia ; a compilation of theological works",
+   "autori": [
+    {
+     "id": "plauto",
+     "autore": "Plauto",
+     "latino": "Plautus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Aulularia"
+     ],
+     "corrispondenza": "titolo: «…heological texts; Querolus or Aulularia ; a compilation of theologica…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100064375790.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002114131",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null,
+   "miniato": true
+  },
+  {
+   "id": "bl-040-002114390",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Sloane MS 2030",
+   "datazione": "2nd half of the 12th century-2nd half of the 13th century",
+   "secolo": [
+    2,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Bede the Venerable, De Natura Rerum ; Divisio Scientiarum ; Pseudo-Ptolemy, Centiloquium ; Masha 'Allah Ibn Athari, Liber Receptionis ; Sahl ibn Bishr al-Isra'ili, Liber Iudiciorum ; Martianus Capella, De Nuptiis Philologiae et Mercurii ; Abū Ma`shar Ja`far, Ysagoga Minor ; Proportiones competentes in Astrorum Industria ; Pseudo-Aristotle, Physiognomia ; Abu `Ali al-Husain ibn `Abdallah Ibn Sina, ",
+   "autori": [
+    {
+     "id": "marziano-capella",
+     "autore": "Marziano Capella",
+     "latino": "Martianus Capella",
+     "categoria": "classico-latino",
+     "opere": [
+      "De nuptiis Philologiae et Mercurii"
+     ],
+     "corrispondenza": "titolo: «…-Isra'ili, Liber Iudiciorum ; Martianus Capella, De Nuptiis Philologiae et Me…»"
+    },
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Centiloquium"
+     ],
+     "corrispondenza": "titolo: «…Scientiarum ; Pseudo-Ptolemy, Centiloquium ; Masha 'Allah Ibn Athari, Li…»"
+    },
+    {
+     "id": "beda",
+     "autore": "Beda",
+     "latino": "Beda Venerabilis",
+     "categoria": "medievale",
+     "opere": [
+      "De natura rerum"
+     ],
+     "corrispondenza": "titolo: «Bede the Venerable, De Natura Reru…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100064376213.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002114390",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002115416",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Sloane MS 3032",
+   "datazione": "14th century",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "المقالة الثالثة من كتاب جالينوس في حيلة البروء ; al-Maqālah al-thālithah min Kitāb Jālīnūs fī ḥīlat al-burū’ ; Jālīnūs جالينوس",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [
+      "De methodo medendi"
+     ],
+     "corrispondenza": "autore: «…r, 9th century (Translator) ; Galenus, Claudius, called Galen of Pe…»"
+    }
+   ],
+   "manifest": "https://www.qdl.qa/en/iiif/81055/vdc_100000000653.0x0002da/manifest",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002115416",
+   "licenza": "British Library, copia digitale nella Qatar Digital Library (condizioni d'uso nella scheda della QDL)",
+   "immagini": null
+  },
+  {
    "id": "bl-040-002115487",
    "fonte": "bl",
    "biblioteca": "British Library",
@@ -328517,6 +332647,49 @@
    "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
    "immagini": null,
    "musica": true
+  },
+  {
+   "id": "bl-040-001952837",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Stowe MS 56",
+   "datazione": "1st quarter of the 13th century",
+   "secolo": [
+    1,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Baudri de Bourgueil, Historia Hierosolymitana ; Historia Danica ; Pseudo-Cornelius Nepos, Pseudo-Dares Phrygius, De Excidio Troiae Historia ; Historia Apollonii Regis Tyri ; Historia Alexandri Magni ; Pseudo-Alexander, Epistola Alexandri ad Aristotelem ; Collatio Alexandri et Dindimi ; Geoffrey of Monmouth, Historia Regum Britanniae",
+   "autori": [
+    {
+     "id": "curzio-rufo",
+     "autore": "Curzio Rufo",
+     "latino": "Curtius Rufus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Historiae Alexandri Magni"
+     ],
+     "corrispondenza": "titolo: «…storia Apollonii Regis Tyri ; Historia Alexandri Magni ; Pseudo-Alexander, Epistola…»"
+    },
+    {
+     "id": "darete",
+     "autore": "Darete Frigio",
+     "latino": "Dares Phrygius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De excidio Troiae historia"
+     ],
+     "corrispondenza": "autore: «…&nbsp;&nbsp;&nbsp;see also ; Dares Phrygius, priest of Hephaestus and wri…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100062974606.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-001952837",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
   },
   {
    "id": "ds-ds16509",
@@ -329806,6 +333979,186 @@
    "manifest": "https://iiif.archive.org/iiif/images_CSLv091B29_9/manifest.json",
    "pagina": "https://search.digital-scriptorium.org/catalog/DS258",
    "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "cudl-pr-fj-00836-00036",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "FJ.836.36",
+   "datazione": "万治０２ (1659)",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "ja"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Isoho Monogatari ; 伊曽保物語",
+   "autori": [
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "titolo: «Isoho Monogatari ; 伊曽保物語»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/PR-FJ-00836-00036",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/PR-FJ-00836-00036",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-pr-inc-00001-f-00003-00001-03304",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "Inc.1.F.3.1[3304]",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De consolatione philosophiae (French) ; De consolatione philosophiae. French",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Boethius -524 ; Regnier de Saint Trudo…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/PR-INC-00001-F-00003-00001-03304",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/PR-INC-00001-F-00003-00001-03304",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null,
+   "miniato": true
+  },
+  {
+   "id": "cudl-pr-inc-00003-a-00001-00003-b-00013",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "Inc.3.A.1.3b[13]",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "[Ars minor] ; De octo partibus orationis",
+   "autori": [
+    {
+     "id": "donato",
+     "autore": "Donato",
+     "latino": "Donatus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ars minor"
+     ],
+     "corrispondenza": "autore: «Donatus, Aelius. ; Schöffer, Peter a…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/PR-INC-00003-A-00001-00003-B-00013",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/PR-INC-00003-A-00001-00003-B-00013",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-pr-inc-00005-a-00004-00001-00222",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "Inc.5.A.4.1[222]",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Explicit liber tullij de officijs Laus deo optimo ceterisq[ue] celitib[us] ; De officiis",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De officiis"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius. ; Zell, Ulri…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/PR-INC-00005-A-00004-00001-00222",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/PR-INC-00005-A-00004-00001-00222",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-pr-inc-00005-a-00004-00001-00239",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "Inc.5.A.4.1[239]",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Incipit Tullius de senectute ; Cato maior de senectute",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Cato maior de senectute"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius. ; Zell, Ulri…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/PR-INC-00005-A-00004-00001-00239",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/PR-INC-00005-A-00004-00001-00239",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-pr-montaigne-00001-00004-00004",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "Montaigne.1.4.4",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Titi Lucretii Cari De rerum natura libri sex ; De rerum natura",
+   "autori": [
+    {
+     "id": "lucrezio",
+     "autore": "Lucrezio",
+     "latino": "Lucretius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De rerum natura"
+     ],
+     "corrispondenza": "autore: «Lucretius Carus, Titus ; Montaigne, Michel de, 1533-1592 ; Lambin, Denys, 1520 or 21-1572»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/PR-MONTAIGNE-00001-00004-00004",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/PR-MONTAIGNE-00001-00004-00004",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
    "immagini": null
   },
   {
@@ -331483,6 +335836,65 @@
    "immagini": null
   },
   {
+   "id": "cudl-pr-n-00003-00017-b-00006",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "N*.3.17(B)(6)",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Lodoici Vassæi Catalaune[n]sis, in anatomen corporis hvmani tabulæ quatuor ; In anatomen corporis humani tabulae quatuor",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…, Loys, active 16th century ; Galen. ; Le Vasseur, Jean, 1518-157…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/PR-N-00003-00017-B-00006",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/PR-N-00003-00017-B-00006",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-peterhouse-00269",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "Peterhouse, MS 269",
+   "datazione": "c. 1478-98",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Cicero, Curtius &c.",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Cicero, Curtius &c.»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-PETERHOUSE-00269",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-PETERHOUSE-00269",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
    "id": "cbl-ar-3045",
    "fonte": "cbl",
    "biblioteca": "Chester Beatty",
@@ -331609,6 +336021,139 @@
    ],
    "manifest": "https://viewer.cbl.ie/viewer/api/v1/records/Ar_5018/manifest/",
    "pagina": "https://viewer.cbl.ie/viewer/object/Ar_5018/1/",
+   "licenza": "© Chester Beatty, Dublino (condizioni d'uso: chesterbeatty.ie)",
+   "immagini": null
+  },
+  {
+   "id": "cbl-in-04-26",
+   "fonte": "cbl",
+   "biblioteca": "Chester Beatty",
+   "citta": "Dublino",
+   "segnatura": "In 04.26",
+   "datazione": "c. 1595",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "fa"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "The elephants concede to the hare, and the two bickering birds, from Lights of Canopus (Anvar-i Suhayli) by Husayn Va`izi Kashifi",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Uccelli"
+     ],
+     "corrispondenza": "titolo: «…e hare, and the two bickering birds, from Lights of Canopus (Anva…»"
+    }
+   ],
+   "manifest": "https://viewer.cbl.ie/viewer/api/v1/records/In_04_26/manifest/",
+   "pagina": "https://viewer.cbl.ie/viewer/object/In_04_26/1/",
+   "licenza": "© Chester Beatty, Dublino (condizioni d'uso: chesterbeatty.ie)",
+   "immagini": null,
+   "miniato": true
+  },
+  {
+   "id": "cbl-in-20-62",
+   "fonte": "cbl",
+   "biblioteca": "Chester Beatty",
+   "citta": "Dublino",
+   "segnatura": "In 20.62",
+   "datazione": "Calligraphy 1520 (926H), painting and borders 1606-1607 (1015H)",
+   "secolo": [
+    10,
+    17
+   ],
+   "lingue": [
+    "fa"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Corner details of reader, birds and flowers, folio from the Five Treasures (Panj Ganj) by Jāmī",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Uccelli"
+     ],
+     "corrispondenza": "titolo: «Corner details of reader, birds and flowers, folio from the F…»"
+    }
+   ],
+   "manifest": "https://viewer.cbl.ie/viewer/api/v1/records/In_20_62/manifest/",
+   "pagina": "https://viewer.cbl.ie/viewer/object/In_20_62/1/",
+   "licenza": "© Chester Beatty, Dublino (condizioni d'uso: chesterbeatty.ie)",
+   "immagini": null
+  },
+  {
+   "id": "cbl-in-20-105",
+   "fonte": "cbl",
+   "biblioteca": "Chester Beatty",
+   "citta": "Dublino",
+   "segnatura": "In 20.105",
+   "datazione": "Calligraphy 1520 (926H), painting and borders 1606-1607 (1015H)",
+   "secolo": [
+    10,
+    17
+   ],
+   "lingue": [
+    "fa"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Corner details of monkey, birds and rabbits, folio from the Five Treasures (Panj Ganj) by Jāmī",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Uccelli"
+     ],
+     "corrispondenza": "titolo: «Corner details of monkey, birds and rabbits, folio from the F…»"
+    }
+   ],
+   "manifest": "https://viewer.cbl.ie/viewer/api/v1/records/In_20_105/manifest/",
+   "pagina": "https://viewer.cbl.ie/viewer/object/In_20_105/1/",
+   "licenza": "© Chester Beatty, Dublino (condizioni d'uso: chesterbeatty.ie)",
+   "immagini": null
+  },
+  {
+   "id": "cbl-in-20-131",
+   "fonte": "cbl",
+   "biblioteca": "Chester Beatty",
+   "citta": "Dublino",
+   "segnatura": "In 20.131",
+   "datazione": "Calligraphy 1520 (926H), painting and borders 1606-1607 (1015H)",
+   "secolo": [
+    10,
+    17
+   ],
+   "lingue": [
+    "fa"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Corner details of goat and birds, folio from the Five Treasures (Panj Ganj) by Jāmī",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Uccelli"
+     ],
+     "corrispondenza": "titolo: «Corner details of goat and birds, folio from the Five Treasures (Panj Ganj) by Jāmī»"
+    }
+   ],
+   "manifest": "https://viewer.cbl.ie/viewer/api/v1/records/In_20_131/manifest/",
+   "pagina": "https://viewer.cbl.ie/viewer/object/In_20_131/1/",
    "licenza": "© Chester Beatty, Dublino (condizioni d'uso: chesterbeatty.ie)",
    "immagini": null
   },
@@ -364582,6 +369127,174 @@
    "immagini": null
   },
   {
+   "id": "cudl-ms-pembroke-00215",
+   "fonte": "cudl",
+   "biblioteca": "Pembroke College",
+   "citta": "Cambridge",
+   "segnatura": "MS 215",
+   "datazione": "Late 14th century.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "en",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De consolatione philosophiae (Middle English translation)",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Boethius ; Geoffrey Chaucer»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-PEMBROKE-00215",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-PEMBROKE-00215",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-pembroke-gra-00004-00010",
+   "fonte": "cudl",
+   "biblioteca": "Pembroke College Library",
+   "citta": "Cambridge",
+   "segnatura": "GBR/1058/GRA/4/10",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "en",
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Thomas Gray, Greek notes",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Gray, Thomas (1716-1771) ; Walpole, Horace (1717-1797)»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-PEMBROKE-GRA-00004-00010",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-PEMBROKE-GRA-00004-00010",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-pr-peterhouse-c-00005-00016",
+   "fonte": "cudl",
+   "biblioteca": "Perne Library, Peterhouse",
+   "citta": "Cambridge",
+   "segnatura": "Peterhouse C.5.16",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Poetic Greek works by Pindar, Theocritus, and Hesiod",
+   "autori": [
+    {
+     "id": "esiodo",
+     "autore": "Esiodo",
+     "latino": "Hesiodus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Poetic Greek works by Pindar, Theocritus, and Hesiod»"
+    },
+    {
+     "id": "pindaro",
+     "autore": "Pindaro",
+     "latino": "Pindarus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Poetic Greek works by Pindar, Theocritus, and Hesiod»"
+    },
+    {
+     "id": "teocrito",
+     "autore": "Teocrito",
+     "latino": "Theocritus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Poetic Greek works by Pindar, Theocritus, and Hesiod»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/PR-PETERHOUSE-C-00005-00016",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/PR-PETERHOUSE-C-00005-00016",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-pr-peterhouse-c-00002-00009",
+   "fonte": "cudl",
+   "biblioteca": "Peterhouse, Cambridge",
+   "citta": "Cambridge",
+   "segnatura": "Peterhouse C.2.9",
+   "datazione": "1591",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De arte rhetorica libri tres. ; Aristotelis Stagyritae De arte rhetorica libri tres: cum M. Antonii Maioragii commentariis. Additis nuper Graeco textu ad ipsius Maioragii versionem, et Petri Victorii sententiam emendato: noua capitum diuisione: suis in singula capita argumentis: singulorum librorum per tabulas oeconomia: nec non repletis lacunis, praesertim in secundo, ubi multorum contextuum comm",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Retorica"
+     ],
+     "corrispondenza": "autore: «Aristotle ; Goulston, Theodore, 1575?-1…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/PR-PETERHOUSE-C-00002-00009",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/PR-PETERHOUSE-C-00002-00009",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-pr-peterhouse-n-00016-00013",
+   "fonte": "cudl",
+   "biblioteca": "Peterhouse, Cambridge",
+   "citta": "Cambridge",
+   "segnatura": "Peterhouse N.16.13",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Two medical works by Galen",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Two medical works by Galen»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/PR-PETERHOUSE-N-00016-00013",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/PR-PETERHOUSE-N-00016-00013",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
    "id": "ds-ds2220",
    "fonte": "ds",
    "biblioteca": "Princeton University Library",
@@ -364818,6 +369531,113 @@
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/a0caff7e-24fa-4070-a481-d58936cbe067.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/a0caff7e-24fa-4070-a481-d58936cbe067/",
    "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-queens-00032",
+   "fonte": "cudl",
+   "biblioteca": "Queens' College",
+   "citta": "Cambridge",
+   "segnatura": "MS 32",
+   "datazione": "first half of the 16th century",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Ptolemy's Almagest",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Almagesto"
+     ],
+     "corrispondenza": "titolo: «Ptolemy's Almagest»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-QUEENS-00032",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-QUEENS-00032",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-pr-f-00002-00015",
+   "fonte": "cudl",
+   "biblioteca": "Queens' College Library",
+   "citta": "Cambridge",
+   "segnatura": "F.2.15",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Scriptores Historiae Augustae ; Ex recognitione Des. Erasmi Roterodami, C. Suetonius Tranquillus, Dion Cassius Nicaeus, Aelius Spartianus, Iulius Capitolinus, Aelius Lampridius, Vulcatius Gallicanus V.C., Trebellius Pollio, Flauius Vopiscus Syracusius : quibus adiuncti sunt. Sex. Aurelius Victor, Eutropius, Paulus Diaconus, Ammianus Marcellinus, Pomponius Laetus Ro., Io. Bap. Egnatius Venetus.",
+   "autori": [
+    {
+     "id": "svetonio",
+     "autore": "Svetonio",
+     "latino": "Suetonius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…3 ; Godfrey, Garrett, -1539 ; Suetonius, approximately 69-approximate…»"
+    },
+    {
+     "id": "ammiano",
+     "autore": "Ammiano Marcellino",
+     "latino": "Ammianus Marcellinus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…ately 122 ; Eutropius, -399 ; Ammianus Marcellinus ; Paul, the Deacon, approxima…»"
+    },
+    {
+     "id": "eutropio",
+     "autore": "Eutropio",
+     "latino": "Eutropius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…mately 69-approximately 122 ; Eutropius, -399 ; Ammianus Marcellinus…»"
+    },
+    {
+     "id": "historia-augusta",
+     "autore": "Historia Augusta",
+     "latino": "Historia Augusta",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Scriptores Historiae Augustae ; Ex recognitione Des. Erasmi…»"
+    },
+    {
+     "id": "aurelio-vittore",
+     "autore": "Aurelio Vittore",
+     "latino": "Aurelius Victor",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…: quibus adiuncti sunt. Sex. Aurelius Victor, Eutropius, Paulus Diaconus,…»"
+    },
+    {
+     "id": "cassio-dione",
+     "autore": "Cassio Dione",
+     "latino": "Cassius Dio",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…mi, C. Suetonius Tranquillus, Dion Cassius Nicaeus, Aelius Spartianus, I…»"
+    },
+    {
+     "id": "paolo-diacono",
+     "autore": "Paolo Diacono",
+     "latino": "Paulus Diaconus",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «…-399 ; Ammianus Marcellinus ; Paul, the Deacon, approximately 720-799?»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/PR-F-00002-00015",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/PR-F-00002-00015",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
    "immagini": null
   },
   {
@@ -371257,6 +376077,51 @@
    "immagini": null
   },
   {
+   "id": "cudl-ms-sidneysussex-00105",
+   "fonte": "cudl",
+   "biblioteca": "Sidney Sussex College",
+   "citta": "Cambridge",
+   "segnatura": "MS 105",
+   "datazione": "late 17th century (after 1688)",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc",
+    "la",
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Excerpts from Greek historical texts and notes",
+   "autori": [
+    {
+     "id": "erodoto",
+     "autore": "Erodoto",
+     "latino": "Herodotus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Storie"
+     ],
+     "corrispondenza": "descrizione: «…us' Antiquitates Iudaicae and Herodotus' Historiae . The excerpts are…»"
+    },
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Antichità giudaiche"
+     ],
+     "corrispondenza": "descrizione: «…s of excerpts, in Greek, from Flavius Josephus' Antiquitates Iudaicae and He…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-SIDNEYSUSSEX-00105",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-SIDNEYSUSSEX-00105",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
    "id": "ia-arithmetichaboe00boet",
    "fonte": "archive",
    "biblioteca": "Smithsonian Libraries, Washington",
@@ -371591,6 +376456,99 @@
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/c50c228e-60db-4df5-a64f-0aefcbf14e3b.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/c50c228e-60db-4df5-a64f-0aefcbf14e3b/",
    "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-sjc-e-00029",
+   "fonte": "cudl",
+   "biblioteca": "St John's College",
+   "citta": "Cambridge",
+   "segnatura": "MS E.29",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Medical treatises (Ars medicine)",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Ars medica"
+     ],
+     "corrispondenza": "descrizione: «…Philaretus, and the Tegni of Galen. The manuscript opens with fo…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-SJC-E-00029",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-SJC-E-00029",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-sjc-f-00015",
+   "fonte": "cudl",
+   "biblioteca": "St John's College",
+   "citta": "Cambridge",
+   "segnatura": "MS F.15",
+   "datazione": "early 16th century",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Proclus' Commentary on Plato's Republic",
+   "autori": [
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Proclus' Commentary on Plato's Republic»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-SJC-F-00015",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-SJC-F-00015",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-sjc-h-00019",
+   "fonte": "cudl",
+   "biblioteca": "St John's College",
+   "citta": "Cambridge",
+   "segnatura": "MS H.19",
+   "datazione": "around the middle of the 16th century",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Iephte (Jephthah) by John Christopherson",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Ifigenia"
+     ],
+     "corrispondenza": "descrizione: «…63). The tragedy, inspired by Euripides' Iphigenia in Aulis , has as…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-SJC-H-00019",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-SJC-H-00019",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
    "immagini": null
   },
   {
@@ -385317,6 +390275,1121 @@
    "immagini": 146
   },
   {
+   "id": "cudl-ms-trinity-b-00003-00018",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS B.3.18",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "A collection of letters by Theophylact of Ohrid and a Church History",
+   "autori": [
+    {
+     "id": "fozio",
+     "autore": "Fozio",
+     "latino": "Photius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Biblioteca"
+     ],
+     "corrispondenza": "descrizione: «…sis of a mention by patriarch Photius in his Bibliotheca (see Hanse…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-B-00003-00018",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-B-00003-00018",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-b-00009-00005",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS B.9.5",
+   "datazione": "the middle of the 16th century",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Byzantine Church History and other texts",
+   "autori": [
+    {
+     "id": "fozio",
+     "autore": "Fozio",
+     "latino": "Photius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Biblioteca"
+     ],
+     "corrispondenza": "descrizione: «…sis of a mention by patriarch Photius in his Bibliotheca , (see Han…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-B-00009-00005",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-B-00009-00005",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-b-00009-00009",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS B.9.9",
+   "datazione": "1550s-1560s",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Corpus Hermeticum and Plotinus' Enneads",
+   "autori": [
+    {
+     "id": "plotino",
+     "autore": "Plotino",
+     "latino": "Plotinus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Corpus Hermeticum and Plotinus' Enneads»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-B-00009-00009",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-B-00009-00009",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-o-00001-00004",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS O.1.4",
+   "datazione": "first quarter of the 16th century",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "On Syntax ; Περὶ συντάξεως",
+   "autori": [
+    {
+     "id": "apollonio-discolo",
+     "autore": "Apollonio Discolo",
+     "latino": "Apollonius Dyscolus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Sintassi"
+     ],
+     "corrispondenza": "titolo: «On Syntax ; Περὶ συντάξεως»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-O-00001-00004",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-O-00001-00004",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-o-00001-00005",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS O.1.5",
+   "datazione": "second quarter of the 14th century",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Byzantine grammatical collection",
+   "autori": [
+    {
+     "id": "fozio",
+     "autore": "Fozio",
+     "latino": "Photius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Lessico"
+     ],
+     "corrispondenza": "descrizione: «…-century lexicon of Patriarch Photios. The excerpt from the latter…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-O-00001-00005",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-O-00001-00005",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-o-00001-00008",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS O.1.8",
+   "datazione": "first quarter of the 16th century",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Miscellany of Greek texts",
+   "autori": [
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "descrizione: «…These include a selection of Aesop's fables, a large collection…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-O-00001-00008",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-O-00001-00008",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-o-00001-00023",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS O.1.23",
+   "datazione": "between 1459 and 1462",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Tract against the objections of Theodore Gazes against Plethon regarding Aristotle's De substantia",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…zes against Plethon regarding Aristotle's De substantia»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-O-00001-00023",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-O-00001-00023",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-o-00001-00037",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS O.1.37",
+   "datazione": "second half of the 16th century, after 1543",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Iephte (Jephthah) by John Christopherson",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Ifigenia"
+     ],
+     "corrispondenza": "descrizione: «…63). The tragedy, inspired by Euripides' Iphigenia in Aulis , has as…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-O-00001-00037",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-O-00001-00037",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-o-00001-00066",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS O.1.66",
+   "datazione": "16th of March, 1460",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Lexicon, Bible Glossaries and Astrological texts",
+   "autori": [
+    {
+     "id": "esichio",
+     "autore": "Esichio",
+     "latino": "Hesychius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Lessico"
+     ],
+     "corrispondenza": "descrizione: «…seems to derive from those of Hesychius, Pseudo-Zonaras and Suda; it…»"
+    },
+    {
+     "id": "bibbia",
+     "autore": "Bibbia",
+     "latino": "Biblia",
+     "categoria": "cristiano",
+     "opere": [
+      "Antico Testamento"
+     ],
+     "corrispondenza": "titolo: «Lexicon, Bible Glossaries and Astrological texts»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-O-00001-00066",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-O-00001-00066",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-o-00001-00073",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS O.1.73",
+   "datazione": "mid-16th century",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Pindar's Olympic Odes and Lykophron's Alexandra",
+   "autori": [
+    {
+     "id": "pindaro",
+     "autore": "Pindaro",
+     "latino": "Pindarus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Pindar's Olympic Odes and Lykophron's Alexandra»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-O-00001-00073",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-O-00001-00073",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-o-00002-00039",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS O.2.39",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Speeches by the Roman emperor Julian",
+   "autori": [
+    {
+     "id": "giuliano",
+     "autore": "Giuliano imperatore",
+     "latino": "Iulianus Imperator",
+     "categoria": "classico-greco",
+     "opere": [
+      "Misopogon"
+     ],
+     "corrispondenza": "titolo: «Speeches by the Roman emperor Julian»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-O-00002-00039",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-O-00002-00039",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-o-00002-00054",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS O.2.54",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Libanius, Phoebammo, Artemidorus Capito and fables",
+   "autori": [
+    {
+     "id": "libanio",
+     "autore": "Libanio",
+     "latino": "Libanius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Libanius, Phoebammo, Artemidorus Capito and fables»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-O-00002-00054",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-O-00002-00054",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-o-00003-00009",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS O.3.9",
+   "datazione": "11th century",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Lexicon",
+   "autori": [
+    {
+     "id": "fozio",
+     "autore": "Fozio",
+     "latino": "Photius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Lessico",
+      "Biblioteca"
+     ],
+     "corrispondenza": "autore: «Photios I, Patriarch of Constantinople (c. 820-c. 891) ; Forbes, G.H.»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-O-00003-00009",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-O-00003-00009",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-o-00003-00023",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS O.3.23",
+   "datazione": "1575",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Excerpta de legationibus",
+   "autori": [
+    {
+     "id": "polibio",
+     "autore": "Polibio",
+     "latino": "Polybius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Polybius ; Georgius, monachus ; Malchu…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-O-00003-00023",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-O-00003-00023",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-o-00004-00017",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS O.4.17",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Miscellany",
+   "autori": [
+    {
+     "id": "fozio",
+     "autore": "Fozio",
+     "latino": "Photius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Lessico"
+     ],
+     "corrispondenza": "descrizione: «…050-c.1118) and a treatise by Photios I, Patriarch of Constantinopl…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-O-00004-00017",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-O-00004-00017",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-o-00005-00010",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS O.5.10",
+   "datazione": "1695",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Proclus",
+   "autori": [
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Proclus»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-O-00005-00010",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-O-00005-00010",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-o-00005-00011",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS O.5.11",
+   "datazione": "1697",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Proclus",
+   "autori": [
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Proclus»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-O-00005-00011",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-O-00005-00011",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-o-00005-00016",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS O.5.16",
+   "datazione": "around the middle of the 17th century",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Harmonics",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Almagesto"
+     ],
+     "corrispondenza": "autore: «Ptolemy»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-O-00005-00016",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-O-00005-00016",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null,
+   "musica": true
+  },
+  {
+   "id": "cudl-ms-trinity-o-00005-00023",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS O.5.23",
+   "datazione": "in the 16th century",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Miscellany of Greek texts",
+   "autori": [
+    {
+     "id": "fozio",
+     "autore": "Fozio",
+     "latino": "Photius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Biblioteca"
+     ],
+     "corrispondenza": "descrizione: «…lector copied an extract from Photius' Bibliotheca about Helladius.…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-O-00005-00023",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-O-00005-00023",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-o-00005-00027",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS O.5.27",
+   "datazione": "17th century",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Commentary on Ptolemy's Harmonics ; Commentarius in Claudii Ptolemaei Harmonica",
+   "autori": [
+    {
+     "id": "porfirio",
+     "autore": "Porfirio",
+     "latino": "Porphyrius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Porphyrius»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-O-00005-00027",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-O-00005-00027",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-o-00008-00007",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS O.8.7",
+   "datazione": "20th November 1576",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Hermias and Julian the Emperor",
+   "autori": [
+    {
+     "id": "giuliano",
+     "autore": "Giuliano imperatore",
+     "latino": "Iulianus Imperator",
+     "categoria": "classico-greco",
+     "opere": [
+      "Misopogon"
+     ],
+     "corrispondenza": "titolo: «Hermias and Julian the Emperor»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-O-00008-00007",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-O-00008-00007",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-o-00008-00008",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS O.8.8",
+   "datazione": "around 1550",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Treatise on the Eucharist by Cardinal Bessarion",
+   "autori": [
+    {
+     "id": "libanio",
+     "autore": "Libanio",
+     "latino": "Libanius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…ly Roman Emperor, 1527-1576 ; Libanius ; Agapetus I, Pope, -536 ; Ba…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-O-00008-00008",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-O-00008-00008",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-o-00009-00004",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS O.9.4",
+   "datazione": "between about 1670 and 1700, as suggested by the watermark. This is consistent with the style of script.",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "In metaphysica commentaria",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica"
+     ],
+     "corrispondenza": "titolo: «In metaphysica commentaria»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-O-00009-00004",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-O-00009-00004",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-o-00009-00027",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS O.9.27",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Hesiod, Works and Days",
+   "autori": [
+    {
+     "id": "esiodo",
+     "autore": "Esiodo",
+     "latino": "Hesiodus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Opere e giorni"
+     ],
+     "corrispondenza": "titolo: «Hesiod, Works and Days»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-O-00009-00027",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-O-00009-00027",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null,
+   "miniato": true
+  },
+  {
+   "id": "cudl-ms-trinity-o-00010-00010",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS O.10.10",
+   "datazione": "17th century",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Proclus",
+   "autori": [
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Proclus»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-O-00010-00010",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-O-00010-00010",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-r-00001-00042",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS R.1.42",
+   "datazione": "second half of the 15th century",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aristophanes, Plutus, Nubes and Ranae",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Pluto",
+      "Nuvole",
+      "Rane"
+     ],
+     "corrispondenza": "titolo: «Aristophanes, Plutus, Nubes and Ranae»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-R-00001-00042",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-R-00001-00042",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-r-00003-00031",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS R.3.31",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Sophocles",
+   "autori": [
+    {
+     "id": "sofocle",
+     "autore": "Sofocle",
+     "latino": "Sophocles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Aiace",
+      "Elettra",
+      "Edipo re"
+     ],
+     "corrispondenza": "titolo: «Sophocles»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-R-00003-00031",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-R-00003-00031",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-r-00009-00009",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS R.9.9",
+   "datazione": "late 15th or early 16th century",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Stratagems in War (defective at the end) ; Strategemata",
+   "autori": [
+    {
+     "id": "frontino",
+     "autore": "Frontino",
+     "latino": "Frontinus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Strategemata"
+     ],
+     "corrispondenza": "titolo: «Stratagems in War (defective at the end) ; Strategemata»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-R-00009-00009",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-R-00009-00009",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-r-00009-00020",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS R.9.20",
+   "datazione": "beginning of the 16th century",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "On Heroes",
+   "autori": [
+    {
+     "id": "filostrato",
+     "autore": "Filostrato",
+     "latino": "Philostratus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Philostratus, Flavius, c. 160/170-250 ; Ph…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-R-00009-00020",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-R-00009-00020",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-r-00009-00026",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS R.9.26",
+   "datazione": "1503",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Three rhetorical texts by Libanius",
+   "autori": [
+    {
+     "id": "libanio",
+     "autore": "Libanio",
+     "latino": "Libanius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Three rhetorical texts by Libanius»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-R-00009-00026",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-R-00009-00026",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-r-00009-00029",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS R.9.29",
+   "datazione": "between about 1600 and 1679",
+   "secolo": [
+    16,
+    17
+   ],
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Xenophon's Anabasis",
+   "autori": [
+    {
+     "id": "senofonte",
+     "autore": "Senofonte",
+     "latino": "Xenophon",
+     "categoria": "classico-greco",
+     "opere": [
+      "Anabasi"
+     ],
+     "corrispondenza": "titolo: «Xenophon's Anabasis»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-R-00009-00029",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-R-00009-00029",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-r-00016-00005",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS R.16.5",
+   "datazione": "around the 1550s",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "In universam Aristotelis philosophiam epitome",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «In universam Aristotelis philosophiam epitome»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-R-00016-00005",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-R-00016-00005",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-r-00016-00033",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS R.16.33",
+   "datazione": "14th century",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Exegesis in Homeri Iliadem by Ioannes Tzetzes",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade",
+      "Odissea"
+     ],
+     "corrispondenza": "titolo: «Exegesis in Homeri Iliadem by Ioannes Tzetzes»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-R-00016-00033",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-R-00016-00033",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-r-00016-00035",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS R.16.35",
+   "datazione": "1530s",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Homer, Iliad",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "titolo: «Homer, Iliad»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-R-00016-00035",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-R-00016-00035",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinity-r-00016-00036",
+   "fonte": "cudl",
+   "biblioteca": "Trinity College",
+   "citta": "Cambridge",
+   "segnatura": "MS R.16.36",
+   "datazione": "second half of the 17th century",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Lysistrata",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Lisistrata",
+      "Uccelli"
+     ],
+     "corrispondenza": "titolo: «Lysistrata»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITY-R-00016-00036",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITY-R-00016-00036",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
    "id": "isos-tcd-tcd-ms-1313",
    "fonte": "isos",
    "biblioteca": "Trinity College Dublin",
@@ -385377,6 +391450,73 @@
    "pagina": "https://www.isos.dias.ie/TCD/TCD_MS_1388.html",
    "licenza": "© Trinity College Dublin (immagini: condizioni di ISOS, https://www.isos.dias.ie/copyright.html)",
    "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinityhall-00004",
+   "fonte": "cudl",
+   "biblioteca": "Trinity Hall",
+   "citta": "Cambridge",
+   "segnatura": "MS 4",
+   "datazione": "12th century",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Josephus Historia ; Historiae Antiquitatis Judaice; The Antiquities of the Jews",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Antichità giudaiche"
+     ],
+     "corrispondenza": "autore: «Josephus, Flavius -c0038-c0100»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITYHALL-00004",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITYHALL-00004",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-trinityhall-00012",
+   "fonte": "cudl",
+   "biblioteca": "Trinity Hall",
+   "citta": "Cambridge",
+   "segnatura": "MS 12",
+   "datazione": "15th century",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De consolatione philosophiae",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "titolo: «De consolatione philosophiae»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-TRINITYHALL-00012",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-TRINITYHALL-00012",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null,
+   "miniato": true
   },
   {
    "id": "ucm-340406",
