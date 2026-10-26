@@ -8,7 +8,7 @@ Estrazione del 26 ottobre 2026. Entrano solo codici librari (niente lettere, doc
 
 ## Biblioteca Nacional de Chile (`immagini/bnchile/`)
 
-Licenza: pubblico dominio. Ogni codice è segnato, nella sua scheda di Memoria Chilena, con «Propiedad intelectual: Patrimonio cultural común» (Ley 17.336: «puede ser utilizado y reproducido libremente», rispettando paternità e integrità dell'opera). Nei manifesti: `rights` Public Domain Mark 1.0.
+Licenza: pubblico dominio. I primi cinque codici sono segnati, nella sua scheda di Memoria Chilena, con «Propiedad intelectual: Patrimonio cultural común» (Ley 17.336: «puede ser utilizado y reproducido libremente», rispettando paternità e integrità dell'opera). Nei manifesti: `rights` Public Domain Mark 1.0.
 
 Citazione richiesta: «Biblioteca Nacional de Chile. Disponible en Memoria Chilena», con l'indirizzo della scheda e il codice MC.
 
@@ -19,6 +19,18 @@ Citazione richiesta: «Biblioteca Nacional de Chile. Disponible en Memoria Chile
 | MC0069816 | MC0069816 (n. sistema 96820) | Nómina de los conquistadores y pobladores de las ciudades y plazas del Reyno de Chile (dall'opera di Miguel de Olivares) | [1803] | https://www.memoriachilena.gob.cl/602/w3-article-132219.html |
 | MC0067629 | MC0067629 (n. sistema 83864) | Camilo Henríquez, La inocencia en el asilo de las virtudes: segundo drama sentimental | [18--?] | https://www.memoriachilena.gob.cl/602/w3-article-87410.html |
 | MC0000836 | MC0000836 (n. sistema 919754) | Emilio Vaïsse, [Diccionario latino-hebraico] (scelta di 20 pagine) | 1887-1889 | https://www.memoriachilena.gob.cl/602/w3-article-99525.html |
+
+### Pubblico dominio per età (aggiunti il 26 ottobre 2026)
+
+Criterio: entrano anche i codici librari che la biblioteca non segna come pubblico dominio ma che lo sono per età, cioè opere manoscritte di autori morti da più di 70 anni, oppure anonime anteriori al 1900. Le fotografie di documenti bidimensionali non creano nuovi diritti. Restano fuori le carte sparse (per esempio le «Notas sobre aborígenes americanos» di José Toribio Medina, SM0000782: 43 pezzi sciolti). Nei manifesti: `rights` Public Domain Mark 1.0, `requiredStatement` «Biblioteca Nacional de Chile» con la segnatura, e la nota «Pubblico dominio per età dell'opera; la scheda della biblioteca non lo indica».
+
+| Cartella | Segnatura | Titolo | Data | Scheda |
+|---|---|---|---|---|
+| SM0000449 | Sala Medina, SM0000449 | Antiphonarium romanum ad usum S. Conventus-Maximum Sancti Patris Nostri Augustini S. Jacobi Chilensis (anonimo, Agostiniani) | 1595 | https://www.bibliotecanacionaldigital.gob.cl/bnd/632/w3-article-335340.html |
+| SM0000729 | Sala Medina, SM0000729 | Domingo José de Toro y Guzmán (1803-1887), [Diarios de viajes], v. 1: Londres | 1824 | https://www.bibliotecanacionaldigital.gob.cl/bnd/632/w3-article-625350.html |
+| SM0000730 | Sala Medina, SM0000730 | Domingo José de Toro y Guzmán (1803-1887), [Diarios de viajes], v. 2: París | 1825 | https://www.bibliotecanacionaldigital.gob.cl/bnd/632/w3-article-625350.html |
+| SM0000873 | Sala Medina, SM0000873 | Bernardo Becerril, Apuntamientos sobre la tasa de Chile (copia ottocentesca, p. 265-271 di un volume) | [1580?] | https://www.bibliotecanacionaldigital.gob.cl/bnd/632/w3-article-662217.html |
+| MC0033189 | MC0033189 (n. sistema 97009) | Antonio de Agreda, Arte breve para aprender con alguna facilidad la dificultosa lengua Otomi | [1770] | https://www.memoriachilena.gob.cl/602/w3-article-79543.html |
 
 ## Biblioteca Nacional de Venezuela (`immagini/bnv/`)
 
