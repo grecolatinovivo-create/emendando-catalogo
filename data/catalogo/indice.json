@@ -1,7 +1,7 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T09:11:03.815Z",
- "totale": 382904,
+ "aggiornato": "2026-10-26T10:07:49.332Z",
+ "totale": 382912,
  "con_autori": 23025,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
@@ -25,7 +25,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 52490
+   "codici": 52491
   },
   "fr": {
    "nome": "francese",
@@ -53,7 +53,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 9590
+   "codici": 9597
   },
   "xx": {
    "nome": "altre lingue",
@@ -73,7 +73,7 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 5433
+   "codici": 5434
   },
   "it": {
    "nome": "italiano",
@@ -1439,6 +1439,8 @@
   "Biblioteca Matsudaira di Shimabara (肥前島原松平文庫)",
   "Biblioteca Medicea Laurenziana, Firenze",
   "Biblioteca Museu Víctor Balaguer, Vilanova i la Geltrú",
+  "Biblioteca Nacional de Chile, Santiago (Cile)",
+  "Biblioteca Nacional de Venezuela, Caracas (Venezuela)",
   "Biblioteca nazionale di Corea (韓国国立中央図書館), Seul (Corea del Sud)",
   "Biblioteca Nazionale di Grecia, Atene",
   "Biblioteca non indicata",
@@ -3263,6 +3265,40 @@
     "indice/rah-0.json"
    ]
   },
+  "bnchile": {
+   "nome": "Biblioteca Nacional de Chile, Santiago (memoriachilena.gob.cl; codici in pubblico dominio, immagini estratte dai PDF)",
+   "codici": 5,
+   "con_autori": 0,
+   "lingue": {
+    "la": 1,
+    "he": 1,
+    "es": 4
+   },
+   "esito": "ok",
+   "prefissi": [
+    "bnchile-"
+   ],
+   "pezzi_voci": 1,
+   "indice": [
+    "indice/bnchile-0.json"
+   ]
+  },
+  "bnv": {
+   "nome": "Biblioteca Nacional de Venezuela, Caracas (bibliotecadigital.bnv.gob.ve; CC BY-SA 3.0 VE, immagini estratte dai PDF)",
+   "codici": 3,
+   "con_autori": 0,
+   "lingue": {
+    "es": 3
+   },
+   "esito": "ok",
+   "prefissi": [
+    "bnv-"
+   ],
+   "pezzi_voci": 1,
+   "indice": [
+    "indice/bnv-0.json"
+   ]
+  },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
    "codici": 9648,
@@ -3529,6 +3565,16 @@
    "righe": 184
   },
   {
+   "file": "indice/bnchile-0.json",
+   "fonte": "bnchile",
+   "righe": 5
+  },
+  {
+   "file": "indice/bnv-0.json",
+   "fonte": "bnv",
+   "righe": 3
+  },
+  {
    "file": "indice/vaticana-0.json",
    "fonte": "vaticana",
    "righe": 9648
@@ -3777,6 +3823,12 @@
    "paese": "US",
    "lat": 42.3751,
    "lon": -71.1056
+  },
+  "caracas": {
+   "nome": "Caracas",
+   "paese": "VE",
+   "lat": 10.488,
+   "lon": -66.8792
   },
   "castro": {
    "nome": "Castro (Ticino)",
@@ -5124,6 +5176,13 @@
    "lat": 59.9386,
    "lon": 30.3141
   },
+  "santiago-del-cile": {
+   "nome": "Santiago del Cile",
+   "en": "Santiago",
+   "paese": "CL",
+   "lat": -33.4569,
+   "lon": -70.6483
+  },
   "sarnen": {
    "nome": "Sarnen",
    "paese": "CH",
@@ -5469,6 +5528,8 @@
   "jp-shimabara",
   "firenze",
   "vilanova-i-la-geltru",
+  "santiago-del-cile",
+  "caracas",
   "seul",
   "atene",
   "heidelberg",

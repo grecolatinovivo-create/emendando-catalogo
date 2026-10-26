@@ -283,6 +283,13 @@
    "lon": -71.1056,
    "geonames": 4931972
   },
+  "caracas": {
+   "nome": "Caracas",
+   "paese": "VE",
+   "lat": 10.488,
+   "lon": -66.8792,
+   "geonames": 3646738
+  },
   "castro": {
    "nome": "Castro (Ticino)",
    "paese": "CH",
@@ -11208,6 +11215,14 @@
    "lon": 30.3141,
    "geonames": 498817
   },
+  "santiago-del-cile": {
+   "nome": "Santiago del Cile",
+   "en": "Santiago",
+   "paese": "CL",
+   "lat": -33.4569,
+   "lon": -70.6483,
+   "geonames": 3871336
+  },
   "sarnen": {
    "nome": "Sarnen",
    "paese": "CH",
@@ -11601,6 +11616,8 @@
   "Cambrai": "cambrai",
   "Cambridge": "cambridge",
   "Cambridge (Massachusetts)": "cambridge-ma",
+  "Caracas": "caracas",
+  "Caracas (Venezuela)": "caracas",
   "Cassation": "parigi",
   "Cassino": "montecassino",
   "Castro": "castro",
@@ -12807,6 +12824,8 @@
   "Sanjō": "jp-sanjo",
   "Sanmu": "jp-sanmu",
   "Sano": "jp-sano",
+  "Santiago (Cile)": "santiago-del-cile",
+  "Santiago del Cile": "santiago-del-cile",
   "Sanuki": "jp-sanuki",
   "Sanyoonoda": "jp-sanyoonoda",
   "Sanyōonoda": "jp-sanyoonoda",
@@ -13472,6 +13491,8 @@
   "realbiblioteca": "madrid",
   "ucm": "madrid",
   "sevilla": "siviglia",
-  "rah": "madrid"
+  "rah": "madrid",
+  "bnchile": "santiago-del-cile",
+  "bnv": "caracas"
  }
 }

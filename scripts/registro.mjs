@@ -54,6 +54,9 @@ export const BIBLIOTECHE = {
   ucm: { biblioteca: "Universidad Complutense de Madrid, Biblioteca Histórica Marqués de Valdecilla", citta: "Madrid (Spagna)", come: "corsia iberia, ogni notte (raccolta completa ogni 6 giorni)" },
   sevilla: { biblioteca: "Biblioteca de la Universidad de Sevilla (copie digitali su Internet Archive)", citta: "Siviglia (Spagna)", come: "corsia iberia, ogni notte (raccolta completa ogni 6 giorni)" },
   rah: { biblioteca: "Real Academia de la Historia (manifesti IIIF scritti da Emendando)", citta: "Madrid (Spagna)", come: "corsia iberia: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 14 giorni; manifesti scritti dal catalogo)" },
+  // America Latina, siti solo PDF (dal 26 ottobre 2026)
+  bnchile: { biblioteca: "Biblioteca Nacional de Chile (codici in pubblico dominio per Memoria Chilena; immagini estratte dai PDF)", citta: "Santiago (Cile)", come: "fatta una volta a mano: PDF estratti nel ramo «immagini», manifesti scritti dal catalogo" },
+  bnv: { biblioteca: "Biblioteca Nacional de Venezuela (Biblioteca Digital César Rengifo; immagini estratte dai PDF)", citta: "Caracas (Venezuela)", come: "fatta una volta a mano: PDF estratti nel ramo «immagini», manifesti scritti dal catalogo" },
   vaticana: { biblioteca: "Biblioteca Apostolica Vaticana", citta: "Città del Vaticano", come: "corsia propria: a ruota, senza pause tra un'esecuzione e l'altra" },
 };
 
@@ -233,6 +236,11 @@ export const AVANZAMENTO = {
     if (s.token || !s.elenco) return { testo: `in corso: ${num(s.letti)} schede OAI lette su ${num(s.totale)}`, data: s.aggiornato };
     return { testo: `schede lette tutte (${num(s.totale)} schede OAI, quasi tutte documenti e lettere; ${num(vs.length)} codici); misure delle immagini prese per ${num(mis)} codici`, data: s.completato || s.aggiornato };
   },
+  // America Latina, siti solo PDF: pagine estratte una volta, misure in data/latam_pdf.json
+  ...Object.fromEntries(["bnchile", "bnv"].map(f => [f, () => {
+    const s = leggi("data/latam_pdf.json"); if (!s || !s.pagine || !s.pagine[f]) return { testo: "immagini non ancora estratte" };
+    return { testo: `${num(Object.keys(s.pagine[f]).length)} codici librari estratti dai PDF della biblioteca (pagine nel ramo «immagini»)`, data: s.aggiornato };
+  }])),
   vaticana: () => {
     const s = leggi("data/vaticana.json"); if (!s) return { testo: "non ancora cominciata" };
     const n = Object.keys(s.voci || {}).length;

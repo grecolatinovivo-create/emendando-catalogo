@@ -14,10 +14,10 @@ In tutto 196 nazioni: i 193 stati dell'ONU, la Città del Vaticano, la Palestina
 
 | Stato | Nazioni |
 |---|---|
-| agganciata | 19 |
+| agganciata | 21 |
 | controllata, niente da agganciare | 51 |
 | controllata, bloccata | 5 |
-| in corso | 28 |
+| in corso | 26 |
 | non ancora controllata | 93 |
 | **totale** | **196** |
 
@@ -58,6 +58,8 @@ Nessuna è già nel catalogo o nel registro delle biblioteche (docs/BIBLIOTECHE.
 | 20 | National Library of Scotland | Regno Unito | digital.nls.uk | alcune centinaia |
 
 Aggiornamento del 26 ottobre 2026 (Regno Unito e Irlanda, corsia `raccolta-uk.yml`): agganciate Chester Beatty (n. 5), Manchester (n. 6) e Wellcome (n. 9); Trinity College Dublin (n. 10) non si può (CAPTCHA), ma i suoi codici irlandesi entrano tramite Irish Script on Screen; Durham (n. 15) non si può (il robots.txt vieta tutto); National Library of Wales (n. 16) e National Library of Scotland (n. 20) non si possono per ora (Cloudflare; i codici gaelici della NLS entrano tramite ISOS); Parker (n. 4) non si può per ora (verifica anti-robot). Agganciate anche Cambridge Digital Library (dal server) e Irish Script on Screen (con la Royal Irish Academy). Dettagli in docs/BIBLIOTECHE.md.
+
+Aggiornamento del 26 ottobre 2026 (America Latina, siti solo PDF): agganciati Cile (Biblioteca Nacional de Chile, 5 codici segnati in pubblico dominio da Memoria Chilena) e Venezuela (Biblioteca Nacional de Venezuela, 3 codici, CC BY-SA 3.0 VE). Le biblioteche pubblicano solo PDF: le pagine sono state estratte come JPEG nel ramo «immagini» del repository e i manifesti li scrive il catalogo (fonti «bnchile» e «bnv»). Brasile (Biblioteca Nacional e Brasiliana USP) resta fuori: sito irraggiungibile o ripubblicazione vietata.
 
 Restano fuori da questa lista perché sono già nel registro: Cambridge Digital Library (in lavorazione), British Library (bloccata), Det Kongelige Bibliotek, Koninklijke Bibliotheek, Uppsala e Biblioteka Jagiellońska (da verificare), Qatar Digital Library e National Library of Israel (bloccate).
 
@@ -495,11 +497,11 @@ Stati Uniti, Canada, America Latina e Caraibi. Canada, Messico, Centro America, 
 | Repubblica Dominicana | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
 | Brasile | in corso | nessuna | Biblioteca Nacional do Brasil: 403 ai server, nessun IIIF pubblico. | Le vede il lavoro in corso. |
 | Argentina | in corso | nessuna | Biblioteca Nacional Mariano Moreno: non risponde. | Le vede il lavoro in corso. |
-| Cile | in corso | nessuna | Biblioteca Nacional Digital: senza IIIF. | Le vede il lavoro in corso. |
+| Cile | agganciata | Biblioteca Nacional de Chile, Santiago: 5 codici (dal 26 ottobre 2026; solo PDF: pagine estratte nel ramo «immagini», manifesti scritti dal catalogo; solo i codici segnati in pubblico dominio da Memoria Chilena) | Biblioteca Nacional Digital: senza IIIF, solo PDF. Antiphonarium degli Agostiniani e diari di Toro y Guzmán (Sala Medina): fuori, perché non hanno l'indicazione di pubblico dominio. Universidad de Chile: niente codici. | Archivo Nacional, Museo Histórico Nacional |
 | Perù | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
 | Bolivia | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
 | Colombia | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
-| Venezuela | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Venezuela | agganciata | Biblioteca Nacional de Venezuela, Caracas: 3 codici (dal 26 ottobre 2026; solo PDF: pagine estratte nel ramo «immagini», manifesti scritti dal catalogo; CC BY-SA 3.0 VE) | Biblioteca Digital César Rengifo: senza IIIF, solo PDF; gli altri «manuscritos» sono lettere, documenti e autografi del Novecento. | Academia Nacional de la Historia, Archivo General de la Nación |
 | Ecuador | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
 | Paraguay | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
 | Uruguay | in corso | nessuna | nessuna | Le vede il lavoro in corso. |

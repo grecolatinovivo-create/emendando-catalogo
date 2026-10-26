@@ -54,11 +54,12 @@ import { scansionaCdm, recordCdm, FONTI_CDM } from "./fonti/cdm.mjs";
 import { scansionaOmeka, recordOmeka, FONTI_OMEKA } from "./fonti/omeka.mjs";
 import { scansionaSevilla, recordSevilla } from "./fonti/sevilla.mjs";
 import { scansionaDigibib, recordDigibib } from "./fonti/digibib.mjs";
+import { recordLatam } from "./fonti/latam_pdf.mjs";
 import { scriviRegistro, registraEsiti } from "./registro.mjs";
 import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
-const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,mdc,ub,realbiblioteca,ucm,sevilla,rah,vaticana").split(",");
+const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,vaticana").split(",");
 const INIZIO = Date.now();
 export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)", berlino: "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
   bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -90,6 +91,9 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   ucm: "Universidad Complutense de Madrid, Biblioteca Histórica (patrimoniodigital.ucm.es)",
   sevilla: "Biblioteca de la Universidad de Sevilla (copie digitali su Internet Archive)",
   rah: "Real Academia de la Historia, Madrid (bibliotecadigital.rah.es; manifesti scritti dal catalogo)",
+  // America Latina, siti solo PDF: pagine estratte dai PDF (ramo «immagini»), manifesti scritti dal catalogo
+  bnchile: "Biblioteca Nacional de Chile, Santiago (memoriachilena.gob.cl; codici in pubblico dominio, immagini estratte dai PDF)",
+  bnv: "Biblioteca Nacional de Venezuela, Caracas (bibliotecadigital.bnv.gob.ve; CC BY-SA 3.0 VE, immagini estratte dai PDF)",
   vaticana: "Biblioteca Apostolica Vaticana (digi.vatlib.it)" };
 
 // i tre codici del Truculentus restano sempre nel catalogo, anche se una fonte non li ha ancora restituiti
@@ -243,6 +247,9 @@ async function main() {
     ...Object.fromEntries(Object.keys(FONTI_OMEKA).map(f => [f, async () => recordOmeka(f, await scansionaOmeka({ fonte: f, minuti: min(f, +(arg[f + "-minuti"] ?? 15)), soloCache: sc(f) }))])),
     sevilla: async () => recordSevilla(await scansionaSevilla({ minuti: min("sevilla", +(arg["sevilla-minuti"] ?? 5)), soloCache: sc("sevilla") })),
     rah: async () => recordDigibib("rah", await scansionaDigibib({ fonte: "rah", minuti: min("rah", +(arg["rah-minuti"] ?? 30)), soloCache: sc("rah") })),
+    // America Latina, siti solo PDF: nessuna richiesta, i dati sono in scripts/fonti/latam_pdf.mjs e data/latam_pdf.json
+    bnchile: async () => recordLatam("bnchile"),
+    bnv: async () => recordLatam("bnv"),
     vaticana: async () => {
       let minuti = +(arg["vaticana-minuti"] ?? 20);
       // con un tempo complessivo si lasciano 10 minuti per costruire il catalogo, provarlo e salvarlo

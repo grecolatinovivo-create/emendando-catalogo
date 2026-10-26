@@ -5,7 +5,8 @@
 //   - Real Academia de la Historia (DIGIBIB, scripts/fonti/digibib.mjs): niente IIIF, immagini JPEG caricabili come <img>: manifesti P2
 //     con le immagini a misura fissa (misure di un'immagine per codice);
 //   - Biblioteca Nazionale di Grecia: manifesti e info.json senza CORS, immagini caricabili come <img>: copie P2 con immagini
-//     a misura fissa, senza servizio Image (scripts/fonti/nlg.mjs).
+//     a misura fissa, senza servizio Image (scripts/fonti/nlg.mjs);
+//   - America Latina, siti solo PDF (scripts/fonti/latam_pdf.mjs): manifesti P3 con le pagine estratte dai PDF nel ramo «immagini».
 // Nessuna richiesta di rete: si scrivono dagli stati delle raccolte (data/loc.json, data/nlg.json).
 // I manifesti stanno nel ramo «manifesti» del repository, non in main (circa 400 MB di JSON): il workflow manifesti.yml
 // li rigenera ogni giorno in una copia di quel ramo e salva solo se cambiano.
@@ -15,6 +16,7 @@ import path from "node:path";
 import * as loc from "./fonti/loc.mjs";
 import * as nlg from "./fonti/nlg.mjs";
 import * as digibib from "./fonti/digibib.mjs";
+import * as latam from "./fonti/latam_pdf.mjs";
 
 // scrive i manifesti che mancano o sono cambiati e toglie quelli dei codici usciti (solo se lo stato ha voci)
 export function scriviManifesti(voci, cartella, scrivi) {
@@ -40,6 +42,10 @@ export function scriviTutti(dir = ".") {
     // Real Academia de la Historia (DIGIBIB): immagini JPEG della biblioteca a misura fissa
     ...Object.fromEntries(Object.keys(digibib.FONTI_DIGIBIB).map(f => [f, scriviManifesti(digibib.leggiStato(f).voci || {}, path.join(dir, "data/manifesti/" + f),
       (id, v) => (digibib.ammessaDigibib(f, v) && v.w ? digibib.manifestoScritto(f, id, v) : null))])),
+    // America Latina, siti solo PDF (Biblioteca Nacional de Chile, Biblioteca Nacional de Venezuela): manifesti P3 con le immagini
+    // estratte dai PDF e salvate nel ramo «immagini»
+    ...Object.fromEntries(Object.entries(latam.voci()).map(([f, vs]) => [f, scriviManifesti(vs, path.join(dir, "data/manifesti/" + f),
+      (c, dims) => latam.manifestoLatam(f, c, dims))])),
   };
 }
 
