@@ -7,7 +7,7 @@
 //        [--leiden-minuti=15] [--hsp-minuti=10] [--berlino-minuti=60] [--indici-minuti=20]
 //        [--yale-minuti=30] [--penn-minuti=15] [--ds-minuti=15] [--walters-minuti=20] [--loc-minuti=10] [--nlg-minuti=15]
 //        [--ndl-minuti=60] [--kokusho-minuti=60] [--auckland-minuti=10] [--toronto-minuti=15]
-//        [--wellcome-minuti=10] [--isos-minuti=20] [--manchester-minuti=30] [--cudl-minuti=30] [--cbl-minuti=60] [--minuti-totali=160] [--solo-costruisci]
+//        [--wellcome-minuti=10] [--isos-minuti=20] [--manchester-minuti=30] [--cudl-minuti=30] [--cbl-minuti=60] [--parker-minuti=20] [--nlw-minuti=10] [--minuti-totali=160] [--solo-costruisci]
 //        [--mdc-minuti=10] [--ub-minuti=10] [--realbiblioteca-minuti=15] [--ucm-minuti=15] [--sevilla-minuti=5] [--rah-minuti=30]
 //        [--pergamos-minuti=10] [--rousanou-minuti=5]
 //        [--onb-minuti=30] [--bncf-minuti=5] [--vallicelliana-minuti=5] [--malatestiana-minuti=20] [--polona-minuti=20] [--manuscriptorium-minuti=30]
@@ -46,6 +46,8 @@ import { scansionaCudl, recordCudl } from "./fonti/cudl.mjs";
 import { scansionaManchester, recordManchester } from "./fonti/manchester.mjs";
 import { scansionaWellcome, recordWellcome } from "./fonti/wellcome.mjs";
 import { scansionaCbl, recordCbl } from "./fonti/cbl.mjs";
+import { scansionaParker, recordParker } from "./fonti/parker.mjs";
+import { scansionaNlw, recordNlw } from "./fonti/nlw.mjs";
 import { scansionaIsos, recordIsos } from "./fonti/isos.mjs";
 import { scansionaNdl, recordNdl } from "./fonti/ndl.mjs";
 import { scansionaKokusho, recordKokusho } from "./fonti/kokusho.mjs";
@@ -72,7 +74,7 @@ import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 import { tipoDa } from "./carte.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
-const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,vaticana").split(",");
+const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,parker,nlw,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,vaticana").split(",");
 const INIZIO = Date.now();
 export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)", berlino: "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
   bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -97,6 +99,8 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   isos: "Irish Script on Screen: Royal Irish Academy, National Library of Ireland, Trinity College Dublin e altre (isos.dias.ie)",
   manchester: "John Rylands Research Institute and Library, Manchester (digitalcollections.manchester.ac.uk)",
   cbl: "Chester Beatty, Dublino (viewer.cbl.ie)",
+  parker: "Parker Library, Corpus Christi College, Cambridge (manifesti di Stanford, dms-data.stanford.edu; elenco da Biblissima)",
+  nlw: "National Library of Wales, Aberystwyth (iiif.llyfrgell.cymru; elenco da Wikidata ed Europeana)",
   nlg: "Biblioteca Nazionale di Grecia, Atene (digitalcollections.nlg.gr; copie dei manifesti scritte dal catalogo)",
   ndl: "National Diet Library, Tokyo (dl.ndl.go.jp)", kokusho: "Kokusho Database, National Institute of Japanese Literature (kokusho.nijl.ac.jp)",
   auckland: "Auckland Libraries, Sir George Grey Special Collections (kura.aucklandlibraries.govt.nz)",
@@ -270,6 +274,10 @@ async function main() {
     // Cambridge: dal 26 ottobre 2026 dal server, con le collezioni IIIF (/iiif/collection/<slug>)
     cudl: async () => recordCudl(await scansionaCudl({ minuti: min("cudl", +(arg["cudl-minuti"] ?? 30)), soloCache: sc("cudl") })),
     cbl: async () => recordCbl(await scansionaCbl({ minuti: min("cbl", +(arg["cbl-minuti"] ?? 60)), soloCache: sc("cbl") })),
+    // Parker e National Library of Wales (dal 26 ottobre 2026): elenchi dei siti delle biblioteche dietro verifiche anti-robot, non usati;
+    // gli identificativi dei manifesti vengono da fonti pubbliche di altri enti (Biblissima; Wikidata ed Europeana)
+    parker: async () => recordParker(await scansionaParker({ minuti: min("parker", +(arg["parker-minuti"] ?? 20)), soloCache: sc("parker") })),
+    nlw: async () => recordNlw(await scansionaNlw({ minuti: min("nlw", +(arg["nlw-minuti"] ?? 10)), soloCache: sc("nlw") })),
     // Asia orientale e Oceania (corsia «mondo»): National Diet Library, Kokusho (NIJL), Auckland
     ndl: async () => recordNdl(await scansionaNdl({ minuti: min("ndl", +(arg["ndl-minuti"] ?? 60)), soloCache: sc("ndl") })),
     kokusho: async () => recordKokusho(await scansionaKokusho({ minuti: min("kokusho", +(arg["kokusho-minuti"] ?? 60)), soloCache: sc("kokusho") })),

@@ -2,7 +2,9 @@
 # Wellcome Collection (API del catalogo), Irish Script on Screen (Royal Irish Academy, National Library of Ireland, Trinity College
 # Dublin, National Library of Scotland e altre), Manchester Digital Collections (John Rylands), Cambridge Digital Library (dal server,
 # con le collezioni IIIF) e Chester Beatty (un manifesto ogni 10 secondi, come chiede il robots.txt).
-# Gli stati sono in data/wellcome.json, data/isos.json, data/manchester.json, data/cudl.json, data/cbl.json.
+# Dal 26 ottobre 2026 anche Parker Library (manifesti di Stanford, elenco da Biblissima) e National Library of Wales (manifesti
+# iiif.llyfrgell.cymru, elenco da Wikidata ed Europeana): i siti delle due biblioteche sono dietro verifiche anti-robot e non si usano.
+# Gli stati sono in data/wellcome.json, data/isos.json, data/manchester.json, data/cudl.json, data/cbl.json, data/parker.json, data/nlw.json.
 # Richieste in serie, una biblioteca dopo l'altra, con le pause di sempre (scripts/rete.mjs).
 # Ruota fino a lettura completa: finché una delle cinque non ha finito la prima lettura, la corsia lavora circa 150 minuti per
 # esecuzione e riparte subito da sola, purché nel giro ci siano stati progressi (scripts/ruota.mjs). Poi torna al giro notturno
@@ -27,8 +29,8 @@ jobs:
     uses: ./.github/workflows/corsia.yml
     with:
       corsia: uk
-      fonti: wellcome,isos,manchester,cudl,cbl
-      argomenti: --wellcome-minuti=10 --isos-minuti=20 --manchester-minuti=30 --cudl-minuti=45 --cbl-minuti=60
+      fonti: parker,nlw,wellcome,isos,manchester,cudl,cbl
+      argomenti: --parker-minuti=20 --nlw-minuti=10 --wellcome-minuti=10 --isos-minuti=20 --manchester-minuti=30 --cudl-minuti=45 --cbl-minuti=60
       cache: false
       ruota: false
       completa: true

@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T11:48:32.226Z",
+ "aggiornato": "2026-10-26T11:59:54.650Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -172,6 +172,16 @@
    "codici": 2,
    "esito": "errore: manifesti letti in parte (mancano 2666): riprenderà alla prossima esecuzione"
   },
+  "parker": {
+   "nome": "Parker Library, Corpus Christi College, Cambridge (manifesti di Stanford, dms-data.stanford.edu; elenco da Biblissima)",
+   "codici": 37,
+   "esito": "ok"
+  },
+  "nlw": {
+   "nome": "National Library of Wales, Aberystwyth (iiif.llyfrgell.cymru; elenco da Wikidata ed Europeana)",
+   "codici": 3,
+   "esito": "ok"
+  },
   "ndl": {
    "nome": "National Diet Library, Tokyo (dl.ndl.go.jp)",
    "codici": 0,
@@ -268,7 +278,7 @@
    "esito": "ok"
   }
  },
- "totale": 11509,
+ "totale": 11549,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -339088,6 +339098,100 @@
    "immagini": null
   },
   {
+   "id": "nlw-4779552",
+   "fonte": "nlw",
+   "biblioteca": "National Library of Wales",
+   "citta": "Aberystwyth",
+   "segnatura": "Peniarth MS 47",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "cy",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Dares Phrygius, [mid-14 cent. - mid-15cent.]",
+   "autori": [
+    {
+     "id": "darete",
+     "autore": "Darete Frigio",
+     "latino": "Dares Phrygius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Dares Phrygius, [mid-14 cent. - mid-15cent.]»"
+    }
+   ],
+   "manifest": "https://iiif.llyfrgell.cymru/manifests/2.0/4779552/manifest.json",
+   "pagina": "https://hdl.handle.net/10107/4779552",
+   "licenza": "Pubblico dominio (Public Domain Mark), National Library of Wales",
+   "immagini": 141
+  },
+  {
+   "id": "nlw-4398051",
+   "fonte": "nlw",
+   "biblioteca": "National Library of Wales",
+   "citta": "Aberystwyth",
+   "segnatura": "Peniarth MS 393",
+   "datazione": "1401 - 1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De consolatione philosophie, [15 cent.] [with later hands of unspecified date]",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "titolo: «De consolatione philosophie, [15 cent.] [with later hands of unspecified date]»"
+    }
+   ],
+   "manifest": "https://iiif.llyfrgell.cymru/manifests/2.0/4398051/manifest.json",
+   "pagina": "https://hdl.handle.net/10107/4398051",
+   "licenza": "Pubblico dominio (Public Domain Mark), National Library of Wales",
+   "immagini": 72
+  },
+  {
+   "id": "nlw-4393138",
+   "fonte": "nlw",
+   "biblioteca": "National Library of Wales",
+   "citta": "Aberystwyth",
+   "segnatura": "Peniarth MS 481",
+   "datazione": "1401 - 1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la",
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Disticha Catonis, [15 cent.]",
+   "autori": [
+    {
+     "id": "disticha-catonis",
+     "autore": "Disticha Catonis",
+     "latino": "Disticha Catonis",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Disticha Catonis, [15 cent.]»"
+    }
+   ],
+   "manifest": "https://iiif.llyfrgell.cymru/manifests/2.0/4393138/manifest.json",
+   "pagina": "https://hdl.handle.net/10107/4393138",
+   "licenza": "Pubblico dominio (Public Domain Mark), National Library of Wales",
+   "immagini": 346
+  },
+  {
    "id": "ds-ds278",
    "fonte": "ds",
    "biblioteca": "Nelson-Atkins Museum of Art",
@@ -341514,6 +341618,1274 @@
    "pagina": "https://digi.ub.uni-heidelberg.de/diglit/p_g_4011",
    "licenza": null,
    "immagini": null
+  },
+  {
+   "id": "parker-jk450vc4313",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 71",
+   "datazione": "1100 - 1199",
+   "secolo": [
+    11,
+    12
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Macrobius, Saturnalia, Commentary on Cicero's Somnium Scipionis. Apuleius, De Platone, De deo Socratis",
+   "autori": [
+    {
+     "id": "apuleio",
+     "autore": "Apuleio",
+     "latino": "Apuleius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De deo Socratis"
+     ],
+     "corrispondenza": "titolo: «…n Cicero's Somnium Scipionis. Apuleius, De Platone, De deo Socratis»"
+    },
+    {
+     "id": "macrobio",
+     "autore": "Macrobio",
+     "latino": "Macrobius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Saturnalia"
+     ],
+     "corrispondenza": "titolo: «Macrobius, Saturnalia, Commentary on Ci…»"
+    },
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…mnium Scipionis. Apuleius, De Platone, De deo Socratis»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/jk450vc4313/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/jk450vc4313",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 316
+  },
+  {
+   "id": "parker-zg752jp4185",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 81",
+   "datazione": "1400 - 1499",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Homer, Iliad, Odyssey. Quintus of Smyrna, Posthomerica",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade",
+      "Odissea"
+     ],
+     "corrispondenza": "titolo: «Homer, Iliad, Odyssey. Quintus of Smyrna, Posthomerica»"
+    },
+    {
+     "id": "quinto-smirneo",
+     "autore": "Quinto Smirneo",
+     "latino": "Quintus Smyrnaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Posthomerica"
+     ],
+     "corrispondenza": "titolo: «Homer, Iliad, Odyssey. Quintus of Smyrna, Posthomerica»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/zg752jp4185/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/zg752jp4185",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 1110
+  },
+  {
+   "id": "parker-rb715wf5291",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 83",
+   "datazione": "1200 - 1299",
+   "secolo": [
+    12,
+    13
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Petrus Riga, Aurora. Peter of Poitiers, Genealogia historiarum",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "descrizione: «…enth-century, glossed copy of Boethius, De consolatione philosophiae…»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/rb715wf5291/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/rb715wf5291",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 512
+  },
+  {
+   "id": "parker-nh464gk4498",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 107",
+   "datazione": "1475 - 1525",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Seneca, Tragedies. François de Meyronnes OFM, De indulgentiis. Miscellaneous Texts",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tragedie",
+      "Hercules furens",
+      "Thyestes",
+      "Octavia"
+     ],
+     "corrispondenza": "titolo: «Seneca, Tragedies. François de Meyronnes OFM, De indulgentiis. Miscellaneous Texts»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/nh464gk4498/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/nh464gk4498",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 336
+  },
+  {
+   "id": "parker-dr484rx6179",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 129",
+   "datazione": "1100 - 1399",
+   "secolo": [
+    11,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Flavius Eutropius, Breuiarium ab urbe condita. Gesta Alexandri. Ricardus de Templo OSA, Itinerarium peregrinorum et gesta regis Ricardi",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "titolo: «Flavius Eutropius, Breuiarium ab urbe condita. Gesta Alexandri. Ricardus de…»"
+    },
+    {
+     "id": "eutropio",
+     "autore": "Eutropio",
+     "latino": "Eutropius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Breviarium ab urbe condita"
+     ],
+     "corrispondenza": "titolo: «Flavius Eutropius, Breuiarium ab urbe condita.…»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/dr484rx6179/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/dr484rx6179",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 180
+  },
+  {
+   "id": "parker-tj601fd3737",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 149",
+   "datazione": "1000 - 1099",
+   "secolo": [
+    10,
+    11
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Hegesippus (attrib.), Historia Iosephi de bello iudaico et excidio urbis Hierosolymitanae",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Guerra giudaica"
+     ],
+     "corrispondenza": "titolo: «Hegesippus (attrib.), Historia Iosephi de bello iudaico et excidio urbis Hierosolymitanae»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/tj601fd3737/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/tj601fd3737",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 288
+  },
+  {
+   "id": "parker-wb769ft6889",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 153",
+   "datazione": "800 - 899",
+   "secolo": [
+    8,
+    9
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "The Corpus Martianus Capella",
+   "autori": [
+    {
+     "id": "marziano-capella",
+     "autore": "Marziano Capella",
+     "latino": "Martianus Capella",
+     "categoria": "classico-latino",
+     "opere": [
+      "De nuptiis Philologiae et Mercurii"
+     ],
+     "corrispondenza": "titolo: «The Corpus Martianus Capella»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/wb769ft6889/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/wb769ft6889",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 182
+  },
+  {
+   "id": "parker-sp902vq7011",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 158",
+   "datazione": "1400 - 1499",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Cicero (M. Tullius Cicero), De inuentione. pseudo-Cicero, De ratione dicendi ad Herennium (Rhetorica ad Herennium)",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De inventione",
+      "Rhetorica ad Herennium"
+     ],
+     "corrispondenza": "titolo: «Cicero (M. Tullius Cicero), De inuen…»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/sp902vq7011/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/sp902vq7011",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 290
+  },
+  {
+   "id": "parker-vj611cw9996",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 177",
+   "datazione": "1400 - 1499",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Jacobus de Cessolis OP, Liber de moribus hominum et officiis nobilium ac popularium super ludo scaccorum. Miscellany of Moral, Devotional, Theological, Historical and Medical Tracts",
+   "autori": [
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "descrizione: «…Braga (c. 515-80), a group of Aesop's Fables, poems once attribut…»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/vj611cw9996/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/vj611cw9996",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 396
+  },
+  {
+   "id": "parker-fv407hr1706",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 206",
+   "datazione": "0900 - 0999",
+   "secolo": [
+    9,
+    10
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Philosophical Works by Martianus Capella, Aristotle, Boethius and others",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Philosophical Works by Martianus Capella, Aristotle, Boethius and others»"
+    },
+    {
+     "id": "marziano-capella",
+     "autore": "Marziano Capella",
+     "latino": "Martianus Capella",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Philosophical Works by Martianus Capella, Aristotle, Boethius and others»"
+    },
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Philosophical Works by Martianus Capella, Aristotle, Boethius and others»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/fv407hr1706/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/fv407hr1706",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 274
+  },
+  {
+   "id": "parker-rb296hb9129",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 214",
+   "datazione": "1000 - 1099",
+   "secolo": [
+    10,
+    11
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Boethius, Philosophiae consolatio",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "titolo: «Boethius, Philosophiae consolatio»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/rb296hb9129/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/rb296hb9129",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 280
+  },
+  {
+   "id": "parker-zp389vb9685",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 228",
+   "datazione": "1200 - 1299",
+   "secolo": [
+    12,
+    13
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Claudianus Claudius, Claudianus maior. De raptu Proserpinae. Bernardus Silvestris, Cosmographia (Megacosmos)",
+   "autori": [
+    {
+     "id": "claudiano",
+     "autore": "Claudiano",
+     "latino": "Claudianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "De raptu Proserpinae"
+     ],
+     "corrispondenza": "titolo: «Claudianus Claudius, Claudianus maior. D…»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/zp389vb9685/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/zp389vb9685",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 272
+  },
+  {
+   "id": "parker-qv912yv7154",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 229",
+   "datazione": "1100 - 1299",
+   "secolo": [
+    11,
+    13
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Nonius Marcellus, De compendiosa doctrina",
+   "autori": [
+    {
+     "id": "nonio",
+     "autore": "Nonio Marcello",
+     "latino": "Nonius Marcellus",
+     "categoria": "classico-latino",
+     "opere": [
+      "De compendiosa doctrina"
+     ],
+     "corrispondenza": "titolo: «Nonius Marcellus, De compendiosa doctrina»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/qv912yv7154/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/qv912yv7154",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 156
+  },
+  {
+   "id": "parker-sk997cn6567",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 230",
+   "datazione": "1100 - 1199",
+   "secolo": [
+    11,
+    12
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Publius Papinius Statius, Thebais",
+   "autori": [
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tebaide"
+     ],
+     "corrispondenza": "titolo: «Publius Papinius Statius, Thebais»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/sk997cn6567/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/sk997cn6567",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 170
+  },
+  {
+   "id": "parker-ck580gj8781",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 231",
+   "datazione": "1100 - 1125",
+   "secolo": [
+    11,
+    12
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Terence, Comedies",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commedie"
+     ],
+     "corrispondenza": "titolo: «Terence, Comedies»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/ck580gj8781/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/ck580gj8781",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 238
+  },
+  {
+   "id": "parker-jf942rk0336",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 236",
+   "datazione": "1200 - 1225",
+   "secolo": [
+    12,
+    13
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Marcus Valerius Martialis, Epigrammata",
+   "autori": [
+    {
+     "id": "marziale",
+     "autore": "Marziale",
+     "latino": "Martialis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epigrammi"
+     ],
+     "corrispondenza": "titolo: «Marcus Valerius Martialis, Epigrammata»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/jf942rk0336/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/jf942rk0336",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 34
+  },
+  {
+   "id": "parker-rw486rg6730",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 239",
+   "datazione": "1200 - 1299",
+   "secolo": [
+    12,
+    13
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Aristotle, Metaphysica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica"
+     ],
+     "corrispondenza": "titolo: «Aristotle, Metaphysica»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/rw486rg6730/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/rw486rg6730",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 290
+  },
+  {
+   "id": "parker-yz268db3875",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 248",
+   "datazione": "1500 - 1599",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Greek Miscellany including Homerocentones, Hesiod, Cebes, Theognis et al., with (Latin) Life of St Nicholas of Myra",
+   "autori": [
+    {
+     "id": "esiodo",
+     "autore": "Esiodo",
+     "latino": "Hesiodus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…any including Homerocentones, Hesiod, Cebes, Theognis et al., with…»"
+    },
+    {
+     "id": "teognide",
+     "autore": "Teognide",
+     "latino": "Theognis",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…omerocentones, Hesiod, Cebes, Theognis et al., with (Latin) Life of…»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/yz268db3875/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/yz268db3875",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 384
+  },
+  {
+   "id": "parker-rk793ps8480",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 276",
+   "datazione": "1000 - 1099",
+   "secolo": [
+    10,
+    11
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Histories of the Romans and Normans",
+   "autori": [
+    {
+     "id": "eutropio",
+     "autore": "Eutropio",
+     "latino": "Eutropius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Breviarium ab urbe condita"
+     ],
+     "corrispondenza": "descrizione: «…Historia Romana, a version of Eutropius' Breuiarium ab urbe condita b…»"
+    },
+    {
+     "id": "paolo-diacono",
+     "autore": "Paolo Diacono",
+     "latino": "Paulus Diaconus",
+     "categoria": "medievale",
+     "opere": [
+      "Historia Romana"
+     ],
+     "corrispondenza": "descrizione: «…Breuiarium ab urbe condita by Paul the Deacon (c. 720/30-99); the second wa…»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/rk793ps8480/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/rk793ps8480",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 284
+  },
+  {
+   "id": "parker-vk535sj2249",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 297",
+   "datazione": "1200 - 1325",
+   "secolo": [
+    12,
+    14
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Statuta. Palladius, De agricultura. Thorney Documents, etc",
+   "autori": [
+    {
+     "id": "palladio",
+     "autore": "Palladio",
+     "latino": "Palladius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Opus agriculturae"
+     ],
+     "corrispondenza": "titolo: «Statuta. Palladius, De agricultura. Thorney Documents, etc»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/vk535sj2249/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/vk535sj2249",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 422
+  },
+  {
+   "id": "parker-kj101dc0788",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 313",
+   "datazione": "1100 - 1299",
+   "secolo": [
+    11,
+    13
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Lucius Annaeus Florus, Epitoma de Tito Livio. Historia actuum apostolorum. Ralph de Diceto, Opuscula",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…naeus Florus, Epitoma de Tito Livio. Historia actuum apostolorum.…»"
+    },
+    {
+     "id": "floro",
+     "autore": "Floro",
+     "latino": "Florus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epitoma de Tito Livio"
+     ],
+     "corrispondenza": "titolo: «Lucius Annaeus Florus, Epitoma de Tito Livio. Histo…»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/kj101dc0788/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/kj101dc0788",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 224
+  },
+  {
+   "id": "parker-wg555fw2314",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 330",
+   "datazione": "1000 - 1199",
+   "secolo": [
+    10,
+    12
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Martianus Capella, De nuptiis Philologiae et Mercurii; Glossary on Martianus Capella",
+   "autori": [
+    {
+     "id": "marziano-capella",
+     "autore": "Marziano Capella",
+     "latino": "Martianus Capella",
+     "categoria": "classico-latino",
+     "opere": [
+      "De nuptiis Philologiae et Mercurii"
+     ],
+     "corrispondenza": "titolo: «Martianus Capella, De nuptiis Philologiae et Mercurii; Glossary on Martianus Capella»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/wg555fw2314/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/wg555fw2314",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 268
+  },
+  {
+   "id": "parker-xb651hx1944",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 352",
+   "datazione": "0800 - 0999",
+   "secolo": [
+    8,
+    10
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Boethius, De institutione arithmetica",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De institutione arithmetica"
+     ],
+     "corrispondenza": "titolo: «Boethius, De institutione arithmetica»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/xb651hx1944/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/xb651hx1944",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 170
+  },
+  {
+   "id": "parker-dd998pq6752",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 357",
+   "datazione": "1300 - 1525",
+   "secolo": [
+    13,
+    16
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Diodorus Siculus, Bibliothecae historicae libri VI, transl. by John Skelton. Thomas Wimbledon, Redde racionem villicacionis",
+   "autori": [
+    {
+     "id": "diodoro",
+     "autore": "Diodoro Siculo",
+     "latino": "Diodorus Siculus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Biblioteca storica"
+     ],
+     "corrispondenza": "titolo: «Diodorus Siculus, Bibliothecae historicae libr…»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/dd998pq6752/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/dd998pq6752",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 580
+  },
+  {
+   "id": "parker-pm029jd8386",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 364",
+   "datazione": "1200 - 1299",
+   "secolo": [
+    12,
+    13
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Medical Tracts. Iohannitius, Hippocrates, Theophilius, Philaretus, Galen",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Ars medica"
+     ],
+     "corrispondenza": "titolo: «Medical Tracts. Iohannitius, Hippocrates, Theophilius, Philaretus, Galen»"
+    },
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Prognostico"
+     ],
+     "corrispondenza": "titolo: «Medical Tracts. Iohannitius, Hippocrates, Theophilius, Philaretus, Galen»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/pm029jd8386/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/pm029jd8386",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 186
+  },
+  {
+   "id": "parker-zx084gk1026",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 370",
+   "datazione": "1300 - 1399",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Historia Alexandri Magni (Gesta Alexandri magni). Epistolae Alexandri. Gesta Edwardi III",
+   "autori": [
+    {
+     "id": "curzio-rufo",
+     "autore": "Curzio Rufo",
+     "latino": "Curtius Rufus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Historiae Alexandri Magni"
+     ],
+     "corrispondenza": "titolo: «Historia Alexandri Magni (Gesta Alexandri magni). Epistolae Alexandri. Gesta Edwardi III»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/zx084gk1026/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/zx084gk1026",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 222
+  },
+  {
+   "id": "parker-fp556xm4433",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 379",
+   "datazione": "1500 - 1599",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Robert Talbot, Notebook",
+   "autori": [
+    {
+     "id": "oppiano",
+     "autore": "Oppiano",
+     "latino": "Oppianus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Halieutica"
+     ],
+     "corrispondenza": "descrizione: «…ntonini. The Latin version of Oppian's Halieutica with a brief bio…»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/fp556xm4433/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/fp556xm4433",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 146
+  },
+  {
+   "id": "parker-nx994mm8295",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 398",
+   "datazione": "1400 - 1499",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Aristotle, Politics (transl. by Leonardus Brunus Aretinus (Leonardo Bruni of Arezzo))",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Politica"
+     ],
+     "corrispondenza": "titolo: «Aristotle, Politics (transl. by Leonardus Brunus Aretinus (Leonardo Bruni of Arezzo))»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/nx994mm8295/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/nx994mm8295",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 488
+  },
+  {
+   "id": "parker-zx044gq7026",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 403",
+   "datazione": "1400 - 1499",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Euripides, Hecuba, Orestes, Phoenissae",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Ecuba",
+      "Oreste",
+      "Fenicie"
+     ],
+     "corrispondenza": "titolo: «Euripides, Hecuba, Orestes, Phoenissae»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/zx044gq7026/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/zx044gq7026",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 252
+  },
+  {
+   "id": "parker-ky226pt1201",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 406",
+   "datazione": "1200 - 1299",
+   "secolo": [
+    12,
+    13
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Seneca, Tragedies. Iohannes de Alta Villa, Architrenius. Miscellaneous Texts",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tragedie"
+     ],
+     "corrispondenza": "titolo: «Seneca, Tragedies. Iohannes de Alta Villa, Architrenius. Miscellaneous Texts»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/ky226pt1201/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/ky226pt1201",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 304
+  },
+  {
+   "id": "parker-cb131cc9652",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 409",
+   "datazione": "1400 - 1499",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Cicero (M. Tullius Cicero), De finibus bonorum et malorum",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De finibus"
+     ],
+     "corrispondenza": "titolo: «Cicero (M. Tullius Cicero), De finibus bonorum et malorum»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/cb131cc9652/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/cb131cc9652",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 178
+  },
+  {
+   "id": "parker-fz952dc9137",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 414",
+   "datazione": "1300 - 1399",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Gervase of Tilbury, Otia imperialia. Julius Valerius, transl., Historia Alexandri magni. pseudo-Turpinus, Historia Caroli magni et Rolandi. 'Dares Phrygius', De excidio Troiae historia. Walter Map, Epistola Valerii ad Rufinum, Tractatus de ortu deorum, Historia de adventu Enee in Italiam, De primis habitatoribus Anglia. Geoffrey of Monmouth, Historia regum Britanniae",
+   "autori": [
+    {
+     "id": "curzio-rufo",
+     "autore": "Curzio Rufo",
+     "latino": "Curtius Rufus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Historiae Alexandri Magni"
+     ],
+     "corrispondenza": "titolo: «…ia. Julius Valerius, transl., Historia Alexandri magni. pseudo-Turpinus, Historia Ca…»"
+    },
+    {
+     "id": "darete",
+     "autore": "Darete Frigio",
+     "latino": "Dares Phrygius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De excidio Troiae historia"
+     ],
+     "corrispondenza": "titolo: «…ria Caroli magni et Rolandi. 'Dares Phrygius', De excidio Troiae historia.…»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/fz952dc9137/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/fz952dc9137",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 580
+  },
+  {
+   "id": "parker-tp246fw8333",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 447",
+   "datazione": "1500 - 1525",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Plutarch, Quaestiones Graecae et Romanae (excerpted from Moralia, book 4)",
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Moralia"
+     ],
+     "corrispondenza": "titolo: «Plutarch, Quaestiones Graecae et Romanae (excerpted from Moralia, book 4)»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/tp246fw8333/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/tp246fw8333",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 188
+  },
+  {
+   "id": "parker-hw998hp3077",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 461",
+   "datazione": "1200 - 1225",
+   "secolo": [
+    12,
+    13
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Exactis regibus. Peter Lombard, Sententiarum abbreuiationes. pseudo-Hugh of Saint Victor OSA, Speculum ecclesiae",
+   "autori": [
+    {
+     "id": "marziano-capella",
+     "autore": "Marziano Capella",
+     "latino": "Martianus Capella",
+     "categoria": "classico-latino",
+     "opere": [
+      "De nuptiis Philologiae et Mercurii"
+     ],
+     "corrispondenza": "descrizione: «…us Silvestris (d. c. 1178) on Martianus Capella, De nuptiis Philologiae et Me…»"
+    },
+    {
+     "id": "pietro-lombardo",
+     "autore": "Pietro Lombardo",
+     "latino": "Petrus Lombardus",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "titolo: «Exactis regibus. Peter Lombard, Sententiarum abbreuiationes.…»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/hw998hp3077/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/hw998hp3077",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 356
+  },
+  {
+   "id": "parker-jh145wk0599",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 472",
+   "datazione": "1400 - 1499",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Isidore of Seville, De ortu et obitu patrum. Pietro del Monte, De uitiorum comparatione. Humanist Compilation of Texts from Antiquity and the Renaissance",
+   "autori": [
+    {
+     "id": "isocrate",
+     "autore": "Isocrate",
+     "latino": "Isocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "A Demonico"
+     ],
+     "corrispondenza": "descrizione: «…d to Humphrey of Gloucester), Isocrates, Oratio ad Demonicum, works o…»"
+    },
+    {
+     "id": "isidoro",
+     "autore": "Isidoro di Siviglia",
+     "latino": "Isidorus Hispalensis",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "titolo: «Isidore of Seville, De ortu et obitu patrum. Pie…»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/jh145wk0599/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/jh145wk0599",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 612
+  },
+  {
+   "id": "parker-hg490dx6560",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 530",
+   "datazione": "1398",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Avicenna (Abu 'Ali al-Husain ibn 'Abdallah Ibn Sina), Canon medicinae (transl. by Gerard of Cremona). Galen, De accidenti et morbo",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…ransl. by Gerard of Cremona). Galen, De accidenti et morbo»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/hg490dx6560/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/hg490dx6560",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 332
+  },
+  {
+   "id": "parker-yg734tn1217",
+   "fonte": "parker",
+   "biblioteca": "Parker Library, Corpus Christi College",
+   "citta": "Cambridge",
+   "segnatura": "MS 578",
+   "datazione": "1300 - 1399",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Kalilah and Dimna",
+   "autori": [
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "descrizione: «…s, which might be compared to Aesops Fables in the Greek traditi…»"
+    }
+   ],
+   "manifest": "https://dms-data.stanford.edu/data/manifests/Parker/yg734tn1217/manifest.json",
+   "pagina": "https://parker.stanford.edu/parker/catalog/yg734tn1217",
+   "licenza": "CC BY-NC 4.0 (immagini per cortesia della Parker Library, Corpus Christi College, Cambridge)",
+   "immagini": 306
   },
   {
    "id": "loc-00271073720-jo",

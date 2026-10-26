@@ -15,6 +15,13 @@
    "lon": 1.8355,
    "geonames": 3038789
   },
+  "aberystwyth": {
+   "nome": "Aberystwyth",
+   "paese": "GB",
+   "lat": 52.41444,
+   "lon": -4.08167,
+   "geonames": 2657782
+  },
   "agen": {
    "nome": "Agen",
    "paese": "FR",
@@ -12120,6 +12127,7 @@
   "Aarau": "aarau",
   "Abashiri": "jp-abashiri",
   "Abbeville": "abbeville",
+  "Aberystwyth": "aberystwyth",
   "Abiko": "jp-abiko",
   "Adachi": "jp-adachi",
   "Agano": "jp-agano",
@@ -14265,6 +14273,8 @@
   "wellcome": "londra",
   "manchester": "manchester",
   "cbl": "dublino",
-  "cudl": "cambridge"
+  "cudl": "cambridge",
+  "parker": "cambridge",
+  "nlw": "aberystwyth"
  }
 }

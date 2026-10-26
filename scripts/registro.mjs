@@ -46,6 +46,8 @@ export const BIBLIOTECHE = {
   isos: { biblioteca: "Irish Script on Screen (Royal Irish Academy, National Library of Ireland, Trinity College Dublin, National Library of Scotland e altre)", citta: "Irlanda e altre sedi", come: "corsia uk, ogni notte (elenco ogni 6 giorni)" },
   manchester: { biblioteca: "John Rylands Research Institute and Library (Manchester Digital Collections)", citta: "Manchester", come: "corsia uk: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 6 giorni)" },
   cbl: { biblioteca: "Chester Beatty", citta: "Dublino", come: "corsia uk: a ruota finché la prima lettura non è finita (un manifesto ogni 10 secondi, come chiede la biblioteca), poi ogni notte" },
+  parker: { biblioteca: "Parker Library, Corpus Christi College (manifesti IIIF di Stanford)", citta: "Cambridge", come: "corsia uk, ogni notte (elenco da Biblissima ogni 14 giorni, codici nuovi; il sito parker.stanford.edu non si usa)" },
+  nlw: { biblioteca: "National Library of Wales / Llyfrgell Genedlaethol Cymru", citta: "Aberystwyth", come: "corsia uk, ogni notte (elenco da Wikidata ed Europeana ogni 14 giorni, manifesti nuovi; il sito della biblioteca non si usa)" },
   nlg: { biblioteca: "Biblioteca Nazionale di Grecia", citta: "Atene", come: "ogni notte, da sola (elenco ogni 6 giorni; copie dei manifesti scritte dal catalogo)" },
   ndl: { biblioteca: "National Diet Library (国立国会図書館): manoscritti dei libri antichi giapponesi e cinesi", citta: "Tokyo (Giappone)", come: "corsia mondo: a ruota finché la prima lettura completa non è finita, poi ogni notte (solo i record cambiati ogni 6 giorni, raccolta completa ogni 30)" },
   kokusho: { biblioteca: "Kokusho Database (国書データベース) del National Institute of Japanese Literature: manoscritti di biblioteche, templi e collezioni giapponesi", citta: "Giappone", come: "corsia mondo: a ruota finché la prima lettura completa non è finita, poi ogni notte (raccolta completa ogni 14 giorni)" },
@@ -195,6 +197,8 @@ export const AVANZAMENTO = {
   cudl: () => manifestiLetti("data/cudl.json", "manifesti", 1.6),
   manchester: () => manifestiLetti("data/manchester.json", "manifesti", 1.6),
   cbl: () => manifestiLetti("data/cbl.json", "manifesti", 10.5),
+  parker: () => manifestiLetti("data/parker.json", "codici", 3.2),
+  nlw: () => manifestiLetti("data/nlw.json", "manifesti", 1.6),
   isos: () => manifestiLetti("data/isos.json", "codici", 1.6),
   wellcome: () => {
     const s = leggi("data/wellcome.json"); if (!s) return { testo: "non ancora cominciata" };
