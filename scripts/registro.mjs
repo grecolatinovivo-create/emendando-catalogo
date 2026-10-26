@@ -62,6 +62,9 @@ export const BIBLIOTECHE = {
   // Grecia (corsia «mondo», dal 26 ottobre 2026)
   pergamos: { biblioteca: "Università di Atene, Biblioteca della Facoltà di Filosofia: codici in Pergamos (manifesti IIIF scritti da Emendando)", citta: "Atene", come: "corsia mondo, ogni notte (raccolta completa ogni 14 giorni; manifesti scritti dal catalogo)" },
   rousanou: { biblioteca: "Monastero di Rousanou, Meteore (copie digitali della Biblioteca di Kalambaka)", citta: "Meteore (Grecia)", come: "corsia mondo, ogni notte (elenco da SearchCulture.gr ogni 14 giorni, manifesti nuovi)" },
+  // Africa (corsia «mondo», dal 26 ottobre 2026)
+  auc: { biblioteca: "American University in Cairo, Rare Books and Special Collections Library (codici arabi, persiani e copti)", citta: "Il Cairo (Egitto)", come: "corsia mondo, ogni notte (raccolta completa ogni 6 giorni)" },
+  northwestern: { biblioteca: "Northwestern University Libraries, Herskovits Library of African Studies (manoscritti arabi e in ajami dell'Africa occidentale)", citta: "Evanston (Stati Uniti)", come: "corsia mondo, ogni notte (raccolta completa ogni 6 giorni)" },
   // Spagna (corsia «iberia», dal 26 ottobre 2026)
   mdc: { biblioteca: "Memòria Digital de Catalunya: Biblioteca de Catalunya, Ateneu Barcelonès, Biblioteca Museu Víctor Balaguer, Biblioteca Pública Episcopal del Seminari", citta: "Barcellona e Vilanova i la Geltrú (Spagna)", come: "corsia iberia: a ruota finché la prima lettura non è finita, poi ogni notte (raccolta completa ogni 6 giorni)" },
   ub: { biblioteca: "Universitat de Barcelona, CRAI Biblioteca de Fons Antic (Biblioteca Patrimonial Digital)", citta: "Barcellona (Spagna)", come: "corsia iberia, ogni notte (raccolta completa ogni 6 giorni)" },
@@ -274,9 +277,9 @@ export const AVANZAMENTO = {
   },
   ...Object.fromEntries(Object.keys(FONTI_HSP).map(f => [f, () => { const a = aRiprese(`data/${f}.json`, 1); return { ...a, testo: a.testo.replace("schede lette tutte", "codici digitalizzati letti tutti") }; }])),
   // Spagna (corsia «iberia»)
-  ...Object.fromEntries(["mdc", "ub", "realbiblioteca", "ucm", "sevilla"].map(f => [f, () => {
+  ...Object.fromEntries(["mdc", "ub", "realbiblioteca", "ucm", "sevilla", "auc", "northwestern"].map(f => [f, () => {
     const s = leggi(`data/${f}.json`); if (!s) return { testo: "non ancora cominciata" };
-    if (s.cursore) return { testo: "in corso, a ruota (corsia iberia)", data: s.aggiornato };
+    if (s.cursore) return { testo: `in corso, a ruota (corsia ${["auc", "northwestern"].includes(f) ? "mondo" : "iberia"})`, data: s.aggiornato };
     return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} schede; entrano solo i manoscritti librari)`, data: s.completato || s.aggiornato };
   }])),
   rah: () => {

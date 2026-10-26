@@ -15,10 +15,10 @@ In tutto 196 nazioni: i 193 stati dell'ONU, la Città del Vaticano, la Palestina
 | Stato | Nazioni |
 |---|---|
 | agganciata | 26 |
-| controllata, niente da agganciare | 51 |
-| controllata, bloccata | 6 |
+| controllata, niente da agganciare | 52 |
+| controllata, bloccata | 14 |
 | in corso | 26 |
-| non ancora controllata | 87 |
+| non ancora controllata | 78 |
 | **totale** | **196** |
 
 Che cosa vuol dire ogni stato:
@@ -99,7 +99,7 @@ Francia, Benelux, isole britanniche, Germania, Austria, Svizzera e piccoli stati
 | Paesi Bassi | agganciata | Universiteitsbibliotheek Leiden: 3.586 codici | Koninklijke Bibliotheek dell'Aia: nel registro, da verificare. Leida: papiri fuori (immagini non più in rete). | Utrecht |
 | Lussemburgo | non ancora controllata | nessuna | nessuna | Biblioteca nazionale (poco) |
 | Monaco | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
-| Regno Unito | agganciata | Bodleian Library, Oxford: 9.775; St John's College, Oxford: 141; Christ Church, Oxford: 72; Magdalen College, Oxford: 31; Exeter College, Oxford: 31; Jesus College, Oxford: 20; altre 18 biblioteche: 126. **Totale: 10.196 codici**. Dal 26 ottobre 2026 in lettura (corsia uk): Wellcome Collection (circa 1600), Manchester (John Rylands), Cambridge Digital Library (University Library e college), codici della NLS e della British Library tramite Irish Script on Screen | British Library: bloccata dal 2023 (riprova del 26 ottobre 2026). Parker: dal 26 ottobre 2026 agganciata (elenco da Biblissima; sito dietro verifica anti-robot). Durham: robots.txt vieta tutto. National Library of Wales: dal 26 ottobre 2026 agganciata in parte (circa 125 codici, elenco da Wikidata ed Europeana; sito dietro Cloudflare). National Library of Scotland: Cloudflare. International Dunhuang Programme: bloccato. Papiri della British Library e di Ossirinco: fuori. Endangered Archives Programme: da fare dal browser. | Trinity Cambridge, Edimburgo, SOAS, Lambeth, Glasgow |
+| Regno Unito | agganciata | Bodleian Library, Oxford: 9.775; St John's College, Oxford: 141; Christ Church, Oxford: 72; Magdalen College, Oxford: 31; Exeter College, Oxford: 31; Jesus College, Oxford: 20; altre 18 biblioteche: 126. **Totale: 10.196 codici**. Dal 26 ottobre 2026 in lettura (corsia uk): Wellcome Collection (circa 1600), Manchester (John Rylands), Cambridge Digital Library (University Library e college), codici della NLS e della British Library tramite Irish Script on Screen | British Library: bloccata dal 2023 (riprova del 26 ottobre 2026). Parker: dal 26 ottobre 2026 agganciata (elenco da Biblissima; sito dietro verifica anti-robot). Durham: robots.txt vieta tutto. National Library of Wales: dal 26 ottobre 2026 agganciata in parte (circa 125 codici, elenco da Wikidata ed Europeana; sito dietro Cloudflare). National Library of Scotland: Cloudflare. International Dunhuang Programme: bloccato. Papiri della British Library e di Ossirinco: fuori. Endangered Archives Programme: robots.txt vieta i manifesti e chiude il sito ai programmi di intelligenza artificiale (26 ottobre 2026); da chiedere con la lettera di Urbino. | Trinity Cambridge, Edimburgo, SOAS, Lambeth, Glasgow |
 | Irlanda | agganciata | Dal 26 ottobre 2026 in lettura (corsia uk): Chester Beatty, Dublino (circa 3000 oggetti da leggere, poi solo i manoscritti librari); Irish Script on Screen (circa 500 codici: Royal Irish Academy, National Library of Ireland, Trinity College Dublin, UCD, Maynooth, Cork, Galway, King's Inns, Marsh's Library e altre) | Trinity College Dublin, Digital Collections: CAPTCHA (i codici irlandesi del TCD entrano tramite ISOS). | National Library of Ireland (catalogo proprio) |
 | Germania | agganciata | Bayerische Staatsbibliothek, München: 28.788; Heidelberger Papyrussammlung: 4.633; Staatsbibliothek zu Berlin: 3.296; Universitätsbibliothek Leipzig: 2.677; Universitätsbibliothek Heidelberg: 2.004; Wissenschaftliche Stadtbibliothek Mainz: 618; altre 178 biblioteche: 982. **Totale: 42.998 codici** | Wolfenbüttel, Karlsruhe, Stoccarda: sospese (server non raggiungibili). Treviri: niente IIIF. Papiri di Berlino: fuori (serve un permesso). Papiri di Colonia: in attesa di decisione. Dal 26 ottobre 2026 entrano dal Handschriftenportal (corsia europa) Francoforte (1937 codici), Dresda (1633), Tubinga (273) e Darmstadt (241, con le copie dei manifesti scritte dal catalogo): i numeri qui accanto si aggiornano al prossimo censimento. | Gottinga, Kassel, Düsseldorf, Friburgo, Würzburg, Fulda, Amburgo, Halle |
 | Austria | in corso | Österreichische Nationalbibliothek, Wien: 2.708 (2.705 dalla fonte «onb», agganciata il 26 ottobre 2026, più 3 da altre fonti); Österreichisches Staatsarchiv, Wien: 1; Tiroler Landesmuseum Ferdinandeum, Innsbruck: 1; Stiftsbibliothek St. Paul im Lavanttal, St. Paul in Kärnten: 1. **Totale: 2.711 codici** | Österreichische Nationalbibliothek: elenco da ÖNB Digital e manifesti IIIF 3 di api.onb.ac.at, letti a riprese nella corsia giornaliera (3.200 candidati su 6.394 letti il 26 ottobre 2026). Papiri di Vienna: da provare. | Le vede il lavoro in corso. |
@@ -300,11 +300,11 @@ Egitto, Maghreb e Sudan.
 
 | Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
 |---|---|---|---|---|
-| Egitto | agganciata | Monastero di Santa Caterina del Sinai (microfilm della Library of Congress), Sinai (Egitto): 1.668 codici (microfilm della Library of Congress) | Bibliotheca Alexandrina: non risponde dal server. | Dar al-Kutub, Biblioteca di al-Azhar |
+| Egitto | agganciata | Monastero di Santa Caterina del Sinai (microfilm della Library of Congress), Sinai (Egitto): 1.668 codici; American University in Cairo, Rare Books and Special Collections Library, Il Cairo: 36 codici (arabi, persiani, copti; dal 26 ottobre 2026) | Bibliotheca Alexandrina: il Digital Assets Repository non risponde nemmeno dal browser (26 ottobre 2026). Dar al-Kutub e al-Azhar: nessuna biblioteca digitale pubblica dei manoscritti trovata. | Dar al-Kutub, Biblioteca di al-Azhar (senza copie digitali aperte) |
 | Libia | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
 | Tunisia | non ancora controllata | nessuna | nessuna | Biblioteca nazionale di Tunisia (non verificata) |
 | Algeria | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
-| Marocco | non ancora controllata | nessuna | nessuna | Biblioteca nazionale del Regno del Marocco |
+| Marocco | controllata, niente da agganciare | nessuna | Bibliothèque nationale du Royaume du Maroc: nessuna biblioteca digitale pubblica dei manoscritti; il catalogo in linea dà solo la collocazione (prova dal browser del 26 ottobre 2026). | Nessuna nota di rilievo. |
 | Sudan | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
 
 ### Biblioteche che mancano
@@ -313,7 +313,6 @@ Egitto, Maghreb e Sudan.
 |---|---|---|---|---|---|
 | Egitto | Dar al-Kutub, Il Cairo (Biblioteca e archivi nazionali) | non trovato: nessuna biblioteca digitale aperta nota | non si sa | il fondo ha decine di migliaia di manoscritti; in rete non si sa | media |
 | Egitto | Biblioteca di al-Azhar, Il Cairo (portale dei manoscritti annunciato nel 2011, oggi non verificato) | www.azhar.eg | non si sa | non si sa | bassa |
-| Marocco | Bibliothèque nationale du Royaume du Maroc, biblioteca digitale | www.bnrm.ma | non si sa | alcune migliaia (stima) | media |
 | Tunisia | Bibliothèque nationale de Tunisie | www.bnt.nat.tn | non si sa | non si sa | bassa |
 
 ## Africa subsahariana
@@ -324,14 +323,14 @@ Le tradizioni manoscritte sono soprattutto arabe e in ajami (Sahel, Africa orien
 
 | Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
 |---|---|---|---|---|
-| Mauritania | non ancora controllata | nessuna | nessuna | Biblioteche di Chinguetti e Ouadane (copie in progetti EAP, da cercare) |
-| Mali | non ancora controllata | nessuna | vHMML (Timbuctù, SAVAMA-DCI): bloccato. | Manoscritti di Timbuctù e di Djenné |
-| Nigeria | non ancora controllata | nessuna | nessuna | Arewa House e altri fondi in progetti EAP |
-| Etiopia | non ancora controllata | nessuna | vHMML (Ethiopian Manuscript Microfilm Library): bloccato. | Chiese e monasteri etiopici in progetti EAP |
-| Eritrea | non ancora controllata | nessuna | nessuna | Fondi in progetti EAP (da cercare) |
-| Kenya | non ancora controllata | nessuna | nessuna | Manoscritti di Lamu in progetti EAP |
-| Tanzania | non ancora controllata | nessuna | nessuna | Archivi di Zanzibar in progetti EAP |
-| Sudafrica | non ancora controllata | nessuna | nessuna | National Library of South Africa, collezione Grey (Città del Capo) |
+| Mauritania | controllata, bloccata | nessuna | Endangered Archives Programme: il robots.txt vieta i manifesti a tutti i robot e il sito ai programmi di intelligenza artificiale, l'elenco è dietro AWS WAF (26 ottobre 2026); da chiedere con la lettera di Urbino. | Biblioteche di Chinguetti e Ouadane (copie nei progetti EAP) |
+| Mali | controllata, bloccata | nessuna | vHMML (Timbuctù, SAVAMA-DCI): bloccato. Endangered Archives Programme: il robots.txt vieta i manifesti a tutti i robot e il sito ai programmi di intelligenza artificiale, l'elenco è dietro AWS WAF (26 ottobre 2026); da chiedere con la lettera di Urbino. | Manoscritti di Timbuctù e di Djenné |
+| Nigeria | controllata, bloccata | nessuna biblioteca nigeriana; 65 codici arabi e in ajami copiati soprattutto a Kano e Sokoto sono nel catalogo tramite la Herskovits Library di Northwestern (Evanston, Stati Uniti), dal 26 ottobre 2026 | Endangered Archives Programme: il robots.txt vieta i manifesti a tutti i robot e il sito ai programmi di intelligenza artificiale, l'elenco è dietro AWS WAF (26 ottobre 2026); da chiedere con la lettera di Urbino. | Arewa House e altri fondi nei progetti EAP |
+| Etiopia | controllata, bloccata | nessuna biblioteca etiopica; codici etiopici conservati fuori (Parigi, Cambridge, Wellcome, Princeton) entrano dalle loro fonti | vHMML (Ethiopian Manuscript Microfilm Library): bloccato. Endangered Archives Programme: il robots.txt vieta i manifesti a tutti i robot e il sito ai programmi di intelligenza artificiale, l'elenco è dietro AWS WAF (26 ottobre 2026); da chiedere con la lettera di Urbino. Princeton (manoscritti etiopici): siti non raggiungibili il 26 ottobre 2026, da riprovare. | Chiese e monasteri etiopici nei progetti EAP |
+| Eritrea | controllata, bloccata | nessuna | Endangered Archives Programme: il robots.txt vieta i manifesti a tutti i robot e il sito ai programmi di intelligenza artificiale, l'elenco è dietro AWS WAF (26 ottobre 2026); da chiedere con la lettera di Urbino. | Fondi nei progetti EAP |
+| Kenya | controllata, bloccata | nessuna | Endangered Archives Programme: il robots.txt vieta i manifesti a tutti i robot e il sito ai programmi di intelligenza artificiale, l'elenco è dietro AWS WAF (26 ottobre 2026); da chiedere con la lettera di Urbino. | Manoscritti di Lamu nei progetti EAP |
+| Tanzania | controllata, bloccata | nessuna | Endangered Archives Programme: il robots.txt vieta i manifesti a tutti i robot e il sito ai programmi di intelligenza artificiale, l'elenco è dietro AWS WAF (26 ottobre 2026); da chiedere con la lettera di Urbino. | Archivi di Zanzibar nei progetti EAP |
+| Sudafrica | controllata, bloccata | nessuna | National Library of South Africa, collezione Grey: digitalizzata da HMML, solo in vHMML (bloccato); la biblioteca non ha un visore suo (26 ottobre 2026). | National Library of South Africa, collezione Grey (Città del Capo) |
 | Senegal | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
 | Gambia | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
 | Guinea | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
@@ -339,7 +338,7 @@ Le tradizioni manoscritte sono soprattutto arabe e in ajami (Sahel, Africa orien
 | Sierra Leone | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
 | Costa d'Avorio | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
 | Burkina Faso | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
-| Ghana | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
+| Ghana | non ancora controllata | nessuna biblioteca ghanese; alcuni codici arabi del Ghana sono nel catalogo tramite la Herskovits Library di Northwestern (Evanston, Stati Uniti), dal 26 ottobre 2026 | nessuna | Possibili fondi arabi o in ajami in progetti EAP (bloccati, vedi Mali). |
 | Togo | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
 | Benin | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
 | Niger | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
@@ -378,9 +377,10 @@ Le tradizioni manoscritte sono soprattutto arabe e in ajami (Sahel, Africa orien
 | Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
 |---|---|---|---|---|---|
 | Mali | Manoscritti di Timbuctù (Mamma Haidara e altre biblioteche): mostra di Google Arts & Culture «Mali Magic» | artsandculture.google.com | no | alcune centinaia esposti | bassa |
-| Mali | Manoscritti di Djenné e di Timbuctù nei progetti dell'Endangered Archives Programme | eap.bl.uk | non si sa | alcune migliaia (stima) | media |
-| Etiopia | Chiese e monasteri etiopici nei progetti dell'Endangered Archives Programme | eap.bl.uk | non si sa | alcune migliaia (stima) | media |
-| Sudafrica | National Library of South Africa, collezione di Sir George Grey (codici medievali; l'altra metà della raccolta è ad Auckland, già nel catalogo) | www.nlsa.ac.za | non si sa | poche decine | bassa |
+| Mali | Manoscritti di Djenné e di Timbuctù nei progetti dell'Endangered Archives Programme | eap.bl.uk | sì, con CORS aperto, ma vietato dal robots.txt (26 ottobre 2026) | alcune migliaia (stima) | alta (da chiedere) |
+| Etiopia | Chiese e monasteri etiopici nei progetti dell'Endangered Archives Programme | eap.bl.uk | sì, con CORS aperto, ma vietato dal robots.txt (26 ottobre 2026) | alcune migliaia (stima) | alta (da chiedere) |
+| Etiopia | Manoscritti etiopici di Princeton (Princeton Ethiopic e Garrett) | figgy.princeton.edu | sì (secondo le fonti); siti non raggiungibili il 26 ottobre 2026 | circa un migliaio (stima) | alta |
+| Sudafrica | National Library of South Africa, collezione di Sir George Grey (codici medievali; l'altra metà della raccolta è ad Auckland, già nel catalogo) | www.nlsa.ac.za | no: copie solo in vHMML (bloccato) | poche decine | bassa |
 
 ## Asia centrale e meridionale
 

@@ -9,7 +9,7 @@
 //        [--ndl-minuti=60] [--kokusho-minuti=60] [--auckland-minuti=10] [--toronto-minuti=15]
 //        [--wellcome-minuti=10] [--isos-minuti=20] [--manchester-minuti=30] [--cudl-minuti=30] [--cbl-minuti=60] [--parker-minuti=20] [--nlw-minuti=10] [--minuti-totali=160] [--solo-costruisci]
 //        [--mdc-minuti=10] [--ub-minuti=10] [--realbiblioteca-minuti=15] [--ucm-minuti=15] [--sevilla-minuti=5] [--rah-minuti=30]
-//        [--pergamos-minuti=10] [--rousanou-minuti=5]
+//        [--pergamos-minuti=10] [--rousanou-minuti=5] [--auc-minuti=5] [--northwestern-minuti=5]
 //        [--onb-minuti=30] [--bncf-minuti=5] [--vallicelliana-minuti=5] [--malatestiana-minuti=20] [--polona-minuti=20] [--manuscriptorium-minuti=30]
 // Scrive il catalogo diviso per fonte (vedi costruisci.mjs): data/catalogo/indice.json, data/catalogo/indice/<fonte>-<n>.json, data/catalogo/voci/<fonte>-<n>.json,
 // più data/manoscritti.json (compatibilità: solo i codici con autori classici), e gli stati delle scansioni a riprese
@@ -54,6 +54,7 @@ import { scansionaKokusho, recordKokusho } from "./fonti/kokusho.mjs";
 import { scansionaAuckland, recordAuckland } from "./fonti/auckland.mjs";
 import { recordSlv } from "./fonti/slv.mjs";
 import { scansionaToronto, recordToronto } from "./fonti/toronto.mjs";
+import { scansionaNorthwestern, recordNorthwestern } from "./fonti/northwestern.mjs";
 import { scansionaCdm, recordCdm, FONTI_CDM } from "./fonti/cdm.mjs";
 import { scansionaOmeka, recordOmeka, FONTI_OMEKA } from "./fonti/omeka.mjs";
 import { scansionaSevilla, recordSevilla } from "./fonti/sevilla.mjs";
@@ -74,7 +75,7 @@ import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 import { tipoDa } from "./carte.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
-const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,parker,nlw,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,vaticana").split(",");
+const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,parker,nlw,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,auc,northwestern,vaticana").split(",");
 const INIZIO = Date.now();
 export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)", berlino: "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
   bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -119,6 +120,9 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   // Grecia (corsia «mondo», dal 26 ottobre 2026)
   pergamos: "Università di Atene, Biblioteca della Facoltà di Filosofia (pergamos.lib.uoa.gr; manifesti scritti dal catalogo)",
   rousanou: "Monastero di Rousanou, Meteore (copie digitali della Biblioteca di Kalambaka, opac.kalambakalibrary.org; elenco da searchculture.gr)",
+  // Africa (corsia «mondo», dal 26 ottobre 2026)
+  auc: "American University in Cairo, Rare Books and Special Collections Library (digitalcollections.aucegypt.edu)",
+  northwestern: "Northwestern University Libraries, Herskovits Library of African Studies, Evanston: manoscritti arabi e in ajami dell'Africa occidentale (api.dc.library.northwestern.edu)",
   // Europa (corsia «europa», dal 26 ottobre 2026)
   handrit: "handrit.is: Reykjavík e Copenaghen (descrizioni TEI da github.com/Handrit/Manuscripts; manifesti scritti dal catalogo)",
   polona: "Polona: Biblioteka Narodowa e altre biblioteche polacche (polona.pl)",
@@ -301,6 +305,8 @@ async function main() {
     // Grecia (corsia «mondo»): Università di Atene (Pergamos, manifesti scritti dal catalogo) e Monastero di Rousanou alle Meteore (IIIF di Kalambaka)
     pergamos: async () => recordPergamos(await scansionaPergamos({ minuti: min("pergamos", +(arg["pergamos-minuti"] ?? 10)), soloCache: sc("pergamos") })),
     rousanou: async () => recordRousanou(await scansionaRousanou({ minuti: min("rousanou", +(arg["rousanou-minuti"] ?? 5)), soloCache: sc("rousanou") })),
+    // Africa (corsia «mondo»): American University in Cairo (CONTENTdm, in FONTI_CDM qui sopra) e Northwestern (Herskovits Library)
+    northwestern: async () => recordNorthwestern(await scansionaNorthwestern({ minuti: min("northwestern", +(arg["northwestern-minuti"] ?? 5)), soloCache: sc("northwestern") })),
     vaticana: async () => {
       let minuti = +(arg["vaticana-minuti"] ?? 20);
       // con un tempo complessivo si lasciano 10 minuti per costruire il catalogo, provarlo e salvarlo

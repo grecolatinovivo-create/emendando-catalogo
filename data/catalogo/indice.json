@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T11:59:54.650Z",
- "totale": 428561,
- "con_autori": 25804,
+ "aggiornato": "2026-10-26T12:24:57.369Z",
+ "totale": 428662,
+ "con_autori": 25808,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte (categoria a parte, conteggi in «tipi») e vuoto per i codici; «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
   "id",
@@ -34,7 +34,7 @@
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 26683
+   "codici": 26684
   },
   "de": {
    "nome": "tedesco",
@@ -42,7 +42,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 14891
+   "codici": 14969
   },
   "grc": {
    "nome": "greco",
@@ -58,7 +58,7 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 8551
+   "codici": 8578
   },
   "pl": {
    "nome": "polacco",
@@ -74,7 +74,7 @@
   },
   "en": {
    "nome": "inglese",
-   "codici": 6059
+   "codici": 6060
   },
   "it": {
    "nome": "italiano",
@@ -98,11 +98,11 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 2368
+   "codici": 2372
   },
   "cop": {
    "nome": "copto",
-   "codici": 1712
+   "codici": 1715
   },
   "tr": {
    "nome": "turco",
@@ -228,11 +228,11 @@
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 5823
+   "codici": 5824
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 13240
+   "codici": 13243
   },
   "medievale": {
    "nome": "autori medievali",
@@ -242,7 +242,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 427869
+   "codici": 427970
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -770,7 +770,7 @@
    "nome": "Erodoto",
    "latino": "Herodotus",
    "categoria": "classico-greco",
-   "codici": 42
+   "codici": 43
   },
   "tucidide": {
    "nome": "Tucidide",
@@ -1208,19 +1208,19 @@
    "nome": "Gregorio di Nazianzo",
    "latino": "Gregorius Nazianzenus",
    "categoria": "cristiano",
-   "codici": 475
+   "codici": 476
   },
   "giovanni-crisostomo": {
    "nome": "Giovanni Crisostomo",
    "latino": "Iohannes Chrysostomus",
    "categoria": "cristiano",
-   "codici": 1135
+   "codici": 1136
   },
   "bibbia": {
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 5944
+   "codici": 5945
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1381,6 +1381,7 @@
   "All Souls College, Oxford",
   "American Academy in Rome, Roma",
   "American Irish Historical Society, New York",
+  "American University in Cairo, Rare Books and Special Collections Library, Il Cairo",
   "Ancien fonds du Conservatoire",
   "Archives cantonales jurassiennes, Porrentruy",
   "Archives cantonales vaudoises, Chavannes-près-Renens",
@@ -1987,6 +1988,7 @@
   "Niemiecki Instytut Historyczny w Warszawie, Varsavia",
   "Nikolaus-Matz-Bibliothek (Kirchenbibliothek), Michelstadt",
   "Nonaka Usaien (野中烏犀圓), Saga",
+  "Northwestern University Libraries, Melville J. Herskovits Library of African Studies, Evanston",
   "Oberlin College Library, collezione Ainsworth (オーバリン大学図書館 エインズワースコレクション), Oberlin (Stati Uniti)",
   "Oblastní muzeum a galerie v Mostě",
   "Oblastní muzeum v Lounech, Louny",
@@ -3915,6 +3917,26 @@
     "indice/ub-0.json"
    ]
   },
+  "auc": {
+   "nome": "American University in Cairo, Rare Books and Special Collections Library (digitalcollections.aucegypt.edu)",
+   "codici": 36,
+   "carte": 0,
+   "con_autori": 4,
+   "lingue": {
+    "?": 1,
+    "ar": 29,
+    "fa": 4,
+    "cop": 3
+   },
+   "esito": "ok",
+   "prefissi": [
+    "auc-"
+   ],
+   "pezzi_voci": 1,
+   "indice": [
+    "indice/auc-0.json"
+   ]
+  },
   "realbiblioteca": {
    "nome": "Real Biblioteca (Palacio Real, Madrid) e Real Biblioteca del Monasterio de El Escorial (rbdigital.realbiblioteca.es, Patrimonio Nacional)",
    "codici": 2178,
@@ -4090,6 +4112,25 @@
    "pezzi_voci": 1,
    "indice": [
     "indice/rousanou-0.json"
+   ]
+  },
+  "northwestern": {
+   "nome": "Northwestern University Libraries, Herskovits Library of African Studies, Evanston: manoscritti arabi e in ajami dell'Africa occidentale (api.dc.library.northwestern.edu)",
+   "codici": 65,
+   "carte": 0,
+   "con_autori": 0,
+   "lingue": {
+    "ar": 49,
+    "xx": 27,
+    "en": 1
+   },
+   "esito": "ok",
+   "prefissi": [
+    "nu-"
+   ],
+   "pezzi_voci": 1,
+   "indice": [
+    "indice/northwestern-0.json"
    ]
   },
   "vaticana": {
@@ -4414,6 +4455,11 @@
    "righe": 289
   },
   {
+   "file": "indice/auc-0.json",
+   "fonte": "auc",
+   "righe": 36
+  },
+  {
    "file": "indice/realbiblioteca-0.json",
    "fonte": "realbiblioteca",
    "righe": 2178
@@ -4452,6 +4498,11 @@
    "file": "indice/rousanou-0.json",
    "fonte": "rousanou",
    "righe": 38
+  },
+  {
+   "file": "indice/northwestern-0.json",
+   "fonte": "northwestern",
+   "righe": 65
   },
   {
    "file": "indice/vaticana-0.json",
@@ -5021,6 +5072,12 @@
    "lat": 46.8488,
    "lon": 6.8465
   },
+  "evanston": {
+   "nome": "Evanston",
+   "paese": "US",
+   "lat": 42.04114,
+   "lon": -87.69006
+  },
   "faido": {
    "nome": "Faido",
    "paese": "CH",
@@ -5146,6 +5203,13 @@
    "paese": "CZ",
    "lat": 50.2092,
    "lon": 15.8328
+  },
+  "il-cairo": {
+   "nome": "Il Cairo",
+   "en": "Cairo",
+   "paese": "EG",
+   "lat": 30.06263,
+   "lon": 31.24967
   },
   "innsbruck": {
    "nome": "Innsbruck",
@@ -6857,6 +6921,7 @@
   "oxford",
   "roma",
   "new-york",
+  "il-cairo",
   "parigi",
   "porrentruy",
   "chavannes",
@@ -7463,6 +7528,7 @@
   "varsavia",
   "michelstadt",
   "jp-saga",
+  "evanston",
   "oberlin",
   "most",
   "louny",

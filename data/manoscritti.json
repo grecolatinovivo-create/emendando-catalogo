@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T11:59:54.650Z",
+ "aggiornato": "2026-10-26T12:24:57.369Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -232,6 +232,11 @@
    "codici": 13,
    "esito": "ok"
   },
+  "auc": {
+   "nome": "American University in Cairo, Rare Books and Special Collections Library (digitalcollections.aucegypt.edu)",
+   "codici": 1,
+   "esito": "ok"
+  },
   "realbiblioteca": {
    "nome": "Real Biblioteca (Palacio Real, Madrid) e Real Biblioteca del Monasterio de El Escorial (rbdigital.realbiblioteca.es, Patrimonio Nacional)",
    "codici": 125,
@@ -272,13 +277,18 @@
    "codici": 1,
    "esito": "ok"
   },
+  "northwestern": {
+   "nome": "Northwestern University Libraries, Herskovits Library of African Studies, Evanston: manoscritti arabi e in ajami dell'Africa occidentale (api.dc.library.northwestern.edu)",
+   "codici": 0,
+   "esito": "ok"
+  },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
    "codici": 428,
    "esito": "ok"
   }
  },
- "totale": 11549,
+ "totale": 11550,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -308,6 +318,34 @@
    "manifest": "https://kokusho.nijl.ac.jp/biblio/100319217/manifest",
    "pagina": "https://kokusho.nijl.ac.jp/biblio/100319217",
    "licenza": "condizioni del proprietario (kokusho.nijl.ac.jp/page/usage.html)",
+   "immagini": null
+  },
+  {
+   "id": "auc-p15795coll4-2948",
+   "fonte": "auc",
+   "biblioteca": "American University in Cairo, Rare Books and Special Collections Library",
+   "citta": "Il Cairo",
+   "segnatura": "SC-2003-01-01-08-6",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "King Herod I and the Family = تاريخ الدولة الرومانية وولاة اليهودية; Herodotus wal-Ailah",
+   "autori": [
+    {
+     "id": "erodoto",
+     "autore": "Erodoto",
+     "latino": "Herodotus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «King Herod I and the Family = تاريخ الدولة الرومانية وولاة اليهودية; Herodotus wal-Ailah»"
+    }
+   ],
+   "manifest": "https://digitalcollections.aucegypt.edu/iiif/2/p15795coll4:2948/manifest.json",
+   "pagina": "https://digitalcollections.aucegypt.edu/digital/collection/p15795coll4/id/2948",
+   "licenza": "Copyright 2013, American University in Cairo. All rights reserved.",
    "immagini": null
   },
   {

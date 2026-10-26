@@ -3,7 +3,9 @@
 # di centinaia di biblioteche), Auckland Libraries (Sir George Grey Special Collections) e, dal 26 ottobre 2026, la Thomas Fisher
 # Rare Book Library dell'Università di Toronto (Canada; collezioni IIIF) e, dal 26 ottobre 2026, la Grecia: Università di Atene
 # (Pergamos, codici della Biblioteca della Facoltà di Filosofia; data/pergamos.json) e Monastero di Rousanou alle Meteore (IIIF della
-# Biblioteca di Kalambaka, elenco da SearchCulture.gr; data/rousanou.json). Gli stati sono in data/ndl.json, data/kokusho.json,
+# Biblioteca di Kalambaka, elenco da SearchCulture.gr; data/rousanou.json). Dal 26 ottobre 2026 anche l'Africa: American University
+# in Cairo (CONTENTdm, codici arabi, persiani e copti; data/auc.json) e Northwestern University, Herskovits Library (manoscritti arabi
+# e in ajami dell'Africa occidentale, API delle Digital Collections; data/northwestern.json). Gli stati sono in data/ndl.json, data/kokusho.json,
 # data/auckland.json, data/toronto.json. Richieste in serie, una biblioteca dopo l'altra, con le pause di sempre (scripts/rete.mjs).
 # Ruota fino a lettura completa: finché una delle tre non ha finito la prima lettura completa, la corsia lavora circa 150 minuti
 # per esecuzione (NDL 65, Kokusho 60, Auckland 10, Toronto 10) e riparte subito da sola, purché nel giro ci siano stati progressi
@@ -29,8 +31,8 @@ jobs:
     uses: ./.github/workflows/corsia.yml
     with:
       corsia: mondo
-      fonti: ndl,kokusho,auckland,toronto,pergamos,rousanou
-      argomenti: --ndl-minuti=65 --kokusho-minuti=60 --auckland-minuti=10 --toronto-minuti=10 --pergamos-minuti=10 --rousanou-minuti=5
+      fonti: ndl,kokusho,auckland,toronto,pergamos,rousanou,auc,northwestern
+      argomenti: --ndl-minuti=65 --kokusho-minuti=60 --auckland-minuti=10 --toronto-minuti=10 --pergamos-minuti=10 --rousanou-minuti=5 --auc-minuti=5 --northwestern-minuti=5
       cache: false
       ruota: false
       completa: true

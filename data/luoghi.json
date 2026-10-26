@@ -12121,6 +12121,21 @@
    "lat": -33.4569,
    "lon": -70.6483,
    "geonames": 3871336
+  },
+  "il-cairo": {
+   "nome": "Il Cairo",
+   "en": "Cairo",
+   "paese": "EG",
+   "lat": 30.06263,
+   "lon": 31.24967,
+   "geonames": 360630
+  },
+  "evanston": {
+   "nome": "Evanston",
+   "paese": "US",
+   "lat": 42.04114,
+   "lon": -87.69006,
+   "geonames": 4891382
   }
  },
  "citta": {
@@ -14190,7 +14205,10 @@
   "Caracas (Venezuela)": "caracas",
   "Meteore (Kalambaka)": "meteore",
   "Santiago (Cile)": "santiago-del-cile",
-  "Santiago del Cile": "santiago-del-cile"
+  "Santiago del Cile": "santiago-del-cile",
+  "Il Cairo": "il-cairo",
+  "Il Cairo (Egitto)": "il-cairo",
+  "Evanston": "evanston"
  },
  "biblioteche": {
   "Bibliothèque Carré d'art / Nîmes": "nimes",

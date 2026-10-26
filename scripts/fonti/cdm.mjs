@@ -4,6 +4,11 @@
 //     e della Biblioteca Pública Episcopal del Seminari de Barcelona. Restano fuori pergamene sciolte (documenti), carte personali
 //     (Manuscrits Mn. Salvador Bové, fondi personali), musica, fotografie, mappe e stampati.
 //   - «ub»: Biblioteca Patrimonial Digital dell'Universitat de Barcelona (bipadi.ub.edu, CRAI Biblioteca de Fons Antic), collezione «Manuscrits».
+//   - «auc» (dal 26 ottobre 2026, corsia «mondo»): American University in Cairo, Rare Books and Special Collections Library
+//     (digitalcollections.aucegypt.edu): «Arabic Manuscript Collection» (codici arabi e persiani) e «Iryan Moftah Coptic Language and
+//     Religion Manuscripts» (codici copti e arabo-cristiani). Il robots.txt vieta ricerca e /oai/ (Crawl-Delay 1), non l'API; manifesti
+//     e immagini (cdm15795.contentdm.oclc.org) con CORS aperto (prova del 26 ottobre 2026). Ogni collezione ha i suoi nomi dei campi:
+//     «campi» li riporta a quelli usati qui sotto.
 // Il robots.txt dei due siti vieta le pagine di ricerca e /oai/ (Crawl-delay 1), non l'API dmwebservices; pausa di 1,5 secondi.
 // Manifesti IIIF: <sito>/iiif/2/<collezione>:<numero>/manifest.json; manifesti e immagini (server cdm21058/cdm21046.contentdm.oclc.org)
 // con CORS aperto (prova del 26 ottobre 2026).
@@ -30,7 +35,30 @@ export const FONTI_CDM = {
     collezioni: { manuscrits: { biblioteca: "Universitat de Barcelona, CRAI Biblioteca de Fons Antic", citta: "Barcellona" } },
     licenza: "Universitat de Barcelona: condizioni indicate nella scheda (Biblioteca Patrimonial Digital)",
   },
+  auc: {
+    sito: "https://digitalcollections.aucegypt.edu", prefisso: "auc",
+    collezioni: {
+      // campo usato qui -> campo (o campi) della collezione
+      p15795coll52: { biblioteca: "American University in Cairo, Rare Books and Special Collections Library", citta: "Il Cairo",
+        campi: { title: ["title", "subjec"], creato: "creato", date: "date", langua: "rights", descri: ["format", "covera"], rights: "licens", memria: "call" } },
+      p15795coll4: { biblioteca: "American University in Cairo, Rare Books and Special Collections Library", citta: "Il Cairo",
+        campi: { title: ["title", "altern"], creato: "collec", contri: "videog", date: "date", langua: "langua", descri: "descri", subjec: "subjec", rights: "rightsb", memria: "identi" } },
+    },
+    licenza: "American University in Cairo, Rare Books and Special Collections Library: condizioni indicate nella scheda",
+  },
 };
+
+// campi della richiesta e record riportato ai nomi standard (collezioni con «campi» propri)
+const campiRichiesta = col => (col && col.campi ? [...new Set(Object.values(col.campi).flat())] : CAMPI);
+function rimappa(x, col) {
+  if (!col || !col.campi) return x;
+  const y = { pointer: x.pointer, parentobject: x.parentobject };
+  for (const [k, v] of Object.entries(col.campi)) {
+    const valori = [].concat(v).map(n => (typeof x[n] === "string" ? x[n].trim() : "")).filter(Boolean);
+    y[k] = k === "title" ? valori.join(" = ") : valori.join(" ; ");
+  }
+  return y;
+}
 const CAMPI = ["title", "creato", "contri", "date", "langua", "descri", "subjec", "source", "rights", "gestia", "type", "format", "caract", "identi", "memria", "relati", "publis", "formaa"];
 const PAGINA = 200, GIORNI = 6;
 
@@ -96,12 +124,12 @@ export async function scansionaCdm({ fonte, minuti = 10, soloCache = false } = {
     if (st.cursore.collezione !== c) st.cursore = { collezione: c, inizio: 1, voci: st.cursore.voci };
     for (;;) {
       if (Date.now() > fine) { salvaStato(fonte, st); throw new Error(`raccolta incompleta (${c}, record ${st.cursore.inizio}): riprenderà alla prossima esecuzione`); }
-      const url = `${cfg.sito}/digital/bl/dmwebservices/index.php?q=dmQuery/${c}/0/${CAMPI.join("!")}/nosort/${PAGINA}/${st.cursore.inizio}/0/0/0/0/json`;
+      const url = `${cfg.sito}/digital/bl/dmwebservices/index.php?q=dmQuery/${c}/0/${campiRichiesta(cfg.collezioni[c]).join("!")}/nosort/${PAGINA}/${st.cursore.inizio}/0/0/0/0/json`;
       const r = await scarica(url, { timeout: 120000 });
       if (r.stato !== 200) throw new Error(`${c}: HTTP ${r.stato}`);
       const d = JSON.parse(r.testo), recs = d.records || [];
       st.totali[c] = +d.pager.total;
-      for (const x of recs) { const v = compattaCdm(x); if (v) st.cursore.voci[`${c}:${x.pointer}`] = v; }
+      for (const x of recs) { const v = compattaCdm(rimappa(x, cfg.collezioni[c])); if (v) st.cursore.voci[`${c}:${x.pointer}`] = v; }
       st.cursore.inizio += PAGINA;
       st.aggiornato = new Date().toISOString();
       salvaStato(fonte, st);
@@ -122,7 +150,7 @@ export function recordCdm(fonte, st = leggiStato(fonte)) {
     if (!ammessaCdm(v)) continue;
     const [alias, pointer] = k.split(":"), col = cfg.collezioni[alias];
     if (!col) continue;
-    out.push({ fonte, id: `${cfg.prefisso}-${alias.toLowerCase()}-${pointer}`, citta: col.citta, biblioteca: col.biblioteca, segnatura: segnaturaCdm(v) || `BiPaDi, ${alias} ${pointer}`,
+    out.push({ fonte, id: `${cfg.prefisso}-${alias.toLowerCase()}-${pointer}`, citta: col.citta, biblioteca: col.biblioteca, segnatura: segnaturaCdm(v) || `${fonte === "ub" ? "BiPaDi" : fonte.toUpperCase()}, ${alias} ${pointer}`,
       datazione: v.d || null, titolo: v.t, autori_fonte: v.a || [], collaboratori: v.k || [], descrizione: v.c || null, lingue: lingueDa(v.l ? v.l.split(/\s*;\s*/) : []),
       manifest: `${cfg.sito}/iiif/2/${alias}:${pointer}/manifest.json`, pagina: `${cfg.sito}/digital/collection/${alias}/id/${pointer}`, licenza: v.r || cfg.licenza });
   }
