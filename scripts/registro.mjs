@@ -55,7 +55,7 @@ export const BIBLIOTECHE = {
   sevilla: { biblioteca: "Biblioteca de la Universidad de Sevilla (copie digitali su Internet Archive)", citta: "Siviglia (Spagna)", come: "corsia iberia, ogni notte (raccolta completa ogni 6 giorni)" },
   rah: { biblioteca: "Real Academia de la Historia (manifesti IIIF scritti da Emendando)", citta: "Madrid (Spagna)", come: "corsia iberia: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 14 giorni; manifesti scritti dal catalogo)" },
   // America Latina, siti solo PDF (dal 26 ottobre 2026)
-  bnchile: { biblioteca: "Biblioteca Nacional de Chile (codici in pubblico dominio per Memoria Chilena; immagini estratte dai PDF)", citta: "Santiago (Cile)", come: "fatta una volta a mano: PDF estratti nel ramo «immagini», manifesti scritti dal catalogo" },
+  bnchile: { biblioteca: "Biblioteca Nacional de Chile (codici in pubblico dominio, per Memoria Chilena o per età; immagini estratte dai PDF)", citta: "Santiago (Cile)", come: "fatta una volta a mano: PDF estratti nel ramo «immagini», manifesti scritti dal catalogo" },
   bnv: { biblioteca: "Biblioteca Nacional de Venezuela (Biblioteca Digital César Rengifo; immagini estratte dai PDF)", citta: "Caracas (Venezuela)", come: "fatta una volta a mano: PDF estratti nel ramo «immagini», manifesti scritti dal catalogo" },
   vaticana: { biblioteca: "Biblioteca Apostolica Vaticana", citta: "Città del Vaticano", come: "corsia propria: a ruota, senza pause tra un'esecuzione e l'altra" },
 };
