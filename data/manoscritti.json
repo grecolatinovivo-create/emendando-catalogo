@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T11:18:15.120Z",
+ "aggiornato": "2026-10-26T11:30:27.778Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -109,18 +109,23 @@
   },
   "isos": {
    "nome": "Irish Script on Screen: Royal Irish Academy, National Library of Ireland, Trinity College Dublin e altre (isos.dias.ie)",
-   "codici": 0,
+   "codici": 3,
    "esito": "ok"
   },
   "manchester": {
    "nome": "John Rylands Research Institute and Library, Manchester (digitalcollections.manchester.ac.uk)",
-   "codici": 0,
-   "esito": "ok"
+   "codici": 8,
+   "esito": "errore: manifesti letti in parte (mancano 241): riprenderà alla prossima esecuzione"
   },
   "cudl": {
    "nome": "Cambridge Digital Library: University Library e college (cudl.lib.cam.ac.uk)",
+   "codici": 10,
+   "esito": "errore: manifesti letti in parte (mancano 4932): riprenderà alla prossima esecuzione"
+  },
+  "cbl": {
+   "nome": "Chester Beatty, Dublino (viewer.cbl.ie)",
    "codici": 2,
-   "esito": "ok"
+   "esito": "errore: manifesti letti in parte (mancano 2666): riprenderà alla prossima esecuzione"
   },
   "ndl": {
    "nome": "National Diet Library, Tokyo (dl.ndl.go.jp)",
@@ -203,7 +208,7 @@
    "esito": "ok"
   }
  },
- "totale": 10553,
+ "totale": 10574,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -308060,6 +308065,290 @@
    "immagini": null
   },
   {
+   "id": "cudl-ms-add-01880-00007",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Add. 1880.7",
+   "datazione": "first half of the 14th century",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Letters (fragment)",
+   "autori": [
+    {
+     "id": "libanio",
+     "autore": "Libanio",
+     "latino": "Libanius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Libanius, 314-393 CE»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-ADD-01880-00007",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-ADD-01880-00007",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-add-01880-00008",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Add. 1880.8",
+   "datazione": "16th century.",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Boethius",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De topicis differentiis"
+     ],
+     "corrispondenza": "titolo: «Boethius»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-ADD-01880-00008",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-ADD-01880-00008",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-add-02603",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Add. 2603",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Lucianus and Synesius",
+   "autori": [
+    {
+     "id": "luciano",
+     "autore": "Luciano di Samosata",
+     "latino": "Lucianus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Lucianus and Synesius»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-ADD-02603",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-ADD-02603",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-add-06190-msi",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Add. 6190",
+   "datazione": "1470s, based on the circulation of the paper stock",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Paper stock",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "De anima"
+     ],
+     "corrispondenza": "descrizione: «…of Trebizond’s translation of Aristotle’s De anima , written on one p…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-ADD-06190-MSI",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-ADD-06190-MSI",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-add-06314",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Add. 6314",
+   "datazione": "second half of the 16th century",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc",
+    "la",
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Demosthenes",
+   "autori": [
+    {
+     "id": "demostene",
+     "autore": "Demostene",
+     "latino": "Demosthenes",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Demosthenes»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-ADD-06314",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-ADD-06314",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-add-07872",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Add. 7872",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Palimpsest of Homer and John Chrysostom",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "titolo: «Palimpsest of Homer and John Chrysostom»"
+    },
+    {
+     "id": "giovanni-crisostomo",
+     "autore": "Giovanni Crisostomo",
+     "latino": "Iohannes Chrysostomus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "titolo: «Palimpsest of Homer and John Chrysostom»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-ADD-07872",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-ADD-07872",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-add-06858",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Add.6858",
+   "datazione": "c.1513 C.E.",
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De discrimine adulatorio et amici ; Moralia",
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Moralia"
+     ],
+     "corrispondenza": "autore: «Plutarch ; Erasmus, Desiderius, d. 1536 ; Hobbes, Thomas, 1588-1679»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-ADD-06858",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-ADD-06858",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cbl-w-122",
+   "fonte": "cbl",
+   "biblioteca": "Chester Beatty",
+   "citta": "Dublino",
+   "segnatura": "W 122",
+   "datazione": "1461-1483",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Dictys Cretensis' Trojan War (De bello troiano)",
+   "autori": [
+    {
+     "id": "ditti",
+     "autore": "Ditti Cretese",
+     "latino": "Dictys Cretensis",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Dictys Cretensis' Trojan War (De bello troiano)»"
+    }
+   ],
+   "manifest": "https://viewer.cbl.ie/viewer/api/v1/records/W_122/manifest/",
+   "pagina": "https://viewer.cbl.ie/viewer/object/W_122/1/",
+   "licenza": "© Chester Beatty, Dublino (condizioni d'uso: chesterbeatty.ie)",
+   "immagini": null
+  },
+  {
+   "id": "cbl-w-192",
+   "fonte": "cbl",
+   "biblioteca": "Chester Beatty",
+   "citta": "Dublino",
+   "segnatura": "W 192",
+   "datazione": "Manuscript c. 1770, binding c. 1775",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Wooton's Elements of architecture & Vitruvius' De architectura",
+   "autori": [
+    {
+     "id": "vitruvio",
+     "autore": "Vitruvio",
+     "latino": "Vitruvius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De architectura"
+     ],
+     "corrispondenza": "titolo: «Wooton's Elements of architecture & Vitruvius' De architectura»"
+    }
+   ],
+   "manifest": "https://viewer.cbl.ie/viewer/api/v1/records/W_192/manifest/",
+   "pagina": "https://viewer.cbl.ie/viewer/object/W_192/1/",
+   "licenza": "© Chester Beatty, Dublino (condizioni d'uso: chesterbeatty.ie)",
+   "immagini": null
+  },
+  {
    "id": "bod-34eea5fd-a8c2-48ef-9844-e91dfff62078",
    "fonte": "bodleian",
    "biblioteca": "Christ Church",
@@ -314992,6 +315281,264 @@
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/d5ab9ab2-97ce-4379-b2e1-6794b3dd95d5.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/d5ab9ab2-97ce-4379-b2e1-6794b3dd95d5/",
    "licenza": "CC BY 4.0",
+   "immagini": null
+  },
+  {
+   "id": "mdc-ms-arabic-00738",
+   "fonte": "manchester",
+   "biblioteca": "John Rylands Research Institute and Library, University of Manchester",
+   "citta": "Manchester",
+   "segnatura": "Arabic MS 738",
+   "datazione": "2nd half of the 18th century",
+   "secolo": [
+    2,
+    18
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Thamarat fī aḥkām al-nujūm ; ثمرة في احكام النجوم; Fruit concerning the Laws of the Stars",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Ptolemy, active 2nd century (بطلموس)»"
+    }
+   ],
+   "manifest": "https://www.digitalcollections.manchester.ac.uk/iiif/MS-ARABIC-00738",
+   "pagina": "https://www.digitalcollections.manchester.ac.uk/view/MS-ARABIC-00738",
+   "licenza": "University of Manchester Library, CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "mdc-ms-arabic-00780",
+   "fonte": "manchester",
+   "biblioteca": "John Rylands Research Institute and Library, University of Manchester",
+   "citta": "Manchester",
+   "segnatura": "Arabic MS 780",
+   "datazione": "late 17th century",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Galen's on the Usefulness of the Parts of the Body ; كتاب جالينوس في منافع الأعضاء",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galen»"
+    }
+   ],
+   "manifest": "https://www.digitalcollections.manchester.ac.uk/iiif/MS-ARABIC-00780",
+   "pagina": "https://www.digitalcollections.manchester.ac.uk/view/MS-ARABIC-00780",
+   "licenza": "University of Manchester Library, CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "mdc-ms-french-00063",
+   "fonte": "manchester",
+   "biblioteca": "John Rylands Research Institute and Library, University of Manchester",
+   "citta": "Manchester",
+   "segnatura": "French MS 63",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "fr",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Valerius Maximus",
+   "autori": [
+    {
+     "id": "valerio-massimo",
+     "autore": "Valerio Massimo",
+     "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Facta et dicta memorabilia"
+     ],
+     "corrispondenza": "titolo: «Valerius Maximus»"
+    }
+   ],
+   "manifest": "https://www.digitalcollections.manchester.ac.uk/iiif/MS-FRENCH-00063",
+   "pagina": "https://www.digitalcollections.manchester.ac.uk/view/MS-FRENCH-00063",
+   "licenza": "University of Manchester Library, CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "mdc-ms-greek-p-00053",
+   "fonte": "manchester",
+   "biblioteca": "John Rylands Research Institute and Library, University of Manchester",
+   "citta": "Manchester",
+   "segnatura": "Greek P 53",
+   "datazione": "3rd-4th century CE",
+   "secolo": [
+    3,
+    4
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Odyssey",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Odissea"
+     ],
+     "corrispondenza": "autore: «Homer»"
+    }
+   ],
+   "manifest": "https://www.digitalcollections.manchester.ac.uk/iiif/MS-GREEK-P-00053",
+   "pagina": "https://www.digitalcollections.manchester.ac.uk/view/MS-GREEK-P-00053",
+   "licenza": "University of Manchester Library, CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "mdc-ms-greek-p-00057",
+   "fonte": "manchester",
+   "biblioteca": "John Rylands Research Institute and Library, University of Manchester",
+   "citta": "Manchester",
+   "segnatura": "Greek P 57",
+   "datazione": "2rd century CE",
+   "secolo": [
+    2,
+    2
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De Corona",
+   "autori": [
+    {
+     "id": "demostene",
+     "autore": "Demostene",
+     "latino": "Demosthenes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Sulla corona"
+     ],
+     "corrispondenza": "autore: «Demosthenes»"
+    }
+   ],
+   "manifest": "https://www.digitalcollections.manchester.ac.uk/iiif/MS-GREEK-P-00057",
+   "pagina": "https://www.digitalcollections.manchester.ac.uk/view/MS-GREEK-P-00057",
+   "licenza": "University of Manchester Library, CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "mdc-ms-hebrew-00028",
+   "fonte": "manchester",
+   "biblioteca": "John Rylands Research Institute and Library, University of Manchester",
+   "citta": "Manchester",
+   "segnatura": "Hebrew MS 28",
+   "datazione": "16th or 17th century",
+   "secolo": [
+    16,
+    17
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Sefer ha-Ḥus ṿeha-Muḥash me-Ḳitsur ibn Rushd ; ספר החוש והמוחש מקצור ן’ רשד",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Parva naturalia"
+     ],
+     "corrispondenza": "descrizione: «…me by Averroës (Ibn Rushd) of Aristotle's Parva Naturalia.»"
+    }
+   ],
+   "manifest": "https://www.digitalcollections.manchester.ac.uk/iiif/MS-HEBREW-00028",
+   "pagina": "https://www.digitalcollections.manchester.ac.uk/view/MS-HEBREW-00028",
+   "licenza": "University of Manchester Library, CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "mdc-ms-italian-00049",
+   "fonte": "manchester",
+   "biblioteca": "John Rylands Research Institute and Library, University of Manchester",
+   "citta": "Manchester",
+   "segnatura": "Italian MS 49",
+   "datazione": "15th century",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "La Commedia ; La divina commedia",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Cato maior de senectute"
+     ],
+     "corrispondenza": "descrizione: «…n 174r and his translation of Cicero's De senectute on 245v . The…»"
+    }
+   ],
+   "manifest": "https://www.digitalcollections.manchester.ac.uk/iiif/MS-ITALIAN-00049",
+   "pagina": "https://www.digitalcollections.manchester.ac.uk/view/MS-ITALIAN-00049",
+   "licenza": "University of Manchester Library, CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "mdc-ms-latin-00209",
+   "fonte": "manchester",
+   "biblioteca": "John Rylands Research Institute and Library, University of Manchester",
+   "citta": "Manchester",
+   "segnatura": "Latin MS 209",
+   "datazione": "15th century",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De Compendiosa Doctrina",
+   "autori": [
+    {
+     "id": "nonio",
+     "autore": "Nonio Marcello",
+     "latino": "Nonius Marcellus",
+     "categoria": "classico-latino",
+     "opere": [
+      "De compendiosa doctrina"
+     ],
+     "corrispondenza": "titolo: «De Compendiosa Doctrina»"
+    }
+   ],
+   "manifest": "https://www.digitalcollections.manchester.ac.uk/iiif/MS-LATIN-00209",
+   "pagina": "https://www.digitalcollections.manchester.ac.uk/view/MS-LATIN-00209",
+   "licenza": "University of Manchester Library, CC BY-NC 4.0",
    "immagini": null
   },
   {
@@ -322456,6 +323003,37 @@
    "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b84540243/manifest.json",
    "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b84540243",
    "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-cat-00004",
+   "fonte": "cudl",
+   "biblioteca": "St Catharine's College Library",
+   "citta": "Cambridge",
+   "segnatura": "MS 4",
+   "datazione": "15 th century C.E.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Laelius seu de amicitia",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Laelius de amicitia"
+     ],
+     "corrispondenza": "titolo: «Laelius seu de amicitia»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-CAT-00004",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-CAT-00004",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
    "immagini": null
   },
   {
@@ -335780,6 +336358,68 @@
    "pagina": "https://collections.library.utoronto.ca/view/fisher2:143",
    "licenza": "For rights and reproduction information please contact fisher.library@utoronto.ca",
    "immagini": 146
+  },
+  {
+   "id": "isos-tcd-tcd-ms-1313",
+   "fonte": "isos",
+   "biblioteca": "Trinity College Dublin",
+   "citta": "Dublino",
+   "segnatura": "MS 1313",
+   "datazione": "15th or 16th cent",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "MEDICAL APHORISMS",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Aforismi"
+     ],
+     "corrispondenza": "titolo: «MEDICAL APHORISMS»"
+    }
+   ],
+   "manifest": "https://www.isos.dias.ie/static/manifests/TCD_MS_1313.json",
+   "pagina": "https://www.isos.dias.ie/TCD/TCD_MS_1313.html",
+   "licenza": "© Trinity College Dublin (immagini: condizioni di ISOS, https://www.isos.dias.ie/copyright.html)",
+   "immagini": null
+  },
+  {
+   "id": "isos-tcd-tcd-ms-1388",
+   "fonte": "isos",
+   "biblioteca": "Trinity College Dublin",
+   "citta": "Dublino",
+   "segnatura": "MS 1388",
+   "datazione": "16th or 17th cent",
+   "secolo": [
+    16,
+    17
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "APHORISMS OF HIPPOCRATES",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Aforismi"
+     ],
+     "corrispondenza": "titolo: «APHORISMS OF HIPPOCRATES»"
+    }
+   ],
+   "manifest": "https://www.isos.dias.ie/static/manifests/TCD_MS_1388.json",
+   "pagina": "https://www.isos.dias.ie/TCD/TCD_MS_1388.html",
+   "licenza": "© Trinity College Dublin (immagini: condizioni di ISOS, https://www.isos.dias.ie/copyright.html)",
+   "immagini": null
   },
   {
    "id": "ucm-340406",
@@ -365894,6 +366534,37 @@
    "manifest": "https://iiif-endpoint.universiteitleiden.nl/iiif_manifest/item:1605267/manifest",
    "pagina": "https://hdl.handle.net/1887.1/item:1605267",
    "licenza": "Leiden University Libraries: Public Domain Mark o CC BY (indicata nel manifesto)",
+   "immagini": null
+  },
+  {
+   "id": "isos-ucd-ucd-ms-a-11",
+   "fonte": "isos",
+   "biblioteca": "University College Dublin",
+   "citta": "Dublino",
+   "segnatura": "MS A 11",
+   "datazione": "15th cent",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "A 11 ; DESTRUCTION OF TROY; IRISH AENEID",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eneide"
+     ],
+     "corrispondenza": "titolo: «A 11 ; DESTRUCTION OF TROY; IRISH AENEID»"
+    }
+   ],
+   "manifest": "https://www.isos.dias.ie/static/manifests/UCD_MS_A_11.json",
+   "pagina": "https://www.isos.dias.ie/UCD/UCD_MS_A_11.html",
+   "licenza": "© University College Dublin (immagini: condizioni di ISOS, https://www.isos.dias.ie/copyright.html)",
    "immagini": null
   },
   {

@@ -39,14 +39,19 @@
   "esito": "ok",
   "ultimo_ok": "2026-10-26T02:47:39.646Z"
  },
+ "cbl": {
+  "quando": "2026-10-26T11:27:24.897Z",
+  "esito": "errore: manifesti letti in parte (mancano 2666): riprenderà alla prossima esecuzione",
+  "ultimo_ok": null
+ },
  "colonia": {
   "quando": "2026-10-26T03:10:42.366Z",
   "esito": "ok",
   "ultimo_ok": "2026-10-26T03:10:42.366Z"
  },
  "cudl": {
-  "quando": "2026-10-25T13:14:23.731Z",
-  "esito": "ok",
+  "quando": "2026-10-26T11:27:24.897Z",
+  "esito": "errore: manifesti letti in parte (mancano 4932): riprenderà alla prossima esecuzione",
   "ultimo_ok": "2026-10-25T13:14:23.731Z"
  },
  "ds": {
@@ -68,6 +73,11 @@
   "quando": "2026-10-26T03:10:42.366Z",
   "esito": "ok",
   "ultimo_ok": "2026-10-26T03:10:42.366Z"
+ },
+ "isos": {
+  "quando": "2026-10-26T11:27:24.897Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-26T11:27:24.897Z"
  },
  "karlsruhe": {
   "quando": "2026-10-26T03:10:42.366Z",
@@ -98,6 +108,11 @@
   "quando": "2026-10-26T04:58:58.161Z",
   "esito": "ok",
   "ultimo_ok": "2026-10-26T04:58:58.161Z"
+ },
+ "manchester": {
+  "quando": "2026-10-26T11:27:24.897Z",
+  "esito": "errore: manifesti letti in parte (mancano 241): riprenderà alla prossima esecuzione",
+  "ultimo_ok": null
  },
  "montecassino": {
   "quando": "2026-10-26T02:47:39.646Z",
@@ -138,6 +153,11 @@
   "quando": "2026-10-26T04:58:58.161Z",
   "esito": "sospesa: le immagini di thedigitalwalters.org non si caricano nemmeno dal browser (errore 522 del server del museo, 25 ottobre 2026)",
   "ultimo_ok": null
+ },
+ "wellcome": {
+  "quando": "2026-10-26T11:27:24.897Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-26T11:27:24.897Z"
  },
  "wolfenbuettel": {
   "quando": "2026-10-26T03:10:42.366Z",
