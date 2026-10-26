@@ -61,6 +61,8 @@ Aggiornamento del 26 ottobre 2026 (Regno Unito e Irlanda, corsia `raccolta-uk.ym
 
 Aggiornamento del 26 ottobre 2026 (America Latina, siti solo PDF): agganciati Cile (Biblioteca Nacional de Chile, 10 codici: 5 segnati in pubblico dominio da Memoria Chilena, 5 in pubblico dominio per età) e Venezuela (Biblioteca Nacional de Venezuela, 3 codici, CC BY-SA 3.0 VE). Le biblioteche pubblicano solo PDF: le pagine sono state estratte come JPEG nel ramo «immagini» del repository e i manifesti li scrive il catalogo (fonti «bnchile» e «bnv»). Brasile (Biblioteca Nacional e Brasiliana USP) resta fuori: sito irraggiungibile o ripubblicazione vietata.
 
+Aggiornamento del 26 ottobre 2026 (Sud Italia, isole e Grecia): agganciate in Grecia l'Università di Atene (Pergamos, 39 codici, manifesti scritti dal catalogo) e il Monastero di Rousanou alle Meteore (38 codici, IIIF della Biblioteca di Kalambaka), nella corsia mondo. Nel Sud Italia e nelle isole nessuna biblioteca entra per ora: le copie digitali stanno in Internet Culturale (elenco lecito da Europeana, ma manifesti ICCU non raggiungibili) e sono nella lista della lettera di Urbino; Athos, Patmos e la Biblioteca del Parlamento ellenico pure.
+
 Restano fuori da questa lista perché sono già nel registro: Cambridge Digital Library (in lavorazione), British Library (bloccata), Det Kongelige Bibliotek, Koninklijke Bibliotheek, Uppsala e Biblioteka Jagiellońska (da verificare), Qatar Digital Library e National Library of Israel (bloccate).
 
 ## Come leggere le tabelle
@@ -146,14 +148,14 @@ Italia, Vaticano, penisola iberica, Grecia, Cipro, Malta e piccoli stati.
 
 | Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
 |---|---|---|---|---|
-| Italia | in corso | Biblioteca Medicea Laurenziana, Firenze: 4.353; Veneranda Biblioteca Ambrosiana, Milano: 1.116; Biblioteca Universitaria di Bologna: 907; Biblioteca statale del Monumento nazionale di Montecassino, Montecassino (Cassino): 210; Biblioteca Casanatense, Roma: 43; American Academy in Rome, Roma: 2; un'altra biblioteca: 1. **Totale: 6.632 codici** | Molte biblioteche provate il 25 ottobre 2026. Bloccate o non pronte: Internet Culturale (elenco vietato dal robots.txt), Marciana, Estense, Nazionali di Roma, Firenze e Napoli, Vallicelliana, Padova, Riccardiana, Siena, Archiginnasio, BEIC, Malatestiana, Classense, Trivulziana, Capitolare di Verona, Oliveriana, Palatina, Pavia, Genova, Phaidra di Padova, Urbino. Papiri di Ercolano e PSI: fuori. | Le vede il lavoro in corso. |
+| Italia | in corso | Biblioteca Medicea Laurenziana, Firenze: 4.353; Veneranda Biblioteca Ambrosiana, Milano: 1.116; Biblioteca Universitaria di Bologna: 907; Biblioteca statale del Monumento nazionale di Montecassino, Montecassino (Cassino): 210; Biblioteca Casanatense, Roma: 43; American Academy in Rome, Roma: 2; un'altra biblioteca: 1. **Totale: 6.632 codici** | Molte biblioteche provate il 25 ottobre 2026. Bloccate o non pronte: Internet Culturale (elenco vietato dal robots.txt), Marciana, Estense, Nazionali di Roma, Firenze e Napoli, Vallicelliana, Padova, Riccardiana, Siena, Archiginnasio, BEIC, Malatestiana, Classense, Trivulziana, Capitolare di Verona, Oliveriana, Palatina, Pavia, Genova, Phaidra di Padova, Urbino. Papiri di Ercolano e PSI: fuori. Sud Italia e isole (Grottaferrata, Cava, Girolamini, Società Napoletana di Storia Patria, Messina, Palermo, Catania, Bari, Lecce, Rossano, Cagliari, Sassari, Benevento, Montevergine), prova del 26 ottobre 2026: nessuna entra (copie solo in Internet Culturale, manifesti ICCU non raggiungibili; Messina ha un solo foglio per codice); vedi docs/BIBLIOTECHE.md, «Sud Italia e isole». | Le vede il lavoro in corso. |
 | Città del Vaticano | agganciata | Biblioteca Apostolica Vaticana, Città del Vaticano: 8.882; Biblioteca Apostolica Vaticana, Vatikan: 1. **Totale: 8.883 codici** | nessuna | Nessuna: la Vaticana è dentro (lettura ancora in corso). |
 | San Marino | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
 | Malta | non ancora controllata | nessuna | nessuna | Biblioteca nazionale e archivi della cattedrale di Mdina (copie in vHMML, che è bloccato) |
 | Spagna | in corso | nessuna | Biblioteca Nacional de España ed Escorial: nel registro, da verificare. | Le vede il lavoro in corso. |
 | Portogallo | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
 | Andorra | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
-| Grecia | agganciata | Biblioteca Nazionale di Grecia, Atene: 765 codici | Monte Athos, Patmos, Meteora: non pubblicano copie con IIIF. | Biblioteca del Parlamento, Università di Salonicco |
+| Grecia | agganciata | Biblioteca Nazionale di Grecia, Atene: 765 codici; dal 26 ottobre 2026 Università di Atene (Pergamos): 39 codici; Monastero di Rousanou, Meteore (Biblioteca di Kalambaka): 38 codici | Athos (portale dietro Cloudflare; Vatopedi solo libri a stampa), Patmos (foto non pubblicate), Accademia di Atene (solo lettere e PDF), Veria (server giù), altre collezioni di SearchCulture (documenti): vedi docs/BIBLIOTECHE.md, «Grecia e monasteri greci». | Biblioteca del Parlamento (repository non pubblico), Università di Salonicco, Leimonos, Kaireios di Andros |
 | Cipro | non ancora controllata | nessuna | nessuna | Fondazione culturale della Banca di Cipro, monastero di Kykkos (poco) |
 
 ### Biblioteche che mancano
@@ -161,7 +163,8 @@ Italia, Vaticano, penisola iberica, Grecia, Cipro, Malta e piccoli stati.
 | Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
 |---|---|---|---|---|---|
 | Malta | National Library of Malta e Archivi della cattedrale di Mdina (copie in vHMML) | www.vhmml.org | — | alcune centinaia | bassa |
-| Grecia | Biblioteca del Parlamento ellenico, manoscritti | www.hellenicparliament.gr | non si sa | alcune centinaia | bassa |
+| Grecia | Biblioteca del Parlamento ellenico, manoscritti (circa 600 codici digitalizzati, repository non pubblico: lettera di Urbino) | www.hellenicparliament.gr | non si sa | alcune centinaia | bassa |
+| Grecia | Biblioteca pubblica di Veria (Medusa): manifesti IIIF Iguana con CORS, CC BY 4.0; server giù il 26 ottobre 2026 | medusa.libver.gr | sì | 31 «χειρόγραφα» (molte carte sciolte) | bassa |
 | Grecia | Università Aristotele di Salonicco, biblioteca digitale | digital.lib.auth.gr | non si sa | decine | bassa |
 | Cipro | Fondazione culturale della Banca di Cipro; monastero di Kykkos | non trovato | non si sa | poche decine | bassa |
 

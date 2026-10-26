@@ -47,6 +47,9 @@ export const BIBLIOTECHE = {
   slv: { biblioteca: "State Library Victoria", citta: "Melbourne (Australia)", come: "va fatta a mano dal browser (scripts/browser/slv.js)" },
   auckland: { biblioteca: "Auckland Libraries, Sir George Grey Special Collections", citta: "Auckland (Nuova Zelanda)", come: "corsia mondo: a ruota finché la prima lettura completa non è finita, poi ogni notte (raccolta completa ogni 6 giorni)" },
   toronto: { biblioteca: "University of Toronto, Thomas Fisher Rare Book Library", citta: "Toronto (Canada)", come: "corsia mondo: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 6 giorni, manifesti nuovi)" },
+  // Grecia (corsia «mondo», dal 26 ottobre 2026)
+  pergamos: { biblioteca: "Università di Atene, Biblioteca della Facoltà di Filosofia: codici in Pergamos (manifesti IIIF scritti da Emendando)", citta: "Atene", come: "corsia mondo, ogni notte (raccolta completa ogni 14 giorni; manifesti scritti dal catalogo)" },
+  rousanou: { biblioteca: "Monastero di Rousanou, Meteore (copie digitali della Biblioteca di Kalambaka)", citta: "Meteore (Grecia)", come: "corsia mondo, ogni notte (elenco da SearchCulture.gr ogni 14 giorni, manifesti nuovi)" },
   // Spagna (corsia «iberia», dal 26 ottobre 2026)
   mdc: { biblioteca: "Memòria Digital de Catalunya: Biblioteca de Catalunya, Ateneu Barcelonès, Biblioteca Museu Víctor Balaguer, Biblioteca Pública Episcopal del Seminari", citta: "Barcellona e Vilanova i la Geltrú (Spagna)", come: "corsia iberia: a ruota finché la prima lettura non è finita, poi ogni notte (raccolta completa ogni 6 giorni)" },
   ub: { biblioteca: "Universitat de Barcelona, CRAI Biblioteca de Fons Antic (Biblioteca Patrimonial Digital)", citta: "Barcellona (Spagna)", come: "corsia iberia, ogni notte (raccolta completa ogni 6 giorni)" },
@@ -222,6 +225,16 @@ export const AVANZAMENTO = {
     const vs = Object.values(s.voci || {}), letti = vs.filter(v => v.n).length;
     if (!s.completato) return { testo: `in corso, a ruota: ${num(letti)} manifesti letti su ${num(vs.length)}`, data: s.aggiornato };
     return { testo: `manifesti letti tutti (${num(letti)} su ${num(vs.length)} delle collezioni IIIF «Manuscripts» e «Manuscript Fragments»; fuori lettere, diari e carte d'archivio)`, data: s.completato };
+  },
+  pergamos: () => {
+    const s = leggi("data/pergamos.json"); if (!s) return { testo: "non ancora cominciata" };
+    const vs = Object.values(s.voci || {});
+    return { testo: `codici letti tutti (${num(vs.length)} nella collezione; ${num(vs.filter(v => v.p).length)} con immagini)`, data: s.completato || s.aggiornato };
+  },
+  rousanou: () => {
+    const s = leggi("data/rousanou.json"); if (!s) return { testo: "non ancora cominciata" };
+    const vs = Object.values(s.voci || {}), letti = vs.filter(v => v.n).length, err = vs.filter(v => v.x).length;
+    return { testo: `${num(letti)} manifesti letti su ${num(vs.length)} codici${err ? `; ${num(err)} con il manifesto non leggibile` : ""}`, data: s.aggiornato };
   },
   ...Object.fromEntries(Object.keys(FONTI_HSP).map(f => [f, () => { const a = aRiprese(`data/${f}.json`, 1); return { ...a, testo: a.testo.replace("schede lette tutte", "codici digitalizzati letti tutti") }; }])),
   // Spagna (corsia «iberia»)

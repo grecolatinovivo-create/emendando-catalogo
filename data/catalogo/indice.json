@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T10:54:38.717Z",
- "totale": 383758,
- "con_autori": 23044,
+ "aggiornato": "2026-10-26T11:18:15.120Z",
+ "totale": 383835,
+ "con_autori": 23054,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
   "id",
@@ -45,7 +45,7 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 12793
+   "codici": 12869
   },
   "zh": {
    "nome": "cinese",
@@ -133,7 +133,7 @@
   },
   "cu": {
    "nome": "slavo ecclesiastico",
-   "codici": 148
+   "codici": 149
   },
   "ru": {
    "nome": "russo",
@@ -191,11 +191,11 @@
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 5303
+   "codici": 5307
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 11786
+   "codici": 11792
   },
   "medievale": {
    "nome": "autori medievali",
@@ -735,7 +735,7 @@
    "nome": "Senofonte",
    "latino": "Xenophon",
    "categoria": "classico-greco",
-   "codici": 106
+   "codici": 107
   },
   "platone": {
    "nome": "Platone",
@@ -915,7 +915,7 @@
    "nome": "Ippocrate",
    "latino": "Hippocrates",
    "categoria": "classico-greco",
-   "codici": 358
+   "codici": 359
   },
   "tolomeo": {
    "nome": "Tolomeo",
@@ -1083,7 +1083,7 @@
    "nome": "Esopo",
    "latino": "Aesopus",
    "categoria": "classico-greco",
-   "codici": 96
+   "codici": 97
   },
   "flavio-giuseppe": {
    "nome": "Flavio Giuseppe",
@@ -1107,7 +1107,7 @@
    "nome": "Eliano",
    "latino": "Aelianus",
    "categoria": "classico-greco",
-   "codici": 13
+   "codici": 14
   },
   "ermogene": {
    "nome": "Ermogene",
@@ -1161,19 +1161,19 @@
    "nome": "Gregorio di Nazianzo",
    "latino": "Gregorius Nazianzenus",
    "categoria": "cristiano",
-   "codici": 464
+   "codici": 466
   },
   "giovanni-crisostomo": {
    "nome": "Giovanni Crisostomo",
    "latino": "Iohannes Chrysostomus",
    "categoria": "cristiano",
-   "codici": 1065
+   "codici": 1066
   },
   "bibbia": {
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 5069
+   "codici": 5072
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1711,6 +1711,7 @@
   "Merton College, Oxford",
   "Ministère des Affaires étrangères",
   "Ministère des Affaires étrangères, Rés",
+  "Monastero di Rousanou, Meteore (copie digitali della Biblioteca di Kalambaka), Meteore (Kalambaka)",
   "Monastero di Santa Caterina del Sinai (microfilm della Library of Congress), Sinai (Egitto)",
   "Montpellier Méditerranée Métropole - Médiathèque centrale Emile Zola",
   "Musée Escoffier de l'Art Culinaire, Centre de documentation",
@@ -2026,6 +2027,7 @@
   "Università di agraria e veterinaria di Obihiro (帯広畜産大学附属図書館)",
   "Università di Akita (秋田大学附属図書館)",
   "Università di Akita, Museo mineralogico (秋田大学鉱業博物館)",
+  "Università di Atene, Biblioteca della Facoltà di Filosofia (Pergamos)",
   "Università di Chiba (千葉大学附属図書館)",
   "Università di Chiba, biblioteca di Inohana, collezione di libri antichi di medicina (千葉大学附属図書館亥鼻分館 古医書コレクション)",
   "Università di Chiba, biblioteca di Matsudo (千葉大学附属図書館松戸分館)",
@@ -3299,6 +3301,39 @@
     "indice/bnv-0.json"
    ]
   },
+  "pergamos": {
+   "nome": "Università di Atene, Biblioteca della Facoltà di Filosofia (pergamos.lib.uoa.gr; manifesti scritti dal catalogo)",
+   "codici": 39,
+   "con_autori": 7,
+   "lingue": {
+    "grc": 38,
+    "cu": 1
+   },
+   "esito": "ok",
+   "prefissi": [
+    "uoa-"
+   ],
+   "pezzi_voci": 1,
+   "indice": [
+    "indice/pergamos-0.json"
+   ]
+  },
+  "rousanou": {
+   "nome": "Monastero di Rousanou, Meteore (copie digitali della Biblioteca di Kalambaka, opac.kalambakalibrary.org; elenco da searchculture.gr)",
+   "codici": 38,
+   "con_autori": 3,
+   "lingue": {
+    "grc": 38
+   },
+   "esito": "ok",
+   "prefissi": [
+    "rousanou-"
+   ],
+   "pezzi_voci": 1,
+   "indice": [
+    "indice/rousanou-0.json"
+   ]
+  },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
    "codici": 10489,
@@ -3573,6 +3608,16 @@
    "file": "indice/bnv-0.json",
    "fonte": "bnv",
    "righe": 3
+  },
+  {
+   "file": "indice/pergamos-0.json",
+   "fonte": "pergamos",
+   "righe": 39
+  },
+  {
+   "file": "indice/rousanou-0.json",
+   "fonte": "rousanou",
+   "righe": 38
   },
   {
    "file": "indice/vaticana-0.json",
@@ -4880,6 +4925,13 @@
    "lat": 47.4757,
    "lon": 7.4892
   },
+  "meteore": {
+   "nome": "Meteore",
+   "en": "Meteora",
+   "paese": "GR",
+   "lat": 39.72028,
+   "lon": 21.63278
+  },
   "mettingen": {
    "nome": "Mettingen",
    "paese": "DE",
@@ -5800,6 +5852,7 @@
   "oxford",
   "parigi",
   "parigi",
+  "meteore",
   "sinai",
   "montpellier",
   "villeneuve-loubet",
@@ -6115,6 +6168,7 @@
   "jp-obihiro",
   "jp-akita",
   "jp-akita",
+  "atene",
   "jp-chiba",
   "jp-chiba",
   "jp-matsudo",

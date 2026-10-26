@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T10:54:38.717Z",
+ "aggiornato": "2026-10-26T11:18:15.120Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -187,13 +187,23 @@
    "codici": 0,
    "esito": "ok"
   },
+  "pergamos": {
+   "nome": "Università di Atene, Biblioteca della Facoltà di Filosofia (pergamos.lib.uoa.gr; manifesti scritti dal catalogo)",
+   "codici": 3,
+   "esito": "ok"
+  },
+  "rousanou": {
+   "nome": "Monastero di Rousanou, Meteore (copie digitali della Biblioteca di Kalambaka, opac.kalambakalibrary.org; elenco da searchculture.gr)",
+   "codici": 1,
+   "esito": "ok"
+  },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
    "codici": 428,
    "esito": "ok"
   }
  },
- "totale": 10549,
+ "totale": 10553,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -315914,6 +315924,37 @@
    "immagini": null
   },
   {
+   "id": "rousanou-3-21",
+   "fonte": "rousanou",
+   "biblioteca": "Monastero di Rousanou, Meteore (copie digitali della Biblioteca di Kalambaka)",
+   "citta": "Meteore (Kalambaka)",
+   "segnatura": "Cod. 25",
+   "datazione": "sec. XVI (τέλη)",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Δημώδης ἱστορία τοῦ Αἰσώπου",
+   "autori": [
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Δημώδης ἱστορία τοῦ Αἰσώπου»"
+    }
+   ],
+   "manifest": "https://opac.kalambakalibrary.org/iguana/iiif/3_21/manifest",
+   "pagina": "https://www.searchculture.gr/aggregator/edm/rousanou_mon_codices/000149-3_21",
+   "licenza": "CC BY-SA 4.0 (Βιβλιοθήκη Καλαμπάκας για την Ιερά Μονή Ρουσάνου)",
+   "immagini": 45
+  },
+  {
    "id": "loc-00279387247-ms",
    "fonte": "loc",
    "biblioteca": "Monastero di Santa Caterina del Sinai (microfilm della Library of Congress)",
@@ -337192,6 +337233,103 @@
    "pagina": "https://patrimoniodigital.ucm.es/s/patrimonio/item/1222669",
    "licenza": "CC BY 4.0",
    "immagini": null
+  },
+  {
+   "id": "uoa-183311",
+   "fonte": "pergamos",
+   "biblioteca": "Università di Atene, Biblioteca della Facoltà di Filosofia (Pergamos)",
+   "citta": "Atene",
+   "segnatura": "Χειρόγραφο 6",
+   "datazione": "sec. XVIII",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ερμηνεία εις τους αφορισμούς του Ιπποκράτους καταστρωθείσα εις πεζήν φράσιν παρά Μπαλάνου Βασιλοπούλου του εξ' Ιωαννίνων",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…ηνεία εις τους αφορισμούς του Ιπποκράτους καταστρωθείσα εις πεζήν φράσι…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/pergamos/183311.json",
+   "pagina": "https://pergamos.lib.uoa.gr/item/uoadl:183311",
+   "licenza": "CC BY-NC 4.0 (Pergamos, Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών)",
+   "immagini": 170
+  },
+  {
+   "id": "uoa-183312",
+   "fonte": "pergamos",
+   "biblioteca": "Università di Atene, Biblioteca della Facoltà di Filosofia (Pergamos)",
+   "citta": "Atene",
+   "segnatura": "Χειρόγραφο 7",
+   "datazione": "sec. XVI",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Γεροντικόν ανεπίγραφο Εις άγαλμα του Καιρού Ποσειδίππου. Του εν αγί(οι)ς π(ατ)ρ(ό)ς ημών Επιφανείου επισκόπου Κύπρου Φυσιολογικ(όν) παραδειγματικόν. Τω ευσεβεστάτω κ(αι) θεοστέπτω βασιλεί Καρόλω Αρσένιος ο Μονεμβάσιος αρχιεπίσκοπος αίρειν τρόπαια κατά βαρβάρ(ων). Του σοφωτάτου και λογιωτάτου Φιλή Στίχοι προς τον αυτοκράτορα κύριον Μιχαήλ περί ζώων ιδιότητος.",
+   "autori": [
+    {
+     "id": "eliano",
+     "autore": "Eliano",
+     "latino": "Aelianus",
+     "categoria": "classico-greco",
+     "opere": [
+      "La natura degli animali"
+     ],
+     "corrispondenza": "titolo: «…τον αυτοκράτορα κύριον Μιχαήλ περί ζώων ιδιότητος.»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/pergamos/183312.json",
+   "pagina": "https://pergamos.lib.uoa.gr/item/uoadl:183312",
+   "licenza": "CC BY-NC 4.0 (Pergamos, Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών)",
+   "immagini": 81
+  },
+  {
+   "id": "uoa-183337",
+   "fonte": "pergamos",
+   "biblioteca": "Università di Atene, Biblioteca della Facoltà di Filosofia (Pergamos)",
+   "citta": "Atene",
+   "segnatura": "Χειρόγραφο 30 [31]",
+   "datazione": "sec. XIX",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Τραγώδια Ελληνικά",
+   "autori": [
+    {
+     "id": "senofonte",
+     "autore": "Senofonte",
+     "latino": "Xenophon",
+     "categoria": "classico-greco",
+     "opere": [
+      "Elleniche"
+     ],
+     "corrispondenza": "titolo: «Τραγώδια Ελληνικά»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/pergamos/183337.json",
+   "pagina": "https://pergamos.lib.uoa.gr/item/uoadl:183337",
+   "licenza": "CC BY-NC 4.0 (Pergamos, Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών)",
+   "immagini": 24
   },
   {
    "id": "nijl-100209924",

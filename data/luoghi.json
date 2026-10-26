@@ -10871,6 +10871,14 @@
    "lon": 7.4892,
    "geonames": 2659762
   },
+  "meteore": {
+   "nome": "Meteore",
+   "en": "Meteora",
+   "paese": "GR",
+   "lat": 39.72028,
+   "lon": 21.63278,
+   "geonames": 254185
+  },
   "mettingen": {
    "nome": "Mettingen",
    "paese": "DE",
@@ -12386,6 +12394,7 @@
   "Memuro-minami": "jp-memuro-minami",
   "Mendahigashi": "jp-mendahigashi",
   "Menuma": "jp-menuma",
+  "Meteore (Kalambaka)": "meteore",
   "Mettingen": "mettingen",
   "Metz": "metz",
   "Mibu": "jp-mibu",
@@ -13493,6 +13502,8 @@
   "sevilla": "siviglia",
   "rah": "madrid",
   "bnchile": "santiago-del-cile",
-  "bnv": "caracas"
+  "bnv": "caracas",
+  "pergamos": "atene",
+  "rousanou": "meteore"
  }
 }

@@ -9,6 +9,7 @@
 //        [--ndl-minuti=60] [--kokusho-minuti=60] [--auckland-minuti=10] [--toronto-minuti=15]
 //        [--wellcome-minuti=10] [--isos-minuti=20] [--manchester-minuti=30] [--cudl-minuti=30] [--cbl-minuti=60] [--minuti-totali=160] [--solo-costruisci]
 //        [--mdc-minuti=10] [--ub-minuti=10] [--realbiblioteca-minuti=15] [--ucm-minuti=15] [--sevilla-minuti=5] [--rah-minuti=30]
+//        [--pergamos-minuti=10] [--rousanou-minuti=5]
 // Scrive il catalogo diviso per fonte (vedi costruisci.mjs): data/catalogo/indice.json, data/catalogo/indice/<fonte>-<n>.json, data/catalogo/voci/<fonte>-<n>.json,
 // più data/manoscritti.json (compatibilità: solo i codici con autori classici), e gli stati delle scansioni a riprese
 // (data/vaticana.json, data/bodleian.json, data/laurenziana.json, data/leiden.json, data/heidelberg-indici.json; data/<fonte>.json per le fonti del Handschriftenportal: wolfenbuettel, bamberga, karlsruhe, stoccarda, colonia, lipsia; data/yale.json, data/penn.json, data/walters.json).
@@ -55,11 +56,13 @@ import { scansionaOmeka, recordOmeka, FONTI_OMEKA } from "./fonti/omeka.mjs";
 import { scansionaSevilla, recordSevilla } from "./fonti/sevilla.mjs";
 import { scansionaDigibib, recordDigibib } from "./fonti/digibib.mjs";
 import { recordLatam } from "./fonti/latam_pdf.mjs";
+import { scansionaPergamos, recordPergamos } from "./fonti/pergamos.mjs";
+import { scansionaRousanou, recordRousanou } from "./fonti/rousanou.mjs";
 import { scriviRegistro, registraEsiti } from "./registro.mjs";
 import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
-const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,vaticana").split(",");
+const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,vaticana").split(",");
 const INIZIO = Date.now();
 export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)", berlino: "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
   bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -94,6 +97,9 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   // America Latina, siti solo PDF: pagine estratte dai PDF (ramo «immagini»), manifesti scritti dal catalogo
   bnchile: "Biblioteca Nacional de Chile, Santiago (memoriachilena.gob.cl; codici in pubblico dominio, immagini estratte dai PDF)",
   bnv: "Biblioteca Nacional de Venezuela, Caracas (bibliotecadigital.bnv.gob.ve; CC BY-SA 3.0 VE, immagini estratte dai PDF)",
+  // Grecia (corsia «mondo», dal 26 ottobre 2026)
+  pergamos: "Università di Atene, Biblioteca della Facoltà di Filosofia (pergamos.lib.uoa.gr; manifesti scritti dal catalogo)",
+  rousanou: "Monastero di Rousanou, Meteore (copie digitali della Biblioteca di Kalambaka, opac.kalambakalibrary.org; elenco da searchculture.gr)",
   vaticana: "Biblioteca Apostolica Vaticana (digi.vatlib.it)" };
 
 // i tre codici del Truculentus restano sempre nel catalogo, anche se una fonte non li ha ancora restituiti
@@ -250,6 +256,9 @@ async function main() {
     // America Latina, siti solo PDF: nessuna richiesta, i dati sono in scripts/fonti/latam_pdf.mjs e data/latam_pdf.json
     bnchile: async () => recordLatam("bnchile"),
     bnv: async () => recordLatam("bnv"),
+    // Grecia (corsia «mondo»): Università di Atene (Pergamos, manifesti scritti dal catalogo) e Monastero di Rousanou alle Meteore (IIIF di Kalambaka)
+    pergamos: async () => recordPergamos(await scansionaPergamos({ minuti: min("pergamos", +(arg["pergamos-minuti"] ?? 10)), soloCache: sc("pergamos") })),
+    rousanou: async () => recordRousanou(await scansionaRousanou({ minuti: min("rousanou", +(arg["rousanou-minuti"] ?? 5)), soloCache: sc("rousanou") })),
     vaticana: async () => {
       let minuti = +(arg["vaticana-minuti"] ?? 20);
       // con un tempo complessivo si lasciano 10 minuti per costruire il catalogo, provarlo e salvarlo
