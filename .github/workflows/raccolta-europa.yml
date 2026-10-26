@@ -6,7 +6,10 @@
 #   - handrit.is (Reykjavík e Copenaghen): nessuna richiesta al sito, si leggono le descrizioni TEI dal repository GitHub del progetto
 #     (clone ogni 14 giorni); i manifesti li scrive il catalogo;
 #   - Polona (Biblioteka Narodowa e altre biblioteche polacche) e Manuscriptorium (Národní knihovna České republiky e altre):
-#     API JSON di ricerca dei siti, manifesti IIIF delle biblioteche.
+#     API JSON di ricerca dei siti, manifesti IIIF delle biblioteche;
+#   - Det Kgl. Bibliotek, Copenaghen (dal 26 ottobre 2026): pagine dei risultati in JSON di Digitale samlinger (Blacklight), immagini IIIF
+#     della biblioteca, manifesti scritti dal catalogo (scripts/manifesti.mjs);
+#   - Allard Pierson, Universiteit van Amsterdam (dal 26 ottobre 2026): indice del Goobi viewer (una richiesta), manifesti del visore.
 # Gli stati sono in data/<fonte>.json. Richieste in serie, una biblioteca dopo l'altra, con le pause di sempre (scripts/rete.mjs).
 # Ruota fino a lettura completa: finché una fonte della corsia non ha finito la prima lettura, la corsia lavora fino a circa
 # 150 minuti per esecuzione e riparte subito da sola, purché nel giro ci siano stati progressi (scripts/ruota.mjs).
@@ -31,8 +34,8 @@ jobs:
     uses: ./.github/workflows/corsia.yml
     with:
       corsia: europa
-      fonti: francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium
-      argomenti: --hsp-minuti=20 --polona-minuti=40 --manuscriptorium-minuti=50
+      fonti: francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,kbdk,uva
+      argomenti: --hsp-minuti=20 --polona-minuti=40 --manuscriptorium-minuti=50 --kbdk-minuti=20 --uva-minuti=5
       cache: false
       ruota: false
       completa: true

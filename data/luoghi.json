@@ -12214,6 +12214,13 @@
    "lat": 21.0245,
    "lon": 105.8412,
    "geonames": 1581130
+  },
+  "amsterdam": {
+   "nome": "Amsterdam",
+   "paese": "NL",
+   "lat": 52.37403,
+   "lon": 4.88969,
+   "geonames": 2759794
   }
  },
  "citta": {
@@ -14305,7 +14312,8 @@
   "Chiang Mai": "chiang-mai",
   "Chiang Mai (Thailandia)": "chiang-mai",
   "Hanoi": "hanoi",
-  "Hanoi (Vietnam)": "hanoi"
+  "Hanoi (Vietnam)": "hanoi",
+  "Amsterdam": "amsterdam"
  },
  "biblioteche": {
   "Bibliothèque Carré d'art / Nîmes": "nimes",
@@ -14393,6 +14401,8 @@
   "nlw": "aberystwyth",
   "crossasia": "vientiane",
   "sbbasia": "berlino",
-  "nomfoundation": "hanoi"
+  "nomfoundation": "hanoi",
+  "kbdk": "copenaghen",
+  "uva": "amsterdam"
  }
 }

@@ -15,7 +15,9 @@
 //   - Fondazione per la conservazione del Nôm (Vietnam, scripts/fonti/nomfoundation.mjs): niente IIIF, immagini JPEG caricabili come <img>:
 //     manifesti P2 a misura fissa (misura di un'immagine per volume);
 //   - Darmstadt (TUdigit, dal Handschriftenportal): manifesti con immagini in http e servizio Image che non risponde: copie P2
-//     con le immagini https a misura fissa (scripts/fonti/hsp.mjs, manifestoCopiaHsp).
+//     con le immagini https a misura fissa (scripts/fonti/hsp.mjs, manifestoCopiaHsp);
+//   - Det Kgl. Bibliotek, Copenaghen: nessun manifesto IIIF presso la biblioteca, immagini IIIF Image 2 aperte (kb-images.kb.dk, CORS *):
+//     manifesti P2 con il servizio Image della biblioteca (scripts/fonti/kbdk.mjs).
 // Nessuna richiesta di rete: si scrivono dagli stati delle raccolte (data/loc.json, data/nlg.json, data/malatestiana.json, data/handrit.json, data/darmstadt.json e gli altri).
 // I manifesti stanno nel ramo «manifesti» del repository, non in main (circa 400 MB di JSON): il workflow manifesti.yml
 // li rigenera ogni giorno in una copia di quel ramo e salva solo se cambiano.
@@ -31,6 +33,7 @@ import * as malatestiana from "./fonti/malatestiana.mjs";
 import * as handrit from "./fonti/handrit.mjs";
 import * as hsp from "./fonti/hsp.mjs";
 import * as nom from "./fonti/nomfoundation.mjs";
+import * as kbdk from "./fonti/kbdk.mjs";
 
 // scrive i manifesti che mancano o sono cambiati e toglie quelli dei codici usciti (solo se lo stato ha voci)
 export function scriviManifesti(voci, cartella, scrivi) {
@@ -69,6 +72,8 @@ export function scriviTutti(dir = ".") {
     // Fondazione per la conservazione del Nôm (Vietnam): immagini JPEG del sito a misura fissa; un file per volume, col nome dell'identificativo («nlvnpf-0106.json»)
     nomfoundation: scriviManifesti(Object.fromEntries(Object.entries(nom.leggiStato().voci || {}).filter(([, v]) => nom.ammessaNom(v)).map(([k, v]) => [v.img.toLowerCase(), { k, v }])),
       path.join(dir, "data/manifesti/nomfoundation"), (id, x) => nom.manifestoScritto(x.k, x.v)),
+    // Det Kgl. Bibliotek: servizio Image della biblioteca, misure della prima immagine
+    kbdk: scriviManifesti(kbdk.leggiStato().voci || {}, path.join(dir, "data/manifesti/kbdk"), (id, v) => (kbdk.ammessaKbdk(v) ? kbdk.manifestoScritto(id, v) : null)),
     // Handschriftenportal, fonti con le copie dei manifesti (Darmstadt): un file per codice, con il nome della sigla del portale senza «HSP-»
     ...Object.fromEntries(Object.keys(hsp.FONTI_HSP).filter(hsp.copieHsp).map(f => [f, scriviManifesti(
       Object.fromEntries(Object.entries(hsp.leggiStato(f).voci || {}).map(([k, v]) => [k.replace(/^HSP-/, ""), v])),

@@ -10,7 +10,7 @@
 //        [--wellcome-minuti=10] [--isos-minuti=20] [--manchester-minuti=30] [--cudl-minuti=30] [--cbl-minuti=60] [--parker-minuti=20] [--nlw-minuti=10] [--minuti-totali=160] [--solo-costruisci]
 //        [--mdc-minuti=10] [--ub-minuti=10] [--realbiblioteca-minuti=15] [--ucm-minuti=15] [--sevilla-minuti=5] [--rah-minuti=30]
 //        [--pergamos-minuti=10] [--rousanou-minuti=5] [--auc-minuti=5] [--northwestern-minuti=5]
-//        [--onb-minuti=30] [--bncf-minuti=5] [--vallicelliana-minuti=5] [--malatestiana-minuti=20] [--polona-minuti=20] [--manuscriptorium-minuti=30] [--archive-minuti=10]
+//        [--kbdk-minuti=30] [--uva-minuti=5] [--onb-minuti=30] [--bncf-minuti=5] [--vallicelliana-minuti=5] [--malatestiana-minuti=20] [--polona-minuti=20] [--manuscriptorium-minuti=30] [--archive-minuti=10]
 //        [--crossasia-minuti=30] [--sbbasia-minuti=30] [--nomfoundation-minuti=20]
 // Scrive il catalogo diviso per fonte (vedi costruisci.mjs): data/catalogo/indice.json, data/catalogo/indice/<fonte>-<n>.json, data/catalogo/voci/<fonte>-<n>.json,
 // più data/manoscritti.json (compatibilità: solo i codici con autori classici), e gli stati delle scansioni a riprese
@@ -71,6 +71,8 @@ import { recordClassense } from "./fonti/classense.mjs";
 import { scansionaHandrit, recordHandrit } from "./fonti/handrit.mjs";
 import { scansionaPolona, recordPolona } from "./fonti/polona.mjs";
 import { scansionaManuscriptorium, recordManuscriptorium } from "./fonti/manuscriptorium.mjs";
+import { scansionaKbdk, recordKbdk } from "./fonti/kbdk.mjs";
+import { scansionaUva, recordUva } from "./fonti/uva.mjs";
 import { scansionaArchive, recordArchive, esistentiArchive } from "./fonti/archive.mjs";
 import { scansionaCrossasia, recordCrossasia } from "./fonti/crossasia.mjs";
 import { scansionaSbbasia, recordSbbasia } from "./fonti/sbbasia.mjs";
@@ -80,7 +82,7 @@ import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 import { tipoDa } from "./carte.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
-const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,parker,nlw,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,auc,northwestern,archive,crossasia,sbbasia,nomfoundation,vaticana").split(",");
+const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,kbdk,uva,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,parker,nlw,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,auc,northwestern,archive,crossasia,sbbasia,nomfoundation,vaticana").split(",");
 const INIZIO = Date.now();
 export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)", berlino: "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
   bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -132,6 +134,8 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   handrit: "handrit.is: Reykjavík e Copenaghen (descrizioni TEI da github.com/Handrit/Manuscripts; manifesti scritti dal catalogo)",
   polona: "Polona: Biblioteka Narodowa e altre biblioteche polacche (polona.pl)",
   manuscriptorium: "Manuscriptorium: Národní knihovna České republiky e altre biblioteche (manuscriptorium.com)",
+  kbdk: "Det Kongelige Bibliotek, Copenaghen (digitalesamlinger.kb.dk; manifesti scritti dal catalogo con le immagini IIIF della biblioteca)",
+  uva: "Allard Pierson, Universiteit van Amsterdam (uvaerfgoed.nl)",
   // Internet Archive (corsia «mondo», dal 26 ottobre 2026): manoscritti pubblicati da altre biblioteche (Firenze e Siviglia restano fonti a parte)
   archive: "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
   // Asia orientale e Sud-est asiatico (corsia «asia», dal 26 ottobre 2026)
@@ -300,6 +304,9 @@ async function main() {
     handrit: async () => recordHandrit(await scansionaHandrit({ soloCache: sc("handrit") })),
     polona: async () => recordPolona(await scansionaPolona({ minuti: min("polona", +(arg["polona-minuti"] ?? 20)), soloCache: sc("polona") })),
     manuscriptorium: async () => recordManuscriptorium(await scansionaManuscriptorium({ minuti: min("manuscriptorium", +(arg["manuscriptorium-minuti"] ?? 30)), soloCache: sc("manuscriptorium") })),
+    // Copenaghen (Det Kgl. Bibliotek, manifesti scritti dal catalogo) e Amsterdam (Allard Pierson), dal 26 ottobre 2026
+    kbdk: async () => recordKbdk(await scansionaKbdk({ minuti: min("kbdk", +(arg["kbdk-minuti"] ?? 30)), soloCache: sc("kbdk") })),
+    uva: async () => recordUva(await scansionaUva({ minuti: min("uva", +(arg["uva-minuti"] ?? 5)), soloCache: sc("uva") })),
     // State Library Victoria: nessuna richiesta, l'elenco viene dal browser (scripts/browser/slv.js -> data/slv.json)
     slv: async () => recordSlv(),
     auckland: async () => recordAuckland(await scansionaAuckland({ minuti: min("auckland", +(arg["auckland-minuti"] ?? 10)), soloCache: sc("auckland") })),
