@@ -59,6 +59,11 @@
   "esito": "ok",
   "ultimo_ok": "2026-10-26T14:27:07.767Z"
  },
+ "crossasia": {
+  "quando": "2026-10-26T14:36:21.738Z",
+  "esito": "errore: fetch failed",
+  "ultimo_ok": null
+ },
  "cudl": {
   "quando": "2026-10-26T13:24:26.219Z",
   "esito": "errore: manifesti letti in parte (mancano 3131): riprenderà alla prossima esecuzione",
@@ -174,6 +179,11 @@
   "esito": "ok",
   "ultimo_ok": "2026-10-26T14:27:07.767Z"
  },
+ "nomfoundation": {
+  "quando": "2026-10-26T14:36:21.738Z",
+  "esito": "errore: schede lette in parte (1090 in questa esecuzione): riprenderà alla prossima",
+  "ultimo_ok": null
+ },
  "northwestern": {
   "quando": "2026-10-26T12:30:50.504Z",
   "esito": "ok",
@@ -203,6 +213,11 @@
   "quando": "2026-10-26T12:30:50.504Z",
   "esito": "ok",
   "ultimo_ok": "2026-10-26T12:30:50.504Z"
+ },
+ "sbbasia": {
+  "quando": "2026-10-26T14:36:21.738Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-26T14:36:21.738Z"
  },
  "stoccarda": {
   "quando": "2026-10-26T14:27:07.767Z",

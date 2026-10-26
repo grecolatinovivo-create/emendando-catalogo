@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T14:33:37.159Z",
+ "aggiornato": "2026-10-26T14:45:51.882Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -135,6 +135,11 @@
   "ds": {
    "nome": "Digital Scriptorium: istituzioni statunitensi (search.digital-scriptorium.org)",
    "codici": 174,
+   "esito": "ok"
+  },
+  "harvard": {
+   "nome": "Harvard Library: Houghton, Harvard-Yenching, Islamic Heritage Project (LibraryCloud, elenco raccolto dal browser; manifesti nrs.lib.harvard.edu)",
+   "codici": 10,
    "esito": "ok"
   },
   "loc": {
@@ -320,7 +325,7 @@
   "crossasia": {
    "nome": "CrossAsia, Staatsbibliothek zu Berlin: Digital Library of Lao Manuscripts e Digital Library of Northern Thai Manuscripts (iiif.crossasia.org)",
    "codici": 0,
-   "esito": "ok"
+   "esito": "errore: fetch failed"
   },
   "sbbasia": {
    "nome": "Staatsbibliothek zu Berlin: manoscritti dell'Asia orientale e del Sud-est asiatico (oai.sbb.berlin)",
@@ -335,7 +340,7 @@
   "nomfoundation": {
    "nome": "Vietnamese Nôm Preservation Foundation: Biblioteca nazionale del Vietnam e templi Thắng Nghiêm e Phổ Nhân (lib.nomfoundation.org; manifesti scritti dal catalogo)",
    "codici": 0,
-   "esito": "ok"
+   "esito": "errore: schede lette in parte (1090 in questa esecuzione): riprenderà alla prossima"
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
@@ -343,7 +348,7 @@
    "esito": "ok"
   }
  },
- "totale": 12127,
+ "totale": 12137,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -338092,6 +338097,134 @@
    "immagini": null
   },
   {
+   "id": "harvard-990097589800203941",
+   "fonte": "harvard",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Eng 517",
+   "datazione": "16uu",
+   "secolo": null,
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "The larum of the court : written in Spanish by Don Antodio de Guevara, Bishop of Mondonnedo in Spaine, and translated into English by Sr. Br. gent : manuscript, [16--]",
+   "autori": [
+    {
+     "id": "marco-aurelio",
+     "autore": "Marco Aurelio",
+     "latino": "Marcus Aurelius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Guevara, Antonio de ; Bryan, Francis, Sir ; Marcus Aurelius, Emperor of Rome»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:11015701:MANIFEST:2",
+   "pagina": "https://id.lib.harvard.edu/alma/990097589800203941/catalog",
+   "licenza": "Harvard Library: copia digitale ad accesso libero; per la riproduzione vedere le condizioni della biblioteca",
+   "immagini": null
+  },
+  {
+   "id": "harvard-990097541560203941",
+   "fonte": "harvard",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Eng 551",
+   "datazione": "17uu",
+   "secolo": null,
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ample vocabulary of practical examples to the whole art of short-writing : containing significant characters to several thousands of words, clauses & sentences in alphabetical order / by Wm. Mason : manuscript, [17--]",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "titolo: «…ting : containing significant characters to several thousands of words…»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:100133458:MANIFEST:2",
+   "pagina": "https://id.lib.harvard.edu/alma/990097541560203941/catalog",
+   "licenza": "Harvard Library: copia digitale ad accesso libero; per la riproduzione vedere le condizioni della biblioteca",
+   "immagini": null
+  },
+  {
+   "id": "harvard-990097458750203941",
+   "fonte": "harvard",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Eng 569.67",
+   "datazione": "1845",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "en",
+    "la",
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Amoenitates Cantabrigiensis : manuscript, 1845",
+   "autori": [
+    {
+     "id": "plinio-giovane",
+     "autore": "Plinio il Giovane",
+     "latino": "Plinius minor",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Holden, Herbert A. ; Pliny, the Younger ; Plato»"
+    },
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Holden, Herbert A. ; Pliny, the Younger ; Plato»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:3163260:MANIFEST:2",
+   "pagina": "https://id.lib.harvard.edu/alma/990097458750203941/catalog",
+   "licenza": "Harvard Library: copia digitale ad accesso libero; per la riproduzione vedere le condizioni della biblioteca",
+   "immagini": null
+  },
+  {
+   "id": "harvard-990091804890203941",
+   "fonte": "harvard",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Fr 124",
+   "datazione": "14uu",
+   "secolo": null,
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Recueil de remèdes : manuscript, [ca. 1430]",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Hippocrates.»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:887751:MANIFEST:2",
+   "pagina": "https://id.lib.harvard.edu/alma/990091804890203941/catalog",
+   "licenza": "Harvard Library: copia digitale ad accesso libero; per la riproduzione vedere le condizioni della biblioteca",
+   "immagini": null,
+   "miniato": true
+  },
+  {
    "id": "ds-ds10608",
    "fonte": "ds",
    "biblioteca": "Harvard University, Houghton Library",
@@ -338172,6 +338305,64 @@
    "pagina": "https://search.digital-scriptorium.org/catalog/DS10938",
    "licenza": null,
    "immagini": null
+  },
+  {
+   "id": "harvard-990098618990203941_FHCL.HOUGH:10255228",
+   "fonte": "harvard",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Ital 68",
+   "datazione": "14uu",
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epythoma dell instituti dell arte militare : manuscript, [14--]",
+   "autori": [
+    {
+     "id": "vegezio",
+     "autore": "Vegezio",
+     "latino": "Vegetius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Vegetius Renatus, Flavius»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:10255228:MANIFEST:2",
+   "pagina": "https://id.lib.harvard.edu/alma/990098618990203941_FHCL.HOUGH:10255228/catalog",
+   "licenza": "Harvard Library: copia digitale ad accesso libero; per la riproduzione vedere le condizioni della biblioteca",
+   "immagini": null,
+   "miniato": true
+  },
+  {
+   "id": "harvard-990098618990203941_FHCL.HOUGH:887757",
+   "fonte": "harvard",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Ital 68",
+   "datazione": "14uu",
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epythoma dell instituti dell arte militare : manuscript, [14--], f. 2",
+   "autori": [
+    {
+     "id": "vegezio",
+     "autore": "Vegezio",
+     "latino": "Vegetius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Vegetius Renatus, Flavius»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:887757:MANIFEST:2",
+   "pagina": "https://id.lib.harvard.edu/alma/990098618990203941_FHCL.HOUGH:887757/catalog",
+   "licenza": "Harvard Library: copia digitale ad accesso libero; per la riproduzione vedere le condizioni della biblioteca",
+   "immagini": null,
+   "miniato": true
   },
   {
    "id": "ds-ds10508",
@@ -338973,6 +339164,57 @@
    "immagini": null
   },
   {
+   "id": "harvard-990094067180203941",
+   "fonte": "harvard",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Lat 271",
+   "datazione": "14uu",
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Plautus ex umbria Sarsinas Romae moritur anno ab urbe condita millessimo : manuscript, [14--]",
+   "autori": [
+    {
+     "id": "plauto",
+     "autore": "Plauto",
+     "latino": "Plautus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Amphitruo",
+      "Asinaria"
+     ],
+     "corrispondenza": "autore: «Plautus, Titus Maccius»"
+    },
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "titolo: «…a Sarsinas Romae moritur anno ab urbe condita millessimo : manuscript, [14-…»"
+    },
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Batracomiomachia"
+     ],
+     "corrispondenza": "descrizione: «…a (incomplete, 22v-30v) -- 3. Homer, Batrachomyomachia, in Latin…»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:4645583:MANIFEST:2",
+   "pagina": "https://id.lib.harvard.edu/alma/990094067180203941/catalog",
+   "licenza": "Harvard Library: copia digitale ad accesso libero; per la riproduzione vedere le condizioni della biblioteca",
+   "immagini": null
+  },
+  {
    "id": "ds-ds10837",
    "fonte": "ds",
    "biblioteca": "Harvard University, Houghton Library",
@@ -339301,6 +339543,37 @@
    "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:26540598:MANIFEST:2",
    "pagina": "https://search.digital-scriptorium.org/catalog/DS10459",
    "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "harvard-990092819700203941",
+   "fonte": "harvard",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Syriac 132",
+   "datazione": "1904",
+   "secolo": [
+    20,
+    20
+   ],
+   "lingue": [
+    "syr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ktaba d-simata : manuscript, 1904",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Job, of Edessa ; Ḥunayn ibn Isḥāq al-ʻIbādī ; Alexander, of Aphrodisias ; Galen»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:102586229:MANIFEST:2",
+   "pagina": "https://id.lib.harvard.edu/alma/990092819700203941/catalog",
+   "licenza": "Harvard Library: copia digitale ad accesso libero; per la riproduzione vedere le condizioni della biblioteca",
    "immagini": null
   },
   {
@@ -339658,6 +339931,37 @@
    "immagini": null
   },
   {
+   "id": "harvard-990095874180203941",
+   "fonte": "harvard",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Typ 177",
+   "datazione": "14uu",
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De bello Gallico, civili, Alexandrino, Africae, Hispaniense : manuscript, [14--]",
+   "autori": [
+    {
+     "id": "cesare",
+     "autore": "Cesare",
+     "latino": "Caesar",
+     "categoria": "classico-latino",
+     "opere": [
+      "De bello Gallico"
+     ],
+     "corrispondenza": "titolo: «De bello Gallico, civili, Alexandrino, Africae, Hispaniense : manuscript, [14--]»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:795189:MANIFEST:2",
+   "pagina": "https://id.lib.harvard.edu/alma/990095874180203941/catalog",
+   "licenza": "Harvard Library: copia digitale ad accesso libero; per la riproduzione vedere le condizioni della biblioteca",
+   "immagini": null,
+   "miniato": true
+  },
+  {
    "id": "ds-ds10592",
    "fonte": "ds",
    "biblioteca": "Harvard University, Houghton Library",
@@ -339720,6 +340024,39 @@
    "pagina": "https://search.digital-scriptorium.org/catalog/DS11129",
    "licenza": null,
    "immagini": null
+  },
+  {
+   "id": "harvard-990097605800203941",
+   "fonte": "harvard",
+   "biblioteca": "Harvard University, Houghton Library",
+   "citta": "Cambridge (Massachusetts)",
+   "segnatura": "MS Typ 335",
+   "datazione": "13uu",
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Bucolica : Georgica ; Aeneis : manuscript, [13--]",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eneide",
+      "Georgiche",
+      "Bucoliche"
+     ],
+     "corrispondenza": "autore: «Virgil»"
+    }
+   ],
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:845087:MANIFEST:2",
+   "pagina": "https://id.lib.harvard.edu/alma/990097605800203941/catalog",
+   "licenza": "Harvard Library: copia digitale ad accesso libero; per la riproduzione vedere le condizioni della biblioteca",
+   "immagini": null,
+   "miniato": true
   },
   {
    "id": "ds-ds10827",
