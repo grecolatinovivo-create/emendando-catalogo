@@ -1,9 +1,9 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T18:14:00.582Z",
- "totale": 498079,
+ "aggiornato": "2026-10-26T18:42:38.288Z",
+ "totale": 499635,
  "con_autori": 27652,
- "miniati": 10498,
+ "miniati": 10497,
  "musica": 13595,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
@@ -30,7 +30,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 74478
+   "codici": 74505
   },
   "?": {
    "nome": "lingua non indicata",
@@ -46,7 +46,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 21994
+   "codici": 21998
   },
   "xx": {
    "nome": "altre lingue",
@@ -58,11 +58,11 @@
   },
   "zh": {
    "nome": "cinese",
-   "codici": 14117
+   "codici": 14110
   },
   "grc": {
    "nome": "greco",
-   "codici": 13945
+   "codici": 14015
   },
   "he": {
    "nome": "ebraico",
@@ -112,6 +112,10 @@
    "nome": "catalano",
    "codici": 3439
   },
+  "cu": {
+   "nome": "slavo ecclesiastico",
+   "codici": 3314
+  },
   "is": {
    "nome": "islandese e norreno",
    "codici": 3107
@@ -127,10 +131,6 @@
   "cop": {
    "nome": "copto",
    "codici": 1924
-  },
-  "cu": {
-   "nome": "slavo ecclesiastico",
-   "codici": 1824
   },
   "gez": {
    "nome": "etiopico",
@@ -158,7 +158,7 @@
   },
   "hy": {
    "nome": "armeno",
-   "codici": 540
+   "codici": 541
   },
   "ru": {
    "nome": "russo",
@@ -310,7 +310,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 496399
+   "codici": 497955
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -4103,15 +4103,15 @@
   },
   "ndl": {
    "nome": "National Diet Library, Tokyo (dl.ndl.go.jp)",
-   "codici": 42872,
+   "codici": 42865,
    "carte": 51,
    "carte_stampa": 0,
-   "miniati": 1651,
+   "miniati": 1650,
    "musica": 194,
    "con_autori": 0,
    "lingue": {
     "ja": 40318,
-    "zh": 2459,
+    "zh": 2452,
     "ko": 89,
     "?": 6,
     "km": 1
@@ -4837,22 +4837,24 @@
   },
   "libfond": {
    "nome": "Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca: copie digitali della Trinità-San Sergio (lib-fond.ru; manifesti scritti dal catalogo)",
-   "codici": 750,
+   "codici": 2313,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
    "con_autori": 0,
    "lingue": {
-    "cu": 743,
-    "la": 5,
-    "grc": 5
+    "cu": 2233,
+    "la": 32,
+    "grc": 75,
+    "ar": 4,
+    "hy": 1
    },
-   "esito": "errore: codici letti in parte (1350 in questo giro): riprenderà alla prossima esecuzione",
+   "esito": "errore: codici letti in parte (1727 in questo giro): riprenderà alla prossima esecuzione",
    "prefissi": [
     "libfond-"
    ],
-   "pezzi_voci": 1,
+   "pezzi_voci": 3,
    "indice": [
     "indice/libfond-0.json"
    ]
@@ -5299,7 +5301,7 @@
   {
    "file": "indice/ndl-2.json",
    "fonte": "ndl",
-   "righe": 2872
+   "righe": 2865
   },
   {
    "file": "indice/kokusho-0.json",
@@ -5454,7 +5456,7 @@
   {
    "file": "indice/libfond-0.json",
    "fonte": "libfond",
-   "righe": 750
+   "righe": 2313
   },
   {
    "file": "indice/archive-0.json",
