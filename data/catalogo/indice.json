@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T20:43:19.312Z",
- "totale": 503094,
- "con_autori": 27667,
+ "aggiornato": "2026-10-26T20:57:38.156Z",
+ "totale": 504129,
+ "con_autori": 27682,
  "miniati": 10742,
  "musica": 13601,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
@@ -30,7 +30,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 75369
+   "codici": 75392
   },
   "?": {
    "nome": "lingua non indicata",
@@ -66,7 +66,7 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 14019
+   "codici": 14045
   },
   "lo": {
    "nome": "lao",
@@ -108,13 +108,13 @@
    "nome": "persiano",
    "codici": 4778
   },
+  "cu": {
+   "nome": "slavo ecclesiastico",
+   "codici": 4309
+  },
   "ca": {
    "nome": "catalano",
    "codici": 3439
-  },
-  "cu": {
-   "nome": "slavo ecclesiastico",
-   "codici": 3314
   },
   "is": {
    "nome": "islandese e norreno",
@@ -356,25 +356,25 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 6534
+   "codici": 6535
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 6265
+   "codici": 6276
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 14293
+   "codici": 14294
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 3098
+   "codici": 3100
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 501415
+   "codici": 502450
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -414,7 +414,7 @@
    "nome": "Cicerone",
    "latino": "Cicero",
    "categoria": "classico-latino",
-   "codici": 1138
+   "codici": 1139
   },
   "cesare": {
    "nome": "Cesare",
@@ -930,7 +930,7 @@
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 2049
+   "codici": 2060
   },
   "teofrasto": {
    "nome": "Teofrasto",
@@ -1338,7 +1338,7 @@
    "nome": "Basilio Magno",
    "latino": "Basilius Magnus",
    "categoria": "cristiano",
-   "codici": 572
+   "codici": 573
   },
   "gregorio-nazianzeno": {
    "nome": "Gregorio di Nazianzo",
@@ -1488,7 +1488,7 @@
    "nome": "Tommaso d'Aquino",
    "latino": "Thomas de Aquino",
    "categoria": "medievale",
-   "codici": 514
+   "codici": 516
   },
   "bernardo": {
    "nome": "Bernardo di Chiaravalle",
@@ -4963,24 +4963,24 @@
   },
   "libfond": {
    "nome": "Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca: copie digitali della Trinità-San Sergio (lib-fond.ru; manifesti scritti dal catalogo)",
-   "codici": 2313,
+   "codici": 3348,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
-   "con_autori": 0,
+   "con_autori": 15,
    "lingue": {
-    "cu": 2233,
-    "la": 32,
-    "grc": 75,
+    "cu": 3228,
+    "la": 55,
+    "grc": 101,
     "ar": 4,
     "hy": 1
    },
-   "esito": "errore: codici letti in parte (1727 in questo giro): riprenderà alla prossima esecuzione",
+   "esito": "errore: codici letti in parte (1724 in questo giro): riprenderà alla prossima esecuzione",
    "prefissi": [
     "libfond-"
    ],
-   "pezzi_voci": 3,
+   "pezzi_voci": 5,
    "indice": [
     "indice/libfond-0.json"
    ]
@@ -5595,7 +5595,7 @@
   {
    "file": "indice/libfond-0.json",
    "fonte": "libfond",
-   "righe": 2313
+   "righe": 3348
   },
   {
    "file": "indice/archive-0.json",

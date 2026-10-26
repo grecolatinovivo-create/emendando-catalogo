@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T20:43:19.312Z",
+ "aggiornato": "2026-10-26T20:57:38.156Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -319,8 +319,8 @@
   },
   "libfond": {
    "nome": "Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca: copie digitali della Trinità-San Sergio (lib-fond.ru; manifesti scritti dal catalogo)",
-   "codici": 0,
-   "esito": "errore: codici letti in parte (1727 in questo giro): riprenderà alla prossima esecuzione"
+   "codici": 12,
+   "esito": "errore: codici letti in parte (1724 in questo giro): riprenderà alla prossima esecuzione"
   },
   "archive": {
    "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, John Carter Brown Library, Newberry Library, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
@@ -353,7 +353,7 @@
    "esito": "ok"
   }
  },
- "totale": 12321,
+ "totale": 12333,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -122945,6 +122945,368 @@
    "pagina": "https://manus.iccu.sbn.it/cnmd/0000313334",
    "licenza": "Biblioteca statale del Monumento nazionale di Montecassino (MiC); piattaforma OMNES © DB Seret",
    "immagini": 113
+  },
+  {
+   "id": "libfond-f-152-130",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.152 №130",
+   "datazione": "1749 г.",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Курс философии по Аристотелю, состоящий из логики, физики, метафизики и этики, читанный в Киево-Могилянской академии митр. Георгием (Конисским) / Георгий (Конисский), митр.; Параллельное Philosophia peripatetica, juxta numerum quatuor facultatum quadripartita continens inse logicam, physicam, metaphysicam et eticam tractata et tradita ad mentem principis philosophorum aristotelis stagiritae Kijovi",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…entem principis philosophorum aristotelis stagiritae Kijoviae in alma e…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-152-130.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/152/f-152-130/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 279
+  },
+  {
+   "id": "libfond-f-173i-287",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.173/I №287",
+   "datazione": "Не ранее 1710 г.",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "«Tractatus Academicus phisicus in octo libros Aristotelis Phisicos» («Учебный трактат по физике, в основу которого положены восемь физических книг Аристотеля»)",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…micus phisicus in octo libros Aristotelis Phisicos» («Учебный трактат п…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-173i-287.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/173-i/f-173i-287/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 324
+  },
+  {
+   "id": "libfond-f-173i-289",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.173/I №289",
+   "datazione": "Нач. XVIII в.",
+   "secolo": null,
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "«Trivium Aristotelis ab Alcide Roxolano biennio decurrendum seu tres Philosophiae species, Logica, Physica et Мetaphysica trita a Peripateticis via et methodo in scholis usita Athenis Alexieviczanis Sacrae Tzareap Majestatis Moschoviensibus…» («Тривиум Аристотеля Алкидом Россияном в продолжении двух лет пробегаемые, или три вида философии: логика, физика и метафизика, известные через перипатетиков",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Fisica"
+     ],
+     "corrispondenza": "titolo: ««Trivium Aristotelis ab Alcide Roxolano biennio de…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-173i-289.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/173-i/f-173i-289/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 275
+  },
+  {
+   "id": "libfond-f-173i-291",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.173/I №291",
+   "datazione": "Не ранее 1704 г.",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "«Trivium Aristotelis ab Alcide Roxolano biennio decurrendum seu tres philosophiae spesies: Logica, Physica et Metaphysica trita a peripateticis via et methodo in scholis usitata Athenis Alexievicianis S. Tzareae M. Moschoviensibus praelucente Javorsciana Cynthia. Elucidari et publice tradj. Caeptae Anno … 1704 Septembris» («Тривиум Аристотеля, Алкидом Россиянином в продолжение двух лет пробегаемый",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica",
+      "Fisica"
+     ],
+     "corrispondenza": "titolo: ««Trivium Aristotelis ab Alcide Roxolano biennio de…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-173i-291.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/173-i/f-173i-291/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 290
+  },
+  {
+   "id": "libfond-f-173i-292-1",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.173/I №292.1",
+   "datazione": "[1717 г.]",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "«Tractatus ultimus Philosophiae triennalis in reliquos Aristotelis libros. Traditus in Regio Batoreano Collegio Polocensi. Mensis 1 Septembris Anno 1688» («Последний трактат из трехгодичного курса философии о последних книгах Аристотеля. Читанный в королевской Баториевской коллегии в Полоцке. 1 сентября 1688 года»)",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…ophiae triennalis in reliquos Aristotelis libros. Traditus in Regio Bat…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-173i-292-1.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/173-i/f-173i-292-1/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 233
+  },
+  {
+   "id": "libfond-f-173i-293",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.173/I №293",
+   "datazione": "Перв. четв. ХVIII в.",
+   "secolo": null,
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "«Universa Aristotelis Philosophia ad regulаm Christianae veritatis conformata divinae gloriae preciosissimae virginis Mariae honori sacra a reverendo Patre et Professore erudito huinsce philosophiae doctore Gedeone Wiszniowski tradita per D. M. аs G. …» («Всеобщая философия Аристотеля, приспособленная к правилам христианской истины и в честь Девы Марии, читанная почтенным отцом и профессором и той",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: ««Universa Aristotelis Philosophia ad regulаm Christ…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-173i-293.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/173-i/f-173i-293/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 288
+  },
+  {
+   "id": "libfond-f-173i-294",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.173/I №294",
+   "datazione": "Сер. XVIII в.",
+   "secolo": null,
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "«Summulae seu summa fundamenta Aristotelis Phylosophiae» («Краткие основы, или свод основ философии Аристотеля»)",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…Summulae seu summa fundamenta Aristotelis Phylosophiae» («Краткие основ…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-173i-294.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/173-i/f-173i-294/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 164
+  },
+  {
+   "id": "libfond-f-173i-298",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.173/I №298",
+   "datazione": "1654 г.",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "«Εις τά περὶ Ψυχῆς τον Ἀριστοτέλους [βίβλια] ύντομος παραφράσεις τε καί ζητήματα παρά Γεράσιμον ιερομόναχον Βλάχου τοῦ Κρητός τοῦ ἐπιστήμων κοινοῦ καθηγητοῦ καὶ τοῦ ἱεροῦ εὐαγγελίου ταπεινοῦ κήρυκος» («Иеромонаха Герасима Влаха критиянина, наставника в науках и смиренного проповедника св. Евангелия краткое изложение и исследование сочинения Аристотеля \"О душах\"»)",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "De anima"
+     ],
+     "corrispondenza": "titolo: ««Εις τά περὶ Ψυχῆς τον Ἀριστοτέλους [βίβλια] ύντομος παραφράσεις…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-173i-298.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/173-i/f-173i-298/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 523
+  },
+  {
+   "id": "libfond-f-173i-307",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.173/I №307",
+   "datazione": "Сер. XVIII в.",
+   "secolo": null,
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "«Philosophia peripatetica in gratiam et commodum ingenuo auditori Roxolano ad mentem principis philosophorum Aristotelis Stagiritae exposita afque in Imperatoria ac orthdoxa academia Mosquensi inchoatа anno incarnatae Sapientiae 1743 Septembris 9 die» («Перипатетическая философия, на благо и пользу благородного российского слушателя изложенная в духе князя философ Аристотеля Стагирита и начатая чт",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…entem principis philosophorum Aristotelis Stagiritae exposita afque in…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-173i-307.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/173-i/f-173i-307/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 104
+  },
+  {
+   "id": "libfond-f-173i-318",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.173/I №318",
+   "datazione": "Нач. XVIII в.",
+   "secolo": null,
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "«Tertia trivii Aristotelis via ab Alcide Roxolano decurrenda seu naturalis scientia vulgo physica. Trita a peripateticis via et methodo in scholis usitata Atheniae Alexievicenis S. Jmp. M. Moscuensibus elucidari et publice tradi caepta Anno … 1705 ultima Aprilis» («Третий путь тривиума Аристотеля, Алкидом Россиянином пробегаемый, или натуральная философия, обычно называемая физикой. Изложенная пут",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Fisica"
+     ],
+     "corrispondenza": "titolo: ««Tertia trivii Aristotelis via ab Alcide Roxolano decurr…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-173i-318.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/173-i/f-173i-318/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 513
+  },
+  {
+   "id": "libfond-f-173i-323",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.173/I №323",
+   "datazione": "Нач. XVIII в.",
+   "secolo": null,
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "«Corona aurea ex immarcessibilibus floribus Tusculanae suadae incoronamentum Rossia laureates … neo Tulliorum inclyto Kijovomohilaeano palladis viridario contexta praeciosis unionibus oratoriae eruditionis. Disctincta nec non praeceptis Rhetoricis ad gentium politioris saeculi condecorata sub reverendo professore Dostithei Czarnucki Anno Domini 1705» («Золотой венец из неувядающих склоненных туску",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tusculanae disputationes"
+     ],
+     "corrispondenza": "titolo: «…ex immarcessibilibus floribus Tusculanae suadae incoronamentum Rossia…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-173i-323.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/173-i/f-173i-323/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 239
+  },
+  {
+   "id": "libfond-f-173i-347",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.173/I №347",
+   "datazione": "Перв. четв. XVIII в.",
+   "secolo": null,
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "«Philosophia universa doctorinam peripateticam ad (mentem) principis Pholosophrum Aristotelis Stagiritae complectens. Commentationibus scholasticis illustrata atque in alma kijoviensi orthodoxa academia Mohilaeana ingenuo auditori exaudita (?) Annis 1717 et 1718» («Общая философия, составляющая перипатетическое учение согласно философским началам Аристотеля Стагирита, снабженная схоластическими ра",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…entem) principis Pholosophrum Aristotelis Stagiritae complectens. Comme…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-173i-347.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/173-i/f-173i-347/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 260
   },
   {
    "id": "bub-64e6eb6c-8126-4829-b70b-6b99612a05f6",
