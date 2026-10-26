@@ -81,7 +81,8 @@ def finestre_pagina(testo):
         return []
     pezzi = [parole[i: i + FINESTRA] for i in range(0, len(parole), FINESTRA)]
     if len(pezzi) > 1 and len(pezzi[-1]) < FINESTRA_MIN:
-        pezzi[-2] += pezzi.pop()
+        ultimo = pezzi.pop()  # prima si toglie l'ultimo pezzo, poi lo si aggiunge al precedente
+        pezzi[-1] += ultimo
     return [" ".join(p) for p in pezzi]
 
 
