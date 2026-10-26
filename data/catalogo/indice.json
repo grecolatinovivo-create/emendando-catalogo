@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T10:07:49.332Z",
- "totale": 382912,
- "con_autori": 23025,
+ "aggiornato": "2026-10-26T10:25:16.884Z",
+ "totale": 382917,
+ "con_autori": 23026,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
   "id",
@@ -25,7 +25,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 52491
+   "codici": 52492
   },
   "fr": {
    "nome": "francese",
@@ -53,7 +53,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 9597
+   "codici": 9601
   },
   "xx": {
    "nome": "altre lingue",
@@ -195,7 +195,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 11785
+   "codici": 11786
   },
   "medievale": {
    "nome": "autori medievali",
@@ -1131,7 +1131,7 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 2530
+   "codici": 2531
   },
   "girolamo": {
    "nome": "Girolamo",
@@ -3267,12 +3267,12 @@
   },
   "bnchile": {
    "nome": "Biblioteca Nacional de Chile, Santiago (memoriachilena.gob.cl; codici in pubblico dominio, immagini estratte dai PDF)",
-   "codici": 5,
-   "con_autori": 0,
+   "codici": 10,
+   "con_autori": 1,
    "lingue": {
-    "la": 1,
+    "la": 2,
     "he": 1,
-    "es": 4
+    "es": 8
    },
    "esito": "ok",
    "prefissi": [
@@ -3567,7 +3567,7 @@
   {
    "file": "indice/bnchile-0.json",
    "fonte": "bnchile",
-   "righe": 5
+   "righe": 10
   },
   {
    "file": "indice/bnv-0.json",

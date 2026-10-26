@@ -8,8 +8,10 @@
 //   - «bnchile»: Biblioteca Nacional de Chile (Sala Medina e fondi manoscritti). Entrano solo i codici librari che Memoria Chilena
 //     segna, oggetto per oggetto, come «Patrimonio cultural común» (pubblico dominio, Ley 17.336); PDF da memoriachilena.gob.cl
 //     (archivos2/pdfs/MC*.pdf). Citazione richiesta: Memoria Chilena, Biblioteca Nacional de Chile, con l'indirizzo della scheda.
-//     Fuori l'Antiphonarium degli Agostiniani (SM0000449), i diari di Toro y Guzmán e gli altri codici di Sala Medina che non hanno
-//     il campo «Propiedad intelectual» in Memoria Chilena.
+//     Dal 26 ottobre 2026 entrano anche i codici librari che la biblioteca non segna come pubblico dominio ma che lo sono per età
+//     (campo «eta»): opere manoscritte di autori morti da più di 70 anni, oppure anonime anteriori al 1900; le fotografie di documenti
+//     bidimensionali non creano nuovi diritti. PDF da bibliotecanacionaldigital.gob.cl (colecciones/BND/00/SM/SM*.pdf) o da
+//     Memoria Chilena. Fuori le carte sparse (per esempio le «Notas sobre aborígenes americanos» di Medina, SM0000782: 43 pezzi).
 //   - «bnv»: Biblioteca Nacional de Venezuela, Biblioteca Digital de Venezuela César Rengifo (bibliotecadigital.bnv.gob.ve,
 //     licenza del sito CC BY-SA 3.0 Venezuela); segnature dal catalogo Koha (koha.bnv.gob.ve). Le immagini estratte restano sotto
 //     la stessa licenza, con attribuzione.
@@ -26,7 +28,8 @@ export const FONTI_LATAM = {
   bnchile: {
     biblioteca: "Biblioteca Nacional de Chile", citta: "Santiago (Cile)", sito: "https://www.bibliotecanacionaldigital.gob.cl/",
     rights: PDM, licenza: "Patrimonio cultural común (pubblico dominio, Ley 17.336), indicato nella scheda di Memoria Chilena",
-    attribuzione: v => `Biblioteca Nacional de Chile. Disponible en Memoria Chilena, ${v.mc}${v.codice ? " (" + v.codice + ")" : ""}. Propiedad intelectual: Patrimonio cultural común (Ley 17.336). Immagini estratte dal PDF della Biblioteca.`,
+    licenzaEta: "Pubblico dominio per età dell'opera; la scheda della biblioteca non lo indica",
+    attribuzione: v => v.eta ? `Biblioteca Nacional de Chile, ${v.s}` : `Biblioteca Nacional de Chile. Disponible en Memoria Chilena, ${v.mc}${v.codice ? " (" + v.codice + ")" : ""}. Propiedad intelectual: Patrimonio cultural común (Ley 17.336). Immagini estratte dal PDF della Biblioteca.`,
   },
   bnv: {
     biblioteca: "Biblioteca Nacional de Venezuela", citta: "Caracas (Venezuela)", sito: "https://bibliotecadigital.bnv.gob.ve/",
@@ -49,6 +52,21 @@ export const CODICI = {
       e: "[21] p. Ms. (transcripción, escrita a mano). Al final: «De Dn. Camilo Henriquez - la da a la Biblioteca su amigo Manuel de Salas» (nota manuscrita de Manuel de Salas).", codice: "MC0067629", mc: "https://www.memoriachilena.gob.cl/602/w3-article-87410.html" },
     MC0000836: { s: "MC0000836 (n. sistema 919754)", t: "[Diccionario latino-hebraico]: fragmento", a: ["Vaïsse, Emilio, 1860-1935 (Omer Emeth)"], d: "1887-1889 (Roma)", l: ["lat", "heb"],
       e: "Codice di 356 hojas; Memoria Chilena ne pubblica una scelta di 20 pagine. Escrito en Roma, entre 1887-1889.", codice: "MC0000836", mc: "https://www.memoriachilena.gob.cl/602/w3-article-99525.html" },
+    // pubblico dominio per età (la scheda della biblioteca non lo indica)
+    SM0000449: { eta: true, s: "Sala Medina, SM0000449", t: "Antiphonarium romanum ad usum S. Conventus-Maximum Sancti Patris Nostri Augustini S. Jacobi Chilensis", a: ["Agustinos. Provincia Chilena"], d: "1595", l: ["lat"],
+      e: "93 fojas: partitura coral; 56 cm. Escrito en pergamino con tinta ferrogálica roja y negra; letras iniciales iluminadas; tapas de madera con esquinas y lomo de cuero (reencuadernación posterior). Título extraído del lomo.",
+      bnd: "https://www.bibliotecanacionaldigital.gob.cl/bnd/632/w3-article-335340.html" },
+    SM0000729: { eta: true, s: "Sala Medina, SM0000729", t: "[Diarios de viajes], v. 1: Londres, 1824", a: ["Toro y Guzmán, Domingo José de, 1803-1887"], d: "1824", l: ["spa"],
+      e: "Volumen 1 de 2; 21 x 17 cm; encuadernado en cartón marmolado, lomo de cuero. Describe principalmente su estadía en Londres en 1824 e incluye borradores de cartas a su familia.",
+      bnd: "https://www.bibliotecanacionaldigital.gob.cl/bnd/632/w3-article-625350.html" },
+    SM0000730: { eta: true, s: "Sala Medina, SM0000730", t: "[Diarios de viajes], v. 2: París, 1825", a: ["Toro y Guzmán, Domingo José de, 1803-1887"], d: "1825", l: ["spa"],
+      e: "Volumen 2 de 2; 21 x 17 cm; encuadernado en cartón verde. Relata su estadía en París en 1825.",
+      bnd: "https://www.bibliotecanacionaldigital.gob.cl/bnd/632/w3-article-625350.html" },
+    SM0000873: { eta: true, s: "Sala Medina, SM0000873", t: "Apuntamientos sobre la tasa de Chile", a: ["Becerril, Bernardo"], d: "[1580?] (copia del XIX secolo)", l: ["spa"],
+      e: "p. 265-271 di un volume rilegato di copie; 32 cm. Ms. (transcripción, escrita a mano), con apostillas marginales; firma: Frai Ber[nar]do Becerril. Memorial contra la «Tasa de Gamboa». «Copiado de una copia. Bib. Nac. de Madrid T. J 53. Confronté D. Barros Arana».",
+      bnd: "https://www.bibliotecanacionaldigital.gob.cl/bnd/632/w3-article-662217.html" },
+    MC0033189: { eta: true, s: "MC0033189 (n. sistema 97009)", t: "Arte breve para aprender con alguna facilidad la dificultosa lengua Otomi: contiene algunas reglas, la doctrina, ministración de sacramentos, un bocabulario y otras cosas curiosas", a: ["Agreda, Antonio de"], d: "[México, 1770]", l: ["spa"],
+      e: "11-80 [i.e. 140] p. Texto en español, traducción paralela en otomí. Manuscrito inédito del jesuita Antonio de Agreda.", codice: "MC0033189", mc: "https://www.memoriachilena.gob.cl/602/w3-article-79543.html" },
   },
   bnv: {
     "MSV-CAW2591": { s: "MSV CAW2591", t: "Arca de Letras y Theatro Universal", a: ["Navarrete, Juan Antonio, 1749-1814"], d: "1783", l: ["spa"],
@@ -83,14 +101,14 @@ function comprimiPagine(dims) {
 export const idCodice = (fonte, cartella) => `${fonte}-${cartella.toLowerCase()}`;
 export const urlManifesto = (fonte, cartella) => `${BASE_MANIFESTI}/${fonte}/${cartella}.json`;
 export const urlImmagine = (fonte, cartella, n) => `${BASE_IMMAGINI}/${fonte}/${cartella}/${String(n).padStart(4, "0")}.jpg`;
-const paginaDi = (fonte, v) => (fonte === "bnchile" ? v.mc : v.pagina);
+const paginaDi = (fonte, v) => (fonte === "bnchile" ? v.mc || v.bnd : v.pagina);
 
 export function recordLatam(fonte, st = leggiStato()) {
   const cfg = FONTI_LATAM[fonte], pagine = (st && st.pagine && st.pagine[fonte]) || {};
   return Object.entries(CODICI[fonte]).filter(([c]) => espandiPagine(pagine[c]).length).map(([c, v]) => ({
     fonte, id: idCodice(fonte, c), citta: cfg.citta, biblioteca: cfg.biblioteca, segnatura: v.s, datazione: v.d, titolo: v.t, autori_fonte: v.a,
     descrizione: v.e, lingue: v.l.map(x => ({ spa: "es", lat: "la", heb: "he" })[x] || x), immagini: espandiPagine(pagine[c]).length,
-    manifest: urlManifesto(fonte, c), pagina: paginaDi(fonte, v), licenza: cfg.licenza }));
+    manifest: urlManifesto(fonte, c), pagina: paginaDi(fonte, v), licenza: v.eta ? cfg.licenzaEta : cfg.licenza }));
 }
 
 /* manifesto IIIF Presentation 3 con le immagini statiche del ramo «immagini» */
@@ -105,11 +123,12 @@ export function manifestoLatam(fonte, cartella, dims) {
         body: { id: urlImmagine(fonte, cartella, i + 1), type: "Image", format: "image/jpeg", width: w, height: h } }] }] };
   });
   const [w0, h0] = dims[0] || [0, 0];
-  const link = [paginaDi(fonte, v), v.bnd, v.koha].filter(Boolean);
+  const link = [...new Set([paginaDi(fonte, v), v.bnd, v.koha].filter(Boolean))];
   return { "@context": "http://iiif.io/api/presentation/3/context.json", id, type: "Manifest",
     label: lm(`${cfg.biblioteca}, ${v.s}: ${v.t}`),
     metadata: [coppia("Biblioteca", `${cfg.biblioteca}, ${cfg.citta.replace(/ \(.*\)$/, "")}`), coppia("Segnatura", v.s), coppia("Titolo", v.t), coppia("Autori", v.a),
-      coppia("Datazione", v.d), coppia("Lingue", v.l), coppia("Descrizione", v.e), coppia("Licenza", cfg.licenza)].filter(Boolean),
+      coppia("Datazione", v.d), coppia("Lingue", v.l), coppia("Descrizione", v.e), coppia("Licenza", v.eta ? cfg.licenzaEta : cfg.licenza),
+      coppia("Nota", v.eta ? cfg.licenzaEta : null)].filter(Boolean),
     summary: lm("Manifesto scritto dal catalogo di Emendando: la biblioteca pubblica il codice solo come PDF; le pagine sono JPEG estratti dal PDF.", "it"),
     requiredStatement: { label: lm("Attribuzione", "it"), value: lm(cfg.attribuzione(v), "none") },
     rights: cfg.rights,
