@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T11:35:05.066Z",
+ "aggiornato": "2026-10-26T11:40:09.809Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -75,7 +75,7 @@
   "classense": {
    "nome": "Biblioteca Classense, Ravenna (www.cdc.classense.ra.it; elenco raccolto dal browser)",
    "codici": 5,
-   "esito": "ok"
+   "esito": "precedente"
   },
   "leiden": {
    "nome": "Universiteitsbibliotheek Leiden (digitalcollections.universiteitleiden.nl)",
@@ -180,52 +180,52 @@
   "mdc": {
    "nome": "Memòria Digital de Catalunya: Biblioteca de Catalunya, Ateneu Barcelonès, Biblioteca Museu Víctor Balaguer, Biblioteca Pública Episcopal de Barcelona (mdc.csuc.cat)",
    "codici": 14,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "ub": {
    "nome": "Universitat de Barcelona, Biblioteca Patrimonial Digital (bipadi.ub.edu)",
    "codici": 13,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "realbiblioteca": {
    "nome": "Real Biblioteca (Palacio Real, Madrid) e Real Biblioteca del Monasterio de El Escorial (rbdigital.realbiblioteca.es, Patrimonio Nacional)",
    "codici": 125,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "ucm": {
    "nome": "Universidad Complutense de Madrid, Biblioteca Histórica (patrimoniodigital.ucm.es)",
    "codici": 41,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "sevilla": {
    "nome": "Biblioteca de la Universidad de Sevilla (copie digitali su Internet Archive)",
    "codici": 44,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "rah": {
    "nome": "Real Academia de la Historia, Madrid (bibliotecadigital.rah.es; manifesti scritti dal catalogo)",
    "codici": 0,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "bnchile": {
    "nome": "Biblioteca Nacional de Chile, Santiago (memoriachilena.gob.cl; codici in pubblico dominio, immagini estratte dai PDF)",
    "codici": 0,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "bnv": {
    "nome": "Biblioteca Nacional de Venezuela, Caracas (bibliotecadigital.bnv.gob.ve; CC BY-SA 3.0 VE, immagini estratte dai PDF)",
    "codici": 0,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "pergamos": {
    "nome": "Università di Atene, Biblioteca della Facoltà di Filosofia (pergamos.lib.uoa.gr; manifesti scritti dal catalogo)",
    "codici": 3,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "rousanou": {
    "nome": "Monastero di Rousanou, Meteore (copie digitali della Biblioteca di Kalambaka, opac.kalambakalibrary.org; elenco da searchculture.gr)",
    "codici": 1,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
@@ -122495,7 +122495,8 @@
    "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b55013450m/manifest.json",
    "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b55013450m",
    "licenza": "Domaine public (Gallica, conditions d'utilisation)",
-   "immagini": null
+   "immagini": null,
+   "tipo": "carta"
   },
   {
    "id": "bnf-btv1b10889827f",
@@ -323219,7 +323220,8 @@
    "manifest": "https://collections.newberry.org/IIIF3/Presentation/Manifest/2KXJ8ZF908T7",
    "pagina": "https://search.digital-scriptorium.org/catalog/DS17916",
    "licenza": null,
-   "immagini": null
+   "immagini": null,
+   "tipo": "carta"
   },
   {
    "id": "ds-ds17810",
@@ -343818,7 +343820,8 @@
    "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:46314/manifest.json",
    "pagina": "https://search.digital-scriptorium.org/catalog/DS9791",
    "licenza": null,
-   "immagini": null
+   "immagini": null,
+   "tipo": "carta"
   },
   {
    "id": "ds-ds9977",

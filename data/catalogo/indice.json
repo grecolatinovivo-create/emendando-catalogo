@@ -1,9 +1,9 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T11:35:05.066Z",
- "totale": 390687,
- "con_autori": 23578,
- "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
+ "aggiornato": "2026-10-26T11:40:09.809Z",
+ "totale": 390864,
+ "con_autori": 23579,
+ "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte (categoria a parte, conteggi in «tipi») e vuoto per i codici; «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
   "id",
   "segnatura",
@@ -15,7 +15,8 @@
   "titolo",
   "opere",
   "truculentus",
-  "lingua_dedotta"
+  "lingua_dedotta",
+  "tipo"
  ],
  "hash": "fnv1a-32",
  "lingue": {
@@ -25,19 +26,19 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 55227
+   "codici": 55243
   },
   "fr": {
    "nome": "francese",
-   "codici": 25447
+   "codici": 25463
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 21753
+   "codici": 21756
   },
   "de": {
    "nome": "tedesco",
-   "codici": 17025
+   "codici": 17048
   },
   "ar": {
    "nome": "arabo",
@@ -53,11 +54,11 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 9630
+   "codici": 9645
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 8445
+   "codici": 8456
   },
   "sa": {
    "nome": "sanscrito",
@@ -69,7 +70,7 @@
   },
   "en": {
    "nome": "inglese",
-   "codici": 5789
+   "codici": 5847
   },
   "he": {
    "nome": "ebraico",
@@ -77,7 +78,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 5227
+   "codici": 5249
   },
   "ca": {
    "nome": "catalano",
@@ -109,7 +110,7 @@
   },
   "nl": {
    "nome": "nederlandese",
-   "codici": 625
+   "codici": 633
   },
   "hy": {
    "nome": "armeno",
@@ -133,11 +134,11 @@
   },
   "pt": {
    "nome": "portoghese",
-   "codici": 156
+   "codici": 160
   },
   "ru": {
    "nome": "russo",
-   "codici": 123
+   "codici": 132
   },
   "ga": {
    "nome": "irlandese",
@@ -195,11 +196,21 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 12041
+   "codici": 12042
   },
   "medievale": {
    "nome": "autori medievali",
    "codici": 2571
+  }
+ },
+ "tipi": {
+  "codice": {
+   "nome": "codici",
+   "codici": 390240
+  },
+  "carta": {
+   "nome": "carte manoscritte",
+   "codici": 624
   }
  },
  "autori": {
@@ -1245,7 +1256,7 @@
    "nome": "Atanasio",
    "latino": "Athanasius",
    "categoria": "cristiano",
-   "codici": 346
+   "codici": 347
   },
   "gregorio-nisseno": {
    "nome": "Gregorio di Nissa",
@@ -2311,6 +2322,7 @@
   "heidelberg": {
    "nome": "Heidelberg (digi.ub.uni-heidelberg.de)",
    "codici": 7781,
+   "carte": 0,
    "con_autori": 326,
    "lingue": {
     "de": 1472,
@@ -2343,6 +2355,7 @@
   "ecodices": {
    "nome": "e-codices",
    "codici": 2745,
+   "carte": 1,
    "con_autori": 1032,
    "lingue": {
     "xx": 170,
@@ -2381,6 +2394,7 @@
   "bsb": {
    "nome": "Bayerische Staatsbibliothek (digitale-sammlungen.de)",
    "codici": 28785,
+   "carte": 197,
    "con_autori": 2214,
    "lingue": {
     "?": 5804,
@@ -2434,6 +2448,7 @@
   "berlino": {
    "nome": "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
    "codici": 3296,
+   "carte": 4,
    "con_autori": 269,
    "lingue": {
     "la": 714,
@@ -2469,6 +2484,7 @@
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
    "codici": 10068,
+   "carte": 79,
    "con_autori": 1252,
    "lingue": {
     "la": 3790,
@@ -2518,6 +2534,7 @@
   "gallica": {
    "nome": "Bibliothèque nationale de France (gallica.bnf.fr)",
    "codici": 84198,
+   "carte": 94,
    "con_autori": 10215,
    "lingue": {
     "fr": 22571,
@@ -2574,6 +2591,7 @@
   "laurenziana": {
    "nome": "Biblioteca Medicea Laurenziana, Firenze (tecabml.contentdm.oclc.org)",
    "codici": 4353,
+   "carte": 0,
    "con_autori": 2206,
    "lingue": {
     "?": 3614,
@@ -2595,6 +2613,7 @@
   "ambrosiana": {
    "nome": "Veneranda Biblioteca Ambrosiana, Milano (ambrosiana.comperio.it; copie digitali digitallibrary.unicatt.it)",
    "codici": 1116,
+   "carte": 0,
    "con_autori": 269,
    "lingue": {
     "grc": 192,
@@ -2622,6 +2641,7 @@
   "montecassino": {
    "nome": "Biblioteca statale del Monumento nazionale di Montecassino (omnes.dbseret.com/montecassino)",
    "codici": 210,
+   "carte": 0,
    "con_autori": 106,
    "lingue": {
     "?": 202,
@@ -2639,6 +2659,7 @@
   "casanatense": {
    "nome": "Biblioteca Casanatense, Roma (casanatense.contentdm.oclc.org)",
    "codici": 43,
+   "carte": 3,
    "con_autori": 6,
    "lingue": {
     "?": 41,
@@ -2656,6 +2677,7 @@
   "bub": {
    "nome": "Biblioteca Universitaria di Bologna (historica.unibo.it)",
    "codici": 907,
+   "carte": 0,
    "con_autori": 14,
    "lingue": {
     "la": 402,
@@ -2678,6 +2700,7 @@
   "bncf": {
    "nome": "Biblioteca Nazionale Centrale di Firenze (manoscritti pubblicati dalla Biblioteca su Internet Archive, archive.org)",
    "codici": 1124,
+   "carte": 3,
    "con_autori": 91,
    "lingue": {
     "it": 848,
@@ -2704,6 +2727,7 @@
   "vallicelliana": {
    "nome": "Biblioteca Vallicelliana, Roma (omnes.dbseret.com/vallicelliana)",
    "codici": 17,
+   "carte": 0,
    "con_autori": 1,
    "lingue": {
     "?": 15,
@@ -2721,6 +2745,7 @@
   "malatestiana": {
    "nome": "Biblioteca Malatestiana, Cesena (Catalogo aperto dei manoscritti malatestiani; manifesti scritti dal catalogo)",
    "codici": 353,
+   "carte": 0,
    "con_autori": 180,
    "lingue": {
     "?": 260,
@@ -2739,6 +2764,7 @@
   "classense": {
    "nome": "Biblioteca Classense, Ravenna (www.cdc.classense.ra.it; elenco raccolto dal browser)",
    "codici": 24,
+   "carte": 0,
    "con_autori": 6,
    "lingue": {
     "it": 8,
@@ -2746,7 +2772,7 @@
     "la": 8,
     "grc": 2
    },
-   "esito": "ok",
+   "esito": "precedente",
    "prefissi": [
     "cls-"
    ],
@@ -2758,6 +2784,7 @@
   "leiden": {
    "nome": "Universiteitsbibliotheek Leiden (digitalcollections.universiteitleiden.nl)",
    "codici": 3586,
+   "carte": 2,
    "con_autori": 727,
    "lingue": {
     "?": 2332,
@@ -2789,6 +2816,7 @@
   "bamberga": {
    "nome": "Staatsbibliothek Bamberg, Bamberga (dati dal Handschriftenportal, handschriftenportal.de)",
    "codici": 165,
+   "carte": 0,
    "con_autori": 106,
    "lingue": {
     "?": 15,
@@ -2808,6 +2836,7 @@
   "colonia": {
    "nome": "Erzbischöfliche Diözesan- und Dombibliothek Köln mit Bibliothek St. Albertus Magnus, Colonia (dati dal Handschriftenportal, handschriftenportal.de)",
    "codici": 362,
+   "carte": 0,
    "con_autori": 107,
    "lingue": {
     "?": 324,
@@ -2827,6 +2856,7 @@
   "lipsia": {
    "nome": "Universitätsbibliothek Leipzig, Lipsia (dati dal Handschriftenportal, handschriftenportal.de)",
    "codici": 2677,
+   "carte": 0,
    "con_autori": 542,
    "lingue": {
     "la": 2286,
@@ -2854,6 +2884,7 @@
   "onb": {
    "nome": "Österreichische Nationalbibliothek, Vienna (onb.digital; manifesti api.onb.ac.at)",
    "codici": 2705,
+   "carte": 3,
    "con_autori": 127,
    "lingue": {
     "?": 718,
@@ -2893,23 +2924,25 @@
   },
   "yale": {
    "nome": "Yale University Library, Beinecke e altre (collections.library.yale.edu)",
-   "codici": 2759,
-   "con_autori": 541,
+   "codici": 2919,
+   "carte": 165,
+   "con_autori": 542,
    "lingue": {
-    "fr": 137,
+    "fr": 153,
+    "en": 585,
+    "nl": 24,
+    "xx": 72,
+    "la": 1420,
+    "de": 81,
+    "es": 48,
+    "it": 214,
+    "?": 38,
     "ar": 307,
     "syr": 9,
-    "?": 35,
     "tr": 22,
     "fa": 73,
-    "xx": 61,
-    "it": 192,
     "jv": 2,
-    "en": 527,
-    "la": 1404,
-    "de": 72,
-    "es": 36,
-    "nl": 16,
+    "pt": 4,
     "da": 1,
     "grc": 81,
     "he": 17,
@@ -2917,6 +2950,7 @@
     "cs": 2,
     "oc": 3,
     "cu": 2,
+    "ru": 9,
     "cop": 5,
     "ja": 18,
     "ko": 2,
@@ -2938,6 +2972,7 @@
   "penn": {
    "nome": "University of Pennsylvania Libraries (colenda.library.upenn.edu)",
    "codici": 10626,
+   "carte": 3,
    "con_autori": 239,
    "lingue": {
     "en": 1613,
@@ -2984,6 +3019,7 @@
   "ds": {
    "nome": "Digital Scriptorium: istituzioni statunitensi (search.digital-scriptorium.org)",
    "codici": 7810,
+   "carte": 45,
    "con_autori": 799,
    "lingue": {
     "la": 2529,
@@ -3029,6 +3065,7 @@
   "loc": {
    "nome": "Library of Congress: microfilm del Sinai e dei Patriarcati di Gerusalemme (loc.gov; manifesti scritti dal catalogo)",
    "codici": 2670,
+   "carte": 0,
    "con_autori": 646,
    "lingue": {
     "ar": 410,
@@ -3056,6 +3093,7 @@
   "nlg": {
    "nome": "Biblioteca Nazionale di Grecia, Atene (digitalcollections.nlg.gr; copie dei manifesti scritte dal catalogo)",
    "codici": 765,
+   "carte": 0,
    "con_autori": 0,
    "lingue": {
     "?": 1,
@@ -3079,6 +3117,7 @@
   "wellcome": {
    "nome": "Wellcome Collection, Londra (api.wellcomecollection.org)",
    "codici": 1613,
+   "carte": 0,
    "con_autori": 42,
    "lingue": {
     "grc": 14,
@@ -3115,6 +3154,7 @@
   "isos": {
    "nome": "Irish Script on Screen: Royal Irish Academy, National Library of Ireland, Trinity College Dublin e altre (isos.dias.ie)",
    "codici": 500,
+   "carte": 0,
    "con_autori": 5,
    "lingue": {
     "?": 498,
@@ -3133,6 +3173,7 @@
   "manchester": {
    "nome": "John Rylands Research Institute and Library, Manchester (digitalcollections.manchester.ac.uk)",
    "codici": 394,
+   "carte": 0,
    "con_autori": 64,
    "lingue": {
     "ar": 43,
@@ -3165,6 +3206,7 @@
   "cudl": {
    "nome": "Cambridge Digital Library: University Library e college (cudl.lib.cam.ac.uk)",
    "codici": 1580,
+   "carte": 0,
    "con_autori": 36,
    "lingue": {
     "fa": 139,
@@ -3193,6 +3235,7 @@
   "cbl": {
    "nome": "Chester Beatty, Dublino (viewer.cbl.ie)",
    "codici": 281,
+   "carte": 0,
    "con_autori": 26,
    "lingue": {
     "xx": 4,
@@ -3216,6 +3259,7 @@
   "ndl": {
    "nome": "National Diet Library, Tokyo (dl.ndl.go.jp)",
    "codici": 42872,
+   "carte": 0,
    "con_autori": 0,
    "lingue": {
     "ja": 40318,
@@ -3238,6 +3282,7 @@
   "kokusho": {
    "nome": "Kokusho Database, National Institute of Japanese Literature (kokusho.nijl.ac.jp)",
    "codici": 139385,
+   "carte": 0,
    "con_autori": 5,
    "lingue": {
     "ja": 139385
@@ -3260,6 +3305,7 @@
   "slv": {
    "nome": "State Library Victoria, Melbourne (find.slv.vic.gov.au; elenco raccolto dal browser)",
    "codici": 14,
+   "carte": 0,
    "con_autori": 3,
    "lingue": {
     "la": 9,
@@ -3281,6 +3327,7 @@
   "auckland": {
    "nome": "Auckland Libraries, Sir George Grey Special Collections (kura.aucklandlibraries.govt.nz)",
    "codici": 43,
+   "carte": 0,
    "con_autori": 11,
    "lingue": {
     "ar": 8,
@@ -3308,6 +3355,7 @@
   "toronto": {
    "nome": "University of Toronto, Thomas Fisher Rare Book Library (collections.library.utoronto.ca)",
    "codici": 202,
+   "carte": 0,
    "con_autori": 33,
    "lingue": {
     "?": 98,
@@ -3334,6 +3382,7 @@
   "mdc": {
    "nome": "Memòria Digital de Catalunya: Biblioteca de Catalunya, Ateneu Barcelonès, Biblioteca Museu Víctor Balaguer, Biblioteca Pública Episcopal de Barcelona (mdc.csuc.cat)",
    "codici": 3810,
+   "carte": 1,
    "con_autori": 21,
    "lingue": {
     "ca": 3212,
@@ -3348,7 +3397,7 @@
     "oc": 4,
     "grc": 1
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "mdc-"
    ],
@@ -3360,6 +3409,7 @@
   "ub": {
    "nome": "Universitat de Barcelona, Biblioteca Patrimonial Digital (bipadi.ub.edu)",
    "codici": 289,
+   "carte": 0,
    "con_autori": 22,
    "lingue": {
     "es": 119,
@@ -3372,7 +3422,7 @@
     "it": 2,
     "oc": 1
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "ub-"
    ],
@@ -3384,6 +3434,7 @@
   "realbiblioteca": {
    "nome": "Real Biblioteca (Palacio Real, Madrid) e Real Biblioteca del Monasterio de El Escorial (rbdigital.realbiblioteca.es, Patrimonio Nacional)",
    "codici": 2178,
+   "carte": 1,
    "con_autori": 212,
    "lingue": {
     "fr": 57,
@@ -3401,7 +3452,7 @@
     "he": 1,
     "?": 684
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "rbd-"
    ],
@@ -3412,10 +3463,11 @@
   },
   "ucm": {
    "nome": "Universidad Complutense de Madrid, Biblioteca Histórica (patrimoniodigital.ucm.es)",
-   "codici": 6454,
+   "codici": 6471,
+   "carte": 21,
    "con_autori": 115,
    "lingue": {
-    "es": 6000,
+    "es": 6003,
     "la": 389,
     "en": 3,
     "fr": 36,
@@ -3424,11 +3476,11 @@
     "grc": 6,
     "it": 3,
     "ar": 5,
-    "de": 1,
+    "de": 15,
     "ca": 1,
     "?": 1
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "ucm-"
    ],
@@ -3440,6 +3492,7 @@
   "sevilla": {
    "nome": "Biblioteca de la Universidad de Sevilla (copie digitali su Internet Archive)",
    "codici": 1164,
+   "carte": 0,
    "con_autori": 75,
    "lingue": {
     "es": 765,
@@ -3450,7 +3503,7 @@
     "grc": 1,
     "ar": 26
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "usev-"
    ],
@@ -3462,6 +3515,7 @@
   "rah": {
    "nome": "Real Academia de la Historia, Madrid (bibliotecadigital.rah.es; manifesti scritti dal catalogo)",
    "codici": 184,
+   "carte": 0,
    "con_autori": 35,
    "lingue": {
     "la": 122,
@@ -3474,7 +3528,7 @@
     "fr": 2,
     "pt": 1
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "rah-"
    ],
@@ -3486,13 +3540,14 @@
   "bnchile": {
    "nome": "Biblioteca Nacional de Chile, Santiago (memoriachilena.gob.cl; codici in pubblico dominio, immagini estratte dai PDF)",
    "codici": 10,
+   "carte": 0,
    "con_autori": 1,
    "lingue": {
     "la": 2,
     "he": 1,
     "es": 8
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "bnchile-"
    ],
@@ -3504,11 +3559,12 @@
   "bnv": {
    "nome": "Biblioteca Nacional de Venezuela, Caracas (bibliotecadigital.bnv.gob.ve; CC BY-SA 3.0 VE, immagini estratte dai PDF)",
    "codici": 3,
+   "carte": 0,
    "con_autori": 0,
    "lingue": {
     "es": 3
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "bnv-"
    ],
@@ -3520,12 +3576,13 @@
   "pergamos": {
    "nome": "Università di Atene, Biblioteca della Facoltà di Filosofia (pergamos.lib.uoa.gr; manifesti scritti dal catalogo)",
    "codici": 39,
+   "carte": 0,
    "con_autori": 7,
    "lingue": {
     "grc": 38,
     "cu": 1
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "uoa-"
    ],
@@ -3537,11 +3594,12 @@
   "rousanou": {
    "nome": "Monastero di Rousanou, Meteore (copie digitali della Biblioteca di Kalambaka, opac.kalambakalibrary.org; elenco da searchculture.gr)",
    "codici": 38,
+   "carte": 0,
    "con_autori": 3,
    "lingue": {
     "grc": 38
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "rousanou-"
    ],
@@ -3553,6 +3611,7 @@
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
    "codici": 10489,
+   "carte": 2,
    "con_autori": 841,
    "lingue": {
     "la": 10200,
@@ -3703,7 +3762,7 @@
   {
    "file": "indice/yale-0.json",
    "fonte": "yale",
-   "righe": 2759
+   "righe": 2919
   },
   {
    "file": "indice/penn-0.json",
@@ -3833,7 +3892,7 @@
   {
    "file": "indice/ucm-0.json",
    "fonte": "ucm",
-   "righe": 6454
+   "righe": 6471
   },
   {
    "file": "indice/sevilla-0.json",
