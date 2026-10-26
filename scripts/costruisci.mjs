@@ -16,8 +16,10 @@ export const COMPAT = "data/manoscritti.json";
 export const LUOGHI = "data/luoghi.json";
 export const VOCI_PER_PEZZO = 800, RIGHE_INDICE = 20000;
 export const CAMPI = ["id", "segnatura", "biblioteca", "lingue", "secolo_da", "secolo_a", "autori", "titolo", "opere", "truculentus", "lingua_dedotta", "tipo"];
-// «tipo» (in fondo, per i lettori che leggono le righe per posizione): "carta" per le carte geografiche manoscritte, "" per i codici
-export const TIPI = { codice: "codici", carta: "carte manoscritte" };
+// «tipo» (in fondo, per i lettori che leggono le righe per posizione): "carta" per le carte geografiche manoscritte, "carta_stampa" per le
+// carte a stampa (dal 26 ottobre 2026), "" per i codici
+export const TIPI = { codice: "codici", carta: "carte manoscritte", carta_stampa: "carte a stampa" };
+const tipoRiga = v => v.tipo === "carta" || v.tipo === "carta_stampa" ? v.tipo : "";
 export const CATEGORIE = { "classico-latino": "classici latini", "classico-greco": "classici greci", cristiano: "autori cristiani", medievale: "autori medievali" };
 
 // FNV-1a a 32 bit sulle unità UTF-16 dell'id: la stessa funzione è in public/assets/catalogo-dati.js del sito
@@ -46,7 +48,7 @@ export function luogoDi(v, L) {
 // voce del catalogo -> riga dell'indice
 export function riga(v, bib) {
   return [v.id, v.segnatura, bib, (v.lingue || []).join(","), v.secolo ? v.secolo[0] : 0, v.secolo ? v.secolo[1] : 0,
-    v.autori.map(a => a.id).join(","), breve(v.titolo, 140), breve([...new Set(v.autori.flatMap(a => a.opere))].join(", "), 120), v.truculentus || "", v.lingua_dedotta ? 1 : 0, v.tipo === "carta" ? "carta" : ""];
+    v.autori.map(a => a.id).join(","), breve(v.titolo, 140), breve([...new Set(v.autori.flatMap(a => a.opere))].join(", "), 120), v.truculentus || "", v.lingua_dedotta ? 1 : 0, tipoRiga(v)];
 }
 
 // json con una voce (o riga) per riga: diff leggibili nei commit
@@ -100,10 +102,10 @@ export function scriviCatalogo(manoscritti, { fonti, nomi = {}, esito = {}, auto
     for (const v of vs) gruppi[pezzoDi(v.id, nPezzi)].push(v);
     gruppi.forEach((g, k) => scriviSeCambia(path.join(DIR, `voci/${f}-${k}.json`), righe({ fonte: f, pezzo: k, pezzi: nPezzi }, "manoscritti", g), stat));
     const prefissi = [...new Set(vs.map(v => v.id.replace(/-.*$/, "-")))];
-    infoFonti[f] = { nome: nomi[f] || f, codici: vs.length, carte: vs.filter(v => v.tipo === "carta").length, con_autori: conAutori[f], lingue: lf, esito: esito[f] || null, prefissi, pezzi_voci: nPezzi, indice: file };
+    infoFonti[f] = { nome: nomi[f] || f, codici: vs.length, carte: vs.filter(v => v.tipo === "carta").length, carte_stampa: vs.filter(v => v.tipo === "carta_stampa").length, con_autori: conAutori[f], lingue: lf, esito: esito[f] || null, prefissi, pezzi_voci: nPezzi, indice: file };
     for (const v of vs) {
       for (const l of v.lingue.length ? v.lingue : ["?"]) lingue[l] = (lingue[l] || 0) + 1;
-      const ti = v.tipo === "carta" ? "carta" : "codice"; tipi[ti] = (tipi[ti] || 0) + 1;
+      const ti = tipoRiga(v) || "codice"; tipi[ti] = (tipi[ti] || 0) + 1;
       for (const c of new Set(v.autori.map(a => a.categoria))) categorie[c] = (categorie[c] || 0) + 1;
       for (const a of v.autori) contaAutori[a.id] = (contaAutori[a.id] || 0) + 1;
     }
@@ -113,7 +115,7 @@ export function scriviCatalogo(manoscritti, { fonti, nomi = {}, esito = {}, auto
     versione: 2, aggiornato: null, totale: manoscritti.length, con_autori: manoscritti.filter(v => v.autori.length).length,
     nota: "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; " +
       "«biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte " +
-      "(data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte (categoria a parte, conteggi in «tipi») e vuoto per i codici; «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
+      "(data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
     campi: CAMPI, hash: "fnv1a-32",
     lingue: Object.fromEntries(Object.entries(lingue).sort((a, b) => b[1] - a[1]).map(([k, n]) => [k, { nome: k === "?" ? "lingua non indicata" : NOMI_LINGUE[k] || k, codici: n }])),
     categorie: Object.fromEntries(Object.entries(CATEGORIE).map(([k, nome]) => [k, { nome, codici: categorie[k] || 0 }])),

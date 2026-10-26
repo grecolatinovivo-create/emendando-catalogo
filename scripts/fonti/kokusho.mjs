@@ -10,6 +10,7 @@
 // Stato in data/kokusho.json (raccolta a riprese, pagina per pagina); una raccolta completa si riusa per 14 giorni.
 import fs from "node:fs";
 import { scarica, log } from "../rete.mjs";
+import { cartaGiapponese } from "../carte.mjs";
 
 export const FILE_STATO = "data/kokusho.json";
 export const BASE = "https://kokusho.nijl.ac.jp";
@@ -117,6 +118,9 @@ export function recordKokusho(st = leggiStato()) {
     return { fonte: "kokusho", id: "nijl-" + bid, ...bibliotecaKokusho(v[1]),
       segnatura: v[2] || "bid " + bid, datazione: v[3] ? (anno && !/\b1[0-9]{3}\b/.test(v[3]) ? `${v[3]} (${anno})` : v[3]) : null, titolo: v[0],
       autori_fonte: v[4] ? [v[4].replace(/／/g, " ")] : [], descrizione: null, lingue: ["ja"],
-      manifest: `${BASE}/biblio/${bid}/manifest`, pagina: `${BASE}/biblio/${bid}`, licenza: "condizioni del proprietario (kokusho.nijl.ac.jp/page/usage.html)" };
+      manifest: `${BASE}/biblio/${bid}/manifest`, pagina: `${BASE}/biblio/${bid}`, licenza: "condizioni del proprietario (kokusho.nijl.ac.jp/page/usage.html)",
+      // carte (dal 26 ottobre 2026): tutte manoscritte, perché la raccolta tiene solo i «写» (scripts/carte.mjs, cartaGiapponese);
+      // fuori i fondi di matematica tradizionale (和算: manuali di agrimensura, non carte)
+      ...(cartaGiapponese(v[0]) && !/和算/.test(v[1] || "") ? { tipo: "carta" } : {}) };
   });
 }

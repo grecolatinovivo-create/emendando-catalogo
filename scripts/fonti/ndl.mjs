@@ -13,6 +13,7 @@ import fs from "node:fs";
 import { scarica, log, decodifica } from "../rete.mjs";
 import { lingueDa } from "../lingue.mjs";
 import { NON_LIBRARI_JA } from "./kokusho.mjs";
+import { cartaGiapponese } from "../carte.mjs";
 
 export const FILE_STATO = "data/ndl.json";
 export const BASE = "https://dl.ndl.go.jp/api/oaipmh";
@@ -122,11 +123,18 @@ export function ammessaNdl(v) {
   return !NON_LIBRARI_JA.test(v.t || "");
 }
 
+// carte (dal 26 ottobre 2026, scripts/carte.mjs): titolo o classificazione «地図・絵図»; manoscritte, salvo una datazione che dica
+// stampa («刊», «版»: carta_stampa); «刊写入交» (volumi stampati e copiati insieme) resta carta manoscritta
+export function tipoNdl(v) {
+  if (!v || !cartaGiapponese(v.t, v.c || "")) return null;
+  const d = v.d || "";
+  return /刊|版/.test(d) && !/写|寫/.test(d) ? "carta_stampa" : "carta";
+}
 export function recordNdl(st = leggiStato()) {
   return Object.entries(st.voci || {}).filter(([, v]) => ammessaNdl(v)).map(([pid, v]) => ({
     fonte: "ndl", id: "ndl-" + pid, citta: "Tokyo", biblioteca: "National Diet Library (国立国会図書館)",
     segnatura: [v.s, v.v].filter(Boolean).join(", ") || "pid " + pid, datazione: v.d || null, titolo: [v.t, v.v].filter(Boolean).join(". "),
     autori_fonte: v.a || [], descrizione: v.c || null, lingue: lingueNdl(v),
     manifest: `https://dl.ndl.go.jp/api/iiif/${pid}/manifest.json`, pagina: `https://dl.ndl.go.jp/pid/${pid}`,
-    licenza: v.r || "Public Domain Mark 1.0" }));
+    licenza: v.r || "Public Domain Mark 1.0", ...(tipoNdl(v) ? { tipo: tipoNdl(v) } : {}) }));
 }

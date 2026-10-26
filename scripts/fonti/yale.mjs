@@ -12,7 +12,7 @@
 import fs from "node:fs";
 import { scarica, log, tag, records, token, totale } from "../rete.mjs";
 import { lingueDa } from "../lingue.mjs";
-import { cartaManoscritta, titoloCarta } from "../carte.mjs";
+import { cartaManoscritta, cartaStampata, titoloCarta, MANOSCRITTA } from "../carte.mjs";
 
 export const FILE_STATO = "data/yale.json";
 export const BASE = "https://collections.library.yale.edu/catalog/oai";
@@ -162,11 +162,29 @@ export function cartaYale(v) {
   return cartaManoscritta({ titolo: t, generi: g, descrizione: v.c });
 }
 
+// carte a stampa (dal 26 ottobre 2026, «tipo: "carta_stampa"»): fogli d'atlante e carte stampate già nello stato raccolto, che prima
+// restavano fuori come stampe o fogli sciolti. Stampa detta esplicitamente (Lithographs, Engravings, Maps in books, «printed map»)
+// o per convenzione di Yale («Maps» con «Early works to 1800» e nessun genere «Manuscripts»: le carte dei Mercator del «1983 Folio 19»);
+// fuori carte personali, diari, incunaboli, fotografie, disegni e ogni carta che Yale dice manoscritta
+const NON_STAMPA_YALE = /^(?:Incunabula|Photo|Snapshots|Glass negatives|Diaries|Deeds|Treaties|Blueprints|Drawings|Architectural drawings|Watercolors|Pen and|Chalk|Original art)/i;
+export function stampaYale(v) {
+  if (!v || cartaYale(v)) return false;
+  const t = v.t || "", g = v.g || [];
+  if (CARTE_IN_ARCHIVIO.test(t) || g.some(x => NON_STAMPA_YALE.test(x) || GENERI_ARCHIVIO.test(x))) return false;
+  if (g.some(x => /manuscript maps/i.test(x)) || MANOSCRITTA.test(t)) return false;
+  if (!(titoloCarta(t) || g.some(x => /^Maps\b/.test(x)))) return false;
+  const gs = g.join(" ; ").replace(/\b(?:manuscript|printed) waste\b[^;|,]*/gi, " ");
+  if (/\b(?:Lithographs|Engravings|Woodcuts)\b|Maps in books|\bprinted map\b/i.test(gs + " ; " + t)) return true;
+  if (g.includes("Early works to 1800") && !/\bManuscripts?\b/i.test(gs)) return true;
+  return cartaStampata({ titolo: t, generi: g, descrizione: v.c });
+}
+
 // motivo per cui una voce resta fuori (null = ammessa)
 export function motivoYale(v) {
   if (!v) return "vuota";
   const s = v.s || "", t = v.t || "", g = v.g || [];
   const codici = FONDI_CODICI.test(s), archivio = !codici && FONDI_ARCHIVIO.test(s);
+  if (stampaYale(v)) return null;
   if (TITOLO_MODERNO.test(t) || g.some(x => GENERI_MODERNI.test(x))) return "fotografie, stampe e materiali moderni";
   if (SIGLE_LETTERE.test(t) || LETTERA_SINGOLA.test(t)) return "archivio, corrispondenza, carte personali";
   if (/\b(?:Tanka|Paper money)\b/i.test(g.join(" "))) return "fotografie, stampe e materiali moderni";
@@ -203,7 +221,7 @@ export function recordYale(st = leggiStato()) {
   for (const [oid, v] of Object.entries(st.voci || {})) {
     if (!ammessaYale(v)) continue;
     out.push({ fonte: "yale", id: "yale-" + oid, citta: "New Haven", biblioteca: v.b || "Yale University Library", segnatura: v.s ? v.s.replace(/^(.*\bMSS? [\w.]+) 1$/, "$1") : "oid " + oid, datazione: v.d, titolo: v.t,
-      autori_fonte: v.a || [], descrizione: v.c || null, lingue: lingueDa(v.l || []), generi: v.g || [], ...(cartaYale(v) && (titoloCarta(v.t) || !FONDI_CODICI.test(v.s || "")) ? { tipo: "carta" } : {}),
+      autori_fonte: v.a || [], descrizione: v.c || null, lingue: lingueDa(v.l || []), generi: v.g || [], ...(cartaYale(v) && (titoloCarta(v.t) || !FONDI_CODICI.test(v.s || "")) ? { tipo: "carta" } : stampaYale(v) ? { tipo: "carta_stampa" } : {}),
       manifest: `https://collections.library.yale.edu/manifests/${oid}`, pagina: `https://collections.library.yale.edu/catalog/${oid}`,
       licenza: "Yale University Library: condizioni d'uso nella pagina del codice" });
   }

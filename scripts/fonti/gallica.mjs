@@ -15,7 +15,7 @@ import path from "node:path";
 import { scarica, statoFonte, tag, log } from "../rete.mjs";
 import { lingueDa } from "../lingue.mjs";
 import { caricaAutori, riconosci } from "../riconosci.mjs";
-import { cartaManoscritta, titoloCarta, STAMPATA } from "../carte.mjs";
+import { cartaManoscritta, cartaStampata, titoloCarta, STAMPATA } from "../carte.mjs";
 
 export const CARTELLA_BROWSER = "data";
 export const RACCOLTA_BROWSER = "data/gallica.json";
@@ -213,12 +213,21 @@ export function cartaGallica(o) {
   return cartaManoscritta({ titolo: t, generi: y, tecnica: o.f, descrizione: o.x });
 }
 
+// carta a stampa (dal 26 ottobre 2026, «tipo: "carta_stampa"»): scheda già raccolta che dice carta e stampa esplicita
+// («gravée par», «grabadas»), con le stesse esclusioni di cartaGallica
+export function stampaGallica(o) {
+  if (!o || !o.k || cartaGallica(o)) return false;
+  const s = [].concat(o.s || []).join(" ; ");
+  if (/\bGE ARCHIVES\b|\bMAQ-|\bCOS-|\(?N?LAS?\b|\bLA-/.test(s) || /,\s*f(?:ol)?\.\s*\d/.test(s)) return false;
+  return cartaStampata({ titolo: o.t, generi: o.y, tecnica: o.f, descrizione: o.x });
+}
+
 // motivo per cui una scheda resta fuori (null = ammessa)
 export function motivoGallica(o) {
   if (!o || !o.k) return "senza copia digitale Gallica (ark)";
   const y = [].concat(o.y || []), s = [].concat(o.s || []).join(" ; "), t = o.t || "";
   if (y.some(x => TIPO_ARCHIVIO.test(x))) return "carte d'archivio";
-  if (cartaGallica(o) && luogoGallica(o.s)) return null;
+  if ((cartaGallica(o) || stampaGallica(o)) && luogoGallica(o.s)) return null;
   if (y.length && !y.some(x => TIPO_MANOSCRITTO.test(x))) {
     for (const [re, m] of TIPO_FUORI) if (y.some(x => re.test(x))) return m;
     return "non indicata come manoscritto (lettere, carte e dattiloscritti moderni)";
@@ -248,7 +257,7 @@ export function recordGallica(o, scarti = null) {
   if (m) { if (scarti) scarti[m] = (scarti[m] || 0) + 1; return null; }
   const L = luogoGallica(o.s);
   return { fonte: "gallica", id: "bnf-" + o.k, ...L, datazione: o.d || null, titolo: o.t || null, autori_fonte: o.c || [], lingue: lingueDa(o.l || []),
-    generi: o.y || [], tecnica: o.f || null, ...(cartaGallica(o) ? { tipo: "carta" } : {}),
+    generi: o.y || [], tecnica: o.f || null, ...(cartaGallica(o) ? { tipo: "carta" } : stampaGallica(o) ? { tipo: "carta_stampa" } : {}),
     descrizione: o.x || null, manifest: `https://gallica.bnf.fr/iiif/ark:/12148/${o.k}/manifest.json`, pagina: `https://gallica.bnf.fr/ark:/12148/${o.k}`,
     licenza: /domaine public|public domain|^dp$/i.test(o.r || "") ? "Domaine public (Gallica, conditions d'utilisation)" : ((o.r || "").slice(0, 200) || null) };
 }
