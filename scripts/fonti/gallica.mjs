@@ -15,6 +15,7 @@ import path from "node:path";
 import { scarica, statoFonte, tag, log } from "../rete.mjs";
 import { lingueDa } from "../lingue.mjs";
 import { caricaAutori, riconosci } from "../riconosci.mjs";
+import { cartaManoscritta, titoloCarta, STAMPATA } from "../carte.mjs";
 
 export const CARTELLA_BROWSER = "data";
 export const RACCOLTA_BROWSER = "data/gallica.json";
@@ -27,7 +28,8 @@ const VERSIONE = 2;
 // file della raccolta dal browser: le parti data/gallica-<n>.json in ordine, poi data/gallica.json se c'è
 export function fileBrowser(cartella = CARTELLA_BROWSER) {
   let nomi = []; try { nomi = fs.readdirSync(cartella); } catch (e) {}
-  const parti = nomi.map(n => /^gallica-(\d+)\.json$/.exec(n)).filter(Boolean).sort((a, b) => a[1] - b[1]).map(m => path.join(cartella, m[0]));
+  // gallica-<n>.json: manoscritti; gallica-carte-<n>.json: carte geografiche manoscritte (raccolta del browser in modalità «carte»)
+  const parti = nomi.map(n => /^gallica-(carte-)?(\d+)\.json$/.exec(n)).filter(Boolean).sort((a, b) => (a[1] ? 1 : 0) - (b[1] ? 1 : 0) || a[2] - b[2]).map(m => path.join(cartella, m[0]));
   if (nomi.includes("gallica.json")) parti.push(path.join(cartella, "gallica.json"));
   return parti;
 }
@@ -113,7 +115,7 @@ export function compattaGallica(rec) {
   const pagina = tag(rec, "dc:identifier").find(x => /gallica\.bnf\.fr\/ark:\/12148\//.test(x)); if (!pagina) return null;
   const k = /ark:\/12148\/([a-z0-9]+)/i.exec(pagina)[1];
   return { k, y: tag(rec, "dc:type"), t: tag(rec, "dc:title").join(" ; ").slice(0, 600), c: tag(rec, "dc:creator"), d: tag(rec, "dc:date")[0] || null,
-    s: tag(rec, "dc:source"), l: tag(rec, "dc:language"), x: [...tag(rec, "dc:description"), ...tag(rec, "dc:subject")].join(" ; ").slice(0, 1500),
+    s: tag(rec, "dc:source"), l: tag(rec, "dc:language"), f: tag(rec, "dc:format").join(" ; ").slice(0, 300), x: [...tag(rec, "dc:description"), ...tag(rec, "dc:subject")].join(" ; ").slice(0, 1500),
     r: tag(rec, "dc:rights").join(" ") };
 }
 
@@ -197,11 +199,26 @@ export function epistolarioCodice(o, t1, s, anno) {
 }
 const GIORNO = /^(?:\d{8}|\d{4}-\d{2}-\d{2})$/;   // data al giorno («18701003», «1834-06-24»): lettere e atti, non codici
 
+// carta geografica manoscritta (dal 26 ottobre 2026, categoria a parte): tipo «carte» o reparto Cartes et plans o titolo da carta,
+// disegnata a mano (tipo «manuscrit», formato «ms.», tecnica «dessin», «aquarelle», «encre», «plume», «lavis») e niente che dica stampa;
+// fuori gli inventari e i registri del reparto (GE ARCHIVES) e i fogli di un volume
+export function cartaGallica(o) {
+  if (!o || !o.k) return false;
+  const y = [].concat(o.y || []), s = [].concat(o.s || []).join(" ; "), t = o.t || "";
+  if (/\bGE ARCHIVES\b|\bMAQ-|\bCOS-|\(?N?LAS?\b|\bLA-/.test(s) || /,\s*f(?:ol)?\.\s*\d/.test(s)) return false;
+  // fogli sciolti del reparto Cartes et plans (serie GE A, B, C, D, SH): anche bornages, piani d'attacco e di assedio, scandagli
+  const fogliCP = /Cartes et plans, GE (?:[ABCD]|SH)\b/i.test(s) && /^\W*(?:bornage|attaque|si[èe]ge|sondes|plan)\b/i.test(t);
+  if (!titoloCarta(t) && !fogliCP && !y.some(x => /^carte|cartograph/i.test(x))) return false;
+  if (fogliCP && y.some(x => /^manuscrit$/i.test(x))) return !STAMPATA.test(t);
+  return cartaManoscritta({ titolo: t, generi: y, tecnica: o.f, descrizione: o.x });
+}
+
 // motivo per cui una scheda resta fuori (null = ammessa)
 export function motivoGallica(o) {
   if (!o || !o.k) return "senza copia digitale Gallica (ark)";
   const y = [].concat(o.y || []), s = [].concat(o.s || []).join(" ; "), t = o.t || "";
   if (y.some(x => TIPO_ARCHIVIO.test(x))) return "carte d'archivio";
+  if (cartaGallica(o) && luogoGallica(o.s)) return null;
   if (y.length && !y.some(x => TIPO_MANOSCRITTO.test(x))) {
     for (const [re, m] of TIPO_FUORI) if (y.some(x => re.test(x))) return m;
     return "non indicata come manoscritto (lettere, carte e dattiloscritti moderni)";
@@ -231,6 +248,7 @@ export function recordGallica(o, scarti = null) {
   if (m) { if (scarti) scarti[m] = (scarti[m] || 0) + 1; return null; }
   const L = luogoGallica(o.s);
   return { fonte: "gallica", id: "bnf-" + o.k, ...L, datazione: o.d || null, titolo: o.t || null, autori_fonte: o.c || [], lingue: lingueDa(o.l || []),
+    generi: o.y || [], tecnica: o.f || null, ...(cartaGallica(o) ? { tipo: "carta" } : {}),
     descrizione: o.x || null, manifest: `https://gallica.bnf.fr/iiif/ark:/12148/${o.k}/manifest.json`, pagina: `https://gallica.bnf.fr/ark:/12148/${o.k}`,
     licenza: /domaine public|public domain|^dp$/i.test(o.r || "") ? "Domaine public (Gallica, conditions d'utilisation)" : ((o.r || "").slice(0, 200) || null) };
 }

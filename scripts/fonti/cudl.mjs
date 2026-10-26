@@ -8,7 +8,7 @@
 // Immagini: zoom © University Library; le immagini scaricabili sono CC BY-NC 4.0; metadati CC BY-NC-ND 4.0.
 import { scarica, log } from "../rete.mjs";
 import { lingueDa } from "../lingue.mjs";
-import { leggiTesta, schedaCudl, motivoCudl, leggiJson, salvaJson } from "./cudl-piattaforma.mjs";
+import { leggiTesta, schedaCudl, motivoCudl, cartaCudl, leggiJson, salvaJson } from "./cudl-piattaforma.mjs";
 
 export const FILE_DATI = "data/cudl.json";
 export const SITO = "https://cudl.lib.cam.ac.uk";
@@ -79,14 +79,14 @@ export function recordCudl(d = leggiDati()) {
   const out = [];
   for (const [id, v] of Object.entries(d.voci)) {
     if (!v || v.q) continue;
-    if (CARTE.test([v.f, v.t].filter(Boolean).join(" ")) && !/codex|manuscript/i.test(v.f || "")) continue;
+    if (CARTE.test([v.f, v.t].filter(Boolean).join(" ")) && !/codex|manuscript/i.test(v.f || "") && !cartaCudl(v)) continue;
     if (d.formato === 2 && motivoCudl(v)) continue;
     const { biblioteca, segnatura } = dividiCudl(v.s, v.p);
     out.push({ fonte: "cudl", id: "cudl-" + id.toLowerCase(), citta: "Cambridge", biblioteca, segnatura: segnatura || id,
       datazione: v.d || (v.a0 ? (v.a1 && v.a1 !== v.a0 ? `${v.a0}-${v.a1}` : String(v.a0)) : null),
       titolo: [v.t, v.u].filter(Boolean).join(" ; ") || null, autori_fonte: v.au || [], descrizione: v.c || null,
       lingue: lingueDa([...(v.l || []), ...(v.l && v.l.length ? [] : v.x || [])]),
-      manifest: `${SITO}/iiif/${id}`, pagina: `${SITO}/view/${id}`, licenza: LICENZA });
+      manifest: `${SITO}/iiif/${id}`, pagina: `${SITO}/view/${id}`, licenza: LICENZA, generi: v.f || null, tecnica: v.e || null, ...(cartaCudl(v) ? { tipo: "carta" } : {}) });
   }
   return out;
 }

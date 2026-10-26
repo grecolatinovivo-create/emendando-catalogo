@@ -66,6 +66,7 @@ import { scansionaMalatestiana, recordMalatestiana } from "./fonti/malatestiana.
 import { recordClassense } from "./fonti/classense.mjs";
 import { scriviRegistro, registraEsiti } from "./registro.mjs";
 import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
+import { tipoDa } from "./carte.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
 const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,vaticana").split(",");
@@ -148,6 +149,9 @@ export function voce(r, AUTORI, sigle = new Map(TRUCULENTUS.map(t => [t.manifest
     secolo: secoli(r.datazione), lingue, lingua_dedotta: !dichiarate && lingue.length > 0, titolo: (r.titolo || "").slice(0, 400) || null, autori, manifest: r.manifest, pagina: r.pagina || null, licenza: r.licenza || null, immagini: r.immagini ?? null };
   if (r.anteprima) v.anteprima = r.anteprima;
   if (sigla) v.truculentus = sigla;
+  // carte geografiche manoscritte (dal 26 ottobre 2026): categoria a parte, «tipo: "carta"»; i codici restano senza campo (scripts/carte.mjs)
+  const tipo = tipoDa({ tipo: r.tipo, titolo: r.titolo, descrizione: r.descrizione, generi: r.generi, tecnica: r.tecnica, segnatura: v.segnatura });
+  if (tipo) v.tipo = tipo;
   return v;
 }
 
@@ -315,6 +319,8 @@ async function main() {
     else for (const v of prima.filter(x => x.fonte === f)) {
       // voci precedenti senza lingua: si prova la deduzione
       if (!v.lingue.length) { v.lingue = deduciLingue(v.segnatura, v.titolo, v.autori); v.lingua_dedotta = v.lingue.length > 0; }
+      // tipo: quello già deciso dalla fonte, altrimenti dal titolo
+      if (!v.tipo) { const tipo = tipoDa(v); if (tipo) v.tipo = tipo; }
       voci.set(v.id, v);
     }
   }

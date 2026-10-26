@@ -16,6 +16,16 @@
 import fs from "node:fs";
 import { scarica, log } from "../rete.mjs";
 import { lingueDa } from "../lingue.mjs";
+import { STAMPATA } from "../carte.mjs";
+
+// carte e piante manoscritte (dal 26 ottobre 2026, categoria a parte): solo «ucm», dove l'insieme letto è quello dei manoscritti
+// (tipo «Mapas y planos», o titolo «Plano…», «Planos…», «Mapa…»), senza niente che dica stampa
+export function cartaOmeka(fonte, v) {
+  if (fonte !== "ucm" || !v || !v.t) return false;
+  const tipi = (v.y || []).join(" ");
+  if (!(/\bmapas?\b|\bplanos?\b/i.test(tipi) || /^\s*\[?(?:planos?|mapas?)\b/i.test(v.t))) return false;
+  return !STAMPATA.test([v.t, tipi, v.e].filter(Boolean).join(" ; "));
+}
 
 export const FONTI_OMEKA = {
   realbiblioteca: { sito: "https://rbdigital.realbiblioteca.es", prefisso: "rbd", query: {} },
@@ -63,6 +73,7 @@ const NON_LIBRARI = /^\s*\[?\s*(cartas?|carta-|carteo|correspondencia|epistolari
 const FONDI_ARCHIVIO = /Castroviejo|Archivo Hist[óo]rico del PCE|Fondo Personal|Rub[ée]n Dar[íi]o|Lafuente Ferrari|Hern[áa]ndez-Pacheco|diplomas de la Escuela|Diapositivas|Encuadernaciones|Planos de la|Atlas y material|Fotogr[áa]fic/i;
 export function ammessaOmeka(fonte, v) {
   if (!v || !v.t) return false;
+  if (cartaOmeka(fonte, v)) return true;
   if (NON_LIBRARI.test(v.t)) return false;
   if ((v.q || []).some(s => FONDI_ARCHIVIO.test(s))) return false;
   const tipi = (v.y || []).join(" ");
@@ -133,7 +144,7 @@ export function recordOmeka(fonte, st = leggiStato(fonte)) {
     }
     out.push({ fonte, id: `${cfg.prefisso}-${id}`, citta: sede.citta, biblioteca: sede.biblioteca, segnatura: segnatura || `${cfg.prefisso} ${id}`, datazione: v.d || null,
       titolo: v.t, autori_fonte: v.a || [], collaboratori: v.k || [], descrizione: [v.e, v.c].filter(Boolean).join(" ; ").slice(0, 3000) || null,
-      lingue: lingueDa(v.l || []), manifest, pagina, licenza });
+      lingue: lingueDa(v.l || []), manifest, pagina, licenza, generi: v.y || [], ...(cartaOmeka(fonte, v) ? { tipo: "carta" } : {}) });
   }
   return out;
 }

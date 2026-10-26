@@ -12,6 +12,7 @@
 import fs from "node:fs";
 import { scarica, log, tag, records, token, totale } from "../rete.mjs";
 import { lingueDa } from "../lingue.mjs";
+import { cartaManoscritta, titoloCarta } from "../carte.mjs";
 
 export const FILE_STATO = "data/yale.json";
 export const BASE = "https://collections.library.yale.edu/catalog/oai";
@@ -150,6 +151,17 @@ const GENERI_FOGLI = /^(?:Sketches|Drawings|Portraits|Pictorial works|Maps|Manus
 const GENERI_LIBRARI = /^(?:Manuscripts, (?:Medieval|Renaissance|Arabic|Persian|Turkish|Hebrew|Syriac|Armenian|Ethiopic|Coptic|Greek|Latin)|Medieval and Renaissance Manuscript|Codices|Books of hours|Psalters|Breviaries|Missals|Antiphonaries|Graduals|Bibles|Sammelbands|Commonplace books|Arabic manuscripts|Persian manuscripts|Illuminated manuscripts)/i;
 const TITOLO_LIBRARIO = /\b(?:codex|codices|zibaldone|commonplace book|book of hours|breviar\w*|psalter\w*|missal\w*|antiphon\w*|horae|florilegium|miscellany|poetical works|manuscript volume)\b/i;
 
+// carte geografiche manoscritte (dal 26 ottobre 2026, categoria a parte): fogli sciolti e atlanti disegnati a mano, anche fuori dai fondi
+// di codici (Map Collection: «30cea 1505», «Art Storage 1980 156»), se Yale li dice manoscritti (generi «Manuscript maps», «Portolan charts»,
+// o tecnica nel titolo: «Ink on oil cloth», «Pencil drawing») e niente dice stampa; fuori le carte dentro carte personali e diari
+const CARTE_IN_ARCHIVIO = /\b(?:papers|diar(?:y|ies)|journal|scrap ?books?|miscellany|collection|documents?|letters?|correspondence|albums?|notebooks?|sketches|drawings)\b/i;
+export function cartaYale(v) {
+  if (!v) return false;
+  const t = v.t || "", g = v.g || [];
+  if (CARTE_IN_ARCHIVIO.test(t) || g.some(x => GENERI_ARCHIVIO.test(x) || GENERI_MODERNI.test(x))) return false;
+  return cartaManoscritta({ titolo: t, generi: g, descrizione: v.c });
+}
+
 // motivo per cui una voce resta fuori (null = ammessa)
 export function motivoYale(v) {
   if (!v) return "vuota";
@@ -158,6 +170,7 @@ export function motivoYale(v) {
   if (TITOLO_MODERNO.test(t) || g.some(x => GENERI_MODERNI.test(x))) return "fotografie, stampe e materiali moderni";
   if (SIGLE_LETTERE.test(t) || LETTERA_SINGOLA.test(t)) return "archivio, corrispondenza, carte personali";
   if (/\b(?:Tanka|Paper money)\b/i.test(g.join(" "))) return "fotografie, stampe e materiali moderni";
+  if (cartaYale(v)) return null;
   // data: dalla datazione, altrimenti dal titolo («Commonplace book, [1599-1608]», «Kitāb ... / 1737»)
   let anni = anniDa(v.d);
   if (!anni.length) anni = anniDa(t, { titolo: true });
@@ -190,7 +203,7 @@ export function recordYale(st = leggiStato()) {
   for (const [oid, v] of Object.entries(st.voci || {})) {
     if (!ammessaYale(v)) continue;
     out.push({ fonte: "yale", id: "yale-" + oid, citta: "New Haven", biblioteca: v.b || "Yale University Library", segnatura: v.s ? v.s.replace(/^(.*\bMSS? [\w.]+) 1$/, "$1") : "oid " + oid, datazione: v.d, titolo: v.t,
-      autori_fonte: v.a || [], descrizione: v.c || null, lingue: lingueDa(v.l || []),
+      autori_fonte: v.a || [], descrizione: v.c || null, lingue: lingueDa(v.l || []), generi: v.g || [], ...(cartaYale(v) && (titoloCarta(v.t) || !FONDI_CODICI.test(v.s || "")) ? { tipo: "carta" } : {}),
       manifest: `https://collections.library.yale.edu/manifests/${oid}`, pagina: `https://collections.library.yale.edu/catalog/${oid}`,
       licenza: "Yale University Library: condizioni d'uso nella pagina del codice" });
   }

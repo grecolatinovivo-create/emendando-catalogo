@@ -7,7 +7,7 @@
 // fogli singoli, amuleti (motivoManchester). Stato in data/manchester.json: elenco ogni 6 giorni, ogni manifesto una volta sola.
 import { scarica, log } from "../rete.mjs";
 import { lingueDa } from "../lingue.mjs";
-import { leggiTesta, schedaCudl, motivoCudl, leggiJson, salvaJson } from "./cudl-piattaforma.mjs";
+import { leggiTesta, schedaCudl, motivoCudl, cartaCudl, leggiJson, salvaJson } from "./cudl-piattaforma.mjs";
 
 export const FILE_STATO = "data/manchester.json";
 export const SITO = "https://www.digitalcollections.manchester.ac.uk";
@@ -71,7 +71,8 @@ export function recordManchester(st = leggiStato()) {
     if (!v || v.q || motivoManchester(v)) continue;
     out.push({ fonte: "manchester", id: "mdc-" + id.toLowerCase(), citta: "Manchester", biblioteca: "John Rylands Research Institute and Library, University of Manchester",
       segnatura: v.s || id, datazione: v.d || null, titolo: [v.t, v.u].filter(Boolean).join(" ; ") || null, autori_fonte: v.au || [], descrizione: v.c || null,
-      lingue: lingueDa(v.x || []), manifest: `${SITO}/iiif/${id}`, pagina: `${SITO}/view/${id}`, licenza: v.r ? `University of Manchester Library, ${v.r}` : LICENZA });
+      lingue: lingueDa(v.x || []), manifest: `${SITO}/iiif/${id}`, pagina: `${SITO}/view/${id}`, licenza: v.r ? `University of Manchester Library, ${v.r}` : LICENZA,
+      generi: v.f || null, tecnica: v.e || null, ...(cartaCudl(v) ? { tipo: "carta" } : {}) });
   }
   return out;
 }

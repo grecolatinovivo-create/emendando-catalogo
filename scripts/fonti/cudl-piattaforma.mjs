@@ -1,6 +1,7 @@
 // Piattaforma «CUDL» (il software della Cambridge Digital Library, usato anche da Manchester Digital Collections):
 // manifesti IIIF Presentation 2 con i metadati in testa («metadata», poi «@type», «attribution», «structures», «sequences»).
 // Di ogni manifesto si legge solo l'inizio (fino a «structures» o «sequences»), come per la Bodleian.
+import { cartaManoscritta } from "../carte.mjs";
 import fs from "node:fs";
 import { scarica } from "../rete.mjs";
 
@@ -61,9 +62,14 @@ const NON_LIBRARI = /\b(letters?|lettre|correspondence|papers|photographs?|maps?
 const FORME_NON_LIBRARIE = /\b(letter|document|charter|deed|sheet|amulet|photograph|map|print|printed|drawing|painting|object|seal|coin|broadside|scroll painting|rubbing)\b/i;
 const FORME_LIBRARIE = /\b(codex|codices|manuscript|volume|book|roll|scroll|fragment|leaf|leaves|folio|pothi|palm[- ]leaf|bundle|quire|booklet|album)\b/i;
 
+// carte geografiche manoscritte (dal 26 ottobre 2026, categoria a parte): rientrano se titolo o forma dicono carta, tecnica o forma
+// dicono disegnata a mano e niente dice stampa (scripts/carte.mjs)
+export const cartaCudl = v => !!v && cartaManoscritta({ titolo: v.t, generi: v.f, tecnica: v.e, descrizione: v.c });
+
 // motivo per cui la scheda resta fuori (null = entra): solo manoscritti librari, di ogni data
 export function motivoCudl(v) {
   if (!v) return "senza metadati";
+  if (cartaCudl(v)) return null;
   // la forma dice «Sheet» anche per i frammenti di codici: vale l'estensione («Fragment (leaf) 1», «Codex 55»)
   const libraria = FORME_LIBRARIE.test(v.f || "") || /^\s*(Codex|Fragment|Roll|Scroll|Volume)/i.test(v.e || "");
   if (v.f && FORME_NON_LIBRARIE.test(v.f) && !libraria) return "forma non libraria";

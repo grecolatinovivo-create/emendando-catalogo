@@ -10,6 +10,12 @@
 //      EmendandoGallica.salva(2), EmendandoGallica.salva(3) ... (la console dice quante sono);
 //   5. i file gallica-1.json ... gallica-N.json vanno messi in data/ del repository emendando-catalogo (al posto delle parti vecchie,
 //      togliendo quelle in più se ora sono meno) e salvati con un commit.
+// CARTE GEOGRAFICHE MANOSCRITTE (dal 26 ottobre 2026): le carte di Gallica non hanno «manuscrit» nel tipo e la raccolta dei manoscritti
+// non le prende. Per raccoglierle, prima di incollare lo script scrivere nella console  window.EMENDANDO_GALLICA_CARTE = true  e premere Invio:
+// la query diventa quella delle carte (tipo «carte» con «manuscrit» in qualunque campo), l'avanzamento sta in un archivio separato e i file
+// sono gallica-carte-1.json, gallica-carte-2.json ... (da mettere in data/ accanto a gallica-<n>.json; EmendandoGallica.salva(n) come sopra).
+// Il filtro (cartaGallica in scripts/fonti/gallica.mjs) tiene solo le carte disegnate a mano: tipo, formato («ms.»), tecnica.
+//
 // Se la scheda si chiude o il computer si spegne, basta riaprire Gallica e incollare di nuovo il file: la raccolta riprende da dove
 // si era fermata (l'avanzamento resta nel browser, in IndexedDB). Per scaricare subito quello che c'è: EmendandoGallica.salva(1), salva(2) ...
 // Per ricominciare da capo: EmendandoGallica.azzera(), poi incollare di nuovo il file.
@@ -20,8 +26,11 @@
 // La conversione nelle voci del catalogo e il filtro dei manoscritti librari li fa scripts/fonti/gallica.mjs (recordGallica, motivoGallica).
 (async function () {
   "use strict";
-  const QUERY = 'dc.type all "manuscrit"';   // la stessa di scripts/fonti/gallica.mjs
-  const PAGINA = 50, PAUSA = 3000, DB = "emendando-gallica", VERSIONE = 2, MAX_PARTE = 40e6;   // byte per parte (sotto i 50 MB)
+  const CARTE = window.EMENDANDO_GALLICA_CARTE === true;
+  // manoscritti: la stessa di scripts/fonti/gallica.mjs; carte: tipo «carte» e «manuscrit» in qualunque campo (formato «ms.», note)
+  const QUERY = CARTE ? 'dc.type all "carte" and gallica all "manuscrit"' : 'dc.type all "manuscrit"';
+  const PAGINA = 50, PAUSA = 3000, DB = CARTE ? "emendando-gallica-carte" : "emendando-gallica", VERSIONE = 2, MAX_PARTE = 40e6;
+  const NOME = CARTE ? "gallica-carte" : "gallica";   // byte per parte (sotto i 50 MB)
   if (!/(^|\.)gallica\.bnf\.fr$/.test(location.hostname)) { console.error("Apri prima https://gallica.bnf.fr/ e incolla lo script nella console di quella scheda."); return; }
 
   // ------------------------------------------------------------ archivio nel browser (IndexedDB): stato e pagine lette
@@ -44,7 +53,7 @@
     const id = testi(rec, "dc:identifier").find(x => /gallica\.bnf\.fr\/ark:\/12148\//.test(x)); if (!id) return null;
     const k = /ark:\/12148\/([a-z0-9]+)/i.exec(id)[1];
     return snellisci({ k, y: testi(rec, "dc:type"), t: testi(rec, "dc:title").join(" ; ").slice(0, 600), c: testi(rec, "dc:creator"), d: testi(rec, "dc:date")[0] || null,
-      s: testi(rec, "dc:source"), l: testi(rec, "dc:language"), x: [...testi(rec, "dc:description"), ...testi(rec, "dc:subject")].join(" ; ").slice(0, 1500),
+      s: testi(rec, "dc:source"), l: testi(rec, "dc:language"), f: testi(rec, "dc:format").join(" ; ").slice(0, 300), x: [...testi(rec, "dc:description"), ...testi(rec, "dc:subject")].join(" ; ").slice(0, 1500),
       r: testi(rec, "dc:rights").join(" ") });
   }
   const attendi = ms => new Promise(r => setTimeout(r, ms));
@@ -86,8 +95,8 @@
       parte: n, parti: ps.length, record: ps[n - 1] };
     const a = document.createElement("a");
     a.href = URL.createObjectURL(new Blob([JSON.stringify(dati)], { type: "application/json" }));
-    a.download = `gallica-${n}.json`; document.body.append(a); a.click(); a.remove();
-    console.log(`Scaricato gallica-${n}.json (parte ${n} di ${ps.length}, ${ps[n - 1].length} schede)${st.completa ? "" : " (raccolta NON completa: rilanciare lo script per continuare)"}.` +
+    a.download = `${NOME}-${n}.json`; document.body.append(a); a.click(); a.remove();
+    console.log(`Scaricato ${NOME}-${n}.json (parte ${n} di ${ps.length}, ${ps[n - 1].length} schede)${st.completa ? "" : " (raccolta NON completa: rilanciare lo script per continuare)"}.` +
       (n < ps.length ? ` Per la parte successiva: EmendandoGallica.salva(${n + 1})` : " Era l'ultima parte."));
   }
   async function azzera() { db.close(); await new Promise(ok => { const r = indexedDB.deleteDatabase(DB); r.onsuccess = r.onerror = r.onblocked = () => ok(); }); console.log("Avanzamento cancellato: incolla di nuovo lo script per ricominciare."); }
