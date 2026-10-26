@@ -95,9 +95,9 @@
   "ultimo_ok": "2026-10-26T03:10:42.366Z"
  },
  "loc": {
-  "quando": "2026-10-25T21:16:53.578Z",
+  "quando": "2026-10-26T04:58:58.161Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-25T21:16:53.578Z"
+  "ultimo_ok": "2026-10-26T04:58:58.161Z"
  },
  "montecassino": {
   "quando": "2026-10-26T02:47:39.646Z",
@@ -115,9 +115,9 @@
   "ultimo_ok": "2026-10-26T03:10:42.366Z"
  },
  "penn": {
-  "quando": "2026-10-25T21:16:53.578Z",
+  "quando": "2026-10-26T04:58:58.161Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-25T21:16:53.578Z"
+  "ultimo_ok": "2026-10-26T04:58:58.161Z"
  },
  "stoccarda": {
   "quando": "2026-10-26T03:10:42.366Z",
@@ -130,7 +130,7 @@
   "ultimo_ok": "2026-10-26T03:34:44.531Z"
  },
  "walters": {
-  "quando": "2026-10-25T21:16:53.578Z",
+  "quando": "2026-10-26T04:58:58.161Z",
   "esito": "sospesa: le immagini di thedigitalwalters.org non si caricano nemmeno dal browser (errore 522 del server del museo, 25 ottobre 2026)",
   "ultimo_ok": null
  },
