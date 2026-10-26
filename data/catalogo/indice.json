@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T03:39:36.934Z",
- "totale": 365365,
- "con_autori": 22278,
+ "aggiornato": "2026-10-26T06:05:07.860Z",
+ "totale": 366104,
+ "con_autori": 22444,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
   "id",
@@ -25,7 +25,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 49375
+   "codici": 50114
   },
   "fr": {
    "nome": "francese",
@@ -183,19 +183,19 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 5515
+   "codici": 5518
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 5137
+   "codici": 5139
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 11387
+   "codici": 11540
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 2458
+   "codici": 2468
   }
  },
  "autori": {
@@ -389,7 +389,7 @@
    "nome": "Boezio",
    "latino": "Boethius",
    "categoria": "classico-latino",
-   "codici": 632
+   "codici": 635
   },
   "ausonio": {
    "nome": "Ausonio",
@@ -749,7 +749,7 @@
    "nome": "Teofrasto",
    "latino": "Theophrastus",
    "categoria": "classico-greco",
-   "codici": 88
+   "codici": 90
   },
   "lisia": {
    "nome": "Lisia",
@@ -1127,43 +1127,43 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 2446
+   "codici": 2502
   },
   "girolamo": {
    "nome": "Girolamo",
    "latino": "Hieronymus",
    "categoria": "cristiano",
-   "codici": 1165
+   "codici": 1180
   },
   "ambrogio": {
    "nome": "Ambrogio",
    "latino": "Ambrosius",
    "categoria": "cristiano",
-   "codici": 377
+   "codici": 388
   },
   "gregorio-magno": {
    "nome": "Gregorio Magno",
    "latino": "Gregorius Magnus",
    "categoria": "cristiano",
-   "codici": 776
+   "codici": 781
   },
   "basilio": {
    "nome": "Basilio Magno",
    "latino": "Basilius Magnus",
    "categoria": "cristiano",
-   "codici": 510
+   "codici": 514
   },
   "gregorio-nazianzeno": {
    "nome": "Gregorio di Nazianzo",
    "latino": "Gregorius Nazianzenus",
    "categoria": "cristiano",
-   "codici": 462
+   "codici": 463
   },
   "giovanni-crisostomo": {
    "nome": "Giovanni Crisostomo",
    "latino": "Iohannes Chrysostomus",
    "categoria": "cristiano",
-   "codici": 1033
+   "codici": 1052
   },
   "bibbia": {
    "nome": "Bibbia",
@@ -1199,13 +1199,13 @@
    "nome": "Lattanzio",
    "latino": "Lactantius",
    "categoria": "cristiano",
-   "codici": 93
+   "codici": 101
   },
   "tertulliano": {
    "nome": "Tertulliano",
    "latino": "Tertullianus",
    "categoria": "cristiano",
-   "codici": 38
+   "codici": 42
   },
   "cipriano": {
    "nome": "Cipriano",
@@ -1217,49 +1217,49 @@
    "nome": "Ilario di Poitiers",
    "latino": "Hilarius Pictaviensis",
    "categoria": "cristiano",
-   "codici": 61
+   "codici": 63
   },
   "cassiodoro": {
    "nome": "Cassiodoro",
    "latino": "Cassiodorus",
    "categoria": "cristiano",
-   "codici": 176
+   "codici": 177
   },
   "origene": {
    "nome": "Origene",
    "latino": "Origenes",
    "categoria": "cristiano",
-   "codici": 233
+   "codici": 242
   },
   "eusebio": {
    "nome": "Eusebio di Cesarea",
    "latino": "Eusebius Caesariensis",
    "categoria": "cristiano",
-   "codici": 273
+   "codici": 283
   },
   "atanasio": {
    "nome": "Atanasio",
    "latino": "Athanasius",
    "categoria": "cristiano",
-   "codici": 332
+   "codici": 334
   },
   "gregorio-nisseno": {
    "nome": "Gregorio di Nissa",
    "latino": "Gregorius Nyssenus",
    "categoria": "cristiano",
-   "codici": 232
+   "codici": 234
   },
   "giovanni-damasceno": {
    "nome": "Giovanni Damasceno",
    "latino": "Iohannes Damascenus",
    "categoria": "cristiano",
-   "codici": 282
+   "codici": 285
   },
   "dionigi-areopagita": {
    "nome": "Dionigi Areopagita",
    "latino": "Dionysius Areopagita",
    "categoria": "cristiano",
-   "codici": 122
+   "codici": 130
   },
   "isidoro": {
    "nome": "Isidoro di Siviglia",
@@ -1301,7 +1301,7 @@
    "nome": "Tommaso d'Aquino",
    "latino": "Thomas de Aquino",
    "categoria": "medievale",
-   "codici": 346
+   "codici": 356
   },
   "bernardo": {
    "nome": "Bernardo di Chiaravalle",
@@ -2435,7 +2435,7 @@
     "ru": 2,
     "syr": 7
    },
-   "esito": "errore: fetch failed",
+   "esito": "ok",
    "prefissi": [
     "bod-"
    ],
@@ -2958,10 +2958,10 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 8143,
-   "con_autori": 646,
+   "codici": 8882,
+   "con_autori": 812,
    "lingue": {
-    "la": 7854,
+    "la": 8593,
     "it": 233,
     "xx": 18,
     "de": 3,
@@ -2974,7 +2974,7 @@
    "prefissi": [
     "bav-"
    ],
-   "pezzi_voci": 11,
+   "pezzi_voci": 12,
    "indice": [
     "indice/vaticana-0.json"
    ]
@@ -3164,7 +3164,7 @@
   {
    "file": "indice/vaticana-0.json",
    "fonte": "vaticana",
-   "righe": 8143
+   "righe": 8882
   }
  ]
 }

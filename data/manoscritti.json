@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T02:42:55.573Z",
+ "aggiornato": "2026-10-26T06:05:07.860Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -25,7 +25,7 @@
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
    "codici": 477,
-   "esito": "errore: fetch failed"
+   "esito": "ok"
   },
   "gallica": {
    "nome": "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -119,11 +119,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 394,
+   "codici": 399,
    "esito": "ok"
   }
  },
- "totale": 10230,
+ "totale": 10235,
  "manoscritti": [
   {
    "id": "akl-17669",
@@ -53590,6 +53590,191 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.1324/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.1324",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-393",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 393",
+   "datazione": "Sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ioannis Chrysostomi, Basilii M. opera nonnulla et Aeneae Gazaei Theophrastus ab Ambrosio Traversari Camaldulensi fere omnia latine reddita",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…era nonnulla et Aeneae Gazaei Theophrastus ab Ambrosio Traversari Camald…»"
+    },
+    {
+     "id": "ambrogio",
+     "autore": "Ambrogio",
+     "latino": "Ambrosius",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "titolo: «…Aeneae Gazaei Theophrastus ab Ambrosio Traversari Camaldulensi fere…»"
+    },
+    {
+     "id": "giovanni-crisostomo",
+     "autore": "Giovanni Crisostomo",
+     "latino": "Iohannes Chrysostomus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "titolo: «Ioannis Chrysostomi, Basilii M. opera nonnulla et…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.393/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.393",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-404",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 404",
+   "datazione": "Sec. XV med.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "S. Ioannis Chrysostomi opera nonnulla, Aeneae Gazaei Dialogus qui Theophrastus inscribitur, S. Eugeniae vita",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…a, Aeneae Gazaei Dialogus qui Theophrastus inscribitur, S. Eugeniae vita»"
+    },
+    {
+     "id": "giovanni-crisostomo",
+     "autore": "Giovanni Crisostomo",
+     "latino": "Iohannes Chrysostomus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "titolo: «S. Ioannis Chrysostomi opera nonnulla, Aeneae Gazaei…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.404/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.404",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-562",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 562",
+   "datazione": "Sec. XIV in.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Boetii De consolatione philosophiae cum expositione fratris Nicolai Trivet ordinis Prædicatorum",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "titolo: «Boetii De consolatione philosophiae…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.562/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.562",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-563",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 563",
+   "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Boetii De consolatione philosophiae cum expositione fratris Nicolai Trivet ordinis Prædicatorum",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "titolo: «Boetii De consolatione philosophiae…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.563/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.563",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-564",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 564",
+   "datazione": "Sec. XIV ex.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De consolatione philosophiae",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Boethius, Anicius Manlius Torquatus Severinus, 475/480-c. 524/525»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.564/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.564",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },
