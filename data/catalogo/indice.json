@@ -1,9 +1,9 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T16:59:04.863Z",
- "totale": 492038,
+ "aggiornato": "2026-10-26T17:13:02.908Z",
+ "totale": 493218,
  "con_autori": 27221,
- "miniati": 9937,
+ "miniati": 10004,
  "musica": 13525,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
@@ -46,11 +46,11 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 21655
+   "codici": 21809
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 17950
+   "codici": 18142
   },
   "pi": {
    "nome": "pali",
@@ -64,6 +64,10 @@
    "nome": "greco",
    "codici": 13816
   },
+  "he": {
+   "nome": "ebraico",
+   "codici": 11194
+  },
   "lo": {
    "nome": "lao",
    "codici": 10873
@@ -74,11 +78,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10382
-  },
-  "he": {
-   "nome": "ebraico",
-   "codici": 10015
+   "codici": 10383
   },
   "pl": {
    "nome": "polacco",
@@ -86,7 +86,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 7374
+   "codici": 7375
   },
   "en": {
    "nome": "inglese",
@@ -106,7 +106,7 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 4429
+   "codici": 4433
   },
   "ca": {
    "nome": "catalano",
@@ -182,7 +182,7 @@
   },
   "oc": {
    "nome": "occitano",
-   "codici": 190
+   "codici": 191
   },
   "shn": {
    "nome": "shan",
@@ -310,7 +310,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 490361
+   "codici": 491541
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -1478,6 +1478,7 @@
   "Archivio parrocchiale, Sonvico",
   "Archivio parrocchiale, Tesserete",
   "Archivio parrocchiale, Torre",
+  "Archivio storico comunale di Nonantola (copia digitale della National Library of Israel)",
   "Archivio storico della città di Kyoto, documenti della famiglia Yamamoto (京都市歴史資料館 山本家資料)",
   "Archivio storico della città di Takeo, documenti della famiglia Nabeshima di Takeo (武雄市歴史資料館 武雄鍋島家資料)",
   "Archiwum i Biblioteka Krakowskiej Kapituły Katedralnej, Cracovia",
@@ -1723,6 +1724,7 @@
   "codices restituti, [sine loco]",
   "Coláiste na Rinne, Waterford",
   "Collection Auguste Rondel",
+  "Collezione Feldman (copia digitale della National Library of Israel), Gerusalemme",
   "Collezione privata (2) (個人蔵２), Giappone",
   "Collezione privata (3) (個人蔵３), Giappone",
   "Collezione privata (13) (個人蔵１３), Giappone",
@@ -1783,7 +1785,9 @@
   "Exeter College, Oxford",
   "Expozice Knihovny Latinské školy, Jáchymov",
   "Expozitura Latinské školy, Jáchymov",
+  "F (copia digitale della National Library of Israel)",
   "Faculty of Classics Archives, University of Cambridge",
+  "FERRARA TT (copia digitale della National Library of Israel)",
   "Fitzwilliam Museum, Cambridge",
   "Fondation Auguste Escoffier",
   "Fondation Barbier-Mueller pour l'étude de la poésie italienne de la Renaissance, Genève",
@@ -1796,6 +1800,7 @@
   "Forschungsbibliothek Gotha",
   "Forschungsbibliothek, Gotha",
   "Fragile Palm Leaves Foundation, Nonthaburi (copie del Buddhist Digital Resource Center)",
+  "Frank UB Oct. (copia digitale della National Library of Israel)",
   "Františkánská knihovna, Cheb",
   "Free Library of Philadelphia",
   "Fundacja M.I.A.S.T.O. Białystok",
@@ -1811,6 +1816,7 @@
   "Government Oriental Manuscripts Library and Research Centre, Chennai",
   "Grolier Club, New York",
   "Gross Family Collection (copia digitale della National Library of Israel), Tel Aviv",
+  "Gross William L. Tel Aviv Israel Ms. EE. (copia digitale della National Library of Israel)",
   "Gurukul Kangri (Deemed to be University), Haridwar",
   "Harris Manchester College, Oxford",
   "Harry Ransom Center, University of Texas, Austin",
@@ -1825,6 +1831,7 @@
   "Haus-, Hof u. Staatsarchiv, Vienna",
   "Haus-, Hof- u. Staatsarchiv, Vienna",
   "Haverford College",
+  "Heichal Shlomo (copia digitale della National Library of Israel), Gerusalemme",
   "Heidelberg",
   "Heidelberger Papyrussammlung",
   "Herzog August Bibliothek Wolfenbüttel",
@@ -2337,6 +2344,7 @@
   "Soukromá sbírka v Praze, Praga",
   "soukromá sbírka, Kovačica",
   "soukromá sbírka, Železný Brod",
+  "SP IOS B (copia digitale della National Library of Israel)",
   "Special Collections Library, Cambridge",
   "Special Collections, Cambridge",
   "Special collections, Plovdiv",
@@ -4668,18 +4676,19 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 3055,
+   "codici": 4235,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 207,
+   "miniati": 274,
    "musica": 0,
    "con_autori": 6,
    "lingue": {
-    "he": 3053,
-    "xx": 450,
-    "it": 35,
-    "ar": 121,
-    "fa": 39,
+    "he": 4232,
+    "xx": 642,
+    "ar": 275,
+    "fa": 43,
+    "es": 3,
+    "it": 36,
     "de": 44,
     "la": 5,
     "en": 1,
@@ -4689,16 +4698,15 @@
     "ka": 1,
     "nl": 1,
     "fr": 2,
-    "es": 2,
     "ca": 1,
-    "oc": 1,
+    "oc": 2,
     "ru": 1
    },
-   "esito": "errore: manifesti letti in parte (mancano 12499): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 11317): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
-   "pezzi_voci": 4,
+   "pezzi_voci": 6,
    "indice": [
     "indice/nli-0.json"
    ]
@@ -5354,7 +5362,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 3055
+   "righe": 4235
   },
   {
    "file": "indice/getty-0.json",
@@ -7942,6 +7950,7 @@
   "sonvico",
   "tesserete",
   "torre",
+  null,
   "jp-kyoto",
   "jp-takeo",
   "cracovia",
@@ -8187,6 +8196,7 @@
   null,
   "waterford",
   "parigi",
+  "gerusalemme",
   null,
   null,
   null,
@@ -8247,7 +8257,9 @@
   "oxford",
   "jachymov",
   "jachymov",
+  "gerusalemme",
   "cambridge",
+  "gerusalemme",
   "cambridge",
   "villeneuve-loubet",
   "ginevra",
@@ -8260,6 +8272,7 @@
   "gotha",
   "gotha",
   "nonthaburi",
+  "gerusalemme",
   "cheb",
   "philadelphia",
   "bialystok",
@@ -8275,6 +8288,7 @@
   "chennai",
   "new-york",
   "tel-aviv",
+  "gerusalemme",
   "haridwar",
   "oxford",
   "austin",
@@ -8289,6 +8303,7 @@
   "vienna",
   "vienna",
   "haverford",
+  "gerusalemme",
   "heidelberg",
   "heidelberg",
   "wolfenbuettel",
@@ -8801,6 +8816,7 @@
   "praga",
   "kovacica",
   "zelezny-brod",
+  "gerusalemme",
   "cambridge",
   "cambridge",
   "plovdiv",
