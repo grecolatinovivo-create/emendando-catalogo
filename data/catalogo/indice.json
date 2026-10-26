@@ -1,7 +1,7 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T20:57:38.156Z",
- "totale": 504129,
+ "aggiornato": "2026-10-26T21:02:53.092Z",
+ "totale": 504131,
  "con_autori": 27682,
  "miniati": 10742,
  "musica": 13601,
@@ -26,7 +26,7 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 180988
+   "codici": 180989
   },
   "la": {
    "nome": "latino",
@@ -62,7 +62,7 @@
   },
   "zh": {
    "nome": "cinese",
-   "codici": 14088
+   "codici": 14089
   },
   "grc": {
    "nome": "greco",
@@ -374,7 +374,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 502450
+   "codici": 502452
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -4128,7 +4128,7 @@
   },
   "cbl": {
    "nome": "Chester Beatty, Dublino (viewer.cbl.ie)",
-   "codici": 1311,
+   "codici": 1313,
    "carte": 2,
    "carte_stampa": 0,
    "miniati": 720,
@@ -4139,7 +4139,7 @@
     "?": 60,
     "hy": 51,
     "my": 4,
-    "zh": 25,
+    "zh": 26,
     "mnc": 2,
     "xx": 99,
     "cop": 66,
@@ -4147,7 +4147,7 @@
     "he": 24,
     "fa": 427,
     "sa": 3,
-    "ja": 67,
+    "ja": 68,
     "tr": 54,
     "btk": 2,
     "ms": 1,
@@ -4163,7 +4163,7 @@
     "en": 1,
     "gez": 1
    },
-   "esito": "errore: manifesti letti in parte (mancano 861): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 500): riprenderà alla prossima esecuzione",
    "prefissi": [
     "cbl-"
    ],
@@ -5415,7 +5415,7 @@
   {
    "file": "indice/cbl-0.json",
    "fonte": "cbl",
-   "righe": 1311
+   "righe": 1313
   },
   {
    "file": "indice/parker-0.json",
