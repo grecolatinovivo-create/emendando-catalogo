@@ -1,10 +1,10 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T14:45:51.882Z",
- "totale": 470104,
- "con_autori": 27008,
- "miniati": 9533,
- "musica": 13522,
+ "aggiornato": "2026-10-26T15:19:55.284Z",
+ "totale": 471287,
+ "con_autori": 27214,
+ "miniati": 9767,
+ "musica": 13525,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
   "id",
@@ -30,15 +30,15 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 72159
+   "codici": 72173
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 28376
+   "codici": 28426
   },
   "fr": {
    "nome": "francese",
-   "codici": 28126
+   "codici": 28128
   },
   "de": {
    "nome": "tedesco",
@@ -46,11 +46,11 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 21452
+   "codici": 21545
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 17224
+   "codici": 17541
   },
   "zh": {
    "nome": "cinese",
@@ -58,31 +58,31 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 13789
+   "codici": 13810
+  },
+  "sa": {
+   "nome": "sanscrito",
+   "codici": 10556
   },
   "es": {
    "nome": "spagnolo",
    "codici": 10380
   },
-  "sa": {
-   "nome": "sanscrito",
-   "codici": 10340
-  },
   "pl": {
    "nome": "polacco",
    "codici": 8301
   },
-  "it": {
-   "nome": "italiano",
-   "codici": 7339
-  },
   "he": {
    "nome": "ebraico",
-   "codici": 6975
+   "codici": 7433
+  },
+  "it": {
+   "nome": "italiano",
+   "codici": 7341
   },
   "en": {
    "nome": "inglese",
-   "codici": 6635
+   "codici": 6647
   },
   "bo": {
    "nome": "tibetano",
@@ -94,7 +94,7 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 4087
+   "codici": 4397
   },
   "ca": {
    "nome": "catalano",
@@ -114,7 +114,7 @@
   },
   "tr": {
    "nome": "turco",
-   "codici": 2531
+   "codici": 2536
   },
   "lo": {
    "nome": "lao",
@@ -122,7 +122,7 @@
   },
   "cop": {
    "nome": "copto",
-   "codici": 1923
+   "codici": 1924
   },
   "gez": {
    "nome": "etiopico",
@@ -134,7 +134,7 @@
   },
   "syr": {
    "nome": "siriaco",
-   "codici": 1215
+   "codici": 1216
   },
   "cu": {
    "nome": "slavo ecclesiastico",
@@ -292,15 +292,15 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 6437
+   "codici": 6438
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 6170
+   "codici": 6186
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 13853
+   "codici": 14042
   },
   "medievale": {
    "nome": "autori medievali",
@@ -310,11 +310,11 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 468428
+   "codici": 469610
   },
   "carta": {
    "nome": "carte manoscritte",
-   "codici": 1622
+   "codici": 1623
   },
   "carta_stampa": {
    "nome": "carte a stampa",
@@ -704,7 +704,7 @@
    "nome": "Nonio Marcello",
    "latino": "Nonius Marcellus",
    "categoria": "classico-latino",
-   "codici": 41
+   "codici": 42
   },
   "carisio": {
    "nome": "Carisio",
@@ -758,7 +758,7 @@
    "nome": "Esiodo",
    "latino": "Hesiodus",
    "categoria": "classico-greco",
-   "codici": 110
+   "codici": 111
   },
   "pindaro": {
    "nome": "Pindaro",
@@ -812,7 +812,7 @@
    "nome": "Eschilo",
    "latino": "Aeschylus",
    "categoria": "classico-greco",
-   "codici": 46
+   "codici": 47
   },
   "sofocle": {
    "nome": "Sofocle",
@@ -824,13 +824,13 @@
    "nome": "Euripide",
    "latino": "Euripides",
    "categoria": "classico-greco",
-   "codici": 133
+   "codici": 136
   },
   "aristofane": {
    "nome": "Aristofane",
    "latino": "Aristophanes",
    "categoria": "classico-greco",
-   "codici": 100
+   "codici": 104
   },
   "menandro": {
    "nome": "Menandro",
@@ -842,13 +842,13 @@
    "nome": "Erodoto",
    "latino": "Herodotus",
    "categoria": "classico-greco",
-   "codici": 45
+   "codici": 46
   },
   "tucidide": {
    "nome": "Tucidide",
    "latino": "Thucydides",
    "categoria": "classico-greco",
-   "codici": 59
+   "codici": 60
   },
   "senofonte": {
    "nome": "Senofonte",
@@ -890,7 +890,7 @@
    "nome": "Demostene",
    "latino": "Demosthenes",
    "categoria": "classico-greco",
-   "codici": 136
+   "codici": 137
   },
   "eschine": {
    "nome": "Eschine",
@@ -950,7 +950,7 @@
    "nome": "Plutarco",
    "latino": "Plutarchus",
    "categoria": "classico-greco",
-   "codici": 304
+   "codici": 305
   },
   "luciano": {
    "nome": "Luciano di Samosata",
@@ -1040,13 +1040,13 @@
    "nome": "Tolomeo",
    "latino": "Ptolemaeus",
    "categoria": "classico-greco",
-   "codici": 253
+   "codici": 254
   },
   "euclide": {
    "nome": "Euclide",
    "latino": "Euclides",
    "categoria": "classico-greco",
-   "codici": 235
+   "codici": 236
   },
   "archimede": {
    "nome": "Archimede",
@@ -1136,7 +1136,7 @@
    "nome": "Porfirio",
    "latino": "Porphyrius",
    "categoria": "classico-greco",
-   "codici": 239
+   "codici": 240
   },
   "proclo": {
    "nome": "Proclo",
@@ -1208,7 +1208,7 @@
    "nome": "Flavio Giuseppe",
    "latino": "Flavius Iosephus",
    "categoria": "classico-greco",
-   "codici": 240
+   "codici": 241
   },
   "diogene-laerzio": {
    "nome": "Diogene Laerzio",
@@ -1274,25 +1274,25 @@
    "nome": "Basilio Magno",
    "latino": "Basilius Magnus",
    "categoria": "cristiano",
-   "codici": 568
+   "codici": 569
   },
   "gregorio-nazianzeno": {
    "nome": "Gregorio di Nazianzo",
    "latino": "Gregorius Nazianzenus",
    "categoria": "cristiano",
-   "codici": 509
+   "codici": 510
   },
   "giovanni-crisostomo": {
    "nome": "Giovanni Crisostomo",
    "latino": "Iohannes Chrysostomus",
    "categoria": "cristiano",
-   "codici": 1209
+   "codici": 1212
   },
   "bibbia": {
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 6297
+   "codici": 6483
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1493,6 +1493,7 @@
   "Australia: Victoria State Library, Melbourne (Australia)",
   "Balliol College, Oxford",
   "Barbara Bates Center for the Study of the History of Nursing, Philadelphia",
+  "Bayerische Staatsbibliothek, Cambridge",
   "Bayerische Staatsbibliothek, München",
   "Beinecke Rare Book and Manuscript Library, New Haven",
   "Belton House, Cambridge",
@@ -1897,6 +1898,7 @@
   "jetzt Wien ÖNB Cod. Ser.n. 2595, Lilienfeld",
   "Jihočeská vědecká knihovna v Českých Budějovicích, Zlatá Koruna",
   "John Rylands Research Institute and Library, University of Manchester",
+  "John Rylands University Library of Manchester, Cambridge",
   "Kantonsbibliothek Appenzell Ausserrhoden, Trogen",
   "Kantonsbibliothek Thurgau, Frauenfeld",
   "Kantonsbibliothek, St. Gallen",
@@ -1956,11 +1958,16 @@
   "Lincoln College, Oxford",
   "Lyceálna knižnica v Kežmarku, Kežmarok",
   "Magdalen College, Oxford",
+  "Magdalene College, Cambridge",
   "Maisons de Victor Hugo, Paris / Guernesey",
   "Marsh's Library, Dublino",
   "Master Microforms, Harvard University, Cambridge (Massachusetts)",
+  "Matenadaran Institute of Ancient Manuscripts, Cambridge",
   "Maynooth University",
   "MBP Kalisz",
+  "McGill University Library Ms. Persian 12, Cambridge",
+  "McGill University Library Ms. Persian 39, Cambridge",
+  "McGill University Library, Cambridge",
   "McGill University Library, Rare Books and Special Collections, Montréal",
   "Médiathèque André Malraux, Strasbourg",
   "Médiathèque de Troyes Champagne Métropole",
@@ -1982,6 +1989,7 @@
   "Monastero di Rousanou, Meteore (copie digitali della Biblioteca di Kalambaka), Meteore (Kalambaka)",
   "Monastero di Santa Caterina del Sinai (microfilm della Library of Congress), Sinai (Egitto)",
   "Montpellier Méditerranée Métropole - Médiathèque centrale Emile Zola",
+  "Montreal Museum of Fine Arts, Cambridge",
   "Moravská galerie v Brně, Brno",
   "Moravská zemská knihovna v Brně, Brno",
   "Moravské zemské muzeum, Brno",
@@ -2085,6 +2093,7 @@
   "Narodowy Instytut Kultury i Dziedzictwa Wsi, Varsavia",
   "National and University Library of Slovenia, Lubiana",
   "National Diet Library (国立国会図書館), Tokyo",
+  "National Gallery of Victoria, Cambridge",
   "National Libary of Romania - Batthyaneum, Alba Iulia",
   "National Library of Finland, Fragmenta membranea collection, Helsinki",
   "National Library of Ireland, Dublino",
@@ -2107,6 +2116,8 @@
   "New York University",
   "Newberry Library e Western Michigan University, Chicago",
   "Newberry Library, Chicago",
+  "Newnham College Archive, Cambridge",
+  "Newnham College, Cambridge",
   "Niedersächsische Staats- und Universitätsbibliothek, Göttingen",
   "Niemiecki Instytut Historyczny w Warszawie, Varsavia",
   "Nikolaus-Matz-Bibliothek (Kirchenbibliothek), Michelstadt",
@@ -3446,7 +3457,7 @@
     "ru": 1,
     "syr": 4
    },
-   "esito": "errore: manifesti letti in parte (mancano 850 su 6394): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 799 su 6394): riprenderà alla prossima esecuzione",
    "prefissi": [
     "onb-"
    ],
@@ -3875,60 +3886,61 @@
   },
   "cudl": {
    "nome": "Cambridge Digital Library: University Library e college (cudl.lib.cam.ac.uk)",
-   "codici": 3266,
+   "codici": 4119,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 199,
-   "musica": 19,
-   "con_autori": 144,
+   "miniati": 233,
+   "musica": 21,
+   "con_autori": 349,
    "lingue": {
-    "fa": 274,
-    "en": 92,
-    "?": 642,
-    "ar": 61,
+    "fa": 318,
+    "en": 104,
+    "?": 683,
+    "ar": 86,
     "gez": 4,
     "zh": 734,
     "es": 1,
     "mnc": 3,
     "ja": 77,
     "mn": 4,
-    "xx": 270,
-    "syr": 1,
-    "la": 119,
-    "fr": 23,
-    "it": 8,
-    "he": 49,
-    "grc": 143,
-    "sa": 1040,
+    "xx": 576,
+    "syr": 2,
+    "la": 133,
+    "fr": 25,
+    "it": 10,
+    "he": 507,
+    "grc": 164,
+    "sa": 1256,
     "de": 2,
     "tr": 2
    },
-   "esito": "errore: manifesti letti in parte (mancano 3131): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 1330): riprenderà alla prossima esecuzione",
    "prefissi": [
     "cudl-"
    ],
-   "pezzi_voci": 5,
+   "pezzi_voci": 6,
    "indice": [
     "indice/cudl-0.json"
    ]
   },
   "cbl": {
    "nome": "Chester Beatty, Dublino (viewer.cbl.ie)",
-   "codici": 611,
-   "carte": 0,
+   "codici": 941,
+   "carte": 1,
    "carte_stampa": 0,
-   "miniati": 297,
-   "musica": 4,
-   "con_autori": 100,
+   "miniati": 497,
+   "musica": 5,
+   "con_autori": 101,
    "lingue": {
-    "ar": 104,
-    "?": 27,
+    "ar": 172,
+    "?": 36,
     "hy": 51,
-    "xx": 83,
-    "cop": 65,
+    "xx": 94,
+    "cop": 66,
     "grc": 19,
     "he": 24,
-    "fa": 1,
+    "fa": 267,
+    "tr": 5,
     "syr": 4,
     "la": 226,
     "fr": 24,
@@ -3937,11 +3949,11 @@
     "en": 1,
     "gez": 1
    },
-   "esito": "errore: manifesti letti in parte (mancano 2305): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 1944): riprenderà alla prossima esecuzione",
    "prefissi": [
     "cbl-"
    ],
-   "pezzi_voci": 1,
+   "pezzi_voci": 2,
    "indice": [
     "indice/cbl-0.json"
    ]
@@ -5128,12 +5140,12 @@
   {
    "file": "indice/cudl-0.json",
    "fonte": "cudl",
-   "righe": 3266
+   "righe": 4119
   },
   {
    "file": "indice/cbl-0.json",
    "fonte": "cbl",
-   "righe": 611
+   "righe": 941
   },
   {
    "file": "indice/parker-0.json",
@@ -7871,6 +7883,7 @@
   "melbourne",
   "oxford",
   "philadelphia",
+  "cambridge",
   "monaco-di-baviera",
   "new-haven",
   "cambridge",
@@ -8275,6 +8288,7 @@
   "lilienfeld",
   "zlata-koruna",
   "manchester",
+  "cambridge",
   "trogen",
   "frauenfeld",
   "san-gallo",
@@ -8334,11 +8348,16 @@
   "oxford",
   "kezmarok",
   "oxford",
+  "cambridge",
   "parigi",
   "dublino",
   "cambridge-ma",
+  "cambridge",
   "maynooth",
   "kalisz",
+  "cambridge",
+  "cambridge",
+  "cambridge",
   "montreal",
   "strasburgo",
   "troyes",
@@ -8360,6 +8379,7 @@
   "meteore",
   "sinai",
   "montpellier",
+  "cambridge",
   "brno",
   "brno",
   "brno",
@@ -8463,6 +8483,7 @@
   "varsavia",
   "lubiana",
   "tokyo",
+  "cambridge",
   "alba-iulia",
   "helsinki",
   "dublino",
@@ -8485,6 +8506,8 @@
   "new-york",
   "chicago",
   "chicago",
+  "cambridge",
+  "cambridge",
   "gottinga",
   "varsavia",
   "michelstadt",

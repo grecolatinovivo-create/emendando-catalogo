@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T14:45:51.882Z",
+ "aggiornato": "2026-10-26T15:19:55.284Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -120,7 +120,7 @@
   "onb": {
    "nome": "Österreichische Nationalbibliothek, Vienna (onb.digital; manifesti api.onb.ac.at)",
    "codici": 289,
-   "esito": "errore: manifesti letti in parte (mancano 850 su 6394): riprenderà alla prossima esecuzione"
+   "esito": "errore: manifesti letti in parte (mancano 799 su 6394): riprenderà alla prossima esecuzione"
   },
   "yale": {
    "nome": "Yale University Library, Beinecke e altre (collections.library.yale.edu)",
@@ -174,13 +174,13 @@
   },
   "cudl": {
    "nome": "Cambridge Digital Library: University Library e college (cudl.lib.cam.ac.uk)",
-   "codici": 54,
-   "esito": "errore: manifesti letti in parte (mancano 3131): riprenderà alla prossima esecuzione"
+   "codici": 70,
+   "esito": "errore: manifesti letti in parte (mancano 1330): riprenderà alla prossima esecuzione"
   },
   "cbl": {
    "nome": "Chester Beatty, Dublino (viewer.cbl.ie)",
-   "codici": 6,
-   "esito": "errore: manifesti letti in parte (mancano 2305): riprenderà alla prossima esecuzione"
+   "codici": 7,
+   "esito": "errore: manifesti letti in parte (mancano 1944): riprenderà alla prossima esecuzione"
   },
   "parker": {
    "nome": "Parker Library, Corpus Christi College, Cambridge (manifesti di Stanford, dms-data.stanford.edu; elenco da Biblissima)",
@@ -348,7 +348,7 @@
    "esito": "ok"
   }
  },
- "totale": 12137,
+ "totale": 12154,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -330959,6 +330959,525 @@
    "immagini": null
   },
   {
+   "id": "cudl-ms-ll-00004-00012",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Ll.4.12",
+   "datazione": "late 14th or early 15th century",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Miscellany of Greek texts",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Contro Apione"
+     ],
+     "corrispondenza": "descrizione: «Josephus, Flavius; Synesius, of Cyrene, Bishop…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-LL-00004-00012",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-LL-00004-00012",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-mm-00001-00011",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Mm.1.11",
+   "datazione": "later 14th or earlier 15th century",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Euripides",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Ecuba",
+      "Oreste"
+     ],
+     "corrispondenza": "titolo: «Euripides»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-MM-00001-00011",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-MM-00001-00011",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-mm-00005-00022",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Mm.5.22",
+   "datazione": "Mid- to late 9th century.",
+   "secolo": [
+    9,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De compendiosa doctrina",
+   "autori": [
+    {
+     "id": "nonio",
+     "autore": "Nonio Marcello",
+     "latino": "Nonius Marcellus",
+     "categoria": "classico-latino",
+     "opere": [
+      "De compendiosa doctrina"
+     ],
+     "corrispondenza": "autore: «Nonius Marcellus ; Bradshaw, Henry, 1831-1886…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-MM-00005-00022",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-MM-00005-00022",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-mm-00006-00027-00001",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Mm.6.27.1-2",
+   "datazione": "Fifteenth-sixteenth centuries",
+   "secolo": null,
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Almagest; History of Learned Men",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Almagesto"
+     ],
+     "corrispondenza": "titolo: «Almagest; History of Learned Men»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-MM-00006-00027-00001",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-MM-00006-00027-00001",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-nn-00001-00024",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Nn.1.24",
+   "datazione": "end of the 15th century and the beginning of the 16th",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Commentary on Porphyry's Isagoge",
+   "autori": [
+    {
+     "id": "porfirio",
+     "autore": "Porfirio",
+     "latino": "Porphyrius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Isagoge"
+     ],
+     "corrispondenza": "descrizione: «…atonism; Elias (Philosopher); Porphyry, approximately 234-approximat…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-NN-00001-00024",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-NN-00001-00024",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-nn-00002-00034",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Nn.2.34",
+   "datazione": "late 14th century",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Herodotus",
+   "autori": [
+    {
+     "id": "erodoto",
+     "autore": "Erodoto",
+     "latino": "Herodotus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Storie"
+     ],
+     "corrispondenza": "titolo: «Herodotus»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-NN-00002-00034",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-NN-00002-00034",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-nn-00002-00039",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Nn.2.39",
+   "datazione": "late 15th century or early 16th century",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Quaestiones Convivales (Moralia 46 = Plan. 78) (defective at the end and with lacunae)",
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Plutarch»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-NN-00002-00039",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-NN-00002-00039",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-nn-00003-00003",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Nn.3.3",
+   "datazione": "late 15th century or early 16th century",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aristophanes",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Pluto",
+      "Nuvole"
+     ],
+     "corrispondenza": "titolo: «Aristophanes»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-NN-00003-00003",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-NN-00003-00003",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-nn-00003-00008",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Nn.3.8",
+   "datazione": "in the second quarter of the 16th century",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Euclid",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Euclid»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-NN-00003-00008",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-NN-00003-00008",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-nn-00003-00013",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Nn.3.13",
+   "datazione": "later 14th or earlier 15th century",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Euripidean dyad",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Ecuba",
+      "Oreste"
+     ],
+     "corrispondenza": "descrizione: «…MS Nn.3.13 is manuscript J in Euripides' textual tradition. The dyad…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-NN-00003-00013",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-NN-00003-00013",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-nn-00003-00014",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Nn.3.14",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Euripides, Tragedies",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Ecuba",
+      "Oreste"
+     ],
+     "corrispondenza": "titolo: «Euripides, Tragedies»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-NN-00003-00014",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-NN-00003-00014",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-nn-00003-00015",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Nn.3.15",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aristophanes",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Pluto",
+      "Nuvole",
+      "Rane"
+     ],
+     "corrispondenza": "titolo: «Aristophanes»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-NN-00003-00015",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-NN-00003-00015",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-nn-00003-00016",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Nn.3.16",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aristophanes",
+   "autori": [
+    {
+     "id": "esiodo",
+     "autore": "Esiodo",
+     "latino": "Hesiodus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Opere e giorni"
+     ],
+     "corrispondenza": "descrizione: «…eek literature; Aristophanes; Hesiod. Works and days ; This Greek…»"
+    },
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Pluto",
+      "Nuvole"
+     ],
+     "corrispondenza": "titolo: «Aristophanes»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-NN-00003-00016",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-NN-00003-00016",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-nn-00003-00017",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Nn.3.17",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aeschylus",
+   "autori": [
+    {
+     "id": "eschilo",
+     "autore": "Eschilo",
+     "latino": "Aeschylus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Prometeo incatenato",
+      "Sette contro Tebe"
+     ],
+     "corrispondenza": "titolo: «Aeschylus»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-NN-00003-00017",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-NN-00003-00017",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-nn-00003-00018",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Nn.3.18",
+   "datazione": "1455-1475",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Thucydides, History of the Peloponnesian War",
+   "autori": [
+    {
+     "id": "tucidide",
+     "autore": "Tucidide",
+     "latino": "Thucydides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Guerra del Peloponneso"
+     ],
+     "corrispondenza": "titolo: «Thucydides, History of the Peloponnesian War»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-NN-00003-00018",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-NN-00003-00018",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-nn-00004-00002",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Nn.4.2",
+   "datazione": "last quarter of 15th century and the early 16th century",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Funeral Oration ; Epitaphius (or. 60)",
+   "autori": [
+    {
+     "id": "demostene",
+     "autore": "Demostene",
+     "latino": "Demosthenes",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Demosthenes ; Marnef, Geoffroy de, active 1489-1518 ; Baconthorpe, John, -1346»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-NN-00004-00002",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-NN-00004-00002",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
    "id": "cbl-ar-3045",
    "fonte": "cbl",
    "biblioteca": "Chester Beatty",
@@ -331087,6 +331606,40 @@
    "pagina": "https://viewer.cbl.ie/viewer/object/Ar_5018/1/",
    "licenza": "© Chester Beatty, Dublino (condizioni d'uso: chesterbeatty.ie)",
    "immagini": null
+  },
+  {
+   "id": "cbl-per-104-47",
+   "fonte": "cbl",
+   "biblioteca": "Chester Beatty",
+   "citta": "Dublino",
+   "segnatura": "Per 104.47",
+   "datazione": "c. 1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "fa"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Iskandar consults the talking birds on the mountain of Israfil, from the Book of Kings (Shahnama) by Firdausi",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Uccelli"
+     ],
+     "corrispondenza": "titolo: «Iskandar consults the talking birds on the mountain of Israfil, f…»"
+    }
+   ],
+   "manifest": "https://viewer.cbl.ie/viewer/api/v1/records/Per_104_47/manifest/",
+   "pagina": "https://viewer.cbl.ie/viewer/object/Per_104_47/1/",
+   "licenza": "© Chester Beatty, Dublino (condizioni d'uso: chesterbeatty.ie)",
+   "immagini": null,
+   "miniato": true
   },
   {
    "id": "cbl-w-122",
