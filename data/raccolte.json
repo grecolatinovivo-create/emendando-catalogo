@@ -54,6 +54,16 @@
   "esito": "errore: manifesti letti in parte (mancano 4932): riprenderà alla prossima esecuzione",
   "ultimo_ok": "2026-10-25T13:14:23.731Z"
  },
+ "darmstadt": {
+  "quando": "2026-10-26T11:52:53.940Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-26T11:52:53.940Z"
+ },
+ "dresda": {
+  "quando": "2026-10-26T11:52:53.940Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-26T11:52:53.940Z"
+ },
  "ds": {
   "quando": "2026-10-26T03:10:42.366Z",
   "esito": "ok",
@@ -64,10 +74,20 @@
   "esito": "ok",
   "ultimo_ok": "2026-10-26T03:10:42.366Z"
  },
+ "francoforte": {
+  "quando": "2026-10-26T11:52:53.940Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-26T11:52:53.940Z"
+ },
  "gallica": {
   "quando": "2026-10-26T03:10:42.366Z",
   "esito": "ok",
   "ultimo_ok": "2026-10-26T03:10:42.366Z"
+ },
+ "handrit": {
+  "quando": "2026-10-26T11:52:53.940Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-26T11:52:53.940Z"
  },
  "heidelberg": {
   "quando": "2026-10-26T03:10:42.366Z",
@@ -114,6 +134,11 @@
   "esito": "errore: manifesti letti in parte (mancano 241): riprenderà alla prossima esecuzione",
   "ultimo_ok": null
  },
+ "manuscriptorium": {
+  "quando": "2026-10-26T11:52:53.940Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-26T11:52:53.940Z"
+ },
  "montecassino": {
   "quando": "2026-10-26T02:47:39.646Z",
   "esito": "ok",
@@ -134,6 +159,11 @@
   "esito": "ok",
   "ultimo_ok": "2026-10-26T04:58:58.161Z"
  },
+ "polona": {
+  "quando": "2026-10-26T11:52:53.940Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-26T11:52:53.940Z"
+ },
  "stoccarda": {
   "quando": "2026-10-26T03:10:42.366Z",
   "esito": "sospesa: manifesti di Marburgo non raggiungibili",
@@ -143,6 +173,11 @@
   "quando": "2026-10-26T08:45:29.000Z",
   "esito": "ok",
   "ultimo_ok": "2026-10-26T08:45:29.000Z"
+ },
+ "tubinga": {
+  "quando": "2026-10-26T11:52:53.940Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-26T11:52:53.940Z"
  },
  "vaticana": {
   "quando": "2026-10-26T10:52:46.492Z",
