@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T19:56:29.433Z",
+ "aggiornato": "2026-10-26T20:36:21.709Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -304,8 +304,8 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 0,
-   "esito": "errore: manifesti letti in parte (mancano 8524): riprenderà alla prossima esecuzione"
+   "codici": 1,
+   "esito": "errore: manifesti letti in parte (mancano 7273): riprenderà alla prossima esecuzione"
   },
   "getty": {
    "nome": "J. Paul Getty Museum, Los Angeles: manoscritti (data.getty.edu; manifesti media.getty.edu)",
@@ -324,7 +324,7 @@
   },
   "archive": {
    "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, John Carter Brown Library, Newberry Library, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
-   "codici": 85,
+   "codici": 86,
    "esito": "ok"
   },
   "crossasia": {
@@ -353,7 +353,7 @@
    "esito": "ok"
   }
  },
- "totale": 12317,
+ "totale": 12319,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -129710,6 +129710,38 @@
    "pagina": "https://www.manuscriptorium.com/apps/index.php?direct=record&pid=ZG____-BUZG__ZS_4484_35__41IR6X2-pl",
    "licenza": "CC BY-NC-SA",
    "immagini": null
+  },
+  {
+   "id": "nli-990001713580205171",
+   "fonte": "nli",
+   "biblioteca": "Bibliotheca Rosenthaliana, Allard Pierson, Universiteit van Amsterdam (copia digitale della National Library of Israel)",
+   "citta": "Amsterdam",
+   "segnatura": "NLI 990001713580205171",
+   "datazione": "תקנ\"ח (1798)",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Catonis disticha : תרגום של פתגמי קאטו. ; מנחת יעקב ; מטעמי יעקב",
+   "autori": [
+    {
+     "id": "disticha-catonis",
+     "autore": "Disticha Catonis",
+     "latino": "Disticha Catonis",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Catonis disticha : תרגום של פתגמי קאטו. ; מנחת יעקב ; מטעמי יעקב»"
+    }
+   ],
+   "manifest": "https://iiif.nli.org.il/IIIFv21/DOCID/PNX_MANUSCRIPTS990001713580205171-1/manifest",
+   "pagina": "https://www.nli.org.il/en/manuscripts/NNL_ALEPH990001713580205171/NLI",
+   "licenza": "Bibliotheca Rosenthaliana, Allard Pierson, Universiteit van Amsterdam, immagini della National Library of Israel (Ktiv): uso didattico consentito (In Copyright - Educational Use Permitted)",
+   "immagini": null,
+   "anteprima": "https://iiif.nli.org.il/IIIFv21/FL59107469/full/,300/0/default.jpg"
   },
   {
    "id": "mns-dspmns-dspsd_hs_43_______1tu0hz9-de",
@@ -346428,6 +346460,37 @@
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/d5ab9ab2-97ce-4379-b2e1-6794b3dd95d5/",
    "licenza": "CC BY 4.0",
    "immagini": null
+  },
+  {
+   "id": "ia-journaldusiegede00ocon",
+   "fonte": "archive",
+   "biblioteca": "John Carter Brown Library",
+   "citta": "Providence",
+   "segnatura": "journaldusiegede00ocon",
+   "datazione": "1779",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Journal du siege de Savannah septembre, et Octobre 1779. : Avec des observations de Mr. le C[om]te d'Estaing",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «O'Connor, Antoine François Térence, 1750-1781 ; Estaing, Charles…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/journaldusiegede00ocon/manifest.json",
+   "pagina": "https://archive.org/details/journaldusiegede00ocon",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 112
   },
   {
    "id": "mdc-ms-arabic-00738",

@@ -1,10 +1,10 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T19:56:29.433Z",
- "totale": 500963,
- "con_autori": 27653,
- "miniati": 10667,
- "musica": 13595,
+ "aggiornato": "2026-10-26T20:36:21.709Z",
+ "totale": 502255,
+ "con_autori": 27661,
+ "miniati": 10742,
+ "musica": 13601,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
   "id",
@@ -26,11 +26,11 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 180995
+   "codici": 180988
   },
   "la": {
    "nome": "latino",
-   "codici": 74506
+   "codici": 74530
   },
   "?": {
    "nome": "lingua non indicata",
@@ -38,35 +38,35 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 28301
+   "codici": 28314
   },
   "de": {
    "nome": "tedesco",
-   "codici": 22070
+   "codici": 22077
   },
   "ar": {
    "nome": "arabo",
-   "codici": 22040
+   "codici": 22049
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 18216
+   "codici": 18370
   },
   "pi": {
    "nome": "pali",
    "codici": 17847
   },
+  "he": {
+   "nome": "ebraico",
+   "codici": 15219
+  },
   "zh": {
    "nome": "cinese",
-   "codici": 14142
+   "codici": 14088
   },
   "grc": {
    "nome": "greco",
    "codici": 14019
-  },
-  "he": {
-   "nome": "ebraico",
-   "codici": 13986
   },
   "lo": {
    "nome": "lao",
@@ -78,7 +78,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10394
+   "codici": 10468
   },
   "pl": {
    "nome": "polacco",
@@ -86,11 +86,11 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 7485
+   "codici": 7505
   },
   "en": {
    "nome": "inglese",
-   "codici": 7038
+   "codici": 7054
   },
   "bo": {
    "nome": "tibetano",
@@ -102,11 +102,11 @@
   },
   "pt": {
    "nome": "portoghese",
-   "codici": 4878
+   "codici": 4887
   },
   "fa": {
    "nome": "persiano",
-   "codici": 4777
+   "codici": 4778
   },
   "ca": {
    "nome": "catalano",
@@ -122,7 +122,7 @@
   },
   "ko": {
    "nome": "coreano",
-   "codici": 2628
+   "codici": 2630
   },
   "tr": {
    "nome": "turco",
@@ -150,7 +150,7 @@
   },
   "nl": {
    "nome": "nederlandese",
-   "codici": 740
+   "codici": 768
   },
   "da": {
    "nome": "danese",
@@ -194,15 +194,15 @@
   },
   "myn": {
    "nome": "lingue maya",
-   "codici": 143
+   "codici": 149
+  },
+  "nah": {
+   "nome": "nahuatl",
+   "codici": 132
   },
   "mnc": {
    "nome": "mancese",
    "codici": 123
-  },
-  "nah": {
-   "nome": "nahuatl",
-   "codici": 122
   },
   "cy": {
    "nome": "gallese",
@@ -214,7 +214,7 @@
   },
   "cai": {
    "nome": "altre lingue indigene di Mesoamerica e America centrale",
-   "codici": 71
+   "codici": 83
   },
   "ga": {
    "nome": "irlandese",
@@ -250,31 +250,31 @@
   },
   "sai": {
    "nome": "altre lingue indigene del Sud America",
-   "codici": 22
+   "codici": 24
+  },
+  "alg": {
+   "nome": "lingue algonchine",
+   "codici": 17
+  },
+  "oto": {
+   "nome": "otomí e lingue otomiane",
+   "codici": 15
   },
   "lt": {
    "nome": "lt",
    "codici": 15
   },
-  "alg": {
-   "nome": "lingue algonchine",
+  "zap": {
+   "nome": "zapoteco",
    "codici": 13
   },
   "km": {
    "nome": "khmer",
    "codici": 12
   },
-  "oto": {
-   "nome": "otomí e lingue otomiane",
-   "codici": 11
-  },
-  "zap": {
-   "nome": "zapoteco",
-   "codici": 10
-  },
   "gn": {
    "nome": "guaraní",
-   "codici": 9
+   "codici": 10
   },
   "ban": {
    "nome": "balinese",
@@ -296,6 +296,10 @@
    "nome": "sundanese",
    "codici": 4
   },
+  "iro": {
+   "nome": "lingue irochesi",
+   "codici": 4
+  },
   "hr": {
    "nome": "hr",
    "codici": 3
@@ -303,10 +307,6 @@
   "ro": {
    "nome": "ro",
    "codici": 3
-  },
-  "iro": {
-   "nome": "lingue irochesi",
-   "codici": 2
   },
   "nai": {
    "nome": "altre lingue indigene del Nord America",
@@ -356,7 +356,7 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 6530
+   "codici": 6532
   },
   "classico-greco": {
    "nome": "classici greci",
@@ -364,7 +364,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 14284
+   "codici": 14290
   },
   "medievale": {
    "nome": "autori medievali",
@@ -374,11 +374,11 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 499283
+   "codici": 500576
   },
   "carta": {
    "nome": "carte manoscritte",
-   "codici": 1626
+   "codici": 1625
   },
   "carta_stampa": {
    "nome": "carte a stampa",
@@ -396,7 +396,7 @@
    "nome": "Terenzio",
    "latino": "Terentius",
    "categoria": "classico-latino",
-   "codici": 215
+   "codici": 216
   },
   "lucrezio": {
    "nome": "Lucrezio",
@@ -732,7 +732,7 @@
    "nome": "Disticha Catonis",
    "latino": "Disticha Catonis",
    "categoria": "classico-latino",
-   "codici": 64
+   "codici": 65
   },
   "catone": {
    "nome": "Catone il Censore",
@@ -1314,7 +1314,7 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 2834
+   "codici": 2837
   },
   "girolamo": {
    "nome": "Girolamo",
@@ -1356,7 +1356,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 6598
+   "codici": 6601
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1513,6 +1513,7 @@
   "Aga Khan Museum AKM79-80, Cambridge",
   "Aga Khan Museum AKM155-6, Cambridge",
   "Aga Khan Museum, Cambridge",
+  "AIX Heb. (copia digitale della National Library of Israel)",
   "Akten XIV, Scheurl'sches Familienarchiv Nürnberg",
   "All Souls College, Oxford",
   "Allard Pierson, Universiteit van Amsterdam",
@@ -1860,6 +1861,7 @@
   "F (copia digitale della National Library of Israel)",
   "Faculty of Classics Archives, University of Cambridge",
   "FERRARA TT (copia digitale della National Library of Israel)",
+  "FIR RICC (copia digitale della National Library of Israel)",
   "Fitzwilliam Museum, Cambridge",
   "Fondation Auguste Escoffier",
   "Fondation Barbier-Mueller pour l'étude de la poésie italienne de la Renaissance, Genève",
@@ -1872,9 +1874,14 @@
   "Forschungsbibliothek Gotha",
   "Forschungsbibliothek, Gotha",
   "Fragile Palm Leaves Foundation, Nonthaburi (copie del Buddhist Digital Resource Center)",
+  "Frank UB Barth (copia digitale della National Library of Israel)",
   "Frank UB Fol. (copia digitale della National Library of Israel)",
+  "Frank UB Fragm. Hebr. I (copia digitale della National Library of Israel)",
+  "Frank UB Fragm. Hebr. IV (copia digitale della National Library of Israel)",
+  "Frank UB Lat. Oct. (copia digitale della National Library of Israel)",
   "Frank UB Oct. (copia digitale della National Library of Israel)",
   "Frank UB Qu. (copia digitale della National Library of Israel)",
+  "Frank UBFragm. Hebr. III (copia digitale della National Library of Israel)",
   "Františkánská knihovna, Cheb",
   "Free Library of Philadelphia",
   "Free Library of Philadelphia, Cambridge",
@@ -1898,6 +1905,7 @@
   "Gross William L. Tel Aviv Israel Ms. OT. (copia digitale della National Library of Israel)",
   "Gulistan Museum, Cambridge",
   "Gurukul Kangri (Deemed to be University), Haridwar",
+  "Hamburg Mus Oct. (copia digitale della National Library of Israel)",
   "Harris Manchester College, Oxford",
   "Harry Ransom Center, University of Texas, Austin",
   "Harvard Law School Library, Harvard University, Cambridge (Massachusetts)",
@@ -1992,6 +2000,8 @@
   "Jesus College, Oxford",
   "jetzt Wien ÖNB Cod. Ser.n. 2595, Lilienfeld",
   "Jihočeská vědecká knihovna v Českých Budějovicích, Zlatá Koruna",
+  "JM (copia digitale della National Library of Israel)",
+  "John Carter Brown Library, Providence",
   "John Rylands Research Institute and Library, University of Manchester",
   "John Rylands University Library of Manchester, Cambridge",
   "JTS Acc. (copia digitale della National Library of Israel)",
@@ -2243,6 +2253,7 @@
   "Österreichische Nationalbibliothek, Wien",
   "Österreichisches Staatsarchiv, Wien",
   "OX (copia digitale della National Library of Israel)",
+  "OX Corpus Christi (copia digitale della National Library of Israel)",
   "P. Heid. Inv. G. 8 (P.Sarap. 13, Heidelberger Papyrussammlung",
   "P. Heid. Inv. G. 14 (P.Bingen 70 B - C, Heidelberger Papyrussammlung",
   "P. Heid. Inv. G. 15 (P.Bingen 70 A, Heidelberger Papyrussammlung",
@@ -4213,17 +4224,17 @@
   },
   "ndl": {
    "nome": "National Diet Library, Tokyo (dl.ndl.go.jp)",
-   "codici": 42872,
-   "carte": 51,
+   "codici": 42809,
+   "carte": 50,
    "carte_stampa": 0,
-   "miniati": 1651,
+   "miniati": 1632,
    "musica": 194,
    "con_autori": 0,
    "lingue": {
-    "ja": 40318,
-    "zh": 2459,
+    "ja": 40311,
+    "zh": 2405,
     "ko": 89,
-    "?": 6,
+    "?": 4,
     "km": 1
    },
    "esito": "ok",
@@ -4867,38 +4878,38 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 7020,
+   "codici": 8255,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 460,
+   "miniati": 551,
    "musica": 0,
-   "con_autori": 9,
+   "con_autori": 13,
    "lingue": {
-    "he": 7017,
-    "xx": 1030,
-    "ar": 389,
-    "fa": 78,
+    "he": 8250,
+    "xx": 1185,
+    "ar": 398,
+    "fa": 79,
     "tr": 11,
     "grc": 7,
-    "es": 9,
-    "it": 78,
-    "pt": 4,
-    "nl": 2,
-    "la": 12,
-    "de": 47,
+    "es": 14,
+    "it": 87,
+    "de": 54,
+    "nl": 30,
+    "pt": 7,
+    "la": 15,
+    "fr": 3,
     "ru": 4,
     "en": 4,
     "pl": 1,
     "ka": 1,
-    "fr": 2,
     "ca": 1,
     "oc": 2
    },
-   "esito": "errore: manifesti letti in parte (mancano 8524): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 7273): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
-   "pezzi_voci": 9,
+   "pezzi_voci": 11,
    "indice": [
     "indice/nli-0.json"
    ]
@@ -4976,25 +4987,25 @@
   },
   "archive": {
    "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, John Carter Brown Library, Newberry Library, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
-   "codici": 15677,
+   "codici": 15797,
    "carte": 70,
    "carte_stampa": 0,
-   "miniati": 179,
-   "musica": 14,
-   "con_autori": 106,
+   "miniati": 182,
+   "musica": 20,
+   "con_autori": 110,
    "lingue": {
     "tr": 247,
-    "it": 1147,
-    "xx": 8224,
-    "la": 142,
+    "it": 1158,
+    "xx": 8223,
+    "la": 163,
     "grc": 10,
-    "fr": 318,
+    "fr": 330,
     "de": 14,
-    "es": 10,
-    "en": 97,
-    "?": 20,
+    "es": 79,
+    "en": 113,
+    "?": 22,
     "oc": 1,
-    "pt": 8,
+    "pt": 14,
     "da": 2,
     "zh": 4,
     "hu": 1,
@@ -5005,9 +5016,18 @@
     "fa": 481,
     "ru": 1,
     "hy": 3,
-    "ko": 1219,
+    "ko": 1221,
     "he": 30,
     "sa": 3198,
+    "alg": 4,
+    "sai": 2,
+    "cai": 12,
+    "nah": 10,
+    "myn": 6,
+    "zap": 3,
+    "gn": 1,
+    "oto": 4,
+    "iro": 2,
     "oji": 1,
     "pi": 31,
     "km": 1
@@ -5420,7 +5440,7 @@
   {
    "file": "indice/ndl-2.json",
    "fonte": "ndl",
-   "righe": 2872
+   "righe": 2809
   },
   {
    "file": "indice/kokusho-0.json",
@@ -5560,7 +5580,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 7020
+   "righe": 8255
   },
   {
    "file": "indice/getty-0.json",
@@ -5580,7 +5600,7 @@
   {
    "file": "indice/archive-0.json",
    "fonte": "archive",
-   "righe": 15677
+   "righe": 15797
   },
   {
    "file": "indice/crossasia-0.json",
@@ -8119,6 +8139,7 @@
   "cambridge",
   "cambridge",
   "cambridge",
+  "gerusalemme",
   "norimberga",
   "oxford",
   "amsterdam",
@@ -8466,6 +8487,7 @@
   "gerusalemme",
   "cambridge",
   "gerusalemme",
+  "gerusalemme",
   "cambridge",
   "villeneuve-loubet",
   "ginevra",
@@ -8478,6 +8500,11 @@
   "gotha",
   "gotha",
   "nonthaburi",
+  "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
   "gerusalemme",
   "gerusalemme",
   "gerusalemme",
@@ -8504,6 +8531,7 @@
   "gerusalemme",
   "cambridge",
   "haridwar",
+  "gerusalemme",
   "oxford",
   "austin",
   "cambridge-ma",
@@ -8598,6 +8626,8 @@
   "oxford",
   "lilienfeld",
   "zlata-koruna",
+  "gerusalemme",
+  "providence",
   "manchester",
   "cambridge",
   "gerusalemme",
@@ -8848,6 +8878,7 @@
   "vienna",
   "vienna",
   "vienna",
+  "gerusalemme",
   "gerusalemme",
   "heidelberg",
   "heidelberg",
