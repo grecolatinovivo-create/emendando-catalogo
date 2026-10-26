@@ -20,6 +20,9 @@ on:
         description: "Salvare i risultati nel repository"
         type: boolean
         default: true
+      da_run:
+        description: "Solo confronto: id di un'esecuzione precedente da cui prendere le letture (vuoto = leggere ora)"
+        default: ""
       unisci:
         description: "Tenere i risultati già salvati dei codici che questa esecuzione non rilegge (per ripetere un lotto)"
         type: boolean
@@ -95,6 +98,7 @@ jobs:
 
   leggi:
     needs: prepara
+    if: inputs.da_run == ''
     runs-on: ubuntu-latest
     timeout-minutes: 350
     strategy:
@@ -153,6 +157,8 @@ jobs:
         with:
           pattern: letture-*
           path: letture
+          run-id: ${{ inputs.da_run || github.run_id }}
+          github-token: ${{ github.token }}
       - uses: actions/download-artifact@v4
         with:
           name: indice-corpora
@@ -192,6 +198,6 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          for id in $(gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts?per_page=100" --jq '.artifacts[] | select(.name | startswith("letture-")) | .id'); do
+          for id in $(gh api "repos/${{ github.repository }}/actions/runs/${{ inputs.da_run || github.run_id }}/artifacts?per_page=100" --jq '.artifacts[] | select(.name | startswith("letture-")) | .id'); do
             gh api -X DELETE "repos/${{ github.repository }}/actions/artifacts/$id" && echo "cancellato $id"
           done
