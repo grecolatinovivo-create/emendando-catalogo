@@ -13,6 +13,7 @@ import { NOMI_LINGUE } from "./lingue.mjs";
 
 export const DIR = "data/catalogo";
 export const COMPAT = "data/manoscritti.json";
+export const LUOGHI = "data/luoghi.json";
 export const VOCI_PER_PEZZO = 800, RIGHE_INDICE = 20000;
 export const CAMPI = ["id", "segnatura", "biblioteca", "lingue", "secolo_da", "secolo_a", "autori", "titolo", "opere", "truculentus", "lingua_dedotta"];
 export const CATEGORIE = { "classico-latino": "classici latini", "classico-greco": "classici greci", cristiano: "autori cristiani", medievale: "autori medievali" };
@@ -27,6 +28,18 @@ export const pezzoDi = (id, pezzi) => fnv1a(id) % pezzi;
 export const nomeBib = m => [m.biblioteca, m.citta && !(m.biblioteca || "").includes(m.citta) ? m.citta : null].filter(Boolean).join(", ") || "Biblioteca non indicata";
 const naturale = (a, b) => String(a).localeCompare(String(b), "it", { numeric: true, sensitivity: "base" });
 const breve = (s, n) => { s = String(s || "").replace(/\s+/g, " ").trim(); return s.length > n ? s.slice(0, n - 1).trimEnd() + "…" : s; };
+
+// luogo (città) di una voce, per la mappa del catalogo: vedi la nota di data/luoghi.json
+export function leggiLuoghi(file = LUOGHI) { try { return JSON.parse(fs.readFileSync(file, "utf8")); } catch (e) { return null; } }
+export function luogoDi(v, L) {
+  if (!L) return null;
+  const cerca = (tab, k) => (k && Object.prototype.hasOwnProperty.call(tab || {}, k) && L.luoghi[tab[k]]) ? tab[k] : null;
+  const coda = String(v.biblioteca || "").split(",").pop().trim();
+  const senzaParentesi = x => String(x || "").replace(/\s*\([^()]*\)\s*$/, "").trim();
+  return cerca(L.biblioteche, nomeBib(v)) || cerca(L.biblioteche, v.biblioteca) || cerca(L.citta, v.citta) || cerca(L.citta, coda)
+    || cerca(L.citta, senzaParentesi(v.citta)) || cerca(L.citta, senzaParentesi(coda))
+    || (!v.citta || !String(v.citta).trim() ? cerca(L.fonti, v.fonte) : null);
+}
 
 // voce del catalogo -> riga dell'indice
 export function riga(v, bib) {
@@ -50,7 +63,7 @@ function scriviSeCambia(file, testo, stat) {
 
 /* manoscritti: voci del catalogo (già ordinate); opz: { fonti: [ordine], nomi: {fonte: nome}, esito: {fonte: esito}, autori: AUTORI }
    restituisce { conteggio, conAutori, lingue (per fonte), cambiato, kb, file } */
-export function scriviCatalogo(manoscritti, { fonti, nomi = {}, esito = {}, autori = [], dir = DIR, compat: fileCompat = COMPAT } = {}) {
+export function scriviCatalogo(manoscritti, { fonti, nomi = {}, esito = {}, autori = [], dir = DIR, compat: fileCompat = COMPAT, luoghi = leggiLuoghi() } = {}) {
   const DIR = dir, COMPAT = fileCompat;
   const stat = { kb: 0, file: 0, cambiati: 0, scritti: new Set() };
   const perFonte = {};
@@ -60,6 +73,11 @@ export function scriviCatalogo(manoscritti, { fonti, nomi = {}, esito = {}, auto
   const idxBib = v => { const n = nomeBib(v); if (!bibIdx.has(n)) { bibIdx.set(n, biblioteche.length); biblioteche.push(n); } return bibIdx.get(n); };
   // biblioteche in ordine alfabetico (indici stabili tra una raccolta e l'altra se non cambiano i nomi)
   for (const n of [...new Set(manoscritti.map(nomeBib))].sort(naturale)) { bibIdx.set(n, biblioteche.length); biblioteche.push(n); }
+  // luogo di ogni biblioteca (id in «luoghi», null se non risolto)
+  const bibLuogo = biblioteche.map(() => null);
+  if (luoghi) for (const v of manoscritti) { const i = bibIdx.get(nomeBib(v)); if (bibLuogo[i] === null) bibLuogo[i] = luogoDi(v, luoghi); }
+  const usati = [...new Set(bibLuogo.filter(Boolean))].sort();
+  const luoghiIndice = luoghi ? Object.fromEntries(usati.map(id => { const l = luoghi.luoghi[id]; return [id, { nome: l.nome, ...(l.en ? { en: l.en } : {}), paese: l.paese, lat: l.lat, lon: l.lon }]; })) : null;
   const conteggio = {}, conAutori = {}, lingueFonte = {}, pezzi = [], infoFonti = {};
   const lingue = {}, categorie = {}, contaAutori = {};
   for (const f of ordine) {
@@ -92,12 +110,14 @@ export function scriviCatalogo(manoscritti, { fonti, nomi = {}, esito = {}, auto
     versione: 2, aggiornato: null, totale: manoscritti.length, con_autori: manoscritti.filter(v => v.autori.length).length,
     nota: "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; " +
       "«biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte " +
-      "(data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
+      "(data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
     campi: CAMPI, hash: "fnv1a-32",
     lingue: Object.fromEntries(Object.entries(lingue).sort((a, b) => b[1] - a[1]).map(([k, n]) => [k, { nome: k === "?" ? "lingua non indicata" : NOMI_LINGUE[k] || k, codici: n }])),
     categorie: Object.fromEntries(Object.entries(CATEGORIE).map(([k, nome]) => [k, { nome, codici: categorie[k] || 0 }])),
     autori: nomiAutori, biblioteche, fonti: infoFonti, pezzi,
   };
+  // luoghi delle biblioteche (mappa): «biblioteche_luogo» è parallelo a «biblioteche», con l'id del luogo o null
+  if (luoghiIndice) { indice.luoghi = luoghiIndice; indice.biblioteche_luogo = bibLuogo; }
   // l'indice si riscrive (con la data) solo se cambia qualcosa
   const fileIndice = path.join(DIR, "indice.json");
   let vecchio = null; try { vecchio = JSON.parse(fs.readFileSync(fileIndice, "utf8")); } catch (e) {}
