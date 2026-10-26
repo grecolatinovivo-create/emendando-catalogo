@@ -95,10 +95,26 @@ export async function scansionaKokusho({ minuti = 30, soloCache = false } = {}) 
   return st;
 }
 
+// sigle delle istituzioni (岡山大蔵池田, 東北大狩野マイクロ…) -> nome per esteso: data/kokusho-istituti.json, sigla -> { it, ja, citta, copia }
+// (nomi ricavati dal campo «collection» delle schede complete, api/biblioDetail/<bid>). Sigla sconosciuta: resta com'è, «(Giappone)».
+export const FILE_ISTITUTI = "data/kokusho-istituti.json";
+let ISTITUTI = null;
+export function istituti() {
+  if (!ISTITUTI) { try { ISTITUTI = JSON.parse(fs.readFileSync(FILE_ISTITUTI, "utf8")).istituti || {}; } catch (e) { ISTITUTI = {}; } }
+  return ISTITUTI;
+}
+// sigla -> { biblioteca, citta }: «Università di Okayama, fondo Ikeda (岡山大学附属図書館 池田家文庫)», «Okayama»
+export function bibliotecaKokusho(sigla, tab = istituti()) {
+  if (!sigla) return { biblioteca: "Kokusho Database (NIJL)", citta: "Giappone" };
+  const t = tab[sigla];
+  if (!t || !t.it) return { biblioteca: `${sigla} (Giappone)`, citta: "Giappone" };
+  return { biblioteca: t.it + (t.ja ? ` (${t.ja})` : "") + (t.copia ? ` (${t.copia})` : ""), citta: t.citta || "Giappone" };
+}
+
 export function recordKokusho(st = leggiStato()) {
   return Object.entries(st.voci || {}).filter(([, v]) => v && !NON_LIBRARI_JA.test(v[0] || "")).map(([bid, v]) => {
     const anno = annoKokusho(v[3]);
-    return { fonte: "kokusho", id: "nijl-" + bid, citta: "Giappone", biblioteca: v[1] ? `${v[1]} (Kokusho Database, NIJL)` : "Kokusho Database (NIJL)",
+    return { fonte: "kokusho", id: "nijl-" + bid, ...bibliotecaKokusho(v[1]),
       segnatura: v[2] || "bid " + bid, datazione: v[3] ? (anno && !/\b1[0-9]{3}\b/.test(v[3]) ? `${v[3]} (${anno})` : v[3]) : null, titolo: v[0],
       autori_fonte: v[4] ? [v[4].replace(/／/g, " ")] : [], descrizione: null, lingue: ["ja"],
       manifest: `${BASE}/biblio/${bid}/manifest`, pagina: `${BASE}/biblio/${bid}`, licenza: "condizioni del proprietario (kokusho.nijl.ac.jp/page/usage.html)" };

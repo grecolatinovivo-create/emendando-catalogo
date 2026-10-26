@@ -849,6 +849,12 @@ test("Kokusho (NIJL): ere giapponesi, solo manoscritti con immagini proprie, fuo
   const [r] = recordKokusho({ voci: { 100227349: [...compattaKokusho(s), 1] } });
   assert.equal(r.id, "nijl-100227349"); assert.equal(r.manifest, "https://kokusho.nijl.ac.jp/biblio/100227349/manifest");
   assert.equal(r.datazione, "宝暦１２ (1762)"); assert.deepEqual(r.autori_fonte, ["伴 直方"]); assert.deepEqual(voce(r, A).secolo, [18, 18]);
+  // sigle delle istituzioni -> nome per esteso (data/kokusho-istituti.json)
+  const { bibliotecaKokusho } = await import("../scripts/fonti/kokusho.mjs");
+  assert.equal(r.biblioteca, "Biblioteca civica di Ōzu, fondo Yano Harumichi (大洲市立図書館 矢野玄道文庫)"); assert.equal(r.citta, "Ōzu");
+  assert.deepEqual(bibliotecaKokusho("岡山大蔵池田"), { biblioteca: "Università di Okayama, fondo Ikeda (岡山大学図書館 池田家文庫)", citta: "Okayama" });
+  assert.equal(bibliotecaKokusho("東北大狩野マイクロ").biblioteca, "Università Tōhoku, fondo Kanō (東北大学附属図書館 狩野文庫) (microfilm)");
+  assert.deepEqual(bibliotecaKokusho("ignota"), { biblioteca: "ignota (Giappone)", citta: "Giappone" });
 });
 
 test("Auckland: codici medievali e orientali dalla collezione di CONTENTdm, fuori lettere e carte d'archivio", async () => {

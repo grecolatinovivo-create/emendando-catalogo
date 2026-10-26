@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T06:05:07.860Z",
+ "aggiornato": "2026-10-26T06:19:01.192Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -125,6 +125,36 @@
  },
  "totale": 10235,
  "manoscritti": [
+  {
+   "id": "nijl-100319217",
+   "fonte": "kokusho",
+   "biblioteca": "Accademia del Giappone, documenti di Kawamoto Kōmin (日本学士院 川本幸民関係資料)",
+   "citta": "Tokyo",
+   "segnatura": "DIG-NIGI-00520",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "ja"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "伊曽保物語／上・中・下",
+   "autori": [
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "titolo: «伊曽保物語／上・中・下»"
+    }
+   ],
+   "manifest": "https://kokusho.nijl.ac.jp/biblio/100319217/manifest",
+   "pagina": "https://kokusho.nijl.ac.jp/biblio/100319217",
+   "licenza": "condizioni del proprietario (kokusho.nijl.ac.jp/page/usage.html)",
+   "immagini": null
+  },
   {
    "id": "akl-17669",
    "fonte": "auckland",
@@ -107106,6 +107136,36 @@
    "manifest": "https://tecabml.contentdm.oclc.org/iiif/san-marco:11883/manifest.json",
    "pagina": "https://tecabml.contentdm.oclc.org/digital/collection/san-marco/id/11883",
    "licenza": "CC BY-NC-SA",
+   "immagini": null
+  },
+  {
+   "id": "nijl-100438419",
+   "fonte": "kokusho",
+   "biblioteca": "Biblioteca Seikadō (静嘉堂文庫)",
+   "citta": "Tokyo",
+   "segnatura": "DIG-SEKD-71769",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "ja"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "伊曾保物語",
+   "autori": [
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "titolo: «伊曾保物語»"
+    }
+   ],
+   "manifest": "https://kokusho.nijl.ac.jp/biblio/100438419/manifest",
+   "pagina": "https://kokusho.nijl.ac.jp/biblio/100438419",
+   "licenza": "condizioni del proprietario (kokusho.nijl.ac.jp/page/usage.html)",
    "immagini": null
   },
   {
@@ -311908,6 +311968,66 @@
    "immagini": null
   },
   {
+   "id": "nijl-200020261",
+   "fonte": "kokusho",
+   "biblioteca": "Istituto nazionale di letteratura giapponese, fondo Ukai (国文学研究資料館 鵜飼文庫)",
+   "citta": "Tachikawa",
+   "segnatura": "96-632",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "ja"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "北陲杞憂／二十五言／清水筆語",
+   "autori": [
+    {
+     "id": "epitteto",
+     "autore": "Epitteto",
+     "latino": "Epictetus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Manuale"
+     ],
+     "corrispondenza": "titolo: «北陲杞憂／二十五言／清水筆語»"
+    }
+   ],
+   "manifest": "https://kokusho.nijl.ac.jp/biblio/200020261/manifest",
+   "pagina": "https://kokusho.nijl.ac.jp/biblio/200020261",
+   "licenza": "condizioni del proprietario (kokusho.nijl.ac.jp/page/usage.html)",
+   "immagini": null
+  },
+  {
+   "id": "nijl-200020263",
+   "fonte": "kokusho",
+   "biblioteca": "Istituto nazionale di letteratura giapponese, fondo Ukai (国文学研究資料館 鵜飼文庫)",
+   "citta": "Tachikawa",
+   "segnatura": "96-632",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "ja"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "重刻二十五言",
+   "autori": [
+    {
+     "id": "epitteto",
+     "autore": "Epitteto",
+     "latino": "Epictetus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Manuale"
+     ],
+     "corrispondenza": "titolo: «重刻二十五言»"
+    }
+   ],
+   "manifest": "https://kokusho.nijl.ac.jp/biblio/200020263/manifest",
+   "pagina": "https://kokusho.nijl.ac.jp/biblio/200020263",
+   "licenza": "condizioni del proprietario (kokusho.nijl.ac.jp/page/usage.html)",
+   "immagini": null
+  },
+  {
    "id": "bod-d5ab9ab2-97ce-4379-b2e1-6794b3dd95d5",
    "fonte": "bodleian",
    "biblioteca": "Jesus College",
@@ -328370,6 +328490,36 @@
    "manifest": "https://cdm16003.contentdm.oclc.org/iiif/p15150coll7:51784/manifest.json",
    "pagina": "https://search.digital-scriptorium.org/catalog/DS9977",
    "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "nijl-100209924",
+   "fonte": "kokusho",
+   "biblioteca": "Università femminile Notre Dame Seishin (ノートルダム清心女子大学附属図書館)",
+   "citta": "Okayama",
+   "segnatura": "332-0316-004",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "ja"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "伊曽保物語",
+   "autori": [
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "titolo: «伊曽保物語»"
+    }
+   ],
+   "manifest": "https://kokusho.nijl.ac.jp/biblio/100209924/manifest",
+   "pagina": "https://kokusho.nijl.ac.jp/biblio/100209924",
+   "licenza": "condizioni del proprietario (kokusho.nijl.ac.jp/page/usage.html)",
    "immagini": null
   },
   {
@@ -372864,156 +373014,6 @@
    "licenza": "CC BY-NC 4.0",
    "immagini": null,
    "anteprima": "https://e-codices.ch/loris/zbz/zbz-Ms-Heid-0166/zbz-Ms-Heid-0166_0001r.jp2/full/,150/0/default/jpg"
-  },
-  {
-   "id": "nijl-100209924",
-   "fonte": "kokusho",
-   "biblioteca": "ノートルダム清心 (Kokusho Database, NIJL)",
-   "citta": "Giappone",
-   "segnatura": "332-0316-004",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [
-    "ja"
-   ],
-   "lingua_dedotta": false,
-   "titolo": "伊曽保物語",
-   "autori": [
-    {
-     "id": "esopo",
-     "autore": "Esopo",
-     "latino": "Aesopus",
-     "categoria": "classico-greco",
-     "opere": [
-      "Favole"
-     ],
-     "corrispondenza": "titolo: «伊曽保物語»"
-    }
-   ],
-   "manifest": "https://kokusho.nijl.ac.jp/biblio/100209924/manifest",
-   "pagina": "https://kokusho.nijl.ac.jp/biblio/100209924",
-   "licenza": "condizioni del proprietario (kokusho.nijl.ac.jp/page/usage.html)",
-   "immagini": null
-  },
-  {
-   "id": "nijl-200020261",
-   "fonte": "kokusho",
-   "biblioteca": "国文研鵜飼 (Kokusho Database, NIJL)",
-   "citta": "Giappone",
-   "segnatura": "96-632",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [
-    "ja"
-   ],
-   "lingua_dedotta": false,
-   "titolo": "北陲杞憂／二十五言／清水筆語",
-   "autori": [
-    {
-     "id": "epitteto",
-     "autore": "Epitteto",
-     "latino": "Epictetus",
-     "categoria": "classico-greco",
-     "opere": [
-      "Manuale"
-     ],
-     "corrispondenza": "titolo: «北陲杞憂／二十五言／清水筆語»"
-    }
-   ],
-   "manifest": "https://kokusho.nijl.ac.jp/biblio/200020261/manifest",
-   "pagina": "https://kokusho.nijl.ac.jp/biblio/200020261",
-   "licenza": "condizioni del proprietario (kokusho.nijl.ac.jp/page/usage.html)",
-   "immagini": null
-  },
-  {
-   "id": "nijl-200020263",
-   "fonte": "kokusho",
-   "biblioteca": "国文研鵜飼 (Kokusho Database, NIJL)",
-   "citta": "Giappone",
-   "segnatura": "96-632",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [
-    "ja"
-   ],
-   "lingua_dedotta": false,
-   "titolo": "重刻二十五言",
-   "autori": [
-    {
-     "id": "epitteto",
-     "autore": "Epitteto",
-     "latino": "Epictetus",
-     "categoria": "classico-greco",
-     "opere": [
-      "Manuale"
-     ],
-     "corrispondenza": "titolo: «重刻二十五言»"
-    }
-   ],
-   "manifest": "https://kokusho.nijl.ac.jp/biblio/200020263/manifest",
-   "pagina": "https://kokusho.nijl.ac.jp/biblio/200020263",
-   "licenza": "condizioni del proprietario (kokusho.nijl.ac.jp/page/usage.html)",
-   "immagini": null
-  },
-  {
-   "id": "nijl-100319217",
-   "fonte": "kokusho",
-   "biblioteca": "日本学士院川本幸民 (Kokusho Database, NIJL)",
-   "citta": "Giappone",
-   "segnatura": "DIG-NIGI-00520",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [
-    "ja"
-   ],
-   "lingua_dedotta": false,
-   "titolo": "伊曽保物語／上・中・下",
-   "autori": [
-    {
-     "id": "esopo",
-     "autore": "Esopo",
-     "latino": "Aesopus",
-     "categoria": "classico-greco",
-     "opere": [
-      "Favole"
-     ],
-     "corrispondenza": "titolo: «伊曽保物語／上・中・下»"
-    }
-   ],
-   "manifest": "https://kokusho.nijl.ac.jp/biblio/100319217/manifest",
-   "pagina": "https://kokusho.nijl.ac.jp/biblio/100319217",
-   "licenza": "condizioni del proprietario (kokusho.nijl.ac.jp/page/usage.html)",
-   "immagini": null
-  },
-  {
-   "id": "nijl-100438419",
-   "fonte": "kokusho",
-   "biblioteca": "静嘉堂蔵 (Kokusho Database, NIJL)",
-   "citta": "Giappone",
-   "segnatura": "DIG-SEKD-71769",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [
-    "ja"
-   ],
-   "lingua_dedotta": false,
-   "titolo": "伊曾保物語",
-   "autori": [
-    {
-     "id": "esopo",
-     "autore": "Esopo",
-     "latino": "Aesopus",
-     "categoria": "classico-greco",
-     "opere": [
-      "Favole"
-     ],
-     "corrispondenza": "titolo: «伊曾保物語»"
-    }
-   ],
-   "manifest": "https://kokusho.nijl.ac.jp/biblio/100438419/manifest",
-   "pagina": "https://kokusho.nijl.ac.jp/biblio/100438419",
-   "licenza": "condizioni del proprietario (kokusho.nijl.ac.jp/page/usage.html)",
-   "immagini": null
   }
  ]
 }
