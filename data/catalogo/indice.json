@@ -1,7 +1,7 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T16:35:03.576Z",
- "totale": 492039,
+ "aggiornato": "2026-10-26T16:59:04.863Z",
+ "totale": 492038,
  "con_autori": 27221,
  "miniati": 9937,
  "musica": 13525,
@@ -34,7 +34,7 @@
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 28581
+   "codici": 28580
   },
   "fr": {
    "nome": "francese",
@@ -310,7 +310,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 490362
+   "codici": 490361
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -3671,7 +3671,7 @@
     "ja": 40,
     "ko": 523
    },
-   "esito": "errore: LibraryCloud: HTTP 403 (resta il file raccolto dal browser, se c'è)",
+   "esito": "ok",
    "prefissi": [
     "harvard-"
    ],
@@ -4159,14 +4159,14 @@
   },
   "manuscriptorium": {
    "nome": "Manuscriptorium: Národní knihovna České republiky e altre biblioteche (manuscriptorium.com)",
-   "codici": 15169,
+   "codici": 15168,
    "carte": 63,
    "carte_stampa": 0,
    "miniati": 22,
    "musica": 571,
    "con_autori": 1185,
    "lingue": {
-    "?": 1711,
+    "?": 1710,
     "la": 6046,
     "de": 1660,
     "cs": 1136,
@@ -5264,7 +5264,7 @@
   {
    "file": "indice/manuscriptorium-0.json",
    "fonte": "manuscriptorium",
-   "righe": 15169
+   "righe": 15168
   },
   {
    "file": "indice/kbdk-0.json",
