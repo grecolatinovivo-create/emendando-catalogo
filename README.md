@@ -19,6 +19,7 @@ Il catalogo è diviso per fonte, perché comprende decine (e presto centinaia) d
 - `data/gallica-1.json` … `data/gallica-N.json`: raccolta completa di Gallica fatta dal browser, in parti sotto i 50 MB (vedi sotto); si legge anche `data/gallica.json`, se c'è.
 - `data/raccolte.json`: data ed esito dell'ultima raccolta di ogni fonte (per il registro).
 - `docs/BIBLIOTECHE.md`: registro delle biblioteche (agganciate, da agganciare, non raggiungibili). La tabella delle biblioteche agganciate (codici totali, di cui con autori riconosciuti, lingue, avanzamento con le stime dei tempi) si rigenera a ogni raccolta; il resto si scrive a mano.
+- `docs/COPERTURA.md`: censimento delle nazioni del mondo (che cosa è nel catalogo, che cosa è bloccato, quali biblioteche mancano e quali fare per prime).
 - `scripts/`: raccolta (`raccogli.mjs`), scrittura del catalogo diviso (`costruisci.mjs`), lingue e secoli (`lingue.mjs`), registro (`registro.mjs`), richieste di rete (`rete.mjs`), riconoscimento degli autori (`riconosci.mjs`), fonti (`fonti/`), raccolta di Gallica dal browser (`browser/gallica.js`).
 
 ## Fonti

@@ -1,0 +1,584 @@
+# Copertura del catalogo nel mondo
+
+Questo documento dice, nazione per nazione, che cosa c'è nel catalogo e che cosa manca.
+
+È un censimento fatto il 26 ottobre 2026. I numeri dei codici vengono dal catalogo aggiornato il 2026-10-26.
+Le biblioteche che mancano sono state cercate in rete, senza provare i siti uno per uno.
+Dove un dato non è sicuro, è scritto: «non si sa», «stima», «da confermare» o «non verificato».
+
+## Riepilogo
+
+### Nazioni per stato
+
+In tutto 196 nazioni: i 193 stati dell'ONU, la Città del Vaticano, la Palestina e Taiwan.
+
+| Stato | Nazioni |
+|---|---|
+| agganciata | 18 |
+| controllata, niente da agganciare | 51 |
+| controllata, bloccata | 5 |
+| in corso | 28 |
+| non ancora controllata | 94 |
+| **totale** | **196** |
+
+Che cosa vuol dire ogni stato:
+
+- **agganciata**: almeno una biblioteca della nazione è nel catalogo. A volte sono pochi codici arrivati da un'altra fonte: è scritto accanto.
+- **controllata, niente da agganciare**: non risulta nessuna raccolta di codici digitalizzati. Per queste nazioni il controllo è stato fatto a tavolino in questo censimento.
+- **controllata, bloccata**: le biblioteche principali sono state provate e non si possono leggere. Il motivo è scritto accanto.
+- **in corso**: c'è un lavoro aperto oggi su quella nazione (Italia, Spagna, Portogallo, Austria per Vienna, Canada, America Latina e Centro America). Le righe di queste nazioni nel registro possono cambiare presto.
+- **non ancora controllata**: nessuno ha ancora provato le sue biblioteche.
+
+### Le 20 biblioteche mancanti da fare per prime
+
+Tutte hanno priorità alta: molti manoscritti, IIIF aperto (secondo le fonti, non provato da noi), importanza per latino, greco o altre tradizioni.
+Nessuna è già nel catalogo o nel registro delle biblioteche (docs/BIBLIOTECHE.md).
+
+| N. | Biblioteca | Nazione | Indirizzo | Manoscritti digitalizzati |
+|---|---|---|---|---|
+| 1 | BVMM, Bibliothèque virtuelle des manuscrits médiévaux (IRHT-CNRS) | Francia | bvmm.irht.cnrs.fr | oltre 10.000 (stima) |
+| 2 | Manuscriptorium | Repubblica Ceca | www.manuscriptorium.com | decine di migliaia di documenti (stima) |
+| 3 | Polona | Polonia | polona.pl | alcune migliaia |
+| 4 | Parker Library on the Web | Regno Unito | parker.stanford.edu | circa 560 |
+| 5 | Chester Beatty | Irlanda | viewer.cbl.ie | alcune migliaia |
+| 6 | Manchester Digital Collections (John Rylands) | Regno Unito | www.digitalcollections.manchester.ac.uk | alcune migliaia |
+| 7 | KBR, Biblioteca reale del Belgio | Belgio | belgica.kbr.be | alcune migliaia (stima) |
+| 8 | SLUB Dresda | Germania | digital.slub-dresden.de | alcune migliaia |
+| 9 | Wellcome Collection | Regno Unito | wellcomecollection.org/collections | alcune migliaia |
+| 10 | Trinity College Dublin | Irlanda | digitalcollections.tcd.ie | alcune centinaia |
+| 11 | Universitätsbibliothek Frankfurt am Main | Germania | sammlungen.ub.uni-frankfurt.de | alcune migliaia |
+| 12 | handrit.is (Reykjavík e Copenaghen) | Islanda e Danimarca | handrit.is | alcune migliaia |
+| 13 | Alvin (Uppsala, Lund e altre) | Svezia | www.alvin-portal.org | alcune migliaia |
+| 14 | University of Michigan Library | Stati Uniti | quod.lib.umich.edu | oltre 1000 |
+| 15 | Durham, cattedrale e università | Regno Unito | iiif.durham.ac.uk | alcune centinaia |
+| 16 | National Library of Wales | Regno Unito | www.library.wales | alcune centinaia |
+| 17 | Buddhist Digital Resource Center (BDRC) | Stati Uniti (testi del Tibet e dell'Himalaya) | library.bdrc.io | alcune migliaia di manoscritti |
+| 18 | Universitätsbibliothek Tübingen | Germania | idb.ub.uni-tuebingen.de | alcune centinaia |
+| 19 | ULB Darmstadt | Germania | tudigit.ulb.tu-darmstadt.de | oltre 1000 (stima) |
+| 20 | National Library of Scotland | Regno Unito | digital.nls.uk | alcune centinaia |
+
+Restano fuori da questa lista perché sono già nel registro: Cambridge Digital Library (in lavorazione), British Library (bloccata), Det Kongelige Bibliotek, Koninklijke Bibliotheek, Uppsala e Biblioteka Jagiellońska (da verificare), Qatar Digital Library e National Library of Israel (bloccate).
+
+## Come leggere le tabelle
+
+Per ogni area ci sono due tabelle.
+
+La prima tabella elenca le nazioni. Le colonne sono:
+
+- **Stato**: uno dei cinque stati del riepilogo.
+- **Nel catalogo**: le biblioteche della nazione già nel catalogo, con il numero dei codici. Per le nazioni con molte biblioteche ci sono le sei più grandi e il totale.
+- **Provate e non entrate**: biblioteche già provate, con il motivo. Vengono dal registro delle biblioteche (docs/BIBLIOTECHE.md).
+- **Biblioteche che mancano**: i nomi in breve. I dettagli sono nella seconda tabella della stessa area.
+
+La seconda tabella dà i dettagli delle biblioteche che mancano. Le colonne sono:
+
+- **IIIF**: «sì», «no» o «non si sa», secondo quanto risulta dalle fonti.
+- **Manoscritti digitalizzati**: l'ordine di grandezza, se è noto.
+- **Priorità**: alta, media o bassa. Alta vuol dire: molti manoscritti, IIIF aperto, importanza per latino, greco e altre tradizioni.
+
+## Europa occidentale
+
+Francia, Benelux, isole britanniche, Germania, Austria, Svizzera e piccoli stati vicini.
+
+### Nazioni
+
+| Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
+|---|---|---|---|---|
+| Francia | agganciata | Bibliothèque nationale de France, Paris: 76.280; Bibliothèque de l'Arsenal (BnF), Paris: 1.406; Montpellier Méditerranée Métropole - Médiathèque centrale Emile Zola: 978; Bibliothèque Carré d'art / Nîmes: 940; Bibliothèque nationale et universitaire de Strasbourg: 724; Bibliothèque municipale de Rouen: 639; altre 104 biblioteche: 3.228. **Totale: 84.195 codici** | Sorbona: papiri fuori (immagini non più in rete). | BVMM, Lione, Mazarine, BIU Santé |
+| Belgio | non ancora controllata | nessuna | nessuna | KBR, Gand, Lovanio, Flandrica |
+| Paesi Bassi | agganciata | Universiteitsbibliotheek Leiden: 3.586 codici | Koninklijke Bibliotheek dell'Aia: nel registro, da verificare. Leida: papiri fuori (immagini non più in rete). | Utrecht |
+| Lussemburgo | non ancora controllata | nessuna | nessuna | Biblioteca nazionale (poco) |
+| Monaco | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Regno Unito | agganciata | Bodleian Library, Oxford: 9.775; St John's College, Oxford: 141; Christ Church, Oxford: 72; Magdalen College, Oxford: 31; Exeter College, Oxford: 31; Jesus College, Oxford: 20; altre 18 biblioteche: 126. **Totale: 10.196 codici** | British Library: bloccata dal 2023 (attacco informatico). Cambridge Digital Library: in lavorazione (elenco dal browser). International Dunhuang Programme: bloccato. Papiri della British Library e di Ossirinco: fuori. | Parker, Manchester, Wellcome, Durham, Galles, Scozia, Trinity Cambridge, Edimburgo, SOAS, Lambeth, Glasgow |
+| Irlanda | non ancora controllata | nessuna | nessuna | Chester Beatty, Trinity College Dublin, Irish Script on Screen (con la Royal Irish Academy), National Library of Ireland |
+| Germania | agganciata | Bayerische Staatsbibliothek, München: 28.788; Heidelberger Papyrussammlung: 4.633; Staatsbibliothek zu Berlin: 3.296; Universitätsbibliothek Leipzig: 2.677; Universitätsbibliothek Heidelberg: 2.004; Wissenschaftliche Stadtbibliothek Mainz: 618; altre 178 biblioteche: 982. **Totale: 42.998 codici** | Wolfenbüttel, Karlsruhe, Stoccarda: sospese (server non raggiungibili). Treviri: niente IIIF. Papiri di Berlino: fuori (serve un permesso). Papiri di Colonia: in attesa di decisione. | Dresda, Francoforte, Darmstadt, Tubinga, Gottinga, Kassel, Düsseldorf, Friburgo, Würzburg, Fulda, Amburgo, Halle |
+| Austria | in corso | Österreichische Nationalbibliothek, Wien: 3; Österreichisches Staatsarchiv, Wien: 1; Tiroler Landesmuseum Ferdinandeum, Innsbruck: 1; Stiftsbibliothek St. Paul im Lavanttal, St. Paul in Kärnten: 1. **Totale: 6 codici** (pochi codici, arrivati da un'altra fonte) | Österreichische Nationalbibliothek: bloccata ai server (da fare dal browser). Papiri di Vienna: da provare. | Le vede il lavoro in corso. |
+| Svizzera | agganciata | Stiftsbibliothek, St. Gallen: 956; Universitätsbibliothek, Basel: 305; Fondation Martin Bodmer, Cologny: 180; Bibliothèque cantonale jurassienne, Porrentruy: 121; Bibliothèque de Genève: 108; Stiftsbibliothek, Einsiedeln: 79; altre 78 biblioteche: 972. **Totale: 2.721 codici** | Ginevra: papiri fuori. | Nessuna di rilievo: e-codices raccoglie già le biblioteche svizzere. |
+| Liechtenstein | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+
+### Biblioteche che mancano
+
+| Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
+|---|---|---|---|---|---|
+| Francia | BVMM, Bibliothèque virtuelle des manuscrits médiévaux (IRHT-CNRS): codici delle biblioteche municipali francesi | bvmm.irht.cnrs.fr | sì | oltre 10.000 (stima) | alta |
+| Francia | Numelyo, Bibliothèque municipale de Lyon | numelyo.bm-lyon.fr | sì | alcune centinaia | media |
+| Francia | Bibliothèque Mazarine (Mazarinum) | mazarinum.bibliotheque-mazarine.fr | sì (da confermare) | alcune centinaia | media |
+| Francia | BIU Santé, Medica (manoscritti di medicina) | www.biusante.parisdescartes.fr | non si sa | alcune centinaia | bassa |
+| Belgio | KBR, Biblioteca reale del Belgio (Belgica) | belgica.kbr.be | sì | alcune migliaia (stima) | alta |
+| Belgio | Biblioteca dell'Università di Gand (Liber Floridus e altri) | lib.ugent.be | sì | alcune centinaia | media |
+| Belgio | KU Leuven, collezioni digitali | bib.kuleuven.be | sì (da confermare) | alcune centinaia | media |
+| Belgio | Flandrica (biblioteche storiche delle Fiandre, con Bruges) | www.flandrica.be | non si sa | alcune centinaia | bassa |
+| Paesi Bassi | Biblioteca dell'Università di Utrecht (Salterio di Utrecht e altri) | objects.library.uu.nl | sì | alcune centinaia | media |
+| Lussemburgo | Bibliothèque nationale du Luxembourg | eluxemburgensia.lu | non si sa | poche decine | bassa |
+| Regno Unito | Parker Library on the Web (Corpus Christi College, Cambridge) | parker.stanford.edu | sì | circa 560 | alta |
+| Regno Unito | Manchester Digital Collections (John Rylands Library) | www.digitalcollections.manchester.ac.uk | sì | alcune migliaia (latino, greco, arabo, persiano, ebraico) | alta |
+| Regno Unito | Wellcome Collection (medicina: latino medievale, arabo, persiano, sanscrito) | wellcomecollection.org/collections | sì | alcune migliaia | alta |
+| Regno Unito | Durham: biblioteca della cattedrale e dell'università (Durham Priory Library Recreated) | iiif.durham.ac.uk | sì | alcune centinaia | alta |
+| Regno Unito | National Library of Wales (Peniarth, Libro nero di Carmarthen e altri) | www.library.wales | sì | alcune centinaia | alta |
+| Regno Unito | National Library of Scotland | digital.nls.uk | sì | alcune centinaia | alta |
+| Regno Unito | Trinity College, Cambridge (Wren Library) | mss-cat.trin.cam.ac.uk | non si sa | oltre 1000 (stima) | media |
+| Regno Unito | Università di Edimburgo (anche arabi e persiani) | collections.ed.ac.uk | sì | alcune centinaia | media |
+| Regno Unito | SOAS, Università di Londra (Asia e Africa) | digital.soas.ac.uk | sì | alcune centinaia | media |
+| Regno Unito | Lambeth Palace Library | www.lambethpalacelibrary.org | non si sa | poche decine | bassa |
+| Regno Unito | Università di Glasgow (manoscritti Hunter) | www.gla.ac.uk/collections | non si sa | decine | bassa |
+| Irlanda | Chester Beatty, Dublino (arabo, persiano, turco, armeno, etiopico, papiri biblici, latino) | viewer.cbl.ie | sì | alcune migliaia | alta |
+| Irlanda | Trinity College Dublin (Libro di Kells, Libro di Durrow, Libro di Armagh) | digitalcollections.tcd.ie | sì | alcune centinaia | alta |
+| Irlanda | Irish Script on Screen (DIAS): manoscritti irlandesi della Royal Irish Academy, di UCD e di altre biblioteche | isos.dias.ie | non si sa | circa 400 (stima) | media |
+| Irlanda | National Library of Ireland | catalogue.nli.ie | non si sa | alcune centinaia | bassa |
+| Germania | SLUB Dresda (anche il Codice di Dresda maya) | digital.slub-dresden.de | sì | alcune migliaia | alta |
+| Germania | Universitätsbibliothek Frankfurt am Main (anche ebraici) | sammlungen.ub.uni-frankfurt.de | sì | alcune migliaia | alta |
+| Germania | ULB Darmstadt | tudigit.ulb.tu-darmstadt.de | sì | oltre 1000 (stima) | alta |
+| Germania | Universitätsbibliothek Tübingen (anche greci e orientali) | idb.ub.uni-tuebingen.de | sì | alcune centinaia | alta |
+| Germania | SUB Göttingen | gdz.sub.uni-goettingen.de | sì | alcune centinaia | media |
+| Germania | Universitätsbibliothek Kassel (ORKA) | orka.bibliothek.uni-kassel.de | sì | alcune centinaia | media |
+| Germania | ULB Düsseldorf (codici di Essen e altri) | digital.ub.hhu.de | sì | alcune centinaia | media |
+| Germania | Universitätsbibliothek Freiburg | dl.ub.uni-freiburg.de | sì | alcune centinaia | media |
+| Germania | Universitätsbibliothek Würzburg (Franconica) | franconica.uni-wuerzburg.de | sì (da confermare) | alcune centinaia | media |
+| Germania | Hochschul- und Landesbibliothek Fulda | fuldig.hs-fulda.de | sì | alcune centinaia | media |
+| Germania | SUB Hamburg (anche orientali) | digitalisate.sub.uni-hamburg.de | sì | alcune centinaia | media |
+| Germania | ULB Sachsen-Anhalt, Halle | digitale.bibliothek.uni-halle.de | sì | alcune centinaia | bassa |
+
+## Europa meridionale
+
+Italia, Vaticano, penisola iberica, Grecia, Cipro, Malta e piccoli stati.
+
+### Nazioni
+
+| Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
+|---|---|---|---|---|
+| Italia | in corso | Biblioteca Medicea Laurenziana, Firenze: 4.353; Veneranda Biblioteca Ambrosiana, Milano: 1.116; Biblioteca Universitaria di Bologna: 907; Biblioteca statale del Monumento nazionale di Montecassino, Montecassino (Cassino): 210; Biblioteca Casanatense, Roma: 43; American Academy in Rome, Roma: 2; un'altra biblioteca: 1. **Totale: 6.632 codici** | Molte biblioteche provate il 25 ottobre 2026. Bloccate o non pronte: Internet Culturale (elenco vietato dal robots.txt), Marciana, Estense, Nazionali di Roma, Firenze e Napoli, Vallicelliana, Padova, Riccardiana, Siena, Archiginnasio, BEIC, Malatestiana, Classense, Trivulziana, Capitolare di Verona, Oliveriana, Palatina, Pavia, Genova, Phaidra di Padova, Urbino. Papiri di Ercolano e PSI: fuori. | Le vede il lavoro in corso. |
+| Città del Vaticano | agganciata | Biblioteca Apostolica Vaticana, Città del Vaticano: 8.882; Biblioteca Apostolica Vaticana, Vatikan: 1. **Totale: 8.883 codici** | nessuna | Nessuna: la Vaticana è dentro (lettura ancora in corso). |
+| San Marino | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Malta | non ancora controllata | nessuna | nessuna | Biblioteca nazionale e archivi della cattedrale di Mdina (copie in vHMML, che è bloccato) |
+| Spagna | in corso | nessuna | Biblioteca Nacional de España ed Escorial: nel registro, da verificare. | Le vede il lavoro in corso. |
+| Portogallo | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Andorra | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Grecia | agganciata | Biblioteca Nazionale di Grecia, Atene: 765 codici | Monte Athos, Patmos, Meteora: non pubblicano copie con IIIF. | Biblioteca del Parlamento, Università di Salonicco |
+| Cipro | non ancora controllata | nessuna | nessuna | Fondazione culturale della Banca di Cipro, monastero di Kykkos (poco) |
+
+### Biblioteche che mancano
+
+| Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
+|---|---|---|---|---|---|
+| Malta | National Library of Malta e Archivi della cattedrale di Mdina (copie in vHMML) | www.vhmml.org | — | alcune centinaia | bassa |
+| Grecia | Biblioteca del Parlamento ellenico, manoscritti | www.hellenicparliament.gr | non si sa | alcune centinaia | bassa |
+| Grecia | Università Aristotele di Salonicco, biblioteca digitale | digital.lib.auth.gr | non si sa | decine | bassa |
+| Cipro | Fondazione culturale della Banca di Cipro; monastero di Kykkos | non trovato | non si sa | poche decine | bassa |
+
+## Europa del Nord
+
+Scandinavia, Islanda, Finlandia e paesi baltici.
+
+### Nazioni
+
+| Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
+|---|---|---|---|---|
+| Danimarca | non ancora controllata | nessuna | Det Kongelige Bibliotek: nel registro, da verificare. | I codici della Collezione Arnamagnæana di Copenaghen sono su handrit.is. |
+| Svezia | non ancora controllata | nessuna | Uppsala: nel registro, da verificare. Papiri di Lund: fuori. | Alvin (Uppsala, Lund, Linköping, Göteborg), Kungliga biblioteket |
+| Norvegia | non ancora controllata | nessuna | nessuna | Nasjonalbiblioteket |
+| Finlandia | non ancora controllata | nessuna | nessuna | Biblioteca nazionale, Fragmenta membranea |
+| Islanda | non ancora controllata | nessuna | nessuna | handrit.is |
+| Estonia | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+| Lettonia | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+| Lituania | non ancora controllata | nessuna | nessuna | epaveldas.lt |
+
+### Biblioteche che mancano
+
+| Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
+|---|---|---|---|---|---|
+| Svezia | Alvin: Uppsala, Lund, Linköping, Göteborg e altre (Codex Argenteus, codici greci) | www.alvin-portal.org | sì | alcune migliaia | alta |
+| Svezia | Kungliga biblioteket, Stoccolma (Codex Gigas) | www.kb.se | non si sa | decine | media |
+| Norvegia | Nasjonalbiblioteket (alcune copie visibili solo dalla Norvegia) | www.nb.no | sì | alcune centinaia | media |
+| Finlandia | Biblioteca nazionale di Finlandia, Fragmenta membranea (frammenti medievali) | fragmenta.kansalliskirjasto.fi | non si sa | circa 9000 frammenti (stima) | media |
+| Islanda | handrit.is: Reykjavík (Árni Magnússon) e Copenaghen (Arnamagnæana); islandese, norreno, latino | handrit.is | sì | alcune migliaia | alta |
+| Lituania | epaveldas.lt (lituano, polacco, ruteno) | www.epaveldas.lt | non si sa | alcune centinaia | bassa |
+
+## Europa centrale e orientale
+
+Polonia, Cechia, Slovacchia, Ungheria, Romania, Bulgaria, Moldavia, Ucraina, Bielorussia, Russia.
+
+### Nazioni
+
+| Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
+|---|---|---|---|---|
+| Polonia | agganciata | Jagiellonian Library, Krakow: 2 codici (pochi codici, arrivati da un'altra fonte) | Biblioteka Jagiellońska: nel registro, da verificare. | Polona |
+| Repubblica Ceca | non ancora controllata | nessuna | nessuna | Manuscriptorium |
+| Slovacchia | non ancora controllata | nessuna | nessuna | Slovakiana |
+| Ungheria | non ancora controllata | nessuna | nessuna | Bibliotheca Corvina Virtualis, Hungaricana |
+| Romania | non ancora controllata | nessuna | nessuna | Biblioteca dell'Accademia Romena (biblioteca digitale non trovata) |
+| Bulgaria | non ancora controllata | nessuna | nessuna | Biblioteca nazionale Santi Cirillo e Metodio |
+| Moldavia | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+| Ucraina | non ancora controllata | nessuna | nessuna | Biblioteca nazionale Vernadsky |
+| Bielorussia | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+| Russia | agganciata | National Library of Russia, St. Petersburg: 1; Museen der Stadt Jurjewetz (Юрьевец: 1. **Totale: 2 codici** (pochi codici, arrivati da un'altra fonte) | Biblioteca nazionale russa e Biblioteca statale russa: bloccate (la prima non risponde, la seconda vieta tutto nel robots.txt). | Le altre biblioteche russe (Accademia delle Scienze, Museo storico) non sono state provate: probabile lo stesso blocco. |
+
+### Biblioteche che mancano
+
+| Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
+|---|---|---|---|---|---|
+| Polonia | Polona (Biblioteca nazionale e altre biblioteche polacche) | polona.pl | sì | alcune migliaia | alta |
+| Repubblica Ceca | Manuscriptorium (Biblioteca nazionale ceca e molte altre, anche straniere) | www.manuscriptorium.com | sì (da confermare) | decine di migliaia di documenti (stima) | alta |
+| Slovacchia | Slovakiana | www.slovakiana.sk | non si sa | alcune centinaia | bassa |
+| Ungheria | Bibliotheca Corvina Virtualis (Biblioteca nazionale Széchényi): i codici di Mattia Corvino | corvina.hu | non si sa | circa 200 (stima) | media |
+| Ungheria | Hungaricana (archivi, biblioteche e musei ungheresi) | hungaricana.hu | non si sa | molti documenti, pochi codici | bassa |
+| Romania | Biblioteca dell'Accademia Romena (manoscritti slavi, greci, romeni) | non trovato | non si sa | non si sa | bassa |
+| Bulgaria | Biblioteca nazionale Santi Cirillo e Metodio (manoscritti slavi) | digilib.nationallibrary.bg | non si sa | alcune centinaia | media |
+| Ucraina | Biblioteca nazionale Vernadsky | www.nbuv.gov.ua | non si sa | alcune centinaia | bassa |
+
+## Balcani
+
+Ex Jugoslavia e Albania.
+
+### Nazioni
+
+| Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
+|---|---|---|---|---|
+| Slovenia | non ancora controllata | nessuna | nessuna | dLib.si |
+| Croazia | non ancora controllata | nessuna | nessuna | Biblioteca nazionale e universitaria di Zagabria |
+| Bosnia ed Erzegovina | non ancora controllata | nessuna | nessuna | Biblioteca Gazi Husrev-beg |
+| Serbia | non ancora controllata | nessuna | nessuna | Biblioteca nazionale di Serbia |
+| Montenegro | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+| Macedonia del Nord | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+| Albania | non ancora controllata | nessuna | nessuna | Archivio centrale dello Stato (Codici di Berat): poco |
+
+### Biblioteche che mancano
+
+| Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
+|---|---|---|---|---|---|
+| Slovenia | dLib.si, Biblioteca nazionale e universitaria | www.dlib.si | non si sa | alcune centinaia | bassa |
+| Croazia | Biblioteca nazionale e universitaria di Zagabria, collezioni digitali (glagolitici, latini) | digitalna.nsk.hr | non si sa | alcune centinaia | media |
+| Bosnia ed Erzegovina | Biblioteca Gazi Husrev-beg, Sarajevo (arabi, turchi, persiani; in rete solo in parte) | www.ghb.ba | non si sa | non si sa | bassa |
+| Serbia | Biblioteca nazionale di Serbia, biblioteca digitale (manoscritti slavi) | digitalna.nb.rs | non si sa | alcune centinaia | media |
+| Albania | Archivio centrale dello Stato (Codex Purpureus Beratinus e altri) | non trovato | non si sa | poche decine | bassa |
+
+## Medio Oriente e Caucaso
+
+Turchia, Caucaso, Iran, paesi arabi del Vicino Oriente e del Golfo, Israele e Palestina.
+
+### Nazioni
+
+| Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
+|---|---|---|---|---|
+| Turchia | controllata, bloccata | nessuna | Yazma Eserler Kurumu (Süleymaniye) e Università di Istanbul: non rispondono. | Nessuna in più: i fondi turchi passano da Yazma Eserler. |
+| Armenia | non ancora controllata | nessuna | nessuna | Matenadaran |
+| Georgia | non ancora controllata | nessuna | nessuna | Centro nazionale dei manoscritti |
+| Azerbaigian | non ancora controllata | nessuna | nessuna | Istituto dei manoscritti (biblioteca digitale non trovata) |
+| Iran | controllata, bloccata | nessuna | Biblioteca nazionale dell'Iran: non risponde. | Biblioteca del Parlamento (Majlis), Astan Quds Razavi |
+| Iraq | non ancora controllata | nessuna | vHMML (fondi dell'Iraq): bloccato da robots.txt e condizioni d'uso. | Nessuna in più nota. |
+| Siria | non ancora controllata | nessuna | vHMML (fondi della Siria): bloccato. | Nessuna in più nota. |
+| Libano | agganciata | Bibliothèque Orientale de l'Université Saint-Joseph de Beyrouth: 4 codici (pochi codici, arrivati da un'altra fonte) | vHMML (fondi del Libano): bloccato. | American University of Beirut; Bibliothèque Orientale dell'Université Saint-Joseph (sito proprio) |
+| Israele | agganciata | Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress): 971; Patriarcato armeno di Gerusalemme (microfilm della Library of Congress): 31. **Totale: 1.002 codici** (microfilm della Library of Congress) | National Library of Israel (Ktiv): bloccata dal server, instabile dal browser. | Nessuna in più: la NLI raccoglie già quasi tutto. |
+| Palestina | non ancora controllata | nessuna | nessuna | Biblioteca della moschea al-Aqsa (non trovata in rete) |
+| Giordania | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+| Arabia Saudita | non ancora controllata | nessuna | nessuna | Università Re Saud |
+| Yemen | non ancora controllata | nessuna | nessuna | Yemen Manuscript Digitization Initiative (copie a Princeton e in vHMML) |
+| Oman | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+| Emirati Arabi Uniti | non ancora controllata | nessuna | nessuna | Centro Juma Al Majid |
+| Qatar | controllata, bloccata | nessuna | Qatar Digital Library: verifica anti-robot di Cloudflare. | Nessuna in più. |
+| Bahrein | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+| Kuwait | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+
+### Biblioteche che mancano
+
+| Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
+|---|---|---|---|---|---|
+| Armenia | Matenadaran, Erevan (nuovo portale di tutti i manoscritti armeni annunciato per il 2026) | matenadaran.am | non si sa | il fondo ha circa 23.000 manoscritti; in rete non si sa quanti | media |
+| Georgia | Centro nazionale dei manoscritti Korneli Kekelidze, Tbilisi | manuscript.ge (non verificato) | non si sa | non si sa | media |
+| Azerbaigian | Istituto dei manoscritti Fuzuli, Baku | non trovato | non si sa | non si sa | bassa |
+| Iran | Biblioteca del Parlamento (Majlis), Teheran | dlib.ical.ir | non si sa | alcune migliaia (stima) | media |
+| Iran | Biblioteca di Astan Quds Razavi, Mashhad | non trovato | non si sa | non si sa | bassa |
+| Libano | American University of Beirut, manoscritti arabi | libraries.aub.edu.lb | non si sa | alcune centinaia | media |
+| Libano | Bibliothèque Orientale, Université Saint-Joseph (oggi solo 4 codici nel catalogo, arrivati da Gallica) | www.bibliothequeorientale.usj.edu.lb | non si sa | alcune centinaia | media |
+| Palestina | Biblioteca della moschea al-Aqsa, Gerusalemme | non trovato | non si sa | non si sa | bassa |
+| Arabia Saudita | Università Re Saud, Riad: manoscritti arabi | makhtota.ksu.edu.sa | non si sa | alcune migliaia (stima) | media |
+| Yemen | Yemen Manuscript Digitization Initiative (copie a Princeton e in vHMML) | non verificato | non si sa | alcune centinaia | bassa |
+| Emirati Arabi Uniti | Centro Juma Al Majid per la cultura e il patrimonio, Dubai | www.almajidcenter.org | non si sa | molte copie di manoscritti arabi; numero non noto | bassa |
+
+## Africa settentrionale
+
+Egitto, Maghreb e Sudan.
+
+### Nazioni
+
+| Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
+|---|---|---|---|---|
+| Egitto | agganciata | Monastero di Santa Caterina del Sinai (microfilm della Library of Congress), Sinai (Egitto): 1.668 codici (microfilm della Library of Congress) | Bibliotheca Alexandrina: non risponde dal server. | Dar al-Kutub, Biblioteca di al-Azhar |
+| Libia | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+| Tunisia | non ancora controllata | nessuna | nessuna | Biblioteca nazionale di Tunisia (non verificata) |
+| Algeria | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+| Marocco | non ancora controllata | nessuna | nessuna | Biblioteca nazionale del Regno del Marocco |
+| Sudan | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+
+### Biblioteche che mancano
+
+| Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
+|---|---|---|---|---|---|
+| Egitto | Dar al-Kutub, Il Cairo (Biblioteca e archivi nazionali) | non trovato: nessuna biblioteca digitale aperta nota | non si sa | il fondo ha decine di migliaia di manoscritti; in rete non si sa | media |
+| Egitto | Biblioteca di al-Azhar, Il Cairo (portale dei manoscritti annunciato nel 2011, oggi non verificato) | www.azhar.eg | non si sa | non si sa | bassa |
+| Marocco | Bibliothèque nationale du Royaume du Maroc, biblioteca digitale | www.bnrm.ma | non si sa | alcune migliaia (stima) | media |
+| Tunisia | Bibliothèque nationale de Tunisie | www.bnt.nat.tn | non si sa | non si sa | bassa |
+
+## Africa subsahariana
+
+Le tradizioni manoscritte sono soprattutto arabe e in ajami (Sahel, Africa orientale) ed etiopiche. Gran parte delle copie digitali è in due raccolte: l'Endangered Archives Programme della British Library e vHMML (bloccato).
+
+### Nazioni
+
+| Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
+|---|---|---|---|---|
+| Mauritania | non ancora controllata | nessuna | nessuna | Biblioteche di Chinguetti e Ouadane (copie in progetti EAP, da cercare) |
+| Mali | non ancora controllata | nessuna | vHMML (Timbuctù, SAVAMA-DCI): bloccato. | Manoscritti di Timbuctù e di Djenné |
+| Nigeria | non ancora controllata | nessuna | nessuna | Arewa House e altri fondi in progetti EAP |
+| Etiopia | non ancora controllata | nessuna | vHMML (Ethiopian Manuscript Microfilm Library): bloccato. | Chiese e monasteri etiopici in progetti EAP |
+| Eritrea | non ancora controllata | nessuna | nessuna | Fondi in progetti EAP (da cercare) |
+| Kenya | non ancora controllata | nessuna | nessuna | Manoscritti di Lamu in progetti EAP |
+| Tanzania | non ancora controllata | nessuna | nessuna | Archivi di Zanzibar in progetti EAP |
+| Sudafrica | non ancora controllata | nessuna | nessuna | National Library of South Africa, collezione Grey (Città del Capo) |
+| Senegal | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
+| Gambia | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
+| Guinea | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
+| Guinea-Bissau | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
+| Sierra Leone | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
+| Costa d'Avorio | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
+| Burkina Faso | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
+| Ghana | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
+| Togo | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
+| Benin | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
+| Niger | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
+| Ciad | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
+| Camerun | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
+| Gibuti | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
+| Somalia | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
+| Uganda | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
+| Mozambico | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
+| Madagascar | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
+| Comore | non ancora controllata | nessuna | nessuna | Possibili fondi arabi o in ajami in progetti EAP (da cercare). |
+| Capo Verde | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). Ci sono archivi d'età coloniale, non codici. |
+| São Tomé e Príncipe | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). Ci sono archivi d'età coloniale, non codici. |
+| Guinea Equatoriale | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). Ci sono archivi d'età coloniale, non codici. |
+| Gabon | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). Ci sono archivi d'età coloniale, non codici. |
+| Congo | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). Ci sono archivi d'età coloniale, non codici. |
+| Repubblica Democratica del Congo | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). Ci sono archivi d'età coloniale, non codici. |
+| Repubblica Centrafricana | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). Ci sono archivi d'età coloniale, non codici. |
+| Angola | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). Ci sono archivi d'età coloniale, non codici. |
+| Namibia | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). Ci sono archivi d'età coloniale, non codici. |
+| Botswana | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). Ci sono archivi d'età coloniale, non codici. |
+| Lesotho | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). Ci sono archivi d'età coloniale, non codici. |
+| Eswatini | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). Ci sono archivi d'età coloniale, non codici. |
+| Zambia | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). Ci sono archivi d'età coloniale, non codici. |
+| Zimbabwe | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). Ci sono archivi d'età coloniale, non codici. |
+| Malawi | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). Ci sono archivi d'età coloniale, non codici. |
+| Ruanda | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). Ci sono archivi d'età coloniale, non codici. |
+| Burundi | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). Ci sono archivi d'età coloniale, non codici. |
+| Liberia | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). Ci sono archivi d'età coloniale, non codici. |
+| Seychelles | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). Ci sono archivi d'età coloniale, non codici. |
+| Mauritius | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). Ci sono archivi d'età coloniale, non codici. |
+| Sud Sudan | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). Ci sono archivi d'età coloniale, non codici. |
+
+### Biblioteche che mancano
+
+| Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
+|---|---|---|---|---|---|
+| Mali | Manoscritti di Timbuctù (Mamma Haidara e altre biblioteche): mostra di Google Arts & Culture «Mali Magic» | artsandculture.google.com | no | alcune centinaia esposti | bassa |
+| Mali | Manoscritti di Djenné e di Timbuctù nei progetti dell'Endangered Archives Programme | eap.bl.uk | non si sa | alcune migliaia (stima) | media |
+| Etiopia | Chiese e monasteri etiopici nei progetti dell'Endangered Archives Programme | eap.bl.uk | non si sa | alcune migliaia (stima) | media |
+| Sudafrica | National Library of South Africa, collezione di Sir George Grey (codici medievali; l'altra metà della raccolta è ad Auckland, già nel catalogo) | www.nlsa.ac.za | non si sa | poche decine | bassa |
+
+## Asia centrale e meridionale
+
+Asia centrale, Afghanistan, subcontinente indiano.
+
+### Nazioni
+
+| Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
+|---|---|---|---|---|
+| Kazakistan | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+| Uzbekistan | non ancora controllata | nessuna | nessuna | Istituto di studi orientali Al-Biruni, Tashkent (biblioteca digitale non trovata) |
+| Turkmenistan | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+| Kirghizistan | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+| Tagikistan | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+| Afghanistan | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+| Pakistan | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+| India | agganciata | Jatindramohan Sangrahashala, National Council of Education, Bengal (copie digitali di Penn), Kolkata: 3.279 codici (copie digitali di Penn) | nessuna | Missione nazionale per i manoscritti, IGNCA, Khuda Bakhsh, Rampur Raza, Asiatic Society, BORI |
+| Nepal | non ancora controllata | nessuna | nessuna | Nepal-German Manuscript Cataloguing Project; testi nepalesi e tibetani nel BDRC |
+| Bhutan | non ancora controllata | nessuna | nessuna | Testi bhutanesi nel BDRC |
+| Bangladesh | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+| Sri Lanka | non ancora controllata | nessuna | nessuna | Manoscritti su foglia di palma in progetti EAP |
+| Maldive | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+
+### Biblioteche che mancano
+
+| Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
+|---|---|---|---|---|---|
+| India | Missione nazionale per i manoscritti, oggi Gyan Bharatam (Kritisampada) | www.namami.gov.in | no (non risulta) | centinaia di migliaia digitalizzati; in rete pochi | media |
+| India | Indira Gandhi National Centre for the Arts (IGNCA), biblioteca digitale | ignca.gov.in | non si sa | alcune migliaia | media |
+| India | Khuda Bakhsh Oriental Public Library, Patna (arabi, persiani) | kblibrary.bih.nic.in | non si sa | alcune migliaia (stima) | media |
+| India | Rampur Raza Library | razalibrary.gov.in | non si sa | non si sa | bassa |
+| India | Asiatic Society, Calcutta | asiaticsocietykolkata.org | non si sa | non si sa | bassa |
+| India | Bhandarkar Oriental Research Institute, Pune | www.bori.ac.in | non si sa | non si sa | bassa |
+| Nepal | Nepal-German Manuscript Cataloguing Project (catalogo; immagini non aperte) | www.ngmcp.uni-hamburg.de | no | decine di migliaia microfilmati | bassa |
+| Sri Lanka | Manoscritti su foglia di palma nei progetti dell'Endangered Archives Programme | eap.bl.uk | non si sa | alcune migliaia (stima) | bassa |
+| Uzbekistan | Istituto di studi orientali Al-Biruni, Tashkent | non trovato | non si sa | non si sa | bassa |
+
+## Asia orientale
+
+Cina, Taiwan, Giappone, Coree, Mongolia. Taiwan non è membro dell'ONU: è contata a parte perché ha biblioteche importanti.
+
+### Nazioni
+
+| Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
+|---|---|---|---|---|
+| Cina | controllata, bloccata | nessuna | Biblioteca nazionale cinese: nessun manifesto IIIF pubblico. International Dunhuang Programme: bloccato. | I testi tibetani sono nel BDRC (Stati Uniti). |
+| Taiwan | controllata, bloccata | nessuna | National Palace Museum: risponde 403 ai server. | National Central Library, libri rari |
+| Giappone | agganciata | National Diet Library, Tokyo: 42.872; Università di Okayama, fondo Ikeda: 14.254; Archivi e mausolei della Casa imperiale, Tokyo: 11.400; Università Tōhoku, fondo Kanō (microfilm), Sendai: 9.710; Università Tōhoku, fondo di matematica tradizionale giapponese (wasan), Sendai: 4.920; Istituto nazionale di letteratura giapponese, Tachikawa: 4.536; altre 410 biblioteche: 94.160. **Totale: 181.852 codici** | Università di Kyoto: manifesti aperti ma elenco vietato. Waseda e Università di Tokyo: bloccate. | Nessuna in più di rilievo: Kokusho raccoglie già centinaia di biblioteche. |
+| Corea del Sud | agganciata | Biblioteca nazionale di Corea, Seul (Corea del Sud): 49 codici (pochi codici, arrivati da un'altra fonte) | Biblioteca nazionale coreana e Kyujanggak: nessun IIIF pubblico, Kyujanggak non risponde. | Jangseogak (Academy of Korean Studies) |
+| Corea del Nord | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta accessibile (controllo a tavolino). |
+| Mongolia | non ancora controllata | nessuna | nessuna | Testi mongoli e tibetani nel BDRC |
+
+### Biblioteche che mancano
+
+| Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
+|---|---|---|---|---|---|
+| Taiwan | National Central Library, libri rari e manoscritti | rbook.ncl.edu.tw | non si sa | alcune migliaia (stima) | media |
+| Corea del Sud | Jangseogak, Academy of Korean Studies | jsg.aks.ac.kr | non si sa | alcune migliaia (stima) | media |
+
+## Sud-est asiatico
+
+Tradizioni su foglia di palma (Thailandia, Laos, Myanmar, Cambogia), Vietnam e mondo malese.
+
+### Nazioni
+
+| Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
+|---|---|---|---|---|
+| Myanmar | non ancora controllata | nessuna | nessuna | Fondi birmani in vHMML (bloccato) |
+| Thailandia | non ancora controllata | nessuna | nessuna | Digitized Lanna Manuscripts |
+| Laos | non ancora controllata | nessuna | nessuna | Digital Library of Lao Manuscripts |
+| Cambogia | non ancora controllata | nessuna | nessuna | Fondo per l'edizione dei manoscritti della Cambogia (FEMC) |
+| Vietnam | non ancora controllata | nessuna | nessuna | Fondazione per la conservazione del Nôm |
+| Malaysia | non ancora controllata | nessuna | nessuna | Biblioteca nazionale, Centro dei manoscritti malesi |
+| Singapore | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+| Indonesia | non ancora controllata | nessuna | nessuna | Khastara (Biblioteca nazionale), DREAMSEA |
+| Brunei | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Filippine | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+| Timor Est | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+
+### Biblioteche che mancano
+
+| Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
+|---|---|---|---|---|---|
+| Thailandia | Digitized Lanna Manuscripts (Thailandia del Nord, foglia di palma) | lannamanuscripts.net | no (non risulta) | alcune migliaia | media |
+| Laos | Digital Library of Lao Manuscripts | www.laomanuscripts.net | no (non risulta) | alcune migliaia | media |
+| Cambogia | Fonds pour l'édition des manuscrits du Cambodge (FEMC, con l'EFEO) | non verificato | non si sa | non si sa | bassa |
+| Vietnam | Fondazione per la conservazione del Nôm: libri Hán-Nôm della Biblioteca nazionale del Vietnam | www.nomfoundation.org | no (non risulta) | circa 1000-2000 volumi (stima incerta) | media |
+| Malaysia | Perpustakaan Negara Malaysia, Centro dei manoscritti malesi | non verificato | non si sa | non si sa | bassa |
+| Indonesia | Khastara, Biblioteca nazionale dell'Indonesia | khastara.perpusnas.go.id | non si sa | alcune migliaia | media |
+| Indonesia | DREAMSEA (manoscritti del Sud-est asiatico; copie anche in vHMML) | dreamsea.co | non si sa | alcune migliaia | media |
+
+## Americhe
+
+Stati Uniti, Canada, America Latina e Caraibi. Canada, Messico, Centro America, Caraibi di lingua spagnola e francese e America del Sud hanno lavori aperti oggi. Ho contato fra questi anche Belize, Guyana e Suriname: se il lavoro sull'America Latina non li comprende, vanno spostati fra le nazioni non ancora controllate.
+
+### Nazioni
+
+| Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
+|---|---|---|---|---|
+| Stati Uniti | agganciata | University of Pennsylvania Libraries, Kislak Center, Philadelphia: 6.882; Princeton University Library: 3.062; Beinecke Rare Book and Manuscript Library, New Haven: 2.732; University of Pennsylvania Libraries, Philadelphia: 891; Columbia University, Rare Book & Manuscript Library, New York: 835; Harvard University, Houghton Library, Cambridge (Massachusetts): 603; altre 47 biblioteche: 3.187. **Totale: 18.192 codici** | Walters: sospesa (server del museo). Morgan: Cloudflare. Getty: connessione non verificata. Lehigh e Wellesley: manifesti chiusi. UCLA (Sinai): immagini solo per utenti registrati. vHMML: vietato. Altre istituzioni di OPenn: niente IIIF. Library of Congress: entrata solo in parte. Papiri (Berkeley, Yale, Duke, Michigan, Princeton, Columbia): in attesa di decisione. | Michigan, BDRC, Notre Dame, Stanford, Folger, Hilandar (Ohio State) |
+| Canada | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Messico | in corso | nessuna | Biblioteca Nacional de México: nessun IIIF pubblico, bdmx.mx non risponde. | Le vede il lavoro in corso. |
+| Guatemala | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Belize | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Honduras | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| El Salvador | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Nicaragua | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Costa Rica | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Panama | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Cuba | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Haiti | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Repubblica Dominicana | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Brasile | in corso | nessuna | Biblioteca Nacional do Brasil: 403 ai server, nessun IIIF pubblico. | Le vede il lavoro in corso. |
+| Argentina | in corso | nessuna | Biblioteca Nacional Mariano Moreno: non risponde. | Le vede il lavoro in corso. |
+| Cile | in corso | nessuna | Biblioteca Nacional Digital: senza IIIF. | Le vede il lavoro in corso. |
+| Perù | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Bolivia | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Colombia | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Venezuela | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Ecuador | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Paraguay | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Uruguay | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Guyana | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Suriname | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Giamaica | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Bahamas | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Barbados | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Trinidad e Tobago | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Grenada | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Saint Lucia | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Saint Vincent e Grenadine | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Antigua e Barbuda | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Dominica | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Saint Kitts e Nevis | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+
+### Biblioteche che mancano
+
+| Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
+|---|---|---|---|---|---|
+| Stati Uniti | University of Michigan Library (manoscritti islamici, greci e medievali) | quod.lib.umich.edu | sì | oltre 1000 | alta |
+| Stati Uniti | Buddhist Digital Resource Center (BDRC): testi tibetani, mongoli, nepalesi, bhutanesi | library.bdrc.io | sì | decine di migliaia di testi (molti a stampa xilografica; i manoscritti sono alcune migliaia) | alta |
+| Stati Uniti | University of Notre Dame (Marble) | marble.nd.edu | sì | alcune centinaia | media |
+| Stati Uniti | Stanford Libraries | searchworks.stanford.edu | sì | alcune centinaia | media |
+| Stati Uniti | Folger Shakespeare Library (manoscritti inglesi di età moderna) | collections.folger.edu | non si sa | alcune migliaia | bassa |
+| Stati Uniti | Ohio State University, Hilandar Research Library (microfilm di codici slavi, anche del monastero serbo di Chilandari sull'Athos) | hrl.osu.edu | non si sa | non si sa | bassa |
+
+## Oceania
+
+Australia, Nuova Zelanda e isole del Pacifico.
+
+### Nazioni
+
+| Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
+|---|---|---|---|---|
+| Australia | agganciata | State Library Victoria, Melbourne (Australia): 14 codici | National Library of Australia (Trove): robots.txt vieta tutto. Università di Sydney e State Library of New South Wales: 403 ai server. | Università di Melbourne (Baillieu Library) |
+| Nuova Zelanda | agganciata | Auckland Libraries, Sir George Grey Special Collections, Auckland (Nuova Zelanda): 43 codici | nessuna | Dunedin Public Libraries (collezione Reed), Alexander Turnbull Library |
+| Papua Nuova Guinea | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Figi | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Isole Salomone | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Vanuatu | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Samoa | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Tonga | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Kiribati | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Tuvalu | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Nauru | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Micronesia | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Isole Marshall | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+| Palau | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
+
+### Biblioteche che mancano
+
+| Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
+|---|---|---|---|---|---|
+| Australia | Università di Melbourne, Baillieu Library (codici medievali) | digitised-collections.unimelb.edu.au | non si sa | poche decine | bassa |
+| Nuova Zelanda | Dunedin Public Libraries, collezione Reed (codici medievali) | www.dunedinlibraries.govt.nz | non si sa | poche decine | bassa |
+| Nuova Zelanda | Alexander Turnbull Library (National Library of New Zealand) | natlib.govt.nz | non si sa | poche decine | bassa |
+
+## Aggregatori
+
+Gli aggregatori raccolgono i manoscritti di molte biblioteche, spesso di paesi diversi.
+Un solo aggregatore può coprire molte nazioni insieme.
+
+| Aggregatore | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità | Nota |
+|---|---|---|---|---|---|
+| British Library, Endangered Archives Programme (EAP) | eap.bl.uk | non si sa (il sito è tornato dopo l'attacco informatico del 2023; il IIIF va provato) | milioni di immagini; molte raccolte di manoscritti di Africa, Asia e Medio Oriente | media | Non è nel registro. Da provare per primo fra gli aggregatori: da solo copre Mali, Etiopia, Sri Lanka, Nigeria, Kenya, Tanzania e molti altri paesi. |
+| Qatar Digital Library | www.qdl.qa | sì, ma dietro la verifica anti-robot di Cloudflare | decine di migliaia di documenti; alcune migliaia di manoscritti arabi (molti della British Library) | media | Già nel registro: bloccata. Da fare dal browser, come Gallica. |
+| vHMML (Hill Museum & Manuscript Library) | www.vhmml.org | sì, ma vietato dal robots.txt | circa 262.000 oggetti (Siria, Iraq, Libano, Etiopia, Mali, Malta e altri) | — | Già nel registro: non si può. |
+| Biblissima+ (portale francese dei manoscritti) | portail.biblissima.fr | sì | indice dei manifesti di BnF, BVMM e molte altre biblioteche | media | Non è nel registro. Utile per trovare in un colpo i manifesti delle biblioteche francesi fuori da Gallica. |
+| Manuscriptorium | www.manuscriptorium.com | sì (da confermare) | decine di migliaia di documenti (soprattutto cechi, ma anche di altri paesi) | alta | Non è nel registro. |
+| Handschriftenportal | handschriftenportal.de | rimanda ai manifesti delle biblioteche | tutte le biblioteche tedesche | — | Già usato per sei biblioteche tedesche. È la strada per molte biblioteche tedesche che mancano. |
+| Fragmentarium | fragmentarium.ms | sì | alcune migliaia di frammenti medievali | bassa | Non è nel registro. |
+
+## Da dove vengono i dati
+
+- Biblioteche e codici nel catalogo: data/catalogo/indice.json (fonti, biblioteche e righe dell'indice).
+- Nazione di ogni biblioteca: data/luoghi.json. Alcune biblioteche senza luogo sono state messe a mano nella loro nazione: le collezioni private giapponesi di Kokusho in Giappone, la State Library Victoria in Australia.
+- Restano senza nazione pochi codici con luogo non indicato o fittizio (per esempio «Utopia» ed «sine loco» di e-codices): non sono contati.
+- Biblioteche provate e non entrate: docs/BIBLIOTECHE.md.
+- Biblioteche che mancano: ricerche in rete del 26 ottobre 2026 e conoscenze generali. Nessun sito è stato provato tecnicamente.
