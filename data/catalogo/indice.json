@@ -1,7 +1,7 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T16:19:07.964Z",
- "totale": 491352,
+ "aggiornato": "2026-10-26T16:35:03.576Z",
+ "totale": 492039,
  "con_autori": 27221,
  "miniati": 9937,
  "musica": 13525,
@@ -26,11 +26,11 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 180604
+   "codici": 180541
   },
   "la": {
    "nome": "latino",
-   "codici": 73017
+   "codici": 73022
   },
   "?": {
    "nome": "lingua non indicata",
@@ -62,7 +62,7 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 13811
+   "codici": 13816
   },
   "lo": {
    "nome": "lao",
@@ -128,6 +128,10 @@
    "nome": "copto",
    "codici": 1924
   },
+  "cu": {
+   "nome": "slavo ecclesiastico",
+   "codici": 1824
+  },
   "gez": {
    "nome": "etiopico",
    "codici": 1284
@@ -139,10 +143,6 @@
   "syr": {
    "nome": "siriaco",
    "codici": 1216
-  },
-  "cu": {
-   "nome": "slavo ecclesiastico",
-   "codici": 1081
   },
   "khb": {
    "nome": "tai lü",
@@ -310,7 +310,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 489675
+   "codici": 490362
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -1605,6 +1605,7 @@
   "Biblioteca Sankō (三康文化研究所附属三康図書館), Tokyo",
   "Biblioteca Seikadō (静嘉堂文庫), Tokyo",
   "Biblioteca statale del Monumento nazionale di Montecassino, Montecassino (Cassino)",
+  "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ), Mosca",
   "Biblioteca Universitaria di Bologna",
   "Biblioteca Vallicelliana, Roma",
   "Biblioteka Bobolanum, Varsavia",
@@ -2355,7 +2356,6 @@
   "Staatsbibliothek Bamberg",
   "Staatsbibliothek zu Berlin",
   "Staatsbibliothek zu Berlin – Preußischer Kulturbesitz",
-  "Staatsbibliothek zu Berlin (国立図書館（ベルリン）), Berlino (Germania)",
   "Staatsbibliothek zu Berlin, Cambridge",
   "Stadtarchiv Bremgarten",
   "Stadtarchiv der Ortsbürgergemeinde St. Gallen",
@@ -4045,14 +4045,14 @@
   },
   "kokusho": {
    "nome": "Kokusho Database, National Institute of Japanese Literature (kokusho.nijl.ac.jp)",
-   "codici": 139385,
+   "codici": 139322,
    "carte": 788,
    "carte_stampa": 0,
    "miniati": 298,
    "musica": 311,
    "con_autori": 5,
    "lingue": {
-    "ja": 139385
+    "ja": 139322
    },
    "esito": "ok",
    "prefissi": [
@@ -4750,6 +4750,28 @@
     "indice/nbkm-0.json"
    ]
   },
+  "libfond": {
+   "nome": "Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca: copie digitali della Trinità-San Sergio (lib-fond.ru; manifesti scritti dal catalogo)",
+   "codici": 750,
+   "carte": 0,
+   "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 0,
+   "con_autori": 0,
+   "lingue": {
+    "cu": 743,
+    "la": 5,
+    "grc": 5
+   },
+   "esito": "errore: codici letti in parte (1350 in questo giro): riprenderà alla prossima esecuzione",
+   "prefissi": [
+    "libfond-"
+   ],
+   "pezzi_voci": 1,
+   "indice": [
+    "indice/libfond-0.json"
+   ]
+  },
   "archive": {
    "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
    "codici": 15677,
@@ -5227,7 +5249,7 @@
   {
    "file": "indice/kokusho-6.json",
    "fonte": "kokusho",
-   "righe": 19385
+   "righe": 19322
   },
   {
    "file": "indice/handrit-0.json",
@@ -5343,6 +5365,11 @@
    "file": "indice/nbkm-0.json",
    "fonte": "nbkm",
    "righe": 296
+  },
+  {
+   "file": "indice/libfond-0.json",
+   "fonte": "libfond",
+   "righe": 750
   },
   {
    "file": "indice/archive-0.json",
@@ -7140,6 +7167,13 @@
    "lat": 46.433,
    "lon": 6.9114
   },
+  "mosca": {
+   "nome": "Mosca",
+   "en": "Moscow",
+   "paese": "RU",
+   "lat": 55.752,
+   "lon": 37.6178
+  },
   "most": {
    "nome": "Most",
    "paese": "CZ",
@@ -8035,6 +8069,7 @@
   "tokyo",
   "tokyo",
   "montecassino",
+  "mosca",
   "bologna",
   "roma",
   "varsavia",
@@ -8783,7 +8818,6 @@
   "lucerna",
   "sciaffusa",
   "bamberga",
-  "berlino",
   "berlino",
   "berlino",
   "cambridge",

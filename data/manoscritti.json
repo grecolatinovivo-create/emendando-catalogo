@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T15:35:12.630Z",
+ "aggiornato": "2026-10-26T16:35:03.576Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -305,7 +305,7 @@
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
    "codici": 0,
-   "esito": "errore: manifesti letti in parte (mancano 13763): riprenderà alla prossima esecuzione"
+   "esito": "errore: manifesti letti in parte (mancano 12499): riprenderà alla prossima esecuzione"
   },
   "getty": {
    "nome": "J. Paul Getty Museum, Los Angeles: manoscritti (data.getty.edu; manifesti media.getty.edu)",
@@ -316,6 +316,11 @@
    "nome": "Biblioteca Nazionale «Santi Cirillo e Metodio», Sofia: manoscritti slavi, greci e orientali (digilib.nationallibrary.bg; manifesti scritti dal catalogo)",
    "codici": 0,
    "esito": "ok"
+  },
+  "libfond": {
+   "nome": "Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca: copie digitali della Trinità-San Sergio (lib-fond.ru; manifesti scritti dal catalogo)",
+   "codici": 0,
+   "esito": "errore: codici letti in parte (1350 in questo giro): riprenderà alla prossima esecuzione"
   },
   "archive": {
    "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",

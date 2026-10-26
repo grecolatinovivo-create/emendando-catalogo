@@ -154,6 +154,11 @@
   "esito": "ok",
   "ultimo_ok": "2026-10-26T15:09:57.343Z"
  },
+ "libfond": {
+  "quando": "2026-10-26T16:31:04.196Z",
+  "esito": "errore: codici letti in parte (1350 in questo giro): riprenderà alla prossima esecuzione",
+  "ultimo_ok": null
+ },
  "lipsia": {
   "quando": "2026-10-26T15:09:57.343Z",
   "esito": "ok",
@@ -183,6 +188,11 @@
   "quando": "2026-10-26T12:00:13.435Z",
   "esito": "ok",
   "ultimo_ok": "2026-10-26T12:00:13.435Z"
+ },
+ "nbkm": {
+  "quando": "2026-10-26T16:31:04.196Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-26T16:31:04.196Z"
  },
  "ndl": {
   "quando": "2026-10-26T16:15:09.616Z",
