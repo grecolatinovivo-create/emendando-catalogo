@@ -1,8 +1,8 @@
 {
  "ambrosiana": {
-  "quando": "2026-10-26T02:47:39.646Z",
+  "quando": "2026-10-26T12:00:13.435Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-26T02:47:39.646Z"
+  "ultimo_ok": "2026-10-26T12:00:13.435Z"
  },
  "auckland": {
   "quando": "2026-10-26T05:21:51.830Z",
@@ -19,6 +19,11 @@
   "esito": "ok",
   "ultimo_ok": "2026-10-26T03:10:42.366Z"
  },
+ "bncf": {
+  "quando": "2026-10-26T12:00:13.435Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-26T12:00:13.435Z"
+ },
  "bodleian": {
   "quando": "2026-10-26T04:40:29.314Z",
   "esito": "ok",
@@ -30,14 +35,14 @@
   "ultimo_ok": "2026-10-26T03:10:42.366Z"
  },
  "bub": {
-  "quando": "2026-10-26T02:47:39.646Z",
+  "quando": "2026-10-26T12:00:13.435Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-26T02:47:39.646Z"
+  "ultimo_ok": "2026-10-26T12:00:13.435Z"
  },
  "casanatense": {
-  "quando": "2026-10-26T02:47:39.646Z",
+  "quando": "2026-10-26T12:00:13.435Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-26T02:47:39.646Z"
+  "ultimo_ok": "2026-10-26T12:00:13.435Z"
  },
  "cbl": {
   "quando": "2026-10-26T11:27:24.897Z",
@@ -129,6 +134,11 @@
   "esito": "ok",
   "ultimo_ok": "2026-10-26T04:58:58.161Z"
  },
+ "malatestiana": {
+  "quando": "2026-10-26T12:00:13.435Z",
+  "esito": "errore: schede lette in parte (mancano 60): riprenderà alla prossima esecuzione",
+  "ultimo_ok": null
+ },
  "manchester": {
   "quando": "2026-10-26T11:27:24.897Z",
   "esito": "errore: manifesti letti in parte (mancano 241): riprenderà alla prossima esecuzione",
@@ -140,9 +150,9 @@
   "ultimo_ok": "2026-10-26T11:52:53.940Z"
  },
  "montecassino": {
-  "quando": "2026-10-26T02:47:39.646Z",
+  "quando": "2026-10-26T12:00:13.435Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-26T02:47:39.646Z"
+  "ultimo_ok": "2026-10-26T12:00:13.435Z"
  },
  "ndl": {
   "quando": "2026-10-26T05:21:51.830Z",
@@ -178,6 +188,11 @@
   "quando": "2026-10-26T11:52:53.940Z",
   "esito": "ok",
   "ultimo_ok": "2026-10-26T11:52:53.940Z"
+ },
+ "vallicelliana": {
+  "quando": "2026-10-26T12:00:13.435Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-26T12:00:13.435Z"
  },
  "vaticana": {
   "quando": "2026-10-26T10:52:46.492Z",
