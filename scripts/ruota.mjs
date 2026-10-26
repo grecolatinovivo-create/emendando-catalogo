@@ -37,6 +37,10 @@ export const INCOMPLETA = {
   rousanou: s => !s || !s.elenco || Object.values(s.voci || {}).some(v => v && !v.n && !v.x),
   // Real Academia de la Historia: elenco OAI finito e misure delle immagini prese (quelle che non si leggono restano segnate con «x»)
   rah: s => !s || !s.elenco || !!s.token || Object.values(s.voci || {}).some(v => v && !v.w && !v.x),
+  // corsia asia: CrossAsia e Berlino (lettura a riprese con il cursore), Fondazione del Nôm (schede di tutti i volumi e pagine dei manoscritti)
+  crossasia: s => !s || !s.completato || s.cursore != null,
+  sbbasia: s => !s || !s.completato || s.cursore != null,
+  nomfoundation: s => !s || !s.elenco || Object.values(s.voci || {}).some(v => v && !v.x && (!v.cod || (/chép tay|viết tay|manuscript|hand-?written|hand ?copied|bản thảo/i.test(v.pt || "") && v.img && !v.n))),
   // Malatestiana: schede e visore di tutti i codici dell'elenco letti
   malatestiana: s => !s || !s.completato,
 };

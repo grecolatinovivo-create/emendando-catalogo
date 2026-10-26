@@ -291,6 +291,9 @@ L = {
  "ramtek": ("Ramtek", None, "Rāmtek", "IN", "#1258553", ["Ramtek"]),
  "haridwar": ("Haridwar", None, "Haridwar", "IN", "#1270351", ["Haridwar"]),
  "nonthaburi": ("Nonthaburi", None, "Mueang Nonthaburi", "TH", "#1608133", ["Nonthaburi"]),
+ "vientiane": ("Vientiane", None, "Vientiane", "LA", "#1651944", ["Vientiane", "Vientiane (Laos)"]),
+ "chiang-mai": ("Chiang Mai", None, "Chiang Mai", "TH", "#1153671", ["Chiang Mai", "Chiang Mai (Thailandia)"]),
+ "hanoi": ("Hanoi", None, "Hanoi", "VN", "#1581130", ["Hanoi", "Hanoi (Vietnam)"]),
  "haverford": ("Haverford", None, "Haverford", "US", "#5192907", ["Haverford"]),
 }
 # biblioteche senza città nel catalogo (o con città non geografica): nome esatto -> id
@@ -337,4 +340,4 @@ FONTI = {"gallica": "parigi", "heidelberg": "heidelberg", "vaticana": "citta-del
          "bub": "bologna", "nlg": "atene", "colonia": "colonia", "montecassino": "montecassino", "bamberga": "bamberga", "casanatense": "roma", "auckland": "auckland", "toronto": "toronto",
          "wellcome": "londra", "manchester": "manchester", "cbl": "dublino", "cudl": "cambridge",
          "mdc": "barcellona", "ub": "barcellona", "realbiblioteca": "madrid", "ucm": "madrid", "sevilla": "siviglia", "rah": "madrid",
-         "onb": "vienna", "bncf": "firenze", "vallicelliana": "roma", "malatestiana": "cesena", "classense": "ravenna"}
+         "onb": "vienna", "crossasia": "vientiane", "sbbasia": "berlino", "nomfoundation": "hanoi", "bncf": "firenze", "vallicelliana": "roma", "malatestiana": "cesena", "classense": "ravenna"}

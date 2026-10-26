@@ -7,7 +7,9 @@ export const NOMI_LINGUE = {
   la: "latino", grc: "greco", it: "italiano", fr: "francese", de: "tedesco", en: "inglese", es: "spagnolo", pt: "portoghese", ca: "catalano", oc: "occitano",
   nl: "nederlandese", he: "ebraico", ar: "arabo", syr: "siriaco", cop: "copto", hy: "armeno", ka: "georgiano", gez: "etiopico", fa: "persiano", tr: "turco",
   cu: "slavo ecclesiastico", ru: "russo", cs: "ceco", pl: "polacco", hu: "ungherese", sv: "svedese", da: "danese", is: "islandese e norreno", ga: "irlandese", cy: "gallese",
-  gl: "galego", zh: "cinese", ja: "giapponese", ko: "coreano", sa: "sanscrito", bo: "tibetano", ms: "malese", jv: "giavanese", sla: "lingue slave (alfabeto cirillico)", xx: "altre lingue",
+  gl: "galego", zh: "cinese", ja: "giapponese", ko: "coreano", sa: "sanscrito", bo: "tibetano", ms: "malese", jv: "giavanese",
+  pi: "pali", lo: "lao", th: "thailandese", nod: "thai settentrionale (lanna)", khb: "tai lü", shn: "shan", my: "birmano", km: "khmer", vi: "vietnamita (hán-nôm)",
+  mn: "mongolo", mnc: "mancese", nxq: "naxi", btk: "batak", bug: "bugi", su: "sundanese", ban: "balinese", sla: "lingue slave (alfabeto cirillico)", xx: "altre lingue",
 };
 
 // codici ISO 639-1/2/3 e nomi (latino, italiano, inglese, tedesco, francese) -> codice breve
@@ -40,6 +42,12 @@ const CODICI = {
   frances: "fr", italia: "it", aleman: "de", alemany: "de", alemao: "de", ingles: "en", angles: "en", portugues: "pt", catala: "ca", valenciano: "ca", valencia: "ca",
   gl: "gl", glg: "gl", gallego: "gl", galego: "gl", galec: "gl", occita: "oc",
   sa: "sa", san: "sa", sanskrit: "sa", bo: "bo", tib: "bo", bod: "bo", tibetan: "bo", ms: "ms", may: "ms", msa: "ms", malay: "ms", jv: "jv", jav: "jv", javanese: "jv",
+  // Asia orientale e Sud-est asiatico (dal 26 ottobre 2026)
+  pi: "pi", pli: "pi", pali: "pi", lo: "lo", lao: "lo", th: "th", tha: "th", thai: "th", siamese: "th", nod: "nod", "lan na": "nod", lanna: "nod", "northern thai": "nod", yuan: "nod", "tai yuan": "nod",
+  khb: "khb", "tai lue": "khb", "tai lu": "khb", lue: "khb", shn: "shn", shan: "shn", "tai yai": "shn", my: "my", bur: "my", mya: "my", burmese: "my", myanmar: "my", birmano: "my",
+  km: "km", khm: "km", khmer: "km", cambodian: "km", vi: "vi", vie: "vi", vietnamese: "vi", vietnamita: "vi", nom: "vi", "han nom": "vi", "chu nom": "vi",
+  mn: "mn", khk: "mn", mongolian: "mn", mongolisch: "mn", mnc: "mnc", manchu: "mnc", mandschu: "mnc", mandschurisch: "mnc", nxq: "nxq", naxi: "nxq", nakhi: "nxq",
+  btk: "btk", batak: "btk", bug: "bug", buginese: "bug", bugis: "bug", su: "su", sun: "su", sundanese: "su", ban: "ban", balinese: "ban",
 };
 const NULLI = new Set(["", "und", "mul", "zxx", "mis", "x-unknown", "unknown", "unbekannt", "multiple languages", "mehrsprachig", "non indicata", "n/a", "unbestimmt", "sans contenu linguistique",
   "ancient", "modern", "medieval", "classical", "old", "middle", "early modern", "to", "late", "byzantine"]);

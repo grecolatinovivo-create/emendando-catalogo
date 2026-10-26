@@ -1,0 +1,33 @@
+# Corsia «asia» (dal 26 ottobre 2026): manoscritti dell'Asia orientale e del Sud-est asiatico, su server diversi dalle altre corsie:
+# CrossAsia della Staatsbibliothek zu Berlin (iiif.crossasia.org: Digital Library of Lao Manuscripts, circa 13.000, e Digital Library
+# of Northern Thai Manuscripts, circa 6600; elenco dall'API di Madoc, data/crossasia.json), Staatsbibliothek zu Berlin (OAI-PMH, insiemi
+# «ostasiatische.handschriften» e «suedostasiatische.handschriften», data/sbbasia.json) e Vietnamese Nôm Preservation Foundation
+# (lib.nomfoundation.org: schede dei volumi, solo i manoscritti; manifesti scritti dal catalogo nel ramo «manifesti»; data/nomfoundation.json).
+# Richieste in serie con la pausa di 1,5 secondi (scripts/rete.mjs). A ruota finché la prima lettura non è finita (scripts/ruota.mjs),
+# poi giro notturno alle 01:10 UTC.
+name: "Raccolta: corsia asia"
+
+on:
+  schedule:
+    - cron: "10 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write   # per la ruota
+
+concurrency:
+  group: raccolta-asia
+  cancel-in-progress: false
+
+jobs:
+  corsia:
+    uses: ./.github/workflows/corsia.yml
+    with:
+      corsia: asia
+      fonti: crossasia,sbbasia,nomfoundation
+      argomenti: --crossasia-minuti=60 --sbbasia-minuti=30 --nomfoundation-minuti=50
+      cache: false
+      ruota: false
+      completa: true
+      flusso: raccolta-asia.yml

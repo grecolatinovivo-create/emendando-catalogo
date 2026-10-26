@@ -12193,6 +12193,27 @@
    "lat": 40.0132,
    "lon": -75.2944,
    "geonames": 5192907
+  },
+  "vientiane": {
+   "nome": "Vientiane",
+   "paese": "LA",
+   "lat": 17.9667,
+   "lon": 102.6,
+   "geonames": 1651944
+  },
+  "chiang-mai": {
+   "nome": "Chiang Mai",
+   "paese": "TH",
+   "lat": 18.7904,
+   "lon": 98.9847,
+   "geonames": 1153671
+  },
+  "hanoi": {
+   "nome": "Hanoi",
+   "paese": "VN",
+   "lat": 21.0245,
+   "lon": 105.8412,
+   "geonames": 1581130
   }
  },
  "citta": {
@@ -14278,7 +14299,13 @@
   "Haverford": "haverford",
   "Filadelfia": "philadelphia",
   "Parigi": "parigi",
-  "Washington": "washington"
+  "Washington": "washington",
+  "Vientiane": "vientiane",
+  "Vientiane (Laos)": "vientiane",
+  "Chiang Mai": "chiang-mai",
+  "Chiang Mai (Thailandia)": "chiang-mai",
+  "Hanoi": "hanoi",
+  "Hanoi (Vietnam)": "hanoi"
  },
  "biblioteche": {
   "Bibliothèque Carré d'art / Nîmes": "nimes",
@@ -14363,6 +14390,9 @@
   "cbl": "dublino",
   "cudl": "cambridge",
   "parker": "cambridge",
-  "nlw": "aberystwyth"
+  "nlw": "aberystwyth",
+  "crossasia": "vientiane",
+  "sbbasia": "berlino",
+  "nomfoundation": "hanoi"
  }
 }

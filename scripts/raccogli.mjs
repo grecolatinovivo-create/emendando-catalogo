@@ -11,6 +11,7 @@
 //        [--mdc-minuti=10] [--ub-minuti=10] [--realbiblioteca-minuti=15] [--ucm-minuti=15] [--sevilla-minuti=5] [--rah-minuti=30]
 //        [--pergamos-minuti=10] [--rousanou-minuti=5] [--auc-minuti=5] [--northwestern-minuti=5]
 //        [--onb-minuti=30] [--bncf-minuti=5] [--vallicelliana-minuti=5] [--malatestiana-minuti=20] [--polona-minuti=20] [--manuscriptorium-minuti=30] [--archive-minuti=10]
+//        [--crossasia-minuti=30] [--sbbasia-minuti=30] [--nomfoundation-minuti=20]
 // Scrive il catalogo diviso per fonte (vedi costruisci.mjs): data/catalogo/indice.json, data/catalogo/indice/<fonte>-<n>.json, data/catalogo/voci/<fonte>-<n>.json,
 // più data/manoscritti.json (compatibilità: solo i codici con autori classici), e gli stati delle scansioni a riprese
 // (data/vaticana.json, data/bodleian.json, data/laurenziana.json, data/leiden.json, data/heidelberg-indici.json; data/<fonte>.json per le fonti del Handschriftenportal: wolfenbuettel, bamberga, karlsruhe, stoccarda, colonia, lipsia; data/yale.json, data/penn.json, data/walters.json).
@@ -71,12 +72,15 @@ import { scansionaHandrit, recordHandrit } from "./fonti/handrit.mjs";
 import { scansionaPolona, recordPolona } from "./fonti/polona.mjs";
 import { scansionaManuscriptorium, recordManuscriptorium } from "./fonti/manuscriptorium.mjs";
 import { scansionaArchive, recordArchive, esistentiArchive } from "./fonti/archive.mjs";
+import { scansionaCrossasia, recordCrossasia } from "./fonti/crossasia.mjs";
+import { scansionaSbbasia, recordSbbasia } from "./fonti/sbbasia.mjs";
+import { scansionaNomfoundation, recordNom } from "./fonti/nomfoundation.mjs";
 import { scriviRegistro, registraEsiti } from "./registro.mjs";
 import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 import { tipoDa } from "./carte.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
-const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,parker,nlw,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,auc,northwestern,archive,vaticana").split(",");
+const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,parker,nlw,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,auc,northwestern,archive,crossasia,sbbasia,nomfoundation,vaticana").split(",");
 const INIZIO = Date.now();
 export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)", berlino: "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
   bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -130,6 +134,10 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   manuscriptorium: "Manuscriptorium: Národní knihovna České republiky e altre biblioteche (manuscriptorium.com)",
   // Internet Archive (corsia «mondo», dal 26 ottobre 2026): manoscritti pubblicati da altre biblioteche (Firenze e Siviglia restano fonti a parte)
   archive: "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
+  // Asia orientale e Sud-est asiatico (corsia «asia», dal 26 ottobre 2026)
+  crossasia: "CrossAsia, Staatsbibliothek zu Berlin: Digital Library of Lao Manuscripts e Digital Library of Northern Thai Manuscripts (iiif.crossasia.org)",
+  sbbasia: "Staatsbibliothek zu Berlin: manoscritti dell'Asia orientale e del Sud-est asiatico (oai.sbb.berlin)",
+  nomfoundation: "Vietnamese Nôm Preservation Foundation: Biblioteca nazionale del Vietnam e templi Thắng Nghiêm e Phổ Nhân (lib.nomfoundation.org; manifesti scritti dal catalogo)",
   vaticana: "Biblioteca Apostolica Vaticana (digi.vatlib.it)" };
 
 // i tre codici del Truculentus restano sempre nel catalogo, anche se una fonte non li ha ancora restituiti
@@ -321,6 +329,11 @@ async function main() {
       dettagli.archive = { scarti, perIstituzione: per };
       return rs;
     },
+    // Asia orientale e Sud-est asiatico (corsia «asia»): CrossAsia (Laos e Thailandia del Nord), Berlino (insiemi dell'Asia orientale e
+    // del Sud-est asiatico, stessi id della fonte «berlino»), Fondazione per la conservazione del Nôm (manifesti scritti dal catalogo)
+    crossasia: async () => recordCrossasia(await scansionaCrossasia({ minuti: min("crossasia", +(arg["crossasia-minuti"] ?? 30)), soloCache: sc("crossasia") })),
+    sbbasia: async () => recordSbbasia(await scansionaSbbasia({ minuti: min("sbbasia", +(arg["sbbasia-minuti"] ?? 30)), soloCache: sc("sbbasia") })),
+    nomfoundation: async () => recordNom(await scansionaNomfoundation({ minuti: min("nomfoundation", +(arg["nomfoundation-minuti"] ?? 20)), soloCache: sc("nomfoundation") })),
     vaticana: async () => {
       let minuti = +(arg["vaticana-minuti"] ?? 20);
       // con un tempo complessivo si lasciano 10 minuti per costruire il catalogo, provarlo e salvarlo

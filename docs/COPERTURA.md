@@ -67,6 +67,8 @@ Aggiornamento del 26 ottobre 2026 (Sud Italia, isole e Grecia): agganciate in Gr
 
 Aggiornamento del 26 ottobre 2026 (Europa, corsia `raccolta-europa.yml`): agganciate dal Handschriftenportal Francoforte (1937 codici), Dresda (1633), Tubinga (273) e Darmstadt (241); handrit.is (3822 codici di Reykjavík e Copenaghen); Polona (13.945 manoscritti di biblioteche polacche); Manuscriptorium (15.169 manoscritti: Repubblica Ceca, Portogallo, Finlandia, Polonia, Romania, Spagna e altre). Nazioni passate ad «agganciata»: Danimarca, Islanda, Repubblica Ceca, Finlandia, Lituania; Svezia «controllata, bloccata» (Alvin). Non entrate (lettera di Urbino): BVMM (non raggiungibile), KBR, Alvin, University of Michigan, BDRC.
 
+Aggiornamento del 26 ottobre 2026 (Asia orientale e Sud-est asiatico, corsia «asia»): nuove fonti CrossAsia della Staatsbibliothek zu Berlin (Digital Library of Lao Manuscripts, circa 13.000, e Digital Library of Northern Thai Manuscripts, circa 6600), Staatsbibliothek zu Berlin per gli insiemi dei manoscritti dell'Asia orientale e del Sud-est asiatico (circa 1150) e Vietnamese Nôm Preservation Foundation (manoscritti Hán-Nôm di Hanoi). Nuove nazioni agganciate: Laos e Vietnam (Myanmar e Indonesia in parte, con i codici delle biblioteche europee). Cina, Taiwan e Corea restano bloccate (siti chiusi ai programmi, nessun IIIF pubblico o divieti nel robots.txt): sono nella lista della lettera di Urbino.
+
 Aggiornamento del 26 ottobre 2026 (Internet Archive, fonte «archive», corsia mondo): entrano 15.677 manoscritti che le biblioteche pubblicano su Internet Archive, letti per caricatore istituzionale con un filtro ciascuno (campione di 40 voci controllato a mano: 95% di manoscritti librari sicuri). Nuove nazioni agganciate: Thailandia (Fragile Palm Leaves Foundation, Nonthaburi, 6.988 manoscritti su foglia di palma) e Canada (McGill, Montréal, 829, oltre a Toronto). Si aggiungono India (Ramtek 3.003, Chennai 924, Haridwar 196), Italia (Joppi di Udine 1.296; Federiciana di Fano, 69 carte disegnate a mano), Francia (BULAC 774, Sainte-Geneviève 208) e Stati Uniti (Starr di Berkeley 1.230, Smithsonian 68, Columbia 59, Haverford 19, Boston Public Library 13). Dettaglio in docs/BIBLIOTECHE.md, «Internet Archive».
 
 Restano fuori da questa lista perché sono già nel registro: Cambridge Digital Library (in lavorazione), British Library (bloccata), Det Kongelige Bibliotek, Koninklijke Bibliotheek, Uppsala e Biblioteka Jagiellońska (da verificare), Qatar Digital Library e National Library of Israel (bloccate).
@@ -428,19 +430,20 @@ Cina, Taiwan, Giappone, Coree, Mongolia. Taiwan non è membro dell'ONU: è conta
 
 | Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
 |---|---|---|---|---|
-| Cina | controllata, bloccata | nessuna | Biblioteca nazionale cinese: nessun manifesto IIIF pubblico. International Dunhuang Programme: bloccato. | I testi tibetani sono nel BDRC (Stati Uniti). |
-| Taiwan | controllata, bloccata | nessuna | National Palace Museum: risponde 403 ai server. | National Central Library, libri rari |
+| Cina | controllata, bloccata | nessuna | Biblioteca nazionale cinese, Biblioteca di Shanghai, Università di Pechino, Fudan: siti che non rispondono ai server o con verifica anti-robot, nessun IIIF pubblico (26 ottobre 2026). International Dunhuang Programme: bloccato. Codici cinesi di biblioteche europee già nel catalogo: Berlino (circa 700 dal 26 ottobre 2026), BnF, Bodleian, BSB. | I testi tibetani sono nel BDRC (Stati Uniti). |
+| Taiwan | controllata, bloccata | nessuna | National Palace Museum: libri rari con iscrizione e CAPTCHA; National Central Library: visore senza IIIF, immagini intere con iscrizione; Academia Sinica: non risponde (26 ottobre 2026). | Libri rari della NCL alla Library of Congress (da vedere) |
 | Giappone | agganciata | National Diet Library, Tokyo: 42.872; Università di Okayama, fondo Ikeda: 14.254; Archivi e mausolei della Casa imperiale, Tokyo: 11.400; Università Tōhoku, fondo Kanō (microfilm), Sendai: 9.710; Università Tōhoku, fondo di matematica tradizionale giapponese (wasan), Sendai: 4.920; Istituto nazionale di letteratura giapponese, Tachikawa: 4.536; altre 410 biblioteche: 94.160. **Totale: 181.852 codici** | Università di Kyoto: manifesti aperti ma elenco vietato. Waseda e Università di Tokyo: bloccate. | Nessuna in più di rilievo: Kokusho raccoglie già centinaia di biblioteche. |
-| Corea del Sud | agganciata | Biblioteca nazionale di Corea, Seul (Corea del Sud): 49 codici (pochi codici, arrivati da un'altra fonte) | Biblioteca nazionale coreana e Kyujanggak: nessun IIIF pubblico, Kyujanggak non risponde. | Jangseogak (Academy of Korean Studies) |
+| Corea del Sud | agganciata | Biblioteca nazionale di Corea, Seul (Corea del Sud): 49 codici (pochi codici, arrivati da un'altra fonte) | Kyujanggak: visore proprio senza IIIF, copie in PDF dei microfilm; Jangseogak: robots.txt che vieta visore, ricerca e immagini; Biblioteca nazionale: nessun IIIF (26 ottobre 2026). | nessuna in più |
 | Corea del Nord | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta accessibile (controllo a tavolino). |
-| Mongolia | non ancora controllata | nessuna | nessuna | Testi mongoli e tibetani nel BDRC |
+| Mongolia | controllata, niente da agganciare | nessuna | nessuna | Codici mongoli di Berlino nel catalogo (fonte «sbbasia»); testi mongoli e tibetani nel BDRC |
 
 ### Biblioteche che mancano
 
 | Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
 |---|---|---|---|---|---|
-| Taiwan | National Central Library, libri rari e manoscritti | rbook.ncl.edu.tw | non si sa | alcune migliaia (stima) | media |
-| Corea del Sud | Jangseogak, Academy of Korean Studies | jsg.aks.ac.kr | non si sa | alcune migliaia (stima) | media |
+| Taiwan | National Central Library, libri rari e manoscritti | rbook.ncl.edu.tw | no (visore proprio, 26 ottobre 2026) | alcune migliaia (stima) | lettera di Urbino |
+| Corea del Sud | Jangseogak, Academy of Korean Studies | jsg.aks.ac.kr | robots.txt che vieta visore e immagini | alcune migliaia (stima) | lettera di Urbino |
+| Giappone | Università Waseda, Kotenseki Sōgō | www.wul.waseda.ac.jp/kotenseki | sì (sito in manutenzione il 26 ottobre 2026) | decine di migliaia | da riprovare |
 
 ## Sud-est asiatico
 
@@ -450,14 +453,14 @@ Tradizioni su foglia di palma (Thailandia, Laos, Myanmar, Cambogia), Vietnam e m
 
 | Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
 |---|---|---|---|---|
-| Myanmar | non ancora controllata | nessuna | nessuna | Fondi birmani in vHMML (bloccato) |
-| Thailandia | agganciata | Fragile Palm Leaves Foundation, Nonthaburi: 6.988 manoscritti su foglia di palma, soprattutto birmani e pali (copie del BDRC su Internet Archive) | nessuna | Digitized Lanna Manuscripts |
-| Laos | non ancora controllata | nessuna | nessuna | Digital Library of Lao Manuscripts |
+| Myanmar | agganciata in parte | Staatsbibliothek zu Berlin: una decina di codici birmani (fonte «sbbasia»); manoscritti birmani della Fragile Palm Leaves Foundation (Thailandia) | DREAMSEA e vHMML: manifesti vietati | Fondi birmani in vHMML (bloccato) |
+| Thailandia | agganciata | Fragile Palm Leaves Foundation, Nonthaburi: 6.988 manoscritti su foglia di palma, soprattutto birmani e pali (copie del BDRC su Internet Archive); dal 26 ottobre 2026 Digital Library of Northern Thai Manuscripts (CrossAsia): circa 6600 (raccolta in corso) | DREAMSEA: manifesti su vHMML | nessuna in più |
+| Laos | agganciata | Digital Library of Lao Manuscripts (Biblioteca nazionale del Laos, copie di CrossAsia, Staatsbibliothek zu Berlin): circa 13.000 manoscritti (dal 26 ottobre 2026, raccolta in corso) | DREAMSEA (circa 2400 codici di templi laotiani): manifesti su vHMML | nessuna |
 | Cambogia | non ancora controllata | nessuna | nessuna | Fondo per l'edizione dei manoscritti della Cambogia (FEMC) |
-| Vietnam | non ancora controllata | nessuna | nessuna | Fondazione per la conservazione del Nôm |
+| Vietnam | agganciata | Vietnamese Nôm Preservation Foundation (Biblioteca nazionale del Vietnam e templi Thắng Nghiêm e Phổ Nhân, Hanoi): solo i manoscritti tra circa 1400 volumi Hán-Nôm (dal 26 ottobre 2026, raccolta in corso; manifesti scritti dal catalogo) | Biblioteca nazionale (hannom.nlv.gov.vn): non risponde | nessuna |
 | Malaysia | non ancora controllata | nessuna | nessuna | Biblioteca nazionale, Centro dei manoscritti malesi |
 | Singapore | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
-| Indonesia | non ancora controllata | nessuna | nessuna | Khastara (Biblioteca nazionale), DREAMSEA |
+| Indonesia | agganciata in parte | Codici giavanesi, malesi, bugi, batak, sundanesi e balinesi delle biblioteche europee: Staatsbibliothek zu Berlin (circa 200 dal 26 ottobre 2026), Leida, BnF | Khastara (Biblioteca nazionale): Cloudflare anche dal browser; DREAMSEA: manifesti su vHMML (26 ottobre 2026) | Khastara, DREAMSEA (lettera di Urbino) |
 | Brunei | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
 | Filippine | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
 | Timor Est | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
@@ -466,13 +469,10 @@ Tradizioni su foglia di palma (Thailandia, Laos, Myanmar, Cambogia), Vietnam e m
 
 | Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
 |---|---|---|---|---|---|
-| Thailandia | Digitized Lanna Manuscripts (Thailandia del Nord, foglia di palma) | lannamanuscripts.net | no (non risulta) | alcune migliaia | media |
-| Laos | Digital Library of Lao Manuscripts | www.laomanuscripts.net | no (non risulta) | alcune migliaia | media |
 | Cambogia | Fonds pour l'édition des manuscrits du Cambodge (FEMC, con l'EFEO) | non verificato | non si sa | non si sa | bassa |
-| Vietnam | Fondazione per la conservazione del Nôm: libri Hán-Nôm della Biblioteca nazionale del Vietnam | www.nomfoundation.org | no (non risulta) | circa 1000-2000 volumi (stima incerta) | media |
 | Malaysia | Perpustakaan Negara Malaysia, Centro dei manoscritti malesi | non verificato | non si sa | non si sa | bassa |
-| Indonesia | Khastara, Biblioteca nazionale dell'Indonesia | khastara.perpusnas.go.id | non si sa | alcune migliaia | media |
-| Indonesia | DREAMSEA (manoscritti del Sud-est asiatico; copie anche in vHMML) | dreamsea.co | non si sa | alcune migliaia | media |
+| Indonesia | Khastara, Biblioteca nazionale dell'Indonesia | khastara.perpusnas.go.id | Cloudflare anche dal browser | alcune migliaia | lettera di Urbino |
+| Indonesia | DREAMSEA (manoscritti del Sud-est asiatico, manifesti su vHMML) | hmmlcloud.org/dreamsea | sì, ma su vHMML (vietato) | alcune migliaia | lettera di Urbino |
 
 ## Americhe
 

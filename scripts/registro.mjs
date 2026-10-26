@@ -77,6 +77,10 @@ export const BIBLIOTECHE = {
   // America Latina, siti solo PDF (dal 26 ottobre 2026)
   bnchile: { biblioteca: "Biblioteca Nacional de Chile (codici in pubblico dominio, per Memoria Chilena o per età; immagini estratte dai PDF)", citta: "Santiago (Cile)", come: "fatta una volta a mano: PDF estratti nel ramo «immagini», manifesti scritti dal catalogo" },
   bnv: { biblioteca: "Biblioteca Nacional de Venezuela (Biblioteca Digital César Rengifo; immagini estratte dai PDF)", citta: "Caracas (Venezuela)", come: "fatta una volta a mano: PDF estratti nel ramo «immagini», manifesti scritti dal catalogo" },
+  // Asia orientale e Sud-est asiatico (corsia «asia», dal 26 ottobre 2026)
+  crossasia: { biblioteca: "CrossAsia (Staatsbibliothek zu Berlin): Digital Library of Lao Manuscripts (Biblioteca nazionale del Laos) e Digital Library of Northern Thai Manuscripts", citta: "Laos e Thailandia del Nord", come: "corsia asia: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 14 giorni)" },
+  sbbasia: { biblioteca: "Staatsbibliothek zu Berlin: manoscritti dell'Asia orientale e del Sud-est asiatico (cinesi, naxi, mancesi, mongoli, tibetani, thai, giavanesi, malesi, bugi, batak)", citta: "Berlino", come: "corsia asia, ogni notte (raccolta OAI completa ogni 14 giorni)" },
+  nomfoundation: { biblioteca: "Vietnamese Nôm Preservation Foundation: manoscritti Hán-Nôm della Biblioteca nazionale del Vietnam e dei templi Thắng Nghiêm e Phổ Nhân (manifesti IIIF scritti da Emendando)", citta: "Hanoi (Vietnam)", come: "corsia asia: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 30 giorni; manifesti scritti dal catalogo)" },
   vaticana: { biblioteca: "Biblioteca Apostolica Vaticana", citta: "Città del Vaticano", come: "corsia propria: a ruota, senza pause tra un'esecuzione e l'altra" },
 };
 
@@ -314,6 +318,23 @@ export const AVANZAMENTO = {
     const s = leggi("data/manuscriptorium.json"); if (!s) return { testo: "non ancora cominciata" };
     if (s.cursore != null) return { testo: `in corso: ${num(s.cursore)} schede lette su ${num(s.totale)}`, data: s.aggiornato };
     return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} con copia digitale, senza editore né soggetto di stampato; fuori le copie di biblioteche già nel catalogo, carte geografiche, lettere e stampati riconoscibili dalla segnatura)`, data: s.completato || s.aggiornato };
+  },
+  crossasia: () => {
+    const s = leggi("data/crossasia.json"); if (!s) return { testo: "non ancora cominciata" };
+    const n = Object.keys(s.voci || {}).length, t = Object.values(s.totali || {}).reduce((a, b) => a + b, 0);
+    if (s.cursore) return { testo: `in corso, a ruota: ${num(n)} manoscritti letti${t ? " su circa " + num(t) : ""} (sito ${s.cursore.s + 1} di 2, pagina ${num(s.cursore.p)})`, data: s.aggiornato };
+    return { testo: `elenchi letti tutti (${num(n)} manoscritti: Laos ${num((s.totali || {}).dllm)}, Thailandia del Nord ${num((s.totali || {}).lanna)})`, data: s.completato || s.aggiornato };
+  },
+  sbbasia: () => {
+    const s = leggi("data/sbbasia.json"); if (!s) return { testo: "non ancora cominciata" };
+    if (s.cursore) return { testo: `in corso: insieme ${s.cursore.i + 1} di 2`, data: s.aggiornato };
+    return { testo: `record letti tutti (${num(Object.keys(s.voci || {}).length)} manoscritti negli insiemi «ostasiatische» e «suedostasiatische Handschriften»; fuori le cartelle di catalogazione «Pustaka»)`, data: s.completato || s.aggiornato };
+  },
+  nomfoundation: () => {
+    const s = leggi("data/nomfoundation.json"); if (!s) return { testo: "non ancora cominciata" };
+    const vs = Object.values(s.voci || {}), lette = vs.filter(v => v.cod || v.x).length, mss = vs.filter(v => v.n && v.w).length;
+    if (lette < vs.length) return { testo: `in corso, a ruota: ${num(lette)} schede lette su ${num(vs.length)} volumi (${num(mss)} manoscritti finora)`, data: s.aggiornato };
+    return { testo: `schede lette tutte (${num(vs.length)} volumi; ${num(mss)} manoscritti, fuori le xilografie)`, data: s.completato || s.aggiornato };
   },
   vaticana: () => {
     const s = leggi("data/vaticana.json"); if (!s) return { testo: "non ancora cominciata" };
