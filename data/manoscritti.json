@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T07:36:11.057Z",
+ "aggiornato": "2026-10-26T08:30:43.266Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -124,11 +124,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 399,
+   "codici": 410,
    "esito": "ok"
   }
  },
- "totale": 10235,
+ "totale": 10246,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -53810,6 +53810,371 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.564/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.564",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1512",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1512",
+   "datazione": "Sec. VIII-IX",
+   "secolo": [
+    8,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Interpretationes Vergilianae",
+   "autori": [
+    {
+     "id": "donato",
+     "autore": "Donato",
+     "latino": "Donatus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Claudius Donatus, Tiberius, sec. IV»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1512/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1512",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1542",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1542",
+   "datazione": "Sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Saturnalia",
+   "autori": [
+    {
+     "id": "macrobio",
+     "autore": "Macrobio",
+     "latino": "Macrobius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Saturnalia"
+     ],
+     "corrispondenza": "autore: «Macrobius, Ambrosius Aurelius Theodosius, f. 400/430»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1542/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1542",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1579",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1579",
+   "datazione": "sec. XV med",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Opere (Vergilius Maro, Publius, 70-19 a.C.)",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Vergilius Maro, Publius, 70-19 a.C., Ov…»"
+    },
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…us Maro, Publius, 70-19 a.C., Ovidius Naso, Publius, 43 a.C.-17/18…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1579/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1579",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1592",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1592",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": null,
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Horatius Flaccus, Quintus, 65-8 a.C.,…»"
+    },
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…Flaccus, Quintus, 65-8 a.C., Boethius, Anicius Manlius Torquatus Se…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1592/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1592",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1596",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1596",
+   "datazione": "sec. XIII in",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Metamorphoses",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Metamorfosi"
+     ],
+     "corrispondenza": "autore: «Ovidius Naso, Publius, 43 a.C.-17/18 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1596/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1596",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1600",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1600",
+   "datazione": "sec. XIV in",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Opere (Ovidius Naso, Publius, 43 a.C.-17/18 d.C.)",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Ovidius Naso, Publius, 43 a.C.-17/18 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1600/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1600",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1615",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1615",
+   "datazione": "sec. XIV-XV",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Thebais",
+   "autori": [
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tebaide"
+     ],
+     "corrispondenza": "autore: «Statius, Publius Papinius, c. 40-c. 96»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1615/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1615",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1619",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1619",
+   "datazione": "sec. XIV ex",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Pharsalia",
+   "autori": [
+    {
+     "id": "lucano",
+     "autore": "Lucano",
+     "latino": "Lucanus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Pharsalia"
+     ],
+     "corrispondenza": "autore: «Lucanus, Marcus Annaeus, 39-65»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1619/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1619",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1640",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1640",
+   "datazione": "Sec. X<-XI>",
+   "secolo": [
+    10,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Comoediae",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commedie"
+     ],
+     "corrispondenza": "autore: «Terentius Afer, Publius, c. 195-159 a.C»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1640/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1640",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1645",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1645",
+   "datazione": "sec. XIV/XV",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Tragoediae (Seneca, Lucius Annaeus, 5/4 a.C.-65 d.C.). Gruppi, scelte",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tragedie"
+     ],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus, 5/4 a.C.-65…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1645/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1645",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-1647",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 1647",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Tragoediae (Seneca, Lucius Annaeus, 5/4 a.C.-65 d.C.). Gruppi, scelte",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tragedie"
+     ],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus, 5/4 a.C.-65 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.1647/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.1647",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },

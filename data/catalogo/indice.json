@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T07:36:11.057Z",
- "totale": 366118,
- "con_autori": 22447,
+ "aggiornato": "2026-10-26T08:30:43.266Z",
+ "totale": 366884,
+ "con_autori": 22458,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
   "id",
@@ -25,7 +25,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 50123
+   "codici": 50889
   },
   "fr": {
    "nome": "francese",
@@ -183,7 +183,7 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 5518
+   "codici": 5529
   },
   "classico-greco": {
    "nome": "classici greci",
@@ -209,7 +209,7 @@
    "nome": "Terenzio",
    "latino": "Terentius",
    "categoria": "classico-latino",
-   "codici": 190
+   "codici": 191
   },
   "lucrezio": {
    "nome": "Lucrezio",
@@ -245,13 +245,13 @@
    "nome": "Virgilio",
    "latino": "Vergilius",
    "categoria": "classico-latino",
-   "codici": 411
+   "codici": 412
   },
   "orazio": {
    "nome": "Orazio",
    "latino": "Horatius",
    "categoria": "classico-latino",
-   "codici": 230
+   "codici": 231
   },
   "tibullo": {
    "nome": "Tibullo",
@@ -269,7 +269,7 @@
    "nome": "Ovidio",
    "latino": "Ovidius",
    "categoria": "classico-latino",
-   "codici": 491
+   "codici": 494
   },
   "livio": {
    "nome": "Livio",
@@ -281,13 +281,13 @@
    "nome": "Seneca",
    "latino": "Seneca",
    "categoria": "classico-latino",
-   "codici": 388
+   "codici": 390
   },
   "lucano": {
    "nome": "Lucano",
    "latino": "Lucanus",
    "categoria": "classico-latino",
-   "codici": 139
+   "codici": 140
   },
   "persio": {
    "nome": "Persio",
@@ -311,7 +311,7 @@
    "nome": "Stazio",
    "latino": "Statius",
    "categoria": "classico-latino",
-   "codici": 108
+   "codici": 109
   },
   "plinio-vecchio": {
    "nome": "Plinio il Vecchio",
@@ -371,7 +371,7 @@
    "nome": "Donato",
    "latino": "Donatus",
    "categoria": "classico-latino",
-   "codici": 143
+   "codici": 144
   },
   "servio": {
    "nome": "Servio",
@@ -383,13 +383,13 @@
    "nome": "Macrobio",
    "latino": "Macrobius",
    "categoria": "classico-latino",
-   "codici": 130
+   "codici": 131
   },
   "boezio": {
    "nome": "Boezio",
    "latino": "Boethius",
    "categoria": "classico-latino",
-   "codici": 635
+   "codici": 636
   },
   "ausonio": {
    "nome": "Ausonio",
@@ -2967,10 +2967,10 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 8882,
-   "con_autori": 812,
+   "codici": 9648,
+   "con_autori": 823,
    "lingue": {
-    "la": 8593,
+    "la": 9359,
     "it": 233,
     "xx": 18,
     "de": 3,
@@ -2983,7 +2983,7 @@
    "prefissi": [
     "bav-"
    ],
-   "pezzi_voci": 12,
+   "pezzi_voci": 13,
    "indice": [
     "indice/vaticana-0.json"
    ]
@@ -3178,7 +3178,7 @@
   {
    "file": "indice/vaticana-0.json",
    "fonte": "vaticana",
-   "righe": 8882
+   "righe": 9648
   }
  ],
  "luoghi": {
