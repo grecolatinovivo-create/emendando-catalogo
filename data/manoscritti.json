@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T19:01:33.346Z",
+ "aggiornato": "2026-10-26T19:56:29.433Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -179,8 +179,8 @@
   },
   "cbl": {
    "nome": "Chester Beatty, Dublino (viewer.cbl.ie)",
-   "codici": 11,
-   "esito": "errore: manifesti letti in parte (mancano 1222): riprenderà alla prossima esecuzione"
+   "codici": 12,
+   "esito": "errore: manifesti letti in parte (mancano 861): riprenderà alla prossima esecuzione"
   },
   "parker": {
    "nome": "Parker Library, Corpus Christi College, Cambridge (manifesti di Stanford, dms-data.stanford.edu; elenco da Biblissima)",
@@ -353,7 +353,7 @@
    "esito": "ok"
   }
  },
- "totale": 12316,
+ "totale": 12317,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -336023,6 +336023,39 @@
    ],
    "manifest": "https://viewer.cbl.ie/viewer/api/v1/records/Ar_5018/manifest/",
    "pagina": "https://viewer.cbl.ie/viewer/object/Ar_5018/1/",
+   "licenza": "© Chester Beatty, Dublino (condizioni d'uso: chesterbeatty.ie)",
+   "immagini": null
+  },
+  {
+   "id": "cbl-c-1013",
+   "fonte": "cbl",
+   "biblioteca": "Chester Beatty",
+   "citta": "Dublino",
+   "segnatura": "C 1013",
+   "datazione": "18th century",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "zh"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Poems by the emperor: Fragrant flowers and spring birds; Clear moon and pure breeze (Yuzhi fu de huaxiang niao yu yue ji feng qing shi)",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Uccelli"
+     ],
+     "corrispondenza": "titolo: «…: Fragrant flowers and spring birds; Clear moon and pure breeze (…»"
+    }
+   ],
+   "manifest": "https://viewer.cbl.ie/viewer/api/v1/records/C_1013/manifest/",
+   "pagina": "https://viewer.cbl.ie/viewer/object/C_1013/1/",
    "licenza": "© Chester Beatty, Dublino (condizioni d'uso: chesterbeatty.ie)",
    "immagini": null
   },

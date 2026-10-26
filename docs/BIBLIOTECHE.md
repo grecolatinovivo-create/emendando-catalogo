@@ -18,7 +18,7 @@ Come leggere le colonne:
 - **Ultima raccolta**: com'è andata l'ultima volta.
 
 <!-- inizio automatico -->
-Codici nel catalogo, in tutto: **500.865**, di cui **27.652** con almeno un autore riconosciuto.
+Codici nel catalogo, in tutto: **500.963**, di cui **27.653** con almeno un autore riconosciuto.
 
 | Biblioteca | Città | Codici totali | Di cui con autori riconosciuti | Lingue | Avanzamento della lettura | Come si aggiorna | Ultimo aggiornamento | Ultima raccolta |
 |---|---|---|---|---|---|---|---|---|
@@ -61,7 +61,7 @@ Codici nel catalogo, in tutto: **500.865**, di cui **27.652** con almeno un auto
 | Irish Script on Screen (Royal Irish Academy, National Library of Ireland, Trinity College Dublin, National Library of Scotland e altre) | Irlanda e altre sedi | 500 | 5 | non indicata 498, siriaco 1, latino 1 | codici letti tutti (508) | corsia uk, ogni notte (elenco ogni 6 giorni) | 2026-10-26 | riuscita |
 | John Rylands Research Institute and Library (Manchester Digital Collections) | Manchester | 632 | 69 | ebraico 214, persiano 181, altre lingue 96, altre 293 | manifesti letti tutti (1522) | corsia uk: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 6 giorni) | 2026-10-26 | riuscita |
 | Cambridge Digital Library (University Library e college) | Cambridge | 5403 | 483 | sanscrito 1360, non indicata 910, cinese 835, altre 2983 | manifesti letti tutti (6771) | corsia uk: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 6 giorni) | 2026-10-26 | riuscita |
-| Chester Beatty | Dublino | 1213 | 105 | persiano 427, latino 227, arabo 186, altre 454 | 1771 manifesti letti su 2993; a riprese, a ruota: mancano circa 5 ore | corsia uk: a ruota finché la prima lettura non è finita (un manifesto ogni 10 secondi, come chiede la biblioteca), poi ogni notte | 2026-10-26 | in corso, riprende alla prossima |
+| Chester Beatty | Dublino | 1311 | 106 | persiano 427, latino 227, arabo 186, altre 552 | 2132 manifesti letti su 2993; a riprese, a ruota: mancano circa 3 ore | corsia uk: a ruota finché la prima lettura non è finita (un manifesto ogni 10 secondi, come chiede la biblioteca), poi ogni notte | 2026-10-26 | in corso, riprende alla prossima |
 | Parker Library, Corpus Christi College (manifesti IIIF di Stanford) | Cambridge | 553 | 141 | non indicata 504, latino 42, francese 3, altre 4 | codici letti tutti (559) | corsia uk, ogni notte (elenco da Biblissima ogni 14 giorni, codici nuovi; il sito parker.stanford.edu non si usa) | 2026-10-26 | riuscita |
 | National Library of Wales / Llyfrgell Genedlaethol Cymru | Aberystwyth | 124 | 4 | gallese 88, latino 30, inglese 28, altre 14 | manifesti letti tutti (127) | corsia uk, ogni notte (elenco da Wikidata ed Europeana ogni 14 giorni, manifesti nuovi; il sito della biblioteca non si usa) | 2026-10-26 | riuscita |
 | National Diet Library (国立国会図書館): manoscritti dei libri antichi giapponesi e cinesi | Tokyo (Giappone) | 42.872 | 0 | giapponese 40.318, cinese 2459, coreano 89, altre 7 | record letti tutti (114.703 libri antichi digitalizzati; 43.352 manoscritti; fuori i libri a stampa); manifesti controllati 0 su 43.352 (0 non pubblici, fuori; il controllo continua a riprese) | corsia mondo: a ruota finché la prima lettura completa non è finita, poi ogni notte (solo i record cambiati ogni 6 giorni, raccolta completa ogni 30) | 2026-10-26 | riuscita |
