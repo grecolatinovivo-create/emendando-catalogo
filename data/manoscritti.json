@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T22:46:10.913Z",
+ "aggiornato": "2026-10-26T01:11:48.699Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -119,11 +119,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 388,
+   "codici": 394,
    "esito": "ok"
   }
  },
- "totale": 10214,
+ "totale": 10220,
  "manoscritti": [
   {
    "id": "akl-17669",
@@ -40730,6 +40730,207 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Ott.lat.1210/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Ott.lat.1210",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-ott-lat-1368",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Ott. lat. 1368",
+   "datazione": "sec. XV med",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Comoediae (Terentius Afer, Publius, c. 195-159 a.C.). Gruppi, scelte",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commedie"
+     ],
+     "corrispondenza": "autore: «Terentius Afer, Publius, c. 195-159 a.C»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Ott.lat.1368/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Ott.lat.1368",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-ott-lat-1417",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Ott. lat. 1417",
+   "datazione": "sec. XV med",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": null,
+   "autori": [
+    {
+     "id": "giustino",
+     "autore": "Giustino",
+     "latino": "Iustinus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Iustinus, Marcus Iunianus, sec. III, aut=Nepos, Cornelius, c. 99-24 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Ott.lat.1417/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Ott.lat.1417",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-ott-lat-1420",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Ott. lat. 1420",
+   "datazione": "sec. XIV",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Tragoediae (Seneca, Lucius Annaeus, 5/4 a.C.-65 d.C.). Gruppi, scelte",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tragedie"
+     ],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus, 5/4 a.C.-65 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Ott.lat.1420/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Ott.lat.1420",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-ott-lat-1529",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Ott. lat. 1529",
+   "datazione": "sec. XV med",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Historiae Philippicae",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Filippiche"
+     ],
+     "corrispondenza": "titolo: «Historiae Philippicae»"
+    },
+    {
+     "id": "giustino",
+     "autore": "Giustino",
+     "latino": "Iustinus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epitoma historiarum Philippicarum"
+     ],
+     "corrispondenza": "autore: «Iustinus, Marcus Iunianus, sec. III»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Ott.lat.1529/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Ott.lat.1529",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-ott-lat-2005",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Ott. lat. 2005",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Comoediae (Plautus, Titus Maccius, m. 184 a.C.). Gruppi, scelte",
+   "autori": [
+    {
+     "id": "plauto",
+     "autore": "Plauto",
+     "latino": "Plautus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commedie"
+     ],
+     "corrispondenza": "autore: «Plautus, Titus Maccius, m. 184 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Ott.lat.2005/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Ott.lat.2005",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-ott-lat-2057",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Ott. lat. 2057",
+   "datazione": "sec. XV in",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": null,
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius, 106-43 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Ott.lat.2057/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Ott.lat.2057",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },
