@@ -1,9 +1,9 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T15:19:55.284Z",
- "totale": 471287,
- "con_autori": 27214,
- "miniati": 9767,
+ "aggiornato": "2026-10-26T15:25:36.168Z",
+ "totale": 472607,
+ "con_autori": 27217,
+ "miniati": 9867,
  "musica": 13525,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
@@ -30,7 +30,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 72173
+   "codici": 72176
   },
   "?": {
    "nome": "lingua non indicata",
@@ -38,19 +38,19 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 28128
+   "codici": 28129
   },
   "de": {
    "nome": "tedesco",
-   "codici": 22001
+   "codici": 22022
   },
   "ar": {
    "nome": "arabo",
-   "codici": 21545
+   "codici": 21586
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 17541
+   "codici": 17748
   },
   "zh": {
    "nome": "cinese",
@@ -66,19 +66,19 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10380
-  },
-  "pl": {
-   "nome": "polacco",
-   "codici": 8301
+   "codici": 10382
   },
   "he": {
    "nome": "ebraico",
-   "codici": 7433
+   "codici": 8751
+  },
+  "pl": {
+   "nome": "polacco",
+   "codici": 8302
   },
   "it": {
    "nome": "italiano",
-   "codici": 7341
+   "codici": 7364
   },
   "en": {
    "nome": "inglese",
@@ -94,11 +94,11 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 4397
+   "codici": 4409
   },
   "ca": {
    "nome": "catalano",
-   "codici": 3437
+   "codici": 3438
   },
   "is": {
    "nome": "islandese e norreno",
@@ -114,7 +114,7 @@
   },
   "tr": {
    "nome": "turco",
-   "codici": 2536
+   "codici": 2539
   },
   "lo": {
    "nome": "lao",
@@ -142,7 +142,7 @@
   },
   "nl": {
    "nome": "nederlandese",
-   "codici": 733
+   "codici": 734
   },
   "da": {
    "nome": "danese",
@@ -162,7 +162,7 @@
   },
   "ka": {
    "nome": "georgiano",
-   "codici": 280
+   "codici": 281
   },
   "vi": {
    "nome": "vietnamita (hán-nôm)",
@@ -300,7 +300,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 14042
+   "codici": 14045
   },
   "medievale": {
    "nome": "autori medievali",
@@ -310,7 +310,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 469610
+   "codici": 470930
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -1292,7 +1292,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 6483
+   "codici": 6486
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1504,6 +1504,7 @@
   "Benediktinské opatství Rajhrad",
   "Benediktinské opatství Rajhrad, Brno",
   "Bernisches Historisches Museum, Cambridge",
+  "Bevis of Hampton JER NLI (copia digitale della National Library of Israel)",
   "Bibioteka Wyższego Seminarium Duchownego w Płocku",
   "Bible Society, Cambridge",
   "Biblioteca Apostolica Vaticana, Città del Vaticano",
@@ -4659,28 +4660,35 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 471,
+   "codici": 1791,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 37,
+   "miniati": 137,
    "musica": 0,
-   "con_autori": 1,
+   "con_autori": 4,
    "lingue": {
-    "he": 471,
-    "xx": 69,
-    "de": 11,
-    "ar": 11,
-    "fa": 7,
-    "it": 3,
+    "xx": 276,
+    "it": 26,
+    "he": 1789,
+    "fa": 19,
+    "ar": 52,
+    "de": 32,
+    "la": 3,
     "en": 1,
     "grc": 1,
-    "tr": 1
+    "tr": 4,
+    "pl": 1,
+    "ka": 1,
+    "nl": 1,
+    "fr": 1,
+    "es": 2,
+    "ca": 1
    },
-   "esito": "ok",
+   "esito": "errore: manifesti letti in parte (mancano 13763): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
-   "pezzi_voci": 1,
+   "pezzi_voci": 3,
    "indice": [
     "indice/nli-0.json"
    ]
@@ -5310,7 +5318,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 471
+   "righe": 1791
   },
   {
    "file": "indice/getty-0.json",
@@ -7894,6 +7902,7 @@
   "rajhrad",
   "brno",
   "cambridge",
+  "gerusalemme",
   "plock",
   "cambridge",
   "citta-del-vaticano",
