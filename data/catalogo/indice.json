@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T12:24:57.369Z",
- "totale": 428662,
- "con_autori": 25808,
+ "aggiornato": "2026-10-26T12:43:45.052Z",
+ "totale": 444339,
+ "con_autori": 25914,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte (categoria a parte, conteggi in «tipi») e vuoto per i codici; «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
   "id",
@@ -22,51 +22,55 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 180386
+   "codici": 180479
   },
   "la": {
    "nome": "latino",
-   "codici": 67491
+   "codici": 67633
   },
   "fr": {
    "nome": "francese",
-   "codici": 27335
+   "codici": 27653
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 26684
+   "codici": 26704
   },
   "de": {
    "nome": "tedesco",
-   "codici": 21095
-  },
-  "ar": {
-   "nome": "arabo",
-   "codici": 14969
-  },
-  "grc": {
-   "nome": "greco",
-   "codici": 13244
-  },
-  "zh": {
-   "nome": "cinese",
-   "codici": 11632
-  },
-  "es": {
-   "nome": "spagnolo",
-   "codici": 10334
+   "codici": 21109
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 8578
+   "codici": 16806
+  },
+  "ar": {
+   "nome": "arabo",
+   "codici": 15619
+  },
+  "grc": {
+   "nome": "greco",
+   "codici": 13254
+  },
+  "zh": {
+   "nome": "cinese",
+   "codici": 11636
+  },
+  "es": {
+   "nome": "spagnolo",
+   "codici": 10344
+  },
+  "sa": {
+   "nome": "sanscrito",
+   "codici": 10071
   },
   "pl": {
    "nome": "polacco",
    "codici": 8300
   },
-  "sa": {
-   "nome": "sanscrito",
-   "codici": 6873
+  "it": {
+   "nome": "italiano",
+   "codici": 7108
   },
   "bo": {
    "nome": "tibetano",
@@ -74,19 +78,15 @@
   },
   "en": {
    "nome": "inglese",
-   "codici": 6060
-  },
-  "it": {
-   "nome": "italiano",
-   "codici": 5961
+   "codici": 6157
   },
   "he": {
    "nome": "ebraico",
-   "codici": 5760
+   "codici": 5790
   },
   "pt": {
    "nome": "portoghese",
-   "codici": 4854
+   "codici": 4862
   },
   "ca": {
    "nome": "catalano",
@@ -98,15 +98,19 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 2372
+   "codici": 2853
+  },
+  "ko": {
+   "nome": "coreano",
+   "codici": 2101
+  },
+  "tr": {
+   "nome": "turco",
+   "codici": 1949
   },
   "cop": {
    "nome": "copto",
    "codici": 1715
-  },
-  "tr": {
-   "nome": "turco",
-   "codici": 1702
   },
   "cs": {
    "nome": "ceco",
@@ -116,29 +120,25 @@
    "nome": "etiopico",
    "codici": 951
   },
-  "ko": {
-   "nome": "coreano",
-   "codici": 882
+  "syr": {
+   "nome": "siriaco",
+   "codici": 786
   },
   "cu": {
    "nome": "slavo ecclesiastico",
    "codici": 780
   },
-  "syr": {
-   "nome": "siriaco",
-   "codici": 769
-  },
   "nl": {
    "nome": "nederlandese",
-   "codici": 690
+   "codici": 693
   },
   "ru": {
    "nome": "russo",
-   "codici": 451
+   "codici": 452
   },
   "hy": {
    "nome": "armeno",
-   "codici": 382
+   "codici": 385
   },
   "ka": {
    "nome": "georgiano",
@@ -146,7 +146,7 @@
   },
   "da": {
    "nome": "danese",
-   "codici": 238
+   "codici": 240
   },
   "ms": {
    "nome": "malese",
@@ -154,7 +154,7 @@
   },
   "oc": {
    "nome": "occitano",
-   "codici": 186
+   "codici": 187
   },
   "cy": {
    "nome": "gallese",
@@ -178,7 +178,7 @@
   },
   "hu": {
    "nome": "ungherese",
-   "codici": 31
+   "codici": 32
   },
   "lt": {
    "nome": "lt",
@@ -224,29 +224,29 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 6178
+   "codici": 6232
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 5824
+   "codici": 5857
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 13243
+   "codici": 13262
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 2952
+   "codici": 2954
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 427970
+   "codici": 443577
   },
   "carta": {
    "nome": "carte manoscritte",
-   "codici": 692
+   "codici": 762
   }
  },
  "autori": {
@@ -266,43 +266,43 @@
    "nome": "Lucrezio",
    "latino": "Lucretius",
    "categoria": "classico-latino",
-   "codici": 29
+   "codici": 32
   },
   "catullo": {
    "nome": "Catullo",
    "latino": "Catullus",
    "categoria": "classico-latino",
-   "codici": 56
+   "codici": 57
   },
   "cicerone": {
    "nome": "Cicerone",
    "latino": "Cicero",
    "categoria": "classico-latino",
-   "codici": 1098
+   "codici": 1103
   },
   "cesare": {
    "nome": "Cesare",
    "latino": "Caesar",
    "categoria": "classico-latino",
-   "codici": 132
+   "codici": 133
   },
   "sallustio": {
    "nome": "Sallustio",
    "latino": "Sallustius",
    "categoria": "classico-latino",
-   "codici": 193
+   "codici": 194
   },
   "virgilio": {
    "nome": "Virgilio",
    "latino": "Vergilius",
    "categoria": "classico-latino",
-   "codici": 454
+   "codici": 460
   },
   "orazio": {
    "nome": "Orazio",
    "latino": "Horatius",
    "categoria": "classico-latino",
-   "codici": 253
+   "codici": 254
   },
   "tibullo": {
    "nome": "Tibullo",
@@ -326,7 +326,7 @@
    "nome": "Livio",
    "latino": "Livius",
    "categoria": "classico-latino",
-   "codici": 251
+   "codici": 253
   },
   "seneca": {
    "nome": "Seneca",
@@ -350,13 +350,13 @@
    "nome": "Giovenale",
    "latino": "Iuvenalis",
    "categoria": "classico-latino",
-   "codici": 136
+   "codici": 137
   },
   "marziale": {
    "nome": "Marziale",
    "latino": "Martialis",
    "categoria": "classico-latino",
-   "codici": 44
+   "codici": 45
   },
   "stazio": {
    "nome": "Stazio",
@@ -368,31 +368,31 @@
    "nome": "Plinio il Vecchio",
    "latino": "Plinius maior",
    "categoria": "classico-latino",
-   "codici": 163
+   "codici": 169
   },
   "plinio-giovane": {
    "nome": "Plinio il Giovane",
    "latino": "Plinius minor",
    "categoria": "classico-latino",
-   "codici": 40
+   "codici": 41
   },
   "tacito": {
    "nome": "Tacito",
    "latino": "Tacitus",
    "categoria": "classico-latino",
-   "codici": 45
+   "codici": 46
   },
   "svetonio": {
    "nome": "Svetonio",
    "latino": "Suetonius",
    "categoria": "classico-latino",
-   "codici": 96
+   "codici": 97
   },
   "quintiliano": {
    "nome": "Quintiliano",
    "latino": "Quintilianus",
    "categoria": "classico-latino",
-   "codici": 98
+   "codici": 106
   },
   "apuleio": {
    "nome": "Apuleio",
@@ -410,7 +410,7 @@
    "nome": "Claudiano",
    "latino": "Claudianus",
    "categoria": "classico-latino",
-   "codici": 73
+   "codici": 75
   },
   "prisciano": {
    "nome": "Prisciano",
@@ -422,7 +422,7 @@
    "nome": "Donato",
    "latino": "Donatus",
    "categoria": "classico-latino",
-   "codici": 182
+   "codici": 185
   },
   "servio": {
    "nome": "Servio",
@@ -440,7 +440,7 @@
    "nome": "Boezio",
    "latino": "Boethius",
    "categoria": "classico-latino",
-   "codici": 679
+   "codici": 682
   },
   "ausonio": {
    "nome": "Ausonio",
@@ -452,7 +452,7 @@
    "nome": "Valerio Massimo",
    "latino": "Valerius Maximus",
    "categoria": "classico-latino",
-   "codici": 127
+   "codici": 128
   },
   "curzio-rufo": {
    "nome": "Curzio Rufo",
@@ -500,7 +500,7 @@
    "nome": "Vitruvio",
    "latino": "Vitruvius",
    "categoria": "classico-latino",
-   "codici": 38
+   "codici": 40
   },
   "frontino": {
    "nome": "Frontino",
@@ -530,19 +530,19 @@
    "nome": "Manilio",
    "latino": "Manilius",
    "categoria": "classico-latino",
-   "codici": 10
+   "codici": 12
   },
   "fedro": {
    "nome": "Fedro",
    "latino": "Phaedrus",
    "categoria": "classico-latino",
-   "codici": 7
+   "codici": 8
   },
   "aviano": {
    "nome": "Aviano",
    "latino": "Avianus",
    "categoria": "classico-latino",
-   "codici": 26
+   "codici": 29
   },
   "avieno": {
    "nome": "Avieno",
@@ -566,7 +566,7 @@
    "nome": "Celso",
    "latino": "Celsus",
    "categoria": "classico-latino",
-   "codici": 12
+   "codici": 13
   },
   "nepote": {
    "nome": "Cornelio Nepote",
@@ -596,7 +596,7 @@
    "nome": "Disticha Catonis",
    "latino": "Disticha Catonis",
    "categoria": "classico-latino",
-   "codici": 60
+   "codici": 61
   },
   "catone": {
    "nome": "Catone il Censore",
@@ -680,7 +680,7 @@
    "nome": "Omero",
    "latino": "Homerus",
    "categoria": "classico-greco",
-   "codici": 329
+   "codici": 330
   },
   "esiodo": {
    "nome": "Esiodo",
@@ -698,19 +698,19 @@
    "nome": "Saffo",
    "latino": "Sappho",
    "categoria": "classico-greco",
-   "codici": 12
+   "codici": 13
   },
   "alceo": {
    "nome": "Alceo",
    "latino": "Alcaeus",
    "categoria": "classico-greco",
-   "codici": 2
+   "codici": 3
   },
   "anacreonte": {
    "nome": "Anacreonte",
    "latino": "Anacreon",
    "categoria": "classico-greco",
-   "codici": 15
+   "codici": 16
   },
   "simonide": {
    "nome": "Simonide",
@@ -782,25 +782,25 @@
    "nome": "Senofonte",
    "latino": "Xenophon",
    "categoria": "classico-greco",
-   "codici": 113
+   "codici": 114
   },
   "platone": {
    "nome": "Platone",
    "latino": "Plato",
    "categoria": "classico-greco",
-   "codici": 297
+   "codici": 303
   },
   "aristotele": {
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 1978
+   "codici": 1986
   },
   "teofrasto": {
    "nome": "Teofrasto",
    "latino": "Theophrastus",
    "categoria": "classico-greco",
-   "codici": 98
+   "codici": 104
   },
   "lisia": {
    "nome": "Lisia",
@@ -926,7 +926,7 @@
    "nome": "Arato",
    "latino": "Aratus",
    "categoria": "classico-greco",
-   "codici": 45
+   "codici": 48
   },
   "nicandro": {
    "nome": "Nicandro",
@@ -956,13 +956,13 @@
    "nome": "Galeno",
    "latino": "Galenus",
    "categoria": "classico-greco",
-   "codici": 500
+   "codici": 501
   },
   "ippocrate": {
    "nome": "Ippocrate",
    "latino": "Hippocrates",
    "categoria": "classico-greco",
-   "codici": 387
+   "codici": 388
   },
   "tolomeo": {
    "nome": "Tolomeo",
@@ -974,7 +974,7 @@
    "nome": "Euclide",
    "latino": "Euclides",
    "categoria": "classico-greco",
-   "codici": 216
+   "codici": 217
   },
   "archimede": {
    "nome": "Archimede",
@@ -1130,13 +1130,13 @@
    "nome": "Esopo",
    "latino": "Aesopus",
    "categoria": "classico-greco",
-   "codici": 116
+   "codici": 118
   },
   "flavio-giuseppe": {
    "nome": "Flavio Giuseppe",
    "latino": "Flavius Iosephus",
    "categoria": "classico-greco",
-   "codici": 230
+   "codici": 231
   },
   "diogene-laerzio": {
    "nome": "Diogene Laerzio",
@@ -1178,13 +1178,13 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 2735
+   "codici": 2744
   },
   "girolamo": {
    "nome": "Girolamo",
    "latino": "Hieronymus",
    "categoria": "cristiano",
-   "codici": 1277
+   "codici": 1282
   },
   "ambrogio": {
    "nome": "Ambrogio",
@@ -1220,7 +1220,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 5945
+   "codici": 5950
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1316,7 +1316,7 @@
    "nome": "Isidoro di Siviglia",
    "latino": "Isidorus Hispalensis",
    "categoria": "medievale",
-   "codici": 668
+   "codici": 669
   },
   "beda": {
    "nome": "Beda",
@@ -1340,7 +1340,7 @@
    "nome": "Paolo Diacono",
    "latino": "Paulus Diaconus",
    "categoria": "medievale",
-   "codici": 185
+   "codici": 186
   },
   "pietro-lombardo": {
    "nome": "Pietro Lombardo",
@@ -1381,6 +1381,7 @@
   "All Souls College, Oxford",
   "American Academy in Rome, Roma",
   "American Irish Historical Society, New York",
+  "American Philosophical Society, Filadelfia",
   "American University in Cairo, Rare Books and Special Collections Library, Il Cairo",
   "Ancien fonds du Conservatoire",
   "Archives cantonales jurassiennes, Porrentruy",
@@ -1449,6 +1450,7 @@
   "Biblioteca centrale metropolitana di Tokyo, fondo Kaga (東京都立中央図書館 加賀文庫)",
   "Biblioteca centrale metropolitana di Tokyo, fondo Tōkyō shiryō (東京都立中央図書館 東京誌料)",
   "Biblioteca centrale Tsurumai della città di Nagoya (名古屋市鶴舞中央図書館)",
+  "Biblioteca Civica «Vincenzo Joppi», Udine",
   "Biblioteca civica di Fukui (福井市立図書館)",
   "Biblioteca civica di Gifu (岐阜市立図書館)",
   "Biblioteca civica di Hachinohe (八戸市立図書館)",
@@ -1465,6 +1467,7 @@
   "Biblioteca civica Tamagawa di Kanazawa, fondo Kadō (金沢市立玉川図書館 稼堂文庫)",
   "Biblioteca Classense, Ravenna",
   "Biblioteca commemorativa Yaguchi Tanba (矢口米三 矢口丹波記念文庫), Tokyo",
+  "Biblioteca Comunale Federiciana, Fano",
   "Biblioteca de Catalunya, Barcellona",
   "Biblioteca de la Universidad de Sevilla, Siviglia",
   "Biblioteca dei libri di testo Tōsho Bunko (Tokyo Shoseki) (東京書籍株式会社付設教科書図書館東書文庫)",
@@ -1693,6 +1696,7 @@
   "Fordham University, New York",
   "Forschungsbibliothek Gotha",
   "Forschungsbibliothek, Gotha",
+  "Fragile Palm Leaves Foundation, Nonthaburi (copie del Buddhist Digital Resource Center)",
   "Františkánská knihovna, Cheb",
   "Free Library of Philadelphia",
   "Fundacja M.I.A.S.T.O. Białystok",
@@ -1703,7 +1707,9 @@
   "Germanisches Nationalmuseum Nürnberg",
   "Germanisches Nationalmuseum, Nürnberg",
   "Gilmore Music Library, New Haven",
+  "Government Oriental Manuscripts Library and Research Centre, Chennai",
   "Grolier Club, New York",
+  "Gurukul Kangri (Deemed to be University), Haridwar",
   "Harris Manchester College, Oxford",
   "Harry Ransom Center, University of Texas, Austin",
   "Harvard University, Houghton Library, Cambridge (Massachusetts)",
@@ -1711,6 +1717,7 @@
   "Hau-, Hof- u. Staatsarchiv, Vienna",
   "Haus-, Hof u. Staatsarchiv, Vienna",
   "Haus-, Hof- u. Staatsarchiv, Vienna",
+  "Haverford College",
   "Heidelberg",
   "Heidelberger Papyrussammlung",
   "Herzog August Bibliothek Wolfenbüttel",
@@ -1790,6 +1797,7 @@
   "Kantonsbibliothek Thurgau, Frauenfeld",
   "Kantonsbibliothek, St. Gallen",
   "Katholische Pfarrgemeinde, Weissenburg",
+  "Kavikulaguru Kalidas Sanskrit University, Ramtek (Jnanayogi Dr. Shrikant Jichkar Knowledge Resource Center)",
   "KBR (Royal Library of Belgium), Bruxelles",
   "Keble College, Oxford",
   "King's Inns, Dublino",
@@ -1842,6 +1850,7 @@
   "Marsh's Library, Dublino",
   "Maynooth University",
   "MBP Kalisz",
+  "McGill University Library, Rare Books and Special Collections, Montréal",
   "Médiathèque André Malraux, Strasbourg",
   "Médiathèque de Troyes Champagne Métropole",
   "Médiathèque Jean-Louis-Curtis Orthez",
@@ -2185,6 +2194,7 @@
   "Seisa Laboratory, fondo Mayama Seika (星槎ラボラトリー 眞山青果文庫（新制作座旧蔵）), Giappone",
   "Severočeské muzeum v Liberci, Liberec",
   "Smith College, Northampton (Massachusetts)",
+  "Smithsonian Libraries, Washington",
   "Smithsonian National Museum of Asian Art, collezione Gerhard Pulverer (スミソニアン国立アジア美術館 ゲルハルト・プルヴェラー・コレクション), Washington (Stati Uniti)",
   "Société des lettres, sciences et arts de l'Aveyron",
   "soukromá sbírka NF, Praga",
@@ -2480,6 +2490,7 @@
   "University Library Budapest",
   "University Library, Cambridge",
   "University of California, Berkeley, Bancroft Library",
+  "University of California, Berkeley, C. V. Starr East Asian Library",
   "University of California, Berkeley, C. V. Starr East Asian Library, fondo Mitsui (カリフォルニア大学バークレー校 C.V.スター東アジア図書館 三井文庫), Berkeley (Stati Uniti)",
   "University of California, Davis",
   "University of Chicago Library",
@@ -2960,7 +2971,7 @@
     "la": 86,
     "it": 7
    },
-   "esito": "ok",
+   "esito": "errore: schede lette in parte (mancano 60): riprenderà alla prossima esecuzione",
    "prefissi": [
     "mala-"
    ],
@@ -4133,6 +4144,47 @@
     "indice/northwestern-0.json"
    ]
   },
+  "archive": {
+   "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
+   "codici": 15677,
+   "carte": 70,
+   "con_autori": 106,
+   "lingue": {
+    "tr": 247,
+    "it": 1147,
+    "xx": 8228,
+    "la": 142,
+    "grc": 10,
+    "fr": 318,
+    "de": 14,
+    "es": 10,
+    "en": 97,
+    "?": 20,
+    "oc": 1,
+    "pt": 8,
+    "da": 2,
+    "zh": 4,
+    "hu": 1,
+    "ja": 93,
+    "nl": 3,
+    "ar": 650,
+    "syr": 17,
+    "fa": 481,
+    "ru": 1,
+    "hy": 3,
+    "ko": 1219,
+    "he": 30,
+    "sa": 3198
+   },
+   "esito": "ok",
+   "prefissi": [
+    "ia-"
+   ],
+   "pezzi_voci": 20,
+   "indice": [
+    "indice/archive-0.json"
+   ]
+  },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
    "codici": 10489,
@@ -4503,6 +4555,11 @@
    "file": "indice/northwestern-0.json",
    "fonte": "northwestern",
    "righe": 65
+  },
+  {
+   "file": "indice/archive-0.json",
+   "fonte": "archive",
+   "righe": 15677
   },
   {
    "file": "indice/vaticana-0.json",
@@ -4896,6 +4953,12 @@
    "lat": 50.0796,
    "lon": 12.3739
   },
+  "chennai": {
+   "nome": "Chennai",
+   "paese": "IN",
+   "lat": 13.0878,
+   "lon": 80.2785
+  },
   "chicago": {
    "nome": "Chicago",
    "paese": "US",
@@ -5084,6 +5147,12 @@
    "lat": 46.477,
    "lon": 8.8012
   },
+  "fano": {
+   "nome": "Fano",
+   "paese": "IT",
+   "lat": 43.8405,
+   "lon": 13.0167
+  },
   "firenze": {
    "nome": "Firenze",
    "en": "Florence",
@@ -5167,6 +5236,18 @@
    "paese": "PL",
    "lat": 53.4841,
    "lon": 18.7537
+  },
+  "haridwar": {
+   "nome": "Haridwar",
+   "paese": "IN",
+   "lat": 29.9479,
+   "lon": 78.1603
+  },
+  "haverford": {
+   "nome": "Haverford",
+   "paese": "US",
+   "lat": 40.0132,
+   "lon": -75.2944
   },
   "havlickuv-brod": {
    "nome": "Havlíčkův Brod",
@@ -6214,6 +6295,13 @@
    "lat": 43.6109,
    "lon": 3.8763
   },
+  "montreal": {
+   "nome": "Montréal",
+   "en": "Montreal",
+   "paese": "CA",
+   "lat": 45.5088,
+   "lon": -73.5878
+  },
   "montreux": {
    "nome": "Montreux",
    "paese": "CH",
@@ -6291,6 +6379,12 @@
    "paese": "FR",
    "lat": 43.8366,
    "lon": 4.3579
+  },
+  "nonthaburi": {
+   "nome": "Nonthaburi",
+   "paese": "TH",
+   "lat": 13.8608,
+   "lon": 100.5148
   },
   "norimberga": {
    "nome": "Norimberga",
@@ -6440,6 +6534,12 @@
    "paese": "CZ",
    "lat": 49.0902,
    "lon": 16.6039
+  },
+  "ramtek": {
+   "nome": "Ramtek",
+   "paese": "IN",
+   "lat": 21.3956,
+   "lon": 79.3273
   },
   "ravenna": {
    "nome": "Ravenna",
@@ -6766,6 +6866,12 @@
    "lat": 50.5836,
    "lon": 15.1519
   },
+  "udine": {
+   "nome": "Udine",
+   "paese": "IT",
+   "lat": 46.0693,
+   "lon": 13.2372
+  },
   "ueberlingen": {
    "nome": "Überlingen",
    "paese": "DE",
@@ -6921,6 +7027,7 @@
   "oxford",
   "roma",
   "new-york",
+  "philadelphia",
   "il-cairo",
   "parigi",
   "porrentruy",
@@ -6989,6 +7096,7 @@
   "tokyo",
   "tokyo",
   "jp-nagoya",
+  "udine",
   "jp-fukui",
   "jp-gifu",
   "jp-hachinohe",
@@ -7005,6 +7113,7 @@
   "jp-kanazawa",
   "ravenna",
   "tokyo",
+  "fano",
   "barcellona",
   "siviglia",
   "tokyo",
@@ -7233,6 +7342,7 @@
   "new-york",
   "gotha",
   "gotha",
+  "nonthaburi",
   "cheb",
   "philadelphia",
   "bialystok",
@@ -7243,7 +7353,9 @@
   "norimberga",
   "norimberga",
   "new-haven",
+  "chennai",
   "new-york",
+  "haridwar",
   "oxford",
   "austin",
   "cambridge-ma",
@@ -7251,6 +7363,7 @@
   "vienna",
   "vienna",
   "vienna",
+  "haverford",
   "heidelberg",
   "heidelberg",
   "wolfenbuettel",
@@ -7330,6 +7443,7 @@
   "frauenfeld",
   "san-gallo",
   null,
+  "ramtek",
   "bruxelles",
   "oxford",
   "dublino",
@@ -7382,6 +7496,7 @@
   "dublino",
   "maynooth",
   "kalisz",
+  "montreal",
   "strasburgo",
   "troyes",
   "orthez",
@@ -7726,6 +7841,7 @@
   "liberec",
   "northampton-ma",
   "washington",
+  "washington",
   "rodez",
   "praga",
   "praga",
@@ -8019,6 +8135,7 @@
   null,
   "budapest",
   "cambridge",
+  "berkeley",
   "berkeley",
   "berkeley",
   "davis",

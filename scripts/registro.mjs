@@ -65,6 +65,8 @@ export const BIBLIOTECHE = {
   // Africa (corsia «mondo», dal 26 ottobre 2026)
   auc: { biblioteca: "American University in Cairo, Rare Books and Special Collections Library (codici arabi, persiani e copti)", citta: "Il Cairo (Egitto)", come: "corsia mondo, ogni notte (raccolta completa ogni 6 giorni)" },
   northwestern: { biblioteca: "Northwestern University Libraries, Herskovits Library of African Studies (manoscritti arabi e in ajami dell'Africa occidentale)", citta: "Evanston (Stati Uniti)", come: "corsia mondo, ogni notte (raccolta completa ogni 6 giorni)" },
+  // Internet Archive (corsia «mondo», dal 26 ottobre 2026)
+  archive: { biblioteca: "Internet Archive: manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, Fragile Palm Leaves Foundation, biblioteche indiane e altre; dettaglio sotto la tabella)", citta: "varie", come: "corsia mondo, ogni notte (una ricerca per profilo ogni 6 giorni)" },
   // Spagna (corsia «iberia», dal 26 ottobre 2026)
   mdc: { biblioteca: "Memòria Digital de Catalunya: Biblioteca de Catalunya, Ateneu Barcelonès, Biblioteca Museu Víctor Balaguer, Biblioteca Pública Episcopal del Seminari", citta: "Barcellona e Vilanova i la Geltrú (Spagna)", come: "corsia iberia: a ruota finché la prima lettura non è finita, poi ogni notte (raccolta completa ogni 6 giorni)" },
   ub: { biblioteca: "Universitat de Barcelona, CRAI Biblioteca de Fons Antic (Biblioteca Patrimonial Digital)", citta: "Barcellona (Spagna)", come: "corsia iberia, ogni notte (raccolta completa ogni 6 giorni)" },
@@ -276,6 +278,11 @@ export const AVANZAMENTO = {
     return { testo: `${num(letti)} manifesti letti su ${num(vs.length)} codici${err ? `; ${num(err)} con il manifesto non leggibile` : ""}`, data: s.aggiornato };
   },
   ...Object.fromEntries(Object.keys(FONTI_HSP).map(f => [f, () => { const a = aRiprese(`data/${f}.json`, 1); return { ...a, testo: a.testo.replace("schede lette tutte", "codici digitalizzati letti tutti") }; }])),
+  archive: () => {
+    const s = leggi("data/archive.json"); if (!s) return { testo: "non ancora cominciata" };
+    const p = s.profili || {};
+    return { testo: `${num(Object.keys(s.voci || {}).length)} oggetti letti da ${num(Object.keys(p).length)} biblioteche o collezioni (entrano solo i manoscritti librari: fuori stampati, facsimili, lettere, documenti, fogli singoli e doppioni)`, data: s.completato || s.aggiornato };
+  },
   // Spagna (corsia «iberia»)
   ...Object.fromEntries(["mdc", "ub", "realbiblioteca", "ucm", "sevilla", "auc", "northwestern"].map(f => [f, () => {
     const s = leggi(`data/${f}.json`); if (!s) return { testo: "non ancora cominciata" };
@@ -378,6 +385,7 @@ function lingueTesto(lf = {}) {
 export function righePrecedenti(doc = "") {
   const m = {};
   for (const r of doc.split("\n")) if (/^Digital Scriptorium, codici per istituzione/.test(r)) m.__ds = r;
+  for (const r of doc.split("\n")) if (/^Internet Archive, codici per istituzione/.test(r)) m.__ia = r;
   for (const r of doc.split("\n")) if (/^\| /.test(r) && !/^\| (Biblioteca|---)/.test(r)) { const c = r.split(" | "); c[0] = c[0].replace(/^\| /, ""); m[c[0]] = c; }
   return m;
 }
@@ -407,6 +415,12 @@ export function tabella({ fonti, conteggio = {}, conAutori = {}, lingue = {}, de
     dopo.push("", `Digital Scriptorium, codici per istituzione: ${Object.entries(ds).sort((a, b) => b[1] - a[1]).map(([k, n]) => `${k} ${num(n)}`).join("; ")}` +
       `${sc.doppioni ? `. Lasciati alle fonti Penn e Yale (doppioni): ${num(sc.doppioni)}` : ""}${sc.dominio ? `. Fuori per manifesto non raggiungibile o da verificare: ${num(sc.dominio)}` : ""}.`);
   } else if (precedenti.__ds) dopo.push("", precedenti.__ds);
+  const ia = dettagli.archive && dettagli.archive.perIstituzione;
+  if (ia && Object.keys(ia).length) {
+    const sc = dettagli.archive.scarti || {}, doppi = Object.entries(sc).filter(([k]) => /^già nel catalogo/.test(k)).reduce((x, [, n]) => x + n, 0);
+    dopo.push("", `Internet Archive, codici per istituzione: ${Object.entries(ia).sort((a, b) => b[1] - a[1]).map(([k, n]) => `${k} ${num(n)}`).join("; ")}` +
+      `${doppi ? `. Lasciati alle altre fonti (doppioni): ${num(doppi)}` : ""}.`);
+  } else if (precedenti.__ia) dopo.push("", precedenti.__ia);
   return [`Codici nel catalogo, in tutto: **${num(tot)}**, di cui **${num(totA)}** con almeno un autore riconosciuto.`, "", ...righe, ...dopo].join("\n");
 }
 

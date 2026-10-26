@@ -14,11 +14,11 @@ In tutto 196 nazioni: i 193 stati dell'ONU, la Città del Vaticano, la Palestina
 
 | Stato | Nazioni |
 |---|---|
-| agganciata | 26 |
+| agganciata | 28 |
 | controllata, niente da agganciare | 52 |
 | controllata, bloccata | 14 |
-| in corso | 26 |
-| non ancora controllata | 78 |
+| in corso | 25 |
+| non ancora controllata | 77 |
 | **totale** | **196** |
 
 Che cosa vuol dire ogni stato:
@@ -67,6 +67,8 @@ Aggiornamento del 26 ottobre 2026 (Sud Italia, isole e Grecia): agganciate in Gr
 
 Aggiornamento del 26 ottobre 2026 (Europa, corsia `raccolta-europa.yml`): agganciate dal Handschriftenportal Francoforte (1937 codici), Dresda (1633), Tubinga (273) e Darmstadt (241); handrit.is (3822 codici di Reykjavík e Copenaghen); Polona (13.945 manoscritti di biblioteche polacche); Manuscriptorium (15.169 manoscritti: Repubblica Ceca, Portogallo, Finlandia, Polonia, Romania, Spagna e altre). Nazioni passate ad «agganciata»: Danimarca, Islanda, Repubblica Ceca, Finlandia, Lituania; Svezia «controllata, bloccata» (Alvin). Non entrate (lettera di Urbino): BVMM (non raggiungibile), KBR, Alvin, University of Michigan, BDRC.
 
+Aggiornamento del 26 ottobre 2026 (Internet Archive, fonte «archive», corsia mondo): entrano 15.677 manoscritti che le biblioteche pubblicano su Internet Archive, letti per caricatore istituzionale con un filtro ciascuno (campione di 40 voci controllato a mano: 95% di manoscritti librari sicuri). Nuove nazioni agganciate: Thailandia (Fragile Palm Leaves Foundation, Nonthaburi, 6.988 manoscritti su foglia di palma) e Canada (McGill, Montréal, 829, oltre a Toronto). Si aggiungono India (Ramtek 3.003, Chennai 924, Haridwar 196), Italia (Joppi di Udine 1.296; Federiciana di Fano, 69 carte disegnate a mano), Francia (BULAC 774, Sainte-Geneviève 208) e Stati Uniti (Starr di Berkeley 1.230, Smithsonian 68, Columbia 59, Haverford 19, Boston Public Library 13). Dettaglio in docs/BIBLIOTECHE.md, «Internet Archive».
+
 Restano fuori da questa lista perché sono già nel registro: Cambridge Digital Library (in lavorazione), British Library (bloccata), Det Kongelige Bibliotek, Koninklijke Bibliotheek, Uppsala e Biblioteka Jagiellońska (da verificare), Qatar Digital Library e National Library of Israel (bloccate).
 
 ## Come leggere le tabelle
@@ -94,7 +96,7 @@ Francia, Benelux, isole britanniche, Germania, Austria, Svizzera e piccoli stati
 
 | Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
 |---|---|---|---|---|
-| Francia | agganciata | Bibliothèque nationale de France, Paris: 76.280; Bibliothèque de l'Arsenal (BnF), Paris: 1.406; Montpellier Méditerranée Métropole - Médiathèque centrale Emile Zola: 978; Bibliothèque Carré d'art / Nîmes: 940; Bibliothèque nationale et universitaire de Strasbourg: 724; Bibliothèque municipale de Rouen: 639; altre 104 biblioteche: 3.228. **Totale: 84.195 codici** | Sorbona: papiri fuori (immagini non più in rete). BVMM: non raggiungibile il 26 ottobre 2026 (né dal server né dal browser), da riprovare. | BVMM, Lione, Mazarine, BIU Santé |
+| Francia | agganciata | Bibliothèque nationale de France, Paris: 76.280; Bibliothèque de l'Arsenal (BnF), Paris: 1.406; Montpellier Méditerranée Métropole - Médiathèque centrale Emile Zola: 978; Bibliothèque Carré d'art / Nîmes: 940; Bibliothèque nationale et universitaire de Strasbourg: 724; Bibliothèque municipale de Rouen: 639; altre 104 biblioteche: 3.228. **Totale: 84.195 codici**; in più, dalle copie su Internet Archive: BULAC, Parigi: 774; Bibliothèque Sainte-Geneviève, Parigi: 208 | Sorbona: papiri fuori (immagini non più in rete). BVMM: non raggiungibile il 26 ottobre 2026 (né dal server né dal browser), da riprovare. | BVMM, Lione, Mazarine, BIU Santé |
 | Belgio | non ancora controllata | nessuna | KBR: niente IIIF (visore AJAX-ZOOM su un dominio che il robots.txt chiude a tutti; prova del 26 ottobre 2026). | Gand, Lovanio, Flandrica |
 | Paesi Bassi | agganciata | Universiteitsbibliotheek Leiden: 3.586 codici | Koninklijke Bibliotheek dell'Aia: nel registro, da verificare. Leida: papiri fuori (immagini non più in rete). | Utrecht |
 | Lussemburgo | non ancora controllata | nessuna | nessuna | Biblioteca nazionale (poco) |
@@ -147,7 +149,7 @@ Italia, Vaticano, penisola iberica, Grecia, Cipro, Malta e piccoli stati.
 
 | Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
 |---|---|---|---|---|
-| Italia | in corso | Biblioteca Medicea Laurenziana, Firenze: 4.353; Veneranda Biblioteca Ambrosiana, Milano: 1.116; Biblioteca Universitaria di Bologna: 907; Biblioteca statale del Monumento nazionale di Montecassino, Montecassino (Cassino): 210; Biblioteca Nazionale Centrale di Firenze (copie su Internet Archive): 1.124; Biblioteca Malatestiana, Cesena: 353 (lettura in corso, 429 codici); Biblioteca Classense, Ravenna: 24; Biblioteca Vallicelliana, Roma: 17; Biblioteca Casanatense, Roma: 43; American Academy in Rome, Roma: 2; un'altra biblioteca: 1. **Totale: 8.150 codici** | Molte biblioteche provate il 25 e 26 ottobre 2026. Agganciate il 26 ottobre: Nazionale Centrale di Firenze, Vallicelliana, Malatestiana, Classense. Bloccate o non pronte: Internet Culturale (elenco vietato dal robots.txt), Marciana, Estense, Nazionali di Roma (teca solo in http) e Napoli (teca instabile), Padova, Riccardiana, Siena, Archiginnasio, BEIC, Trivulziana (ricerca con credenziali), Capitolare di Verona, Oliveriana, Palatina, Pavia, Genova, Phaidra di Padova, Urbino. Papiri di Ercolano e PSI: fuori. Sud Italia e isole (Grottaferrata, Cava, Girolamini, Società Napoletana di Storia Patria, Messina, Palermo, Catania, Bari, Lecce, Rossano, Cagliari, Sassari, Benevento, Montevergine), prova del 26 ottobre 2026: nessuna entra (copie solo in Internet Culturale, manifesti ICCU non raggiungibili; Messina ha un solo foglio per codice); vedi docs/BIBLIOTECHE.md, «Sud Italia e isole». | Le vede il lavoro in corso. |
+| Italia | in corso | Biblioteca Medicea Laurenziana, Firenze: 4.353; Veneranda Biblioteca Ambrosiana, Milano: 1.116; Biblioteca Universitaria di Bologna: 907; Biblioteca statale del Monumento nazionale di Montecassino, Montecassino (Cassino): 210; Biblioteca Nazionale Centrale di Firenze (copie su Internet Archive): 1.124; Biblioteca Malatestiana, Cesena: 353 (lettura in corso, 429 codici); Biblioteca Classense, Ravenna: 24; Biblioteca Vallicelliana, Roma: 17; Biblioteca Casanatense, Roma: 43; American Academy in Rome, Roma: 2; un'altra biblioteca: 1; Biblioteca Civica «Vincenzo Joppi», Udine (copie su Internet Archive): 1.296; Biblioteca Comunale Federiciana, Fano (carte disegnate a mano, su Internet Archive): 69. **Totale: 9.515 codici** | Molte biblioteche provate il 25 e 26 ottobre 2026. Agganciate il 26 ottobre: Nazionale Centrale di Firenze, Vallicelliana, Malatestiana, Classense. Bloccate o non pronte: Internet Culturale (elenco vietato dal robots.txt), Marciana, Estense, Nazionali di Roma (teca solo in http) e Napoli (teca instabile), Padova, Riccardiana, Siena, Archiginnasio, BEIC, Trivulziana (ricerca con credenziali), Capitolare di Verona, Oliveriana, Palatina, Pavia, Genova, Phaidra di Padova, Urbino. Papiri di Ercolano e PSI: fuori. Sud Italia e isole (Grottaferrata, Cava, Girolamini, Società Napoletana di Storia Patria, Messina, Palermo, Catania, Bari, Lecce, Rossano, Cagliari, Sassari, Benevento, Montevergine), prova del 26 ottobre 2026: nessuna entra (copie solo in Internet Culturale, manifesti ICCU non raggiungibili; Messina ha un solo foglio per codice); vedi docs/BIBLIOTECHE.md, «Sud Italia e isole». | Le vede il lavoro in corso. |
 | Città del Vaticano | agganciata | Biblioteca Apostolica Vaticana, Città del Vaticano: 8.882; Biblioteca Apostolica Vaticana, Vatikan: 1. **Totale: 8.883 codici** | nessuna | Nessuna: la Vaticana è dentro (lettura ancora in corso). |
 | San Marino | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
 | Malta | non ancora controllata | nessuna | nessuna | Biblioteca nazionale e archivi della cattedrale di Mdina (copie in vHMML, che è bloccato) |
@@ -397,7 +399,7 @@ Asia centrale, Afghanistan, subcontinente indiano.
 | Tagikistan | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
 | Afghanistan | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
 | Pakistan | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
-| India | agganciata | Jatindramohan Sangrahashala, National Council of Education, Bengal (copie digitali di Penn), Kolkata: 3.279 codici (copie digitali di Penn) | nessuna | Missione nazionale per i manoscritti, IGNCA, Khuda Bakhsh, Rampur Raza, Asiatic Society, BORI |
+| India | agganciata | Jatindramohan Sangrahashala, National Council of Education, Bengal (copie digitali di Penn), Kolkata: 3.279 codici (copie digitali di Penn); Kavikulaguru Kalidas Sanskrit University, Ramtek: 3.003; Government Oriental Manuscripts Library, Chennai: 924; Gurukul Kangri, Haridwar: 196 (queste tre dalle copie su Internet Archive) | nessuna | Missione nazionale per i manoscritti, IGNCA, Khuda Bakhsh, Rampur Raza, Asiatic Society, BORI |
 | Nepal | non ancora controllata | nessuna | nessuna | Nepal-German Manuscript Cataloguing Project; testi nepalesi e tibetani nel BDRC |
 | Bhutan | non ancora controllata | nessuna | nessuna | Testi bhutanesi nel BDRC |
 | Bangladesh | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
@@ -449,7 +451,7 @@ Tradizioni su foglia di palma (Thailandia, Laos, Myanmar, Cambogia), Vietnam e m
 | Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
 |---|---|---|---|---|
 | Myanmar | non ancora controllata | nessuna | nessuna | Fondi birmani in vHMML (bloccato) |
-| Thailandia | non ancora controllata | nessuna | nessuna | Digitized Lanna Manuscripts |
+| Thailandia | agganciata | Fragile Palm Leaves Foundation, Nonthaburi: 6.988 manoscritti su foglia di palma, soprattutto birmani e pali (copie del BDRC su Internet Archive) | nessuna | Digitized Lanna Manuscripts |
 | Laos | non ancora controllata | nessuna | nessuna | Digital Library of Lao Manuscripts |
 | Cambogia | non ancora controllata | nessuna | nessuna | Fondo per l'edizione dei manoscritti della Cambogia (FEMC) |
 | Vietnam | non ancora controllata | nessuna | nessuna | Fondazione per la conservazione del Nôm |
@@ -480,8 +482,8 @@ Stati Uniti, Canada, America Latina e Caraibi. Canada, Messico, Centro America, 
 
 | Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
 |---|---|---|---|---|
-| Stati Uniti | agganciata | University of Pennsylvania Libraries, Kislak Center, Philadelphia: 6.882; Princeton University Library: 3.062; Beinecke Rare Book and Manuscript Library, New Haven: 2.732; University of Pennsylvania Libraries, Philadelphia: 891; Columbia University, Rare Book & Manuscript Library, New York: 835; Harvard University, Houghton Library, Cambridge (Massachusetts): 603; altre 47 biblioteche: 3.187. **Totale: 18.192 codici** | Walters: sospesa (server del museo). Morgan: Cloudflare. Getty: connessione non verificata. Lehigh e Wellesley: manifesti chiusi. UCLA (Sinai): immagini solo per utenti registrati. vHMML: vietato. Altre istituzioni di OPenn: niente IIIF. Library of Congress: entrata solo in parte. Papiri (Berkeley, Yale, Duke, Michigan, Princeton, Columbia): in attesa di decisione. | Michigan, BDRC, Notre Dame, Stanford, Folger, Hilandar (Ohio State) |
-| Canada | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Stati Uniti | agganciata | University of Pennsylvania Libraries, Kislak Center, Philadelphia: 6.882; Princeton University Library: 3.062; Beinecke Rare Book and Manuscript Library, New Haven: 2.732; University of Pennsylvania Libraries, Philadelphia: 891; Columbia University, Rare Book & Manuscript Library, New York: 835; Harvard University, Houghton Library, Cambridge (Massachusetts): 603; altre 47 biblioteche: 3.187. **Totale: 18.192 codici**; in più, dalle copie su Internet Archive: C. V. Starr East Asian Library, Berkeley: 1.230; Smithsonian Libraries, Washington: 68; Columbia (ebraici e islamici): 59; Haverford College: 19; Boston Public Library: 13 | Walters: sospesa (server del museo). Morgan: Cloudflare. Getty: connessione non verificata. Lehigh e Wellesley: manifesti chiusi. UCLA (Sinai): immagini solo per utenti registrati. vHMML: vietato. Altre istituzioni di OPenn: niente IIIF. Library of Congress: entrata solo in parte. Papiri (Berkeley, Yale, Duke, Michigan, Princeton, Columbia): in attesa di decisione. | Michigan, BDRC, Notre Dame, Stanford, Folger, Hilandar (Ohio State) |
+| Canada | agganciata | University of Toronto, Thomas Fisher Rare Book Library: 202; McGill University Library, Montréal: 829 (copie su Internet Archive) | University of British Columbia: verifica anti-robot. | Le vede il lavoro in corso. |
 | Messico | in corso | nessuna | Biblioteca Nacional de México: nessun IIIF pubblico, bdmx.mx non risponde. | Le vede il lavoro in corso. |
 | Guatemala | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
 | Belize | in corso | nessuna | nessuna | Le vede il lavoro in corso. |

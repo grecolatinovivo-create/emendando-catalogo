@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T12:24:57.369Z",
+ "aggiornato": "2026-10-26T12:43:45.052Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -70,7 +70,7 @@
   "malatestiana": {
    "nome": "Biblioteca Malatestiana, Cesena (Catalogo aperto dei manoscritti malatestiani; manifesti scritti dal catalogo)",
    "codici": 94,
-   "esito": "ok"
+   "esito": "errore: schede lette in parte (mancano 60): riprenderà alla prossima esecuzione"
   },
   "classense": {
    "nome": "Biblioteca Classense, Ravenna (www.cdc.classense.ra.it; elenco raccolto dal browser)",
@@ -282,13 +282,18 @@
    "codici": 0,
    "esito": "ok"
   },
+  "archive": {
+   "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
+   "codici": 85,
+   "esito": "ok"
+  },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
    "codici": 428,
    "esito": "ok"
   }
  },
- "totale": 11550,
+ "totale": 11635,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -55582,6 +55587,1845 @@
    "pagina": "https://casanatense.contentdm.oclc.org/digital/collection/manoscritti/id/12928",
    "licenza": "Biblioteca Casanatense (MiC): accesso pubblico",
    "immagini": null
+  },
+  {
+   "id": "ia-j-mss-0007",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Joppi 7",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Lezioni di lingua italiana. Grammatica e precetti per ben scrivere. [Nota a margine:] Opera di Francesco Ongaro, come dal confronto dei caratteri. Un volume rileg. in cartone, form. in-4. ben conservato: scrittura del secolo XIX principio. Mutilo in principio. https://www.techeudine.it/manoscritti h",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "titolo: «…ngaro, come dal confronto dei caratteri. Un volume rileg. in cartone,…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/J_MSS_0007/manifest.json",
+   "pagina": "https://archive.org/details/J_MSS_0007",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 138
+  },
+  {
+   "id": "ia-j-mss-0094",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Joppi 94",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Palladio Lucrezio Memorie Udinesi del 1700 al 1767, epoca in cui mori l'A. nell'eta d'anni 70. E unito il mandato di comparizione contro Andrea Artini emanato dal Consiglio dei X. Sono riportati gli avvenimenti principali della vita cittadina e notizie varie sopra famiglie nobili Udinesi. Un vol. in",
+   "autori": [
+    {
+     "id": "lucrezio",
+     "autore": "Lucrezio",
+     "latino": "Lucretius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Palladio Lucrezio ; Biblioteca Civica 'Joppi' Udine»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/J_MSS_0094/manifest.json",
+   "pagina": "https://archive.org/details/J_MSS_0094",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 132
+  },
+  {
+   "id": "ia-j-mss-0112",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Joppi 112",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ermacora Fabio Quintiliano. Le antichita della Carnia: volgarizzamento incompleto di Don Pasquale Treleani Preposito di S. Pietro, scritto nel 1821. - E unito un frammento in latino del secondo libro della stessa opera, copia di mano del sec. XVIII. [Nota a margine:] Ex libris Giacomo Ant. Treleani ",
+   "autori": [
+    {
+     "id": "quintiliano",
+     "autore": "Quintiliano",
+     "latino": "Quintilianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Hermagora Fabii Quintiliani»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/J_MSS_0112/manifest.json",
+   "pagina": "https://archive.org/details/J_MSS_0112",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 164
+  },
+  {
+   "id": "ia-j-mss-0113",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Joppi 113",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ermagorae Fabii Quintiliani Civis Nob. Tulmetii Historia de antiquitatibus Carneae, libri quatuor. Pluribus mendis a Josepho Cyllenio de Angelis concive suo expurgata, et typis demandata 1722. Avvi l'\"Index Rerum Notabilium\" da pag. 159 a 168: gli \"Scriptores Veteres\" e la \"Serie dei Patriarchi dell",
+   "autori": [
+    {
+     "id": "quintiliano",
+     "autore": "Quintiliano",
+     "latino": "Quintilianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Hermagora Fabii Quintiliani»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/J_MSS_0113/manifest.json",
+   "pagina": "https://archive.org/details/J_MSS_0113",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 192
+  },
+  {
+   "id": "ia-j-mss-0139",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Joppi 139",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Livio Tito Epitome. Codice imperfetto, mancante della prima Deca e dei cinque primi libri della seconda. Incipit: \"& Bruscios & Sannites (sic) feliciter gestas continet\". Alla fine dell'Epitome e scritto: \"Expliciunt periocre omnium librorum .T. Livii ab urbe condita per me Lvdovicum Nicholai de Tav",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "autore: «Livio Tito»"
+    },
+    {
+     "id": "marziale",
+     "autore": "Marziale",
+     "latino": "Martialis",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epigrammi"
+     ],
+     "corrispondenza": "descrizione: «…Cenonibus. Incipiunt epitome Martialis\". Seguono, al Livio, alcuni e…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/J_MSS_0139/manifest.json",
+   "pagina": "https://archive.org/details/J_MSS_0139",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 124
+  },
+  {
+   "id": "ia-j-mss-0158",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Joppi 158",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Colloredo Ermes co. Di Raccolta di Poesie Friulane ed altre. Precede una breve vita dell'A. alla quale fan seguito i Sonetti e le composizioni Friulane giusta la grafia originale. Lo Joppi Vincenzo noto in margine le varianti degli altri codici \"Oliva del Turco in Aviano\" cod. \"Bartolini\" e cod. \"Ca",
+   "autori": [
+    {
+     "id": "aviano",
+     "autore": "Aviano",
+     "latino": "Avianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…ri codici \"Oliva del Turco in Aviano\" cod. \"Bartolini\" e cod. \"Ca»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/J_MSS_0158/manifest.json",
+   "pagina": "https://archive.org/details/J_MSS_0158",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 536
+  },
+  {
+   "id": "ia-j-mss-0159",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Joppi 159",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Raccolta di poesie e prose di varii autori Friulani. Contiene: \"Versi latini di varii autori - Rime italiane del Macheropio, del Bembo, del Mels, del Percoto, del Delminio - \"Lettione sopra quei versi di Virgilio nel Primo lib. Extemplo Aenea, et fatta da me Pre Angelo Pontissio\" - Dialogo di V.[inc",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…\"Lettione sopra quei versi di Virgilio nel Primo lib. Extemplo Aenea…»"
+    },
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Odissea"
+     ],
+     "corrispondenza": "descrizione: «…in ottava rima dell'Odissea d'Omero. [Cfr. Annotaz. di Apostolo Z…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/J_MSS_0159/manifest.json",
+   "pagina": "https://archive.org/details/J_MSS_0159",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 429
+  },
+  {
+   "id": "ia-j-mss-0489",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Joppi 489",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Treo Lucrezio. Vita di S. Paolino patriarca d'Aquileia. E un breve discorso, ma ben fatto. https://www.techeudine.it/manoscritti https://www.techeudine.it/archivi/CMUDS/Files/inventario_fondo_Joppi.pdf",
+   "autori": [
+    {
+     "id": "lucrezio",
+     "autore": "Lucrezio",
+     "latino": "Lucretius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Treo Lucrezio»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/J_MSS_0489/manifest.json",
+   "pagina": "https://archive.org/details/J_MSS_0489",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 15
+  },
+  {
+   "id": "ia-j-mss-0513",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Joppi 513",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Caimo P. Traduzione in ottave con note del 4 libro dell'Eneide: delle 70 pagine del volumetto, 40 ne occupano le note che spesso diventano ragionamenti e discorsi. La versione pare buona. https://www.techeudine.it/manoscritti https://www.techeudine.it/archivi/CMUDS/Files/inventario_fondo_Joppi.pdf",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eneide"
+     ],
+     "corrispondenza": "titolo: «…ave con note del 4 libro dell'Eneide: delle 70 pagine del volumett…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/J_MSS_0513/manifest.json",
+   "pagina": "https://archive.org/details/J_MSS_0513",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 114
+  },
+  {
+   "id": "ia-j-mss-0528",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Joppi 528",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Claudiani carmina. Quadernetto di 8 pagine di scrittura del 16 secolo I carmi non sarebbero che due. https://www.techeudine.it/manoscritti https://www.techeudine.it/archivi/CMUDS/Files/inventario_fondo_Joppi.pdf",
+   "autori": [
+    {
+     "id": "claudiano",
+     "autore": "Claudiano",
+     "latino": "Claudianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Carmina"
+     ],
+     "corrispondenza": "autore: «Claudiani carmina»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/J_MSS_0528/manifest.json",
+   "pagina": "https://archive.org/details/J_MSS_0528",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 13
+  },
+  {
+   "id": "ia-j-mss-0660",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Joppi 660",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Donato G. B. Poesie friulane trascritte da V. Joppi, con notizie biografiche (1560-1600). https://www.techeudine.it/manoscritti https://www.techeudine.it/archivi/CMUDS/Files/inventario_fondo_Joppi.pdf",
+   "autori": [
+    {
+     "id": "donato",
+     "autore": "Donato",
+     "latino": "Donatus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Donato G. B»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/J_MSS_0660/manifest.json",
+   "pagina": "https://archive.org/details/J_MSS_0660",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 101
+  },
+  {
+   "id": "ia-j-mss-0692",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Joppi 692",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Brevis introductio in Aristotelis logicam. Volume di 650 pagine di minuta scrittura del secolo 17-18, rilegato, con un frontispizio interno che non e il suo. https://www.techeudine.it/manoscritti https://www.techeudine.it/archivi/CMUDS/Files/inventario_fondo_Joppi.pdf",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Brevis introductio in Aristotelis logicam. Volume di 650 pagine…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/J_MSS_0692/manifest.json",
+   "pagina": "https://archive.org/details/J_MSS_0692",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 681
+  },
+  {
+   "id": "ia-p-mss-0001",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 1",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Civica ®Vincenzo Joppi¯ - Udine https://www.techeudine.it/fondo-principale MANOSCRITTI Fondo Principale Biblioteca Civica ®Vincenzo Joppi 1. CICERONIS. Epistolae. Inc. yhs proconsuli Publio Lentulo s. d. M. t. c. —Des. et si te videro Immedio fore dissamabor me ama. Vale. Sono i primi 16 ",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…eca Civica ®Vincenzo Joppi 1. CICERONIS. Epistolae. Inc. yhs proconsu…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0001/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0001",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 407
+  },
+  {
+   "id": "ia-p-mss-0002",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 2",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Civica \"Vincenzo Joppi\" - Udine MANOSCRITTI Fondo Principale 2. CICERONIS. De oratore. Inc. Cogitanti mihi sepenumero. — Des. mearum ineptiarum testem et spectatorem. Sono i primi 24 capi del libro | del De Oratore. Membranaceo (mm. 197X281) del sec. XV, di cc. 11 di cui le sole prime tre",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De oratore"
+     ],
+     "corrispondenza": "autore: «Biblioteca Civica 'Joppi' Udine ; Cicerone ; Ciceron»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0002/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0002",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 37
+  },
+  {
+   "id": "ia-p-mss-0003",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 3",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Civica \"Vincenzo Joppi\" - Udine MANOSCRITTI Fondo Principale 3. C. J. CAESARIS. De bello gallico. Inc. [G]allia est omnis divisa in partes tres. — Des. maiorem Galliae motum expectans. Sono tutti i capitoli dei libri I-VI e i primi 18 del VII ad eccezione delle cinque ultime righe. Cartac",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Biblioteca Civica 'Joppi' Udine ; Cicerone»"
+    },
+    {
+     "id": "cesare",
+     "autore": "Cesare",
+     "latino": "Caesar",
+     "categoria": "classico-latino",
+     "opere": [
+      "De bello Gallico"
+     ],
+     "corrispondenza": "titolo: «…Principale 3. C. J. CAESARIS. De bello gallico. Inc. [G]allia est omnis divi…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0003/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0003",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 221
+  },
+  {
+   "id": "ia-p-mss-0004",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 4",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Civica \"Vincenzo Joppi\" - Udine MANOSCRITTI Fondo Principale A. S. BOETII. De consolatione philosophiae. Inc. Anitii boetii severini. - Des. cuncta cernentis. Explicit liber Boetii. Seguono due pagine e mezza, d'altra mano, contenenti la seguente nota: Iste Boetius est Petri filii magistr",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "titolo: «…enenti la seguente nota: Iste Boetius est Petri filii magistr»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0004/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0004",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 103
+  },
+  {
+   "id": "ia-p-mss-0006",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 6",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Civica \"Vincenzo Joppi\" - Udine MANOSCRITTI Fondo Principale 6. Grammatiches linguae latinae. Inc. pronomen ego. — Des. spendendum et si uni soli (manca il resto). Sono regole grammaticali scritte in caratteri di varia grandezza. A cc. 13 leggesi: Expliciunt exigencie magistri Florini. Me",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "titolo: «…egole grammaticali scritte in caratteri di varia grandezza. A cc. 13…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0006/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0006",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 61
+  },
+  {
+   "id": "ia-p-mss-0007",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 7",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Civica \"Vincenzo Joppi\" - Udine MANOSCRITTI Fondo Principale 7. Trattato d'ortografia. Inc. [O]rthographia ut Isidoro placet. — Des. Xerapellinus vestis denarius ipse (a c. 38). Segue a c. 51 Sinonima Ciceronis che terminano a carta 74 con un Laus Deo. A c. 75 inc. Nota quod partes oratio",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…. 38). Segue a c. 51 Sinonima Ciceronis che terminano a carta 74 con…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0007/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0007",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 239
+  },
+  {
+   "id": "ia-p-mss-0012",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 12",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Civica \"Vincenzo Joppi\" - Udine MANOSCRITTI Fondo Principale 12. Favole di Fedro. Traduzione del P. Gasparo Leonarducci, chierico regolare Somasco, suddivise in 5 libri dopo i quali v'è un'aggiunta d'altre 5 favole copiate da un manoscritto antico da Marquardo Indio (?). Cartaceo in -8 (m",
+   "autori": [
+    {
+     "id": "fedro",
+     "autore": "Fedro",
+     "latino": "Phaedrus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "titolo: «…ondo Principale 12. Favole di Fedro. Traduzione del P. Gasparo Le…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0012/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0012",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 175
+  },
+  {
+   "id": "ia-p-mss-0025",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 25",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Civica \"Vincenzo Joppi\" - Udine MANOSCRITTI Fondo Principale 25. (p. 1-50). «La Faonide, Odi ed Inni di Saffo tradotti dal testo greco in verso italiano [di Vincenzo Imperiale (cfr. Melzi, Diz. Anon. e Pseud., I,395)]». (p. 51-93). «Ultime lettere di Abelardo ed Eloisa». Terzine. (p. 94-9",
+   "autori": [
+    {
+     "id": "saffo",
+     "autore": "Saffo",
+     "latino": "Sappho",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…. «La Faonide, Odi ed Inni di Saffo tradotti dal testo greco in v…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0025/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0025",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 213
+  },
+  {
+   "id": "ia-p-mss-0065",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 65",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Civica \"Vincenzo Joppi\" - Udine MANOSCRITTI Fondo Principale 65. «Marzio Malacrida ed altri». Poesie latine. (p. 1-4). Martii Malacridae Forojuliensis... Damon. Mortem Silvij Cardinalis Antoniani... deflet sub Damonis nomine. Inc. Aestus erat, mediumque diem, coelumque premebant. — Des. P",
+   "autori": [
+    {
+     "id": "celso",
+     "autore": "Celso",
+     "latino": "Celsus",
+     "categoria": "classico-latino",
+     "opere": [
+      "De medicina"
+     ],
+     "corrispondenza": "descrizione: «…ipanem. Inc. Frangipane, tibi celso de culmine templi. e) Ad Aldo…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0065/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0065",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 58
+  },
+  {
+   "id": "ia-p-mss-0072",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 72",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Civica \"Vincenzo Joppi\" - Udine MANOSCRITTI Fondo Principale 72. «Poesie de' secoli XV-XVI [Joppi]». I. a) «De la chometa. Sonetto». Com. O jouenetti talj par che siate. —Fin. Se lo ben far precedente non sia. 7 quartine non rimate, adesp. b) Inc. O Michael sancte princeps J[erar]chie cel",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eneide"
+     ],
+     "corrispondenza": "descrizione: «…primi 17 versi dell'Eneide di Virgilio, come saggio di scrittura. 3.…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0072/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0072",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 45
+  },
+  {
+   "id": "ia-p-mss-0171",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 171",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Civica \"Vincenzo Joppi\" - Udine MANOSCRITTI Fondo Principale 171. «Sconciatura Estemporanea Di stanze Semi-Bernesche Di Annibale D'Hannover [Giorgio di Polcenigo] Accademico sbandito Per le Nozze Concina, e Megaluzzi. Cosmopoli. Nella stamperia di Suetonio Precipizio 1772». Com. Ai Nobili",
+   "autori": [
+    {
+     "id": "svetonio",
+     "autore": "Svetonio",
+     "latino": "Suetonius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…Cosmopoli. Nella stamperia di Suetonio Precipizio 1772». Com. Ai Nob…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0171/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0171",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 58
+  },
+  {
+   "id": "ia-p-mss-0294",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 294",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Civica \"Vincenzo Joppi\" - Udine MANOSCRITTI Fondo Principale 294. Dialogo sopra l'indole varia degli ingegni e della natura dell'Entusiasmo del Molto Reverendo Padre D. Giovenale Sacchi Maestro di Rettorica nel Collegio Imperiale de Nobili di Milano. Personaggi: Lelio, Marco, Filippo, Eug",
+   "autori": [
+    {
+     "id": "giovenale",
+     "autore": "Giovenale",
+     "latino": "Iuvenalis",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…del Molto Reverendo Padre D. Giovenale Sacchi Maestro di Rettorica n…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0294/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0294",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 52
+  },
+  {
+   "id": "ia-p-mss-0336",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 336",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Civica \"Vincenzo Joppi\" - Udine MANOSCRITTI Fondo Principale 336. «Poesie di Vincenzo Monti e Dissertazioni sulle stesse». (f. 1-1 v). [Brevi notizie sulla vita e le opere di Vincenzo Monti]. (f. 3-3 v). Ad Alceo Meonio...: Se generoso sdegno. Ode. (f. 5). Sonetto: Col tozzo in man, colla",
+   "autori": [
+    {
+     "id": "alceo",
+     "autore": "Alceo",
+     "latino": "Alcaeus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…ncenzo Monti]. (f. 3-3 v). Ad Alceo Meonio...: Se generoso sdegno…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0336/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0336",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 47
+  },
+  {
+   "id": "ia-p-mss-0348",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 348",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Civica \"Vincenzo Joppi\" - Udine MANOSCRITTI Fondo Principale 348. «LA GEORGICA DI P. VIRGILIO MARONE ǀ tradotta in Furlano da Giuseppe Bosizio ǀ e consacrata ǀ Alla Sacra Cesarea Regia e Cattolica Maestà ǀ di CARLO SESTO IMPERATOR de' ROMANI ǀ sempre AUGUSTO ǀ Re della Germania, delle Spa",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Georgiche"
+     ],
+     "corrispondenza": "titolo: «…ipale 348. «LA GEORGICA DI P. VIRGILIO MARONE ǀ tradotta in Furlano…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0348/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0348",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 203
+  },
+  {
+   "id": "ia-p-mss-0374",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 374",
+   "datazione": "1585",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Biblioteca Civica \"Vincenzo Joppi\" - Udine MANOSCRITTI Fondo Principale 374. «Sora el grossam 1585. Al Signor Pietro Mestrense da Portogruaro di Giovanni Battista Donato di Gruaro». Canzone: Maioor maioor suspir, maioor travai. — Sora i Minuz 1585. (c, s.): Ciart mi foo in displasee. Cart., in-fol. ",
+   "autori": [
+    {
+     "id": "donato",
+     "autore": "Donato",
+     "latino": "Donatus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Biblioteca Civica 'Joppi' Udine ; Giovanni Battista Donato»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0374/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0374",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 6
+  },
+  {
+   "id": "ia-p-mss-0412",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 412",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "\"Biblioteca Civica \"Vincenzo Joppi\" - Udine MANOSCRITTI Fondo Principale 412. Marco Tullio Cicerone. Orazione pro Milone, traduz. adespota. Cart., in-fol. (mm. 320X215), cc. 22, sec. XVII. Nel Fondo Principale sono confluiti la maggior parte dei lasciti manoscritti pervenuti alla Biblioteca Civica \"",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Pro Milone"
+     ],
+     "corrispondenza": "autore: «Biblioteca Civica 'Joppi' Udine ; Marco Tullio Cicerone»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0412/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0412",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 50
+  },
+  {
+   "id": "ia-p-mss-0413",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 413",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "\"Biblioteca Civica \"Vincenzo Joppi\" - Udine MANOSCRITTI Fondo Principale 413. Ex decem Platonis Dialogis de Republica Cart., in-fol. (mm. 315X215), cc. 14, scrittura sec. XVII. Nel Fondo Principale sono confluiti la maggior parte dei lasciti manoscritti pervenuti alla Biblioteca Civica \"Vincenzo Jop",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…ondo Principale 413. Ex decem Platonis Dialogis de Republica Cart.,…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0413/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0413",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 34
+  },
+  {
+   "id": "ia-p-mss-0415.pdf",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 415",
+   "datazione": "1528",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "\" Biblioteca Civica \"Vincenzo Joppi\" - Udine MANOSCRITTI Fondo Principale 415. Lezione adespota probabilmente su Tacito. (Histor. libri). Cart., in-fol. (mm. 220X148), cc. 2 nn., sec. XV. Nel Fondo Principale sono confluiti la maggior parte dei lasciti manoscritti pervenuti alla Biblioteca Civica \"V",
+   "autori": [
+    {
+     "id": "tacito",
+     "autore": "Tacito",
+     "latino": "Tacitus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…one adespota probabilmente su Tacito. (Histor. libri). Cart., in-f…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0415.pdf/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0415.pdf",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": null
+  },
+  {
+   "id": "ia-p-mss-0416",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 416",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "\"Biblioteca Civica \"Vincenzo Joppi\" - Udine MANOSCRITTI Fondo Principale 416. Sallustius. De bello Jugurtino. Traduzione Italiana adespota. Frammento. Cart., in-fol. (mm. 300X230), cc. 10 su due colonne, sec. XIV. Inventario completo del Fondo Principale: https://archive.org/details/inventario-del-f",
+   "autori": [
+    {
+     "id": "sallustio",
+     "autore": "Sallustio",
+     "latino": "Sallustius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…SCRITTI Fondo Principale 416. Sallustius. De bello Jugurtino. Traduzio…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0416/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0416",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 43
+  },
+  {
+   "id": "ia-p-mss-0504",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 504",
+   "datazione": "1654",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De' Grossetti Fra Odorico da Udine. - Le peripetie et c. et vicende humane, 1654. - Serie di huomini segnalati ma di sortimenti tragici, osservati parte nelle carte sacre, parte in T. Livio, Iustino, Valerio Massimo, Quinto Curtio, e in altri di grido historici, parte nell'historie Romane, cartagine",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…elle carte sacre, parte in T. Livio, Iustino, Valerio Massimo, Qu…»"
+    },
+    {
+     "id": "valerio-massimo",
+     "autore": "Valerio Massimo",
+     "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…, parte in T. Livio, Iustino, Valerio Massimo, Quinto Curtio, e in altri di…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0504/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0504",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 1099
+  },
+  {
+   "id": "ia-p-mss-0510",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 510",
+   "datazione": "1779",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Accademie scolastiche dei sec. XVIII e XIX. Contenente: Fasc. 1. componimenti scolastici tratti da Virgilio (scuole dei Barnabiti in Udine, scritto sec. XVIII); carte 23. Fasc. 2. Composizioni accademiche recitate sotto la direzione del R. P. Sigismondo Montelli pubblico precettore di retorica nella",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…onimenti scolastici tratti da Virgilio (scuole dei Barnabiti in Udin…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0510/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0510",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 448
+  },
+  {
+   "id": "ia-p-mss-0527",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 527",
+   "datazione": "1900",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Gicuta Lorenzo. - Anacreontica per nozze Laura de' Puppi con Ant. Wasserman. Scrittura del sec. XIX; carte 7 legate in cartone; in-8. [nota a margine: 'Dertor ab.'] https://www.techeudine.it/manoscritti https://www.techeudine.it/fondo-principale https://archive.org/details/inventario-del-fondo-princ",
+   "autori": [
+    {
+     "id": "anacreonte",
+     "autore": "Anacreonte",
+     "latino": "Anacreon",
+     "categoria": "classico-greco",
+     "opere": [
+      "Anacreontea"
+     ],
+     "corrispondenza": "titolo: «Gicuta Lorenzo. - Anacreontica per nozze Laura de' Puppi con…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0527/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0527",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 25
+  },
+  {
+   "id": "ia-p-mss-0548",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 548",
+   "datazione": "1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Vita di Alessandro Magno - Sententiae Socratis, Platonis et Aristotelis. Frammento di Codice membranaceo del sec. XV; fogli 22 in-8 parte sciolti e parte legati, taglio dorato. (mm. 139x208). https://www.techeudine.it/manoscritti https://www.techeudine.it/fondo-principale https://archive.org/details",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…Magno - Sententiae Socratis, Platonis et Aristotelis. Frammento di…»"
+    },
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…tentiae Socratis, Platonis et Aristotelis. Frammento di Codice membrana…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0548/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0548",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 93
+  },
+  {
+   "id": "ia-p-mss-0647",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 647",
+   "datazione": "1800",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "HERMAGORAE (FABII QUINTILIANI, PATRITII TULMETINI). De antiquitatibus Carneae libri quatuor - leg. in cart. cm. 20 × 26. Pag. num. VIII-100. Serve di prefazione un'epistola di Iosephus Cyllenius De Angelis alla Comunita di Tolmezzo, dalla quale si rileva che il Cillenio De Angelis ebbe tra mano dapp",
+   "autori": [
+    {
+     "id": "quintiliano",
+     "autore": "Quintiliano",
+     "latino": "Quintilianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «HERMAGORAE (FABII QUINTILIANI, PATRITII TULMETINI). De anti…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0647/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0647",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 123
+  },
+  {
+   "id": "ia-p-mss-0665",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 665",
+   "datazione": "1800",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "VALVASONE DI MANIAGO (JACOPO) - Altra copia dell'opera precedente, meno la carta topogr. e le iscrizioni. f. scr. 9. c. 1. Non legata. cm. 29×20. Scritt. sec. XVIII. https://www.techeudine.it/manoscritti https://www.techeudine.it/fondo-principale https://archive.org/details/inventario-del-fondo-prin",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [
+      "Menone"
+     ],
+     "corrispondenza": "titolo: «…copia dell'opera precedente, meno la carta topogr. e le iscrizi…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0665/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0665",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 26
+  },
+  {
+   "id": "ia-p-mss-0669",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 669",
+   "datazione": "1699",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "VALVASONE DI MANIAGO (JACOPO) - Descrizione di Cividal del Friuli, e suo territorio. Ha in fine altra Descrizione di Cividale in 2 pag., estr. dall'opera: 'Nouveau voyage d'Italie' etc. stamp. a Lione da Gio. Thioly, 1699. 7 quaderni di 20 pag. ciascuno, meno il 7 che e di pag. 28. Scritt. del sec. ",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [
+      "Menone"
+     ],
+     "corrispondenza": "titolo: «…quaderni di 20 pag. ciascuno, meno il 7 che e di pag. 28. Scritt…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0669/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0669",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 157
+  },
+  {
+   "id": "ia-p-mss-0747",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 747",
+   "datazione": "1700",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "ERMACORA (FABIO QUINTILIANO) - De antiquitatibus Carneae - con dedica di Giuseppe Cillenio (circa il 1700) alla Magnifica Comunita di Tolmezzo. Fascic. di cm. 19×28. pag. scr. 81. Scrittura sec. XVIII ex. https://www.techeudine.it/manoscritti https://www.techeudine.it/fondo-principale https://archiv",
+   "autori": [
+    {
+     "id": "quintiliano",
+     "autore": "Quintiliano",
+     "latino": "Quintilianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «ERMACORA (FABIO QUINTILIANO) - De antiquitatibus Carneae…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0747/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0747",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 111
+  },
+  {
+   "id": "ia-p-mss-0748",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 748",
+   "datazione": "1846",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "ERMACORA (FABIO QUINTILIANO) - Altro esemplare dell'opera precedente, trascritto da un codice della Bartoliniana, di mano di G. D. Ciconi 1846, con nota del Com.te Antonio Bartolini, notizie sull'A. estratte dal Liruti, e nota del Ciconi in cui corregge un errore del medesimo Liruti. Fascic. di cm. ",
+   "autori": [
+    {
+     "id": "quintiliano",
+     "autore": "Quintiliano",
+     "latino": "Quintilianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «ERMACORA (FABIO QUINTILIANO) - Altro esemplare dell'opera…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0748/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0748",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 113
+  },
+  {
+   "id": "ia-p-mss-0749",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 749",
+   "datazione": "1900",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "ERMACORA (FABIO QUINTILIANO) - Delle antichita della Cargna. Traduzione di anonimo. Pag. 106. cm. 18×24. Scritt. sec. XIX. https://www.techeudine.it/manoscritti https://www.techeudine.it/fondo-principale https://archive.org/details/inventario-del-fondo-principale/Inventario%20del%20Fondo%20Principal",
+   "autori": [
+    {
+     "id": "quintiliano",
+     "autore": "Quintiliano",
+     "latino": "Quintilianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «ERMACORA (FABIO QUINTILIANO) - Delle antichita della Carg…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0749/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0749",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 117
+  },
+  {
+   "id": "ia-p-mss-0750",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 750",
+   "datazione": "1768",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "ERMACORA (FABIO QUINTILIANO) - Delle antichita etc. Traduzione di anonimo, diversa dalla precedente, fatta nel 1768. Manca meta del libro terzo e tutto il libro quarto. Scritt. sec. XVIII ex. Fasc. di cm. 19 1/2×29. pag. scr. 59. https://www.techeudine.it/manoscritti https://www.techeudine.it/fondo-",
+   "autori": [
+    {
+     "id": "quintiliano",
+     "autore": "Quintiliano",
+     "latino": "Quintilianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «ERMACORA (FABIO QUINTILIANO) - Delle antichita etc. Tradu…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0750/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0750",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 79
+  },
+  {
+   "id": "ia-p-mss-0768",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 768",
+   "datazione": "1788",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "SERIES CHRONOLOGICA PATRIAR. AQUIL. ex tutiori combinatione temporum et certiorum monumentorum integritate nuper deprompta. (Opus Lucretii Frei patritii Utinensis). Viene fino all'Arcivescovo Nicolo Sagredo - 1788. Seguono due facciate preparate per gli stemmi dei Patriarchi. Unito un foglietto cont",
+   "autori": [
+    {
+     "id": "lucrezio",
+     "autore": "Lucrezio",
+     "latino": "Lucretius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…ritate nuper deprompta. (Opus Lucretii Frei patritii Utinensis). Vie…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0768/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0768",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 37
+  },
+  {
+   "id": "ia-p-mss-0786",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 786",
+   "datazione": "1800",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "HERMACORAE (docti viri FABII QUINTILIANI) nobilis Tulmetiensis - De antiquitatibus Carneae libri quattuor - conscripti anno MDCCLXVIV (sic). (Per Johannem Baptistam Puppi Doctor. Tulmetii). Volumetto leg. in pergam. in 16. Facc. scr. e numer. 223. Scritt. sec. XVIII. https://www.techeudine.it/manosc",
+   "autori": [
+    {
+     "id": "quintiliano",
+     "autore": "Quintiliano",
+     "latino": "Quintilianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «HERMACORAE (docti viri FABII QUINTILIANI) nobilis Tulmetiensis - De an…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0786/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0786",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 270
+  },
+  {
+   "id": "ia-p-mss-0957",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 957",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Rota Francesco: Statistica agraria dei circondari di Pordenone, Aviano e Sacile, del pari simili ai precedenti per forma e per contenuto. https://www.techeudine.it/manoscritti https://www.techeudine.it/fondo-principale https://archive.org/details/inventario-del-fondo-principale/Inventario%20del%20Fo",
+   "autori": [
+    {
+     "id": "aviano",
+     "autore": "Aviano",
+     "latino": "Avianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…dei circondari di Pordenone, Aviano e Sacile, del pari simili ai…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0957/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0957",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 291
+  },
+  {
+   "id": "ia-p-mss-0958",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 958",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Rota Francesco: Tavole delle rendite agrarie di Aviano, Pordenone, Sacile. E un volume costituito d'una serie di prospetti indicanti i prodotti, i fitti e il valore dei campi. Pare si riferisca al periodo napoleonico. https://www.techeudine.it/manoscritti https://www.techeudine.it/fondo-principale h",
+   "autori": [
+    {
+     "id": "aviano",
+     "autore": "Aviano",
+     "latino": "Avianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…vole delle rendite agrarie di Aviano, Pordenone, Sacile. E un volu…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0958/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0958",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 89
+  },
+  {
+   "id": "ia-p-mss-0970",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 970",
+   "datazione": "1429",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Constitutiones Patriae Forijulii - Volume rilegato con tavolette di legno e cuoio, un po' malandato, di 30 1/2x22; contiene in bella scrittura del '500 le nuove costituzioni della Patria del 1429. Le rubriche sono in caratteri rossi e il loro indice precede il testo. https://www.techeudine.it/manosc",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "titolo: «…del 1429. Le rubriche sono in caratteri rossi e il loro indice preced…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0970/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0970",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 187
+  },
+  {
+   "id": "ia-p-mss-0974",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 974",
+   "datazione": "1366",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Statuta Patriae Forijulii - Codice rilegato in cuoio lavorato, con fermagli, di 31 1/2x23 1/2: contiene, in caratteri del tempo, gli statuti vecchi del patriarca Marquardo, del 1366, gia stampati. Seguono gli Statuti di Cividale del 1361. https://www.techeudine.it/manoscritti https://www.techeudine.",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "titolo: «…i 31 1/2x23 1/2: contiene, in caratteri del tempo, gli statuti vecchi…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0974/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0974",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 257
+  },
+  {
+   "id": "ia-p-mss-0975",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 975",
+   "datazione": "1366",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Statuta Patriae Forijulii - Codice rilegato in cuoio lavorato, meglio conservato e senza le macchie che guastano il precedente, misurante 30 1/2x33. Contiene, come quello, le Costituzioni di Marquardo (1366), scritte in caratteri del tempo. https://www.techeudine.it/manoscritti https://www.techeudin",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "titolo: «…Marquardo (1366), scritte in caratteri del tempo. https://www.techeu…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0975/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0975",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 263
+  },
+  {
+   "id": "ia-p-mss-0976",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 976",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Statuta Patriae Forijulii - Altra copia, in caratteri del tempo, degli statuti di Marquardo. Volume di 30 1/2x22 1/2, e rilegato in cartone: manca una pagina che forse costituiva il frontespizio. https://www.techeudine.it/manoscritti https://www.techeudine.it/fondo-principale https://archive.org/det",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "titolo: «…e Forijulii - Altra copia, in caratteri del tempo, degli statuti di M…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_0976/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_0976",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 283
+  },
+  {
+   "id": "ia-p-mss-1104",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 1104",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Repertorium seu index operum Platonis, studiis et vigiliis a...tum - Volume di 36x22, senza numerazione di pagine, colonna, rilegato in cartone scritto la materia ove e disposto alfabeticamente per oggetto. https://www.techeudine.it/manoscritti https://www.techeudine.it/fondo-principale https://arch",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Repertorium seu index operum Platonis, studiis et vigiliis a...tum…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_1104/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_1104",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 133
+  },
+  {
+   "id": "ia-p-mss-1172",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 1172",
+   "datazione": "1804",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Leonardas Brunati: Vasi medico-economico del territorio di Monfalcone (1804) - Volume di 21x183⁄4, rilegato in cartone e cuoio, di 330 pagine, con indice alfabetico. https://www.techeudine.it/manoscritti https://www.techeudine.it/fondo-principale https://archive.org/details/inventario-del-fondo-prin",
+   "autori": [
+    {
+     "id": "senofonte",
+     "autore": "Senofonte",
+     "latino": "Xenophon",
+     "categoria": "classico-greco",
+     "opere": [
+      "Economico"
+     ],
+     "corrispondenza": "titolo: «…eonardas Brunati: Vasi medico-economico del territorio di Monfalcone…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_1172/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_1172",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 285
+  },
+  {
+   "id": "ia-p-mss-1190",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 1190",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": ". Virgilio Spade: Avvertimento per bene incamminarsi in via delle virtu, con cartaceo, riordi d'altri per uso agomento comune. Volumetto di 17 1/2 secolo, senza numerazione di pagine, rilegato in cartone. https://www.techeudine.it/manoscritti https://www.techeudine.it/fondo-principale https://archiv",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Biblioteca Civica 'Joppi' Udine ; Spade Virgilio»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_1190/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_1190",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 167
+  },
+  {
+   "id": "ia-p-mss-1413",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 1413",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Misceria Raimondo minoritae, Metafisica, ossia sunto - De volume rilegato in cuoro dorato, di 25 1/4x18, di 158 pagine. https://www.techeudine.it/manoscritti https://www.techeudine.it/fondo-principale https://archive.org/details/inventario-del-fondo-principale/Inventario%20del%20Fondo%20Principale/",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica"
+     ],
+     "corrispondenza": "autore: «Biblioteca Civica 'Joppi' Udine ; Misceria Raimondo minoritae Metafisica»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_1413/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_1413",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 329
+  },
+  {
+   "id": "ia-p-mss-1526-i",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 1526 I",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": ". Venerio: quattro volumetti rilegati in cartone, i quali trattano rispettivamente di filosofia, etica, metafisica. - *cartaceo, 4* https://www.techeudine.it/manoscritti https://www.techeudine.it/fondo-principale https://archive.org/details/inventario-del-fondo-principale/Inventario%20del%20Fondo%20",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica"
+     ],
+     "corrispondenza": "titolo: «…ivamente di filosofia, etica, metafisica. - *cartaceo, 4* https://www.…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_1526_I/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_1526_I",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 207
+  },
+  {
+   "id": "ia-p-mss-1526-ii",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 1526 II",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": ". Venerio: quattro volumetti rilegati in cartone, i quali trattano rispettivamente di filosofia, etica, metafisica. - *cartaceo, 4* https://www.techeudine.it/manoscritti https://www.techeudine.it/fondo-principale https://archive.org/details/inventario-del-fondo-principale/Inventario%20del%20Fondo%20",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica"
+     ],
+     "corrispondenza": "titolo: «…ivamente di filosofia, etica, metafisica. - *cartaceo, 4* https://www.…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_1526_II/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_1526_II",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 175
+  },
+  {
+   "id": "ia-p-mss-1526-iii",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 1526 III",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": ". Venerio: quattro volumetti rilegati in cartone, i quali trattano rispettivamente di filosofia, etica, metafisica. - *cartaceo, 4* https://www.techeudine.it/manoscritti https://www.techeudine.it/fondo-principale https://archive.org/details/inventario-del-fondo-principale/Inventario%20del%20Fondo%20",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica"
+     ],
+     "corrispondenza": "titolo: «…ivamente di filosofia, etica, metafisica. - *cartaceo, 4* https://www.…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_1526_III/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_1526_III",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 207
+  },
+  {
+   "id": "ia-p-mss-1526-iv",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 1526 IV",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": ". Venerio: quattro volumetti rilegati in cartone, i quali trattano rispettivamente di filosofia, etica, metafisica. - *cartaceo, 4* https://www.techeudine.it/manoscritti https://www.techeudine.it/fondo-principale https://archive.org/details/inventario-del-fondo-principale/Inventario%20del%20Fondo%20",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica"
+     ],
+     "corrispondenza": "titolo: «…ivamente di filosofia, etica, metafisica. - *cartaceo, 4* https://www.…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_1526_IV/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_1526_IV",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 163
+  },
+  {
+   "id": "ia-p-mss-4022",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 4022",
+   "datazione": "1865",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Percoto, Caterina. 'Orazio.' Racconto pubblicato in 'Dieci raccontini' Trieste, 1865, di pp. 7 Com.: 'Mie piccole amiche...' Fin.: 'avervi fatto un gran bene.' https://www.techeudine.it/manoscritti https://www.techeudine.it/fondo-principale https://archive.org/details/inventario-del-fondo-principale",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Percoto, Caterina. 'Orazio.' Racconto pubblicato in 'Die…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_4022/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_4022",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 9
+  },
+  {
+   "id": "ia-p-mss-4064",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 4064",
+   "datazione": "1885",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Percoto, Caterina. 'Il prin Sarasin.' Racconto pubblicato in 'Il Contadinel' 1885, di pp. 4 (Altra copia di pp. 5 ed una trad. ital. di Giovanni Gortani di pp. 4 ms.) Com.: 'Al bonave sorele...' Fin.: 'donat alle tiare.' https://www.techeudine.it/manoscritti https://www.techeudine.it/fondo-principal",
+   "autori": [
+    {
+     "id": "donato",
+     "autore": "Donato",
+     "latino": "Donatus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…'Al bonave sorele...' Fin.: 'donat alle tiare.' https://www.tech…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_4064/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_4064",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 13
   },
   {
    "id": "cls-23518",
@@ -131175,6 +133019,108 @@
    "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b6001280q",
    "licenza": "Domaine public (Gallica, conditions d'utilisation)",
    "immagini": null
+  },
+  {
+   "id": "ia-bsg-ms2453",
+   "fonte": "archive",
+   "biblioteca": "Bibliothèque interuniversitaire Sainte-Geneviève, Paris",
+   "citta": "Paris",
+   "segnatura": "Ms. 2453",
+   "datazione": "1701",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "fr",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Traduction française des Astronomiques de M. Manilius ; précédée d'une introduction et suivie de notes critiques.",
+   "autori": [
+    {
+     "id": "manilio",
+     "autore": "Manilio",
+     "latino": "Manilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Pingré, Alexandre-Gui (1711-1796) ; Manilius, Marcus (-00..-00..)»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/BSG_MS2453/manifest.json",
+   "pagina": "https://archive.org/details/BSG_MS2453",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 1046
+  },
+  {
+   "id": "ia-bsg-ms3438",
+   "fonte": "archive",
+   "biblioteca": "Bibliothèque interuniversitaire Sainte-Geneviève, Paris",
+   "citta": "Paris",
+   "segnatura": "Ms. 3438",
+   "datazione": "1768",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "« De lapide philosophico ex variis authoribus ».",
+   "autori": [
+    {
+     "id": "plinio-giovane",
+     "autore": "Plinio il Giovane",
+     "latino": "Plinius minor",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…ntano, Giovanni (1426-1503) ; Pline le Jeune (0061?-0114?)»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/BSG_MS3438/manifest.json",
+   "pagina": "https://archive.org/details/BSG_MS3438",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 482
+  },
+  {
+   "id": "ia-bsg-ms4121",
+   "fonte": "archive",
+   "biblioteca": "Bibliothèque interuniversitaire Sainte-Geneviève, Paris",
+   "citta": "Paris",
+   "segnatura": "Ms. 4121",
+   "datazione": "1790",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Notes sur une édition de Vitruve par Jocondus, Venise, 1511.",
+   "autori": [
+    {
+     "id": "claudiano",
+     "autore": "Claudiano",
+     "latino": "Claudianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Claudien (0370?-0404?) ; Vincart, Jean…»"
+    },
+    {
+     "id": "vitruvio",
+     "autore": "Vitruvio",
+     "latino": "Vitruvius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Notes sur une édition de Vitruve par Jocondus, Venise, 1511.»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/BSG_MS4121/manifest.json",
+   "pagina": "https://archive.org/details/BSG_MS4121",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 170
   },
   {
    "id": "bnf-btv1b105568946",
@@ -305334,6 +307280,73 @@
    "immagini": null
   },
   {
+   "id": "ia-ms.ara.606",
+   "fonte": "archive",
+   "biblioteca": "Bibliothèque universitaire des langues et civilisations (BULAC)",
+   "citta": null,
+   "segnatura": "MS ARA 606",
+   "datazione": "1215",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "كتاب اقليدس Kitāb Iqlīdis",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Elementi"
+     ],
+     "corrispondenza": "descrizione: «…n). Il s'agit des \"Éléments d'Euclide\" sans doute s'agit-il de la t…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/MS.ARA.606/manifest.json",
+   "pagina": "https://archive.org/details/MS.ARA.606",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": null
+  },
+  {
+   "id": "ia-ms.turc.9",
+   "fonte": "archive",
+   "biblioteca": "Bibliothèque universitaire des langues et civilisations (BULAC)",
+   "citta": null,
+   "segnatura": "MS TURC 9",
+   "datazione": "1829",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "fr",
+    "tr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Recueil de textes destinés à l’apprentissage du turc et de l’arabe",
+   "autori": [
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "descrizione: «…es correspondantes de Phèdre, Ésope, Faerne, La Fontaine etc. Aut…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/MS.TURC.9/manifest.json",
+   "pagina": "https://archive.org/details/MS.TURC.9",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": null
+  },
+  {
    "id": "bnf-btv1b8452178c",
    "fonte": "gallica",
    "biblioteca": "Bibliothèques d'Amiens métropole",
@@ -320637,6 +322650,39 @@
    "immagini": null
   },
   {
+   "id": "ia-astronomiconlibe00mani",
+   "fonte": "archive",
+   "biblioteca": "Boston Public Library",
+   "citta": "Boston",
+   "segnatura": "astronomiconlibe00mani",
+   "datazione": "1461",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Astronomica / Marcus Manilius. In morbis a capite ad pedes / Quintus Sammonicus Serenus]",
+   "autori": [
+    {
+     "id": "manilio",
+     "autore": "Manilio",
+     "latino": "Manilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Astronomica"
+     ],
+     "corrispondenza": "autore: «Manilius, Marcus ; Pithou, Pierre, 153…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/astronomiconlibe00mani/manifest.json",
+   "pagina": "https://archive.org/details/astronomiconlibe00mani",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 242
+  },
+  {
    "id": "ds-ds3334",
    "fonte": "ds",
    "biblioteca": "Boston Public Library",
@@ -322941,6 +324987,78 @@
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/300fe9ff-d1a3-4873-bd22-226a3542c6e6/",
    "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
    "immagini": null
+  },
+  {
+   "id": "ia-ldpd-13822730-000",
+   "fonte": "archive",
+   "biblioteca": "Columbia University, Rare Book & Manuscript Library",
+   "citta": "New York",
+   "segnatura": "ldpd 13822730",
+   "datazione": "1150",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Antiquitates : Manuscript, Northern France, [1150-1199]",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Josephus, Flavius»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/ldpd_13822730_000/manifest.json",
+   "pagina": "https://archive.org/details/ldpd_13822730_000",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 252
+  },
+  {
+   "id": "ia-ldpd-in00034186831-000",
+   "fonte": "archive",
+   "biblioteca": "Columbia University, Rare Book & Manuscript Library",
+   "citta": "New York",
+   "segnatura": "ldpd in00034186831",
+   "datazione": "1440",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "[Fables ; Disticha Catonis ; Epistola de gubernatione rei familiaris ; Letter to Raimondo del Castello di Sancto Ambruogio] : manuscript",
+   "autori": [
+    {
+     "id": "disticha-catonis",
+     "autore": "Disticha Catonis",
+     "latino": "Disticha Catonis",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «[Fables ; Disticha Catonis ; Epistola de gubernatione re…»"
+    },
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "descrizione: «…la (1996), under the title, L'Esopo di Udine: Francesco di Cambio…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/ldpd_in00034186831_000/manifest.json",
+   "pagina": "https://archive.org/details/ldpd_in00034186831_000",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 132
   },
   {
    "id": "ds-ds6485",
@@ -330772,6 +332890,62 @@
    "anteprima": "https://e-codices.ch/loris/kbt/kbt-y222/kbt-y222_0001r.jp2/full/,150/0/default/jpg"
   },
   {
+   "id": "ia-tuaa-m-939-arati-vishnu-devi-shiva-marathi-kavikulguru-kalidas-sanskrit-university-ramtek-collection",
+   "fonte": "archive",
+   "biblioteca": "Kavikulaguru Kalidas Sanskrit University, Ramtek (Jnanayogi Dr. Shrikant Jichkar Knowledge Resource Center)",
+   "citta": "Ramtek",
+   "segnatura": "M 939",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "sa"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Arati ( Vishnu, Devi, Shiva) Marathi",
+   "autori": [
+    {
+     "id": "arato",
+     "autore": "Arato",
+     "latino": "Aratus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Arati ( Vishnu, Devi, Shiva) Marathi»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/TUAA_m-939-arati-vishnu-devi-shiva-marathi-kavikulguru-kalidas-sanskrit-university-ramtek-collection/manifest.json",
+   "pagina": "https://archive.org/details/TUAA_m-939-arati-vishnu-devi-shiva-marathi-kavikulguru-kalidas-sanskrit-university-ramtek-collection",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": null
+  },
+  {
+   "id": "ia-jlwx-m-2019-dattatreya-arati-kavikulguru-kalidas-sanskrit-university-ramtek-collection",
+   "fonte": "archive",
+   "biblioteca": "Kavikulaguru Kalidas Sanskrit University, Ramtek (Jnanayogi Dr. Shrikant Jichkar Knowledge Resource Center)",
+   "citta": "Ramtek",
+   "segnatura": "M 2019",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "sa"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Dattatreya Arati",
+   "autori": [
+    {
+     "id": "arato",
+     "autore": "Arato",
+     "latino": "Aratus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Dattatreya Arati»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/JlWX_m-2019-dattatreya-arati-kavikulguru-kalidas-sanskrit-university-ramtek-collection/manifest.json",
+   "pagina": "https://archive.org/details/JlWX_m-2019-dattatreya-arati-kavikulguru-kalidas-sanskrit-university-ramtek-collection",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": null
+  },
+  {
    "id": "mns-aipdig-knavcr2_tb_2______43clcn6",
    "fonte": "manuscriptorium",
    "biblioteca": "Knihovna AV ČR",
@@ -333246,6 +335420,326 @@
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/5ab1a26a-7ce3-422a-8b81-e50ec99bc700.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/5ab1a26a-7ce3-422a-8b81-e50ec99bc700/",
    "licenza": "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
+   "immagini": null
+  },
+  {
+   "id": "ia-mcgilllibrary-122873-2102",
+   "fonte": "archive",
+   "biblioteca": "McGill University Library, Rare Books and Special Collections",
+   "citta": "Montréal",
+   "segnatura": "122873",
+   "datazione": "1902",
+   "secolo": [
+    20,
+    20
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "La fleur qui va sur l'eau : op. 85, no. 2",
+   "autori": [
+    {
+     "id": "catullo",
+     "autore": "Catullo",
+     "latino": "Catullus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…845-1924, composer ; Mendès, Catulle, 1841-1909 ; Hasselmans, Loui…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/McGillLibrary-122873-2102/manifest.json",
+   "pagina": "https://archive.org/details/McGillLibrary-122873-2102",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": null
+  },
+  {
+   "id": "ia-mcgilllibrary-rbsc-blackerwood-pennants-natural-history-ql255t91780z-v1-19506",
+   "fonte": "archive",
+   "biblioteca": "McGill University Library, Rare Books and Special Collections",
+   "citta": "Montréal",
+   "segnatura": "blackerwood pennants natural history QL255T91780z v1",
+   "datazione": "1780",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Manuscript notes to Pennant's natural history v.1",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «Manuscript notes to Pennant's natural history v.1»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/McGillLibrary-rbsc_blackerwood_pennants-natural-history_QL255T91780z-v1-19506/manifest.json",
+   "pagina": "https://archive.org/details/McGillLibrary-rbsc_blackerwood_pennants-natural-history_QL255T91780z-v1-19506",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": null
+  },
+  {
+   "id": "ia-mcgilllibrary-rbsc-blackerwood-pennants-natural-history-ql255t91780z-v2-19509",
+   "fonte": "archive",
+   "biblioteca": "McGill University Library, Rare Books and Special Collections",
+   "citta": "Montréal",
+   "segnatura": "blackerwood pennants natural history QL255T91780z v2",
+   "datazione": "1780",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Manuscript notes to Pennant's natural history v.2",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «Manuscript notes to Pennant's natural history v.2»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/McGillLibrary-rbsc_blackerwood_pennants-natural-history_QL255T91780z-v2-19509/manifest.json",
+   "pagina": "https://archive.org/details/McGillLibrary-rbsc_blackerwood_pennants-natural-history_QL255T91780z-v2-19509",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": null
+  },
+  {
+   "id": "ia-mcgilllibrary-rbsc-blackerwood-pennants-natural-history-ql255t91780z-v3-19511",
+   "fonte": "archive",
+   "biblioteca": "McGill University Library, Rare Books and Special Collections",
+   "citta": "Montréal",
+   "segnatura": "blackerwood pennants natural history QL255T91780z v3",
+   "datazione": "1780",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "en",
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Manuscript notes to Pennant's natural history v.3",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «Manuscript notes to Pennant's natural history v.3»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/McGillLibrary-rbsc_blackerwood_pennants-natural-history_QL255T91780z-v3-19511/manifest.json",
+   "pagina": "https://archive.org/details/McGillLibrary-rbsc_blackerwood_pennants-natural-history_QL255T91780z-v3-19511",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": null
+  },
+  {
+   "id": "ia-mcgilllibrary-rbsc-blackerwood-pennants-natural-history-ql255t91780z-v4-19513",
+   "fonte": "archive",
+   "biblioteca": "McGill University Library, Rare Books and Special Collections",
+   "citta": "Montréal",
+   "segnatura": "blackerwood pennants natural history QL255T91780z v4",
+   "datazione": "1780",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Manuscript notes to Pennant's natural history v.4",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «Manuscript notes to Pennant's natural history v.4»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/McGillLibrary-rbsc_blackerwood_pennants-natural-history_QL255T91780z-v4-19513/manifest.json",
+   "pagina": "https://archive.org/details/McGillLibrary-rbsc_blackerwood_pennants-natural-history_QL255T91780z-v4-19513",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": null
+  },
+  {
+   "id": "ia-mcgilllibrary-osl-cahier-dhistoire-naturelle-qh51d831837-18271",
+   "fonte": "archive",
+   "biblioteca": "McGill University Library, Rare Books and Special Collections",
+   "citta": "Montréal",
+   "segnatura": "cahier dhistoire naturelle QH51D831837",
+   "datazione": "1835",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Cahier d'histoire naturelle (1835-1837) : à Moulins",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «Cahier d'histoire naturelle (1835-1837) : à Moulins»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/McGillLibrary-osl_cahier-dhistoire-naturelle_QH51D831837-18271/manifest.json",
+   "pagina": "https://archive.org/details/McGillLibrary-osl_cahier-dhistoire-naturelle_QH51D831837-18271",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": null
+  },
+  {
+   "id": "ia-mcgilllibrary-rbsc-pythagoras-monad-triad-boundmsg77-21965",
+   "fonte": "archive",
+   "biblioteca": "McGill University Library, Rare Books and Special Collections",
+   "citta": "Montréal",
+   "segnatura": "pythagoras monad triad BoundMSG77",
+   "datazione": "1730",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Pythagoras his monad and triad : or, Plato's universale Soul in motion, or his harmonicall problem uniting the same and th'other together or his blending an Ens and a non Entity in unity with each other as hitherto accounted desperata's by all mankind",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…ras his monad and triad : or, Plato's universale Soul in motion,…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/McGillLibrary-rbsc_pythagoras-monad-triad_BoundMSG77-21965/manifest.json",
+   "pagina": "https://archive.org/details/McGillLibrary-rbsc_pythagoras-monad-triad_BoundMSG77-21965",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": null
+  },
+  {
+   "id": "ia-mcgilllibrary-osl-robe-0266-1066743978-20829",
+   "fonte": "archive",
+   "biblioteca": "McGill University Library, Rare Books and Special Collections",
+   "citta": "Montréal",
+   "segnatura": "robe 266 1066743978",
+   "datazione": "1700",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Mukhtaṣar fī al-ṭibb",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Hippocrates, author»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/McGillLibrary-osl_robe_0266_1066743978-20829/manifest.json",
+   "pagina": "https://archive.org/details/McGillLibrary-osl_robe_0266_1066743978-20829",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": null
+  },
+  {
+   "id": "ia-mcgilllibrary-osl-robe-7785-7-1054259519-20503",
+   "fonte": "archive",
+   "biblioteca": "McGill University Library, Rare Books and Special Collections",
+   "citta": "Montréal",
+   "segnatura": "robe 7785 7 1054259519",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "fa"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Tarjumah-i Risālah-i Jālins̄ư dar bawl",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galen. author»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/McGillLibrary-osl_robe_7785-7-1054259519-20503/manifest.json",
+   "pagina": "https://archive.org/details/McGillLibrary-osl_robe_7785-7-1054259519-20503",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": null
+  },
+  {
+   "id": "ia-mcgilllibrary-rbsc-water-level-ganges-foliogb1339w381809-16609",
+   "fonte": "archive",
+   "biblioteca": "McGill University Library, Rare Books and Special Collections",
+   "citta": "Montréal",
+   "segnatura": "water level ganges foliogb1339w381809",
+   "datazione": "1809",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Water level and weather data for the Ganges River region : a collection of six records",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "autore: «…Parlby, Major ; Kyd, James ; Natural History Society of Montreal, former o…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/McGillLibrary-rbsc_water-level-ganges_foliogb1339w381809-16609/manifest.json",
+   "pagina": "https://archive.org/details/McGillLibrary-rbsc_water-level-ganges_foliogb1339w381809-16609",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
    "immagini": null
   },
   {
@@ -350315,6 +352809,164 @@
    "pagina": "https://digital.slub-dresden.de/id487917901",
    "licenza": "Sächsische Landesbibliothek – Staats- und Universitätsbibliothek Dresden: condizioni d'uso nel manifesto",
    "immagini": null
+  },
+  {
+   "id": "ia-arithmetichaboe00boet",
+   "fonte": "archive",
+   "biblioteca": "Smithsonian Libraries, Washington",
+   "citta": "Washington",
+   "segnatura": "arithmetichaboe00Boet",
+   "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Incipit arithmeticha boetij",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Boethius, -524 ; Burndy Library, donor. DSI»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/arithmetichaboe00Boet/manifest.json",
+   "pagina": "https://archive.org/details/arithmetichaboe00Boet",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 160
+  },
+  {
+   "id": "ia-auctoritatesext00aris",
+   "fonte": "archive",
+   "biblioteca": "Smithsonian Libraries, Washington",
+   "citta": "Washington",
+   "segnatura": "Auctoritatesext00Aris",
+   "datazione": "1425",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Auctoritates extracte ex Libris phi[losophorum] ; et p[rim]o ex libro p[rim]o metaphi[si]c[o]r[um]",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristotle ; Burndy Library, donor. DSI»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/Auctoritatesext00Aris/manifest.json",
+   "pagina": "https://archive.org/details/Auctoritatesext00Aris",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 100
+  },
+  {
+   "id": "ia-discorsodileont00bald",
+   "fonte": "archive",
+   "biblioteca": "Smithsonian Libraries, Washington",
+   "citta": "Washington",
+   "segnatura": "DiscorsodiLeont00Bald",
+   "datazione": "1573",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "it",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Discorso di Leontio artefice sopra la sfera di Arato et fabrica di quella",
+   "autori": [
+    {
+     "id": "arato",
+     "autore": "Arato",
+     "latino": "Aratus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…aldi, Bernardino, 1553-1617 ; Aratus, Solensis ; Leontius Mechanic…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/DiscorsodiLeont00Bald/manifest.json",
+   "pagina": "https://archive.org/details/DiscorsodiLeont00Bald",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 40
+  },
+  {
+   "id": "ia-liberboetij14y00boet",
+   "fonte": "archive",
+   "biblioteca": "Smithsonian Libraries, Washington",
+   "citta": "Washington",
+   "segnatura": "LiberBoetij14Y00Boet",
+   "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Liber Boetij[14--?]",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Boethius, -524 ; Burndy Library, donor. DSI»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/LiberBoetij14Y00Boet/manifest.json",
+   "pagina": "https://archive.org/details/LiberBoetij14Y00Boet",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 100
+  },
+  {
+   "id": "ia-machineetinstru00vitr",
+   "fonte": "archive",
+   "biblioteca": "Smithsonian Libraries, Washington",
+   "citta": "Washington",
+   "segnatura": "Machineetinstru00Vitr",
+   "datazione": "1600",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Machine et instrumenti de piu celebratissimi autori",
+   "autori": [
+    {
+     "id": "vitruvio",
+     "autore": "Vitruvio",
+     "latino": "Vitruvius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Vitruvius Pollio ; Besson, Jacques, Dau…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/Machineetinstru00Vitr/manifest.json",
+   "pagina": "https://archive.org/details/Machineetinstru00Vitr",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 90
   },
   {
    "id": "bnf-btv1b84540243",

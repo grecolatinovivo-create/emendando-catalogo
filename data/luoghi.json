@@ -12136,6 +12136,63 @@
    "lat": 42.04114,
    "lon": -87.69006,
    "geonames": 4891382
+  },
+  "montreal": {
+   "nome": "Montréal",
+   "en": "Montreal",
+   "paese": "CA",
+   "lat": 45.5088,
+   "lon": -73.5878,
+   "geonames": 6077243
+  },
+  "udine": {
+   "nome": "Udine",
+   "paese": "IT",
+   "lat": 46.0693,
+   "lon": 13.2372,
+   "geonames": 3165072
+  },
+  "fano": {
+   "nome": "Fano",
+   "paese": "IT",
+   "lat": 43.8405,
+   "lon": 13.0167,
+   "geonames": 3177219
+  },
+  "chennai": {
+   "nome": "Chennai",
+   "paese": "IN",
+   "lat": 13.0878,
+   "lon": 80.2785,
+   "geonames": 1264527
+  },
+  "ramtek": {
+   "nome": "Ramtek",
+   "paese": "IN",
+   "lat": 21.3956,
+   "lon": 79.3273,
+   "geonames": 1258553
+  },
+  "haridwar": {
+   "nome": "Haridwar",
+   "paese": "IN",
+   "lat": 29.9479,
+   "lon": 78.1603,
+   "geonames": 1270351
+  },
+  "nonthaburi": {
+   "nome": "Nonthaburi",
+   "paese": "TH",
+   "lat": 13.8608,
+   "lon": 100.5148,
+   "geonames": 1608133
+  },
+  "haverford": {
+   "nome": "Haverford",
+   "paese": "US",
+   "lat": 40.0132,
+   "lon": -75.2944,
+   "geonames": 5192907
   }
  },
  "citta": {
@@ -14208,7 +14265,20 @@
   "Santiago del Cile": "santiago-del-cile",
   "Il Cairo": "il-cairo",
   "Il Cairo (Egitto)": "il-cairo",
-  "Evanston": "evanston"
+  "Evanston": "evanston",
+  "Montréal": "montreal",
+  "Montreal": "montreal",
+  "Udine": "udine",
+  "Fano": "fano",
+  "Chennai": "chennai",
+  "Madras": "chennai",
+  "Ramtek": "ramtek",
+  "Haridwar": "haridwar",
+  "Nonthaburi": "nonthaburi",
+  "Haverford": "haverford",
+  "Filadelfia": "philadelphia",
+  "Parigi": "parigi",
+  "Washington": "washington"
  },
  "biblioteche": {
   "Bibliothèque Carré d'art / Nîmes": "nimes",

@@ -5,10 +5,12 @@
 # (Pergamos, codici della Biblioteca della Facoltà di Filosofia; data/pergamos.json) e Monastero di Rousanou alle Meteore (IIIF della
 # Biblioteca di Kalambaka, elenco da SearchCulture.gr; data/rousanou.json). Dal 26 ottobre 2026 anche l'Africa: American University
 # in Cairo (CONTENTdm, codici arabi, persiani e copti; data/auc.json) e Northwestern University, Herskovits Library (manoscritti arabi
-# e in ajami dell'Africa occidentale, API delle Digital Collections; data/northwestern.json). Gli stati sono in data/ndl.json, data/kokusho.json,
+# e in ajami dell'Africa occidentale, API delle Digital Collections; data/northwestern.json) e Internet Archive (manoscritti pubblicati
+# da biblioteche di tutto il mondo: McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, Fragile
+# Palm Leaves Foundation, biblioteche indiane e altre; una ricerca per profilo ogni 6 giorni; data/archive.json). Gli stati sono in data/ndl.json, data/kokusho.json,
 # data/auckland.json, data/toronto.json. Richieste in serie, una biblioteca dopo l'altra, con le pause di sempre (scripts/rete.mjs).
 # Ruota fino a lettura completa: finché una delle tre non ha finito la prima lettura completa, la corsia lavora circa 150 minuti
-# per esecuzione (NDL 65, Kokusho 60, Auckland 10, Toronto 10) e riparte subito da sola, purché nel giro ci siano stati progressi
+# per esecuzione (NDL 60, Kokusho 55, Auckland 10, Toronto 10, Internet Archive 10) e riparte subito da sola, purché nel giro ci siano stati progressi
 # (scripts/ruota.mjs). Poi torna al giro notturno delle 05 UTC, che prende solo i codici nuovi (raccolte complete periodiche:
 # NDL ogni 30 giorni, Kokusho ogni 14, a riprese da una notte all'altra).
 name: "Raccolta: corsia mondo"
@@ -31,8 +33,8 @@ jobs:
     uses: ./.github/workflows/corsia.yml
     with:
       corsia: mondo
-      fonti: ndl,kokusho,auckland,toronto,pergamos,rousanou,auc,northwestern
-      argomenti: --ndl-minuti=65 --kokusho-minuti=60 --auckland-minuti=10 --toronto-minuti=10 --pergamos-minuti=10 --rousanou-minuti=5 --auc-minuti=5 --northwestern-minuti=5
+      fonti: ndl,kokusho,auckland,toronto,pergamos,rousanou,auc,northwestern,archive
+      argomenti: --ndl-minuti=60 --kokusho-minuti=55 --auckland-minuti=10 --toronto-minuti=10 --pergamos-minuti=10 --rousanou-minuti=5 --auc-minuti=5 --northwestern-minuti=5 --archive-minuti=10
       cache: false
       ruota: false
       completa: true

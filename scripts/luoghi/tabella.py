@@ -6,11 +6,11 @@ L = {
  "san-lorenzo-de-el-escorial": ("San Lorenzo de El Escorial", None, "San Lorenzo de El Escorial", "ES", "29", ["San Lorenzo de El Escorial", "El Escorial"]),
  "siviglia": ("Siviglia", "Seville", "Sevilla", "ES", "51", ["Siviglia", "Sevilla", "Siviglia (Spagna)"]),
  "oxford": ("Oxford", None, "Oxford", "GB", None, ["Oxford"]),
- "philadelphia": ("Filadelfia", "Philadelphia", "Philadelphia", "US", "PA", ["Philadelphia"]),
+ "philadelphia": ("Filadelfia", "Philadelphia", "Philadelphia", "US", "PA", ["Philadelphia", "Filadelfia"]),
  "new-york": ("New York", None, "New York City", "US", "NY", ["New York"]),
  "new-haven": ("New Haven", None, "New Haven", "US", "CT", ["New Haven"]),
  "san-gallo": ("San Gallo", "St. Gallen", "Sankt Gallen", "CH", "SG", ["St. Gallen"]),
- "parigi": ("Parigi", "Paris", "Paris", "FR", "11", ["Paris", "Cassation", "Saint-Denis Paris"]),
+ "parigi": ("Parigi", "Paris", "Paris", "FR", "11", ["Paris", "Cassation", "Saint-Denis Paris", "Parigi"]),
  "lucerna": ("Lucerna", "Lucerne", "Luzern", "CH", "LU", ["Luzern", "Zentral- und Hochschulbibliothek Luzern"]),
  "ginevra": ("Ginevra", "Geneva", "Genève", "CH", "GE", ["Genève", "Geneve"]),
  "basilea": ("Basilea", "Basel", "Basel", "CH", "BS", ["Basel"]),
@@ -183,7 +183,7 @@ L = {
  "rodez": ("Rodez", None, "Rodez", "FR", "76", ["Rodez"]),
  # biblioteche del Kokusho (città nel nome, dal 26 ottobre 2026): fuori dal Giappone e città giapponesi ambigue o sotto i 10.000 abitanti
  "seul": ("Seul", "Seoul", "Seoul", "KR", None, ["Seul (Corea del Sud)", "Seul", "Seoul"]),
- "washington": ("Washington", None, "Washington", "US", "#4140963", ["Washington (Stati Uniti)", "Washington, D.C."]),
+ "washington": ("Washington", None, "Washington", "US", "#4140963", ["Washington (Stati Uniti)", "Washington, D.C.", "Washington"]),
  "oberlin": ("Oberlin (Ohio)", None, "Oberlin", "US", "#5165445", ["Oberlin (Stati Uniti)", "Oberlin (Ohio)"]),
  "jp-zentsuji": ("Zentsūji", None, "Zentsujichó", "JP", "#1847983", ["Zentsūji", "Zentsuji"]),
  "jp-kashima-saga": ("Kashima (Saga)", None, "Kashima", "JP", "#1859941", ["Kashima"]),
@@ -283,6 +283,15 @@ L = {
  "reykjavik": ("Reykjavík", None, "Reykjavík", "IS", None, ["Reykjavík", "Reykjavik"]),
  "gardabaer": ("Garðabær", None, "Garðabær", "IS", None, ["Garðabær"]),
  "stoccolma": ("Stoccolma", "Stockholm", "Stockholm", "SE", None, ["Stoccolma", "Stockholm"]),
+ # Internet Archive (fonte «archive», dal 26 ottobre 2026)
+ "montreal": ("Montréal", "Montreal", "Montréal", "CA", "#6077243", ["Montréal", "Montreal"]),
+ "udine": ("Udine", None, "Udine", "IT", "#3165072", ["Udine"]),
+ "fano": ("Fano", None, "Fano", "IT", "#3177219", ["Fano"]),
+ "chennai": ("Chennai", None, "Chennai", "IN", "#1264527", ["Chennai", "Madras"]),
+ "ramtek": ("Ramtek", None, "Rāmtek", "IN", "#1258553", ["Ramtek"]),
+ "haridwar": ("Haridwar", None, "Haridwar", "IN", "#1270351", ["Haridwar"]),
+ "nonthaburi": ("Nonthaburi", None, "Mueang Nonthaburi", "TH", "#1608133", ["Nonthaburi"]),
+ "haverford": ("Haverford", None, "Haverford", "US", "#5192907", ["Haverford"]),
 }
 # biblioteche senza città nel catalogo (o con città non geografica): nome esatto -> id
 BIB = {
