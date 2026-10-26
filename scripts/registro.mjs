@@ -45,6 +45,7 @@ export const BIBLIOTECHE = {
   loc: { biblioteca: "Library of Congress: microfilm del Monastero di Santa Caterina del Sinai e dei Patriarcati greco-ortodosso e armeno di Gerusalemme", citta: "Sinai (Egitto) e Gerusalemme", come: "corsia usa: a ruota finché la prima lettura non è finita, poi ogni notte (elenco completo ogni 6 giorni; manifesti scritti dal catalogo)" },
   cudl: { biblioteca: "Cambridge Digital Library (University Library e college)", citta: "Cambridge", come: "corsia uk: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 6 giorni)" },
   wellcome: { biblioteca: "Wellcome Collection", citta: "Londra", come: "corsia uk, ogni notte (raccolta completa ogni 6 giorni)" },
+  bl: { biblioteca: "British Library (copie IIIF della Biblioteca e della Qatar Digital Library)", citta: "Londra", come: "corsia uk: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 6 giorni, schede nuove)" },
   isos: { biblioteca: "Irish Script on Screen (Royal Irish Academy, National Library of Ireland, Trinity College Dublin, National Library of Scotland e altre)", citta: "Irlanda e altre sedi", come: "corsia uk, ogni notte (elenco ogni 6 giorni)" },
   manchester: { biblioteca: "John Rylands Research Institute and Library (Manchester Digital Collections)", citta: "Manchester", come: "corsia uk: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 6 giorni)" },
   cbl: { biblioteca: "Chester Beatty", citta: "Dublino", come: "corsia uk: a ruota finché la prima lettura non è finita (un manifesto ogni 10 secondi, come chiede la biblioteca), poi ogni notte" },
@@ -215,6 +216,12 @@ export const AVANZAMENTO = {
     const s = leggi("data/wellcome.json"); if (!s) return { testo: "non ancora cominciata" };
     if (s.cursore) return { testo: `in corso: ricerca ${s.cursore.r + 1} di 2, pagina ${s.cursore.p}`, data: s.aggiornato };
     return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} manoscritti con copia digitale aperta)`, data: s.completato || s.aggiornato };
+  },
+  bl: () => {
+    const s = leggi("data/bl.json"); if (!s) return { testo: "non ancora cominciata" };
+    const vs = Object.values(s.voci || {}), lette = vs.filter(v => v.y).length;
+    if (!s.completato) return { testo: `in corso, a ruota: ${num(lette)} schede lette su ${num(vs.length)} (fuori India Office Records, charters, papiri)`, data: s.aggiornato };
+    return { testo: `schede lette tutte (${num(lette)} su ${num(vs.length)} con copia digitale nel nuovo IIIF o nella Qatar Digital Library; fuori India Office Records, charters, papiri, lettere)`, data: s.completato };
   },
   nlg: () => {
     const s = leggi("data/nlg.json"); if (!s) return { testo: "non ancora cominciata" };

@@ -338,6 +338,6 @@ BIB = {
 FONTI = {"gallica": "parigi", "heidelberg": "heidelberg", "vaticana": "citta-del-vaticano", "bodleian": "oxford", "laurenziana": "firenze",
          "bsb": "monaco-di-baviera", "ndl": "tokyo", "berlino": "berlino", "lipsia": "lipsia", "leiden": "leida", "ambrosiana": "milano",
          "bub": "bologna", "nlg": "atene", "colonia": "colonia", "montecassino": "montecassino", "bamberga": "bamberga", "casanatense": "roma", "auckland": "auckland", "toronto": "toronto",
-         "wellcome": "londra", "manchester": "manchester", "cbl": "dublino", "cudl": "cambridge",
+         "wellcome": "londra", "bl": "londra", "manchester": "manchester", "cbl": "dublino", "cudl": "cambridge",
          "mdc": "barcellona", "ub": "barcellona", "realbiblioteca": "madrid", "ucm": "madrid", "sevilla": "siviglia", "rah": "madrid",
          "onb": "vienna", "crossasia": "vientiane", "sbbasia": "berlino", "nomfoundation": "hanoi", "bncf": "firenze", "vallicelliana": "roma", "malatestiana": "cesena", "classense": "ravenna"}

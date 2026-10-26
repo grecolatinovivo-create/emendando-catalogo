@@ -7,7 +7,7 @@
 //        [--leiden-minuti=15] [--hsp-minuti=10] [--berlino-minuti=60] [--indici-minuti=20]
 //        [--yale-minuti=30] [--penn-minuti=15] [--ds-minuti=15] [--walters-minuti=20] [--loc-minuti=10] [--nlg-minuti=15]
 //        [--ndl-minuti=60] [--kokusho-minuti=60] [--auckland-minuti=10] [--toronto-minuti=15]
-//        [--wellcome-minuti=10] [--isos-minuti=20] [--manchester-minuti=30] [--cudl-minuti=30] [--cbl-minuti=60] [--parker-minuti=20] [--nlw-minuti=10] [--minuti-totali=160] [--solo-costruisci]
+//        [--wellcome-minuti=10] [--bl-minuti=40] [--isos-minuti=20] [--manchester-minuti=30] [--cudl-minuti=30] [--cbl-minuti=60] [--parker-minuti=20] [--nlw-minuti=10] [--minuti-totali=160] [--solo-costruisci]
 //        [--mdc-minuti=10] [--ub-minuti=10] [--realbiblioteca-minuti=15] [--ucm-minuti=15] [--sevilla-minuti=5] [--rah-minuti=30]
 //        [--pergamos-minuti=10] [--rousanou-minuti=5] [--auc-minuti=5] [--northwestern-minuti=5]
 //        [--kbdk-minuti=30] [--uva-minuti=5] [--onb-minuti=30] [--bncf-minuti=5] [--vallicelliana-minuti=5] [--malatestiana-minuti=20] [--polona-minuti=20] [--manuscriptorium-minuti=30] [--archive-minuti=10]
@@ -46,6 +46,7 @@ import { scansionaNlg, recordNlg } from "./fonti/nlg.mjs";
 import { scansionaCudl, recordCudl } from "./fonti/cudl.mjs";
 import { scansionaManchester, recordManchester } from "./fonti/manchester.mjs";
 import { scansionaWellcome, recordWellcome } from "./fonti/wellcome.mjs";
+import { scansionaBl, recordBl } from "./fonti/bl.mjs";
 import { scansionaCbl, recordCbl } from "./fonti/cbl.mjs";
 import { scansionaParker, recordParker } from "./fonti/parker.mjs";
 import { scansionaNlw, recordNlw } from "./fonti/nlw.mjs";
@@ -82,7 +83,7 @@ import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 import { tipoDa } from "./carte.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
-const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,kbdk,uva,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,parker,nlw,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,auc,northwestern,archive,crossasia,sbbasia,nomfoundation,vaticana").split(",");
+const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,kbdk,uva,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,bl,isos,manchester,cudl,cbl,parker,nlw,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,auc,northwestern,archive,crossasia,sbbasia,nomfoundation,vaticana").split(",");
 const INIZIO = Date.now();
 export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)", berlino: "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
   bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -104,6 +105,7 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   loc: "Library of Congress: microfilm del Sinai e dei Patriarcati di Gerusalemme (loc.gov; manifesti scritti dal catalogo)",
   cudl: "Cambridge Digital Library: University Library e college (cudl.lib.cam.ac.uk)",
   wellcome: "Wellcome Collection, Londra (api.wellcomecollection.org)",
+  bl: "British Library, Londra (catalogo searcharchives.bl.uk; manifesti bl.digirati.io e, per i codici orientali e scientifici, Qatar Digital Library)",
   isos: "Irish Script on Screen: Royal Irish Academy, National Library of Ireland, Trinity College Dublin e altre (isos.dias.ie)",
   manchester: "John Rylands Research Institute and Library, Manchester (digitalcollections.manchester.ac.uk)",
   cbl: "Chester Beatty, Dublino (viewer.cbl.ie)",
@@ -288,7 +290,14 @@ async function main() {
     nlg: async () => recordNlg(await scansionaNlg({ minuti: min("nlg", +(arg["nlg-minuti"] ?? 15)), soloCache: sc("nlg") })),
     // Regno Unito e Irlanda (corsia «uk»): Wellcome, Irish Script on Screen, Manchester, Cambridge, Chester Beatty
     wellcome: async () => recordWellcome(await scansionaWellcome({ minuti: min("wellcome", +(arg["wellcome-minuti"] ?? 10)), soloCache: sc("wellcome") })),
-    isos: async () => recordIsos(await scansionaIsos({ minuti: min("isos", +(arg["isos-minuti"] ?? 20)), soloCache: sc("isos") })),
+    // British Library (dal 26 ottobre 2026): nuovo servizio IIIF (bl.digirati.io) e copie nella Qatar Digital Library, elenco dal catalogo
+    bl: async () => recordBl(await scansionaBl({ minuti: min("bl", +(arg["bl-minuti"] ?? 40)), soloCache: sc("bl") })),
+    // i codici della British Library che la fonte «bl» dà già (stessa segnatura) restano a quella fonte
+    isos: async () => {
+      const rs = recordIsos(await scansionaIsos({ minuti: min("isos", +(arg["isos-minuti"] ?? 20)), soloCache: sc("isos") }));
+      const bl = new Set((perFonte.bl || prima.filter(v => v.fonte === "bl")).map(v => String(v.segnatura).toLowerCase()));
+      return rs.filter(r => !(/British Library/i.test(r.biblioteca || "") && bl.has(String(r.segnatura).toLowerCase())));
+    },
     manchester: async () => recordManchester(await scansionaManchester({ minuti: min("manchester", +(arg["manchester-minuti"] ?? 30)), soloCache: sc("manchester") })),
     // Cambridge: dal 26 ottobre 2026 dal server, con le collezioni IIIF (/iiif/collection/<slug>)
     cudl: async () => recordCudl(await scansionaCudl({ minuti: min("cudl", +(arg["cudl-minuti"] ?? 30)), soloCache: sc("cudl") })),
