@@ -11297,6 +11297,13 @@
    "lon": 1.4437,
    "geonames": 2972315
   },
+  "toronto": {
+   "nome": "Toronto",
+   "paese": "CA",
+   "lat": 43.7064,
+   "lon": -79.3986,
+   "geonames": 6167865
+  },
   "torre": {
    "nome": "Torre (Blenio)",
    "paese": "CH",
@@ -13049,6 +13056,8 @@
   "Tonoshō": "jp-tonosho",
   "Toon": "jp-toon",
   "Toride": "jp-toride",
+  "Toronto": "toronto",
+  "Toronto (Canada)": "toronto",
   "Torre": "torre",
   "Tosa": "jp-tosa",
   "Tosashimizu": "jp-tosashimizu",
@@ -13408,6 +13417,7 @@
   "montecassino": "montecassino",
   "bamberga": "bamberga",
   "casanatense": "roma",
-  "auckland": "auckland"
+  "auckland": "auckland",
+  "toronto": "toronto"
  }
 }

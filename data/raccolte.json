@@ -124,6 +124,11 @@
   "esito": "sospesa: manifesti di Marburgo non raggiungibili",
   "ultimo_ok": "2026-10-24T19:49:16.763Z"
  },
+ "toronto": {
+  "quando": "2026-10-26T08:45:29.000Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-26T08:45:29.000Z"
+ },
  "vaticana": {
   "quando": "2026-10-26T08:28:12.832Z",
   "esito": "ok",

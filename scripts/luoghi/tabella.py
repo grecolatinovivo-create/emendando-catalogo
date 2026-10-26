@@ -151,6 +151,7 @@ L = {
  "austin": ("Austin", None, "Austin", "US", "TX", ["Austin"]),
  "augusta": ("Augusta (Augsburg)", "Augsburg", "Augsburg", "DE", "02", ["Augsburg"]),
  "auckland": ("Auckland", None, "Auckland", "NZ", None, ["Auckland (Nuova Zelanda)", "Auckland"]),
+ "toronto": ("Toronto", None, "Toronto", "CA", "08", ["Toronto (Canada)", "Toronto"]),
  "athens-oh": ("Athens (Ohio)", None, "Athens", "US", "OH", ["Athens (Ohio)"]),
  "atene": ("Atene", "Athens", "Athens", "GR", None, ["Atene"]),
  "appenzell": ("Appenzell", None, "Appenzell", "CH", "AI", ["Appenzell"]),
@@ -230,4 +231,4 @@ BIB = {
 # città della fonte, per le voci senza città: fonte -> id
 FONTI = {"gallica": "parigi", "heidelberg": "heidelberg", "vaticana": "citta-del-vaticano", "bodleian": "oxford", "laurenziana": "firenze",
          "bsb": "monaco-di-baviera", "ndl": "tokyo", "berlino": "berlino", "lipsia": "lipsia", "leiden": "leida", "ambrosiana": "milano",
-         "bub": "bologna", "nlg": "atene", "colonia": "colonia", "montecassino": "montecassino", "bamberga": "bamberga", "casanatense": "roma", "auckland": "auckland"}
+         "bub": "bologna", "nlg": "atene", "colonia": "colonia", "montecassino": "montecassino", "bamberga": "bamberga", "casanatense": "roma", "auckland": "auckland", "toronto": "toronto"}

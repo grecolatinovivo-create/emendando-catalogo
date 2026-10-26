@@ -18,7 +18,7 @@ Come leggere le colonne:
 - **Ultima raccolta**: com'è andata l'ultima volta.
 
 <!-- inizio automatico -->
-Codici nel catalogo, in tutto: **366.884**, di cui **22.458** con almeno un autore riconosciuto.
+Codici nel catalogo, in tutto: **367.086**, di cui **22.491** con almeno un autore riconosciuto.
 
 | Biblioteca | Città | Codici totali | Di cui con autori riconosciuti | Lingue | Avanzamento della lettura | Come si aggiorna | Ultimo aggiornamento | Ultima raccolta |
 |---|---|---|---|---|---|---|---|---|
@@ -51,6 +51,7 @@ Codici nel catalogo, in tutto: **366.884**, di cui **22.458** con almeno un auto
 | Kokusho Database (国書データベース) del National Institute of Japanese Literature: manoscritti di biblioteche, templi e collezioni giapponesi | Giappone | 139.385 | 5 | giapponese 139.385 | schede lette tutte (206.989 manoscritti con immagini; 139.385 con immagini proprie; fuori i libri a stampa e la NDL) | corsia mondo: a ruota finché la prima lettura completa non è finita, poi ogni notte (raccolta completa ogni 14 giorni) | 2026-10-26 | riuscita |
 | State Library Victoria | Melbourne (Australia) | 14 | 3 | latino 9, inglese 2, irlandese 2, altre 3 | 85 oggetti digitali raccolti dal browser il 2026-10-26 (ricerche: 17) | va fatta a mano dal browser (scripts/browser/slv.js) | 2026-10-26 | — |
 | Auckland Libraries, Sir George Grey Special Collections | Auckland (Nuova Zelanda) | 43 | 11 | latino 24, arabo 8, persiano 6, altre 10 | oggetti letti tutti (6561; 43 codici: medievali e orientali, fuori lettere e carte d'archivio) | corsia mondo: a ruota finché la prima lettura completa non è finita, poi ogni notte (raccolta completa ogni 6 giorni) | 2026-10-26 | riuscita |
+| University of Toronto, Thomas Fisher Rare Book Library | Toronto (Canada) | 202 | 33 | non indicata 98, latino 29, ebraico 28, altre 53 | manifesti letti tutti (439 su 443 delle collezioni IIIF «Manuscripts» e «Manuscript Fragments»; fuori lettere, diari e carte d'archivio) | corsia mondo: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 6 giorni, manifesti nuovi) | 2026-10-26 | riuscita |
 | Biblioteca Apostolica Vaticana | Città del Vaticano | 9648 | 823 | latino 9359, italiano 233, francese 23, altre 38 | 9648 codici letti su 31.127 digitalizzati; fondo in corso: Reg. lat.; restano circa 21.248 manifesti da leggere, cioè circa 3 giorni (un manifesto ogni 10 secondi, come chiede la biblioteca) | corsia propria: a ruota, senza pause tra un'esecuzione e l'altra | 2026-10-26 | riuscita |
 
 Digital Scriptorium, codici per istituzione: Princeton University Library 3062; Columbia University, Rare Book & Manuscript Library 835; University of Pennsylvania Libraries 721; Harvard University, Houghton Library 603; The Huntington Library 383; Free Library of Philadelphia 356; Newberry Library 235; Boston Public Library 234; University of Kansas, Kenneth Spencer Research Library 190; University of California, Berkeley, Bancroft Library 181; University of Chicago Library 165; Western Michigan University 113; Rutgers University Libraries 112; Indiana University, Lilly Library 101; Ohio University Libraries 78; Rochester Institute of Technology, Cary Graphic Arts Collection 69; Saint Louis University 65; Bryn Mawr College 52; Conception Abbey and Seminary 39; California State Library, Sutro Library 37; Nelson-Atkins Museum of Art 35; University of California, Davis 32; Buffalo & Erie County Public Library 31; General Theological Seminary 18; Grolier Club 14; Smith College 11; New York University 8; Burke Library at Union Theological Seminary 8; Newberry Library e Western Michigan University 7; Providence Public Library 5; Fordham University 4; American Academy in Rome 2; Harry Ransom Center, University of Texas 2; City College of New York 1; Pepperdine University 1. Lasciati alle fonti Penn e Yale (doppioni): 4197. Fuori per manifesto non raggiungibile o da verificare: 120.
@@ -169,10 +170,62 @@ Si agganciano dopo aver completato le biblioteche europee. L'ordine della tabell
 | National Library of Israel (Ktiv) | Gerusalemme (Israele) | non si può (per ora) | Cloudflare 403 dal server su iiif.nli.org.il, www.nli.org.il e api.nli.org.il (anche l'elenco). Dal browser (25 ottobre 2026) un manifesto si apre con CORS ma senza immagini («sequences» vuote), un altro non si apre: instabile. Da rifare dal browser con uno script di elenco. I codici ebraici di Lipsia con manifesti NLI sono già nella fonte «lipsia». |
 | Turchia e Medio Oriente: Yazma Eserler Kurumu (Süleymaniye), Biblioteca nazionale dell'Iran, Università di Istanbul, Bibliotheca Alexandrina | Istanbul, Teheran, Alessandria | non si può | Prova del 25 ottobre 2026: yazmaeserler.gov.tr e dl.nlai.ir non rispondono né dal server né dal browser; dijital.istanbul.edu.tr e manuscripts.bibalex.org non rispondono dal server; nessun IIIF pubblico noto. |
 | International Dunhuang Programme (IDP) | Londra e altre sedi (manoscritti di Dunhuang) | non si può (per ora) | idp.bl.uk risponde 403 ai server e non si apre nemmeno dal browser (25 ottobre 2026). |
-| Biblioteca Nacional do Brasil, Biblioteca Nacional de México, Biblioteca Nacional Mariano Moreno (Argentina), Biblioteca Nacional de Chile | Rio de Janeiro, Città del Messico, Buenos Aires, Santiago | non si può | Nessun manifesto IIIF pubblico trovato (documentazione e ricerca del 25 ottobre 2026); BNDigital risponde 403 ai server, bdmx.mx e bibliotecadigital.bn.gov.ar non rispondono; Cile: Biblioteca Nacional Digital senza IIIF. Per lo più manoscritti di età moderna e documenti. |
+| Biblioteca Nacional do Brasil, Biblioteca Nacional de México, Biblioteca Nacional Mariano Moreno (Argentina), Biblioteca Nacional de Chile | Rio de Janeiro, Città del Messico, Buenos Aires, Santiago | non si può | Prova del 25 ottobre 2026, rifatta il 26 ottobre 2026 con le altre biblioteche dell'America Latina: vedi la tabella «America Latina» più sotto. |
 | State Library Victoria | Melbourne (Australia) | in lavorazione (dal browser) | Manifesti IIIF (`rosetta.slv.vic.gov.au/delivery/iiif/presentation/2.1/<IE…>/manifest`) e immagini si aprono dal browser con CORS (verificato il 25 ottobre 2026), ma rispondono 403 ai server; il catalogo (Primo) vieta ai robot la ricerca e non risultano elenchi aperti (dataset, Wikidata): l'elenco si raccoglie dal browser con `scripts/browser/slv.js` (fonte «slv», vuota finché non c'è `data/slv.json`). |
 | National Library of Australia (Trove), University of Sydney, State Library of New South Wales | Canberra, Sydney (Australia) | non si può (per ora) | L'API di Trove vieta tutto nel robots.txt; digital.library.sydney.edu.au e collection.sl.nsw.gov.au rispondono 403 ai server. |
 | Auckland Libraries (Sir George Grey Special Collections) | Auckland (Nuova Zelanda) | agganciata | Fonte «auckland»: codici medievali e orientali (CONTENTdm, manifesti IIIF con CORS). |
+
+### America Latina
+
+Prova del 26 ottobre 2026: dal server (richieste in serie, almeno 1,5 secondi tra l'una e l'altra), con WebSearch e, per i siti che non rispondono al server, dal browser integrato dell'app sul Mac. Regola: entra solo ciò che si apre dentro Emendando (manifesto IIIF e immagini con CORS aperto, oppure immagini caricabili come `<img>` con manifesti scritti da noi), solo manoscritti librari. Il 26 ottobre 2026 nessuna biblioteca dell'America Latina passa: le biblioteche nazionali pubblicano PDF o visori propri, senza IIIF, e molti siti non rispondono né dal server né dal browser. I codici latinoamericani che entrano oggi arrivano da biblioteche di altri paesi (Gallica, fonds mexicain; Yale, Penn, Digital Scriptorium con Berkeley e le altre; Toronto).
+
+| Biblioteca | Città | Stato | Note (26 ottobre 2026) |
+|---|---|---|---|
+| Biblioteca Nacional do Brasil (BNDigital) | Rio de Janeiro | non si può | `bndigital.bn.gov.br` risponde 403 ai server; le copie digitali si vedono solo nel visore DocReader (`docvirt.com`), senza IIIF né indirizzi stabili delle immagini. |
+| Biblioteca Nacional de Chile (Biblioteca Nacional Digital, Memoria Chilena) | Santiago | non si può | La Biblioteca Nacional Digital (`bibliotecanacionaldigital.gob.cl`, Crawl-delay 2) mostra i documenti come PDF (`/colecciones/BND/.../*.pdf`), senza IIIF; i manoscritti digitalizzati sono soprattutto dell'Archivo del Escritor (carte e lettere moderne). I vecchi indirizzi `bibliotecadigital.bn.cl` e `bibliotecadigital.gob.cl` non rispondono né dal server né dal browser. |
+| Biblioteca Nacional Mariano Moreno | Buenos Aires | non si può (per ora) | `trapalanda.bn.gov.ar` non risponde dal server; nessun IIIF pubblico documentato. |
+| Biblioteca Nacional de Colombia | Bogotá | non si può (per ora) | `bibliotecadigital.bibliotecanacional.gov.co` non risponde né dal server né dal browser. |
+| Biblioteca Nacional del Perú | Lima | non si può (per ora) | `bibliotecadigital.bnp.gob.pe` non risponde dal server; dal browser la pagina non finisce di caricare. |
+| Biblioteca Nacional de México e Biblioteca Digital Mexicana | Città del Messico | non si può (per ora) | `bnm.iib.unam.mx` non risponde dal server; `bdmx.mx` non risponde nemmeno dal browser (timeout). |
+| Mediateca e Repositorio dell'INAH (códices della Biblioteca Nacional de Antropología e Historia) | Città del Messico | da riprovare | `mediateca.inah.gob.mx` rimanda a `repositorio.inah.gob.mx`, che il 26 ottobre 2026 è «desconectado en mantenimiento» (dal browser). È il candidato migliore per i codici indigeni: da riprovare. |
+| Biblioteca Histórica José María Lafragua (BUAP) | Puebla | non si può (per ora) | `lafragua.buap.mx` non risponde dal server; nessun IIIF trovato. |
+| Archivo General de la Nación | Città del Messico | non serve | Fondi d'archivio, non codici librari (fuori per regola). |
+| Biblioteca Nacional de Uruguay | Montevideo | non si può (per ora) | `bibliotecadigital.bibna.gub.uy` e `www.bibna.gub.uy` non rispondono dal server. |
+| Biblioteca Nacional de Venezuela | Caracas | non si può | `www.bnv.gob.ve` risponde, ma la biblioteca digitale offre PDF; nessun IIIF trovato. |
+| Universidad de Chile (Biblioteca Digital) | Santiago | non serve | Primo e Alma, ricerca vietata dal robots.txt (Crawl-delay 10); dal browser i 181 «manuscritos» sono lettere, appunti e documenti del Novecento, non codici. |
+| Biblioteca Brasiliana Guita e José Mindlin (USP) | San Paolo | non si può | DSpace 6 (`digital.bbm.usp.br`): la collezione «Manuscritos» ha 37 documenti, solo in PDF, senza IIIF. |
+| John Carter Brown Library | Providence (Stati Uniti) | non si può (per ora) | Il visore LUNA (`jcb.lunaimaging.com`) ha IIIF, ma il robots.txt chiede 500 secondi tra una richiesta e l'altra e vieta la ricerca; i libri digitalizzati sono soprattutto a stampa (Internet Archive). |
+| World Digital Library (oggi su loc.gov) | Washington (Stati Uniti) | non serve | Su loc.gov la collezione `world-digital-library` ha solo 176 manoscritti della Library of Congress (arabi, persiani, cinesi…), nessuno latinoamericano: i contributi delle biblioteche partner non ci sono più. |
+| Biblioteca Digital Hispánica (BNE) | Madrid | non provata | Ha fondi americani, ma non era da fare adesso; `bdh.bne.es` risponde 403 ai server. |
+
+### Canada
+
+Prova del 26 ottobre 2026, con le stesse regole. In Digital Scriptorium non ci sono istituzioni canadesi: nessun doppione.
+
+| Biblioteca | Città | Stato | Note (26 ottobre 2026) |
+|---|---|---|---|
+| University of Toronto, Thomas Fisher Rare Book Library | Toronto | agganciata | Fonte «toronto» (id `uoft-`, corsia mondo): collezioni IIIF pubbliche di `iiif.library.utoronto.ca` («Manuscripts» `fisher2:root` e «Manuscript Fragments» `fisher21:root`, circa 440 manifesti), manifesti e immagini con CORS aperto; entrano i manoscritti librari (codici medievali latini, greci, ebraici, orientali, ricettari, frammenti), fuori lettere, diari, charters e altre carte d'archivio. Le collezioni didattiche di paleografia (campioni di altre biblioteche) e i papiri restano fuori. |
+| McGill University Library (Rare Books, Osler Library) | Montréal | non si può | Nessuna piattaforma IIIF: il vecchio sito `digital.library.mcgill.ca` (con i 37 libri d'ore di «Horae») risponde 403 ai server e dal browser mostra la pagina di prova del server; la guida della biblioteca non indica altre copie digitali dei manoscritti. |
+| University of British Columbia (Open Collections) | Vancouver | non si può | `open.library.ubc.ca` risponde con una verifica anti-robot, anche dal browser: i manifesti non si aprirebbero dal visore di Emendando. |
+| Université de Montréal (Calypso) | Montréal | non serve | CONTENTdm con IIIF, ma nessuna collezione di manoscritti: nelle «Monographies» ci sono solo 2 o 3 manoscritti (relazioni e dialoghi del Seicento) tra i libri a stampa. |
+| Bibliothèque et Archives nationales du Québec (BAnQ numérique) | Montréal | da verificare | Il sito risponde; nessun IIIF pubblico trovato; i manoscritti sono per lo più fondi d'archivio. |
+| Université Laval | Québec | da verificare | Nessuna biblioteca digitale dei manoscritti con IIIF trovata sul sito. |
+| Library and Archives Canada | Ottawa | non serve (per ora) | La ricerca delle collezioni risponde 403 ai server; i manoscritti sono fondi d'archivio. Canadiana (`canadiana.ca`, IIIF) pubblica soprattutto i microfilm d'archivio di LAC: da verificare se ci sono codici. |
+| Royal Ontario Museum | Toronto | da verificare | Non si è trovata una collezione digitale di manoscritti; almeno un codice del ROM è passato alla Fisher (l'Antiphonarium MSS 09700, «Acquired from the ROM, 1964»), che è agganciata. |
+
+### Centro America e Caraibi
+
+Prova del 26 ottobre 2026, con le stesse regole: nessuna biblioteca passa.
+
+| Biblioteca | Città | Stato | Note (26 ottobre 2026) |
+|---|---|---|---|
+| Biblioteca Nacional José Martí | L'Avana (Cuba) | non si può (per ora) | `bnjm.cu` non risponde (503 o nessuna connessione). |
+| Biblioteca Nacional Pedro Henríquez Ureña | Santo Domingo (Repubblica Dominicana) | non si può (per ora) | `bnrd.gob.do` non risponde dal server. |
+| Università di Porto Rico (Biblioteca Digital Puertorriqueña, Colección Puertorriqueña) | San Juan (Porto Rico) | non si può | Il repository DSpace (`repositorio.upr.edu`) risponde 403 ai server, la biblioteca digitale non risponde; le collezioni pubblicate (Omeka, PDF) non hanno IIIF. |
+| CIRMA | Antigua Guatemala (Guatemala) | non serve | Il sito risponde, l'archivio digitale (`archivo.cirma.org.gt`) no; sono fondi d'archivio e fotografie. |
+| Sistema Nacional de Bibliotecas (SINABI) | San José (Costa Rica) | non si può | Biblioteca digitale senza IIIF. |
+| Biblioteca Nacional Ernesto J. Castillero | Panamá | non si può | Sul sito solo PDF; nessun IIIF. |
+| Digital Library of the Caribbean (dLOC, University of Florida) | Gainesville (Stati Uniti), per molte biblioteche dei Caraibi | da verificare | Il sito risponde; dal server non si è trovato l'indirizzo dei manifesti IIIF; i contenuti sono soprattutto giornali, libri a stampa e documenti. |
 
 ### Papiri (in attesa di decisione)
 

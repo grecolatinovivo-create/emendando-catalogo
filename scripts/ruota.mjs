@@ -20,7 +20,7 @@ const quante = o => Object.keys((o && o.voci) || {}).length;
 // true = prima lettura completa non ancora finita; null = fonte senza regola (conta come finita)
 export const INCOMPLETA = {
   // raccolte a riprese con il segnaposto «completato» (azzerato quando si rifà la lettura da capo)
-  ...Object.fromEntries(["ndl", "kokusho", "penn", "loc", "auckland", "ds", "montecassino", "casanatense", "bub", "laurenziana", "leiden",
+  ...Object.fromEntries(["ndl", "kokusho", "penn", "loc", "auckland", "toronto", "ds", "montecassino", "casanatense", "bub", "laurenziana", "leiden",
     "wolfenbuettel", "bamberga", "karlsruhe", "stoccarda", "colonia", "lipsia"].map(f => [f, s => !s || !s.completato]),
   ),
   // Ambrosiana: elenco letto e nessuna scheda ancora da leggere (le schede che non si aprono restano segnate con «x»)

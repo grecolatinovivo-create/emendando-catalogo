@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T08:30:43.266Z",
+ "aggiornato": "2026-10-26T08:53:58.022Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -122,13 +122,18 @@
    "codici": 4,
    "esito": "ok"
   },
+  "toronto": {
+   "nome": "University of Toronto, Thomas Fisher Rare Book Library (collections.library.utoronto.ca)",
+   "codici": 8,
+   "esito": "ok"
+  },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
    "codici": 410,
    "esito": "ok"
   }
  },
- "totale": 10246,
+ "totale": 10254,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -328861,6 +328866,241 @@
    "pagina": "https://search.digital-scriptorium.org/catalog/DS9977",
    "licenza": null,
    "immagini": null
+  },
+  {
+   "id": "uoft-fisher21-101",
+   "fonte": "toronto",
+   "biblioteca": "Thomas Fisher Rare Book Library, University of Toronto",
+   "citta": "Toronto (Canada)",
+   "segnatura": "fisher21:101",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "C. Liulius Solinus Collectanea rerum memorabilium",
+   "autori": [
+    {
+     "id": "solino",
+     "autore": "Solino",
+     "latino": "Solinus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Collectanea rerum memorabilium"
+     ],
+     "corrispondenza": "titolo: «C. Liulius Solinus Collectanea rerum memorabilium»"
+    }
+   ],
+   "manifest": "https://iiif.library.utoronto.ca/presentation/v2/fisher21:101/manifest",
+   "pagina": "https://collections.library.utoronto.ca/view/fisher21:101",
+   "licenza": "Thomas Fisher Rare Book Library: per i diritti e la riproduzione rivolgersi a fisher.library@utoronto.ca",
+   "immagini": 1
+  },
+  {
+   "id": "uoft-fisher21-102",
+   "fonte": "toronto",
+   "biblioteca": "Thomas Fisher Rare Book Library, University of Toronto",
+   "citta": "Toronto (Canada)",
+   "segnatura": "fisher21:102",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "C. Liulius Solinus Collectanea rerum memorabilium",
+   "autori": [
+    {
+     "id": "solino",
+     "autore": "Solino",
+     "latino": "Solinus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Collectanea rerum memorabilium"
+     ],
+     "corrispondenza": "titolo: «C. Liulius Solinus Collectanea rerum memorabilium»"
+    }
+   ],
+   "manifest": "https://iiif.library.utoronto.ca/presentation/v2/fisher21:102/manifest",
+   "pagina": "https://collections.library.utoronto.ca/view/fisher21:102",
+   "licenza": "Thomas Fisher Rare Book Library: per i diritti e la riproduzione rivolgersi a fisher.library@utoronto.ca",
+   "immagini": 1
+  },
+  {
+   "id": "uoft-fisher21-103",
+   "fonte": "toronto",
+   "biblioteca": "Thomas Fisher Rare Book Library, University of Toronto",
+   "citta": "Toronto (Canada)",
+   "segnatura": "fisher21:103",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "C. Liulius Solinus Collectanea rerum memorabilium",
+   "autori": [
+    {
+     "id": "solino",
+     "autore": "Solino",
+     "latino": "Solinus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Collectanea rerum memorabilium"
+     ],
+     "corrispondenza": "titolo: «C. Liulius Solinus Collectanea rerum memorabilium»"
+    }
+   ],
+   "manifest": "https://iiif.library.utoronto.ca/presentation/v2/fisher21:103/manifest",
+   "pagina": "https://collections.library.utoronto.ca/view/fisher21:103",
+   "licenza": "Thomas Fisher Rare Book Library: per i diritti e la riproduzione rivolgersi a fisher.library@utoronto.ca",
+   "immagini": 1
+  },
+  {
+   "id": "uoft-fisher21-104",
+   "fonte": "toronto",
+   "biblioteca": "Thomas Fisher Rare Book Library, University of Toronto",
+   "citta": "Toronto (Canada)",
+   "segnatura": "fisher21:104",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "C. Liulius Solinus Collectanea rerum memorabilium",
+   "autori": [
+    {
+     "id": "solino",
+     "autore": "Solino",
+     "latino": "Solinus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Collectanea rerum memorabilium"
+     ],
+     "corrispondenza": "titolo: «C. Liulius Solinus Collectanea rerum memorabilium»"
+    }
+   ],
+   "manifest": "https://iiif.library.utoronto.ca/presentation/v2/fisher21:104/manifest",
+   "pagina": "https://collections.library.utoronto.ca/view/fisher21:104",
+   "licenza": "Thomas Fisher Rare Book Library: per i diritti e la riproduzione rivolgersi a fisher.library@utoronto.ca",
+   "immagini": 1
+  },
+  {
+   "id": "uoft-fisher21-172",
+   "fonte": "toronto",
+   "biblioteca": "Thomas Fisher Rare Book Library, University of Toronto",
+   "citta": "Toronto (Canada)",
+   "segnatura": "fisher21:172",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Passage from an Italian Vergil",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Passage from an Italian Vergil»"
+    }
+   ],
+   "manifest": "https://iiif.library.utoronto.ca/presentation/v2/fisher21:172/manifest",
+   "pagina": "https://collections.library.utoronto.ca/view/fisher21:172",
+   "licenza": "Thomas Fisher Rare Book Library: per i diritti e la riproduzione rivolgersi a fisher.library@utoronto.ca",
+   "immagini": 1
+  },
+  {
+   "id": "uoft-fisher21-173",
+   "fonte": "toronto",
+   "biblioteca": "Thomas Fisher Rare Book Library, University of Toronto",
+   "citta": "Toronto (Canada)",
+   "segnatura": "fisher21:173",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Passage from an Italian Vergil",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Passage from an Italian Vergil»"
+    }
+   ],
+   "manifest": "https://iiif.library.utoronto.ca/presentation/v2/fisher21:173/manifest",
+   "pagina": "https://collections.library.utoronto.ca/view/fisher21:173",
+   "licenza": "Thomas Fisher Rare Book Library: per i diritti e la riproduzione rivolgersi a fisher.library@utoronto.ca",
+   "immagini": 1
+  },
+  {
+   "id": "uoft-fisher2-f6743",
+   "fonte": "toronto",
+   "biblioteca": "Thomas Fisher Rare Book Library, University of Toronto",
+   "citta": "Toronto (Canada)",
+   "segnatura": "MSS 01115",
+   "datazione": "16--",
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "In octo physicorum libros Aristotelis compendium",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Gnazzius, Horatius»"
+    },
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Fisica"
+     ],
+     "corrispondenza": "titolo: «In octo physicorum libros Aristotelis compendium»"
+    }
+   ],
+   "manifest": "https://iiif.library.utoronto.ca/presentation/v2/fisher2:F6743/manifest",
+   "pagina": "https://collections.library.utoronto.ca/view/fisher2:F6743",
+   "licenza": "For rights and reproduction information please contact fisher.library@utoronto.ca",
+   "immagini": 321
+  },
+  {
+   "id": "uoft-fisher2-143",
+   "fonte": "toronto",
+   "biblioteca": "Thomas Fisher Rare Book Library, University of Toronto",
+   "citta": "Toronto (Canada)",
+   "segnatura": "MSS 05242",
+   "datazione": "1407",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Questiones in Aristotelis De caelo et mundo ; Quaestiones subtilissimae in Aristotelis libros de coelo et mundo. 1407",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "De caelo"
+     ],
+     "corrispondenza": "titolo: «Questiones in Aristotelis De caelo et mundo ; Quaestion…»"
+    }
+   ],
+   "manifest": "https://iiif.library.utoronto.ca/presentation/v2/fisher2:143/manifest",
+   "pagina": "https://collections.library.utoronto.ca/view/fisher2:143",
+   "licenza": "For rights and reproduction information please contact fisher.library@utoronto.ca",
+   "immagini": 146
   },
   {
    "id": "nijl-100209924",
