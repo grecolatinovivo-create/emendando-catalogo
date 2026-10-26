@@ -37,6 +37,10 @@ L = {
  "magonza": ("Magonza", "Mainz", "Mainz", "DE", "08", ["Mainz"]),
  "colonia": ("Colonia", "Cologne", "Köln", "DE", "07", ["Köln", "Colonia"]),
  "gerusalemme": ("Gerusalemme", "Jerusalem", "Jerusalem", "IL", None, ["Gerusalemme"]),
+ "amsterdam": ("Amsterdam", None, "Amsterdam", "NL", "07", ["Amsterdam"]),
+ "tel-aviv": ("Tel Aviv", None, "Tel Aviv", "IL", "05", ["Tel Aviv"]),
+ "ramat-gan": ("Ramat Gan", None, "Ramat Gan", "IL", "05", ["Ramat Gan"]),
+ "los-angeles": ("Los Angeles", None, "Los Angeles", "US", "CA", ["Los Angeles", "Los Angeles (Stati Uniti)"]),
  "aarau": ("Aarau", None, "Aarau", "CH", "AG", ["Aarau"]),
  "ueberlingen": ("Überlingen", None, "Überlingen", "DE", "01", ["Überlingen"]),
  "zofingen": ("Zofingen", None, "Zofingen", "CH", "AG", ["Zofingen"]),
@@ -340,4 +344,4 @@ FONTI = {"gallica": "parigi", "heidelberg": "heidelberg", "vaticana": "citta-del
          "bub": "bologna", "nlg": "atene", "colonia": "colonia", "montecassino": "montecassino", "bamberga": "bamberga", "casanatense": "roma", "auckland": "auckland", "toronto": "toronto",
          "wellcome": "londra", "bl": "londra", "manchester": "manchester", "cbl": "dublino", "cudl": "cambridge",
          "mdc": "barcellona", "ub": "barcellona", "realbiblioteca": "madrid", "ucm": "madrid", "sevilla": "siviglia", "rah": "madrid",
-         "onb": "vienna", "crossasia": "vientiane", "sbbasia": "berlino", "nomfoundation": "hanoi", "bncf": "firenze", "vallicelliana": "roma", "malatestiana": "cesena", "classense": "ravenna"}
+         "onb": "vienna", "crossasia": "vientiane", "sbbasia": "berlino", "nomfoundation": "hanoi", "bncf": "firenze", "vallicelliana": "roma", "malatestiana": "cesena", "classense": "ravenna", "nli": "gerusalemme", "getty": "los-angeles", "harvard": "cambridge-ma"}

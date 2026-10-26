@@ -69,6 +69,10 @@ export const BIBLIOTECHE = {
   // Africa (corsia «mondo», dal 26 ottobre 2026)
   auc: { biblioteca: "American University in Cairo, Rare Books and Special Collections Library (codici arabi, persiani e copti)", citta: "Il Cairo (Egitto)", come: "corsia mondo, ogni notte (raccolta completa ogni 6 giorni)" },
   northwestern: { biblioteca: "Northwestern University Libraries, Herskovits Library of African Studies (manoscritti arabi e in ajami dell'Africa occidentale)", citta: "Evanston (Stati Uniti)", come: "corsia mondo, ogni notte (raccolta completa ogni 6 giorni)" },
+  // dal 26 ottobre 2026: National Library of Israel (corsia «mondo»), Getty Museum (corsia «usa»), Harvard (elenco dal browser)
+  nli: { biblioteca: "National Library of Israel (manoscritti di Ktiv; con le copie digitali della Bibliotheca Rosenthaliana di Amsterdam)", citta: "Gerusalemme", come: "corsia mondo, ogni notte (elenco da Europeana ogni 14 giorni)" },
+  getty: { biblioteca: "J. Paul Getty Museum, dipartimento dei manoscritti", citta: "Los Angeles (Stati Uniti)", come: "corsia usa, ogni notte (elenco ogni 6 giorni, schede nuove)" },
+  harvard: { biblioteca: "Harvard Library: Houghton Library, Harvard-Yenching Library, Islamic Heritage Project (fuori i codici già dati da Digital Scriptorium)", citta: "Cambridge (Stati Uniti)", come: "corsia usa, elenco da LibraryCloud ogni 14 giorni; se LibraryCloud respinge il server, dal browser (scripts/browser/harvard.js)" },
   // Internet Archive (corsia «mondo», dal 26 ottobre 2026)
   archive: { biblioteca: "Internet Archive: manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, Fragile Palm Leaves Foundation, biblioteche indiane e altre; dettaglio sotto la tabella)", citta: "varie", come: "corsia mondo, ogni notte (una ricerca per profilo ogni 6 giorni)" },
   // Spagna (corsia «iberia», dal 26 ottobre 2026)
@@ -297,6 +301,21 @@ export const AVANZAMENTO = {
     return { testo: `${num(letti)} manifesti letti su ${num(vs.length)} codici${err ? `; ${num(err)} con il manifesto non leggibile` : ""}`, data: s.aggiornato };
   },
   ...Object.fromEntries(Object.keys(FONTI_HSP).map(f => [f, () => { const a = aRiprese(`data/${f}.json`, 1); return { ...a, testo: a.testo.replace("schede lette tutte", "codici digitalizzati letti tutti") }; }])),
+  nli: () => {
+    const s = leggi("data/nli.json"); if (!s) return { testo: "non ancora cominciata" };
+    if (s.fase) return { testo: `in corso, a ruota (corsia mondo): fase ${s.fase}`, data: s.aggiornato };
+    return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} manoscritti con immagini su ${num(s.totale)} in Europeana; fuori ketubbot, lettere, documenti, registri e i codici di Lipsia)`, data: s.completato || s.aggiornato };
+  },
+  getty: () => {
+    const s = leggi("data/getty.json"); if (!s) return { testo: "non ancora cominciata" };
+    const vs = Object.values(s.voci || {}), letti = vs.filter(v => !v.q).length;
+    if (!s.completato) return { testo: `in corso: ${num(letti)} schede lette su ${num(vs.length)}`, data: s.aggiornato };
+    return { testo: `schede lette tutte (${num(vs.length)} manoscritti «whole» del Museo; spesso solo le pagine miniate)`, data: s.completato };
+  },
+  harvard: () => {
+    const s = leggi("data/harvard.json"); if (!s) return { testo: "elenco non ancora raccolto: va lanciato scripts/browser/harvard.js dal browser" };
+    return { testo: `${num(Object.keys(s.voci || {}).length)} schede di LibraryCloud raccolte dal browser il ${giorno(s.raccolto)} (entrano solo i manoscritti librari non già in Digital Scriptorium)`, data: s.raccolto };
+  },
   archive: () => {
     const s = leggi("data/archive.json"); if (!s) return { testo: "non ancora cominciata" };
     const p = s.profili || {};

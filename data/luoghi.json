@@ -12221,6 +12221,27 @@
    "lat": 52.37403,
    "lon": 4.88969,
    "geonames": 2759794
+  },
+  "los-angeles": {
+   "nome": "Los Angeles",
+   "paese": "US",
+   "lat": 34.05223,
+   "lon": -118.24368,
+   "geonames": 5368361
+  },
+  "tel-aviv": {
+   "nome": "Tel Aviv",
+   "paese": "IL",
+   "lat": 32.08088,
+   "lon": 34.78057,
+   "geonames": 293397
+  },
+  "ramat-gan": {
+   "nome": "Ramat Gan",
+   "paese": "IL",
+   "lat": 32.08227,
+   "lon": 34.81065,
+   "geonames": 293788
   }
  },
  "citta": {
@@ -14313,7 +14334,11 @@
   "Chiang Mai (Thailandia)": "chiang-mai",
   "Hanoi": "hanoi",
   "Hanoi (Vietnam)": "hanoi",
-  "Amsterdam": "amsterdam"
+  "Amsterdam": "amsterdam",
+  "Los Angeles": "los-angeles",
+  "Los Angeles (Stati Uniti)": "los-angeles",
+  "Tel Aviv": "tel-aviv",
+  "Ramat Gan": "ramat-gan"
  },
  "biblioteche": {
   "Bibliothèque Carré d'art / Nîmes": "nimes",
@@ -14404,6 +14429,9 @@
   "sbbasia": "berlino",
   "nomfoundation": "hanoi",
   "kbdk": "copenaghen",
-  "uva": "amsterdam"
+  "uva": "amsterdam",
+  "nli": "gerusalemme",
+  "getty": "los-angeles",
+  "harvard": "cambridge-ma"
  }
 }

@@ -1,7 +1,9 @@
 # Corsia «usa»: tre fonti statunitensi tolte dalla corsia giornaliera il 25 ottobre 2026 perché la loro prima lettura completa
 # non era finita (server diversi dalle altre corsie): University of Pennsylvania (Colenda), Library of Congress (microfilm del Sinai
 # e di Gerusalemme; i manifesti si scrivono con manifesti.yml) e Walters Art Museum (descrizioni TEI e immagini di The Digital Walters;
-# manifesti IIIF scritti da noi). Gli stati sono in data/penn.json, data/loc.json, data/walters.json.
+# manifesti IIIF scritti da noi). Gli stati sono in data/penn.json, data/loc.json, data/walters.json. Dal 26 ottobre 2026 anche il
+# J. Paul Getty Museum (manoscritti, SPARQL e schede Linked Art di data.getty.edu; data/getty.json) e Harvard (LibraryCloud,
+# data/harvard.json: se risponde 403 ai runner resta l'elenco raccolto dal browser con scripts/browser/harvard.js).
 # Richieste in serie, una biblioteca dopo l'altra, con le pause di sempre (loc.gov 5 secondi, le altre 1,5: scripts/rete.mjs).
 # Ruota fino a lettura completa: finché una delle tre non ha finito la prima lettura, la corsia lavora fino a circa 140 minuti per esecuzione
 # (Penn 60, Walters 60, LoC 15) e riparte subito da sola, purché nel giro ci siano stati progressi
@@ -26,8 +28,8 @@ jobs:
     uses: ./.github/workflows/corsia.yml
     with:
       corsia: usa
-      fonti: penn,loc,walters
-      argomenti: --penn-minuti=60 --walters-minuti=60 --loc-minuti=15
+      fonti: penn,loc,walters,getty,harvard
+      argomenti: --penn-minuti=60 --walters-minuti=60 --loc-minuti=15 --getty-minuti=15 --harvard-minuti=10
       cache: false
       ruota: false
       completa: true

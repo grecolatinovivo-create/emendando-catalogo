@@ -10,6 +10,7 @@
 //        [--wellcome-minuti=10] [--bl-minuti=40] [--isos-minuti=20] [--manchester-minuti=30] [--cudl-minuti=30] [--cbl-minuti=60] [--parker-minuti=20] [--nlw-minuti=10] [--minuti-totali=160] [--solo-costruisci]
 //        [--mdc-minuti=10] [--ub-minuti=10] [--realbiblioteca-minuti=15] [--ucm-minuti=15] [--sevilla-minuti=5] [--rah-minuti=30]
 //        [--pergamos-minuti=10] [--rousanou-minuti=5] [--auc-minuti=5] [--northwestern-minuti=5]
+//        [--nli-minuti=15] [--getty-minuti=15] [--harvard-minuti=10]
 //        [--kbdk-minuti=30] [--uva-minuti=5] [--onb-minuti=30] [--bncf-minuti=5] [--vallicelliana-minuti=5] [--malatestiana-minuti=20] [--polona-minuti=20] [--manuscriptorium-minuti=30] [--archive-minuti=10]
 //        [--crossasia-minuti=30] [--sbbasia-minuti=30] [--sbbor-minuti=30] [--nomfoundation-minuti=20]
 // Scrive il catalogo diviso per fonte (vedi costruisci.mjs): data/catalogo/indice.json, data/catalogo/indice/<fonte>-<n>.json, data/catalogo/voci/<fonte>-<n>.json,
@@ -79,6 +80,9 @@ import { scansionaCrossasia, recordCrossasia } from "./fonti/crossasia.mjs";
 import { scansionaSbbasia, recordSbbasia } from "./fonti/sbbasia.mjs";
 import { scansionaSbbor, recordSbbor } from "./fonti/sbbor.mjs";
 import { scansionaNomfoundation, recordNom } from "./fonti/nomfoundation.mjs";
+import { scansionaNli, recordNli } from "./fonti/nli.mjs";
+import { scansionaGetty, recordGetty } from "./fonti/getty.mjs";
+import { scansionaHarvard, recordHarvard, esistentiHarvard, leggiHarvard } from "./fonti/harvard.mjs";
 import { scriviRegistro, registraEsiti } from "./registro.mjs";
 import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 import { tipoDa } from "./carte.mjs";
@@ -86,7 +90,7 @@ import { miniatoDa } from "./miniati.mjs";
 import { musicaDa } from "./musica.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
-const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,kbdk,uva,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,bl,isos,manchester,cudl,cbl,parker,nlw,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,auc,northwestern,archive,crossasia,sbbasia,sbbor,nomfoundation,vaticana").split(",");
+const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,kbdk,uva,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,bl,isos,manchester,cudl,cbl,parker,nlw,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,auc,northwestern,nli,getty,harvard,archive,crossasia,sbbasia,sbbor,nomfoundation,vaticana").split(",");
 const INIZIO = Date.now();
 export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)", berlino: "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
   bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -135,6 +139,10 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   // Africa (corsia «mondo», dal 26 ottobre 2026)
   auc: "American University in Cairo, Rare Books and Special Collections Library (digitalcollections.aucegypt.edu)",
   northwestern: "Northwestern University Libraries, Herskovits Library of African Studies, Evanston: manoscritti arabi e in ajami dell'Africa occidentale (api.dc.library.northwestern.edu)",
+  // dal 26 ottobre 2026: National Library of Israel (corsia «mondo»), Getty Museum (corsia «usa»), Harvard (elenco dal browser)
+  nli: "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
+  getty: "J. Paul Getty Museum, Los Angeles: manoscritti (data.getty.edu; manifesti media.getty.edu)",
+  harvard: "Harvard Library: Houghton, Harvard-Yenching, Islamic Heritage Project (LibraryCloud, elenco raccolto dal browser; manifesti nrs.lib.harvard.edu)",
   // Europa (corsia «europa», dal 26 ottobre 2026)
   handrit: "handrit.is: Reykjavík e Copenaghen (descrizioni TEI da github.com/Handrit/Manuscripts; manifesti scritti dal catalogo)",
   polona: "Polona: Biblioteka Narodowa e altre biblioteche polacche (polona.pl)",
@@ -284,6 +292,19 @@ async function main() {
       dettagli.ds = { scarti, perIstituzione: per };
       return rs;
     },
+    // Harvard: LibraryCloud dal server (corsia «usa»); se risponde 403 resta l'elenco raccolto dal browser (scripts/browser/harvard.js
+    // -> data/harvard.json); i codici che
+    // Digital Scriptorium dà già (stesso manifesto o stessa segnatura della Houghton) restano alla fonte «ds»
+    harvard: async () => {
+      let st, errore = null;
+      try { st = await scansionaHarvard({ minuti: min("harvard", +(arg["harvard-minuti"] ?? 10)), soloCache: sc("harvard") }); }
+      catch (e) { errore = e; st = leggiHarvard(); log("harvard", e.message); }
+      if (!st || !st.voci || !Object.keys(st.voci).length) throw errore || new Error("nessun elenco");
+      const gia = perFonte.ds || prima.filter(v => v.fonte === "ds");
+      const scarti = {}, rs = recordHarvard(st, { esistenti: esistentiHarvard(gia), scarti });
+      dettagli.harvard = { scarti };
+      return rs;
+    },
     // Walters: niente IIIF presso il museo; i manifesti si scrivono dallo stato (anche quando la fonte è sospesa)
     walters: async () => {
       let st, errore = null;
@@ -343,6 +364,15 @@ async function main() {
     rousanou: async () => recordRousanou(await scansionaRousanou({ minuti: min("rousanou", +(arg["rousanou-minuti"] ?? 5)), soloCache: sc("rousanou") })),
     // Africa (corsia «mondo»): American University in Cairo (CONTENTdm, in FONTI_CDM qui sopra) e Northwestern (Herskovits Library)
     northwestern: async () => recordNorthwestern(await scansionaNorthwestern({ minuti: min("northwestern", +(arg["northwestern-minuti"] ?? 5)), soloCache: sc("northwestern") })),
+    // National Library of Israel (corsia «mondo»): elenco da Europeana; i manifesti già nel catalogo (codici ebraici di Lipsia) restano a quelle fonti
+    nli: async () => {
+      const rs = recordNli(await scansionaNli({ minuti: min("nli", +(arg["nli-minuti"] ?? 15)), soloCache: sc("nli") }));
+      const gia = new Set(Object.keys(perFonte).filter(f => f !== "nli").flatMap(f => perFonte[f].map(r => r.manifest)));
+      for (const v of prima) if (v.fonte !== "nli" && !perFonte[v.fonte]) gia.add(v.manifest);
+      return rs.filter(r => !gia.has(r.manifest));
+    },
+    // J. Paul Getty Museum (corsia «usa»): SPARQL e schede Linked Art di data.getty.edu
+    getty: async () => recordGetty(await scansionaGetty({ minuti: min("getty", +(arg["getty-minuti"] ?? 15)), soloCache: sc("getty") })),
     // Internet Archive: tutte le altre biblioteche che vi pubblicano manoscritti (profili in scripts/fonti/archive.mjs); i codici che il
     // catalogo ha già da altre fonti (stesso oggetto di Internet Archive o stessa segnatura nella stessa biblioteca) restano a quelle fonti
     archive: async () => {
