@@ -7,7 +7,7 @@ import fs from "node:fs";
 import { lingueDa } from "../lingue.mjs";
 
 export const FILE = "data/slv.json";
-const NON_LIBRARI = /\b(letters?|correspondence|papers|diary|diaries|diario|records|accounts?|minutes|journal of|photograph|deeds?|receipts?|certificate|telegram|typescripts?)\b/i;
+const NON_LIBRARI = /\b(letters?|correspondence|papers|diary|diaries|diario|records|accounts?|minutes|journals?|photograph|deeds?|receipts?|certificates?|telegram|typescripts?|licen[cs]e|ticket|notice|chequebook|galley|procession|diagram|map|sketch(book)?|log|logbook|field book|notes|notebooks?|reminiscences|reports?|pedigree|family tree|birthday book|newspaper|record of|historical record|account of)\b/i;
 
 export function leggiSlv(file = FILE) { try { return JSON.parse(fs.readFileSync(file, "utf8")); } catch (e) { return null; } }
 

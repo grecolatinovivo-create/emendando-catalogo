@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T06:24:38.014Z",
- "totale": 366104,
- "con_autori": 22444,
+ "aggiornato": "2026-10-26T07:36:11.057Z",
+ "totale": 366118,
+ "con_autori": 22447,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
   "id",
@@ -25,7 +25,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 50114
+   "codici": 50123
   },
   "fr": {
    "nome": "francese",
@@ -53,7 +53,7 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 7935
+   "codici": 7936
   },
   "bo": {
    "nome": "tibetano",
@@ -69,7 +69,7 @@
   },
   "en": {
    "nome": "inglese",
-   "codici": 5202
+   "codici": 5204
   },
   "it": {
    "nome": "italiano",
@@ -77,7 +77,7 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 2027
+   "codici": 2028
   },
   "cop": {
    "nome": "copto",
@@ -105,7 +105,7 @@
   },
   "nl": {
    "nome": "nederlandese",
-   "codici": 613
+   "codici": 614
   },
   "hy": {
    "nome": "armeno",
@@ -141,7 +141,7 @@
   },
   "ga": {
    "nome": "irlandese",
-   "codici": 50
+   "codici": 52
   },
   "jv": {
    "nome": "giavanese",
@@ -191,11 +191,11 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 11540
+   "codici": 11541
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 2468
+   "codici": 2470
   }
  },
  "autori": {
@@ -1169,7 +1169,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 4975
+   "codici": 4976
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1271,7 +1271,7 @@
    "nome": "Beda",
    "latino": "Beda Venerabilis",
    "categoria": "medievale",
-   "codici": 675
+   "codici": 676
   },
   "alcuino": {
    "nome": "Alcuino",
@@ -1301,7 +1301,7 @@
    "nome": "Tommaso d'Aquino",
    "latino": "Thomas de Aquino",
    "categoria": "medievale",
-   "codici": 356
+   "codici": 357
   },
   "bernardo": {
    "nome": "Bernardo di Chiaravalle",
@@ -1962,6 +1962,7 @@
   "Stadtbibliothek im Bildungscampus Nürnberg",
   "Stadtbibliothek, Schaffhausen",
   "Stadtbibliothek, Zofingen",
+  "State Library Victoria, Melbourne (Australia)",
   "Stiftsarchiv (Abtei Pfäfers), St. Gallen",
   "Stiftsbibliothek St. Paul im Lavanttal, St. Paul in Kärnten",
   "Stiftsbibliothek, Einsiedeln",
@@ -2916,6 +2917,27 @@
     "indice/kokusho-6.json"
    ]
   },
+  "slv": {
+   "nome": "State Library Victoria, Melbourne (find.slv.vic.gov.au; elenco raccolto dal browser)",
+   "codici": 14,
+   "con_autori": 3,
+   "lingue": {
+    "la": 9,
+    "en": 2,
+    "fa": 1,
+    "xx": 1,
+    "ga": 2,
+    "nl": 1
+   },
+   "esito": "precedente",
+   "prefissi": [
+    "slv-"
+   ],
+   "pezzi_voci": 1,
+   "indice": [
+    "indice/slv-0.json"
+   ]
+  },
   "auckland": {
    "nome": "Auckland Libraries, Sir George Grey Special Collections (kura.aucklandlibraries.govt.nz)",
    "codici": 43,
@@ -3142,6 +3164,11 @@
    "file": "indice/kokusho-6.json",
    "fonte": "kokusho",
    "righe": 19385
+  },
+  {
+   "file": "indice/slv-0.json",
+   "fonte": "slv",
+   "righe": 14
   },
   {
    "file": "indice/auckland-0.json",
@@ -5578,6 +5605,7 @@
   "norimberga",
   "sciaffusa",
   "zofingen",
+  null,
   "san-gallo",
   "st-paul-lavanttal",
   "einsiedeln",

@@ -18,7 +18,7 @@ Come leggere le colonne:
 - **Ultima raccolta**: com'è andata l'ultima volta.
 
 <!-- inizio automatico -->
-Codici nel catalogo, in tutto: **366.104**, di cui **22.444** con almeno un autore riconosciuto.
+Codici nel catalogo, in tutto: **366.118**, di cui **22.447** con almeno un autore riconosciuto.
 
 | Biblioteca | Città | Codici totali | Di cui con autori riconosciuti | Lingue | Avanzamento della lettura | Come si aggiorna | Ultimo aggiornamento | Ultima raccolta |
 |---|---|---|---|---|---|---|---|---|
@@ -49,7 +49,7 @@ Codici nel catalogo, in tutto: **366.104**, di cui **22.444** con almeno un auto
 | Cambridge Digital Library (University Library e college) | Cambridge | 0 | 0 | — | elenco non ancora raccolto: va lanciato scripts/browser/cudl.js dal browser | va fatta a mano dal browser (scripts/browser/cudl.js) | 2026-10-25 | riuscita |
 | National Diet Library (国立国会図書館): manoscritti dei libri antichi giapponesi e cinesi | Tokyo (Giappone) | 42.872 | 0 | giapponese 40.318, cinese 2459, coreano 89, altre 7 | record letti tutti (114.703 libri antichi digitalizzati; 43.352 manoscritti; fuori i libri a stampa) | corsia mondo: a ruota finché la prima lettura completa non è finita, poi ogni notte (solo i record cambiati ogni 6 giorni, raccolta completa ogni 30) | 2026-10-26 | riuscita |
 | Kokusho Database (国書データベース) del National Institute of Japanese Literature: manoscritti di biblioteche, templi e collezioni giapponesi | Giappone | 139.385 | 5 | giapponese 139.385 | schede lette tutte (206.989 manoscritti con immagini; 139.385 con immagini proprie; fuori i libri a stampa e la NDL) | corsia mondo: a ruota finché la prima lettura completa non è finita, poi ogni notte (raccolta completa ogni 14 giorni) | 2026-10-26 | riuscita |
-| State Library Victoria | Melbourne (Australia) | 0 | 0 | — | elenco non ancora raccolto: va lanciato scripts/browser/slv.js dal browser | va fatta a mano dal browser (scripts/browser/slv.js) | — | — |
+| State Library Victoria | Melbourne (Australia) | 14 | 3 | latino 9, inglese 2, irlandese 2, altre 3 | 85 oggetti digitali raccolti dal browser il 2026-10-26 (ricerche: 17) | va fatta a mano dal browser (scripts/browser/slv.js) | 2026-10-26 | — |
 | Auckland Libraries, Sir George Grey Special Collections | Auckland (Nuova Zelanda) | 43 | 11 | latino 24, arabo 8, persiano 6, altre 10 | oggetti letti tutti (6561; 43 codici: medievali e orientali, fuori lettere e carte d'archivio) | corsia mondo: a ruota finché la prima lettura completa non è finita, poi ogni notte (raccolta completa ogni 6 giorni) | 2026-10-26 | riuscita |
 | Biblioteca Apostolica Vaticana | Città del Vaticano | 8882 | 812 | latino 8593, italiano 233, francese 23, altre 38 | 8882 codici letti su 31.127 digitalizzati; fondo in corso: Reg. lat.; restano circa 22.014 manifesti da leggere, cioè circa 3 giorni (un manifesto ogni 10 secondi, come chiede la biblioteca) | corsia propria: a ruota, senza pause tra un'esecuzione e l'altra | 2026-10-26 | riuscita |
 

@@ -63,7 +63,7 @@
   // scheda Primo -> IE e scheda compatta (null se non c'è un oggetto digitale Rosetta)
   function compatta(doc) {
     const testo = JSON.stringify(doc);
-    const ie = [...new Set(testo.match(/IE\d{3,}/g) || [])];
+    const ie = [...new Set([...testo.matchAll(/\b[Ii][Ee](\d{5,10})\b/g)].map(m => "IE" + m[1]))];
     const handle = (testo.match(/hdl\.handle\.net\/10381\/\d+|handle\.slv\.vic\.gov\.au\/10381\/\d+/) || [])[0] || null;
     const d = (doc.pnx && doc.pnx.display) || {}, s = (doc.pnx && doc.pnx.search) || {}, add = (doc.pnx && doc.pnx.addata) || {};
     const holding = (doc.delivery && doc.delivery.holding) || [];

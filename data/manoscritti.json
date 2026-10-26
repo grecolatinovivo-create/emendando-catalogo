@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T06:19:01.192Z",
+ "aggiornato": "2026-10-26T07:36:11.057Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -111,6 +111,11 @@
    "nome": "Kokusho Database, National Institute of Japanese Literature (kokusho.nijl.ac.jp)",
    "codici": 5,
    "esito": "ok"
+  },
+  "slv": {
+   "nome": "State Library Victoria, Melbourne (find.slv.vic.gov.au; elenco raccolto dal browser)",
+   "codici": 0,
+   "esito": "precedente"
   },
   "auckland": {
    "nome": "Auckland Libraries, Sir George Grey Special Collections (kura.aucklandlibraries.govt.nz)",
