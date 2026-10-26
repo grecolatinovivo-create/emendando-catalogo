@@ -104,10 +104,20 @@
   "esito": "ok",
   "ultimo_ok": "2026-10-26T15:09:57.343Z"
  },
+ "getty": {
+  "quando": "2026-10-26T15:26:09.952Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-26T15:26:09.952Z"
+ },
  "handrit": {
   "quando": "2026-10-26T13:51:56.626Z",
   "esito": "ok",
   "ultimo_ok": "2026-10-26T13:51:56.626Z"
+ },
+ "harvard": {
+  "quando": "2026-10-26T15:26:09.952Z",
+  "esito": "errore: LibraryCloud: HTTP 403 (resta il file raccolto dal browser, se c'è)",
+  "ultimo_ok": null
  },
  "heidelberg": {
   "quando": "2026-10-26T15:09:57.343Z",
@@ -150,9 +160,9 @@
   "ultimo_ok": "2026-10-26T15:09:57.343Z"
  },
  "loc": {
-  "quando": "2026-10-26T04:58:58.161Z",
+  "quando": "2026-10-26T15:26:09.952Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-26T04:58:58.161Z"
+  "ultimo_ok": "2026-10-26T15:26:09.952Z"
  },
  "malatestiana": {
   "quando": "2026-10-26T12:00:13.435Z",
@@ -215,9 +225,9 @@
   "ultimo_ok": "2026-10-26T15:16:12.572Z"
  },
  "penn": {
-  "quando": "2026-10-26T04:58:58.161Z",
+  "quando": "2026-10-26T15:26:09.952Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-26T04:58:58.161Z"
+  "ultimo_ok": "2026-10-26T15:26:09.952Z"
  },
  "pergamos": {
   "quando": "2026-10-26T15:11:57.814Z",
@@ -270,7 +280,7 @@
   "ultimo_ok": "2026-10-26T13:16:53.103Z"
  },
  "walters": {
-  "quando": "2026-10-26T04:58:58.161Z",
+  "quando": "2026-10-26T15:26:09.952Z",
   "esito": "sospesa: le immagini di thedigitalwalters.org non si caricano nemmeno dal browser (errore 522 del server del museo, 25 ottobre 2026)",
   "ultimo_ok": null
  },
