@@ -1,0 +1,53 @@
+# Segnalazioni dal visore di Emendando: codici che non si aprono (docs/SEGNALAZIONI.md).
+# Ogni 15 minuti e a mano: legge dal sito le segnalazioni aperte (secret LAVORAZIONE_TOKEN), ricontrolla i codici dal server,
+# apre o aggiorna una issue «da-risolvere» per biblioteca e causa, chiude da sola quelle i cui codici si aprono di nuovo.
+# Senza segnalazioni nuove e senza issue da ricontrollare esce in pochi secondi. Non toglie nulla dal catalogo.
+name: "Segnalazioni dal visore"
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: segnalazioni
+  cancel-in-progress: false
+
+jobs:
+  segnalazioni:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      # solo quello che serve: script, documenti e indice del catalogo (le voci si leggono una per una da raw.githubusercontent.com)
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          filter: blob:none
+          sparse-checkout: |
+            scripts/
+            docs/
+            data/catalogo/indice.json
+            package.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Ricontrollo e issue
+        env:
+          SEGNALAZIONI_TOKEN: ${{ secrets.LAVORAZIONE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SITO_URL: https://www.emendando.com
+        run: node scripts/segnalazioni.mjs --tempo=600
+      - name: Salvataggio dello stato (solo se cambia)
+        run: |
+          git config user.name "emendando-catalogo-bot"
+          git config user.email "emendando-catalogo-bot@users.noreply.github.com"
+          git add docs/SEGNALAZIONI.md
+          if git diff --cached --quiet; then echo "Nessuna modifica"; exit 0; fi
+          git commit -q -m "Segnalazioni: stato aggiornato $(date -u '+%Y-%m-%d %H:%M') UTC"
+          for i in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep $((i * 10)); done
+          exit 1
