@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T15:19:55.284Z",
+ "aggiornato": "2026-10-26T15:35:12.630Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -140,7 +140,7 @@
   "harvard": {
    "nome": "Harvard Library: Houghton, Harvard-Yenching, Islamic Heritage Project (LibraryCloud, elenco raccolto dal browser; manifesti nrs.lib.harvard.edu)",
    "codici": 10,
-   "esito": "ok"
+   "esito": "errore: LibraryCloud: HTTP 403 (resta il file raccolto dal browser, se c'è)"
   },
   "loc": {
    "nome": "Library of Congress: microfilm del Sinai e dei Patriarcati di Gerusalemme (loc.gov; manifesti scritti dal catalogo)",
@@ -305,7 +305,7 @@
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
    "codici": 0,
-   "esito": "ok"
+   "esito": "errore: manifesti letti in parte (mancano 13763): riprenderà alla prossima esecuzione"
   },
   "getty": {
    "nome": "J. Paul Getty Museum, Los Angeles: manoscritti (data.getty.edu; manifesti media.getty.edu)",
@@ -324,8 +324,8 @@
   },
   "crossasia": {
    "nome": "CrossAsia, Staatsbibliothek zu Berlin: Digital Library of Lao Manuscripts e Digital Library of Northern Thai Manuscripts (iiif.crossasia.org)",
-   "codici": 0,
-   "esito": "errore: fetch failed"
+   "codici": 1,
+   "esito": "ok"
   },
   "sbbasia": {
    "nome": "Staatsbibliothek zu Berlin: manoscritti dell'Asia orientale e del Sud-est asiatico (oai.sbb.berlin)",
@@ -340,7 +340,7 @@
   "nomfoundation": {
    "nome": "Vietnamese Nôm Preservation Foundation: Biblioteca nazionale del Vietnam e templi Thắng Nghiêm e Phổ Nhân (lib.nomfoundation.org; manifesti scritti dal catalogo)",
    "codici": 0,
-   "esito": "errore: schede lette in parte (1090 in questa esecuzione): riprenderà alla prossima"
+   "esito": "ok"
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
@@ -348,7 +348,7 @@
    "esito": "ok"
   }
  },
- "totale": 12154,
+ "totale": 12155,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -334409,6 +334409,36 @@
    "pagina": "https://digitalesamlinger.kb.dk/manus/vmanus/2011/dec/ha/object229903/en/",
    "licenza": "Det Kgl. Bibliotek: Materialet er fri af ophavsret",
    "immagini": 152
+  },
+  {
+   "id": "dlntm-555518",
+   "fonte": "crossasia",
+   "biblioteca": "Digital Library of Northern Thai Manuscripts (CrossAsia, Staatsbibliothek zu Berlin)",
+   "citta": "Chiang Mai (Thailandia)",
+   "segnatura": "DLNTM 712, 080710002_00",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "pi",
+    "shn",
+    "my"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Anikca sapho lae tra sung phyat dika ; อนิกจะซะพอ และ ตราซุงพฺยาดดี่ก่า",
+   "autori": [
+    {
+     "id": "saffo",
+     "autore": "Saffo",
+     "latino": "Sappho",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Anikca sapho lae tra sung phyat dika ; อนิกจะซะพอ และ ตราซุงพฺยาดดี่ก่า»"
+    }
+   ],
+   "manifest": "https://iiif.crossasia.org/s/lanna/madoc/api/manifests/555518/export/3.0",
+   "pagina": "https://iiif.crossasia.org/s/lanna/manifests/555518",
+   "licenza": "CC BY-NC 4.0 (immagini e metadati: Biblioteca nazionale del Laos e progetti DLLM/DLNTM, tramite la Staatsbibliothek zu Berlin, CrossAsia)",
+   "immagini": 113
   },
   {
    "id": "ec-ebs-0020",

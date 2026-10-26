@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T15:25:36.168Z",
- "totale": 472607,
- "con_autori": 27217,
+ "aggiornato": "2026-10-26T15:35:12.630Z",
+ "totale": 489248,
+ "con_autori": 27218,
  "miniati": 9867,
  "musica": 13525,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
@@ -34,7 +34,7 @@
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 28426
+   "codici": 28581
   },
   "fr": {
    "nome": "francese",
@@ -48,17 +48,25 @@
    "nome": "arabo",
    "codici": 21586
   },
+  "pi": {
+   "nome": "pali",
+   "codici": 17827
+  },
   "xx": {
    "nome": "altre lingue",
-   "codici": 17748
+   "codici": 17776
   },
   "zh": {
    "nome": "cinese",
-   "codici": 13965
+   "codici": 13994
   },
   "grc": {
    "nome": "greco",
    "codici": 13810
+  },
+  "lo": {
+   "nome": "lao",
+   "codici": 10873
   },
   "sa": {
    "nome": "sanscrito",
@@ -88,6 +96,10 @@
    "nome": "tibetano",
    "codici": 6501
   },
+  "nod": {
+   "nome": "thai settentrionale (lanna)",
+   "codici": 5516
+  },
   "pt": {
    "nome": "portoghese",
    "codici": 4874
@@ -104,10 +116,6 @@
    "nome": "islandese e norreno",
    "codici": 3105
   },
-  "pi": {
-   "nome": "pali",
-   "codici": 2715
-  },
   "ko": {
    "nome": "coreano",
    "codici": 2626
@@ -115,10 +123,6 @@
   "tr": {
    "nome": "turco",
    "codici": 2539
-  },
-  "lo": {
-   "nome": "lao",
-   "codici": 2455
   },
   "cop": {
    "nome": "copto",
@@ -139,6 +143,10 @@
   "cu": {
    "nome": "slavo ecclesiastico",
    "codici": 1081
+  },
+  "khb": {
+   "nome": "tai lü",
+   "codici": 933
   },
   "nl": {
    "nome": "nederlandese",
@@ -166,23 +174,23 @@
   },
   "vi": {
    "nome": "vietnamita (hán-nôm)",
-   "codici": 273
+   "codici": 281
+  },
+  "th": {
+   "nome": "thailandese",
+   "codici": 230
   },
   "oc": {
    "nome": "occitano",
    "codici": 189
   },
-  "khb": {
-   "nome": "tai lü",
-   "codici": 189
+  "shn": {
+   "nome": "shan",
+   "codici": 174
   },
   "jv": {
    "nome": "giavanese",
    "codici": 145
-  },
-  "th": {
-   "nome": "thailandese",
-   "codici": 140
   },
   "mnc": {
    "nome": "mancese",
@@ -192,9 +200,9 @@
    "nome": "gallese",
    "codici": 112
   },
-  "nod": {
-   "nome": "thai settentrionale (lanna)",
-   "codici": 68
+  "my": {
+   "nome": "birmano",
+   "codici": 102
   },
   "ga": {
    "nome": "irlandese",
@@ -224,10 +232,6 @@
    "nome": "naxi",
    "codici": 28
   },
-  "my": {
-   "nome": "birmano",
-   "codici": 26
-  },
   "sla": {
    "nome": "lingue slave (alfabeto cirillico)",
    "codici": 25
@@ -238,7 +242,7 @@
   },
   "km": {
    "nome": "khmer",
-   "codici": 11
+   "codici": 12
   },
   "ban": {
    "nome": "balinese",
@@ -268,10 +272,6 @@
    "nome": "galego",
    "codici": 2
   },
-  "shn": {
-   "nome": "shan",
-   "codici": 2
-  },
   "yi": {
    "nome": "yi",
    "codici": 2
@@ -296,7 +296,7 @@
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 6186
+   "codici": 6187
   },
   "cristiano": {
    "nome": "autori cristiani",
@@ -310,7 +310,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 470930
+   "codici": 487571
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -770,7 +770,7 @@
    "nome": "Saffo",
    "latino": "Sappho",
    "categoria": "classico-greco",
-   "codici": 13
+   "codici": 14
   },
   "alceo": {
    "nome": "Alceo",
@@ -1758,6 +1758,7 @@
   "Deutschordensmuseum, Bad Mergentheim",
   "Dieppe, Bibliothèque Camille Saint-Saëns",
   "Digital Library of Lao Manuscripts (Biblioteca nazionale del Laos; CrossAsia, Staatsbibliothek zu Berlin), Vientiane (Laos)",
+  "Digital Library of Northern Thai Manuscripts (CrossAsia, Staatsbibliothek zu Berlin), Chiang Mai (Thailandia)",
   "Dokumentationsstelle Oberer Zürichsee, Wädenswil",
   "Dominikanerinnenkloster St. Katharina, Wil",
   "Domschatz der St.-Ursen-Kathedrale, Solothurn",
@@ -3663,7 +3664,7 @@
     "ja": 40,
     "ko": 523
    },
-   "esito": "ok",
+   "esito": "errore: LibraryCloud: HTTP 403 (resta il file raccolto dal browser, se c'è)",
    "prefissi": [
     "harvard-"
    ],
@@ -4788,26 +4789,30 @@
   },
   "crossasia": {
    "nome": "CrossAsia, Staatsbibliothek zu Berlin: Digital Library of Lao Manuscripts e Digital Library of Northern Thai Manuscripts (iiif.crossasia.org)",
-   "codici": 2976,
+   "codici": 19584,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
-   "con_autori": 0,
+   "con_autori": 1,
    "lingue": {
-    "lo": 2449,
-    "pi": 2555,
-    "?": 37,
-    "khb": 189,
-    "nod": 68,
-    "th": 3,
-    "xx": 4
+    "nod": 5516,
+    "pi": 17667,
+    "lo": 10867,
+    "khb": 933,
+    "?": 192,
+    "th": 93,
+    "xx": 32,
+    "km": 1,
+    "shn": 172,
+    "my": 76
    },
-   "esito": "errore: fetch failed",
+   "esito": "ok",
    "prefissi": [
-    "dllm-"
+    "dllm-",
+    "dlntm-"
    ],
-   "pezzi_voci": 4,
+   "pezzi_voci": 25,
    "indice": [
     "indice/crossasia-0.json"
    ]
@@ -4902,17 +4907,17 @@
   },
   "nomfoundation": {
    "nome": "Vietnamese Nôm Preservation Foundation: Biblioteca nazionale del Vietnam e templi Thắng Nghiêm e Phổ Nhân (lib.nomfoundation.org; manifesti scritti dal catalogo)",
-   "codici": 461,
+   "codici": 494,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
    "con_autori": 0,
    "lingue": {
-    "zh": 420,
-    "vi": 107
+    "zh": 449,
+    "vi": 115
    },
-   "esito": "errore: schede lette in parte (1090 in questa esecuzione): riprenderà alla prossima",
+   "esito": "ok",
    "prefissi": [
     "vnpf-"
    ],
@@ -5338,7 +5343,7 @@
   {
    "file": "indice/crossasia-0.json",
    "fonte": "crossasia",
-   "righe": 2976
+   "righe": 19584
   },
   {
    "file": "indice/sbbasia-0.json",
@@ -5353,7 +5358,7 @@
   {
    "file": "indice/nomfoundation-0.json",
    "fonte": "nomfoundation",
-   "righe": 461
+   "righe": 494
   },
   {
    "file": "indice/vaticana-0.json",
@@ -5758,6 +5763,12 @@
    "paese": "IN",
    "lat": 13.0878,
    "lon": 80.2785
+  },
+  "chiang-mai": {
+   "nome": "Chiang Mai",
+   "paese": "TH",
+   "lat": 18.7904,
+   "lon": 98.9847
   },
   "chicago": {
    "nome": "Chicago",
@@ -8156,6 +8167,7 @@
   "bad-mergentheim",
   "dieppe",
   "vientiane",
+  "chiang-mai",
   "waedenswil",
   "wil",
   "soletta",

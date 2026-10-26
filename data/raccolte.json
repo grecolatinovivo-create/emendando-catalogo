@@ -65,9 +65,9 @@
   "ultimo_ok": "2026-10-26T15:09:57.343Z"
  },
  "crossasia": {
-  "quando": "2026-10-26T14:36:21.738Z",
-  "esito": "errore: fetch failed",
-  "ultimo_ok": null
+  "quando": "2026-10-26T15:30:55.341Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-26T15:30:55.341Z"
  },
  "cudl": {
   "quando": "2026-10-26T15:16:12.572Z",
@@ -205,9 +205,9 @@
   "ultimo_ok": "2026-10-26T15:16:12.572Z"
  },
  "nomfoundation": {
-  "quando": "2026-10-26T14:36:21.738Z",
-  "esito": "errore: schede lette in parte (1090 in questa esecuzione): riprenderà alla prossima",
-  "ultimo_ok": null
+  "quando": "2026-10-26T15:30:55.341Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-26T15:30:55.341Z"
  },
  "northwestern": {
   "quando": "2026-10-26T15:11:57.814Z",
@@ -245,9 +245,14 @@
   "ultimo_ok": "2026-10-26T15:11:57.814Z"
  },
  "sbbasia": {
-  "quando": "2026-10-26T14:36:21.738Z",
+  "quando": "2026-10-26T15:30:55.341Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-26T14:36:21.738Z"
+  "ultimo_ok": "2026-10-26T15:30:55.341Z"
+ },
+ "sbbor": {
+  "quando": "2026-10-26T15:30:55.341Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-26T15:30:55.341Z"
  },
  "stoccarda": {
   "quando": "2026-10-26T15:09:57.343Z",
