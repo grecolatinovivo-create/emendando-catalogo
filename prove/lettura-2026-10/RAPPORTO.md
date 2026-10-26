@@ -2,7 +2,7 @@
 
 Prova pilota gratuita: Kraken (riconoscimento della scrittura a mano, open source) ha letto poche pagine di ciascun codice; le letture sono state confrontate con testi latini noti e aperti, per capire se la lettura automatica può segnalare codici che forse contengono testi non identificati.
 
-Esecuzione: https://github.com/grecolatinovivo-create/emendando-catalogo/actions/runs/40237809680
+Esecuzione: https://github.com/grecolatinovivo-create/emendando-catalogo/actions/runs/40263160639
 
 ## In breve
 
@@ -12,7 +12,7 @@ Esecuzione: https://github.com/grecolatinovivo-create/emendando-catalogo/actions
 - Codici in un'altra lingua (volgare) nelle pagine lette: 20.
 - Codici **identificati** (le pagine lette corrispondono a testi noti): **48**; misti (alcune pagine note, altre no): 32.
 - Codici **sospetti** (latino letto bene ma nessuna corrispondenza): **238**; incerti: 1.
-- Tempo di calcolo: 21.3 ore di lettura (somma dei processi); 17.1 ore di job su GitHub Actions in tutto, il più lungo 317 minuti.
+- Tempo di calcolo: 21.3 ore di lettura (somma dei processi); 1.1 ore di job su GitHub Actions in tutto, il più lungo 66 minuti.
 
 ## Con che cosa sono stati identificati
 
