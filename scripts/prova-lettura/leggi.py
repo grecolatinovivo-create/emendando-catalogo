@@ -19,13 +19,13 @@ import threading
 import time
 import urllib.error
 import urllib.request
-from concurrent.futures import ProcessPoolExecutor
 
 UA = "EmendandoCatalogo-ProvaLettura/0.1 (+https://github.com/grecolatinovivo-create/emendando-catalogo; prova pilota HTR, poche pagine per codice)"
 LARGHEZZA = 2000
 PAGINE_MAX = int(os.environ.get("PAGINE_MAX", "10"))
 PAUSA = 1.0
 ALTEZZA_MAX = 3200
+SECONDI_PAGINA = 240  # una pagina che si blocca (segmentazione impazzita) si abbandona
 
 COPERTA = re.compile(r"einband|deckel|\bcover|binding|reliure|\bplat\b|\bplats\b|piatto|piatti|legatura|spine|rücken|ruecken|\bdos\b|schnitt|\bedge|farbkeil|colou?r ?(chart|checker|bar)|colorchecker|qp card|ruler|grey ?scale|gr[ae]ukeil|scala|ma(ss|ß)stab|\bboard|\bdorso|taglio|tranche|kapital|clasp|schließe|fermagli|target", re.I)
 GUARDIA = re.compile(r"vorsatz|flyleaf|fly-leaf|fly leaf|guard|guardia|garde|spiegel|paste-?down|contre-?plat|schutzbl", re.I)
@@ -164,7 +164,23 @@ def url_immagine(sid, larghezza, ver, dim=LARGHEZZA):
 _M = {}
 
 
+class TroppoTempo(Exception):
+    pass
+
+
+def _allarme(_sig, _frame):
+    raise TroppoTempo(f"pagina oltre {SECONDI_PAGINA} secondi")
+
+
 def _init(modello):
+    import resource
+    import signal
+    signal.signal(signal.SIGALRM, _allarme)
+    try:  # un processo di lettura non può prendersi tutta la memoria del runner
+        lim = int(float(os.environ.get("MEMORIA_GB", "5")) * 1024 ** 3)
+        resource.setrlimit(resource.RLIMIT_AS, (lim, lim))
+    except (ValueError, OSError):
+        pass
     import torch
     torch.set_num_threads(2)
     import kraken
@@ -174,9 +190,11 @@ def _init(modello):
 
 
 def _leggi(percorso):
+    import signal
     from PIL import Image
     from kraken import blla, rpred
     t0 = time.time()
+    signal.alarm(SECONDI_PAGINA)
     try:
         im = Image.open(percorso)
         im.load()
@@ -192,13 +210,92 @@ def _leggi(percorso):
                 if r.prediction.strip():
                     righe.append({"t": r.prediction, "c": round(sum(c) / len(c), 4) if c else 0.0, "n": len(c)})
         return {"righe": righe, "secondi": round(time.time() - t0, 1), "dim": list(im.size)}
-    except Exception as e:  # una pagina rotta non ferma il lotto
+    except (Exception, TroppoTempo, MemoryError) as e:  # una pagina rotta non ferma il lotto
         return {"errore": f"{type(e).__name__}: {e}"[:300], "righe": [], "secondi": round(time.time() - t0, 1)}
     finally:
+        signal.alarm(0)
         try:
             os.remove(percorso)  # l'immagine si usa e si cancella
         except OSError:
             pass
+
+
+def _ciclo(conn, modello):
+    """Processo di lettura: carica i modelli una volta e legge le pagine che riceve."""
+    _init(modello)
+    conn.send("pronto")
+    while True:
+        percorso = conn.recv()
+        if percorso is None:
+            return
+        conn.send(_leggi(percorso))
+
+
+class Lettori:
+    """Processi di lettura con un limite di tempo DURO per pagina: se una pagina si blocca (per esempio
+    la segmentazione dentro codice C che non sente i segnali) il processo si uccide e se ne avvia un altro.
+    Interfaccia come ProcessPoolExecutor: submit() restituisce un Future."""
+
+    def __init__(self, n, modello):
+        import multiprocessing as mp
+        import queue
+        from concurrent.futures import Future
+        self._Future = Future
+        self._ctx = mp.get_context("spawn")
+        self._modello = modello
+        self._coda = queue.Queue()
+        self._fili = [threading.Thread(target=self._gestore, daemon=True) for _ in range(n)]
+        for f in self._fili:
+            f.start()
+
+    def _avvia(self):
+        a, b = self._ctx.Pipe()
+        pr = self._ctx.Process(target=_ciclo, args=(b, self._modello), daemon=True)
+        pr.start()
+        a.recv()  # "pronto"
+        return pr, a
+
+    def _gestore(self):
+        pr, conn = self._avvia()
+        while True:
+            item = self._coda.get()
+            if item is None:
+                try:
+                    conn.send(None)
+                    pr.join(10)
+                except OSError:
+                    pass
+                return
+            percorso, fut = item
+            t0 = time.time()
+            try:
+                conn.send(percorso)
+                if conn.poll(SECONDI_PAGINA + 30):
+                    fut.set_result(conn.recv())
+                    continue
+                esito = {"errore": f"pagina abbandonata dopo {SECONDI_PAGINA + 30} secondi", "righe": [], "secondi": round(time.time() - t0, 1)}
+            except (EOFError, OSError) as e:  # processo morto (memoria)
+                esito = {"errore": f"processo di lettura morto: {type(e).__name__}", "righe": [], "secondi": round(time.time() - t0, 1)}
+            pr.kill()
+            pr.join(10)
+            try:
+                os.remove(percorso)
+            except OSError:
+                pass
+            print("  lettore riavviato:", esito["errore"], flush=True)
+            fut.set_result(esito)
+            pr, conn = self._avvia()
+
+    def submit(self, _fn, percorso):
+        fut = self._Future()
+        self._coda.put((percorso, fut))
+        return fut
+
+    def shutdown(self):
+        for _ in self._fili:
+            self._coda.put(None)
+        for f in self._fili:
+            f.join(60)
 
 
 def main():
@@ -216,7 +313,7 @@ def main():
     os.makedirs(uscita, exist_ok=True)
     tmp = tempfile.mkdtemp(prefix="img-")
     print(f"lotto {lotto}: {len(codici)} codici, pausa {_pausa[0]}s, modello {os.path.basename(modello)}", flush=True)
-    pool = ProcessPoolExecutor(max_workers=int(os.environ.get("PROCESSI", "2")), initializer=_init, initargs=(modello,))
+    pool = Lettori(int(os.environ.get("PROCESSI", "2")), modello)
     limite = threading.Semaphore(4)  # al massimo 4 immagini in attesa sul disco
     futuri = []
     t_lotto = time.time()
