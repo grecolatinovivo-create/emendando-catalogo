@@ -3,6 +3,8 @@
 # of Northern Thai Manuscripts, circa 6600; elenco dall'API di Madoc, data/crossasia.json), Staatsbibliothek zu Berlin (OAI-PMH, insiemi
 # «ostasiatische.handschriften» e «suedostasiatische.handschriften», data/sbbasia.json) e Vietnamese Nôm Preservation Foundation
 # (lib.nomfoundation.org: schede dei volumi, solo i manoscritti; manifesti scritti dal catalogo nel ramo «manifesti»; data/nomfoundation.json).
+# Fonte «sbbor»: gli altri manoscritti non europei di Berlino (insieme «aussereuropaeische.handschriften» meno l'Asia orientale e il
+# Sud-est asiatico, che restano a «sbbasia»): tibetani e mongoli, sanscriti, islamici, ebraici, cristiano-orientali, africani; data/sbbor.json.
 # Richieste in serie con la pausa di 1,5 secondi (scripts/rete.mjs). A ruota finché la prima lettura non è finita (scripts/ruota.mjs),
 # poi giro notturno alle 01:10 UTC.
 name: "Raccolta: corsia asia"
@@ -25,8 +27,8 @@ jobs:
     uses: ./.github/workflows/corsia.yml
     with:
       corsia: asia
-      fonti: crossasia,sbbasia,nomfoundation
-      argomenti: --crossasia-minuti=60 --sbbasia-minuti=30 --nomfoundation-minuti=50
+      fonti: crossasia,sbbasia,sbbor,nomfoundation
+      argomenti: --crossasia-minuti=60 --sbbasia-minuti=30 --sbbor-minuti=30 --nomfoundation-minuti=50
       cache: false
       ruota: false
       completa: true

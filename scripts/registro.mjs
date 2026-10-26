@@ -21,6 +21,7 @@ export const BIBLIOTECHE = {
   ecodices: { biblioteca: "e-codices (biblioteche svizzere: San Gallo, Einsiedeln, Bodmer e altre)", citta: "Svizzera", come: "ogni notte, da sola" },
   bsb: { biblioteca: "Bayerische Staatsbibliothek", citta: "Monaco di Baviera", come: "ogni notte, da sola" },
   berlino: { biblioteca: "Staatsbibliothek zu Berlin", citta: "Berlino", come: "ogni notte, da sola" },
+  sbbor: { biblioteca: "Staatsbibliothek zu Berlin, manoscritti non europei (tibetani, mongoli, sanscriti, islamici, ebraici, cristiano-orientali, africani)", citta: "Berlino", come: "corsia asia, ogni notte (raccolta completa ogni 14 giorni)" },
   bodleian: { biblioteca: "Bodleian Libraries e college", citta: "Oxford", come: "corsia propria: a ruota finché non sono letti tutti, poi ogni notte" },
   gallica: { biblioteca: "Bibliothèque nationale de France (Gallica)", citta: "Parigi", come: "va rifatta a mano dal browser" },
   laurenziana: { biblioteca: "Biblioteca Medicea Laurenziana", citta: "Firenze", come: "ogni notte, da sola" },
@@ -119,6 +120,11 @@ export const AVANZAMENTO = {
   ecodices: () => oai("ecodices"),
   bsb: () => oai("bsb"),
   berlino: () => oai("berlino"),
+  sbbor: () => {
+    const s = leggi("data/sbbor.json"); if (!s) return { testo: "non ancora cominciata" };
+    if (s.token) return { testo: `in corso: ${num(s.pagine * 10)} schede OAI lette su ${num(s.totale)}, a ruota (corsia asia)`, data: s.aggiornato };
+    return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} schede; fuori documenti e lettere, l'Asia orientale e il Sud-est asiatico (fonte «sbbasia») e i codici già nella fonte «berlino»)`, data: s.completato || s.aggiornato };
+  },
   bodleian: () => {
     const s = leggi("data/bodleian.json"); if (!s) return { testo: "non ancora cominciata" };
     const letti = Object.keys(s.voci || {}).length, resto = Math.max(0, (s.totale_collezione || 0) - letti);

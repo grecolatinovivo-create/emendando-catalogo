@@ -25,6 +25,8 @@ export const INCOMPLETA = {
     "handrit", "polona", "manuscriptorium", "onb", "kbdk", "uva",
     "wellcome", "bl", "isos", "manchester", "cudl", "cbl", "parker", "nlw", "mdc", "ub", "realbiblioteca", "ucm", "sevilla", "pergamos", "auc", "northwestern", "archive"].map(f => [f, s => !s || !s.completato]),
   ),
+  // Berlino, manoscritti non europei: lettura OAI finita (nessun token in sospeso)
+  sbbor: s => !s || !s.completato || !!s.token,
   // Ambrosiana: elenco letto e nessuna scheda ancora da leggere (le schede che non si aprono restano segnate con «x»)
   ambrosiana: s => !s || !s.elenco || s.cursore != null || Object.values(s.voci || {}).some(v => v && !v.u && !v.x),
   // Walters: tutti i codici dell'elenco letti (le misure delle immagini continuano poi ogni notte)
