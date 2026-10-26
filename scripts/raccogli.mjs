@@ -82,6 +82,8 @@ import { scansionaNomfoundation, recordNom } from "./fonti/nomfoundation.mjs";
 import { scriviRegistro, registraEsiti } from "./registro.mjs";
 import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 import { tipoDa } from "./carte.mjs";
+import { miniatoDa } from "./miniati.mjs";
+import { musicaDa } from "./musica.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
 const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,kbdk,uva,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,bl,isos,manchester,cudl,cbl,parker,nlw,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,auc,northwestern,archive,crossasia,sbbasia,sbbor,nomfoundation,vaticana").split(",");
@@ -187,6 +189,10 @@ export function voce(r, AUTORI, sigle = new Map(TRUCULENTUS.map(t => [t.manifest
   // carte geografiche manoscritte (dal 26 ottobre 2026): categoria a parte, «tipo: "carta"»; i codici restano senza campo (scripts/carte.mjs)
   const tipo = tipoDa({ tipo: r.tipo, titolo: r.titolo, descrizione: r.descrizione, generi: r.generi, tecnica: r.tecnica, segnatura: v.segnatura });
   if (tipo) v.tipo = tipo;
+  // codici miniati e illustrati, codici musicali (dal 26 ottobre 2026): solo dai metadati salvati (scripts/miniati.mjs, scripts/musica.mjs)
+  const dati = { tipo: v.tipo, titolo: r.titolo, descrizione: r.descrizione, generi: r.generi, tecnica: r.tecnica, indice: r.indice, segnatura: v.segnatura };
+  if (miniatoDa(dati)) v.miniato = true;
+  if (musicaDa(dati)) v.musica = true;
   return v;
 }
 
@@ -398,6 +404,9 @@ async function main() {
       if (!v.lingue.length) { v.lingue = deduciLingue(v.segnatura, v.titolo, v.autori); v.lingua_dedotta = v.lingue.length > 0; }
       // tipo: quello già deciso dalla fonte, altrimenti dal titolo
       if (!v.tipo) { const tipo = tipoDa(v); if (tipo) v.tipo = tipo; }
+      // miniati e musica: quelli già decisi, altrimenti da titolo e segnatura (le carte non lo sono mai)
+      if (/^carta/.test(v.tipo || "")) { delete v.miniato; delete v.musica; }
+      else { if (!v.miniato && miniatoDa(v)) v.miniato = true; if (!v.musica && musicaDa(v)) v.musica = true; }
       voci.set(v.id, v);
     }
   }

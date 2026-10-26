@@ -1,9 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T13:53:28.267Z",
- "totale": 454172,
- "con_autori": 26467,
- "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
+ "aggiornato": "2026-10-26T14:18:08.231Z",
+ "totale": 462794,
+ "con_autori": 26703,
+ "miniati": 7856,
+ "musica": 13042,
+ "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
   "id",
   "segnatura",
@@ -16,53 +18,55 @@
   "opere",
   "truculentus",
   "lingua_dedotta",
-  "tipo"
+  "tipo",
+  "miniato",
+  "musica"
  ],
  "hash": "fnv1a-32",
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 180561
+   "codici": 180563
   },
   "la": {
    "nome": "latino",
-   "codici": 71420
+   "codici": 71626
   },
   "fr": {
    "nome": "francese",
-   "codici": 27961
+   "codici": 28003
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 27755
+   "codici": 27800
   },
   "de": {
    "nome": "tedesco",
-   "codici": 21788
-  },
-  "xx": {
-   "nome": "altre lingue",
-   "codici": 16750
+   "codici": 21818
   },
   "ar": {
    "nome": "arabo",
-   "codici": 15834
+   "codici": 21229
+  },
+  "xx": {
+   "nome": "altre lingue",
+   "codici": 17128
   },
   "grc": {
    "nome": "greco",
-   "codici": 13564
+   "codici": 13584
   },
   "zh": {
    "nome": "cinese",
-   "codici": 13064
+   "codici": 13091
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10359
+   "codici": 10360
   },
   "sa": {
    "nome": "sanscrito",
-   "codici": 10081
+   "codici": 10324
   },
   "pl": {
    "nome": "polacco",
@@ -70,59 +74,59 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 7239
+   "codici": 7254
   },
   "bo": {
    "nome": "tibetano",
-   "codici": 6463
-  },
-  "en": {
-   "nome": "inglese",
-   "codici": 6243
+   "codici": 6501
   },
   "he": {
    "nome": "ebraico",
-   "codici": 6061
+   "codici": 6486
+  },
+  "en": {
+   "nome": "inglese",
+   "codici": 6330
   },
   "pt": {
    "nome": "portoghese",
-   "codici": 4863
+   "codici": 4864
+  },
+  "fa": {
+   "nome": "persiano",
+   "codici": 4034
   },
   "ca": {
    "nome": "catalano",
    "codici": 3437
   },
-  "fa": {
-   "nome": "persiano",
-   "codici": 3183
-  },
   "is": {
    "nome": "islandese e norreno",
    "codici": 3104
+  },
+  "tr": {
+   "nome": "turco",
+   "codici": 2472
   },
   "ko": {
    "nome": "coreano",
    "codici": 2103
   },
-  "tr": {
-   "nome": "turco",
-   "codici": 2016
-  },
   "cop": {
    "nome": "copto",
-   "codici": 1783
+   "codici": 1922
+  },
+  "gez": {
+   "nome": "etiopico",
+   "codici": 1284
   },
   "cs": {
    "nome": "ceco",
    "codici": 1216
   },
-  "gez": {
-   "nome": "etiopico",
-   "codici": 952
-  },
   "syr": {
    "nome": "siriaco",
-   "codici": 802
+   "codici": 1180
   },
   "cu": {
    "nome": "slavo ecclesiastico",
@@ -130,59 +134,59 @@
   },
   "nl": {
    "nome": "nederlandese",
-   "codici": 716
+   "codici": 721
   },
   "da": {
    "nome": "danese",
    "codici": 571
   },
+  "hy": {
+   "nome": "armeno",
+   "codici": 534
+  },
   "ru": {
    "nome": "russo",
    "codici": 454
   },
-  "hy": {
-   "nome": "armeno",
-   "codici": 436
+  "pi": {
+   "nome": "pali",
+   "codici": 308
   },
   "ms": {
    "nome": "malese",
-   "codici": 288
-  },
-  "pi": {
-   "nome": "pali",
-   "codici": 280
+   "codici": 289
   },
   "ka": {
    "nome": "georgiano",
-   "codici": 269
+   "codici": 279
   },
   "oc": {
    "nome": "occitano",
-   "codici": 187
+   "codici": 189
   },
   "vi": {
    "nome": "vietnamita (hán-nôm)",
-   "codici": 168
-  },
-  "lo": {
-   "nome": "lao",
-   "codici": 140
+   "codici": 170
   },
   "jv": {
    "nome": "giavanese",
-   "codici": 132
+   "codici": 145
+  },
+  "lo": {
+   "nome": "lao",
+   "codici": 144
+  },
+  "th": {
+   "nome": "thailandese",
+   "codici": 136
   },
   "cy": {
    "nome": "gallese",
    "codici": 112
   },
-  "th": {
-   "nome": "thailandese",
-   "codici": 110
-  },
   "mnc": {
    "nome": "mancese",
-   "codici": 89
+   "codici": 97
   },
   "uk": {
    "nome": "uk",
@@ -190,7 +194,11 @@
   },
   "ga": {
    "nome": "irlandese",
-   "codici": 55
+   "codici": 58
+  },
+  "bug": {
+   "nome": "bugi",
+   "codici": 47
   },
   "sv": {
    "nome": "svedese",
@@ -198,10 +206,6 @@
   },
   "mn": {
    "nome": "mongolo",
-   "codici": 39
-  },
-  "bug": {
-   "nome": "bugi",
    "codici": 39
   },
   "hu": {
@@ -214,7 +218,7 @@
   },
   "my": {
    "nome": "birmano",
-   "codici": 19
+   "codici": 26
   },
   "lt": {
    "nome": "lt",
@@ -230,7 +234,7 @@
   },
   "km": {
    "nome": "khmer",
-   "codici": 10
+   "codici": 11
   },
   "ban": {
    "nome": "balinese",
@@ -260,6 +264,10 @@
    "nome": "galego",
    "codici": 2
   },
+  "shn": {
+   "nome": "shan",
+   "codici": 2
+  },
   "yi": {
    "nome": "yi",
    "codici": 2
@@ -279,38 +287,34 @@
   "et": {
    "nome": "et",
    "codici": 1
-  },
-  "shn": {
-   "nome": "shan",
-   "codici": 1
   }
  },
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 6375
+   "codici": 6390
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 6031
+   "codici": 6095
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 13512
+   "codici": 13662
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 2972
+   "codici": 2988
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 452501
+   "codici": 461119
   },
   "carta": {
    "nome": "carte manoscritte",
-   "codici": 1617
+   "codici": 1621
   },
   "carta_stampa": {
    "nome": "carte a stampa",
@@ -346,19 +350,19 @@
    "nome": "Cicerone",
    "latino": "Cicero",
    "categoria": "classico-latino",
-   "codici": 1114
+   "codici": 1118
   },
   "cesare": {
    "nome": "Cesare",
    "latino": "Caesar",
    "categoria": "classico-latino",
-   "codici": 134
+   "codici": 135
   },
   "sallustio": {
    "nome": "Sallustio",
    "latino": "Sallustius",
    "categoria": "classico-latino",
-   "codici": 194
+   "codici": 195
   },
   "virgilio": {
    "nome": "Virgilio",
@@ -400,7 +404,7 @@
    "nome": "Seneca",
    "latino": "Seneca",
    "categoria": "classico-latino",
-   "codici": 446
+   "codici": 447
   },
   "lucano": {
    "nome": "Lucano",
@@ -412,13 +416,13 @@
    "nome": "Persio",
    "latino": "Persius",
    "categoria": "classico-latino",
-   "codici": 111
+   "codici": 112
   },
   "giovenale": {
    "nome": "Giovenale",
    "latino": "Iuvenalis",
    "categoria": "classico-latino",
-   "codici": 144
+   "codici": 145
   },
   "marziale": {
    "nome": "Marziale",
@@ -454,7 +458,7 @@
    "nome": "Svetonio",
    "latino": "Suetonius",
    "categoria": "classico-latino",
-   "codici": 98
+   "codici": 99
   },
   "quintiliano": {
    "nome": "Quintiliano",
@@ -466,7 +470,7 @@
    "nome": "Apuleio",
    "latino": "Apuleius",
    "categoria": "classico-latino",
-   "codici": 77
+   "codici": 78
   },
   "ammiano": {
    "nome": "Ammiano Marcellino",
@@ -478,19 +482,19 @@
    "nome": "Claudiano",
    "latino": "Claudianus",
    "categoria": "classico-latino",
-   "codici": 80
+   "codici": 81
   },
   "prisciano": {
    "nome": "Prisciano",
    "latino": "Priscianus",
    "categoria": "classico-latino",
-   "codici": 244
+   "codici": 245
   },
   "donato": {
    "nome": "Donato",
    "latino": "Donatus",
    "categoria": "classico-latino",
-   "codici": 186
+   "codici": 187
   },
   "servio": {
    "nome": "Servio",
@@ -508,13 +512,13 @@
    "nome": "Boezio",
    "latino": "Boethius",
    "categoria": "classico-latino",
-   "codici": 690
+   "codici": 691
   },
   "ausonio": {
    "nome": "Ausonio",
    "latino": "Ausonius",
    "categoria": "classico-latino",
-   "codici": 50
+   "codici": 51
   },
   "valerio-massimo": {
    "nome": "Valerio Massimo",
@@ -622,7 +626,7 @@
    "nome": "Marziano Capella",
    "latino": "Martianus Capella",
    "categoria": "classico-latino",
-   "codici": 69
+   "codici": 71
   },
   "solino": {
    "nome": "Solino",
@@ -664,7 +668,7 @@
    "nome": "Disticha Catonis",
    "latino": "Disticha Catonis",
    "categoria": "classico-latino",
-   "codici": 61
+   "codici": 62
   },
   "catone": {
    "nome": "Catone il Censore",
@@ -730,7 +734,7 @@
    "nome": "Ilias Latina",
    "latino": "Ilias Latina",
    "categoria": "classico-latino",
-   "codici": 15
+   "codici": 16
   },
   "darete": {
    "nome": "Darete Frigio",
@@ -754,7 +758,7 @@
    "nome": "Esiodo",
    "latino": "Hesiodus",
    "categoria": "classico-greco",
-   "codici": 108
+   "codici": 109
   },
   "pindaro": {
    "nome": "Pindaro",
@@ -856,13 +860,13 @@
    "nome": "Platone",
    "latino": "Plato",
    "categoria": "classico-greco",
-   "codici": 312
+   "codici": 313
   },
   "aristotele": {
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 2017
+   "codici": 2029
   },
   "teofrasto": {
    "nome": "Teofrasto",
@@ -880,7 +884,7 @@
    "nome": "Isocrate",
    "latino": "Isocrates",
    "categoria": "classico-greco",
-   "codici": 67
+   "codici": 68
   },
   "demostene": {
    "nome": "Demostene",
@@ -904,7 +908,7 @@
    "nome": "Antifonte",
    "latino": "Antiphon",
    "categoria": "classico-greco",
-   "codici": 2
+   "codici": 3
   },
   "iseo": {
    "nome": "Iseo",
@@ -952,7 +956,7 @@
    "nome": "Luciano di Samosata",
    "latino": "Lucianus",
    "categoria": "classico-greco",
-   "codici": 116
+   "codici": 117
   },
   "pausania": {
    "nome": "Pausania",
@@ -1024,31 +1028,31 @@
    "nome": "Galeno",
    "latino": "Galenus",
    "categoria": "classico-greco",
-   "codici": 510
+   "codici": 523
   },
   "ippocrate": {
    "nome": "Ippocrate",
    "latino": "Hippocrates",
    "categoria": "classico-greco",
-   "codici": 398
+   "codici": 409
   },
   "tolomeo": {
    "nome": "Tolomeo",
    "latino": "Ptolemaeus",
    "categoria": "classico-greco",
-   "codici": 234
+   "codici": 253
   },
   "euclide": {
    "nome": "Euclide",
    "latino": "Euclides",
    "categoria": "classico-greco",
-   "codici": 228
+   "codici": 235
   },
   "archimede": {
    "nome": "Archimede",
    "latino": "Archimedes",
    "categoria": "classico-greco",
-   "codici": 34
+   "codici": 36
   },
   "dionisio-trace": {
    "nome": "Dionisio Trace",
@@ -1072,7 +1076,7 @@
    "nome": "Efestione",
    "latino": "Hephaestion",
    "categoria": "classico-greco",
-   "codici": 22
+   "codici": 23
   },
   "esichio": {
    "nome": "Esichio",
@@ -1246,31 +1250,31 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 2755
+   "codici": 2763
   },
   "girolamo": {
    "nome": "Girolamo",
    "latino": "Hieronymus",
    "categoria": "cristiano",
-   "codici": 1290
+   "codici": 1300
   },
   "ambrogio": {
    "nome": "Ambrogio",
    "latino": "Ambrosius",
    "categoria": "cristiano",
-   "codici": 435
+   "codici": 438
   },
   "gregorio-magno": {
    "nome": "Gregorio Magno",
    "latino": "Gregorius Magnus",
    "categoria": "cristiano",
-   "codici": 920
+   "codici": 927
   },
   "basilio": {
    "nome": "Basilio Magno",
    "latino": "Basilius Magnus",
    "categoria": "cristiano",
-   "codici": 547
+   "codici": 548
   },
   "gregorio-nazianzeno": {
    "nome": "Gregorio di Nazianzo",
@@ -1282,19 +1286,19 @@
    "nome": "Giovanni Crisostomo",
    "latino": "Iohannes Chrysostomus",
    "categoria": "cristiano",
-   "codici": 1160
+   "codici": 1171
   },
   "bibbia": {
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 6098
+   "codici": 6204
   },
   "prudenzio": {
    "nome": "Prudenzio",
    "latino": "Prudentius",
    "categoria": "cristiano",
-   "codici": 108
+   "codici": 109
   },
   "sedulio": {
    "nome": "Sedulio",
@@ -1312,7 +1316,7 @@
    "nome": "Aratore",
    "latino": "Arator",
    "categoria": "cristiano",
-   "codici": 31
+   "codici": 32
   },
   "lattanzio": {
    "nome": "Lattanzio",
@@ -1330,7 +1334,7 @@
    "nome": "Cipriano",
    "latino": "Cyprianus",
    "categoria": "cristiano",
-   "codici": 55
+   "codici": 56
   },
   "ilario": {
    "nome": "Ilario di Poitiers",
@@ -1342,25 +1346,25 @@
    "nome": "Cassiodoro",
    "latino": "Cassiodorus",
    "categoria": "cristiano",
-   "codici": 216
+   "codici": 217
   },
   "origene": {
    "nome": "Origene",
    "latino": "Origenes",
    "categoria": "cristiano",
-   "codici": 336
+   "codici": 337
   },
   "eusebio": {
    "nome": "Eusebio di Cesarea",
    "latino": "Eusebius Caesariensis",
    "categoria": "cristiano",
-   "codici": 310
+   "codici": 312
   },
   "atanasio": {
    "nome": "Atanasio",
    "latino": "Athanasius",
    "categoria": "cristiano",
-   "codici": 360
+   "codici": 363
   },
   "gregorio-nisseno": {
    "nome": "Gregorio di Nissa",
@@ -1372,7 +1376,7 @@
    "nome": "Giovanni Damasceno",
    "latino": "Iohannes Damascenus",
    "categoria": "cristiano",
-   "codici": 319
+   "codici": 320
   },
   "dionigi-areopagita": {
    "nome": "Dionigi Areopagita",
@@ -1384,25 +1388,25 @@
    "nome": "Isidoro di Siviglia",
    "latino": "Isidorus Hispalensis",
    "categoria": "medievale",
-   "codici": 670
+   "codici": 673
   },
   "beda": {
    "nome": "Beda",
    "latino": "Beda Venerabilis",
    "categoria": "medievale",
-   "codici": 730
+   "codici": 738
   },
   "alcuino": {
    "nome": "Alcuino",
    "latino": "Alcuinus",
    "categoria": "medievale",
-   "codici": 299
+   "codici": 302
   },
   "rabano-mauro": {
    "nome": "Rabano Mauro",
    "latino": "Hrabanus Maurus",
    "categoria": "medievale",
-   "codici": 222
+   "codici": 223
   },
   "paolo-diacono": {
    "nome": "Paolo Diacono",
@@ -1426,7 +1430,7 @@
    "nome": "Bernardo di Chiaravalle",
    "latino": "Bernardus Claraevallensis",
    "categoria": "medievale",
-   "codici": 373
+   "codici": 376
   }
  },
  "biblioteche": [
@@ -1674,6 +1678,7 @@
   "Brasenose College, Oxford",
   "British Library (大英図書館), Londra (Regno Unito)",
   "British Library, London",
+  "British Library, Londra",
   "Bryn Mawr College",
   "Buffalo & Erie County Public Library",
   "Burgerbibliothek, Bern",
@@ -2650,6 +2655,8 @@
    "codici": 7781,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 2,
+   "musica": 41,
    "con_autori": 326,
    "lingue": {
     "de": 1472,
@@ -2684,6 +2691,8 @@
    "codici": 2745,
    "carte": 1,
    "carte_stampa": 0,
+   "miniati": 9,
+   "musica": 128,
    "con_autori": 1032,
    "lingue": {
     "xx": 170,
@@ -2724,6 +2733,8 @@
    "codici": 28785,
    "carte": 197,
    "carte_stampa": 1,
+   "miniati": 386,
+   "musica": 8599,
    "con_autori": 2214,
    "lingue": {
     "?": 5804,
@@ -2779,6 +2790,8 @@
    "codici": 3291,
    "carte": 4,
    "carte_stampa": 0,
+   "miniati": 2,
+   "musica": 23,
    "con_autori": 269,
    "lingue": {
     "la": 713,
@@ -2814,6 +2827,8 @@
    "codici": 10068,
    "carte": 79,
    "carte_stampa": 0,
+   "miniati": 53,
+   "musica": 160,
    "con_autori": 1252,
    "lingue": {
     "la": 3790,
@@ -2871,6 +2886,8 @@
    "codici": 84198,
    "carte": 94,
    "carte_stampa": 2,
+   "miniati": 2376,
+   "musica": 880,
    "con_autori": 10215,
    "lingue": {
     "fr": 22571,
@@ -2938,6 +2955,8 @@
    "codici": 4353,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 11,
    "con_autori": 2206,
    "lingue": {
     "?": 3614,
@@ -2961,6 +2980,8 @@
    "codici": 1116,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 21,
+   "musica": 6,
    "con_autori": 269,
    "lingue": {
     "grc": 192,
@@ -2990,6 +3011,8 @@
    "codici": 210,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 9,
+   "musica": 8,
    "con_autori": 106,
    "lingue": {
     "?": 202,
@@ -3009,6 +3032,8 @@
    "codici": 43,
    "carte": 3,
    "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 8,
    "con_autori": 6,
    "lingue": {
     "?": 41,
@@ -3028,6 +3053,8 @@
    "codici": 907,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 2,
+   "musica": 0,
    "con_autori": 14,
    "lingue": {
     "la": 402,
@@ -3052,6 +3079,8 @@
    "codici": 1124,
    "carte": 3,
    "carte_stampa": 0,
+   "miniati": 20,
+   "musica": 26,
    "con_autori": 91,
    "lingue": {
     "it": 848,
@@ -3080,6 +3109,8 @@
    "codici": 17,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 0,
    "con_autori": 1,
    "lingue": {
     "?": 15,
@@ -3099,6 +3130,8 @@
    "codici": 353,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 2,
    "con_autori": 180,
    "lingue": {
     "?": 260,
@@ -3119,6 +3152,8 @@
    "codici": 24,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 0,
    "con_autori": 6,
    "lingue": {
     "it": 8,
@@ -3140,6 +3175,8 @@
    "codici": 3586,
    "carte": 2,
    "carte_stampa": 0,
+   "miniati": 1,
+   "musica": 9,
    "con_autori": 727,
    "lingue": {
     "?": 2332,
@@ -3173,6 +3210,8 @@
    "codici": 165,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 7,
    "con_autori": 106,
    "lingue": {
     "?": 15,
@@ -3194,6 +3233,8 @@
    "codici": 362,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 43,
    "con_autori": 107,
    "lingue": {
     "?": 324,
@@ -3215,6 +3256,8 @@
    "codici": 2677,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 2,
+   "musica": 71,
    "con_autori": 542,
    "lingue": {
     "la": 2286,
@@ -3244,6 +3287,8 @@
    "codici": 1937,
    "carte": 1,
    "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 88,
    "con_autori": 296,
    "lingue": {
     "?": 355,
@@ -3273,6 +3318,8 @@
    "codici": 1633,
    "carte": 2,
    "carte_stampa": 0,
+   "miniati": 6,
+   "musica": 4,
    "con_autori": 91,
    "lingue": {
     "de": 834,
@@ -3306,6 +3353,8 @@
    "codici": 273,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 3,
    "con_autori": 20,
    "lingue": {
     "la": 271,
@@ -3330,6 +3379,8 @@
    "codici": 241,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 18,
    "con_autori": 34,
    "lingue": {
     "de": 52,
@@ -3355,6 +3406,8 @@
    "codici": 3855,
    "carte": 5,
    "carte_stampa": 0,
+   "miniati": 31,
+   "musica": 126,
    "con_autori": 336,
    "lingue": {
     "?": 982,
@@ -3397,6 +3450,8 @@
    "codici": 2969,
    "carte": 165,
    "carte_stampa": 50,
+   "miniati": 512,
+   "musica": 164,
    "con_autori": 542,
    "lingue": {
     "fr": 167,
@@ -3445,6 +3500,8 @@
    "codici": 10626,
    "carte": 3,
    "carte_stampa": 0,
+   "miniati": 418,
+   "musica": 88,
    "con_autori": 239,
    "lingue": {
     "en": 1613,
@@ -3498,6 +3555,8 @@
    "codici": 7810,
    "carte": 45,
    "carte_stampa": 1,
+   "miniati": 23,
+   "musica": 229,
    "con_autori": 799,
    "lingue": {
     "la": 2529,
@@ -3548,6 +3607,8 @@
    "codici": 2670,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 174,
+   "musica": 64,
    "con_autori": 646,
    "lingue": {
     "ar": 410,
@@ -3577,6 +3638,8 @@
    "codici": 765,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 0,
    "con_autori": 0,
    "lingue": {
     "?": 1,
@@ -3602,6 +3665,8 @@
    "codici": 1613,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 134,
+   "musica": 0,
    "con_autori": 42,
    "lingue": {
     "grc": 14,
@@ -3637,11 +3702,64 @@
     "indice/wellcome-0.json"
    ]
   },
+  "bl": {
+   "nome": "British Library, Londra (catalogo searcharchives.bl.uk; manifesti bl.digirati.io e, per i codici orientali e scientifici, Qatar Digital Library)",
+   "codici": 891,
+   "carte": 4,
+   "carte_stampa": 0,
+   "miniati": 177,
+   "musica": 53,
+   "con_autori": 162,
+   "lingue": {
+    "en": 85,
+    "la": 189,
+    "zh": 21,
+    "ar": 254,
+    "fa": 23,
+    "tr": 3,
+    "xx": 20,
+    "?": 15,
+    "it": 11,
+    "gez": 250,
+    "nl": 5,
+    "de": 13,
+    "lo": 4,
+    "fr": 40,
+    "jv": 7,
+    "bug": 8,
+    "pi": 27,
+    "th": 26,
+    "ga": 3,
+    "sa": 12,
+    "pt": 1,
+    "grc": 4,
+    "oc": 2,
+    "he": 1,
+    "syr": 2,
+    "my": 6,
+    "ja": 2,
+    "mnc": 7,
+    "km": 1,
+    "cop": 2,
+    "shn": 1,
+    "vi": 2
+   },
+   "esito": "ok",
+   "prefissi": [
+    "bl-"
+   ],
+   "pezzi_voci": 2,
+   "indice": [
+    "indice/bl-0.json"
+   ]
+  },
   "isos": {
    "nome": "Irish Script on Screen: Royal Irish Academy, National Library of Ireland, Trinity College Dublin e altre (isos.dias.ie)",
    "codici": 500,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 1,
+   "musica": 0,
    "con_autori": 5,
    "lingue": {
     "?": 498,
@@ -3662,6 +3780,8 @@
    "codici": 632,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 95,
+   "musica": 13,
    "con_autori": 69,
    "lingue": {
     "ar": 50,
@@ -3700,6 +3820,8 @@
    "codici": 3266,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 199,
+   "musica": 19,
    "con_autori": 144,
    "lingue": {
     "fa": 274,
@@ -3737,6 +3859,8 @@
    "codici": 611,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 297,
+   "musica": 4,
    "con_autori": 100,
    "lingue": {
     "ar": 104,
@@ -3769,6 +3893,8 @@
    "codici": 553,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 81,
+   "musica": 16,
    "con_autori": 141,
    "lingue": {
     "?": 504,
@@ -3792,6 +3918,8 @@
    "codici": 124,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 4,
+   "musica": 0,
    "con_autori": 4,
    "lingue": {
     "?": 8,
@@ -3815,6 +3943,8 @@
    "codici": 42872,
    "carte": 51,
    "carte_stampa": 0,
+   "miniati": 1651,
+   "musica": 194,
    "con_autori": 0,
    "lingue": {
     "ja": 40318,
@@ -3839,6 +3969,8 @@
    "codici": 139385,
    "carte": 788,
    "carte_stampa": 0,
+   "miniati": 298,
+   "musica": 311,
    "con_autori": 5,
    "lingue": {
     "ja": 139385
@@ -3863,6 +3995,8 @@
    "codici": 3822,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 9,
+   "musica": 53,
    "con_autori": 81,
    "lingue": {
     "xx": 28,
@@ -3896,6 +4030,8 @@
    "codici": 13945,
    "carte": 2,
    "carte_stampa": 0,
+   "miniati": 184,
+   "musica": 888,
    "con_autori": 373,
    "lingue": {
     "la": 3339,
@@ -3947,6 +4083,8 @@
    "codici": 15169,
    "carte": 63,
    "carte_stampa": 0,
+   "miniati": 22,
+   "musica": 571,
    "con_autori": 1185,
    "lingue": {
     "?": 1711,
@@ -3994,6 +4132,8 @@
    "codici": 4118,
    "carte": 14,
    "carte_stampa": 0,
+   "miniati": 23,
+   "musica": 7,
    "con_autori": 69,
    "lingue": {
     "xx": 126,
@@ -4038,6 +4178,8 @@
    "codici": 105,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 32,
+   "musica": 0,
    "con_autori": 5,
    "lingue": {
     "?": 70,
@@ -4060,6 +4202,8 @@
    "codici": 14,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 1,
+   "musica": 0,
    "con_autori": 3,
    "lingue": {
     "la": 9,
@@ -4083,6 +4227,8 @@
    "codici": 43,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 11,
+   "musica": 4,
    "con_autori": 11,
    "lingue": {
     "ar": 8,
@@ -4112,6 +4258,8 @@
    "codici": 202,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 27,
+   "musica": 4,
    "con_autori": 33,
    "lingue": {
     "?": 98,
@@ -4140,6 +4288,8 @@
    "codici": 3810,
    "carte": 1,
    "carte_stampa": 0,
+   "miniati": 93,
+   "musica": 5,
    "con_autori": 21,
    "lingue": {
     "ca": 3212,
@@ -4168,6 +4318,8 @@
    "codici": 289,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 0,
    "con_autori": 22,
    "lingue": {
     "es": 119,
@@ -4194,6 +4346,8 @@
    "codici": 36,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 3,
+   "musica": 0,
    "con_autori": 4,
    "lingue": {
     "?": 1,
@@ -4215,6 +4369,8 @@
    "codici": 2178,
    "carte": 1,
    "carte_stampa": 0,
+   "miniati": 140,
+   "musica": 30,
    "con_autori": 212,
    "lingue": {
     "fr": 57,
@@ -4246,6 +4402,8 @@
    "codici": 6471,
    "carte": 21,
    "carte_stampa": 0,
+   "miniati": 2,
+   "musica": 2,
    "con_autori": 115,
    "lingue": {
     "es": 6003,
@@ -4275,6 +4433,8 @@
    "codici": 1164,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 15,
+   "musica": 1,
    "con_autori": 75,
    "lingue": {
     "es": 765,
@@ -4299,6 +4459,8 @@
    "codici": 184,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 31,
+   "musica": 18,
    "con_autori": 35,
    "lingue": {
     "la": 122,
@@ -4325,6 +4487,8 @@
    "codici": 10,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 1,
+   "musica": 1,
    "con_autori": 1,
    "lingue": {
     "la": 2,
@@ -4345,6 +4509,8 @@
    "codici": 3,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 0,
    "con_autori": 0,
    "lingue": {
     "es": 3
@@ -4363,6 +4529,8 @@
    "codici": 39,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 0,
    "con_autori": 7,
    "lingue": {
     "grc": 38,
@@ -4382,6 +4550,8 @@
    "codici": 38,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 0,
    "con_autori": 3,
    "lingue": {
     "grc": 38
@@ -4400,6 +4570,8 @@
    "codici": 65,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 9,
+   "musica": 0,
    "con_autori": 0,
    "lingue": {
     "ar": 49,
@@ -4420,6 +4592,8 @@
    "codici": 15677,
    "carte": 70,
    "carte_stampa": 0,
+   "miniati": 179,
+   "musica": 14,
    "con_autori": 106,
    "lingue": {
     "tr": 247,
@@ -4464,6 +4638,8 @@
    "codici": 168,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 0,
    "con_autori": 0,
    "lingue": {
     "lo": 138,
@@ -4486,6 +4662,8 @@
    "codici": 1142,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 0,
    "con_autori": 2,
    "lingue": {
     "jv": 97,
@@ -4522,11 +4700,58 @@
     "indice/sbbasia-0.json"
    ]
   },
+  "sbbor": {
+   "nome": "Staatsbibliothek zu Berlin: manoscritti non europei (tibetani, mongoli, sanscriti, islamici, ebraici, cristiano-orientali, africani; oai.sbb.berlin)",
+   "codici": 7731,
+   "carte": 0,
+   "carte_stampa": 0,
+   "miniati": 87,
+   "musica": 15,
+   "con_autori": 74,
+   "lingue": {
+    "syr": 376,
+    "de": 17,
+    "ar": 5141,
+    "sa": 231,
+    "xx": 358,
+    "fa": 828,
+    "tr": 453,
+    "grc": 16,
+    "cop": 137,
+    "zh": 6,
+    "la": 17,
+    "?": 30,
+    "he": 424,
+    "hy": 98,
+    "mnc": 1,
+    "bo": 38,
+    "gez": 82,
+    "my": 1,
+    "ka": 10,
+    "pi": 1,
+    "es": 1,
+    "en": 2,
+    "it": 4,
+    "fr": 2,
+    "jv": 6,
+    "ms": 1
+   },
+   "esito": "ok",
+   "prefissi": [
+    "sbbor-"
+   ],
+   "pezzi_voci": 10,
+   "indice": [
+    "indice/sbbor-0.json"
+   ]
+  },
   "nomfoundation": {
    "nome": "Vietnamese Nôm Preservation Foundation: Biblioteca nazionale del Vietnam e templi Thắng Nghiêm e Phổ Nhân (lib.nomfoundation.org; manifesti scritti dal catalogo)",
    "codici": 10,
    "carte": 0,
    "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 0,
    "con_autori": 0,
    "lingue": {
     "vi": 4,
@@ -4546,6 +4771,8 @@
    "codici": 11330,
    "carte": 2,
    "carte_stampa": 0,
+   "miniati": 3,
+   "musica": 13,
    "con_autori": 922,
    "lingue": {
     "la": 11041,
@@ -4744,6 +4971,11 @@
    "righe": 1613
   },
   {
+   "file": "indice/bl-0.json",
+   "fonte": "bl",
+   "righe": 891
+  },
+  {
    "file": "indice/isos-0.json",
    "fonte": "isos",
    "righe": 500
@@ -4937,6 +5169,11 @@
    "file": "indice/sbbasia-0.json",
    "fonte": "sbbasia",
    "righe": 1142
+  },
+  {
+   "file": "indice/sbbor-0.json",
+   "fonte": "sbbor",
+   "righe": 7731
   },
   {
    "file": "indice/nomfoundation-0.json",
@@ -7650,6 +7887,7 @@
   "boston",
   "zurigo",
   "oxford",
+  "londra",
   "londra",
   "londra",
   "bryn-mawr",
