@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T03:13:39.751Z",
- "totale": 364642,
- "con_autori": 22223,
+ "aggiornato": "2026-10-26T03:39:36.934Z",
+ "totale": 365365,
+ "con_autori": 22278,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
   "id",
@@ -25,7 +25,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 48654
+   "codici": 49375
   },
   "fr": {
    "nome": "francese",
@@ -73,7 +73,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 4061
+   "codici": 4063
   },
   "fa": {
    "nome": "persiano",
@@ -191,11 +191,11 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 11345
+   "codici": 11387
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 2445
+   "codici": 2458
   }
  },
  "autori": {
@@ -1169,7 +1169,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 4933
+   "codici": 4975
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1295,7 +1295,7 @@
    "nome": "Pietro Lombardo",
    "latino": "Petrus Lombardus",
    "categoria": "medievale",
-   "codici": 248
+   "codici": 261
   },
   "tommaso-aquino": {
    "nome": "Tommaso d'Aquino",
@@ -2958,12 +2958,12 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 7420,
-   "con_autori": 591,
+   "codici": 8143,
+   "con_autori": 646,
    "lingue": {
-    "la": 7133,
+    "la": 7854,
+    "it": 233,
     "xx": 18,
-    "it": 231,
     "de": 3,
     "grc": 1,
     "fr": 23,
@@ -2974,7 +2974,7 @@
    "prefissi": [
     "bav-"
    ],
-   "pezzi_voci": 10,
+   "pezzi_voci": 11,
    "indice": [
     "indice/vaticana-0.json"
    ]
@@ -3164,7 +3164,7 @@
   {
    "file": "indice/vaticana-0.json",
    "fonte": "vaticana",
-   "righe": 7420
+   "righe": 8143
   }
  ]
 }
