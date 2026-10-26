@@ -110,6 +110,14 @@
    "lon": 10.9007,
    "geonames": 2952984
   },
+  "barcellona": {
+   "nome": "Barcellona",
+   "en": "Barcelona",
+   "paese": "ES",
+   "lat": 41.3888,
+   "lon": 2.159,
+   "geonames": 3128760
+  },
   "basilea": {
    "nome": "Basilea",
    "en": "Basel",
@@ -10820,6 +10828,13 @@
    "lon": 8.3064,
    "geonames": 2659811
   },
+  "madrid": {
+   "nome": "Madrid",
+   "paese": "ES",
+   "lat": 40.4165,
+   "lon": -3.7026,
+   "geonames": 3117735
+  },
   "magonza": {
    "nome": "Magonza",
    "en": "Mainz",
@@ -11171,6 +11186,13 @@
    "lon": 9.3748,
    "geonames": 2658822
   },
+  "san-lorenzo-de-el-escorial": {
+   "nome": "San Lorenzo de El Escorial",
+   "paese": "ES",
+   "lat": 40.5914,
+   "lon": -4.1474,
+   "geonames": 3110458
+  },
   "san-marino-ca": {
    "nome": "San Marino (California)",
    "paese": "US",
@@ -11237,6 +11259,14 @@
    "lat": 46.2274,
    "lon": 7.3556,
    "geonames": 2658576
+  },
+  "siviglia": {
+   "nome": "Siviglia",
+   "en": "Seville",
+   "paese": "ES",
+   "lat": 37.3828,
+   "lon": -5.9732,
+   "geonames": 2510911
   },
   "soletta": {
    "nome": "Soletta",
@@ -11367,6 +11397,13 @@
    "lat": 48.2085,
    "lon": 16.3721,
    "geonames": 2761369
+  },
+  "vilanova-i-la-geltru": {
+   "nome": "Vilanova i la Geltrú",
+   "paese": "ES",
+   "lat": 41.2239,
+   "lon": 1.7251,
+   "geonames": 3105184
   },
   "villeneuve-loubet": {
    "nome": "Villeneuve-Loubet",
@@ -11524,6 +11561,9 @@
   "Bange": "jp-bange",
   "Bansho": "jp-bansho",
   "Banshō": "jp-bansho",
+  "Barcellona": "barcellona",
+  "Barcellona (Spagna)": "barcellona",
+  "Barcelona": "barcellona",
   "Basel": "basilea",
   "Beirut": "beirut",
   "Beppu": "jp-beppu",
@@ -11621,6 +11661,7 @@
   "Egota": "jp-egota",
   "Eifuku": "jp-eifuku",
   "Einsiedeln": "einsiedeln",
+  "El Escorial": "san-lorenzo-de-el-escorial",
   "Ena": "jp-ena",
   "Engaru": "jp-engaru",
   "Engelberg": "engelberg",
@@ -12279,6 +12320,8 @@
   "Luzern": "lucerna",
   "Machida": "jp-machida",
   "Machiya": "jp-machiya",
+  "Madrid": "madrid",
+  "Madrid (Spagna)": "madrid",
   "Maebaru-chuo": "jp-maebaru-chuo",
   "Maebaru-chūō": "jp-maebaru-chuo",
   "Maebashi": "jp-maebashi",
@@ -12755,6 +12798,7 @@
   "Sakurai": "jp-sakurai",
   "Samedan": "samedan",
   "San Francisco": "san-francisco",
+  "San Lorenzo de El Escorial": "san-lorenzo-de-el-escorial",
   "San Marino (California)": "san-marino-ca",
   "Sanda": "jp-sanda",
   "Sandacho": "jp-sandacho",
@@ -12804,6 +12848,7 @@
   "Settsu": "jp-settsu",
   "Seul": "seul",
   "Seul (Corea del Sud)": "seul",
+  "Sevilla": "siviglia",
   "Shibata": "jp-shibata",
   "Shibayama": "jp-shibayama",
   "Shibukawa": "jp-shibukawa",
@@ -12886,6 +12931,8 @@
   "Sinai (Egitto)": "sinai",
   "Sion": "sion",
   "Sion/Sitten": "sion",
+  "Siviglia": "siviglia",
+  "Siviglia (Spagna)": "siviglia",
   "Sobue": "jp-sobue",
   "Sodegaura": "jp-sodegaura",
   "Soja": "jp-soja",
@@ -13164,6 +13211,7 @@
   "Vatikan": "citta-del-vaticano",
   "Vesoul": "vesoul",
   "Vevey": "vevey",
+  "Vilanova i la Geltrú": "vilanova-i-la-geltru",
   "Villeneuve-Loubet": "villeneuve-loubet",
   "Wadayama": "jp-wadayama",
   "Wajima": "jp-wajima",
@@ -13418,6 +13466,12 @@
   "bamberga": "bamberga",
   "casanatense": "roma",
   "auckland": "auckland",
-  "toronto": "toronto"
+  "toronto": "toronto",
+  "mdc": "barcellona",
+  "ub": "barcellona",
+  "realbiblioteca": "madrid",
+  "ucm": "madrid",
+  "sevilla": "siviglia",
+  "rah": "madrid"
  }
 }

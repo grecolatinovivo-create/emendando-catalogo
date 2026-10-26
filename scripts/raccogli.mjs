@@ -8,6 +8,7 @@
 //        [--yale-minuti=30] [--penn-minuti=15] [--ds-minuti=15] [--walters-minuti=20] [--loc-minuti=10] [--nlg-minuti=15]
 //        [--ndl-minuti=60] [--kokusho-minuti=60] [--auckland-minuti=10] [--toronto-minuti=15]
 //        [--wellcome-minuti=10] [--isos-minuti=20] [--manchester-minuti=30] [--cudl-minuti=30] [--cbl-minuti=60] [--minuti-totali=160] [--solo-costruisci]
+//        [--mdc-minuti=10] [--ub-minuti=10] [--realbiblioteca-minuti=15] [--ucm-minuti=15] [--sevilla-minuti=5] [--rah-minuti=30]
 // Scrive il catalogo diviso per fonte (vedi costruisci.mjs): data/catalogo/indice.json, data/catalogo/indice/<fonte>-<n>.json, data/catalogo/voci/<fonte>-<n>.json,
 // più data/manoscritti.json (compatibilità: solo i codici con autori classici), e gli stati delle scansioni a riprese
 // (data/vaticana.json, data/bodleian.json, data/laurenziana.json, data/leiden.json, data/heidelberg-indici.json; data/<fonte>.json per le fonti del Handschriftenportal: wolfenbuettel, bamberga, karlsruhe, stoccarda, colonia, lipsia; data/yale.json, data/penn.json, data/walters.json).
@@ -49,11 +50,15 @@ import { scansionaKokusho, recordKokusho } from "./fonti/kokusho.mjs";
 import { scansionaAuckland, recordAuckland } from "./fonti/auckland.mjs";
 import { recordSlv } from "./fonti/slv.mjs";
 import { scansionaToronto, recordToronto } from "./fonti/toronto.mjs";
+import { scansionaCdm, recordCdm, FONTI_CDM } from "./fonti/cdm.mjs";
+import { scansionaOmeka, recordOmeka, FONTI_OMEKA } from "./fonti/omeka.mjs";
+import { scansionaSevilla, recordSevilla } from "./fonti/sevilla.mjs";
+import { scansionaDigibib, recordDigibib } from "./fonti/digibib.mjs";
 import { scriviRegistro, registraEsiti } from "./registro.mjs";
 import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
-const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,vaticana").split(",");
+const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,mdc,ub,realbiblioteca,ucm,sevilla,rah,vaticana").split(",");
 const INIZIO = Date.now();
 export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)", berlino: "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
   bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -78,6 +83,13 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   auckland: "Auckland Libraries, Sir George Grey Special Collections (kura.aucklandlibraries.govt.nz)",
   slv: "State Library Victoria, Melbourne (find.slv.vic.gov.au; elenco raccolto dal browser)",
   toronto: "University of Toronto, Thomas Fisher Rare Book Library (collections.library.utoronto.ca)",
+  // Spagna (corsia «iberia»)
+  mdc: "Memòria Digital de Catalunya: Biblioteca de Catalunya, Ateneu Barcelonès, Biblioteca Museu Víctor Balaguer, Biblioteca Pública Episcopal de Barcelona (mdc.csuc.cat)",
+  ub: "Universitat de Barcelona, Biblioteca Patrimonial Digital (bipadi.ub.edu)",
+  realbiblioteca: "Real Biblioteca (Palacio Real, Madrid) e Real Biblioteca del Monasterio de El Escorial (rbdigital.realbiblioteca.es, Patrimonio Nacional)",
+  ucm: "Universidad Complutense de Madrid, Biblioteca Histórica (patrimoniodigital.ucm.es)",
+  sevilla: "Biblioteca de la Universidad de Sevilla (copie digitali su Internet Archive)",
+  rah: "Real Academia de la Historia, Madrid (bibliotecadigital.rah.es; manifesti scritti dal catalogo)",
   vaticana: "Biblioteca Apostolica Vaticana (digi.vatlib.it)" };
 
 // i tre codici del Truculentus restano sempre nel catalogo, anche se una fonte non li ha ancora restituiti
@@ -226,6 +238,11 @@ async function main() {
     auckland: async () => recordAuckland(await scansionaAuckland({ minuti: min("auckland", +(arg["auckland-minuti"] ?? 10)), soloCache: sc("auckland") })),
     // Canada (corsia «mondo»): University of Toronto, Thomas Fisher Rare Book Library (collezioni IIIF pubbliche)
     toronto: async () => recordToronto(await scansionaToronto({ minuti: min("toronto", +(arg["toronto-minuti"] ?? 15)), soloCache: sc("toronto") })),
+    // Spagna (corsia «iberia»): CONTENTdm della Catalogna, Omeka S (Real Biblioteca ed El Escorial, Complutense), Siviglia su Internet Archive, RAH (DIGIBIB)
+    ...Object.fromEntries(Object.keys(FONTI_CDM).map(f => [f, async () => recordCdm(f, await scansionaCdm({ fonte: f, minuti: min(f, +(arg[f + "-minuti"] ?? 10)), soloCache: sc(f) }))])),
+    ...Object.fromEntries(Object.keys(FONTI_OMEKA).map(f => [f, async () => recordOmeka(f, await scansionaOmeka({ fonte: f, minuti: min(f, +(arg[f + "-minuti"] ?? 15)), soloCache: sc(f) }))])),
+    sevilla: async () => recordSevilla(await scansionaSevilla({ minuti: min("sevilla", +(arg["sevilla-minuti"] ?? 5)), soloCache: sc("sevilla") })),
+    rah: async () => recordDigibib("rah", await scansionaDigibib({ fonte: "rah", minuti: min("rah", +(arg["rah-minuti"] ?? 30)), soloCache: sc("rah") })),
     vaticana: async () => {
       let minuti = +(arg["vaticana-minuti"] ?? 20);
       // con un tempo complessivo si lasciano 10 minuti per costruire il catalogo, provarlo e salvarlo

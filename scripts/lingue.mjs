@@ -7,7 +7,7 @@ export const NOMI_LINGUE = {
   la: "latino", grc: "greco", it: "italiano", fr: "francese", de: "tedesco", en: "inglese", es: "spagnolo", pt: "portoghese", ca: "catalano", oc: "occitano",
   nl: "nederlandese", he: "ebraico", ar: "arabo", syr: "siriaco", cop: "copto", hy: "armeno", ka: "georgiano", gez: "etiopico", fa: "persiano", tr: "turco",
   cu: "slavo ecclesiastico", ru: "russo", cs: "ceco", pl: "polacco", hu: "ungherese", sv: "svedese", da: "danese", is: "islandese e norreno", ga: "irlandese", cy: "gallese",
-  zh: "cinese", ja: "giapponese", ko: "coreano", sa: "sanscrito", bo: "tibetano", ms: "malese", jv: "giavanese", sla: "lingue slave (alfabeto cirillico)", xx: "altre lingue",
+  gl: "galego", zh: "cinese", ja: "giapponese", ko: "coreano", sa: "sanscrito", bo: "tibetano", ms: "malese", jv: "giavanese", sla: "lingue slave (alfabeto cirillico)", xx: "altre lingue",
 };
 
 // codici ISO 639-1/2/3 e nomi (latino, italiano, inglese, tedesco, francese) -> codice breve
@@ -35,6 +35,10 @@ const CODICI = {
   sv: "sv", swe: "sv", swedish: "sv", da: "da", dan: "da", danish: "da", is: "is", ice: "is", isl: "is", non: "is", icelandic: "is", "old norse": "is", norse: "is",
   ga: "ga", gle: "ga", sga: "ga", mga: "ga", irish: "ga", cy: "cy", wel: "cy", cym: "cy", welsh: "cy",
   zh: "zh", chi: "zh", zho: "zh", chinese: "zh", ja: "ja", jpn: "ja", japanese: "ja", ko: "ko", kor: "ko", korean: "ko",
+  // nomi spagnoli, catalani, portoghesi e galeghi (biblioteche della penisola iberica)
+  espanol: "es", castellano: "es", castella: "es", castelhano: "es", espanhol: "es", aljamiado: "es", llati: "la", griego: "grc", grego: "grc", hebreo: "he", hebraico: "he",
+  frances: "fr", italia: "it", aleman: "de", alemany: "de", alemao: "de", ingles: "en", angles: "en", portugues: "pt", catala: "ca", valenciano: "ca", valencia: "ca",
+  gl: "gl", glg: "gl", gallego: "gl", galego: "gl", galec: "gl", occita: "oc",
   sa: "sa", san: "sa", sanskrit: "sa", bo: "bo", tib: "bo", bod: "bo", tibetan: "bo", ms: "ms", may: "ms", msa: "ms", malay: "ms", jv: "jv", jav: "jv", javanese: "jv",
 };
 const NULLI = new Set(["", "und", "mul", "zxx", "mis", "x-unknown", "unknown", "unbekannt", "multiple languages", "mehrsprachig", "non indicata", "n/a", "unbestimmt", "sans contenu linguistique",

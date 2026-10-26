@@ -47,6 +47,13 @@ export const BIBLIOTECHE = {
   slv: { biblioteca: "State Library Victoria", citta: "Melbourne (Australia)", come: "va fatta a mano dal browser (scripts/browser/slv.js)" },
   auckland: { biblioteca: "Auckland Libraries, Sir George Grey Special Collections", citta: "Auckland (Nuova Zelanda)", come: "corsia mondo: a ruota finché la prima lettura completa non è finita, poi ogni notte (raccolta completa ogni 6 giorni)" },
   toronto: { biblioteca: "University of Toronto, Thomas Fisher Rare Book Library", citta: "Toronto (Canada)", come: "corsia mondo: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 6 giorni, manifesti nuovi)" },
+  // Spagna (corsia «iberia», dal 26 ottobre 2026)
+  mdc: { biblioteca: "Memòria Digital de Catalunya: Biblioteca de Catalunya, Ateneu Barcelonès, Biblioteca Museu Víctor Balaguer, Biblioteca Pública Episcopal del Seminari", citta: "Barcellona e Vilanova i la Geltrú (Spagna)", come: "corsia iberia: a ruota finché la prima lettura non è finita, poi ogni notte (raccolta completa ogni 6 giorni)" },
+  ub: { biblioteca: "Universitat de Barcelona, CRAI Biblioteca de Fons Antic (Biblioteca Patrimonial Digital)", citta: "Barcellona (Spagna)", come: "corsia iberia, ogni notte (raccolta completa ogni 6 giorni)" },
+  realbiblioteca: { biblioteca: "Real Biblioteca (Palacio Real) e Real Biblioteca del Monasterio de El Escorial (Real Biblioteca Digital, Patrimonio Nacional)", citta: "Madrid e San Lorenzo de El Escorial (Spagna)", come: "corsia iberia, ogni notte (raccolta completa ogni 6 giorni)" },
+  ucm: { biblioteca: "Universidad Complutense de Madrid, Biblioteca Histórica Marqués de Valdecilla", citta: "Madrid (Spagna)", come: "corsia iberia, ogni notte (raccolta completa ogni 6 giorni)" },
+  sevilla: { biblioteca: "Biblioteca de la Universidad de Sevilla (copie digitali su Internet Archive)", citta: "Siviglia (Spagna)", come: "corsia iberia, ogni notte (raccolta completa ogni 6 giorni)" },
+  rah: { biblioteca: "Real Academia de la Historia (manifesti IIIF scritti da Emendando)", citta: "Madrid (Spagna)", come: "corsia iberia: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 14 giorni; manifesti scritti dal catalogo)" },
   vaticana: { biblioteca: "Biblioteca Apostolica Vaticana", citta: "Città del Vaticano", come: "corsia propria: a ruota, senza pause tra un'esecuzione e l'altra" },
 };
 
@@ -214,6 +221,18 @@ export const AVANZAMENTO = {
     return { testo: `manifesti letti tutti (${num(letti)} su ${num(vs.length)} delle collezioni IIIF «Manuscripts» e «Manuscript Fragments»; fuori lettere, diari e carte d'archivio)`, data: s.completato };
   },
   ...Object.fromEntries(Object.keys(FONTI_HSP).map(f => [f, () => { const a = aRiprese(`data/${f}.json`, 1); return { ...a, testo: a.testo.replace("schede lette tutte", "codici digitalizzati letti tutti") }; }])),
+  // Spagna (corsia «iberia»)
+  ...Object.fromEntries(["mdc", "ub", "realbiblioteca", "ucm", "sevilla"].map(f => [f, () => {
+    const s = leggi(`data/${f}.json`); if (!s) return { testo: "non ancora cominciata" };
+    if (s.cursore) return { testo: "in corso, a ruota (corsia iberia)", data: s.aggiornato };
+    return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} schede; entrano solo i manoscritti librari)`, data: s.completato || s.aggiornato };
+  }])),
+  rah: () => {
+    const s = leggi("data/rah.json"); if (!s) return { testo: "non ancora cominciata" };
+    const vs = Object.values(s.voci || {}), mis = vs.filter(v => v && v.w).length;
+    if (s.token || !s.elenco) return { testo: `in corso: ${num(s.letti)} schede OAI lette su ${num(s.totale)}`, data: s.aggiornato };
+    return { testo: `schede lette tutte (${num(s.totale)} schede OAI, quasi tutte documenti e lettere; ${num(vs.length)} codici); misure delle immagini prese per ${num(mis)} codici`, data: s.completato || s.aggiornato };
+  },
   vaticana: () => {
     const s = leggi("data/vaticana.json"); if (!s) return { testo: "non ancora cominciata" };
     const n = Object.keys(s.voci || {}).length;

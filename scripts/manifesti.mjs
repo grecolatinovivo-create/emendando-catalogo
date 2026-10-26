@@ -2,6 +2,8 @@
 // Manifesti IIIF scritti dal catalogo, per le fonti i cui manifesti non si aprono dentro il sito:
 //   - Library of Congress (microfilm del Sinai e di Gerusalemme): manifesti di loc.gov bloccati, immagini di tile.loc.gov aperte
 //     (CORS *): manifesti P2 con il servizio Image di tile.loc.gov (scripts/fonti/loc.mjs);
+//   - Real Academia de la Historia (DIGIBIB, scripts/fonti/digibib.mjs): niente IIIF, immagini JPEG caricabili come <img>: manifesti P2
+//     con le immagini a misura fissa (misure di un'immagine per codice);
 //   - Biblioteca Nazionale di Grecia: manifesti e info.json senza CORS, immagini caricabili come <img>: copie P2 con immagini
 //     a misura fissa, senza servizio Image (scripts/fonti/nlg.mjs).
 // Nessuna richiesta di rete: si scrivono dagli stati delle raccolte (data/loc.json, data/nlg.json).
@@ -12,6 +14,7 @@ import fs from "node:fs";
 import path from "node:path";
 import * as loc from "./fonti/loc.mjs";
 import * as nlg from "./fonti/nlg.mjs";
+import * as digibib from "./fonti/digibib.mjs";
 
 // scrive i manifesti che mancano o sono cambiati e toglie quelli dei codici usciti (solo se lo stato ha voci)
 export function scriviManifesti(voci, cartella, scrivi) {
@@ -34,6 +37,9 @@ export function scriviTutti(dir = ".") {
   return {
     loc: scriviManifesti(l.voci || {}, path.join(dir, "data/manifesti/loc"), (id, v) => (v ? loc.manifestoScritto(id, v) : null)),
     nlg: scriviManifesti(n.voci || {}, path.join(dir, "data/manifesti/nlg"), (id, v) => (v && nlg.numeroPagine(v.p) ? nlg.manifestoScritto(id, v) : null)),
+    // Real Academia de la Historia (DIGIBIB): immagini JPEG della biblioteca a misura fissa
+    ...Object.fromEntries(Object.keys(digibib.FONTI_DIGIBIB).map(f => [f, scriviManifesti(digibib.leggiStato(f).voci || {}, path.join(dir, "data/manifesti/" + f),
+      (id, v) => (digibib.ammessaDigibib(f, v) && v.w ? digibib.manifestoScritto(f, id, v) : null))])),
   };
 }
 

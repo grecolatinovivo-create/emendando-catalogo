@@ -1,5 +1,10 @@
 # id: (nome italiano, nome inglese o None, nome GeoNames, paese, admin1 o None, [alias nelle stringhe "città" del catalogo])
 L = {
+ "barcellona": ("Barcellona", "Barcelona", "Barcelona", "ES", "56", ["Barcellona", "Barcelona", "Barcellona (Spagna)"]),
+ "vilanova-i-la-geltru": ("Vilanova i la Geltrú", None, "Vilanova i la Geltrú", "ES", "56", ["Vilanova i la Geltrú"]),
+ "madrid": ("Madrid", None, "Madrid", "ES", "29", ["Madrid", "Madrid (Spagna)"]),
+ "san-lorenzo-de-el-escorial": ("San Lorenzo de El Escorial", None, "San Lorenzo de El Escorial", "ES", "29", ["San Lorenzo de El Escorial", "El Escorial"]),
+ "siviglia": ("Siviglia", "Seville", "Sevilla", "ES", "51", ["Siviglia", "Sevilla", "Siviglia (Spagna)"]),
  "oxford": ("Oxford", None, "Oxford", "GB", None, ["Oxford"]),
  "philadelphia": ("Filadelfia", "Philadelphia", "Philadelphia", "US", "PA", ["Philadelphia"]),
  "new-york": ("New York", None, "New York City", "US", "NY", ["New York"]),
@@ -247,4 +252,5 @@ BIB = {
 FONTI = {"gallica": "parigi", "heidelberg": "heidelberg", "vaticana": "citta-del-vaticano", "bodleian": "oxford", "laurenziana": "firenze",
          "bsb": "monaco-di-baviera", "ndl": "tokyo", "berlino": "berlino", "lipsia": "lipsia", "leiden": "leida", "ambrosiana": "milano",
          "bub": "bologna", "nlg": "atene", "colonia": "colonia", "montecassino": "montecassino", "bamberga": "bamberga", "casanatense": "roma", "auckland": "auckland", "toronto": "toronto",
-         "wellcome": "londra", "manchester": "manchester", "cbl": "dublino", "cudl": "cambridge"}
+         "wellcome": "londra", "manchester": "manchester", "cbl": "dublino", "cudl": "cambridge",
+         "mdc": "barcellona", "ub": "barcellona", "realbiblioteca": "madrid", "ucm": "madrid", "sevilla": "siviglia", "rah": "madrid"}
