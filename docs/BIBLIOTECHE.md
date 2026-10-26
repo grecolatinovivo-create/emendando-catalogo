@@ -546,6 +546,7 @@ Biblioteche che non si possono raccogliere da sole (registrazione, verifiche ant
 | Biblioteca Estense Universitaria | Modena | IIIF aperto, ma la ricerca del sito è vietata ai programmi; l'unico elenco è il sistema interno, che mescola manoscritti e stampati. |
 | Biblioteca Comunale degli Intronati | Siena | 551 manoscritti con IIIF; l'elenco solo dalla ricerca, vietata dal robots.txt. |
 | Biblioteca dell'Archiginnasio | Bologna | Ricerca vietata dal robots.txt. |
+| ULB Darmstadt (TUdigit) | Darmstadt | Le immagini sono dietro il filtro anti-robot Anubis: i browser senza il suo cookie (per esempio Safari su iPhone) ricevono una pagina di verifica. Dal 26 ottobre 2026 il visore, solo in quel caso, le fa scaricare al server di Emendando, che si presenta come «Emendando» (Anubis lascia passare chi si dichiara). Chiedere il permesso esplicito di questo uso, o l'accesso CORS diretto. |
 | Biblioteca Apostolica Vaticana | Città del Vaticano | Raccolta in corso a un manifesto ogni 10 secondi (giorni): un elenco completo dei manifesti farebbe risparmiare molto tempo. |
 | Trinity College Library | Dublino | CAPTCHA anche dal browser (i codici irlandesi entrano già tramite ISOS). |
 | National Library of Wales | Aberystwyth | Manifesti aperti, ma sito e catalogo dietro Cloudflare anche dal browser. Dal 26 ottobre 2026 nel catalogo i circa 125 codici che hanno l'identificativo in Wikidata o in Europeana: chiedere l'elenco completo. |
