@@ -93,7 +93,7 @@ export function motivoManuscriptorium(v) {
   if (LETTERE.test(v.t || "") || CARTE_SEGNATURA.test(v.s || "") || KARTE.test(v.t || "")) return "carte geografiche, lettere o documenti";
   const s = String(v.s || "").trim();
   // giornali e periodici a stampa (es. «газета 1», the newspaper «Kazak», Biblioteca nazionale del Kazakhstan)
-  if (/\bnewspaper|газета|\bperiodical|\bZeitung\b|\bgazeta\b/i.test([v.t, s].join(" "))) return "giornali e periodici";
+  if (/\bnewspaper|газета|\bperiodical\b/i.test([v.t, s].join(" "))) return "giornali e periodici";
   if (/Národní knihovna České republiky/.test(v.b || "") && !/^[IVXL]+\s*\.?\s*[A-Z]\s*\.?\s*\d/.test(s)) return "stampati (segnatura della Biblioteca nazionale ceca)";
   if (/Toruniu/.test(v.b || "") && !/^Rps\b/i.test(s)) return "stampati (segnatura di Toruń)";
   // Biblioteca Nazionale Centrale di Firenze: in Manuscriptorium anche stampati (collocazioni numeriche come «MAGL.1.6.333», «PALAT.10.5.2.36»,
