@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T20:57:38.156Z",
+ "aggiornato": "2026-10-26T23:05:57.964Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -180,7 +180,7 @@
   "cbl": {
    "nome": "Chester Beatty, Dublino (viewer.cbl.ie)",
    "codici": 12,
-   "esito": "errore: manifesti letti in parte (mancano 861): riprenderà alla prossima esecuzione"
+   "esito": "ok"
   },
   "parker": {
    "nome": "Parker Library, Corpus Christi College, Cambridge (manifesti di Stanford, dms-data.stanford.edu; elenco da Biblissima)",
@@ -305,7 +305,7 @@
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
    "codici": 1,
-   "esito": "errore: manifesti letti in parte (mancano 7273): riprenderà alla prossima esecuzione"
+   "esito": "errore: manifesti letti in parte (mancano 6173): riprenderà alla prossima esecuzione"
   },
   "getty": {
    "nome": "J. Paul Getty Museum, Los Angeles: manoscritti (data.getty.edu; manifesti media.getty.edu)",
@@ -319,8 +319,8 @@
   },
   "libfond": {
    "nome": "Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca: copie digitali della Trinità-San Sergio (lib-fond.ru; manifesti scritti dal catalogo)",
-   "codici": 12,
-   "esito": "errore: codici letti in parte (1724 in questo giro): riprenderà alla prossima esecuzione"
+   "codici": 16,
+   "esito": "errore: codici letti in parte (1769 in questo giro): riprenderà alla prossima esecuzione"
   },
   "archive": {
    "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, John Carter Brown Library, Newberry Library, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
@@ -353,7 +353,7 @@
    "esito": "ok"
   }
  },
- "totale": 12333,
+ "totale": 12337,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -123307,6 +123307,135 @@
    "pagina": "https://lib-fond.ru/lib-rgb/173-i/f-173i-347/",
    "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
    "immagini": 260
+  },
+  {
+   "id": "libfond-f-173iii-34",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.173/III №34",
+   "datazione": "Не ранее 1813 г.",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "«Scholiа in Horatii carmina» (Комментарии к одам Горация, взятым из разных книг)",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Odi"
+     ],
+     "corrispondenza": "titolo: ««Scholiа in Horatii carmina» (Комментарии к одам Горация, взятым из разных книг)»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-173iii-34.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/173-iii/f-173iii-34/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 58
+  },
+  {
+   "id": "libfond-f-173iii-36",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.173/III №36",
+   "datazione": "1830-е гг.",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Metaphysica (Курс метафизики)",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica"
+     ],
+     "corrispondenza": "titolo: «Metaphysica (Курс метафизики)»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-173iii-36.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/173-iii/f-173iii-36/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 173
+  },
+  {
+   "id": "libfond-f-173iv-111",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.173/IV №111",
+   "datazione": "Кон. XVIII – нач. XIX в.",
+   "secolo": null,
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "P. Virgilii Maronis Georgicon (Георгики Вергилия, в четырех книгах)",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Georgiche"
+     ],
+     "corrispondenza": "titolo: «P. Virgilii Maronis Georgicon (Георгики Вергилия, в четырех книгах)»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-173iv-111.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/173-iv/f-173iv-111/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 493
+  },
+  {
+   "id": "libfond-f-194-44",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.194 №44",
+   "datazione": "Ок. 1791 г.",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Сборник учебный по поэтике и риторике ученика класса поэзии Киевской академии Ивана Зущинского",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Bucoliche"
+     ],
+     "corrispondenza": "descrizione: «…103, 224–231: \"Philipi (sic!) Virgilii Maronis Bucolica. Ecloga 1-ma…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-194-44.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/194/f-194-44/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 124
   },
   {
    "id": "bub-64e6eb6c-8126-4829-b70b-6b99612a05f6",
