@@ -1,9 +1,9 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T21:02:53.092Z",
- "totale": 504131,
- "con_autori": 27682,
- "miniati": 10742,
+ "aggiornato": "2026-10-26T22:10:38.643Z",
+ "totale": 505189,
+ "con_autori": 27684,
+ "miniati": 10784,
  "musica": 13601,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
@@ -26,11 +26,11 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 180989
+   "codici": 180968
   },
   "la": {
    "nome": "latino",
-   "codici": 75392
+   "codici": 75397
   },
   "?": {
    "nome": "lingua non indicata",
@@ -38,19 +38,19 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 28314
+   "codici": 28317
   },
   "de": {
    "nome": "tedesco",
-   "codici": 22077
+   "codici": 22079
   },
   "ar": {
    "nome": "arabo",
-   "codici": 22049
+   "codici": 22069
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 18370
+   "codici": 18597
   },
   "pi": {
    "nome": "pali",
@@ -58,11 +58,11 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 15219
+   "codici": 16314
   },
   "zh": {
    "nome": "cinese",
-   "codici": 14089
+   "codici": 14076
   },
   "grc": {
    "nome": "greco",
@@ -78,7 +78,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10468
+   "codici": 10470
   },
   "pl": {
    "nome": "polacco",
@@ -86,7 +86,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 7505
+   "codici": 7521
   },
   "en": {
    "nome": "inglese",
@@ -106,7 +106,7 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 4778
+   "codici": 4815
   },
   "cu": {
    "nome": "slavo ecclesiastico",
@@ -122,11 +122,11 @@
   },
   "ko": {
    "nome": "coreano",
-   "codici": 2630
+   "codici": 2625
   },
   "tr": {
    "nome": "turco",
-   "codici": 2600
+   "codici": 2603
   },
   "cop": {
    "nome": "copto",
@@ -162,7 +162,7 @@
   },
   "ru": {
    "nome": "russo",
-   "codici": 462
+   "codici": 464
   },
   "ms": {
    "nome": "malese",
@@ -364,7 +364,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 14294
+   "codici": 14296
   },
   "medievale": {
    "nome": "autori medievali",
@@ -374,7 +374,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 502452
+   "codici": 503510
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -1356,7 +1356,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 6603
+   "codici": 6605
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1559,8 +1559,10 @@
   "Australia: Newman College and St. Mary's College, Melbourne (Australia)",
   "Australia: Victoria State Library, Melbourne (Australia)",
   "Balliol College, Oxford",
+  "Bar-Ilan University Library (copia digitale della National Library of Israel)",
   "Bar-Ilan University Library (copia digitale della National Library of Israel), Ramat Gan",
   "Barbara Bates Center for the Study of the History of Nursing, Philadelphia",
+  "BASEL UN R III (copia digitale della National Library of Israel)",
   "Bayerische Staatsbibliothek, Cambridge",
   "Bayerische Staatsbibliothek, München",
   "Beinecke Rare Book and Manuscript Library, New Haven",
@@ -1829,6 +1831,7 @@
   "Dallas Museum of Art K.1.2014.131, Cambridge",
   "Dallas Museum of Art, Cambridge",
   "Dar al-Kutub, Cambridge",
+  "DARM Arch R (copia digitale della National Library of Israel)",
   "Den Arnamagnæanske Samling, Københavns Universitet, Copenaghen",
   "Department of Manuscripts and Rare Books, Budapest",
   "Det Kongelige Bibliotek, Copenaghen",
@@ -1894,6 +1897,7 @@
   "Germanisches Nationalmuseum, Nürnberg",
   "Gilmore Music Library, New Haven",
   "Girton College Archive, Cambridge",
+  "Goettingen UB hebr. (copia digitale della National Library of Israel)",
   "Gonville and Caius College, Cambridge",
   "Government Oriental Manuscripts Library and Research Centre, Chennai",
   "Grolier Club, New York",
@@ -1922,6 +1926,7 @@
   "Heichal Shlomo (copia digitale della National Library of Israel), Gerusalemme",
   "Heidelberg",
   "Heidelberger Papyrussammlung",
+  "Hekhal Shlomo Ms. Qu. (copia digitale della National Library of Israel)",
   "Herzog August Bibliothek Wolfenbüttel",
   "HHStA, Vienna",
   "Historický ústav Akademie věd ČR, v. v. i., Praga",
@@ -4224,16 +4229,16 @@
   },
   "ndl": {
    "nome": "National Diet Library, Tokyo (dl.ndl.go.jp)",
-   "codici": 42809,
+   "codici": 42770,
    "carte": 50,
    "carte_stampa": 0,
-   "miniati": 1632,
+   "miniati": 1630,
    "musica": 194,
    "con_autori": 0,
    "lingue": {
-    "ja": 40311,
-    "zh": 2405,
-    "ko": 89,
+    "ja": 40290,
+    "zh": 2392,
+    "ko": 84,
     "?": 4,
     "km": 1
    },
@@ -4878,38 +4883,38 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 8255,
+   "codici": 9352,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 551,
+   "miniati": 595,
    "musica": 0,
-   "con_autori": 13,
+   "con_autori": 15,
    "lingue": {
-    "he": 8250,
-    "xx": 1185,
-    "ar": 398,
-    "fa": 79,
-    "tr": 11,
+    "he": 9345,
+    "xx": 1412,
+    "ar": 418,
+    "fa": 116,
+    "tr": 14,
     "grc": 7,
-    "es": 14,
-    "it": 87,
-    "de": 54,
+    "es": 16,
+    "it": 103,
+    "la": 20,
+    "de": 56,
     "nl": 30,
     "pt": 7,
-    "la": 15,
-    "fr": 3,
-    "ru": 4,
+    "fr": 6,
+    "ru": 6,
     "en": 4,
     "pl": 1,
     "ka": 1,
     "ca": 1,
     "oc": 2
    },
-   "esito": "errore: manifesti letti in parte (mancano 7273): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 6173): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
-   "pezzi_voci": 11,
+   "pezzi_voci": 12,
    "indice": [
     "indice/nli-0.json"
    ]
@@ -5440,7 +5445,7 @@
   {
    "file": "indice/ndl-2.json",
    "fonte": "ndl",
-   "righe": 2809
+   "righe": 2770
   },
   {
    "file": "indice/kokusho-0.json",
@@ -5580,7 +5585,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 8255
+   "righe": 9352
   },
   {
    "file": "indice/getty-0.json",
@@ -8185,8 +8190,10 @@
   "melbourne",
   "melbourne",
   "oxford",
+  "gerusalemme",
   "ramat-gan",
   "philadelphia",
+  "gerusalemme",
   "cambridge",
   "monaco-di-baviera",
   "new-haven",
@@ -8455,6 +8462,7 @@
   "cambridge",
   "cambridge",
   "cambridge",
+  "gerusalemme",
   "copenaghen",
   "budapest",
   "copenaghen",
@@ -8520,6 +8528,7 @@
   "norimberga",
   "new-haven",
   "cambridge",
+  "gerusalemme",
   "cambridge",
   "chennai",
   "new-york",
@@ -8548,6 +8557,7 @@
   "gerusalemme",
   "heidelberg",
   "heidelberg",
+  "gerusalemme",
   "wolfenbuettel",
   "vienna",
   "praga",
