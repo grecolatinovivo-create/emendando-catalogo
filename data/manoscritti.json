@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T18:50:59.310Z",
+ "aggiornato": "2026-10-26T19:01:33.346Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -160,7 +160,7 @@
   "bl": {
    "nome": "British Library, Londra (catalogo searcharchives.bl.uk; manifesti bl.digirati.io e, per i codici orientali e scientifici, Qatar Digital Library)",
    "codici": 168,
-   "esito": "errore: schede lette in parte (1601 su 1651): riprenderà alla prossima esecuzione"
+   "esito": "ok"
   },
   "isos": {
    "nome": "Irish Script on Screen: Royal Irish Academy, National Library of Ireland, Trinity College Dublin e altre (isos.dias.ie)",
@@ -180,7 +180,7 @@
   "cbl": {
    "nome": "Chester Beatty, Dublino (viewer.cbl.ie)",
    "codici": 11,
-   "esito": "errore: manifesti letti in parte (mancano 1583): riprenderà alla prossima esecuzione"
+   "esito": "errore: manifesti letti in parte (mancano 1222): riprenderà alla prossima esecuzione"
   },
   "parker": {
    "nome": "Parker Library, Corpus Christi College, Cambridge (manifesti di Stanford, dms-data.stanford.edu; elenco da Biblissima)",
@@ -305,7 +305,7 @@
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
    "codici": 0,
-   "esito": "errore: manifesti letti in parte (mancano 9738): riprenderà alla prossima esecuzione"
+   "esito": "errore: manifesti letti in parte (mancano 8524): riprenderà alla prossima esecuzione"
   },
   "getty": {
    "nome": "J. Paul Getty Museum, Los Angeles: manoscritti (data.getty.edu; manifesti media.getty.edu)",
@@ -324,7 +324,7 @@
   },
   "archive": {
    "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, John Carter Brown Library, Newberry Library, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
-   "codici": 86,
+   "codici": 85,
    "esito": "ok"
   },
   "crossasia": {
@@ -353,7 +353,7 @@
    "esito": "ok"
   }
  },
- "totale": 12317,
+ "totale": 12316,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -346395,37 +346395,6 @@
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/d5ab9ab2-97ce-4379-b2e1-6794b3dd95d5/",
    "licenza": "CC BY 4.0",
    "immagini": null
-  },
-  {
-   "id": "ia-journaldusiegede00ocon",
-   "fonte": "archive",
-   "biblioteca": "John Carter Brown Library",
-   "citta": "Providence",
-   "segnatura": "journaldusiegede00ocon",
-   "datazione": "1779",
-   "secolo": [
-    18,
-    18
-   ],
-   "lingue": [
-    "fr"
-   ],
-   "lingua_dedotta": false,
-   "titolo": "Journal du siege de Savannah septembre, et Octobre 1779. : Avec des observations de Mr. le C[om]te d'Estaing",
-   "autori": [
-    {
-     "id": "terenzio",
-     "autore": "Terenzio",
-     "latino": "Terentius",
-     "categoria": "classico-latino",
-     "opere": [],
-     "corrispondenza": "autore: «O'Connor, Antoine François Térence, 1750-1781 ; Estaing, Charles…»"
-    }
-   ],
-   "manifest": "https://iiif.archive.org/iiif/3/journaldusiegede00ocon/manifest.json",
-   "pagina": "https://archive.org/details/journaldusiegede00ocon",
-   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
-   "immagini": 112
   },
   {
    "id": "mdc-ms-arabic-00738",
