@@ -25,7 +25,7 @@ import { cartaManoscritta } from "../carte.mjs";
 
 export const FILE_STATO = "data/archive.json";
 const GIORNI = 6;
-const CAMPI = ["identifier", "mediatype", "collection", "title", "date", "subject", "description", "note", "language", "creator", "imagecount", "contributor", "source", "type", "format", "associated-names"];
+const CAMPI = ["identifier", "mediatype", "collection", "title", "date", "subject", "description", "note", "language", "creator", "imagecount", "contributor", "source", "type", "format", "associated-names", "call_number"];
 export const manifestoIa = id => `https://iiif.archive.org/iiif/3/${encodeURIComponent(id)}/manifest.json`;
 
 // ------------------------------------------------------------------------------------------------ filtri comuni
@@ -174,7 +174,42 @@ export const PROFILI = {
     segnatura: id => id.replace(/^BifDS-/, "Disegni e stampe ").replace(/_/g, " "),
     tipo: () => "carta", carta: true, media: "(texts OR image)",
   },
+  // John Carter Brown Library, Providence (dal 26 ottobre 2026): la biblioteca pubblica su Internet Archive soprattutto libri a stampa,
+  // ma anche i suoi codici (fondi «Codex Ind», «Codex Sp», «Codex Eng»…), tra cui i manoscritti in lingue indigene delle Americhe
+  // (Tovar Codex, Diccionario de Motul, catechismi testeriani, arti e vocabolari di nahuatl, maya, otomí, zapoteco, purépecha,
+  // guaraní, huron, algonchino). Si riconoscono dalla nota «Ms. codex» (o «Manuscript ; …») della scheda; fuori le carte
+  // d'archivio (atti, conti, registri, inventari, copialettere, provvedimenti, ordini militari). Segnatura dal campo «call_number».
+  jcb: {
+    q: 'collection:JohnCarterBrownLibrary AND (description:"Ms. codex" OR description:manuscript OR title:manuscript)',
+    biblioteca: "John Carter Brown Library", citta: "Providence",
+    ammessa: (v, id) => elementi(v).some(e => /^\s*(?:Ms\. codex|Manuscript codex|Manuscript(?: ;|,| on| in|\.|$))/i.test(e)) && !JCB_FUORI.test(v.t || "") && !/_\d+$/.test(id || "") && !/^RLC\b/i.test(v.cn || ""),
+    // la segnatura dalla scheda («Codex Ind 2», «1-SIZE Codex Sp 5»); se c'è solo il numero del record del catalogo di Brown
+    // («b5694800»), la segnatura «Codex …» citata nella descrizione, altrimenti quel numero
+    segnatura: (id, v) => {
+      const cn = String(v.cn || "").replace(/\s+/g, " ").trim();
+      if (cn && !/^b\d+$/i.test(cn)) return cn.replace(/\bcodex\s+([a-z]+)/i, (m, f) => "Codex " + f[0].toUpperCase() + f.slice(1).toLowerCase());
+      const m = /\b((?:\d-SIZE )?Codex (?:Ind|Sp|Fr|Eng|Port|Lat|It|Du|Ger)\.? ?\d+[A-Za-z]?)/.exec(v.c || "");
+      return m ? m[1] : cn ? `record ${cn}` : id;
+    },
+    titolo: v => titoloSenza(v.t, /^\[|\]$/g),
+  },
+  // Newberry Library, Chicago (dal 26 ottobre 2026): dal 2026 la biblioteca carica su Internet Archive i suoi manoscritti (Edward E.
+  // Ayer Manuscript Collection, con i codici in nahuatl, otomí, zapoteco, purépecha, kaqchikel e opata; Case MS e Wing MS); il
+  // campo «call_number» dà la segnatura vera (VAULT Ayer MS 1478). Fuori le carte moderne («Modern MS», «Midwest MS», «Dance MS»),
+  // diari personali, lettere, trattati, testamenti, verbali, fascicoli d'ufficio, trascrizioni e fotoriproduzioni. I codici che
+  // Digital Scriptorium dà già (stessa segnatura) restano alla fonte «ds».
+  newberry: {
+    q: 'collection:newberry AND (call_number:"Ayer MS" OR call_number:"Case MS" OR call_number:"Wing MS" OR identifier:ayer_ms_* OR identifier:case_ms_*)',
+    biblioteca: "Newberry Library", citta: "Chicago",
+    ammessa: v => /\b(?:Ayer|Case|Wing|Greenlee)\s+(?:Case\s+|Wing\s+)?MS\b/i.test(v.cn || "") && !/\b(?:Modern|Midwest|Dance)\s+MS\b/i.test(v.cn || "") && !NEWBERRY_FUORI.test(`${v.t} ; ${String(v.c || "").slice(0, 200)}`),
+    segnatura: (id, v) => String(v.cn || id).replace(/^\s*(?:VAULT\s+|artifacts cage\s+)?(?:(?:box|folio|oversize|slipcase)\s+)*/i, "").replace(/\s+/g, " ").trim(),
+  },
 };
+// John Carter Brown: carte d'archivio e amministrative (titolo)
+// (fuori anche i codici «RLC.Ms.» della Redwood Library di Newport, che la biblioteca ha caricato insieme ai suoi)
+const JCB_FUORI = /^\s*\[?Ex(?:mo|celent[ií]simo)\.? se[ñn]or|\b(?:inventory|ledger|padr[oó]n|proclama|account ?books?|accounts?\b|deeds?|oath|invoices?|bought of|records|federal direct tax|tax\b|orderly book|order ?book|memorandum|day ?book|copiador|copia de cartas|provisi[oó]n|obligaci[oó]n|diligencias|expediente|notaires|ley sancionad\w*|reglam\w*|agreement|indenture|letters?\b|cartas?\b|petition|minutes)\b/i;
+// Newberry: carte d'archivio, lettere, diari personali, riproduzioni (titolo e inizio della descrizione)
+const NEWBERRY_FUORI = /\b(?:diary|diaries|files|letters?|correspondence|treaty|treaties|will of|copy of the will|copia testamenti|last will|minutes|transcripts?|photostats?|photographic reproduction|errata|research (?:and personal )?papers|papers\b|original leaves|bulletin|pow-wow|autograph letter|se asientan|capione|campione de)\b/i;
 
 // Udine: la descrizione è «Biblioteca Civica … Inventario dei manoscritti del Fondo … <numero> <contenuto>»
 function contenutoUdine(v) {
@@ -211,7 +246,7 @@ export function compattaIa(d, p) {
   const desc = [...lista(d.description), ...lista(d.note)].filter((x, i, a) => a.indexOf(x) === i);
   const v = { p, t: lista(d.title)[0] || null, d: lista(d.date)[0] || null, l: lista(d.language), a: lista(d.creator).slice(0, 6), s: lista(d.subject).join(" ; ").slice(0, 600) || null,
     c: desc.join(" ; ").slice(0, 900) || null, f: fisico.join(" ; ").slice(0, 300) || null, y: unoDi(d.type) || null, o: unoDi(d.source).slice(0, 200) || null, k: lista(d.contributor)[0] || null,
-    z: lista(d.collection).filter(c => !/^fav-/.test(c)).slice(0, 8).join(" ") || null, n: +d.imagecount || null, j: formati.some(f => /JP2/i.test(f)) || (d.mediatype === "image" && formati.includes("JPEG")) ? 1 : (file.length ? 0 : null), g: unoDi(d["associated-names"]).slice(0, 200) || null };
+    z: lista(d.collection).filter(c => !/^fav-/.test(c)).slice(0, 8).join(" ") || null, n: +d.imagecount || null, j: formati.some(f => /JP2/i.test(f)) || (d.mediatype === "image" && formati.includes("JPEG")) ? 1 : (file.length ? 0 : null), g: unoDi(d["associated-names"]).slice(0, 200) || null, cn: unoDi(d.call_number).slice(0, 120) || null };
   if (p === "openn") Object.assign(v, istituzioneOpenn(v.c));
   for (const k of Object.keys(v)) if (v[k] == null || v[k] === "" || (Array.isArray(v[k]) && !v[k].length)) delete v[k];
   return v;
@@ -281,7 +316,8 @@ export function motivoArchive(id, v) {
   return null;
 }
 
-const normSeg = s => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/\b(?:ms|mss|cod|codex|manuscript)\b\.?/g, " ").replace(/[^a-z0-9]+/g, " ").replace(/\b0+(\d)/g, "$1").trim();
+// («VAULT», «box», «folio», «oversize» sono collocazioni della Newberry, non parti della segnatura)
+const normSeg = s => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/\b(?:ms|mss|cod|codex|manuscript|vault|box|folio|oversize|slipcase)\b\.?/g, " ").replace(/[^a-z0-9]+/g, " ").replace(/\b0+(\d)/g, "$1").trim();
 const normBib = s => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z]+/g, " ").trim();
 
 /* esistenti (voci delle altre fonti) -> { ids: Set degli identificativi di Internet Archive già nel catalogo, segnature: [[biblioteca normalizzata, Set di segnature]] } */
@@ -299,7 +335,7 @@ export function esistentiArchive(voci) {
 // parole che identificano la stessa biblioteca nel catalogo (per i doppioni per segnatura)
 const STESSA = { "McGill University": /mcgill/, "Columbia University": /columbia/, "Free Library of Philadelphia": /free library of philadelphia/, "Haverford College": /haverford/,
   "Bryn Mawr College": /bryn mawr/, "Boston Public Library": /boston public library/, "Starr East Asian": /berkeley/, "Sainte-Genevi": /sainte genevieve/, "BULAC": /langues et civilisations|bulac/,
-  "Jagiello": /jagiell/, "Smithsonian": /smithsonian/, "Joppi": /joppi|udine/, "Federiciana": /federiciana/ };
+  "Jagiello": /jagiell/, "Smithsonian": /smithsonian/, "Joppi": /joppi|udine/, "Federiciana": /federiciana/, "Newberry": /newberry/, "John Carter Brown": /john carter brown/ };
 
 export function recordArchive(st = leggiStato(), { esistenti = { ids: new Set(), segnature: [] }, scarti } = {}) {
   const out = [];

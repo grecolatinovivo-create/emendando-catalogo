@@ -7,7 +7,7 @@
 # in Cairo (CONTENTdm, codici arabi, persiani e copti; data/auc.json) e Northwestern University, Herskovits Library (manoscritti arabi
 # e in ajami dell'Africa occidentale, API delle Digital Collections; data/northwestern.json) e Internet Archive (manoscritti pubblicati
 # da biblioteche di tutto il mondo: McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, Fragile
-# Palm Leaves Foundation, biblioteche indiane e altre; una ricerca per profilo ogni 6 giorni; data/archive.json). Gli stati sono in data/ndl.json, data/kokusho.json,
+# Palm Leaves Foundation, biblioteche indiane, dal 26 ottobre 2026 John Carter Brown Library e Newberry Library, e altre; una ricerca per profilo ogni 6 giorni; data/archive.json). Gli stati sono in data/ndl.json, data/kokusho.json,
 # data/auckland.json, data/toronto.json; National Library of Israel (dal 26 ottobre 2026: elenco da Europeana, data/nli.json). Richieste in serie, una biblioteca dopo l'altra, con le pause di sempre (scripts/rete.mjs).
 # NDL: dal 26 ottobre 2026 anche controllo dei manifesti a riprese (40 minuti per giro; voci non pubbliche fuori), la ruota gira finché non è completo.
 # Ruota fino a lettura completa: finché una delle tre non ha finito la prima lettura completa, la corsia lavora circa 150 minuti

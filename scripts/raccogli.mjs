@@ -25,7 +25,7 @@
 import fs from "node:fs";
 import { log } from "./rete.mjs";
 import { caricaAutori, riconosci } from "./riconosci.mjs";
-import { deduciLingue, secoli } from "./lingue.mjs";
+import { deduciLingue, secoli, correggiIndigene } from "./lingue.mjs";
 import { raccogliHeidelberg, raccogliEcodices, raccogliBsb, raccogliBerlino } from "./fonti/oai.mjs";
 import { scansiona, recordVaticana } from "./fonti/vaticana.mjs";
 import { scansionaBodleian, recordBodleian } from "./fonti/bodleian.mjs";
@@ -155,7 +155,7 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   kbdk: "Det Kongelige Bibliotek, Copenaghen (digitalesamlinger.kb.dk; manifesti scritti dal catalogo con le immagini IIIF della biblioteca)",
   uva: "Allard Pierson, Universiteit van Amsterdam (uvaerfgoed.nl)",
   // Internet Archive (corsia «mondo», dal 26 ottobre 2026): manoscritti pubblicati da altre biblioteche (Firenze e Siviglia restano fonti a parte)
-  archive: "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
+  archive: "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, John Carter Brown Library, Newberry Library, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
   // Asia orientale e Sud-est asiatico (corsia «asia», dal 26 ottobre 2026)
   crossasia: "CrossAsia, Staatsbibliothek zu Berlin: Digital Library of Lao Manuscripts e Digital Library of Northern Thai Manuscripts (iiif.crossasia.org)",
   sbbasia: "Staatsbibliothek zu Berlin: manoscritti dell'Asia orientale e del Sud-est asiatico (oai.sbb.berlin)",
@@ -197,6 +197,9 @@ export function voce(r, AUTORI, sigle = new Map(TRUCULENTUS.map(t => [t.manifest
   const lingue = dichiarate || deduciLingue(r.segnatura, r.titolo, autori);
   const v = { id: r.id, fonte: r.fonte, biblioteca: r.biblioteca || null, citta: r.citta || null, segnatura: r.segnatura || r.id, datazione: r.datazione || null,
     secolo: secoli(r.datazione), lingue, lingua_dedotta: !dichiarate && lingue.length > 0, titolo: (r.titolo || "").slice(0, 400) || null, autori, manifest: r.manifest, pagina: r.pagina || null, licenza: r.licenza || null, immagini: r.immagini ?? null };
+  // lingue indigene delle Americhe e hawaiano (dal 26 ottobre 2026): codici pittografici noti, poi il titolo al posto di «altre lingue»
+  const ind = correggiIndigene(v);
+  if (ind) { v.lingue = ind.lingue; v.lingua_dedotta = ind.dedotta; }
   if (r.anteprima) v.anteprima = r.anteprima;
   if (sigla) v.truculentus = sigla;
   // carte geografiche manoscritte (dal 26 ottobre 2026): categoria a parte, «tipo: "carta"»; i codici restano senza campo (scripts/carte.mjs)
@@ -441,6 +444,7 @@ async function main() {
     else for (const v of prima.filter(x => x.fonte === f)) {
       // voci precedenti senza lingua: si prova la deduzione
       if (!v.lingue.length) { v.lingue = deduciLingue(v.segnatura, v.titolo, v.autori); v.lingua_dedotta = v.lingue.length > 0; }
+      { const ind = correggiIndigene(v); if (ind) { v.lingue = ind.lingue; v.lingua_dedotta = ind.dedotta; } }
       // tipo: quello già deciso dalla fonte, altrimenti dal titolo
       if (!v.tipo) { const tipo = tipoDa(v); if (tipo) v.tipo = tipo; }
       // miniati e musica: quelli già decisi, altrimenti da titolo e segnatura (le carte non lo sono mai)

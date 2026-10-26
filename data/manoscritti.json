@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T17:41:55.323Z",
+ "aggiornato": "2026-10-26T18:50:59.310Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -305,7 +305,7 @@
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
    "codici": 0,
-   "esito": "errore: manifesti letti in parte (mancano 11317): riprenderà alla prossima esecuzione"
+   "esito": "errore: manifesti letti in parte (mancano 9738): riprenderà alla prossima esecuzione"
   },
   "getty": {
    "nome": "J. Paul Getty Museum, Los Angeles: manoscritti (data.getty.edu; manifesti media.getty.edu)",
@@ -320,11 +320,11 @@
   "libfond": {
    "nome": "Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca: copie digitali della Trinità-San Sergio (lib-fond.ru; manifesti scritti dal catalogo)",
    "codici": 0,
-   "esito": "errore: codici letti in parte (1350 in questo giro): riprenderà alla prossima esecuzione"
+   "esito": "errore: codici letti in parte (1727 in questo giro): riprenderà alla prossima esecuzione"
   },
   "archive": {
-   "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
-   "codici": 85,
+   "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, John Carter Brown Library, Newberry Library, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
+   "codici": 86,
    "esito": "ok"
   },
   "crossasia": {
@@ -353,7 +353,7 @@
    "esito": "ok"
   }
  },
- "totale": 12316,
+ "totale": 12317,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -138097,7 +138097,7 @@
    ],
    "lingue": [
     "fr",
-    "xx"
+    "alg"
    ],
    "lingua_dedotta": false,
    "titolo": "Louis Nicolas. Grammaire algonquine ou des sauvages de l'Amérique septentrionale, avec la description du pays, journaux de voyages, mémoires, remarques sur l'histoire naturelle...",
@@ -291561,8 +291561,10 @@
    "segnatura": "Mexicain 287",
    "datazione": null,
    "secolo": null,
-   "lingue": [],
-   "lingua_dedotta": false,
+   "lingue": [
+    "nah"
+   ],
+   "lingua_dedotta": true,
    "titolo": "Traduction en langue nahuatl, par le Père Pichardo, de quelques fables d'Esope",
    "autori": [
     {
@@ -346393,6 +346395,37 @@
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/d5ab9ab2-97ce-4379-b2e1-6794b3dd95d5/",
    "licenza": "CC BY 4.0",
    "immagini": null
+  },
+  {
+   "id": "ia-journaldusiegede00ocon",
+   "fonte": "archive",
+   "biblioteca": "John Carter Brown Library",
+   "citta": "Providence",
+   "segnatura": "journaldusiegede00ocon",
+   "datazione": "1779",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Journal du siege de Savannah septembre, et Octobre 1779. : Avec des observations de Mr. le C[om]te d'Estaing",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «O'Connor, Antoine François Térence, 1750-1781 ; Estaing, Charles…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/journaldusiegede00ocon/manifest.json",
+   "pagina": "https://archive.org/details/journaldusiegede00ocon",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 112
   },
   {
    "id": "mdc-ms-arabic-00738",
@@ -431985,7 +432018,7 @@
    ],
    "lingue": [
     "es",
-    "xx"
+    "myn"
    ],
    "lingua_dedotta": false,
    "titolo": "Extracto de un cuaderno m[anu]s[crito] \"Metodo de confesar en lengua maya,\" an[n]o de 1803",

@@ -9,7 +9,14 @@ export const NOMI_LINGUE = {
   cu: "slavo ecclesiastico", ru: "russo", cs: "ceco", pl: "polacco", hu: "ungherese", sv: "svedese", da: "danese", is: "islandese e norreno", ga: "irlandese", cy: "gallese",
   gl: "galego", zh: "cinese", ja: "giapponese", ko: "coreano", sa: "sanscrito", bo: "tibetano", ms: "malese", jv: "giavanese",
   pi: "pali", lo: "lao", th: "thailandese", nod: "thai settentrionale (lanna)", khb: "tai lü", shn: "shan", my: "birmano", km: "khmer", vi: "vietnamita (hán-nôm)",
-  mn: "mongolo", mnc: "mancese", nxq: "naxi", btk: "batak", bug: "bugi", su: "sundanese", ban: "balinese", sla: "lingue slave (alfabeto cirillico)", xx: "altre lingue",
+  mn: "mongolo", mnc: "mancese", nxq: "naxi", btk: "batak", bug: "bugi", su: "sundanese", ban: "balinese", sla: "lingue slave (alfabeto cirillico)",
+  // Hawaii e lingue indigene delle Americhe (dal 26 ottobre 2026)
+  haw: "hawaiano", nah: "nahuatl", myn: "lingue maya", oto: "otomí e lingue otomiane", zap: "zapoteco", mix: "mixteco", tsz: "purépecha (tarasco)",
+  cai: "altre lingue indigene di Mesoamerica e America centrale", qu: "quechua", ay: "aymara", gn: "guaraní", tup: "tupi",
+  sai: "altre lingue indigene del Sud America", chr: "cherokee", dak: "dakota e lakota", oji: "ojibwe", cre: "cree", moh: "mohawk",
+  iro: "lingue irochesi", alg: "lingue algonchine", nai: "altre lingue indigene del Nord America",
+  pit: "pittografia mesoamericana (senza testo alfabetico)",
+  xx: "altre lingue",
 };
 
 // codici ISO 639-1/2/3 e nomi (latino, italiano, inglese, tedesco, francese) -> codice breve
@@ -48,6 +55,33 @@ const CODICI = {
   km: "km", khm: "km", khmer: "km", cambodian: "km", vi: "vi", vie: "vi", vietnamese: "vi", vietnamita: "vi", nom: "vi", "han nom": "vi", "chu nom": "vi",
   mn: "mn", khk: "mn", mongolian: "mn", mongolisch: "mn", mnc: "mnc", manchu: "mnc", mandschu: "mnc", mandschurisch: "mnc", nxq: "nxq", naxi: "nxq", nakhi: "nxq",
   btk: "btk", batak: "btk", bug: "bug", buginese: "bug", bugis: "bug", su: "su", sun: "su", sundanese: "su", ban: "ban", balinese: "ban",
+  // Hawaii e Americhe (dal 26 ottobre 2026): codici ISO 639-2/3 delle schede (Gallica, Internet Archive, Penn, Yale, Newberry) e nomi;
+  // le lingue maya hanno un codice solo («myn»), come le irochesi e le algonchine (tranne ojibwe e cree, che hanno il loro)
+  haw: "haw", hawaiian: "haw", hawaiano: "haw", hawaien: "haw", "olelo hawaii": "haw",
+  nah: "nah", nci: "nah", nhn: "nah", nhe: "nah", azz: "nah", ngu: "nah", nahuatl: "nah", "nahuatl languages": "nah", "classical nahuatl": "nah", aztec: "nah", nahua: "nah",
+  mexicano: "nah", "lengua mexicana": "nah", "idioma mexicano": "nah", mexicain: "nah", "langue mexicaine": "nah", nahuatle: "nah",
+  myn: "myn", yua: "myn", quc: "myn", cak: "myn", tzj: "myn", tzh: "myn", tzo: "myn", kek: "myn", mam: "myn", poc: "myn", poh: "myn", ixl: "myn", hus: "myn", chf: "myn",
+  cac: "myn", jac: "myn", toj: "myn", ttc: "myn", usp: "myn", acr: "myn", mop: "myn", itz: "myn", lac: "myn", caa: "myn", ctu: "myn", huastec: "myn", huasteco: "myn",
+  maya: "myn", mayan: "myn", "mayan languages": "myn", "maya language": "myn", yucatec: "myn", yucateco: "myn", "yucatec maya": "myn", quiche: "myn", kiche: "myn", "k iche": "myn",
+  cakchiquel: "myn", cakchikel: "myn", kaqchikel: "myn", tzotzil: "myn", tzeltal: "myn", kekchi: "myn", "q eqchi": "myn", pokomchi: "myn", tzutujil: "myn", tzutuhil: "myn",
+  oto: "oto", ote: "oto", otq: "oto", otomi: "oto", otomian: "oto", "otomian languages": "oto", mazahua: "oto", matlatzinca: "oto", matlaltzinga: "oto",
+  zap: "zap", zapotec: "zap", zapoteco: "zap", zapoteca: "zap", mix: "mix", mixtec: "mix", mixteco: "mix", mixteca: "mix",
+  tsz: "tsz", pua: "tsz", tarasco: "tsz", tarascan: "tsz", tarasca: "tsz", purepecha: "tsz", "lengua de michoacan": "tsz",
+  cai: "cai", "central american indian languages": "cai", "central american indian": "cai", totonac: "cai", totonaco: "cai", zoq: "cai", zoque: "cai", cip: "cai", mixe: "cai",
+  chinantec: "cai", chinanteco: "cai", huichol: "cai", cora: "cai", tepehuan: "cai", opata: "cai", yaqui: "cai", "uto-aztecan languages": "cai",
+  qu: "qu", que: "qu", quz: "qu", qub: "qu", quechua: "qu", quichua: "qu", kichwa: "qu", runasimi: "qu", ay: "ay", aym: "ay", aymara: "ay",
+  gn: "gn", grn: "gn", gug: "gn", guarani: "gn", tup: "tup", tpn: "tup", tpw: "tup", tupi: "tup", tupinamba: "tup", "lingua geral": "tup",
+  sai: "sai", "south american indian languages": "sai", "south american indian": "sai", arn: "sai", mapudungun: "sai", araucanian: "sai", mapuche: "sai",
+  chiquito: "sai", chiquitano: "sai", cax: "sai", yuz: "sai", kiriri: "sai", moxo: "sai",
+  chr: "chr", cherokee: "chr", dak: "dak", lkt: "dak", dakota: "dak", lakota: "dak", sioux: "dak", "siouan languages": "dak", sio: "dak",
+  oji: "oji", oj: "oji", ciw: "oji", otw: "oji", ojibwe: "oji", ojibwa: "oji", ojibway: "oji", chippewa: "oji", ottawa: "oji", odawa: "oji", "algonquin": "oji",
+  cre: "cre", cr: "cre", crk: "cre", cree: "cre", moh: "moh", mohawk: "moh",
+  iro: "iro", iroquoian: "iro", "iroquoian languages": "iro", huron: "iro", wyandot: "iro", wya: "iro", onondaga: "iro", ono: "iro", seneca: "iro", see: "iro", oneida: "iro", cayuga: "iro", tuscarora: "iro",
+  alg: "alg", algonquian: "alg", "algonquian languages": "alg", abenaki: "alg", abnaki: "alg", abe: "alg", aaq: "alg", massachusett: "alg", wampanoag: "alg", wam: "alg", natick: "alg",
+  del: "alg", delaware: "alg", lenape: "alg", munsee: "alg", mic: "alg", micmac: "alg", "mi kmaq": "alg", shawnee: "alg", menominee: "alg", potawatomi: "alg", "fox": "alg", "illinois": "alg", blackfoot: "alg", cheyenne: "alg", arapaho: "alg",
+  nai: "nai", "north american indian languages": "nai", "north american indian": "nai", nav: "nai", navajo: "nai", navaho: "nai", apache: "nai", mus: "nai", creek: "nai", muskogee: "nai",
+  cho: "nai", choctaw: "nai", chickasaw: "nai", chn: "nai", chinook: "nai", esk: "nai", iku: "nai", ike: "nai", eskimo: "nai", inuit: "nai", inuktitut: "nai", aleut: "nai", ale: "nai",
+  sal: "nai", salish: "nai", kalispel: "nai", hai: "nai", haida: "nai", tli: "nai", tlingit: "nai", hop: "nai", hopi: "nai", zun: "nai", zuni: "nai",
 };
 const NULLI = new Set(["", "und", "mul", "zxx", "mis", "x-unknown", "unknown", "unbekannt", "multiple languages", "mehrsprachig", "non indicata", "n/a", "unbestimmt", "sans contenu linguistique",
   "ancient", "modern", "medieval", "classical", "old", "middle", "early modern", "to", "late", "byzantine"]);
@@ -66,6 +100,59 @@ export function lingueDa(valori) {
     }
   }
   return out;
+}
+
+// ------------------------------------------------------------------ Hawaii e lingue indigene delle Americhe (dal 26 ottobre 2026)
+// Molte schede danno per queste lingue solo «altre lingue» (codici di famiglia, nomi non riconosciuti) o nessuna lingua: se il
+// titolo nomina la lingua in modo esplicito («en lengua otomi», «Vocabulario … cakchiquel», «in Nahuatl», «Codex maya»), quella
+// lingua prende il posto di «altre lingue». Le parole ambigue («maya», «cree», «huron») contano solo dentro formule nette.
+const INDIGENE = [
+  ["nah", /\bnahuatl\b|\bnahoa\b|\b(?:lengua|idioma|lingua|langue) mexican[ao]e?\b|\ben (?:lengua |idioma )?mexicano\b|\bmexicanos?\b(?= y castellan)|\bmejicano\b|\bsermones mexicanos\b|\bcatecismos mexicanos\b/],
+  ["myn", /\b(?:lengua|idioma|langue|ydioma) (?:de )?(?:maya|yucatec[ao]|quiche|kiche|cakchiquel|tzotzil|tzeltal|tzendal|mam|pokomchi|kekchi)\b|\bmaya[- ](?:espanol|dtan|hispano|language|handschrift)|\bmayahandschrift\b|\b(?:codex|codice|code) (?:maya|peresianus|tro|cortesianus)\b|\bmaya (?:codex|manuscript)\b|\bcakchi ?(?:quel|kel|q)|\bkaqchikel\b|\bquiche\b|\byucatec[ao]?\b|\bmayan languages?\b|\bchilam balam\b|\bpopol vuh\b/],
+  ["oto", /\botomi\b|\bmatlatzinca\b|\bmatlaltzinga\b|\bmazahua\b/],
+  ["zap", /\bzapotec[ao]?\b|\bzaapotec/],
+  ["mix", /\bmixtec[ao]?\b/],
+  ["tsz", /\btarasc[ao]\b|\b(?:lengua|idiomas?|ydiomas?) de mich[uo]acan\b|\bpurepecha\b/],
+  ["cai", /\b(?:lengua|idioma) (?:cora|tepeguana|tepehuana|opata|teguima|zoque|coque|totonaca|chinanteca|mixe|huichola?|chiapaneca|pima|tarahumara|mayo|yaqui|hyaqui)\b|\bchinantec\b|\bhispano-hyaqui\b/],
+  ["qu", /\bquechua\b|\bquichua\b|\blengua general (?:de los indios )?del peru\b/],
+  ["ay", /\baymara\b/],
+  ["gn", /\bguarani(?:es|s)?\b/],
+  ["sai", /\blengua chiquita\b|\bmapudungun\b|\baraucan[ao]?\b|\bkiriri\b|\blengua moxa\b/],
+  ["chr", /\bcherokee\b/],
+  ["oji", /\bojibw\w*|\bchippewa\b|\bodawa\b|\botaoak|\botchipwe/],
+  ["cre", /\bcree (?:language|indians|syllabic|hymns?)\b|\b(?:langue|language) (?:des )?cris?\b/],
+  ["dak", /\blakota\b|\bdakota (?:language|grammar|dictionary|hymns?|bible)\b/],
+  ["moh", /\bmohawk\b/],
+  ["iro", /\bhuron\b(?! lake)|\biroquois\b|\bonondaga\b|\bonontagu/],
+  ["alg", /\babenak\w*|\babnaki\b|\bmicmac\b|\bmi'?kmaq\b|\blenape\b|\bdelaware (?:language|indians)\b|\balgonqui\w*|\bmassachusett? (?:language|indians)\b/],
+  ["haw", /\bhawaiian (?:language|manuscript|genealog\w*|chants?|meles?)\b|\bhawaiano\b|\bolelo hawaii\b|\bin hawaiian\b/],
+];
+export function lingueIndigeneDaTitolo(titolo) {
+  const t = String(titolo || "").normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[ʻ‘’]/g, "'").toLowerCase();
+  return INDIGENE.filter(([, re]) => re.test(t)).map(([c]) => c);
+}
+// codici pittografici e geroglifici mesoamericani che la biblioteca descrive con la lingua del commento o con una lingua sbagliata
+// (la Vaticana dà «latino» a tutti i Vat. lat.): segnatura esatta, biblioteca -> lingue
+const LINGUE_CODICI = [
+  [/Vaticana/, "Vat. lat. 3738", ["pit", "it"]],        // Codex Ríos (Vaticanus A): pittografia con commento italiano
+  [/Vaticana/, "Vat. lat. 3773", ["pit"]],              // Codex Vaticanus B
+  [/Vaticana/, "Borg. mess. 1", ["pit"]],               // Codex Borgia
+  [/Vaticana/, "Borg. mess. 2", ["pit"]],
+  [/Dresden/, "Mscr.Dresd.R.310", ["myn"]],             // Codex Dresdensis (scrittura maya)
+  [/Biblioth[eè]que nationale/, "Mexicain 386", ["myn"]], // Codex Peresianus
+  [/Bodleian/, "MS. Laud Misc. 678", ["pit"]],          // Codex Laud
+  [/Bodleian/, "MS. Mex. d. 1", ["pit"]],               // Codex Bodley
+  [/Bodleian/, "MS. Arch. Selden. A. 2", ["pit"]],      // Codex Selden
+];
+// lingue di una voce corrette per le lingue indigene: codici noti, poi il titolo al posto di «altre lingue» (o se non c'è lingua)
+export function correggiIndigene(v) {
+  const fisso = LINGUE_CODICI.find(([b, s]) => s === v.segnatura && b.test(v.biblioteca || ""));
+  if (fisso) return { lingue: fisso[2], dedotta: false };
+  const lingue = v.lingue || [];
+  if (lingue.length && !lingue.includes("xx")) return null;
+  const ind = lingueIndigeneDaTitolo(v.titolo).filter(c => !lingue.includes(c));
+  if (!ind.length) return null;
+  return { lingue: [...new Set([...ind, ...lingue.filter(l => l !== "xx")])], dedotta: !lingue.length || !!v.lingua_dedotta };
 }
 
 // ------------------------------------------------------------------ lingua dedotta (quando la fonte non la dà)
