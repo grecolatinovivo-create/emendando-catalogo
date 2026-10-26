@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T11:40:09.809Z",
- "totale": 390864,
- "con_autori": 23579,
+ "aggiornato": "2026-10-26T11:48:32.226Z",
+ "totale": 427884,
+ "con_autori": 25659,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte (categoria a parte, conteggi in «tipi») e vuoto per i codici; «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
   "id",
@@ -22,47 +22,51 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 180383
+   "codici": 180386
   },
   "la": {
    "nome": "latino",
-   "codici": 55243
+   "codici": 67419
   },
   "fr": {
    "nome": "francese",
-   "codici": 25463
+   "codici": 27327
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 21756
+   "codici": 26171
   },
   "de": {
    "nome": "tedesco",
-   "codici": 17048
+   "codici": 21094
   },
   "ar": {
    "nome": "arabo",
-   "codici": 14764
+   "codici": 14891
   },
   "grc": {
    "nome": "greco",
-   "codici": 13002
+   "codici": 13242
   },
   "zh": {
    "nome": "cinese",
-   "codici": 11626
+   "codici": 11632
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 9645
+   "codici": 10334
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 8456
+   "codici": 8551
+  },
+  "pl": {
+   "nome": "polacco",
+   "codici": 8300
   },
   "sa": {
    "nome": "sanscrito",
-   "codici": 6861
+   "codici": 6873
   },
   "bo": {
    "nome": "tibetano",
@@ -70,31 +74,43 @@
   },
   "en": {
    "nome": "inglese",
-   "codici": 5847
-  },
-  "he": {
-   "nome": "ebraico",
-   "codici": 5687
+   "codici": 6030
   },
   "it": {
    "nome": "italiano",
-   "codici": 5249
+   "codici": 5961
+  },
+  "he": {
+   "nome": "ebraico",
+   "codici": 5760
+  },
+  "pt": {
+   "nome": "portoghese",
+   "codici": 4854
   },
   "ca": {
    "nome": "catalano",
-   "codici": 3428
+   "codici": 3435
+  },
+  "is": {
+   "nome": "islandese e norreno",
+   "codici": 3091
   },
   "fa": {
    "nome": "persiano",
-   "codici": 2213
+   "codici": 2368
   },
   "cop": {
    "nome": "copto",
-   "codici": 1709
+   "codici": 1712
   },
   "tr": {
    "nome": "turco",
-   "codici": 1675
+   "codici": 1702
+  },
+  "cs": {
+   "nome": "ceco",
+   "codici": 1209
   },
   "gez": {
    "nome": "etiopico",
@@ -104,21 +120,33 @@
    "nome": "coreano",
    "codici": 882
   },
+  "cu": {
+   "nome": "slavo ecclesiastico",
+   "codici": 780
+  },
   "syr": {
    "nome": "siriaco",
    "codici": 769
   },
   "nl": {
    "nome": "nederlandese",
-   "codici": 633
+   "codici": 690
+  },
+  "ru": {
+   "nome": "russo",
+   "codici": 451
   },
   "hy": {
    "nome": "armeno",
-   "codici": 352
+   "codici": 382
   },
   "ka": {
    "nome": "georgiano",
    "codici": 266
+  },
+  "da": {
+   "nome": "danese",
+   "codici": 238
   },
   "ms": {
    "nome": "malese",
@@ -128,89 +156,97 @@
    "nome": "occitano",
    "codici": 186
   },
-  "cu": {
-   "nome": "slavo ecclesiastico",
-   "codici": 162
-  },
-  "pt": {
-   "nome": "portoghese",
-   "codici": 160
-  },
-  "ru": {
-   "nome": "russo",
-   "codici": 132
+  "uk": {
+   "nome": "uk",
+   "codici": 59
   },
   "ga": {
    "nome": "irlandese",
    "codici": 53
   },
+  "sv": {
+   "nome": "svedese",
+   "codici": 41
+  },
   "jv": {
    "nome": "giavanese",
    "codici": 35
   },
-  "cs": {
-   "nome": "ceco",
+  "hu": {
+   "nome": "ungherese",
    "codici": 31
-  },
-  "is": {
-   "nome": "islandese e norreno",
-   "codici": 23
   },
   "cy": {
    "nome": "gallese",
-   "codici": 23
+   "codici": 24
   },
-  "pl": {
-   "nome": "polacco",
-   "codici": 20
-  },
-  "sv": {
-   "nome": "svedese",
-   "codici": 19
+  "lt": {
+   "nome": "lt",
+   "codici": 15
   },
   "sla": {
    "nome": "lingue slave (alfabeto cirillico)",
-   "codici": 11
+   "codici": 13
   },
-  "hu": {
-   "nome": "ungherese",
-   "codici": 10
+  "be": {
+   "nome": "be",
+   "codici": 6
   },
-  "da": {
-   "nome": "danese",
-   "codici": 8
+  "hr": {
+   "nome": "hr",
+   "codici": 3
+  },
+  "ro": {
+   "nome": "ro",
+   "codici": 3
   },
   "gl": {
    "nome": "galego",
    "codici": 2
+  },
+  "yi": {
+   "nome": "yi",
+   "codici": 2
+  },
+  "sk": {
+   "nome": "sk",
+   "codici": 2
+  },
+  "bg": {
+   "nome": "bg",
+   "codici": 1
+  },
+  "et": {
+   "nome": "et",
+   "codici": 1
   }
  },
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 5790
+   "codici": 6152
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 5443
+   "codici": 5807
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 12042
+   "codici": 13161
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 2571
+   "codici": 2918
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 390240
+   "codici": 427192
   },
   "carta": {
    "nome": "carte manoscritte",
-   "codici": 624
+   "codici": 692
   }
  },
  "autori": {
@@ -218,13 +254,13 @@
    "nome": "Plauto",
    "latino": "Plautus",
    "categoria": "classico-latino",
-   "codici": 74
+   "codici": 77
   },
   "terenzio": {
    "nome": "Terenzio",
    "latino": "Terentius",
    "categoria": "classico-latino",
-   "codici": 199
+   "codici": 210
   },
   "lucrezio": {
    "nome": "Lucrezio",
@@ -236,127 +272,127 @@
    "nome": "Catullo",
    "latino": "Catullus",
    "categoria": "classico-latino",
-   "codici": 52
+   "codici": 56
   },
   "cicerone": {
    "nome": "Cicerone",
    "latino": "Cicero",
    "categoria": "classico-latino",
-   "codici": 1028
+   "codici": 1096
   },
   "cesare": {
    "nome": "Cesare",
    "latino": "Caesar",
    "categoria": "classico-latino",
-   "codici": 121
+   "codici": 132
   },
   "sallustio": {
    "nome": "Sallustio",
    "latino": "Sallustius",
    "categoria": "classico-latino",
-   "codici": 188
+   "codici": 193
   },
   "virgilio": {
    "nome": "Virgilio",
    "latino": "Vergilius",
    "categoria": "classico-latino",
-   "codici": 427
+   "codici": 454
   },
   "orazio": {
    "nome": "Orazio",
    "latino": "Horatius",
    "categoria": "classico-latino",
-   "codici": 239
+   "codici": 253
   },
   "tibullo": {
    "nome": "Tibullo",
    "latino": "Tibullus",
    "categoria": "classico-latino",
-   "codici": 54
+   "codici": 56
   },
   "properzio": {
    "nome": "Properzio",
    "latino": "Propertius",
    "categoria": "classico-latino",
-   "codici": 37
+   "codici": 38
   },
   "ovidio": {
    "nome": "Ovidio",
    "latino": "Ovidius",
    "categoria": "classico-latino",
-   "codici": 508
+   "codici": 530
   },
   "livio": {
    "nome": "Livio",
    "latino": "Livius",
    "categoria": "classico-latino",
-   "codici": 241
+   "codici": 249
   },
   "seneca": {
    "nome": "Seneca",
    "latino": "Seneca",
    "categoria": "classico-latino",
-   "codici": 417
+   "codici": 443
   },
   "lucano": {
    "nome": "Lucano",
    "latino": "Lucanus",
    "categoria": "classico-latino",
-   "codici": 144
+   "codici": 152
   },
   "persio": {
    "nome": "Persio",
    "latino": "Persius",
    "categoria": "classico-latino",
-   "codici": 103
+   "codici": 107
   },
   "giovenale": {
    "nome": "Giovenale",
    "latino": "Iuvenalis",
    "categoria": "classico-latino",
-   "codici": 134
+   "codici": 136
   },
   "marziale": {
    "nome": "Marziale",
    "latino": "Martialis",
    "categoria": "classico-latino",
-   "codici": 42
+   "codici": 43
   },
   "stazio": {
    "nome": "Stazio",
    "latino": "Statius",
    "categoria": "classico-latino",
-   "codici": 111
+   "codici": 121
   },
   "plinio-vecchio": {
    "nome": "Plinio il Vecchio",
    "latino": "Plinius maior",
    "categoria": "classico-latino",
-   "codici": 153
+   "codici": 163
   },
   "plinio-giovane": {
    "nome": "Plinio il Giovane",
    "latino": "Plinius minor",
    "categoria": "classico-latino",
-   "codici": 38
+   "codici": 40
   },
   "tacito": {
    "nome": "Tacito",
    "latino": "Tacitus",
    "categoria": "classico-latino",
-   "codici": 33
+   "codici": 45
   },
   "svetonio": {
    "nome": "Svetonio",
    "latino": "Suetonius",
    "categoria": "classico-latino",
-   "codici": 92
+   "codici": 96
   },
   "quintiliano": {
    "nome": "Quintiliano",
    "latino": "Quintilianus",
    "categoria": "classico-latino",
-   "codici": 97
+   "codici": 98
   },
   "apuleio": {
    "nome": "Apuleio",
@@ -374,79 +410,79 @@
    "nome": "Claudiano",
    "latino": "Claudianus",
    "categoria": "classico-latino",
-   "codici": 71
+   "codici": 72
   },
   "prisciano": {
    "nome": "Prisciano",
    "latino": "Priscianus",
    "categoria": "classico-latino",
-   "codici": 223
+   "codici": 235
   },
   "donato": {
    "nome": "Donato",
    "latino": "Donatus",
    "categoria": "classico-latino",
-   "codici": 153
+   "codici": 182
   },
   "servio": {
    "nome": "Servio",
    "latino": "Servius",
    "categoria": "classico-latino",
-   "codici": 121
+   "codici": 127
   },
   "macrobio": {
    "nome": "Macrobio",
    "latino": "Macrobius",
    "categoria": "classico-latino",
-   "codici": 133
+   "codici": 139
   },
   "boezio": {
    "nome": "Boezio",
    "latino": "Boethius",
    "categoria": "classico-latino",
-   "codici": 648
+   "codici": 674
   },
   "ausonio": {
    "nome": "Ausonio",
    "latino": "Ausonius",
    "categoria": "classico-latino",
-   "codici": 47
+   "codici": 50
   },
   "valerio-massimo": {
    "nome": "Valerio Massimo",
    "latino": "Valerius Maximus",
    "categoria": "classico-latino",
-   "codici": 118
+   "codici": 127
   },
   "curzio-rufo": {
    "nome": "Curzio Rufo",
    "latino": "Curtius Rufus",
    "categoria": "classico-latino",
-   "codici": 66
+   "codici": 70
   },
   "giustino": {
    "nome": "Giustino",
    "latino": "Iustinus",
    "categoria": "classico-latino",
-   "codici": 44
+   "codici": 46
   },
   "floro": {
    "nome": "Floro",
    "latino": "Florus",
    "categoria": "classico-latino",
-   "codici": 25
+   "codici": 26
   },
   "eutropio": {
    "nome": "Eutropio",
    "latino": "Eutropius",
    "categoria": "classico-latino",
-   "codici": 36
+   "codici": 37
   },
   "vegezio": {
    "nome": "Vegezio",
    "latino": "Vegetius",
    "categoria": "classico-latino",
-   "codici": 90
+   "codici": 93
   },
   "columella": {
    "nome": "Columella",
@@ -464,13 +500,13 @@
    "nome": "Vitruvio",
    "latino": "Vitruvius",
    "categoria": "classico-latino",
-   "codici": 34
+   "codici": 38
   },
   "frontino": {
    "nome": "Frontino",
    "latino": "Frontinus",
    "categoria": "classico-latino",
-   "codici": 30
+   "codici": 32
   },
   "gellio": {
    "nome": "Aulo Gellio",
@@ -488,7 +524,7 @@
    "nome": "Silio Italico",
    "latino": "Silius Italicus",
    "categoria": "classico-latino",
-   "codici": 23
+   "codici": 25
   },
   "manilio": {
    "nome": "Manilio",
@@ -500,13 +536,13 @@
    "nome": "Fedro",
    "latino": "Phaedrus",
    "categoria": "classico-latino",
-   "codici": 5
+   "codici": 7
   },
   "aviano": {
    "nome": "Aviano",
    "latino": "Avianus",
    "categoria": "classico-latino",
-   "codici": 24
+   "codici": 26
   },
   "avieno": {
    "nome": "Avieno",
@@ -524,7 +560,7 @@
    "nome": "Solino",
    "latino": "Solinus",
    "categoria": "classico-latino",
-   "codici": 69
+   "codici": 77
   },
   "celso": {
    "nome": "Celso",
@@ -536,7 +572,7 @@
    "nome": "Cornelio Nepote",
    "latino": "Cornelius Nepos",
    "categoria": "classico-latino",
-   "codici": 20
+   "codici": 23
   },
   "velleio": {
    "nome": "Velleio Patercolo",
@@ -548,7 +584,7 @@
    "nome": "Historia Augusta",
    "latino": "Historia Augusta",
    "categoria": "classico-latino",
-   "codici": 7
+   "codici": 9
   },
   "calpurnio": {
    "nome": "Calpurnio Siculo",
@@ -560,25 +596,25 @@
    "nome": "Disticha Catonis",
    "latino": "Disticha Catonis",
    "categoria": "classico-latino",
-   "codici": 51
+   "codici": 59
   },
   "catone": {
    "nome": "Catone il Censore",
    "latino": "Cato maior",
    "categoria": "classico-latino",
-   "codici": 17
+   "codici": 19
   },
   "pomponio-mela": {
    "nome": "Pomponio Mela",
    "latino": "Pomponius Mela",
    "categoria": "classico-latino",
-   "codici": 32
+   "codici": 33
   },
   "igino": {
    "nome": "Igino",
    "latino": "Hyginus",
    "categoria": "classico-latino",
-   "codici": 37
+   "codici": 38
   },
   "censorino": {
    "nome": "Censorino",
@@ -590,13 +626,13 @@
    "nome": "Festo",
    "latino": "Festus",
    "categoria": "classico-latino",
-   "codici": 25
+   "codici": 26
   },
   "nonio": {
    "nome": "Nonio Marcello",
    "latino": "Nonius Marcellus",
    "categoria": "classico-latino",
-   "codici": 38
+   "codici": 39
   },
   "carisio": {
    "nome": "Carisio",
@@ -608,7 +644,7 @@
    "nome": "Palladio",
    "latino": "Palladius",
    "categoria": "classico-latino",
-   "codici": 38
+   "codici": 40
   },
   "apicio": {
    "nome": "Apicio",
@@ -626,31 +662,31 @@
    "nome": "Ilias Latina",
    "latino": "Ilias Latina",
    "categoria": "classico-latino",
-   "codici": 13
+   "codici": 14
   },
   "darete": {
    "nome": "Darete Frigio",
    "latino": "Dares Phrygius",
    "categoria": "classico-latino",
-   "codici": 37
+   "codici": 41
   },
   "ditti": {
    "nome": "Ditti Cretese",
    "latino": "Dictys Cretensis",
    "categoria": "classico-latino",
-   "codici": 15
+   "codici": 16
   },
   "omero": {
    "nome": "Omero",
    "latino": "Homerus",
    "categoria": "classico-greco",
-   "codici": 304
+   "codici": 328
   },
   "esiodo": {
    "nome": "Esiodo",
    "latino": "Hesiodus",
    "categoria": "classico-greco",
-   "codici": 95
+   "codici": 99
   },
   "pindaro": {
    "nome": "Pindaro",
@@ -662,7 +698,7 @@
    "nome": "Saffo",
    "latino": "Sappho",
    "categoria": "classico-greco",
-   "codici": 11
+   "codici": 12
   },
   "alceo": {
    "nome": "Alceo",
@@ -674,7 +710,7 @@
    "nome": "Anacreonte",
    "latino": "Anacreon",
    "categoria": "classico-greco",
-   "codici": 13
+   "codici": 15
   },
   "simonide": {
    "nome": "Simonide",
@@ -704,25 +740,25 @@
    "nome": "Eschilo",
    "latino": "Aeschylus",
    "categoria": "classico-greco",
-   "codici": 40
+   "codici": 44
   },
   "sofocle": {
    "nome": "Sofocle",
    "latino": "Sophocles",
    "categoria": "classico-greco",
-   "codici": 68
+   "codici": 71
   },
   "euripide": {
    "nome": "Euripide",
    "latino": "Euripides",
    "categoria": "classico-greco",
-   "codici": 122
+   "codici": 126
   },
   "aristofane": {
    "nome": "Aristofane",
    "latino": "Aristophanes",
    "categoria": "classico-greco",
-   "codici": 89
+   "codici": 92
   },
   "menandro": {
    "nome": "Menandro",
@@ -734,37 +770,37 @@
    "nome": "Erodoto",
    "latino": "Herodotus",
    "categoria": "classico-greco",
-   "codici": 41
+   "codici": 42
   },
   "tucidide": {
    "nome": "Tucidide",
    "latino": "Thucydides",
    "categoria": "classico-greco",
-   "codici": 56
+   "codici": 57
   },
   "senofonte": {
    "nome": "Senofonte",
    "latino": "Xenophon",
    "categoria": "classico-greco",
-   "codici": 110
+   "codici": 113
   },
   "platone": {
    "nome": "Platone",
    "latino": "Plato",
    "categoria": "classico-greco",
-   "codici": 278
+   "codici": 296
   },
   "aristotele": {
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 1796
+   "codici": 1975
   },
   "teofrasto": {
    "nome": "Teofrasto",
    "latino": "Theophrastus",
    "categoria": "classico-greco",
-   "codici": 94
+   "codici": 98
   },
   "lisia": {
    "nome": "Lisia",
@@ -776,13 +812,13 @@
    "nome": "Isocrate",
    "latino": "Isocrates",
    "categoria": "classico-greco",
-   "codici": 62
+   "codici": 65
   },
   "demostene": {
    "nome": "Demostene",
    "latino": "Demosthenes",
    "categoria": "classico-greco",
-   "codici": 129
+   "codici": 132
   },
   "eschine": {
    "nome": "Eschine",
@@ -824,13 +860,13 @@
    "nome": "Diodoro Siculo",
    "latino": "Diodorus Siculus",
    "categoria": "classico-greco",
-   "codici": 46
+   "codici": 48
   },
   "dionigi-alicarnasso": {
    "nome": "Dionigi di Alicarnasso",
    "latino": "Dionysius Halicarnassensis",
    "categoria": "classico-greco",
-   "codici": 14
+   "codici": 18
   },
   "strabone": {
    "nome": "Strabone",
@@ -842,19 +878,19 @@
    "nome": "Plutarco",
    "latino": "Plutarchus",
    "categoria": "classico-greco",
-   "codici": 285
+   "codici": 291
   },
   "luciano": {
    "nome": "Luciano di Samosata",
    "latino": "Lucianus",
    "categoria": "classico-greco",
-   "codici": 101
+   "codici": 114
   },
   "pausania": {
    "nome": "Pausania",
    "latino": "Pausanias",
    "categoria": "classico-greco",
-   "codici": 6
+   "codici": 7
   },
   "arriano": {
    "nome": "Arriano",
@@ -878,13 +914,13 @@
    "nome": "Teocrito",
    "latino": "Theocritus",
    "categoria": "classico-greco",
-   "codici": 60
+   "codici": 61
   },
   "callimaco": {
    "nome": "Callimaco",
    "latino": "Callimachus",
    "categoria": "classico-greco",
-   "codici": 21
+   "codici": 22
   },
   "arato": {
    "nome": "Arato",
@@ -902,7 +938,7 @@
    "nome": "Oppiano",
    "latino": "Oppianus",
    "categoria": "classico-greco",
-   "codici": 43
+   "codici": 44
   },
   "quinto-smirneo": {
    "nome": "Quinto Smirneo",
@@ -920,31 +956,31 @@
    "nome": "Galeno",
    "latino": "Galenus",
    "categoria": "classico-greco",
-   "codici": 483
+   "codici": 498
   },
   "ippocrate": {
    "nome": "Ippocrate",
    "latino": "Hippocrates",
    "categoria": "classico-greco",
-   "codici": 368
+   "codici": 386
   },
   "tolomeo": {
    "nome": "Tolomeo",
    "latino": "Ptolemaeus",
    "categoria": "classico-greco",
-   "codici": 225
+   "codici": 228
   },
   "euclide": {
    "nome": "Euclide",
    "latino": "Euclides",
    "categoria": "classico-greco",
-   "codici": 207
+   "codici": 216
   },
   "archimede": {
    "nome": "Archimede",
    "latino": "Archimedes",
    "categoria": "classico-greco",
-   "codici": 32
+   "codici": 33
   },
   "dionisio-trace": {
    "nome": "Dionisio Trace",
@@ -956,13 +992,13 @@
    "nome": "Apollonio Discolo",
    "latino": "Apollonius Dyscolus",
    "categoria": "classico-greco",
-   "codici": 28
+   "codici": 29
   },
   "erodiano": {
    "nome": "Erodiano",
    "latino": "Herodianus",
    "categoria": "classico-greco",
-   "codici": 40
+   "codici": 41
   },
   "efestione": {
    "nome": "Efestione",
@@ -980,13 +1016,13 @@
    "nome": "Suda",
    "latino": "Suda",
    "categoria": "classico-greco",
-   "codici": 22
+   "codici": 23
   },
   "fozio": {
    "nome": "Fozio",
    "latino": "Photius",
    "categoria": "classico-greco",
-   "codici": 86
+   "codici": 88
   },
   "arpocrazione": {
    "nome": "Arpocrazione",
@@ -1010,13 +1046,13 @@
    "nome": "Epitteto",
    "latino": "Epictetus",
    "categoria": "classico-greco",
-   "codici": 33
+   "codici": 35
   },
   "marco-aurelio": {
    "nome": "Marco Aurelio",
    "latino": "Marcus Aurelius",
    "categoria": "classico-greco",
-   "codici": 5
+   "codici": 6
   },
   "plotino": {
    "nome": "Plotino",
@@ -1028,13 +1064,13 @@
    "nome": "Porfirio",
    "latino": "Porphyrius",
    "categoria": "classico-greco",
-   "codici": 220
+   "codici": 226
   },
   "proclo": {
    "nome": "Proclo",
    "latino": "Proclus",
    "categoria": "classico-greco",
-   "codici": 172
+   "codici": 173
   },
   "giamblico": {
    "nome": "Giamblico",
@@ -1058,7 +1094,7 @@
    "nome": "Giuliano imperatore",
    "latino": "Iulianus Imperator",
    "categoria": "classico-greco",
-   "codici": 38
+   "codici": 40
   },
   "caritone": {
    "nome": "Caritone",
@@ -1088,19 +1124,19 @@
    "nome": "Eliodoro",
    "latino": "Heliodorus",
    "categoria": "classico-greco",
-   "codici": 4
+   "codici": 5
   },
   "esopo": {
    "nome": "Esopo",
    "latino": "Aesopus",
    "categoria": "classico-greco",
-   "codici": 101
+   "codici": 114
   },
   "flavio-giuseppe": {
    "nome": "Flavio Giuseppe",
    "latino": "Flavius Iosephus",
    "categoria": "classico-greco",
-   "codici": 219
+   "codici": 229
   },
   "diogene-laerzio": {
    "nome": "Diogene Laerzio",
@@ -1118,19 +1154,19 @@
    "nome": "Eliano",
    "latino": "Aelianus",
    "categoria": "classico-greco",
-   "codici": 14
+   "codici": 16
   },
   "ermogene": {
    "nome": "Ermogene",
    "latino": "Hermogenes",
    "categoria": "classico-greco",
-   "codici": 29
+   "codici": 30
   },
   "aftonio": {
    "nome": "Aftonio",
    "latino": "Aphthonius",
    "categoria": "classico-greco",
-   "codici": 38
+   "codici": 40
   },
   "filostrato": {
    "nome": "Filostrato",
@@ -1142,121 +1178,121 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 2550
+   "codici": 2721
   },
   "girolamo": {
    "nome": "Girolamo",
    "latino": "Hieronymus",
    "categoria": "cristiano",
-   "codici": 1198
+   "codici": 1275
   },
   "ambrogio": {
    "nome": "Ambrogio",
    "latino": "Ambrosius",
    "categoria": "cristiano",
-   "codici": 405
+   "codici": 431
   },
   "gregorio-magno": {
    "nome": "Gregorio Magno",
    "latino": "Gregorius Magnus",
    "categoria": "cristiano",
-   "codici": 806
+   "codici": 908
   },
   "basilio": {
    "nome": "Basilio Magno",
    "latino": "Basilius Magnus",
    "categoria": "cristiano",
-   "codici": 523
+   "codici": 529
   },
   "gregorio-nazianzeno": {
    "nome": "Gregorio di Nazianzo",
    "latino": "Gregorius Nazianzenus",
    "categoria": "cristiano",
-   "codici": 473
+   "codici": 475
   },
   "giovanni-crisostomo": {
    "nome": "Giovanni Crisostomo",
    "latino": "Iohannes Chrysostomus",
    "categoria": "cristiano",
-   "codici": 1075
+   "codici": 1134
   },
   "bibbia": {
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 5233
+   "codici": 5899
   },
   "prudenzio": {
    "nome": "Prudenzio",
    "latino": "Prudentius",
    "categoria": "cristiano",
-   "codici": 96
+   "codici": 106
   },
   "sedulio": {
    "nome": "Sedulio",
    "latino": "Sedulius",
    "categoria": "cristiano",
-   "codici": 72
+   "codici": 77
   },
   "giovenco": {
    "nome": "Giovenco",
    "latino": "Iuvencus",
    "categoria": "cristiano",
-   "codici": 19
+   "codici": 21
   },
   "aratore": {
    "nome": "Aratore",
    "latino": "Arator",
    "categoria": "cristiano",
-   "codici": 28
+   "codici": 31
   },
   "lattanzio": {
    "nome": "Lattanzio",
    "latino": "Lactantius",
    "categoria": "cristiano",
-   "codici": 104
+   "codici": 110
   },
   "tertulliano": {
    "nome": "Tertulliano",
    "latino": "Tertullianus",
    "categoria": "cristiano",
-   "codici": 43
+   "codici": 48
   },
   "cipriano": {
    "nome": "Cipriano",
    "latino": "Cyprianus",
    "categoria": "cristiano",
-   "codici": 52
+   "codici": 53
   },
   "ilario": {
    "nome": "Ilario di Poitiers",
    "latino": "Hilarius Pictaviensis",
    "categoria": "cristiano",
-   "codici": 64
+   "codici": 66
   },
   "cassiodoro": {
    "nome": "Cassiodoro",
    "latino": "Cassiodorus",
    "categoria": "cristiano",
-   "codici": 181
+   "codici": 212
   },
   "origene": {
    "nome": "Origene",
    "latino": "Origenes",
    "categoria": "cristiano",
-   "codici": 309
+   "codici": 330
   },
   "eusebio": {
    "nome": "Eusebio di Cesarea",
    "latino": "Eusebius Caesariensis",
    "categoria": "cristiano",
-   "codici": 289
+   "codici": 297
   },
   "atanasio": {
    "nome": "Atanasio",
    "latino": "Athanasius",
    "categoria": "cristiano",
-   "codici": 347
+   "codici": 349
   },
   "gregorio-nisseno": {
    "nome": "Gregorio di Nissa",
@@ -1268,61 +1304,61 @@
    "nome": "Giovanni Damasceno",
    "latino": "Iohannes Damascenus",
    "categoria": "cristiano",
-   "codici": 294
+   "codici": 301
   },
   "dionigi-areopagita": {
    "nome": "Dionigi Areopagita",
    "latino": "Dionysius Areopagita",
    "categoria": "cristiano",
-   "codici": 136
+   "codici": 146
   },
   "isidoro": {
    "nome": "Isidoro di Siviglia",
    "latino": "Isidorus Hispalensis",
    "categoria": "medievale",
-   "codici": 601
+   "codici": 662
   },
   "beda": {
    "nome": "Beda",
    "latino": "Beda Venerabilis",
    "categoria": "medievale",
-   "codici": 684
+   "codici": 716
   },
   "alcuino": {
    "nome": "Alcuino",
    "latino": "Alcuinus",
    "categoria": "medievale",
-   "codici": 273
+   "codici": 294
   },
   "rabano-mauro": {
    "nome": "Rabano Mauro",
    "latino": "Hrabanus Maurus",
    "categoria": "medievale",
-   "codici": 202
+   "codici": 216
   },
   "paolo-diacono": {
    "nome": "Paolo Diacono",
    "latino": "Paulus Diaconus",
    "categoria": "medievale",
-   "codici": 168
+   "codici": 183
   },
   "pietro-lombardo": {
    "nome": "Pietro Lombardo",
    "latino": "Petrus Lombardus",
    "categoria": "medievale",
-   "codici": 282
+   "codici": 343
   },
   "tommaso-aquino": {
    "nome": "Tommaso d'Aquino",
    "latino": "Thomas de Aquino",
    "categoria": "medievale",
-   "codici": 375
+   "codici": 503
   },
   "bernardo": {
    "nome": "Bernardo di Chiaravalle",
    "latino": "Bernardus Claraevallensis",
    "categoria": "medievale",
-   "codici": 326
+   "codici": 370
   }
  },
  "biblioteche": [
@@ -1369,6 +1405,8 @@
   "Archivio parrocchiale, Torre",
   "Archivio storico della città di Kyoto, documenti della famiglia Yamamoto (京都市歴史資料館 山本家資料)",
   "Archivio storico della città di Takeo, documenti della famiglia Nabeshima di Takeo (武雄市歴史資料館 武雄鍋島家資料)",
+  "Archiwum i Biblioteka Krakowskiej Kapituły Katedralnej, Cracovia",
+  "Arcibiskupský zámek a zahrady Kroměříž",
   "armarium codicum bibliophilorum, Utopia",
   "Associazione giapponese di agopuntura e moxibustione (日本鍼灸師会), Tokyo",
   "Associazione Kanze di Kyoto, fondo Asano (京都観世会 浅野文庫)",
@@ -1387,7 +1425,10 @@
   "Benediktinerinnenkloster, Hermetschwil",
   "Benediktinerkloster, Mariastein",
   "Benediktinerkollegium, Sarnen",
+  "Benediktinské opatství Rajhrad",
+  "Benediktinské opatství Rajhrad, Brno",
   "Bernisches Historisches Museum, Cambridge",
+  "Bibioteka Wyższego Seminarium Duchownego w Płocku",
   "Bible Society, Cambridge",
   "Biblioteca Apostolica Vaticana, Città del Vaticano",
   "Biblioteca Apostolica Vaticana, Vatikan",
@@ -1456,6 +1497,7 @@
   "Biblioteca generale della città di Fukuoka (Museo letterario), documenti e manoscritti di Ueno Eishin (福岡市総合図書館（福岡市文学館） 上野英信資料・原稿)",
   "Biblioteca Iwase della città di Nishio (西尾市岩瀬文庫)",
   "Biblioteca Izawa (射和文庫), Matsusaka",
+  "Biblioteca Judeţeană `George Bariţiu` Braşov, România",
   "Biblioteca Ken'ikai (研医会図書館), Tokyo",
   "Biblioteca Malatestiana, Cesena",
   "Biblioteca Masamune (正宗文庫), Bizen",
@@ -1463,6 +1505,8 @@
   "Biblioteca Medicea Laurenziana, Firenze",
   "Biblioteca Museu Víctor Balaguer, Vilanova i la Geltrú",
   "Biblioteca Nacional de Chile, Santiago (Cile)",
+  "Biblioteca Nacional de España, Madrid",
+  "Biblioteca Nacional de Portugal, Lisbona",
   "Biblioteca Nacional de Venezuela, Caracas (Venezuela)",
   "Biblioteca Nazionale Centrale di Firenze",
   "Biblioteca nazionale di Corea (韓国国立中央図書館), Seul (Corea del Sud)",
@@ -1482,7 +1526,23 @@
   "Biblioteca statale del Monumento nazionale di Montecassino, Montecassino (Cassino)",
   "Biblioteca Universitaria di Bologna",
   "Biblioteca Vallicelliana, Roma",
+  "Biblioteka Bobolanum, Varsavia",
+  "Biblioteka Diecezjalna im. Biskupa Jana Bernarda Szlagi w Pelplinie",
+  "Biblioteka Diecezjalna w Sandomierzu",
+  "Biblioteka Główna Akademii Górniczo-Hutniczej im. Stanisława Staszica w Krakowie, Cracovia",
+  "Biblioteka Jagiellońska, Cracovia",
+  "Biblioteka Książąt Czartoryskich - oddział Muzeum Narodowego w Krakowie, Cracovia",
+  "Biblioteka Miejska im. Wiktora Kulerskiego w Grudziądzu",
+  "Biblioteka Narodowa, Varsavia",
+  "Biblioteka Uniwersytecka Katolickiego Uniwersytetu Lubelskiego, Lublino",
+  "Biblioteka Uniwersytecka w Toruniu, Toruń",
+  "Biblioteka Uniwersytecka w Warszawie, Varsavia",
+  "Biblioteka Uniwersytecka w Wrocławiu, Breslavia",
+  "Biblioteka Uniwersytecka we Wrocławiu, Breslavia",
+  "Biblioteka Uniwersytetu Zielonogórskiego, Zielona Góra",
   "Bibliotheca Sefarad, Montreux",
+  "Bibliothek",
+  "Bibliothek, St. Pölten",
   "Bibliothèque cantonale et universitaire - Lausanne",
   "Bibliothèque cantonale et universitaire / Kantons- und Universitätsbibliothek, Fribourg/Freiburg",
   "Bibliothèque cantonale jurassienne, Porrentruy",
@@ -1530,6 +1590,7 @@
   "Bibliothèque Stanislas de Nancy",
   "Bibliothèque universitaire des langues et civilisations (BULAC)",
   "Bibliothèques d'Amiens métropole",
+  "Biblothek, St. Pölten",
   "Bischöfliches Archiv des Bistums Basel, Solothurn",
   "Bodleian Library Callard facsimile, Oxford",
   "Bodleian Library Callard facsimiles, Oxford",
@@ -1556,6 +1617,9 @@
   "Centro internazionale di ricerca per gli studi giapponesi (国際日本文化研究センター), Kyoto",
   "Centro internazionale di ricerca per gli studi giapponesi, fondo Sōda (国際日本文化研究センター 宗田文庫), Kyoto",
   "Centro per la cultura alimentare Ajinomoto (味の素食の文化センター), Tokyo",
+  "Česká zemědělská univerzita v Praze, Katedra botaniky a fyziologie rostlin, Praga",
+  "České farmaceutické muzeum, Kuks",
+  "České muzeum stříbra, Kutná Hora",
   "Chapitre de Saint Thomas",
   "Chapitre de Saint Thomas, Fonds ancien de la Médiathèque protestante de Strasbourg",
   "Chesa Planta Samedan",
@@ -1564,6 +1628,7 @@
   "Christ Church, Oxford",
   "Christ's College Library, Cambridge",
   "CIRAD",
+  "Cisterciácké opatství Vyšší Brod",
   "City College of New York",
   "Clonalis House, Castlerea",
   "codices restituti, [sine loco]",
@@ -1596,6 +1661,8 @@
   "Cour de Cassation",
   "Couvent des Cordeliers/Franziskanerkloster, Fribourg/Freiburg",
   "Dar al-Kutub, Cambridge",
+  "Den Arnamagnæanske Samling, Københavns Universitet, Copenaghen",
+  "Department of Manuscripts and Rare Books, Budapest",
   "Det Kongelige Bibliotek, Copenaghen",
   "Deutschordensmuseum, Bad Mergentheim",
   "Dieppe, Bibliothèque Camille Saint-Saëns",
@@ -1612,7 +1679,10 @@
   "Eisenbibliothek, Schlatt",
   "Elizabethan Club, New Haven",
   "Erzbischöfliche Diözesan- und Dombibliothek Köln mit Bibliothek St. Albertus Magnus",
+  "Etnologický ústav AV ČR, v.v.i., Praga",
   "Exeter College, Oxford",
+  "Expozice Knihovny Latinské školy, Jáchymov",
+  "Expozitura Latinské školy, Jáchymov",
   "Fondation Auguste Escoffier",
   "Fondation Barbier-Mueller pour l'étude de la poésie italienne de la Renaissance, Genève",
   "Fondation Martin Bodmer, Cologny",
@@ -1622,7 +1692,10 @@
   "Fordham University, New York",
   "Forschungsbibliothek Gotha",
   "Forschungsbibliothek, Gotha",
+  "Františkánská knihovna, Cheb",
   "Free Library of Philadelphia",
+  "Fundacja M.I.A.S.T.O. Białystok",
+  "Galerie Středočeského kraje, Kutná Hora",
   "Gemeinde Flawil",
   "General Theological Seminary, New York",
   "Generallandesarchiv, Karlsruhe",
@@ -1633,10 +1706,18 @@
   "Harris Manchester College, Oxford",
   "Harry Ransom Center, University of Texas, Austin",
   "Harvard University, Houghton Library, Cambridge (Massachusetts)",
+  "Hau-, Hof u. Staatsarchiv, Vienna",
+  "Hau-, Hof- u. Staatsarchiv, Vienna",
+  "Haus-, Hof u. Staatsarchiv, Vienna",
+  "Haus-, Hof- u. Staatsarchiv, Vienna",
   "Heidelberg",
   "Heidelberger Papyrussammlung",
   "Herzog August Bibliothek Wolfenbüttel",
+  "HHStA, Vienna",
+  "Historický ústav Akademie věd ČR, v. v. i., Praga",
   "Historisches Archiv der Stadt Köln",
+  "Hórnikova lužickosrbská knihovna, Praga",
+  "Husitské muzeum v Táboře, Tábor",
   "Indiana University, Lilly Library, Bloomington",
   "Institut Bibliothèque Polonaise de Paris",
   "Irish Jesuit Archives, Dublino",
@@ -1697,9 +1778,12 @@
   "Istituto nazionale di letteratura giapponese, scritti della famiglia Yoshida del feudo di Usuki (国文学研究資料館 臼杵藩吉田家歴代詩文), Tachikawa",
   "Istituto nazionale di lingua giapponese e linguistica (国立国語研究所), Tachikawa",
   "Istituto superiore di tecnologia di Toyota (豊田工業高等専門学校図書館)",
+  "Ivan Vazov Public Library, Plovdiv",
   "Jagiellonian Library, Krakow",
   "Jatindramohan Sangrahashala, National Council of Education, Bengal (copie digitali di Penn), Kolkata",
   "Jesus College, Oxford",
+  "jetzt Wien ÖNB Cod. Ser.n. 2595, Lilienfeld",
+  "Jihočeská vědecká knihovna v Českých Budějovicích, Zlatá Koruna",
   "John Rylands Research Institute and Library, University of Manchester",
   "Kantonsbibliothek Appenzell Ausserrhoden, Trogen",
   "Kantonsbibliothek Thurgau, Frauenfeld",
@@ -1708,15 +1792,35 @@
   "KBR (Royal Library of Belgium), Bruxelles",
   "Keble College, Oxford",
   "King's Inns, Dublino",
+  "Klášter premonstrátů Teplá, knihovna",
   "Kloster Maria der Engel Wattwil",
+  "Knihovna Akademie věd České republiky, Praga",
+  "Knihovna AV ČR, Praga",
+  "Knihovna AV ČR, v. v. i., Praga",
+  "Knihovna benediktinů v Rajhradě",
+  "Knihovna Kanonie premonstrátů v Nové Říši, Nová Říše",
+  "Knihovna Náraodního muzea, Praga",
+  "Knihovna Národního muzea - Nostická knihovna, Praga",
+  "Knihovna národního muzea v Praze, Praga",
+  "Knihovna Národního muzea v Praze, Praga",
+  "Knihovna Národního muzea, Praga",
+  "Knihovna Západočeského muzea v Plzni, Plzeň",
   "Köln",
   "Konzernarchiv Georg Fischer AG, Schaffhausen",
   "Korporation Luzern",
+  "Krajské muzeum Karlovarského kraje, Muzeum Karlovy Vary",
+  "Královská kanonie premonstrátů na Strahově, Praga",
+  "Královská kanonie premonstrátů na Strahově, Praha, Praga",
+  "Královská kolegiátní kapitula sv. Petra a Pavla na Vyšehradě, Praga",
+  "Książnica Zamojska (KC19), Zamość",
+  "Kungl. Biblioteket - Sveriges nationalbiblioteket, Stoccolma",
+  "Kungliga biblioteket, Stoccolma",
   "Kunstsammlungen der Stadt Nürnberg",
   "Kurpfälzisches Museum der Stadt Heidelberg",
   "Kurpfälzisches Museum Heidelberg",
   "La Bibliothèque juive « Gérard Nordmann », Genève",
   "Landesarchiv Appenzell Innerrhoden",
+  "Landsbókasafn Íslands – Háskólabókasafn, Reykjavík",
   "Le Labo - Cambrai",
   "Le Labo Cambrai - Cambrai",
   "Leihgabe der Paul Wolfgang Merkel’schen Familienstiftung, Germanisches Nationalmuseum Nürnberg",
@@ -1725,14 +1829,18 @@
   "LIBRA, Philadelphia",
   "Libraries, Stanford",
   "Library of the Hungarian Academy of Sciences, Cambridge",
+  "Library of the Lithuanian Academy of Sciences, Manuscript Department, Vilnius",
   "Liceo prefetturale Sasayama Hōmei, fondo Aoyama (兵庫県立篠山鳳鳴高等学校 青山文庫), Tanba-Sasayama",
   "Liceo Tōō Gijuku, fondo Oku (東奥義塾高等学校 奥文庫), Hirosaki",
+  "Lietuvos mokslų akademijos biblioteka, Rankraščių skyrius, Vilnius",
   "Lillian Goldman Law Library, New Haven",
   "Lincoln College, Oxford",
+  "Lyceálna knižnica v Kežmarku, Kežmarok",
   "Magdalen College, Oxford",
   "Maisons de Victor Hugo, Paris / Guernesey",
   "Marsh's Library, Dublino",
   "Maynooth University",
+  "MBP Kalisz",
   "Médiathèque André Malraux, Strasbourg",
   "Médiathèque de Troyes Champagne Métropole",
   "Médiathèque Jean-Louis-Curtis Orthez",
@@ -1744,11 +1852,19 @@
   "Medieval Mile Museum, Kilkenny",
   "Mémoires d'Ici, Saint-Imier",
   "Merton College, Oxford",
+  "Městská knihovna v Praze, Praga",
+  "Městské muzeum a galerie Polička",
+  "Městské muzeum Horažďovice",
+  "Miejska Biblioteka Publiczna w Sanoku",
   "Ministère des Affaires étrangères",
   "Ministère des Affaires étrangères, Rés",
   "Monastero di Rousanou, Meteore (copie digitali della Biblioteca di Kalambaka), Meteore (Kalambaka)",
   "Monastero di Santa Caterina del Sinai (microfilm della Library of Congress), Sinai (Egitto)",
   "Montpellier Méditerranée Métropole - Médiathèque centrale Emile Zola",
+  "Moravská galerie v Brně, Brno",
+  "Moravská zemská knihovna v Brně, Brno",
+  "Moravské zemské muzeum, Brno",
+  "Moravské zemské muzeum, oddělení dějin hudby MZM, Smetanova 14, 602 00 Brno",
   "Mount Melleray Abbey, Cappoquin",
   "Musée Escoffier de l'Art Culinaire, Centre de documentation",
   "Musée Escoffier de l'Art Culinaire, Centre de documentation, Villeneuve-Loubet",
@@ -1794,7 +1910,19 @@
   "Museum Library, Philadelphia",
   "Museum of Fine Arts 14.633, Cambridge",
   "Museum of Fine Arts, Cambridge",
+  "Museum of the Bible, Washington, D.C.",
+  "Muzeum a galerie v Prostějově",
+  "Muzeum Brněnska - Památník písemnictví na Moravě, Rajhrad",
+  "Muzeum Brněnska, Rajhrad",
+  "Muzeum Českého ráje v Turnově",
+  "Muzeum hlavního města Prahy, Praga",
+  "Muzeum Jindřichohradecka, Jindřichův Hradec",
+  "Muzeum Karlovy Vary, příspěvková organizace Karlovarského kraje",
+  "Muzeum východních Čech v Hradci Králové, Hradec Králové",
+  "Muzeum Vysočiny Havlíčkův Brod",
+  "Muzeum Vysočiny Třebíč",
   "Nachlass H. Emmenegger, Zentral- und Hochschulbibliothek Luzern",
+  "Nadační fond Historický Cheb",
   "NAF 28710 (1)",
   "NAF 28710 (2)",
   "NAF 28710 (3)",
@@ -1824,20 +1952,47 @@
   "NAF 28710 (27)",
   "NAF 28710 (28)",
   "NAF 28710 (29)",
+  "Národní archiv, knihovna, Praga",
+  "Národní knihovna České republiky, Praga",
+  "Národní knihovna ČR - Slovanská knihovna, Praga",
+  "Národní knihovna ČR – Slovanská knihovna, Praga",
+  "Národní lékařská knihovna Praha, Praga",
+  "Národní pedagogická knihovna Komenského, Praga",
+  "Národní technická knihovna, Praga",
+  "Narodowy Instytut Fryderyka Chopina, Varsavia",
+  "Narodowy Instytut Kultury i Dziedzictwa Wsi, Varsavia",
+  "National and University Library of Slovenia, Lubiana",
   "National Diet Library (国立国会図書館), Tokyo",
+  "National Libary of Romania - Batthyaneum, Alba Iulia",
+  "National Library of Finland, Fragmenta membranea collection, Helsinki",
   "National Library of Ireland, Dublino",
+  "National Library of Romania - Batthayeum, Alba Iulia",
+  "National Library of Romania - Batthyaneum, Alba Iulia",
+  "National Library of Romania- Batthyaneum, Alba Iulia",
+  "National Library of Romania-Batthayneum, Alba Iulia",
+  "National Library of Romania-Batthyaneum, Alba Iulia",
+  "National Library of Romania, Alba Iulia",
+  "National Library of Romania, Bucarest",
   "National Library of Russia, St. Petersburg",
   "National Library of Scotland, Edimburgo",
+  "National Library of the Republic of Kazakhstan, Almaty",
   "National University of Ireland, Galway",
+  "Náttúrufræðistofnun Íslands, Garðabær",
   "Nelson-Atkins Museum of Art, Kansas City",
   "New York University",
   "Newberry Library e Western Michigan University, Chicago",
   "Newberry Library, Chicago",
   "Niedersächsische Staats- und Universitätsbibliothek, Göttingen",
+  "Niemiecki Instytut Historyczny w Warszawie, Varsavia",
   "Nikolaus-Matz-Bibliothek (Kirchenbibliothek), Michelstadt",
   "Nonaka Usaien (野中烏犀圓), Saga",
   "Oberlin College Library, collezione Ainsworth (オーバリン大学図書館 エインズワースコレクション), Oberlin (Stati Uniti)",
+  "Oblastní muzeum a galerie v Mostě",
+  "Oblastní muzeum v Lounech, Louny",
+  "oddělení Třeboň",
   "Ohio University Libraries, Athens (Ohio)",
+  "Okresní muzeum Klatovy",
+  "Okresní muzeum Mladá Boleslav",
   "Osservatorio astronomico nazionale del Giappone (国立天文台図書室), Mitaka",
   "Österreichische Nationalbibliothek, Vienna",
   "Österreichische Nationalbibliothek, Wien",
@@ -1978,27 +2133,39 @@
   "P. Heid. Inv. Kopt. 564 (H. Quecke, Heidelberger Papyrussammlung",
   "P. Heid. Inv. Kopt. 685 (M. Meyer, Heidelberger Papyrussammlung",
   "P. Heid. Inv. Kopt. 686 (A. Kropp, Heidelberger Papyrussammlung",
+  "Památník národního písemnictví - knihovna, Praga",
+  "Památník národního písemnictví (správce), Praga",
   "Parker Library: on long-term deposit at Cambridge University Library",
+  "Parlamentní knihovna, Praga",
   "Paroisse catholique Saint-Laurent, Estavayer-le-Lac",
   "Patriarcato armeno di Gerusalemme (microfilm della Library of Congress)",
   "Patriarcato greco-ortodosso di Gerusalemme (microfilm della Library of Congress)",
   "Pembroke College, Oxford",
   "Pepperdine University, Malibu",
   "Pharmaziemuseum der Universität Basel",
+  "pracoviště Klášter, Nepomuk",
+  "Pražská konzervatoř, Praga",
+  "Pražská konzervatoř, Praha, Praga",
   "Princeton University Library",
   "Private Ownership",
   "Providence Public Library",
+  "Provincie kapucínů v ČR, Kapucínská provinční knihovna, Praha - Hradčany, Praga",
   "Provinzarchiv Schweizer Kapuziner Luzern",
   "Queen's College, Oxford",
   "Real Academia de la Historia, Madrid",
   "Real Biblioteca (Palacio Real), Madrid",
   "Real Biblioteca del Monasterio de El Escorial, San Lorenzo de El Escorial",
+  "Regionální muzeum v Chrudimi",
+  "Regionální muzeum v Litomyšli",
+  "Regionální muzeum v Mikulově",
+  "Regionální muzeum v Teplicích, Teplice",
   "Reichsstadt Nürnberg, Staatsarchiv Nürnberg",
   "Rochester Institute of Technology, Cary Graphic Arts Collection",
   "Romanische Bibliothek des Klosters Disentis",
   "Royal Irish Academy, Dublino",
   "Rutgers University Libraries, New Brunswick (New Jersey)",
   "SAAMS",
+  "Sächsische Landesbibliothek – Staats- und Universitätsbibliothek Dresden",
   "Sächsische Landesbibliothek – Staats- und Universitätsbibliothek, Dresden",
   "Saint John's College, University of Cambridge",
   "Saint Louis University",
@@ -2012,11 +2179,17 @@
   "Schweiz, Dr. Jörn Günther Rare Books AG",
   "Schweizerisches Nationalmuseum, Zürich",
   "Seisa Laboratory, fondo Mayama Seika (星槎ラボラトリー 眞山青果文庫（新制作座旧蔵）), Giappone",
+  "Severočeské muzeum v Liberci, Liberec",
   "Smith College, Northampton (Massachusetts)",
   "Smithsonian National Museum of Asian Art, collezione Gerhard Pulverer (スミソニアン国立アジア美術館 ゲルハルト・プルヴェラー・コレクション), Washington (Stati Uniti)",
   "Société des lettres, sciences et arts de l'Aveyron",
+  "soukromá sbírka NF, Praga",
+  "Soukromá sbírka v Praze, Praga",
+  "soukromá sbírka, Kovačica",
+  "soukromá sbírka, Železný Brod",
   "Special Collections Library, Cambridge",
   "Special Collections, Cambridge",
+  "Special collections, Plovdiv",
   "St Catharine's College Library, Cambridge",
   "St Edmundsbury Cathedral Library, Bury St Edmunds",
   "St John's College A.2.5 and, Oxford",
@@ -2044,21 +2217,26 @@
   "Stadtbibliothek, Schaffhausen",
   "Stadtbibliothek, Zofingen",
   "State Library Victoria, Melbourne (Australia)",
+  "Státní technická knihovna, Praga",
   "Stiftsarchiv (Abtei Pfäfers), St. Gallen",
   "Stiftsbibliothek St. Paul im Lavanttal, St. Paul in Kärnten",
   "Stiftsbibliothek, Einsiedeln",
   "Stiftsbibliothek, Engelberg",
   "Stiftsbibliothek, St. Gallen",
   "Stiftskirche St. Michael, Beromünster",
+  "Stofnun Árna Magnússonar í íslenskum fræðum, Reykjavík",
+  "Studijní a vědecká knihovna Plzeňského kraje",
   "Teatro nazionale del Giappone (国立劇場), Tokyo",
   "Tempio Dōmyōji (道明寺), Fujiidera",
   "Tempio Gansenji (願泉寺), Kaizuka",
   "Tempio Shinpukuji (Hōshōin), fondo Ōsu (北野山真福寺宝生院 大須文庫), Nagoya",
   "Tempio Zentsūji, Sala dei tesori (善通寺宝物館)",
   "Tempio Zuikōji (瑞光寺), Giappone",
+  "Terezín, Praga",
   "The British Library Oriental 2926, Cambridge",
   "The British Library, Cambridge",
   "The British Library, Londra",
+  "The Budapest University of Technology and Economics",
   "The Cleveland Museum of Art",
   "The Historic New Orleans Collection",
   "The Huntington Library, San Marino (California)",
@@ -2274,11 +2452,15 @@
   "Università Waseda, Museo teatrale Tsubouchi, fondo Yasuda (早稲田大学坪内博士記念演劇博物館 安田文庫), Tokyo",
   "Universitat de Barcelona, CRAI Biblioteca de Fons Antic, Barcellona",
   "Universität Heidelberg",
+  "Universitäts- und Landesbibliothek Darmstadt",
   "Universitäts- und Landesbibliothek, Darmstadt",
+  "Universitäts- und Stadtbibliothek, Colonia",
   "Universitätsarchiv, Heidelberg",
   "Universitätsbibliothek Erlangen-Nürnberg",
   "Universitätsbibliothek Heidelberg",
+  "Universitätsbibliothek Johann Christian Senckenberg, Frankfurt am Main",
   "Universitätsbibliothek Leipzig",
+  "Universitätsbibliothek Tübingen",
   "Universitätsbibliothek, Augsburg",
   "Universitätsbibliothek, Basel",
   "Universitätsbibliothek, Frankfurt",
@@ -2291,6 +2473,7 @@
   "University College Dublin, Dublino",
   "University College, Oxford",
   "University Libraries, Pennsylvania",
+  "University Library Budapest",
   "University Library, Cambridge",
   "University of California, Berkeley, Bancroft Library",
   "University of California, Berkeley, C. V. Starr East Asian Library, fondo Mitsui (カリフォルニア大学バークレー校 C.V.スター東アジア図書館 三井文庫), Berkeley (Stati Uniti)",
@@ -2302,18 +2485,39 @@
   "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
   "University of Pennsylvania Libraries, Philadelphia",
   "University of Pennsylvania, Library at the Katz Center (CAJS), Philadelphia",
+  "Univerzita Karlova v Praze, Evangelická teologická fakulta, Praga",
+  "Univerzitná knižnica Bratislava",
+  "Uniwersytet Kardynała Stefana Wyszyńskiego w Warszawie, Varsavia",
+  "Uniwersytet Mikołaja Kopernika - Biblioteka Uniwersytecka, Toruń",
+  "Ústredná knižnica Slovenskej akadémie vied, Bratislava",
+  "Vědecká knihovna v Olomouci",
   "Veneranda Biblioteca Ambrosiana, Milano",
   "Vente Alde, 15 février 2007",
   "Ville de Paris / Bibliothèque historique",
   "Ville de Paris / Bibliothèque historique, BHVP, Rés",
   "Ville de Paris / Fonds Heure joyeuse",
+  "Vlastivědné muzeum a galerie v České Lípě, Česká Lípa",
+  "Vlastivědné muzeum Dr. Hostaše v Klatovech, Klatovy",
+  "Vlastivědné muzeum v Olomouci",
+  "Vojenský historický ústav Praha, Praga",
+  "Východočeské muzeum v Pardubicích, Pardubice",
+  "Výstavní prostory expozice knihovny Latinské školy, Jáchymov",
   "Wellcome Collection, Londra",
   "Western Michigan University, Kalamazoo",
   "Wissenschaftliche Stadtbibliothek Mainz",
   "Wissenschaftliche Stadtbibliothek, Mainz",
+  "Wojewódzka Biblioteka Publiczna – Książnica Kopernikańska w Toruniu, Toruń",
+  "Wojewódzka Biblioteka Publiczna w Lublinie, Lublino",
+  "Wojewódzka i Miejska Biblioteka Publiczna w Bydgoszczy",
+  "Zámek Kynžvart, Lázně Kynžvart",
+  "Západočeské muzeum v Plzni, Plzeň",
   "Zentral- und Hochschulbibliothek, Luzern",
   "Zentralbibliothek, Solothurn",
   "Zentralbibliothek, Zürich",
+  "Þjóðminjasafn Íslands, Reykjavík",
+  "Археографско одељење, Belgrado",
+  "Дигитални репозиторијум, Belgrado",
+  "Национальная библиотека Республики Казахстан, Almaty",
   "夢望庵文庫 (Giappone)",
   "嵐牛俳諧資 (Giappone)",
   "西厳寺 (Giappone)"
@@ -2881,6 +3085,113 @@
     "indice/lipsia-0.json"
    ]
   },
+  "francoforte": {
+   "nome": "Universitätsbibliothek Johann Christian Senckenberg, Francoforte sul Meno (dati dal Handschriftenportal, handschriftenportal.de)",
+   "codici": 1937,
+   "carte": 1,
+   "con_autori": 296,
+   "lingue": {
+    "?": 355,
+    "la": 1444,
+    "de": 211,
+    "fr": 14,
+    "grc": 8,
+    "nl": 8,
+    "cs": 3,
+    "it": 7,
+    "he": 7,
+    "es": 1,
+    "cu": 3,
+    "ru": 1
+   },
+   "esito": "ok",
+   "prefissi": [
+    "ubf-"
+   ],
+   "pezzi_voci": 3,
+   "indice": [
+    "indice/francoforte-0.json"
+   ]
+  },
+  "dresda": {
+   "nome": "Sächsische Landesbibliothek – Staats- und Universitätsbibliothek Dresden, Dresda (dati dal Handschriftenportal, handschriftenportal.de)",
+   "codici": 1633,
+   "carte": 2,
+   "con_autori": 91,
+   "lingue": {
+    "de": 834,
+    "la": 605,
+    "grc": 82,
+    "he": 10,
+    "it": 290,
+    "fr": 88,
+    "?": 160,
+    "nl": 14,
+    "es": 9,
+    "en": 6,
+    "ar": 1,
+    "pl": 28,
+    "pt": 2,
+    "da": 2,
+    "sv": 1,
+    "cs": 9
+   },
+   "esito": "ok",
+   "prefissi": [
+    "slub-"
+   ],
+   "pezzi_voci": 3,
+   "indice": [
+    "indice/dresda-0.json"
+   ]
+  },
+  "tubinga": {
+   "nome": "Universitätsbibliothek Tübingen, Tubinga (dati dal Handschriftenportal, handschriftenportal.de)",
+   "codici": 273,
+   "carte": 0,
+   "con_autori": 20,
+   "lingue": {
+    "la": 271,
+    "de": 58,
+    "grc": 8,
+    "he": 2,
+    "fr": 1,
+    "it": 2,
+    "?": 2
+   },
+   "esito": "ok",
+   "prefissi": [
+    "ubt-"
+   ],
+   "pezzi_voci": 1,
+   "indice": [
+    "indice/tubinga-0.json"
+   ]
+  },
+  "darmstadt": {
+   "nome": "Universitäts- und Landesbibliothek Darmstadt (dati dal Handschriftenportal, handschriftenportal.de)",
+   "codici": 241,
+   "carte": 0,
+   "con_autori": 34,
+   "lingue": {
+    "de": 52,
+    "la": 178,
+    "?": 21,
+    "nl": 12,
+    "fr": 7,
+    "he": 3,
+    "grc": 1,
+    "it": 1
+   },
+   "esito": "ok",
+   "prefissi": [
+    "ulbd-"
+   ],
+   "pezzi_voci": 1,
+   "indice": [
+    "indice/darmstadt-0.json"
+   ]
+  },
   "onb": {
    "nome": "Österreichische Nationalbibliothek, Vienna (onb.digital; manifesti api.onb.ac.at)",
    "codici": 2705,
@@ -3300,6 +3611,133 @@
     "indice/kokusho-4.json",
     "indice/kokusho-5.json",
     "indice/kokusho-6.json"
+   ]
+  },
+  "handrit": {
+   "nome": "handrit.is: Reykjavík e Copenaghen (descrizioni TEI da github.com/Handrit/Manuscripts; manifesti scritti dal catalogo)",
+   "codici": 3822,
+   "carte": 0,
+   "con_autori": 81,
+   "lingue": {
+    "xx": 28,
+    "da": 226,
+    "la": 293,
+    "is": 3068,
+    "?": 253,
+    "de": 29,
+    "sv": 20,
+    "nl": 2,
+    "fr": 9,
+    "es": 6,
+    "it": 1,
+    "en": 9,
+    "he": 1,
+    "tr": 2,
+    "hy": 1,
+    "grc": 1
+   },
+   "esito": "ok",
+   "prefissi": [
+    "hdr-"
+   ],
+   "pezzi_voci": 5,
+   "indice": [
+    "indice/handrit-0.json"
+   ]
+  },
+  "polona": {
+   "nome": "Polona: Biblioteka Narodowa e altre biblioteche polacche (polona.pl)",
+   "codici": 13945,
+   "carte": 2,
+   "con_autori": 373,
+   "lingue": {
+    "la": 3339,
+    "?": 1913,
+    "pl": 8220,
+    "de": 1202,
+    "fr": 1284,
+    "it": 130,
+    "cs": 30,
+    "en": 87,
+    "ru": 303,
+    "he": 19,
+    "grc": 103,
+    "ar": 28,
+    "hu": 1,
+    "lt": 15,
+    "hy": 27,
+    "fa": 10,
+    "cu": 501,
+    "be": 6,
+    "yi": 2,
+    "uk": 59,
+    "tr": 19,
+    "nl": 7,
+    "sa": 12,
+    "hr": 3,
+    "da": 1,
+    "zh": 2,
+    "es": 5,
+    "ja": 2,
+    "cop": 1,
+    "bg": 1,
+    "ro": 3,
+    "sk": 2,
+    "pt": 1,
+    "et": 1
+   },
+   "esito": "ok",
+   "prefissi": [
+    "pol-"
+   ],
+   "pezzi_voci": 18,
+   "indice": [
+    "indice/polona-0.json"
+   ]
+  },
+  "manuscriptorium": {
+   "nome": "Manuscriptorium: Národní knihovna České republiky e altre biblioteche (manuscriptorium.com)",
+   "codici": 15169,
+   "carte": 63,
+   "con_autori": 1185,
+   "lingue": {
+    "?": 1711,
+    "la": 6046,
+    "de": 1660,
+    "cs": 1136,
+    "es": 668,
+    "en": 81,
+    "fr": 461,
+    "ar": 98,
+    "ca": 7,
+    "pt": 4691,
+    "it": 281,
+    "grc": 37,
+    "xx": 67,
+    "nl": 14,
+    "zh": 4,
+    "fa": 145,
+    "he": 31,
+    "hy": 2,
+    "hu": 20,
+    "ru": 15,
+    "ja": 1,
+    "pl": 32,
+    "cu": 114,
+    "cy": 1,
+    "cop": 2,
+    "sv": 1,
+    "tr": 6,
+    "da": 1,
+    "sla": 2
+   },
+   "esito": "ok",
+   "prefissi": [
+    "mns-"
+   ],
+   "pezzi_voci": 19,
+   "indice": [
+    "indice/manuscriptorium-0.json"
    ]
   },
   "slv": {
@@ -3755,6 +4193,26 @@
    "righe": 2677
   },
   {
+   "file": "indice/francoforte-0.json",
+   "fonte": "francoforte",
+   "righe": 1937
+  },
+  {
+   "file": "indice/dresda-0.json",
+   "fonte": "dresda",
+   "righe": 1633
+  },
+  {
+   "file": "indice/tubinga-0.json",
+   "fonte": "tubinga",
+   "righe": 273
+  },
+  {
+   "file": "indice/darmstadt-0.json",
+   "fonte": "darmstadt",
+   "righe": 241
+  },
+  {
    "file": "indice/onb-0.json",
    "fonte": "onb",
    "righe": 2705
@@ -3860,6 +4318,21 @@
    "righe": 19385
   },
   {
+   "file": "indice/handrit-0.json",
+   "fonte": "handrit",
+   "righe": 3822
+  },
+  {
+   "file": "indice/polona-0.json",
+   "fonte": "polona",
+   "righe": 13945
+  },
+  {
+   "file": "indice/manuscriptorium-0.json",
+   "fonte": "manuscriptorium",
+   "righe": 15169
+  },
+  {
    "file": "indice/slv-0.json",
    "fonte": "slv",
    "righe": 14
@@ -3955,6 +4428,18 @@
    "lat": 43.5283,
    "lon": 5.4497
   },
+  "alba-iulia": {
+   "nome": "Alba Iulia",
+   "paese": "RO",
+   "lat": 46.0667,
+   "lon": 23.5833
+  },
+  "almaty": {
+   "nome": "Almaty",
+   "paese": "KZ",
+   "lat": 43.2525,
+   "lon": 76.9115
+  },
   "amburgo": {
    "nome": "Amburgo",
    "en": "Hamburg",
@@ -4045,6 +4530,13 @@
    "lat": 33.8933,
    "lon": 35.5016
   },
+  "belgrado": {
+   "nome": "Belgrado",
+   "en": "Belgrade",
+   "paese": "RS",
+   "lat": 44.804,
+   "lon": 20.4651
+  },
   "berkeley": {
    "nome": "Berkeley",
    "paese": "US",
@@ -4083,6 +4575,12 @@
    "lat": 46.55,
    "lon": 9.8833
   },
+  "bialystok": {
+   "nome": "Białystok",
+   "paese": "PL",
+   "lat": 53.1333,
+   "lon": 23.1643
+  },
   "bloomington": {
    "nome": "Bloomington (Indiana)",
    "paese": "US",
@@ -4113,11 +4611,30 @@
    "lat": 47.0833,
    "lon": 2.4
   },
+  "brasov": {
+   "nome": "Brașov",
+   "paese": "RO",
+   "lat": 45.6486,
+   "lon": 25.6061
+  },
+  "bratislava": {
+   "nome": "Bratislava",
+   "paese": "SK",
+   "lat": 48.1482,
+   "lon": 17.1067
+  },
   "bremgarten": {
    "nome": "Bremgarten",
    "paese": "CH",
    "lat": 47.3511,
    "lon": 8.3421
+  },
+  "breslavia": {
+   "nome": "Breslavia",
+   "en": "Wrocław",
+   "paese": "PL",
+   "lat": 51.1029,
+   "lon": 17.0301
   },
   "brest": {
    "nome": "Brest",
@@ -4125,11 +4642,37 @@
    "lat": 48.3903,
    "lon": -4.4863
   },
+  "brno": {
+   "nome": "Brno",
+   "paese": "CZ",
+   "lat": 49.1952,
+   "lon": 16.608
+  },
+  "bruxelles": {
+   "nome": "Bruxelles",
+   "en": "Brussels",
+   "paese": "BE",
+   "lat": 50.8505,
+   "lon": 4.3488
+  },
   "bryn-mawr": {
    "nome": "Bryn Mawr",
    "paese": "US",
    "lat": 40.0198,
    "lon": -75.3046
+  },
+  "bucarest": {
+   "nome": "Bucarest",
+   "en": "Bucharest",
+   "paese": "RO",
+   "lat": 44.4323,
+   "lon": 26.1063
+  },
+  "budapest": {
+   "nome": "Budapest",
+   "paese": "HU",
+   "lat": 47.4984,
+   "lon": 19.0404
   },
   "buffalo": {
    "nome": "Buffalo",
@@ -4148,6 +4691,18 @@
    "paese": "CH",
    "lat": 47.059,
    "lon": 7.6279
+  },
+  "bury-st-edmunds": {
+   "nome": "Bury St Edmunds",
+   "paese": "GB",
+   "lat": 52.2463,
+   "lon": 0.7111
+  },
+  "bydgoszcz": {
+   "nome": "Bydgoszcz",
+   "paese": "PL",
+   "lat": 53.1235,
+   "lon": 18.0076
   },
   "calcutta": {
    "nome": "Calcutta",
@@ -4174,11 +4729,23 @@
    "lat": 42.3751,
    "lon": -71.1056
   },
+  "cappoquin": {
+   "nome": "Cappoquin",
+   "paese": "IE",
+   "lat": 52.146,
+   "lon": -7.8466
+  },
   "caracas": {
    "nome": "Caracas",
    "paese": "VE",
    "lat": 10.488,
    "lon": -66.8792
+  },
+  "castlerea": {
+   "nome": "Castlerea",
+   "paese": "IE",
+   "lat": 53.7726,
+   "lon": -8.5031
   },
   "castro": {
    "nome": "Castro (Ticino)",
@@ -4190,7 +4757,13 @@
    "nome": "Cesena",
    "paese": "IT",
    "lat": 44.1391,
-   "lon": 12.2432
+   "lon": 12.2431
+  },
+  "ceska-lipa": {
+   "nome": "Česká Lípa",
+   "paese": "CZ",
+   "lat": 50.6855,
+   "lon": 14.5376
   },
   "champs-sur-marne": {
    "nome": "Champs-sur-Marne",
@@ -4204,6 +4777,12 @@
    "lat": 46.5301,
    "lon": 6.5707
   },
+  "cheb": {
+   "nome": "Cheb",
+   "paese": "CZ",
+   "lat": 50.0796,
+   "lon": 12.3739
+  },
   "chicago": {
    "nome": "Chicago",
    "paese": "US",
@@ -4215,6 +4794,12 @@
    "paese": "CH",
    "lat": 46.4226,
    "lon": 8.8431
+  },
+  "chrudim": {
+   "nome": "Chrudim",
+   "paese": "CZ",
+   "lat": 49.9511,
+   "lon": 15.7956
   },
   "citta-del-vaticano": {
    "nome": "Città del Vaticano",
@@ -4267,6 +4852,19 @@
    "lat": 40.2428,
    "lon": -94.6869
   },
+  "copenaghen": {
+   "nome": "Copenaghen",
+   "en": "Copenhagen",
+   "paese": "DK",
+   "lat": 55.6759,
+   "lon": 12.5655
+  },
+  "cork": {
+   "nome": "Cork",
+   "paese": "IE",
+   "lat": 51.898,
+   "lon": -8.4706
+  },
   "cracovia": {
    "nome": "Cracovia",
    "en": "Kraków",
@@ -4316,6 +4914,20 @@
    "paese": "DE",
    "lat": 51.0509,
    "lon": 13.7383
+  },
+  "dublino": {
+   "nome": "Dublino",
+   "en": "Dublin",
+   "paese": "IE",
+   "lat": 53.3331,
+   "lon": -6.2489
+  },
+  "edimburgo": {
+   "nome": "Edimburgo",
+   "en": "Edinburgh",
+   "paese": "GB",
+   "lat": 55.9521,
+   "lon": -3.1965
   },
   "einsiedeln": {
    "nome": "Einsiedeln",
@@ -4386,6 +4998,18 @@
    "lat": 46.8024,
    "lon": 7.1513
   },
+  "galway": {
+   "nome": "Galway",
+   "paese": "IE",
+   "lat": 53.2724,
+   "lon": -9.051
+  },
+  "gardabaer": {
+   "nome": "Garðabær",
+   "paese": "IS",
+   "lat": 64.0887,
+   "lon": -21.923
+  },
   "gerusalemme": {
    "nome": "Gerusalemme",
    "en": "Jerusalem",
@@ -4419,11 +5043,29 @@
    "lat": 45.1787,
    "lon": 5.7148
   },
+  "grudziadz": {
+   "nome": "Grudziądz",
+   "paese": "PL",
+   "lat": 53.4841,
+   "lon": 18.7537
+  },
+  "havlickuv-brod": {
+   "nome": "Havlíčkův Brod",
+   "paese": "CZ",
+   "lat": 49.6069,
+   "lon": 15.5794
+  },
   "heidelberg": {
    "nome": "Heidelberg",
    "paese": "DE",
    "lat": 49.4077,
    "lon": 8.6908
+  },
+  "helsinki": {
+   "nome": "Helsinki",
+   "paese": "FI",
+   "lat": 60.1695,
+   "lon": 24.9354
   },
   "hermetschwil": {
    "nome": "Hermetschwil",
@@ -4431,11 +5073,35 @@
    "lat": 47.3303,
    "lon": 8.3413
   },
+  "horazdovice": {
+   "nome": "Horažďovice",
+   "paese": "CZ",
+   "lat": 49.3207,
+   "lon": 13.701
+  },
+  "hradec-kralove": {
+   "nome": "Hradec Králové",
+   "paese": "CZ",
+   "lat": 50.2092,
+   "lon": 15.8328
+  },
   "innsbruck": {
    "nome": "Innsbruck",
    "paese": "AT",
    "lat": 47.2627,
    "lon": 11.3945
+  },
+  "jachymov": {
+   "nome": "Jáchymov",
+   "paese": "CZ",
+   "lat": 50.3585,
+   "lon": 12.9346
+  },
+  "jindrichuv-hradec": {
+   "nome": "Jindřichův Hradec",
+   "paese": "CZ",
+   "lat": 49.144,
+   "lon": 15.003
   },
   "jp-akita": {
    "nome": "Akita",
@@ -5122,11 +5788,23 @@
    "lat": 42.2917,
    "lon": -85.5872
   },
+  "kalisz": {
+   "nome": "Kalisz",
+   "paese": "PL",
+   "lat": 51.7611,
+   "lon": 18.091
+  },
   "kansas-city": {
    "nome": "Kansas City",
    "paese": "US",
    "lat": 39.0997,
    "lon": -94.5786
+  },
+  "karlovy-vary": {
+   "nome": "Karlovy Vary",
+   "paese": "CZ",
+   "lat": 50.2327,
+   "lon": 12.8712
   },
   "karlsruhe": {
    "nome": "Karlsruhe",
@@ -5134,11 +5812,47 @@
    "lat": 49.0094,
    "lon": 8.4044
   },
+  "kezmarok": {
+   "nome": "Kežmarok",
+   "paese": "SK",
+   "lat": 49.1357,
+   "lon": 20.4335
+  },
   "kiel": {
    "nome": "Kiel",
    "paese": "DE",
    "lat": 54.3213,
    "lon": 10.1349
+  },
+  "kilkenny": {
+   "nome": "Kilkenny",
+   "paese": "IE",
+   "lat": 52.6542,
+   "lon": -7.2522
+  },
+  "klatovy": {
+   "nome": "Klatovy",
+   "paese": "CZ",
+   "lat": 49.3955,
+   "lon": 13.295
+  },
+  "kovacica": {
+   "nome": "Kovačica",
+   "paese": "RS",
+   "lat": 45.1117,
+   "lon": 20.6214
+  },
+  "kromeriz": {
+   "nome": "Kroměříž",
+   "paese": "CZ",
+   "lat": 49.2978,
+   "lon": 17.3931
+  },
+  "kutna-hora": {
+   "nome": "Kutná Hora",
+   "paese": "CZ",
+   "lat": 49.9484,
+   "lon": 15.2682
   },
   "la-rochelle": {
    "nome": "La Rochelle",
@@ -5151,6 +5865,12 @@
    "paese": "US",
    "lat": 38.9717,
    "lon": -95.2352
+  },
+  "lazne-kynzvart": {
+   "nome": "Lázně Kynžvart",
+   "paese": "CZ",
+   "lat": 50.0106,
+   "lon": 12.6247
   },
   "le-havre": {
    "nome": "Le Havre",
@@ -5171,12 +5891,37 @@
    "lat": 52.1583,
    "lon": 4.4931
   },
+  "liberec": {
+   "nome": "Liberec",
+   "paese": "CZ",
+   "lat": 50.7671,
+   "lon": 15.0562
+  },
+  "lilienfeld": {
+   "nome": "Lilienfeld",
+   "paese": "AT",
+   "lat": 48.0131,
+   "lon": 15.5966
+  },
   "lipsia": {
    "nome": "Lipsia",
    "en": "Leipzig",
    "paese": "DE",
    "lat": 51.3396,
    "lon": 12.3713
+  },
+  "lisbona": {
+   "nome": "Lisbona",
+   "en": "Lisbon",
+   "paese": "PT",
+   "lat": 38.7251,
+   "lon": -9.1498
+  },
+  "litomysl": {
+   "nome": "Litomyšl",
+   "paese": "CZ",
+   "lat": 49.8681,
+   "lon": 16.313
   },
   "londra": {
    "nome": "Londra",
@@ -5192,11 +5937,31 @@
    "lat": 46.516,
    "lon": 6.6328
   },
+  "louny": {
+   "nome": "Louny",
+   "paese": "CZ",
+   "lat": 50.357,
+   "lon": 13.7967
+  },
   "louviers": {
    "nome": "Louviers",
    "paese": "FR",
    "lat": 49.2167,
    "lon": 1.1667
+  },
+  "lubiana": {
+   "nome": "Lubiana",
+   "en": "Ljubljana",
+   "paese": "SI",
+   "lat": 46.0511,
+   "lon": 14.5051
+  },
+  "lublino": {
+   "nome": "Lublino",
+   "en": "Lublin",
+   "paese": "PL",
+   "lat": 51.2506,
+   "lon": 22.5701
   },
   "lucerna": {
    "nome": "Lucerna",
@@ -5230,11 +5995,29 @@
    "lat": 34.0258,
    "lon": -118.7804
   },
+  "manchester": {
+   "nome": "Manchester",
+   "paese": "GB",
+   "lat": 53.4809,
+   "lon": -2.2374
+  },
   "mariastein": {
    "nome": "Mariastein",
    "paese": "CH",
    "lat": 47.4757,
    "lon": 7.4892
+  },
+  "maynooth": {
+   "nome": "Maynooth",
+   "paese": "IE",
+   "lat": 53.385,
+   "lon": -6.5936
+  },
+  "melbourne": {
+   "nome": "Melbourne",
+   "paese": "AU",
+   "lat": -37.814,
+   "lon": 144.9633
   },
   "meteore": {
    "nome": "Meteore",
@@ -5261,12 +6044,24 @@
    "lat": 49.6757,
    "lon": 9.0037
   },
+  "mikulov": {
+   "nome": "Mikulov",
+   "paese": "CZ",
+   "lat": 48.8056,
+   "lon": 16.6378
+  },
   "milano": {
    "nome": "Milano",
    "en": "Milan",
    "paese": "IT",
    "lat": 45.4643,
    "lon": 9.1895
+  },
+  "mlada-boleslav": {
+   "nome": "Mladá Boleslav",
+   "paese": "CZ",
+   "lat": 50.4113,
+   "lon": 14.9032
   },
   "modena": {
    "nome": "Modena",
@@ -5299,6 +6094,12 @@
    "lat": 46.433,
    "lon": 6.9114
   },
+  "most": {
+   "nome": "Most",
+   "paese": "CZ",
+   "lat": 50.503,
+   "lon": 13.6362
+  },
   "muestair": {
    "nome": "Müstair",
    "paese": "CH",
@@ -5322,6 +6123,12 @@
    "paese": "FR",
    "lat": 47.2172,
    "lon": -1.5534
+  },
+  "nepomuk": {
+   "nome": "Nepomuk",
+   "paese": "CZ",
+   "lat": 49.4862,
+   "lon": 13.5823
   },
   "neuchatel": {
    "nome": "Neuchâtel",
@@ -5372,11 +6179,23 @@
    "lat": 42.3251,
    "lon": -72.6412
   },
+  "nova-rise": {
+   "nome": "Nová Říše",
+   "paese": "CZ",
+   "lat": 49.1394,
+   "lon": 15.5636
+  },
   "oberlin": {
    "nome": "Oberlin (Ohio)",
    "paese": "US",
    "lat": 41.2939,
    "lon": -82.2174
+  },
+  "olomouc": {
+   "nome": "Olomouc",
+   "paese": "CZ",
+   "lat": 49.5955,
+   "lon": 17.2518
   },
   "orselina": {
    "nome": "Orselina",
@@ -5396,6 +6215,12 @@
    "lat": 51.7522,
    "lon": -1.256
   },
+  "pardubice": {
+   "nome": "Pardubice",
+   "paese": "CZ",
+   "lat": 50.0408,
+   "lon": 15.7766
+  },
   "parigi": {
    "nome": "Parigi",
    "en": "Paris",
@@ -5409,6 +6234,12 @@
    "lat": 43.3112,
    "lon": -0.3558
   },
+  "pelplin": {
+   "nome": "Pelplin",
+   "paese": "PL",
+   "lat": 53.9283,
+   "lon": 18.6977
+  },
   "philadelphia": {
    "nome": "Filadelfia",
    "en": "Philadelphia",
@@ -5416,17 +6247,55 @@
    "lat": 39.9524,
    "lon": -75.1636
   },
+  "plock": {
+   "nome": "Płock",
+   "paese": "PL",
+   "lat": 52.5468,
+   "lon": 19.7064
+  },
+  "plovdiv": {
+   "nome": "Plovdiv",
+   "paese": "BG",
+   "lat": 42.1539,
+   "lon": 24.75
+  },
+  "plzen": {
+   "nome": "Plzeň",
+   "en": "Pilsen",
+   "paese": "CZ",
+   "lat": 49.7475,
+   "lon": 13.3776
+  },
+  "policka": {
+   "nome": "Polička",
+   "paese": "CZ",
+   "lat": 49.7146,
+   "lon": 16.2654
+  },
   "porrentruy": {
    "nome": "Porrentruy",
    "paese": "CH",
    "lat": 47.4173,
    "lon": 7.0757
   },
+  "praga": {
+   "nome": "Praga",
+   "en": "Prague",
+   "paese": "CZ",
+   "lat": 50.088,
+   "lon": 14.4208
+  },
   "princeton": {
    "nome": "Princeton",
    "paese": "US",
    "lat": 40.3487,
    "lon": -74.659
+  },
+  "prostejov": {
+   "nome": "Prostějov",
+   "paese": "CZ",
+   "lat": 49.4719,
+   "lon": 17.1118
   },
   "providence": {
    "nome": "Providence",
@@ -5440,6 +6309,12 @@
    "lat": 46.5108,
    "lon": 8.7111
   },
+  "rajhrad": {
+   "nome": "Rajhrad",
+   "paese": "CZ",
+   "lat": 49.0902,
+   "lon": 16.6039
+  },
   "ravenna": {
    "nome": "Ravenna",
    "paese": "IT",
@@ -5451,6 +6326,18 @@
    "paese": "FR",
    "lat": 49.2653,
    "lon": 4.0285
+  },
+  "rennes": {
+   "nome": "Rennes",
+   "paese": "FR",
+   "lat": 48.1111,
+   "lon": -1.6743
+  },
+  "reykjavik": {
+   "nome": "Reykjavík",
+   "paese": "IS",
+   "lat": 64.1355,
+   "lon": -21.8954
   },
   "rochester": {
    "nome": "Rochester (New York)",
@@ -5545,6 +6432,18 @@
    "lat": 59.9386,
    "lon": 30.3141
   },
+  "sandomierz": {
+   "nome": "Sandomierz",
+   "paese": "PL",
+   "lat": 50.6827,
+   "lon": 21.749
+  },
+  "sanok": {
+   "nome": "Sanok",
+   "paese": "PL",
+   "lat": 49.5557,
+   "lon": 22.2056
+  },
   "santiago-del-cile": {
    "nome": "Santiago del Cile",
    "en": "Santiago",
@@ -5623,11 +6522,24 @@
    "lat": 46.7006,
    "lon": 14.8756
   },
+  "st-polten": {
+   "nome": "Sankt Pölten",
+   "paese": "AT",
+   "lat": 48.2076,
+   "lon": 15.6372
+  },
   "stanford": {
    "nome": "Stanford",
    "paese": "US",
    "lat": 37.4241,
    "lon": -122.1661
+  },
+  "stoccolma": {
+   "nome": "Stoccolma",
+   "en": "Stockholm",
+   "paese": "SE",
+   "lat": 59.3294,
+   "lon": 18.0687
   },
   "strasburgo": {
    "nome": "Strasburgo",
@@ -5635,6 +6547,24 @@
    "paese": "FR",
    "lat": 48.5839,
    "lon": 7.7455
+  },
+  "tabor": {
+   "nome": "Tábor",
+   "paese": "CZ",
+   "lat": 49.4144,
+   "lon": 14.6578
+  },
+  "tepla": {
+   "nome": "Teplá",
+   "paese": "CZ",
+   "lat": 49.98,
+   "lon": 12.8643
+  },
+  "teplice": {
+   "nome": "Teplice",
+   "paese": "CZ",
+   "lat": 50.6404,
+   "lon": 13.8245
   },
   "tesserete": {
    "nome": "Tesserete",
@@ -5667,6 +6597,24 @@
    "lat": 46.489,
    "lon": 8.9533
   },
+  "torun": {
+   "nome": "Toruń",
+   "paese": "PL",
+   "lat": 53.0138,
+   "lon": 18.5981
+  },
+  "trebic": {
+   "nome": "Třebíč",
+   "paese": "CZ",
+   "lat": 49.2149,
+   "lon": 15.8817
+  },
+  "trebon": {
+   "nome": "Třeboň",
+   "paese": "CZ",
+   "lat": 49.0036,
+   "lon": 14.7706
+  },
   "trogen": {
    "nome": "Trogen",
    "paese": "CH",
@@ -5686,6 +6634,12 @@
    "lat": 48.5227,
    "lon": 9.0522
   },
+  "turnov": {
+   "nome": "Turnov",
+   "paese": "CZ",
+   "lat": 50.5836,
+   "lon": 15.1519
+  },
   "ueberlingen": {
    "nome": "Überlingen",
    "paese": "DE",
@@ -5697,6 +6651,13 @@
    "paese": "FR",
    "lat": 50.3591,
    "lon": 3.5251
+  },
+  "varsavia": {
+   "nome": "Varsavia",
+   "en": "Warsaw",
+   "paese": "PL",
+   "lat": 52.2298,
+   "lon": 21.0118
   },
   "vesoul": {
    "nome": "Vesoul",
@@ -5728,6 +6689,18 @@
    "lat": 43.6579,
    "lon": 7.1223
   },
+  "vilnius": {
+   "nome": "Vilnius",
+   "paese": "LT",
+   "lat": 54.6892,
+   "lon": 25.2798
+  },
+  "vyssi-brod": {
+   "nome": "Vyšší Brod",
+   "paese": "CZ",
+   "lat": 48.616,
+   "lon": 14.3118
+  },
   "waedenswil": {
    "nome": "Wädenswil",
    "paese": "CH",
@@ -5739,6 +6712,12 @@
    "paese": "US",
    "lat": 38.8951,
    "lon": -77.0364
+  },
+  "waterford": {
+   "nome": "Waterford",
+   "paese": "IE",
+   "lat": 52.2583,
+   "lon": -7.1119
   },
   "wattwil": {
    "nome": "Wattwil",
@@ -5757,6 +6736,30 @@
    "paese": "DE",
    "lat": 52.1644,
    "lon": 10.541
+  },
+  "zamosc": {
+   "nome": "Zamość",
+   "paese": "PL",
+   "lat": 50.7231,
+   "lon": 23.252
+  },
+  "zelezny-brod": {
+   "nome": "Železný Brod",
+   "paese": "CZ",
+   "lat": 50.6427,
+   "lon": 15.2541
+  },
+  "zielona-gora": {
+   "nome": "Zielona Góra",
+   "paese": "PL",
+   "lat": 51.9355,
+   "lon": 15.5064
+  },
+  "zlata-koruna": {
+   "nome": "Zlatá Koruna",
+   "paese": "CZ",
+   "lat": 48.8548,
+   "lon": 14.3695
   },
   "zofingen": {
    "nome": "Zofingen",
@@ -5816,6 +6819,8 @@
   "torre",
   "jp-kyoto",
   "jp-takeo",
+  "cracovia",
+  "kromeriz",
   null,
   "tokyo",
   "jp-kyoto",
@@ -5823,8 +6828,8 @@
   "barcellona",
   "auckland",
   null,
-  null,
-  null,
+  "melbourne",
+  "melbourne",
   "oxford",
   "philadelphia",
   "monaco-di-baviera",
@@ -5834,7 +6839,10 @@
   "hermetschwil",
   "mariastein",
   "sarnen",
+  "rajhrad",
+  "brno",
   "cambridge",
+  "plock",
   "cambridge",
   "citta-del-vaticano",
   "citta-del-vaticano",
@@ -5903,6 +6911,7 @@
   "jp-fukuoka",
   "jp-nishio",
   "jp-matsusaka",
+  "brasov",
   "tokyo",
   "cesena",
   "jp-bizen",
@@ -5910,6 +6919,8 @@
   "firenze",
   "vilanova-i-la-geltru",
   "santiago-del-cile",
+  "madrid",
+  "lisbona",
   "caracas",
   "firenze",
   "seul",
@@ -5929,7 +6940,23 @@
   "montecassino",
   "bologna",
   "roma",
+  "varsavia",
+  "pelplin",
+  "sandomierz",
+  "cracovia",
+  "cracovia",
+  "cracovia",
+  "grudziadz",
+  "varsavia",
+  "lublino",
+  "torun",
+  "varsavia",
+  "breslavia",
+  "breslavia",
+  "zielona-gora",
   "montreux",
+  null,
+  "st-polten",
   "losanna",
   "friburgo-ch",
   "porrentruy",
@@ -5940,7 +6967,7 @@
   "parigi",
   "parigi",
   "louviers",
-  null,
+  "rennes",
   "parigi",
   "parigi",
   "parigi",
@@ -5977,6 +7004,7 @@
   "nancy",
   "parigi",
   "amiens",
+  "st-polten",
   "soletta",
   "oxford",
   "oxford",
@@ -6003,18 +7031,22 @@
   "jp-kyoto",
   "jp-kyoto",
   "tokyo",
+  "praga",
+  null,
+  "kutna-hora",
   "strasburgo",
   "strasburgo",
   "samedan",
-  null,
+  "dublino",
   "oxford",
   "oxford",
   "cambridge",
   "parigi",
+  "vyssi-brod",
   "new-york",
+  "castlerea",
   null,
-  null,
-  null,
+  "waterford",
   "parigi",
   null,
   null,
@@ -6043,7 +7075,9 @@
   "parigi",
   "friburgo-ch",
   "cambridge",
-  null,
+  "copenaghen",
+  "budapest",
+  "copenaghen",
   "bad-mergentheim",
   "dieppe",
   "waedenswil",
@@ -6052,14 +7086,17 @@
   "bever",
   "sils",
   "mettingen",
-  null,
+  "dublino",
   "champs-sur-marne",
   "champs-sur-marne",
   "champs-sur-marne",
   "schlatt",
   "new-haven",
   "colonia",
+  "praga",
   "oxford",
+  "jachymov",
+  "jachymov",
   "villeneuve-loubet",
   "ginevra",
   "cologny",
@@ -6069,7 +7106,10 @@
   "new-york",
   "gotha",
   "gotha",
+  "cheb",
   "philadelphia",
+  "bialystok",
+  "kutna-hora",
   "flawil",
   "new-york",
   "karlsruhe",
@@ -6080,13 +7120,21 @@
   "oxford",
   "austin",
   "cambridge-ma",
+  "vienna",
+  "vienna",
+  "vienna",
+  "vienna",
   "heidelberg",
   "heidelberg",
   "wolfenbuettel",
+  "vienna",
+  "praga",
   "colonia",
+  "praga",
+  "tabor",
   "bloomington",
   "parigi",
-  null,
+  "dublino",
   "tokyo",
   "jp-tachikawa",
   "jp-tachikawa",
@@ -6144,26 +7192,49 @@
   "jp-tachikawa",
   "jp-tachikawa",
   "jp-toyota",
+  "plovdiv",
   "cracovia",
   "calcutta",
   "oxford",
-  null,
+  "lilienfeld",
+  "zlata-koruna",
+  "manchester",
   "trogen",
   "frauenfeld",
   "san-gallo",
   null,
-  null,
+  "bruxelles",
   "oxford",
-  null,
+  "dublino",
+  "tepla",
   "wattwil",
+  "praga",
+  "praga",
+  "praga",
+  "rajhrad",
+  "nova-rise",
+  "praga",
+  "praga",
+  "praga",
+  "praga",
+  "praga",
+  "plzen",
   "colonia",
   "sciaffusa",
   "lucerna",
+  "karlovy-vary",
+  "praga",
+  "praga",
+  "praga",
+  "zamosc",
+  "stoccolma",
+  "stoccolma",
   "norimberga",
   "heidelberg",
   "heidelberg",
   "ginevra",
   "appenzell",
+  "reykjavik",
   "cambrai",
   "cambrai",
   "norimberga",
@@ -6172,14 +7243,18 @@
   "philadelphia",
   "stanford",
   "cambridge",
+  "vilnius",
   "jp-tanba-sasayama",
   "jp-hirosaki",
+  "vilnius",
   "new-haven",
   "oxford",
+  "kezmarok",
   "oxford",
   "parigi",
-  null,
-  null,
+  "dublino",
+  "maynooth",
+  "kalisz",
   "strasburgo",
   "troyes",
   "orthez",
@@ -6188,15 +7263,23 @@
   "sion",
   "saint-denis",
   "new-haven",
-  null,
+  "kilkenny",
   "saint-imier",
   "oxford",
+  "praga",
+  "policka",
+  "horazdovice",
+  "sanok",
   "parigi",
   "parigi",
   "meteore",
   "sinai",
   "montpellier",
-  null,
+  "brno",
+  "brno",
+  "brno",
+  "brno",
+  "cappoquin",
   "villeneuve-loubet",
   "villeneuve-loubet",
   "bulle",
@@ -6241,7 +7324,19 @@
   "philadelphia",
   "cambridge",
   "cambridge",
+  "washington",
+  "prostejov",
+  "rajhrad",
+  "rajhrad",
+  "turnov",
+  "praga",
+  "jindrichuv-hradec",
+  "karlovy-vary",
+  "hradec-kralove",
+  "havlickuv-brod",
+  "trebic",
   "lucerna",
+  "cheb",
   "parigi",
   "parigi",
   "parigi",
@@ -6271,20 +7366,47 @@
   "parigi",
   "parigi",
   "parigi",
+  "praga",
+  "praga",
+  "praga",
+  "praga",
+  "praga",
+  "praga",
+  "praga",
+  "varsavia",
+  "varsavia",
+  "lubiana",
   "tokyo",
-  null,
+  "alba-iulia",
+  "helsinki",
+  "dublino",
+  "alba-iulia",
+  "alba-iulia",
+  "alba-iulia",
+  "alba-iulia",
+  "alba-iulia",
+  "alba-iulia",
+  "bucarest",
   "san-pietroburgo",
-  null,
-  null,
+  "edimburgo",
+  "almaty",
+  "galway",
+  "gardabaer",
   "kansas-city",
   "new-york",
   "chicago",
   "chicago",
   "gottinga",
+  "varsavia",
   "michelstadt",
   "jp-saga",
   "oberlin",
+  "most",
+  "louny",
+  "trebon",
   "athens-oh",
+  "klatovy",
+  "mlada-boleslav",
   "jp-mitaka",
   "vienna",
   "vienna",
@@ -6425,27 +7547,39 @@
   "heidelberg",
   "heidelberg",
   "heidelberg",
+  "praga",
+  "praga",
   "cambridge",
+  "praga",
   "estavayer",
   "gerusalemme",
   "gerusalemme",
   "oxford",
   "malibu",
   "basilea",
+  "nepomuk",
+  "praga",
+  "praga",
   "princeton",
   null,
   "providence",
+  "praga",
   "lucerna",
   "oxford",
   "madrid",
   "madrid",
   "san-lorenzo-de-el-escorial",
+  "chrudim",
+  "litomysl",
+  "mikulov",
+  "teplice",
   "norimberga",
   "rochester",
   "disentis",
-  null,
+  "dublino",
   "new-brunswick",
   "strasburgo",
+  "dresda",
   "dresda",
   "cambridge",
   "saint-louis",
@@ -6455,17 +7589,23 @@
   null,
   "jp-tanabe-wakayama",
   "jp-kashima-saga",
-  null,
+  "dublino",
   null,
   "zurigo",
   null,
+  "liberec",
   "northampton-ma",
   "washington",
   "rodez",
+  "praga",
+  "praga",
+  "kovacica",
+  "zelezny-brod",
   "cambridge",
   "cambridge",
+  "plovdiv",
   "cambridge",
-  null,
+  "bury-st-edmunds",
   "oxford",
   "oxford",
   "dresda",
@@ -6490,29 +7630,34 @@
   "norimberga",
   "sciaffusa",
   "zofingen",
-  null,
+  "melbourne",
+  "praga",
   "san-gallo",
   "st-paul-lavanttal",
   "einsiedeln",
   "engelberg",
   "san-gallo",
   "beromuenster",
+  "reykjavik",
+  "plzen",
   "tokyo",
   "jp-fujiidera",
   "jp-kaizuka",
   "jp-nagoya",
   "jp-zentsuji",
   null,
+  "praga",
   "cambridge",
   "cambridge",
   "londra",
+  "budapest",
   "cleveland",
   "new-orleans",
   "san-marino-ca",
   "cambridge",
   "toronto",
   "innsbruck",
-  null,
+  "dublino",
   "madrid",
   "jp-nagoya",
   "jp-nagano",
@@ -6722,10 +7867,14 @@
   "barcellona",
   "heidelberg",
   "darmstadt",
+  "darmstadt",
+  "colonia",
   "heidelberg",
   "erlangen",
   "heidelberg",
+  "francoforte",
   "lipsia",
+  "tubinga",
   "augusta",
   "basilea",
   "francoforte",
@@ -6734,10 +7883,11 @@
   "tubinga",
   "montpellier",
   "leida",
-  null,
-  null,
+  "cork",
+  "dublino",
   "oxford",
   null,
+  "budapest",
   "cambridge",
   "berkeley",
   "berkeley",
@@ -6749,18 +7899,39 @@
   "philadelphia",
   "philadelphia",
   "philadelphia",
+  "praga",
+  "bratislava",
+  "varsavia",
+  "torun",
+  "bratislava",
+  "olomouc",
   "milano",
   "parigi",
   "parigi",
   "parigi",
   "parigi",
+  "ceska-lipa",
+  "klatovy",
+  "olomouc",
+  "praga",
+  "pardubice",
+  "jachymov",
   "londra",
   "kalamazoo",
   "magonza",
   "magonza",
+  "torun",
+  "lublino",
+  "bydgoszcz",
+  "lazne-kynzvart",
+  "plzen",
   "lucerna",
   "soletta",
   "zurigo",
+  "reykjavik",
+  "belgrado",
+  "belgrado",
+  "almaty",
   null,
   null,
   null

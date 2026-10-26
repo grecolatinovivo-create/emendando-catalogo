@@ -9,8 +9,12 @@
 //   - Università di Atene, Pergamos (scripts/fonti/pergamos.mjs): niente IIIF, immagini JPEG con CORS aperto: manifesti P2 a misura fissa;
 //   - America Latina, siti solo PDF (scripts/fonti/latam_pdf.mjs): manifesti P3 con le pagine estratte dai PDF nel ramo «immagini»;
 //   - Biblioteca Malatestiana (Cesena): nessun IIIF, carte del visore caricabili come <img>: manifesti P2 con immagini a misura
-//     fissa, senza servizio Image (scripts/fonti/malatestiana.mjs).
-// Nessuna richiesta di rete: si scrivono dagli stati delle raccolte (data/loc.json, data/nlg.json, data/malatestiana.json e gli altri).
+//     fissa, senza servizio Image (scripts/fonti/malatestiana.mjs);
+//   - handrit.is: nessun manifesto IIIF presso il sito, immagini JPEG aperte (CORS *): manifesti P2 con immagini a misura fissa
+//     dalle descrizioni TEI (scripts/fonti/handrit.mjs);
+//   - Darmstadt (TUdigit, dal Handschriftenportal): manifesti con immagini in http e servizio Image che non risponde: copie P2
+//     con le immagini https a misura fissa (scripts/fonti/hsp.mjs, manifestoCopiaHsp).
+// Nessuna richiesta di rete: si scrivono dagli stati delle raccolte (data/loc.json, data/nlg.json, data/malatestiana.json, data/handrit.json, data/darmstadt.json e gli altri).
 // I manifesti stanno nel ramo «manifesti» del repository, non in main (circa 400 MB di JSON): il workflow manifesti.yml
 // li rigenera ogni giorno in una copia di quel ramo e salva solo se cambiano.
 // Uso: node scripts/manifesti.mjs [--dir=<cartella radice della copia del ramo manifesti>]   (scrive <dir>/data/manifesti/<fonte>/<id>.json)
@@ -22,6 +26,8 @@ import * as digibib from "./fonti/digibib.mjs";
 import * as latam from "./fonti/latam_pdf.mjs";
 import * as pergamos from "./fonti/pergamos.mjs";
 import * as malatestiana from "./fonti/malatestiana.mjs";
+import * as handrit from "./fonti/handrit.mjs";
+import * as hsp from "./fonti/hsp.mjs";
 
 // scrive i manifesti che mancano o sono cambiati e toglie quelli dei codici usciti (solo se lo stato ha voci)
 export function scriviManifesti(voci, cartella, scrivi) {
@@ -56,6 +62,11 @@ export function scriviTutti(dir = ".") {
     ...Object.fromEntries(Object.entries(latam.voci()).map(([f, vs]) => [f, scriviManifesti(vs, path.join(dir, "data/manifesti/" + f),
       (c, dims) => latam.manifestoLatam(f, c, dims))])),
     malatestiana: scriviManifesti(vociMl, path.join(dir, "data/manifesti/malatestiana"), (k, x) => malatestiana.manifestoScritto(x.id, x.v)),
+    handrit: scriviManifesti(handrit.leggiStato().voci || {}, path.join(dir, "data/manifesti/handrit"), (id, v) => (v && handrit.numeroPagine(v) ? handrit.manifestoScritto(id, v) : null)),
+    // Handschriftenportal, fonti con le copie dei manifesti (Darmstadt): un file per codice, con il nome della sigla del portale senza «HSP-»
+    ...Object.fromEntries(Object.keys(hsp.FONTI_HSP).filter(hsp.copieHsp).map(f => [f, scriviManifesti(
+      Object.fromEntries(Object.entries(hsp.leggiStato(f).voci || {}).map(([k, v]) => [k.replace(/^HSP-/, ""), v])),
+      path.join(dir, "data/manifesti", f), (id, v) => (v && v.pg && !v.e ? hsp.manifestoCopiaHsp(f, id, v) : null))])),
   };
 }
 

@@ -21,13 +21,16 @@ const quante = o => Object.keys((o && o.voci) || {}).length;
 export const INCOMPLETA = {
   // raccolte a riprese con il segnaposto «completato» (azzerato quando si rifà la lettura da capo)
   ...Object.fromEntries(["ndl", "kokusho", "penn", "loc", "auckland", "toronto", "ds", "montecassino", "casanatense", "bub", "laurenziana", "leiden",
-    "wolfenbuettel", "bamberga", "karlsruhe", "stoccarda", "colonia", "lipsia",
+    "wolfenbuettel", "bamberga", "karlsruhe", "stoccarda", "colonia", "lipsia", "francoforte", "dresda", "tubinga",
+    "handrit", "polona", "manuscriptorium",
     "wellcome", "isos", "manchester", "cudl", "cbl", "mdc", "ub", "realbiblioteca", "ucm", "sevilla", "pergamos"].map(f => [f, s => !s || !s.completato]),
   ),
   // Ambrosiana: elenco letto e nessuna scheda ancora da leggere (le schede che non si aprono restano segnate con «x»)
   ambrosiana: s => !s || !s.elenco || s.cursore != null || Object.values(s.voci || {}).some(v => v && !v.u && !v.x),
   // Walters: tutti i codici dell'elenco letti (le misure delle immagini continuano poi ogni notte)
   walters: s => !s || !s.elenco_letto || quante(s) < (s.totale || 1),
+  // Darmstadt (Handschriftenportal): elenco finito e letti i manifesti di tutti i codici (pagine per le copie dei manifesti)
+  darmstadt: s => !s || !s.completato || Object.values(s.voci || {}).some(v => v && v.x == null),
   // Biblioteca Nazionale di Grecia: elenco finito (i manifesti che non si leggono si riprovano al prossimo elenco)
   nlg: s => !s || !s.elenco || !!s.token,
   // Monastero di Rousanou: elenco letto e nessun manifesto ancora da leggere (quelli che non si aprono restano segnati con «x»)

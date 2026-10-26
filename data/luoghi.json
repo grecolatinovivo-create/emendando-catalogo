@@ -29,6 +29,20 @@
    "lon": 5.4497,
    "geonames": 3038354
   },
+  "alba-iulia": {
+   "nome": "Alba Iulia",
+   "paese": "RO",
+   "lat": 46.0667,
+   "lon": 23.5833,
+   "geonames": 686578
+  },
+  "almaty": {
+   "nome": "Almaty",
+   "paese": "KZ",
+   "lat": 43.2525,
+   "lon": 76.9115,
+   "geonames": 1526384
+  },
   "amburgo": {
    "nome": "Amburgo",
    "en": "Hamburg",
@@ -133,6 +147,14 @@
    "lon": 35.5016,
    "geonames": 276781
   },
+  "belgrado": {
+   "nome": "Belgrado",
+   "en": "Belgrade",
+   "paese": "RS",
+   "lat": 44.804,
+   "lon": 20.4651,
+   "geonames": 792680
+  },
   "berkeley": {
    "nome": "Berkeley",
    "paese": "US",
@@ -177,6 +199,13 @@
    "lon": 9.8833,
    "geonames": 2661529
   },
+  "bialystok": {
+   "nome": "Białystok",
+   "paese": "PL",
+   "lat": 53.1333,
+   "lon": 23.1643,
+   "geonames": 776069
+  },
   "bloomington": {
    "nome": "Bloomington (Indiana)",
    "paese": "US",
@@ -212,12 +241,34 @@
    "lon": 2.4,
    "geonames": 3031005
   },
+  "brasov": {
+   "nome": "Brașov",
+   "paese": "RO",
+   "lat": 45.6486,
+   "lon": 25.6061,
+   "geonames": 683844
+  },
+  "bratislava": {
+   "nome": "Bratislava",
+   "paese": "SK",
+   "lat": 48.1482,
+   "lon": 17.1067,
+   "geonames": 3060972
+  },
   "bremgarten": {
    "nome": "Bremgarten",
    "paese": "CH",
    "lat": 47.3511,
    "lon": 8.3421,
    "geonames": 2661407
+  },
+  "breslavia": {
+   "nome": "Breslavia",
+   "en": "Wrocław",
+   "paese": "PL",
+   "lat": 51.1029,
+   "lon": 17.0301,
+   "geonames": 3081368
   },
   "brest": {
    "nome": "Brest",
@@ -226,12 +277,42 @@
    "lon": -4.4863,
    "geonames": 3030300
   },
+  "brno": {
+   "nome": "Brno",
+   "paese": "CZ",
+   "lat": 49.1952,
+   "lon": 16.608,
+   "geonames": 3078610
+  },
+  "bruxelles": {
+   "nome": "Bruxelles",
+   "en": "Brussels",
+   "paese": "BE",
+   "lat": 50.8505,
+   "lon": 4.3488,
+   "geonames": 2800866
+  },
   "bryn-mawr": {
    "nome": "Bryn Mawr",
    "paese": "US",
    "lat": 40.0198,
    "lon": -75.3046,
    "geonames": 5182064
+  },
+  "bucarest": {
+   "nome": "Bucarest",
+   "en": "Bucharest",
+   "paese": "RO",
+   "lat": 44.4323,
+   "lon": 26.1063,
+   "geonames": 683506
+  },
+  "budapest": {
+   "nome": "Budapest",
+   "paese": "HU",
+   "lat": 47.4984,
+   "lon": 19.0404,
+   "geonames": 3054643
   },
   "buffalo": {
    "nome": "Buffalo",
@@ -253,6 +334,20 @@
    "lat": 47.059,
    "lon": 7.6279,
    "geonames": 2661321
+  },
+  "bury-st-edmunds": {
+   "nome": "Bury St Edmunds",
+   "paese": "GB",
+   "lat": 52.2463,
+   "lon": 0.7111,
+   "geonames": 2654186
+  },
+  "bydgoszcz": {
+   "nome": "Bydgoszcz",
+   "paese": "PL",
+   "lat": 53.1235,
+   "lon": 18.0076,
+   "geonames": 3102014
   },
   "calcutta": {
    "nome": "Calcutta",
@@ -283,12 +378,19 @@
    "lon": -71.1056,
    "geonames": 4931972
   },
-  "caracas": {
-   "nome": "Caracas",
-   "paese": "VE",
-   "lat": 10.488,
-   "lon": -66.8792,
-   "geonames": 3646738
+  "cappoquin": {
+   "nome": "Cappoquin",
+   "paese": "IE",
+   "lat": 52.146,
+   "lon": -7.8466,
+   "geonames": 2965786
+  },
+  "castlerea": {
+   "nome": "Castlerea",
+   "paese": "IE",
+   "lat": 53.7726,
+   "lon": -8.5031,
+   "geonames": 2965570
   },
   "castro": {
    "nome": "Castro (Ticino)",
@@ -301,8 +403,15 @@
    "nome": "Cesena",
    "paese": "IT",
    "lat": 44.1391,
-   "lon": 12.2432,
+   "lon": 12.2431,
    "geonames": 3178957
+  },
+  "ceska-lipa": {
+   "nome": "Česká Lípa",
+   "paese": "CZ",
+   "lat": 50.6855,
+   "lon": 14.5376,
+   "geonames": 3077929
   },
   "champs-sur-marne": {
    "nome": "Champs-sur-Marne",
@@ -318,6 +427,13 @@
    "lon": 6.5707,
    "geonames": 2661197
   },
+  "cheb": {
+   "nome": "Cheb",
+   "paese": "CZ",
+   "lat": 50.0796,
+   "lon": 12.3739,
+   "geonames": 3077835
+  },
   "chicago": {
    "nome": "Chicago",
    "paese": "US",
@@ -331,6 +447,13 @@
    "lat": 46.4226,
    "lon": 8.8431,
    "geonames": 2661171
+  },
+  "chrudim": {
+   "nome": "Chrudim",
+   "paese": "CZ",
+   "lat": 49.9511,
+   "lon": 15.7956,
+   "geonames": 3077539
   },
   "citta-del-vaticano": {
    "nome": "Città del Vaticano",
@@ -391,6 +514,21 @@
    "lon": -94.6869,
    "geonames": 5054551
   },
+  "copenaghen": {
+   "nome": "Copenaghen",
+   "en": "Copenhagen",
+   "paese": "DK",
+   "lat": 55.6759,
+   "lon": 12.5655,
+   "geonames": 2618425
+  },
+  "cork": {
+   "nome": "Cork",
+   "paese": "IE",
+   "lat": 51.898,
+   "lon": -8.4706,
+   "geonames": 2965140
+  },
   "cracovia": {
    "nome": "Cracovia",
    "en": "Kraków",
@@ -448,6 +586,22 @@
    "lat": 51.0509,
    "lon": 13.7383,
    "geonames": 2935022
+  },
+  "dublino": {
+   "nome": "Dublino",
+   "en": "Dublin",
+   "paese": "IE",
+   "lat": 53.3331,
+   "lon": -6.2489,
+   "geonames": 2964574
+  },
+  "edimburgo": {
+   "nome": "Edimburgo",
+   "en": "Edinburgh",
+   "paese": "GB",
+   "lat": 55.9521,
+   "lon": -3.1965,
+   "geonames": 2650225
   },
   "einsiedeln": {
    "nome": "Einsiedeln",
@@ -529,6 +683,20 @@
    "lon": 7.1513,
    "geonames": 2660718
   },
+  "galway": {
+   "nome": "Galway",
+   "paese": "IE",
+   "lat": 53.2724,
+   "lon": -9.051,
+   "geonames": 2964180
+  },
+  "gardabaer": {
+   "nome": "Garðabær",
+   "paese": "IS",
+   "lat": 64.0887,
+   "lon": -21.923,
+   "geonames": 3417195
+  },
   "gerusalemme": {
    "nome": "Gerusalemme",
    "en": "Jerusalem",
@@ -567,12 +735,33 @@
    "lon": 5.7148,
    "geonames": 3014728
   },
+  "grudziadz": {
+   "nome": "Grudziądz",
+   "paese": "PL",
+   "lat": 53.4841,
+   "lon": 18.7537,
+   "geonames": 3098218
+  },
+  "havlickuv-brod": {
+   "nome": "Havlíčkův Brod",
+   "paese": "CZ",
+   "lat": 49.6069,
+   "lon": 15.5794,
+   "geonames": 3075919
+  },
   "heidelberg": {
    "nome": "Heidelberg",
    "paese": "DE",
    "lat": 49.4077,
    "lon": 8.6908,
    "geonames": 2907911
+  },
+  "helsinki": {
+   "nome": "Helsinki",
+   "paese": "FI",
+   "lat": 60.1695,
+   "lon": 24.9354,
+   "geonames": 658225
   },
   "hermetschwil": {
    "nome": "Hermetschwil",
@@ -581,12 +770,40 @@
    "lon": 8.3413,
    "geonames": 2660362
   },
+  "horazdovice": {
+   "nome": "Horažďovice",
+   "paese": "CZ",
+   "lat": 49.3207,
+   "lon": 13.701,
+   "geonames": 3075522
+  },
+  "hradec-kralove": {
+   "nome": "Hradec Králové",
+   "paese": "CZ",
+   "lat": 50.2092,
+   "lon": 15.8328,
+   "geonames": 3074967
+  },
   "innsbruck": {
    "nome": "Innsbruck",
    "paese": "AT",
    "lat": 47.2627,
    "lon": 11.3945,
    "geonames": 2775220
+  },
+  "jachymov": {
+   "nome": "Jáchymov",
+   "paese": "CZ",
+   "lat": 50.3585,
+   "lon": 12.9346,
+   "geonames": 3074587
+  },
+  "jindrichuv-hradec": {
+   "nome": "Jindřichův Hradec",
+   "paese": "CZ",
+   "lat": 49.144,
+   "lon": 15.003,
+   "geonames": 3074149
   },
   "jp-abashiri": {
    "nome": "Abashiri",
@@ -10746,12 +10963,26 @@
    "lon": -85.5872,
    "geonames": 4997787
   },
+  "kalisz": {
+   "nome": "Kalisz",
+   "paese": "PL",
+   "lat": 51.7611,
+   "lon": 18.091,
+   "geonames": 3096880
+  },
   "kansas-city": {
    "nome": "Kansas City",
    "paese": "US",
    "lat": 39.0997,
    "lon": -94.5786,
    "geonames": 4393217
+  },
+  "karlovy-vary": {
+   "nome": "Karlovy Vary",
+   "paese": "CZ",
+   "lat": 50.2327,
+   "lon": 12.8712,
+   "geonames": 3073803
   },
   "karlsruhe": {
    "nome": "Karlsruhe",
@@ -10760,12 +10991,54 @@
    "lon": 8.4044,
    "geonames": 2892794
   },
+  "kezmarok": {
+   "nome": "Kežmarok",
+   "paese": "SK",
+   "lat": 49.1357,
+   "lon": 20.4335,
+   "geonames": 724503
+  },
   "kiel": {
    "nome": "Kiel",
    "paese": "DE",
    "lat": 54.3213,
    "lon": 10.1349,
    "geonames": 2891122
+  },
+  "kilkenny": {
+   "nome": "Kilkenny",
+   "paese": "IE",
+   "lat": 52.6542,
+   "lon": -7.2522,
+   "geonames": 2963398
+  },
+  "klatovy": {
+   "nome": "Klatovy",
+   "paese": "CZ",
+   "lat": 49.3955,
+   "lon": 13.295,
+   "geonames": 3073660
+  },
+  "kovacica": {
+   "nome": "Kovačica",
+   "paese": "RS",
+   "lat": 45.1117,
+   "lon": 20.6214,
+   "geonames": 789178
+  },
+  "kromeriz": {
+   "nome": "Kroměříž",
+   "paese": "CZ",
+   "lat": 49.2978,
+   "lon": 17.3931,
+   "geonames": 3072649
+  },
+  "kutna-hora": {
+   "nome": "Kutná Hora",
+   "paese": "CZ",
+   "lat": 49.9484,
+   "lon": 15.2682,
+   "geonames": 3072463
   },
   "la-rochelle": {
    "nome": "La Rochelle",
@@ -10780,6 +11053,13 @@
    "lat": 38.9717,
    "lon": -95.2352,
    "geonames": 4274277
+  },
+  "lazne-kynzvart": {
+   "nome": "Lázně Kynžvart",
+   "paese": "CZ",
+   "lat": 50.0106,
+   "lon": 12.6247,
+   "geonames": 3072265
   },
   "le-havre": {
    "nome": "Le Havre",
@@ -10803,6 +11083,20 @@
    "lon": 4.4931,
    "geonames": 2751773
   },
+  "liberec": {
+   "nome": "Liberec",
+   "paese": "CZ",
+   "lat": 50.7671,
+   "lon": 15.0562,
+   "geonames": 3071961
+  },
+  "lilienfeld": {
+   "nome": "Lilienfeld",
+   "paese": "AT",
+   "lat": 48.0131,
+   "lon": 15.5966,
+   "geonames": 2772470
+  },
   "lipsia": {
    "nome": "Lipsia",
    "en": "Leipzig",
@@ -10810,6 +11104,21 @@
    "lat": 51.3396,
    "lon": 12.3713,
    "geonames": 2879139
+  },
+  "lisbona": {
+   "nome": "Lisbona",
+   "en": "Lisbon",
+   "paese": "PT",
+   "lat": 38.7251,
+   "lon": -9.1498,
+   "geonames": 2267057
+  },
+  "litomysl": {
+   "nome": "Litomyšl",
+   "paese": "CZ",
+   "lat": 49.8681,
+   "lon": 16.313,
+   "geonames": 3071675
   },
   "londra": {
    "nome": "Londra",
@@ -10827,12 +11136,35 @@
    "lon": 6.6328,
    "geonames": 2659994
   },
+  "louny": {
+   "nome": "Louny",
+   "paese": "CZ",
+   "lat": 50.357,
+   "lon": 13.7967,
+   "geonames": 3071507
+  },
   "louviers": {
    "nome": "Louviers",
    "paese": "FR",
    "lat": 49.2167,
    "lon": 1.1667,
    "geonames": 2997336
+  },
+  "lubiana": {
+   "nome": "Lubiana",
+   "en": "Ljubljana",
+   "paese": "SI",
+   "lat": 46.0511,
+   "lon": 14.5051,
+   "geonames": 3196359
+  },
+  "lublino": {
+   "nome": "Lublino",
+   "en": "Lublin",
+   "paese": "PL",
+   "lat": 51.2506,
+   "lon": 22.5701,
+   "geonames": 765876
   },
   "lucerna": {
    "nome": "Lucerna",
@@ -10871,6 +11203,13 @@
    "lon": -118.7804,
    "geonames": 5369906
   },
+  "manchester": {
+   "nome": "Manchester",
+   "paese": "GB",
+   "lat": 53.4809,
+   "lon": -2.2374,
+   "geonames": 2643123
+  },
   "mariastein": {
    "nome": "Mariastein",
    "paese": "CH",
@@ -10878,13 +11217,19 @@
    "lon": 7.4892,
    "geonames": 2659762
   },
-  "meteore": {
-   "nome": "Meteore",
-   "en": "Meteora",
-   "paese": "GR",
-   "lat": 39.72028,
-   "lon": 21.63278,
-   "geonames": 254185
+  "maynooth": {
+   "nome": "Maynooth",
+   "paese": "IE",
+   "lat": 53.385,
+   "lon": -6.5936,
+   "geonames": 2962668
+  },
+  "melbourne": {
+   "nome": "Melbourne",
+   "paese": "AU",
+   "lat": -37.814,
+   "lon": 144.9633,
+   "geonames": 2158177
   },
   "mettingen": {
    "nome": "Mettingen",
@@ -10907,6 +11252,13 @@
    "lon": 9.0037,
    "geonames": 2871284
   },
+  "mikulov": {
+   "nome": "Mikulov",
+   "paese": "CZ",
+   "lat": 48.8056,
+   "lon": 16.6378,
+   "geonames": 3070720
+  },
   "milano": {
    "nome": "Milano",
    "en": "Milan",
@@ -10914,6 +11266,13 @@
    "lat": 45.4643,
    "lon": 9.1895,
    "geonames": 3173435
+  },
+  "mlada-boleslav": {
+   "nome": "Mladá Boleslav",
+   "paese": "CZ",
+   "lat": 50.4113,
+   "lon": 14.9032,
+   "geonames": 3070544
   },
   "modena": {
    "nome": "Modena",
@@ -10951,6 +11310,13 @@
    "lon": 6.9114,
    "geonames": 2659601
   },
+  "most": {
+   "nome": "Most",
+   "paese": "CZ",
+   "lat": 50.503,
+   "lon": 13.6362,
+   "geonames": 3070291
+  },
   "muestair": {
    "nome": "Müstair",
    "paese": "CH",
@@ -10978,6 +11344,13 @@
    "lat": 47.2172,
    "lon": -1.5534,
    "geonames": 2990969
+  },
+  "nepomuk": {
+   "nome": "Nepomuk",
+   "paese": "CZ",
+   "lat": 49.4862,
+   "lon": 13.5823,
+   "geonames": 3069862
   },
   "neuchatel": {
    "nome": "Neuchâtel",
@@ -11036,12 +11409,26 @@
    "lon": -72.6412,
    "geonames": 4945819
   },
+  "nova-rise": {
+   "nome": "Nová Říše",
+   "paese": "CZ",
+   "lat": 49.1394,
+   "lon": 15.5636,
+   "geonames": 3069663
+  },
   "oberlin": {
    "nome": "Oberlin (Ohio)",
    "paese": "US",
    "lat": 41.2939,
    "lon": -82.2174,
    "geonames": 5165445
+  },
+  "olomouc": {
+   "nome": "Olomouc",
+   "paese": "CZ",
+   "lat": 49.5955,
+   "lon": 17.2518,
+   "geonames": 3069011
   },
   "orselina": {
    "nome": "Orselina",
@@ -11064,6 +11451,13 @@
    "lon": -1.256,
    "geonames": 2640729
   },
+  "pardubice": {
+   "nome": "Pardubice",
+   "paese": "CZ",
+   "lat": 50.0408,
+   "lon": 15.7766,
+   "geonames": 3068582
+  },
   "parigi": {
    "nome": "Parigi",
    "en": "Paris",
@@ -11079,6 +11473,13 @@
    "lon": -0.3558,
    "geonames": 2988358
   },
+  "pelplin": {
+   "nome": "Pelplin",
+   "paese": "PL",
+   "lat": 53.9283,
+   "lon": 18.6977,
+   "geonames": 3089282
+  },
   "philadelphia": {
    "nome": "Filadelfia",
    "en": "Philadelphia",
@@ -11087,6 +11488,35 @@
    "lon": -75.1636,
    "geonames": 4560349
   },
+  "plock": {
+   "nome": "Płock",
+   "paese": "PL",
+   "lat": 52.5468,
+   "lon": 19.7064,
+   "geonames": 3088825
+  },
+  "plovdiv": {
+   "nome": "Plovdiv",
+   "paese": "BG",
+   "lat": 42.1539,
+   "lon": 24.75,
+   "geonames": 728193
+  },
+  "plzen": {
+   "nome": "Plzeň",
+   "en": "Pilsen",
+   "paese": "CZ",
+   "lat": 49.7475,
+   "lon": 13.3776,
+   "geonames": 3068160
+  },
+  "policka": {
+   "nome": "Polička",
+   "paese": "CZ",
+   "lat": 49.7146,
+   "lon": 16.2654,
+   "geonames": 3067882
+  },
   "porrentruy": {
    "nome": "Porrentruy",
    "paese": "CH",
@@ -11094,12 +11524,27 @@
    "lon": 7.0757,
    "geonames": 2659171
   },
+  "praga": {
+   "nome": "Praga",
+   "en": "Prague",
+   "paese": "CZ",
+   "lat": 50.088,
+   "lon": 14.4208,
+   "geonames": 3067696
+  },
   "princeton": {
    "nome": "Princeton",
    "paese": "US",
    "lat": 40.3487,
    "lon": -74.659,
    "geonames": 5102922
+  },
+  "prostejov": {
+   "nome": "Prostějov",
+   "paese": "CZ",
+   "lat": 49.4719,
+   "lon": 17.1118,
+   "geonames": 3067421
   },
   "providence": {
    "nome": "Providence",
@@ -11115,6 +11560,13 @@
    "lon": 8.7111,
    "geonames": 2659118
   },
+  "rajhrad": {
+   "nome": "Rajhrad",
+   "paese": "CZ",
+   "lat": 49.0902,
+   "lon": 16.6039,
+   "geonames": 3067078
+  },
   "ravenna": {
    "nome": "Ravenna",
    "paese": "IT",
@@ -11128,6 +11580,20 @@
    "lat": 49.2653,
    "lon": 4.0285,
    "geonames": 2984114
+  },
+  "rennes": {
+   "nome": "Rennes",
+   "paese": "FR",
+   "lat": 48.1111,
+   "lon": -1.6743,
+   "geonames": 2983990
+  },
+  "reykjavik": {
+   "nome": "Reykjavík",
+   "paese": "IS",
+   "lat": 64.1355,
+   "lon": -21.8954,
+   "geonames": 3413829
   },
   "rochester": {
    "nome": "Rochester (New York)",
@@ -11237,13 +11703,19 @@
    "lon": 30.3141,
    "geonames": 498817
   },
-  "santiago-del-cile": {
-   "nome": "Santiago del Cile",
-   "en": "Santiago",
-   "paese": "CL",
-   "lat": -33.4569,
-   "lon": -70.6483,
-   "geonames": 3871336
+  "sandomierz": {
+   "nome": "Sandomierz",
+   "paese": "PL",
+   "lat": 50.6827,
+   "lon": 21.749,
+   "geonames": 759603
+  },
+  "sanok": {
+   "nome": "Sanok",
+   "paese": "PL",
+   "lat": 49.5557,
+   "lon": 22.2056,
+   "geonames": 759591
   },
   "sarnen": {
    "nome": "Sarnen",
@@ -11327,12 +11799,27 @@
    "lon": 14.8756,
    "geonames": 2766459
   },
+  "st-polten": {
+   "nome": "Sankt Pölten",
+   "paese": "AT",
+   "lat": 48.2076,
+   "lon": 15.6372,
+   "geonames": 2766429
+  },
   "stanford": {
    "nome": "Stanford",
    "paese": "US",
    "lat": 37.4241,
    "lon": -122.1661,
    "geonames": 5398563
+  },
+  "stoccolma": {
+   "nome": "Stoccolma",
+   "en": "Stockholm",
+   "paese": "SE",
+   "lat": 59.3294,
+   "lon": 18.0687,
+   "geonames": 2673730
   },
   "strasburgo": {
    "nome": "Strasburgo",
@@ -11341,6 +11828,27 @@
    "lat": 48.5839,
    "lon": 7.7455,
    "geonames": 2973783
+  },
+  "tabor": {
+   "nome": "Tábor",
+   "paese": "CZ",
+   "lat": 49.4144,
+   "lon": 14.6578,
+   "geonames": 3064379
+  },
+  "tepla": {
+   "nome": "Teplá",
+   "paese": "CZ",
+   "lat": 49.98,
+   "lon": 12.8643,
+   "geonames": 3070820
+  },
+  "teplice": {
+   "nome": "Teplice",
+   "paese": "CZ",
+   "lat": 50.6404,
+   "lon": 13.8245,
+   "geonames": 3064288
   },
   "tesserete": {
    "nome": "Tesserete",
@@ -11378,6 +11886,27 @@
    "lon": 8.9533,
    "geonames": 2658348
   },
+  "torun": {
+   "nome": "Toruń",
+   "paese": "PL",
+   "lat": 53.0138,
+   "lon": 18.5981,
+   "geonames": 3083271
+  },
+  "trebic": {
+   "nome": "Třebíč",
+   "paese": "CZ",
+   "lat": 49.2149,
+   "lon": 15.8817,
+   "geonames": 3064104
+  },
+  "trebon": {
+   "nome": "Třeboň",
+   "paese": "CZ",
+   "lat": 49.0036,
+   "lon": 14.7706,
+   "geonames": 3064079
+  },
   "trogen": {
    "nome": "Trogen",
    "paese": "CH",
@@ -11400,6 +11929,13 @@
    "lon": 9.0522,
    "geonames": 2820860
   },
+  "turnov": {
+   "nome": "Turnov",
+   "paese": "CZ",
+   "lat": 50.5836,
+   "lon": 15.1519,
+   "geonames": 3063853
+  },
   "ueberlingen": {
    "nome": "Überlingen",
    "paese": "DE",
@@ -11413,6 +11949,14 @@
    "lat": 50.3591,
    "lon": 3.5251,
    "geonames": 2971041
+  },
+  "varsavia": {
+   "nome": "Varsavia",
+   "en": "Warsaw",
+   "paese": "PL",
+   "lat": 52.2298,
+   "lon": 21.0118,
+   "geonames": 756135
   },
   "vesoul": {
    "nome": "Vesoul",
@@ -11449,6 +11993,20 @@
    "lon": 7.1223,
    "geonames": 2968533
   },
+  "vilnius": {
+   "nome": "Vilnius",
+   "paese": "LT",
+   "lat": 54.6892,
+   "lon": 25.2798,
+   "geonames": 593116
+  },
+  "vyssi-brod": {
+   "nome": "Vyšší Brod",
+   "paese": "CZ",
+   "lat": 48.616,
+   "lon": 14.3118,
+   "geonames": 3062184
+  },
   "waedenswil": {
    "nome": "Wädenswil",
    "paese": "CH",
@@ -11462,6 +12020,13 @@
    "lat": 38.8951,
    "lon": -77.0364,
    "geonames": 4140963
+  },
+  "waterford": {
+   "nome": "Waterford",
+   "paese": "IE",
+   "lat": 52.2583,
+   "lon": -7.1119,
+   "geonames": 2960992
   },
   "wattwil": {
    "nome": "Wattwil",
@@ -11484,6 +12049,34 @@
    "lon": 10.541,
    "geonames": 2806914
   },
+  "zamosc": {
+   "nome": "Zamość",
+   "paese": "PL",
+   "lat": 50.7231,
+   "lon": 23.252,
+   "geonames": 753866
+  },
+  "zelezny-brod": {
+   "nome": "Železný Brod",
+   "paese": "CZ",
+   "lat": 50.6427,
+   "lon": 15.2541,
+   "geonames": 3061562
+  },
+  "zielona-gora": {
+   "nome": "Zielona Góra",
+   "paese": "PL",
+   "lat": 51.9355,
+   "lon": 15.5064,
+   "geonames": 3080165
+  },
+  "zlata-koruna": {
+   "nome": "Zlatá Koruna",
+   "paese": "CZ",
+   "lat": 48.8548,
+   "lon": 14.3695,
+   "geonames": 3061400
+  },
   "zofingen": {
    "nome": "Zofingen",
    "paese": "CH",
@@ -11498,6 +12091,29 @@
    "lat": 47.3667,
    "lon": 8.55,
    "geonames": 2657896
+  },
+  "caracas": {
+   "nome": "Caracas",
+   "paese": "VE",
+   "lat": 10.488,
+   "lon": -66.8792,
+   "geonames": 3646738
+  },
+  "meteore": {
+   "nome": "Meteore",
+   "en": "Meteora",
+   "paese": "GR",
+   "lat": 39.72028,
+   "lon": 21.63278,
+   "geonames": 254185
+  },
+  "santiago-del-cile": {
+   "nome": "Santiago del Cile",
+   "en": "Santiago",
+   "paese": "CL",
+   "lat": -33.4569,
+   "lon": -70.6483,
+   "geonames": 3871336
   }
  },
  "citta": {
@@ -11534,6 +12150,9 @@
   "Akitsu": "jp-akitsu",
   "Ako": "jp-ako",
   "Akune": "jp-akune",
+  "Alba Iulia": "alba-iulia",
+  "Alba-Iulia": "alba-iulia",
+  "Almaty": "almaty",
   "Ama": "jp-ama",
   "Amagasaki": "jp-amagasaki",
   "Amagi": "jp-amagi",
@@ -11603,6 +12222,8 @@
   "Barcelona": "barcellona",
   "Basel": "basilea",
   "Beirut": "beirut",
+  "Belgrade": "belgrado",
+  "Belgrado": "belgrado",
   "Beppu": "jp-beppu",
   "Berkeley": "berkeley",
   "Berkeley (Stati Uniti)": "berkeley",
@@ -11614,6 +12235,7 @@
   "Besançon": "besancon",
   "Bever": "bever",
   "Beyrouth": "beirut",
+  "Białystok": "bialystok",
   "Bibai": "jp-bibai",
   "Biei": "jp-biei",
   "Bizen": "jp-bizen",
@@ -11622,9 +12244,21 @@
   "Bordeaux": "bordeaux",
   "Boston": "boston",
   "Bourges": "bourges",
+  "Bratislava": "bratislava",
+  "Braşov": "brasov",
+  "Brașov": "brasov",
   "Bremgarten": "bremgarten",
+  "Breslavia": "breslavia",
   "Brest": "brest",
+  "Brno": "brno",
+  "Brussels": "bruxelles",
+  "Bruxelles": "bruxelles",
   "Bryn Mawr": "bryn-mawr",
+  "Bucarest": "bucarest",
+  "Bucharest": "bucarest",
+  "Bucuresti": "bucarest",
+  "București": "bucarest",
+  "Budapest": "budapest",
   "Buffalo": "buffalo",
   "Bulle": "bulle",
   "Bungo-Takada": "jp-bungo-takada",
@@ -11632,20 +12266,23 @@
   "Bungo-ōno": "jp-bungo-ono",
   "Bunkyo": "jp-bunkyo",
   "Burgdorf": "burgdorf",
+  "Bury St Edmunds": "bury-st-edmunds",
   "Buzen": "jp-buzen",
   "Buzo": "jp-buzo",
   "Buzō": "jp-buzo",
+  "Bydgoszcz": "bydgoszcz",
   "Cambrai": "cambrai",
   "Cambridge": "cambridge",
   "Cambridge (Massachusetts)": "cambridge-ma",
-  "Caracas": "caracas",
-  "Caracas (Venezuela)": "caracas",
+  "Cappoquin": "cappoquin",
   "Cassation": "parigi",
   "Cassino": "montecassino",
+  "Castlerea": "castlerea",
   "Castro": "castro",
   "Cesena": "cesena",
   "Chatan": "jp-chatan",
   "Chavannes-près-Renens": "chavannes",
+  "Cheb": "cheb",
   "Chiba": "jp-chiba",
   "Chicago": "chicago",
   "Chichibu": "jp-chichibu",
@@ -11663,6 +12300,7 @@
   "Chiyoda": "jp-chiyoda",
   "Chofu": "jp-chofu",
   "Choshi": "jp-choshi",
+  "Chrudim": "chrudim",
   "Chuo": "jp-chuo",
   "Chur": "coira",
   "Chōfu": "jp-chofu",
@@ -11672,7 +12310,12 @@
   "Cleveland": "cleveland",
   "Colmar": "colmar",
   "Cologny": "cologny",
+  "Colonia": "colonia",
   "Conception (Missouri)": "conception",
+  "Copenaghen": "copenaghen",
+  "Copenhagen": "copenaghen",
+  "Cork": "cork",
+  "Cracovia": "cracovia",
   "Daigo": "jp-daigo",
   "Daisen": "jp-daisen",
   "Daito": "jp-daito",
@@ -11688,6 +12331,8 @@
   "Dieppe": "dieppe",
   "Disentis": "disentis",
   "Dresden": "dresda",
+  "Dublin": "dublino",
+  "Dublino": "dublino",
   "Ebara": "jp-ebara",
   "Ebetsu": "jp-ebetsu",
   "Ebie": "jp-ebie",
@@ -11696,6 +12341,8 @@
   "Ebisu": "jp-ebisu",
   "Echigawa": "jp-echigawa",
   "Echizen": "jp-echizen",
+  "Edimburgo": "edimburgo",
+  "Edinburgh": "edimburgo",
   "Edogawe": "jp-edogawe",
   "Edosaki": "jp-edosaki",
   "Egota": "jp-egota",
@@ -11769,8 +12416,10 @@
   "Fusō": "jp-fuso",
   "Futaba": "jp-futaba",
   "Futtsu": "jp-futtsu",
+  "Galway": "galway",
   "Gamagori": "jp-gamagori",
   "Gamagōri": "jp-gamagori",
+  "Garðabær": "gardabaer",
   "Geneve": "ginevra",
   "Genève": "ginevra",
   "Germanisches Nationalmuseum Nürnberg": "norimberga",
@@ -11796,6 +12445,7 @@
   "Gotsucho": "jp-gotsucho",
   "Gotō": "jp-goto",
   "Grenoble": "grenoble",
+  "Grudziądz": "grudziadz",
   "Gujo": "jp-gujo",
   "Gujō": "jp-gujo",
   "Gushikawa": "jp-gushikawa",
@@ -11854,6 +12504,7 @@
   "Hatogaya-honchō": "jp-hatogaya-honcho",
   "Hatoyama": "jp-hatoyama",
   "Hatsukaichi": "jp-hatsukaichi",
+  "Havlíčkův Brod": "havlickuv-brod",
   "Hayama": "jp-hayama",
   "Hayashima": "jp-hayashima",
   "Hayashino": "jp-hayashino",
@@ -11861,6 +12512,7 @@
   "Heidelberger Papyrussammlung": "heidelberg",
   "Heiwadai": "jp-heiwadai",
   "Hekinan": "jp-hekinan",
+  "Helsinki": "helsinki",
   "Hermetschwil": "hermetschwil",
   "Hida": "jp-hida",
   "Hidaka": "jp-hidaka",
@@ -11934,11 +12586,13 @@
   "Honjo": "jp-honjo",
   "Honjō": "jp-honjo",
   "Honmachi": "jp-honmachi",
+  "Horažďovice": "horazdovice",
   "Horikiri": "jp-horikiri",
   "Horikoshi": "jp-horikoshi",
   "Horyuji": "jp-horyuji",
   "Hoshakuji": "jp-hoshakuji",
   "Hotaka": "jp-hotaka",
+  "Hradec Králové": "hradec-kralove",
   "Hyuga": "jp-hyuga",
   "Hyūga": "jp-hyuga",
   "Hōdatsushimizu": "jp-hodatsushimizu",
@@ -12056,10 +12710,12 @@
   "Izumiōtsu": "jp-izumiotsu",
   "Izumo": "jp-izumo",
   "Izunokuni": "jp-izunokuni",
+  "Jindřichův Hradec": "jindrichuv-hradec",
   "Joetsu": "jp-joetsu",
   "Joso": "jp-joso",
   "Joyo": "jp-joyo",
   "Jurjewetz": "jurevec",
+  "Jáchymov": "jachymov",
   "Jōetsu": "jp-joetsu",
   "Jōsō": "jp-joso",
   "Jōyō": "jp-joyo",
@@ -12086,6 +12742,7 @@
   "Kakuda": "jp-kakuda",
   "Kakunodatemachi": "jp-kakunodatemachi",
   "Kalamazoo": "kalamazoo",
+  "Kalisz": "kalisz",
   "Kama": "jp-kama",
   "Kamagaya": "jp-kamagaya",
   "Kamaishi": "jp-kamaishi",
@@ -12155,6 +12812,7 @@
   "Karasuyama": "jp-karasuyama",
   "Karatsu": "jp-karatsu",
   "Kariya": "jp-kariya",
+  "Karlovy Vary": "karlovy-vary",
   "Karlsruhe": "karlsruhe",
   "Karuizawa": "jp-karuizawa",
   "Kasado": "jp-kasado",
@@ -12203,6 +12861,7 @@
   "Kazuno": "jp-kazuno",
   "Kemigawa": "jp-kemigawa",
   "Kesennuma": "jp-kesennuma",
+  "Kežmarok": "kezmarok",
   "Kiba": "jp-kiba",
   "Kichijoji-honcho": "jp-kichijoji-honcho",
   "Kichijōji-honchō": "jp-kichijoji-honcho",
@@ -12214,6 +12873,7 @@
   "Kikuchi": "jp-kikuchi",
   "Kikugawa": "jp-kikugawa",
   "Kikuna": "jp-kikuna",
+  "Kilkenny": "kilkenny",
   "Kimitsu": "jp-kimitsu",
   "Kimokawa": "jp-kimokawa",
   "Kin": "jp-kin",
@@ -12246,6 +12906,7 @@
   "Kiyose": "jp-kiyose",
   "Kiyosu": "jp-kiyosu",
   "Kizugawa": "jp-kizugawa",
+  "Klatovy": "klatovy",
   "Kobayashi": "jp-kobayashi",
   "Kobe": "jp-kobe",
   "Kobė": "jp-kobe",
@@ -12284,11 +12945,13 @@
   "Kotari": "jp-kotari",
   "Koto": "jp-koto",
   "Kotō": "jp-koto",
+  "Kovačica": "kovacica",
   "Kozakai-cho": "jp-kozakai-cho",
   "Kozakai-chō": "jp-kozakai-cho",
   "Kozan": "jp-kozan",
   "Krakow": "cracovia",
   "Kraków": "cracovia",
+  "Kroměříž": "kromeriz",
   "Kudamatsu": "jp-kudamatsu",
   "Kuji": "jp-kuji",
   "Kukichuo": "jp-kukichuo",
@@ -12318,7 +12981,9 @@
   "Kushimoto": "jp-kushimoto",
   "Kushiro": "jp-kushiro",
   "Kutchan": "jp-kutchan",
+  "Kutná Hora": "kutna-hora",
   "Kuwana": "jp-kuwana",
+  "Kynžvart": "lazne-kynzvart",
   "Kyomendao": "jp-kyomendao",
   "Kyotamba": "jp-kyotamba",
   "Kyotanabe": "jp-kyotanabe",
@@ -12332,6 +12997,7 @@
   "Kóbe": "jp-kobe",
   "Kófu": "jp-kofu",
   "Köln": "colonia",
+  "København": "copenaghen",
   "Kōbe": "jp-kobe",
   "Kōchi": "jp-kochi",
   "Kōfu": "jp-kofu",
@@ -12353,11 +13019,23 @@
   "Le Mans": "le-mans",
   "Leiden": "leida",
   "Leipzig": "lipsia",
+  "Liberec": "liberec",
+  "Lilienfeld": "lilienfeld",
+  "Lisboa": "lisbona",
+  "Lisbon": "lisbona",
+  "Lisbona": "lisbona",
+  "Litomyšl": "litomysl",
+  "Ljubljana": "lubiana",
   "London": "londra",
   "Londra": "londra",
   "Londra (Regno Unito)": "londra",
+  "Louny": "louny",
   "Louviers": "louviers",
+  "Lubiana": "lubiana",
+  "Lublin": "lublino",
+  "Lublino": "lublino",
   "Luzern": "lucerna",
+  "Lázně Kynžvart": "lazne-kynzvart",
   "Machida": "jp-machida",
   "Machiya": "jp-machiya",
   "Madrid": "madrid",
@@ -12377,6 +13055,7 @@
   "Makuhari": "jp-makuhari",
   "Makurazaki": "jp-makurazaki",
   "Malibu": "malibu",
+  "Manchester": "manchester",
   "Maniwa": "jp-maniwa",
   "Mariastein": "mariastein",
   "Marne-la-Vallée": "champs-sur-marne",
@@ -12404,12 +13083,14 @@
   "Matsuura": "jp-matsuura",
   "Matsuyama": "jp-matsuyama",
   "Matsuzaki": "jp-matsuzaki",
+  "Maynooth": "maynooth",
   "Meguro": "jp-meguro",
   "Mejiro": "jp-mejiro",
+  "Melbourne": "melbourne",
+  "Melbourne (Australia)": "melbourne",
   "Memuro-minami": "jp-memuro-minami",
   "Mendahigashi": "jp-mendahigashi",
   "Menuma": "jp-menuma",
-  "Meteore (Kalambaka)": "meteore",
   "Mettingen": "mettingen",
   "Metz": "metz",
   "Mibu": "jp-mibu",
@@ -12421,6 +13102,7 @@
   "Miharu": "jp-miharu",
   "Mikasa": "jp-mikasa",
   "Miki": "jp-miki",
+  "Mikulov": "mikulov",
   "Mikuni": "jp-mikuni",
   "Mikuriya": "jp-mikuriya",
   "Milano": "milano",
@@ -12495,6 +13177,7 @@
   "Mizunami": "jp-mizunami",
   "Mizunashi": "jp-mizunashi",
   "Mizusawa": "jp-mizusawa",
+  "Mladá Boleslav": "mlada-boleslav",
   "Mobara": "jp-mobara",
   "Mobetsu": "jp-mobetsu",
   "Mochibaru": "jp-mochibaru",
@@ -12515,6 +13198,7 @@
   "Morohongo": "jp-morohongo",
   "Morohongō": "jp-morohongo",
   "Morowa": "jp-morowa",
+  "Most": "most",
   "Motegi": "jp-motegi",
   "Motobu": "jp-motobu",
   "Motomachi": "jp-motomachi",
@@ -12602,6 +13286,7 @@
   "Nayoro": "jp-nayoro",
   "Naze": "jp-naze",
   "Nemuro": "jp-nemuro",
+  "Nepomuk": "nepomuk",
   "Neuchâtel": "neuchatel",
   "New Brunswick (New Jersey)": "new-brunswick",
   "New Haven": "new-haven",
@@ -12653,6 +13338,7 @@
   "Nonoichi": "jp-nonoichi",
   "Northampton (Massachusetts)": "northampton-ma",
   "Noshiro": "jp-noshiro",
+  "Nová Říše": "nova-rise",
   "Nukui": "jp-nukui",
   "Numabukuro": "jp-numabukuro",
   "Numakunai": "jp-numakunai",
@@ -12722,6 +13408,7 @@
   "Okuchi-shinohara": "jp-okuchi-shinohara",
   "Okuno": "jp-okuno",
   "Okunoya": "jp-okunoya",
+  "Olomouc": "olomouc",
   "Omachi": "jp-omachi",
   "Omaezaki": "jp-omaezaki",
   "Omagari": "jp-omagari",
@@ -12768,17 +13455,32 @@
   "Oyamazaki": "jp-oyamazaki",
   "Oyanomachi-noboritate": "jp-oyanomachi-noboritate",
   "Ozu": "jp-ozu",
+  "Pardubice": "pardubice",
   "Paris": "parigi",
   "Pau": "pau",
+  "Pelplin": "pelplin",
   "Philadelphia": "philadelphia",
+  "Pilsen": "plzen",
   "Plaine Commune": "saint-denis",
+  "Plovdiv": "plovdiv",
+  "Plzeň": "plzen",
+  "Polička": "policka",
   "Porrentruy": "porrentruy",
+  "Praga": "praga",
+  "Prague": "praga",
+  "Praha": "praga",
   "Princeton": "princeton",
+  "Prostějov": "prostejov",
   "Providence": "providence",
+  "Płock": "plock",
   "Quinto": "quinto",
+  "Rajhrad": "rajhrad",
   "Ranzan": "jp-ranzan",
   "Ravenna": "ravenna",
   "Reims": "reims",
+  "Rennes": "rennes",
+  "Reykjavik": "reykjavik",
+  "Reykjavík": "reykjavik",
   "Rifu": "jp-rifu",
   "Rikuzen-Takata": "jp-rikuzen-takata",
   "Rikuzentakata": "jp-rikuzentakata",
@@ -12845,12 +13547,13 @@
   "Sanda": "jp-sanda",
   "Sandacho": "jp-sandacho",
   "Sandachō": "jp-sandacho",
+  "Sandomierz": "sandomierz",
   "Sanjo": "jp-sanjo",
   "Sanjō": "jp-sanjo",
+  "Sankt Pölten": "st-polten",
   "Sanmu": "jp-sanmu",
   "Sano": "jp-sano",
-  "Santiago (Cile)": "santiago-del-cile",
-  "Santiago del Cile": "santiago-del-cile",
+  "Sanok": "sanok",
   "Sanuki": "jp-sanuki",
   "Sanyoonoda": "jp-sanyoonoda",
   "Sanyōonoda": "jp-sanyoonoda",
@@ -12990,8 +13693,11 @@
   "St. Gallen": "san-gallo",
   "St. Paul in Kärnten": "st-paul-lavanttal",
   "St. Petersburg": "san-pietroburgo",
+  "St. Pölten": "st-polten",
   "Staatsarchiv Nürnberg": "norimberga",
   "Stanford": "stanford",
+  "Stoccolma": "stoccolma",
+  "Stockholm": "stoccolma",
   "Strasbourg": "strasburgo",
   "Sue": "jp-sue",
   "Sueyoshicho-ninokata": "jp-sueyoshicho-ninokata",
@@ -13105,6 +13811,8 @@
   "Tenno": "jp-tenno",
   "Tennō": "jp-tenno",
   "Tenri": "jp-tenri",
+  "Teplice": "teplice",
+  "Teplá": "tepla",
   "Tesserete": "tesserete",
   "Toba": "jp-toba",
   "Tobetsu": "jp-tobetsu",
@@ -13150,6 +13858,8 @@
   "Toronto": "toronto",
   "Toronto (Canada)": "toronto",
   "Torre": "torre",
+  "Torun": "torun",
+  "Toruń": "torun",
   "Tosa": "jp-tosa",
   "Tosashimizu": "jp-tosashimizu",
   "Tosayamadacho-nakano": "jp-tosayamadacho-nakano",
@@ -13198,6 +13908,8 @@
   "Tsurusaki": "jp-tsurusaki",
   "Tsuruta": "jp-tsuruta",
   "Tsuyama": "jp-tsuyama",
+  "Turnov": "turnov",
+  "Tábor": "tabor",
   "Tókýó": "tokyo",
   "Tübingen": "tubinga",
   "Tōbetsu": "jp-tobetsu",
@@ -13210,6 +13922,8 @@
   "Tōno": "jp-tono",
   "Tōon": "jp-toon",
   "Tōyō": "jp-toyo",
+  "Třeboň": "trebon",
+  "Třebíč": "trebic",
   "Ubagai": "jp-ubagai",
   "Ube": "jp-ube",
   "Ubė": "jp-ube",
@@ -13252,12 +13966,15 @@
   "Uwa": "jp-uwa",
   "Uwajima": "jp-uwajima",
   "Valenciennes": "valenciennes",
+  "Varsavia": "varsavia",
   "Vatikan": "citta-del-vaticano",
   "Vesoul": "vesoul",
   "Vevey": "vevey",
   "Vienna": "vienna",
   "Vilanova i la Geltrú": "vilanova-i-la-geltru",
   "Villeneuve-Loubet": "villeneuve-loubet",
+  "Vilnius": "vilnius",
+  "Vyšší Brod": "vyssi-brod",
   "Wadayama": "jp-wadayama",
   "Wajima": "jp-wajima",
   "Wakabayashi": "jp-wakabayashi",
@@ -13270,14 +13987,19 @@
   "Wako": "jp-wako",
   "Wakuya": "jp-wakuya",
   "Warabi": "jp-warabi",
+  "Warsaw": "varsavia",
+  "Warszawa": "varsavia",
   "Washington (Stati Uniti)": "washington",
   "Washington, D.C.": "washington",
   "Washinomiya": "jp-washinomiya",
   "Watari": "jp-watari",
+  "Waterford": "waterford",
   "Wattwil": "wattwil",
   "Wien": "vienna",
   "Wil": "wil",
   "Wolfenbüttel": "wolfenbuettel",
+  "Wroclaw": "breslavia",
+  "Wrocław": "breslavia",
   "Wädenswil": "waedenswil",
   "Yabase": "jp-yabase",
   "Yabe": "jp-yabe",
@@ -13376,11 +14098,14 @@
   "Yūbari": "jp-yubari",
   "Yūki": "jp-yuki",
   "Zama": "jp-zama",
+  "Zamość": "zamosc",
   "Zentral- und Hochschulbibliothek Luzern": "lucerna",
   "Zentsuji": "jp-zentsuji",
   "Zentsujicho": "jp-zentsujicho",
   "Zentsujichó": "jp-zentsujicho",
   "Zentsūji": "jp-zentsuji",
+  "Zielona Góra": "zielona-gora",
+  "Zlatá Koruna": "zlata-koruna",
   "Zofingen": "zofingen",
   "Zurich": "zurigo",
   "Zurigo": "zurigo",
@@ -13392,6 +14117,7 @@
   "Óita": "jp-oita",
   "Ósaka": "jp-osaka",
   "Überlingen": "ueberlingen",
+  "Česká Lípa": "ceska-lipa",
   "İshigaki": "jp-ishigaki",
   "İtami": "jp-itami",
   "Ō-zanuki": "jp-o-zanuki",
@@ -13447,7 +14173,16 @@
   "Ōwa": "jp-owa",
   "Ōyama": "jp-oyama-1853486",
   "Ōyanomachi-noboritate": "jp-oyanomachi-noboritate",
-  "Ōzu": "jp-ozu"
+  "Ōzu": "jp-ozu",
+  "Železný Brod": "zelezny-brod",
+  "Алма-Ата": "almaty",
+  "Београд": "belgrado",
+  "Пловдив": "plovdiv",
+  "Caracas": "caracas",
+  "Caracas (Venezuela)": "caracas",
+  "Meteore (Kalambaka)": "meteore",
+  "Santiago (Cile)": "santiago-del-cile",
+  "Santiago del Cile": "santiago-del-cile"
  },
  "biblioteche": {
   "Bibliothèque Carré d'art / Nîmes": "nimes",
@@ -13526,6 +14261,10 @@
   "bncf": "firenze",
   "vallicelliana": "roma",
   "malatestiana": "cesena",
-  "classense": "ravenna"
+  "classense": "ravenna",
+  "wellcome": "londra",
+  "manchester": "manchester",
+  "cbl": "dublino",
+  "cudl": "cambridge"
  }
 }

@@ -31,6 +31,11 @@ export const BIBLIOTECHE = {
   leiden: { biblioteca: "Universiteitsbibliotheek Leiden (manoscritti, con i Vossiani; Bibliotheca Neerlandica Manuscripta)", citta: "Leida", come: "ogni notte, da sola" },
   // biblioteche lette dal Handschriftenportal (Wolfenbüttel, Bamberga, Karlsruhe, Stoccarda, Colonia, Lipsia)
   ...Object.fromEntries(Object.entries(FONTI_HSP).map(([f, h]) => [f, { biblioteca: `${h.nome} (dati dal Handschriftenportal)`, citta: h.citta, come: "ogni notte, da sola" }])),
+  // Handschriftenportal, corsia «europa» (dal 26 ottobre 2026)
+  ...Object.fromEntries(["francoforte", "dresda", "tubinga", "darmstadt"].map(f => [f, { biblioteca: `${FONTI_HSP[f].nome} (dati dal Handschriftenportal${FONTI_HSP[f].copie ? "; copie dei manifesti scritte dal catalogo" : ""})`, citta: FONTI_HSP[f].citta, come: "corsia europa: a ruota finché la prima lettura non è finita, poi ogni notte" }])),
+  handrit: { biblioteca: "handrit.is: Landsbókasafn Íslands, Stofnun Árna Magnússonar, Den Arnamagnæanske Samling (descrizioni TEI pubblicate su GitHub; manifesti scritti dal catalogo)", citta: "Reykjavík e Copenaghen", come: "corsia europa, ogni notte (descrizioni rilette ogni 14 giorni, nessuna richiesta a handrit.is)" },
+  polona: { biblioteca: "Polona: Biblioteka Narodowa, Biblioteka Jagiellońska, Biblioteka Książąt Czartoryskich e altre biblioteche polacche", citta: "Polonia", come: "corsia europa: a ruota finché la prima lettura non è finita, poi ogni notte (raccolta completa ogni 6 giorni)" },
+  manuscriptorium: { biblioteca: "Manuscriptorium: Národní knihovna České republiky, biblioteche universitarie di Breslavia e Toruń e altre (fuori le copie di biblioteche già nel catalogo)", citta: "Repubblica Ceca e altre", come: "corsia europa: a ruota finché la prima lettura non è finita, poi ogni notte (raccolta completa ogni 6 giorni)" },
   yale: { biblioteca: "Yale University Library (Beinecke e altre biblioteche di Yale)", citta: "New Haven (Stati Uniti)", come: "corsia propria: a ruota finché la prima lettura non è finita, poi ogni 6 giorni" },
   penn: { biblioteca: "University of Pennsylvania Libraries (Kislak Center, Schoenberg, CAJS)", citta: "Filadelfia (Stati Uniti)", come: "corsia usa: a ruota finché la prima lettura non è finita, poi ogni notte (raccolta completa ogni 6 giorni)" },
   ds: { biblioteca: "Digital Scriptorium (istituzioni statunitensi: Princeton, Columbia, Harvard, Huntington, Free Library e altre; dettaglio sotto la tabella)", citta: "Stati Uniti", come: "ogni notte, da sola (raccolta completa ogni 6 giorni)" },
@@ -281,6 +286,21 @@ export const AVANZAMENTO = {
     const s = leggi("data/latam_pdf.json"); if (!s || !s.pagine || !s.pagine[f]) return { testo: "immagini non ancora estratte" };
     return { testo: `${num(Object.keys(s.pagine[f]).length)} codici librari estratti dai PDF della biblioteca (pagine nel ramo «immagini»)`, data: s.aggiornato };
   }])),
+  handrit: () => {
+    const s = leggi("data/handrit.json"); if (!s) return { testo: "non ancora cominciata" };
+    const fuori = Object.values(s.fuori || {}).reduce((a, b) => a + b, 0);
+    return { testo: `descrizioni lette tutte (${num(s.totale)} codici digitalizzati; ${num(Object.keys(s.voci || {}).length)} manoscritti librari, fuori ${num(fuori)} diplomi e carte d'archivio)`, data: s.completato || s.aggiornato };
+  },
+  polona: () => {
+    const s = leggi("data/polona.json"); if (!s) return { testo: "non ancora cominciata" };
+    if (s.cursore) return { testo: `in corso: biblioteca ${s.cursore.b + 1} di ${(s.biblioteche || []).length} (${num(Object.keys(s.nuove || {}).length)} schede finora su ${num(s.totale)})`, data: s.aggiornato };
+    return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} manoscritti senza diritti d'autore; entrano quelli in pubblico dominio o con licenza aperta, fuori lettere e documenti)`, data: s.completato || s.aggiornato };
+  },
+  manuscriptorium: () => {
+    const s = leggi("data/manuscriptorium.json"); if (!s) return { testo: "non ancora cominciata" };
+    if (s.cursore != null) return { testo: `in corso: ${num(s.cursore)} schede lette su ${num(s.totale)}`, data: s.aggiornato };
+    return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} con copia digitale, senza editore né soggetto di stampato; fuori le copie di biblioteche già nel catalogo, carte geografiche, lettere e stampati riconoscibili dalla segnatura)`, data: s.completato || s.aggiornato };
+  },
   vaticana: () => {
     const s = leggi("data/vaticana.json"); if (!s) return { testo: "non ancora cominciata" };
     const n = Object.keys(s.voci || {}).length;

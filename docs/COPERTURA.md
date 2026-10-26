@@ -14,11 +14,11 @@ In tutto 196 nazioni: i 193 stati dell'ONU, la Città del Vaticano, la Palestina
 
 | Stato | Nazioni |
 |---|---|
-| agganciata | 21 |
+| agganciata | 26 |
 | controllata, niente da agganciare | 51 |
-| controllata, bloccata | 5 |
+| controllata, bloccata | 6 |
 | in corso | 26 |
-| non ancora controllata | 93 |
+| non ancora controllata | 87 |
 | **totale** | **196** |
 
 Che cosa vuol dire ogni stato:
@@ -63,6 +63,8 @@ Aggiornamento del 26 ottobre 2026 (America Latina, siti solo PDF): agganciati Ci
 
 Aggiornamento del 26 ottobre 2026 (Sud Italia, isole e Grecia): agganciate in Grecia l'Università di Atene (Pergamos, 39 codici, manifesti scritti dal catalogo) e il Monastero di Rousanou alle Meteore (38 codici, IIIF della Biblioteca di Kalambaka), nella corsia mondo. Nel Sud Italia e nelle isole nessuna biblioteca entra per ora: le copie digitali stanno in Internet Culturale (elenco lecito da Europeana, ma manifesti ICCU non raggiungibili) e sono nella lista della lettera di Urbino; Athos, Patmos e la Biblioteca del Parlamento ellenico pure.
 
+Aggiornamento del 26 ottobre 2026 (Europa, corsia `raccolta-europa.yml`): agganciate dal Handschriftenportal Francoforte (1937 codici), Dresda (1633), Tubinga (273) e Darmstadt (241); handrit.is (3822 codici di Reykjavík e Copenaghen); Polona (13.945 manoscritti di biblioteche polacche); Manuscriptorium (15.169 manoscritti: Repubblica Ceca, Portogallo, Finlandia, Polonia, Romania, Spagna e altre). Nazioni passate ad «agganciata»: Danimarca, Islanda, Repubblica Ceca, Finlandia, Lituania; Svezia «controllata, bloccata» (Alvin). Non entrate (lettera di Urbino): BVMM (non raggiungibile), KBR, Alvin, University of Michigan, BDRC.
+
 Restano fuori da questa lista perché sono già nel registro: Cambridge Digital Library (in lavorazione), British Library (bloccata), Det Kongelige Bibliotek, Koninklijke Bibliotheek, Uppsala e Biblioteka Jagiellońska (da verificare), Qatar Digital Library e National Library of Israel (bloccate).
 
 ## Come leggere le tabelle
@@ -90,14 +92,14 @@ Francia, Benelux, isole britanniche, Germania, Austria, Svizzera e piccoli stati
 
 | Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
 |---|---|---|---|---|
-| Francia | agganciata | Bibliothèque nationale de France, Paris: 76.280; Bibliothèque de l'Arsenal (BnF), Paris: 1.406; Montpellier Méditerranée Métropole - Médiathèque centrale Emile Zola: 978; Bibliothèque Carré d'art / Nîmes: 940; Bibliothèque nationale et universitaire de Strasbourg: 724; Bibliothèque municipale de Rouen: 639; altre 104 biblioteche: 3.228. **Totale: 84.195 codici** | Sorbona: papiri fuori (immagini non più in rete). | BVMM, Lione, Mazarine, BIU Santé |
-| Belgio | non ancora controllata | nessuna | nessuna | KBR, Gand, Lovanio, Flandrica |
+| Francia | agganciata | Bibliothèque nationale de France, Paris: 76.280; Bibliothèque de l'Arsenal (BnF), Paris: 1.406; Montpellier Méditerranée Métropole - Médiathèque centrale Emile Zola: 978; Bibliothèque Carré d'art / Nîmes: 940; Bibliothèque nationale et universitaire de Strasbourg: 724; Bibliothèque municipale de Rouen: 639; altre 104 biblioteche: 3.228. **Totale: 84.195 codici** | Sorbona: papiri fuori (immagini non più in rete). BVMM: non raggiungibile il 26 ottobre 2026 (né dal server né dal browser), da riprovare. | BVMM, Lione, Mazarine, BIU Santé |
+| Belgio | non ancora controllata | nessuna | KBR: niente IIIF (visore AJAX-ZOOM su un dominio che il robots.txt chiude a tutti; prova del 26 ottobre 2026). | Gand, Lovanio, Flandrica |
 | Paesi Bassi | agganciata | Universiteitsbibliotheek Leiden: 3.586 codici | Koninklijke Bibliotheek dell'Aia: nel registro, da verificare. Leida: papiri fuori (immagini non più in rete). | Utrecht |
 | Lussemburgo | non ancora controllata | nessuna | nessuna | Biblioteca nazionale (poco) |
 | Monaco | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
 | Regno Unito | agganciata | Bodleian Library, Oxford: 9.775; St John's College, Oxford: 141; Christ Church, Oxford: 72; Magdalen College, Oxford: 31; Exeter College, Oxford: 31; Jesus College, Oxford: 20; altre 18 biblioteche: 126. **Totale: 10.196 codici**. Dal 26 ottobre 2026 in lettura (corsia uk): Wellcome Collection (circa 1600), Manchester (John Rylands), Cambridge Digital Library (University Library e college), codici della NLS e della British Library tramite Irish Script on Screen | British Library: bloccata dal 2023 (riprova del 26 ottobre 2026). Parker: verifica anti-robot. Durham: robots.txt vieta tutto. National Library of Wales e National Library of Scotland: Cloudflare. International Dunhuang Programme: bloccato. Papiri della British Library e di Ossirinco: fuori. Endangered Archives Programme: da fare dal browser. | Trinity Cambridge, Edimburgo, SOAS, Lambeth, Glasgow |
 | Irlanda | agganciata | Dal 26 ottobre 2026 in lettura (corsia uk): Chester Beatty, Dublino (circa 3000 oggetti da leggere, poi solo i manoscritti librari); Irish Script on Screen (circa 500 codici: Royal Irish Academy, National Library of Ireland, Trinity College Dublin, UCD, Maynooth, Cork, Galway, King's Inns, Marsh's Library e altre) | Trinity College Dublin, Digital Collections: CAPTCHA (i codici irlandesi del TCD entrano tramite ISOS). | National Library of Ireland (catalogo proprio) |
-| Germania | agganciata | Bayerische Staatsbibliothek, München: 28.788; Heidelberger Papyrussammlung: 4.633; Staatsbibliothek zu Berlin: 3.296; Universitätsbibliothek Leipzig: 2.677; Universitätsbibliothek Heidelberg: 2.004; Wissenschaftliche Stadtbibliothek Mainz: 618; altre 178 biblioteche: 982. **Totale: 42.998 codici** | Wolfenbüttel, Karlsruhe, Stoccarda: sospese (server non raggiungibili). Treviri: niente IIIF. Papiri di Berlino: fuori (serve un permesso). Papiri di Colonia: in attesa di decisione. | Dresda, Francoforte, Darmstadt, Tubinga, Gottinga, Kassel, Düsseldorf, Friburgo, Würzburg, Fulda, Amburgo, Halle |
+| Germania | agganciata | Bayerische Staatsbibliothek, München: 28.788; Heidelberger Papyrussammlung: 4.633; Staatsbibliothek zu Berlin: 3.296; Universitätsbibliothek Leipzig: 2.677; Universitätsbibliothek Heidelberg: 2.004; Wissenschaftliche Stadtbibliothek Mainz: 618; altre 178 biblioteche: 982. **Totale: 42.998 codici** | Wolfenbüttel, Karlsruhe, Stoccarda: sospese (server non raggiungibili). Treviri: niente IIIF. Papiri di Berlino: fuori (serve un permesso). Papiri di Colonia: in attesa di decisione. Dal 26 ottobre 2026 entrano dal Handschriftenportal (corsia europa) Francoforte (1937 codici), Dresda (1633), Tubinga (273) e Darmstadt (241, con le copie dei manifesti scritte dal catalogo): i numeri qui accanto si aggiornano al prossimo censimento. | Gottinga, Kassel, Düsseldorf, Friburgo, Würzburg, Fulda, Amburgo, Halle |
 | Austria | in corso | Österreichische Nationalbibliothek, Wien: 2.708 (2.705 dalla fonte «onb», agganciata il 26 ottobre 2026, più 3 da altre fonti); Österreichisches Staatsarchiv, Wien: 1; Tiroler Landesmuseum Ferdinandeum, Innsbruck: 1; Stiftsbibliothek St. Paul im Lavanttal, St. Paul in Kärnten: 1. **Totale: 2.711 codici** | Österreichische Nationalbibliothek: elenco da ÖNB Digital e manifesti IIIF 3 di api.onb.ac.at, letti a riprese nella corsia giornaliera (3.200 candidati su 6.394 letti il 26 ottobre 2026). Papiri di Vienna: da provare. | Le vede il lavoro in corso. |
 | Svizzera | agganciata | Stiftsbibliothek, St. Gallen: 956; Universitätsbibliothek, Basel: 305; Fondation Martin Bodmer, Cologny: 180; Bibliothèque cantonale jurassienne, Porrentruy: 121; Bibliothèque de Genève: 108; Stiftsbibliothek, Einsiedeln: 79; altre 78 biblioteche: 972. **Totale: 2.721 codici** | Ginevra: papiri fuori. | Nessuna di rilievo: e-codices raccoglie già le biblioteche svizzere. |
 | Liechtenstein | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
@@ -106,11 +108,10 @@ Francia, Benelux, isole britanniche, Germania, Austria, Svizzera e piccoli stati
 
 | Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
 |---|---|---|---|---|---|
-| Francia | BVMM, Bibliothèque virtuelle des manuscrits médiévaux (IRHT-CNRS): codici delle biblioteche municipali francesi | bvmm.irht.cnrs.fr | sì | oltre 10.000 (stima) | alta |
+| Francia | BVMM, Bibliothèque virtuelle des manuscrits médiévaux (IRHT-CNRS): codici delle biblioteche municipali francesi | bvmm.irht.cnrs.fr | sì (sito non raggiungibile il 26 ottobre 2026) | oltre 10.000 (stima) | alta |
 | Francia | Numelyo, Bibliothèque municipale de Lyon | numelyo.bm-lyon.fr | sì | alcune centinaia | media |
 | Francia | Bibliothèque Mazarine (Mazarinum) | mazarinum.bibliotheque-mazarine.fr | sì (da confermare) | alcune centinaia | media |
 | Francia | BIU Santé, Medica (manoscritti di medicina) | www.biusante.parisdescartes.fr | non si sa | alcune centinaia | bassa |
-| Belgio | KBR, Biblioteca reale del Belgio (Belgica) | belgica.kbr.be | sì | alcune migliaia (stima) | alta |
 | Belgio | Biblioteca dell'Università di Gand (Liber Floridus e altri) | lib.ugent.be | sì | alcune centinaia | media |
 | Belgio | KU Leuven, collezioni digitali | bib.kuleuven.be | sì (da confermare) | alcune centinaia | media |
 | Belgio | Flandrica (biblioteche storiche delle Fiandre, con Bruges) | www.flandrica.be | non si sa | alcune centinaia | bassa |
@@ -127,10 +128,6 @@ Francia, Benelux, isole britanniche, Germania, Austria, Svizzera e piccoli stati
 | Regno Unito | Università di Glasgow (manoscritti Hunter) | www.gla.ac.uk/collections | non si sa | decine | bassa |
 | Irlanda | Trinity College Dublin (Libro di Kells, Libro di Durrow, Libro di Armagh) | digitalcollections.tcd.ie | sì, ma il sito chiede un CAPTCHA (26 ottobre 2026); i codici irlandesi entrano tramite ISOS | alcune centinaia | alta |
 | Irlanda | National Library of Ireland | catalogue.nli.ie | non si sa | alcune centinaia | bassa |
-| Germania | SLUB Dresda (anche il Codice di Dresda maya) | digital.slub-dresden.de | sì | alcune migliaia | alta |
-| Germania | Universitätsbibliothek Frankfurt am Main (anche ebraici) | sammlungen.ub.uni-frankfurt.de | sì | alcune migliaia | alta |
-| Germania | ULB Darmstadt | tudigit.ulb.tu-darmstadt.de | sì | oltre 1000 (stima) | alta |
-| Germania | Universitätsbibliothek Tübingen (anche greci e orientali) | idb.ub.uni-tuebingen.de | sì | alcune centinaia | alta |
 | Germania | SUB Göttingen | gdz.sub.uni-goettingen.de | sì | alcune centinaia | media |
 | Germania | Universitätsbibliothek Kassel (ORKA) | orka.bibliothek.uni-kassel.de | sì | alcune centinaia | media |
 | Germania | ULB Düsseldorf (codici di Essen e altri) | digital.ub.hhu.de | sì | alcune centinaia | media |
@@ -153,7 +150,7 @@ Italia, Vaticano, penisola iberica, Grecia, Cipro, Malta e piccoli stati.
 | San Marino | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
 | Malta | non ancora controllata | nessuna | nessuna | Biblioteca nazionale e archivi della cattedrale di Mdina (copie in vHMML, che è bloccato) |
 | Spagna | in corso | nessuna | Biblioteca Nacional de España ed Escorial: nel registro, da verificare. | Le vede il lavoro in corso. |
-| Portogallo | in corso | nessuna | nessuna | Le vede il lavoro in corso. |
+| Portogallo | in corso | Dal 26 ottobre 2026 Biblioteca Nacional de Portugal, Lisbona, tramite Manuscriptorium: 5623 codici (corsia europa) | nessuna | Le vede il lavoro in corso. |
 | Andorra | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
 | Grecia | agganciata | Biblioteca Nazionale di Grecia, Atene: 765 codici; dal 26 ottobre 2026 Università di Atene (Pergamos): 39 codici; Monastero di Rousanou, Meteore (Biblioteca di Kalambaka): 38 codici | Athos (portale dietro Cloudflare; Vatopedi solo libri a stampa), Patmos (foto non pubblicate), Accademia di Atene (solo lettere e PDF), Veria (server giù), altre collezioni di SearchCulture (documenti): vedi docs/BIBLIOTECHE.md, «Grecia e monasteri greci». | Biblioteca del Parlamento (repository non pubblico), Università di Salonicco, Leimonos, Kaireios di Andros |
 | Cipro | non ancora controllata | nessuna | nessuna | Fondazione culturale della Banca di Cipro, monastero di Kykkos (poco) |
@@ -176,24 +173,22 @@ Scandinavia, Islanda, Finlandia e paesi baltici.
 
 | Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
 |---|---|---|---|---|
-| Danimarca | non ancora controllata | nessuna | Det Kongelige Bibliotek: nel registro, da verificare. | I codici della Collezione Arnamagnæana di Copenaghen sono su handrit.is. |
-| Svezia | non ancora controllata | nessuna | Uppsala: nel registro, da verificare. Papiri di Lund: fuori. | Alvin (Uppsala, Lund, Linköping, Göteborg), Kungliga biblioteket |
+| Danimarca | agganciata | Den Arnamagnæanske Samling, Copenaghen, tramite handrit.is (dal 26 ottobre 2026; il numero si aggiorna al prossimo censimento) | Det Kongelige Bibliotek: nel registro, da verificare. | Det Kongelige Bibliotek |
+| Svezia | controllata, bloccata | nessuna | Alvin (Uppsala, Lund, Linköping, Göteborg e altre): niente IIIF pubblico, immagini solo come miniature o TIFF, visore dietro una verifica anti-robot (26 ottobre 2026). Papiri di Lund: fuori. | Kungliga biblioteket |
 | Norvegia | non ancora controllata | nessuna | nessuna | Nasjonalbiblioteket |
-| Finlandia | non ancora controllata | nessuna | nessuna | Biblioteca nazionale, Fragmenta membranea |
-| Islanda | non ancora controllata | nessuna | nessuna | handrit.is |
+| Finlandia | agganciata | Dal 26 ottobre 2026 Fragmenta membranea della Biblioteca nazionale di Finlandia, Helsinki, tramite Manuscriptorium: 1617 frammenti di codici (corsia europa) | nessuna | nessuna di rilievo |
+| Islanda | agganciata | Landsbókasafn Íslands e Stofnun Árna Magnússonar, Reykjavík, tramite handrit.is (dal 26 ottobre 2026: 3822 codici con Copenaghen; manifesti scritti dal catalogo) | Il sito handrit.is non si legge (verifica anti-robot): si usano le descrizioni TEI pubblicate su GitHub. | nessuna |
 | Estonia | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
 | Lettonia | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
-| Lituania | non ancora controllata | nessuna | nessuna | epaveldas.lt |
+| Lituania | agganciata | Dal 26 ottobre 2026 Biblioteca Wróblewski dell'Accademia delle scienze, Vilnius, tramite Manuscriptorium: 53 codici | Manuscriptorium: Biblioteca universitaria di Vilnius e reparto dei manoscritti della Biblioteca nazionale fuori (carte d'archivio e ritratti a stampa). | epaveldas.lt |
 
 ### Biblioteche che mancano
 
 | Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
 |---|---|---|---|---|---|
-| Svezia | Alvin: Uppsala, Lund, Linköping, Göteborg e altre (Codex Argenteus, codici greci) | www.alvin-portal.org | sì | alcune migliaia | alta |
+| Svezia | Alvin: Uppsala, Lund, Linköping, Göteborg e altre (Codex Argenteus, codici greci) | www.alvin-portal.org | no (provata il 26 ottobre 2026: niente IIIF pubblico) | alcune migliaia | alta |
 | Svezia | Kungliga biblioteket, Stoccolma (Codex Gigas) | www.kb.se | non si sa | decine | media |
 | Norvegia | Nasjonalbiblioteket (alcune copie visibili solo dalla Norvegia) | www.nb.no | sì | alcune centinaia | media |
-| Finlandia | Biblioteca nazionale di Finlandia, Fragmenta membranea (frammenti medievali) | fragmenta.kansalliskirjasto.fi | non si sa | circa 9000 frammenti (stima) | media |
-| Islanda | handrit.is: Reykjavík (Árni Magnússon) e Copenaghen (Arnamagnæana); islandese, norreno, latino | handrit.is | sì | alcune migliaia | alta |
 | Lituania | epaveldas.lt (lituano, polacco, ruteno) | www.epaveldas.lt | non si sa | alcune centinaia | bassa |
 
 ## Europa centrale e orientale
@@ -204,8 +199,8 @@ Polonia, Cechia, Slovacchia, Ungheria, Romania, Bulgaria, Moldavia, Ucraina, Bie
 
 | Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
 |---|---|---|---|---|
-| Polonia | agganciata | Jagiellonian Library, Krakow: 2 codici (pochi codici, arrivati da un'altra fonte) | Biblioteka Jagiellońska: nel registro, da verificare. | Polona |
-| Repubblica Ceca | non ancora controllata | nessuna | nessuna | Manuscriptorium |
+| Polonia | agganciata | Jagiellonian Library, Krakow: 2 codici (pochi codici, arrivati da un'altra fonte). Dal 26 ottobre 2026 Polona: 13.945 manoscritti (Biblioteka Narodowa 7274, Biblioteka Jagiellońska 4772 e altre biblioteche polacche); dal 26 ottobre 2026 anche le biblioteche universitarie di Breslavia e Toruń tramite Manuscriptorium | Polona: fuori i documenti protetti dal diritto d'autore e quelli con licenza non aperta. | nessuna di rilievo |
+| Repubblica Ceca | agganciata | Dal 26 ottobre 2026 Manuscriptorium (corsia europa): 6352 codici di biblioteche ceche (Národní knihovna, Strahov, Museo nazionale, Moravská zemská knihovna, Olomouc, Plzeň e altre) | Manuscriptorium: fuori gli stampati, le carte geografiche, le lettere e le copie di biblioteche già nel catalogo. | nessuna di rilievo |
 | Slovacchia | non ancora controllata | nessuna | nessuna | Slovakiana |
 | Ungheria | non ancora controllata | nessuna | nessuna | Bibliotheca Corvina Virtualis, Hungaricana |
 | Romania | non ancora controllata | nessuna | nessuna | Biblioteca dell'Accademia Romena (biblioteca digitale non trovata) |
@@ -219,8 +214,6 @@ Polonia, Cechia, Slovacchia, Ungheria, Romania, Bulgaria, Moldavia, Ucraina, Bie
 
 | Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
 |---|---|---|---|---|---|
-| Polonia | Polona (Biblioteca nazionale e altre biblioteche polacche) | polona.pl | sì | alcune migliaia | alta |
-| Repubblica Ceca | Manuscriptorium (Biblioteca nazionale ceca e molte altre, anche straniere) | www.manuscriptorium.com | sì (da confermare) | decine di migliaia di documenti (stima) | alta |
 | Slovacchia | Slovakiana | www.slovakiana.sk | non si sa | alcune centinaia | bassa |
 | Ungheria | Bibliotheca Corvina Virtualis (Biblioteca nazionale Széchényi): i codici di Mattia Corvino | corvina.hu | non si sa | circa 200 (stima) | media |
 | Ungheria | Hungaricana (archivi, biblioteche e musei ungheresi) | hungaricana.hu | non si sa | molti documenti, pochi codici | bassa |
@@ -525,8 +518,8 @@ Stati Uniti, Canada, America Latina e Caraibi. Canada, Messico, Centro America, 
 
 | Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
 |---|---|---|---|---|---|
-| Stati Uniti | University of Michigan Library (manoscritti islamici, greci e medievali) | quod.lib.umich.edu | sì | oltre 1000 | alta |
-| Stati Uniti | Buddhist Digital Resource Center (BDRC): testi tibetani, mongoli, nepalesi, bhutanesi | library.bdrc.io | sì | decine di migliaia di testi (molti a stampa xilografica; i manoscritti sono alcune migliaia) | alta |
+| Stati Uniti | University of Michigan Library (manoscritti islamici, greci e medievali) | quod.lib.umich.edu | sì, ma dietro la verifica di Cloudflare anche dal browser (26 ottobre 2026) | oltre 1000 | alta |
+| Stati Uniti | Buddhist Digital Resource Center (BDRC): testi tibetani, mongoli, nepalesi, bhutanesi | library.bdrc.io | sì, ma il robots.txt dei server di dati e dei manifesti vieta tutto (26 ottobre 2026) | decine di migliaia di testi (molti a stampa xilografica; i manoscritti sono alcune migliaia) | alta |
 | Stati Uniti | University of Notre Dame (Marble) | marble.nd.edu | sì | alcune centinaia | media |
 | Stati Uniti | Stanford Libraries | searchworks.stanford.edu | sì | alcune centinaia | media |
 | Stati Uniti | Folger Shakespeare Library (manoscritti inglesi di età moderna) | collections.folger.edu | non si sa | alcune migliaia | bassa |

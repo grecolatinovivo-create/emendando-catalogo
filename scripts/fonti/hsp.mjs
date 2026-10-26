@@ -7,6 +7,7 @@
 // Lo stato (cursore, codici letti, lingue nel campo g) è in data/<fonte>.json; una raccolta completa si riusa per 6 giorni.
 import fs from "node:fs";
 import { scarica, log } from "../rete.mjs";
+import { compattaPagine, espandiPagine } from "./nlg.mjs";
 
 export const API = "https://handschriftenportal.de/api/hspobjects/search";
 
@@ -20,6 +21,15 @@ export const FONTI_HSP = {
   // a Colonia il portale ha solo le segnature: titolo, autore e datazione si leggono dall'inizio del manifesto (manifesti: true)
   colonia: { biblioteca: "Erzbischöfliche Diözesan- und Dombibliothek Köln mit Bibliothek St. Albertus Magnus", prefisso: "ceec", citta: "Colonia", nome: "Erzbischöfliche Diözesan- und Dombibliothek", manifesti: true },
   lipsia: { biblioteca: "Universitätsbibliothek Leipzig", prefisso: "ubl", citta: "Lipsia", nome: "Universitätsbibliothek Leipzig" },
+  // dal 26 ottobre 2026 (corsia «europa»): Francoforte, Dresda, Tubinga e Darmstadt sono nel portale con le copie digitali:
+  // nessuna fonte propria, si leggono da qui come le altre
+  francoforte: { biblioteca: "Universitätsbibliothek Johann Christian Senckenberg", prefisso: "ubf", citta: "Francoforte sul Meno", nome: "Universitätsbibliothek Johann Christian Senckenberg" },
+  dresda: { biblioteca: "Sächsische Landesbibliothek – Staats- und Universitätsbibliothek Dresden", prefisso: "slub", citta: "Dresda", nome: "Sächsische Landesbibliothek – Staats- und Universitätsbibliothek (SLUB)" },
+  tubinga: { biblioteca: "Universitätsbibliothek Tübingen", prefisso: "ubt", citta: "Tubinga", nome: "Universitätsbibliothek Tübingen" },
+  // Darmstadt: il portale non indica il manifesto; quello di TUdigit (/iiif/<sigla>-manifest.json) si apre con CORS, ma le immagini
+  // vi sono indicate in http e il servizio Image non risponde: si legge una volta il manifesto di ogni codice (pagine e misure, campo pg)
+  // e il catalogo ne scrive una copia con le immagini https a misura fissa (copie: true; scripts/manifesti.mjs, ramo «manifesti»)
+  darmstadt: { biblioteca: "Universitäts- und Landesbibliothek Darmstadt", prefisso: "ulbd", citta: "Darmstadt", nome: "Universitäts- und Landesbibliothek Darmstadt", copie: true },
 };
 // lingue del portale (filtro «language-facet», valori di norma GND del portale) -> codici del catalogo (scripts/lingue.mjs).
 // Ricavate da un campione di codici per ciascun valore; i valori incerti (sorabo, aramaico, polabo, serbocroato e altri rari) restano fuori.
@@ -33,6 +43,8 @@ export const LINGUE_HSP = {
   "NORM-a2a551a6-458a-3de2-a446-cc76d639a9e9": "is", "NORM-fc9fdf08-4e29-3f26-a270-390dc49061a2": "pt", "NORM-fe3838c7-c11a-3406-9d95-6566e17360d5": "fa",
   "NORM-5435c69e-d3bc-35b2-a4d5-80e393e373d3": "ca",
 };
+export const TUDIGIT = "https://tudigit.ulb.tu-darmstadt.de";
+export const BASE_COPIE = "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti";
 export const prefissoHsp = fonte => (FONTI_HSP[fonte] && FONTI_HSP[fonte].prefisso) || fonte.slice(0, 3);
 const RIGHE = 100, GIORNI = 6;
 
@@ -52,7 +64,10 @@ function salvaStato(fonte, st) {
 export function manifestoDa(d) {
   if (d["manifest-url-display"]) return d["manifest-url-display"];
   const m = /^https?:\/\/diglib\.hab\.de\/mss\/([^/]+)\/start\.htm/.exec(d["external-url-display"] || "");
-  return m ? `https://iiif.hab.de/object/mss_${m[1]}/manifest.json` : null;
+  if (m) return `https://iiif.hab.de/object/mss_${m[1]}/manifest.json`;
+  // Darmstadt (TUdigit): «https://tudigit.ulb.tu-darmstadt.de/show/Hs-1215» -> «https://tudigit.ulb.tu-darmstadt.de/iiif/Hs-1215-manifest.json»
+  const t = /^https?:\/\/tudigit\.ulb\.tu-darmstadt\.de\/show\/([^/?#]+)\/?$/.exec(d["external-url-display"] || "");
+  return t ? `${TUDIGIT}/iiif/${t[1]}-manifest.json` : null;
 }
 
 // oggetto della risposta -> voce compatta { s, t, d, l, c, m, p } (null se non c'è un manifesto)
@@ -75,7 +90,9 @@ export async function scansionaHsp({ fonte, biblioteca = FONTI_HSP[fonte] && FON
   if (soloCache) return st;
   const ora = Date.now(), fine = ora + minuti * 60e3;
   const recente = st.completato && st.cursore == null && ora - Date.parse(st.completato) < GIORNI * 864e5;
-  const manifesti = !!(FONTI_HSP[fonte] && FONTI_HSP[fonte].manifesti), daLeggere = () => Object.values(st.voci).filter(v => v.x == null && !v.t);
+  const copie = !!(FONTI_HSP[fonte] && FONTI_HSP[fonte].copie), manifesti = copie || !!(FONTI_HSP[fonte] && FONTI_HSP[fonte].manifesti);
+  // codici di cui leggere il manifesto: a Colonia quelli senza titolo nel portale; per le fonti con le copie (Darmstadt) tutti, una volta
+  const daLeggere = () => Object.values(st.voci).filter(v => v.x == null && (copie || !v.t));
   if (recente && st.lingue && st.lingue >= st.completato && !(manifesti && daLeggere().length)) { log(fonte, `riuso la raccolta del ${st.completato.slice(0, 10)}: ${Object.keys(st.voci).length} codici`); return st; }
   const cerca = async (filtro, start, righe = RIGHE) => {
     const fq = encodeURIComponent(JSON.stringify({ "repository-facet": [biblioteca], "digitized-object-facet": ["true"], ...filtro }));
@@ -91,7 +108,7 @@ export async function scansionaHsp({ fonte, biblioteca = FONTI_HSP[fonte] && FON
       st.totale = d.metadata && d.metadata.numFound;
       // si conservano le lingue (g) e i dati letti dai manifesti (x, a, tm, dm) della raccolta precedente; i manifesti che non si
       // aprivano (e) si riprovano
-      for (const x of pl) { const v = compattaHsp(x); if (v) { const p = st.voci[x.hspObject.id] || {}; st.voci[x.hspObject.id] = { ...v, ...Object.fromEntries(["g", "x", "a", "tm", "dm"].filter(k => p[k] != null && !(k === "x" && p.e)).map(k => [k, p[k]])) }; } }
+      for (const x of pl) { const v = compattaHsp(x); if (v) { const p = st.voci[x.hspObject.id] || {}; st.voci[x.hspObject.id] = { ...v, ...Object.fromEntries(["g", "x", "a", "tm", "dm", "pg"].filter(k => p[k] != null && !(k === "x" && p.e)).map(k => [k, p[k]])) }; } }
       st.cursore += RIGHE; st.aggiornato = new Date().toISOString();
       salvaStato(fonte, st);
       if (!pl.length || st.cursore >= (st.totale || 0)) break;
@@ -110,8 +127,12 @@ export async function scansionaHsp({ fonte, biblioteca = FONTI_HSP[fonte] && FON
       // manifesto intero: a Colonia i metadati sono in fondo, dopo le pagine (circa 200 KB)
       let r = null; try { r = await scarica(v.m, { timeout: 90000, accept: "application/json", tentativi: 2 }); } catch (e) { log(fonte, "manifesto che non si apre:", v.m, e.message); }
       const md = r && r.stato === 200 ? metadatiManifesto(r.testo) : null;
+      // copie (Darmstadt): pagine e misure dal manifesto; senza pagine leggibili il codice resta fuori
+      const pg = md && copie ? pagineTudigit(r.testo) : null;
       // un manifesto che non si apre (errore o risposta che non è un manifesto) tiene il codice fuori dal catalogo
-      v.x = md ? 1 : 0; if (md) delete v.e; else v.e = 1;
+      const ok = md && (!copie || pg);
+      v.x = ok ? 1 : 0; if (ok) delete v.e; else v.e = 1;
+      if (pg) v.pg = pg;
       if (md) { if (md.t) v.tm = md.t; if (md.a.length) v.a = md.a; if (md.d) v.dm = md.d; }
       if (++n % 25 === 0) { st.aggiornato = new Date().toISOString(); salvaStato(fonte, st); }
     }
@@ -151,7 +172,39 @@ export function metadatiManifesto(t) {
 // fuori i codici il cui manifesto non si è aperto (e). Un manifesto entra una volta sola (più schede del portale possono rimandare alla stessa copia digitale): resta la prima in ordine di id
 export function recordHsp(fonte, st = leggiStato(fonte)) {
   const visti = new Set();
-  return Object.entries(st.voci || {}).sort(([a], [b]) => a.localeCompare(b)).filter(([, v]) => !v.e && !visti.has(v.m) && visti.add(v.m)).map(([id, v]) => ({
+  return Object.entries(st.voci || {}).sort(([a], [b]) => a.localeCompare(b)).filter(([, v]) => !v.e && (!copieHsp(fonte) || v.pg) && !visti.has(v.m) && visti.add(v.m)).map(([id, v]) => ({
     fonte, id: prefissoHsp(fonte) + "-" + id.replace(/^HSP-/, ""), citta: v.l, biblioteca: v.c, segnatura: v.s || id, datazione: v.d || v.dm || null, titolo: v.t || v.tm || null, autori_fonte: v.a || [], lingue: v.g || [],
-    manifest: v.m, pagina: v.p, licenza: v.c ? `${v.c}: condizioni d'uso nel manifesto` : null }));
+    manifest: copieHsp(fonte) ? `${BASE_COPIE}/${fonte}/${id.replace(/^HSP-/, "")}.json` : v.m, pagina: v.p, licenza: v.c ? `${v.c}: condizioni d'uso nel manifesto` : null }));
+}
+
+export const copieHsp = fonte => !!(FONTI_HSP[fonte] && FONTI_HSP[fonte].copie);
+
+// TUdigit (Darmstadt): pagine del manifesto [file, larghezza, altezza]; file = parte dell'indirizzo dell'immagine dopo /image/,
+// in forma compatta (scripts/fonti/nlg.mjs, compattaPagine). Le immagini sono indicate in http: nella copia si usano in https.
+export function pagineTudigit(testo) {
+  let m; try { m = JSON.parse(testo); } catch (e) { return null; }
+  const out = [];
+  for (const c of ((m.sequences || [])[0] || {}).canvases || []) {
+    const r = ((c.images || [])[0] || {}).resource || {};
+    const x = /^https?:\/\/tudigit\.ulb\.tu-darmstadt\.de\/image\/(.+\.jpg)$/.exec(r["@id"] || "");
+    if (!x) return null;
+    out.push([x[1], r.width || c.width || 0, r.height || c.height || 0]);
+  }
+  return out.length ? compattaPagine(out) : null;
+}
+
+// copia del manifesto di un codice di Darmstadt: immagini https a misura fissa (la più grande che TUdigit pubblica), senza servizio Image
+export function manifestoCopiaHsp(fonte, id, v) {
+  const sigla = id.replace(/^HSP-/, ""), mid = `${BASE_COPIE}/${fonte}/${sigla}.json`, h = FONTI_HSP[fonte] || {};
+  const canvases = espandiPagine(v.pg).map(([f, w, hh], i) => {
+    const img = `${TUDIGIT}/image/${f}`;
+    return { "@id": `${mid}/c${i + 1}`, "@type": "sc:Canvas", label: String(i + 1), width: w || 1000, height: hh || 1400,
+      images: [{ "@type": "oa:Annotation", motivation: "sc:painting", on: `${mid}/c${i + 1}`,
+        resource: { "@id": img, "@type": "dctypes:Image", format: "image/jpeg", width: w || undefined, height: hh || undefined } }] };
+  });
+  const meta = [["Segnatura", v.s], ["Datazione", v.d || v.dm], ["Titolo", v.t || v.tm]].filter(([, x]) => x).map(([label, value]) => ({ label, value }));
+  return { "@context": "http://iiif.io/api/presentation/2/context.json", "@id": mid, "@type": "sc:Manifest", label: [v.s, v.t || v.tm].filter(Boolean).join(" : ") || sigla, metadata: meta,
+    attribution: `${h.nome || h.biblioteca}. Copia del manifesto della biblioteca scritta dal catalogo di Emendando, con le immagini della biblioteca a misura fissa.`,
+    license: "https://creativecommons.org/publicdomain/zero/1.0/", related: v.p, seeAlso: v.m,
+    sequences: [{ "@id": `${mid}/s0`, "@type": "sc:Sequence", canvases }] };
 }

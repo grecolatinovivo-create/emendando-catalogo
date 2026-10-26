@@ -887,3 +887,32 @@ test("State Library Victoria: schede raccolte dal browser, solo manoscritti libr
   assert.ok(anniSlv("15th century").includes(1401)); assert.equal(ammessaSlv({ t: "x", d: "18--", f: "manuscript" }), true);
   assert.deepEqual(recordSlv(null), []);
 });
+
+test("Corsia europa: Darmstadt (TUdigit), handrit.is, Polona, Manuscriptorium", async () => {
+  const { manifestoDa, pagineTudigit, manifestoCopiaHsp } = await import("../scripts/fonti/hsp.mjs");
+  assert.equal(manifestoDa({ "external-url-display": "https://tudigit.ulb.tu-darmstadt.de/show/Hs-1215" }), "https://tudigit.ulb.tu-darmstadt.de/iiif/Hs-1215-manifest.json");
+  const pg = pagineTudigit(JSON.stringify({ sequences: [{ canvases: [1, 2].map(n => ({ width: 10, height: 20, images: [{ resource: { "@id": `http://tudigit.ulb.tu-darmstadt.de/image/Hs-1215/4/000${n}.jpg`, width: 1984, height: 1419 } }] })) }] }));
+  const cm = manifestoCopiaHsp("darmstadt", "HSP-x", { s: "Hs 1215", pg, m: "m", p: "p" });
+  assert.equal(cm.sequences[0].canvases[1].images[0].resource["@id"], "https://tudigit.ulb.tu-darmstadt.de/image/Hs-1215/4/0002.jpg");
+  const { estraiHandrit, manifestoScritto } = await import("../scripts/fonti/handrit.mjs");
+  const tei = s => `<TEI><msDesc xml:id="AM04-0004-en"><msIdentifier><settlement>København</settlement><repository>Den Arnamagnæanske Samling</repository><collection key="${s}"/><idno>AM 4 4to</idno></msIdentifier>
+    <msContents><msItem class="log"><title type="uniform">Jyske lov</title><textLang mainLang="da">Old Danish</textLang></msItem></msContents><origDate notBefore="1290" notAfter="1310">c. 1300</origDate></msDesc>
+    <facsimile xml:base="https://myndir.handrit.is/file/Handrit.is/"><surface n="0"><graphic mimeType="jpg" url="AM%204%204to/0/SECONDARY_DISPLAY" width="3300px" height="4080px"/></surface>
+    <surface n="1"><graphic mimeType="jpg" url="AM%204%204to/1/SECONDARY_DISPLAY" width="3300px" height="4080px"/></surface></facsimile></TEI>`;
+  const x = estraiHandrit(tei("AM"), "Den Arnamagnæanske Samling");
+  assert.equal(x.id, "AM04-0004"); assert.equal(x.v.s, "AM 4 4to"); assert.equal(x.v.q, 2); assert.deepEqual(x.v.l, ["da"]);
+  assert.equal(manifestoScritto(x.id, x.v).sequences[0].canvases[1].images[0].resource["@id"], "https://myndir.handrit.is/file/Handrit.is/AM%204%204to/1/SECONDARY_DISPLAY");
+  assert.ok(estraiHandrit(tei("AMDiplIsl"), "Den Arnamagnæanske Samling").fuori);
+  const { motivoPolona, lingueP } = await import("../scripts/fonti/polona.mjs");
+  assert.equal(motivoPolona({ t: "[Biblia]", g: ["rękopisy łacińskie"], x: "Domena Publiczna" }), null);
+  assert.ok(motivoPolona({ t: "[Listy do Antoniny]", g: ["listy"], x: "Domena Publiczna" }));
+  assert.ok(motivoPolona({ t: "[Zygmunt III król polski potwierdza ...]", s: "1019 Perg.", g: ["pergaminy"], x: "Domena Publiczna" }));
+  assert.ok(motivoPolona({ t: "Muzyka", x: "Zawartość chroniona - licencja ograniczona" }));
+  assert.deepEqual(lingueP(["łaciński", "polski"]), ["la", "pl"]);
+  const { motivoManuscriptorium } = await import("../scripts/fonti/manuscriptorium.mjs");
+  const mc = "https://collectiones.manuscriptorium.com/assorted/X/";
+  assert.equal(motivoManuscriptorium({ m: mc, b: "Národní knihovna České republiky", s: "XXIII.A.1" }), null);
+  assert.ok(motivoManuscriptorium({ m: mc, b: "Národní knihovna České republiky", s: "25 A 000369" }));
+  assert.ok(motivoManuscriptorium({ m: "https://e-codices.ch/metadata/iiif/x/manifest.json", b: "Aargauer Kantonsbibliothek" }));
+  assert.ok(motivoManuscriptorium({ m: mc, b: "Universitätsbibliothek Heidelberg", s: "Cod. Pal. graec. 45" }));
+});

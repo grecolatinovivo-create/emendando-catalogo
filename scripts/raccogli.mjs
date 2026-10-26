@@ -2,7 +2,7 @@
 // Catalogo dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate: tutti i manoscritti, di ogni lingua ed epoca.
 // Autori e opere riconosciuti (classici latini e greci, cristiani, medievali) sono un'informazione in più, per cercare e filtrare.
 // Uso:
-//   node scripts/raccogli.mjs [--fonti=heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,vaticana] [--vaticana-minuti=20] [--oai-minuti=60]
+//   node scripts/raccogli.mjs [--fonti=heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,vaticana] [--vaticana-minuti=20] [--oai-minuti=60]
 //        [--bodleian-minuti=30] [--gallica-minuti=30] [--laurenziana-minuti=15] [--ambrosiana-minuti=20] [--montecassino-minuti=5] [--casanatense-minuti=5] [--bub-minuti=10]
 //        [--leiden-minuti=15] [--hsp-minuti=10] [--berlino-minuti=60] [--indici-minuti=20]
 //        [--yale-minuti=30] [--penn-minuti=15] [--ds-minuti=15] [--walters-minuti=20] [--loc-minuti=10] [--nlg-minuti=15]
@@ -10,7 +10,7 @@
 //        [--wellcome-minuti=10] [--isos-minuti=20] [--manchester-minuti=30] [--cudl-minuti=30] [--cbl-minuti=60] [--minuti-totali=160] [--solo-costruisci]
 //        [--mdc-minuti=10] [--ub-minuti=10] [--realbiblioteca-minuti=15] [--ucm-minuti=15] [--sevilla-minuti=5] [--rah-minuti=30]
 //        [--pergamos-minuti=10] [--rousanou-minuti=5]
-//        [--onb-minuti=30] [--bncf-minuti=5] [--vallicelliana-minuti=5] [--malatestiana-minuti=20]
+//        [--onb-minuti=30] [--bncf-minuti=5] [--vallicelliana-minuti=5] [--malatestiana-minuti=20] [--polona-minuti=20] [--manuscriptorium-minuti=30]
 // Scrive il catalogo diviso per fonte (vedi costruisci.mjs): data/catalogo/indice.json, data/catalogo/indice/<fonte>-<n>.json, data/catalogo/voci/<fonte>-<n>.json,
 // più data/manoscritti.json (compatibilità: solo i codici con autori classici), e gli stati delle scansioni a riprese
 // (data/vaticana.json, data/bodleian.json, data/laurenziana.json, data/leiden.json, data/heidelberg-indici.json; data/<fonte>.json per le fonti del Handschriftenportal: wolfenbuettel, bamberga, karlsruhe, stoccarda, colonia, lipsia; data/yale.json, data/penn.json, data/walters.json).
@@ -64,12 +64,15 @@ import { scansionaBncf, recordBncf } from "./fonti/bncf.mjs";
 import { scansionaVallicelliana, recordVallicelliana } from "./fonti/vallicelliana.mjs";
 import { scansionaMalatestiana, recordMalatestiana } from "./fonti/malatestiana.mjs";
 import { recordClassense } from "./fonti/classense.mjs";
+import { scansionaHandrit, recordHandrit } from "./fonti/handrit.mjs";
+import { scansionaPolona, recordPolona } from "./fonti/polona.mjs";
+import { scansionaManuscriptorium, recordManuscriptorium } from "./fonti/manuscriptorium.mjs";
 import { scriviRegistro, registraEsiti } from "./registro.mjs";
 import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 import { tipoDa } from "./carte.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
-const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,vaticana").split(",");
+const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,vaticana").split(",");
 const INIZIO = Date.now();
 export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)", berlino: "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
   bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -112,6 +115,10 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   // Grecia (corsia «mondo», dal 26 ottobre 2026)
   pergamos: "Università di Atene, Biblioteca della Facoltà di Filosofia (pergamos.lib.uoa.gr; manifesti scritti dal catalogo)",
   rousanou: "Monastero di Rousanou, Meteore (copie digitali della Biblioteca di Kalambaka, opac.kalambakalibrary.org; elenco da searchculture.gr)",
+  // Europa (corsia «europa», dal 26 ottobre 2026)
+  handrit: "handrit.is: Reykjavík e Copenaghen (descrizioni TEI da github.com/Handrit/Manuscripts; manifesti scritti dal catalogo)",
+  polona: "Polona: Biblioteka Narodowa e altre biblioteche polacche (polona.pl)",
+  manuscriptorium: "Manuscriptorium: Národní knihovna České republiky e altre biblioteche (manuscriptorium.com)",
   vaticana: "Biblioteca Apostolica Vaticana (digi.vatlib.it)" };
 
 // i tre codici del Truculentus restano sempre nel catalogo, anche se una fonte non li ha ancora restituiti
@@ -266,6 +273,10 @@ async function main() {
     // Asia orientale e Oceania (corsia «mondo»): National Diet Library, Kokusho (NIJL), Auckland
     ndl: async () => recordNdl(await scansionaNdl({ minuti: min("ndl", +(arg["ndl-minuti"] ?? 60)), soloCache: sc("ndl") })),
     kokusho: async () => recordKokusho(await scansionaKokusho({ minuti: min("kokusho", +(arg["kokusho-minuti"] ?? 60)), soloCache: sc("kokusho") })),
+    // Europa (corsia «europa», dal 26 ottobre 2026): handrit.is (nessuna richiesta al sito: descrizioni TEI da GitHub), Polona, Manuscriptorium
+    handrit: async () => recordHandrit(await scansionaHandrit({ soloCache: sc("handrit") })),
+    polona: async () => recordPolona(await scansionaPolona({ minuti: min("polona", +(arg["polona-minuti"] ?? 20)), soloCache: sc("polona") })),
+    manuscriptorium: async () => recordManuscriptorium(await scansionaManuscriptorium({ minuti: min("manuscriptorium", +(arg["manuscriptorium-minuti"] ?? 30)), soloCache: sc("manuscriptorium") })),
     // State Library Victoria: nessuna richiesta, l'elenco viene dal browser (scripts/browser/slv.js -> data/slv.json)
     slv: async () => recordSlv(),
     auckland: async () => recordAuckland(await scansionaAuckland({ minuti: min("auckland", +(arg["auckland-minuti"] ?? 10)), soloCache: sc("auckland") })),
