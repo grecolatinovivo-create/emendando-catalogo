@@ -112,8 +112,9 @@ export function bibliotecaKokusho(sigla, tab = istituti()) {
   return { biblioteca: t.it + (t.ja ? ` (${t.ja})` : "") + (t.copia ? ` (${t.copia})` : ""), citta: t.citta || "Giappone" };
 }
 
+// bid corti (8 cifre, 63 schede della «ベルリン国図»): kokusho non ha il manifesto, risponde con la pagina HTML (prova del 26 ottobre 2026)
 export function recordKokusho(st = leggiStato()) {
-  return Object.entries(st.voci || {}).filter(([, v]) => v && !NON_LIBRARI_JA.test(v[0] || "")).map(([bid, v]) => {
+  return Object.entries(st.voci || {}).filter(([bid, v]) => v && !NON_LIBRARI_JA.test(v[0] || "") && /^\d{9,}$/.test(bid)).map(([bid, v]) => {
     const anno = annoKokusho(v[3]);
     return { fonte: "kokusho", id: "nijl-" + bid, ...bibliotecaKokusho(v[1]),
       segnatura: v[2] || "bid " + bid, datazione: v[3] ? (anno && !/\b1[0-9]{3}\b/.test(v[3]) ? `${v[3]} (${anno})` : v[3]) : null, titolo: v[0],
