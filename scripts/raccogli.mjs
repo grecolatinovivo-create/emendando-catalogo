@@ -6,7 +6,7 @@
 //        [--bodleian-minuti=30] [--gallica-minuti=30] [--laurenziana-minuti=15] [--ambrosiana-minuti=20] [--montecassino-minuti=5] [--casanatense-minuti=5] [--bub-minuti=10]
 //        [--leiden-minuti=15] [--hsp-minuti=10] [--berlino-minuti=60] [--indici-minuti=20]
 //        [--yale-minuti=30] [--penn-minuti=15] [--ds-minuti=15] [--walters-minuti=20] [--loc-minuti=10] [--nlg-minuti=15]
-//        [--ndl-minuti=60] [--kokusho-minuti=60] [--auckland-minuti=10] [--toronto-minuti=15]
+//        [--ndl-minuti=60] [--ndl-controllo-minuti=40] [--kokusho-minuti=60] [--auckland-minuti=10] [--toronto-minuti=15]
 //        [--wellcome-minuti=10] [--bl-minuti=40] [--isos-minuti=20] [--manchester-minuti=30] [--cudl-minuti=30] [--cbl-minuti=60] [--parker-minuti=20] [--nlw-minuti=10] [--minuti-totali=160] [--solo-costruisci]
 //        [--mdc-minuti=10] [--ub-minuti=10] [--realbiblioteca-minuti=15] [--ucm-minuti=15] [--sevilla-minuti=5] [--rah-minuti=30]
 //        [--pergamos-minuti=10] [--rousanou-minuti=5] [--auc-minuti=5] [--northwestern-minuti=5] [--nbkm-minuti=20] [--libfond-minuti=60]
@@ -342,7 +342,7 @@ async function main() {
     parker: async () => recordParker(await scansionaParker({ minuti: min("parker", +(arg["parker-minuti"] ?? 20)), soloCache: sc("parker") })),
     nlw: async () => recordNlw(await scansionaNlw({ minuti: min("nlw", +(arg["nlw-minuti"] ?? 10)), soloCache: sc("nlw") })),
     // Asia orientale e Oceania (corsia «mondo»): National Diet Library, Kokusho (NIJL), Auckland
-    ndl: async () => recordNdl(await scansionaNdl({ minuti: min("ndl", +(arg["ndl-minuti"] ?? 60)), soloCache: sc("ndl") })),
+    ndl: async () => recordNdl(await scansionaNdl({ minuti: min("ndl", +(arg["ndl-minuti"] ?? 60)), controlloMinuti: min("ndl", +(arg["ndl-controllo-minuti"] ?? 40)), soloCache: sc("ndl") })),
     kokusho: async () => recordKokusho(await scansionaKokusho({ minuti: min("kokusho", +(arg["kokusho-minuti"] ?? 60)), soloCache: sc("kokusho") })),
     // Europa (corsia «europa», dal 26 ottobre 2026): handrit.is (nessuna richiesta al sito: descrizioni TEI da GitHub), Polona, Manuscriptorium
     handrit: async () => recordHandrit(await scansionaHandrit({ soloCache: sc("handrit") })),

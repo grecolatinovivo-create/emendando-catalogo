@@ -13,7 +13,7 @@ const attendi = ms => new Promise(r => setTimeout(r, ms));
 
 export function log(...a) { if (!process.env.CATALOGO_SILENZIO) console.error(new Date().toISOString().slice(11, 19), ...a); }
 
-async function turno(host) {
+export async function turno(host) {
   const p = PAUSA[host] ?? PAUSA_BASE, t = ultimo.get(host) || 0, ora = Date.now();
   if (ora - t < p) await attendi(p - (ora - t));
   ultimo.set(host, Date.now());

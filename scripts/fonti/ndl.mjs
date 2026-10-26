@@ -9,8 +9,13 @@
 // dl.ndl.go.jp/api/iiif/<pid>/manifest.json (CORS aperto su manifesti e immagini), dominio pubblico (PDM) quasi sempre.
 // Stato in data/ndl.json; il token OAI codifica la posizione, quindi la raccolta riprende anche il giorno dopo.
 // Raccolta completa ogni 30 giorni; nel frattempo, ogni 6 giorni, solo i record cambiati (from=ultima raccolta).
+// Accesso (dal 26 ottobre 2026): entrano solo i record con tutti i codici dcterms:accessRights «S0xP99U99» (pubblicazione in Internet);
+// un codice con P01/P06/P07 (permission «ooc»: solo in biblioteca o con account) dà un manifesto 404 «checkResult: NG».
+// Inoltre controllo dei manifesti a riprese (controllaNdl): una GET leggera per oggetto, stato «m» in ogni voce («ok»/«ng»);
+// le voci «ng» (404 con checkResult NG o 403: anche le schede madri delle opere in più volumi, «branch», che non hanno manifesto)
+// escono dal catalogo, quelle non ancora controllate restano. La corsia gira a ruota finché il controllo non è completo.
 import fs from "node:fs";
-import { scarica, log, decodifica } from "../rete.mjs";
+import { scarica, log, decodifica, turno, UA } from "../rete.mjs";
 import { lingueDa } from "../lingue.mjs";
 import { NON_LIBRARI_JA } from "./kokusho.mjs";
 import { cartaGiapponese } from "../carte.mjs";
@@ -51,6 +56,8 @@ export function estraiNdl(rec) {
   const diritti = valori(rec, "dcterms:rights");
   const accesso = valori(rec, "dcterms:accessRights");
   if (accesso.length && !accesso.some(a => /^S01/.test(a))) return [pid, null];
+  // un solo codice con limitazioni (P01, P06, P07…) basta a rendere il manifesto non pubblico
+  if (accesso.some(a => !/P99U99$/.test(a))) return [pid, null];
   const v = { s: valori(rec, "dcndl:callNumber")[0] || null, t: valori(rec, "dcterms:title")[0] || null };
   const vol = valori(rec, "dcndl:volume")[0]; if (vol) v.v = vol;
   const autori = valori(rec, "dc:creator", "").slice(0, 6); if (autori.length) v.a = autori;
@@ -64,13 +71,55 @@ export function estraiNdl(rec) {
 }
 
 /* raccolta a riprese: cursore = { token, from } (token OAI); stato salvato dopo ogni pagina */
-export async function scansionaNdl({ minuti = 30, soloCache = false } = {}) {
+export async function scansionaNdl({ minuti = 30, controlloMinuti = 40, soloCache = false } = {}) {
   const st = leggiStato();
   st.voci = st.voci || {};
   if (soloCache) return st;
+  let errore = null;
+  try { await raccoltaNdl(st, minuti); } catch (e) { errore = e; }
+  if (controlloMinuti > 0) await controllaNdl(st, controlloMinuti);
+  if (errore) throw errore;
+  return st;
+}
+
+// voci ancora da controllare (solo quelle che entrerebbero nel catalogo)
+export const daControllareNdl = st => Object.entries(st.voci || {}).filter(([, v]) => ammessaNdl(v) && !v.m).map(([k]) => k);
+
+/* controllo dei manifesti a riprese: GET con Range (si leggono pochi byte), una richiesta alla volta con la pausa di rete.mjs.
+   «ng» solo per 404 con checkResult NG o per 403; errori di rete, 5xx, 429 e 404 senza NG si riprovano al giro dopo */
+export async function controllaNdl(st, minuti) {
+  const coda = daControllareNdl(st);
+  if (!coda.length) return st;
+  log("ndl", `controllo dei manifesti: ${coda.length} da controllare`);
+  const fine = Date.now() + minuti * 60e3;
+  let n = 0, ng = 0, err = 0, errFila = 0;
+  for (const pid of coda) {
+    if (Date.now() > fine || errFila >= 20) break;
+    await turno("dl.ndl.go.jp");
+    let esito = null;
+    try {
+      const ctl = new AbortController(), timer = setTimeout(() => ctl.abort(), 60000);
+      const r = await fetch(`https://dl.ndl.go.jp/api/iiif/${pid}/manifest.json`, { headers: { "user-agent": UA, accept: "application/json", range: "bytes=0-1023" }, signal: ctl.signal });
+      let testo = "";
+      if (r.status === 404) testo = await r.text(); else { try { await r.body?.cancel(); } catch (e) {} }
+      clearTimeout(timer);
+      if (r.ok || r.status === 206) esito = "ok";
+      else if (r.status === 403 || (r.status === 404 && /"checkResult"\s*:\s*"NG"/.test(testo))) esito = "ng";
+    } catch (e) {}
+    if (!esito) { err++; errFila++; continue; }
+    errFila = 0; n++; if (esito === "ng") ng++;
+    st.voci[pid].m = esito;
+    if (n % 200 === 0) { st.aggiornato = new Date().toISOString(); salvaStato(st); }
+  }
+  st.aggiornato = new Date().toISOString(); salvaStato(st);
+  log("ndl", `controllo: ${n} manifesti controllati (${ng} non pubblici)${err ? `, ${err} errori da riprovare` : ""}; ne restano ${daControllareNdl(st).length}`);
+  return st;
+}
+
+async function raccoltaNdl(st, minuti) {
   const ora = Date.now();
   if (!st.cursore) {
-    if (st.completato && ora - Date.parse(st.completato) < GIORNI * 864e5) { log("ndl", `riuso la raccolta del ${st.completato.slice(0, 10)}: ${Object.keys(st.voci).length} manoscritti`); return st; }
+    if (st.completato && ora - Date.parse(st.completato) < GIORNI * 864e5) { log("ndl", `riuso la raccolta del ${st.completato.slice(0, 10)}: ${Object.keys(st.voci).length} manoscritti`); return; }
     // ogni 30 giorni da capo (per togliere i record cancellati), altrimenti solo i cambiati
     const completa = !st.completa || ora - Date.parse(st.completa) > GIORNI_COMPLETA * 864e5;
     // raccolta completa: ogni voce letta riceve il numero della raccolta (g); alla fine si tolgono quelle non più restituite
@@ -89,7 +138,7 @@ export async function scansionaNdl({ minuti = 30, soloCache = false } = {}) {
     for (const rec of r.testo.match(/<record>[\s\S]*?<\/record>/g) || []) {
       const x = estraiNdl(rec); if (!x) continue;
       st.letti = (st.letti || 0) + 1;
-      if (x[1]) { if (c.g) x[1].g = c.g; else if (st.voci[x[0]]) x[1].g = st.voci[x[0]].g; st.voci[x[0]] = x[1]; } else delete st.voci[x[0]];
+      if (x[1]) { if (c.g) x[1].g = c.g; else if (st.voci[x[0]]) x[1].g = st.voci[x[0]].g; if (st.voci[x[0]] && st.voci[x[0]].m) x[1].m = st.voci[x[0]].m; st.voci[x[0]] = x[1]; } else delete st.voci[x[0]];
     }
     const tot = /completeListSize="(\d+)"/.exec(r.testo); if (tot && c.completa) st.totale = +tot[1];
     c.token = (/<resumptionToken[^>]*>([^<]+)<\/resumptionToken>/.exec(r.testo) || [])[1] || null;
@@ -106,7 +155,6 @@ export async function scansionaNdl({ minuti = 30, soloCache = false } = {}) {
   st.completato = st.aggiornato = new Date().toISOString();
   salvaStato(st);
   log("ndl", `fine: ${Object.keys(st.voci).length} manoscritti`);
-  return st;
 }
 
 // lingue NDL (ISO 639-2: jpn, chi, kor, ...) -> codici del catalogo; senza lingua: giapponese se il titolo ha kana
@@ -117,9 +165,9 @@ export function lingueNdl(v) {
 }
 
 // filtro applicato anche in costruzione (basta --solo-costruisci per ripulire le voci già raccolte): fuori le lettere
-// e i documenti d'archivio («書簡», «文書»); nessun limite di data
+// e i documenti d'archivio («書簡», «文書»); nessun limite di data; fuori i manifesti non pubblici (m = «ng», controllaNdl)
 export function ammessaNdl(v) {
-  if (!v) return false;
+  if (!v || v.m === "ng") return false;
   return !NON_LIBRARI_JA.test(v.t || "");
 }
 

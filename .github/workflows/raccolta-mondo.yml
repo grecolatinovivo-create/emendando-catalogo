@@ -9,6 +9,7 @@
 # da biblioteche di tutto il mondo: McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, Fragile
 # Palm Leaves Foundation, biblioteche indiane e altre; una ricerca per profilo ogni 6 giorni; data/archive.json). Gli stati sono in data/ndl.json, data/kokusho.json,
 # data/auckland.json, data/toronto.json; National Library of Israel (dal 26 ottobre 2026: elenco da Europeana, data/nli.json). Richieste in serie, una biblioteca dopo l'altra, con le pause di sempre (scripts/rete.mjs).
+# NDL: dal 26 ottobre 2026 anche controllo dei manifesti a riprese (40 minuti per giro; voci non pubbliche fuori), la ruota gira finché non è completo.
 # Ruota fino a lettura completa: finché una delle tre non ha finito la prima lettura completa, la corsia lavora circa 150 minuti
 # per esecuzione (NDL 60, Kokusho 55, Auckland 10, Toronto 10, Internet Archive 10) e riparte subito da sola, purché nel giro ci siano stati progressi
 # (scripts/ruota.mjs). Poi torna al giro notturno delle 05 UTC, che prende solo i codici nuovi (raccolte complete periodiche:
@@ -34,7 +35,7 @@ jobs:
     with:
       corsia: mondo
       fonti: ndl,kokusho,auckland,toronto,pergamos,rousanou,auc,northwestern,nli,archive
-      argomenti: --ndl-minuti=60 --kokusho-minuti=55 --auckland-minuti=10 --toronto-minuti=10 --pergamos-minuti=10 --rousanou-minuti=5 --auc-minuti=5 --northwestern-minuti=5 --nli-minuti=45 --archive-minuti=10
+      argomenti: --ndl-minuti=60 --ndl-controllo-minuti=40 --kokusho-minuti=55 --auckland-minuti=10 --toronto-minuti=10 --pergamos-minuti=10 --rousanou-minuti=5 --auc-minuti=5 --northwestern-minuti=5 --nli-minuti=45 --archive-minuti=10
       cache: false
       ruota: false
       completa: true

@@ -246,7 +246,9 @@ export const AVANZAMENTO = {
     if (!s.cursore && !s.completato) return { testo: "lettura completa da rifare: riparte a ruota (corsia mondo)", data: s.aggiornato };
     const n = Object.keys(s.voci || {}).length;
     if (s.cursore) return { testo: `in corso: ${num(s.letti)} record letti${s.cursore.completa && s.totale ? " su " + num(s.totale) : " (record cambiati)"}; ${num(n)} manoscritti finora`, data: s.aggiornato };
-    return { testo: `record letti tutti (${num(s.totale)} libri antichi digitalizzati; ${num(n)} manoscritti; fuori i libri a stampa)`, data: s.completato || s.aggiornato };
+    const vv = Object.values(s.voci || {}), ok = vv.filter(v => v.m === "ok").length, ng = vv.filter(v => v.m === "ng").length;
+    const ctl = ok + ng < n ? `; manifesti controllati ${num(ok + ng)} su ${num(n)} (${num(ng)} non pubblici, fuori; il controllo continua a riprese)` : `; manifesti controllati tutti (${num(ng)} non pubblici, fuori)`;
+    return { testo: `record letti tutti (${num(s.totale)} libri antichi digitalizzati; ${num(n)} manoscritti; fuori i libri a stampa)${ctl}`, data: s.completato || s.aggiornato };
   },
   kokusho: () => {
     const s = leggi("data/kokusho.json"); if (!s) return { testo: "non ancora cominciata" };

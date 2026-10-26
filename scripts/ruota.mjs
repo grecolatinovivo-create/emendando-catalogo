@@ -10,6 +10,7 @@
 // (lo stato è cambiato, a parte la data «aggiornato»): una fonte in errore non fa girare la corsia all'infinito.
 import fs from "node:fs";
 import crypto from "node:crypto";
+import { daControllareNdl } from "./fonti/ndl.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
 const FONTI = String(arg.fonti || "").split(",").filter(Boolean);
@@ -20,11 +21,13 @@ const quante = o => Object.keys((o && o.voci) || {}).length;
 // true = prima lettura completa non ancora finita; null = fonte senza regola (conta come finita)
 export const INCOMPLETA = {
   // raccolte a riprese con il segnaposto «completato» (azzerato quando si rifà la lettura da capo)
-  ...Object.fromEntries(["ndl", "kokusho", "penn", "loc", "auckland", "toronto", "ds", "montecassino", "casanatense", "bub", "laurenziana", "leiden",
+  ...Object.fromEntries(["kokusho", "penn", "loc", "auckland", "toronto", "ds", "montecassino", "casanatense", "bub", "laurenziana", "leiden",
     "wolfenbuettel", "bamberga", "karlsruhe", "stoccarda", "colonia", "lipsia", "francoforte", "dresda", "tubinga",
     "handrit", "polona", "manuscriptorium", "onb", "kbdk", "uva",
     "wellcome", "bl", "isos", "manchester", "cudl", "cbl", "parker", "nlw", "mdc", "ub", "realbiblioteca", "ucm", "sevilla", "pergamos", "auc", "northwestern", "archive", "nbkm", "libfond", "getty"].map(f => [f, s => !s || !s.completato]),
   ),
+  // National Diet Library: lettura finita e manifesti di tutte le voci controllati (m = «ok» o «ng»; scripts/fonti/ndl.mjs)
+  ndl: s => !s || !s.completato || daControllareNdl(s).length > 0,
   // Berlino, manoscritti non europei: lettura OAI finita (nessun token in sospeso)
   // National Library of Israel: elenco finito (nessuna fase di ricerca in sospeso)
   nli: s => !s || !s.completato || !!s.fase,   // «completato» resta vuoto finché non sono letti gli inizi dei manifesti dei candidati
