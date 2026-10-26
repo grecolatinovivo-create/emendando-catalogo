@@ -498,6 +498,33 @@ Biblioteche che non si possono raccogliere da sole (registrazione, verifiche ant
 | Archivio Storico Civico e Biblioteca Trivulziana | Milano | Le Collezioni Digitali Civiche mostrano poche carte per codice, senza IIIF, e la ricerca chiede credenziali: chiedere i manifesti IIIF dei codici digitalizzati. |
 | Biblioteca Universitaria di Padova | Padova | Il sito non risponde nemmeno dal browser e in Phaidra ci sono solo immagini sciolte di due codici: chiedere se ci sono codici digitalizzati interi. |
 
+### Permesso per la lettura automatica a pagamento
+
+Decisione del 26 ottobre 2026: il catalogo e la consultazione delle immagini restano gratuiti; in Emendando si paga lo strumento (lettura con intelligenza artificiale, edizioni, commento), non l'immagine. La lettura automatica parte solo su richiesta dell'utente, sul codice che ha aperto, mai in blocco su intere collezioni; è sola elaborazione e le immagini non vengono ripubblicate; il testo letto riporta sempre biblioteca, segnatura e licenza. Alle biblioteche qui sotto, con la stessa lettera dell'Università di Urbino, va chiesto il permesso esplicito per questo uso, perché le loro condizioni limitano l'uso commerciale delle riproduzioni. Le licenze sono quelle verificate nelle voci del catalogo (campo «licenza») e nelle note delle fonti in `scripts/fonti/` il 26 ottobre 2026.
+
+| Biblioteca | Città | Perché serve chiedere |
+|---|---|---|
+| Biblioteca Apostolica Vaticana | Città del Vaticano | Immagini «© Biblioteca Apostolica Vaticana» (`scripts/fonti/vaticana.mjs`): ogni uso diverso dalla consultazione chiede il permesso della Biblioteca. |
+| Biblioteca Medicea Laurenziana | Firenze | Biblioteca statale (MiC): art. 108 del Codice dei beni culturali (riproduzioni libere solo per fini non commerciali). Nelle voci, CC BY-NC-SA per 4114 codici su 4353. |
+| Biblioteca Nazionale Centrale di Firenze | Firenze | Biblioteca statale (MiC): art. 108 del Codice dei beni culturali; la fonte dichiara «riproduzioni solo per fini non commerciali» (`scripts/fonti/bncf.mjs`). |
+| Biblioteca Casanatense | Roma | Biblioteca statale (MiC): art. 108 del Codice dei beni culturali. |
+| Biblioteca Vallicelliana | Roma | Biblioteca statale (MiC): art. 108 del Codice dei beni culturali; immagini sulla piattaforma OMNES © DB Seret. |
+| Biblioteca Universitaria di Bologna | Bologna | Biblioteca statale (MiC): art. 108 del Codice dei beni culturali; nelle voci, CC BY-NC-ND 4.0 per tutti i 907 codici (Historica, Università di Bologna). |
+| Biblioteca statale del Monumento nazionale di Montecassino | Montecassino | Biblioteca statale (MiC): art. 108 del Codice dei beni culturali; immagini sulla piattaforma OMNES © DB Seret. |
+| Biblioteca Estense Universitaria | Modena | Biblioteca statale (MiC): art. 108 del Codice dei beni culturali; oggi un solo codice nel catalogo (tramite Heidelberg), da aggiungere alla richiesta già prevista sopra. |
+| e-codices (Stiftsbibliothek San Gallo, Fondation Martin Bodmer, Bibliothèque de Genève e altre biblioteche svizzere) | Svizzera | CC BY-NC 4.0 per 2287 codici su 2745. |
+| Bodleian Libraries e college di Oxford | Oxford | CC BY-NC 4.0 o CC BY-NC-SA 3.0 per 8106 codici su 10.068 (più 101 codici della Bodleian arrivati tramite Heidelberg, CC BY-NC 4.0). |
+| Cambridge Digital Library (University Library e college) | Cambridge | Immagini scaricabili CC BY-NC 4.0, zoom © University Library: tutti i 3266 codici. |
+| Parker Library, Corpus Christi College | Cambridge | CC BY-NC 4.0: tutti i 553 codici. |
+| John Rylands Research Institute and Library | Manchester | CC BY-NC 4.0: tutti i 632 codici. |
+| Manuscriptorium (Biblioteca Nacional de Portugal, Národní knihovna České republiky, National Library of Finland e altre) | Repubblica Ceca e altre | CC BY-NC-SA per 15.102 codici su 15.169. |
+| Staatsbibliothek zu Berlin | Berlino | CC BY-NC-SA 4.0 per 77 codici su 3296. |
+| University of Pennsylvania Libraries, Kislak Center | Filadelfia | CC BY-NC-SA 3.0 per 121 codici su 10.626. |
+| Università di Atene, Biblioteca della Facoltà di Filosofia (Pergamos) | Atene | CC BY-NC 4.0: tutti i 39 codici. |
+| Biblioteca de la Universidad de Sevilla | Siviglia | CC BY-NC-ND 4.0 per 14 codici su 1164. |
+| Wellcome Collection | Londra | CC BY-NC 4.0 per 12 codici su 1613. |
+| Universidad Complutense de Madrid, Biblioteca Histórica | Madrid | CC BY-NC-SA 4.0 o CC BY-NC-ND 4.0 per 3 codici su 6471. |
+
 ## Non raggiungibili
 
 | Biblioteca | Città | Stato | Perché |
