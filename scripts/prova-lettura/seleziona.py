@@ -134,6 +134,7 @@ for f, (lotto, quanti) in LOTTI.items():
             "id": d["id"], "fonte": f, "lotto": lotto, "segnatura": d["segnatura"],
             "biblioteca": v.get("biblioteca", "") + (", " + v["citta"] if v.get("citta") else ""),
             "datazione": v.get("datazione") or (f"sec. {d['secolo_da']}-{d['secolo_a']}" if d["secolo_da"] else ""),
+            "secolo": [d["secolo_da"], d["secolo_a"]],
             "titolo": d["titolo"], "motivo": "; ".join(d["motivi"]), "punti": d["punti"],
             "lingua_dedotta": bool(d["lingua_dedotta"]), "manifest": v["manifest"], "pagina": v.get("pagina"),
             "licenza": v.get("licenza"),

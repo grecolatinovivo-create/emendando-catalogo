@@ -13,6 +13,29 @@ CODICI, RIS, TEMPI, RUN = sys.argv[1:5]
 cod = json.load(open(CODICI))
 rie = json.load(open(os.path.join(RIS, "riepilogo.json")))
 sosp = json.load(open(os.path.join(RIS, "sospetti.json")))
+
+# Ordine per interesse. Base (da confronta.py): qualità della lettura × quantità di testo × pagine senza
+# corrispondenza. Correzioni: i codici fino al XII secolo valgono di più (lì i corpora, Patrologia fino
+# all'VIII secolo e classici, coprono meglio quello che ci si aspetta di trovare, quindi un «nessun riscontro»
+# pesa di più); valgono meno quelli il cui titolo nel catalogo indica già autore o opera (il testo è noto,
+# solo assente dai corpora aperti).
+import re  # noqa: E402
+
+secoli = {c["id"]: c.get("secolo") or [0, 0] for c in cod["codici"]}
+NOTO = re.compile(r"seu potius|sive |scilicet|interprete|/ [A-Z]|\b[A-Z][a-z]+ (de|von|of) [A-Z]|[A-Z][a-z]+:\s|[A-Z][a-z]+i [A-Z][a-z]+(i|ae)\b|\b(Aristot|Petrarc|Scot|Guido|Isidor|Bernard|Hugo|Hugon|Innocent|Manetti|Panormit|Appian|Sacrobosc|Platearius|Garland|Matthaeus)")
+for x in sosp:
+    f = 1.0
+    sd, sa = secoli.get(x["id"], [0, 0])
+    if sa and sa <= 12:
+        f *= 1.5
+    elif sd and sd >= 15:
+        f *= 0.8
+    if NOTO.search(x.get("titolo") or ""):
+        f *= 0.5
+    x.setdefault("interesse_base", x["interesse"])  # quello di confronta.py, per non moltiplicare due volte
+    x["interesse"] = round(x["interesse_base"] * f, 3)
+sosp.sort(key=lambda x: -x["interesse"])
+json.dump(sosp, open(os.path.join(RIS, "sospetti.json"), "w"), ensure_ascii=False, indent=1)
 righe = list(csv.DictReader(open(os.path.join(RIS, "risultati-codici.csv"))))
 
 minuti_job = {}
@@ -63,7 +86,8 @@ if rie.get("fonti_identificate"):
 
 L.append("## Sospetti, ordinati per interesse\n")
 L.append("Interesse = qualità della lettura (confidenza e quota di parole latine) × quantità di testo × numero di pagine "
-         "senza corrispondenza, con un piccolo vantaggio per palinsesti, maculature e testi dichiarati non identificati. "
+         "senza corrispondenza, con un vantaggio per palinsesti, maculature, testi dichiarati non identificati e codici fino al "
+         "XII secolo, e uno svantaggio per i codici il cui titolo nel catalogo nomina già autore o opera. "
          "«Pagina» è il numero dell'immagine nel manifesto (canvas). Gli estratti sono la lettura automatica grezza, "
          "con le abbreviazioni non sciolte e gli errori della macchina.\n")
 for i, s in enumerate(sosp[:60], 1):

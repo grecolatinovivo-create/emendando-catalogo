@@ -47,6 +47,10 @@
    "segnatura": "Clm 15774",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Alberti Sarthianensis opera rescripta ex libro fratris Johannis Capistrani ...",
    "motivo": "palinsesto",
    "punti": 6,
@@ -62,6 +66,10 @@
    "segnatura": "Cod.gall. 42",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "1200-1299 (13.sc)",
+   "secolo": [
+    12,
+    13
+   ],
    "titolo": "16 Motets: [without title]",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -77,6 +85,10 @@
    "segnatura": "Clm 29775(10",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "1400-1449",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Tribum quem non abhoruit, V (3): [without title]",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -92,6 +104,10 @@
    "segnatura": "Clm 2580",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "12. Jh.",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Anonymi commentarius in Boetii librum de trinitate",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -107,6 +123,10 @@
    "segnatura": "Clm 6116(Einband",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "1366-1367",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Silbereinband zum sog. Gebetbuch der Taddea Visconti",
    "motivo": "maculatura o frammento di legatura",
    "punti": 5,
@@ -122,6 +142,10 @@
    "segnatura": "Clm 5878",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Spätmittelalterlicher Leineneinband",
    "motivo": "maculatura o frammento di legatura",
    "punti": 5,
@@ -137,6 +161,10 @@
    "segnatura": "Clm 27152",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "9. Jahrhundert",
+   "secolo": [
+    9,
+    9
+   ],
    "titolo": "Collectio ab anonymo facta, 'qualiter clerici vivere debeant'",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -152,6 +180,10 @@
    "segnatura": "Mus.ms. 3225",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "1450-1474 (15.3q)",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "6 Pieces: [without title]",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -167,6 +199,10 @@
    "segnatura": "Clm 23343 a",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "12. Jh. oder später",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Abgenommener Einband zu Clm 23343",
    "motivo": "maculatura o frammento di legatura",
    "punti": 5,
@@ -182,6 +218,10 @@
    "segnatura": "Clm 2605",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "13. Jh.",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Commentarius Anonymi (an Anselmi, cuius commentum sequitur?) in Cantica Canticorum",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -197,6 +237,10 @@
    "segnatura": "Clm 3100",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "15. Jahrhundert",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Sermones dominicales et alii incertorum auctorum",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -212,6 +256,10 @@
    "segnatura": "Clm 7725",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Spätmittelalterlicher Leineneinband",
    "motivo": "maculatura o frammento di legatura",
    "punti": 5,
@@ -227,6 +275,10 @@
    "segnatura": "Clm 16444",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "1300-1399 (14.sc)",
+   "secolo": [
+    13,
+    14
+   ],
    "titolo": "17 Motets: [without title]",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -242,6 +294,10 @@
    "segnatura": "Mus.ms. 3223",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "1390-1410 (1400c)",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "3 Motets: [without title]",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -257,6 +313,10 @@
    "segnatura": "Clm 7713",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "14. - 15. Jhdt.",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "Spätmittelalterlicher Leineneinband",
    "motivo": "maculatura o frammento di legatura",
    "punti": 4,
@@ -272,6 +332,10 @@
    "segnatura": "Clm 23637",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Lateinisches Stundenbuch von Simon Bening ; Luxuseinband zum Stundenbuch von Simon Bening",
    "motivo": "maculatura o frammento di legatura",
    "punti": 4,
@@ -287,6 +351,10 @@
    "segnatura": "Clm 4389",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Excerpta et collectanea varia, inter quae f. 1-11 et 150-160 Tractatus de compositionibus",
    "motivo": "codice composito; miscellanea",
    "punti": 4,
@@ -302,6 +370,10 @@
    "segnatura": "Clm 29319(4",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "9./10. Jh.",
+   "secolo": [
+    9,
+    10
+   ],
    "titolo": "Homiliar (Fragment)",
    "motivo": "frammento",
    "punti": 3,
@@ -317,6 +389,10 @@
    "segnatura": "Clm 29500(1",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "11. Jh.",
+   "secolo": [
+    11,
+    11
+   ],
    "titolo": "Quaestio de Salomone (Fragment)",
    "motivo": "frammento",
    "punti": 3,
@@ -332,6 +408,10 @@
    "segnatura": "Clm 29520(20",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "Anfang 14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "De materia et forma dissertatio (Fragment)",
    "motivo": "frammento",
    "punti": 3,
@@ -347,6 +427,10 @@
    "segnatura": "Clm 3420",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "1450",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Sermones dominicales incerti auctore. Inc. Licet in omnia scientia etc. Fol. 82 Sermones quadragesimales. Inc. Conuertimini ad me toto cord…",
    "motivo": "titolo assente o testo non identificato",
    "punti": 3,
@@ -362,6 +446,10 @@
    "segnatura": "Clm 29308(45",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Sequentiar und Tropar (Fragment)",
    "motivo": "frammento",
    "punti": 3,
@@ -377,6 +465,10 @@
    "segnatura": "Clm 405",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "14. und 15. Jh.",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Libelli et fragmenta librorum varia lat. et germ. de arte alchimiae (de coloribus, de artificiis)",
    "motivo": "frammento; miscellanea",
    "punti": 3,
@@ -392,6 +484,10 @@
    "segnatura": "Clm 19486",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "10. - 11. Jh.",
+   "secolo": [
+    10,
+    11
+   ],
    "titolo": "Fragmenta poematis 'Ruodlieb', quae Schmellerus edidit in 'Lateinische Gedichte'",
    "motivo": "frammento",
    "punti": 3,
@@ -407,6 +503,10 @@
    "segnatura": "Clm 28179",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Lectura super decreto (Fragment)",
    "motivo": "frammento",
    "punti": 3,
@@ -422,6 +522,10 @@
    "segnatura": "Clm 4727",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "1459",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Tractatus de superstitionibus. Fol. 79 Anonymi Breviloquium animi cuiuslibet religiosi reformativum. Inc. Prima regula est. Fol. 132v Liber…",
    "motivo": "titolo assente o testo non identificato",
    "punti": 3,
@@ -437,6 +541,10 @@
    "segnatura": "Clm 6308",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "vor 784",
+   "secolo": [
+    8,
+    8
+   ],
    "titolo": "Historiae adversus paganos (fragmentum)",
    "motivo": "frammento",
    "punti": 3,
@@ -452,6 +560,10 @@
    "segnatura": "Clm 213",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "13. Jh.",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Fragmentum calendarii saeculo XII., Aprilem et Maium continens",
    "motivo": "frammento",
    "punti": 3,
@@ -467,6 +579,10 @@
    "segnatura": "Clm 29325(3",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "11. Jh.",
+   "secolo": [
+    11,
+    11
+   ],
    "titolo": "Rituale (Fragment)",
    "motivo": "frammento",
    "punti": 3,
@@ -482,6 +598,10 @@
    "segnatura": "Cod.icon. 464",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Fragment einer Darstellung aus der Passion Christi",
    "motivo": "frammento",
    "punti": 3,
@@ -497,6 +617,10 @@
    "segnatura": "Clm 167",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "1225",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Anonymi Ratisbonensis farrago historica, res Ratisbonenses, Bavaricas, Austriacas complectens. Insunt complura germanice scripta, velut p.…",
    "motivo": "titolo assente o testo non identificato",
    "punti": 3,
@@ -512,6 +636,10 @@
    "segnatura": "Clm 44",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "circa 970",
+   "secolo": [
+    10,
+    10
+   ],
    "titolo": "Codex traditionum ecclesiae Ravennatis (Fragment)",
    "motivo": "frammento",
    "punti": 3,
@@ -527,6 +655,10 @@
    "segnatura": "Clm 23618",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "10. Jh.",
+   "secolo": [
+    10,
+    10
+   ],
    "titolo": "Fragmentum annalium Einhardi annis 806 - 820",
    "motivo": "frammento",
    "punti": 3,
@@ -542,6 +674,10 @@
    "segnatura": "Clm 1044",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "11. Jahrhundert",
+   "secolo": [
+    11,
+    11
+   ],
    "titolo": "Eugipii vitae S. Severini fragmentum",
    "motivo": "frammento",
    "punti": 3,
@@ -557,6 +693,10 @@
    "segnatura": "Clm 28799",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "12./13. Jh.",
+   "secolo": [
+    12,
+    13
+   ],
    "titolo": "Fragmenta quaestionum theologicarum",
    "motivo": "frammento",
    "punti": 3,
@@ -572,6 +712,10 @@
    "segnatura": "Cgm 5153 m",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "Ende 14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Lateinische und deutsche Predigten, u.a. Meister Eckhart, Fragment",
    "motivo": "frammento",
    "punti": 3,
@@ -587,6 +731,10 @@
    "segnatura": "Clm 29303(2",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "8./9. Jh.",
+   "secolo": [
+    8,
+    9
+   ],
    "titolo": "Voll-Lektionar (Comes duplex) (Fragment)",
    "motivo": "frammento",
    "punti": 3,
@@ -602,6 +750,10 @@
    "segnatura": "Clm 23479",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "11. Jahrhundert",
+   "secolo": [
+    11,
+    11
+   ],
    "titolo": "Fragmenta medicinalia",
    "motivo": "frammento",
    "punti": 3,
@@ -617,6 +769,10 @@
    "segnatura": "Clm 29303(77",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "14. Jahrhundert",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Voll-Lektionar (Comes duplex) (Fragment)",
    "motivo": "frammento",
    "punti": 3,
@@ -632,6 +788,10 @@
    "segnatura": "Clm 2712",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Anonymi commentarius in libros Regum. Incipit: 'Rectoribus populi has virtutes esse necessarias. misericordiam, iusticiam, sapientiam et hu…",
    "motivo": "titolo assente o testo non identificato",
    "punti": 3,
@@ -647,6 +807,10 @@
    "segnatura": "Clm 4660 a",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "um 1230 - 14. Jahrhundert",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Fragmenta Burana",
    "motivo": "frammento",
    "punti": 3,
@@ -662,6 +826,10 @@
    "segnatura": "Clm 29310(2",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "Anfang 12. Jh.",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Liber ordinarius (Fragment)",
    "motivo": "frammento",
    "punti": 3,
@@ -677,6 +845,10 @@
    "segnatura": "Clm 28796",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "9., 10. Jahrhundert",
+   "secolo": [
+    9,
+    10
+   ],
    "titolo": "Liber de moribus, Fragment Spr. 12-14",
    "motivo": "frammento",
    "punti": 3,
@@ -692,6 +864,10 @@
    "segnatura": "Clm 29830(1",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "12. Jh.",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Mirabilis liber, qui prophetias, revelationesque ... demonstrat (Fragment)",
    "motivo": "frammento",
    "punti": 3,
@@ -707,6 +883,10 @@
    "segnatura": "Clm 29890(M1",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "Anfang 11. Jahrhundert",
+   "secolo": [
+    11,
+    11
+   ],
    "titolo": "Passio S. Margarethae (Fragment)",
    "motivo": "frammento",
    "punti": 3,
@@ -722,6 +902,10 @@
    "segnatura": "Clm 29410(5",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "9. Jh.",
+   "secolo": [
+    9,
+    9
+   ],
    "titolo": "Pauca problesmata de enigmatibus ex tomis canonicis (Fragment)",
    "motivo": "frammento",
    "punti": 3,
@@ -737,6 +921,10 @@
    "segnatura": "Clm 29670(3",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "Ende 9. Jh.",
+   "secolo": [
+    9,
+    9
+   ],
    "titolo": "Glossarium (O, P) (Fragment)",
    "motivo": "frammento",
    "punti": 3,
@@ -752,6 +940,10 @@
    "segnatura": "Clm 29890(L2",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "12. Jh.",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Passio S. Laurentii, Agopiti et Jacobi (Fragment)",
    "motivo": "frammento",
    "punti": 3,
@@ -767,6 +959,10 @@
    "segnatura": "Clm 23295",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "15. Jahrhundert",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Fragment eines Franziskanerbreviers",
    "motivo": "frammento",
    "punti": 3,
@@ -782,6 +978,10 @@
    "segnatura": "Clm 23639",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "1485",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Gebetbuch des Lorenzo de' Medici ; Goldschmiedeeinband zum Gebetbuch des Lorenzo de' Medici",
    "motivo": "maculatura o frammento di legatura",
    "punti": 3,
@@ -797,6 +997,10 @@
    "segnatura": "Clm 18976",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Excerpta de passione Christi. In tegumentis fragmenta Calendarii s. XVII impressi cum figuris",
    "motivo": "frammento; miscellanea",
    "punti": 3,
@@ -812,6 +1016,10 @@
    "segnatura": "Clm 10270",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "Anfang 12. Jahrhundert",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Astronomische und komputistische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -827,6 +1035,10 @@
    "segnatura": "Clm 14017",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "1431/1433",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Juristischer Sammelband",
    "motivo": "codice composito",
    "punti": 2,
@@ -842,6 +1054,10 @@
    "segnatura": "Clm 3941",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "ca. 1450-1470",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Humanistischer Sammelband des Sigismund Gossembrot",
    "motivo": "codice composito",
    "punti": 2,
@@ -857,6 +1073,10 @@
    "segnatura": "Clm 24164",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "15. Jahrhundert",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Juristische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -872,6 +1092,10 @@
    "segnatura": "Clm 19819",
    "biblioteca": "Bayerische Staatsbibliothek, München",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Excerpta",
    "motivo": "miscellanea",
    "punti": 2,
@@ -887,6 +1111,10 @@
    "segnatura": "Msc.Lit.1",
    "biblioteca": "Staatsbibliothek Bamberg, Bamberg",
    "datazione": "11. Jh., Anfang",
+   "secolo": [
+    11,
+    11
+   ],
    "titolo": "Sakramentar ; Prunkeinband des Fuldaer Sakramentars ; Sacramentarium Gregorianum",
    "motivo": "maculatura o frammento di legatura",
    "punti": 4,
@@ -902,6 +1130,10 @@
    "segnatura": "Msc.Bibl.14",
    "biblioteca": "Staatsbibliothek Bamberg, Bamberg",
    "datazione": "12. Jh., Ende",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Theologische Sammelhandschrift ; Cantica canticorum · Sententiae patrum de vita clericorum · Martyrolog. fragm. · Petri Damiani liber qui d…",
    "motivo": "frammento; codice composito",
    "punti": 3,
@@ -917,6 +1149,10 @@
    "segnatura": "Msc.Patr.3",
    "biblioteca": "Staatsbibliothek Bamberg, Bamberg",
    "datazione": "9./10. Jh.",
+   "secolo": [
+    9,
+    10
+   ],
    "titolo": "Forma institutionis canonicorum collectore Symphosio Amalario (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -932,6 +1168,10 @@
    "segnatura": "Msc.Can.9",
    "biblioteca": "Staatsbibliothek Bamberg, Bamberg",
    "datazione": "10. Jh.",
+   "secolo": [
+    10,
+    10
+   ],
    "titolo": "Collectio Canonum (ex collectione XII partium excerpta) - Legis Baiuvariorum Fragmentum · Leodiensium epistola adversus Paschalem papam · T…",
    "motivo": "frammento; miscellanea",
    "punti": 3,
@@ -947,6 +1187,10 @@
    "segnatura": "Msc.Hist.3",
    "biblioteca": "Staatsbibliothek Bamberg, Bamberg",
    "datazione": "996–1023",
+   "secolo": [
+    10,
+    11
+   ],
    "titolo": "Historische Sammelhandschrift ; Historiarum variarum collectio",
    "motivo": "codice composito",
    "punti": 2,
@@ -962,6 +1206,10 @@
    "segnatura": "Msc.Med.1",
    "biblioteca": "Staatsbibliothek Bamberg, Bamberg",
    "datazione": "9./10. Jh.",
+   "secolo": [
+    9,
+    10
+   ],
    "titolo": "Collectanea medica",
    "motivo": "miscellanea",
    "punti": 2,
@@ -977,6 +1225,10 @@
    "segnatura": "Msc.Lit.6",
    "biblioteca": "Staatsbibliothek Bamberg, Bamberg",
    "datazione": "um 1000",
+   "secolo": [
+    10,
+    10
+   ],
    "titolo": "Graduale · Sequentiar · liturgische Varia ; Graduale mit Neumen",
    "motivo": "miscellanea",
    "punti": 1,
@@ -992,6 +1244,10 @@
    "segnatura": "Msc.Bibl.22",
    "biblioteca": "Staatsbibliothek Bamberg, Bamberg",
    "datazione": "um 1000",
+   "secolo": [
+    10,
+    10
+   ],
    "titolo": "Canticum Canticorum glossatum · Proverbia Salomonis glossata (Fragm.) · Danihel glossatus (Fragm.) ; Cantica canticorum · L. Proverbiorum f…",
    "motivo": "frammento",
    "punti": 1,
@@ -1007,6 +1263,10 @@
    "segnatura": "Msc.Can.4",
    "biblioteca": "Staatsbibliothek Bamberg, Bamberg",
    "datazione": "um 1020 ; um 1000 (Einschub)",
+   "secolo": [
+    10,
+    11
+   ],
    "titolo": "Sammelhandschrift mit dem Constitutum Constantini · Pseudo-Isidor: Dekrete · u.a. ; Decretales Pseudo-Isidorianae",
    "motivo": "codice composito",
    "punti": 0,
@@ -1022,6 +1282,10 @@
    "segnatura": "Cod. Sal. VII,4",
    "biblioteca": "Universitätsbibliothek Heidelberg, Heidelberg",
    "datazione": "um 1300",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Johannes de Friburgo ; Liber Paenitentialis ; Varia",
    "motivo": "miscellanea",
    "punti": 2,
@@ -1037,6 +1301,10 @@
    "segnatura": "P. Heid. Inv. Kopt. 311",
    "biblioteca": "Heidelberger Papyrussammlung",
    "datazione": "VIII",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "Fragment eines urkundlichen Textes",
    "motivo": "frammento",
    "punti": 2,
@@ -1052,6 +1320,10 @@
    "segnatura": "Hs I 338",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1067,6 +1339,10 @@
    "segnatura": "MS. Laud Misc. 142",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "Anfang 14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "(Ps.-)Augustinus, Opera varia",
    "motivo": "miscellanea",
    "punti": 2,
@@ -1082,6 +1358,10 @@
    "segnatura": "Hs I 325",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1097,6 +1377,10 @@
    "segnatura": "Hs I 39",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "I. 1416; II. 1411",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Zusammengesetzte Handschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1112,6 +1396,10 @@
    "segnatura": "Hs I 102",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1127,6 +1415,10 @@
    "segnatura": "Hs I 286",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "12./13. Jh.",
+   "secolo": [
+    12,
+    13
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1142,6 +1434,10 @@
    "segnatura": "Hs I 88",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "Mitte 15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1157,6 +1453,10 @@
    "segnatura": "Hs I 528",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "I. 1410",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Naturkundliche und rhetorische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1172,6 +1472,10 @@
    "segnatura": "F IV 33",
    "biblioteca": "Universitätsbibliothek, Basel",
    "datazione": "14./15. Jh.",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Sammelband (Grammatik)",
    "motivo": "codice composito",
    "punti": 2,
@@ -1187,6 +1491,10 @@
    "segnatura": "Hs I 532",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Komputisch–theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1202,6 +1510,10 @@
    "segnatura": "MS. Laud Misc. 203",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "frühes 13. Jh - frühes 15. Jh.",
+   "secolo": [
+    13,
+    15
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1217,6 +1529,10 @@
    "segnatura": "B VII 29",
    "biblioteca": "Universitätsbibliothek, Basel",
    "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "De exterioris et interioris hominis compositione (aliaque ascetica, monastica sim.)",
    "motivo": "codice composito",
    "punti": 2,
@@ -1232,6 +1548,10 @@
    "segnatura": "Hs I 563",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "6. Jahrzehnt 15. Jh. (1458)",
+   "secolo": [
+    6,
+    15
+   ],
    "titolo": "Grammatikalische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1247,6 +1567,10 @@
    "segnatura": "Hs I 203",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "Mitte 15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1262,6 +1586,10 @@
    "segnatura": "Hs I 137",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "Anfang 15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1277,6 +1605,10 @@
    "segnatura": "Cod. Pal. lat. 778",
    "biblioteca": "Universitätsbibliothek Heidelberg, Heidelberg",
    "datazione": "1464",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Sammelhandschrift mit Texten zu Verfassungsfragen und Reichsrechten",
    "motivo": "codice composito",
    "punti": 2,
@@ -1292,6 +1624,10 @@
    "segnatura": "Hs I 632",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "15. Jh. (in mehreren Phasen)",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Aszetische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1307,6 +1643,10 @@
    "segnatura": "Hs I 190",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "Mitte 15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1322,6 +1662,10 @@
    "segnatura": "Hs I 119",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "1446",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1337,6 +1681,10 @@
    "segnatura": "Hs I 469",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "15. Jh. Mitte",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Sammelhandschrift (juristisch, grammatisch-rhetorisch, theologisch)",
    "motivo": "codice composito",
    "punti": 2,
@@ -1352,6 +1700,10 @@
    "segnatura": "Hs II 237",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Sammelhandschrift mit Inkunabel",
    "motivo": "codice composito",
    "punti": 2,
@@ -1367,6 +1719,10 @@
    "segnatura": "Hs I 118",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "1449",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1382,6 +1738,10 @@
    "segnatura": "Hs I 50",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "um 1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1397,6 +1757,10 @@
    "segnatura": "Hs I 343",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "13. und 14. Jh.",
+   "secolo": [
+    13,
+    14
+   ],
    "titolo": "Theologsiche Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1412,6 +1776,10 @@
    "segnatura": "Hs I 279",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1427,6 +1795,10 @@
    "segnatura": "Hs I 16",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "um 1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1442,6 +1814,10 @@
    "segnatura": "MS. Laud Misc. 677",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "Mitte 14. bis frühes 15. Jh.",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1457,6 +1833,10 @@
    "segnatura": "Hs I 114",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "1430 ; 1434",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1472,6 +1852,10 @@
    "segnatura": "Cod. Sal. VII,90",
    "biblioteca": "Universitätsbibliothek Heidelberg, Heidelberg",
    "datazione": "um 1440/nach 1443",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Rudolfus de Liebegg ; De Paenitentiis ; Varia",
    "motivo": "miscellanea",
    "punti": 2,
@@ -1487,6 +1871,10 @@
    "segnatura": "Heid. Hs. 41",
    "biblioteca": "Universitätsbibliothek Heidelberg, Heidelberg",
    "datazione": "1460",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1502,6 +1890,10 @@
    "segnatura": "Hs I 218",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "Mitte 14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1517,6 +1909,10 @@
    "segnatura": "Hs I 153",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "Mitte 14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1532,6 +1928,10 @@
    "segnatura": "Hs I 144",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "14. und 15. Jh. (1341; 1438; 1458)",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Aszetisch-theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1547,6 +1947,10 @@
    "segnatura": "Hs I 32",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "Anfang 15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1562,6 +1966,10 @@
    "segnatura": "Hs I 535",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "1406/1407",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Astronomisch–komputistische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1577,6 +1985,10 @@
    "segnatura": "Hs I 224",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "um 1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1592,6 +2004,10 @@
    "segnatura": "Heid. Hs. 959",
    "biblioteca": "Universitätsbibliothek Heidelberg, Heidelberg",
    "datazione": "Mitte 15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Mystische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1607,6 +2023,10 @@
    "segnatura": "Hs I 311",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "13. u. 14. Jh.",
+   "secolo": [
+    13,
+    14
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1622,6 +2042,10 @@
    "segnatura": "Hs I 457",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "1342; 1353; 1364",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Juristische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1637,6 +2061,10 @@
    "segnatura": "Hs I 19",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "Ende 14. Jh. ; um 1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Zusammengesetzte Handschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1652,6 +2080,10 @@
    "segnatura": "Hs I 307",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "1457",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1667,6 +2099,10 @@
    "segnatura": "Hs I 555",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Philosophische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1682,6 +2118,10 @@
    "segnatura": "Hs I 15",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "1348; Mitte 15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1697,6 +2137,10 @@
    "segnatura": "Hs I 557",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "1424",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1712,6 +2156,10 @@
    "segnatura": "Hs I 566",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "1450-1451",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Philosophisch-theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1727,6 +2175,10 @@
    "segnatura": "Hs I 460",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "1417",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Kanonistische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1742,6 +2194,10 @@
    "segnatura": "MS. Laud Misc. 195",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "frühes 15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "De exterioris et interioris hominis compositione",
    "motivo": "codice composito",
    "punti": 2,
@@ -1757,6 +2213,10 @@
    "segnatura": "Hs I 613",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "letztes Drittel 14. Jh. und 15. Jh.",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1772,6 +2232,10 @@
    "segnatura": "Hs I 263",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1787,6 +2251,10 @@
    "segnatura": "MS. Laud Misc. 179",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "spätes 13. Jh. / frühes 14. Jh.",
+   "secolo": [
+    13,
+    14
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1802,6 +2270,10 @@
    "segnatura": "MS. Laud Lat. 37",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "Ende 12. Jh. (Teil A); um 1400 (Teil B)",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1817,6 +2289,10 @@
    "segnatura": "Hs I 202",
    "biblioteca": "Wissenschaftliche Stadtbibliothek Mainz, Mainz",
    "datazione": "um 1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1832,6 +2308,10 @@
    "segnatura": "MS. Laud Misc. 80",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "1200-1310",
+   "secolo": [
+    12,
+    14
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -1847,6 +2327,10 @@
    "segnatura": "Cod. Sang. 323",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "14th and 15th century",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Bernhard de Parentinis, Tractatus de officio missae; Anonymous commentary on Isaiah",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -1862,6 +2346,10 @@
    "segnatura": "Cod. Sang. 985",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "1467",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Spiegelbuch (Book of the Mirror) and other instructive tracts in German translation",
    "motivo": "maculatura o frammento di legatura",
    "punti": 5,
@@ -1877,6 +2365,10 @@
    "segnatura": "Ms. 139",
    "biblioteca": "Couvent des Cordeliers/Franziskanerkloster, Fribourg/Freiburg",
    "datazione": "before 1432",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Collection of anonymous sermons",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -1892,6 +2384,10 @@
    "segnatura": "Codex 38(366)",
    "biblioteca": "Stiftsbibliothek, Einsiedeln",
    "datazione": "10th century (second half, about 960-965)",
+   "secolo": [
+    10,
+    10
+   ],
    "titolo": "[Anonymus], Expositio octo priorum Epistolarum S. Pauli",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -1907,6 +2403,10 @@
    "segnatura": "Cod. Bodmer 77",
    "biblioteca": "Fondation Martin Bodmer, Cologny",
    "datazione": "12th century",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Guido Aretinus, Micrologus; Prologus in Antiphonarium; De ignoto cantu; Regulae rhythmicae",
    "motivo": "titolo assente o testo non identificato",
    "punti": 4,
@@ -1922,6 +2422,10 @@
    "segnatura": "Cod. U 3",
    "biblioteca": "Domschatz der St.-Ursen-Kathedrale, Solothurn",
    "datazione": "1438/39",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Spiegelberger Missal",
    "motivo": "maculatura o frammento di legatura",
    "punti": 4,
@@ -1937,6 +2441,10 @@
    "segnatura": "Cod. Sang. 1394.11",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "9th century",
+   "secolo": [
+    9,
+    9
+   ],
    "titolo": "11th folder of the fragment collection Cod. Sang. 1394",
    "motivo": "frammento",
    "punti": 3,
@@ -1952,6 +2460,10 @@
    "segnatura": "Cod. Sang. 1394.9",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "8th/9th century",
+   "secolo": [
+    8,
+    9
+   ],
    "titolo": "9th folder of the fragment collection Cod. Sang. 1394",
    "motivo": "frammento",
    "punti": 3,
@@ -1967,6 +2479,10 @@
    "segnatura": "Codex 366(472)",
    "biblioteca": "Stiftsbibliothek, Einsiedeln",
    "datazione": "11th / 12th century",
+   "secolo": [
+    11,
+    12
+   ],
    "titolo": "Fragmenta Sequentiarum",
    "motivo": "frammento",
    "punti": 3,
@@ -1982,6 +2498,10 @@
    "segnatura": "Cod. Sang. 612",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "end of the 15th century",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Copies of the Casus sancti Galli by Ratpert, by Ekkehart IV, by anonymous continuators, and by Conradus de Fabaria",
    "motivo": "titolo assente o testo non identificato",
    "punti": 3,
@@ -1997,6 +2517,10 @@
    "segnatura": "Cod. Sang. 730",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "670/680",
+   "secolo": [
+    7,
+    7
+   ],
    "titolo": "Edictum Rothari (Veterum Fragmentorum Tomus III)",
    "motivo": "frammento",
    "punti": 3,
@@ -2012,6 +2536,10 @@
    "segnatura": "A VII 17",
    "biblioteca": "Universitätsbibliothek, Basel",
    "datazione": "12th-14th century",
+   "secolo": [
+    12,
+    14
+   ],
    "titolo": "Composite volume with theological texts and Palladius",
    "motivo": "codice composito",
    "punti": 2,
@@ -2027,6 +2555,10 @@
    "segnatura": "Cod. Sang. 767",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "15th century",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Theological miscellany",
    "motivo": "miscellanea",
    "punti": 2,
@@ -2042,6 +2574,10 @@
    "segnatura": "A IX 8",
    "biblioteca": "Universitätsbibliothek, Basel",
    "datazione": "14th/15th century",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Scripta varia de schismate; Bindus de Senis",
    "motivo": "miscellanea",
    "punti": 2,
@@ -2057,6 +2593,10 @@
    "segnatura": "Cod. S 392",
    "biblioteca": "Zentralbibliothek, Solothurn",
    "datazione": "around 1500",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Composite manuscript with art technology recipes",
    "motivo": "codice composito",
    "punti": 2,
@@ -2072,6 +2612,10 @@
    "segnatura": "Cod. Sang. 919",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "15th century",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Miscellanea monastica et historica",
    "motivo": "miscellanea",
    "punti": 2,
@@ -2087,6 +2631,10 @@
    "segnatura": "Cod. Sang. 1396.12",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "15th c.",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "12th folder of the fragment collection Cod. Sang. 1396",
    "motivo": "frammento",
    "punti": 2,
@@ -2102,6 +2650,10 @@
    "segnatura": "Cod. Sang. 1396.3",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "2nd half of the 12th - 1st half of the 14th c.",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "3rd folder of the fragment collection Cod. Sang. 1396",
    "motivo": "frammento",
    "punti": 2,
@@ -2117,6 +2669,10 @@
    "segnatura": "B XI 5",
    "biblioteca": "Universitätsbibliothek, Basel",
    "datazione": "end of the 15th century",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Composite manuscript (theology)",
    "motivo": "codice composito",
    "punti": 2,
@@ -2132,6 +2688,10 @@
    "segnatura": "A X 83",
    "biblioteca": "Universitätsbibliothek, Basel",
    "datazione": "1472",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Composite manuscript with Henricus Arnoldi and Gerardus de Zutphania",
    "motivo": "codice composito",
    "punti": 2,
@@ -2147,6 +2707,10 @@
    "segnatura": "Ms. 83",
    "biblioteca": "Archives du Chapitre/Kapitelsarchiv, Sion/Sitten",
    "datazione": "first quarter of the 13th century (pp. 228b-230a 14th century)",
+   "secolo": [
+    13,
+    14
+   ],
    "titolo": "Composite Manuscript of legal texts",
    "motivo": "codice composito",
    "punti": 2,
@@ -2162,6 +2726,10 @@
    "segnatura": "Y 62",
    "biblioteca": "Kantonsbibliothek Thurgau, Frauenfeld",
    "datazione": "1394",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Composite manuscript with scholastic texts",
    "motivo": "codice composito",
    "punti": 2,
@@ -2177,6 +2745,10 @@
    "segnatura": "Ms. C 150",
    "biblioteca": "Zentralbibliothek, Zürich",
    "datazione": "15th century",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Gallus Kemly, monk of St. Gall: Collectanea",
    "motivo": "miscellanea",
    "punti": 2,
@@ -2192,6 +2764,10 @@
    "segnatura": "Hs 5",
    "biblioteca": "Bischöfliches Archiv des Bistums Basel, Solothurn",
    "datazione": "1450-1490",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Composite manuscript with an incunable",
    "motivo": "codice composito",
    "punti": 2,
@@ -2207,6 +2783,10 @@
    "segnatura": "Ms. lat. 78",
    "biblioteca": "Bibliothèque de Genève, Genève",
    "datazione": "13th century and end of the 13th - beginning of the 14th century",
+   "secolo": [
+    13,
+    14
+   ],
    "titolo": "Composite manuscript containing medical texts",
    "motivo": "codice composito",
    "punti": 2,
@@ -2222,6 +2802,10 @@
    "segnatura": "D IV 10",
    "biblioteca": "Universitätsbibliothek, Basel",
    "datazione": "about 1475",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Composite manuscript (chronicles)",
    "motivo": "codice composito",
    "punti": 2,
@@ -2237,6 +2821,10 @@
    "segnatura": "Cod. Sang. 1394.18",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "15th c.",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "18th folder of the fragment collection Cod. Sang. 1394",
    "motivo": "frammento",
    "punti": 2,
@@ -2252,6 +2840,10 @@
    "segnatura": "Cod. Sang. 1396.11",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "14th and 15th c.",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "11th folder of the fragment collection Cod. Sang. 1396",
    "motivo": "frammento",
    "punti": 2,
@@ -2267,6 +2859,10 @@
    "segnatura": "Cod. Sang. 1394.20",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "9th/10th c. - 19th c.",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "20th folder of the fragment collection Cod. Sang. 1394",
    "motivo": "frammento",
    "punti": 2,
@@ -2282,6 +2878,10 @@
    "segnatura": "Cod. Sang. 1396.27",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "15th c.",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "27th folder of the fragment collection Cod. Sang. 1396",
    "motivo": "frammento",
    "punti": 2,
@@ -2297,6 +2897,10 @@
    "segnatura": "A VIII 26",
    "biblioteca": "Universitätsbibliothek, Basel",
    "datazione": "middle of the 15th century",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Composite manuscript with texts on the 11,000 virgins",
    "motivo": "codice composito",
    "punti": 2,
@@ -2312,6 +2916,10 @@
    "segnatura": "Y 128a",
    "biblioteca": "Kantonsbibliothek Thurgau, Frauenfeld",
    "datazione": "4 Nov. 1495",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Composite manuscript with homiletic content",
    "motivo": "codice composito",
    "punti": 2,
@@ -2327,6 +2935,10 @@
    "segnatura": "Cod. Sang. 1396.29",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "15th c.",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "29th folder of the fragment collection Cod. Sang. 1396",
    "motivo": "frammento",
    "punti": 2,
@@ -2342,6 +2954,10 @@
    "segnatura": "Msc. 35 4°",
    "biblioteca": "Zentral- und Hochschulbibliothek, Luzern",
    "datazione": "1453-1454",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Composite manuscript with scholastic and homiletic contents",
    "motivo": "codice composito",
    "punti": 2,
@@ -2357,6 +2973,10 @@
    "segnatura": "Cod. Sang. 1396.24",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "14th and 15th c.",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "24th folder of the fragment collection Cod. Sang. 1396",
    "motivo": "frammento",
    "punti": 2,
@@ -2372,6 +2992,10 @@
    "segnatura": "Cod. Sang. 1394.15",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "end of the 8th – 2nd half of the 9th c.",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "15th folder of the fragment collection Cod. Sang. 1394",
    "motivo": "frammento",
    "punti": 2,
@@ -2387,6 +3011,10 @@
    "segnatura": "Codex 236(491)",
    "biblioteca": "Stiftsbibliothek, Einsiedeln",
    "datazione": "9th century (first half) / 14th century",
+   "secolo": [
+    9,
+    14
+   ],
    "titolo": "Composite Manuscript with diverse content",
    "motivo": "codice composito",
    "punti": 2,
@@ -2402,6 +3030,10 @@
    "segnatura": "F IX 2",
    "biblioteca": "Universitätsbibliothek, Basel",
    "datazione": "second half of the 15th century",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Composite manuscript (Humanistica)",
    "motivo": "codice composito",
    "punti": 2,
@@ -2417,6 +3049,10 @@
    "segnatura": "Codex 28(1279)",
    "biblioteca": "Stiftsbibliothek, Einsiedeln",
    "datazione": "14th century",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "[Anonymus]. Veritas textus bibliorum",
    "motivo": "titolo assente o testo non identificato",
    "punti": 2,
@@ -2432,6 +3068,10 @@
    "segnatura": "B X 8",
    "biblioteca": "Universitätsbibliothek, Basel",
    "datazione": "14th century",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Composite manuscript with material for sermons",
    "motivo": "codice composito",
    "punti": 2,
@@ -2447,6 +3087,10 @@
    "segnatura": "F IV 30",
    "biblioteca": "Universitätsbibliothek, Basel",
    "datazione": "Part 1: 14th century; Parts 2-4: last quarter of the 14th, beginning of the 15th century",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Composite manuscript (optics and geometry)",
    "motivo": "codice composito",
    "punti": 2,
@@ -2462,6 +3106,10 @@
    "segnatura": "Ms. 51",
    "biblioteca": "Couvent des Cordeliers/Franziskanerkloster, Fribourg/Freiburg",
    "datazione": "1364",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Composite manuscript with Quaestiones morales pulcrae et modernae",
    "motivo": "codice composito",
    "punti": 2,
@@ -2477,6 +3125,10 @@
    "segnatura": "Cod. 335",
    "biblioteca": "Stiftsbibliothek, Engelberg",
    "datazione": "between 1378 and 1386",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "\"Engelberger Predigten\" (Composite manuscript Ea)",
    "motivo": "codice composito",
    "punti": 2,
@@ -2492,6 +3144,10 @@
    "segnatura": "Cod. S I 167",
    "biblioteca": "Zentralbibliothek, Solothurn",
    "datazione": "late 14th century",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Miscellanea Computistica et Astronomica",
    "motivo": "miscellanea",
    "punti": 2,
@@ -2507,6 +3163,10 @@
    "segnatura": "Cod. Sang. 1394.17",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "14th-15th c.",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "17th folder of the fragment collection Cod. Sang. 1394",
    "motivo": "frammento",
    "punti": 2,
@@ -2522,6 +3182,10 @@
    "segnatura": "D III 34",
    "biblioteca": "Universitätsbibliothek, Basel",
    "datazione": "15th century / 1495",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Manuscript Miscellany containing texts on horse medicine",
    "motivo": "miscellanea",
    "punti": 2,
@@ -2537,6 +3201,10 @@
    "segnatura": "F VI 74",
    "biblioteca": "Universitätsbibliothek, Basel",
    "datazione": "1474",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Composite manuscript",
    "motivo": "codice composito",
    "punti": 2,
@@ -2552,6 +3220,10 @@
    "segnatura": "RCap 73",
    "biblioteca": "Médiathèque Valais, Sion/Sitten",
    "datazione": "ca. 1460",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Composite manuscript (Nicolaus Eymericus, Pseudo-Turpinus, Walter Supersaxo)",
    "motivo": "codice composito",
    "punti": 2,
@@ -2567,6 +3239,10 @@
    "segnatura": "Y 35",
    "biblioteca": "Kantonsbibliothek Thurgau, Frauenfeld",
    "datazione": "between 1467 and March 1486",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Miscellanea astronomica et computistica",
    "motivo": "miscellanea",
    "punti": 2,
@@ -2582,6 +3258,10 @@
    "segnatura": "Cod. 336",
    "biblioteca": "Stiftsbibliothek, Engelberg",
    "datazione": "between 1378 and 1386",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "\"Engelberger Predigten\" (Composite manuscript Eb)",
    "motivo": "codice composito",
    "punti": 2,
@@ -2597,6 +3277,10 @@
    "segnatura": "D III 14",
    "biblioteca": "Universitätsbibliothek, Basel",
    "datazione": "second third (?) of the 12th century, beginning of the 13th century",
+   "secolo": [
+    12,
+    13
+   ],
    "titolo": "Medical Miscellany",
    "motivo": "miscellanea",
    "punti": 2,
@@ -2612,6 +3296,10 @@
    "segnatura": "Cod. Sang. 1397.4",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "11th c. – 13th c.",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "4th folder of the fragment collection Cod. Sang. 1397: Liturgical Fragments",
    "motivo": "frammento",
    "punti": 1,
@@ -2627,6 +3315,10 @@
    "segnatura": "Cod. Sang. 1397.16",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "9th c. – 14th/15th c.",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "16th folder of the fragment collection Cod. Sang. 1397: Liturgical Fragments",
    "motivo": "frammento",
    "punti": 1,
@@ -2642,6 +3334,10 @@
    "segnatura": "Cod. Sang. 1397.9",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "12th c. – 14th c.",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "9th folder of the fragment collection Cod. Sang. 1397: Liturgical Fragments",
    "motivo": "frammento",
    "punti": 1,
@@ -2657,6 +3353,10 @@
    "segnatura": "Ms. 19",
    "biblioteca": "Bibliothèque cantonale jurassienne, Porrentruy",
    "datazione": "15th century",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Missale compositionis mixte (basileensis et lausannensis)",
    "motivo": "codice composito",
    "punti": 1,
@@ -2672,6 +3372,10 @@
    "segnatura": "Cod. Sang. 1397.8",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "11th c. – 13th c.",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "8th folder of the fragment collection Cod. Sang. 1397: Liturgical Fragments",
    "motivo": "frammento",
    "punti": 1,
@@ -2687,6 +3391,10 @@
    "segnatura": "Cod. Sang. 1397.5",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "11th c. – 13th c.",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "5th folder of the fragment collection Cod. Sang. 1397: Liturgical Fragments",
    "motivo": "frammento",
    "punti": 1,
@@ -2702,6 +3410,10 @@
    "segnatura": "Cod. Sang. 1397.7",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "12th c. – 14th c.",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "7th folder of the fragment collection Cod. Sang. 1397: Liturgical Fragments",
    "motivo": "frammento",
    "punti": 1,
@@ -2717,6 +3429,10 @@
    "segnatura": "M 16",
    "biblioteca": "Dominikanerinnenkloster St. Katharina, Wil",
    "datazione": "15th century / 1513",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Ascetica et liturgica varia",
    "motivo": "miscellanea",
    "punti": 1,
@@ -2732,6 +3448,10 @@
    "segnatura": "Cod. Sang. 1398a.13",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "13th c. – 14th c.",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "13th folder of the fragment collection Cod. Sang. 1398a: Fragments with grammatical texts and others",
    "motivo": "frammento",
    "punti": 0,
@@ -2747,6 +3467,10 @@
    "segnatura": "Cod. Sang. 1398a.7",
    "biblioteca": "Stiftsbibliothek, St. Gallen",
    "datazione": "12th c. – 13th c.",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "7th folder of the fragment collection Cod. Sang. 1398a: Fragments from Ivo Carnotensis, Tripartita and Statuta ordinis cisterciensis",
    "motivo": "frammento",
    "punti": 0,
@@ -2762,6 +3486,10 @@
    "segnatura": "MsWettF 26: 4",
    "biblioteca": "Aargauer Kantonsbibliothek, Aarau",
    "datazione": "1445 / third quarter of the 15th century",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Wasmodus de Homberg; Varia in materia beghardorum et beginarum; Johannes Mulberg; Benedictus de Asinago; Felix Hemmerlin",
    "motivo": "miscellanea",
    "punti": 0,
@@ -2777,6 +3505,10 @@
    "segnatura": "Hdschr. 140",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Manipulus Florum (Fragment)",
    "motivo": "frammento",
    "punti": 3,
@@ -2792,6 +3524,10 @@
    "segnatura": "Hdschr. 414",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "800",
+   "secolo": [
+    8,
+    8
+   ],
    "titolo": "Institutio canonicorum Aquisgranensis cum glossis (Fragment)",
    "motivo": "frammento",
    "punti": 3,
@@ -2807,6 +3543,10 @@
    "segnatura": "Ms. germ. fol. 736",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1100",
+   "secolo": [
+    11,
+    11
+   ],
    "titolo": "Fragmente geistlicher Prosa, 12.-15. Jh.",
    "motivo": "frammento",
    "punti": 3,
@@ -2822,6 +3562,10 @@
    "segnatura": "Ms. theol. lat. qu. 311",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Theologisch-asketische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -2837,6 +3581,10 @@
    "segnatura": "Ms. Diez. C fol. 1",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1494",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Philosophisch-literarische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -2852,6 +3600,10 @@
    "segnatura": "Ms. lat. qu. 106",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1100",
+   "secolo": [
+    11,
+    11
+   ],
    "titolo": "Mathematisch-musikalische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -2867,6 +3619,10 @@
    "segnatura": "Ms. lat. qu. 198",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1132",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Medizinische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -2882,6 +3638,10 @@
    "segnatura": "Ms. Ham. 254",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1440",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Collectanea",
    "motivo": "miscellanea",
    "punti": 2,
@@ -2897,6 +3657,10 @@
    "segnatura": "Ms. Phill. 1885",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "0700",
+   "secolo": [
+    7,
+    7
+   ],
    "titolo": "Excerpta chronicorum",
    "motivo": "miscellanea",
    "punti": 2,
@@ -2912,6 +3676,10 @@
    "segnatura": "Ms. lat. oct. 108a",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -2927,6 +3695,10 @@
    "segnatura": "Ms. lat. fol. 390",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1500",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Sammlung lateinischer Gedichte",
    "motivo": "miscellanea",
    "punti": 2,
@@ -2942,6 +3714,10 @@
    "segnatura": "Hdschr. 226",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Mathematische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -2957,6 +3733,10 @@
    "segnatura": "Hdschr. 253",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Theologisch-kanonistische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -2972,6 +3752,10 @@
    "segnatura": "Hdschr. 184",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Astronomisch-astrologisch-medizinische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -2987,6 +3771,10 @@
    "segnatura": "Ms. theol. lat. oct. 31",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -3002,6 +3790,10 @@
    "segnatura": "Hdschr. 202",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Aszetische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -3017,6 +3809,10 @@
    "segnatura": "Ms. lat. fol. 99",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1500",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Sammlung von Reden aus lateinischen Geschichtsschreibern",
    "motivo": "miscellanea",
    "punti": 2,
@@ -3032,6 +3828,10 @@
    "segnatura": "Ms. lat. oct. 472",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1470",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Miscellanea de Chrysopoeia",
    "motivo": "miscellanea",
    "punti": 2,
@@ -3047,6 +3847,10 @@
    "segnatura": "Ms. Diez. C fol. 3",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -3062,6 +3866,10 @@
    "segnatura": "Ms. germ. oct. 477",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1424",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Medizinische Sammelhandschrift, lat. und dt.",
    "motivo": "codice composito",
    "punti": 2,
@@ -3077,6 +3885,10 @@
    "segnatura": "Ms. lat. oct. 215",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -3092,6 +3904,10 @@
    "segnatura": "PPN1671447336",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1100",
+   "secolo": [
+    11,
+    11
+   ],
    "titolo": "3 musiktheoretische Traktate: Regulae rhythmicae - Prologus in antiphonarium - Epistola ad Michaelem de ignoto cantu",
    "motivo": "titolo assente o testo non identificato",
    "punti": 2,
@@ -3107,6 +3923,10 @@
    "segnatura": "Ms. lat. qu. 821",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Philosophische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -3122,6 +3942,10 @@
    "segnatura": "Ms. lat. fol. 307",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1100",
+   "secolo": [
+    11,
+    11
+   ],
    "titolo": "Mathematisch-Astronomische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -3137,6 +3961,10 @@
    "segnatura": "Ms. Phill. 1833",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "0900",
+   "secolo": [
+    9,
+    9
+   ],
    "titolo": "Varia scripta arithmetica et chronologica",
    "motivo": "miscellanea",
    "punti": 2,
@@ -3152,6 +3980,10 @@
    "segnatura": "Ms. lat. qu. 432",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Humanistische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -3167,6 +3999,10 @@
    "segnatura": "Ms. lat. oct. 214",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Theologische Sammelhandschrift, lat.-dt.",
    "motivo": "codice composito",
    "punti": 2,
@@ -3182,6 +4018,10 @@
    "segnatura": "Ms. lat. qu. 674",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Sammelhandschrift mit Texten von und über Hildegard von Bingen",
    "motivo": "codice composito",
    "punti": 2,
@@ -3197,6 +4037,10 @@
    "segnatura": "Ms. lat. fol. 391",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1500",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Astronomische Collectanea",
    "motivo": "miscellanea",
    "punti": 2,
@@ -3212,6 +4056,10 @@
    "segnatura": "Ms. germ. qu. 1522",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Theologische Sammelhandschrift, lat.-dt.",
    "motivo": "codice composito",
    "punti": 2,
@@ -3227,6 +4075,10 @@
    "segnatura": "Ms. Ham. 433",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Medizinische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -3242,6 +4094,10 @@
    "segnatura": "Ms. lat. fol. 269",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "0800",
+   "secolo": [
+    8,
+    8
+   ],
    "titolo": "Juristische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -3257,6 +4113,10 @@
    "segnatura": "Ms. lat. fol. 246",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1443",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Astonomisch-astrologische und mathematische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -3272,6 +4132,10 @@
    "segnatura": "Ms. Diez. C fol. 2",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Historische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -3287,6 +4151,10 @@
    "segnatura": "Ms. Phill. 1896",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "0700",
+   "secolo": [
+    7,
+    7
+   ],
    "titolo": "Excerpta chronicorum",
    "motivo": "miscellanea",
    "punti": 2,
@@ -3302,6 +4170,10 @@
    "segnatura": "Ms. Ham. 33",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Collectanea ex registris et libris camerae apostolicae",
    "motivo": "miscellanea",
    "punti": 2,
@@ -3317,6 +4189,10 @@
    "segnatura": "Ms. theol. lat. fol. 284",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1100",
+   "secolo": [
+    11,
+    11
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -3332,6 +4208,10 @@
    "segnatura": "Ms. lat. qu. 275",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Medizinische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -3347,6 +4227,10 @@
    "segnatura": "Ms. Diez. C qu. 70",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1500",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -3362,6 +4246,10 @@
    "segnatura": "Ms. Ham. 307",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1466",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Medizinische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -3377,6 +4265,10 @@
    "segnatura": "Ms. Ham. 89",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1100",
+   "secolo": [
+    11,
+    11
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -3392,6 +4284,10 @@
    "segnatura": "Ms. lat. oct. 162",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1100",
+   "secolo": [
+    11,
+    11
+   ],
    "titolo": "Mathematische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -3407,6 +4303,10 @@
    "segnatura": "Ms. theol. lat. qu. 151",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Theologisch-asketische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -3422,6 +4322,10 @@
    "segnatura": "Ms. Magdeb. 210",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1408",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -3437,6 +4341,10 @@
    "segnatura": "Ms. theol. lat. fol. 639",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -3452,6 +4360,10 @@
    "segnatura": "Ms. Ham. 557",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Astrologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -3467,6 +4379,10 @@
    "segnatura": "Ms. theol. lat. qu. 141",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Itineraria in terram sanctam - Johannes Presbyter - Mirabiblia urbis Romae - Franco de Meschede - Eberhardus Woltmann - Passionale - Varia",
    "motivo": "miscellanea",
    "punti": 0,
@@ -3482,6 +4398,10 @@
    "segnatura": "PPN837248728",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "Institutiones - Transkription des Palimpsests Cod. XIII (15) der Biblioteca Capitolare di Verona",
    "motivo": "palinsesto",
    "punti": 0,
@@ -3497,6 +4417,10 @@
    "segnatura": "PPN1981497331",
    "biblioteca": "Staatsbibliothek zu Berlin, Berlin",
    "datazione": "1393",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Berlin, Staatsbibliothek zu Berlin, Ms. lat. fol. 322; Juristisch-theologisch-astronomische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 0,
@@ -3512,6 +4436,10 @@
    "segnatura": "MS 235 (Fragment 106)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "Between 1450 and 1475",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Unidentified commentary on Peter Lombard, Liber sententiarum (binding fragment)",
    "motivo": "titolo assente o testo non identificato; maculatura o frammento di legatura; frammento",
    "punti": 13,
@@ -3527,6 +4455,10 @@
    "segnatura": "MS 235 (Fragment 114)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "13th or 14th century",
+   "secolo": [
+    13,
+    14
+   ],
    "titolo": "Unidentified canon law (binding fragment)",
    "motivo": "titolo assente o testo non identificato; maculatura o frammento di legatura; frammento",
    "punti": 13,
@@ -3542,6 +4474,10 @@
    "segnatura": "MS 235 (Fragment 38)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "Circa 1275",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Unidentified commentary on Aristotle, Metaphysica (binding fragment)",
    "motivo": "titolo assente o testo non identificato; maculatura o frammento di legatura; frammento",
    "punti": 13,
@@ -3557,6 +4493,10 @@
    "segnatura": "MS 235 (Fragment 47)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "Between 1200 and 1215",
+   "secolo": [
+    12,
+    13
+   ],
    "titolo": "Two unidentified sermons (binding fragment)",
    "motivo": "titolo assente o testo non identificato; maculatura o frammento di legatura; frammento",
    "punti": 13,
@@ -3572,6 +4512,10 @@
    "segnatura": "MS 235 (Fragments 107 & 108)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "Between 1285 and 1299",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Unidentified civil law text (binding fragments)",
    "motivo": "titolo assente o testo non identificato; maculatura o frammento di legatura; frammento",
    "punti": 13,
@@ -3587,6 +4531,10 @@
    "segnatura": "MS 235 (Fragment 44)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "14th century",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Unidentified civil law commentary (binding fragment)",
    "motivo": "titolo assente o testo non identificato; maculatura o frammento di legatura; frammento",
    "punti": 13,
@@ -3602,6 +4550,10 @@
    "segnatura": "MS 235 (Fragment 65)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "13th/14th century",
+   "secolo": [
+    13,
+    14
+   ],
    "titolo": "Unidentified commentary on Aristotle, Nichomachaean Ethics (binding fragment)",
    "motivo": "titolo assente o testo non identificato; maculatura o frammento di legatura; frammento",
    "punti": 13,
@@ -3617,6 +4569,10 @@
    "segnatura": "MS 235 (Fragments 8 & 40)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "Between 1240 and 1260",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Unidentified medical text (binding fragments)",
    "motivo": "titolo assente o testo non identificato; maculatura o frammento di legatura; frammento",
    "punti": 13,
@@ -3632,6 +4588,10 @@
    "segnatura": "MS 235 (Fragments 99 & 102)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "13th century",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Unidentified commentary on canon law (binding fragments)",
    "motivo": "titolo assente o testo non identificato; maculatura o frammento di legatura; frammento",
    "punti": 13,
@@ -3647,6 +4607,10 @@
    "segnatura": "MS 235 (Fragments 103 & 104)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "[undated]",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "Unidentified civil law commentary (binding fragments)",
    "motivo": "titolo assente o testo non identificato; maculatura o frammento di legatura; frammento",
    "punti": 12,
@@ -3662,6 +4626,10 @@
    "segnatura": "MS 235 (Fragments 32 & 35)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "Between 1425 and 1450",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Grammar (binding fragments)",
    "motivo": "maculatura o frammento di legatura; frammento",
    "punti": 8,
@@ -3677,6 +4645,10 @@
    "segnatura": "MS 235 (Fragments 10 & 21)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "14th/15th century",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Sermon (binding fragments)",
    "motivo": "maculatura o frammento di legatura; frammento",
    "punti": 8,
@@ -3692,6 +4664,10 @@
    "segnatura": "MS 235 (Fragments 112 & 113)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "Between 1450 and 1475",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Nicholas Gorran, commentary on 1 Tim. 4:14-5:4, 16-25 (binding fragments)",
    "motivo": "maculatura o frammento di legatura; frammento",
    "punti": 8,
@@ -3707,6 +4683,10 @@
    "segnatura": "MS 235 (Fragments 51 & 53)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "Between 1200 and 1215",
+   "secolo": [
+    12,
+    13
+   ],
    "titolo": "Justinian, Digesta (binding fragments)",
    "motivo": "maculatura o frammento di legatura; frammento",
    "punti": 8,
@@ -3722,6 +4702,10 @@
    "segnatura": "MS 235 (Fragment 62 & 68)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "Between 1300 and 1315",
+   "secolo": [
+    13,
+    14
+   ],
    "titolo": "John of Garland, 'Dictionarius' (binding fragments)",
    "motivo": "maculatura o frammento di legatura; frammento",
    "punti": 8,
@@ -3737,6 +4721,10 @@
    "segnatura": "MS 235 (Fragments 100 & 101)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "Circa 1275",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Raymund of Peñaforte, Extra (binding fragments)",
    "motivo": "maculatura o frammento di legatura; frammento",
    "punti": 8,
@@ -3752,6 +4740,10 @@
    "segnatura": "MS 235 (Fragments 34 & 50)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "Between 1440 and 1460",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Registrum brevium (binding fragments)",
    "motivo": "maculatura o frammento di legatura; frammento",
    "punti": 8,
@@ -3767,6 +4759,10 @@
    "segnatura": "MS 235 (Fragments 46 & 56)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "14th century",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Scholastic legal text (binding fragments)",
    "motivo": "maculatura o frammento di legatura; frammento",
    "punti": 8,
@@ -3782,6 +4778,10 @@
    "segnatura": "MS 235 (Fragments 28 & 36)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "Between 1185 and 1199",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Ivo of Chartres, Panormia (binding fragments)",
    "motivo": "maculatura o frammento di legatura; frammento",
    "punti": 8,
@@ -3797,6 +4797,10 @@
    "segnatura": "MS 235 (Fragments 25 & 26)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "Between 1450 and 1475",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Medicine (binding fragments)",
    "motivo": "maculatura o frammento di legatura; frammento",
    "punti": 8,
@@ -3812,6 +4816,10 @@
    "segnatura": "MS 235 (Fragments 14, 41, & 42)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "Between 1340 and 1360",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Text on sacraments and their administration (binding fragments)",
    "motivo": "maculatura o frammento di legatura; frammento",
    "punti": 7,
@@ -3827,6 +4835,10 @@
    "segnatura": "MS 235 (Fragments 2, 5, 17 & 74A)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "Between 1400 and 1425",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Breviary (binding fragments)",
    "motivo": "maculatura o frammento di legatura; frammento",
    "punti": 7,
@@ -3842,6 +4854,10 @@
    "segnatura": "MS 235 (Fragments 57 & 59)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "14th century",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Breviary (binding fragments)",
    "motivo": "maculatura o frammento di legatura; frammento",
    "punti": 7,
@@ -3857,6 +4873,10 @@
    "segnatura": "MS 235 (Fragments 58 & 60)",
    "biblioteca": "St John's College, Oxford",
    "datazione": "15th century",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Missal (binding fragments)",
    "motivo": "maculatura o frammento di legatura; frammento",
    "punti": 7,
@@ -3872,6 +4892,10 @@
    "segnatura": "MS. Lat. liturg. d. 20",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "The Worcester Fragments': 15 leaves of polyphonic music recovered from bindings of Bodleian Manuscripts, interspersed with photostats of fr…",
    "motivo": "maculatura o frammento di legatura; frammento",
    "punti": 5,
@@ -3887,6 +4911,10 @@
    "segnatura": "MS. Buchanan e. 11",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "15th century, early",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Book of Hours. Use unidentified.",
    "motivo": "titolo assente o testo non identificato",
    "punti": 4,
@@ -3902,6 +4930,10 @@
    "segnatura": "MS. Buchanan e. 9",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "15th century, second quarter",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Book of Hours. Use unidentified.",
    "motivo": "titolo assente o testo non identificato",
    "punti": 4,
@@ -3917,6 +4949,10 @@
    "segnatura": "MS 389",
    "biblioteca": "Queen's College, Oxford",
    "datazione": "",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "Guardbook Containing Miscellaneous Leaves and Fragments",
    "motivo": "frammento; miscellanea",
    "punti": 4,
@@ -3932,6 +4968,10 @@
    "segnatura": "MS. Gough Liturg. 5",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "15th century, middle",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Manual (fragment). Use of York.",
    "motivo": "frammento",
    "punti": 3,
@@ -3947,6 +4987,10 @@
    "segnatura": "MS. Canon. Pat. Lat. 229",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "14th century",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Fragments of hymns.",
    "motivo": "frammento",
    "punti": 3,
@@ -3962,6 +5006,10 @@
    "segnatura": "MS. Add. A. 188",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "14th century, second quarter",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Decretals (fragment).",
    "motivo": "frammento",
    "punti": 3,
@@ -3977,6 +5025,10 @@
    "segnatura": "MS. Douce f. 4",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "c. 1460-1470",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Speculum humanae salvationis (fragments).",
    "motivo": "frammento",
    "punti": 3,
@@ -3992,6 +5044,10 @@
    "segnatura": "MS. e Mus. 7",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "15th century, early",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Polyphonic music (fragments).",
    "motivo": "frammento",
    "punti": 3,
@@ -4007,6 +5063,10 @@
    "segnatura": "MS. Canon. Misc. 476",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "14th century, middle",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Vita gloriossime virginis Mariae atque venerabilis matris filii dei vivi veri et unici (unidentified work).",
    "motivo": "titolo assente o testo non identificato",
    "punti": 3,
@@ -4022,6 +5082,10 @@
    "segnatura": "MS. Rawl. D. 894",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "8th or 9th century?",
+   "secolo": [
+    8,
+    9
+   ],
    "titolo": "Collection of fragments from ecclesiastical service books.",
    "motivo": "frammento",
    "punti": 3,
@@ -4037,6 +5101,10 @@
    "segnatura": "MS. Rawl. C. 400*",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "Before 1330",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Music Fragments.",
    "motivo": "frammento",
    "punti": 3,
@@ -4052,6 +5120,10 @@
    "segnatura": "MS. Lat. bib. b. 2 (P)",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "8th century, middle",
+   "secolo": [
+    8,
+    8
+   ],
    "titolo": "Acts of the Apostles (fragment).",
    "motivo": "frammento",
    "punti": 3,
@@ -4067,6 +5139,10 @@
    "segnatura": "MS. Lat. liturg. e. 37",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "14th century, beginning",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Breviary of Chertsey Abbey, fragments of the temporale and sanctorale.",
    "motivo": "frammento",
    "punti": 2,
@@ -4082,6 +5158,10 @@
    "segnatura": "MS. Douce a. 1",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "15th century, second quarter",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Antiphonal (fragment).",
    "motivo": "frammento",
    "punti": 2,
@@ -4097,6 +5177,10 @@
    "segnatura": "MS. e Mus. 198*",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "14th century",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Gradual (fragment).",
    "motivo": "frammento",
    "punti": 2,
@@ -4112,6 +5196,10 @@
    "segnatura": "MS. Douce f. 1",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "8th century, second half",
+   "secolo": [
+    8,
+    8
+   ],
    "titolo": "Gelasian Sacramentary (fragments).",
    "motivo": "frammento",
    "punti": 2,
@@ -4127,6 +5215,10 @@
    "segnatura": "MS. Hamilton 55",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "1400–1500",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Composite theological collection",
    "motivo": "codice composito",
    "punti": 2,
@@ -4142,6 +5234,10 @@
    "segnatura": "MS. Laud Misc. 528",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "c. 1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Various treatises.",
    "motivo": "miscellanea",
    "punti": 2,
@@ -4157,6 +5253,10 @@
    "segnatura": "MS. Don. a. 11",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "14th century, middle to late",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Antiphonal (fragments).",
    "motivo": "frammento",
    "punti": 2,
@@ -4172,6 +5272,10 @@
    "segnatura": "MS. Lyell 51",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "13th century to 15th century",
+   "secolo": [
+    13,
+    15
+   ],
    "titolo": "Latin miscellany",
    "motivo": "miscellanea",
    "punti": 2,
@@ -4187,6 +5291,10 @@
    "segnatura": "MS. Digby 77",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "13th century, second half - 15th century",
+   "secolo": [
+    13,
+    15
+   ],
    "titolo": "Composite manuscript of scientific, theological and philosophical texts",
    "motivo": "codice composito",
    "punti": 2,
@@ -4202,6 +5310,10 @@
    "segnatura": "MS. Canon. Liturg. 30",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "15th century, end",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Book of Hours. Use of Rome (fragment).",
    "motivo": "frammento",
    "punti": 2,
@@ -4217,6 +5329,10 @@
    "segnatura": "MS. Hatton 36",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "15th century, second quarter",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Opuscula Nicolai de Clamengiis.",
    "motivo": "miscellanea",
    "punti": 2,
@@ -4232,6 +5348,10 @@
    "segnatura": "MS. Laud Misc. 37",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "13th century, first half",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Theological composite manuscript",
    "motivo": "codice composito",
    "punti": 2,
@@ -4247,6 +5367,10 @@
    "segnatura": "MS. Laud Misc. 75",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "13th century, second half to 14th century, middle",
+   "secolo": [
+    13,
+    14
+   ],
    "titolo": "Theological composite manuscript",
    "motivo": "codice composito",
    "punti": 2,
@@ -4262,6 +5386,10 @@
    "segnatura": "MS. e Mus. 62",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "13th century, second quarter",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Various works.",
    "motivo": "miscellanea",
    "punti": 2,
@@ -4277,6 +5405,10 @@
    "segnatura": "MS. Laud Misc. 506",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "13th century, late to 14th century, middle",
+   "secolo": [
+    13,
+    14
+   ],
    "titolo": "Theological composite manuscript",
    "motivo": "codice composito",
    "punti": 2,
@@ -4292,6 +5424,10 @@
    "segnatura": "MS. Pococke 280",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "1301–1500",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Miscellany",
    "motivo": "miscellanea",
    "punti": 2,
@@ -4307,6 +5443,10 @@
    "segnatura": "MS. Laud Misc. 409",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "12th century, second half",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Various writings.",
    "motivo": "miscellanea",
    "punti": 2,
@@ -4322,6 +5462,10 @@
    "segnatura": "MS. Digby 17",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "13th century, end - 14th century, beginning",
+   "secolo": [
+    13,
+    14
+   ],
    "titolo": "Miscellaneous astrological drawings and tables.",
    "motivo": "miscellanea",
    "punti": 2,
@@ -4337,6 +5481,10 @@
    "segnatura": "MS. Lat. liturg. e. 39",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "14th century, beginning",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Breviary of Chertsey Abbey, fragments of the temporale and sanctorale.",
    "motivo": "frammento",
    "punti": 2,
@@ -4352,6 +5500,10 @@
    "segnatura": "MS. Douce 218",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "Decretum (fragment).",
    "motivo": "frammento",
    "punti": 2,
@@ -4367,6 +5519,10 @@
    "segnatura": "MS. Bodl. 177",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "14th century, last quarter - 15th century, second half",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Miscellaneous alchemical, astrological, astronomical, and medical treatises.",
    "motivo": "miscellanea",
    "punti": 2,
@@ -4382,6 +5538,10 @@
    "segnatura": "MS. Rawl. B. 214",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "15th century, middle",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Miscellaneous.",
    "motivo": "miscellanea",
    "punti": 2,
@@ -4397,6 +5557,10 @@
    "segnatura": "MS. Laud Misc. 79",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "12th century, third quarter",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Prayers. Other miscellaneous texts.",
    "motivo": "miscellanea",
    "punti": 2,
@@ -4412,6 +5576,10 @@
    "segnatura": "MS. Canon. Misc. 366",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "15th century",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Miscellaneous medical texts.",
    "motivo": "miscellanea",
    "punti": 2,
@@ -4427,6 +5595,10 @@
    "segnatura": "MS. Canon. Misc. 248",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "14th century, third quarter",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Miscellaneous astronomical tables and diagrams.",
    "motivo": "miscellanea",
    "punti": 2,
@@ -4442,6 +5614,10 @@
    "segnatura": "MS. Hamilton 35",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "15th century, partly 1443-1444",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Various works",
    "motivo": "miscellanea",
    "punti": 2,
@@ -4457,6 +5633,10 @@
    "segnatura": "MS. Rawl. liturg. c. 1",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "c. 1100",
+   "secolo": [
+    11,
+    11
+   ],
    "titolo": "Sacramentary (fragment).",
    "motivo": "frammento",
    "punti": 2,
@@ -4472,6 +5652,10 @@
    "segnatura": "MS. Bodl. 920; MS. Bodl. 678; MS. Digby 13",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "12th century-14th century",
+   "secolo": [
+    12,
+    14
+   ],
    "titolo": "Miscellaneous manuscripts linked to library of St. Martin's Priory, Dover.",
    "motivo": "miscellanea",
    "punti": 2,
@@ -4487,6 +5671,10 @@
    "segnatura": "MS. Lat. liturg. a. 8",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "14th century, end",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Missal (fragments). Use of Sarum.",
    "motivo": "frammento",
    "punti": 2,
@@ -4502,6 +5690,10 @@
    "segnatura": "MS. Lat. liturg. e. 6",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "14th century, beginning",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Breviary of Chertsey Abbey, fragments of the temporale and sanctorale.",
    "motivo": "frammento",
    "punti": 2,
@@ -4517,6 +5709,10 @@
    "segnatura": "MS. Bodl. 345",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "before 1170",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Various works.",
    "motivo": "miscellanea",
    "punti": 2,
@@ -4532,6 +5728,10 @@
    "segnatura": "MS. Barlow 55",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "14th century, end",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Breviary (fragment). Use of Sarum.",
    "motivo": "frammento",
    "punti": 2,
@@ -4547,6 +5747,10 @@
    "segnatura": "MS. Douce 77",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "Book of Hours (fragment).",
    "motivo": "frammento",
    "punti": 1,
@@ -4562,6 +5766,10 @@
    "segnatura": "MS. Bodl. 123",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "c. 1480-1490",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Miscellaneous short pieces, chiefly theological or liturgical.",
    "motivo": "miscellanea",
    "punti": 1,
@@ -4577,6 +5785,10 @@
    "segnatura": "MS. Rawl. B. 486",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "Roman martyrology (fragment), with added obits for the Augustinian abbey of Navan, Co. Meath.",
    "motivo": "frammento",
    "punti": 0,
@@ -4592,6 +5804,10 @@
    "segnatura": "MS. Lat. liturg. d. 42",
    "biblioteca": "Bodleian Library, Oxford",
    "datazione": "14th century, beginning",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Breviary of Chertsey Abbey, fragments (cuttings with illuminated initials); Part of Temporale.",
    "motivo": "frammento",
    "punti": 0,
@@ -4607,6 +5823,10 @@
    "segnatura": "Plut. 40.52",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1301-1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Francisci Asculani aliud exemplar [Acerba] et Anonymi De physionomia liber",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -4622,6 +5842,10 @@
    "segnatura": "Plut. 10 dex.8",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1357",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Anonymi Postilla super Ioannem et Expositio super Hieremiae Threnos",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -4637,6 +5861,10 @@
    "segnatura": "Plut. 90 sup.118",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1301-1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Anonymi Comment. in Dantis Infernum, et Purgatorium",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -4652,6 +5880,10 @@
    "segnatura": "Plut. 31 dex.3",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1201-1300; 1301-1400",
+   "secolo": [
+    13,
+    14
+   ],
    "titolo": "Primus Scoti super Sententias, Gothefridi et Anonymi Quaestiones",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -4667,6 +5899,10 @@
    "segnatura": "Plut. 20.39",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1401-1500",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Quaestiones canonicae incerti auctoris . Seu potius varia ad Concilium Constantiense et Basileense pertinentia",
    "motivo": "titolo assente o testo non identificato; miscellanea",
    "punti": 5,
@@ -4682,6 +5918,10 @@
    "segnatura": "Plut. 20.13",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1101-1200",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Laus B. Mariae virginis incerti auctoris . Seu potius Anonymi sermones in varia Psalmorum loca, seu versus",
    "motivo": "titolo assente o testo non identificato; miscellanea",
    "punti": 5,
@@ -4697,6 +5937,10 @@
    "segnatura": "Plut. 20.23",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1001-1100",
+   "secolo": [
+    11,
+    11
+   ],
    "titolo": "D. Pauli Epistolae cum scholiis incerti auctoris",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -4712,6 +5956,10 @@
    "segnatura": "Plut. 53.16",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1301-1310",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Erythraeae Sibyllae vaticinium ad Danaos . Adde etiam Anonymi sermones theologici et alia",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -4727,6 +5975,10 @@
    "segnatura": "Plut. 17.24",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1401-1500",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Epistolae diversorum theol . Titulum corrige. Anonymi expositio in Genesim",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -4742,6 +5994,10 @@
    "segnatura": "S. Marco 499",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1151-1175",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "DE PRIMATU ET POTESTATE ROMANI PONT(IFICIS) ET ALIA INCERTI AUCTORIS",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -4757,6 +6013,10 @@
    "segnatura": "Plut. 20 dex.13",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1201-1300",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Innocentii III Sermones et Anonymi plurima",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -4772,6 +6032,10 @@
    "segnatura": "Plut. 43.5",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1301-1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Anonymi Glossae in Dantis Purgatorium et Paradisum",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -4787,6 +6051,10 @@
    "segnatura": "Plut. 10 dex.5",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1001-1100",
+   "secolo": [
+    11,
+    11
+   ],
    "titolo": "Anonymi Tractatus super Cantica Canticorum, Catena in Ioannem etc",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -4802,6 +6070,10 @@
    "segnatura": "Plut. 29.46",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1301-1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Opus astronomicum incerti auctoris . Sive Campani et Accursii Parmensis opera astronomica",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -4817,6 +6089,10 @@
    "segnatura": "Plut. 83.26",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1301-1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Quaestiones philosophicae incerti auctoris . Seu potius Aegidii Romani Commentaria varia in libros physicorum et in primum sententiarum etc",
    "motivo": "titolo assente o testo non identificato; miscellanea",
    "punti": 5,
@@ -4832,6 +6108,10 @@
    "segnatura": "Plut. 73.34",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1401-1500",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Incerti auctoris De tuenda sanitate . Seu potius Bernardi Tornii Liber de tuenda sanitate",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -4847,6 +6127,10 @@
    "segnatura": "Plut. 41.40",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1401-1410",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "[Anonymi] Liber pomi pulcri florecti et Dominici Pratensis Carmina",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -4862,6 +6146,10 @@
    "segnatura": "Plut. 9 dex.9",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1301-1310",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Anonymi Postillae super partem Psalterii et super I et II Esdrae",
    "motivo": "titolo assente o testo non identificato",
    "punti": 4,
@@ -4877,6 +6165,10 @@
    "segnatura": "Plut. 73.19",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1201-1300",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Liber de alimentis incerti auctoris . Adde Librum remediorum, speculum medicinae, ac de medicinis laxativis incerti auctoris",
    "motivo": "titolo assente o testo non identificato",
    "punti": 3,
@@ -4892,6 +6184,10 @@
    "segnatura": "Plut. 66.27",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1201-1300",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Gesta Caroli Magni, incerti auctoris|Seu potius Philomelae narratio quaedam de Carolo Magno, Turpini Gesta Rotolandi, Methodii De principio…",
    "motivo": "titolo assente o testo non identificato",
    "punti": 3,
@@ -4907,6 +6203,10 @@
    "segnatura": "Plut. 68.19",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1491-1500",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Appiani Alexandrini Historia Publio Candido interprete . Ac praeterea Anonymi Compendium historiae ab excessu Constantini usque ad Ioannem…",
    "motivo": "titolo assente o testo non identificato",
    "punti": 3,
@@ -4922,6 +6222,10 @@
    "segnatura": "Plut. 90 sup.46",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1487-08-22",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Ant. Panormitae Epistolae, Francisci Petrarchae, Oliverii card. neapolitani, et anonymi quaedam",
    "motivo": "titolo assente o testo non identificato",
    "punti": 3,
@@ -4937,6 +6241,10 @@
    "segnatura": "Plut. 52.15",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1401-1500",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Iannoctii Manetti Oratio Nicolai V Pont. Rom . Ac praeterea Poggii, Francisci de Paduanis, Leonardi Arretini, et Anonymi quaedam",
    "motivo": "titolo assente o testo non identificato",
    "punti": 3,
@@ -4952,6 +6260,10 @@
    "segnatura": "Plut. 29.15",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1301-1310",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Arithmetica incerti auctoris . Adde Ioannis de Sacrobosco et magistri Ioannis de Pechebam Tractatus de Sphaera, et alia pauca astronomica",
    "motivo": "titolo assente o testo non identificato",
    "punti": 3,
@@ -4967,6 +6279,10 @@
    "segnatura": "Plut. 29.14",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1301-1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Tractatus astronomicus incerti auctoris . Ac praeterea Iulii Firmici Materni Matheseos quidam libri",
    "motivo": "titolo assente o testo non identificato",
    "punti": 3,
@@ -4982,6 +6298,10 @@
    "segnatura": "Plut. 29.39",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1201-1300",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "S. Isidorus De astris caeli . Seu potius S. Isidori et aliorum opera varia",
    "motivo": "miscellanea",
    "punti": 2,
@@ -4997,6 +6317,10 @@
    "segnatura": "S. Marco 476",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1301-1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Hugonis a S: Victore opera quaedam et alia incertis auctoris",
    "motivo": "titolo assente o testo non identificato",
    "punti": 2,
@@ -5012,6 +6336,10 @@
    "segnatura": "Plut. 26 sin.9",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1301-1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Franc. Petrarchae Opera varia, partim prosaica, et partim metrica",
    "motivo": "miscellanea",
    "punti": 2,
@@ -5027,6 +6355,10 @@
    "segnatura": "Plut. 83.11",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1401-1500",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Marsilii Ficini Theologia platonica . Seu potius Argumentum in Theologiam platonica et alia opuscula",
    "motivo": "miscellanea",
    "punti": 0,
@@ -5042,6 +6374,10 @@
    "segnatura": "Plut. 3.7",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1401-1500",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Rabii Samuelis De adventu messiae . R. Samuelis De adventu messiae, Nicolai Lyrae Contra Iudaeos. In evangelium Matthaei anonymi. Francisci…",
    "motivo": "titolo assente o testo non identificato",
    "punti": 0,
@@ -5057,6 +6393,10 @@
    "segnatura": "Plut. 53.11",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1401-1500",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Francisci Novelli et Francisci Castilionensis Varia . Nec non Nicolai Tignosii et Lauri de Palatiolis",
    "motivo": "miscellanea",
    "punti": 0,
@@ -5072,6 +6412,10 @@
    "segnatura": "Plut. 88.42",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1401-1500",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Liber ponderis . Liber Intellectus, R. Mosèh, ubi explicat varia ad Sapientiam Iudaicam spectantia: ut de Nominibus, de Praeceptis Sabbathi…",
    "motivo": "miscellanea",
    "punti": 0,
@@ -5087,6 +6431,10 @@
    "segnatura": "Plut. 66.32",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1401-1500",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Historiae Romanorum imperatorum ab Hadriano usque ad Numerianum, excerptae e diversis auctoribus",
    "motivo": "miscellanea",
    "punti": 0,
@@ -5102,6 +6450,10 @@
    "segnatura": "Plut. 21.8",
    "biblioteca": "Biblioteca Medicea Laurenziana, Firenze",
    "datazione": "1401-1500",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Mercurius Trimegistus Ficino interprete . Seu potius varia Marsilii Ficini opera, ac versiones variae",
    "motivo": "miscellanea",
    "punti": 0,
@@ -5117,6 +6469,10 @@
    "segnatura": "MedMS-KS1",
    "biblioteca": "Auckland Libraries, Sir George Grey Special Collections, Auckland (Nuova Zelanda)",
    "datazione": "Between 1460 and 1500",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Leaf from a late 15th century Latin Gradual",
    "motivo": "frammento",
    "punti": 2,
@@ -5132,6 +6488,10 @@
    "segnatura": "BPL 2795",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Part 1: Apennine Peninsula, 14th century - Part 2: France, 14th century - Part 3: Low Countries, 15th century, second half",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Composite manuscript (palimpsest), three parts (Latin, Dutch): 1-2. (lower script) Canon law. - 3. (upper script) Manual, use of Poor Clares",
    "motivo": "palinsesto; codice composito",
    "punti": 6,
@@ -5147,6 +6507,10 @@
    "segnatura": "BPL 1685",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "France ; Tours, 9th century, mid",
+   "secolo": [
+    9,
+    9
+   ],
    "titolo": "Fragment (Latin): Vita of St. Germain of Auxerre",
    "motivo": "frammento",
    "punti": 3,
@@ -5162,6 +6526,10 @@
    "segnatura": "BPL 3001: 16",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "German regions, 10th century",
+   "secolo": [
+    10,
+    10
+   ],
    "titolo": "Fragment (Latin): Historical (hagiographical?) text",
    "motivo": "frammento",
    "punti": 3,
@@ -5177,6 +6545,10 @@
    "segnatura": "BPL 1819",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Apennine Peninsula, 13th century",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Fragment (Latin): Infortiatum / Justinian",
    "motivo": "frammento",
    "punti": 3,
@@ -5192,6 +6564,10 @@
    "segnatura": "BPL 2439",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "France?, 14th century",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Fragment (Latin): Treatise on musical theory / Guido of Arezzo (?)",
    "motivo": "frammento",
    "punti": 3,
@@ -5207,6 +6583,10 @@
    "segnatura": "BPL 1764",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "France, 12th/13th century",
+   "secolo": [
+    12,
+    13
+   ],
    "titolo": "Fragment (Latin): Sermones de diebus festis",
    "motivo": "frammento",
    "punti": 3,
@@ -5222,6 +6602,10 @@
    "segnatura": "BPL 899",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Apennine Peninsula, 15th century",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Fragment (Latin): Vocabulorum aequivoca / John Garland (?)",
    "motivo": "frammento",
    "punti": 3,
@@ -5237,6 +6621,10 @@
    "segnatura": "BPL 891",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Apennine Peninsula?, 10th century, mid",
+   "secolo": [
+    10,
+    10
+   ],
    "titolo": "Fragment (Latin): Computus, and other text(s)",
    "motivo": "frammento",
    "punti": 3,
@@ -5252,6 +6640,10 @@
    "segnatura": "BPL 895",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Apennine Peninsula, 15th century",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Fragment (Latin): Contra Judeaos / Nicholas of Lyra",
    "motivo": "frammento",
    "punti": 3,
@@ -5267,6 +6659,10 @@
    "segnatura": "BPL 3179",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "British Isles ; England, 14th century",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Fragment (Latin): Summa Decreti Gratiani",
    "motivo": "frammento",
    "punti": 3,
@@ -5282,6 +6678,10 @@
    "segnatura": "BPL 8 C",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Low Countries, eastern part? ; German regions, western part?, 15th century",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Fragment (Latin): Catholicon / John of Genoa",
    "motivo": "frammento",
    "punti": 3,
@@ -5297,6 +6697,10 @@
    "segnatura": "BPL 3194",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Apennine Peninsula ; Bologna, 12th century, second half",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Fragment (Latin): Codex Justinianus / Justinian",
    "motivo": "frammento",
    "punti": 3,
@@ -5312,6 +6716,10 @@
    "segnatura": "BPL 2391: p",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "German regions, western part, 9th century, c. 850",
+   "secolo": [
+    9,
+    9
+   ],
    "titolo": "Fragment (Latin): Annales regni Francorum",
    "motivo": "frammento",
    "punti": 3,
@@ -5327,6 +6735,10 @@
    "segnatura": "BPL 894",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Apennine Peninsula, northern part, 14th/15th century",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Fragment (Latin): Vita of St. Pachomius",
    "motivo": "frammento",
    "punti": 3,
@@ -5342,6 +6754,10 @@
    "segnatura": "BPL 2387 A-B",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "France?, 12th century, last quarter",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Fragment (Latin): De Jacob et vita beata / Ambrose, and other text(s), BPL 2387: a-b",
    "motivo": "frammento",
    "punti": 3,
@@ -5357,6 +6773,10 @@
    "segnatura": "BPL 2387 C",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "German regions, 12th century",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Fragment (Latin): Lectionary (?), BPL 2387: c",
    "motivo": "frammento",
    "punti": 3,
@@ -5372,6 +6792,10 @@
    "segnatura": "BPL 968",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "France ; Fleury Abbey?, 11th century",
+   "secolo": [
+    11,
+    11
+   ],
    "titolo": "Fragment (Latin): Mathesis / Julius Firmicus Maternus",
    "motivo": "frammento",
    "punti": 3,
@@ -5387,6 +6811,10 @@
    "segnatura": "Voss. Lat. Q. 64",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "German regions ; Weissenburg Abbey , 8th/9th century",
+   "secolo": [
+    8,
+    9
+   ],
    "titolo": "Fragment (Latin): Ars grammatica",
    "motivo": "frammento",
    "punti": 3,
@@ -5402,6 +6830,10 @@
    "segnatura": "BPL 2391: b",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "France, northeastern part?, 9th century, first quarter",
+   "secolo": [
+    9,
+    9
+   ],
    "titolo": "Fragment (Latin): Homiliae / Maximus of Turin",
    "motivo": "frammento",
    "punti": 3,
@@ -5417,6 +6849,10 @@
    "segnatura": "BPL 1820",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Apennine Peninsula?, 13th century",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Fragment (Latin): Infortiatum / Justinian",
    "motivo": "frammento",
    "punti": 3,
@@ -5432,6 +6868,10 @@
    "segnatura": "BPL 2869",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "German regions, southern part ; Speyer?, 15th century, last quarter (perhaps 1484)",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Fragment (Latin): Notitia dignitatum",
    "motivo": "frammento",
    "punti": 3,
@@ -5447,6 +6887,10 @@
    "segnatura": "Voss. Lat. F. 96 A",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "France (Brittany?) ; British Isles (Cornwall)?, 9th/10th century",
+   "secolo": [
+    9,
+    10
+   ],
    "titolo": "Fragment (Latin, Breton/Cornish): Medical recipes",
    "motivo": "frammento",
    "punti": 3,
@@ -5462,6 +6906,10 @@
    "segnatura": "BPL 2213",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Low Countries?, 15th century",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Fragment (Latin): Missal",
    "motivo": "frammento",
    "punti": 2,
@@ -5477,6 +6925,10 @@
    "segnatura": "Voss. Lat. F. 75",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "British Isles ; England, 15th century, midBritish Isles ; England, 14th century, last quarter",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Composite manuscript, two parts (Latin, French)",
    "motivo": "codice composito",
    "punti": 2,
@@ -5492,6 +6944,10 @@
    "segnatura": "BPL 1949",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Low Countries, southern part ; Roermond?, 15th century, second half",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Miscellany (Latin): Devotional texts",
    "motivo": "miscellanea",
    "punti": 2,
@@ -5507,6 +6963,10 @@
    "segnatura": "BPL 1328",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "German regions, western part?, 15th century, last quarter",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Fragment (Latin): Missal",
    "motivo": "frammento",
    "punti": 2,
@@ -5522,6 +6982,10 @@
    "segnatura": "Voss. Lat. Q. 15",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "France ; Orléans? ; 9th century, second halfFrance; Fleury Abbey?, 10th/11th centuryFrance ; Fleury Abbey, 11th century",
+   "secolo": [
+    9,
+    11
+   ],
    "titolo": "Composite manuscript, four parts (Latin)",
    "motivo": "codice composito",
    "punti": 2,
@@ -5537,6 +7001,10 @@
    "segnatura": "VCO 6",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "German regions, western part; Trier?, 15th century, c. 1494-1498",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Medical miscellany (Latin, German, Dutch): Recipes, treatments and treatises",
    "motivo": "miscellanea",
    "punti": 2,
@@ -5552,6 +7020,10 @@
    "segnatura": "Voss. Lat. Q. 99",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "France (southern part?), 13th century, first half",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Medical miscellany: De simplicibus medicinis / Matthaeus Platearius, and other text(s)",
    "motivo": "miscellanea",
    "punti": 2,
@@ -5567,6 +7039,10 @@
    "segnatura": "Voss. Lat. F. 94",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "France ; Tours, 9th century, c. 807-834France, western part, 9th century, second third",
+   "secolo": [
+    9,
+    9
+   ],
    "titolo": "Composite manuscript, two parts (Latin)",
    "motivo": "codice composito",
    "punti": 2,
@@ -5582,6 +7058,10 @@
    "segnatura": "Voss. Lat. Q. 17",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "France , 10th centuryFrance, central part ; Loire region? ; 9th century, c. 830-860German regions?, 10th century, last quarterGerman regions ; Trier region?, 10th century",
+   "secolo": [
+    9,
+    10
+   ],
    "titolo": "Composite manuscript, four parts (Latin)",
    "motivo": "codice composito",
    "punti": 2,
@@ -5597,6 +7077,10 @@
    "segnatura": "Voss. Lat. F. 4",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "France, northern part, 9th century, last quarterBritish Isles ; England ; 8th century, first halfFrance ; Paris?, 13th century, second half",
+   "secolo": [
+    8,
+    13
+   ],
    "titolo": "Composite manuscript, three parts (Latin)",
    "motivo": "codice composito",
    "punti": 2,
@@ -5612,6 +7096,10 @@
    "segnatura": "BPL 2515: 12",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "German regions?, 11th century",
+   "secolo": [
+    11,
+    11
+   ],
    "titolo": "Fragment (Latin): Missal",
    "motivo": "frammento",
    "punti": 2,
@@ -5627,6 +7115,10 @@
    "segnatura": "BPL 2842",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Apennine Peninsula ; Monte Cassino Abbey, 11th/12th century",
+   "secolo": [
+    11,
+    12
+   ],
    "titolo": "Fragment (Latin): Missal",
    "motivo": "frammento",
    "punti": 2,
@@ -5642,6 +7134,10 @@
    "segnatura": "BPL 127 AA",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Part 1: France ; Perpignan?, 15th century, last quarter - Part 2: France ; Perpignan, 15th century, 1477",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Composite manuscript, two parts (Latin): 1. (ff. 1-98) Thesaurus pauperum / Peter of Spain, and other text(s). - 2. (ff. 99-172) Practica /…",
    "motivo": "codice composito",
    "punti": 0,
@@ -5657,6 +7153,10 @@
    "segnatura": "BPL 1765",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Part 1: Low Countries, northern part ; Utrecht, 15th century, before or in 1474 - Part 2: German regions Switzerland ; Basel, 15th century, before or in 1474 - Part 3: Low Countries, 15th century, first half",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Composite volume, three parts (Latin): 1-2. (ff. 1-150, 1-60) Incunables. - 3. (ff. 1-9) Rhetorical texts.",
    "motivo": "codice composito",
    "punti": 0,
@@ -5672,6 +7172,10 @@
    "segnatura": "BPL 1268",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Part 1: German regions, 1487 ; Part 2: German regions, 1457",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Composite manuscript, two parts (Latin): 1. (ff. 1-266) De poenitentia / Nicholas of Dinkelsbühl, and other text(s). - 2. (ff. 267-292) Con…",
    "motivo": "codice composito",
    "punti": 0,
@@ -5687,6 +7191,10 @@
    "segnatura": "BPL 2429",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Part 1: Low Countries, northern part ; Holland, 14th century, third quarter - Parts 2-3: Low Countries, 14th century, mid - Part 4: Low Countries, 14th century",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Composite manuscript, four parts (Latin, Dutch): 1. (ff. 1-30) Chronographia / Johannes de Beke. - 2. (ff. 32-42) Contra Judaeos / Nicholas…",
    "motivo": "codice composito",
    "punti": 0,
@@ -5702,6 +7210,10 @@
    "segnatura": "BPL 2716",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Part 1: German regions, 15th century, 1469 - Part 2: German regions, 15th century, third quarter - Part 3: German regions, 15th century, c. 1470 - Parts 4 and 5: German regions, 15th century, mid - Part 6: German regions, 15th century, c. 1440-1460",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Composite manuscript, six parts (Latin): 1. (ff. 1-155) Abstractum Innocentii / Baldus de Ubaldis, and other text(s). - 2. (ff. 156-228) Su…",
    "motivo": "codice composito",
    "punti": 0,
@@ -5717,6 +7229,10 @@
    "segnatura": "BPL 111: 2",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Parts 1-4: France, northern part, 9th century, third quarter - Part 5: France, northern part, 9th/10th century - Part 6: France, northern part ; Beauvais?, 9th century, third quarter",
+   "secolo": [
+    9,
+    10
+   ],
    "titolo": "Composite manuscript, six parts (Latin): 1-4. (ff. 1-51) Ordines. - 5. (ff. 52-67) Officium defunctorum. - And other part(s)",
    "motivo": "codice composito",
    "punti": 0,
@@ -5732,6 +7248,10 @@
    "segnatura": "Voss. Lat. Q. 85",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "France?, 14th century, second halfFrance, 14th century",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Composite manuscript, two parts (Latin): 1. (ff. 1-24) Commentary on Johannes de Sacrobosco's De sphaera / Hugo de Castello. - 2. (ff. 25-3…",
    "motivo": "codice composito",
    "punti": 0,
@@ -5747,6 +7267,10 @@
    "segnatura": "VUL 91 B",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Part 1-3: Low Countries? ; German regions?, 12th century",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Composite manuscript, three parts (Latin): 1. (ff. 1-8) Excerpts from the Corpus Juris Canonici, and other text(s). - 2. (ff. 9-17) Sermon…",
    "motivo": "codice composito",
    "punti": 0,
@@ -5762,6 +7286,10 @@
    "segnatura": "BPL 20",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Part 1: France ; Le Bec Abbey, Normandy, 12th century, 1138-1139 - Part 2: France, northern part ; Le Bec Abbey, Normandy?, 12th century, second quarter",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Composite manuscript, two parts (Latin): 1. (ff. 2-59) Gesta Normannorum Ducum / William of Jumièges, and other text(s). - 2. (ff. 60-107)…",
    "motivo": "codice composito",
    "punti": 0,
@@ -5777,6 +7305,10 @@
    "segnatura": "VCQ 30",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Part 1: Apennine Peninsula?, 15th century, second half - Part 2: Apennine Peninsula?, 15th century",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Composite manuscript, two parts (Latin): 1. (ff. 3-197) Consilia / Gentile da Foligno, and other text(s). - 2. (ff. 198-211) De abstinencia…",
    "motivo": "codice composito",
    "punti": 0,
@@ -5792,6 +7324,10 @@
    "segnatura": "ABL 1",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Part 1: Apennine Peninsula ; Rome?, 12th century, last quarter - Part 2: Apennine Peninsula ; Rome?, 12th century, last quarter or 13th century, first half (before 1243)",
+   "secolo": [
+    12,
+    13
+   ],
    "titolo": "Composite manuscript, two parts (Latin): 1. (ff. I-VIII) Quaestiones de juris subtilitatibus / Placentinus (?), and other text(s). - 2. (ff…",
    "motivo": "codice composito",
    "punti": 0,
@@ -5807,6 +7343,10 @@
    "segnatura": "BPL 130",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Parts 1-2: Low Countries, northern part ; Egmond Abbey, 11th/12th century, c. 1100",
+   "secolo": [
+    11,
+    12
+   ],
    "titolo": "Composite manuscript, two parts (Latin, Dutch): 1. (ff. 1v-100v) Expositio in Cantica Canticorum / Williram of Ebersberg, and other text(s)…",
    "motivo": "codice composito",
    "punti": 0,
@@ -5822,6 +7362,10 @@
    "segnatura": "Voss. Lat. Q. 55",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "German regions ; Werden Abbey?, 11th century, last quarter (after 1085)German regions ; Werden Abbey, 9th century, c. 900",
+   "secolo": [
+    9,
+    11
+   ],
    "titolo": "Composite manuscript, two parts (Latin): 1. (ff. 1-28) Vita Ludgeri / Altfridus of Münster, and other text(s). - 2. (ff. 30-59) Cartularium…",
    "motivo": "codice composito",
    "punti": 0,
@@ -5837,6 +7381,10 @@
    "segnatura": "Voss. Lat. F. 16",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "France ; Angoulême region, 12th century, first halfFrance ; Périgueux region, 12th century, first half",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Composite manuscript, two parts (Latin): 1. (ff. 1-8) Passio Saturnini Tolosani, and other text(s). - 2. (ff. 9-13) Liber lapidum / Marbod…",
    "motivo": "codice composito",
    "punti": 0,
@@ -5852,6 +7400,10 @@
    "segnatura": "Voss. Lat. O. 60",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "France ; Orléans region ; 9th century, second quarterFrance ; Aquitaine, 11th century, last quarter",
+   "secolo": [
+    9,
+    11
+   ],
    "titolo": "Composite manuscript, two parts (Latin, Provençal): 1. (ff. 1-13) De monstris et beluis, and other text(s). - 2. (ff. 14-29) Chanson de St.…",
    "motivo": "codice composito",
    "punti": 0,
@@ -5867,6 +7419,10 @@
    "segnatura": "Voss. Lat. O. 97",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "France ; St. Amand Abbey (Elno), 9th century, last quarter",
+   "secolo": [
+    9,
+    9
+   ],
    "titolo": "Composite manuscript, three parts (Latin): 1. (ff. 1-62) De vita S. Martini Turonensis / Venantius Fortunatus, and other text(s). - 2. (ff.…",
    "motivo": "codice composito",
    "punti": 0,
@@ -5882,6 +7438,10 @@
    "segnatura": "ABL 19",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Part 1: German regions, southwestern part, 13th century ;",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Composite manuscript, two parts (Latin): 1 (ff. 1-3) Dialogus miraculorum / Caesarius of Heisterbach. - 2 (ff. 4-172) Summa de penitentia /…",
    "motivo": "codice composito",
    "punti": 0,
@@ -5897,6 +7457,10 @@
    "segnatura": "BPL 31",
    "biblioteca": "Universiteitsbibliotheek Leiden, Leiden",
    "datazione": "Parts 1 and 3: German regions ; Erfurt, 15th century, 1456 - Parts 2, 5 and 6: German regions ; Erfurt, 15th century, mid - Part 4: German regions ; Erfurt, 15th century, 1457",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Composite manuscript, six parts (Latin): 1. (ff. 1-59) De casibus virorum illustrium / Giovanni Boccaccio, and other text(s). - 2. (ff. 60-…",
    "motivo": "codice composito",
    "punti": 0,
@@ -5912,6 +7476,10 @@
    "segnatura": "Cod. Haen. 29",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Juristische Sammelhandschrift ; Schwabenspiegels Land- und Lehnrecht",
    "motivo": "maculatura o frammento di legatura; codice composito",
    "punti": 7,
@@ -5927,6 +7495,10 @@
    "segnatura": "Ms 1542",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "1491",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -5942,6 +7514,10 @@
    "segnatura": "Ms 747",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "13./14. Jh.",
+   "secolo": [
+    13,
+    14
+   ],
    "titolo": "Sermones anonymi de dominicis · Auctoritates",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -5957,6 +7533,10 @@
    "segnatura": "Ms 695",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "1472",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Sermones anonymi de tempore",
    "motivo": "titolo assente o testo non identificato",
    "punti": 5,
@@ -5972,6 +7552,10 @@
    "segnatura": "Ms 1046",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "1411",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Anonyme Lectura über Buch II des Liber Extra ; Lectura über Buch II der Decretalensammlung Gregors IX.",
    "motivo": "titolo assente o testo non identificato; miscellanea",
    "punti": 5,
@@ -5987,6 +7571,10 @@
    "segnatura": "Rep. II 19 (Leihgabe Leipziger Stadtbibliothek)",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "1460/1470",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Rechtsgangbuch · Schwabenspiegel",
    "motivo": "maculatura o frammento di legatura",
    "punti": 5,
@@ -6002,6 +7590,10 @@
    "segnatura": "Ms 0534",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Fürstenspiegelkompilation (mittelalterliche Handschrift) ; Fürstenspiegelkompilation",
    "motivo": "maculatura o frammento di legatura",
    "punti": 5,
@@ -6017,6 +7609,10 @@
    "segnatura": "Ms 276",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "12. Jh.",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Theologische Sammelhandschrift ; Stück einer vorgratianischen Canones-Sammlung",
    "motivo": "codice composito; miscellanea",
    "punti": 4,
@@ -6032,6 +7628,10 @@
    "segnatura": "Ms 1610",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "Fragmentesammlung",
    "motivo": "frammento; miscellanea",
    "punti": 4,
@@ -6047,6 +7647,10 @@
    "segnatura": "Ms 1607",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "Fragmentesammlung",
    "motivo": "frammento; miscellanea",
    "punti": 4,
@@ -6062,6 +7666,10 @@
    "segnatura": "Ms 1711b",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Lateinischer Text (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -6077,6 +7685,10 @@
    "segnatura": "Fragm. lat. 44",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "14. Jh., Anfang",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Kommentar zu einem unidentifizierten philosophischen Text (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -6092,6 +7704,10 @@
    "segnatura": "Philos.30, Ansetzfalz",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "12. Jh., Ende oder 13. Jh., Anfang",
+   "secolo": [
+    12,
+    13
+   ],
    "titolo": "Mischform aus Lectionarium und Orationale (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -6107,6 +7723,10 @@
    "segnatura": "Fragm. lat. 615",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Texte, nicht bestimmt, lat. und dt. (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -6122,6 +7742,10 @@
    "segnatura": "Fragm. lat. 556",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Vocabularius Ex quo (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -6137,6 +7761,10 @@
    "segnatura": "Fragm. lat. 420",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "1461",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Cedula (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -6152,6 +7780,10 @@
    "segnatura": "Ms 1611",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "12./13. Jh. (?)",
+   "secolo": [
+    12,
+    13
+   ],
    "titolo": "Fragmente",
    "motivo": "frammento",
    "punti": 3,
@@ -6167,6 +7799,10 @@
    "segnatura": "Fragm. lat. 417",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "1464",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Cedula für Petrus Heyneman de Juterbogk (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -6182,6 +7818,10 @@
    "segnatura": "Rep. II 154a (Leihgabe Leipziger Stadtbibliothek)",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "13./14. Jh.",
+   "secolo": [
+    13,
+    14
+   ],
    "titolo": "Fragmentum de Syllogismis · De deriuationibus vocum",
    "motivo": "frammento",
    "punti": 3,
@@ -6197,6 +7837,10 @@
    "segnatura": "Fragm. lat. 386a",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "9. Jh.",
+   "secolo": [
+    9,
+    9
+   ],
    "titolo": "Kommentar zu Psalm 118 (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -6212,6 +7856,10 @@
    "segnatura": "Kirchg.233-m, Flügelfalz",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "nicht bestimmter Text, lat. (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -6227,6 +7875,10 @@
    "segnatura": "Ed.vet.perg.13, Spiegel vorn/hinten",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Theologischer Text über die Taufe (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -6242,6 +7894,10 @@
    "segnatura": "Inc.Civ.Lips.374, Einbandbezug",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Gebete (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -6257,6 +7913,10 @@
    "segnatura": "Ms 982",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "1201",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Bernardus Papiensis: Summa decretalium (Codex rescriptus)",
    "motivo": "palinsesto",
    "punti": 3,
@@ -6272,6 +7932,10 @@
    "segnatura": "Phil.lat.11-s, Ansetzfalz",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "12. Jh., Ende oder 13. Jh., Anfang",
+   "secolo": [
+    12,
+    13
+   ],
    "titolo": "Gebetbuch (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -6287,6 +7951,10 @@
    "segnatura": "Inc.Civ.Lips.402, Einbandbezug",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "13. Jh., Ende oder 14. Jh., Anfang",
+   "secolo": [
+    13,
+    14
+   ],
    "titolo": "theologischer Text: Kommentar (?) zur Genesis (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -6302,6 +7970,10 @@
    "segnatura": "Ms 1608",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "9./10. Jh.",
+   "secolo": [
+    9,
+    10
+   ],
    "titolo": "Fragmente",
    "motivo": "frammento",
    "punti": 3,
@@ -6317,6 +7989,10 @@
    "segnatura": "Ms 949",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh., Mitte",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Sachsenspiegel-Landrecht mit Glosse ; Deutsche Glosse zum Textus prologi des Sachsenspiegels und zu Sachsenspiegels Landrecht",
    "motivo": "maculatura o frammento di legatura",
    "punti": 3,
@@ -6332,6 +8008,10 @@
    "segnatura": "Jus.can.62, Ansetzfalz vorn/hinten 1",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "12. Jh., Ende",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "unbeschriebenes Fragment",
    "motivo": "frammento",
    "punti": 3,
@@ -6347,6 +8027,10 @@
    "segnatura": "Ed.vet.1469,3, Spiegel",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "13./14. Jh.",
+   "secolo": [
+    13,
+    14
+   ],
    "titolo": "Kommentar zum 5. Buch der Dekretalen (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -6362,6 +8046,10 @@
    "segnatura": "Scr.eccl.395, Flügelfalz",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "8. Jh., Ende/9. Jh., Anfang",
+   "secolo": [
+    8,
+    9
+   ],
    "titolo": "Quaestiones (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -6377,6 +8065,10 @@
    "segnatura": "Inc.Civ.Lips.286, Ansetzfalz",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "14. oder 15. Jh.",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Pater noster (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -6392,6 +8084,10 @@
    "segnatura": "Ms 1344, Ansetzfalz hinten",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "13./14. Jh. (?)",
+   "secolo": [
+    13,
+    14
+   ],
    "titolo": "nicht bestimmter Text, lat. (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -6407,6 +8103,10 @@
    "segnatura": "Astron.402-f, Ansetzfalz",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "14./15. Jh.",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "nicht bestimmter Text (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -6422,6 +8122,10 @@
    "segnatura": "Ms 912",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "um 1437",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Bruchstücke einer Lectura über das Digestum vetus",
    "motivo": "frammento",
    "punti": 3,
@@ -6437,6 +8141,10 @@
    "segnatura": "Font.jur.18:1, Spiegel",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Codex Iustinianus (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -6452,6 +8160,10 @@
    "segnatura": "Philos.19, Ansetzfalz",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Rubriken mit Gebeten (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -6467,6 +8179,10 @@
    "segnatura": "Ms 1095",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Glosse zum Sachsenspiegel-Lehnrecht ; Glosse zum Sächsischen Lehnrecht in der nach Homeyers Unterscheidung kürzeren Recension ohne den Text…",
    "motivo": "maculatura o frammento di legatura",
    "punti": 3,
@@ -6482,6 +8198,10 @@
    "segnatura": "Ms 1694",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "12.–15. Jh.",
+   "secolo": [
+    12,
+    15
+   ],
    "titolo": "28 Fragmentblätter",
    "motivo": "frammento",
    "punti": 3,
@@ -6497,6 +8217,10 @@
    "segnatura": "Ms 1589",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "12. Jh.",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Waltharius (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -6512,6 +8236,10 @@
    "segnatura": "Arist.68, Ansetzfalz",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "13. Jh., Ende oder 14. Jh., Anfang",
+   "secolo": [
+    13,
+    14
+   ],
    "titolo": "astronomische Tabellen (Fragm.)",
    "motivo": "frammento",
    "punti": 3,
@@ -6527,6 +8255,10 @@
    "segnatura": "Ms 825",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "1434",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Siegfried von Balnhausen ; Historisch-theologische Sammelhandschrift, lat.",
    "motivo": "codice composito",
    "punti": 2,
@@ -6542,6 +8274,10 @@
    "segnatura": "Ms 819",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "13. Jh.",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Hagiographische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -6557,6 +8293,10 @@
    "segnatura": "Ms 1207",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "um 1446 ; um 1448/1452 ; um 1446/1448 ; um 1442/1444",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Medizinische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -6572,6 +8312,10 @@
    "segnatura": "Scr.eccl.2145-ba, Einbandbezug",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Antiphonarium (?) (Fragm.)",
    "motivo": "frammento",
    "punti": 2,
@@ -6587,6 +8331,10 @@
    "segnatura": "Ms 1157",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Medizinische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -6602,6 +8350,10 @@
    "segnatura": "Cod. Haen. 9",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "10. Jh.",
+   "secolo": [
+    10,
+    10
+   ],
    "titolo": "Juristische Sammelhandschrift (Codex Utinensis)",
    "motivo": "codice composito",
    "punti": 2,
@@ -6617,6 +8369,10 @@
    "segnatura": "Ms 277",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -6632,6 +8388,10 @@
    "segnatura": "Ms 940",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh., Mitte",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Juristische Sammelhandschrift, lat. ; Festa pallacii apostolici",
    "motivo": "codice composito",
    "punti": 2,
@@ -6647,6 +8407,10 @@
    "segnatura": "Ms 916",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "1435/1436 (Fasz. I) ; bald nach 1434 (Fasz. III)",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Sammelhandschrift: Juristische Vorlesungsrekollekten · Formelsammlungen und Prozessbehelfe · moralisch-didaktische Texte ; Lectura (Collegi…",
    "motivo": "codice composito; miscellanea",
    "punti": 2,
@@ -6662,6 +8426,10 @@
    "segnatura": "Ms 1257",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Philosophisch-rhetorische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -6677,6 +8445,10 @@
    "segnatura": "Ms 122",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -6692,6 +8464,10 @@
    "segnatura": "Cod. Haen. 3518",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "12. Jh., Ende/13. Jh., Anfang",
+   "secolo": [
+    12,
+    13
+   ],
    "titolo": "Historische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -6707,6 +8483,10 @@
    "segnatura": "Ms 1291",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "14. Jh. ; 15. Jh.",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Grammatisch-philosophische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -6722,6 +8502,10 @@
    "segnatura": "Libri.sep.5132, Spiegel",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "unbeschriebenes Fragment",
    "motivo": "frammento",
    "punti": 2,
@@ -6737,6 +8521,10 @@
    "segnatura": "Inc.Civ.Lips.85, Einbandbezug",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "liturgischer Text: wohl Antiphonarium, Textstellen u. a. zu De prophetis (Fragm.)",
    "motivo": "frammento",
    "punti": 2,
@@ -6752,6 +8540,10 @@
    "segnatura": "Ms 1212",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "12. oder 13. Jh.",
+   "secolo": [
+    12,
+    13
+   ],
    "titolo": "Medizinische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -6767,6 +8559,10 @@
    "segnatura": "Gr.lat.rec.142, Ansetzfalz",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Breviarium (Fragm.)",
    "motivo": "frammento",
    "punti": 2,
@@ -6782,6 +8578,10 @@
    "segnatura": "Ms 1634",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "um 1300",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -6797,6 +8597,10 @@
    "segnatura": "Ms 1161",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Medizinische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -6812,6 +8616,10 @@
    "segnatura": "Ms 217",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "13. Jh.",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -6827,6 +8635,10 @@
    "segnatura": "Ms 1598",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh., 10. Jahrzehnt",
+   "secolo": [
+    10,
+    15
+   ],
    "titolo": "Philosophische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -6842,6 +8654,10 @@
    "segnatura": "Ald.3, Ansetzfalz",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Breviarium (?) (Fragm.)",
    "motivo": "frammento",
    "punti": 2,
@@ -6857,6 +8673,10 @@
    "segnatura": "Scr.eccl.575, Flügelfalz",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "14. oder 15. Jh.",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Missale (?) (Fragm.)",
    "motivo": "frammento",
    "punti": 2,
@@ -6872,6 +8692,10 @@
    "segnatura": "Ms 792",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "13. Jh. ; 14. Jh.",
+   "secolo": [
+    13,
+    14
+   ],
    "titolo": "Theologische Sammelhandschrift, lat. und dt. ; Theologische Sammelhandschrift , lat.",
    "motivo": "codice composito",
    "punti": 2,
@@ -6887,6 +8711,10 @@
    "segnatura": "Scr.eccl.440, Ansetzfalz",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "nicht bestimmter Text (Fragm.)",
    "motivo": "frammento",
    "punti": 2,
@@ -6902,6 +8730,10 @@
    "segnatura": "Inc.Civ.Lips.527, Spiegel",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "",
+   "secolo": [
+    0,
+    0
+   ],
    "titolo": "nicht bestimmter Text, lat. (Fragm.)",
    "motivo": "frammento",
    "punti": 2,
@@ -6917,6 +8749,10 @@
    "segnatura": "Ms 1384",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "1454",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Philosophische Sammelhandschrift (u. a. Johannes Breslauer de Braunsberg)",
    "motivo": "codice composito",
    "punti": 2,
@@ -6932,6 +8768,10 @@
    "segnatura": "Ms 1246",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Rhetorische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -6947,6 +8787,10 @@
    "segnatura": "Ms 1525",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Philosophisch-theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -6962,6 +8806,10 @@
    "segnatura": "Ms 1204",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "14./15. Jh.",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Medizinische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -6977,6 +8825,10 @@
    "segnatura": "Ms 433",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "13. Jh., Anfang",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -6992,6 +8844,10 @@
    "segnatura": "Inc.Civ.Lips.413, Einbandbezug",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Antiphonarium (Fragm.)",
    "motivo": "frammento",
    "punti": 2,
@@ -7007,6 +8863,10 @@
    "segnatura": "Scr.eccl.2144, Spiegel",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Breviarium (Fragm.)",
    "motivo": "frammento",
    "punti": 2,
@@ -7022,6 +8882,10 @@
    "segnatura": "Ms 1373",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "1378",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Philosophische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -7037,6 +8901,10 @@
    "segnatura": "Ms 345",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "13. Jh.",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Theologische Sammelhandschrift ; Robertus Flamesburiensis: Poenitentiale",
    "motivo": "codice composito",
    "punti": 2,
@@ -7052,6 +8920,10 @@
    "segnatura": "Ms 817",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "14./15. Jh.",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Mirakelsammlung",
    "motivo": "miscellanea",
    "punti": 2,
@@ -7067,6 +8939,10 @@
    "segnatura": "Ms Apel 5",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "1433 ; 1472",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Theologische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -7082,6 +8958,10 @@
    "segnatura": "Ed.vet.perg.13, Spiegel vorn",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "liturgischer Text (Fragm.)",
    "motivo": "frammento",
    "punti": 2,
@@ -7097,6 +8977,10 @@
    "segnatura": "Ed.vet.1480,1, Spiegel",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "liturgischer Text: Missale (?) (Fragm.)",
    "motivo": "frammento",
    "punti": 2,
@@ -7112,6 +8996,10 @@
    "segnatura": "Ms 758",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "14. Jh.",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Theologische Sammelhandschrift, lat. und dt.",
    "motivo": "codice composito",
    "punti": 2,
@@ -7127,6 +9015,10 @@
    "segnatura": "Inc.Civ.Lips.421, Einbandbezug",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "14./15. Jh.",
+   "secolo": [
+    14,
+    15
+   ],
    "titolo": "Missale (Fragm.)",
    "motivo": "frammento",
    "punti": 2,
@@ -7142,6 +9034,10 @@
    "segnatura": "Ms 1354",
    "biblioteca": "Universitätsbibliothek Leipzig, Leipzig",
    "datazione": "13. Jh., Ende",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Philosophische Sammelhandschrift",
    "motivo": "codice composito",
    "punti": 2,
@@ -7157,6 +9053,10 @@
    "segnatura": "LJS 471",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1350",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "[Medical manual and prescriptions] ... [etc.]",
    "motivo": "palinsesto",
    "punti": 6,
@@ -7172,6 +9072,10 @@
    "segnatura": "LJS 395",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Manuscript pastedowns from De proprietatibus rerum, 1200s",
    "motivo": "maculatura o frammento di legatura",
    "punti": 5,
@@ -7187,6 +9091,10 @@
    "segnatura": "Ms. Coll. 764 Item 24",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1341",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "Petition for guardianship, 1341",
    "motivo": "fogli di guardia",
    "punti": 4,
@@ -7202,6 +9110,10 @@
    "segnatura": "Oversize LJS 391",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "Fragment of manuscript bifolium from the Liber ad Almansorem, between 1200 and 1225?",
    "motivo": "frammento",
    "punti": 3,
@@ -7217,6 +9129,10 @@
    "segnatura": "Ms. Codex 701",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1200",
+   "secolo": [
+    12,
+    12
+   ],
    "titolo": "[Astronomical fragments]",
    "motivo": "frammento",
    "punti": 3,
@@ -7232,6 +9148,10 @@
    "segnatura": "LJS 108",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1220",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Manuscript leaf from Interpretationes Hebraicorum nominum, ca. 1220",
    "motivo": "frammento",
    "punti": 3,
@@ -7247,6 +9167,10 @@
    "segnatura": "LJS 35",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1240",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Manuscript leaves from a canon law text, between 1240 and 1260",
    "motivo": "frammento",
    "punti": 3,
@@ -7262,6 +9186,10 @@
    "segnatura": "Ms. Oversize 18",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "[Ledger fragment]",
    "motivo": "frammento",
    "punti": 3,
@@ -7277,6 +9205,10 @@
    "segnatura": "Oversize Ms. Codex 1223",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "[Fragments of the Digests of Justinian, Book 37, Titles 7-9]",
    "motivo": "frammento",
    "punti": 3,
@@ -7292,6 +9224,10 @@
    "segnatura": "LJS 119",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Manuscript leaf from a collection of papal decretals, 1300s",
    "motivo": "frammento",
    "punti": 3,
@@ -7307,6 +9243,10 @@
    "segnatura": "LJS 115",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1225",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Manuscript leaf from Summa de poenitentia et matrimonio, between 1225 and 1275",
    "motivo": "frammento",
    "punti": 3,
@@ -7322,6 +9262,10 @@
    "segnatura": "Ms. Codex 691",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1450",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "[Canon law miscellany]",
    "motivo": "miscellanea",
    "punti": 2,
@@ -7337,6 +9281,10 @@
    "segnatura": "Oversize Ms. Codex 1546",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1370",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "[Gondi-Medici miscellany]",
    "motivo": "miscellanea",
    "punti": 2,
@@ -7352,6 +9300,10 @@
    "segnatura": "CAJS Rar Ms 415",
    "biblioteca": "University of Pennsylvania, Library at the Katz Center (CAJS), Philadelphia",
    "datazione": "1300",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Manuscript leaves from a breviary, 1300s",
    "motivo": "frammento",
    "punti": 2,
@@ -7367,6 +9319,10 @@
    "segnatura": "Ms. Codex 241",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1500",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "[Miscellany of religious works]",
    "motivo": "miscellanea",
    "punti": 2,
@@ -7382,6 +9338,10 @@
    "segnatura": "Ms. Codex 69",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1450",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "[Miscellany of scientific treatises]",
    "motivo": "miscellanea",
    "punti": 2,
@@ -7397,6 +9357,10 @@
    "segnatura": "Ms. Codex 824",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "[German religious and literary miscellany]",
    "motivo": "miscellanea",
    "punti": 2,
@@ -7412,6 +9376,10 @@
    "segnatura": "Oversize Ms. Codex 96",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1450/1475",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "[Opuscula varia]",
    "motivo": "miscellanea",
    "punti": 2,
@@ -7427,6 +9395,10 @@
    "segnatura": "Ms. Oversize 4",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1500",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Fragment of a choral antiphonary [?] : manuscript, [15--?]",
    "motivo": "frammento",
    "punti": 2,
@@ -7442,6 +9414,10 @@
    "segnatura": "Oversize LJS 449",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1446",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "[Medical and astronomical miscellany]",
    "motivo": "miscellanea",
    "punti": 2,
@@ -7457,6 +9433,10 @@
    "segnatura": "Ms. Codex 689",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "[Theological miscellany]",
    "motivo": "miscellanea",
    "punti": 2,
@@ -7472,6 +9452,10 @@
    "segnatura": "Oversize Ms. Codex 1131",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1440/1460",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "[Theological miscellany]",
    "motivo": "miscellanea",
    "punti": 2,
@@ -7487,6 +9471,10 @@
    "segnatura": "CAJS Rar Ms 416",
    "biblioteca": "University of Pennsylvania, Library at the Katz Center (CAJS), Philadelphia",
    "datazione": "1490",
+   "secolo": [
+    15,
+    15
+   ],
    "titolo": "Manuscript leaf from a book of hours",
    "motivo": "frammento",
    "punti": 2,
@@ -7502,6 +9490,10 @@
    "segnatura": "Oversize Ms. Codex 110",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1400",
+   "secolo": [
+    14,
+    14
+   ],
    "titolo": "[Alchemical miscellany]",
    "motivo": "miscellanea",
    "punti": 2,
@@ -7517,6 +9509,10 @@
    "segnatura": "Oversize LJS 24",
    "biblioteca": "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
    "datazione": "1225",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "[Medical miscellany]",
    "motivo": "miscellanea",
    "punti": 2,
@@ -7532,6 +9528,10 @@
    "segnatura": "CAJS Rar Ms 400",
    "biblioteca": "University of Pennsylvania, Library at the Katz Center (CAJS), Philadelphia",
    "datazione": "1240",
+   "secolo": [
+    13,
+    13
+   ],
    "titolo": "Manuscript leaf from Vulgate Deuteronomy",
    "motivo": "frammento",
    "punti": 0,
