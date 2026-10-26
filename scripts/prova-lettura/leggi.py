@@ -151,8 +151,19 @@ def scegli(cvs):
     return scelte
 
 
+def servizio_vero(sid):
+    """Heidelberg fa da proxy ad altre biblioteche (Bodleian, Basilea...) con servizi del tipo
+    .../iiif/2/<id>%3Aiiif-proxy.cgi?serviceId=<servizio vero>&size=...: si usa il servizio vero."""
+    if "?" in sid and "serviceId=" in sid:
+        from urllib.parse import parse_qs, urlsplit
+        v = parse_qs(urlsplit(sid).query).get("serviceId")
+        if v:
+            return v[0]
+    return sid
+
+
 def url_immagine(sid, larghezza, ver, dim=LARGHEZZA):
-    sid = sid.rstrip("/")
+    sid = servizio_vero(sid).rstrip("/")
     if larghezza and int(larghezza) <= dim:
         dim_s = "max" if ver == 3 else "full"
     else:
@@ -176,11 +187,9 @@ def _init(modello):
     import resource
     import signal
     signal.signal(signal.SIGALRM, _allarme)
-    try:  # un processo di lettura non può prendersi tutta la memoria del runner
-        lim = int(float(os.environ.get("MEMORIA_GB", "5")) * 1024 ** 3)
+    if os.environ.get("MEMORIA_GB"):  # facoltativo: torch riserva molta memoria virtuale, un limite basso lo fa fallire
+        lim = int(float(os.environ["MEMORIA_GB"]) * 1024 ** 3)
         resource.setrlimit(resource.RLIMIT_AS, (lim, lim))
-    except (ValueError, OSError):
-        pass
     import torch
     torch.set_num_threads(2)
     import kraken
@@ -348,7 +357,7 @@ def main():
                     dati = richiesta(url, binario=True)
                 except urllib.error.HTTPError as e:
                     if e.code in (400, 403, 404, 501):  # dimensione non accettata: provo la piena
-                        url = f"{sid.rstrip('/')}/full/{'max' if ver == 3 else 'full'}/0/default.jpg"
+                        url = f"{servizio_vero(sid).rstrip('/')}/full/{'max' if ver == 3 else 'full'}/0/default.jpg"
                         pag["immagine"] = url
                         dati = richiesta(url, binario=True)
                     else:
