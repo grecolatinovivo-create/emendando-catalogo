@@ -1,10 +1,10 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T18:50:01.268Z",
- "totale": 499649,
- "con_autori": 27652,
- "miniati": 10497,
- "musica": 13595,
+ "aggiornato": "2026-10-26T18:57:22.636Z",
+ "totale": 499769,
+ "con_autori": 27656,
+ "miniati": 10500,
+ "musica": 13601,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
   "id",
@@ -30,15 +30,15 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 74505
+   "codici": 74524
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 28819
+   "codici": 28775
   },
   "fr": {
    "nome": "francese",
-   "codici": 28301
+   "codici": 28313
   },
   "de": {
    "nome": "tedesco",
@@ -50,7 +50,7 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 18376
+   "codici": 18033
   },
   "pi": {
    "nome": "pali",
@@ -78,7 +78,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10391
+   "codici": 10460
   },
   "pl": {
    "nome": "polacco",
@@ -86,11 +86,11 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 7472
+   "codici": 7484
   },
   "en": {
    "nome": "inglese",
-   "codici": 7038
+   "codici": 7054
   },
   "bo": {
    "nome": "tibetano",
@@ -102,7 +102,7 @@
   },
   "pt": {
    "nome": "portoghese",
-   "codici": 4877
+   "codici": 4883
   },
   "fa": {
    "nome": "persiano",
@@ -192,6 +192,14 @@
    "nome": "giavanese",
    "codici": 153
   },
+  "myn": {
+   "nome": "lingue maya",
+   "codici": 149
+  },
+  "nah": {
+   "nome": "nahuatl",
+   "codici": 132
+  },
   "mnc": {
    "nome": "mancese",
    "codici": 122
@@ -203,6 +211,10 @@
   "my": {
    "nome": "birmano",
    "codici": 106
+  },
+  "cai": {
+   "nome": "altre lingue indigene di Mesoamerica e America centrale",
+   "codici": 83
   },
   "ga": {
    "nome": "irlandese",
@@ -236,13 +248,33 @@
    "nome": "lingue slave (alfabeto cirillico)",
    "codici": 25
   },
+  "sai": {
+   "nome": "altre lingue indigene del Sud America",
+   "codici": 24
+  },
+  "alg": {
+   "nome": "lingue algonchine",
+   "codici": 17
+  },
+  "oto": {
+   "nome": "otomí e lingue otomiane",
+   "codici": 15
+  },
   "lt": {
    "nome": "lt",
    "codici": 15
   },
+  "zap": {
+   "nome": "zapoteco",
+   "codici": 13
+  },
   "km": {
    "nome": "khmer",
    "codici": 12
+  },
+  "gn": {
+   "nome": "guaraní",
+   "codici": 10
   },
   "ban": {
    "nome": "balinese",
@@ -256,8 +288,16 @@
    "nome": "be",
    "codici": 6
   },
+  "pit": {
+   "nome": "pittografia mesoamericana (senza testo alfabetico)",
+   "codici": 5
+  },
   "su": {
    "nome": "sundanese",
+   "codici": 4
+  },
+  "iro": {
+   "nome": "lingue irochesi",
    "codici": 4
   },
   "hr": {
@@ -268,8 +308,16 @@
    "nome": "ro",
    "codici": 3
   },
+  "nai": {
+   "nome": "altre lingue indigene del Nord America",
+   "codici": 2
+  },
   "gl": {
    "nome": "galego",
+   "codici": 2
+  },
+  "qu": {
+   "nome": "quechua",
    "codici": 2
   },
   "yi": {
@@ -280,6 +328,18 @@
    "nome": "sk",
    "codici": 2
   },
+  "tup": {
+   "nome": "tupi",
+   "codici": 1
+  },
+  "mix": {
+   "nome": "mixteco",
+   "codici": 1
+  },
+  "ay": {
+   "nome": "aymara",
+   "codici": 1
+  },
   "bg": {
    "nome": "bg",
    "codici": 1
@@ -287,12 +347,16 @@
   "et": {
    "nome": "et",
    "codici": 1
+  },
+  "oji": {
+   "nome": "ojibwe",
+   "codici": 1
   }
  },
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 6530
+   "codici": 6531
   },
   "classico-greco": {
    "nome": "classici greci",
@@ -300,7 +364,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 14284
+   "codici": 14287
   },
   "medievale": {
    "nome": "autori medievali",
@@ -310,7 +374,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 497969
+   "codici": 498089
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -332,7 +396,7 @@
    "nome": "Terenzio",
    "latino": "Terentius",
    "categoria": "classico-latino",
-   "codici": 215
+   "codici": 216
   },
   "lucrezio": {
    "nome": "Lucrezio",
@@ -1250,7 +1314,7 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 2834
+   "codici": 2837
   },
   "girolamo": {
    "nome": "Girolamo",
@@ -1923,6 +1987,7 @@
   "Jesus College, Oxford",
   "jetzt Wien ÖNB Cod. Ser.n. 2595, Lilienfeld",
   "Jihočeská vědecká knihovna v Českých Budějovicích, Zlatá Koruna",
+  "John Carter Brown Library, Providence",
   "John Rylands Research Institute and Library, University of Manchester",
   "John Rylands University Library of Manchester, Cambridge",
   "JTS Acc. (copia digitale della National Library of Israel)",
@@ -2932,7 +2997,7 @@
     "en": 2515,
     "?": 947,
     "zh": 656,
-    "xx": 438,
+    "xx": 432,
     "mnc": 6,
     "mn": 2,
     "pt": 6,
@@ -2950,8 +3015,11 @@
     "tr": 10,
     "he": 341,
     "ga": 13,
+    "nah": 2,
+    "pit": 3,
     "hy": 69,
     "nl": 35,
+    "tup": 1,
     "oc": 1,
     "cu": 10,
     "ca": 4,
@@ -2987,7 +3055,7 @@
     "fr": 22571,
     "la": 15332,
     "grc": 4569,
-    "?": 4621,
+    "?": 4579,
     "he": 2845,
     "syr": 524,
     "ar": 8647,
@@ -2995,7 +3063,7 @@
     "it": 1182,
     "es": 473,
     "en": 205,
-    "xx": 3580,
+    "xx": 3442,
     "ca": 76,
     "zh": 8284,
     "nl": 84,
@@ -3013,6 +3081,17 @@
     "sa": 1341,
     "ka": 45,
     "km": 4,
+    "alg": 8,
+    "myn": 52,
+    "oto": 9,
+    "iro": 1,
+    "sai": 3,
+    "gn": 2,
+    "cai": 7,
+    "nah": 95,
+    "zap": 2,
+    "nai": 1,
+    "mix": 1,
     "jv": 16,
     "hy": 211,
     "ms": 163,
@@ -3422,7 +3501,7 @@
     "he": 10,
     "it": 290,
     "fr": 88,
-    "?": 160,
+    "?": 159,
     "nl": 14,
     "es": 9,
     "en": 6,
@@ -3431,7 +3510,8 @@
     "pt": 2,
     "da": 2,
     "sv": 1,
-    "cs": 9
+    "cs": 9,
+    "myn": 1
    },
    "esito": "ok",
    "prefissi": [
@@ -3553,7 +3633,7 @@
     "fr": 167,
     "en": 586,
     "nl": 25,
-    "xx": 72,
+    "xx": 71,
     "la": 1449,
     "de": 84,
     "es": 48,
@@ -3567,6 +3647,7 @@
     "pt": 4,
     "da": 1,
     "grc": 81,
+    "nah": 1,
     "he": 17,
     "is": 1,
     "cs": 2,
@@ -3577,6 +3658,7 @@
     "ja": 18,
     "ko": 2,
     "gez": 6,
+    "alg": 1,
     "hy": 3,
     "sv": 1,
     "sa": 2,
@@ -3601,9 +3683,11 @@
    "con_autori": 239,
    "lingue": {
     "en": 1613,
-    "xx": 2280,
+    "xx": 2102,
     "sa": 4341,
     "es": 325,
+    "nah": 11,
+    "cai": 63,
     "la": 1067,
     "de": 301,
     "grc": 65,
@@ -3631,6 +3715,15 @@
     "oc": 6,
     "da": 1,
     "th": 47,
+    "myn": 88,
+    "oto": 2,
+    "zap": 8,
+    "sai": 19,
+    "alg": 3,
+    "gn": 2,
+    "ay": 1,
+    "qu": 1,
+    "iro": 1,
     "ban": 1,
     "my": 1,
     "pl": 2,
@@ -3661,7 +3754,7 @@
     "en": 172,
     "es": 93,
     "de": 85,
-    "xx": 438,
+    "xx": 428,
     "nl": 64,
     "ar": 3148,
     "hy": 23,
@@ -3677,6 +3770,8 @@
     "zh": 9,
     "cu": 3,
     "ca": 11,
+    "nah": 9,
+    "myn": 2,
     "ja": 8,
     "jv": 2,
     "pi": 3,
@@ -3719,7 +3814,8 @@
     "hy": 5,
     "cop": 1,
     "de": 34,
-    "xx": 6,
+    "xx": 5,
+    "alg": 1,
     "is": 1,
     "it": 50,
     "sa": 16,
@@ -3814,7 +3910,8 @@
    "con_autori": 42,
    "lingue": {
     "grc": 14,
-    "?": 347,
+    "?": 346,
+    "gn": 1,
     "es": 7,
     "ar": 199,
     "fa": 10,
@@ -3976,10 +4073,11 @@
     "fa": 452,
     "en": 196,
     "ko": 2,
-    "?": 911,
+    "nah": 1,
     "zh": 835,
     "ja": 464,
     "la": 286,
+    "?": 910,
     "syr": 3,
     "ar": 95,
     "gez": 5,
@@ -4547,13 +4645,16 @@
     "en": 9,
     "gl": 1,
     "ca": 20,
-    "xx": 87,
+    "qu": 1,
     "de": 3,
     "ar": 159,
+    "xx": 84,
     "pt": 20,
     "grc": 1,
+    "gn": 1,
+    "nah": 2,
     "he": 1,
-    "?": 684
+    "?": 683
    },
    "esito": "ok",
    "prefissi": [
@@ -4635,10 +4736,12 @@
     "grc": 3,
     "ca": 1,
     "it": 3,
-    "xx": 3,
+    "xx": 1,
     "oc": 1,
     "fr": 2,
-    "pt": 1
+    "cai": 1,
+    "pt": 1,
+    "nah": 1
    },
    "esito": "ok",
    "prefissi": [
@@ -4864,26 +4967,26 @@
    ]
   },
   "archive": {
-   "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
-   "codici": 15677,
+   "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, John Carter Brown Library, Newberry Library, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
+   "codici": 15797,
    "carte": 70,
    "carte_stampa": 0,
-   "miniati": 179,
-   "musica": 14,
-   "con_autori": 106,
+   "miniati": 182,
+   "musica": 20,
+   "con_autori": 110,
    "lingue": {
     "tr": 247,
-    "it": 1147,
+    "it": 1158,
     "xx": 8225,
-    "la": 142,
+    "la": 163,
     "grc": 10,
-    "fr": 318,
+    "fr": 330,
     "de": 14,
-    "es": 10,
-    "en": 97,
-    "?": 20,
+    "es": 79,
+    "en": 113,
+    "?": 22,
     "oc": 1,
-    "pt": 8,
+    "pt": 14,
     "da": 2,
     "zh": 4,
     "hu": 1,
@@ -4897,6 +5000,16 @@
     "ko": 1219,
     "he": 30,
     "sa": 3198,
+    "alg": 4,
+    "sai": 2,
+    "cai": 12,
+    "nah": 10,
+    "myn": 6,
+    "zap": 3,
+    "gn": 1,
+    "oto": 4,
+    "iro": 2,
+    "oji": 1,
     "pi": 31,
     "km": 1
    },
@@ -4961,7 +5074,7 @@
     "mnc": 71,
     "ar": 12,
     "mn": 20,
-    "xx": 12,
+    "xx": 11,
     "my": 11,
     "pi": 4,
     "ban": 3,
@@ -4970,6 +5083,7 @@
     "btk": 3,
     "shn": 1,
     "la": 3,
+    "nai": 1,
     "ko": 3,
     "sa": 2
    },
@@ -4995,7 +5109,7 @@
     "de": 17,
     "ar": 5141,
     "sa": 231,
-    "xx": 358,
+    "xx": 355,
     "fa": 828,
     "tr": 453,
     "grc": 16,
@@ -5005,6 +5119,7 @@
     "?": 30,
     "he": 424,
     "hy": 98,
+    "gn": 3,
     "mnc": 1,
     "bo": 38,
     "gez": 82,
@@ -5057,14 +5172,15 @@
    "musica": 13,
    "con_autori": 923,
    "lingue": {
-    "la": 12718,
-    "it": 235,
+    "la": 12716,
+    "it": 236,
     "xx": 18,
     "de": 3,
     "grc": 1,
     "fr": 23,
     "es": 15,
-    "en": 1
+    "en": 1,
+    "pit": 2
    },
    "esito": "ok",
    "prefissi": [
@@ -5465,7 +5581,7 @@
   {
    "file": "indice/archive-0.json",
    "fonte": "archive",
-   "righe": 15677
+   "righe": 15797
   },
   {
    "file": "indice/crossasia-0.json",
@@ -8478,6 +8594,7 @@
   "oxford",
   "lilienfeld",
   "zlata-koruna",
+  "providence",
   "manchester",
   "cambridge",
   "gerusalemme",
