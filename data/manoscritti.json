@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T01:11:48.699Z",
+ "aggiornato": "2026-10-26T02:42:55.573Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -24,12 +24,12 @@
   },
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
-   "codici": 476,
+   "codici": 477,
    "esito": "errore: fetch failed"
   },
   "gallica": {
    "nome": "Bibliothèque nationale de France (gallica.bnf.fr)",
-   "codici": 4693,
+   "codici": 4697,
    "esito": "ok"
   },
   "laurenziana": {
@@ -109,7 +109,7 @@
   },
   "kokusho": {
    "nome": "Kokusho Database, National Institute of Japanese Literature (kokusho.nijl.ac.jp)",
-   "codici": 0,
+   "codici": 5,
    "esito": "ok"
   },
   "auckland": {
@@ -123,7 +123,7 @@
    "esito": "ok"
   }
  },
- "totale": 10220,
+ "totale": 10230,
  "manoscritti": [
   {
    "id": "akl-17669",
@@ -120379,6 +120379,126 @@
    ],
    "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8492139c/manifest.json",
    "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b8492139c",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b90062389",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque nationale de France",
+   "citta": "Paris",
+   "segnatura": "Chinois 3384",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "zh"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "寰有詮Huan you quan.Traité de l'univers.",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "De caelo"
+     ],
+     "corrispondenza": "titolo: «寰有詮Huan you quan.Traité de l'univers.»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90062389/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b90062389",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b9006070t",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque nationale de France",
+   "citta": "Paris",
+   "segnatura": "Chinois 3413",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "zh"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "名理探Ming li tan.Traité de logique.",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Organon"
+     ],
+     "corrispondenza": "titolo: «名理探Ming li tan.Traité de logique.»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9006070t/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b9006070t",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b10885391c",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque nationale de France",
+   "citta": "Paris",
+   "segnatura": "Chinois 3414",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "zh"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "名理探十倫Ming li tan shi lun.Les dix catégories de la logique.",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Organon"
+     ],
+     "corrispondenza": "titolo: «名理探十倫Ming li tan shi lun.Les dix catégories de la logique.»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10885391c/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b10885391c",
+   "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "bnf-btv1b9002726k",
+   "fonte": "gallica",
+   "biblioteca": "Bibliothèque nationale de France",
+   "citta": "Paris",
+   "segnatura": "Chinois 3414",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "zh"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "名理探十倫Ming li tan shi lun.Les dix catégories de la logique.",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Organon"
+     ],
+     "corrispondenza": "titolo: «名理探十倫Ming li tan shi lun.Les dix catégories de la logique.»"
+    }
+   ],
+   "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9002726k/manifest.json",
+   "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b9002726k",
    "licenza": "Domaine public (Gallica, conditions d'utilisation)",
    "immagini": null
   },
@@ -287829,12 +287949,44 @@
      "autore": "Euclide",
      "latino": "Euclides",
      "categoria": "classico-greco",
-     "opere": [],
+     "opere": [
+      "Elementi"
+     ],
      "corrispondenza": "autore: «Euclid»"
     }
    ],
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/7c03498f-9d5e-46a5-9116-e17dc361c59b.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/7c03498f-9d5e-46a5-9116-e17dc361c59b/",
+   "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "bod-2f713336-8cbc-466d-8f2a-af947b68de12",
+   "fonte": "bodleian",
+   "biblioteca": "Bodleian Library",
+   "citta": "Oxford",
+   "segnatura": "Bodleian Library MS.Chin.e.19",
+   "datazione": "清代",
+   "secolo": null,
+   "lingue": [
+    "zh"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "況義 耶穌教經書目錄",
+   "autori": [
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "titolo: «況義 耶穌教經書目錄»"
+    }
+   ],
+   "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/2f713336-8cbc-466d-8f2a-af947b68de12.json",
+   "pagina": "https://digital.bodleian.ox.ac.uk/objects/2f713336-8cbc-466d-8f2a-af947b68de12/",
    "licenza": "CC BY-NC 4.0",
    "immagini": null
   },
@@ -372527,6 +372679,156 @@
    "licenza": "CC BY-NC 4.0",
    "immagini": null,
    "anteprima": "https://e-codices.ch/loris/zbz/zbz-Ms-Heid-0166/zbz-Ms-Heid-0166_0001r.jp2/full/,150/0/default/jpg"
+  },
+  {
+   "id": "nijl-100209924",
+   "fonte": "kokusho",
+   "biblioteca": "ノートルダム清心 (Kokusho Database, NIJL)",
+   "citta": "Giappone",
+   "segnatura": "332-0316-004",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "ja"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "伊曽保物語",
+   "autori": [
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "titolo: «伊曽保物語»"
+    }
+   ],
+   "manifest": "https://kokusho.nijl.ac.jp/biblio/100209924/manifest",
+   "pagina": "https://kokusho.nijl.ac.jp/biblio/100209924",
+   "licenza": "condizioni del proprietario (kokusho.nijl.ac.jp/page/usage.html)",
+   "immagini": null
+  },
+  {
+   "id": "nijl-200020261",
+   "fonte": "kokusho",
+   "biblioteca": "国文研鵜飼 (Kokusho Database, NIJL)",
+   "citta": "Giappone",
+   "segnatura": "96-632",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "ja"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "北陲杞憂／二十五言／清水筆語",
+   "autori": [
+    {
+     "id": "epitteto",
+     "autore": "Epitteto",
+     "latino": "Epictetus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Manuale"
+     ],
+     "corrispondenza": "titolo: «北陲杞憂／二十五言／清水筆語»"
+    }
+   ],
+   "manifest": "https://kokusho.nijl.ac.jp/biblio/200020261/manifest",
+   "pagina": "https://kokusho.nijl.ac.jp/biblio/200020261",
+   "licenza": "condizioni del proprietario (kokusho.nijl.ac.jp/page/usage.html)",
+   "immagini": null
+  },
+  {
+   "id": "nijl-200020263",
+   "fonte": "kokusho",
+   "biblioteca": "国文研鵜飼 (Kokusho Database, NIJL)",
+   "citta": "Giappone",
+   "segnatura": "96-632",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "ja"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "重刻二十五言",
+   "autori": [
+    {
+     "id": "epitteto",
+     "autore": "Epitteto",
+     "latino": "Epictetus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Manuale"
+     ],
+     "corrispondenza": "titolo: «重刻二十五言»"
+    }
+   ],
+   "manifest": "https://kokusho.nijl.ac.jp/biblio/200020263/manifest",
+   "pagina": "https://kokusho.nijl.ac.jp/biblio/200020263",
+   "licenza": "condizioni del proprietario (kokusho.nijl.ac.jp/page/usage.html)",
+   "immagini": null
+  },
+  {
+   "id": "nijl-100319217",
+   "fonte": "kokusho",
+   "biblioteca": "日本学士院川本幸民 (Kokusho Database, NIJL)",
+   "citta": "Giappone",
+   "segnatura": "DIG-NIGI-00520",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "ja"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "伊曽保物語／上・中・下",
+   "autori": [
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "titolo: «伊曽保物語／上・中・下»"
+    }
+   ],
+   "manifest": "https://kokusho.nijl.ac.jp/biblio/100319217/manifest",
+   "pagina": "https://kokusho.nijl.ac.jp/biblio/100319217",
+   "licenza": "condizioni del proprietario (kokusho.nijl.ac.jp/page/usage.html)",
+   "immagini": null
+  },
+  {
+   "id": "nijl-100438419",
+   "fonte": "kokusho",
+   "biblioteca": "静嘉堂蔵 (Kokusho Database, NIJL)",
+   "citta": "Giappone",
+   "segnatura": "DIG-SEKD-71769",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "ja"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "伊曾保物語",
+   "autori": [
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "titolo: «伊曾保物語»"
+    }
+   ],
+   "manifest": "https://kokusho.nijl.ac.jp/biblio/100438419/manifest",
+   "pagina": "https://kokusho.nijl.ac.jp/biblio/100438419",
+   "licenza": "condizioni del proprietario (kokusho.nijl.ac.jp/page/usage.html)",
+   "immagini": null
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "nota": "Autori riconosciuti nel catalogo dei manoscritti: classici latini e greci, cristiani, medievali. categoria: classico-latino, classico-greco, cristiano, medievale; lingua: lingua in cui l'autore scrive (la, grc). nomi: bastano da soli nei campi forti (titolo, autore, segnatura). deboli: valgono solo se nel record compare anche un'opera dell'autore. escludi: frasi che annullano il riconoscimento (omonimi, ordini religiosi). santi: il nome conta anche dopo «s.», «sanctus», «saint» (per i santi omonimi degli altri autori il nome non conta). pseudo: il nome conta anche dopo «Ps.» o «Pseudo». opere: t = titolo italiano mostrato, v = varianti (latino, greco in alfabeto greco, italiano, inglese, tedesco, francese), d = distintiva (basta da sola nei campi forti). Il confronto ignora maiuscole, accenti, spiriti, punteggiatura, u/v e i/j.",
+ "nota": "Autori riconosciuti nel catalogo dei manoscritti: classici latini e greci, cristiani, medievali. categoria: classico-latino, classico-greco, cristiano, medievale; lingua: lingua in cui l'autore scrive (la, grc). nomi: bastano da soli nei campi forti (titolo, autore, segnatura). deboli: valgono solo se nel record compare anche un'opera dell'autore. escludi: frasi che annullano il riconoscimento (omonimi, ordini religiosi). santi: il nome conta anche dopo «s.», «sanctus», «saint» (per i santi omonimi degli altri autori il nome non conta). pseudo: il nome conta anche dopo «Ps.» o «Pseudo». opere: t = titolo italiano mostrato, v = varianti (latino, greco in alfabeto greco, italiano, inglese, tedesco, francese), d = distintiva (basta da sola nei campi forti). Il confronto ignora maiuscole, accenti, spiriti, punteggiatura, u/v e i/j. cjk: nomi traslitterati e titoli di traduzioni in scritture senza spazi (cinese, giapponese, coreano), cercati come sottostringhe nei campi forti (titolo, autore) che contengono quelle scritture; una stringa vale come nome, {v, t} come titolo dell'opera t; solo forme specifiche, mai un singolo carattere.",
  "autori": [
   {
    "id": "plauto",
@@ -640,6 +640,12 @@
    "escludi": [
     "Cicero novus",
     "Carmina de amicitia"
+   ],
+   "cjk": [
+    "西塞羅",
+    "西塞罗",
+    "キケロ",
+    "키케로"
    ]
   },
   {
@@ -864,6 +870,12 @@
       "Moretum"
      ]
     }
+   ],
+   "cjk": [
+    "維吉爾",
+    "维吉尔",
+    "ウェルギリウス",
+    "베르길리우스"
    ]
   },
   {
@@ -1121,6 +1133,12 @@
      ],
      "d": true
     }
+   ],
+   "cjk": [
+    "奧維德",
+    "奥维德",
+    "オウィディウス",
+    "오비디우스"
    ]
   },
   {
@@ -1371,6 +1389,11 @@
     "Epistolae Senecae et Pauli",
     "Senecae et Pauli",
     "Notae Senecae"
+   ],
+   "cjk": [
+    "塞涅卡",
+    "セネカ",
+    "세네카"
    ]
   },
   {
@@ -2248,6 +2271,12 @@
       "In librum Aristotelis Peri hermeneias"
      ]
     }
+   ],
+   "cjk": [
+    "波愛修",
+    "波爱修",
+    "ボエティウス",
+    "보에티우스"
    ]
   },
   {
@@ -3453,6 +3482,12 @@
      ],
      "d": true
     }
+   ],
+   "cjk": [
+    "荷馬",
+    "荷马",
+    "ホメロス",
+    "호메로스"
    ]
   },
   {
@@ -4539,6 +4574,12 @@
       "Epistolae"
      ]
     }
+   ],
+   "cjk": [
+    "柏拉圖",
+    "柏拉图",
+    "プラトン",
+    "플라톤"
    ]
   },
   {
@@ -4684,6 +4725,21 @@
       "De generatione et corruptione"
      ],
      "d": true
+    }
+   ],
+   "cjk": [
+    "亞里斯多德",
+    "亚里士多德",
+    "亞里士多德",
+    "アリストテレス",
+    "아리스토텔레스",
+    {
+     "v": "名理探",
+     "t": "Organon"
+    },
+    {
+     "v": "寰有詮",
+     "t": "De caelo"
     }
    ]
   },
@@ -5685,6 +5741,12 @@
       "De complexionibus"
      ]
     }
+   ],
+   "cjk": [
+    "蓋倫",
+    "盖伦",
+    "ガレノス",
+    "갈레노스"
    ]
   },
   {
@@ -5810,6 +5872,12 @@
      ],
      "d": true
     }
+   ],
+   "cjk": [
+    "多祿某",
+    "托勒密",
+    "プトレマイオス",
+    "프톨레마이오스"
    ]
   },
   {
@@ -5851,6 +5919,16 @@
       "Δεδομένα"
      ]
     }
+   ],
+   "cjk": [
+    {
+     "v": "幾何原本",
+     "t": "Elementi"
+    },
+    "歐幾里得",
+    "欧几里得",
+    "ユークリッド",
+    "유클리드"
    ]
   },
   {
@@ -6177,6 +6255,16 @@
       "Διατριβαί"
      ]
     }
+   ],
+   "cjk": [
+    {
+     "v": "二十五言",
+     "t": "Manuale"
+    },
+    "愛比克泰德",
+    "爱比克泰德",
+    "エピクテトス",
+    "에픽테토스"
    ]
   },
   {
@@ -6689,6 +6777,32 @@
       "Fabeln",
       "Μῦθοι"
      ]
+    }
+   ],
+   "cjk": [
+    "伊曽保",
+    "伊曾保",
+    {
+     "v": "伊曽保物語",
+     "t": "Favole"
+    },
+    {
+     "v": "伊曾保物語",
+     "t": "Favole"
+    },
+    {
+     "v": "イソホ物語",
+     "t": "Favole"
+    },
+    "イソップ",
+    {
+     "v": "伊索寓言",
+     "t": "Favole"
+    },
+    "이솝",
+    {
+     "v": "況義",
+     "t": "Favole"
     }
    ]
   },

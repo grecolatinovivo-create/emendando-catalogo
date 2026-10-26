@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T01:11:48.699Z",
+ "aggiornato": "2026-10-26T02:42:55.573Z",
  "totale": 364642,
- "con_autori": 22213,
+ "con_autori": 22223,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso.",
  "campi": [
   "id",
@@ -187,7 +187,7 @@
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 5127
+   "codici": 5137
   },
   "cristiano": {
    "nome": "autori cristiani",
@@ -743,7 +743,7 @@
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 1664
+   "codici": 1668
   },
   "teofrasto": {
    "nome": "Teofrasto",
@@ -995,7 +995,7 @@
    "nome": "Epitteto",
    "latino": "Epictetus",
    "categoria": "classico-greco",
-   "codici": 30
+   "codici": 32
   },
   "marco-aurelio": {
    "nome": "Marco Aurelio",
@@ -1079,7 +1079,7 @@
    "nome": "Esopo",
    "latino": "Aesopus",
    "categoria": "classico-greco",
-   "codici": 89
+   "codici": 93
   },
   "flavio-giuseppe": {
    "nome": "Flavio Giuseppe",
@@ -2398,7 +2398,7 @@
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
    "codici": 10068,
-   "con_autori": 1251,
+   "con_autori": 1252,
    "lingue": {
     "la": 3790,
     "fa": 94,
@@ -2447,7 +2447,7 @@
   "gallica": {
    "nome": "Bibliothèque nationale de France (gallica.bnf.fr)",
    "codici": 84198,
-   "con_autori": 10211,
+   "con_autori": 10215,
    "lingue": {
     "fr": 22571,
     "la": 15332,
@@ -2910,7 +2910,7 @@
   "kokusho": {
    "nome": "Kokusho Database, National Institute of Japanese Literature (kokusho.nijl.ac.jp)",
    "codici": 139385,
-   "con_autori": 0,
+   "con_autori": 5,
    "lingue": {
     "ja": 139385
    },
