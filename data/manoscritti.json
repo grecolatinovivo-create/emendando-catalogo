@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T08:53:58.022Z",
+ "aggiornato": "2026-10-26T09:04:02.179Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -102,6 +102,26 @@
    "codici": 0,
    "esito": "ok"
   },
+  "wellcome": {
+   "nome": "Wellcome Collection, Londra (api.wellcomecollection.org)",
+   "codici": 38,
+   "esito": "ok"
+  },
+  "isos": {
+   "nome": "Irish Script on Screen: Royal Irish Academy, National Library of Ireland, Trinity College Dublin e altre (isos.dias.ie)",
+   "codici": 0,
+   "esito": "ok"
+  },
+  "manchester": {
+   "nome": "John Rylands Research Institute and Library, Manchester (digitalcollections.manchester.ac.uk)",
+   "codici": 0,
+   "esito": "ok"
+  },
+  "cudl": {
+   "nome": "Cambridge Digital Library: University Library e college (cudl.lib.cam.ac.uk)",
+   "codici": 2,
+   "esito": "ok"
+  },
   "ndl": {
    "nome": "National Diet Library, Tokyo (dl.ndl.go.jp)",
    "codici": 0,
@@ -133,7 +153,7 @@
    "esito": "ok"
   }
  },
- "totale": 10254,
+ "totale": 10294,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -305499,6 +305519,65 @@
    "immagini": null
   },
   {
+   "id": "cudl-ms-add-01732",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Add. 1732",
+   "datazione": "the early 14th century",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aristotle",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Aristotle»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-ADD-01732",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-ADD-01732",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-ms-add-01879-00023",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Add. 1879.23",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Archimedes Palimpsest",
+   "autori": [
+    {
+     "id": "archimede",
+     "autore": "Archimede",
+     "latino": "Archimedes",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Archimedes Palimpsest»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-ADD-01879-00023",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-ADD-01879-00023",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
    "id": "bod-34eea5fd-a8c2-48ef-9844-e91dfff62078",
    "fonte": "bodleian",
    "biblioteca": "Christ Church",
@@ -371825,6 +371904,1210 @@
    "manifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10536998r/manifest.json",
    "pagina": "https://gallica.bnf.fr/ark:/12148/btv1b10536998r",
    "licenza": "Domaine public (Gallica, conditions d'utilisation)",
+   "immagini": null
+  },
+  {
+   "id": "wel-jhscpvmq",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "Greek MS.354",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Composite manuscript containing a commentaries on and a work by Hippocrates.",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Composite manuscript containing a commentaries on and a work by Hippocrates.»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b1968972x",
+   "pagina": "https://wellcomecollection.org/works/jhscpvmq",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-k96skg7h",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS Arabic 8",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "1 copy of Ḥudūd al-amrāḍ by Arzānī, followed by Hippocrates' al-Risālah al-qabrīyah and the beginning of an anonymous treatise on pregnancy.",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…rāḍ by Arzānī, followed by Hippocrates' al-Risālah al-qabrīyah and t…»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b20294669",
+   "pagina": "https://wellcomecollection.org/works/k96skg7h",
+   "licenza": "Wellcome Collection, Attribution 4.0 International (CC BY 4.0)",
+   "immagini": null
+  },
+  {
+   "id": "wel-rc844nbc",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS Arabic 8",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "MS Arabic 8.",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Muḥammad Akbar ibn Muḥammad Shāh Arzānī ; Hippocrates»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b20294669",
+   "pagina": "https://wellcomecollection.org/works/rc844nbc",
+   "licenza": "Wellcome Collection, Attribution 4.0 International (CC BY 4.0)",
+   "immagini": null
+  },
+  {
+   "id": "wel-r84wt9xs",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS Arabic 14",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "1 copy of al-Aʿḍāʾ al-ālimah by Galen",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «1 copy of al-Aʿḍāʾ al-ālimah by Galen»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b20294712",
+   "pagina": "https://wellcomecollection.org/works/r84wt9xs",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-s3fdfy42",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS Arabic 32",
+   "datazione": "Undated. Estimated to be 16th century A.D",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "A medical manuscript of Al-Ilaqi's Aphorisms with an index of contents on folio 1b.",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Aforismi"
+     ],
+     "corrispondenza": "titolo: «A medical manuscript of Al-Ilaqi's Aphorisms with an index of contents on folio 1b.»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b20294864",
+   "pagina": "https://wellcomecollection.org/works/s3fdfy42",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-mu5b8adg",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS Arabic 64",
+   "datazione": "Undated. Approximately 17th century",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "The Arabic translation of Galen's Commentary on Hippocratic Epidemics.",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «The Arabic translation of Galen's Commentary on Hippocratic Epidemics.»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b14835605",
+   "pagina": "https://wellcomecollection.org/works/mu5b8adg",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-jku94v7k",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS Arabic 107",
+   "datazione": "1779",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Al-aqwāl-l-kāfiya wa-l-fuṣūl-sh-shāfiya (Sufficient accounts and aphorisms on healing) by Alī b. Dā'ūd b. Yūsuf b. Omar b. Alī b. Rasūl ar-Rasūlī, Al-Malik al-Mujāhid.",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Aforismi"
+     ],
+     "corrispondenza": "titolo: «…fiya (Sufficient accounts and aphorisms on healing) by Alī b. Dā'ūd b…»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b20295303",
+   "pagina": "https://wellcomecollection.org/works/jku94v7k",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-z3pkwzmr",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS Arabic 157",
+   "datazione": "Undated. Approximately 18th century A.D",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "A medical manuscript of Al-Ilaqi's Aphorisms.",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Aforismi"
+     ],
+     "corrispondenza": "titolo: «A medical manuscript of Al-Ilaqi's Aphorisms.»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b1484638x",
+   "pagina": "https://wellcomecollection.org/works/z3pkwzmr",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-tuut3tnx",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS Arabic 163",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "1 copy of Afāḍil al-aṭṭibāʾ by Galen",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «1 copy of Afāḍil al-aṭṭibāʾ by Galen»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b20295650",
+   "pagina": "https://wellcomecollection.org/works/tuut3tnx",
+   "licenza": "Wellcome Collection, Attribution 4.0 International (CC BY 4.0)",
+   "immagini": null
+  },
+  {
+   "id": "wel-zk2uznhr",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS Arabic 203",
+   "datazione": "Undated. Estimated 19th century",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Galen's commentary on Hippocrates' book Tabi'at al-Insan (Nature of human beings). Hippocrates' work was originally translated into Arabic by Hunain ibn Ishaq and Galen's commentary by Isa ibn Yahya.",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Galen's commentary on Hippocrates'…»"
+    },
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…san (Nature of human beings). Hippocrates' work was originally translat…»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b20296010",
+   "pagina": "https://wellcomecollection.org/works/zk2uznhr",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-v2ydeec6",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS Arabic 490",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "1 anonymous work on the logic and philosophy of Aristotle and al-Mutanabbī",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «1 anonymous work on the logic and philosophy of Aristotle and al-Mutanabbī»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b20297580",
+   "pagina": "https://wellcomecollection.org/works/v2ydeec6",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-vs58jgv8",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS Arabic 879",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Astrological compendium based on the works of Ptolemy and others",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Astrological compendium based on the works of Ptolemy and others»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b20299229",
+   "pagina": "https://wellcomecollection.org/works/vs58jgv8",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-y8wkj7nb",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS Arabic 884",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "3 texts by Ptolemy on the subject of astrology",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «3 texts by Ptolemy on the subject of astrology»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b20299266",
+   "pagina": "https://wellcomecollection.org/works/y8wkj7nb",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-pcgkf6zn",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS Hebrew A12",
+   "datazione": "16th-18th century",
+   "secolo": [
+    16,
+    18
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Composite manuscript, including extracts from and comments on Galen and Avicenna. For pt. 2 see Steinschneider, pp. 692, 777.",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…extracts from and comments on Galen and Avicenna. For pt. 2 see S…»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b32274580",
+   "pagina": "https://wellcomecollection.org/works/pcgkf6zn",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-qkebe8e5",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS Malay 5",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "ms"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Catalogues of Malayan trees, roots, herbs, fish, snakes and frogs",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Rane"
+     ],
+     "corrispondenza": "titolo: «Catalogues of Malayan trees, roots, herbs, fish, snakes and frogs»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b14850370",
+   "pagina": "https://wellcomecollection.org/works/qkebe8e5",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-s5cmqb9q",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS Malay 8",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "ms"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Catalogues of Malayan plants, birds and snakes.",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Uccelli"
+     ],
+     "corrispondenza": "titolo: «Catalogues of Malayan plants, birds and snakes.»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b30175082",
+   "pagina": "https://wellcomecollection.org/works/s5cmqb9q",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-eya2jd8q",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.3",
+   "datazione": "c.1300",
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Adam of Buckfeld and others, Commentaries on the 'Physica', 'Parva naturalia', 'De generatione et corruptione', 'Metaphysica', 'De coelo et mundo', 'De meteoris', 'De plantis' etc., of Aristotle. Writ",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica",
+      "De generatione et corruptione",
+      "De anima"
+     ],
+     "corrispondenza": "titolo: «…eoris', 'De plantis' etc., of Aristotle. Writ»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b18598006",
+   "pagina": "https://wellcomecollection.org/works/eya2jd8q",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-adsjr6e8",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.55",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aristotelian treatises, etc. Contents 1. ff. 1r-17v Aristotle, Analytica priora, Book I, 1-26 (part) only f. 1r Primum oportet dicere circa quid et de quo es intencio ... f. 7v ... 3a vero per postrem",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Organon",
+      "De interpretatione"
+     ],
+     "corrispondenza": "titolo: «…, etc. Contents 1. ff. 1r-17v Aristotle, Analytica priora, Book I, 1-…»"
+    },
+    {
+     "id": "porfirio",
+     "autore": "Porfirio",
+     "latino": "Porphyrius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Isagoge"
+     ],
+     "corrispondenza": "descrizione: «…de monchperg. 3. ff. 49r-59r Porphyry, Isagoge in logicam f. 49r Po…»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b19656452",
+   "pagina": "https://wellcomecollection.org/works/adsjr6e8",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-acm2nxce",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.56",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aristotelian treatises, etc. The text is heavily contracted throughout. Contents 1. ff. 2r-49v Aristotle, Analytica posteriora f. 2r Omnis doctrina et disciplina intellectiva ex preexistenti fit cogni",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Organon",
+      "Fisica",
+      "De caelo"
+     ],
+     "corrispondenza": "titolo: «…ghout. Contents 1. ff. 2r-49v Aristotle, Analytica posteriora f. 2r O…»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b19123437",
+   "pagina": "https://wellcomecollection.org/works/acm2nxce",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-kpeqc2b8",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.68",
+   "datazione": "Mid 15th Century",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Pseuds-Aristoteles.",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Pseuds-Aristoteles.»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b18725259",
+   "pagina": "https://wellcomecollection.org/works/kpeqc2b8",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-an28wzpy",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.74",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "A short collection of texts on the virtues and healing properties of wine, including De vinis, traditionally attributed to Arnaldus de Villanova, and excerpts from Palladius, Opus agriculturae, in Lat",
+   "autori": [
+    {
+     "id": "palladio",
+     "autore": "Palladio",
+     "latino": "Palladius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Opus agriculturae"
+     ],
+     "corrispondenza": "titolo: «…Villanova, and excerpts from Palladius, Opus agriculturae, in Lat»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b19625650",
+   "pagina": "https://wellcomecollection.org/works/an28wzpy",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-adq33rjw",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.79",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Contents 1. ff. 1r-8v Anonymous astrological-divinatory text A fortune-telling game which matches 12 birds to zodiacal signs ff. 1r-7r, followed by instructions for playing the game ff. 7v-8v. On f. 1",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Uccelli"
+     ],
+     "corrispondenza": "titolo: «…telling game which matches 12 birds to zodiacal signs ff. 1r-7r,…»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b20927988",
+   "pagina": "https://wellcomecollection.org/works/adq33rjw",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-amutncdm",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.83",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Articella Contents 1. ff. 1r-4v Hippocrates, Liber prognosticorum f. 1r Omnis qui medicine studio artis seu gloriam ... f. 4v ... ordine preceptorum. Explecit liber prognosticorum. 2. ff. 4v-10v Theop",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Ars medica"
+     ],
+     "corrispondenza": "descrizione: «…gocio pulsuum. 4. ff. 12r-26r Galen, Tegni f. 12r Incipit tegni G…»"
+    },
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Regime nelle malattie acute"
+     ],
+     "corrispondenza": "titolo: «…ticella Contents 1. ff. 1r-4v Hippocrates, Liber prognosticorum f. 1r O…»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b18935473",
+   "pagina": "https://wellcomecollection.org/works/amutncdm",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-aebvfegx",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.86",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "1. Johannitus. Isagoge ad Tegni Galenii: 19 ll. Fol. 2 eadem membra reguntur et eorum qualitas constar/... 21v, line 2 qualitate. tempore, quantitate, ordine. boni, ma/liue discretione. 2. Hippocrates",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Ars medica"
+     ],
+     "corrispondenza": "titolo: «1. Johannitus. Isagoge ad Tegni Galenii: 19 ll. Fol. 2 eadem…»"
+    },
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Aforismi",
+      "Prognostico"
+     ],
+     "corrispondenza": "titolo: «…boni, ma/liue discretione. 2. Hippocrates»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b19608469",
+   "pagina": "https://wellcomecollection.org/works/aebvfegx",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-qftazqnx",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.140",
+   "datazione": "Early 15th century",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Bonaventura da Iseo, Liber Compostelle, with additional alchemical recipes in Italian and Latin.",
+   "autori": [
+    {
+     "id": "iseo",
+     "autore": "Iseo",
+     "latino": "Isaeus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Bonaventura da Iseo, Liber Compostelle, with addi…»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b19571355",
+   "pagina": "https://wellcomecollection.org/works/qftazqnx",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-nkn97vsa",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.284",
+   "datazione": "Early 14th Century",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Galen, Claudius (131-201).",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Ars medica"
+     ],
+     "corrispondenza": "titolo: «Galen, Claudius (131-201).»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b19343541",
+   "pagina": "https://wellcomecollection.org/works/nkn97vsa",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-tjm9yj62",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.285",
+   "datazione": "Early 14th Century",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Galenic miscellany.",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [
+      "De methodo medendi"
+     ],
+     "corrispondenza": "descrizione: «…actions.Contents1. ff. 1r-40r Galen, Methodus medendi, books VII-…»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b19553766",
+   "pagina": "https://wellcomecollection.org/works/tjm9yj62",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-arpjjpqf",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.286",
+   "datazione": "Mid 14th century",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Galenic miscellany.",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [
+      "De methodo medendi"
+     ],
+     "corrispondenza": "descrizione: «…io of Pisaf. 1r Incipit liber Galeni de differentia febrium. Capit…»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b19294979",
+   "pagina": "https://wellcomecollection.org/works/arpjjpqf",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-mzq25yfu",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.287",
+   "datazione": "Late 14th Century",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Galen, Claudius, 131-201.",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [
+      "De methodo medendi"
+     ],
+     "corrispondenza": "titolo: «Galen, Claudius, 131-201.»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b19335830",
+   "pagina": "https://wellcomecollection.org/works/mzq25yfu",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-dcu86j3e",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.288",
+   "datazione": "Early 15th Century",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Galen, Claudius, 131-201.",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Galen, Claudius, 131-201.»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b19293823",
+   "pagina": "https://wellcomecollection.org/works/dcu86j3e",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-ynjcvk8r",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.333",
+   "datazione": "Early 14th Century",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Commentaries of Henry of Ghent on Aristotle.",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica"
+     ],
+     "corrispondenza": "titolo: «Commentaries of Henry of Ghent on Aristotle.»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b1929461x",
+   "pagina": "https://wellcomecollection.org/works/ynjcvk8r",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-qay8y64b",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.352",
+   "datazione": "Late 14th Century",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Hippocrates (460-375 B.C.)",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Aforismi"
+     ],
+     "corrispondenza": "titolo: «Hippocrates (460-375 B.C.)»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b19247837",
+   "pagina": "https://wellcomecollection.org/works/qay8y64b",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-tchdej3s",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.390",
+   "datazione": "Early 14th Century",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Johannitius (Hunayn ibn Ishaq) (810-877).",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Ars medica"
+     ],
+     "corrispondenza": "descrizione: «Isagoge in Tegni Galeni. Written in a small gothic ha…»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b19694593",
+   "pagina": "https://wellcomecollection.org/works/tchdej3s",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-svawfyfa",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.590",
+   "datazione": "Middle 15th century",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la",
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Palladius, Rutilius Taurus Aemilianus, De agricultura [Book I-Book XI, Chapter 11].",
+   "autori": [
+    {
+     "id": "palladio",
+     "autore": "Palladio",
+     "latino": "Palladius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Opus agriculturae"
+     ],
+     "corrispondenza": "titolo: «Palladius, Rutilius Taurus Aemilianus, De agricultura [Book I-Book XI, Chapter 11].»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b19684605",
+   "pagina": "https://wellcomecollection.org/works/svawfyfa",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-juyezuzx",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.742",
+   "datazione": "1525-1610?",
+   "secolo": [
+    16,
+    17
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Segreti.",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Aforismi"
+     ],
+     "corrispondenza": "descrizione: «…he fano cerotti, etc. 44v-End HIPPOCRATES. Aforismi. (Abbreviated). The…»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b18589327",
+   "pagina": "https://wellcomecollection.org/works/juyezuzx",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-zxuhaz5t",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.3750",
+   "datazione": "Early 18th century",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Paracelsus (Bombastus ab Hohenheim), Aureolus Philippus Theophrastus (1493-1541).",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Paracelsus (Bombastus ab Hohenheim), Aureolus Philippus Theophrastus (1493-1541).»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b19538029",
+   "pagina": "https://wellcomecollection.org/works/zxuhaz5t",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-sgrkn9s9",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.8687",
+   "datazione": "1732-[?]",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Sarah Tully, Lady Hoare [and others]: \"Book of Receipts for Cookery and Pastry & c\".",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Sarah Tully, Lady Hoare [and others]: \"Book of Receipts for Cookery and Pastry & c\".»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b19553717",
+   "pagina": "https://wellcomecollection.org/works/sgrkn9s9",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
+   "id": "wel-gem65dar",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.MSL.60",
+   "datazione": "Early 15th century",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Greek Medical Texts.",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Aforismi"
+     ],
+     "corrispondenza": "descrizione: «…from writers of note, such as Hippocrates and Galen, it contains extrac…»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b19683704",
+   "pagina": "https://wellcomecollection.org/works/gem65dar",
+   "licenza": "Wellcome Collection, Public Domain Mark",
    "immagini": null
   },
   {

@@ -2,11 +2,12 @@
 // Catalogo dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate: tutti i manoscritti, di ogni lingua ed epoca.
 // Autori e opere riconosciuti (classici latini e greci, cristiani, medievali) sono un'informazione in più, per cercare e filtrare.
 // Uso:
-//   node scripts/raccogli.mjs [--fonti=heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,vaticana] [--vaticana-minuti=20] [--oai-minuti=60]
+//   node scripts/raccogli.mjs [--fonti=heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,vaticana] [--vaticana-minuti=20] [--oai-minuti=60]
 //        [--bodleian-minuti=30] [--gallica-minuti=30] [--laurenziana-minuti=15] [--ambrosiana-minuti=20] [--montecassino-minuti=5] [--casanatense-minuti=5] [--bub-minuti=10]
 //        [--leiden-minuti=15] [--hsp-minuti=10] [--berlino-minuti=60] [--indici-minuti=20]
 //        [--yale-minuti=30] [--penn-minuti=15] [--ds-minuti=15] [--walters-minuti=20] [--loc-minuti=10] [--nlg-minuti=15]
-//        [--ndl-minuti=60] [--kokusho-minuti=60] [--auckland-minuti=10] [--toronto-minuti=15] [--minuti-totali=160] [--solo-costruisci]
+//        [--ndl-minuti=60] [--kokusho-minuti=60] [--auckland-minuti=10] [--toronto-minuti=15]
+//        [--wellcome-minuti=10] [--isos-minuti=20] [--manchester-minuti=30] [--cudl-minuti=30] [--cbl-minuti=60] [--minuti-totali=160] [--solo-costruisci]
 // Scrive il catalogo diviso per fonte (vedi costruisci.mjs): data/catalogo/indice.json, data/catalogo/indice/<fonte>-<n>.json, data/catalogo/voci/<fonte>-<n>.json,
 // più data/manoscritti.json (compatibilità: solo i codici con autori classici), e gli stati delle scansioni a riprese
 // (data/vaticana.json, data/bodleian.json, data/laurenziana.json, data/leiden.json, data/heidelberg-indici.json; data/<fonte>.json per le fonti del Handschriftenportal: wolfenbuettel, bamberga, karlsruhe, stoccarda, colonia, lipsia; data/yale.json, data/penn.json, data/walters.json).
@@ -38,7 +39,11 @@ import { scansionaDs, recordDs, esistentiDa } from "./fonti/ds.mjs";
 import { scansionaWalters, recordWalters, scriviManifestiWalters, leggiStato as statoWalters } from "./fonti/walters.mjs";
 import { scansionaLoc, recordLoc } from "./fonti/loc.mjs";
 import { scansionaNlg, recordNlg } from "./fonti/nlg.mjs";
-import { recordCudl } from "./fonti/cudl.mjs";
+import { scansionaCudl, recordCudl } from "./fonti/cudl.mjs";
+import { scansionaManchester, recordManchester } from "./fonti/manchester.mjs";
+import { scansionaWellcome, recordWellcome } from "./fonti/wellcome.mjs";
+import { scansionaCbl, recordCbl } from "./fonti/cbl.mjs";
+import { scansionaIsos, recordIsos } from "./fonti/isos.mjs";
 import { scansionaNdl, recordNdl } from "./fonti/ndl.mjs";
 import { scansionaKokusho, recordKokusho } from "./fonti/kokusho.mjs";
 import { scansionaAuckland, recordAuckland } from "./fonti/auckland.mjs";
@@ -48,7 +53,7 @@ import { scriviRegistro, registraEsiti } from "./registro.mjs";
 import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
-const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,vaticana").split(",");
+const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,isos,manchester,cudl,cbl,vaticana").split(",");
 const INIZIO = Date.now();
 export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)", berlino: "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
   bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -63,7 +68,11 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   ds: "Digital Scriptorium: istituzioni statunitensi (search.digital-scriptorium.org)",
   walters: "Walters Art Museum, Baltimore (thedigitalwalters.org; manifesti IIIF scritti da Emendando)",
   loc: "Library of Congress: microfilm del Sinai e dei Patriarcati di Gerusalemme (loc.gov; manifesti scritti dal catalogo)",
-  cudl: "Cambridge Digital Library (cudl.lib.cam.ac.uk; elenco raccolto dal browser)",
+  cudl: "Cambridge Digital Library: University Library e college (cudl.lib.cam.ac.uk)",
+  wellcome: "Wellcome Collection, Londra (api.wellcomecollection.org)",
+  isos: "Irish Script on Screen: Royal Irish Academy, National Library of Ireland, Trinity College Dublin e altre (isos.dias.ie)",
+  manchester: "John Rylands Research Institute and Library, Manchester (digitalcollections.manchester.ac.uk)",
+  cbl: "Chester Beatty, Dublino (viewer.cbl.ie)",
   nlg: "Biblioteca Nazionale di Grecia, Atene (digitalcollections.nlg.gr; copie dei manifesti scritte dal catalogo)",
   ndl: "National Diet Library, Tokyo (dl.ndl.go.jp)", kokusho: "Kokusho Database, National Institute of Japanese Literature (kokusho.nijl.ac.jp)",
   auckland: "Auckland Libraries, Sir George Grey Special Collections (kura.aucklandlibraries.govt.nz)",
@@ -202,8 +211,13 @@ async function main() {
     // Library of Congress e Biblioteca Nazionale di Grecia: i manifesti li scrive il catalogo (scripts/manifesti.mjs, ramo «manifesti»)
     loc: async () => recordLoc(await scansionaLoc({ minuti: min("loc", +(arg["loc-minuti"] ?? 10)), soloCache: sc("loc") })),
     nlg: async () => recordNlg(await scansionaNlg({ minuti: min("nlg", +(arg["nlg-minuti"] ?? 15)), soloCache: sc("nlg") })),
-    // Cambridge: nessuna richiesta, l'elenco viene dal browser (scripts/browser/cudl.js -> data/cudl.json)
-    cudl: async () => recordCudl(),
+    // Regno Unito e Irlanda (corsia «uk»): Wellcome, Irish Script on Screen, Manchester, Cambridge, Chester Beatty
+    wellcome: async () => recordWellcome(await scansionaWellcome({ minuti: min("wellcome", +(arg["wellcome-minuti"] ?? 10)), soloCache: sc("wellcome") })),
+    isos: async () => recordIsos(await scansionaIsos({ minuti: min("isos", +(arg["isos-minuti"] ?? 20)), soloCache: sc("isos") })),
+    manchester: async () => recordManchester(await scansionaManchester({ minuti: min("manchester", +(arg["manchester-minuti"] ?? 30)), soloCache: sc("manchester") })),
+    // Cambridge: dal 26 ottobre 2026 dal server, con le collezioni IIIF (/iiif/collection/<slug>)
+    cudl: async () => recordCudl(await scansionaCudl({ minuti: min("cudl", +(arg["cudl-minuti"] ?? 30)), soloCache: sc("cudl") })),
+    cbl: async () => recordCbl(await scansionaCbl({ minuti: min("cbl", +(arg["cbl-minuti"] ?? 60)), soloCache: sc("cbl") })),
     // Asia orientale e Oceania (corsia «mondo»): National Diet Library, Kokusho (NIJL), Auckland
     ndl: async () => recordNdl(await scansionaNdl({ minuti: min("ndl", +(arg["ndl-minuti"] ?? 60)), soloCache: sc("ndl") })),
     kokusho: async () => recordKokusho(await scansionaKokusho({ minuti: min("kokusho", +(arg["kokusho-minuti"] ?? 60)), soloCache: sc("kokusho") })),

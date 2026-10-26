@@ -14,11 +14,11 @@ In tutto 196 nazioni: i 193 stati dell'ONU, la Città del Vaticano, la Palestina
 
 | Stato | Nazioni |
 |---|---|
-| agganciata | 18 |
+| agganciata | 19 |
 | controllata, niente da agganciare | 51 |
 | controllata, bloccata | 5 |
 | in corso | 28 |
-| non ancora controllata | 94 |
+| non ancora controllata | 93 |
 | **totale** | **196** |
 
 Che cosa vuol dire ogni stato:
@@ -57,6 +57,8 @@ Nessuna è già nel catalogo o nel registro delle biblioteche (docs/BIBLIOTECHE.
 | 19 | ULB Darmstadt | Germania | tudigit.ulb.tu-darmstadt.de | oltre 1000 (stima) |
 | 20 | National Library of Scotland | Regno Unito | digital.nls.uk | alcune centinaia |
 
+Aggiornamento del 26 ottobre 2026 (Regno Unito e Irlanda, corsia `raccolta-uk.yml`): agganciate Chester Beatty (n. 5), Manchester (n. 6) e Wellcome (n. 9); Trinity College Dublin (n. 10) non si può (CAPTCHA), ma i suoi codici irlandesi entrano tramite Irish Script on Screen; Durham (n. 15) non si può (il robots.txt vieta tutto); National Library of Wales (n. 16) e National Library of Scotland (n. 20) non si possono per ora (Cloudflare; i codici gaelici della NLS entrano tramite ISOS); Parker (n. 4) non si può per ora (verifica anti-robot). Agganciate anche Cambridge Digital Library (dal server) e Irish Script on Screen (con la Royal Irish Academy). Dettagli in docs/BIBLIOTECHE.md.
+
 Restano fuori da questa lista perché sono già nel registro: Cambridge Digital Library (in lavorazione), British Library (bloccata), Det Kongelige Bibliotek, Koninklijke Bibliotheek, Uppsala e Biblioteka Jagiellońska (da verificare), Qatar Digital Library e National Library of Israel (bloccate).
 
 ## Come leggere le tabelle
@@ -89,8 +91,8 @@ Francia, Benelux, isole britanniche, Germania, Austria, Svizzera e piccoli stati
 | Paesi Bassi | agganciata | Universiteitsbibliotheek Leiden: 3.586 codici | Koninklijke Bibliotheek dell'Aia: nel registro, da verificare. Leida: papiri fuori (immagini non più in rete). | Utrecht |
 | Lussemburgo | non ancora controllata | nessuna | nessuna | Biblioteca nazionale (poco) |
 | Monaco | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
-| Regno Unito | agganciata | Bodleian Library, Oxford: 9.775; St John's College, Oxford: 141; Christ Church, Oxford: 72; Magdalen College, Oxford: 31; Exeter College, Oxford: 31; Jesus College, Oxford: 20; altre 18 biblioteche: 126. **Totale: 10.196 codici** | British Library: bloccata dal 2023 (attacco informatico). Cambridge Digital Library: in lavorazione (elenco dal browser). International Dunhuang Programme: bloccato. Papiri della British Library e di Ossirinco: fuori. | Parker, Manchester, Wellcome, Durham, Galles, Scozia, Trinity Cambridge, Edimburgo, SOAS, Lambeth, Glasgow |
-| Irlanda | non ancora controllata | nessuna | nessuna | Chester Beatty, Trinity College Dublin, Irish Script on Screen (con la Royal Irish Academy), National Library of Ireland |
+| Regno Unito | agganciata | Bodleian Library, Oxford: 9.775; St John's College, Oxford: 141; Christ Church, Oxford: 72; Magdalen College, Oxford: 31; Exeter College, Oxford: 31; Jesus College, Oxford: 20; altre 18 biblioteche: 126. **Totale: 10.196 codici**. Dal 26 ottobre 2026 in lettura (corsia uk): Wellcome Collection (circa 1600), Manchester (John Rylands), Cambridge Digital Library (University Library e college), codici della NLS e della British Library tramite Irish Script on Screen | British Library: bloccata dal 2023 (riprova del 26 ottobre 2026). Parker: verifica anti-robot. Durham: robots.txt vieta tutto. National Library of Wales e National Library of Scotland: Cloudflare. International Dunhuang Programme: bloccato. Papiri della British Library e di Ossirinco: fuori. Endangered Archives Programme: da fare dal browser. | Trinity Cambridge, Edimburgo, SOAS, Lambeth, Glasgow |
+| Irlanda | agganciata | Dal 26 ottobre 2026 in lettura (corsia uk): Chester Beatty, Dublino (circa 3000 oggetti da leggere, poi solo i manoscritti librari); Irish Script on Screen (circa 500 codici: Royal Irish Academy, National Library of Ireland, Trinity College Dublin, UCD, Maynooth, Cork, Galway, King's Inns, Marsh's Library e altre) | Trinity College Dublin, Digital Collections: CAPTCHA (i codici irlandesi del TCD entrano tramite ISOS). | National Library of Ireland (catalogo proprio) |
 | Germania | agganciata | Bayerische Staatsbibliothek, München: 28.788; Heidelberger Papyrussammlung: 4.633; Staatsbibliothek zu Berlin: 3.296; Universitätsbibliothek Leipzig: 2.677; Universitätsbibliothek Heidelberg: 2.004; Wissenschaftliche Stadtbibliothek Mainz: 618; altre 178 biblioteche: 982. **Totale: 42.998 codici** | Wolfenbüttel, Karlsruhe, Stoccarda: sospese (server non raggiungibili). Treviri: niente IIIF. Papiri di Berlino: fuori (serve un permesso). Papiri di Colonia: in attesa di decisione. | Dresda, Francoforte, Darmstadt, Tubinga, Gottinga, Kassel, Düsseldorf, Friburgo, Würzburg, Fulda, Amburgo, Halle |
 | Austria | in corso | Österreichische Nationalbibliothek, Wien: 3; Österreichisches Staatsarchiv, Wien: 1; Tiroler Landesmuseum Ferdinandeum, Innsbruck: 1; Stiftsbibliothek St. Paul im Lavanttal, St. Paul in Kärnten: 1. **Totale: 6 codici** (pochi codici, arrivati da un'altra fonte) | Österreichische Nationalbibliothek: bloccata ai server (da fare dal browser). Papiri di Vienna: da provare. | Le vede il lavoro in corso. |
 | Svizzera | agganciata | Stiftsbibliothek, St. Gallen: 956; Universitätsbibliothek, Basel: 305; Fondation Martin Bodmer, Cologny: 180; Bibliothèque cantonale jurassienne, Porrentruy: 121; Bibliothèque de Genève: 108; Stiftsbibliothek, Einsiedeln: 79; altre 78 biblioteche: 972. **Totale: 2.721 codici** | Ginevra: papiri fuori. | Nessuna di rilievo: e-codices raccoglie già le biblioteche svizzere. |
@@ -110,20 +112,16 @@ Francia, Benelux, isole britanniche, Germania, Austria, Svizzera e piccoli stati
 | Belgio | Flandrica (biblioteche storiche delle Fiandre, con Bruges) | www.flandrica.be | non si sa | alcune centinaia | bassa |
 | Paesi Bassi | Biblioteca dell'Università di Utrecht (Salterio di Utrecht e altri) | objects.library.uu.nl | sì | alcune centinaia | media |
 | Lussemburgo | Bibliothèque nationale du Luxembourg | eluxemburgensia.lu | non si sa | poche decine | bassa |
-| Regno Unito | Parker Library on the Web (Corpus Christi College, Cambridge) | parker.stanford.edu | sì | circa 560 | alta |
-| Regno Unito | Manchester Digital Collections (John Rylands Library) | www.digitalcollections.manchester.ac.uk | sì | alcune migliaia (latino, greco, arabo, persiano, ebraico) | alta |
-| Regno Unito | Wellcome Collection (medicina: latino medievale, arabo, persiano, sanscrito) | wellcomecollection.org/collections | sì | alcune migliaia | alta |
-| Regno Unito | Durham: biblioteca della cattedrale e dell'università (Durham Priory Library Recreated) | iiif.durham.ac.uk | sì | alcune centinaia | alta |
-| Regno Unito | National Library of Wales (Peniarth, Libro nero di Carmarthen e altri) | www.library.wales | sì | alcune centinaia | alta |
-| Regno Unito | National Library of Scotland | digital.nls.uk | sì | alcune centinaia | alta |
+| Regno Unito | Parker Library on the Web (Corpus Christi College, Cambridge) | parker.stanford.edu | sì, ma elenco dietro verifica anti-robot (26 ottobre 2026) | circa 560 | alta |
+| Regno Unito | Durham: biblioteca della cattedrale e dell'università (Durham Priory Library Recreated) | iiif.durham.ac.uk | sì, ma il robots.txt vieta tutto (26 ottobre 2026) | alcune centinaia | alta |
+| Regno Unito | National Library of Wales (Peniarth, Libro nero di Carmarthen e altri) | www.library.wales | sì, ma elenco dietro Cloudflare (26 ottobre 2026) | alcune centinaia | alta |
+| Regno Unito | National Library of Scotland | digital.nls.uk | sì, ma siti dietro Cloudflare e AWS WAF (26 ottobre 2026); i gaelici entrano tramite ISOS | alcune centinaia | alta |
 | Regno Unito | Trinity College, Cambridge (Wren Library) | mss-cat.trin.cam.ac.uk | non si sa | oltre 1000 (stima) | media |
 | Regno Unito | Università di Edimburgo (anche arabi e persiani) | collections.ed.ac.uk | sì | alcune centinaia | media |
 | Regno Unito | SOAS, Università di Londra (Asia e Africa) | digital.soas.ac.uk | sì | alcune centinaia | media |
 | Regno Unito | Lambeth Palace Library | www.lambethpalacelibrary.org | non si sa | poche decine | bassa |
 | Regno Unito | Università di Glasgow (manoscritti Hunter) | www.gla.ac.uk/collections | non si sa | decine | bassa |
-| Irlanda | Chester Beatty, Dublino (arabo, persiano, turco, armeno, etiopico, papiri biblici, latino) | viewer.cbl.ie | sì | alcune migliaia | alta |
-| Irlanda | Trinity College Dublin (Libro di Kells, Libro di Durrow, Libro di Armagh) | digitalcollections.tcd.ie | sì | alcune centinaia | alta |
-| Irlanda | Irish Script on Screen (DIAS): manoscritti irlandesi della Royal Irish Academy, di UCD e di altre biblioteche | isos.dias.ie | non si sa | circa 400 (stima) | media |
+| Irlanda | Trinity College Dublin (Libro di Kells, Libro di Durrow, Libro di Armagh) | digitalcollections.tcd.ie | sì, ma il sito chiede un CAPTCHA (26 ottobre 2026); i codici irlandesi entrano tramite ISOS | alcune centinaia | alta |
 | Irlanda | National Library of Ireland | catalogue.nli.ie | non si sa | alcune centinaia | bassa |
 | Germania | SLUB Dresda (anche il Codice di Dresda maya) | digital.slub-dresden.de | sì | alcune migliaia | alta |
 | Germania | Universitätsbibliothek Frankfurt am Main (anche ebraici) | sammlungen.ub.uni-frankfurt.de | sì | alcune migliaia | alta |
@@ -567,7 +565,7 @@ Un solo aggregatore può coprire molte nazioni insieme.
 
 | Aggregatore | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità | Nota |
 |---|---|---|---|---|---|
-| British Library, Endangered Archives Programme (EAP) | eap.bl.uk | non si sa (il sito è tornato dopo l'attacco informatico del 2023; il IIIF va provato) | milioni di immagini; molte raccolte di manoscritti di Africa, Asia e Medio Oriente | media | Non è nel registro. Da provare per primo fra gli aggregatori: da solo copre Mali, Etiopia, Sri Lanka, Nigeria, Kenya, Tanzania e molti altri paesi. |
+| British Library, Endangered Archives Programme (EAP) | eap.bl.uk | sì: manifesti IIIF 3 e immagini con CORS aperto dal browser (prova del 26 ottobre 2026); il sito respinge i server (AWS WAF) | milioni di immagini; molte raccolte di manoscritti di Africa, Asia e Medio Oriente | media | Nel registro (Regno Unito e Irlanda): da fare dal browser, con un elenco dei fascicoli dei soli progetti di manoscritti librari. Da solo copre Mali, Etiopia, Sri Lanka, Nigeria, Kenya, Tanzania e molti altri paesi. |
 | Qatar Digital Library | www.qdl.qa | sì, ma dietro la verifica anti-robot di Cloudflare | decine di migliaia di documenti; alcune migliaia di manoscritti arabi (molti della British Library) | media | Già nel registro: bloccata. Da fare dal browser, come Gallica. |
 | vHMML (Hill Museum & Manuscript Library) | www.vhmml.org | sì, ma vietato dal robots.txt | circa 262.000 oggetti (Siria, Iraq, Libano, Etiopia, Mali, Malta e altri) | — | Già nel registro: non si può. |
 | Biblissima+ (portale francese dei manoscritti) | portail.biblissima.fr | sì | indice dei manifesti di BnF, BVMM e molte altre biblioteche | media | Non è nel registro. Utile per trovare in un colpo i manifesti delle biblioteche francesi fuori da Gallica. |

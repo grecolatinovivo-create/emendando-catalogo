@@ -189,6 +189,21 @@ L = {
  "jp-tondabayashi": ("Tondabayashi", None, "Tondabayashichō", "JP", "#1850034", ["Tondabayashi"]),
  "jp-date-hokkaido": ("Date (Hokkaidō)", None, "Date", "JP", "#2130421", ["Date"]),
  "jp-tanabe-wakayama": ("Tanabe (Wakayama)", None, "Tanabe", "JP", "#1850708", ["Tanabe"]),
+ "manchester": ("Manchester", None, "Manchester", "GB", None, ["Manchester"]),
+ "dublino": ("Dublino", "Dublin", "Dublin", "IE", None, ["Dublin", "Dublino"]),
+ "edimburgo": ("Edimburgo", "Edinburgh", "Edinburgh", "GB", None, ["Edinburgh", "Edimburgo"]),
+ "maynooth": ("Maynooth", None, "Maynooth", "IE", None, ["Maynooth"]),
+ "kilkenny": ("Kilkenny", None, "Kilkenny", "IE", None, ["Kilkenny"]),
+ "rennes": ("Rennes", None, "Rennes", "FR", None, ["Rennes"]),
+ "cork": ("Cork", None, "Cork", "IE", None, ["Cork"]),
+ "galway": ("Galway", None, "Galway", "IE", None, ["Galway"]),
+ "waterford": ("Waterford", None, "Waterford", "IE", None, ["Waterford"]),
+ "castlerea": ("Castlerea", None, "Castlerea", "IE", None, ["Castlerea"]),
+ "cappoquin": ("Cappoquin", None, "Cappoquin", "IE", None, ["Cappoquin"]),
+ "bury-st-edmunds": ("Bury St Edmunds", None, "Bury St Edmunds", "GB", None, ["Bury St Edmunds"]),
+ "melbourne": ("Melbourne", None, "Melbourne", "AU", None, ["Melbourne", "Melbourne (Australia)"]),
+ "bruxelles": ("Bruxelles", "Brussels", "Brussels", "BE", None, ["Brussels", "Bruxelles"]),
+ "copenaghen": ("Copenaghen", "Copenhagen", "Copenhagen", "DK", None, ["Copenhagen", "Copenaghen", "København"]),
 }
 # biblioteche senza città nel catalogo (o con città non geografica): nome esatto -> id
 BIB = {
@@ -231,4 +246,5 @@ BIB = {
 # città della fonte, per le voci senza città: fonte -> id
 FONTI = {"gallica": "parigi", "heidelberg": "heidelberg", "vaticana": "citta-del-vaticano", "bodleian": "oxford", "laurenziana": "firenze",
          "bsb": "monaco-di-baviera", "ndl": "tokyo", "berlino": "berlino", "lipsia": "lipsia", "leiden": "leida", "ambrosiana": "milano",
-         "bub": "bologna", "nlg": "atene", "colonia": "colonia", "montecassino": "montecassino", "bamberga": "bamberga", "casanatense": "roma", "auckland": "auckland", "toronto": "toronto"}
+         "bub": "bologna", "nlg": "atene", "colonia": "colonia", "montecassino": "montecassino", "bamberga": "bamberga", "casanatense": "roma", "auckland": "auckland", "toronto": "toronto",
+         "wellcome": "londra", "manchester": "manchester", "cbl": "dublino", "cudl": "cambridge"}

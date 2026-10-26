@@ -36,7 +36,11 @@ export const BIBLIOTECHE = {
   ds: { biblioteca: "Digital Scriptorium (istituzioni statunitensi: Princeton, Columbia, Harvard, Huntington, Free Library e altre; dettaglio sotto la tabella)", citta: "Stati Uniti", come: "ogni notte, da sola (raccolta completa ogni 6 giorni)" },
   walters: { biblioteca: "The Walters Art Museum (manifesti IIIF scritti da Emendando)", citta: "Baltimora (Stati Uniti)", come: "corsia usa: a ruota finché non sono letti tutti i codici, poi ogni notte (elenco ogni 6 giorni; misure delle immagini)" },
   loc: { biblioteca: "Library of Congress: microfilm del Monastero di Santa Caterina del Sinai e dei Patriarcati greco-ortodosso e armeno di Gerusalemme", citta: "Sinai (Egitto) e Gerusalemme", come: "corsia usa: a ruota finché la prima lettura non è finita, poi ogni notte (elenco completo ogni 6 giorni; manifesti scritti dal catalogo)" },
-  cudl: { biblioteca: "Cambridge Digital Library (University Library e college)", citta: "Cambridge", come: "va fatta a mano dal browser (scripts/browser/cudl.js)" },
+  cudl: { biblioteca: "Cambridge Digital Library (University Library e college)", citta: "Cambridge", come: "corsia uk: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 6 giorni)" },
+  wellcome: { biblioteca: "Wellcome Collection", citta: "Londra", come: "corsia uk, ogni notte (raccolta completa ogni 6 giorni)" },
+  isos: { biblioteca: "Irish Script on Screen (Royal Irish Academy, National Library of Ireland, Trinity College Dublin, National Library of Scotland e altre)", citta: "Irlanda e altre sedi", come: "corsia uk, ogni notte (elenco ogni 6 giorni)" },
+  manchester: { biblioteca: "John Rylands Research Institute and Library (Manchester Digital Collections)", citta: "Manchester", come: "corsia uk: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 6 giorni)" },
+  cbl: { biblioteca: "Chester Beatty", citta: "Dublino", come: "corsia uk: a ruota finché la prima lettura non è finita (un manifesto ogni 10 secondi, come chiede la biblioteca), poi ogni notte" },
   nlg: { biblioteca: "Biblioteca Nazionale di Grecia", citta: "Atene", come: "ogni notte, da sola (elenco ogni 6 giorni; copie dei manifesti scritte dal catalogo)" },
   ndl: { biblioteca: "National Diet Library (国立国会図書館): manoscritti dei libri antichi giapponesi e cinesi", citta: "Tokyo (Giappone)", come: "corsia mondo: a ruota finché la prima lettura completa non è finita, poi ogni notte (solo i record cambiati ogni 6 giorni, raccolta completa ogni 30)" },
   kokusho: { biblioteca: "Kokusho Database (国書データベース) del National Institute of Japanese Literature: manoscritti di biblioteche, templi e collezioni giapponesi", citta: "Giappone", come: "corsia mondo: a ruota finché la prima lettura completa non è finita, poi ogni notte (raccolta completa ogni 14 giorni)" },
@@ -54,6 +58,14 @@ export const durata = ore => (ore <= 48 ? `circa ${Math.max(1, Math.ceil(ore))} 
 // ritmi delle corsie a ruota (circa 150 minuti di lavoro ogni 165 minuti circa): Vaticana un manifesto ogni 10 secondi,
 // Yale una pagina OAI ogni 5 secondi circa, Bodleian un manifesto ogni 2,7 secondi circa
 export const ORARI = { vaticana: 330, yale: 640, bodleian: 1200 };   // al netto delle pause tra un'esecuzione e l'altra, per ora
+
+// fonti con un elenco e poi un manifesto (o una pagina) da leggere per codice: q = ancora da leggere, 0 = non leggibile
+function manifestiLetti(file, nome, secondi) {
+  const s = leggi(file); if (!s) return { testo: "non ancora cominciata" };
+  const vs = Object.values(s.voci || {}), resto = vs.filter(v => v && v.q).length;
+  if (resto) return { testo: `${num(vs.length - resto)} ${nome} letti su ${num(vs.length)}; a riprese, a ruota: mancano ${durata(resto * secondi / 3600 * 1.15)}`, data: s.aggiornato };
+  return { testo: `${nome} letti tutti (${num(vs.length)})`, data: s.completato || s.aggiornato };
+}
 
 // avanzamento della lettura, in parole semplici, dagli stati delle raccolte
 export const AVANZAMENTO = {
@@ -157,9 +169,14 @@ export const AVANZAMENTO = {
     if (s.cursore) return { testo: `in corso: ${s.cursore.c ? "Gerusalemme" : "Sinai"}, pagina ${s.cursore.p}`, data: s.aggiornato };
     return { testo: `item letti tutti (${num(n)} codici su ${num(tot)} item delle due collezioni; fuori firmani, rotoli, cataloghi moderni)`, data: s.completato || s.aggiornato };
   },
-  cudl: () => {
-    const s = leggi("data/cudl.json"); if (!s) return { testo: "elenco non ancora raccolto: va lanciato scripts/browser/cudl.js dal browser" };
-    return { testo: `${num(Object.keys(s.voci || {}).length)} schede raccolte dal browser il ${giorno(s.raccolto)}`, data: s.raccolto };
+  cudl: () => manifestiLetti("data/cudl.json", "manifesti", 1.6),
+  manchester: () => manifestiLetti("data/manchester.json", "manifesti", 1.6),
+  cbl: () => manifestiLetti("data/cbl.json", "manifesti", 10.5),
+  isos: () => manifestiLetti("data/isos.json", "codici", 1.6),
+  wellcome: () => {
+    const s = leggi("data/wellcome.json"); if (!s) return { testo: "non ancora cominciata" };
+    if (s.cursore) return { testo: `in corso: ricerca ${s.cursore.r + 1} di 2, pagina ${s.cursore.p}`, data: s.aggiornato };
+    return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} manoscritti con copia digitale aperta)`, data: s.completato || s.aggiornato };
   },
   nlg: () => {
     const s = leggi("data/nlg.json"); if (!s) return { testo: "non ancora cominciata" };

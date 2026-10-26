@@ -21,7 +21,8 @@ const quante = o => Object.keys((o && o.voci) || {}).length;
 export const INCOMPLETA = {
   // raccolte a riprese con il segnaposto «completato» (azzerato quando si rifà la lettura da capo)
   ...Object.fromEntries(["ndl", "kokusho", "penn", "loc", "auckland", "toronto", "ds", "montecassino", "casanatense", "bub", "laurenziana", "leiden",
-    "wolfenbuettel", "bamberga", "karlsruhe", "stoccarda", "colonia", "lipsia"].map(f => [f, s => !s || !s.completato]),
+    "wolfenbuettel", "bamberga", "karlsruhe", "stoccarda", "colonia", "lipsia",
+    "wellcome", "isos", "manchester", "cudl", "cbl"].map(f => [f, s => !s || !s.completato]),
   ),
   // Ambrosiana: elenco letto e nessuna scheda ancora da leggere (le schede che non si aprono restano segnate con «x»)
   ambrosiana: s => !s || !s.elenco || s.cursore != null || Object.values(s.voci || {}).some(v => v && !v.u && !v.x),

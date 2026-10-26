@@ -1,13 +1,13 @@
 # Una «corsia» della raccolta del catalogo: il lavoro comune a tutte le corsie (raccolta, prove, salvataggio, ruota).
 # Non parte da sola: la chiamano i workflow delle corsie (raccolta-vaticana.yml, raccolta-yale.yml, raccolta-bodleian.yml,
-# raccolta-giornaliera.yml, raccolta-italia.yml, raccolta-mondo.yml, raccolta-usa.yml), che decidono quando partire, quali fonti leggere e il gruppo di concurrency.
+# raccolta-giornaliera.yml, raccolta-italia.yml, raccolta-mondo.yml, raccolta-usa.yml, raccolta-uk.yml), che decidono quando partire, quali fonti leggere e il gruppo di concurrency.
 # Le corsie leggono biblioteche diverse (server diversi) e girano in parallelo; dentro una corsia le richieste restano in serie,
 # con le pause di sempre (10 secondi per la Vaticana), quindi nessuna biblioteca riceve più richieste di prima.
 # Salvataggio a prova di conflitto, anche con più corsie che salvano quasi insieme: si mettono da parte SOLO gli stati delle
 # fonti della corsia, si riparte dall'ultimo main, si rimettono quegli stati, si ricostruisce il catalogo senza richieste
 # (--solo-costruisci) e si prova a salvare; se un'altra corsia ha salvato prima, si aspetta un po' (a caso) e si rifà, fino a 8 volte.
 # Ruota: se la corsia ha lavorato almeno 30 minuti (c'era ancora lavoro), riparte subito da sola; altrimenti aspetta il suo orario.
-# Ruota «fino a lettura completa» (corsie mondo, usa, italia, giornaliera): riparte subito finché una delle sue fonti non ha finito
+# Ruota «fino a lettura completa» (corsie mondo, usa, italia, giornaliera, uk): riparte subito finché una delle sue fonti non ha finito
 # la prima lettura completa (scripts/ruota.mjs), ma solo se in questo giro almeno una di quelle fonti ha fatto progressi: una fonte
 # in errore non fa girare la corsia all'infinito. Quando tutte hanno finito, la corsia torna al suo orario notturno (codici nuovi).
 # Un nuovo giro non parte se ce n'è già uno in coda; il gruppo di concurrency della corsia lo fa aspettare finché questo non è finito.
@@ -17,7 +17,7 @@ on:
   workflow_call:
     inputs:
       corsia:
-        description: "Nome della corsia (vaticana, yale, bodleian, giornaliera, italia, mondo, usa)"
+        description: "Nome della corsia (vaticana, yale, bodleian, giornaliera, italia, mondo, usa, uk)"
         type: string
         required: true
       fonti:
@@ -88,7 +88,7 @@ jobs:
           STATI=""
           for f in ${FONTI//,/ }; do
             case "$f" in
-              vaticana|bodleian|laurenziana|leiden|yale|penn|ds|walters|loc|nlg|ndl|kokusho|auckland|toronto|ambrosiana|montecassino|casanatense|bub) s=data/$f.json ;;
+              vaticana|bodleian|laurenziana|leiden|yale|penn|ds|walters|loc|nlg|ndl|kokusho|auckland|toronto|ambrosiana|montecassino|casanatense|bub|wellcome|isos|manchester|cudl|cbl) s=data/$f.json ;;
               heidelberg) s=data/heidelberg-indici.json ;;
               wolfenbuettel|bamberga|karlsruhe|stoccarda|colonia|lipsia) s=data/$f.json ;;   # Handschriftenportal
               *) s="" ;;   # e-codices, BSB, Berlino: stato in .cache (fuori da git); Gallica: parti data/gallica-<n>.json dal browser, prese dal main e mai cancellate
