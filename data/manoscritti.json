@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T16:43:23.824Z",
+ "aggiornato": "2026-10-27T19:07:21.035Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -379,11 +379,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 515,
+   "codici": 516,
    "esito": "ok"
   }
  },
- "totale": 12541,
+ "totale": 12542,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -53464,6 +53464,43 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Reg.lat.1988/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Reg.lat.1988",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-ross-604",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Ross. 604",
+   "datazione": "sec. XIV ex",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Opere",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus, 5/4 a.C.-65…»"
+    },
+    {
+     "id": "ausonio",
+     "autore": "Ausonio",
+     "latino": "Ausonius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…re, c. 55 a.C.-c. 35/39 d.C., Ausonius, Decimus Magnus, c. 310-395.…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Ross.604/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Ross.604",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },
