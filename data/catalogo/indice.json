@@ -1,9 +1,9 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-27T04:05:37.982Z",
- "totale": 515377,
+ "aggiornato": "2026-10-27T04:35:01.049Z",
+ "totale": 515604,
  "con_autori": 27850,
- "miniati": 11095,
+ "miniati": 11097,
  "musica": 13608,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
@@ -30,7 +30,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 78146
+   "codici": 78147
   },
   "?": {
    "nome": "lingua non indicata",
@@ -42,7 +42,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 22464
+   "codici": 22477
   },
   "de": {
    "nome": "tedesco",
@@ -50,11 +50,11 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 19658
+   "codici": 19720
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 19258
+   "codici": 19287
   },
   "pi": {
    "nome": "pali",
@@ -106,7 +106,7 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 4935
+   "codici": 5083
   },
   "pt": {
    "nome": "portoghese",
@@ -126,7 +126,7 @@
   },
   "ko": {
    "nome": "coreano",
-   "codici": 2623
+   "codici": 2618
   },
   "cop": {
    "nome": "copto",
@@ -374,7 +374,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 513696
+   "codici": 513923
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -1910,10 +1910,15 @@
   "Grolier Club, New York",
   "Gross Family Collection (copia digitale della National Library of Israel), Tel Aviv",
   "Gross William L TLV (copia digitale della National Library of Israel)",
+  "Gross William L. Tel Aviv Israel (copia digitale della National Library of Israel)",
   "Gross William L. Tel Aviv Israel Ms. EE. (copia digitale della National Library of Israel)",
+  "Gross William L. Tel Aviv Israel Ms. EI. (copia digitale della National Library of Israel)",
   "Gross William L. Tel Aviv Israel Ms. IT. (copia digitale della National Library of Israel)",
+  "Gross William L. Tel Aviv Israel Ms. KU. (copia digitale della National Library of Israel)",
   "Gross William L. Tel Aviv Israel Ms. MO. (copia digitale della National Library of Israel)",
   "Gross William L. Tel Aviv Israel Ms. OT. (copia digitale della National Library of Israel)",
+  "Gross William L. Tel Aviv Israel Ms. PS. (copia digitale della National Library of Israel)",
+  "Gross William L. Tel Aviv Israel Ms. YM. (copia digitale della National Library of Israel)",
   "Gulistan Museum, Cambridge",
   "Gurukul Kangri (Deemed to be University), Haridwar",
   "Hamburg Mus Oct. (copia digitale della National Library of Israel)",
@@ -2262,6 +2267,7 @@
   "Niemiecki Instytut Historyczny w Warszawie, Varsavia",
   "Nikolaus-Matz-Bibliothek (Kirchenbibliothek), Michelstadt",
   "NLI (copia digitale della National Library of Israel)",
+  "NLI Ms. Heb. (copia digitale della National Library of Israel)",
   "Nonaka Usaien (野中烏犀圓), Saga",
   "Northwestern University Libraries, Melville J. Herskovits Library of African Studies, Evanston",
   "Nuernberg Mus Oct. Hs. (copia digitale della National Library of Israel)",
@@ -2273,6 +2279,7 @@
   "Okresní muzeum Klatovy",
   "Okresní muzeum Mladá Boleslav",
   "Olomouc VK (copia digitale della National Library of Israel)",
+  "Olomouc VK D (copia digitale della National Library of Israel)",
   "Olomouc ZA (copia digitale della National Library of Israel)",
   "Osservatorio astronomico nazionale del Giappone (国立天文台図書室), Mitaka",
   "Osterreichische Nationalbibliothek, Cambridge",
@@ -4257,7 +4264,7 @@
   },
   "ndl": {
    "nome": "National Diet Library, Tokyo (dl.ndl.go.jp)",
-   "codici": 42679,
+   "codici": 42674,
    "carte": 50,
    "carte_stampa": 0,
    "miniati": 1624,
@@ -4266,7 +4273,7 @@
    "lingue": {
     "ja": 40268,
     "zh": 2326,
-    "ko": 82,
+    "ko": 77,
     "?": 4
    },
    "esito": "ok",
@@ -4910,23 +4917,23 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 13034,
+   "codici": 13266,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 902,
+   "miniati": 904,
    "musica": 0,
    "con_autori": 20,
    "lingue": {
-    "he": 12686,
-    "xx": 2055,
-    "ar": 761,
-    "fa": 219,
+    "he": 12748,
+    "xx": 2084,
+    "ar": 774,
+    "fa": 367,
     "tr": 41,
     "grc": 9,
     "es": 26,
     "it": 187,
     "de": 71,
-    "la": 29,
+    "la": 30,
     "nl": 43,
     "pt": 11,
     "fr": 12,
@@ -4938,7 +4945,7 @@
     "ca": 1,
     "oc": 5
    },
-   "esito": "errore: manifesti letti in parte (mancano 2111): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 341): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
@@ -5474,7 +5481,7 @@
   {
    "file": "indice/ndl-2.json",
    "fonte": "ndl",
-   "righe": 2679
+   "righe": 2674
   },
   {
    "file": "indice/kokusho-0.json",
@@ -5614,7 +5621,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 13034
+   "righe": 13266
   },
   {
    "file": "indice/getty-0.json",
@@ -8574,6 +8581,11 @@
   "gerusalemme",
   "gerusalemme",
   "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
   "cambridge",
   "haridwar",
   "gerusalemme",
@@ -8922,6 +8934,7 @@
   "varsavia",
   "michelstadt",
   "gerusalemme",
+  "gerusalemme",
   "jp-saga",
   "evanston",
   "gerusalemme",
@@ -8932,6 +8945,7 @@
   "athens-oh",
   "klatovy",
   "mlada-boleslav",
+  "gerusalemme",
   "gerusalemme",
   "gerusalemme",
   "jp-mitaka",
