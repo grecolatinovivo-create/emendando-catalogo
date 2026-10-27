@@ -1,7 +1,7 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-27T05:37:55.044Z",
- "totale": 516971,
+ "aggiornato": "2026-10-27T06:28:32.141Z",
+ "totale": 516959,
  "con_autori": 27859,
  "miniati": 11103,
  "musica": 13608,
@@ -26,7 +26,7 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 180907
+   "codici": 180905
   },
   "la": {
    "nome": "latino",
@@ -66,7 +66,7 @@
   },
   "zh": {
    "nome": "cinese",
-   "codici": 13955
+   "codici": 13947
   },
   "lo": {
    "nome": "lao",
@@ -126,7 +126,7 @@
   },
   "ko": {
    "nome": "coreano",
-   "codici": 2618
+   "codici": 2616
   },
   "cop": {
    "nome": "copto",
@@ -374,7 +374,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 515290
+   "codici": 515278
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -4277,16 +4277,16 @@
   },
   "ndl": {
    "nome": "National Diet Library, Tokyo (dl.ndl.go.jp)",
-   "codici": 42579,
+   "codici": 42567,
    "carte": 50,
    "carte_stampa": 0,
    "miniati": 1621,
    "musica": 194,
    "con_autori": 0,
    "lingue": {
-    "ja": 40228,
-    "zh": 2271,
-    "ko": 77,
+    "ja": 40226,
+    "zh": 2263,
+    "ko": 75,
     "?": 4
    },
    "esito": "ok",
@@ -5494,7 +5494,7 @@
   {
    "file": "indice/ndl-2.json",
    "fonte": "ndl",
-   "righe": 2579
+   "righe": 2567
   },
   {
    "file": "indice/kokusho-0.json",
