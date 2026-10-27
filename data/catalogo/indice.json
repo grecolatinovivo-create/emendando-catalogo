@@ -1,7 +1,7 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-27T03:02:16.402Z",
- "totale": 512472,
+ "aggiornato": "2026-10-27T03:24:17.936Z",
+ "totale": 513717,
  "con_autori": 27704,
  "miniati": 11085,
  "musica": 13601,
@@ -30,7 +30,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 77109
+   "codici": 77121
   },
   "?": {
    "nome": "lingua non indicata",
@@ -62,7 +62,7 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 14082
+   "codici": 14112
   },
   "zh": {
    "nome": "cinese",
@@ -88,6 +88,10 @@
    "nome": "italiano",
    "codici": 7607
   },
+  "cu": {
+   "nome": "slavo ecclesiastico",
+   "codici": 7481
+  },
   "en": {
    "nome": "inglese",
    "codici": 7063
@@ -95,10 +99,6 @@
   "bo": {
    "nome": "tibetano",
    "codici": 6503
-  },
-  "cu": {
-   "nome": "slavo ecclesiastico",
-   "codici": 6261
   },
   "nod": {
    "nome": "thai settentrionale (lanna)",
@@ -170,7 +170,7 @@
   },
   "ka": {
    "nome": "georgiano",
-   "codici": 282
+   "codici": 284
   },
   "vi": {
    "nome": "vietnamita (hán-nôm)",
@@ -374,7 +374,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 510793
+   "codici": 512038
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -4996,25 +4996,25 @@
   },
   "libfond": {
    "nome": "Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca: copie digitali della Trinità-San Sergio (lib-fond.ru; manifesti scritti dal catalogo)",
-   "codici": 5362,
+   "codici": 6607,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
    "con_autori": 24,
    "lingue": {
-    "cu": 5180,
-    "la": 82,
-    "grc": 136,
+    "cu": 6400,
+    "la": 94,
+    "grc": 166,
     "ar": 8,
     "hy": 3,
-    "ka": 1
+    "ka": 3
    },
-   "esito": "errore: codici letti in parte (1763 in questo giro): riprenderà alla prossima esecuzione",
+   "esito": "errore: codici letti in parte (1698 in questo giro): riprenderà alla prossima esecuzione",
    "prefissi": [
     "libfond-"
    ],
-   "pezzi_voci": 7,
+   "pezzi_voci": 9,
    "indice": [
     "indice/libfond-0.json"
    ]
@@ -5629,7 +5629,7 @@
   {
    "file": "indice/libfond-0.json",
    "fonte": "libfond",
-   "righe": 5362
+   "righe": 6607
   },
   {
    "file": "indice/archive-0.json",
