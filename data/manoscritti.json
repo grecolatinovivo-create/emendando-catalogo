@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T19:07:21.035Z",
+ "aggiornato": "2026-10-27T21:35:07.008Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -379,11 +379,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 516,
+   "codici": 518,
    "esito": "ok"
   }
  },
- "totale": 12542,
+ "totale": 12544,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -41397,6 +41397,43 @@
    "immagini": null
   },
   {
+   "id": "bav-chig-h-vi-188",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Chig. H. VI. 188",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Opere (Sallustius Crispus, Gaius, 86-c. 34 a.C.)",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…a.C. Opere spurie e dubbie ; Cicero, Marcus Tullius, 106-43 a.C.…»"
+    },
+    {
+     "id": "sallustio",
+     "autore": "Sallustio",
+     "latino": "Sallustius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Sallustius Crispus, Gaius, 86-c. 34 a.C…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Chig.H.VI.188/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Chig.H.VI.188",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
    "id": "bav-ott-lat-1190",
    "fonte": "vaticana",
    "biblioteca": "Biblioteca Apostolica Vaticana",
@@ -53501,6 +53538,37 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Ross.604/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Ross.604",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-ross-893",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Ross. 893",
+   "datazione": "sec. XV in",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Heroides (Ovidius Naso, Publius, 43 a.C.-17/18 d.C.)",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eroidi"
+     ],
+     "corrispondenza": "autore: «Ovidius Naso, Publius, 43 a.C.-17/18 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Ross.893/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Ross.893",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },

@@ -1,10 +1,10 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-27T21:05:12.146Z",
- "totale": 543375,
- "con_autori": 28265,
+ "aggiornato": "2026-10-27T21:35:07.008Z",
+ "totale": 544205,
+ "con_autori": 28267,
  "miniati": 11279,
- "musica": 21271,
+ "musica": 21272,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
   "id",
@@ -30,11 +30,11 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 83696
+   "codici": 83794
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 44175
+   "codici": 44906
   },
   "fr": {
    "nome": "francese",
@@ -62,7 +62,7 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 14569
+   "codici": 14570
   },
   "cu": {
    "nome": "slavo ecclesiastico",
@@ -372,7 +372,7 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 6607
+   "codici": 6609
   },
   "classico-greco": {
    "nome": "classici greci",
@@ -390,7 +390,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 538060
+   "codici": 538890
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -430,7 +430,7 @@
    "nome": "Cicerone",
    "latino": "Cicero",
    "categoria": "classico-latino",
-   "codici": 1149
+   "codici": 1150
   },
   "cesare": {
    "nome": "Cesare",
@@ -442,7 +442,7 @@
    "nome": "Sallustio",
    "latino": "Sallustius",
    "categoria": "classico-latino",
-   "codici": 196
+   "codici": 197
   },
   "virgilio": {
    "nome": "Virgilio",
@@ -472,7 +472,7 @@
    "nome": "Ovidio",
    "latino": "Ovidius",
    "categoria": "classico-latino",
-   "codici": 561
+   "codici": 562
   },
   "livio": {
    "nome": "Livio",
@@ -5450,22 +5450,22 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 21395,
+   "codici": 22225,
    "carte": 2,
    "carte_stampa": 0,
    "miniati": 4,
-   "musica": 14,
-   "con_autori": 953,
+   "musica": 15,
+   "con_autori": 955,
    "lingue": {
-    "la": 20336,
+    "la": 20434,
     "fr": 24,
     "it": 264,
+    "?": 1467,
+    "grc": 2,
     "xx": 18,
     "de": 3,
-    "grc": 1,
     "es": 15,
     "en": 1,
-    "?": 736,
     "he": 1,
     "pit": 2
    },
@@ -5473,7 +5473,7 @@
    "prefissi": [
     "bav-"
    ],
-   "pezzi_voci": 27,
+   "pezzi_voci": 28,
    "indice": [
     "indice/vaticana-0.json",
     "indice/vaticana-1.json"
@@ -5924,7 +5924,7 @@
   {
    "file": "indice/vaticana-1.json",
    "fonte": "vaticana",
-   "righe": 1395
+   "righe": 2225
   }
  ],
  "luoghi": {
@@ -9958,7 +9958,7 @@
   1,
   2,
   3,
-  21395,
+  22225,
   1,
   43,
   8,
