@@ -1,7 +1,7 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-27T09:53:13.258Z",
- "totale": 521418,
+ "aggiornato": "2026-10-27T10:30:17.923Z",
+ "totale": 521413,
  "con_autori": 27869,
  "miniati": 11104,
  "musica": 13606,
@@ -66,7 +66,7 @@
   },
   "zh": {
    "nome": "cinese",
-   "codici": 13825
+   "codici": 13820
   },
   "cu": {
    "nome": "slavo ecclesiastico",
@@ -374,7 +374,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 519737
+   "codici": 519732
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -4277,7 +4277,7 @@
   },
   "ndl": {
    "nome": "National Diet Library, Tokyo (dl.ndl.go.jp)",
-   "codici": 42265,
+   "codici": 42260,
    "carte": 50,
    "carte_stampa": 0,
    "miniati": 1621,
@@ -4285,7 +4285,7 @@
    "con_autori": 0,
    "lingue": {
     "ja": 40046,
-    "zh": 2141,
+    "zh": 2136,
     "ko": 75,
     "?": 4
    },
@@ -5494,7 +5494,7 @@
   {
    "file": "indice/ndl-2.json",
    "fonte": "ndl",
-   "righe": 2265
+   "righe": 2260
   },
   {
    "file": "indice/kokusho-0.json",
@@ -10309,7 +10309,7 @@
   3,
   39,
   67,
-  42265,
+  42260,
   1,
   1,
   1617,
