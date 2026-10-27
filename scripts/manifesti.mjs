@@ -18,6 +18,8 @@
 //     con le immagini https a misura fissa (scripts/fonti/hsp.mjs, manifestoCopiaHsp);
 //   - Det Kgl. Bibliotek, Copenaghen: nessun manifesto IIIF presso la biblioteca, immagini IIIF Image 2 aperte (kb-images.kb.dk, CORS *):
 //     manifesti P2 con il servizio Image della biblioteca (scripts/fonti/kbdk.mjs);
+//   - Bibliothèque nationale du Luxembourg (scripts/fonti/bnl.mjs): nessun manifesto IIIF presso la biblioteca, immagini IIIF Image 2
+//     aperte (iiif.eluxemburgensia.lu, CORS *): manifesti P2 con il servizio Image della biblioteca e le misure di ogni pagina;
 //   - Biblioteca Nazionale di Bulgaria (scripts/fonti/nbkm.mjs): niente IIIF, JPEG della biblioteca digitale caricabili come <img>:
 //     manifesti P2 a misura fissa;
 //   - lib-fond.ru (scripts/fonti/libfond.mjs): niente IIIF, JPEG di anteprima caricabili come <img>: manifesti P2 a misura fissa;
@@ -39,6 +41,7 @@ import * as handrit from "./fonti/handrit.mjs";
 import * as hsp from "./fonti/hsp.mjs";
 import * as nom from "./fonti/nomfoundation.mjs";
 import * as kbdk from "./fonti/kbdk.mjs";
+import * as bnl from "./fonti/bnl.mjs";
 import * as nbkm from "./fonti/nbkm.mjs";
 import * as libfond from "./fonti/libfond.mjs";
 import * as bms from "./fonti/bms.mjs";
@@ -88,6 +91,8 @@ export function scriviTutti(dir = ".") {
       path.join(dir, "data/manifesti/nomfoundation"), (id, x) => nom.manifestoScritto(x.k, x.v)),
     // Det Kgl. Bibliotek: servizio Image della biblioteca, misure della prima immagine
     kbdk: scriviManifesti(kbdk.leggiStato().voci || {}, path.join(dir, "data/manifesti/kbdk"), (id, v) => (kbdk.ammessaKbdk(v) ? kbdk.manifestoScritto(id, v) : null)),
+    // Bibliothèque nationale du Luxembourg: servizio IIIF Image della biblioteca, misure di ogni pagina
+    bnl: scriviManifesti(bnl.leggiStato().voci || {}, path.join(dir, "data/manifesti/bnl"), (id, v) => (bnl.ammessaBnl(v) ? bnl.manifestoScritto(id, v) : null)),
     // Handschriftenportal, fonti con le copie dei manifesti (Darmstadt): un file per codice, con il nome della sigla del portale senza «HSP-»
     ...Object.fromEntries(Object.keys(hsp.FONTI_HSP).filter(hsp.copieHsp).map(f => [f, scriviManifesti(
       Object.fromEntries(Object.entries(hsp.leggiStato(f).voci || {}).map(([k, v]) => [k.replace(/^HSP-/, ""), v])),

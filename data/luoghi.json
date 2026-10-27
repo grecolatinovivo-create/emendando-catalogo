@@ -11828,6 +11828,64 @@
    "lon": 18.0687,
    "geonames": 2673730
   },
+  "oslo": {
+   "nome": "Oslo",
+   "paese": "NO",
+   "lat": 59.9127,
+   "lon": 10.7461,
+   "geonames": 3143244
+  },
+  "uppsala": {
+   "nome": "Uppsala",
+   "paese": "SE",
+   "lat": 59.8588,
+   "lon": 17.6389,
+   "geonames": 2666199
+  },
+  "linkoping": {
+   "nome": "Linköping",
+   "paese": "SE",
+   "lat": 58.4109,
+   "lon": 15.6216,
+   "geonames": 2694762
+  },
+  "lund": {
+   "nome": "Lund",
+   "paese": "SE",
+   "lat": 55.7058,
+   "lon": 13.1932,
+   "geonames": 2693678
+  },
+  "goteborg": {
+   "nome": "Göteborg",
+   "en": "Gothenburg",
+   "paese": "SE",
+   "lat": 57.7072,
+   "lon": 11.9668,
+   "geonames": 2711537
+  },
+  "strangnas": {
+   "nome": "Strängnäs",
+   "paese": "SE",
+   "lat": 59.3774,
+   "lon": 17.0312,
+   "geonames": 2671392
+  },
+  "torshavn": {
+   "nome": "Tórshavn",
+   "paese": "FO",
+   "lat": 62.0097,
+   "lon": -6.7716,
+   "geonames": 2611396
+  },
+  "lussemburgo": {
+   "nome": "Lussemburgo",
+   "en": "Luxembourg",
+   "paese": "LU",
+   "lat": 49.6098,
+   "lon": 6.1327,
+   "geonames": 2960316
+  },
   "strasburgo": {
    "nome": "Strasburgo",
    "en": "Strasbourg",
@@ -13857,6 +13915,16 @@
   "Stanford": "stanford",
   "Stoccolma": "stoccolma",
   "Stockholm": "stoccolma",
+  "Oslo": "oslo",
+  "Uppsala": "uppsala",
+  "Linköping": "linkoping",
+  "Lund": "lund",
+  "Göteborg": "goteborg",
+  "Gothenburg": "goteborg",
+  "Strängnäs": "strangnas",
+  "Tórshavn": "torshavn",
+  "Lussemburgo": "lussemburgo",
+  "Luxembourg": "lussemburgo",
   "Strasbourg": "strasburgo",
   "Sue": "jp-sue",
   "Sueyoshicho-ninokata": "jp-sueyoshicho-ninokata",
@@ -14474,6 +14542,9 @@
   "harvard": "cambridge-ma",
   "nbkm": "sofia",
   "bms": "novi-sad",
-  "libfond": "mosca"
+  "libfond": "mosca",
+  "nb": "oslo",
+  "manuscripta": "stoccolma",
+  "bnl": "lussemburgo"
  }
 }

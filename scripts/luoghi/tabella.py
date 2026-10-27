@@ -291,6 +291,15 @@ L = {
  "reykjavik": ("Reykjavík", None, "Reykjavík", "IS", None, ["Reykjavík", "Reykjavik"]),
  "gardabaer": ("Garðabær", None, "Garðabær", "IS", None, ["Garðabær"]),
  "stoccolma": ("Stoccolma", "Stockholm", "Stockholm", "SE", None, ["Stoccolma", "Stockholm"]),
+ # corsia nord (dal 27 ottobre 2026): Nasjonalbiblioteket, manuscripta.se, Bibliothèque nationale du Luxembourg (fonti: nb -> oslo, manuscripta -> stoccolma, bnl -> lussemburgo)
+ "oslo": ("Oslo", None, "Oslo", "NO", "#3143244", ["Oslo"]),
+ "uppsala": ("Uppsala", None, "Uppsala", "SE", "#2666199", ["Uppsala"]),
+ "linkoping": ("Linköping", None, "Linköping", "SE", "#2694762", ["Linköping"]),
+ "lund": ("Lund", None, "Lund", "SE", "#2693678", ["Lund"]),
+ "goteborg": ("Göteborg", "Gothenburg", "Gothenburg", "SE", "#2711537", ["Göteborg", "Gothenburg"]),
+ "strangnas": ("Strängnäs", None, "Strängnäs", "SE", "#2671392", ["Strängnäs"]),
+ "torshavn": ("Tórshavn", None, "Tórshavn", "FO", "#2611396", ["Tórshavn"]),
+ "lussemburgo": ("Lussemburgo", "Luxembourg", "Luxembourg", "LU", "#2960316", ["Lussemburgo", "Luxembourg"]),
  # Internet Archive (fonte «archive», dal 26 ottobre 2026)
  "montreal": ("Montréal", "Montreal", "Montréal", "CA", "#6077243", ["Montréal", "Montreal"]),
  "udine": ("Udine", None, "Udine", "IT", "#3165072", ["Udine"]),

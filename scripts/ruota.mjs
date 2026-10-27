@@ -50,6 +50,10 @@ export const INCOMPLETA = {
   nomfoundation: s => !s || !s.elenco || Object.values(s.voci || {}).some(v => v && !v.x && (!v.cod || (/chép tay|viết tay|manuscript|hand-?written|hand ?copied|bản thảo/i.test(v.pt || "") && v.img && !v.n))),
   // Malatestiana: schede e visore di tutti i codici dell'elenco letti
   malatestiana: s => !s || !s.completato,
+  // corsia nord (dal 27 ottobre 2026): Nasjonalbiblioteket (elenchi e schede MODS delle carte), manuscripta.se, Bibliothèque nationale du Luxembourg
+  nb: s => !s || !s.completato || !!s.cursore,
+  manuscripta: s => !s || !s.completato,
+  bnl: s => !s || !s.completato,
   // corsia «centro» (dal 27 ottobre 2026): Graz e Salisburgo (manifesti a riprese), ELTE Budapest
   vlaustria: s => !s || !s.completato,
   elte: s => !s || !s.completato,

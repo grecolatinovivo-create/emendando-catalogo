@@ -1,0 +1,37 @@
+# Corsia «nord» (dal 27 ottobre 2026): Europa del Nord e Lussemburgo, server diversi dalle altre corsie:
+#   - Nasjonalbiblioteket, Oslo (fonte «nb»): API pubblica del catalogo (api.nb.no), manoscritti senza le lettere, manoscritti musicali
+#     e carte geografiche con copia digitale aperta a tutti; manifesti IIIF della biblioteca; 4 secondi tra le richieste;
+#   - manuscripta.se (fonte «manuscripta»): Kungliga biblioteket, Uppsala universitetsbibliotek e altre biblioteche svedesi; modulo di
+#     ricerca del sito, manifesti IIIF del sito; 10 secondi tra le richieste (Crawl-delay del robots.txt);
+#   - Bibliothèque nationale du Luxembourg (fonte «bnl»): API del visore di eluxemburgensia.lu; manifesti scritti dal catalogo con le
+#     immagini IIIF della biblioteca (scripts/manifesti.mjs, ramo «manifesti»).
+# Gli stati sono in data/<fonte>.json. Richieste in serie, una biblioteca dopo l'altra (scripts/rete.mjs e le pause delle fonti).
+# Ruota fino a lettura completa: finché una fonte della corsia non ha finito la prima lettura, la corsia lavora fino a circa
+# 150 minuti per esecuzione e riparte subito da sola, purché nel giro ci siano stati progressi (scripts/ruota.mjs).
+# Poi torna al giro notturno delle 03:40 UTC, che prende i codici nuovi.
+name: "Raccolta: corsia nord"
+
+on:
+  schedule:
+    - cron: "40 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write   # per la ruota
+
+concurrency:
+  group: raccolta-nord
+  cancel-in-progress: false
+
+jobs:
+  corsia:
+    uses: ./.github/workflows/corsia.yml
+    with:
+      corsia: nord
+      fonti: nb,manuscripta,bnl
+      argomenti: --nb-minuti=100 --manuscripta-minuti=20 --bnl-minuti=10
+      cache: false
+      ruota: false
+      completa: true
+      flusso: raccolta-nord.yml

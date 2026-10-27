@@ -45,6 +45,10 @@ export const BIBLIOTECHE = {
   yale: { biblioteca: "Yale University Library (Beinecke e altre biblioteche di Yale)", citta: "New Haven (Stati Uniti)", come: "corsia propria: a ruota finché la prima lettura non è finita, poi ogni 6 giorni" },
   penn: { biblioteca: "University of Pennsylvania Libraries (Kislak Center, Schoenberg, CAJS)", citta: "Filadelfia (Stati Uniti)", come: "corsia usa: a ruota finché la prima lettura non è finita, poi ogni notte (raccolta completa ogni 6 giorni)" },
   ds: { biblioteca: "Digital Scriptorium (istituzioni statunitensi: Princeton, Columbia, Harvard, Huntington, Free Library e altre; dettaglio sotto la tabella)", citta: "Stati Uniti", come: "ogni notte, da sola (raccolta completa ogni 6 giorni)" },
+  // Europa del Nord e Lussemburgo (corsia «nord», dal 27 ottobre 2026)
+  nb: { biblioteca: "Nasjonalbiblioteket: manoscritti (fuori le lettere), manoscritti musicali e carte geografiche con copia digitale aperta a tutti", citta: "Oslo", come: "corsia nord: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 14 giorni; scheda MODS solo delle carte nuove)" },
+  manuscripta: { biblioteca: "manuscripta.se: Kungliga biblioteket, Uppsala universitetsbibliotek, Riksantikvarieämbetet, Linköping, Lund e altre biblioteche svedesi (codici e frammenti digitalizzati)", citta: "Svezia", come: "corsia nord, ogni notte (elenco ogni 14 giorni)" },
+  bnl: { biblioteca: "Bibliothèque nationale du Luxembourg: manoscritti di eluxemburgensia (codici di Echternach, Codex Mariendalensis, corsi dei Gesuiti; manifesti IIIF scritti da Emendando)", citta: "Lussemburgo", come: "corsia nord, ogni notte (elenco ogni 14 giorni; pagine solo dei codici nuovi)" },
   walters: { biblioteca: "The Walters Art Museum (manifesti IIIF scritti da Emendando)", citta: "Baltimora (Stati Uniti)", come: "corsia usa: a ruota finché non sono letti tutti i codici, poi ogni notte (elenco ogni 6 giorni; misure delle immagini)" },
   loc: { biblioteca: "Library of Congress: microfilm del Monastero di Santa Caterina del Sinai e dei Patriarcati greco-ortodosso e armeno di Gerusalemme", citta: "Sinai (Egitto) e Gerusalemme", come: "corsia usa: a ruota finché la prima lettura non è finita, poi ogni notte (elenco completo ogni 6 giorni; manifesti scritti dal catalogo)" },
   cudl: { biblioteca: "Cambridge Digital Library (University Library e college)", citta: "Cambridge", come: "corsia uk: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 6 giorni)" },
@@ -388,6 +392,23 @@ export const AVANZAMENTO = {
     const n = Object.keys(s.voci || {}).length;
     if (s.cursore) return { testo: `in corso: ${num(n)} schede lette finora`, data: s.aggiornato };
     return { testo: `schede lette tutte (${num(n)} nelle collezioni di codici, frammenti, manoscritti orientali ed ebraici; entrano solo i manoscritti librari, fuori lettere, diari, conti e carte d'archivio)`, data: s.completato || s.aggiornato };
+  },
+  nb: () => {
+    const s = leggi("data/nb.json"); if (!s) return { testo: "non ancora cominciata" };
+    const vs = Object.values(s.voci || {}), carte = vs.filter(v => v.e === "k"), lette = carte.filter(v => v.k).length;
+    if (s.cursore) return { testo: `in corso, a ruota: elenco ${s.cursore.l + 1} di 3 (${num(Object.keys(s.nuove || {}).length)} schede finora)`, data: s.aggiornato };
+    if (lette < carte.length) return { testo: `in corso, a ruota: ${num(vs.length)} schede in elenco; schede MODS delle carte lette ${num(lette)} su ${num(carte.length)}`, data: s.aggiornato };
+    return { testo: `schede lette tutte (${num(vs.length)} con copia digitale aperta: manoscritti senza le lettere, manoscritti musicali, ${num(carte.length)} carte; fuori lettere, telegrammi, testamenti e altri documenti)`, data: s.completato || s.aggiornato };
+  },
+  manuscripta: () => {
+    const s = leggi("data/manuscripta.json"); if (!s) return { testo: "non ancora cominciata" };
+    return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} codici e frammenti digitalizzati, anche in parte)`, data: s.completato || s.aggiornato };
+  },
+  bnl: () => {
+    const s = leggi("data/bnl.json"); if (!s) return { testo: "non ancora cominciata" };
+    const vs = Object.values(s.voci || {}), con = vs.filter(v => v.p).length;
+    if (!s.completato) return { testo: `in corso: pagine lette per ${num(con)} manoscritti su ${num(vs.length)}`, data: s.aggiornato };
+    return { testo: `schede lette tutte (${num(vs.length)} manoscritti, ${num(con)} con le pagine)`, data: s.completato };
   },
   crossasia: () => {
     const s = leggi("data/crossasia.json"); if (!s) return { testo: "non ancora cominciata" };

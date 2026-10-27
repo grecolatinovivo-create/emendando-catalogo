@@ -13,6 +13,7 @@
 //        [--nli-minuti=15] [--getty-minuti=15] [--harvard-minuti=10]
 //        [--kbdk-minuti=30] [--uva-minuti=5] [--onb-minuti=30] [--bncf-minuti=5] [--vallicelliana-minuti=5] [--malatestiana-minuti=20] [--polona-minuti=20] [--manuscriptorium-minuti=30] [--archive-minuti=10]
 //        [--crossasia-minuti=30] [--sbbasia-minuti=30] [--sbbor-minuti=30] [--nomfoundation-minuti=20]
+//        [--nb-minuti=60] [--manuscripta-minuti=15] [--bnl-minuti=5]
 // Scrive il catalogo diviso per fonte (vedi costruisci.mjs): data/catalogo/indice.json, data/catalogo/indice/<fonte>-<n>.json, data/catalogo/voci/<fonte>-<n>.json,
 // più data/manoscritti.json (compatibilità: solo i codici con autori classici), e gli stati delle scansioni a riprese
 // (data/vaticana.json, data/bodleian.json, data/laurenziana.json, data/leiden.json, data/heidelberg-indici.json; data/<fonte>.json per le fonti del Handschriftenportal: wolfenbuettel, bamberga, karlsruhe, stoccarda, colonia, lipsia; data/yale.json, data/penn.json, data/walters.json).
@@ -88,6 +89,9 @@ import { scansionaNomfoundation, recordNom } from "./fonti/nomfoundation.mjs";
 import { scansionaNli, recordNli } from "./fonti/nli.mjs";
 import { scansionaGetty, recordGetty } from "./fonti/getty.mjs";
 import { scansionaHarvard, recordHarvard, esistentiHarvard, leggiHarvard } from "./fonti/harvard.mjs";
+import { scansionaNb, recordNb } from "./fonti/nb.mjs";
+import { scansionaManuscripta, recordManuscripta } from "./fonti/manuscripta.mjs";
+import { scansionaBnl, recordBnl } from "./fonti/bnl.mjs";
 import { scriviRegistro, registraEsiti } from "./registro.mjs";
 import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 import { tipoDa } from "./carte.mjs";
@@ -169,6 +173,10 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   // Berlino, manoscritti non europei degli altri insiemi (corsia «asia», dal 26 ottobre 2026): tibetani e mongoli, sanscriti, islamici, ebraici, cristiano-orientali, africani
   sbbor: "Staatsbibliothek zu Berlin: manoscritti non europei (tibetani, mongoli, sanscriti, islamici, ebraici, cristiano-orientali, africani; oai.sbb.berlin)",
   nomfoundation: "Vietnamese Nôm Preservation Foundation: Biblioteca nazionale del Vietnam e templi Thắng Nghiêm e Phổ Nhân (lib.nomfoundation.org; manifesti scritti dal catalogo)",
+  // Europa del Nord e Lussemburgo (corsia «nord», dal 27 ottobre 2026)
+  nb: "Nasjonalbiblioteket, Oslo: manoscritti, manoscritti musicali e carte geografiche (api.nb.no; manifesti IIIF della biblioteca)",
+  manuscripta: "manuscripta.se: Kungliga biblioteket, Uppsala universitetsbibliotek e altre biblioteche svedesi (manifesti IIIF di manuscripta.se)",
+  bnl: "Bibliothèque nationale du Luxembourg (eluxemburgensia.lu; manifesti scritti dal catalogo con le immagini IIIF della biblioteca)",
   vaticana: "Biblioteca Apostolica Vaticana (digi.vatlib.it)" };
 
 // i tre codici del Truculentus restano sempre nel catalogo, anche se una fonte non li ha ancora restituiti
@@ -425,6 +433,11 @@ async function main() {
       return recordSbbor(st, { esistenti: gia });
     },
     nomfoundation: async () => recordNom(await scansionaNomfoundation({ minuti: min("nomfoundation", +(arg["nomfoundation-minuti"] ?? 20)), soloCache: sc("nomfoundation") })),
+    // Europa del Nord e Lussemburgo (corsia «nord», dal 27 ottobre 2026): Nasjonalbiblioteket (API del catalogo), manuscripta.se (Svezia),
+    // Bibliothèque nationale du Luxembourg (API del visore, manifesti scritti dal catalogo)
+    nb: async () => recordNb(await scansionaNb({ minuti: min("nb", +(arg["nb-minuti"] ?? 60)), soloCache: sc("nb") })),
+    manuscripta: async () => recordManuscripta(await scansionaManuscripta({ minuti: min("manuscripta", +(arg["manuscripta-minuti"] ?? 15)), soloCache: sc("manuscripta") })),
+    bnl: async () => recordBnl(await scansionaBnl({ minuti: min("bnl", +(arg["bnl-minuti"] ?? 5)), soloCache: sc("bnl") })),
     vaticana: async () => {
       let minuti = +(arg["vaticana-minuti"] ?? 20);
       // con un tempo complessivo si lasciano 10 minuti per costruire il catalogo, provarlo e salvarlo
