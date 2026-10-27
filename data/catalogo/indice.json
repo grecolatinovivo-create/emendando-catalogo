@@ -1,9 +1,9 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-27T01:39:44.190Z",
- "totale": 511365,
+ "aggiornato": "2026-10-27T03:02:16.402Z",
+ "totale": 512472,
  "con_autori": 27704,
- "miniati": 10917,
+ "miniati": 11085,
  "musica": 13601,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
@@ -30,7 +30,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 77108
+   "codici": 77109
   },
   "?": {
    "nome": "lingua non indicata",
@@ -42,19 +42,19 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 22190
+   "codici": 22416
   },
   "de": {
    "nome": "tedesco",
-   "codici": 22092
-  },
-  "xx": {
-   "nome": "altre lingue",
-   "codici": 19038
+   "codici": 22094
   },
   "he": {
    "nome": "ebraico",
-   "codici": 18846
+   "codici": 19655
+  },
+  "xx": {
+   "nome": "altre lingue",
+   "codici": 19240
   },
   "pi": {
    "nome": "pali",
@@ -62,7 +62,7 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 14081
+   "codici": 14082
   },
   "zh": {
    "nome": "cinese",
@@ -78,15 +78,15 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10477
+   "codici": 10480
   },
   "pl": {
    "nome": "polacco",
-   "codici": 8302
+   "codici": 8303
   },
   "it": {
    "nome": "italiano",
-   "codici": 7597
+   "codici": 7607
   },
   "en": {
    "nome": "inglese",
@@ -104,13 +104,13 @@
    "nome": "thai settentrionale (lanna)",
    "codici": 5516
   },
-  "pt": {
-   "nome": "portoghese",
-   "codici": 4888
-  },
   "fa": {
    "nome": "persiano",
-   "codici": 4834
+   "codici": 4918
+  },
+  "pt": {
+   "nome": "portoghese",
+   "codici": 4891
   },
   "ca": {
    "nome": "catalano",
@@ -120,13 +120,13 @@
    "nome": "islandese e norreno",
    "codici": 3107
   },
+  "tr": {
+   "nome": "turco",
+   "codici": 2630
+  },
   "ko": {
    "nome": "coreano",
    "codici": 2623
-  },
-  "tr": {
-   "nome": "turco",
-   "codici": 2604
   },
   "cop": {
    "nome": "copto",
@@ -150,7 +150,7 @@
   },
   "nl": {
    "nome": "nederlandese",
-   "codici": 770
+   "codici": 781
   },
   "da": {
    "nome": "danese",
@@ -238,7 +238,7 @@
   },
   "hu": {
    "nome": "ungherese",
-   "codici": 34
+   "codici": 35
   },
   "nxq": {
    "nome": "naxi",
@@ -374,7 +374,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 509686
+   "codici": 510793
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -1793,6 +1793,7 @@
   "Clare College Archive, Cambridge",
   "Clare College Archives, Cambridge",
   "Clare College, Cambridge",
+  "Cleveland Klein (copia digitale della National Library of Israel)",
   "Clonalis House, Castlerea",
   "codices restituti, [sine loco]",
   "Coláiste na Rinne, Waterford",
@@ -1817,6 +1818,7 @@
   "Columbia University, Rare Book & Manuscript Library, New York",
   "Comitato per l'istruzione della città di Tanba-Sasayama, Aoyama Rekishimura (丹波篠山市教育委員会 青山歴史村)",
   "Conception Abbey and Seminary, Conception (Missouri)",
+  "Confiansa de Ysrael Ms. Var. (copia digitale della National Library of Israel)",
   "Conservatoire",
   "Conservatoire et Jardin botaniques de la Ville de Genève",
   "Convento della Madonna del Sasso, Orselina",
@@ -1904,6 +1906,7 @@
   "Goettingen UB hebr. (copia digitale della National Library of Israel)",
   "Gonville and Caius College, Cambridge",
   "Government Oriental Manuscripts Library and Research Centre, Chennai",
+  "GRAZ UB Druck (copia digitale della National Library of Israel)",
   "Grolier Club, New York",
   "Gross Family Collection (copia digitale della National Library of Israel), Tel Aviv",
   "Gross William L TLV (copia digitale della National Library of Israel)",
@@ -2020,6 +2023,7 @@
   "Kantonsbibliothek Appenzell Ausserrhoden, Trogen",
   "Kantonsbibliothek Thurgau, Frauenfeld",
   "Kantonsbibliothek, St. Gallen",
+  "KARLSRUHE Ei (copia digitale della National Library of Israel)",
   "Katholische Pfarrgemeinde, Weissenburg",
   "Kavikulaguru Kalidas Sanskrit University, Ramtek (Jnanayogi Dr. Shrikant Jichkar Knowledge Resource Center)",
   "KBR (Royal Library of Belgium), Bruxelles",
@@ -2055,6 +2059,7 @@
   "Kurpfälzisches Museum der Stadt Heidelberg",
   "Kurpfälzisches Museum Heidelberg",
   "La Bibliothèque juive « Gérard Nordmann », Genève",
+  "La Puerta de las Reencarnaciones JER NLI Var. (copia digitale della National Library of Israel)",
   "Lambeth Palace Library, Cambridge",
   "Lamont Library, Harvard University, Cambridge (Massachusetts)",
   "Landesarchiv Appenzell Innerrhoden",
@@ -2109,6 +2114,7 @@
   "Miejska Biblioteka Publiczna w Sanoku",
   "Ministère des Affaires étrangères",
   "Ministère des Affaires étrangères, Rés",
+  "Mittheilung der Neusten und Vortheilhafthen Practischen Destileur Kunst und Liquerfabrikation JER NLI (copia digitale della National Library of Israel)",
   "Monastero di Rousanou, Meteore (copie digitali della Biblioteca di Kalambaka), Meteore (Kalambaka)",
   "Monastero di Santa Caterina del Sinai (microfilm della Library of Congress), Sinai (Egitto)",
   "Montefiore (copia digitale della National Library of Israel)",
@@ -2121,7 +2127,10 @@
   "Moravské zemské muzeum, Brno",
   "Moravské zemské muzeum, oddělení dějin hudby MZM, Smetanova 14, 602 00 Brno",
   "Mount Melleray Abbey, Cappoquin",
+  "Ms. AP Ar. (copia digitale della National Library of Israel)",
+  "Ms. Ar. (copia digitale della National Library of Israel)",
   "Ms. Fr. (copia digitale della National Library of Israel)",
+  "Ms. Yah. Ar. (copia digitale della National Library of Israel)",
   "Musée d'art et d'histoire, Cambridge",
   "Musée Escoffier de l'Art Culinaire, Centre de documentation",
   "Musée Escoffier de l'Art Culinaire, Centre de documentation, Villeneuve-Loubet",
@@ -2263,6 +2272,7 @@
   "Ohio University Libraries, Athens (Ohio)",
   "Okresní muzeum Klatovy",
   "Okresní muzeum Mladá Boleslav",
+  "Olomouc VK (copia digitale della National Library of Israel)",
   "Olomouc ZA (copia digitale della National Library of Israel)",
   "Osservatorio astronomico nazionale del Giappone (国立天文台図書室), Mitaka",
   "Osterreichische Nationalbibliothek, Cambridge",
@@ -2407,6 +2417,7 @@
   "P. Heid. Inv. Kopt. 564 (H. Quecke, Heidelberger Papyrussammlung",
   "P. Heid. Inv. Kopt. 685 (M. Meyer, Heidelberger Papyrussammlung",
   "P. Heid. Inv. Kopt. 686 (A. Kropp, Heidelberger Papyrussammlung",
+  "Page (copia digitale della National Library of Israel)",
   "Památník národního písemnictví - knihovna, Praga",
   "Památník národního písemnictví (správce), Praga",
   "Parker Library, Corpus Christi College, Cambridge",
@@ -2428,6 +2439,7 @@
   "Peterhouse, Perne Library: on long-term deposit at Cambridge University Library",
   "Pharmaziemuseum der Universität Basel",
   "PHIL UP (copia digitale della National Library of Israel)",
+  "PHIL UP CAJS Rar (copia digitale della National Library of Israel)",
   "PHIL UP Schoenberg (copia digitale della National Library of Israel)",
   "pracoviště Klášter, Nepomuk",
   "Pražská konzervatoř, Praga",
@@ -2440,6 +2452,7 @@
   "Queen's College, Oxford",
   "Queens' College Library, Cambridge",
   "Queens' College, Cambridge",
+  "Ramat Gan Israel (copia digitale della National Library of Israel)",
   "Rampur Raza Library P. 742, Cambridge",
   "Rampur Raza Library P. 3909, Cambridge",
   "Rampur Raza Library P. 3911, Cambridge",
@@ -2823,6 +2836,7 @@
   "Vojenský historický ústav Praha, Praga",
   "Východočeské muzeum v Pardubicích, Pardubice",
   "Výstavní prostory expozice knihovny Latinské školy, Jáchymov",
+  "WALLACH (copia digitale della National Library of Israel)",
   "Wellcome Collection, Londra",
   "Welt JER NLI (copia digitale della National Library of Israel)",
   "Western Michigan University, Kalamazoo",
@@ -4896,38 +4910,39 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 11927,
+   "codici": 13034,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 734,
+   "miniati": 902,
    "musica": 0,
    "con_autori": 20,
    "lingue": {
-    "he": 11877,
-    "xx": 1853,
-    "ar": 535,
-    "fa": 135,
-    "tr": 15,
-    "grc": 8,
-    "es": 23,
-    "it": 177,
-    "de": 69,
-    "la": 28,
-    "nl": 32,
-    "pt": 8,
+    "he": 12686,
+    "xx": 2055,
+    "ar": 761,
+    "fa": 219,
+    "tr": 41,
+    "grc": 9,
+    "es": 26,
+    "it": 187,
+    "de": 71,
+    "la": 29,
+    "nl": 43,
+    "pt": 11,
     "fr": 12,
     "ru": 6,
+    "pl": 2,
     "en": 13,
-    "pl": 1,
+    "hu": 1,
     "ka": 1,
     "ca": 1,
     "oc": 5
    },
-   "esito": "errore: manifesti letti in parte (mancano 3513): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 2111): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
-   "pezzi_voci": 15,
+   "pezzi_voci": 17,
    "indice": [
     "indice/nli-0.json"
    ]
@@ -5599,7 +5614,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 11927
+   "righe": 13034
   },
   {
    "file": "indice/getty-0.json",
@@ -8438,6 +8453,7 @@
   "cambridge",
   "cambridge",
   "cambridge",
+  "gerusalemme",
   "castlerea",
   null,
   "waterford",
@@ -8462,6 +8478,7 @@
   "new-york",
   "jp-tanba-sasayama",
   "conception",
+  "gerusalemme",
   "parigi",
   "ginevra",
   "orselina",
@@ -8549,6 +8566,7 @@
   "gerusalemme",
   "cambridge",
   "chennai",
+  "gerusalemme",
   "new-york",
   "tel-aviv",
   "gerusalemme",
@@ -8665,6 +8683,7 @@
   "trogen",
   "frauenfeld",
   "san-gallo",
+  "gerusalemme",
   null,
   "ramtek",
   "bruxelles",
@@ -8700,6 +8719,7 @@
   "heidelberg",
   "heidelberg",
   "ginevra",
+  "gerusalemme",
   "cambridge",
   "cambridge-ma",
   "appenzell",
@@ -8754,6 +8774,7 @@
   "sanok",
   "parigi",
   "parigi",
+  "gerusalemme",
   "meteore",
   "sinai",
   "gerusalemme",
@@ -8766,6 +8787,9 @@
   "brno",
   "brno",
   "cappoquin",
+  "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
   "gerusalemme",
   "cambridge",
   "villeneuve-loubet",
@@ -8908,6 +8932,7 @@
   "athens-oh",
   "klatovy",
   "mlada-boleslav",
+  "gerusalemme",
   "gerusalemme",
   "jp-mitaka",
   "cambridge",
@@ -9052,6 +9077,7 @@
   "heidelberg",
   "heidelberg",
   "heidelberg",
+  "gerusalemme",
   "praga",
   "praga",
   "cambridge",
@@ -9074,6 +9100,7 @@
   "basilea",
   "gerusalemme",
   "gerusalemme",
+  "gerusalemme",
   "nepomuk",
   "praga",
   "praga",
@@ -9085,6 +9112,7 @@
   "oxford",
   "cambridge",
   "cambridge",
+  "gerusalemme",
   "cambridge",
   "cambridge",
   "cambridge",
@@ -9468,6 +9496,7 @@
   "praga",
   "pardubice",
   "jachymov",
+  "gerusalemme",
   "londra",
   "gerusalemme",
   "kalamazoo",
