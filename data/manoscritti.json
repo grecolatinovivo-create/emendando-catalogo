@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T14:11:34.387Z",
+ "aggiornato": "2026-10-27T15:11:36.483Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -229,13 +229,13 @@
   },
   "vlaustria": {
    "nome": "Universitätsbibliothek Graz e Universitätsbibliothek Salzburg (unipub.uni-graz.at, eplus.uni-salzburg.at; elenco dalle sitemap, manifesti IIIF delle biblioteche)",
-   "codici": 1,
-   "esito": "precedente"
+   "codici": 18,
+   "esito": "ok"
   },
   "elte": {
    "nome": "ELTE Egyetemi Könyvtár, Budapest: codici, frammenti e manoscritti (edit.elte.hu; manifesti IIIF della biblioteca)",
    "codici": 10,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "slv": {
    "nome": "State Library Victoria, Melbourne (find.slv.vic.gov.au; elenco raccolto dal browser)",
@@ -383,7 +383,7 @@
    "esito": "ok"
   }
  },
- "totale": 12511,
+ "totale": 12528,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -402260,6 +402260,36 @@
    "anteprima": "https://e-codices.ch/loris/ubb/ubb-O-III-0034/ubb-O-III-0034_0001r.jp2/full/,150/0/default/jpg"
   },
   {
+   "id": "ubgraz-11613993",
+   "fonte": "vlaustria",
+   "biblioteca": "Universitätsbibliothek Graz",
+   "citta": "Graz",
+   "segnatura": "Ms 0093",
+   "datazione": "Entstehungsort unbestimmt, um 1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Aristotelis Opera",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Aristotelis Opera»"
+    }
+   ],
+   "manifest": "https://unipub.uni-graz.at/i3f/v20/11613993/manifest",
+   "pagina": "https://unipub.uni-graz.at/obvugrscript/content/titleinfo/11613993",
+   "licenza": "Universitätsbibliothek Graz",
+   "immagini": 567,
+   "miniato": true
+  },
+  {
    "id": "ubgraz-3857149",
    "fonte": "vlaustria",
    "biblioteca": "Universitätsbibliothek Graz",
@@ -402290,6 +402320,506 @@
    "licenza": "Universitätsbibliothek Graz",
    "immagini": 403,
    "miniato": true
+  },
+  {
+   "id": "ubgraz-6718479",
+   "fonte": "vlaustria",
+   "biblioteca": "Universitätsbibliothek Graz",
+   "citta": "Graz",
+   "segnatura": "Ms 0265",
+   "datazione": "Entstehungsort unbestimmt, 14. Jahrhundert",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Epitome Commentarii Alberti Magni in libros 26 Aristotelis de animalibus",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Historia animalium"
+     ],
+     "corrispondenza": "titolo: «Epitome Commentarii Alberti Magni in libros 26 Aristotelis de animalibus»"
+    }
+   ],
+   "manifest": "https://unipub.uni-graz.at/i3f/v20/6718479/manifest",
+   "pagina": "https://unipub.uni-graz.at/obvugrscript/content/titleinfo/6718479",
+   "licenza": "Universitätsbibliothek Graz",
+   "immagini": 407
+  },
+  {
+   "id": "ubgraz-11386397",
+   "fonte": "vlaustria",
+   "biblioteca": "Universitätsbibliothek Graz",
+   "citta": "Graz",
+   "segnatura": "Ms 0429",
+   "datazione": "Entstehungsort unbestimmt, 15. Jahrhundert",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Priscianus. Aristoteles. Duo opera",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Priscianus. Aristoteles. Duo opera»"
+    },
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Priscianus. Aristoteles. Duo opera»"
+    }
+   ],
+   "manifest": "https://unipub.uni-graz.at/i3f/v20/11386397/manifest",
+   "pagina": "https://unipub.uni-graz.at/obvugrscript/content/titleinfo/11386397",
+   "licenza": "Universitätsbibliothek Graz",
+   "immagini": 303
+  },
+  {
+   "id": "ubgraz-6431948",
+   "fonte": "vlaustria",
+   "biblioteca": "Universitätsbibliothek Graz",
+   "citta": "Graz",
+   "segnatura": "Ms 1224",
+   "datazione": "Entstehungsort unbestimmt, 1567",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "de",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Commentarius in duo priores libros P. Virgilii Georgicorum necnon in librum IIum Aeneidos",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eneide",
+      "Georgiche"
+     ],
+     "corrispondenza": "titolo: «Commentarius in duo priores libros P. Virgilii Georgicorum necnon in librum IIum Aeneidos»"
+    }
+   ],
+   "manifest": "https://unipub.uni-graz.at/i3f/v20/6431948/manifest",
+   "pagina": "https://unipub.uni-graz.at/obvugrscript/content/titleinfo/6431948",
+   "licenza": "Universitätsbibliothek Graz",
+   "immagini": 275
+  },
+  {
+   "id": "ubgraz-8555831",
+   "fonte": "vlaustria",
+   "biblioteca": "Universitätsbibliothek Graz",
+   "citta": "Graz",
+   "segnatura": "Ms 1234",
+   "datazione": "Entstehungsort unbestimmt, 1452 (fol. 173r)",
+   "secolo": [
+    2,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Xenophon. Poggius Brachiolinus. Duo opera",
+   "autori": [
+    {
+     "id": "senofonte",
+     "autore": "Senofonte",
+     "latino": "Xenophon",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Xenophon. Poggius Brachiolinus. Duo opera»"
+    }
+   ],
+   "manifest": "https://unipub.uni-graz.at/i3f/v20/8555831/manifest",
+   "pagina": "https://unipub.uni-graz.at/obvugrscript/content/titleinfo/8555831",
+   "licenza": "Universitätsbibliothek Graz",
+   "immagini": 389,
+   "miniato": true
+  },
+  {
+   "id": "ubgraz-7436495",
+   "fonte": "vlaustria",
+   "biblioteca": "Universitätsbibliothek Graz",
+   "citta": "Graz",
+   "segnatura": "Ms 1349",
+   "datazione": "Entstehungsort unbestimmt, 1392 (fol. 112v)",
+   "secolo": [
+    2,
+    14
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Priscianus metricus",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Priscianus metricus»"
+    }
+   ],
+   "manifest": "https://unipub.uni-graz.at/i3f/v20/7436495/manifest",
+   "pagina": "https://unipub.uni-graz.at/obvugrscript/content/titleinfo/7436495",
+   "licenza": "Universitätsbibliothek Graz",
+   "immagini": 239,
+   "miniato": true
+  },
+  {
+   "id": "ubgraz-7955921",
+   "fonte": "vlaustria",
+   "biblioteca": "Universitätsbibliothek Graz",
+   "citta": "Graz",
+   "segnatura": "Ms 1703/103/Fr 01",
+   "datazione": "Entstehungsort unbestimmt, 2. Hälfte des 14. Jahrhunderts",
+   "secolo": [
+    2,
+    14
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Facta et dicta memorabilia",
+   "autori": [
+    {
+     "id": "valerio-massimo",
+     "autore": "Valerio Massimo",
+     "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Facta et dicta memorabilia"
+     ],
+     "corrispondenza": "titolo: «Facta et dicta memorabilia»"
+    }
+   ],
+   "manifest": "https://unipub.uni-graz.at/i3f/v20/7955921/manifest",
+   "pagina": "https://unipub.uni-graz.at/obvugrfragms/content/titleinfo/7955921",
+   "licenza": "Universitätsbibliothek Graz",
+   "immagini": 2
+  },
+  {
+   "id": "ubgraz-7955873",
+   "fonte": "vlaustria",
+   "biblioteca": "Universitätsbibliothek Graz",
+   "citta": "Graz",
+   "segnatura": "Ms 1703/114/Fr 01",
+   "datazione": "Entstehungsort unbestimmt, 13. Jahrhundert",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Metaphysica 13",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica"
+     ],
+     "corrispondenza": "autore: «Aristoteles»"
+    }
+   ],
+   "manifest": "https://unipub.uni-graz.at/i3f/v20/7955873/manifest",
+   "pagina": "https://unipub.uni-graz.at/obvugrfragms/content/titleinfo/7955873",
+   "licenza": "Universitätsbibliothek Graz",
+   "immagini": 2
+  },
+  {
+   "id": "ubgraz-7956045",
+   "fonte": "vlaustria",
+   "biblioteca": "Universitätsbibliothek Graz",
+   "citta": "Graz",
+   "segnatura": "Ms 1703/122/Fr 01",
+   "datazione": "Entstehungsort unbestimmt, 10. Jahrhundert",
+   "secolo": [
+    10,
+    10
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Categoriae",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Categorie"
+     ],
+     "corrispondenza": "autore: «Aristoteles»"
+    }
+   ],
+   "manifest": "https://unipub.uni-graz.at/i3f/v20/7956045/manifest",
+   "pagina": "https://unipub.uni-graz.at/obvugrfragms/content/titleinfo/7956045",
+   "licenza": "Universitätsbibliothek Graz",
+   "immagini": 2
+  },
+  {
+   "id": "ubgraz-7955997",
+   "fonte": "vlaustria",
+   "biblioteca": "Universitätsbibliothek Graz",
+   "citta": "Graz",
+   "segnatura": "Ms 1703/123/Fr 01",
+   "datazione": "Entstehungsort unbestimmt, 10. Jahrhundert",
+   "secolo": [
+    10,
+    10
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Laelius de amicitia",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Laelius de amicitia"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://unipub.uni-graz.at/i3f/v20/7955997/manifest",
+   "pagina": "https://unipub.uni-graz.at/obvugrfragms/content/titleinfo/7955997",
+   "licenza": "Universitätsbibliothek Graz",
+   "immagini": 2
+  },
+  {
+   "id": "ubgraz-7955573",
+   "fonte": "vlaustria",
+   "biblioteca": "Universitätsbibliothek Graz",
+   "citta": "Graz",
+   "segnatura": "Ms 1703/124/Fr 01",
+   "datazione": "Lorsch (?), 1. Hälfte des 9. Jahrhunderts",
+   "secolo": [
+    1,
+    9
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Institutiones grammaticae",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "autore: «Priscianus»"
+    }
+   ],
+   "manifest": "https://unipub.uni-graz.at/i3f/v20/7955573/manifest",
+   "pagina": "https://unipub.uni-graz.at/obvugrfragms/content/titleinfo/7955573",
+   "licenza": "Universitätsbibliothek Graz",
+   "immagini": 2
+  },
+  {
+   "id": "ubgraz-7956049",
+   "fonte": "vlaustria",
+   "biblioteca": "Universitätsbibliothek Graz",
+   "citta": "Graz",
+   "segnatura": "Ms 1703/124/Fr 02",
+   "datazione": "Lorsch (?), 1. Hälfte des 9. Jahrhunderts",
+   "secolo": [
+    1,
+    9
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Institutiones grammaticae",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "autore: «Priscianus»"
+    }
+   ],
+   "manifest": "https://unipub.uni-graz.at/i3f/v20/7956049/manifest",
+   "pagina": "https://unipub.uni-graz.at/obvugrfragms/content/titleinfo/7956049",
+   "licenza": "Universitätsbibliothek Graz",
+   "immagini": 2
+  },
+  {
+   "id": "ubgraz-7956041",
+   "fonte": "vlaustria",
+   "biblioteca": "Universitätsbibliothek Graz",
+   "citta": "Graz",
+   "segnatura": "Ms 1703/125/Fr 01",
+   "datazione": "Entstehungsort unbestimmt, 13. Jahrhundert",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Institutiones grammaticae",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "autore: «Priscianus»"
+    }
+   ],
+   "manifest": "https://unipub.uni-graz.at/i3f/v20/7956041/manifest",
+   "pagina": "https://unipub.uni-graz.at/obvugrfragms/content/titleinfo/7956041",
+   "licenza": "Universitätsbibliothek Graz",
+   "immagini": 2
+  },
+  {
+   "id": "ubgraz-7956093",
+   "fonte": "vlaustria",
+   "biblioteca": "Universitätsbibliothek Graz",
+   "citta": "Graz",
+   "segnatura": "Ms 1703/125/Fr 02",
+   "datazione": "Entstehungsort unbestimmt, 13. Jahrhundert",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Institutiones grammaticae",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "autore: «Priscianus»"
+    }
+   ],
+   "manifest": "https://unipub.uni-graz.at/i3f/v20/7956093/manifest",
+   "pagina": "https://unipub.uni-graz.at/obvugrfragms/content/titleinfo/7956093",
+   "licenza": "Universitätsbibliothek Graz",
+   "immagini": 2
+  },
+  {
+   "id": "ubgraz-7956101",
+   "fonte": "vlaustria",
+   "biblioteca": "Universitätsbibliothek Graz",
+   "citta": "Graz",
+   "segnatura": "Ms 1703/143/Fr 01",
+   "datazione": "Entstehungsort unbestimmt, um 1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Liber elementorum",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus»"
+    }
+   ],
+   "manifest": "https://unipub.uni-graz.at/i3f/v20/7956101/manifest",
+   "pagina": "https://unipub.uni-graz.at/obvugrfragms/content/titleinfo/7956101",
+   "licenza": "Universitätsbibliothek Graz",
+   "immagini": 2
+  },
+  {
+   "id": "ubgraz-7956133",
+   "fonte": "vlaustria",
+   "biblioteca": "Universitätsbibliothek Graz",
+   "citta": "Graz",
+   "segnatura": "Ms 1703/143/Fr 02",
+   "datazione": "Entstehungsort unbestimmt, um 1300",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Liber elementorum",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus»"
+    }
+   ],
+   "manifest": "https://unipub.uni-graz.at/i3f/v20/7956133/manifest",
+   "pagina": "https://unipub.uni-graz.at/obvugrfragms/content/titleinfo/7956133",
+   "licenza": "Universitätsbibliothek Graz",
+   "immagini": 2
+  },
+  {
+   "id": "ubgraz-7967102",
+   "fonte": "vlaustria",
+   "biblioteca": "Universitätsbibliothek Graz",
+   "citta": "Graz",
+   "segnatura": "Ms 1703/322/Fr 01",
+   "datazione": "Entstehungsort unbestimmt, 12. Jahrhundert",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Heautontimorumenos mit Interlinearglossen",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Heautontimorumenos"
+     ],
+     "corrispondenza": "autore: «Terentius Afer, Publius»"
+    }
+   ],
+   "manifest": "https://unipub.uni-graz.at/i3f/v20/7967102/manifest",
+   "pagina": "https://unipub.uni-graz.at/obvugrfragms/content/titleinfo/7967102",
+   "licenza": "Universitätsbibliothek Graz",
+   "immagini": 2
   },
   {
    "id": "hd-cpg101",

@@ -1,10 +1,10 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-27T14:34:58.993Z",
- "totale": 538819,
- "con_autori": 28081,
- "miniati": 11172,
- "musica": 21247,
+ "aggiornato": "2026-10-27T15:11:36.483Z",
+ "totale": 540029,
+ "con_autori": 28216,
+ "miniati": 11414,
+ "musica": 21290,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
   "id",
@@ -30,15 +30,15 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 82324
+   "codici": 82465
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 42100
+   "codici": 43139
   },
   "fr": {
    "nome": "francese",
-   "codici": 28415
+   "codici": 28416
   },
   "ar": {
    "nome": "arabo",
@@ -46,11 +46,11 @@
   },
   "de": {
    "nome": "tedesco",
-   "codici": 22337
+   "codici": 22424
   },
   "he": {
    "nome": "ebraico",
-   "codici": 19986
+   "codici": 19987
   },
   "xx": {
    "nome": "altre lingue",
@@ -90,7 +90,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 7659
+   "codici": 7661
   },
   "en": {
    "nome": "inglese",
@@ -142,7 +142,7 @@
   },
   "syr": {
    "nome": "siriaco",
-   "codici": 1218
+   "codici": 1219
   },
   "khb": {
    "nome": "tai lü",
@@ -162,7 +162,7 @@
   },
   "hy": {
    "nome": "armeno",
-   "codici": 550
+   "codici": 551
   },
   "ru": {
    "nome": "russo",
@@ -174,7 +174,7 @@
   },
   "ka": {
    "nome": "georgiano",
-   "codici": 294
+   "codici": 295
   },
   "vi": {
    "nome": "vietnamita (hán-nôm)",
@@ -372,25 +372,25 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 6593
+   "codici": 6603
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 6403
+   "codici": 6411
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 14504
+   "codici": 14592
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 3128
+   "codici": 3158
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 536822
+   "codici": 538032
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -412,7 +412,7 @@
    "nome": "Terenzio",
    "latino": "Terentius",
    "categoria": "classico-latino",
-   "codici": 220
+   "codici": 221
   },
   "lucrezio": {
    "nome": "Lucrezio",
@@ -430,7 +430,7 @@
    "nome": "Cicerone",
    "latino": "Cicero",
    "categoria": "classico-latino",
-   "codici": 1148
+   "codici": 1149
   },
   "cesare": {
    "nome": "Cesare",
@@ -448,7 +448,7 @@
    "nome": "Virgilio",
    "latino": "Vergilius",
    "categoria": "classico-latino",
-   "codici": 474
+   "codici": 475
   },
   "orazio": {
    "nome": "Orazio",
@@ -568,7 +568,7 @@
    "nome": "Prisciano",
    "latino": "Priscianus",
    "categoria": "classico-latino",
-   "codici": 257
+   "codici": 263
   },
   "donato": {
    "nome": "Donato",
@@ -604,7 +604,7 @@
    "nome": "Valerio Massimo",
    "latino": "Valerius Maximus",
    "categoria": "classico-latino",
-   "codici": 149
+   "codici": 150
   },
   "curzio-rufo": {
    "nome": "Curzio Rufo",
@@ -934,7 +934,7 @@
    "nome": "Senofonte",
    "latino": "Xenophon",
    "categoria": "classico-greco",
-   "codici": 125
+   "codici": 126
   },
   "platone": {
    "nome": "Platone",
@@ -946,7 +946,7 @@
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 2085
+   "codici": 2090
   },
   "teofrasto": {
    "nome": "Teofrasto",
@@ -1108,7 +1108,7 @@
    "nome": "Galeno",
    "latino": "Galenus",
    "categoria": "classico-greco",
-   "codici": 544
+   "codici": 546
   },
   "ippocrate": {
    "nome": "Ippocrate",
@@ -1330,25 +1330,25 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 2873
+   "codici": 2889
   },
   "girolamo": {
    "nome": "Girolamo",
    "latino": "Hieronymus",
    "categoria": "cristiano",
-   "codici": 1332
+   "codici": 1338
   },
   "ambrogio": {
    "nome": "Ambrogio",
    "latino": "Ambrosius",
    "categoria": "cristiano",
-   "codici": 450
+   "codici": 451
   },
   "gregorio-magno": {
    "nome": "Gregorio Magno",
    "latino": "Gregorius Magnus",
    "categoria": "cristiano",
-   "codici": 964
+   "codici": 974
   },
   "basilio": {
    "nome": "Basilio Magno",
@@ -1372,7 +1372,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 6695
+   "codici": 6750
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1420,13 +1420,13 @@
    "nome": "Ilario di Poitiers",
    "latino": "Hilarius Pictaviensis",
    "categoria": "cristiano",
-   "codici": 68
+   "codici": 69
   },
   "cassiodoro": {
    "nome": "Cassiodoro",
    "latino": "Cassiodorus",
    "categoria": "cristiano",
-   "codici": 226
+   "codici": 227
   },
   "origene": {
    "nome": "Origene",
@@ -1468,13 +1468,13 @@
    "nome": "Isidoro di Siviglia",
    "latino": "Isidorus Hispalensis",
    "categoria": "medievale",
-   "codici": 702
+   "codici": 722
   },
   "beda": {
    "nome": "Beda",
    "latino": "Beda Venerabilis",
    "categoria": "medievale",
-   "codici": 792
+   "codici": 795
   },
   "alcuino": {
    "nome": "Alcuino",
@@ -1492,25 +1492,25 @@
    "nome": "Paolo Diacono",
    "latino": "Paulus Diaconus",
    "categoria": "medievale",
-   "codici": 199
+   "codici": 201
   },
   "pietro-lombardo": {
    "nome": "Pietro Lombardo",
    "latino": "Petrus Lombardus",
    "categoria": "medievale",
-   "codici": 363
+   "codici": 364
   },
   "tommaso-aquino": {
    "nome": "Tommaso d'Aquino",
    "latino": "Thomas de Aquino",
    "categoria": "medievale",
-   "codici": 521
+   "codici": 524
   },
   "bernardo": {
    "nome": "Bernardo di Chiaravalle",
    "latino": "Bernardus Claraevallensis",
    "categoria": "medievale",
-   "codici": 388
+   "codici": 389
   }
  },
  "biblioteche": [
@@ -2843,6 +2843,7 @@
   "Universitätsbibliothek Heidelberg",
   "Universitätsbibliothek Johann Christian Senckenberg, Frankfurt am Main",
   "Universitätsbibliothek Leipzig",
+  "Universitätsbibliothek Salzburg, Salisburgo",
   "Universitätsbibliothek Tübingen",
   "Universitätsbibliothek, Augsburg",
   "Universitätsbibliothek, Basel",
@@ -4567,22 +4568,29 @@
   },
   "vlaustria": {
    "nome": "Universitätsbibliothek Graz e Universitätsbibliothek Salzburg (unipub.uni-graz.at, eplus.uni-salzburg.at; elenco dalle sitemap, manifesti IIIF delle biblioteche)",
-   "codici": 151,
+   "codici": 1361,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 109,
-   "musica": 4,
-   "con_autori": 23,
+   "miniati": 351,
+   "musica": 47,
+   "con_autori": 158,
    "lingue": {
-    "?": 107,
-    "la": 43,
-    "de": 2
+    "?": 1146,
+    "la": 184,
+    "de": 89,
+    "it": 2,
+    "syr": 1,
+    "he": 1,
+    "fr": 1,
+    "ka": 1,
+    "hy": 1
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
-    "ubgraz-"
+    "ubgraz-",
+    "ubsbg-"
    ],
-   "pezzi_voci": 1,
+   "pezzi_voci": 2,
    "indice": [
     "indice/vlaustria-0.json"
    ]
@@ -4611,7 +4619,7 @@
     "fr": 1,
     "tr": 1
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "elte-"
    ],
@@ -5764,7 +5772,7 @@
   {
    "file": "indice/vlaustria-0.json",
    "fonte": "vlaustria",
-   "righe": 151
+   "righe": 1361
   },
   {
    "file": "indice/elte-0.json",
@@ -9798,6 +9806,7 @@
   "heidelberg",
   "francoforte",
   "lipsia",
+  null,
   "tubinga",
   "augusta",
   "basilea",
@@ -11192,10 +11201,11 @@
   1,
   113,
   1,
-  149,
+  1339,
   2004,
   1937,
   2678,
+  20,
   273,
   1,
   305,
