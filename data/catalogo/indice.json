@@ -1,10 +1,10 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-27T12:59:10.411Z",
- "totale": 522609,
- "con_autori": 27874,
- "miniati": 11102,
- "musica": 13607,
+ "aggiornato": "2026-10-27T13:47:52.110Z",
+ "totale": 523267,
+ "con_autori": 27934,
+ "miniati": 11211,
+ "musica": 13628,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
   "id",
@@ -26,27 +26,27 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 180719
+   "codici": 180711
   },
   "la": {
    "nome": "latino",
-   "codici": 80733
+   "codici": 81011
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 28983
+   "codici": 29094
   },
   "fr": {
    "nome": "francese",
-   "codici": 28379
+   "codici": 28382
   },
   "ar": {
    "nome": "arabo",
-   "codici": 22494
+   "codici": 22506
   },
   "de": {
    "nome": "tedesco",
-   "codici": 22216
+   "codici": 22238
   },
   "he": {
    "nome": "ebraico",
@@ -58,19 +58,19 @@
   },
   "pi": {
    "nome": "pali",
-   "codici": 17847
+   "codici": 17848
   },
   "grc": {
    "nome": "greco",
-   "codici": 14403
+   "codici": 14407
   },
   "zh": {
    "nome": "cinese",
-   "codici": 13552
+   "codici": 13548
   },
   "cu": {
    "nome": "slavo ecclesiastico",
-   "codici": 12224
+   "codici": 12376
   },
   "lo": {
    "nome": "lao",
@@ -86,11 +86,11 @@
   },
   "pl": {
    "nome": "polacco",
-   "codici": 8303
+   "codici": 8305
   },
   "it": {
    "nome": "italiano",
-   "codici": 7644
+   "codici": 7649
   },
   "en": {
    "nome": "inglese",
@@ -122,7 +122,7 @@
   },
   "tr": {
    "nome": "turco",
-   "codici": 2664
+   "codici": 2665
   },
   "ko": {
    "nome": "coreano",
@@ -138,7 +138,7 @@
   },
   "cs": {
    "nome": "ceco",
-   "codici": 1223
+   "codici": 1227
   },
   "syr": {
    "nome": "siriaco",
@@ -162,7 +162,7 @@
   },
   "ru": {
    "nome": "russo",
-   "codici": 465
+   "codici": 470
   },
   "ms": {
    "nome": "malese",
@@ -212,6 +212,10 @@
    "nome": "birmano",
    "codici": 106
   },
+  "hu": {
+   "nome": "ungherese",
+   "codici": 90
+  },
   "cai": {
    "nome": "altre lingue indigene di Mesoamerica e America centrale",
    "codici": 83
@@ -219,6 +223,10 @@
   "ga": {
    "nome": "irlandese",
    "codici": 64
+  },
+  "sla": {
+   "nome": "lingue slave (alfabeto cirillico)",
+   "codici": 62
   },
   "bug": {
    "nome": "bugi",
@@ -236,17 +244,9 @@
    "nome": "mongolo",
    "codici": 39
   },
-  "hu": {
-   "nome": "ungherese",
-   "codici": 36
-  },
   "nxq": {
    "nome": "naxi",
    "codici": 28
-  },
-  "sla": {
-   "nome": "lingue slave (alfabeto cirillico)",
-   "codici": 25
   },
   "sai": {
    "nome": "altre lingue indigene del Sud America",
@@ -356,25 +356,25 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 6572
+   "codici": 6578
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 6346
+   "codici": 6352
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 14386
+   "codici": 14431
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 3109
+   "codici": 3116
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 520928
+   "codici": 521570
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -382,7 +382,7 @@
   },
   "carta_stampa": {
    "nome": "carte a stampa",
-   "codici": 54
+   "codici": 70
   }
  },
  "autori": {
@@ -396,7 +396,7 @@
    "nome": "Terenzio",
    "latino": "Terentius",
    "categoria": "classico-latino",
-   "codici": 218
+   "codici": 219
   },
   "lucrezio": {
    "nome": "Lucrezio",
@@ -414,7 +414,7 @@
    "nome": "Cicerone",
    "latino": "Cicero",
    "categoria": "classico-latino",
-   "codici": 1143
+   "codici": 1145
   },
   "cesare": {
    "nome": "Cesare",
@@ -444,7 +444,7 @@
    "nome": "Tibullo",
    "latino": "Tibullus",
    "categoria": "classico-latino",
-   "codici": 57
+   "codici": 58
   },
   "properzio": {
    "nome": "Properzio",
@@ -456,7 +456,7 @@
    "nome": "Ovidio",
    "latino": "Ovidius",
    "categoria": "classico-latino",
-   "codici": 560
+   "codici": 561
   },
   "livio": {
    "nome": "Livio",
@@ -468,7 +468,7 @@
    "nome": "Seneca",
    "latino": "Seneca",
    "categoria": "classico-latino",
-   "codici": 454
+   "codici": 455
   },
   "lucano": {
    "nome": "Lucano",
@@ -480,7 +480,7 @@
    "nome": "Persio",
    "latino": "Persius",
    "categoria": "classico-latino",
-   "codici": 113
+   "codici": 114
   },
   "giovenale": {
    "nome": "Giovenale",
@@ -576,13 +576,13 @@
    "nome": "Boezio",
    "latino": "Boethius",
    "categoria": "classico-latino",
-   "codici": 709
+   "codici": 710
   },
   "ausonio": {
    "nome": "Ausonio",
    "latino": "Ausonius",
    "categoria": "classico-latino",
-   "codici": 54
+   "codici": 55
   },
   "valerio-massimo": {
    "nome": "Valerio Massimo",
@@ -720,7 +720,7 @@
    "nome": "Historia Augusta",
    "latino": "Historia Augusta",
    "categoria": "classico-latino",
-   "codici": 10
+   "codici": 11
   },
   "calpurnio": {
    "nome": "Calpurnio Siculo",
@@ -894,7 +894,7 @@
    "nome": "Aristofane",
    "latino": "Aristophanes",
    "categoria": "classico-greco",
-   "codici": 115
+   "codici": 116
   },
   "menandro": {
    "nome": "Menandro",
@@ -918,7 +918,7 @@
    "nome": "Senofonte",
    "latino": "Xenophon",
    "categoria": "classico-greco",
-   "codici": 122
+   "codici": 123
   },
   "platone": {
    "nome": "Platone",
@@ -930,7 +930,7 @@
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 2078
+   "codici": 2081
   },
   "teofrasto": {
    "nome": "Teofrasto",
@@ -960,7 +960,7 @@
    "nome": "Eschine",
    "latino": "Aeschines",
    "categoria": "classico-greco",
-   "codici": 47
+   "codici": 48
   },
   "andocide": {
    "nome": "Andocide",
@@ -1272,7 +1272,7 @@
    "nome": "Flavio Giuseppe",
    "latino": "Flavius Iosephus",
    "categoria": "classico-greco",
-   "codici": 250
+   "codici": 251
   },
   "diogene-laerzio": {
    "nome": "Diogene Laerzio",
@@ -1314,25 +1314,25 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 2841
+   "codici": 2856
   },
   "girolamo": {
    "nome": "Girolamo",
    "latino": "Hieronymus",
    "categoria": "cristiano",
-   "codici": 1329
+   "codici": 1330
   },
   "ambrogio": {
    "nome": "Ambrogio",
    "latino": "Ambrosius",
    "categoria": "cristiano",
-   "codici": 449
+   "codici": 450
   },
   "gregorio-magno": {
    "nome": "Gregorio Magno",
    "latino": "Gregorius Magnus",
    "categoria": "cristiano",
-   "codici": 958
+   "codici": 964
   },
   "basilio": {
    "nome": "Basilio Magno",
@@ -1350,13 +1350,13 @@
    "nome": "Giovanni Crisostomo",
    "latino": "Iohannes Chrysostomus",
    "categoria": "cristiano",
-   "codici": 1237
+   "codici": 1239
   },
   "bibbia": {
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 6641
+   "codici": 6657
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1368,7 +1368,7 @@
    "nome": "Sedulio",
    "latino": "Sedulius",
    "categoria": "cristiano",
-   "codici": 86
+   "codici": 87
   },
   "giovenco": {
    "nome": "Giovenco",
@@ -1410,13 +1410,13 @@
    "nome": "Cassiodoro",
    "latino": "Cassiodorus",
    "categoria": "cristiano",
-   "codici": 225
+   "codici": 226
   },
   "origene": {
    "nome": "Origene",
    "latino": "Origenes",
    "categoria": "cristiano",
-   "codici": 352
+   "codici": 353
   },
   "eusebio": {
    "nome": "Eusebio di Cesarea",
@@ -1428,7 +1428,7 @@
    "nome": "Atanasio",
    "latino": "Athanasius",
    "categoria": "cristiano",
-   "codici": 383
+   "codici": 384
   },
   "gregorio-nisseno": {
    "nome": "Gregorio di Nissa",
@@ -1446,19 +1446,19 @@
    "nome": "Dionigi Areopagita",
    "latino": "Dionysius Areopagita",
    "categoria": "cristiano",
-   "codici": 156
+   "codici": 157
   },
   "isidoro": {
    "nome": "Isidoro di Siviglia",
    "latino": "Isidorus Hispalensis",
    "categoria": "medievale",
-   "codici": 700
+   "codici": 702
   },
   "beda": {
    "nome": "Beda",
    "latino": "Beda Venerabilis",
    "categoria": "medievale",
-   "codici": 785
+   "codici": 787
   },
   "alcuino": {
    "nome": "Alcuino",
@@ -1482,7 +1482,7 @@
    "nome": "Pietro Lombardo",
    "latino": "Petrus Lombardus",
    "categoria": "medievale",
-   "codici": 361
+   "codici": 362
   },
   "tommaso-aquino": {
    "nome": "Tommaso d'Aquino",
@@ -1494,7 +1494,7 @@
    "nome": "Bernardo di Chiaravalle",
    "latino": "Bernardus Claraevallensis",
    "categoria": "medievale",
-   "codici": 384
+   "codici": 386
   }
  },
  "biblioteche": [
@@ -1621,6 +1621,7 @@
   "Biblioteca della città di Ueda (上田市立上田図書館 花春文庫)",
   "Biblioteca della città di Ueda, fondo Kagetsu (già nella villa Kashiwaya) (上田市立上田図書館 花月文庫（柏屋別荘旧蔵）)",
   "Biblioteca della città di Ueda, fondo Kagetsu (上田市立上田図書館 花月文庫)",
+  "Biblioteca della Matica srpska (Библиотека Матице српске), Novi Sad",
   "Biblioteca della prefettura di Gifu (岐阜県図書館)",
   "Biblioteca della prefettura di Ibaraki, autografi di Yamamura Bochō (茨城県立図書館 山村暮鳥自筆資料), Mito",
   "Biblioteca della prefettura di Ishikawa, fondo Rikatei (石川県立図書館 李花亭文庫), Kanazawa",
@@ -1858,6 +1859,7 @@
   "École nationale des ponts et chaussées (Marne-la-Vallée, Seine-et-Marne",
   "Eisenbibliothek, Schlatt",
   "Elizabethan Club, New Haven",
+  "ELTE Egyetemi Könyvtár (Biblioteca universitaria Eötvös Loránd), Budapest",
   "Emmanuel College Library, Cambridge",
   "Emmanuel College, Cambridge",
   "Erzbischöfliche Diözesan- und Dombibliothek Köln mit Bibliothek St. Albertus Magnus",
@@ -2564,6 +2566,7 @@
   "Státní technická knihovna, Praga",
   "Stiftsarchiv (Abtei Pfäfers), St. Gallen",
   "Stiftsbibliothek St. Paul im Lavanttal, St. Paul in Kärnten",
+  "Stiftsbibliothek Vorau (copia digitale dell'Universitätsbibliothek Graz)",
   "Stiftsbibliothek, Einsiedeln",
   "Stiftsbibliothek, Engelberg",
   "Stiftsbibliothek, St. Gallen",
@@ -2809,6 +2812,7 @@
   "Universitäts- und Stadtbibliothek, Colonia",
   "Universitätsarchiv, Heidelberg",
   "Universitätsbibliothek Erlangen-Nürnberg",
+  "Universitätsbibliothek Graz",
   "Universitätsbibliothek Heidelberg",
   "Universitätsbibliothek Johann Christian Senckenberg, Frankfurt am Main",
   "Universitätsbibliothek Leipzig",
@@ -4277,15 +4281,15 @@
   },
   "ndl": {
    "nome": "National Diet Library, Tokyo (dl.ndl.go.jp)",
-   "codici": 41973,
+   "codici": 41961,
    "carte": 50,
    "carte_stampa": 0,
    "miniati": 1619,
    "musica": 192,
    "con_autori": 0,
    "lingue": {
-    "ja": 40040,
-    "zh": 1868,
+    "ja": 40032,
+    "zh": 1864,
     "ko": 62,
     "?": 4
    },
@@ -4531,6 +4535,61 @@
    "pezzi_voci": 1,
    "indice": [
     "indice/uva-0.json"
+   ]
+  },
+  "vlaustria": {
+   "nome": "Universitätsbibliothek Graz e Universitätsbibliothek Salzburg (unipub.uni-graz.at, eplus.uni-salzburg.at; elenco dalle sitemap, manifesti IIIF delle biblioteche)",
+   "codici": 151,
+   "carte": 0,
+   "carte_stampa": 0,
+   "miniati": 109,
+   "musica": 4,
+   "con_autori": 23,
+   "lingue": {
+    "?": 107,
+    "la": 43,
+    "de": 2
+   },
+   "esito": "precedente",
+   "prefissi": [
+    "ubgraz-"
+   ],
+   "pezzi_voci": 1,
+   "indice": [
+    "indice/vlaustria-0.json"
+   ]
+  },
+  "elte": {
+   "nome": "ELTE Egyetemi Könyvtár, Budapest: codici, frammenti e manoscritti (edit.elte.hu; manifesti IIIF della biblioteca)",
+   "codici": 327,
+   "carte": 0,
+   "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 17,
+   "con_autori": 37,
+   "lingue": {
+    "hu": 52,
+    "la": 233,
+    "de": 14,
+    "?": 3,
+    "grc": 4,
+    "it": 4,
+    "ar": 12,
+    "pi": 1,
+    "pl": 2,
+    "ru": 4,
+    "cs": 4,
+    "cu": 1,
+    "fr": 1,
+    "tr": 1
+   },
+   "esito": "precedente",
+   "prefissi": [
+    "elte-"
+   ],
+   "pezzi_voci": 1,
+   "indice": [
+    "indice/elte-0.json"
    ]
   },
   "slv": {
@@ -5014,6 +5073,34 @@
     "indice/nbkm-0.json"
    ]
   },
+  "bms": {
+   "nome": "Biblioteca della Matica srpska, Novi Sad: libri manoscritti e carte geografiche (digital.bms.rs; manifesti scritti dal catalogo)",
+   "codici": 192,
+   "carte": 0,
+   "carte_stampa": 16,
+   "miniati": 0,
+   "musica": 0,
+   "con_autori": 0,
+   "lingue": {
+    "ru": 1,
+    "sla": 37,
+    "?": 1,
+    "de": 6,
+    "hu": 2,
+    "it": 1,
+    "fr": 2,
+    "cu": 151,
+    "la": 2
+   },
+   "esito": "ok",
+   "prefissi": [
+    "bms-"
+   ],
+   "pezzi_voci": 1,
+   "indice": [
+    "indice/bms-0.json"
+   ]
+  },
   "libfond": {
    "nome": "Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca: copie digitali della Trinità-San Sergio (lib-fond.ru; manifesti scritti dal catalogo)",
    "codici": 11515,
@@ -5494,7 +5581,7 @@
   {
    "file": "indice/ndl-2.json",
    "fonte": "ndl",
-   "righe": 1973
+   "righe": 1961
   },
   {
    "file": "indice/kokusho-0.json",
@@ -5555,6 +5642,16 @@
    "file": "indice/uva-0.json",
    "fonte": "uva",
    "righe": 105
+  },
+  {
+   "file": "indice/vlaustria-0.json",
+   "fonte": "vlaustria",
+   "righe": 151
+  },
+  {
+   "file": "indice/elte-0.json",
+   "fonte": "elte",
+   "righe": 327
   },
   {
    "file": "indice/slv-0.json",
@@ -5645,6 +5742,11 @@
    "file": "indice/nbkm-0.json",
    "fonte": "nbkm",
    "righe": 296
+  },
+  {
+   "file": "indice/bms-0.json",
+   "fonte": "bms",
+   "righe": 192
   },
   {
    "file": "indice/libfond-0.json",
@@ -7551,6 +7653,12 @@
    "lat": 49.1394,
    "lon": 15.5636
   },
+  "novi-sad": {
+   "nome": "Novi Sad",
+   "paese": "RS",
+   "lat": 45.2517,
+   "lon": 19.8369
+  },
   "oberlin": {
    "nome": "Oberlin (Ohio)",
    "paese": "US",
@@ -8301,6 +8409,7 @@
   "jp-ueda",
   "jp-ueda",
   "jp-ueda",
+  "novi-sad",
   "jp-gifu",
   "jp-mito",
   "jp-kanazawa",
@@ -8538,6 +8647,7 @@
   "champs-sur-marne",
   "schlatt",
   "new-haven",
+  "budapest",
   "cambridge",
   "cambridge",
   "colonia",
@@ -9244,6 +9354,7 @@
   "praga",
   "san-gallo",
   "st-paul-lavanttal",
+  null,
   "einsiedeln",
   "engelberg",
   "san-gallo",
@@ -9489,6 +9600,7 @@
   "colonia",
   "heidelberg",
   "erlangen",
+  null,
   "heidelberg",
   "francoforte",
   "lipsia",
@@ -9683,6 +9795,7 @@
   17,
   10,
   381,
+  192,
   189,
   51,
   74,
@@ -9920,6 +10033,7 @@
   2,
   14,
   2,
+  327,
   1,
   22,
   362,
@@ -10309,7 +10423,7 @@
   3,
   39,
   67,
-  41973,
+  41961,
   1,
   1,
   1617,
@@ -10626,6 +10740,7 @@
   6,
   18,
   1,
+  2,
   79,
   61,
   956,
@@ -10871,6 +10986,7 @@
   1,
   113,
   1,
+  149,
   2004,
   1937,
   2678,

@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T12:02:51.187Z",
+ "aggiornato": "2026-10-27T13:47:52.110Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -227,6 +227,16 @@
    "codici": 3,
    "esito": "ok"
   },
+  "vlaustria": {
+   "nome": "Universitätsbibliothek Graz e Universitätsbibliothek Salzburg (unipub.uni-graz.at, eplus.uni-salzburg.at; elenco dalle sitemap, manifesti IIIF delle biblioteche)",
+   "codici": 1,
+   "esito": "precedente"
+  },
+  "elte": {
+   "nome": "ELTE Egyetemi Könyvtár, Budapest: codici, frammenti e manoscritti (edit.elte.hu; manifesti IIIF della biblioteca)",
+   "codici": 10,
+   "esito": "precedente"
+  },
   "slv": {
    "nome": "State Library Victoria, Melbourne (find.slv.vic.gov.au; elenco raccolto dal browser)",
    "codici": 0,
@@ -317,6 +327,11 @@
    "codici": 0,
    "esito": "ok"
   },
+  "bms": {
+   "nome": "Biblioteca della Matica srpska, Novi Sad: libri manoscritti e carte geografiche (digital.bms.rs; manifesti scritti dal catalogo)",
+   "codici": 0,
+   "esito": "ok"
+  },
   "libfond": {
    "nome": "Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca: copie digitali della Trinità-San Sergio (lib-fond.ru; manifesti scritti dal catalogo)",
    "codici": 30,
@@ -353,7 +368,7 @@
    "esito": "ok"
   }
  },
- "totale": 12435,
+ "totale": 12446,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -340325,6 +340340,391 @@
    "immagini": null
   },
   {
+   "id": "elte-629389e7-be67-4a27-a473-373b6639cf18",
+   "fonte": "elte",
+   "biblioteca": "ELTE Egyetemi Könyvtár (Biblioteca universitaria Eötvös Loránd)",
+   "citta": "Budapest",
+   "segnatura": "Cod. Ital. 3",
+   "datazione": "1301-1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Fragmenta ex operibus Senecae, Ciceronis et imprimis ex Aristotelis Ethicis et e Cassiodori Libris Variarum sumpta",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…ragmenta ex operibus Senecae, Ciceronis et imprimis ex Aristotelis Et…»"
+    },
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Fragmenta ex operibus Senecae, Ciceronis et imprimis ex Ari…»"
+    },
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…cae, Ciceronis et imprimis ex Aristotelis Ethicis et e Cassiodori Libri…»"
+    },
+    {
+     "id": "cassiodoro",
+     "autore": "Cassiodoro",
+     "latino": "Cassiodorus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "titolo: «…s ex Aristotelis Ethicis et e Cassiodori Libris Variarum sumpta»"
+    }
+   ],
+   "manifest": "https://edit.elte.hu/server/iiif/629389e7-be67-4a27-a473-373b6639cf18/manifest",
+   "pagina": "https://edit.elte.hu/handle/10831/20477",
+   "licenza": "ELTE Egyetemi Könyvtár",
+   "immagini": null
+  },
+  {
+   "id": "elte-ba79ca46-7ad2-428c-bd8f-2db63a4a9a4d",
+   "fonte": "elte",
+   "biblioteca": "ELTE Egyetemi Könyvtár (Biblioteca universitaria Eötvös Loránd)",
+   "citta": "Budapest",
+   "segnatura": "Cod. Lat. 19",
+   "datazione": "1375-1425",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De consolatione philosophiae",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Boethius, Anicius Manlius Torquatus Severinus (ca. 475-524)»"
+    }
+   ],
+   "manifest": "https://edit.elte.hu/server/iiif/ba79ca46-7ad2-428c-bd8f-2db63a4a9a4d/manifest",
+   "pagina": "https://edit.elte.hu/handle/10831/10520",
+   "licenza": "ELTE Egyetemi Könyvtár",
+   "immagini": null
+  },
+  {
+   "id": "elte-2ee4c7a6-9831-403d-845b-3d2ce17da1d2",
+   "fonte": "elte",
+   "biblioteca": "ELTE Egyetemi Könyvtár (Biblioteca universitaria Eötvös Loránd)",
+   "citta": "Budapest",
+   "segnatura": "Cod. Lat. 27",
+   "datazione": "1401-1450",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Cod. Lat. 27 Historia Augusta",
+   "autori": [
+    {
+     "id": "historia-augusta",
+     "autore": "Historia Augusta",
+     "latino": "Historia Augusta",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Cod. Lat. 27 Historia Augusta»"
+    }
+   ],
+   "manifest": "https://edit.elte.hu/server/iiif/2ee4c7a6-9831-403d-845b-3d2ce17da1d2/manifest",
+   "pagina": "https://edit.elte.hu/handle/10831/30157",
+   "licenza": "ELTE Egyetemi Könyvtár",
+   "immagini": null
+  },
+  {
+   "id": "elte-46e7fed7-0614-431e-833a-0dfe115e9caf",
+   "fonte": "elte",
+   "biblioteca": "ELTE Egyetemi Könyvtár (Biblioteca universitaria Eötvös Loránd)",
+   "citta": "Budapest",
+   "segnatura": "Cod. Lat. 31",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "P. Terentius Afer Comoediae sex",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commedie",
+      "Andria",
+      "Eunuchus",
+      "Heautontimorumenos",
+      "Phormio",
+      "Hecyra",
+      "Adelphoe"
+     ],
+     "corrispondenza": "autore: «Terentius Afer, Publius»"
+    }
+   ],
+   "manifest": "https://edit.elte.hu/server/iiif/46e7fed7-0614-431e-833a-0dfe115e9caf/manifest",
+   "pagina": "https://edit.elte.hu/handle/10831/22359",
+   "licenza": "ELTE Egyetemi Könyvtár",
+   "immagini": null
+  },
+  {
+   "id": "elte-09dea34a-7ba3-4674-a286-becf59465a53",
+   "fonte": "elte",
+   "biblioteca": "ELTE Egyetemi Könyvtár (Biblioteca universitaria Eötvös Loránd)",
+   "citta": "Budapest",
+   "segnatura": "Cod. Lat. 99",
+   "datazione": "post 1470 ante 1520",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectio humanistica",
+   "autori": [
+    {
+     "id": "tibullo",
+     "autore": "Tibullo",
+     "latino": "Tibullus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Tibullus, Albius (Kr. e. ca. 54-ca. 19…»"
+    },
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…mitius (?-Kr. u. ca. 18/12) ; Ovidius Naso, Publius (Kr. e. 43-Kr.…»"
+    },
+    {
+     "id": "persio",
+     "autore": "Persio",
+     "latino": "Persius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…17) ; Pamphilitus, Atimetus ; Persius Flaccus, Aulus (34-62) ; Auso…»"
+    },
+    {
+     "id": "ausonio",
+     "autore": "Ausonio",
+     "latino": "Ausonius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…sius Flaccus, Aulus (34-62) ; Ausonius, Decimus Magnus (ca. 310-ca.…»"
+    }
+   ],
+   "manifest": "https://edit.elte.hu/server/iiif/09dea34a-7ba3-4674-a286-becf59465a53/manifest",
+   "pagina": "https://edit.elte.hu/handle/10831/51632",
+   "licenza": "ELTE Egyetemi Könyvtár",
+   "immagini": null
+  },
+  {
+   "id": "elte-1b8f155a-b8e5-4825-87c5-9c0410b34aa1",
+   "fonte": "elte",
+   "biblioteca": "ELTE Egyetemi Könyvtár (Biblioteca universitaria Eötvös Loránd)",
+   "citta": "Budapest",
+   "segnatura": "Cod. Lat. 107",
+   "datazione": "post 1470 ante 1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "hu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Repertorium auctoritatum Aristotelis",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "De anima"
+     ],
+     "corrispondenza": "titolo: «Repertorium auctoritatum Aristotelis»"
+    },
+    {
+     "id": "beda",
+     "autore": "Beda",
+     "latino": "Beda Venerabilis",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «Beda (Szent,) (Venerabilis) (673-735)»"
+    }
+   ],
+   "manifest": "https://edit.elte.hu/server/iiif/1b8f155a-b8e5-4825-87c5-9c0410b34aa1/manifest",
+   "pagina": "https://edit.elte.hu/handle/10831/51580",
+   "licenza": "ELTE Egyetemi Könyvtár",
+   "immagini": null
+  },
+  {
+   "id": "elte-83b07cd2-d159-48fb-bee2-ee4eb7c41b79",
+   "fonte": "elte",
+   "biblioteca": "ELTE Egyetemi Könyvtár (Biblioteca universitaria Eötvös Loránd)",
+   "citta": "Budapest",
+   "segnatura": "Cod. Lat. 130",
+   "datazione": "post 1400 ante 1450",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De officiis fragmentum",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De officiis"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius (Kr. e. 106-Kr. e. 43)»"
+    }
+   ],
+   "manifest": "https://edit.elte.hu/server/iiif/83b07cd2-d159-48fb-bee2-ee4eb7c41b79/manifest",
+   "pagina": "https://edit.elte.hu/handle/10831/65157",
+   "licenza": "ELTE Egyetemi Könyvtár",
+   "immagini": null
+  },
+  {
+   "id": "elte-6da34562-f343-4421-9175-cbef2423a49a",
+   "fonte": "elte",
+   "biblioteca": "ELTE Egyetemi Könyvtár (Biblioteca universitaria Eötvös Loránd)",
+   "citta": "Budapest",
+   "segnatura": "Cod. Lat. 134 [\"Leonardi Aretini ad Nicolaum prefatio in librum Xenophontis de vita tyrannica et privata e Graeco in Latinum traductum incipit foeliciter\"]",
+   "datazione": "post 1451 ante 1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "\"Leonardi Aretini ad Nicolaum prefatio in librum Xenophontis de vita tyrannica et privata e Graeco in Latinum traductum incipit foeliciter\"",
+   "autori": [
+    {
+     "id": "senofonte",
+     "autore": "Senofonte",
+     "latino": "Xenophon",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…d Nicolaum prefatio in librum Xenophontis de vita tyrannica et privata…»"
+    }
+   ],
+   "manifest": "https://edit.elte.hu/server/iiif/6da34562-f343-4421-9175-cbef2423a49a/manifest",
+   "pagina": "https://edit.elte.hu/handle/10831/65171",
+   "licenza": "ELTE Egyetemi Könyvtár",
+   "immagini": null
+  },
+  {
+   "id": "elte-5cc40ea6-e383-4a70-94ee-c0729c051461",
+   "fonte": "elte",
+   "biblioteca": "ELTE Egyetemi Könyvtár (Biblioteca universitaria Eötvös Loránd)",
+   "citta": "Budapest",
+   "segnatura": "Cod. Lat. 134 [Aeschinis oratio in senatum (sic!) Atheniense]",
+   "datazione": "post 1451 ante 1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aeschinis oratio in senatum (sic!) Atheniense",
+   "autori": [
+    {
+     "id": "eschine",
+     "autore": "Eschine",
+     "latino": "Aeschines",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Aeschinis oratio in senatum (sic!) Atheniense»"
+    }
+   ],
+   "manifest": "https://edit.elte.hu/server/iiif/5cc40ea6-e383-4a70-94ee-c0729c051461/manifest",
+   "pagina": "https://edit.elte.hu/handle/10831/65162",
+   "licenza": "ELTE Egyetemi Könyvtár",
+   "immagini": null
+  },
+  {
+   "id": "elte-34e07264-45c2-4084-8f72-8596b05549e9",
+   "fonte": "elte",
+   "biblioteca": "ELTE Egyetemi Könyvtár (Biblioteca universitaria Eötvös Loránd)",
+   "citta": "Budapest",
+   "segnatura": "Cod. Lat. 134 [Aristophanes (sic!) Theophrasto foeliciter]",
+   "datazione": "post 1451 ante 1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aristophanes (sic!) Theophrasto foeliciter",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Aristophanes (sic!) Theophrasto foeliciter»"
+    },
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristotelēs (Kr. e. 384-322)»"
+    }
+   ],
+   "manifest": "https://edit.elte.hu/server/iiif/34e07264-45c2-4084-8f72-8596b05549e9/manifest",
+   "pagina": "https://edit.elte.hu/handle/10831/65160",
+   "licenza": "ELTE Egyetemi Könyvtár",
+   "immagini": null
+  },
+  {
    "id": "cudl-ms-emmanuel-college-00030",
    "fonte": "cudl",
    "biblioteca": "Emmanuel College",
@@ -400224,6 +400624,38 @@
    "licenza": "Public Domain Mark 1.0",
    "immagini": null,
    "anteprima": "https://e-codices.ch/loris/ubb/ubb-O-III-0034/ubb-O-III-0034_0001r.jp2/full/,150/0/default/jpg"
+  },
+  {
+   "id": "ubgraz-3857149",
+   "fonte": "vlaustria",
+   "biblioteca": "Universitätsbibliothek Graz",
+   "citta": "Graz",
+   "segnatura": "Ms 0132",
+   "datazione": "Entstehungsort unbestimmt, 2. Hälfte des 12. Jahrhunderts",
+   "secolo": [
+    2,
+    12
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Antiquitates Iudaicae",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Antichità giudaiche"
+     ],
+     "corrispondenza": "titolo: «Antiquitates Iudaicae»"
+    }
+   ],
+   "manifest": "https://unipub.uni-graz.at/i3f/v20/3857149/manifest",
+   "pagina": "https://unipub.uni-graz.at/obvugrscript/content/titleinfo/3857149",
+   "licenza": "Universitätsbibliothek Graz",
+   "immagini": 403,
+   "miniato": true
   },
   {
    "id": "hd-cpg101",
