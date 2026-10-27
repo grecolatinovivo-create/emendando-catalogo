@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-27T03:36:51.990Z",
- "totale": 514537,
- "con_autori": 27847,
+ "aggiornato": "2026-10-27T04:05:37.982Z",
+ "totale": 515377,
+ "con_autori": 27850,
  "miniati": 11095,
  "musica": 13608,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
@@ -30,7 +30,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 77306
+   "codici": 78146
   },
   "?": {
    "nome": "lingua non indicata",
@@ -368,13 +368,13 @@
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 3106
+   "codici": 3109
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 512856
+   "codici": 513696
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -1452,7 +1452,7 @@
    "nome": "Isidoro di Siviglia",
    "latino": "Isidorus Hispalensis",
    "categoria": "medievale",
-   "codici": 699
+   "codici": 700
   },
   "beda": {
    "nome": "Beda",
@@ -1488,7 +1488,7 @@
    "nome": "Tommaso d'Aquino",
    "latino": "Thomas de Aquino",
    "categoria": "medievale",
-   "codici": 518
+   "codici": 520
   },
   "bernardo": {
    "nome": "Bernardo di Chiaravalle",
@@ -5218,14 +5218,14 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 15526,
+   "codici": 16366,
    "carte": 2,
    "carte_stampa": 0,
    "miniati": 3,
    "musica": 13,
-   "con_autori": 935,
+   "con_autori": 938,
    "lingue": {
-    "la": 15231,
+    "la": 16071,
     "it": 238,
     "xx": 18,
     "de": 3,
@@ -5239,7 +5239,7 @@
    "prefissi": [
     "bav-"
    ],
-   "pezzi_voci": 20,
+   "pezzi_voci": 21,
    "indice": [
     "indice/vaticana-0.json"
    ]
@@ -5659,7 +5659,7 @@
   {
    "file": "indice/vaticana-0.json",
    "fonte": "vaticana",
-   "righe": 15526
+   "righe": 16366
   }
  ],
  "luoghi": {
