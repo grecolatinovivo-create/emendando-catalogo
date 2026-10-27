@@ -1,7 +1,7 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-27T16:10:52.666Z",
- "totale": 541872,
+ "aggiornato": "2026-10-27T16:37:11.008Z",
+ "totale": 542711,
  "con_autori": 28241,
  "miniati": 11302,
  "musica": 21281,
@@ -30,7 +30,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 82679
+   "codici": 83507
   },
   "?": {
    "nome": "lingua non indicata",
@@ -90,7 +90,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 7697
+   "codici": 7708
   },
   "en": {
    "nome": "inglese",
@@ -390,7 +390,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 537709
+   "codici": 538548
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -5450,16 +5450,16 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 19719,
+   "codici": 20558,
    "carte": 2,
    "carte_stampa": 0,
    "miniati": 4,
    "musica": 14,
    "con_autori": 947,
    "lingue": {
-    "la": 19417,
+    "la": 20245,
     "fr": 24,
-    "it": 244,
+    "it": 255,
     "xx": 18,
     "de": 3,
     "grc": 1,
@@ -5471,9 +5471,10 @@
    "prefissi": [
     "bav-"
    ],
-   "pezzi_voci": 25,
+   "pezzi_voci": 26,
    "indice": [
-    "indice/vaticana-0.json"
+    "indice/vaticana-0.json",
+    "indice/vaticana-1.json"
    ]
   }
  },
@@ -5916,7 +5917,12 @@
   {
    "file": "indice/vaticana-0.json",
    "fonte": "vaticana",
-   "righe": 19719
+   "righe": 20000
+  },
+  {
+   "file": "indice/vaticana-1.json",
+   "fonte": "vaticana",
+   "righe": 558
   }
  ],
  "luoghi": {
@@ -9950,7 +9956,7 @@
   1,
   2,
   3,
-  19719,
+  20558,
   1,
   43,
   8,
