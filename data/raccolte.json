@@ -1,8 +1,8 @@
 {
  "ambrosiana": {
-  "quando": "2026-10-26T12:00:13.435Z",
+  "quando": "2026-10-27T03:06:19.765Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-26T12:00:13.435Z"
+  "ultimo_ok": "2026-10-27T03:06:19.765Z"
  },
  "archive": {
   "quando": "2026-10-27T02:57:47.867Z",
@@ -35,9 +35,9 @@
   "ultimo_ok": "2026-10-26T22:44:06.254Z"
  },
  "bncf": {
-  "quando": "2026-10-26T12:00:13.435Z",
+  "quando": "2026-10-27T03:06:19.765Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-26T12:00:13.435Z"
+  "ultimo_ok": "2026-10-27T03:06:19.765Z"
  },
  "bodleian": {
   "quando": "2026-10-26T04:40:29.314Z",
@@ -50,14 +50,14 @@
   "ultimo_ok": "2026-10-26T15:09:57.343Z"
  },
  "bub": {
-  "quando": "2026-10-26T12:00:13.435Z",
+  "quando": "2026-10-27T03:06:19.765Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-26T12:00:13.435Z"
+  "ultimo_ok": "2026-10-27T03:06:19.765Z"
  },
  "casanatense": {
-  "quando": "2026-10-26T12:00:13.435Z",
+  "quando": "2026-10-27T03:06:19.765Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-26T12:00:13.435Z"
+  "ultimo_ok": "2026-10-27T03:06:19.765Z"
  },
  "cbl": {
   "quando": "2026-10-26T22:44:06.254Z",
@@ -175,7 +175,7 @@
   "ultimo_ok": "2026-10-26T16:33:45.662Z"
  },
  "malatestiana": {
-  "quando": "2026-10-26T12:00:13.435Z",
+  "quando": "2026-10-27T03:06:19.765Z",
   "esito": "errore: schede lette in parte (mancano 60): riprenderà alla prossima esecuzione",
   "ultimo_ok": null
  },
@@ -195,9 +195,9 @@
   "ultimo_ok": "2026-10-27T02:02:06.265Z"
  },
  "montecassino": {
-  "quando": "2026-10-26T12:00:13.435Z",
+  "quando": "2026-10-27T03:06:19.765Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-26T12:00:13.435Z"
+  "ultimo_ok": "2026-10-27T03:06:19.765Z"
  },
  "nbkm": {
   "quando": "2026-10-27T01:10:58.758Z",
@@ -320,9 +320,9 @@
   "ultimo_ok": "2026-10-27T01:19:58.601Z"
  },
  "vallicelliana": {
-  "quando": "2026-10-26T12:00:13.435Z",
+  "quando": "2026-10-27T03:06:19.765Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-26T12:00:13.435Z"
+  "ultimo_ok": "2026-10-27T03:06:19.765Z"
  },
  "vaticana": {
   "quando": "2026-10-27T01:35:51.919Z",
