@@ -84,6 +84,7 @@ export const BIBLIOTECHE = {
   nbkm: { biblioteca: "Biblioteca Nazionale «Santi Cirillo e Metodio» (НБКМ): manoscritti slavi, greci, armeni, georgiani, ebraici, latini e musicali (manifesti IIIF scritti da Emendando)", citta: "Sofia (Bulgaria)", come: "corsia est, ogni notte (elenco ogni 14 giorni; pagine contate solo per i codici nuovi)" },
   // Balcani (corsia «balcani», dal 27 ottobre 2026)
   bms: { biblioteca: "Biblioteca della Matica srpska (Библиотека Матице српске): libri manoscritti e carte geografiche fino al 1900 (manifesti IIIF scritti da Emendando)", citta: "Novi Sad (Serbia)", come: "corsia balcani: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 14 giorni; schede e visore solo per i codici nuovi)" },
+  ija: { biblioteca: "Iraqi Jewish Archive (U.S. National Archives and Records Administration): frammenti di rotoli della Torah e di Ester della comunità ebraica di Baghdad", citta: "College Park (Stati Uniti), da Baghdad", come: "corsia medioriente, ogni notte (elenco ogni 14 giorni; media solo dei candidati nuovi)" },
   libfond: { biblioteca: "Biblioteca Statale Russa, Reparto manoscritti, e biblioteca dell'Accademia Teologica di Mosca: copie digitali pubblicate dalla Trinità-San Sergio (lib-fond.ru; manifesti IIIF scritti da Emendando)", citta: "Mosca e Sergiev Posad (Russia)", come: "corsia est: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 30 giorni; schede e immagini solo dei codici nuovi)" },
   // Internet Archive (corsia «mondo», dal 26 ottobre 2026)
   archive: { biblioteca: "Internet Archive: manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, John Carter Brown Library, Newberry Library, Fragile Palm Leaves Foundation, biblioteche indiane e altre; dettaglio sotto la tabella)", citta: "varie", come: "corsia mondo, ogni notte (una ricerca per profilo ogni 6 giorni)" },
@@ -321,6 +322,12 @@ export const AVANZAMENTO = {
     if (s.cursore) return { testo: `in corso, a ruota: elenco al fondo ${num(s.cursore.fondo + 1)} di ${num(presi)} (${num(vs.length)} codici finora)`, data: s.aggiornato };
     if (!s.completato) return { testo: `in corso, a ruota: schede e immagini lette per ${num(letti)} codici su ${num(vs.length)}`, data: s.aggiornato };
     return { testo: `codici letti tutti (${num(vs.length)} in ${num(presi)} fondi di libri manoscritti su ${num(fondi.length)}; ${num(con)} con immagini; fuori archivi, autografi, carte e stampati)`, data: s.completato };
+  },
+  ija: () => {
+    const s = leggi("data/ija.json"); if (!s) return { testo: "non ancora cominciata" };
+    const vs = Object.values(s.voci || {});
+    if (!s.completato) return { testo: `in corso: media letti per ${num(vs.filter(v => v.i != null || v.x).length)} candidati su ${num(vs.length)}`, data: s.aggiornato };
+    return { testo: `schede lette tutte (${num(s.totale || 0)} oggetti; ${num(vs.length)} manoscritti candidati; entrano quelli con la copia intera nelle immagini IIIF, fuori i libri con la copia intera solo in PDF)`, data: s.completato };
   },
   bms: () => {
     const s = leggi("data/bms.json"); if (!s) return { testo: "non ancora cominciata" };

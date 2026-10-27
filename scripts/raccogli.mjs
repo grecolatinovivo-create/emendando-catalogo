@@ -13,7 +13,7 @@
 //        [--nli-minuti=15] [--getty-minuti=15] [--harvard-minuti=10]
 //        [--kbdk-minuti=30] [--uva-minuti=5] [--onb-minuti=30] [--bncf-minuti=5] [--vallicelliana-minuti=5] [--malatestiana-minuti=20] [--polona-minuti=20] [--manuscriptorium-minuti=30] [--archive-minuti=10]
 //        [--crossasia-minuti=30] [--sbbasia-minuti=30] [--sbbor-minuti=30] [--nomfoundation-minuti=20]
-//        [--nb-minuti=60] [--manuscripta-minuti=15] [--bnl-minuti=5]
+//        [--nb-minuti=60] [--manuscripta-minuti=15] [--bnl-minuti=5] [--ija-minuti=5]
 // Scrive il catalogo diviso per fonte (vedi costruisci.mjs): data/catalogo/indice.json, data/catalogo/indice/<fonte>-<n>.json, data/catalogo/voci/<fonte>-<n>.json,
 // più data/manoscritti.json (compatibilità: solo i codici con autori classici), e gli stati delle scansioni a riprese
 // (data/vaticana.json, data/bodleian.json, data/laurenziana.json, data/leiden.json, data/heidelberg-indici.json; data/<fonte>.json per le fonti del Handschriftenportal: wolfenbuettel, bamberga, karlsruhe, stoccarda, colonia, lipsia; data/yale.json, data/penn.json, data/walters.json).
@@ -92,6 +92,7 @@ import { scansionaHarvard, recordHarvard, esistentiHarvard, leggiHarvard } from 
 import { scansionaNb, recordNb } from "./fonti/nb.mjs";
 import { scansionaManuscripta, recordManuscripta } from "./fonti/manuscripta.mjs";
 import { scansionaBnl, recordBnl } from "./fonti/bnl.mjs";
+import { scansionaIja, recordIja } from "./fonti/ija.mjs";
 import { scriviRegistro, registraEsiti } from "./registro.mjs";
 import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 import { tipoDa } from "./carte.mjs";
@@ -177,6 +178,8 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   nb: "Nasjonalbiblioteket, Oslo: manoscritti, manoscritti musicali e carte geografiche (api.nb.no; manifesti IIIF della biblioteca)",
   manuscripta: "manuscripta.se: Kungliga biblioteket, Uppsala universitetsbibliotek e altre biblioteche svedesi (manifesti IIIF di manuscripta.se)",
   bnl: "Bibliothèque nationale du Luxembourg (eluxemburgensia.lu; manifesti scritti dal catalogo con le immagini IIIF della biblioteca)",
+  // Vicino Oriente e Golfo (corsia «medioriente», dal 27 ottobre 2026)
+  ija: "Iraqi Jewish Archive: frammenti di rotoli della Torah e di Ester della comunità ebraica di Baghdad (ijarchive.org, U.S. National Archives; manifesti IIIF del sito)",
   vaticana: "Biblioteca Apostolica Vaticana (digi.vatlib.it)" };
 
 // i tre codici del Truculentus restano sempre nel catalogo, anche se una fonte non li ha ancora restituiti
@@ -438,6 +441,8 @@ async function main() {
     nb: async () => recordNb(await scansionaNb({ minuti: min("nb", +(arg["nb-minuti"] ?? 60)), soloCache: sc("nb") })),
     manuscripta: async () => recordManuscripta(await scansionaManuscripta({ minuti: min("manuscripta", +(arg["manuscripta-minuti"] ?? 15)), soloCache: sc("manuscripta") })),
     bnl: async () => recordBnl(await scansionaBnl({ minuti: min("bnl", +(arg["bnl-minuti"] ?? 5)), soloCache: sc("bnl") })),
+    // Vicino Oriente e Golfo (corsia «medioriente», dal 27 ottobre 2026): Iraqi Jewish Archive (Omeka S, manifesti IIIF del sito)
+    ija: async () => recordIja(await scansionaIja({ minuti: min("ija", +(arg["ija-minuti"] ?? 5)), soloCache: sc("ija") })),
     vaticana: async () => {
       let minuti = +(arg["vaticana-minuti"] ?? 20);
       // con un tempo complessivo si lasciano 10 minuti per costruire il catalogo, provarlo e salvarlo
