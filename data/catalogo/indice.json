@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-27T06:28:32.141Z",
- "totale": 516959,
- "con_autori": 27859,
+ "aggiornato": "2026-10-27T06:33:45.587Z",
+ "totale": 517798,
+ "con_autori": 27862,
  "miniati": 11103,
  "musica": 13608,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
@@ -30,7 +30,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 78171
+   "codici": 79007
   },
   "?": {
    "nome": "lingua non indicata",
@@ -90,7 +90,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 7638
+   "codici": 7641
   },
   "en": {
    "nome": "inglese",
@@ -356,7 +356,7 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 6566
+   "codici": 6568
   },
   "classico-greco": {
    "nome": "classici greci",
@@ -364,7 +364,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 14381
+   "codici": 14382
   },
   "medievale": {
    "nome": "autori medievali",
@@ -374,7 +374,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 515278
+   "codici": 516117
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -462,7 +462,7 @@
    "nome": "Livio",
    "latino": "Livius",
    "categoria": "classico-latino",
-   "codici": 260
+   "codici": 261
   },
   "seneca": {
    "nome": "Seneca",
@@ -636,7 +636,7 @@
    "nome": "Vitruvio",
    "latino": "Vitruvius",
    "categoria": "classico-latino",
-   "codici": 49
+   "codici": 50
   },
   "frontino": {
    "nome": "Frontino",
@@ -1356,7 +1356,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 6636
+   "codici": 6637
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -5238,15 +5238,15 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 16366,
+   "codici": 17205,
    "carte": 2,
    "carte_stampa": 0,
    "miniati": 3,
    "musica": 13,
-   "con_autori": 938,
+   "con_autori": 941,
    "lingue": {
-    "la": 16071,
-    "it": 238,
+    "la": 16907,
+    "it": 241,
     "xx": 18,
     "de": 3,
     "grc": 1,
@@ -5259,7 +5259,7 @@
    "prefissi": [
     "bav-"
    ],
-   "pezzi_voci": 21,
+   "pezzi_voci": 22,
    "indice": [
     "indice/vaticana-0.json"
    ]
@@ -5679,7 +5679,7 @@
   {
    "file": "indice/vaticana-0.json",
    "fonte": "vaticana",
-   "righe": 16366
+   "righe": 17205
   }
  ],
  "luoghi": {

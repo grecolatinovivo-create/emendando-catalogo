@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T05:30:41.914Z",
+ "aggiornato": "2026-10-27T06:33:45.587Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -305,7 +305,7 @@
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
    "codici": 1,
-   "esito": "errore: manifesti letti in parte (mancano 341): riprenderà alla prossima esecuzione"
+   "esito": "ok"
   },
   "getty": {
    "nome": "J. Paul Getty Museum, Los Angeles: manoscritti (data.getty.edu; manifesti media.getty.edu)",
@@ -349,11 +349,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 511,
+   "codici": 513,
    "esito": "ok"
   }
  },
- "totale": 12425,
+ "totale": 12427,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -58544,6 +58544,70 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.7320/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.7320",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-10305",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 10305",
+   "datazione": "Sec. XVII ex.",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Adversaria de architectura et pictura",
+   "autori": [
+    {
+     "id": "vitruvio",
+     "autore": "Vitruvio",
+     "latino": "Vitruvius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De architectura"
+     ],
+     "corrispondenza": "titolo: «Adversaria de architectura et pictura»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.10305/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.10305",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-10696",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 10696",
+   "datazione": "sec. IV-V",
+   "secolo": [
+    4,
+    5
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Fragmenta liviana",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Livius, Titus, 59 a.C.-17 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.10696/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.10696",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },
