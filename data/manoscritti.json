@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T07:39:44.750Z",
+ "aggiornato": "2026-10-27T09:01:46.089Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -349,11 +349,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 513,
+   "codici": 514,
    "esito": "ok"
   }
  },
- "totale": 12428,
+ "totale": 12429,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -58608,6 +58608,39 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.10696/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.10696",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-lat-11559",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. lat. 11559",
+   "datazione": "sec. XIV in",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De bello civili",
+   "autori": [
+    {
+     "id": "lucano",
+     "autore": "Lucano",
+     "latino": "Lucanus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Bellum civile"
+     ],
+     "corrispondenza": "autore: «Lucanus, Marcus Annaeus, 39-65»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.11559/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.11559",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },
