@@ -81,6 +81,9 @@ export function scriviCatalogo(manoscritti, { fonti, nomi = {}, esito = {}, auto
   // luogo di ogni biblioteca (id in «luoghi», null se non risolto)
   const bibLuogo = biblioteche.map(() => null);
   if (luoghi) for (const v of manoscritti) { const i = bibIdx.get(nomeBib(v)); if (bibLuogo[i] === null) bibLuogo[i] = luogoDi(v, luoghi); }
+  // codici di ogni biblioteca (parallelo a «biblioteche»): li legge la mappa della home, sempre aggiornati a ogni costruzione
+  const bibN = biblioteche.map(() => 0);
+  for (const v of manoscritti) bibN[bibIdx.get(nomeBib(v))]++;
   const usati = [...new Set(bibLuogo.filter(Boolean))].sort();
   const luoghiIndice = luoghi ? Object.fromEntries(usati.map(id => { const l = luoghi.luoghi[id]; return [id, { nome: l.nome, ...(l.en ? { en: l.en } : {}), paese: l.paese, lat: l.lat, lon: l.lon }]; })) : null;
   const conteggio = {}, conAutori = {}, lingueFonte = {}, pezzi = [], infoFonti = {};
@@ -126,6 +129,7 @@ export function scriviCatalogo(manoscritti, { fonti, nomi = {}, esito = {}, auto
   };
   // luoghi delle biblioteche (mappa): «biblioteche_luogo» è parallelo a «biblioteche», con l'id del luogo o null
   if (luoghiIndice) { indice.luoghi = luoghiIndice; indice.biblioteche_luogo = bibLuogo; }
+  indice.biblioteche_n = bibN;   // numero dei codici di ogni biblioteca, parallelo a «biblioteche»
   // l'indice si riscrive (con la data) solo se cambia qualcosa
   const fileIndice = path.join(DIR, "indice.json");
   let vecchio = null; try { vecchio = JSON.parse(fs.readFileSync(fileIndice, "utf8")); } catch (e) {}
