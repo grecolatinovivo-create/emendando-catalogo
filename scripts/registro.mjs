@@ -39,6 +39,9 @@ export const BIBLIOTECHE = {
   manuscriptorium: { biblioteca: "Manuscriptorium: Národní knihovna České republiky, biblioteche universitarie di Breslavia e Toruń e altre (fuori le copie di biblioteche già nel catalogo)", citta: "Repubblica Ceca e altre", come: "corsia europa: a ruota finché la prima lettura non è finita, poi ogni notte (raccolta completa ogni 6 giorni)" },
   kbdk: { biblioteca: "Det Kongelige Bibliotek: codici, frammenti, manoscritti orientali ed ebraici (Digitale samlinger; manifesti scritti dal catalogo con le immagini IIIF della biblioteca)", citta: "Copenaghen", come: "corsia europa, ogni notte (raccolta completa ogni 14 giorni)" },
   uva: { biblioteca: "Allard Pierson, Universiteit van Amsterdam: codici (Bibliotheca Philosophica Hermetica, libri d'ore, manoscritti della Rosenthaliana e altri; fuori le lettere)", citta: "Amsterdam", come: "corsia europa, ogni notte (raccolta completa ogni 6 giorni)" },
+  // Europa centrale (corsia «centro», dal 27 ottobre 2026)
+  vlaustria: { biblioteca: "Universitätsbibliothek Graz (con i codici di Vorau) e Universitätsbibliothek Salzburg: manoscritti e frammenti (Visual Library)", citta: "Graz e Salisburgo", come: "corsia centro: a ruota finché la prima lettura non è finita, poi ogni notte (elenco dalle sitemap ogni 14 giorni, manifesti nuovi)" },
+  elte: { biblioteca: "ELTE Egyetemi Könyvtár (Biblioteca universitaria Eötvös Loránd): codici, frammenti e manoscritti moderni (fuori le lettere e i codici già dati da Manuscriptorium)", citta: "Budapest", come: "corsia centro, ogni notte (raccolta completa ogni 14 giorni)" },
   yale: { biblioteca: "Yale University Library (Beinecke e altre biblioteche di Yale)", citta: "New Haven (Stati Uniti)", come: "corsia propria: a ruota finché la prima lettura non è finita, poi ogni 6 giorni" },
   penn: { biblioteca: "University of Pennsylvania Libraries (Kislak Center, Schoenberg, CAJS)", citta: "Filadelfia (Stati Uniti)", come: "corsia usa: a ruota finché la prima lettura non è finita, poi ogni notte (raccolta completa ogni 6 giorni)" },
   ds: { biblioteca: "Digital Scriptorium (istituzioni statunitensi: Princeton, Columbia, Harvard, Huntington, Free Library e altre; dettaglio sotto la tabella)", citta: "Stati Uniti", come: "ogni notte, da sola (raccolta completa ogni 6 giorni)" },
@@ -398,6 +401,16 @@ export const AVANZAMENTO = {
   uva: () => {
     const s = leggi("data/uva.json"); if (!s) return { testo: "non ancora cominciata" };
     return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} oggetti «Manuscript» che non sono lettere; fuori anche le tesi a stampa e i cataloghi)`, data: s.completato || s.aggiornato };
+  },
+  vlaustria: () => {
+    const s = leggi("data/vlaustria.json"); if (!s) return { testo: "non ancora cominciata" };
+    const vs = Object.values(s.voci || {}), letti = vs.filter(v => v.n != null || v.x).length;
+    if (!s.completato) return { testo: `in corso, a ruota: ${num(letti)} manifesti letti su ${num(vs.length)} schede delle collezioni di manoscritti`, data: s.aggiornato };
+    return { testo: `manifesti letti tutti (${num(vs.length)} schede delle collezioni di manoscritti; entrano i codici con immagini, fuori a Salisburgo le sole descrizioni e i libri a stampa dei Cappuccini)`, data: s.completato };
+  },
+  elte: () => {
+    const s = leggi("data/elte.json"); if (!s) return { testo: "non ancora cominciata" };
+    return { testo: `schede lette tutte (${num(Object.keys(s.voci || {}).length)} nelle collezioni «Kódexek», «Kódextöredékek» e manoscritti moderni)`, data: s.completato || s.aggiornato };
   },
   vaticana: () => {
     const s = leggi("data/vaticana.json"); if (!s) return { testo: "non ancora cominciata" };

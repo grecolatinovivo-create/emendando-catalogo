@@ -14,11 +14,11 @@ In tutto 196 nazioni: i 193 stati dell'ONU, la Città del Vaticano, la Palestina
 
 | Stato | Nazioni |
 |---|---|
-| agganciata | 31 |
+| agganciata | 34 |
 | controllata, niente da agganciare | 52 |
-| controllata, bloccata | 17 |
-| in corso | 25 |
-| non ancora controllata | 71 |
+| controllata, bloccata | 19 |
+| in corso | 24 |
+| non ancora controllata | 67 |
 | **totale** | **196** |
 
 Che cosa vuol dire ogni stato:
@@ -26,7 +26,7 @@ Che cosa vuol dire ogni stato:
 - **agganciata**: almeno una biblioteca della nazione è nel catalogo. A volte sono pochi codici arrivati da un'altra fonte: è scritto accanto.
 - **controllata, niente da agganciare**: non risulta nessuna raccolta di codici digitalizzati. Per queste nazioni il controllo è stato fatto a tavolino in questo censimento.
 - **controllata, bloccata**: le biblioteche principali sono state provate e non si possono leggere. Il motivo è scritto accanto.
-- **in corso**: c'è un lavoro aperto oggi su quella nazione (Italia, Spagna, Portogallo, Austria per Vienna, Canada, America Latina e Centro America). Le righe di queste nazioni nel registro possono cambiare presto.
+- **in corso**: c'è un lavoro aperto oggi su quella nazione (Italia, Spagna, Portogallo, Canada, America Latina e Centro America). Le righe di queste nazioni nel registro possono cambiare presto.
 - **non ancora controllata**: nessuno ha ancora provato le sue biblioteche.
 
 ### Le 20 biblioteche mancanti da fare per prime
@@ -109,8 +109,8 @@ Francia, Benelux, isole britanniche, Germania, Austria, Svizzera e piccoli stati
 | Regno Unito | agganciata | Bodleian Library, Oxford: 9.775; St John's College, Oxford: 141; Christ Church, Oxford: 72; Magdalen College, Oxford: 31; Exeter College, Oxford: 31; Jesus College, Oxford: 20; altre 18 biblioteche: 126. **Totale: 10.196 codici**. Dal 26 ottobre 2026 in lettura (corsia uk): Wellcome Collection (circa 1600), Manchester (John Rylands), Cambridge Digital Library (University Library e college), codici della NLS tramite Irish Script on Screen, British Library (fonte «bl»: nuovo servizio IIIF e copie nella Qatar Digital Library) | British Library: dal 26 ottobre 2026 agganciata in parte (le copie del vecchio visore ancora spente entrano quando tornano). Parker: dal 26 ottobre 2026 agganciata (elenco da Biblissima; sito dietro verifica anti-robot). Durham: robots.txt vieta tutto. National Library of Wales: dal 26 ottobre 2026 agganciata in parte (circa 125 codici, elenco da Wikidata ed Europeana; sito dietro Cloudflare). National Library of Scotland: Cloudflare. International Dunhuang Programme: bloccato. Papiri della British Library (126 di nuovo con IIIF, in attesa di decisione) e di Ossirinco: fuori. Endangered Archives Programme: robots.txt vieta i manifesti e chiude il sito ai programmi di intelligenza artificiale (26 ottobre 2026); da chiedere con la lettera di Urbino. | Trinity Cambridge, Edimburgo, SOAS, Lambeth, Glasgow |
 | Irlanda | agganciata | Dal 26 ottobre 2026 in lettura (corsia uk): Chester Beatty, Dublino (circa 3000 oggetti da leggere, poi solo i manoscritti librari); Irish Script on Screen (circa 500 codici: Royal Irish Academy, National Library of Ireland, Trinity College Dublin, UCD, Maynooth, Cork, Galway, King's Inns, Marsh's Library e altre) | Trinity College Dublin, Digital Collections: CAPTCHA (i codici irlandesi del TCD entrano tramite ISOS). | National Library of Ireland (catalogo proprio) |
 | Germania | agganciata | Bayerische Staatsbibliothek, München: 28.788; Heidelberger Papyrussammlung: 4.633; Staatsbibliothek zu Berlin: 3.296 (più, dal 26 ottobre 2026, i manoscritti non europei delle fonti «sbbasia» e «sbbor»: 7.731 da «sbbor», arabi, persiani, turchi, ebraici, siriaci, sanscriti, tibetani, mongoli e altri); Universitätsbibliothek Leipzig: 2.677; Universitätsbibliothek Heidelberg: 2.004; Wissenschaftliche Stadtbibliothek Mainz: 618; altre 178 biblioteche: 982. **Totale: 42.998 codici** | Wolfenbüttel, Karlsruhe, Stoccarda: sospese (server non raggiungibili). Treviri: niente IIIF. Papiri di Berlino: fuori (serve un permesso). Papiri di Colonia: in attesa di decisione. Dal 26 ottobre 2026 entrano dal Handschriftenportal (corsia europa) Francoforte (1937 codici), Dresda (1633), Tubinga (273) e Darmstadt (241, con le copie dei manifesti scritte dal catalogo): i numeri qui accanto si aggiornano al prossimo censimento. | Gottinga, Kassel, Düsseldorf, Friburgo, Würzburg, Fulda, Amburgo, Halle |
-| Austria | in corso | Österreichische Nationalbibliothek, Wien: 2.708 (2.705 dalla fonte «onb», agganciata il 26 ottobre 2026, più 3 da altre fonti); Österreichisches Staatsarchiv, Wien: 1; Tiroler Landesmuseum Ferdinandeum, Innsbruck: 1; Stiftsbibliothek St. Paul im Lavanttal, St. Paul in Kärnten: 1. **Totale: 2.711 codici** | Österreichische Nationalbibliothek: elenco da ÖNB Digital e manifesti IIIF 3 di api.onb.ac.at, letti a riprese nella corsia giornaliera (3.200 candidati su 6.394 letti il 26 ottobre 2026). Papiri di Vienna: da provare. | Le vede il lavoro in corso. |
-| Svizzera | agganciata | Stiftsbibliothek, St. Gallen: 956; Universitätsbibliothek, Basel: 305; Fondation Martin Bodmer, Cologny: 180; Bibliothèque cantonale jurassienne, Porrentruy: 121; Bibliothèque de Genève: 108; Stiftsbibliothek, Einsiedeln: 79; altre 78 biblioteche: 972. **Totale: 2.721 codici** | Ginevra: papiri fuori. | Nessuna di rilievo: e-codices raccoglie già le biblioteche svizzere. |
+| Austria | agganciata | Österreichische Nationalbibliothek, Wien: 2.708 (2.705 dalla fonte «onb», agganciata il 26 ottobre 2026, più 3 da altre fonti); Österreichisches Staatsarchiv, Wien: 1; Tiroler Landesmuseum Ferdinandeum, Innsbruck: 1; Stiftsbibliothek St. Paul im Lavanttal, St. Paul in Kärnten: 1. **Totale: 2.711 codici**. Dal 27 ottobre 2026 anche Universitätsbibliothek Graz (con 2 codici di Vorau) e Universitätsbibliothek Salzburg (fonte «vlaustria», corsia centro, lettura in corso): circa 1.360 codici e frammenti di Graz e, stima da un campione, circa 100-150 codici interi di Salisburgo | Österreichische Nationalbibliothek: elenco da ÖNB Digital e manifesti IIIF 3 di api.onb.ac.at, letti a riprese nella corsia giornaliera (3.200 candidati su 6.394 letti il 26 ottobre 2026). Papiri di Vienna: da provare. manuscripta.at (codici digitalizzati di Melk, Admont, Klosterneuburg, Sankt Florian e degli altri monasteri): risponde 403 al server e anche al browser (27 ottobre 2026), lettera di Urbino. Universitäts- und Landesbibliothek Tirol, Innsbruck (diglib.uibk.ac.at): il robots.txt vieta le collezioni dei manoscritti, lettera di Urbino. | Nessuna in più che si possa leggere: i monasteri sono tutti in manuscripta.at. |
+| Svizzera | agganciata | Stiftsbibliothek, St. Gallen: 956; Universitätsbibliothek, Basel: 305; Fondation Martin Bodmer, Cologny: 180; Bibliothèque cantonale jurassienne, Porrentruy: 121; Bibliothèque de Genève: 108; Stiftsbibliothek, Einsiedeln: 79; altre 78 biblioteche: 972. **Totale: 2.721 codici** | Ginevra: papiri fuori. e-manuscripta.ch (Zentralbibliothek Zürich e altre; soprattutto lettere e carte d'archivio): il robots.txt vieta tutto tranne Google e Bing (27 ottobre 2026), lettera di Urbino; i codici medievali della Zentralbibliothek entrano già da e-codices (62). | Nessuna di rilievo: e-codices raccoglie già le biblioteche svizzere. |
 | Liechtenstein | controllata, niente da agganciare | nessuna | nessuna | Nessuna raccolta nota di codici digitalizzati (controllo a tavolino in questo censimento). |
 
 ### Biblioteche che mancano
@@ -210,8 +210,8 @@ Polonia, Cechia, Slovacchia, Ungheria, Romania, Bulgaria, Moldavia, Ucraina, Bie
 |---|---|---|---|---|
 | Polonia | agganciata | Jagiellonian Library, Krakow: 2 codici (pochi codici, arrivati da un'altra fonte). Dal 26 ottobre 2026 Polona: 13.945 manoscritti (Biblioteka Narodowa 7274, Biblioteka Jagiellońska 4772 e altre biblioteche polacche); dal 26 ottobre 2026 anche le biblioteche universitarie di Breslavia e Toruń tramite Manuscriptorium | Polona: fuori i documenti protetti dal diritto d'autore e quelli con licenza non aperta. | nessuna di rilievo |
 | Repubblica Ceca | agganciata | Dal 26 ottobre 2026 Manuscriptorium (corsia europa): 6352 codici di biblioteche ceche (Národní knihovna, Strahov, Museo nazionale, Moravská zemská knihovna, Olomouc, Plzeň e altre) | Manuscriptorium: fuori gli stampati, le carte geografiche, le lettere e le copie di biblioteche già nel catalogo. | nessuna di rilievo |
-| Slovacchia | non ancora controllata | nessuna | nessuna | Slovakiana |
-| Ungheria | non ancora controllata | nessuna | nessuna | Bibliotheca Corvina Virtualis, Hungaricana |
+| Slovacchia | agganciata | Univerzitná knižnica Bratislava: 1; Ústredná knižnica Slovenskej akadémie vied, Bratislava: 1 (tramite Manuscriptorium). **Totale: 2 codici** | Slovakiana: nessuna API pubblica né IIIF (il sito è un'applicazione che legge un servizio interno) e nelle sitemap non c'è una categoria di manoscritti; Slovenská národná knižnica (snk.sk, dikda.snk.sk): non risponde al server (27 ottobre 2026). | nessuna in più che si possa leggere |
+| Ungheria | agganciata | Dal 27 ottobre 2026 ELTE Egyetemi Könyvtár, Budapest (fonte «elte», corsia centro): circa 340 codici, frammenti e manoscritti moderni (con le Corvine dell'ELTE). Prima, tramite Manuscriptorium: ELTE (Department of Manuscripts and Rare Books e University Library Budapest): 24; Budapest University of Technology and Economics: 16; tramite Cambridge: Biblioteca dell'Accademia ungherese delle scienze: 4 | Bibliotheca Corvina Virtualis (corvina.hu, corvina.oszk.hu): il robots.txt vieta tutto tranne Google; Hungaricana: risponde 403 al server (dal browser si apre), pochi codici; Biblioteca dell'Accademia ungherese delle scienze (REAL-MS, real-ms.mtak.hu): solo PDF, niente IIIF; MEK ed EPA: libri e periodici moderni, non manoscritti (27 ottobre 2026). | nessuna in più che si possa leggere |
 | Romania | agganciata | Dal 26 ottobre 2026 Biblioteca nazionale della Romania (Bucarest) e Batthyaneum (Alba Iulia) tramite Manuscriptorium: circa 280 codici | BNR Digitală (digitool.bibnat.ro): verifica Cloudflare Turnstile (26 ottobre 2026). | Biblioteca dell'Accademia Romena (biblioteca digitale non trovata) |
 | Bulgaria | agganciata | Dal 26 ottobre 2026 Biblioteca Nazionale «Santi Cirillo e Metodio», Sofia (fonte «nbkm», corsia est): 296 codici slavi, greci, armeni, georgiani, ebraici, latini e musicali, manifesti scritti dal catalogo | nessuna | nessuna di rilievo |
 | Moldavia | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
@@ -223,9 +223,10 @@ Polonia, Cechia, Slovacchia, Ungheria, Romania, Bulgaria, Moldavia, Ucraina, Bie
 
 | Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
 |---|---|---|---|---|---|
-| Slovacchia | Slovakiana | www.slovakiana.sk | non si sa | alcune centinaia | bassa |
-| Ungheria | Bibliotheca Corvina Virtualis (Biblioteca nazionale Széchényi): i codici di Mattia Corvino | corvina.hu | non si sa | circa 200 (stima) | media |
-| Ungheria | Hungaricana (archivi, biblioteche e musei ungheresi) | hungaricana.hu | non si sa | molti documenti, pochi codici | bassa |
+| Slovacchia | Slovakiana | www.slovakiana.sk | no (controllata il 27 ottobre 2026: nessuna API pubblica) | non si sa | bassa |
+| Ungheria | Bibliotheca Corvina Virtualis (Biblioteca nazionale Széchényi): i codici di Mattia Corvino | corvina.hu | non si sa: il robots.txt vieta tutto tranne Google (27 ottobre 2026), lettera di Urbino | circa 200 (stima) | media |
+| Ungheria | Hungaricana (archivi, biblioteche e musei ungheresi) | hungaricana.hu | non si sa: 403 al server (27 ottobre 2026) | molti documenti, pochi codici | bassa |
+| Ungheria | Biblioteca dell'Accademia ungherese delle scienze, REAL-MS (fondi ebraici con la collezione Kaufmann, arabi, turchi, persiani, tibetani, mongoli) | real-ms.mtak.hu | no: solo PDF (27 ottobre 2026), lettera di Urbino | circa 4.000 schede orientali, in PDF | media |
 | Romania | Biblioteca dell'Accademia Romena (manoscritti slavi, greci, romeni) | non trovato | non si sa | non si sa | bassa |
 
 ## Balcani
@@ -236,8 +237,8 @@ Ex Jugoslavia e Albania.
 
 | Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
 |---|---|---|---|---|
-| Slovenia | non ancora controllata | nessuna | nessuna | dLib.si |
-| Croazia | non ancora controllata | nessuna | nessuna | Biblioteca nazionale e universitaria di Zagabria |
+| Slovenia | controllata, bloccata | nessuna | dLib.si (Narodna in univerzitetna knjižnica, Lubiana; collezione «Srednjeveški rokopisi (kodeksi)»): i codici si scaricano solo in PDF, niente IIIF né immagini delle pagine (27 ottobre 2026), lettera di Urbino. | nessuna in più che si possa leggere |
+| Croazia | controllata, bloccata | nessuna | Biblioteca nazionale e universitaria di Zagabria (digitalna.nsk.hr) e DiZbi dell'Accademia croata (dizbi.hazu.hr), tutte e due sulla piattaforma Indigo: manifesti IIIF senza CORS e immagini che rispondono con errore 400 e senza CORS, quindi non si aprono dentro il sito (27 ottobre 2026), lettera di Urbino. | nessuna in più che si possa leggere |
 | Bosnia ed Erzegovina | non ancora controllata | nessuna | nessuna | Biblioteca Gazi Husrev-beg |
 | Serbia | agganciata | Dal 26 ottobre 2026 Biblioteca nazionale di Serbia tramite Manuscriptorium: 39 codici | digitalna.nb.rs: solo poche carte scelte per codice (prova del 26 ottobre 2026). | nessuna in più |
 | Montenegro | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
@@ -248,8 +249,8 @@ Ex Jugoslavia e Albania.
 
 | Nazione | Biblioteca | Indirizzo | IIIF | Manoscritti digitalizzati | Priorità |
 |---|---|---|---|---|---|
-| Slovenia | dLib.si, Biblioteca nazionale e universitaria | www.dlib.si | non si sa | alcune centinaia | bassa |
-| Croazia | Biblioteca nazionale e universitaria di Zagabria, collezioni digitali (glagolitici, latini) | digitalna.nsk.hr | non si sa | alcune centinaia | media |
+| Slovenia | dLib.si, Biblioteca nazionale e universitaria | www.dlib.si | no: solo PDF (27 ottobre 2026) | la NUK possiede 122 codici medievali; quanti in PDF non si sa con certezza | bassa |
+| Croazia | Biblioteca nazionale e universitaria di Zagabria, collezioni digitali (glagolitici, latini) | digitalna.nsk.hr | sì, ma senza CORS (27 ottobre 2026) | 1.200 schede di «rukopisna građa» (con note musicali e carte d'archivio) | media |
 | Bosnia ed Erzegovina | Biblioteca Gazi Husrev-beg, Sarajevo (arabi, turchi, persiani; in rete solo in parte) | www.ghb.ba | non si sa | non si sa | bassa |
 | Albania | Archivio centrale dello Stato (Codex Purpureus Beratinus e altri) | non trovato | non si sa | poche decine | bassa |
 

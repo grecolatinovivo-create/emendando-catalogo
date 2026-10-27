@@ -1,0 +1,35 @@
+# Corsia «centro» (dal 27 ottobre 2026): biblioteche dell'Europa centrale agganciate dopo il controllo di Austria, Ungheria,
+# Slovacchia, Slovenia, Croazia e Svizzera (docs/COPERTURA.md, docs/BIBLIOTECHE.md):
+#   - Universitätsbibliothek Graz (con i codici di Vorau) e Universitätsbibliothek Salzburg (fonte «vlaustria»): elenco dalle sitemap
+#     di Visual Library (unipub.uni-graz.at, eplus.uni-salzburg.at), poi il manifesto IIIF di ogni codice, a riprese;
+#   - ELTE Egyetemi Könyvtár, Budapest (fonte «elte»): API di EDIT (DSpace), manifesti IIIF della biblioteca.
+# Gli stati sono in data/<fonte>.json. Richieste in serie, una biblioteca dopo l'altra, con le pause di sempre (scripts/rete.mjs).
+# Ruota fino a lettura completa: finché una fonte della corsia non ha finito la prima lettura, la corsia lavora fino a circa
+# 150 minuti per esecuzione e riparte subito da sola, purché nel giro ci siano stati progressi (scripts/ruota.mjs).
+# Poi torna al giro notturno delle 04:10 UTC, che prende i codici nuovi.
+name: "Raccolta: corsia centro"
+
+on:
+  schedule:
+    - cron: "10 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write   # per la ruota
+
+concurrency:
+  group: raccolta-centro
+  cancel-in-progress: false
+
+jobs:
+  corsia:
+    uses: ./.github/workflows/corsia.yml
+    with:
+      corsia: centro
+      fonti: vlaustria,elte
+      argomenti: --vlaustria-minuti=120 --elte-minuti=10
+      cache: false
+      ruota: false
+      completa: true
+      flusso: raccolta-centro.yml

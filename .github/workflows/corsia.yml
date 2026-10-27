@@ -90,6 +90,7 @@ jobs:
             case "$f" in
               vaticana|bodleian|laurenziana|leiden|yale|penn|ds|walters|loc|nlg|ndl|kokusho|auckland|toronto|ambrosiana|montecassino|casanatense|bub|wellcome|bl|isos|manchester|cudl|cbl|parker|nlw|mdc|ub|realbiblioteca|ucm|sevilla|rah|pergamos|rousanou|onb|bncf|vallicelliana|malatestiana|archive|nli|getty|harvard) s=data/$f.json ;;
               handrit|polona|manuscriptorium) s=data/$f.json ;;   # corsia europa
+              vlaustria|elte) s=data/$f.json ;;   # corsia centro
               crossasia|sbbasia|sbbor|nomfoundation) s=data/$f.json ;;   # corsia asia
               nbkm|libfond) s=data/$f.json ;;   # corsia est
               heidelberg) s=data/heidelberg-indici.json ;;

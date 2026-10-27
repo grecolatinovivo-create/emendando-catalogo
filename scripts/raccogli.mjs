@@ -75,6 +75,8 @@ import { scansionaPolona, recordPolona } from "./fonti/polona.mjs";
 import { scansionaManuscriptorium, recordManuscriptorium } from "./fonti/manuscriptorium.mjs";
 import { scansionaKbdk, recordKbdk } from "./fonti/kbdk.mjs";
 import { scansionaUva, recordUva } from "./fonti/uva.mjs";
+import { scansionaVlaustria, recordVlaustria } from "./fonti/vlaustria.mjs";
+import { scansionaElte, recordElte, segnaturaNorm } from "./fonti/elte.mjs";
 import { scansionaNbkm, recordNbkm } from "./fonti/nbkm.mjs";
 import { scansionaLibfond, recordLibfond } from "./fonti/libfond.mjs";
 import { scansionaArchive, recordArchive, esistentiArchive } from "./fonti/archive.mjs";
@@ -154,6 +156,9 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   manuscriptorium: "Manuscriptorium: Národní knihovna České republiky e altre biblioteche (manuscriptorium.com)",
   kbdk: "Det Kongelige Bibliotek, Copenaghen (digitalesamlinger.kb.dk; manifesti scritti dal catalogo con le immagini IIIF della biblioteca)",
   uva: "Allard Pierson, Universiteit van Amsterdam (uvaerfgoed.nl)",
+  // Europa centrale (corsia «centro», dal 27 ottobre 2026): Graz e Salisburgo (Visual Library), ELTE Budapest (DSpace)
+  vlaustria: "Universitätsbibliothek Graz e Universitätsbibliothek Salzburg (unipub.uni-graz.at, eplus.uni-salzburg.at; elenco dalle sitemap, manifesti IIIF delle biblioteche)",
+  elte: "ELTE Egyetemi Könyvtár, Budapest: codici, frammenti e manoscritti (edit.elte.hu; manifesti IIIF della biblioteca)",
   // Internet Archive (corsia «mondo», dal 26 ottobre 2026): manoscritti pubblicati da altre biblioteche (Firenze e Siviglia restano fonti a parte)
   archive: "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, John Carter Brown Library, Newberry Library, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
   // Asia orientale e Sud-est asiatico (corsia «asia», dal 26 ottobre 2026)
@@ -354,6 +359,15 @@ async function main() {
     // Copenaghen (Det Kgl. Bibliotek, manifesti scritti dal catalogo) e Amsterdam (Allard Pierson), dal 26 ottobre 2026
     kbdk: async () => recordKbdk(await scansionaKbdk({ minuti: min("kbdk", +(arg["kbdk-minuti"] ?? 30)), soloCache: sc("kbdk") })),
     uva: async () => recordUva(await scansionaUva({ minuti: min("uva", +(arg["uva-minuti"] ?? 5)), soloCache: sc("uva") })),
+    // Europa centrale (corsia «centro», dal 27 ottobre 2026): Graz e Salisburgo (sitemap e manifesti di Visual Library), ELTE Budapest (API di EDIT);
+    // i codici dell'ELTE che Manuscriptorium dà già (stessa segnatura nella stessa biblioteca) restano a quella fonte
+    vlaustria: async () => recordVlaustria(await scansionaVlaustria({ minuti: min("vlaustria", +(arg["vlaustria-minuti"] ?? 30)), soloCache: sc("vlaustria") })),
+    elte: async () => {
+      const rs = recordElte(await scansionaElte({ minuti: min("elte", +(arg["elte-minuti"] ?? 5)), soloCache: sc("elte") }));
+      const mns = (perFonte.manuscriptorium || prima.filter(v => v.fonte === "manuscriptorium")).filter(v => v.citta === "Budapest" && /University Library Budapest|Department of Manuscripts and Rare Books/.test(v.biblioteca || ""));
+      const gia = new Set(mns.map(v => segnaturaNorm(v.segnatura)));
+      return rs.filter(r => !gia.has(segnaturaNorm(r.segnatura)));
+    },
     // State Library Victoria: nessuna richiesta, l'elenco viene dal browser (scripts/browser/slv.js -> data/slv.json)
     slv: async () => recordSlv(),
     auckland: async () => recordAuckland(await scansionaAuckland({ minuti: min("auckland", +(arg["auckland-minuti"] ?? 10)), soloCache: sc("auckland") })),
