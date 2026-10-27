@@ -1,9 +1,9 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-27T12:10:27.859Z",
- "totale": 522611,
+ "aggiornato": "2026-10-27T12:59:10.411Z",
+ "totale": 522609,
  "con_autori": 27874,
- "miniati": 11104,
+ "miniati": 11102,
  "musica": 13607,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
@@ -26,7 +26,7 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 180721
+   "codici": 180719
   },
   "la": {
    "nome": "latino",
@@ -374,7 +374,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 520930
+   "codici": 520928
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -4277,14 +4277,14 @@
   },
   "ndl": {
    "nome": "National Diet Library, Tokyo (dl.ndl.go.jp)",
-   "codici": 41975,
+   "codici": 41973,
    "carte": 50,
    "carte_stampa": 0,
-   "miniati": 1621,
+   "miniati": 1619,
    "musica": 192,
    "con_autori": 0,
    "lingue": {
-    "ja": 40042,
+    "ja": 40040,
     "zh": 1868,
     "ko": 62,
     "?": 4
@@ -5494,7 +5494,7 @@
   {
    "file": "indice/ndl-2.json",
    "fonte": "ndl",
-   "righe": 1975
+   "righe": 1973
   },
   {
    "file": "indice/kokusho-0.json",
@@ -10309,7 +10309,7 @@
   3,
   39,
   67,
-  41975,
+  41973,
   1,
   1,
   1617,
