@@ -1,7 +1,7 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-27T21:45:45.664Z",
- "totale": 543975,
+ "aggiornato": "2026-10-27T21:50:49.960Z",
+ "totale": 544024,
  "con_autori": 28267,
  "miniati": 11276,
  "musica": 21271,
@@ -50,7 +50,7 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 19988
+   "codici": 20037
   },
   "xx": {
    "nome": "altre lingue",
@@ -90,7 +90,7 @@
   },
   "en": {
    "nome": "inglese",
-   "codici": 7852
+   "codici": 7853
   },
   "it": {
    "nome": "italiano",
@@ -390,7 +390,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 538660
+   "codici": 538709
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -1979,6 +1979,7 @@
   "IMOLA Arch. Com. (copia digitale della National Library of Israel)",
   "Indiana University, Lilly Library, Bloomington",
   "Institut Bibliothèque Polonaise de Paris",
+  "Iraqi Jewish Archive (U.S. National Archives and Records Administration), College Park (Stati Uniti), dalla comunità ebraica di Baghdad",
   "Irish Jesuit Archives, Dublino",
   "Islamic Arts Museum Malayasia, Cambridge",
   "Istituto di ricerca culturale Pola (ポーラ文化研究所), Tokyo",
@@ -5448,6 +5449,27 @@
     "indice/bnl-0.json"
    ]
   },
+  "ija": {
+   "nome": "Iraqi Jewish Archive: frammenti di rotoli della Torah e di Ester della comunità ebraica di Baghdad (ijarchive.org, U.S. National Archives; manifesti IIIF del sito)",
+   "codici": 49,
+   "carte": 0,
+   "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 0,
+   "con_autori": 0,
+   "lingue": {
+    "he": 49,
+    "en": 1
+   },
+   "esito": "precedente",
+   "prefissi": [
+    "ija-"
+   ],
+   "pezzi_voci": 1,
+   "indice": [
+    "indice/ija-0.json"
+   ]
+  },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
    "codici": 22225,
@@ -5915,6 +5937,11 @@
    "file": "indice/bnl-0.json",
    "fonte": "bnl",
    "righe": 28
+  },
+  {
+   "file": "indice/ija-0.json",
+   "fonte": "ija",
+   "righe": 49
   },
   {
    "file": "indice/vaticana-0.json",
@@ -8944,6 +8971,7 @@
   "gerusalemme",
   "bloomington",
   "parigi",
+  null,
   "dublino",
   "cambridge",
   "tokyo",
@@ -10343,6 +10371,7 @@
   5,
   101,
   29,
+  49,
   12,
   3,
   27,

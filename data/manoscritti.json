@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T21:35:07.008Z",
+ "aggiornato": "2026-10-27T21:50:49.960Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -376,6 +376,11 @@
    "nome": "Bibliothèque nationale du Luxembourg (eluxemburgensia.lu; manifesti scritti dal catalogo con le immagini IIIF della biblioteca)",
    "codici": 1,
    "esito": "ok"
+  },
+  "ija": {
+   "nome": "Iraqi Jewish Archive: frammenti di rotoli della Torah e di Ester della comunità ebraica di Baghdad (ijarchive.org, U.S. National Archives; manifesti IIIF del sito)",
+   "codici": 0,
+   "esito": "precedente"
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
