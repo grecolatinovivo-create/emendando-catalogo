@@ -1,9 +1,9 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-27T05:30:41.914Z",
- "totale": 516782,
- "con_autori": 27858,
- "miniati": 11097,
+ "aggiornato": "2026-10-27T05:37:55.044Z",
+ "totale": 516971,
+ "con_autori": 27859,
+ "miniati": 11103,
  "musica": 13608,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
@@ -26,11 +26,11 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 180947
+   "codici": 180907
   },
   "la": {
    "nome": "latino",
-   "codici": 78165
+   "codici": 78171
   },
   "?": {
    "nome": "lingua non indicata",
@@ -38,23 +38,23 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 28370
+   "codici": 28378
   },
   "ar": {
    "nome": "arabo",
-   "codici": 22485
+   "codici": 22486
   },
   "de": {
    "nome": "tedesco",
-   "codici": 22215
+   "codici": 22216
   },
   "he": {
    "nome": "ebraico",
-   "codici": 19720
+   "codici": 19986
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 19287
+   "codici": 19333
   },
   "pi": {
    "nome": "pali",
@@ -62,11 +62,11 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 14279
+   "codici": 14280
   },
   "zh": {
    "nome": "cinese",
-   "codici": 14010
+   "codici": 13955
   },
   "lo": {
    "nome": "lao",
@@ -90,11 +90,11 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 7637
+   "codici": 7638
   },
   "en": {
    "nome": "inglese",
-   "codici": 7063
+   "codici": 7064
   },
   "bo": {
    "nome": "tibetano",
@@ -110,7 +110,7 @@
   },
   "pt": {
    "nome": "portoghese",
-   "codici": 4891
+   "codici": 4892
   },
   "ca": {
    "nome": "catalano",
@@ -364,7 +364,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 14380
+   "codici": 14381
   },
   "medievale": {
    "nome": "autori medievali",
@@ -374,7 +374,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 515101
+   "codici": 515290
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -1356,7 +1356,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 6635
+   "codici": 6636
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1817,6 +1817,7 @@
   "Collezione privata, Tokyo (1) (東京都個人蔵１)",
   "Columbia University, Rare Book & Manuscript Library, New York",
   "Comitato per l'istruzione della città di Tanba-Sasayama, Aoyama Rekishimura (丹波篠山市教育委員会 青山歴史村)",
+  "Commentary on Job OX Corpus Christi (copia digitale della National Library of Israel)",
   "Conception Abbey and Seminary, Conception (Missouri)",
   "Confiansa de Ysrael Ms. Var. (copia digitale della National Library of Israel)",
   "Conservatoire",
@@ -1835,6 +1836,7 @@
   "Dallas Museum of Art, Cambridge",
   "Dar al-Kutub, Cambridge",
   "DARM Arch (copia digitale della National Library of Israel)",
+  "DARM Arch F (copia digitale della National Library of Israel)",
   "DARM Arch R (copia digitale della National Library of Israel)",
   "Den Arnamagnæanske Samling, Københavns Universitet, Copenaghen",
   "Department of Manuscripts and Rare Books, Budapest",
@@ -1881,12 +1883,19 @@
   "Forschungsbibliothek Gotha",
   "Forschungsbibliothek, Gotha",
   "Fragile Palm Leaves Foundation, Nonthaburi (copie del Buddhist Digital Resource Center)",
+  "Frank UB Ausst (copia digitale della National Library of Israel)",
   "Frank UB Barth (copia digitale della National Library of Israel)",
   "Frank UB Ffm W (copia digitale della National Library of Israel)",
   "Frank UB Fol. (copia digitale della National Library of Israel)",
+  "Frank UB Fragm. Hebr. Hebr. III (copia digitale della National Library of Israel)",
   "Frank UB Fragm. Hebr. I (copia digitale della National Library of Israel)",
+  "Frank UB Fragm. Hebr. II (copia digitale della National Library of Israel)",
+  "Frank UB Fragm. Hebr. III (copia digitale della National Library of Israel)",
   "Frank UB Fragm. Hebr. IV (copia digitale della National Library of Israel)",
   "Frank UB Fragm. Hebr. V (copia digitale della National Library of Israel)",
+  "Frank UB Fragm. Hebr. VI (copia digitale della National Library of Israel)",
+  "Frank UB Fragm. Hebr. VIII (copia digitale della National Library of Israel)",
+  "Frank UB Fragm. III (copia digitale della National Library of Israel)",
   "Frank UB Lat. Oct. (copia digitale della National Library of Israel)",
   "Frank UB Oct. (copia digitale della National Library of Israel)",
   "Frank UB Qu. (copia digitale della National Library of Israel)",
@@ -1922,6 +1931,7 @@
   "Gulistan Museum, Cambridge",
   "Gurukul Kangri (Deemed to be University), Haridwar",
   "Hamburg Mus Oct. (copia digitale della National Library of Israel)",
+  "Hanau (copia digitale della National Library of Israel)",
   "Harris Manchester College, Oxford",
   "Harry Ransom Center, University of Texas, Austin",
   "Harvard Law School Library, Harvard University, Cambridge (Massachusetts)",
@@ -2116,6 +2126,7 @@
   "Městská knihovna v Praze, Praga",
   "Městské muzeum a galerie Polička",
   "Městské muzeum Horažďovice",
+  "Meza Gross William L. Tel Aviv Israel Ms. HO. (copia digitale della National Library of Israel)",
   "Miejska Biblioteka Publiczna w Sanoku",
   "Ministère des Affaires étrangères",
   "Ministère des Affaires étrangères, Rés",
@@ -2478,6 +2489,7 @@
   "Regionální muzeum v Mikulově",
   "Regionální muzeum v Teplicích, Teplice",
   "Reichsstadt Nürnberg, Staatsarchiv Nürnberg",
+  "Risposta generale a tutte quelle blasfemie che si trovano ne I libri hebraici JER NLI Var. (copia digitale della National Library of Israel)",
   "Rochester Institute of Technology, Cary Graphic Arts Collection",
   "Roma Cas (copia digitale della National Library of Israel)",
   "Romanische Bibliothek des Klosters Disentis",
@@ -2485,6 +2497,7 @@
   "Royal Greenwich Observatory Archives, Cambridge",
   "Royal Irish Academy, Dublino",
   "Royal Ontario Museum, Cambridge",
+  "Rudimentum Hebrae Lingua OX Corpus Christi (copia digitale della National Library of Israel)",
   "Rutgers University Libraries, New Brunswick (New Jersey)",
   "SAAMS",
   "Sächsische Landesbibliothek – Staats- und Universitätsbibliothek Dresden",
@@ -4264,15 +4277,15 @@
   },
   "ndl": {
    "nome": "National Diet Library, Tokyo (dl.ndl.go.jp)",
-   "codici": 42674,
+   "codici": 42579,
    "carte": 50,
    "carte_stampa": 0,
-   "miniati": 1624,
+   "miniati": 1621,
    "musica": 194,
    "con_autori": 0,
    "lingue": {
-    "ja": 40268,
-    "zh": 2326,
+    "ja": 40228,
+    "zh": 2271,
     "ko": 77,
     "?": 4
    },
@@ -4917,35 +4930,35 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 13266,
+   "codici": 13550,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 904,
+   "miniati": 913,
    "musica": 0,
-   "con_autori": 20,
+   "con_autori": 21,
    "lingue": {
-    "he": 12748,
-    "xx": 2084,
-    "ar": 774,
+    "he": 13014,
+    "xx": 2130,
+    "ar": 775,
     "fa": 367,
     "tr": 41,
-    "grc": 9,
+    "grc": 10,
     "es": 26,
-    "it": 187,
-    "de": 71,
-    "la": 30,
+    "it": 188,
+    "fr": 20,
+    "de": 72,
+    "la": 36,
     "nl": 43,
-    "pt": 11,
-    "fr": 12,
+    "pt": 12,
+    "en": 14,
     "ru": 6,
     "pl": 2,
-    "en": 13,
     "hu": 1,
     "ka": 1,
     "ca": 1,
     "oc": 5
    },
-   "esito": "errore: manifesti letti in parte (mancano 341): riprenderà alla prossima esecuzione",
+   "esito": "ok",
    "prefissi": [
     "nli-"
    ],
@@ -5481,7 +5494,7 @@
   {
    "file": "indice/ndl-2.json",
    "fonte": "ndl",
-   "righe": 2674
+   "righe": 2579
   },
   {
    "file": "indice/kokusho-0.json",
@@ -5621,7 +5634,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 13266
+   "righe": 13550
   },
   {
    "file": "indice/getty-0.json",
@@ -8484,6 +8497,7 @@
   "tokyo",
   "new-york",
   "jp-tanba-sasayama",
+  "gerusalemme",
   "conception",
   "gerusalemme",
   "parigi",
@@ -8501,6 +8515,7 @@
   "cambridge",
   "cambridge",
   "cambridge",
+  "gerusalemme",
   "gerusalemme",
   "gerusalemme",
   "copenaghen",
@@ -8558,6 +8573,13 @@
   "gerusalemme",
   "gerusalemme",
   "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
   "cheb",
   "philadelphia",
   "cambridge",
@@ -8588,6 +8610,7 @@
   "gerusalemme",
   "cambridge",
   "haridwar",
+  "gerusalemme",
   "gerusalemme",
   "oxford",
   "austin",
@@ -8783,6 +8806,7 @@
   "praga",
   "policka",
   "horazdovice",
+  "gerusalemme",
   "sanok",
   "parigi",
   "parigi",
@@ -9145,6 +9169,7 @@
   "mikulov",
   "teplice",
   "norimberga",
+  "gerusalemme",
   "rochester",
   "gerusalemme",
   "disentis",
@@ -9152,6 +9177,7 @@
   "cambridge",
   "dublino",
   "cambridge",
+  "gerusalemme",
   "new-brunswick",
   "strasburgo",
   "dresda",
