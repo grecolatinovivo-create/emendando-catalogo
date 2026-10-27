@@ -14,19 +14,11 @@ In tutto 196 nazioni: i 193 stati dell'ONU, la Città del Vaticano, la Palestina
 
 | Stato | Nazioni |
 |---|---|
-<<<<<<< HEAD
 | agganciata | 34 |
-| controllata, niente da agganciare | 52 |
-| controllata, bloccata | 19 |
-| in corso | 24 |
-| non ancora controllata | 67 |
-=======
-| agganciata | 31 |
 | controllata, niente da agganciare | 55 |
-| controllata, bloccata | 22 |
-| in corso | 25 |
-| non ancora controllata | 63 |
->>>>>>> 86c9568e (Corsia balcani: Biblioteca della Matica srpska (Novi Sad) e controllo di Balcani, Grecia, Cipro e Malta)
+| controllata, bloccata | 24 |
+| in corso | 24 |
+| non ancora controllata | 59 |
 | **totale** | **196** |
 
 Che cosa vuol dire ogni stato:
@@ -246,23 +238,13 @@ Ex Jugoslavia e Albania.
 
 | Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
 |---|---|---|---|---|
-<<<<<<< HEAD
 | Slovenia | controllata, bloccata | nessuna | dLib.si (Narodna in univerzitetna knjižnica, Lubiana; collezione «Srednjeveški rokopisi (kodeksi)»): i codici si scaricano solo in PDF, niente IIIF né immagini delle pagine (27 ottobre 2026), lettera di Urbino. | nessuna in più che si possa leggere |
 | Croazia | controllata, bloccata | nessuna | Biblioteca nazionale e universitaria di Zagabria (digitalna.nsk.hr) e DiZbi dell'Accademia croata (dizbi.hazu.hr), tutte e due sulla piattaforma Indigo: manifesti IIIF senza CORS e immagini che rispondono con errore 400 e senza CORS, quindi non si aprono dentro il sito (27 ottobre 2026), lettera di Urbino. | nessuna in più che si possa leggere |
-| Bosnia ed Erzegovina | non ancora controllata | nessuna | nessuna | Biblioteca Gazi Husrev-beg |
-| Serbia | agganciata | Dal 26 ottobre 2026 Biblioteca nazionale di Serbia tramite Manuscriptorium: 39 codici | digitalna.nb.rs: solo poche carte scelte per codice (prova del 26 ottobre 2026). | nessuna in più |
-| Montenegro | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
-| Macedonia del Nord | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
-| Albania | non ancora controllata | nessuna | nessuna | Archivio centrale dello Stato (Codici di Berat): poco |
-=======
-| Slovenia | non ancora controllata | nessuna | nessuna | dLib.si |
-| Croazia | non ancora controllata | nessuna | nessuna | Biblioteca nazionale e universitaria di Zagabria |
 | Bosnia ed Erzegovina | controllata, bloccata | nessuna | Gazi Husrev-beg (digital.ghb.ba): registrazione obbligatoria, da ospiti solo le prime 10 pagine di ogni titolo; Istituto orientale e Biblioteca nazionale e universitaria: nessuna biblioteca digitale, copie solo in vHMML (27 ottobre 2026, lettera di Urbino). | nessuna in più |
 | Serbia | agganciata | Dal 26 ottobre 2026 Biblioteca nazionale di Serbia tramite Manuscriptorium: 39 codici; dal 27 ottobre 2026 Biblioteca della Matica srpska, Novi Sad (fonte «bms», corsia balcani): 176 libri manoscritti e 16 carte e atlanti a stampa | digitalna.nb.rs: solo poche carte scelte per codice (prova del 26 ottobre 2026). Hilandar Research Library (Ohio State): solo microfilm, nessuna immagine in rete. | nessuna in più |
 | Montenegro | controllata, niente da agganciare | nessuna | Biblioteca nazionale di Cetinje (dlib.me): tra i manoscritti solo lettere e autografi di Njegoš in PDF, nessun codice (27 ottobre 2026). | nessuna in più |
 | Macedonia del Nord | controllata, niente da agganciare | nessuna | Biblioteca nazionale e universitaria di Skopje: nessuna biblioteca digitale dei codici (27 ottobre 2026). | nessuna in più |
 | Albania | controllata, bloccata | nessuna | Archivio centrale dello Stato: nessuna biblioteca digitale; i 40 codici greci fotografati dal CSNTM (con il Codex Purpureus Beratinus) sono in rete solo in parte, e le condizioni del CSNTM chiedono il permesso per ogni uso. Biblioteca nazionale (bksh.al): solo catalogo (27 ottobre 2026, lettera di Urbino). | nessuna in più |
->>>>>>> 86c9568e (Corsia balcani: Biblioteca della Matica srpska (Novi Sad) e controllo di Balcani, Grecia, Cipro e Malta)
 
 ### Biblioteche che mancano
 
