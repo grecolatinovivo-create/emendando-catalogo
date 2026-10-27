@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-27T16:37:11.008Z",
- "totale": 542711,
- "con_autori": 28241,
+ "aggiornato": "2026-10-27T16:43:23.824Z",
+ "totale": 543867,
+ "con_autori": 28259,
  "miniati": 11302,
  "musica": 21281,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
@@ -30,19 +30,19 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 83507
+   "codici": 83605
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 43348
+   "codici": 43439
   },
   "fr": {
    "nome": "francese",
-   "codici": 28517
+   "codici": 28567
   },
   "de": {
    "nome": "tedesco",
-   "codici": 22594
+   "codici": 22699
   },
   "ar": {
    "nome": "arabo",
@@ -82,19 +82,19 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10495
+   "codici": 10497
   },
   "pl": {
    "nome": "polacco",
    "codici": 8305
   },
-  "it": {
-   "nome": "italiano",
-   "codici": 7708
-  },
   "en": {
    "nome": "inglese",
-   "codici": 7585
+   "codici": 7852
+  },
+  "it": {
+   "nome": "italiano",
+   "codici": 7725
   },
   "bo": {
    "nome": "tibetano",
@@ -144,25 +144,25 @@
    "nome": "siriaco",
    "codici": 1219
   },
+  "no": {
+   "nome": "no",
+   "codici": 1134
+  },
+  "da": {
+   "nome": "danese",
+   "codici": 978
+  },
   "khb": {
    "nome": "tai lü",
    "codici": 933
   },
   "sv": {
    "nome": "svedese",
-   "codici": 908
+   "codici": 926
   },
   "nl": {
    "nome": "nederlandese",
-   "codici": 880
-  },
-  "da": {
-   "nome": "danese",
-   "codici": 872
-  },
-  "no": {
-   "nome": "no",
-   "codici": 773
+   "codici": 921
   },
   "hy": {
    "nome": "armeno",
@@ -376,11 +376,11 @@
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 6418
+   "codici": 6422
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 14608
+   "codici": 14622
   },
   "medievale": {
    "nome": "autori medievali",
@@ -394,11 +394,11 @@
   },
   "carta": {
    "nome": "carte manoscritte",
-   "codici": 1960
+   "codici": 2104
   },
   "carta_stampa": {
    "nome": "carte a stampa",
-   "codici": 2203
+   "codici": 3215
   }
  },
  "autori": {
@@ -952,7 +952,7 @@
    "nome": "Teofrasto",
    "latino": "Theophrastus",
    "categoria": "classico-greco",
-   "codici": 123
+   "codici": 125
   },
   "lisia": {
    "nome": "Lisia",
@@ -1120,7 +1120,7 @@
    "nome": "Tolomeo",
    "latino": "Ptolemaeus",
    "categoria": "classico-greco",
-   "codici": 267
+   "codici": 269
   },
   "euclide": {
    "nome": "Euclide",
@@ -1330,7 +1330,7 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 2904
+   "codici": 2918
   },
   "girolamo": {
    "nome": "Girolamo",
@@ -5360,32 +5360,32 @@
   },
   "nb": {
    "nome": "Nasjonalbiblioteket, Oslo: manoscritti, manoscritti musicali e carte geografiche (api.nb.no; manifesti IIIF della biblioteca)",
-   "codici": 15521,
-   "carte": 333,
-   "carte_stampa": 2133,
+   "codici": 16677,
+   "carte": 477,
+   "carte_stampa": 3145,
    "miniati": 8,
    "musica": 7600,
-   "con_autori": 75,
+   "con_autori": 93,
    "lingue": {
-    "no": 761,
-    "nl": 87,
-    "da": 262,
-    "la": 245,
-    "it": 43,
-    "de": 234,
-    "sv": 38,
-    "?": 13201,
-    "en": 520,
-    "fr": 125,
+    "no": 1122,
+    "nl": 128,
+    "da": 368,
+    "la": 343,
+    "it": 60,
+    "de": 339,
+    "sv": 56,
+    "en": 787,
+    "?": 13292,
+    "fr": 175,
+    "es": 4,
     "ar": 1,
-    "myn": 2,
-    "es": 2
+    "myn": 2
    },
-   "esito": "errore: carte lette in parte (mancano 1156 schede MODS): riprenderà alla prossima esecuzione",
+   "esito": "ok",
    "prefissi": [
     "nb-"
    ],
-   "pezzi_voci": 20,
+   "pezzi_voci": 21,
    "indice": [
     "indice/nb-0.json"
    ]
@@ -5902,7 +5902,7 @@
   {
    "file": "indice/nb-0.json",
    "fonte": "nb",
-   "righe": 15521
+   "righe": 16677
   },
   {
    "file": "indice/manuscripta-0.json",
@@ -10630,7 +10630,7 @@
   82,
   3,
   39,
-  15521,
+  16677,
   67,
   39509,
   1,

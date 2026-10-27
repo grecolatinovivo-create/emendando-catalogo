@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T15:39:33.901Z",
+ "aggiornato": "2026-10-27T16:43:23.824Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -364,8 +364,8 @@
   },
   "nb": {
    "nome": "Nasjonalbiblioteket, Oslo: manoscritti, manoscritti musicali e carte geografiche (api.nb.no; manifesti IIIF della biblioteca)",
-   "codici": 36,
-   "esito": "errore: carte lette in parte (mancano 1156 schede MODS): riprenderà alla prossima esecuzione"
+   "codici": 40,
+   "esito": "ok"
   },
   "manuscripta": {
    "nome": "manuscripta.se: Kungliga biblioteket, Uppsala universitetsbibliotek e altre biblioteche svedesi (manifesti IIIF di manuscripta.se)",
@@ -383,7 +383,7 @@
    "esito": "ok"
   }
  },
- "totale": 12537,
+ "totale": 12541,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -357849,6 +357849,74 @@
    "tipo": "carta_stampa"
   },
   {
+   "id": "nb-c011a4b2bed3aeebe2233f9928c2aaed",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Epitome du Theatre du monde d'Abraham Ortelius : Auquel se represente, tant par figures que characteres, la vraye situation, nature, & proprieté de la terre vniuerselle",
+   "datazione": "1588",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epitome du Theatre du monde d'Abraham Ortelius : Auquel se represente, tant par figures que characteres, la vraye situation, nature, & proprieté de la terre vniuerselle",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "titolo: «…resente, tant par figures que characteres, la vraye situation, nature,…»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/c011a4b2bed3aeebe2233f9928c2aaed/manifest",
+   "pagina": "https://www.nb.no/items/c011a4b2bed3aeebe2233f9928c2aaed",
+   "licenza": "Nasjonalbiblioteket (pubblico dominio)",
+   "immagini": 221,
+   "tipo": "carta_stampa"
+  },
+  {
+   "id": "nb-d5e0bbbd5f28d0d0b99d8d6f47c5f95d",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Epitome du Theatre du monde d'Abraham Ortelius : Auquel se represente, tant par figures que characteres, la vraye situation, nature, & proprieté de la terre vniuerselle",
+   "datazione": "1590",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epitome du Theatre du monde d'Abraham Ortelius : Auquel se represente, tant par figures que characteres, la vraye situation, nature, & proprieté de la terre vniuerselle",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "titolo: «…resente, tant par figures que characteres, la vraye situation, nature,…»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/d5e0bbbd5f28d0d0b99d8d6f47c5f95d/manifest",
+   "pagina": "https://www.nb.no/items/d5e0bbbd5f28d0d0b99d8d6f47c5f95d",
+   "licenza": "Nasjonalbiblioteket (pubblico dominio)",
+   "immagini": 217,
+   "tipo": "carta_stampa"
+  },
+  {
    "id": "nb-280f2e68bdcf7b800df246ad716512b7",
    "fonte": "nb",
    "biblioteca": "Nasjonalbiblioteket",
@@ -358128,6 +358196,74 @@
    "pagina": "https://www.nb.no/items/a06d80a32458b90119f93b95f6d2e000",
    "licenza": "Nasjonalbiblioteket (pubblico dominio)",
    "immagini": 827,
+   "tipo": "carta_stampa"
+  },
+  {
+   "id": "nb-c03ad1efe3fcfe4ca7f76fff6270997f",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "La Geografia di Claudio Tolomeo Alessandrino",
+   "datazione": "1561",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "La Geografia di Claudio Tolomeo Alessandrino",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Geografia"
+     ],
+     "corrispondenza": "titolo: «La Geografia di Claudio Tolomeo Alessandrino»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/c03ad1efe3fcfe4ca7f76fff6270997f/manifest",
+   "pagina": "https://www.nb.no/items/c03ad1efe3fcfe4ca7f76fff6270997f",
+   "licenza": "Nasjonalbiblioteket (pubblico dominio)",
+   "immagini": 779,
+   "tipo": "carta_stampa"
+  },
+  {
+   "id": "nb-cf970407ff14c481a17099d0f18c89d3",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "La Geografia di Claudio Tolomeo Alessandrino",
+   "datazione": "1564",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "La Geografia di Claudio Tolomeo Alessandrino",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Geografia"
+     ],
+     "corrispondenza": "titolo: «La Geografia di Claudio Tolomeo Alessandrino»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/cf970407ff14c481a17099d0f18c89d3/manifest",
+   "pagina": "https://www.nb.no/items/cf970407ff14c481a17099d0f18c89d3",
+   "licenza": "Nasjonalbiblioteket (pubblico dominio)",
+   "immagini": 793,
    "tipo": "carta_stampa"
   },
   {
