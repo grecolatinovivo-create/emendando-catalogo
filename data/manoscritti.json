@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T11:28:52.045Z",
+ "aggiornato": "2026-10-27T12:02:51.187Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -319,8 +319,8 @@
   },
   "libfond": {
    "nome": "Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca: copie digitali della Trinità-San Sergio (lib-fond.ru; manifesti scritti dal catalogo)",
-   "codici": 29,
-   "esito": "errore: codici letti in parte (1619 in questo giro): riprenderà alla prossima esecuzione"
+   "codici": 30,
+   "esito": "errore: codici letti in parte (1758 in questo giro): riprenderà alla prossima esecuzione"
   },
   "archive": {
    "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, John Carter Brown Library, Newberry Library, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
@@ -353,7 +353,7 @@
    "esito": "ok"
   }
  },
- "totale": 12434,
+ "totale": 12435,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -124048,6 +124048,40 @@
    "pagina": "https://lib-fond.ru/lib-rgb/310/f-310-1133/",
    "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
    "immagini": 398
+  },
+  {
+   "id": "libfond-f-310-1435",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.310 №1435",
+   "datazione": "Аристофан Афинский;(ок. 445-ок. 385 до н. э.)",
+   "secolo": [
+    4,
+    5
+   ],
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aristophanis facetissimi comici Plutus. Coloniae. Anno MDLXI",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Pluto"
+     ],
+     "corrispondenza": "titolo: «Aristophanis facetissimi comici Plutus. Coloniae. Anno MDLXI»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-310-1435.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/310/f-310-1435/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 53
   },
   {
    "id": "bub-64e6eb6c-8126-4829-b70b-6b99612a05f6",
