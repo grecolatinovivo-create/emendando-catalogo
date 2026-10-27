@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T23:11:29.950Z",
+ "aggiornato": "2026-10-27T01:14:51.878Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -305,7 +305,7 @@
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
    "codici": 1,
-   "esito": "errore: manifesti letti in parte (mancano 6173): riprenderà alla prossima esecuzione"
+   "esito": "errore: manifesti letti in parte (mancano 4907): riprenderà alla prossima esecuzione"
   },
   "getty": {
    "nome": "J. Paul Getty Museum, Los Angeles: manoscritti (data.getty.edu; manifesti media.getty.edu)",
@@ -319,8 +319,8 @@
   },
   "libfond": {
    "nome": "Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca: copie digitali della Trinità-San Sergio (lib-fond.ru; manifesti scritti dal catalogo)",
-   "codici": 16,
-   "esito": "errore: codici letti in parte (1769 in questo giro): riprenderà alla prossima esecuzione"
+   "codici": 19,
+   "esito": "errore: codici letti in parte (1763 in questo giro): riprenderà alla prossima esecuzione"
   },
   "archive": {
    "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, John Carter Brown Library, Newberry Library, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
@@ -353,7 +353,7 @@
    "esito": "ok"
   }
  },
- "totale": 12339,
+ "totale": 12342,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -123513,6 +123513,107 @@
    "pagina": "https://lib-fond.ru/lib-rgb/194/f-194-44/",
    "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
    "immagini": 124
+  },
+  {
+   "id": "libfond-f-201-30",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.201 №30",
+   "datazione": "1857 г.",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Теогония : на греческом и латинском языках ; автограф переводчика / Grossheinrich, K. F. – пер. с греческого на латинский : Hesiodi Theogonia graece et latine. In usum scholarum cura Caroli Friderici Grossheinrich",
+   "autori": [
+    {
+     "id": "esiodo",
+     "autore": "Esiodo",
+     "latino": "Hesiodus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Teogonia"
+     ],
+     "corrispondenza": "titolo: «…. с греческого на латинский : Hesiodi Theogonia graece et latine. I…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-201-30.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/201/f-201-30/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 58
+  },
+  {
+   "id": "libfond-f-201-31",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.201 №31",
+   "datazione": "[1857] г.",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Труды и дни : на греческом и латинском языках ; автограф переводчика / Grossheinrich, K. F. – пер. с греческого на латинский : Hesiodi Opera et Dies, graece et latine. Cura Caroli Friderici Grossheinrich",
+   "autori": [
+    {
+     "id": "esiodo",
+     "autore": "Esiodo",
+     "latino": "Hesiodus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Opere e giorni"
+     ],
+     "corrispondenza": "titolo: «…. с греческого на латинский : Hesiodi Opera et Dies, graece et lati…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-201-31.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/201/f-201-31/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 39
+  },
+  {
+   "id": "libfond-f-201-61-12",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.201 №61.12",
+   "datazione": "[1860–е] гг.",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Систематический карточный каталог библиотеки Авраама Сергеевича Норова : автограф и писарской / Норов, А. С. : XV. Histoire Naturelle, Botanique, Physique, Chimie, Medicine, Alchimie, Magie",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «…исарской / Норов, А. С. : XV. Histoire Naturelle, Botanique, Physique, Chimie,…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-201-61-12.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/201/f-201-61-12/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 41
   },
   {
    "id": "bub-64e6eb6c-8126-4829-b70b-6b99612a05f6",

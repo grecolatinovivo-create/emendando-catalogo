@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-26T23:44:24.181Z",
- "totale": 508401,
- "con_autori": 27697,
+ "aggiornato": "2026-10-27T01:14:51.878Z",
+ "totale": 509257,
+ "con_autori": 27701,
  "miniati": 10851,
  "musica": 13601,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
@@ -30,7 +30,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 76265
+   "codici": 76268
   },
   "?": {
    "nome": "lingua non indicata",
@@ -42,7 +42,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 22134
+   "codici": 22137
   },
   "de": {
    "nome": "tedesco",
@@ -62,7 +62,7 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 14065
+   "codici": 14081
   },
   "zh": {
    "nome": "cinese",
@@ -96,13 +96,13 @@
    "nome": "tibetano",
    "codici": 6503
   },
+  "cu": {
+   "nome": "slavo ecclesiastico",
+   "codici": 6261
+  },
   "nod": {
    "nome": "thai settentrionale (lanna)",
    "codici": 5516
-  },
-  "cu": {
-   "nome": "slavo ecclesiastico",
-   "codici": 5426
   },
   "pt": {
    "nome": "portoghese",
@@ -158,7 +158,7 @@
   },
   "hy": {
    "nome": "armeno",
-   "codici": 542
+   "codici": 543
   },
   "ru": {
    "nome": "russo",
@@ -356,15 +356,15 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 6540
+   "codici": 6541
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 6277
+   "codici": 6279
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 14304
+   "codici": 14305
   },
   "medievale": {
    "nome": "autori medievali",
@@ -374,7 +374,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 506722
+   "codici": 507578
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -504,7 +504,7 @@
    "nome": "Plinio il Vecchio",
    "latino": "Plinius maior",
    "categoria": "classico-latino",
-   "codici": 192
+   "codici": 193
   },
   "plinio-giovane": {
    "nome": "Plinio il Giovane",
@@ -822,7 +822,7 @@
    "nome": "Esiodo",
    "latino": "Hesiodus",
    "categoria": "classico-greco",
-   "codici": 113
+   "codici": 115
   },
   "pindaro": {
    "nome": "Pindaro",
@@ -1344,7 +1344,7 @@
    "nome": "Gregorio di Nazianzo",
    "latino": "Gregorius Nazianzenus",
    "categoria": "cristiano",
-   "codici": 513
+   "codici": 514
   },
   "giovanni-crisostomo": {
    "nome": "Giovanni Crisostomo",
@@ -4974,25 +4974,25 @@
   },
   "libfond": {
    "nome": "Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca: copie digitali della Trinità-San Sergio (lib-fond.ru; manifesti scritti dal catalogo)",
-   "codici": 4506,
+   "codici": 5362,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
-   "con_autori": 20,
+   "con_autori": 24,
    "lingue": {
-    "cu": 4345,
-    "la": 79,
-    "grc": 120,
-    "ar": 5,
-    "hy": 2,
+    "cu": 5180,
+    "la": 82,
+    "grc": 136,
+    "ar": 8,
+    "hy": 3,
     "ka": 1
    },
-   "esito": "errore: codici letti in parte (1769 in questo giro): riprenderà alla prossima esecuzione",
+   "esito": "errore: codici letti in parte (1763 in questo giro): riprenderà alla prossima esecuzione",
    "prefissi": [
     "libfond-"
    ],
-   "pezzi_voci": 6,
+   "pezzi_voci": 7,
    "indice": [
     "indice/libfond-0.json"
    ]
@@ -5607,7 +5607,7 @@
   {
    "file": "indice/libfond-0.json",
    "fonte": "libfond",
-   "righe": 4506
+   "righe": 5362
   },
   {
    "file": "indice/archive-0.json",
