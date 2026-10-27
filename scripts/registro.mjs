@@ -78,6 +78,8 @@ export const BIBLIOTECHE = {
   harvard: { biblioteca: "Harvard Library: Houghton Library, Harvard-Yenching Library, Islamic Heritage Project (fuori i codici già dati da Digital Scriptorium)", citta: "Cambridge (Stati Uniti)", come: "corsia usa, elenco da LibraryCloud ogni 14 giorni; se LibraryCloud respinge il server, dal browser (scripts/browser/harvard.js)" },
   // Europa orientale (corsia «est», dal 26 ottobre 2026)
   nbkm: { biblioteca: "Biblioteca Nazionale «Santi Cirillo e Metodio» (НБКМ): manoscritti slavi, greci, armeni, georgiani, ebraici, latini e musicali (manifesti IIIF scritti da Emendando)", citta: "Sofia (Bulgaria)", come: "corsia est, ogni notte (elenco ogni 14 giorni; pagine contate solo per i codici nuovi)" },
+  // Balcani (corsia «balcani», dal 27 ottobre 2026)
+  bms: { biblioteca: "Biblioteca della Matica srpska (Библиотека Матице српске): libri manoscritti e carte geografiche fino al 1900 (manifesti IIIF scritti da Emendando)", citta: "Novi Sad (Serbia)", come: "corsia balcani: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 14 giorni; schede e visore solo per i codici nuovi)" },
   libfond: { biblioteca: "Biblioteca Statale Russa, Reparto manoscritti, e biblioteca dell'Accademia Teologica di Mosca: copie digitali pubblicate dalla Trinità-San Sergio (lib-fond.ru; manifesti IIIF scritti da Emendando)", citta: "Mosca e Sergiev Posad (Russia)", come: "corsia est: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 30 giorni; schede e immagini solo dei codici nuovi)" },
   // Internet Archive (corsia «mondo», dal 26 ottobre 2026)
   archive: { biblioteca: "Internet Archive: manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, John Carter Brown Library, Newberry Library, Fragile Palm Leaves Foundation, biblioteche indiane e altre; dettaglio sotto la tabella)", citta: "varie", come: "corsia mondo, ogni notte (una ricerca per profilo ogni 6 giorni)" },
@@ -315,6 +317,12 @@ export const AVANZAMENTO = {
     if (s.cursore) return { testo: `in corso, a ruota: elenco al fondo ${num(s.cursore.fondo + 1)} di ${num(presi)} (${num(vs.length)} codici finora)`, data: s.aggiornato };
     if (!s.completato) return { testo: `in corso, a ruota: schede e immagini lette per ${num(letti)} codici su ${num(vs.length)}`, data: s.aggiornato };
     return { testo: `codici letti tutti (${num(vs.length)} in ${num(presi)} fondi di libri manoscritti su ${num(fondi.length)}; ${num(con)} con immagini; fuori archivi, autografi, carte e stampati)`, data: s.completato };
+  },
+  bms: () => {
+    const s = leggi("data/bms.json"); if (!s) return { testo: "non ancora cominciata" };
+    const vs = Object.values(s.voci || {}), letti = vs.filter(v => v.n != null || v.x).length;
+    if (!s.completato) return { testo: `in corso, a ruota: schede lette ${num(letti)} su ${num(vs.length)}`, data: s.aggiornato };
+    return { testo: `schede lette tutte (${num(vs.length)} tra manoscritti e carte; ${num(vs.filter(v => v.n).length)} con immagini)`, data: s.completato };
   },
   nbkm: () => {
     const s = leggi("data/nbkm.json"); if (!s) return { testo: "non ancora cominciata" };

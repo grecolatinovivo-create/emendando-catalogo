@@ -1,0 +1,35 @@
+# Corsia «balcani» (dal 27 ottobre 2026): biblioteche dei Balcani occidentali, della Grecia e del Mediterraneo orientale agganciate
+# dopo il controllo di Albania, Bosnia ed Erzegovina, Serbia, Macedonia del Nord, Montenegro, Kosovo, Bielorussia, Moldavia, Grecia,
+# Cipro e Malta (docs/COPERTURA.md), server diversi dalle altre corsie:
+#   - Biblioteca della Matica srpska, Novi Sad (fonte «bms»): pagine dei risultati e schede del sito, script del visore della biblioteca
+#     (numero e misure delle immagini), JPEG della biblioteca digitale; i manifesti li scrive il catalogo (scripts/manifesti.mjs).
+# Gli stati sono in data/<fonte>.json. Richieste in serie, con le pause di sempre (1,5 secondi).
+# Ruota fino a lettura completa: finché una fonte della corsia non ha finito la prima lettura, la corsia lavora fino a circa
+# 150 minuti per esecuzione e riparte subito da sola, purché nel giro ci siano stati progressi (scripts/ruota.mjs).
+# Poi torna al giro notturno delle 04:40 UTC, che prende i codici nuovi.
+name: "Raccolta: corsia balcani"
+
+on:
+  schedule:
+    - cron: "40 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write   # per la ruota
+
+concurrency:
+  group: raccolta-balcani
+  cancel-in-progress: false
+
+jobs:
+  corsia:
+    uses: ./.github/workflows/corsia.yml
+    with:
+      corsia: balcani
+      fonti: bms
+      argomenti: --bms-minuti=60
+      cache: false
+      ruota: false
+      completa: true
+      flusso: raccolta-balcani.yml

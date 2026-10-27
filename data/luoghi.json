@@ -12250,6 +12250,13 @@
    "lon": 23.3242,
    "geonames": 727011
   },
+  "novi-sad": {
+   "nome": "Novi Sad",
+   "paese": "RS",
+   "lat": 45.2517,
+   "lon": 19.8369,
+   "geonames": 3194360
+  },
   "mosca": {
    "nome": "Mosca",
    "en": "Moscow",
@@ -14363,6 +14370,8 @@
   "Tel Aviv": "tel-aviv",
   "Ramat Gan": "ramat-gan",
   "Sofia": "sofia",
+  "Novi Sad": "novi-sad",
+  "Нови Сад": "novi-sad",
   "София": "sofia",
   "Mosca": "mosca",
   "Moscow": "mosca",
@@ -14464,6 +14473,7 @@
   "getty": "los-angeles",
   "harvard": "cambridge-ma",
   "nbkm": "sofia",
+  "bms": "novi-sad",
   "libfond": "mosca"
  }
 }

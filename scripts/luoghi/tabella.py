@@ -279,6 +279,7 @@ L = {
  "almaty": ("Almaty", None, "Almaty", "KZ", None, ["Almaty", "Алма-Ата"]),
  "plovdiv": ("Plovdiv", None, "Plovdiv", "BG", None, ["Plovdiv", "Пловдив"]),
  "sofia": ("Sofia", None, "Sofia", "BG", None, ["Sofia", "София"]),
+ "novi-sad": ("Novi Sad", None, "Novi Sad", "RS", None, ["Novi Sad", "Нови Сад"]),
  "mosca": ("Mosca", "Moscow", "Moscow", "RU", None, ["Mosca", "Moscow", "Москва"]),
  "sergiev-posad": ("Sergiev Posad", "Sergiyev Posad", "Sergiyev Posad", "RU", None, ["Sergiev Posad", "Сергиев Посад"]),
  "bratislava": ("Bratislava", None, "Bratislava", "SK", None, ["Bratislava"]),
@@ -342,7 +343,7 @@ BIB = {
  "Médiathèque André Malraux, Strasbourg": "strasburgo",
 }
 # città della fonte, per le voci senza città: fonte -> id
-FONTI = {"nbkm": "sofia", "libfond": "mosca", "gallica": "parigi", "heidelberg": "heidelberg", "vaticana": "citta-del-vaticano", "bodleian": "oxford", "laurenziana": "firenze",
+FONTI = {"nbkm": "sofia", "bms": "novi-sad", "libfond": "mosca", "gallica": "parigi", "heidelberg": "heidelberg", "vaticana": "citta-del-vaticano", "bodleian": "oxford", "laurenziana": "firenze",
          "bsb": "monaco-di-baviera", "ndl": "tokyo", "berlino": "berlino", "lipsia": "lipsia", "leiden": "leida", "ambrosiana": "milano",
          "bub": "bologna", "nlg": "atene", "colonia": "colonia", "montecassino": "montecassino", "bamberga": "bamberga", "casanatense": "roma", "auckland": "auckland", "toronto": "toronto",
          "wellcome": "londra", "bl": "londra", "manchester": "manchester", "cbl": "dublino", "cudl": "cambridge",

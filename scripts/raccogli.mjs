@@ -9,7 +9,7 @@
 //        [--ndl-minuti=60] [--ndl-controllo-minuti=40] [--kokusho-minuti=60] [--auckland-minuti=10] [--toronto-minuti=15]
 //        [--wellcome-minuti=10] [--bl-minuti=40] [--isos-minuti=20] [--manchester-minuti=30] [--cudl-minuti=30] [--cbl-minuti=60] [--parker-minuti=20] [--nlw-minuti=10] [--minuti-totali=160] [--solo-costruisci]
 //        [--mdc-minuti=10] [--ub-minuti=10] [--realbiblioteca-minuti=15] [--ucm-minuti=15] [--sevilla-minuti=5] [--rah-minuti=30]
-//        [--pergamos-minuti=10] [--rousanou-minuti=5] [--auc-minuti=5] [--northwestern-minuti=5] [--nbkm-minuti=20] [--libfond-minuti=60]
+//        [--pergamos-minuti=10] [--rousanou-minuti=5] [--auc-minuti=5] [--northwestern-minuti=5] [--nbkm-minuti=20] [--libfond-minuti=60] [--bms-minuti=20]
 //        [--nli-minuti=15] [--getty-minuti=15] [--harvard-minuti=10]
 //        [--kbdk-minuti=30] [--uva-minuti=5] [--onb-minuti=30] [--bncf-minuti=5] [--vallicelliana-minuti=5] [--malatestiana-minuti=20] [--polona-minuti=20] [--manuscriptorium-minuti=30] [--archive-minuti=10]
 //        [--crossasia-minuti=30] [--sbbasia-minuti=30] [--sbbor-minuti=30] [--nomfoundation-minuti=20]
@@ -78,6 +78,7 @@ import { scansionaUva, recordUva } from "./fonti/uva.mjs";
 import { scansionaVlaustria, recordVlaustria } from "./fonti/vlaustria.mjs";
 import { scansionaElte, recordElte, segnaturaNorm } from "./fonti/elte.mjs";
 import { scansionaNbkm, recordNbkm } from "./fonti/nbkm.mjs";
+import { scansionaBms, recordBms } from "./fonti/bms.mjs";
 import { scansionaLibfond, recordLibfond } from "./fonti/libfond.mjs";
 import { scansionaArchive, recordArchive, esistentiArchive } from "./fonti/archive.mjs";
 import { scansionaCrossasia, recordCrossasia } from "./fonti/crossasia.mjs";
@@ -94,7 +95,7 @@ import { miniatoDa } from "./miniati.mjs";
 import { musicaDa } from "./musica.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
-const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,kbdk,uva,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,bl,isos,manchester,cudl,cbl,parker,nlw,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,auc,northwestern,nli,getty,harvard,nbkm,libfond,archive,crossasia,sbbasia,sbbor,nomfoundation,vaticana").split(",");
+const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,kbdk,uva,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,bl,isos,manchester,cudl,cbl,parker,nlw,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,auc,northwestern,nli,getty,harvard,nbkm,libfond,bms,archive,crossasia,sbbasia,sbbor,nomfoundation,vaticana").split(",");
 const INIZIO = Date.now();
 export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)", berlino: "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
   bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -149,6 +150,7 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   harvard: "Harvard Library: Houghton, Harvard-Yenching, Islamic Heritage Project (LibraryCloud, elenco raccolto dal browser; manifesti nrs.lib.harvard.edu)",
   // Europa orientale (corsia «est», dal 26 ottobre 2026)
   nbkm: "Biblioteca Nazionale «Santi Cirillo e Metodio», Sofia: manoscritti slavi, greci e orientali (digilib.nationallibrary.bg; manifesti scritti dal catalogo)",
+  bms: "Biblioteca della Matica srpska, Novi Sad: libri manoscritti e carte geografiche (digital.bms.rs; manifesti scritti dal catalogo)",
   libfond: "Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca: copie digitali della Trinità-San Sergio (lib-fond.ru; manifesti scritti dal catalogo)",
   // Europa (corsia «europa», dal 26 ottobre 2026)
   handrit: "handrit.is: Reykjavík e Copenaghen (descrizioni TEI da github.com/Handrit/Manuscripts; manifesti scritti dal catalogo)",
@@ -397,6 +399,8 @@ async function main() {
     getty: async () => recordGetty(await scansionaGetty({ minuti: min("getty", +(arg["getty-minuti"] ?? 15)), soloCache: sc("getty") })),
     // Europa orientale (corsia «est»): Biblioteca Nazionale di Bulgaria (JPEG della biblioteca, manifesti scritti dal catalogo)
     nbkm: async () => recordNbkm(await scansionaNbkm({ minuti: min("nbkm", +(arg["nbkm-minuti"] ?? 20)), soloCache: sc("nbkm") })),
+    // Balcani (corsia «balcani», dal 27 ottobre 2026): Biblioteca della Matica srpska (JPEG del visore della biblioteca, manifesti scritti dal catalogo)
+    bms: async () => recordBms(await scansionaBms({ minuti: min("bms", +(arg["bms-minuti"] ?? 20)), soloCache: sc("bms") })),
     // Russia (corsia «est»): codici della Biblioteca Statale Russa e dell'Accademia Teologica di Mosca pubblicati da lib-fond.ru
     libfond: async () => recordLibfond(await scansionaLibfond({ minuti: min("libfond", +(arg["libfond-minuti"] ?? 60)), soloCache: sc("libfond") })),
     // Internet Archive: tutte le altre biblioteche che vi pubblicano manoscritti (profili in scripts/fonti/archive.mjs); i codici che il
