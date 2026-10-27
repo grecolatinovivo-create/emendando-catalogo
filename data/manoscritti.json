@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T01:14:51.878Z",
+ "aggiornato": "2026-10-27T03:36:51.990Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -119,8 +119,8 @@
   },
   "onb": {
    "nome": "Österreichische Nationalbibliothek, Vienna (onb.digital; manifesti api.onb.ac.at)",
-   "codici": 289,
-   "esito": "errore: manifesti letti in parte (mancano 799 su 6394): riprenderà alla prossima esecuzione"
+   "codici": 367,
+   "esito": "ok"
   },
   "yale": {
    "nome": "Yale University Library, Beinecke e altre (collections.library.yale.edu)",
@@ -305,7 +305,7 @@
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
    "codici": 1,
-   "esito": "errore: manifesti letti in parte (mancano 4907): riprenderà alla prossima esecuzione"
+   "esito": "errore: manifesti letti in parte (mancano 2111): riprenderà alla prossima esecuzione"
   },
   "getty": {
    "nome": "J. Paul Getty Museum, Los Angeles: manoscritti (data.getty.edu; manifesti media.getty.edu)",
@@ -320,7 +320,7 @@
   "libfond": {
    "nome": "Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca: copie digitali della Trinità-San Sergio (lib-fond.ru; manifesti scritti dal catalogo)",
    "codici": 19,
-   "esito": "errore: codici letti in parte (1763 in questo giro): riprenderà alla prossima esecuzione"
+   "esito": "errore: codici letti in parte (1698 in questo giro): riprenderà alla prossima esecuzione"
   },
   "archive": {
    "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, John Carter Brown Library, Newberry Library, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
@@ -353,7 +353,7 @@
    "esito": "ok"
   }
  },
- "totale": 12342,
+ "totale": 12420,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -357290,6 +357290,39 @@
    "immagini": 586
   },
   {
+   "id": "onb-132549b1",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. 30",
+   "datazione": "sec. XV (ÖNB: 1400)",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Institutionum oratoriarum libri XII",
+   "autori": [
+    {
+     "id": "quintiliano",
+     "autore": "Quintiliano",
+     "latino": "Quintilianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutio oratoria"
+     ],
+     "corrispondenza": "autore: «Quintilianus, Marcus Fabius, 35-100 ; Pont…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/132549B1",
+   "pagina": "https://data.onb.ac.at/rep/132549B1",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 586
+  },
+  {
    "id": "onb-10000c9f",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -357745,6 +357778,39 @@
    "immagini": 138
   },
   {
+   "id": "onb-1324be60",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. 290",
+   "datazione": "1340",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Comoediae sex cum glossis",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commedie"
+     ],
+     "corrispondenza": "autore: «Terentius Afer, Publius, v195-v159 ; Sambucus, Johannes, 1531-1584»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324BE60",
+   "pagina": "https://data.onb.ac.at/rep/1324BE60",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 454
+  },
+  {
    "id": "onb-118631e5",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -357774,6 +357840,39 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/118631E5",
    "pagina": "https://data.onb.ac.at/rep/118631E5",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 362
+  },
+  {
+   "id": "onb-1322d917",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. 309",
+   "datazione": "1470",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Comoediae sex",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commedie"
+     ],
+     "corrispondenza": "autore: «Terentius Afer, Publius, v195-v159 ; Al…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322D917",
+   "pagina": "https://data.onb.ac.at/rep/1322D917",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 362
   },
@@ -357977,6 +358076,39 @@
    "immagini": 300
   },
   {
+   "id": "onb-1322c223",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. 2334",
+   "datazione": "1275",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Physica cum commentariis Averrois",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Fisica"
+     ],
+     "corrispondenza": "autore: «Aristoteles, v384-v322 ; Averroes, 1126-1198»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322C223",
+   "pagina": "https://data.onb.ac.at/rep/1322C223",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 300
+  },
+  {
    "id": "onb-131abdad",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -358139,6 +358271,39 @@
    "immagini": 294
   },
   {
+   "id": "onb-13229fd0",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. 2624",
+   "datazione": "sec. XVI (ÖNB: 1500)",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Heroides",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eroidi"
+     ],
+     "corrispondenza": "autore: «Ovidius Naso, Publius, v43-17 ; Saint…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/13229FD0",
+   "pagina": "https://data.onb.ac.at/rep/13229FD0",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 294
+  },
+  {
    "id": "onb-1000c6c5",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -358205,6 +358370,39 @@
    "immagini": 392
   },
   {
+   "id": "onb-13227f91",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. 2811",
+   "datazione": "1399",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "de"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Dictorum factorumque memorabilium libri IX in linguam germanicam versi ab Henrico von Mügeln",
+   "autori": [
+    {
+     "id": "valerio-massimo",
+     "autore": "Valerio Massimo",
+     "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Facta et dicta memorabilia"
+     ],
+     "corrispondenza": "autore: «Valerius, Maximus, ca. Ende 1. Jh. v. Chr.-1. H. 1. Jh.»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/13227F91",
+   "pagina": "https://data.onb.ac.at/rep/13227F91",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 392
+  },
+  {
    "id": "onb-1001bf88",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -358234,6 +358432,39 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1001BF88",
    "pagina": "https://data.onb.ac.at/rep/1001BF88",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 300
+  },
+  {
+   "id": "onb-1324c46e",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. 2870",
+   "datazione": "1431",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "de"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Dictorum factorumque memorabilium libri IX in linguam germanicam versi ab Henrico von Mügeln",
+   "autori": [
+    {
+     "id": "valerio-massimo",
+     "autore": "Valerio Massimo",
+     "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Facta et dicta memorabilia"
+     ],
+     "corrispondenza": "autore: «Valerius, Maximus, ca. Ende 1. Jh. v. Chr.-1. H. 1. Jh. ; Heinricus Hubmär ; Peter Spörl»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324C46E",
+   "pagina": "https://data.onb.ac.at/rep/1324C46E",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 300
   },
@@ -358271,6 +358502,39 @@
    "immagini": 426
   },
   {
+   "id": "onb-1324c28e",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. 2909",
+   "datazione": "1450",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "de"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Dictorum factorumque memorabilium libri IX in linguam germanicam versi ab Henrico von Mügeln",
+   "autori": [
+    {
+     "id": "valerio-massimo",
+     "autore": "Valerio Massimo",
+     "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Facta et dicta memorabilia"
+     ],
+     "corrispondenza": "autore: «Valerius, Maximus, ca. Ende 1. Jh. v. Chr.-1. H. 1. Jh.»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324C28E",
+   "pagina": "https://data.onb.ac.at/rep/1324C28E",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 426
+  },
+  {
    "id": "onb-1000d786",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -358304,6 +358568,72 @@
    "immagini": 374
   },
   {
+   "id": "onb-1324c470",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. 2911",
+   "datazione": "1483",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "de"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Dictorum factorumque memorabilium libri IX in linguam germanicam versi ab Henrico von Mügeln",
+   "autori": [
+    {
+     "id": "valerio-massimo",
+     "autore": "Valerio Massimo",
+     "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Facta et dicta memorabilia"
+     ],
+     "corrispondenza": "autore: «Valerius, Maximus, ca. Ende 1. Jh. v. Chr.-1. H. 1. Jh. ; Matthaeus S.»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324C470",
+   "pagina": "https://data.onb.ac.at/rep/1324C470",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 374
+  },
+  {
+   "id": "onb-1322930a",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. 3056**",
+   "datazione": "sec. XVI (ÖNB: 1500)",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Geographia, quam italico idiomate componere et ampliare quidam studuit",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Geografia"
+     ],
+     "corrispondenza": "autore: «Ptolemaeus, Claudius, 100-178»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322930A",
+   "pagina": "https://data.onb.ac.at/rep/1322930A",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 198
+  },
+  {
    "id": "onb-100159d0",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -358333,6 +358663,39 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/100159D0",
    "pagina": "https://data.onb.ac.at/rep/100159D0",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 108
+  },
+  {
+   "id": "onb-13226a29",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. 3070*",
+   "datazione": "1449",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "de"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De officiis",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De officiis"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius, v106-v43 ; W. G. E. G.»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/13226A29",
+   "pagina": "https://data.onb.ac.at/rep/13226A29",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 108
   },
@@ -358436,6 +358799,39 @@
    "immagini": 460
   },
   {
+   "id": "onb-1322d911",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. 3131",
+   "datazione": "1429",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Dictorum factorumque memorabilium libri IX cum commentario",
+   "autori": [
+    {
+     "id": "valerio-massimo",
+     "autore": "Valerio Massimo",
+     "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Facta et dicta memorabilia"
+     ],
+     "corrispondenza": "autore: «Valerius, Maximus, ca. Ende 1. Jh. v. Chr.-1. H…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322D911",
+   "pagina": "https://data.onb.ac.at/rep/1322D911",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 460
+  },
+  {
    "id": "onb-10029b3d",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -358470,6 +358866,40 @@
    "immagini": 544
   },
   {
+   "id": "onb-1325502b",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. 3140",
+   "datazione": "1440",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "de",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Dictorum factorumque memorabilium libri IX",
+   "autori": [
+    {
+     "id": "valerio-massimo",
+     "autore": "Valerio Massimo",
+     "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Facta et dicta memorabilia"
+     ],
+     "corrispondenza": "autore: «Valerius, Maximus, ca. Ende 1. Jh. v. Chr.-1. H. 1. Jh. ; Heinrich, von Mügeln, 1319-1380»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1325502B",
+   "pagina": "https://data.onb.ac.at/rep/1325502B",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 544
+  },
+  {
    "id": "onb-11860361",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -358499,6 +358929,39 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/11860361",
    "pagina": "https://data.onb.ac.at/rep/11860361",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 462
+  },
+  {
+   "id": "onb-1322d742",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. 3142",
+   "datazione": "1472",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Dictorum factorumque memorabilium libri IX cum commentario",
+   "autori": [
+    {
+     "id": "valerio-massimo",
+     "autore": "Valerio Massimo",
+     "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Facta et dicta memorabilia"
+     ],
+     "corrispondenza": "autore: «Valerius, Maximus, ca. Ende 1. Jh. v. Chr.-1. H…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322D742",
+   "pagina": "https://data.onb.ac.at/rep/1322D742",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 462
   },
@@ -358705,6 +359168,37 @@
    "immagini": 326
   },
   {
+   "id": "onb-1324db81",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. 3246",
+   "datazione": "sec. XV (ÖNB: 1400)",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera",
+   "autori": [
+    {
+     "id": "claudiano",
+     "autore": "Claudiano",
+     "latino": "Claudianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Claudianus, Claudius, 370-408»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324DB81",
+   "pagina": "https://data.onb.ac.at/rep/1324DB81",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 326
+  },
+  {
    "id": "onb-131f7edc",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -358897,6 +359391,39 @@
    "immagini": 87
   },
   {
+   "id": "onb-1324c288",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. 8046",
+   "datazione": "1676",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "de"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Relatio de constructione domus scientiarum et artium",
+   "autori": [
+    {
+     "id": "apollonio-discolo",
+     "autore": "Apollonio Discolo",
+     "latino": "Apollonius Dyscolus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Sintassi"
+     ],
+     "corrispondenza": "titolo: «Relatio de constructione domus scientiarum et artium»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324C288",
+   "pagina": "https://data.onb.ac.at/rep/1324C288",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 87
+  },
+  {
    "id": "onb-1000984a",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -358960,6 +359487,37 @@
    "immagini": 603
   },
   {
+   "id": "onb-1322ce43",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. 10405",
+   "datazione": "sec. XVIII (ÖNB: 1700)",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Theophrastus redivivus sive historia de iis, quae dicuntur de Diis etc. Vol. I.",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Theophrastus redivivus sive historia de iis, quae dicuntur de Diis etc. Vol. I.»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322CE43",
+   "pagina": "https://data.onb.ac.at/rep/1322CE43",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 603
+  },
+  {
    "id": "onb-117e574c",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -358987,6 +359545,37 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/117E574C",
    "pagina": "https://data.onb.ac.at/rep/117E574C",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 611
+  },
+  {
+   "id": "onb-1322cffa",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. 10406",
+   "datazione": "sec. XVIII (ÖNB: 1700)",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Theophrastus redivivus sive historia de iis, quae dicuntur de Diis etc. Vol. II.",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Theophrastus redivivus sive historia de iis, quae dicuntur de Diis etc. Vol. II.»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322CFFA",
+   "pagina": "https://data.onb.ac.at/rep/1322CFFA",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 611
   },
@@ -359055,6 +359644,39 @@
    "immagini": 550
   },
   {
+   "id": "onb-13221a9d",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. 10903",
+   "datazione": "sec. XVI (ÖNB: 1500)",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opus magnae constructionis seu Almagestum a Georgio Trapezuntio e graeco in latinum sermonem translatum",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Almagesto"
+     ],
+     "corrispondenza": "titolo: «…pus magnae constructionis seu Almagestum a Georgio Trapezuntio e graec…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/13221A9D",
+   "pagina": "https://data.onb.ac.at/rep/13221A9D",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 550
+  },
+  {
    "id": "onb-117e4da7",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -359082,6 +359704,37 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/117E4DA7",
    "pagina": "https://data.onb.ac.at/rep/117E4DA7",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 729
+  },
+  {
+   "id": "onb-1322d036",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. 11451",
+   "datazione": "1707",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Theophrastus redivivus sive historia de iis, quae dicuntur de Diis etc.",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Theophrastus redivivus sive historia de iis, quae dicuntur de Diis etc.»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322D036",
+   "pagina": "https://data.onb.ac.at/rep/1322D036",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 729
   },
@@ -359282,6 +359935,37 @@
    "immagini": 16
   },
   {
+   "id": "onb-1324c483",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. 15486",
+   "datazione": "sec. XIV (ÖNB: 1300)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Orationis in Pisonem fragmentum",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius, v106-v43»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324C483",
+   "pagina": "https://data.onb.ac.at/rep/1324C483",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 16
+  },
+  {
    "id": "onb-10048a40",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -359342,6 +360026,37 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/10047C92",
    "pagina": "https://data.onb.ac.at/rep/10047C92",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 332
+  },
+  {
+   "id": "onb-13254e1d",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Hist. gr. 4",
+   "datazione": "1190",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera",
+   "autori": [
+    {
+     "id": "arriano",
+     "autore": "Arriano",
+     "latino": "Arrianus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Arrianus, Flavius, 95-175 ; Busbecq, Ogier Ghislain <<de>>, 1522-1592»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/13254E1D",
+   "pagina": "https://data.onb.ac.at/rep/13254E1D",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 332
   },
@@ -359767,6 +360482,47 @@
    "immagini": 34
   },
   {
+   "id": "onb-1322a6b9",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Hist. gr. 107",
+   "datazione": "1525",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Fabulae",
+   "autori": [
+    {
+     "id": "marco-aurelio",
+     "autore": "Marco Aurelio",
+     "latino": "Marcus Aurelius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…m 650/750, bzw. 10./11. Jh. ; Mark Aurel, Römisches Reich, Kaiser, 121…»"
+    },
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "autore: «…ches Reich, Kaiser, 121-180 ; Aesopus, ca. v6. Jh. ; Sambucus, Joha…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322A6B9",
+   "pagina": "https://data.onb.ac.at/rep/1322A6B9",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 34
+  },
+  {
    "id": "onb-101f67c2",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -359928,6 +360684,61 @@
    "immagini": 518
   },
   {
+   "id": "onb-13254d36",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Hist. gr. 130",
+   "datazione": "sec. XIV (ÖNB: 1300)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Philologische Sammelhandschrift",
+   "autori": [
+    {
+     "id": "pindaro",
+     "autore": "Pindaro",
+     "latino": "Pindarus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…Jh. ; Cleomedes, ca. 2. Jh. ; Pindarus, ca. 522 oder 518 v. Chr.-446…»"
+    },
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…Michael, Psellos, 1018-1078 ; Hippocrates, v460-v370 ; Aesopus, ca. v6.…»"
+    },
+    {
+     "id": "eliodoro",
+     "autore": "Eliodoro",
+     "latino": "Heliodorus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Heliodorus, Emesenus, ca. 3. Jh. ; Cleomedes, ca.…»"
+    },
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…78 ; Hippocrates, v460-v370 ; Aesopus, ca. v6. Jh. ; Sambucus, Joha…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/13254D36",
+   "pagina": "https://data.onb.ac.at/rep/13254D36",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 518
+  },
+  {
    "id": "onb-100487b0",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -359986,6 +360797,37 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/100488AA",
    "pagina": "https://data.onb.ac.at/rep/100488AA",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 848
+  },
+  {
+   "id": "onb-1324d1f3",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Med. gr. 4",
+   "datazione": "0900-0999",
+   "secolo": [
+    9,
+    10
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera ; De affectionibus interioribus (inc. mut.); De affectionibus; De morbo sacro; De morbis; De victus ratione; De insomniis; De mulierum affectibus; De muliebri natura (des. mut.)",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Hippocrates, v460-v370 ; Busbecq, Ogier Ghislain <<de>>, 1522-1592»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324D1F3",
+   "pagina": "https://data.onb.ac.at/rep/1324D1F3",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 848
   },
@@ -360064,6 +360906,45 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/112EEE70",
    "pagina": "https://data.onb.ac.at/rep/112EEE70",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 67
+  },
+  {
+   "id": "onb-13229fcc",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Med. gr. 13",
+   "datazione": "sec. XIV (ÖNB: 1300)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Excerpta medica",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Hippocrates, v460-v370 ; Galenus, 129-199 ; Busbecq, Ogier Ghislain <<de>>, 1522-1592»"
+    },
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Hippocrates, v460-v370 ; Galenus, 129-199 ; Busbecq, Ogier Ghislain <<de>>, 1522-1592»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/13229FCC",
+   "pagina": "https://data.onb.ac.at/rep/13229FCC",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 67
   },
@@ -360179,6 +361060,37 @@
    "immagini": 290
   },
   {
+   "id": "onb-1324d3db",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Med. gr. 18",
+   "datazione": "sec. XIV (ÖNB: 1300)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectio medica",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus, 129-199 ; Paulos, von Aigina…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324D3DB",
+   "pagina": "https://data.onb.ac.at/rep/1324D3DB",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 290
+  },
+  {
    "id": "onb-11345b5b",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -360206,6 +361118,37 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/11345B5B",
    "pagina": "https://data.onb.ac.at/rep/11345B5B",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 404
+  },
+  {
+   "id": "onb-13229fcf",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Med. gr. 22",
+   "datazione": "1450",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De locis affectis cum Scholiis",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus, 129-199 ; Strimari, Rem...sirri ; Busbecq, Ogier Ghislain <<de>>, 1522-1592»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/13229FCF",
+   "pagina": "https://data.onb.ac.at/rep/13229FCF",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 404
   },
@@ -360600,6 +361543,37 @@
    "immagini": 274
   },
   {
+   "id": "onb-1322a3f8",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Med. gr. 41",
+   "datazione": "1350",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera medica",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…phorus, Blemmyda, 1197-1272 ; Hippocrates, v460-v370 ; Busbecq, Ogier G…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322A3F8",
+   "pagina": "https://data.onb.ac.at/rep/1322A3F8",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 274
+  },
+  {
    "id": "onb-100005cf",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -360773,6 +361747,37 @@
    "immagini": 124
   },
   {
+   "id": "onb-1324c472",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. N. F. 278",
+   "datazione": "sec. XIV (ÖNB: 1300)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "ar"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Sirr al-asrār",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, v384-v322 ; Ibn-al-Biṭrīq, Y…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324C472",
+   "pagina": "https://data.onb.ac.at/rep/1324C472",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 124
+  },
+  {
    "id": "onb-131b1019",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -360835,6 +361840,68 @@
    "pagina": "https://data.onb.ac.at/rep/1000E453",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 1096
+  },
+  {
+   "id": "onb-13226a1e",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 7",
+   "datazione": "1561",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Commentaria in Platonem cum marginalibus",
+   "autori": [
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Proclus, Diadochus, 412-485 ; Damasci…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/13226A1E",
+   "pagina": "https://data.onb.ac.at/rep/13226A1E",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 1096
+  },
+  {
+   "id": "onb-13238aff",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 10",
+   "datazione": "1490",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Commentarii in Aristotelem",
+   "autori": [
+    {
+     "id": "fozio",
+     "autore": "Fozio",
+     "latino": "Photius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…, ca. 435/445&ndash;517/526 ; Photios I., Konstantinopel, Patriarch…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/13238AFF",
+   "pagina": "https://data.onb.ac.at/rep/13238AFF",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 572
   },
   {
    "id": "onb-131abe39",
@@ -361029,6 +362096,37 @@
    "immagini": 548
   },
   {
+   "id": "onb-132318a6",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 23",
+   "datazione": "sec. XIII (ÖNB: 1200)",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Etymologicum Gudianum",
+   "autori": [
+    {
+     "id": "etymologicum",
+     "autore": "Etymologicum Magnum",
+     "latino": "Etymologicum Magnum",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Etymologicum Gudianum»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/132318A6",
+   "pagina": "https://data.onb.ac.at/rep/132318A6",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 548
+  },
+  {
    "id": "onb-117c4b79",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -361173,6 +362271,39 @@
    "immagini": 1366
   },
   {
+   "id": "onb-1322e911",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 39",
+   "datazione": "sec. XVI (ÖNB: 1500)",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ilias",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "autore: «Homerus, ca. v8. Jh. ; Johannes, Tzetzes, 1110-1180»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322E911",
+   "pagina": "https://data.onb.ac.at/rep/1322E911",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 1366
+  },
+  {
    "id": "onb-100063e1",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -361208,6 +362339,45 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/100063E1",
    "pagina": "https://data.onb.ac.at/rep/100063E1",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 758
+  },
+  {
+   "id": "onb-1324cd9c",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 41",
+   "datazione": "sec. XVI (ÖNB: 1500)",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera philosophica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, v384-v322 ; Johannes, Philop…»"
+    },
+    {
+     "id": "temistio",
+     "autore": "Temistio",
+     "latino": "Themistius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…hannes, Philoponus, 490-570 ; Themistius, 317-388 ; Darmarios, Andreas…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324CD9C",
+   "pagina": "https://data.onb.ac.at/rep/1324CD9C",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 758
   },
@@ -361422,6 +362592,39 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/112EEE45",
    "pagina": "https://data.onb.ac.at/rep/112EEE45",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 172
+  },
+  {
+   "id": "onb-13229fcd",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 58",
+   "datazione": "1475",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera ; Olympia, Pythia, Nemea",
+   "autori": [
+    {
+     "id": "pindaro",
+     "autore": "Pindaro",
+     "latino": "Pindarus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Epinici"
+     ],
+     "corrispondenza": "autore: «Pindarus, ca. 522 oder 518 v. Chr.-446…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/13229FCD",
+   "pagina": "https://data.onb.ac.at/rep/13229FCD",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 172
   },
@@ -361645,6 +362848,45 @@
    "immagini": 436
   },
   {
+   "id": "onb-1324ce19",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 62",
+   "datazione": "1450",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectio mathematica",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…Proclus, Diadochus, 412-485 ; Euclides, ca. v3. Jh. ; Busbecq, Ogier…»"
+    },
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…chus, Gerasenus, ca. 2. Jh. ; Proclus, Diadochus, 412-485 ; Euclide…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324CE19",
+   "pagina": "https://data.onb.ac.at/rep/1324CE19",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 436
+  },
+  {
    "id": "onb-1001f4f4",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -361859,6 +363101,37 @@
    "immagini": 488
   },
   {
+   "id": "onb-1324db4c",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 75",
+   "datazione": "1445",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera philosophica cum Commentariis et Marginalibus",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, v384-v322 ; Simplikios, 480-…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324DB4C",
+   "pagina": "https://data.onb.ac.at/rep/1324DB4C",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 488
+  },
+  {
    "id": "onb-131abbb1",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -361998,6 +363271,37 @@
    "immagini": 474
   },
   {
+   "id": "onb-13254d34",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 94",
+   "datazione": "1475",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, v384-v322 ; Komes Korinthios, Theodosios ; Sambucus, Johannes, 1531-1584»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/13254D34",
+   "pagina": "https://data.onb.ac.at/rep/13254D34",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 474
+  },
+  {
    "id": "onb-1001cf45",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -362033,6 +363337,45 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1001CF45",
    "pagina": "https://data.onb.ac.at/rep/1001CF45",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 424
+  },
+  {
+   "id": "onb-13226ac8",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 100",
+   "datazione": "0875-0899",
+   "secolo": [
+    9,
+    9
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera philosophica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, v384-v322 ; Theophrastus, v3…»"
+    },
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, v384-v322 ; Theophrastus, v369-v288 ; Busbecq, Ogier G…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/13226AC8",
+   "pagina": "https://data.onb.ac.at/rep/13226AC8",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 424
   },
@@ -362392,6 +363735,37 @@
    "immagini": 106
   },
   {
+   "id": "onb-1324cfff",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 120",
+   "datazione": "1325",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectio tactica et mechanica",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…ton, Mechanicus, v3./2. Jh. ; Euclides, ca. v3. Jh. ; Leo VI., Imper…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324CFFF",
+   "pagina": "https://data.onb.ac.at/rep/1324CFFF",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 106
+  },
+  {
    "id": "onb-10047e6d",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -362464,6 +363838,47 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/11878B4B",
    "pagina": "https://data.onb.ac.at/rep/11878B4B",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 518
+  },
+  {
+   "id": "onb-13239c2b",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 129",
+   "datazione": "1090",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera ; Praecepta rei publicae gerendae (Excerpta) ; Apophthegmata regum et imperatorum (Excerpta); De educatione puerorum+ (Excerpta); De profectibus in virtute (Excerpta); De sera numinis vindicta (Excerpta); De audiendis poetis (Excerpta); De amicorum multitudine (Excerpta); De educatione puerorum+ (inc. mut. Cap. 9); De profectibus in virtute; De sera numinis vindicta (lacunae); De audiendis p",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "De tranquillitate animi"
+     ],
+     "corrispondenza": "titolo: «…se ipse sine invidia laudet; De tranquillitate animi; De vitioso pudore; De garrul…»"
+    },
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Plutarchus, 45-120 ; Sambucus, Johannes, 1531-1584»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/13239C2B",
+   "pagina": "https://data.onb.ac.at/rep/13239C2B",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 518
   },
@@ -362738,6 +364153,55 @@
    "immagini": 412
   },
   {
+   "id": "onb-13238afd",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 137",
+   "datazione": "1450",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De corona",
+   "autori": [
+    {
+     "id": "demostene",
+     "autore": "Demostene",
+     "latino": "Demosthenes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Sulla corona"
+     ],
+     "corrispondenza": "autore: «Demosthenes, v384-v322 ; Libanius, 314-39…»"
+    },
+    {
+     "id": "oppiano",
+     "autore": "Oppiano",
+     "latino": "Oppianus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…84-v322 ; Libanius, 314-393 ; Oppianus, Anazarbensis, ca. -211/212 ;…»"
+    },
+    {
+     "id": "libanio",
+     "autore": "Libanio",
+     "latino": "Libanius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Demosthenes, v384-v322 ; Libanius, 314-393 ; Oppianus, Anazarbe…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/13238AFD",
+   "pagina": "https://data.onb.ac.at/rep/13238AFD",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 341
+  },
+  {
    "id": "onb-100148fe",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -362852,6 +364316,69 @@
    "immagini": 608
   },
   {
+   "id": "onb-1324cd9e",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 139",
+   "datazione": "sec. XIV (ÖNB: 1300)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectio philosophica et mathematica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…, ca. 435/445&ndash;517/526 ; Aristoteles, v384-v322 ; Johannes, Philop…»"
+    },
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…Proclus, Diadochus, 412-485 ; Euclides, ca. v3. Jh. ; Sambucus, Joha…»"
+    },
+    {
+     "id": "porfirio",
+     "autore": "Porfirio",
+     "latino": "Porphyrius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Porphyrius, 233-301 ; Ammonius, Hermiae,…»"
+    },
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…ensis ; Themistius, 317-388 ; Proclus, Diadochus, 412-485 ; Euclide…»"
+    },
+    {
+     "id": "temistio",
+     "autore": "Temistio",
+     "latino": "Themistius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…; Alexander, Aphrodisiensis ; Themistius, 317-388 ; Proclus, Diadochus…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324CD9E",
+   "pagina": "https://data.onb.ac.at/rep/1324CD9E",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 608
+  },
+  {
    "id": "onb-131d8218",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -362910,6 +364437,37 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1003C016",
    "pagina": "https://data.onb.ac.at/rep/1003C016",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 530
+  },
+  {
+   "id": "onb-13226c42",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 148",
+   "datazione": "sec. XI (ÖNB: 1000)",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Quaestiones convivales (lacunae)",
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Plutarchus, 45-120 ; Busbecq, Ogier Ghislain <<de>>, 1522-1592»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/13226C42",
+   "pagina": "https://data.onb.ac.at/rep/13226C42",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 530
   },
@@ -363012,6 +364570,57 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/10A99B88",
    "pagina": "https://data.onb.ac.at/rep/10A99B88",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 738
+  },
+  {
+   "id": "onb-1322891f",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 149",
+   "datazione": "sec. XIV (ÖNB: 1300)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera theologica et historica, Epistulae",
+   "autori": [
+    {
+     "id": "libanio",
+     "autore": "Libanio",
+     "latino": "Libanius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Lettere"
+     ],
+     "corrispondenza": "autore: «…ilinaeus, ca. 1. H. 11. Jh. ; Libanius, 314-393 ; Gregorius, Nazianz…»"
+    },
+    {
+     "id": "gregorio-nazianzeno",
+     "autore": "Gregorio di Nazianzo",
+     "latino": "Gregorius Nazianzenus",
+     "categoria": "cristiano",
+     "opere": [
+      "Lettere"
+     ],
+     "corrispondenza": "autore: «…11. Jh. ; Libanius, 314-393 ; Gregorius, Nazianzenus, 329-390 ; Simeon, Sethus, ca…»"
+    },
+    {
+     "id": "giovanni-damasceno",
+     "autore": "Giovanni Damasceno",
+     "latino": "Iohannes Damascenus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…hus, ca. 11. Jh., 2. Hälfte ; Johannes, Damascenus, 675-749»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322891F",
+   "pagina": "https://data.onb.ac.at/rep/1322891F",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 738
   },
@@ -363278,6 +364887,53 @@
    "immagini": 554
   },
   {
+   "id": "onb-1324c287",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 172",
+   "datazione": "1490",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectio grammatica",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…is, Kōnstantinos, 1434-1501 ; Boethius, Anicius Manlius Severinus, 4…»"
+    },
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…Manlius Severinus, 480-524 ; Aristoteles, v384-v322»"
+    },
+    {
+     "id": "erodiano",
+     "autore": "Erodiano",
+     "latino": "Herodianus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…uel, Moschopulos, 1265-1316 ; Herodianus, Aelius, ca. 2. Jh. ; Georgiu…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324C287",
+   "pagina": "https://data.onb.ac.at/rep/1324C287",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 554
+  },
+  {
    "id": "onb-104b8193",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -363364,6 +365020,53 @@
    "immagini": 328
   },
   {
+   "id": "onb-1324c28b",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 174",
+   "datazione": "sec. XIV (ÖNB: 1300)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectio philosophica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Porphyrius, 233-301 ; Aristoteles, v384-v322 ; Michael, Psellos…»"
+    },
+    {
+     "id": "fozio",
+     "autore": "Fozio",
+     "latino": "Photius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…ontius, Byzantinus, 480-543 ; Photios I., Konstantinopel, Patriarch…»"
+    },
+    {
+     "id": "porfirio",
+     "autore": "Porfirio",
+     "latino": "Porphyrius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Porphyrius, 233-301 ; Aristoteles, v384-…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324C28B",
+   "pagina": "https://data.onb.ac.at/rep/1324C28B",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 328
+  },
+  {
    "id": "onb-1002c1e6",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -363399,6 +365102,45 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1002C1E6",
    "pagina": "https://data.onb.ac.at/rep/1002C1E6",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 235
+  },
+  {
+   "id": "onb-13220ad4",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 176",
+   "datazione": "1490",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Commentarius in Harmonicam Ptolemaei",
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Porphyrius, 233-301 ; Plutarchus, 45-120 ; Anastasios, Sinaite…»"
+    },
+    {
+     "id": "porfirio",
+     "autore": "Porfirio",
+     "latino": "Porphyrius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Porphyrius, 233-301 ; Plutarchus, 45-120…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/13220AD4",
+   "pagina": "https://data.onb.ac.at/rep/13220AD4",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 235
   },
@@ -363472,6 +365214,116 @@
    "pagina": "https://data.onb.ac.at/rep/118781E1",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 709
+  },
+  {
+   "id": "onb-1322e069",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 178",
+   "datazione": "1429",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectio grammatica et medica",
+   "autori": [
+    {
+     "id": "catone",
+     "autore": "Catone il Censore",
+     "latino": "Cato maior",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…Michael, Psellos, 1018-1078 ; Cato, Marcus Porcius, Censorius, v234-v149 ; Hippo…»"
+    },
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…49 ; Hippocrates, v460-v370 ; Theophrastus, v369-v288»"
+    },
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…los, von Aigina, ca. 7. Jh. ; Galenus, 129-199 ; Manuel, Philes, 12…»"
+    },
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…rcius, Censorius, v234-v149 ; Hippocrates, v460-v370 ; Theophrastus, v3…»"
+    },
+    {
+     "id": "erodiano",
+     "autore": "Erodiano",
+     "latino": "Herodianus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…aximus, Planudes, 1260-1310 ; Herodianus, Aelius, ca. 2. Jh. ; Paulos,…»"
+    },
+    {
+     "id": "giovanni-crisostomo",
+     "autore": "Giovanni Crisostomo",
+     "latino": "Iohannes Chrysostomus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «Johannes, Chrysostomus, 344-407 ; Maximus, Planudes,…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322E069",
+   "pagina": "https://data.onb.ac.at/rep/1322E069",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 709
+  },
+  {
+   "id": "onb-1324f3a3",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 179",
+   "datazione": "1340",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera astronomica et astrologica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, v384-v322 ; Proclus, Diadoch…»"
+    },
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, v384-v322 ; Proclus, Diadochus, 412-485 ; Ptolema…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324F3A3",
+   "pagina": "https://data.onb.ac.at/rep/1324F3A3",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 283
   },
   {
    "id": "onb-131b2eda",
@@ -363733,6 +365585,63 @@
    "immagini": 456
   },
   {
+   "id": "onb-1324cd98",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 192",
+   "datazione": "1450",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Fabulae et Sententiae, Opera philosophica et theologica",
+   "autori": [
+    {
+     "id": "catone",
+     "autore": "Catone il Censore",
+     "latino": "Cato maior",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…aximus, Planudes, 1260-1310 ; Cato, Marcus Porcius, Censorius, v234-v149 ; Aesop…»"
+    },
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…tiarum Scriptor, ca. 4. Jh. ; Hippocrates, v460-v370 ; Plotinus, 205-27…»"
+    },
+    {
+     "id": "plotino",
+     "autore": "Plotino",
+     "latino": "Plotinus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…h. ; Hippocrates, v460-v370 ; Plotinus, 205-270 ; Gaza, Theodoros, 1…»"
+    },
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "autore: «…rcius, Censorius, v234-v149 ; Aesopus, ca. v6. Jh. ; Bruni, Leonard…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324CD98",
+   "pagina": "https://data.onb.ac.at/rep/1324CD98",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 456
+  },
+  {
    "id": "onb-101f697c",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -363873,6 +365782,45 @@
    "immagini": 212
   },
   {
+   "id": "onb-1324c283",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 198",
+   "datazione": "sec. XIV (ÖNB: 1300)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectio poetica",
+   "autori": [
+    {
+     "id": "esiodo",
+     "autore": "Esiodo",
+     "latino": "Hesiodus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Hesiodus, ca. v8./7. Jh. ; Pindarus, c…»"
+    },
+    {
+     "id": "pindaro",
+     "autore": "Pindaro",
+     "latino": "Pindarus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Hesiodus, ca. v8./7. Jh. ; Pindarus, ca. 522 oder 518 v. Chr.-446…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324C283",
+   "pagina": "https://data.onb.ac.at/rep/1324C283",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 212
+  },
+  {
    "id": "onb-132080dd",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -363938,6 +365886,40 @@
    "immagini": 236
   },
   {
+   "id": "onb-132318a7",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 204",
+   "datazione": "1458",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Comoediae cum Hypothesi ; Plutus, Nubes (desunt v. 1247 - 1266; 1277 - 1284)",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Pluto",
+      "Nuvole"
+     ],
+     "corrispondenza": "autore: «Aristophanes, v445-v385 ; Thomas, Magister, 1275-1346 ; Alexander, Hydruntinus»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/132318A7",
+   "pagina": "https://data.onb.ac.at/rep/132318A7",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 236
+  },
+  {
    "id": "onb-117e44b0",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -363965,6 +365947,37 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/117E44B0",
    "pagina": "https://data.onb.ac.at/rep/117E44B0",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 454
+  },
+  {
+   "id": "onb-1322c922",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 205",
+   "datazione": "1350",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectio grammatica",
+   "autori": [
+    {
+     "id": "erodiano",
+     "autore": "Erodiano",
+     "latino": "Herodianus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…aximus, Planudes, 1260-1310 ; Herodianus, Aelius, ca. 2. Jh. ; Phrynic…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322C922",
+   "pagina": "https://data.onb.ac.at/rep/1322C922",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 454
   },
@@ -364178,6 +366191,61 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1001C0B1",
    "pagina": "https://data.onb.ac.at/rep/1001C0B1",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 420
+  },
+  {
+   "id": "onb-1324c28a",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 217",
+   "datazione": "1545",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectio philosophico-theologica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, v384-v322 ; Johannes, Damasc…»"
+    },
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…hannes, Damascenus, 675-749 ; Theophrastus, v369-v288 ; Iustinus, Martyr…»"
+    },
+    {
+     "id": "esichio",
+     "autore": "Esichio",
+     "latino": "Hesychius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…nus, Martyr, Heiliger, -165 ; Hesychius, Alexandrinus, ca. 5. Jh. ; Macheir, Mathus…»"
+    },
+    {
+     "id": "giovanni-damasceno",
+     "autore": "Giovanni Damasceno",
+     "latino": "Iohannes Damascenus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, v384-v322 ; Johannes, Damascenus, 675-749 ; Theophrastus, v369…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324C28A",
+   "pagina": "https://data.onb.ac.at/rep/1324C28A",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 420
   },
@@ -364478,6 +366546,37 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/117E4FB6",
    "pagina": "https://data.onb.ac.at/rep/117E4FB6",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 720
+  },
+  {
+   "id": "onb-1322dcbf",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 240",
+   "datazione": "1550",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectio grammatica",
+   "autori": [
+    {
+     "id": "erodiano",
+     "autore": "Erodiano",
+     "latino": "Herodianus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…; Theodoretus, Alexandrinus ; Herodianus, Aelius, ca. 2. Jh. ; Johanne…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322DCBF",
+   "pagina": "https://data.onb.ac.at/rep/1322DCBF",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 720
   },
@@ -364963,6 +367062,37 @@
    "immagini": 402
   },
   {
+   "id": "onb-1324d1df",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 305",
+   "datazione": "1280",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Allegoriae in Iliadem",
+   "autori": [
+    {
+     "id": "erodiano",
+     "autore": "Erodiano",
+     "latino": "Herodianus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…ohannes, Tzetzes, 1110-1180 ; Herodianus, Aelius, ca. 2. Jh. ; Pothus…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324D1DF",
+   "pagina": "https://data.onb.ac.at/rep/1324D1DF",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 402
+  },
+  {
    "id": "onb-10009600",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -365076,6 +367206,39 @@
    "immagini": 143
   },
   {
+   "id": "onb-1322bfb9",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 337",
+   "datazione": "sec. XV (ÖNB: 1400)",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Timaeus (inc. mut. 20a)",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [
+      "Timeo"
+     ],
+     "corrispondenza": "autore: «Plato, v427-v347 ; Michael, Suliard…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322BFB9",
+   "pagina": "https://data.onb.ac.at/rep/1322BFB9",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 143
+  },
+  {
    "id": "onb-113b9398",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -365119,6 +367282,53 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/113B9398",
    "pagina": "https://data.onb.ac.at/rep/113B9398",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 458
+  },
+  {
+   "id": "onb-1322a6bd",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Phil. gr. 342",
+   "datazione": "sec. XI (ÖNB: 1000)",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectio epistolographica",
+   "autori": [
+    {
+     "id": "libanio",
+     "autore": "Libanio",
+     "latino": "Libanius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Libanius, 314-393 ; Johannes, Chrysost…»"
+    },
+    {
+     "id": "filostrato",
+     "autore": "Filostrato",
+     "latino": "Philostratus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…n Kyzikos ; Crates, Comicus ; Philostratus, Flavius, 160-245 ; Diogenes,…»"
+    },
+    {
+     "id": "giovanni-crisostomo",
+     "autore": "Giovanni Crisostomo",
+     "latino": "Iohannes Chrysostomus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «Libanius, 314-393 ; Johannes, Chrysostomus, 344-407 ; Nicolaus, Mysticus…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322A6BD",
+   "pagina": "https://data.onb.ac.at/rep/1322A6BD",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 458
   },
@@ -365253,6 +367463,39 @@
    "immagini": 338
   },
   {
+   "id": "onb-1324db7d",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Ser. n. 3615",
+   "datazione": "1390",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Summa de abstinentia",
+   "autori": [
+    {
+     "id": "porfirio",
+     "autore": "Porfirio",
+     "latino": "Porphyrius",
+     "categoria": "classico-greco",
+     "opere": [
+      "De abstinentia"
+     ],
+     "corrispondenza": "titolo: «Summa de abstinentia»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324DB7D",
+   "pagina": "https://data.onb.ac.at/rep/1324DB7D",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 338
+  },
+  {
    "id": "onb-1000d580",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -365286,6 +367529,39 @@
    "immagini": 403
   },
   {
+   "id": "onb-1324c46f",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Ser. n. 3914",
+   "datazione": "1470",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "de"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Dictorum factorumque memorabilium libri IX",
+   "autori": [
+    {
+     "id": "valerio-massimo",
+     "autore": "Valerio Massimo",
+     "latino": "Valerius Maximus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Facta et dicta memorabilia"
+     ],
+     "corrispondenza": "autore: «Valerius, Maximus, ca. Ende 1. Jh. v. Chr.-1. H…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324C46F",
+   "pagina": "https://data.onb.ac.at/rep/1324C46F",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 403
+  },
+  {
    "id": "onb-1001c854",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -365315,6 +367591,39 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1001C854",
    "pagina": "https://data.onb.ac.at/rep/1001C854",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 14
+  },
+  {
+   "id": "onb-1324d6d3",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Ser. n. 4115",
+   "datazione": "sec. XIII (ÖNB: 1200)",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Achilleis (Fragment)",
+   "autori": [
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Achilleide"
+     ],
+     "corrispondenza": "autore: «Statius, Publius Papinius, 45-96»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324D6D3",
+   "pagina": "https://data.onb.ac.at/rep/1324D6D3",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 14
   },
@@ -365418,6 +367727,39 @@
    "immagini": 12
   },
   {
+   "id": "onb-1324c482",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Ser. n. 9364",
+   "datazione": "sec. XI (ÖNB: 1000)",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Oratio IV in Catilinam (Fragment)",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Catilinarie"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius, v106-v43 ; Windhag, Joachim <<von>>, 1600-1678»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324C482",
+   "pagina": "https://data.onb.ac.at/rep/1324C482",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 12
+  },
+  {
    "id": "onb-10032686",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -365448,6 +367790,40 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/10032686",
    "pagina": "https://data.onb.ac.at/rep/10032686",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 14
+  },
+  {
+   "id": "onb-1324c481",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Ser. n. 9365",
+   "datazione": "sec. XIII (ÖNB: 1200)",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Orationes in Catilinam (Fragment)",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Catilinarie",
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius, v106-v43»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324C481",
+   "pagina": "https://data.onb.ac.at/rep/1324C481",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 14
   },
@@ -365729,6 +368105,49 @@
    "immagini": 554
   },
   {
+   "id": "onb-1322111a",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Suppl. gr. 20",
+   "datazione": "1468",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Dialogi ; Leges (inc. mut.), Epinomis+, Definitiones+, Spuria, De virtute+, Demodocus+, Sisyphus+, Eryxias+, Axiochos+",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [
+      "Leggi"
+     ],
+     "corrispondenza": "autore: «Plato, v427-v347 ; Lucianus, Samosa…»"
+    },
+    {
+     "id": "luciano",
+     "autore": "Luciano di Samosata",
+     "latino": "Lucianus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Dialoghi"
+     ],
+     "corrispondenza": "autore: «Plato, v427-v347 ; Lucianus, Samosatensis, 120-180 ; Joha…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322111A",
+   "pagina": "https://data.onb.ac.at/rep/1322111A",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 554
+  },
+  {
    "id": "onb-10b8156d",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -365792,6 +368211,40 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/10035043",
    "pagina": "https://data.onb.ac.at/rep/10035043",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 412
+  },
+  {
+   "id": "onb-13254d37",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Suppl. gr. 35",
+   "datazione": "1450",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Opera ; Categoriae (inc. mut.), Analytica priora, Analytica posteriora, Topica, De sophisticis elenchis (des. mut.)",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Organon",
+      "Categorie"
+     ],
+     "corrispondenza": "autore: «Aristoteles, v384-v322 ; Johannes, Skutariotes»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/13254D37",
+   "pagina": "https://data.onb.ac.at/rep/13254D37",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 412
   },
@@ -366079,6 +368532,45 @@
    "immagini": 379
   },
   {
+   "id": "onb-1324cd9d",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Suppl. gr. 67",
+   "datazione": "sec. XIV (ÖNB: 1300)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectio philosophica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, v384-v322 ; Porphyrius, 233-…»"
+    },
+    {
+     "id": "porfirio",
+     "autore": "Porfirio",
+     "latino": "Porphyrius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, v384-v322 ; Porphyrius, 233-301 ; Michael, Psellos,…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324CD9D",
+   "pagina": "https://data.onb.ac.at/rep/1324CD9D",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 379
+  },
+  {
    "id": "onb-101de5f8",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -366114,6 +368606,45 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/101DE5F8",
    "pagina": "https://data.onb.ac.at/rep/101DE5F8",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 440
+  },
+  {
+   "id": "onb-132270db",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Suppl. gr. 71",
+   "datazione": "sec. XIV (ÖNB: 1300)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Dramata",
+   "autori": [
+    {
+     "id": "sofocle",
+     "autore": "Sofocle",
+     "latino": "Sophocles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Sophocles, ca. 497/496 v. Chr.-406 v. C…»"
+    },
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…497/496 v. Chr.-406 v. Chr. ; Aristophanes, v445-v385 ; Thomas, Magister…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/132270DB",
+   "pagina": "https://data.onb.ac.at/rep/132270DB",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 440
   },
@@ -366205,6 +368736,54 @@
    "immagini": 363
   },
   {
+   "id": "onb-1322c0dc",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Suppl. gr. 83",
+   "datazione": "1475",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectio philosophica",
+   "autori": [
+    {
+     "id": "catone",
+     "autore": "Catone il Censore",
+     "latino": "Cato maior",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…ereus, v350-v283 ; Sosiades ; Cato, Marcus Porcius, Censorius, v234-v149 ; Maxim…»"
+    },
+    {
+     "id": "menandro",
+     "autore": "Menandro",
+     "latino": "Menander",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…aximus, Planudes, 1260-1310 ; Menander, v342-v291 ; Hermonymus, Geor…»"
+    },
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…genianus, Epicureus, 2. Jh. ; Proclus, Diadochus, 412-485 ; Demetri…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322C0DC",
+   "pagina": "https://data.onb.ac.at/rep/1322C0DC",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 363
+  },
+  {
    "id": "onb-1002e8cb",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -366249,6 +368828,54 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1002E8CB",
    "pagina": "https://data.onb.ac.at/rep/1002E8CB",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 372
+  },
+  {
+   "id": "onb-1324f507",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Suppl. gr. 84",
+   "datazione": "1470",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectio classica",
+   "autori": [
+    {
+     "id": "esiodo",
+     "autore": "Esiodo",
+     "latino": "Hesiodus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…Jh. ; Isocrates, v436-v338 ; Hesiodus, ca. v8./7. Jh. ; Nicolaus, d…»"
+    },
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…colaus, de Valle, 1444-1473 ; Aristoteles, v384-v322 ; Brutus, Marcus I…»"
+    },
+    {
+     "id": "isocrate",
+     "autore": "Isocrate",
+     "latino": "Isocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Pollux, Iulius, ca. 2. Jh. ; Isocrates, v436-v338 ; Hesiodus, ca. v8…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324F507",
+   "pagina": "https://data.onb.ac.at/rep/1324F507",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 372
   },
@@ -366722,6 +369349,37 @@
    "immagini": 428
   },
   {
+   "id": "onb-1322d728",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Theol. gr. 147",
+   "datazione": "1000-1199",
+   "secolo": [
+    10,
+    12
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectio theologica",
+   "autori": [
+    {
+     "id": "fozio",
+     "autore": "Fozio",
+     "latino": "Photius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Photios I., Konstantinopel, Patriarch…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322D728",
+   "pagina": "https://data.onb.ac.at/rep/1322D728",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 428
+  },
+  {
    "id": "onb-131aa970",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -366818,6 +369476,53 @@
    "immagini": 638
   },
   {
+   "id": "onb-1324f397",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Theol. gr. 179",
+   "datazione": "1390",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectio theologica",
+   "autori": [
+    {
+     "id": "esichio",
+     "autore": "Esichio",
+     "latino": "Hesychius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…acarius, Aegyptius, 300-390 ; Hesychius, Sinaita, ca. ca. 7. Jh. ; Ni…»"
+    },
+    {
+     "id": "basilio",
+     "autore": "Basilio Magno",
+     "latino": "Basilius Magnus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…nnes, Chrysostomus, 344-407 ; Basilius, Caesariensis, 330-379 ; Symeon, Konstantin…»"
+    },
+    {
+     "id": "giovanni-crisostomo",
+     "autore": "Giovanni Crisostomo",
+     "latino": "Iohannes Chrysostomus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «Johannes, Chrysostomus, 344-407 ; Basilius, Caesarie…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1324F397",
+   "pagina": "https://data.onb.ac.at/rep/1324F397",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 74
+  },
+  {
    "id": "onb-117e45aa",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -366869,6 +369574,61 @@
    ],
    "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/117E45AA",
    "pagina": "https://data.onb.ac.at/rep/117E45AA",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 622
+  },
+  {
+   "id": "onb-1322c929",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Theol. gr. 184",
+   "datazione": "1541",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectio theologica",
+   "autori": [
+    {
+     "id": "fozio",
+     "autore": "Fozio",
+     "latino": "Photius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…Theodorus, Studita, 759-826 ; Photios I., Konstantinopel, Patriarch…»"
+    },
+    {
+     "id": "basilio",
+     "autore": "Basilio Magno",
+     "latino": "Basilius Magnus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…Sinaites, Heiliger, 610-701 ; Basilius, Caesariensis, 330-379 ; Theodorus, Studita…»"
+    },
+    {
+     "id": "gregorio-nazianzeno",
+     "autore": "Gregorio di Nazianzo",
+     "latino": "Gregorius Nazianzenus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «Gregorius, Nazianzenus, 329-390 ; Barlaam, de Semina…»"
+    },
+    {
+     "id": "giovanni-crisostomo",
+     "autore": "Giovanni Crisostomo",
+     "latino": "Iohannes Chrysostomus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…eiliger, 810-893 ; Splenius ; Johannes, Chrysostomus, 344-407 ; Gregorius, Thaumat…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322C929",
+   "pagina": "https://data.onb.ac.at/rep/1322C929",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 622
   },
@@ -366967,6 +369727,45 @@
    "immagini": 272
   },
   {
+   "id": "onb-13254d33",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Theol. gr. 230",
+   "datazione": "1548",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectio philosophica et theologica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…icetas, Heracleensis, 1060- ; Aristoteles, v384-v322 ; Alexander, Aphro…»"
+    },
+    {
+     "id": "gregorio-nazianzeno",
+     "autore": "Gregorio di Nazianzo",
+     "latino": "Gregorius Nazianzenus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «Theodorus, Anagnosta ; Gregorius, Nazianzenus, 329-390 ; Cosmas, Indicopleu…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/13254D33",
+   "pagina": "https://data.onb.ac.at/rep/13254D33",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 272
+  },
+  {
    "id": "onb-1000b9b4",
    "fonte": "onb",
    "biblioteca": "Österreichische Nationalbibliothek",
@@ -367012,6 +369811,61 @@
    "pagina": "https://data.onb.ac.at/rep/1000B9B4",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 476
+  },
+  {
+   "id": "onb-1322c031",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Theol. gr. 243",
+   "datazione": "1425",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectio theologica",
+   "autori": [
+    {
+     "id": "libanio",
+     "autore": "Libanio",
+     "latino": "Libanius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…orius, Nazianzenus, 329-390 ; Libanius, 314-393 ; Basilius, Caesarie…»"
+    },
+    {
+     "id": "basilio",
+     "autore": "Basilio Magno",
+     "latino": "Basilius Magnus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…329-390 ; Libanius, 314-393 ; Basilius, Caesariensis, 330-379 ; Busbecq, Ogier Ghi…»"
+    },
+    {
+     "id": "gregorio-nazianzeno",
+     "autore": "Gregorio di Nazianzo",
+     "latino": "Gregorius Nazianzenus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…petus, Constantinopolitanus ; Gregorius, Nazianzenus, 329-390 ; Libanius, 314-393…»"
+    },
+    {
+     "id": "tommaso-aquino",
+     "autore": "Tommaso d'Aquino",
+     "latino": "Thomas de Aquino",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «…dius, Scholarius, 1405-1472 ; Thomas, von Aquin, Heiliger, 1225-1274 ; Agapet…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322C031",
+   "pagina": "https://data.onb.ac.at/rep/1322C031",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 302
   },
   {
    "id": "onb-131a9cfc",
@@ -367090,6 +369944,84 @@
    "pagina": "https://data.onb.ac.at/rep/113454E1",
    "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
    "immagini": 863
+  },
+  {
+   "id": "onb-1322a3fa",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Theol. gr. 262",
+   "datazione": "1440",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collectio theologica",
+   "autori": [
+    {
+     "id": "catone",
+     "autore": "Catone il Censore",
+     "latino": "Cato maior",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…onfessor, Heiliger, 580-662 ; Cato, Marcus Porcius, Censorius, v234-v149 ; Maxim…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/1322A3FA",
+   "pagina": "https://data.onb.ac.at/rep/1322A3FA",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 863
+  },
+  {
+   "id": "onb-13227a5e",
+   "fonte": "onb",
+   "biblioteca": "Österreichische Nationalbibliothek",
+   "citta": "Vienna",
+   "segnatura": "Cod. Theol. gr. 336",
+   "datazione": "1076",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Psalmi et Odae",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…andrinus, Heiliger, 295-373 ; Josephus, Flavius, 37-100 ; Gregorius, Nyssenus…»"
+    },
+    {
+     "id": "atanasio",
+     "autore": "Atanasio",
+     "latino": "Athanasius",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…, Indicopleustes, ca. 6.Jh. ; Athanasius, Alexandrinus, Heiliger, 295-…»"
+    },
+    {
+     "id": "gregorio-nisseno",
+     "autore": "Gregorio di Nissa",
+     "latino": "Gregorius Nyssenus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "autore: «…; Josephus, Flavius, 37-100 ; Gregorius, Nyssenus, 335-394 ; Michael, Panerges…»"
+    }
+   ],
+   "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/13227A5E",
+   "pagina": "https://data.onb.ac.at/rep/13227A5E",
+   "licenza": "condizioni d'uso della Österreichische Nationalbibliothek",
+   "immagini": 548
   },
   {
    "id": "onb-13217613",
