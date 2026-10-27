@@ -1,9 +1,9 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-27T01:14:51.878Z",
- "totale": 509257,
- "con_autori": 27701,
- "miniati": 10851,
+ "aggiornato": "2026-10-27T01:27:32.796Z",
+ "totale": 510526,
+ "con_autori": 27704,
+ "miniati": 10917,
  "musica": 13601,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
@@ -26,11 +26,11 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 180954
+   "codici": 180946
   },
   "la": {
    "nome": "latino",
-   "codici": 76268
+   "codici": 76269
   },
   "?": {
    "nome": "lingua non indicata",
@@ -38,27 +38,27 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 28321
+   "codici": 28323
   },
   "ar": {
    "nome": "arabo",
-   "codici": 22137
+   "codici": 22190
   },
   "de": {
    "nome": "tedesco",
-   "codici": 22081
+   "codici": 22092
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 18760
+   "codici": 19038
+  },
+  "he": {
+   "nome": "ebraico",
+   "codici": 18846
   },
   "pi": {
    "nome": "pali",
    "codici": 17847
-  },
-  "he": {
-   "nome": "ebraico",
-   "codici": 17564
   },
   "grc": {
    "nome": "greco",
@@ -66,7 +66,7 @@
   },
   "zh": {
    "nome": "cinese",
-   "codici": 14053
+   "codici": 14010
   },
   "lo": {
    "nome": "lao",
@@ -78,7 +78,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10475
+   "codici": 10477
   },
   "pl": {
    "nome": "polacco",
@@ -86,11 +86,11 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 7563
+   "codici": 7597
   },
   "en": {
    "nome": "inglese",
-   "codici": 7061
+   "codici": 7063
   },
   "bo": {
    "nome": "tibetano",
@@ -110,7 +110,7 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 4819
+   "codici": 4834
   },
   "ca": {
    "nome": "catalano",
@@ -126,7 +126,7 @@
   },
   "tr": {
    "nome": "turco",
-   "codici": 2603
+   "codici": 2604
   },
   "cop": {
    "nome": "copto",
@@ -150,7 +150,7 @@
   },
   "nl": {
    "nome": "nederlandese",
-   "codici": 769
+   "codici": 770
   },
   "da": {
    "nome": "danese",
@@ -182,7 +182,7 @@
   },
   "oc": {
    "nome": "occitano",
-   "codici": 193
+   "codici": 196
   },
   "shn": {
    "nome": "shan",
@@ -270,7 +270,7 @@
   },
   "km": {
    "nome": "khmer",
-   "codici": 12
+   "codici": 11
   },
   "gn": {
    "nome": "guaraní",
@@ -364,7 +364,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 14305
+   "codici": 14308
   },
   "medievale": {
    "nome": "autori medievali",
@@ -374,7 +374,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 507578
+   "codici": 508847
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -1356,7 +1356,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 6611
+   "codici": 6614
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1832,6 +1832,7 @@
   "Dallas Museum of Art K.1.2014.131, Cambridge",
   "Dallas Museum of Art, Cambridge",
   "Dar al-Kutub, Cambridge",
+  "DARM Arch (copia digitale della National Library of Israel)",
   "DARM Arch R (copia digitale della National Library of Israel)",
   "Den Arnamagnæanske Samling, Københavns Universitet, Copenaghen",
   "Department of Manuscripts and Rare Books, Budapest",
@@ -1879,9 +1880,11 @@
   "Forschungsbibliothek, Gotha",
   "Fragile Palm Leaves Foundation, Nonthaburi (copie del Buddhist Digital Resource Center)",
   "Frank UB Barth (copia digitale della National Library of Israel)",
+  "Frank UB Ffm W (copia digitale della National Library of Israel)",
   "Frank UB Fol. (copia digitale della National Library of Israel)",
   "Frank UB Fragm. Hebr. I (copia digitale della National Library of Israel)",
   "Frank UB Fragm. Hebr. IV (copia digitale della National Library of Israel)",
+  "Frank UB Fragm. Hebr. V (copia digitale della National Library of Israel)",
   "Frank UB Lat. Oct. (copia digitale della National Library of Israel)",
   "Frank UB Oct. (copia digitale della National Library of Israel)",
   "Frank UB Qu. (copia digitale della National Library of Israel)",
@@ -1935,6 +1938,7 @@
   "Holkham Hall Library, Cambridge",
   "Hórnikova lužickosrbská knihovna, Praga",
   "Husitské muzeum v Táboře, Tábor",
+  "IMOLA Arch. Com. (copia digitale della National Library of Israel)",
   "Indiana University, Lilly Library, Bloomington",
   "Institut Bibliothèque Polonaise de Paris",
   "Irish Jesuit Archives, Dublino",
@@ -2001,6 +2005,7 @@
   "J. Paul Getty Museum, Los Angeles",
   "Jagiellonian Library, Krakow",
   "Jatindramohan Sangrahashala, National Council of Education, Bengal (copie digitali di Penn), Kolkata",
+  "JER BEN ZVI (copia digitale della National Library of Israel)",
   "JER Safrai (copia digitale della National Library of Israel)",
   "Jer. HEKHAL GOLDSCHMIDT (copia digitale della National Library of Israel)",
   "Jesus College, Cambridge",
@@ -2116,6 +2121,7 @@
   "Moravské zemské muzeum, Brno",
   "Moravské zemské muzeum, oddělení dějin hudby MZM, Smetanova 14, 602 00 Brno",
   "Mount Melleray Abbey, Cappoquin",
+  "Ms. Fr. (copia digitale della National Library of Israel)",
   "Musée d'art et d'histoire, Cambridge",
   "Musée Escoffier de l'Art Culinaire, Centre de documentation",
   "Musée Escoffier de l'Art Culinaire, Centre de documentation, Villeneuve-Loubet",
@@ -2257,6 +2263,7 @@
   "Ohio University Libraries, Athens (Ohio)",
   "Okresní muzeum Klatovy",
   "Okresní muzeum Mladá Boleslav",
+  "Olomouc ZA (copia digitale della National Library of Israel)",
   "Osservatorio astronomico nazionale del Giappone (国立天文台図書室), Mitaka",
   "Osterreichische Nationalbibliothek, Cambridge",
   "Österreichische Nationalbibliothek, Vienna",
@@ -2817,6 +2824,7 @@
   "Východočeské muzeum v Pardubicích, Pardubice",
   "Výstavní prostory expozice knihovny Latinské školy, Jáchymov",
   "Wellcome Collection, Londra",
+  "Welt JER NLI (copia digitale della National Library of Israel)",
   "Western Michigan University, Kalamazoo",
   "Westminster College, Cambridge",
   "Wissenschaftliche Stadtbibliothek Mainz",
@@ -4235,18 +4243,17 @@
   },
   "ndl": {
    "nome": "National Diet Library, Tokyo (dl.ndl.go.jp)",
-   "codici": 42731,
+   "codici": 42679,
    "carte": 50,
    "carte_stampa": 0,
-   "miniati": 1627,
+   "miniati": 1624,
    "musica": 194,
    "con_autori": 0,
    "lingue": {
-    "ja": 40276,
-    "zh": 2369,
+    "ja": 40268,
+    "zh": 2326,
     "ko": 82,
-    "?": 4,
-    "km": 1
+    "?": 4
    },
    "esito": "ok",
    "prefissi": [
@@ -4889,38 +4896,38 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 10606,
+   "codici": 11927,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 665,
+   "miniati": 734,
    "musica": 0,
-   "con_autori": 17,
+   "con_autori": 20,
    "lingue": {
-    "he": 10595,
-    "xx": 1575,
-    "ar": 482,
-    "fa": 120,
-    "tr": 14,
+    "he": 11877,
+    "xx": 1853,
+    "ar": 535,
+    "fa": 135,
+    "tr": 15,
     "grc": 8,
-    "es": 21,
-    "it": 143,
-    "de": 58,
-    "la": 27,
-    "nl": 31,
+    "es": 23,
+    "it": 177,
+    "de": 69,
+    "la": 28,
+    "nl": 32,
     "pt": 8,
-    "fr": 10,
+    "fr": 12,
     "ru": 6,
-    "en": 11,
+    "en": 13,
     "pl": 1,
     "ka": 1,
     "ca": 1,
-    "oc": 2
+    "oc": 5
    },
-   "esito": "errore: manifesti letti in parte (mancano 4907): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 3513): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
-   "pezzi_voci": 14,
+   "pezzi_voci": 15,
    "indice": [
     "indice/nli-0.json"
    ]
@@ -5452,7 +5459,7 @@
   {
    "file": "indice/ndl-2.json",
    "fonte": "ndl",
-   "righe": 2731
+   "righe": 2679
   },
   {
    "file": "indice/kokusho-0.json",
@@ -5592,7 +5599,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 10606
+   "righe": 11927
   },
   {
    "file": "indice/getty-0.json",
@@ -8471,6 +8478,7 @@
   "cambridge",
   "cambridge",
   "gerusalemme",
+  "gerusalemme",
   "copenaghen",
   "budapest",
   "copenaghen",
@@ -8516,6 +8524,8 @@
   "gotha",
   "gotha",
   "nonthaburi",
+  "gerusalemme",
+  "gerusalemme",
   "gerusalemme",
   "gerusalemme",
   "gerusalemme",
@@ -8573,6 +8583,7 @@
   "cambridge",
   "praga",
   "tabor",
+  "gerusalemme",
   "bloomington",
   "parigi",
   "dublino",
@@ -8639,6 +8650,7 @@
   "los-angeles",
   "cracovia",
   "calcutta",
+  "gerusalemme",
   "gerusalemme",
   "gerusalemme",
   "cambridge",
@@ -8754,6 +8766,7 @@
   "brno",
   "brno",
   "cappoquin",
+  "gerusalemme",
   "cambridge",
   "villeneuve-loubet",
   "villeneuve-loubet",
@@ -8895,6 +8908,7 @@
   "athens-oh",
   "klatovy",
   "mlada-boleslav",
+  "gerusalemme",
   "jp-mitaka",
   "cambridge",
   "vienna",
@@ -9455,6 +9469,7 @@
   "pardubice",
   "jachymov",
   "londra",
+  "gerusalemme",
   "kalamazoo",
   "cambridge",
   "magonza",
