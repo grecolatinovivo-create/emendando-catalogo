@@ -170,9 +170,9 @@
   "ultimo_ok": "2026-10-27T03:33:11.734Z"
  },
  "libfond": {
-  "quando": "2026-10-27T14:06:14.373Z",
-  "esito": "errore: codici letti in parte (1475 in questo giro): riprenderà alla prossima esecuzione",
-  "ultimo_ok": null
+  "quando": "2026-10-27T15:30:51.310Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-27T15:30:51.310Z"
  },
  "lipsia": {
   "quando": "2026-10-27T03:33:11.734Z",
@@ -210,9 +210,9 @@
   "ultimo_ok": "2026-10-27T03:06:19.765Z"
  },
  "nbkm": {
-  "quando": "2026-10-27T14:06:14.373Z",
+  "quando": "2026-10-27T15:30:51.310Z",
   "esito": "ok",
-  "ultimo_ok": "2026-10-27T14:06:14.373Z"
+  "ultimo_ok": "2026-10-27T15:30:51.310Z"
  },
  "ndl": {
   "quando": "2026-10-27T15:18:35.611Z",

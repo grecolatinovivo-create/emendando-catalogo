@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-27T15:21:18.316Z",
- "totale": 538878,
- "con_autori": 28216,
+ "aggiornato": "2026-10-27T15:35:19.453Z",
+ "totale": 539910,
+ "con_autori": 28217,
  "miniati": 11313,
  "musica": 21281,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
@@ -30,7 +30,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 82465
+   "codici": 82494
   },
   "?": {
    "nome": "lingua non indicata",
@@ -42,7 +42,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 22508
+   "codici": 22509
   },
   "de": {
    "nome": "tedesco",
@@ -62,15 +62,15 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 14541
+   "codici": 14569
+  },
+  "cu": {
+   "nome": "slavo ecclesiastico",
+   "codici": 14181
   },
   "zh": {
    "nome": "cinese",
    "codici": 13331
-  },
-  "cu": {
-   "nome": "slavo ecclesiastico",
-   "codici": 13194
   },
   "lo": {
    "nome": "lao",
@@ -174,7 +174,7 @@
   },
   "ka": {
    "nome": "georgiano",
-   "codici": 295
+   "codici": 297
   },
   "vi": {
    "nome": "vietnamita (hán-nôm)",
@@ -380,7 +380,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 14592
+   "codici": 14593
   },
   "medievale": {
    "nome": "autori medievali",
@@ -390,7 +390,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 536882
+   "codici": 537914
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -1330,7 +1330,7 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 2889
+   "codici": 2890
   },
   "girolamo": {
    "nome": "Girolamo",
@@ -5138,25 +5138,25 @@
   },
   "libfond": {
    "nome": "Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca: copie digitali della Trinità-San Sergio (lib-fond.ru; manifesti scritti dal catalogo)",
-   "codici": 12347,
+   "codici": 13379,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
-   "con_autori": 42,
+   "con_autori": 43,
    "lingue": {
-    "cu": 11953,
-    "la": 173,
-    "grc": 325,
-    "ar": 25,
+    "cu": 12940,
+    "la": 202,
+    "grc": 353,
+    "ar": 26,
     "hy": 10,
-    "ka": 10
+    "ka": 12
    },
-   "esito": "errore: codici letti in parte (1475 in questo giro): riprenderà alla prossima esecuzione",
+   "esito": "ok",
    "prefissi": [
     "libfond-"
    ],
-   "pezzi_voci": 16,
+   "pezzi_voci": 17,
    "indice": [
     "indice/libfond-0.json"
    ]
@@ -5871,7 +5871,7 @@
   {
    "file": "indice/libfond-0.json",
    "fonte": "libfond",
-   "righe": 12347
+   "righe": 13379
   },
   {
    "file": "indice/archive-0.json",
@@ -10048,7 +10048,7 @@
   99,
   2408,
   210,
-  12347,
+  13379,
   907,
   17,
   708,
