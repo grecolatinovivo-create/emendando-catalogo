@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T09:53:13.258Z",
+ "aggiornato": "2026-10-27T11:28:52.045Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -349,11 +349,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 514,
+   "codici": 515,
    "esito": "ok"
   }
  },
- "totale": 12433,
+ "totale": 12434,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -41332,6 +41332,39 @@
    "licenza": "CC BY-NC 4.0",
    "immagini": null,
    "anteprima": "https://e-codices.ch/loris/bkm/bkm-SI-0177/bkm-SI-0177_001r.jp2/full/,150/0/default/jpg"
+  },
+  {
+   "id": "bav-barb-lat-154",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. lat. 154",
+   "datazione": "sec. XV ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De rerum natura",
+   "autori": [
+    {
+     "id": "lucrezio",
+     "autore": "Lucrezio",
+     "latino": "Lucretius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De rerum natura"
+     ],
+     "corrispondenza": "autore: «Lucretius Carus, Titus, 97-55 a.C.‏»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.lat.154/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.lat.154",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
   },
   {
    "id": "bav-ott-lat-1190",
