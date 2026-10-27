@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-27T14:08:17.501Z",
- "totale": 539083,
- "con_autori": 28077,
+ "aggiornato": "2026-10-27T14:11:34.387Z",
+ "totale": 539915,
+ "con_autori": 28081,
  "miniati": 11227,
  "musica": 21250,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
@@ -30,7 +30,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 82318
+   "codici": 82324
   },
   "?": {
    "nome": "lingua non indicata",
@@ -42,7 +42,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 22507
+   "codici": 22508
   },
   "de": {
    "nome": "tedesco",
@@ -62,7 +62,7 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 14533
+   "codici": 14541
   },
   "zh": {
    "nome": "cinese",
@@ -70,7 +70,7 @@
   },
   "cu": {
    "nome": "slavo ecclesiastico",
-   "codici": 12376
+   "codici": 13194
   },
   "lo": {
    "nome": "lao",
@@ -174,7 +174,7 @@
   },
   "ka": {
    "nome": "georgiano",
-   "codici": 293
+   "codici": 294
   },
   "vi": {
    "nome": "vietnamita (hán-nôm)",
@@ -376,7 +376,7 @@
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 6399
+   "codici": 6403
   },
   "cristiano": {
    "nome": "autori cristiani",
@@ -390,7 +390,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 537086
+   "codici": 537918
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -934,19 +934,19 @@
    "nome": "Senofonte",
    "latino": "Xenophon",
    "categoria": "classico-greco",
-   "codici": 123
+   "codici": 125
   },
   "platone": {
    "nome": "Platone",
    "latino": "Plato",
    "categoria": "classico-greco",
-   "codici": 326
+   "codici": 327
   },
   "aristotele": {
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 2084
+   "codici": 2085
   },
   "teofrasto": {
    "nome": "Teofrasto",
@@ -5131,25 +5131,25 @@
   },
   "libfond": {
    "nome": "Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca: copie digitali della Trinità-San Sergio (lib-fond.ru; manifesti scritti dal catalogo)",
-   "codici": 11515,
+   "codici": 12347,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
-   "con_autori": 38,
+   "con_autori": 42,
    "lingue": {
-    "cu": 11135,
-    "la": 167,
-    "grc": 317,
-    "ar": 24,
+    "cu": 11953,
+    "la": 173,
+    "grc": 325,
+    "ar": 25,
     "hy": 10,
-    "ka": 9
+    "ka": 10
    },
-   "esito": "errore: codici letti in parte (1758 in questo giro): riprenderà alla prossima esecuzione",
+   "esito": "errore: codici letti in parte (1475 in questo giro): riprenderà alla prossima esecuzione",
    "prefissi": [
     "libfond-"
    ],
-   "pezzi_voci": 15,
+   "pezzi_voci": 16,
    "indice": [
     "indice/libfond-0.json"
    ]
@@ -5869,7 +5869,7 @@
   {
    "file": "indice/libfond-0.json",
    "fonte": "libfond",
-   "righe": 11515
+   "righe": 12347
   },
   {
    "file": "indice/archive-0.json",
@@ -10045,7 +10045,7 @@
   99,
   2408,
   210,
-  11515,
+  12347,
   907,
   17,
   708,

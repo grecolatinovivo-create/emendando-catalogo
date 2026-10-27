@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T13:55:45.022Z",
+ "aggiornato": "2026-10-27T14:11:34.387Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -334,8 +334,8 @@
   },
   "libfond": {
    "nome": "Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca: copie digitali della Trinità-San Sergio (lib-fond.ru; manifesti scritti dal catalogo)",
-   "codici": 30,
-   "esito": "errore: codici letti in parte (1758 in questo giro): riprenderà alla prossima esecuzione"
+   "codici": 34,
+   "esito": "errore: codici letti in parte (1475 in questo giro): riprenderà alla prossima esecuzione"
   },
   "archive": {
    "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, John Carter Brown Library, Newberry Library, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
@@ -383,7 +383,7 @@
    "esito": "ok"
   }
  },
- "totale": 12507,
+ "totale": 12511,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -124112,6 +124112,133 @@
    "pagina": "https://lib-fond.ru/lib-rgb/310/f-310-1435/",
    "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
    "immagini": 53
+  },
+  {
+   "id": "libfond-f-556-3",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.556 №3",
+   "datazione": "Втор. пол. XVIII в.",
+   "secolo": null,
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "«Metaphysica. Secunda pars Philosophiae» («Метафизика. Вторая часть философии»)",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica"
+     ],
+     "corrispondenza": "titolo: ««Metaphysica. Secunda pars Philosophiae» («Метафизика. Вторая часть философии»)»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-556-3.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/556/f-556-3/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 215
+  },
+  {
+   "id": "libfond-f-556-14",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.556 №14",
+   "datazione": "1801 г.",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "«Carmina, quae Sanctissimo Domino augustioris Synodi Socio optimo Platoni Metropolitae Mosquensi et Colomnensi Lavrae ss. Trinitatis sanctique Thaumaturgi Sergii Hiero-Arhimandritae ordinum Sancti Apostoli Andreae et s. Alexandri Nevensis Equiti dignissimo suo Parenti indulgentissimo, onomasticam diem suam-feliciter celebranti summa cum pietate animi offert ac devovet Bethaniense Seminarium 1801 a",
+   "autori": [
+    {
+     "id": "senofonte",
+     "autore": "Senofonte",
+     "latino": "Xenophon",
+     "categoria": "classico-greco",
+     "opere": [
+      "Ierone"
+     ],
+     "corrispondenza": "titolo: «…sanctique Thaumaturgi Sergii Hiero-Arhimandritae ordinum Sancti…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-556-14.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/556/f-556-14/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 19
+  },
+  {
+   "id": "libfond-f-556-25",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.556 №25",
+   "datazione": "1811 г.",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "«Carmina, quae Sanctissimo et Illustrissimo Domino SS. Synodi Socio Consultissimo Platoni Metropolitae Mosquensi et Colomnensi, Laurae SS. Trinitatis Sanctique Sergii Hiero-Archimandritae ordinum diversorum Rossiorum Equiti dignissimo Mecaenati Optimo et Singularissimo diem suam onomasticam feliciter celebranti summa cum devotione animi offert Perervense Seminarium, a Chr. 1811. Nov. 18 die»",
+   "autori": [
+    {
+     "id": "senofonte",
+     "autore": "Senofonte",
+     "latino": "Xenophon",
+     "categoria": "classico-greco",
+     "opere": [
+      "Ierone"
+     ],
+     "corrispondenza": "titolo: «…. Trinitatis Sanctique Sergii Hiero-Archimandritae ordinum divers…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-556-25.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/556/f-556-25/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 26
+  },
+  {
+   "id": "libfond-f-556-44",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.556 №44",
+   "datazione": "1808 г.",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "«S[eine]r Heiligkeit des Moskowschen Herrn Mitropoliten Platon abgekuzzte Russiche Kirchen Geschichte im Auszuge vom Probste Heidecke, Prediger in Moskwa. 1808, Erster Theil» («Его Святейшества господина митрополита Московского Платона (Левшина) сокращенная история Русской Церкви в изложении московского пастора Гейдеке. В двух частях",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…oskowschen Herrn Mitropoliten Platon abgekuzzte Russiche Kirchen G…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-556-44.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/556/f-556-44/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 70
   },
   {
    "id": "bub-64e6eb6c-8126-4829-b70b-6b99612a05f6",
