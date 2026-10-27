@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-27T04:35:01.049Z",
- "totale": 515604,
- "con_autori": 27850,
+ "aggiornato": "2026-10-27T05:30:41.914Z",
+ "totale": 516782,
+ "con_autori": 27858,
  "miniati": 11097,
  "musica": 13608,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
@@ -30,7 +30,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 78147
+   "codici": 78165
   },
   "?": {
    "nome": "lingua non indicata",
@@ -42,7 +42,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 22477
+   "codici": 22485
   },
   "de": {
    "nome": "tedesco",
@@ -62,7 +62,7 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 14251
+   "codici": 14279
   },
   "zh": {
    "nome": "cinese",
@@ -80,6 +80,10 @@
    "nome": "spagnolo",
    "codici": 10491
   },
+  "cu": {
+   "nome": "slavo ecclesiastico",
+   "codici": 8609
+  },
   "pl": {
    "nome": "polacco",
    "codici": 8303
@@ -87,10 +91,6 @@
   "it": {
    "nome": "italiano",
    "codici": 7637
-  },
-  "cu": {
-   "nome": "slavo ecclesiastico",
-   "codici": 7489
   },
   "en": {
    "nome": "inglese",
@@ -158,7 +158,7 @@
   },
   "hy": {
    "nome": "armeno",
-   "codici": 543
+   "codici": 546
   },
   "ru": {
    "nome": "russo",
@@ -170,7 +170,7 @@
   },
   "ka": {
    "nome": "georgiano",
-   "codici": 287
+   "codici": 289
   },
   "vi": {
    "nome": "vietnamita (hán-nôm)",
@@ -356,15 +356,15 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 6565
+   "codici": 6566
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 6338
+   "codici": 6342
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 14377
+   "codici": 14380
   },
   "medievale": {
    "nome": "autori medievali",
@@ -374,7 +374,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 513923
+   "codici": 515101
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -504,7 +504,7 @@
    "nome": "Plinio il Vecchio",
    "latino": "Plinius maior",
    "categoria": "classico-latino",
-   "codici": 193
+   "codici": 194
   },
   "plinio-giovane": {
    "nome": "Plinio il Giovane",
@@ -906,7 +906,7 @@
    "nome": "Erodoto",
    "latino": "Herodotus",
    "categoria": "classico-greco",
-   "codici": 47
+   "codici": 48
   },
   "tucidide": {
    "nome": "Tucidide",
@@ -924,13 +924,13 @@
    "nome": "Platone",
    "latino": "Plato",
    "categoria": "classico-greco",
-   "codici": 323
+   "codici": 325
   },
   "aristotele": {
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 2076
+   "codici": 2077
   },
   "teofrasto": {
    "nome": "Teofrasto",
@@ -1332,7 +1332,7 @@
    "nome": "Gregorio Magno",
    "latino": "Gregorius Magnus",
    "categoria": "cristiano",
-   "codici": 957
+   "codici": 958
   },
   "basilio": {
    "nome": "Basilio Magno",
@@ -1356,7 +1356,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 6632
+   "codici": 6635
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -3092,7 +3092,7 @@
     "pi": 1,
     "syr": 7
    },
-   "esito": "ok",
+   "esito": "errore: fetch failed",
    "prefissi": [
     "bod-"
    ],
@@ -5003,25 +5003,25 @@
   },
   "libfond": {
    "nome": "Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca: copie digitali della Trinità-San Sergio (lib-fond.ru; manifesti scritti dal catalogo)",
-   "codici": 6607,
+   "codici": 7785,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
-   "con_autori": 24,
+   "con_autori": 32,
    "lingue": {
-    "cu": 6400,
-    "la": 94,
-    "grc": 166,
-    "ar": 8,
-    "hy": 3,
-    "ka": 3
+    "cu": 7520,
+    "la": 112,
+    "grc": 194,
+    "ar": 16,
+    "hy": 6,
+    "ka": 5
    },
-   "esito": "errore: codici letti in parte (1698 in questo giro): riprenderà alla prossima esecuzione",
+   "esito": "errore: codici letti in parte (1680 in questo giro): riprenderà alla prossima esecuzione",
    "prefissi": [
     "libfond-"
    ],
-   "pezzi_voci": 9,
+   "pezzi_voci": 10,
    "indice": [
     "indice/libfond-0.json"
    ]
@@ -5636,7 +5636,7 @@
   {
    "file": "indice/libfond-0.json",
    "fonte": "libfond",
-   "righe": 6607
+   "righe": 7785
   },
   {
    "file": "indice/archive-0.json",

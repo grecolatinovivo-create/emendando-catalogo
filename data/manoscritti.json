@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T03:36:51.990Z",
+ "aggiornato": "2026-10-27T05:30:41.914Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -25,7 +25,7 @@
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
    "codici": 477,
-   "esito": "ok"
+   "esito": "errore: fetch failed"
   },
   "gallica": {
    "nome": "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -305,7 +305,7 @@
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
    "codici": 1,
-   "esito": "errore: manifesti letti in parte (mancano 2111): riprenderà alla prossima esecuzione"
+   "esito": "errore: manifesti letti in parte (mancano 341): riprenderà alla prossima esecuzione"
   },
   "getty": {
    "nome": "J. Paul Getty Museum, Los Angeles: manoscritti (data.getty.edu; manifesti media.getty.edu)",
@@ -319,8 +319,8 @@
   },
   "libfond": {
    "nome": "Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca: copie digitali della Trinità-San Sergio (lib-fond.ru; manifesti scritti dal catalogo)",
-   "codici": 19,
-   "esito": "errore: codici letti in parte (1698 in questo giro): riprenderà alla prossima esecuzione"
+   "codici": 24,
+   "esito": "errore: codici letti in parte (1680 in questo giro): riprenderà alla prossima esecuzione"
   },
   "archive": {
    "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, John Carter Brown Library, Newberry Library, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
@@ -353,7 +353,7 @@
    "esito": "ok"
   }
  },
- "totale": 12420,
+ "totale": 12425,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -123614,6 +123614,156 @@
    "pagina": "https://lib-fond.ru/lib-rgb/201/f-201-61-12/",
    "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
    "immagini": 41
+  },
+  {
+   "id": "libfond-f-256-708",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.256 №708",
+   "datazione": "1812 г.",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "«Observations faites en 1812 dans un voyage par le Danemark, la Suède et la Finlande, particulièrement sous le rapport de l'Histoire naturelle. I-er Cаhier St.-Pétersbourg en octobre 1812» («Наблюдения в 1812 г. во время путешествия по Дании, Швеции и Финляндии, главным образом в отношении естественной истории. Тетрадь 1. СПб., октябрь 1812 г.»)",
+   "autori": [
+    {
+     "id": "plinio-vecchio",
+     "autore": "Plinio il Vecchio",
+     "latino": "Plinius maior",
+     "categoria": "classico-latino",
+     "opere": [
+      "Naturalis historia"
+     ],
+     "corrispondenza": "titolo: «…ièrement sous le rapport de l'Histoire naturelle. I-er Cаhier St.-Pétersbourg…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-256-708.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/256/f-256-708/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 32
+  },
+  {
+   "id": "libfond-f-256-766",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.256 №766",
+   "datazione": "Кон. XVIII в.",
+   "secolo": null,
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "«Vorlesungen über die Logik und Metaphysik bei Hl. Professor Rаingold» («Лекции по логике и метафизике покойного профессора Рейнгольда»)",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica"
+     ],
+     "corrispondenza": "titolo: «…orlesungen über die Logik und Metaphysik bei Hl. Professor Rаingold» (…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-256-766.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/256/f-256-766/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 84
+  },
+  {
+   "id": "libfond-f-256-798",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.256 №798",
+   "datazione": "Сер. XVIII в.",
+   "secolo": null,
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "«Les oeuvres de Platon en francаis» («Сочинения Сочинения Платона в переводе на французский язык»), в 2 томах. Том 1",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: ««Les oeuvres de Platon en francаis» («Сочинения Сочи…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-256-798.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/256/f-256-798/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 426
+  },
+  {
+   "id": "libfond-f-256-799",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.256 №799",
+   "datazione": "Сер. XVIII в.",
+   "secolo": null,
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "«Les oeuvres de Platon en francаis» («Сочинения Сочинения Платона в переводе на французский язык»), в 2 томах. Том 2",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: ««Les oeuvres de Platon en francаis» («Сочинения Сочи…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-256-799.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/256/f-256-799/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 421
+  },
+  {
+   "id": "libfond-f-256-812",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.256 №812",
+   "datazione": "Ок. 1811 г.",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "«Majestueuse et brillante origine des Princes, de la Noblesse et de la Nation des Scytles-Royaux ou Paralates d'Herodote, connus maintenant sous le nom des Russes ou Russie Antique après XXXIII sieèles d'eclipse reparoissant sur le Theatre du Monde moderne parée de tout son eclat primitif sous le Regne ... Alexandre I-er» («Величественное и блестящее происхождение вождей, знати и народа царских ск",
+   "autori": [
+    {
+     "id": "erodoto",
+     "autore": "Erodoto",
+     "latino": "Herodotus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…Scytles-Royaux ou Paralates d'Herodote, connus maintenant sous le no…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-256-812.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/256/f-256-812/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 27
   },
   {
    "id": "bub-64e6eb6c-8126-4829-b70b-6b99612a05f6",
