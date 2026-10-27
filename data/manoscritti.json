@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T13:47:52.110Z",
+ "aggiornato": "2026-10-27T13:55:45.022Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -362,13 +362,28 @@
    "codici": 0,
    "esito": "ok"
   },
+  "nb": {
+   "nome": "Nasjonalbiblioteket, Oslo: manoscritti, manoscritti musicali e carte geografiche (api.nb.no; manifesti IIIF della biblioteca)",
+   "codici": 27,
+   "esito": "precedente"
+  },
+  "manuscripta": {
+   "nome": "manuscripta.se: Kungliga biblioteket, Uppsala universitetsbibliotek e altre biblioteche svedesi (manifesti IIIF di manuscripta.se)",
+   "codici": 33,
+   "esito": "precedente"
+  },
+  "bnl": {
+   "nome": "Bibliothèque nationale du Luxembourg (eluxemburgensia.lu; manifesti scritti dal catalogo con le immagini IIIF della biblioteca)",
+   "codici": 1,
+   "esito": "precedente"
+  },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
    "codici": 515,
    "esito": "ok"
   }
  },
- "totale": 12446,
+ "totale": 12507,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -310737,6 +310752,34 @@
    "immagini": null
   },
   {
+   "id": "bnl-v1gkdr",
+   "fonte": "bnl",
+   "biblioteca": "Bibliothèque nationale du Luxembourg",
+   "citta": "Lussemburgo",
+   "segnatura": "MS110",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Liber Solini de rememorabilibus mundi",
+   "autori": [
+    {
+     "id": "solino",
+     "autore": "Solino",
+     "latino": "Solinus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Solinus, Caius Julius 02..-02..»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/bnl/v1gkdr.json",
+   "pagina": "https://viewer.eluxemburgensia.lu/ark:70795/v1gkdr",
+   "licenza": "Bibliothèque nationale du Luxembourg (pubblico dominio)",
+   "immagini": 386
+  },
+  {
    "id": "bnf-btv1b10108289s",
    "fonte": "gallica",
    "biblioteca": "Bibliothèque nationale et universitaire de Strasbourg",
@@ -349324,6 +349367,349 @@
    "immagini": null
   },
   {
+   "id": "manuscripta-101189",
+   "fonte": "manuscripta",
+   "biblioteca": "Kungliga biblioteket",
+   "citta": "Stoccolma",
+   "segnatura": "A 214",
+   "datazione": "15th century, middle of",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Lactantius, Petrarch, Seneca, Agostino Dati",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Lactantius, Petrarch, Seneca, Agostino Dati»"
+    },
+    {
+     "id": "lattanzio",
+     "autore": "Lattanzio",
+     "latino": "Lactantius",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "titolo: «Lactantius, Petrarch, Seneca, Agostino Dati»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/101189/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/101189",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-101834",
+   "fonte": "manuscripta",
+   "biblioteca": "Kungliga biblioteket",
+   "citta": "Stoccolma",
+   "segnatura": "Fd 3",
+   "datazione": "1642",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Georg Stiernhielm, Mysterium etymologicum",
+   "autori": [
+    {
+     "id": "etymologicum",
+     "autore": "Etymologicum Magnum",
+     "latino": "Etymologicum Magnum",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Georg Stiernhielm, Mysterium etymologicum»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/101834/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/101834",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-101847",
+   "fonte": "manuscripta",
+   "biblioteca": "Kungliga biblioteket",
+   "citta": "Stoccolma",
+   "segnatura": "Fd 8",
+   "datazione": "17th century, middle (before 1672)",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "la",
+    "sv"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Georg Stiernhielm, Lexicon etymologicum",
+   "autori": [
+    {
+     "id": "etymologicum",
+     "autore": "Etymologicum Magnum",
+     "latino": "Etymologicum Magnum",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Georg Stiernhielm, Lexicon etymologicum»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/101847/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/101847",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-101853",
+   "fonte": "manuscripta",
+   "biblioteca": "Kungliga biblioteket",
+   "citta": "Stoccolma",
+   "segnatura": "Fd 12",
+   "datazione": "17th century, middle (before 1672)",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Georg Stiernhielm, Lexicon etymologicum Ulphilianum. Nota in Novum Testamentum Ulphilae",
+   "autori": [
+    {
+     "id": "etymologicum",
+     "autore": "Etymologicum Magnum",
+     "latino": "Etymologicum Magnum",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Georg Stiernhielm, Lexicon etymologicum Ulphilianum. Nota in Novum Testamentum Ulphilae»"
+    },
+    {
+     "id": "bibbia",
+     "autore": "Bibbia",
+     "latino": "Biblia",
+     "categoria": "cristiano",
+     "opere": [
+      "Nuovo Testamento"
+     ],
+     "corrispondenza": "titolo: «Georg Stiernhielm, Lexicon etymologicum Ulphilianum. Nota in Novum Testamentum Ulphilae»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/101853/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/101853",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-101926",
+   "fonte": "manuscripta",
+   "biblioteca": "Kungliga biblioteket",
+   "citta": "Stoccolma",
+   "segnatura": "Fi 2",
+   "datazione": "1708",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "grc",
+    "la",
+    "sv"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Plato, Critias. Swedish Translation by Johan Fredrik Peringskiöld",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Plato, Critias. Swedish Translation by Johan Fredrik Peringskiöld»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/101926/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/101926",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-101553",
+   "fonte": "manuscripta",
+   "biblioteca": "Kungliga biblioteket",
+   "citta": "Stoccolma",
+   "segnatura": "Isl. papp. 8:o 16",
+   "datazione": "1679",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "is"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Kvæði. Virgilius saga",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Kvæði. Virgilius saga»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/101553/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/101553",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-102902",
+   "fonte": "manuscripta",
+   "biblioteca": "Kungliga biblioteket",
+   "citta": "Stoccolma",
+   "segnatura": "Va 2",
+   "datazione": "15th century",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collection of text by and on Aristoteles, and Cicero, Persius, Horace, Terence, Leonardo Bruni, and anonymous text",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…and Cicero, Persius, Horace, Terence, Leonardo Bruni, and anonymou…»"
+    },
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…xt by and on Aristoteles, and Cicero, Persius, Horace, Terence, Le…»"
+    },
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…toteles, and Cicero, Persius, Horace, Terence, Leonardo Bruni, and…»"
+    },
+    {
+     "id": "persio",
+     "autore": "Persio",
+     "latino": "Persius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…d on Aristoteles, and Cicero, Persius, Horace, Terence, Leonardo Br…»"
+    },
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Collection of text by and on Aristoteles, and Cicero, Persius, Horace,…»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/102902/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/102902",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-102904",
+   "fonte": "manuscripta",
+   "biblioteca": "Kungliga biblioteket",
+   "citta": "Stoccolma",
+   "segnatura": "Va 20",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Antiquitates judaicae, Sentences",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Antichità giudaiche"
+     ],
+     "corrispondenza": "titolo: «Antiquitates judaicae, Sentences»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/102904/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/102904",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-102906",
+   "fonte": "manuscripta",
+   "biblioteca": "Kungliga biblioteket",
+   "citta": "Stoccolma",
+   "segnatura": "Va 31",
+   "datazione": "1467",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Vergilius, Collected works; Horatius, Ars poetica; Francesco Petrarca, Bucolica",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Bucoliche"
+     ],
+     "corrispondenza": "titolo: «Vergilius, Collected works; Horatius, Ars poetica; Francesco Petrarca, Bucolica»"
+    },
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ars poetica"
+     ],
+     "corrispondenza": "titolo: «Vergilius, Collected works; Horatius, Ars poetica; Francesco Petrarca, Bucolica»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/102906/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/102906",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
    "id": "hdr-einkaeign-0020",
    "fonte": "handrit",
    "biblioteca": "Landsbókasafn Íslands – Háskólabókasafn",
@@ -351021,6 +351407,249 @@
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/ce7070be-9462-4caa-807d-b6d1a2f52116.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/ce7070be-9462-4caa-807d-b6d1a2f52116/",
    "licenza": "CC BY-NC 4.0",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100091",
+   "fonte": "manuscripta",
+   "biblioteca": "Linköpings stiftsbibliotek",
+   "citta": "Linköping",
+   "segnatura": "Kl f 2",
+   "datazione": "1809",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Anacreon, Odae",
+   "autori": [
+    {
+     "id": "anacreonte",
+     "autore": "Anacreonte",
+     "latino": "Anacreon",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Anacreon, Odae»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100091/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100091",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100093",
+   "fonte": "manuscripta",
+   "biblioteca": "Linköpings stiftsbibliotek",
+   "citta": "Linköping",
+   "segnatura": "Kl f 4",
+   "datazione": "around 1690",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Lexicon to Aristophanes, Clouds",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Nuvole"
+     ],
+     "corrispondenza": "titolo: «Lexicon to Aristophanes, Clouds»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100093/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100093",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100099",
+   "fonte": "manuscripta",
+   "biblioteca": "Linköpings stiftsbibliotek",
+   "citta": "Linköping",
+   "segnatura": "Kl f 13",
+   "datazione": "1757",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Homer, Sentences on the Odyssey",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Odissea"
+     ],
+     "corrispondenza": "titolo: «Homer, Sentences on the Odyssey»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100099/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100099",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100101",
+   "fonte": "manuscripta",
+   "biblioteca": "Linköpings stiftsbibliotek",
+   "citta": "Linköping",
+   "segnatura": "Kl f 16",
+   "datazione": "18th c.",
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Libanius, Letters",
+   "autori": [
+    {
+     "id": "libanio",
+     "autore": "Libanio",
+     "latino": "Libanius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Libanius, Letters»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100101/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100101",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100102",
+   "fonte": "manuscripta",
+   "biblioteca": "Linköpings stiftsbibliotek",
+   "citta": "Linköping",
+   "segnatura": "Kl f 16a",
+   "datazione": "18th c.",
+   "secolo": null,
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Libanius, Letters",
+   "autori": [
+    {
+     "id": "libanio",
+     "autore": "Libanio",
+     "latino": "Libanius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Libanius, Letters»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100102/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100102",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100103",
+   "fonte": "manuscripta",
+   "biblioteca": "Linköpings stiftsbibliotek",
+   "citta": "Linköping",
+   "segnatura": "Kl f 17",
+   "datazione": "latter half of the 15th or early 16th c.",
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Libanius, Letters",
+   "autori": [
+    {
+     "id": "libanio",
+     "autore": "Libanio",
+     "latino": "Libanius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Libanius, Letters»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100103/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100103",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100108",
+   "fonte": "manuscripta",
+   "biblioteca": "Linköpings stiftsbibliotek",
+   "citta": "Linköping",
+   "segnatura": "Kl f 25",
+   "datazione": "17th c.",
+   "secolo": null,
+   "lingue": [
+    "el"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Theophrastus philosophus, Characteres",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "titolo: «Theophrastus philosophus, Characteres»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100108/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100108",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100111",
+   "fonte": "manuscripta",
+   "biblioteca": "Linköpings stiftsbibliotek",
+   "citta": "Linköping",
+   "segnatura": "Saml 24:19",
+   "datazione": "12th c.",
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Homer, Iliad, a fragment",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "titolo: «Homer, Iliad, a fragment»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100111/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100111",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
    "immagini": null
   },
   {
@@ -356993,6 +357622,800 @@
    "pagina": "https://www.manuscriptorium.com/apps/index.php?direct=record&pid=AIPDIG-STK___A_232_______0TDJLZ4-cs",
    "licenza": "CC BY-NC-SA",
    "immagini": null
+  },
+  {
+   "id": "nb-0d516606074a2840e57add9bc0f02f4b",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "[Kart over Nord-Europa]",
+   "datazione": "1588",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "[Kart over Nord-Europa]",
+   "autori": [
+    {
+     "id": "donato",
+     "autore": "Donato",
+     "latino": "Donatus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Camocio, Giovanni Francesco ; Bertelli, Donato»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/0d516606074a2840e57add9bc0f02f4b/manifest",
+   "pagina": "https://www.nb.no/items/0d516606074a2840e57add9bc0f02f4b",
+   "licenza": "Nasjonalbiblioteket (pubblico dominio)",
+   "immagini": 2,
+   "tipo": "carta_stampa"
+  },
+  {
+   "id": "nb-0ea9e09fd6126f83849d917cbd3462b7",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Isolario di Benedetto Bordone : Nel qual si ragiona di tutte le Isole Del mondo, con li lor nomi antichi & moderni, historie, fauole, & modi del loro viuere, & in qual parte del mare stanno, & in qual parallelo & clima giaciono : Con la gionta del Monte del Oro nouamente ritrouato",
+   "datazione": "1540",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Isolario di Benedetto Bordone : Nel qual si ragiona di tutte le Isole Del mondo, con li lor nomi antichi & moderni, historie, fauole, & modi del loro viuere, & in qual parte del mare stanno, & in qual parallelo & clima giaciono : Con la gionta del Monte del Oro nouamente ritrouato",
+   "autori": [
+    {
+     "id": "fedro",
+     "autore": "Fedro",
+     "latino": "Phaedrus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "titolo: «…antichi & moderni, historie, fauole, & modi del loro viuere, & in…»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/0ea9e09fd6126f83849d917cbd3462b7/manifest",
+   "pagina": "https://www.nb.no/items/0ea9e09fd6126f83849d917cbd3462b7",
+   "licenza": "Nasjonalbiblioteket (pubblico dominio)",
+   "immagini": 177,
+   "tipo": "carta_stampa"
+  },
+  {
+   "id": "nb-ed943503aae9cc3f9d09c9e8aea818cc",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Ms.4° 89",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Ludvig Holberg: Adskillige store Helters og berømmelige Mænds, sær orientalske og Indianske sammenlignede Historier og Bedrifter efter Plutarchi Maade.",
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…Historier og Bedrifter efter Plutarchi Maade.»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/ed943503aae9cc3f9d09c9e8aea818cc/manifest",
+   "pagina": "https://www.nb.no/items/ed943503aae9cc3f9d09c9e8aea818cc",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 1823
+  },
+  {
+   "id": "nb-7a9585e8dba9b77878fe42ce5e0f53cb",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Ms.4° 520",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "de"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "\"Jonæ Charisii Beskrivelse over Christian den 4des lykkelige Seyllatz omkring de Norske Küster, som begyndt den 17. Aprilis 1599 og endt den 13 Julii i samme Aar, varede i 3 Maaneder, mindre 3 Dage.\"",
+   "autori": [
+    {
+     "id": "carisio",
+     "autore": "Carisio",
+     "latino": "Charisius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Charisius, Jonas»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/7a9585e8dba9b77878fe42ce5e0f53cb/manifest",
+   "pagina": "https://www.nb.no/items/7a9585e8dba9b77878fe42ce5e0f53cb",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 48
+  },
+  {
+   "id": "nb-850a713cc600d44b107a4709144ba010",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Ms.4° 1466",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "(Priscian. Institutiones grammaticae.) Fragment av X. bok, i Martin Hertz' utgave (Grammatici Latini ex rec. H. Keilii, vol. 2) s. 504, 7 (ninci-) til s. 509, 8 (-præterea).",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "autore: «Priscianus»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/850a713cc600d44b107a4709144ba010/manifest",
+   "pagina": "https://www.nb.no/items/850a713cc600d44b107a4709144ba010",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 2
+  },
+  {
+   "id": "nb-4dd79ebb7e7881ce55c65c0a6ee5b157",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Ms.8° 2431",
+   "datazione": "1350",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Marcus Tullius Cicero: \"Paradoxa (Stoicorum), De senectute, De amicitia.\"",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Laelius de amicitia",
+      "Cato maior de senectute",
+      "Paradoxa Stoicorum"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/4dd79ebb7e7881ce55c65c0a6ee5b157/manifest",
+   "pagina": "https://www.nb.no/items/4dd79ebb7e7881ce55c65c0a6ee5b157",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 90
+  },
+  {
+   "id": "nb-2e876b8316246274271d6ba3500482de",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Ms.fol. 1109",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Secondary Sexual Characters in the genera Hippolyte and Spirontocaris.",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "titolo: «Secondary Sexual Characters in the genera Hippolyte and Spirontocaris.»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/2e876b8316246274271d6ba3500482de/manifest",
+   "pagina": "https://www.nb.no/items/2e876b8316246274271d6ba3500482de",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 15
+  },
+  {
+   "id": "nb-a9bb5f567c439f4a382c209599fe4063",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Ms.fol. 1311",
+   "datazione": "1930",
+   "secolo": [
+    20,
+    20
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Adolf Fonahn: A dictionary of sosho. Chinese-Japanese characters in their cursive forms. With Chinese and Japanese readings and meanings.",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "titolo: «…ry of sosho. Chinese-Japanese characters in their cursive forms. With…»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/a9bb5f567c439f4a382c209599fe4063/manifest",
+   "pagina": "https://www.nb.no/items/a9bb5f567c439f4a382c209599fe4063",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 234
+  },
+  {
+   "id": "nb-7cc7cc2d93b28f13205da6200ed08eb8",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Ms.fol. 4235",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Uten tittel, «The Germans I used to know ...». Om Richard M. Brickners bok Is Germany Incurable? (N.Y. 1943).",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Kallen, Horace M.»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/7cc7cc2d93b28f13205da6200ed08eb8/manifest",
+   "pagina": "https://www.nb.no/items/7cc7cc2d93b28f13205da6200ed08eb8",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 5
+  },
+  {
+   "id": "nb-97a66145af9784ef87a9a609353e7138",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Ms.fol. 4339",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "\"Udskrift af gl. Tabel\". (Aves).",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Uccelli"
+     ],
+     "corrispondenza": "titolo: «\"Udskrift af gl. Tabel\". (Aves).»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/97a66145af9784ef87a9a609353e7138/manifest",
+   "pagina": "https://www.nb.no/items/97a66145af9784ef87a9a609353e7138",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 12
+  },
+  {
+   "id": "nb-b02a28741cef5121c0f9157f03b5a753",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Ms.fol. 4339",
+   "datazione": "1835",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "\"Aves\".",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Uccelli"
+     ],
+     "corrispondenza": "titolo: «\"Aves\".»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/b02a28741cef5121c0f9157f03b5a753/manifest",
+   "pagina": "https://www.nb.no/items/b02a28741cef5121c0f9157f03b5a753",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 551
+  },
+  {
+   "id": "nb-e8a9e0b8c4c1932926eadb1eab74dc25",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Ms.fol. 4339",
+   "datazione": "1898",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Exot. Aves.",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Uccelli"
+     ],
+     "corrispondenza": "titolo: «Exot. Aves.»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/e8a9e0b8c4c1932926eadb1eab74dc25/manifest",
+   "pagina": "https://www.nb.no/items/e8a9e0b8c4c1932926eadb1eab74dc25",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 43
+  },
+  {
+   "id": "nb-1d4b5b70bd47216ab91d76eaa14c2c23",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Ms.fol. 4750",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "de"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "\"Cicero und die epikureische Götterlehre. Versuch einer Rekonstruktion der Epikureischen Theologie\".",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «\"Cicero und die epikureische Götterle…»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/1d4b5b70bd47216ab91d76eaa14c2c23/manifest",
+   "pagina": "https://www.nb.no/items/1d4b5b70bd47216ab91d76eaa14c2c23",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 233
+  },
+  {
+   "id": "nb-327c554b332e361eb4e1b7dd8776767e",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Ms.forelesn. 331",
+   "datazione": "1814",
+   "secolo": [
+    19,
+    19
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "G. Sverdrup: Forelæsninger over Homers Iliade.",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "titolo: «G. Sverdrup: Forelæsninger over Homers Iliade.»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/327c554b332e361eb4e1b7dd8776767e/manifest",
+   "pagina": "https://www.nb.no/items/327c554b332e361eb4e1b7dd8776767e",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 48
+  },
+  {
+   "id": "nb-4e473bf339cbe84ef849c937ba996a2c",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Mus.ms. 8379",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Johan Halvorsen: \"Medea\".",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Medea"
+     ],
+     "corrispondenza": "autore: «Halvorsen, Johan ; Euripides»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/4e473bf339cbe84ef849c937ba996a2c/manifest",
+   "pagina": "https://www.nb.no/items/4e473bf339cbe84ef849c937ba996a2c",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 42,
+   "musica": true
+  },
+  {
+   "id": "nb-4278db41aba8fa9cca4d0b1b64338a1d",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Mus.ms. 8651",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Pauline Hall: \"Julius Cæsar\".",
+   "autori": [
+    {
+     "id": "cesare",
+     "autore": "Cesare",
+     "latino": "Caesar",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Pauline Hall: \"Julius Cæsar\".»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/4278db41aba8fa9cca4d0b1b64338a1d/manifest",
+   "pagina": "https://www.nb.no/items/4278db41aba8fa9cca4d0b1b64338a1d",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 8,
+   "musica": true
+  },
+  {
+   "id": "nb-3345cfbfade25a494416ef010fd3daf5",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Mus.ms. 8844",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Johan Halvorsen: \"Medea\".",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Medea"
+     ],
+     "corrispondenza": "autore: «Halvorsen, Johan ; Euripides»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/3345cfbfade25a494416ef010fd3daf5/manifest",
+   "pagina": "https://www.nb.no/items/3345cfbfade25a494416ef010fd3daf5",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 28,
+   "musica": true
+  },
+  {
+   "id": "nb-5543ade04bfebaf8ab1baf56e8a3b1fe",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Mus.ms. 8844",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Johan Halvorsen: \"Medea\".",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Medea"
+     ],
+     "corrispondenza": "autore: «Halvorsen, Johan ; Euripides»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/5543ade04bfebaf8ab1baf56e8a3b1fe/manifest",
+   "pagina": "https://www.nb.no/items/5543ade04bfebaf8ab1baf56e8a3b1fe",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 22,
+   "musica": true
+  },
+  {
+   "id": "nb-8dc5942d9f5dcbecb303352e4bd10c27",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Mus.ms. 8844",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Johan Halvorsen: \"Medea\".",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Medea"
+     ],
+     "corrispondenza": "autore: «Halvorsen, Johan ; Euripides»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/8dc5942d9f5dcbecb303352e4bd10c27/manifest",
+   "pagina": "https://www.nb.no/items/8dc5942d9f5dcbecb303352e4bd10c27",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 15,
+   "musica": true
+  },
+  {
+   "id": "nb-98a7be941d9131019ec702ff15c5459f",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Mus.ms. 8844",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Johan Halvorsen: \"Medea\".",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Medea"
+     ],
+     "corrispondenza": "autore: «Halvorsen, Johan ; Euripides»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/98a7be941d9131019ec702ff15c5459f/manifest",
+   "pagina": "https://www.nb.no/items/98a7be941d9131019ec702ff15c5459f",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 26,
+   "musica": true
+  },
+  {
+   "id": "nb-a1062e6d4eb5ca71c632448ea2d3e9c4",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Mus.ms. 8844",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Johan Halvorsen: \"Medea\".",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Medea"
+     ],
+     "corrispondenza": "autore: «Halvorsen, Johan ; Euripides»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/a1062e6d4eb5ca71c632448ea2d3e9c4/manifest",
+   "pagina": "https://www.nb.no/items/a1062e6d4eb5ca71c632448ea2d3e9c4",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 14,
+   "musica": true
+  },
+  {
+   "id": "nb-b72384ca5da1666edf40663b5d435c41",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Mus.ms. 8844",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Johan Halvorsen: \"Medea\".",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Medea"
+     ],
+     "corrispondenza": "autore: «Halvorsen, Johan ; Euripides»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/b72384ca5da1666edf40663b5d435c41/manifest",
+   "pagina": "https://www.nb.no/items/b72384ca5da1666edf40663b5d435c41",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 32,
+   "musica": true
+  },
+  {
+   "id": "nb-c9c36e10296606dde1351ef6265ca8ef",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Mus.ms. 8844",
+   "datazione": "1926",
+   "secolo": [
+    20,
+    20
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Johan Halvorsen: \"Medea\".",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Medea"
+     ],
+     "corrispondenza": "autore: «Halvorsen, Johan ; Euripides»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/c9c36e10296606dde1351ef6265ca8ef/manifest",
+   "pagina": "https://www.nb.no/items/c9c36e10296606dde1351ef6265ca8ef",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 8,
+   "musica": true
+  },
+  {
+   "id": "nb-f0027718e619bb072f613347afe984bf",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Mus.ms. 8844",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Johan Halvorsen: \"Medea\".",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Medea"
+     ],
+     "corrispondenza": "autore: «Halvorsen, Johan ; Euripides»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/f0027718e619bb072f613347afe984bf/manifest",
+   "pagina": "https://www.nb.no/items/f0027718e619bb072f613347afe984bf",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 28,
+   "musica": true
+  },
+  {
+   "id": "nb-2edc81d45eeea860617087db4276eccc",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Mus.ms. 9316",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Ole Andreas Lindeman: [Samling av skrifter].",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Benevoli, Orazio ; Lindeman, Ole Andreas ; Kir…»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/2edc81d45eeea860617087db4276eccc/manifest",
+   "pagina": "https://www.nb.no/items/2edc81d45eeea860617087db4276eccc",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 60,
+   "musica": true
+  },
+  {
+   "id": "nb-40b82859317fa1511cb2c463d08965d2",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Mus.ms.a 6284",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Gerhard Schjelderup: \"Storm Birds, dramatic ballad\".",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Uccelli"
+     ],
+     "corrispondenza": "titolo: «Gerhard Schjelderup: \"Storm Birds, dramatic ballad\".»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/40b82859317fa1511cb2c463d08965d2/manifest",
+   "pagina": "https://www.nb.no/items/40b82859317fa1511cb2c463d08965d2",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 18,
+   "musica": true
+  },
+  {
+   "id": "nb-6f52f7c1aedcf0fb97e90186ceeb54d9",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Mus.ms.a 7484",
+   "datazione": "1942",
+   "secolo": [
+    20,
+    20
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Pauline Hall: \"Lysistrata\".",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Lisistrata"
+     ],
+     "corrispondenza": "titolo: «Pauline Hall: \"Lysistrata\".»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/6f52f7c1aedcf0fb97e90186ceeb54d9/manifest",
+   "pagina": "https://www.nb.no/items/6f52f7c1aedcf0fb97e90186ceeb54d9",
+   "licenza": "Nasjonalbiblioteket, CC BY-NC-ND",
+   "immagini": 274,
+   "musica": true
   },
   {
    "id": "mns-tnlofh-tnlofhf_m_v_var_3_1m1u250-fi",
@@ -378574,6 +379997,62 @@
    "immagini": null
   },
   {
+   "id": "manuscripta-100128",
+   "fonte": "manuscripta",
+   "biblioteca": "Riksarkivet",
+   "citta": "Stoccolma",
+   "segnatura": "E 8996",
+   "datazione": "16th c., 14th c.",
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Libanius, Letters",
+   "autori": [
+    {
+     "id": "libanio",
+     "autore": "Libanio",
+     "latino": "Libanius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Libanius, Letters»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100128/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100128",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100129",
+   "fonte": "manuscripta",
+   "biblioteca": "Riksarkivet",
+   "citta": "Stoccolma",
+   "segnatura": "E 9014",
+   "datazione": "13th–14th c.",
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aristoteles, Topica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Aristoteles, Topica»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100129/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100129",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
    "id": "ds-ds16470",
    "fonte": "ds",
    "biblioteca": "Rochester Institute of Technology, Cary Graphic Arts Collection",
@@ -380752,6 +382231,34 @@
    "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-SIDNEYSUSSEX-00105",
    "pagina": "https://cudl.lib.cam.ac.uk/view/MS-SIDNEYSUSSEX-00105",
    "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100130",
+   "fonte": "manuscripta",
+   "biblioteca": "Skoklosters slottsbibliotek",
+   "citta": "Skokloster",
+   "segnatura": "Gr. 2",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Demosthenes",
+   "autori": [
+    {
+     "id": "demostene",
+     "autore": "Demostene",
+     "latino": "Demosthenes",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Demosthenes»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100130/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100130",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
    "immagini": null
   },
   {
@@ -437871,6 +439378,408 @@
    "manifest": "https://digitalrepository.library.upenn.edu/iiif/2/items/9a46df45-fe49-4449-abf7-f7829c99dbca/manifest",
    "pagina": "https://digitalcollections.library.upenn.edu/items/9a46df45-fe49-4449-abf7-f7829c99dbca",
    "licenza": "No Copyright - United States (rightsstatements.org)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100014",
+   "fonte": "manuscripta",
+   "biblioteca": "Uppsala universitetsbibliotek",
+   "citta": "Uppsala",
+   "segnatura": "Gr. 14",
+   "datazione": "13th or early 14th c.",
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aristides and Lucian, Rhetorical texts",
+   "autori": [
+    {
+     "id": "luciano",
+     "autore": "Luciano di Samosata",
+     "latino": "Lucianus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Aristides and Lucian, Rhetorical texts»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100014/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100014",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100015",
+   "fonte": "manuscripta",
+   "biblioteca": "Uppsala universitetsbibliotek",
+   "citta": "Uppsala",
+   "segnatura": "Gr. 15",
+   "datazione": "first half of the 14th c.",
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Euripides, Hecuba, Orestes, Phoenicians; Aphthonios; Phokilides; Theophylact Symocatta; Schedography on Herakles",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Ecuba",
+      "Oreste"
+     ],
+     "corrispondenza": "titolo: «Euripides, Hecuba, Orestes, Phoenicians…»"
+    },
+    {
+     "id": "aftonio",
+     "autore": "Aftonio",
+     "latino": "Aphthonius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…Hecuba, Orestes, Phoenicians; Aphthonios; Phokilides; Theophylact Symo…»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100015/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100015",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100025",
+   "fonte": "manuscripta",
+   "biblioteca": "Uppsala universitetsbibliotek",
+   "citta": "Uppsala",
+   "segnatura": "Gr. 25",
+   "datazione": "16th c.",
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epictetus, Enchiridion",
+   "autori": [
+    {
+     "id": "epitteto",
+     "autore": "Epitteto",
+     "latino": "Epictetus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Manuale"
+     ],
+     "corrispondenza": "titolo: «Epictetus, Enchiridion»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100025/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100025",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100026",
+   "fonte": "manuscripta",
+   "biblioteca": "Uppsala universitetsbibliotek",
+   "citta": "Uppsala",
+   "segnatura": "Gr. 26",
+   "datazione": "14th c.",
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Works by Aristotle, Sophonias, Hermogenes",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Works by Aristotle, Sophonias, Hermogenes»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100026/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100026",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100033",
+   "fonte": "manuscripta",
+   "biblioteca": "Uppsala universitetsbibliotek",
+   "citta": "Uppsala",
+   "segnatura": "Gr. 32",
+   "datazione": "15th–16th c.",
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aesop, fables",
+   "autori": [
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "titolo: «Aesop, fables»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100033/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100033",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100054",
+   "fonte": "manuscripta",
+   "biblioteca": "Uppsala universitetsbibliotek",
+   "citta": "Uppsala",
+   "segnatura": "Gr. 52",
+   "datazione": "1580s",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Works of Aristoxenus, Manuel Bryennios, Aristides Quintilianus etc.",
+   "autori": [
+    {
+     "id": "quintiliano",
+     "autore": "Quintiliano",
+     "latino": "Quintilianus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Works of Aristoxenus, Manuel Bryennios, Aristides Quintilianus etc.»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100054/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100054",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100061",
+   "fonte": "manuscripta",
+   "biblioteca": "Uppsala universitetsbibliotek",
+   "citta": "Uppsala",
+   "segnatura": "Gr. 59",
+   "datazione": "18th c.",
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Julius Pollux, Historia Physica – Scholia to Aristophanes",
+   "autori": [
+    {
+     "id": "polluce",
+     "autore": "Polluce",
+     "latino": "Iulius Pollux",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Julius Pollux, Historia Physica – Scholia to Aristophanes»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100061/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100061",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100062",
+   "fonte": "manuscripta",
+   "biblioteca": "Uppsala universitetsbibliotek",
+   "citta": "Uppsala",
+   "segnatura": "Gr. 60",
+   "datazione": "18th c.",
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Julius Pollux, Historia Physica",
+   "autori": [
+    {
+     "id": "polluce",
+     "autore": "Polluce",
+     "latino": "Iulius Pollux",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Julius Pollux, Historia Physica»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100062/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100062",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100063",
+   "fonte": "manuscripta",
+   "biblioteca": "Uppsala universitetsbibliotek",
+   "citta": "Uppsala",
+   "segnatura": "Gr. 61a",
+   "datazione": "1691",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Libanius, Letters",
+   "autori": [
+    {
+     "id": "libanio",
+     "autore": "Libanio",
+     "latino": "Libanius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Libanius, Letters»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100063/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100063",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100064",
+   "fonte": "manuscripta",
+   "biblioteca": "Uppsala universitetsbibliotek",
+   "citta": "Uppsala",
+   "segnatura": "Gr. 61b",
+   "datazione": "1691",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Libanius, Letters (latin translation)",
+   "autori": [
+    {
+     "id": "libanio",
+     "autore": "Libanio",
+     "latino": "Libanius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Libanius, Letters (latin translation)»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100064/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100064",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100065",
+   "fonte": "manuscripta",
+   "biblioteca": "Uppsala universitetsbibliotek",
+   "citta": "Uppsala",
+   "segnatura": "Gr. 61c",
+   "datazione": "1726",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Libanius, Letters",
+   "autori": [
+    {
+     "id": "libanio",
+     "autore": "Libanio",
+     "latino": "Libanius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Libanius, Letters»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100065/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100065",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100074",
+   "fonte": "manuscripta",
+   "biblioteca": "Uppsala universitetsbibliotek",
+   "citta": "Uppsala",
+   "segnatura": "Gr. 71",
+   "datazione": "1517 (1530)",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aldine edition of Homer’s Iliad with annotations by Philip Melanchthon",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "titolo: «Aldine edition of Homer’s Iliad with annotations by Philip Melanchthon»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100074/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100074",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-100075",
+   "fonte": "manuscripta",
+   "biblioteca": "Uppsala universitetsbibliotek",
+   "citta": "Uppsala",
+   "segnatura": "Gr. 72",
+   "datazione": "1517 (1530)",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aldine edition of Homer’s Odyssey with annotations by Philip Melanchthon",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Odissea"
+     ],
+     "corrispondenza": "titolo: «Aldine edition of Homer’s Odyssey with annotations by Philip Melanchthon»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/100075/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/100075",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
    "immagini": null
   },
   {
