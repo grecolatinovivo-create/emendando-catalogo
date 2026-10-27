@@ -1,9 +1,9 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-27T17:48:47.226Z",
- "totale": 543477,
+ "aggiornato": "2026-10-27T18:39:27.249Z",
+ "totale": 543378,
  "con_autori": 28259,
- "miniati": 11295,
+ "miniati": 11286,
  "musica": 21273,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
@@ -26,7 +26,7 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 178125
+   "codici": 178050
   },
   "la": {
    "nome": "latino",
@@ -70,7 +70,7 @@
   },
   "zh": {
    "nome": "cinese",
-   "codici": 13314
+   "codici": 13291
   },
   "lo": {
    "nome": "lao",
@@ -126,7 +126,7 @@
   },
   "ko": {
    "nome": "coreano",
-   "codici": 2581
+   "codici": 2580
   },
   "cop": {
    "nome": "copto",
@@ -390,7 +390,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 538158
+   "codici": 538059
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -4310,16 +4310,16 @@
   },
   "ndl": {
    "nome": "National Diet Library, Tokyo (dl.ndl.go.jp)",
-   "codici": 39119,
+   "codici": 39020,
    "carte": 49,
    "carte_stampa": 0,
-   "miniati": 1445,
+   "miniati": 1436,
    "musica": 172,
    "con_autori": 0,
    "lingue": {
-    "ja": 37446,
-    "zh": 1630,
-    "ko": 40,
+    "ja": 37371,
+    "zh": 1607,
+    "ko": 39,
     "?": 4
    },
    "esito": "ok",
@@ -5702,7 +5702,7 @@
   {
    "file": "indice/ndl-1.json",
    "fonte": "ndl",
-   "righe": 19119
+   "righe": 19020
   },
   {
    "file": "indice/kokusho-0.json",
@@ -10632,7 +10632,7 @@
   39,
   16677,
   67,
-  39119,
+  39020,
   1,
   1,
   1617,
