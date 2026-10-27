@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T09:01:46.089Z",
+ "aggiornato": "2026-10-27T09:53:13.258Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -319,7 +319,7 @@
   },
   "libfond": {
    "nome": "Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca: copie digitali della Trinità-San Sergio (lib-fond.ru; manifesti scritti dal catalogo)",
-   "codici": 25,
+   "codici": 29,
    "esito": "errore: codici letti in parte (1619 in questo giro): riprenderà alla prossima esecuzione"
   },
   "archive": {
@@ -353,7 +353,7 @@
    "esito": "ok"
   }
  },
- "totale": 12429,
+ "totale": 12433,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -123891,6 +123891,130 @@
    "pagina": "https://lib-fond.ru/lib-rgb/304-ii/f-304ii-187/",
    "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
    "immagini": 24
+  },
+  {
+   "id": "libfond-f-304ii-370-1",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.304/II №370.1",
+   "datazione": "1674 г.",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Библия лицевая, изданная Николаем Иоанном Пискатором в 1674 г. «Theatrum Biblicum hoc est historiæ sacræ veteris et novi testamenti tabulis æneis expressæ … Nicolaum Johannis Piscatorem. Anno 1674»), с рукописными подписями-виршами Мардария Хоникова. В двух книгах. Книга 1-я",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eneide"
+     ],
+     "corrispondenza": "titolo: «…is et novi testamenti tabulis æneis expressæ … Nicolaum Johannis…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-304ii-370-1.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/304-ii/f-304ii-370-1/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 538
+  },
+  {
+   "id": "libfond-f-304ii-370-2",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.304/II №370.2",
+   "datazione": "1674 г.",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "cu"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Библия лицевая, изданная Николаем Иоанном Пискатором в 1674 г. «Theatrum Biblicum hoc est historiæ sacræ veteris et novi testamenti tabulis æneis expressæ … Nicolaum Johannis Piscatorem. Anno 1674»), с рукописными подписями-виршами Мардария Хоникова. В двух книгах. Книга 2-я",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eneide"
+     ],
+     "corrispondenza": "titolo: «…is et novi testamenti tabulis æneis expressæ … Nicolaum Johannis…»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-304ii-370-2.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/304-ii/f-304ii-370-2/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 204
+  },
+  {
+   "id": "libfond-f-310-997",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.310 №997",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Isocratis Atheniensis orationes politicae",
+   "autori": [
+    {
+     "id": "isocrate",
+     "autore": "Isocrate",
+     "latino": "Isocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "titolo: «Isocratis Atheniensis orationes politicae»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-310-997.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/310/f-310-997/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 60
+  },
+  {
+   "id": "libfond-f-310-1133",
+   "fonte": "libfond",
+   "biblioteca": "Biblioteca Statale Russa, Reparto manoscritti (Отдел рукописей РГБ)",
+   "citta": "Mosca",
+   "segnatura": "Ф.310 №1133",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Philosophia Aristotelis",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Philosophia Aristotelis»"
+    }
+   ],
+   "manifest": "https://raw.githubusercontent.com/grecolatinovivo-create/emendando-catalogo/manifesti/data/manifesti/libfond/f-310-1133.json",
+   "pagina": "https://lib-fond.ru/lib-rgb/310/f-310-1133/",
+   "licenza": "Свято-Троицкая Сергиева Лавра, «Собрание рукописей и старопечатных книг» (lib-fond.ru), per il Reparto manoscritti della Biblioteca Statale Russa e l'Accademia Teologica di Mosca: uso di studio",
+   "immagini": 398
   },
   {
    "id": "bub-64e6eb6c-8126-4829-b70b-6b99612a05f6",
