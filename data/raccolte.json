@@ -44,6 +44,11 @@
   "esito": "ok",
   "ultimo_ok": "2026-10-27T03:06:19.765Z"
  },
+ "bnl": {
+  "quando": "2026-10-27T15:34:03.937Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-27T15:34:03.937Z"
+ },
  "bodleian": {
   "quando": "2026-10-27T04:39:22.601Z",
   "esito": "errore: fetch failed",
@@ -194,6 +199,11 @@
   "esito": "ok",
   "ultimo_ok": "2026-10-27T04:39:50.281Z"
  },
+ "manuscripta": {
+  "quando": "2026-10-27T15:34:03.937Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-27T15:34:03.937Z"
+ },
  "manuscriptorium": {
   "quando": "2026-10-27T01:19:58.601Z",
   "esito": "ok",
@@ -208,6 +218,11 @@
   "quando": "2026-10-27T03:06:19.765Z",
   "esito": "ok",
   "ultimo_ok": "2026-10-27T03:06:19.765Z"
+ },
+ "nb": {
+  "quando": "2026-10-27T15:34:03.937Z",
+  "esito": "errore: carte lette in parte (mancano 1156 schede MODS): riprenderà alla prossima esecuzione",
+  "ultimo_ok": null
  },
  "nbkm": {
   "quando": "2026-10-27T15:30:51.310Z",

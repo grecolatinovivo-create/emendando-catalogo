@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T15:11:36.483Z",
+ "aggiornato": "2026-10-27T15:39:33.901Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -335,7 +335,7 @@
   "libfond": {
    "nome": "Biblioteca Statale Russa (Reparto manoscritti) e Accademia Teologica di Mosca: copie digitali della Trinità-San Sergio (lib-fond.ru; manifesti scritti dal catalogo)",
    "codici": 34,
-   "esito": "errore: codici letti in parte (1475 in questo giro): riprenderà alla prossima esecuzione"
+   "esito": "ok"
   },
   "archive": {
    "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, John Carter Brown Library, Newberry Library, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
@@ -364,18 +364,18 @@
   },
   "nb": {
    "nome": "Nasjonalbiblioteket, Oslo: manoscritti, manoscritti musicali e carte geografiche (api.nb.no; manifesti IIIF della biblioteca)",
-   "codici": 27,
-   "esito": "precedente"
+   "codici": 36,
+   "esito": "errore: carte lette in parte (mancano 1156 schede MODS): riprenderà alla prossima esecuzione"
   },
   "manuscripta": {
    "nome": "manuscripta.se: Kungliga biblioteket, Uppsala universitetsbibliotek e altre biblioteche svedesi (manifesti IIIF di manuscripta.se)",
    "codici": 33,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "bnl": {
    "nome": "Bibliothèque nationale du Luxembourg (eluxemburgensia.lu; manifesti scritti dal catalogo con le immagini IIIF della biblioteca)",
    "codici": 1,
-   "esito": "precedente"
+   "esito": "ok"
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
@@ -383,7 +383,7 @@
    "esito": "ok"
   }
  },
- "totale": 12528,
+ "totale": 12537,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -357783,6 +357783,286 @@
    "tipo": "carta_stampa"
   },
   {
+   "id": "nb-7236379dd4d890b6246b8be7ad0c6aea",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Claudij Ptolemaei Alexandrini Mathematico[rum] principis opus Geographi[ae] nouiter castigatu[m] & emaculatu[m] additio[n]ibus raris et inuisis, necnon cu[m] tabularum in dorso iucunda explanatione : Registro quo[que] totius operis tam Geographico [quam] etia[m] historiali facillimu[m] introitu[m] prebe[n]ti",
+   "datazione": "1522",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Claudij Ptolemaei Alexandrini Mathematico[rum] principis opus Geographi[ae] nouiter castigatu[m] & emaculatu[m] additio[n]ibus raris et inuisis, necnon cu[m] tabularum in dorso iucunda explanatione : Registro quo[que] totius operis tam Geographico [quam] etia[m] historiali facillimu[m] introitu[m] prebe[n]ti",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Claudij Ptolemaei Alexandrini Mathematico[rum]…»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/7236379dd4d890b6246b8be7ad0c6aea/manifest",
+   "pagina": "https://www.nb.no/items/7236379dd4d890b6246b8be7ad0c6aea",
+   "licenza": "Nasjonalbiblioteket (pubblico dominio)",
+   "immagini": 389,
+   "tipo": "carta_stampa"
+  },
+  {
+   "id": "nb-238f0bc0174e001775f9c1cb819b3f3c",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Epitome du Theatre du monde d'Abraham Ortelius : Auquel se represente, tant par figures que characteres, la vraye situation, nature, & proprieté de la terre vniuerselle",
+   "datazione": "1598",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "fr"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epitome du Theatre du monde d'Abraham Ortelius : Auquel se represente, tant par figures que characteres, la vraye situation, nature, & proprieté de la terre vniuerselle",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "titolo: «…resente, tant par figures que characteres, la vraye situation, nature,…»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/238f0bc0174e001775f9c1cb819b3f3c/manifest",
+   "pagina": "https://www.nb.no/items/238f0bc0174e001775f9c1cb819b3f3c",
+   "licenza": "Nasjonalbiblioteket (pubblico dominio)",
+   "immagini": 283,
+   "tipo": "carta_stampa"
+  },
+  {
+   "id": "nb-280f2e68bdcf7b800df246ad716512b7",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Geographia Cl. Ptolemaei Alexandrini : Addita sunt in primum, & septimum librum amplissima eiusdem commentaria, quibus omnia, quae ad Geographiam attinent, & quae praetermissa sunt a Ptolemaeo declarantur, atque nominibus antiquis regionum, ciuitatum, oppidorum, montium, syluarum, fluuiorum, lacuum, caeterorumque locorum, apposita sunt recentiora : Adsunt LXIIII Tabulae XXVII nempe antiquae, & reliquae nouae, quae totam continent terram, nostrae, ac Ptolemaei aetati cognitam, typis[que] aeneis excussae : Indices rerum quae tractantur copiosissimi",
+   "datazione": "1562",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Geographia Cl. Ptolemaei Alexandrini : Addita sunt in primum, & septimum librum amplissima eiusdem commentaria, quibus omnia, quae ad Geographiam attinent, & quae praetermissa sunt a Ptolemaeo declarantur, atque nominibus antiquis regionum, ciuitatum, oppidorum, montium, syluarum, fluuiorum, lacuum, caeterorumque locorum, apposita sunt recentiora : Adsunt LXIIII Tabulae XXVII nempe antiquae, & rel",
+   "autori": [
+    {
+     "id": "virgilio",
+     "autore": "Virgilio",
+     "latino": "Vergilius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eneide"
+     ],
+     "corrispondenza": "titolo: «…i aetati cognitam, typis[que] aeneis excussae : Indices rerum quae…»"
+    },
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Geografia"
+     ],
+     "corrispondenza": "autore: «Ptolemaeus, Claudius ; Valgrisi, Vincenz…»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/280f2e68bdcf7b800df246ad716512b7/manifest",
+   "pagina": "https://www.nb.no/items/280f2e68bdcf7b800df246ad716512b7",
+   "licenza": "Nasjonalbiblioteket (pubblico dominio)",
+   "immagini": 737,
+   "tipo": "carta_stampa"
+  },
+  {
+   "id": "nb-3f539560aae04dc23f0f00d51ea80c71",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Geographia uniuersalis, uetus et noua, complectens Claudii Ptolemaei Alexandrini enarrationis libros VIII : Quorum primus noua translatione Pirckheimheri et accessione commentarioli illustrior quam hactenus fuerit, redditus est : Reliqui cum graeco et alijs uetustis exe[m]plaribus collati, in infinitis ferè locis castigatiores facti sunt : Addita sunt insuper Scholia, quibus exoleta urbium, montium, fluuiorum[que] nomina ad nostri seculi morem exponuntur : Succedunt tabulae Ptolemaicae, opera Sebastiani Munsteri nouo paratae modo : His adiectae sunt plurimae nouae tabulae, moderna[m] orbis faciem literis & pictura explicantes, inter quas quaedam antehàc Ptolemaeo non fuerunt additae : Vltimo annexum est compendium geographicae descriptionis, in quo uarij gentium et regionum ritus & mores excplicantur : Praefixus est quo[que] uniuerso operi index memorabiliu[m] populorum, ciuitatum, fluuiorum, montium, terrarum, lacuum &c",
+   "datazione": "1542",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Geographia uniuersalis, uetus et noua, complectens Claudii Ptolemaei Alexandrini enarrationis libros VIII : Quorum primus noua translatione Pirckheimheri et accessione commentarioli illustrior quam hactenus fuerit, redditus est : Reliqui cum graeco et alijs uetustis exe[m]plaribus collati, in infinitis ferè locis castigatiores facti sunt : Addita sunt insuper Scholia, quibus exoleta urbium, montiu",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Geografia"
+     ],
+     "corrispondenza": "titolo: «…s, uetus et noua, complectens Claudii Ptolemaei Alexandrini enarrationis libr…»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/3f539560aae04dc23f0f00d51ea80c71/manifest",
+   "pagina": "https://www.nb.no/items/3f539560aae04dc23f0f00d51ea80c71",
+   "licenza": "Nasjonalbiblioteket (pubblico dominio)",
+   "immagini": 453,
+   "tipo": "carta_stampa"
+  },
+  {
+   "id": "nb-82b5f8407d83b42de06336a0fb18a108",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Geographia uniuersalis, uetus et noua, complectens Claudii Ptolemaei Alexandrini enarrationis libros VIII : Quorum primus noua translatione Pirckheimheri et accessione commentarioli illustrior quàm hactenus fuerit, redditus est : Reliqui cum graeco et alijs uetustis exemplaribus collati, in infinitis ferè locis castigatiores facti sunt : Addita sunt insuper Scholia, quibus exoleta urbium, montium, fluuiorum[que] nomina ad nostri seculi morem exponuntur : Succedunt tabulae Ptolemaicae, [opera Sebastiani Munsteri] nouo paratae modo : His adiectae sunt plurimae nouae tabulae, modernam orbis faciem literis & pictura explicantes, inter quas qu[ae]dam antehàc Ptolem[ae]o non fuerunt additae : Vltimo annexum est compendium geographicae descriptionis, in quo uarij gentium & regionum ritus & mores excplicantur : Praefixus est quo[que] uniuerso operi index memorabiliu[m] populorum, ciuitatum, fluuiorum, montium, terrarum, lacuum &c",
+   "datazione": "1545",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Geographia uniuersalis, uetus et noua, complectens Claudii Ptolemaei Alexandrini enarrationis libros VIII : Quorum primus noua translatione Pirckheimheri et accessione commentarioli illustrior quàm hactenus fuerit, redditus est : Reliqui cum graeco et alijs uetustis exemplaribus collati, in infinitis ferè locis castigatiores facti sunt : Addita sunt insuper Scholia, quibus exoleta urbium, montium,",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Geografia"
+     ],
+     "corrispondenza": "titolo: «…s, uetus et noua, complectens Claudii Ptolemaei Alexandrini enarrationis libr…»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/82b5f8407d83b42de06336a0fb18a108/manifest",
+   "pagina": "https://www.nb.no/items/82b5f8407d83b42de06336a0fb18a108",
+   "licenza": "Nasjonalbiblioteket (pubblico dominio)",
+   "immagini": 429,
+   "tipo": "carta_stampa"
+  },
+  {
+   "id": "nb-764d60c4f604a2419ff0dd04d4d2418b",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Geographia uniuersalis, uetus et noua, complectens Claudij Ptolemaei Alexandrini enarrationis libros VIII : quorum primus noua translatione Pirckheimheri et accessione commentarioli illustrior quam hactenus fuerit, redditus est : Reliqui cum Graeco et alijs uetustis exe[m]plaribus collati, in infinitis ferè locis castigatiores facti sunt : Addita sunt insuper Scholia, quibus exoleta urbium, montium, fluuiorum[que] nomina ad nostri seculi morem exponuntur : Succedunt tabulae Ptolemaic[ae] opera Sebastiani Munsteri nouo paratae modo : His adiectae sunt plurim[ae] nouae tabulae, moderna[m] orbis faciem literis & pictura explicantes, inter quas quaedam antehàc Ptolemaeo non fuerunt additae : Vltimo annexum est compendium geographic[ae] descriptionis, in quo uarij gentium et regionum ritus et mores excplicantur : Pr[ae]fixus est quo[que] uniuerso operi index memorabiliu[m] populorum ciuitatum, fluuiorum, montium, terrarum, lacuum &c",
+   "datazione": "1540",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Geographia uniuersalis, uetus et noua, complectens Claudij Ptolemaei Alexandrini enarrationis libros VIII : quorum primus noua translatione Pirckheimheri et accessione commentarioli illustrior quam hactenus fuerit, redditus est : Reliqui cum Graeco et alijs uetustis exe[m]plaribus collati, in infinitis ferè locis castigatiores facti sunt : Addita sunt insuper Scholia, quibus exoleta urbium, montiu",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Geografia"
+     ],
+     "corrispondenza": "titolo: «…s, uetus et noua, complectens Claudij Ptolemaei Alexandrini enarrationis libr…»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/764d60c4f604a2419ff0dd04d4d2418b/manifest",
+   "pagina": "https://www.nb.no/items/764d60c4f604a2419ff0dd04d4d2418b",
+   "licenza": "Nasjonalbiblioteket (pubblico dominio)",
+   "immagini": 453,
+   "tipo": "carta_stampa"
+  },
+  {
+   "id": "nb-4db4806c0972d883696f4e7e463bc6a7",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Isolario di Benedetto Bordone : Nel qual si ragiona di tutte l'Isole del mondo, con li lor nomi antichi & moderni, historie, fauole, & modi del loro viuere, & in qual parte del mare stanno, & in qual parallelo & clima giaciono : Con la gionta del Monte del Oro nouamente ritrouato",
+   "datazione": "1534",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Isolario di Benedetto Bordone : Nel qual si ragiona di tutte l'Isole del mondo, con li lor nomi antichi & moderni, historie, fauole, & modi del loro viuere, & in qual parte del mare stanno, & in qual parallelo & clima giaciono : Con la gionta del Monte del Oro nouamente ritrouato",
+   "autori": [
+    {
+     "id": "fedro",
+     "autore": "Fedro",
+     "latino": "Phaedrus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "titolo: «…antichi & moderni, historie, fauole, & modi del loro viuere, & in…»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/4db4806c0972d883696f4e7e463bc6a7/manifest",
+   "pagina": "https://www.nb.no/items/4db4806c0972d883696f4e7e463bc6a7",
+   "licenza": "Nasjonalbiblioteket (pubblico dominio)",
+   "immagini": 175,
+   "tipo": "carta_stampa"
+  },
+  {
+   "id": "nb-7b035339407171e9f88faf6b1f560cd5",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "Isolario di Benedetto Bordone : Nel qual si ragiona di tutte l'Isole del mondo, con li lor nomi antichi & moderni, historie, fauole, & modi del loro viuere, & in qual parte del mare stanno, & in qual parallelo & clima giaciono : Con la gionta del Monte del Oro nouamente ritrouato",
+   "datazione": "1547",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Isolario di Benedetto Bordone : Nel qual si ragiona di tutte l'Isole del mondo, con li lor nomi antichi & moderni, historie, fauole, & modi del loro viuere, & in qual parte del mare stanno, & in qual parallelo & clima giaciono : Con la gionta del Monte del Oro nouamente ritrouato",
+   "autori": [
+    {
+     "id": "fedro",
+     "autore": "Fedro",
+     "latino": "Phaedrus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "titolo: «…antichi & moderni, historie, fauole, & modi del loro viuere, & in…»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/7b035339407171e9f88faf6b1f560cd5/manifest",
+   "pagina": "https://www.nb.no/items/7b035339407171e9f88faf6b1f560cd5",
+   "licenza": "Nasjonalbiblioteket (pubblico dominio)",
+   "immagini": 177,
+   "tipo": "carta_stampa"
+  },
+  {
    "id": "nb-0ea9e09fd6126f83849d917cbd3462b7",
    "fonte": "nb",
    "biblioteca": "Nasjonalbiblioteket",
@@ -357814,6 +358094,40 @@
    "pagina": "https://www.nb.no/items/0ea9e09fd6126f83849d917cbd3462b7",
    "licenza": "Nasjonalbiblioteket (pubblico dominio)",
    "immagini": 177,
+   "tipo": "carta_stampa"
+  },
+  {
+   "id": "nb-a06d80a32458b90119f93b95f6d2e000",
+   "fonte": "nb",
+   "biblioteca": "Nasjonalbiblioteket",
+   "citta": "Oslo",
+   "segnatura": "La Geografia di Claudio Tolomeo Alessandrino",
+   "datazione": "1574",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "La Geografia di Claudio Tolomeo Alessandrino",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Geografia"
+     ],
+     "corrispondenza": "titolo: «La Geografia di Claudio Tolomeo Alessandrino»"
+    }
+   ],
+   "manifest": "https://api.nb.no/catalog/v1/iiif/a06d80a32458b90119f93b95f6d2e000/manifest",
+   "pagina": "https://www.nb.no/items/a06d80a32458b90119f93b95f6d2e000",
+   "licenza": "Nasjonalbiblioteket (pubblico dominio)",
+   "immagini": 827,
    "tipo": "carta_stampa"
   },
   {

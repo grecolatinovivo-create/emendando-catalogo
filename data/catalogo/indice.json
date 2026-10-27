@@ -1,8 +1,8 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-27T15:35:19.453Z",
- "totale": 539910,
- "con_autori": 28217,
+ "aggiornato": "2026-10-27T15:39:33.901Z",
+ "totale": 542077,
+ "con_autori": 28241,
  "miniati": 11313,
  "musica": 21281,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
@@ -30,23 +30,23 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 82494
+   "codici": 82679
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 43139
+   "codici": 43348
   },
   "fr": {
    "nome": "francese",
-   "codici": 28416
+   "codici": 28517
+  },
+  "de": {
+   "nome": "tedesco",
+   "codici": 22594
   },
   "ar": {
    "nome": "arabo",
    "codici": 22509
-  },
-  "de": {
-   "nome": "tedesco",
-   "codici": 22424
   },
   "he": {
    "nome": "ebraico",
@@ -82,7 +82,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10494
+   "codici": 10495
   },
   "pl": {
    "nome": "polacco",
@@ -90,11 +90,11 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 7661
+   "codici": 7697
   },
   "en": {
    "nome": "inglese",
-   "codici": 7133
+   "codici": 7585
   },
   "bo": {
    "nome": "tibetano",
@@ -150,15 +150,19 @@
   },
   "sv": {
    "nome": "svedese",
-   "codici": 871
+   "codici": 908
   },
   "nl": {
    "nome": "nederlandese",
-   "codici": 810
+   "codici": 880
   },
   "da": {
    "nome": "danese",
-   "codici": 641
+   "codici": 872
+  },
+  "no": {
+   "nome": "no",
+   "codici": 773
   },
   "hy": {
    "nome": "armeno",
@@ -215,10 +219,6 @@
   "my": {
    "nome": "birmano",
    "codici": 106
-  },
-  "no": {
-   "nome": "no",
-   "codici": 98
   },
   "hu": {
    "nome": "ungherese",
@@ -372,15 +372,15 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 6603
+   "codici": 6606
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 6411
+   "codici": 6418
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 14593
+   "codici": 14608
   },
   "medievale": {
    "nome": "autori medievali",
@@ -394,11 +394,11 @@
   },
   "carta": {
    "nome": "carte manoscritte",
-   "codici": 1667
+   "codici": 1960
   },
   "carta_stampa": {
    "nome": "carte a stampa",
-   "codici": 329
+   "codici": 2203
   }
  },
  "autori": {
@@ -448,7 +448,7 @@
    "nome": "Virgilio",
    "latino": "Vergilius",
    "categoria": "classico-latino",
-   "codici": 475
+   "codici": 476
   },
   "orazio": {
    "nome": "Orazio",
@@ -688,7 +688,7 @@
    "nome": "Fedro",
    "latino": "Phaedrus",
    "categoria": "classico-latino",
-   "codici": 9
+   "codici": 11
   },
   "aviano": {
    "nome": "Aviano",
@@ -952,7 +952,7 @@
    "nome": "Teofrasto",
    "latino": "Theophrastus",
    "categoria": "classico-greco",
-   "codici": 122
+   "codici": 123
   },
   "lisia": {
    "nome": "Lisia",
@@ -1120,7 +1120,7 @@
    "nome": "Tolomeo",
    "latino": "Ptolemaeus",
    "categoria": "classico-greco",
-   "codici": 261
+   "codici": 267
   },
   "euclide": {
    "nome": "Euclide",
@@ -1330,7 +1330,7 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 2890
+   "codici": 2904
   },
   "girolamo": {
    "nome": "Girolamo",
@@ -1444,7 +1444,7 @@
    "nome": "Atanasio",
    "latino": "Athanasius",
    "categoria": "cristiano",
-   "codici": 384
+   "codici": 385
   },
   "gregorio-nisseno": {
    "nome": "Gregorio di Nissa",
@@ -5360,32 +5360,32 @@
   },
   "nb": {
    "nome": "Nasjonalbiblioteket, Oslo: manoscritti, manoscritti musicali e carte geografiche (api.nb.no; manifesti IIIF della biblioteca)",
-   "codici": 13354,
-   "carte": 40,
-   "carte_stampa": 259,
+   "codici": 15521,
+   "carte": 333,
+   "carte_stampa": 2133,
    "miniati": 8,
    "musica": 7600,
-   "con_autori": 51,
+   "con_autori": 75,
    "lingue": {
-    "no": 86,
-    "?": 12992,
-    "da": 31,
-    "de": 64,
-    "la": 60,
-    "it": 7,
-    "en": 68,
-    "fr": 24,
-    "nl": 17,
-    "sv": 1,
+    "no": 761,
+    "nl": 87,
+    "da": 262,
+    "la": 245,
+    "it": 43,
+    "de": 234,
+    "sv": 38,
+    "?": 13201,
+    "en": 520,
+    "fr": 125,
     "ar": 1,
     "myn": 2,
-    "es": 1
+    "es": 2
    },
-   "esito": "precedente",
+   "esito": "errore: carte lette in parte (mancano 1156 schede MODS): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nb-"
    ],
-   "pezzi_voci": 17,
+   "pezzi_voci": 20,
    "indice": [
     "indice/nb-0.json"
    ]
@@ -5414,7 +5414,7 @@
     "no": 12,
     "el": 1
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "manuscripta-"
    ],
@@ -5439,7 +5439,7 @@
     "nl": 3,
     "?": 2
    },
-   "esito": "precedente",
+   "esito": "ok",
    "prefissi": [
     "bnl-"
    ],
@@ -5901,7 +5901,7 @@
   {
    "file": "indice/nb-0.json",
    "fonte": "nb",
-   "righe": 13354
+   "righe": 15521
   },
   {
    "file": "indice/manuscripta-0.json",
@@ -10624,7 +10624,7 @@
   82,
   3,
   39,
-  13354,
+  15521,
   67,
   39714,
   1,
