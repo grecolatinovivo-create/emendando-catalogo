@@ -15,10 +15,10 @@ In tutto 196 nazioni: i 193 stati dell'ONU, la Città del Vaticano, la Palestina
 | Stato | Nazioni |
 |---|---|
 | agganciata | 34 |
-| controllata, niente da agganciare | 55 |
-| controllata, bloccata | 24 |
+| controllata, niente da agganciare | 56 |
+| controllata, bloccata | 28 |
 | in corso | 24 |
-| non ancora controllata | 59 |
+| non ancora controllata | 54 |
 | **totale** | **196** |
 
 Che cosa vuol dire ogni stato:
@@ -75,6 +75,7 @@ Aggiornamento del 27 ottobre 2026 (Europa del Nord e Lussemburgo, corsia `raccol
 
 Aggiornamento del 26 ottobre 2026 (Copenaghen, L'Aia, Utrecht, Amsterdam, Madrid; corsia `raccolta-europa.yml`): agganciati il Det Kongelige Bibliotek di Copenaghen (4.118 codici e frammenti: GKS, NKS, Additamenta e altre collezioni, 3.328 frammenti medievali della Fragmentsamlingen, manoscritti orientali ed ebraici; fuori 260 lettere e carte d'archivio; manifesti scritti dal catalogo con le immagini IIIF della biblioteca) e l'Allard Pierson dell'Università di Amsterdam (105 codici: Bibliotheca Philosophica Hermetica, libri d'ore, Moninckx Atlas, Max Havelaar; fuori circa 10.000 lettere). Non entrano la Koninklijke Bibliotheek dell'Aia (niente IIIF, Delpher chiuso dal robots.txt), l'Università di Utrecht (robots.txt che vieta manifesti e immagini) e la Biblioteca Nacional de España (robots.txt che vieta tutto); El Escorial era già nel catalogo con la Real Biblioteca.
 Aggiornamento del 27 ottobre 2026 (Balcani, Bielorussia, Moldavia, Grecia, Cipro e Malta; corsia `raccolta-balcani.yml`): agganciata la Biblioteca della Matica srpska di Novi Sad (fonte «bms»: 176 libri manoscritti dal XIII al XIX secolo, con l'Apostolo della Matica, e 16 carte e atlanti a stampa fino al 1900 come tipo a parte; manifesti scritti dal catalogo con i JPEG del visore della biblioteca). Non entrano (motivi in `docs/BIBLIOTECHE.md`, «Balcani, Grecia e Mediterraneo orientale», e quasi tutte nella lista della lettera dell'Università di Urbino): Albania (l'Archivio centrale dello Stato non ha una biblioteca digitale; i suoi codici greci, con il Codex Purpureus Beratinus, sono solo in parte nel sito del CSNTM, che chiede il permesso per ogni uso; Biblioteca nazionale senza copie digitali di codici), Bosnia ed Erzegovina (Gazi Husrev-beg: registrazione obbligatoria, da ospiti solo le prime 10 pagine; Istituto orientale e Biblioteca nazionale e universitaria senza biblioteca digitale, copie solo in vHMML), Hilandar (la Hilandar Research Library dell'Ohio State ha solo microfilm, senza immagini in rete), Montenegro (dlib.me: lettere e autografi di Njegoš in PDF, nessun codice), Macedonia del Nord e Kosovo (nessuna biblioteca digitale di codici), Bielorussia (nlb.by non raggiungibile; la biblioteca elettronica è in prova e i suoi «manoscritti» sono quasi tutti registri d'archivio, con il visore caricato dai programmi del sito), Moldavia (Moldavica: 11 codici, ma solo in http), Grecia oltre le fonti già agganciate (Athos e Patmos: il CSNTM ha circa 170 codici dell'Athos da microfilm, con IIIF aperto, ma le condizioni chiedono il permesso; Veria ancora giù), Cipro (Lekythos dell'Università di Cipro dietro Cloudflare; la biblioteca digitale della Fondazione Sylvia Ioannou ha libri a stampa) e Malta (nessuna biblioteca digitale della National Library; vHMML chiuso dal robots.txt). La Turchia resta bloccata.
+Aggiornamento del 27 ottobre 2026 (Tunisia, Algeria, Uzbekistan, Afghanistan, Pakistan): provate dal server e, dove serviva, dal browser. Nessuna biblioteca agganciata e nessuna corsia nuova: le copie digitali della Biblioteca nazionale di Tunisia sono solo sulla rete interna, la biblioteca digitale nazionale algerina non risponde, l'Istituto Al-Biruni di Tashkent e la Punjab University Library di Lahore danno le copie solo su domanda o a pagamento (lettera di Urbino); in Afghanistan non risulta nessuna raccolta di manoscritti digitalizzati. Dettagli nelle righe delle nazioni e in docs/BIBLIOTECHE.md.
 Aggiornamento del 26 ottobre 2026 (Russia, Caucaso, Turchia, Iran, Balcani; corsia `raccolta-est.yml`): agganciate la Biblioteca Nazionale «Santi Cirillo e Metodio» di Sofia (296 codici, manifesti scritti dal catalogo) e, tramite lib-fond.ru della Trinità-San Sergio, i libri manoscritti del Reparto manoscritti della Biblioteca Statale Russa e dell'Accademia Teologica di Mosca (circa 20.000 schede, lettura a riprese; manifesti scritti dal catalogo). Non entrano (motivi in `docs/BIBLIOTECHE.md`, quasi tutte nella lista della lettera dell'Università di Urbino): Biblioteca nazionale russa, Museo Storico Statale, БАН, Matenadaran, Centro Nazionale dei Manoscritti di Tbilisi, Yazma Eserler Kurumu e Milli Kütüphane, Topkapı, le biblioteche iraniane, BNR Digitală, Biblioteca nazionale di Serbia (solo carte scelte), Vernadsky.
 
 Restano fuori da questa lista perché sono già nel registro: Cambridge Digital Library (in lavorazione), British Library (agganciata in parte dal 26 ottobre 2026), Det Kongelige Bibliotek (agganciata il 26 ottobre 2026), Koninklijke Bibliotheek (non si può), Uppsala e Biblioteka Jagiellońska (da verificare), Qatar Digital Library (entra per i manoscritti della British Library) e National Library of Israel (bloccata).
@@ -306,8 +307,8 @@ Egitto, Maghreb e Sudan.
 |---|---|---|---|---|
 | Egitto | agganciata | Monastero di Santa Caterina del Sinai (microfilm della Library of Congress), Sinai (Egitto): 1.668 codici; American University in Cairo, Rare Books and Special Collections Library, Il Cairo: 36 codici (arabi, persiani, copti; dal 26 ottobre 2026) | Bibliotheca Alexandrina: il Digital Assets Repository non risponde nemmeno dal browser (26 ottobre 2026). Dar al-Kutub e al-Azhar: nessuna biblioteca digitale pubblica dei manoscritti trovata. | Dar al-Kutub, Biblioteca di al-Azhar (senza copie digitali aperte) |
 | Libia | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
-| Tunisia | non ancora controllata | nessuna | nessuna | Biblioteca nazionale di Tunisia (non verificata) |
-| Algeria | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+| Tunisia | controllata, bloccata | nessuna | Bibliothèque nationale de Tunisie (prova dal server e dal browser del 27 ottobre 2026): www.bnt.nat.tn chiude la connessione al nostro server; dal browser si apre il catalogo SirsiDynix, la cui sezione «Documents numérisés» rimanda a PDF su un indirizzo della rete interna della biblioteca (192.168.3.10), quindi le copie digitali non si aprono da fuori, e la ricerca limitata ai manoscritti non dà nessuna copia digitale. Il nuovo portale annunciato nel 2022 (www.bibliotheque.nat.tn) non risponde né dal server né dal browser. | Bibliothèque nationale de Tunisie (circa 24.000 manoscritti; copie digitali non pubbliche): lettera di Urbino |
+| Algeria | controllata, bloccata | nessuna | Bibliothèque nationale d'Algérie (prova del 27 ottobre 2026): il sito biblionat.dz risponde (robots.txt senza divieti) ma dà solo pagine informative sul fondo dei manoscritti e sulla «Carta nazionale dei manoscritti»; la biblioteca digitale (digitallibrary.biblionat.dz) rifiuta la connessione dal server e dal browser e in http risponde 503. Biblioteca pubblica di Adrar (bplpadrar.dz): solo catalogo dei libri, nessun manoscritto in rete. Nessun'altra raccolta digitale pubblica trovata (università, zawiya del Touat). | Bibliothèque nationale d'Algérie (biblioteca digitale non raggiungibile): lettera di Urbino |
 | Marocco | controllata, niente da agganciare | nessuna | Bibliothèque nationale du Royaume du Maroc: nessuna biblioteca digitale pubblica dei manoscritti; il catalogo in linea dà solo la collocazione (prova dal browser del 26 ottobre 2026). | Nessuna nota di rilievo. |
 | Sudan | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
 
@@ -317,7 +318,8 @@ Egitto, Maghreb e Sudan.
 |---|---|---|---|---|---|
 | Egitto | Dar al-Kutub, Il Cairo (Biblioteca e archivi nazionali) | non trovato: nessuna biblioteca digitale aperta nota | non si sa | il fondo ha decine di migliaia di manoscritti; in rete non si sa | media |
 | Egitto | Biblioteca di al-Azhar, Il Cairo (portale dei manoscritti annunciato nel 2011, oggi non verificato) | www.azhar.eg | non si sa | non si sa | bassa |
-| Tunisia | Bibliothèque nationale de Tunisie | www.bnt.nat.tn | non si sa | non si sa | bassa |
+| Tunisia | Bibliothèque nationale de Tunisie | www.bnt.nat.tn | no | circa 24.000 manoscritti; copie digitali solo sulla rete interna (prova del 27 ottobre 2026) | bassa |
+| Algeria | Bibliothèque nationale d'Algérie, biblioteca digitale | digitallibrary.biblionat.dz | non si sa | non si sa (sito non raggiungibile il 27 ottobre 2026) | bassa |
 
 ## Africa subsahariana
 
@@ -395,12 +397,12 @@ Asia centrale, Afghanistan, subcontinente indiano.
 | Nazione | Stato | Nel catalogo | Provate e non entrate | Biblioteche che mancano |
 |---|---|---|---|---|
 | Kazakistan | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
-| Uzbekistan | non ancora controllata | nessuna | nessuna | Istituto di studi orientali Al-Biruni, Tashkent (biblioteca digitale non trovata) |
+| Uzbekistan | controllata, bloccata | nessuna | Istituto di studi orientali Al-Biruni, Tashkent (prova del 27 ottobre 2026): il catalogo elettronico (scam.beruni.uz) ha le schede dei codici e un'interfaccia per le foto, ma l'elenco delle foto è vuoto in tutte le 69 schede provate; le copie elettroniche si danno solo su domanda formale (lettera dell'ente, passaporto, curriculum, decisione di una commissione). «Heritage of Beruni» (heritageof.beruni.uz) raccoglie 170 schede di opere di al-Biruni conservate in altre biblioteche (Iran, Turchia, India, Oxford, Leida, Berlino), nessuna di Tashkent, con foto copiate da quelle biblioteche: non entra. Biblioteca nazionale dell'Uzbekistan (natlib.uz): il robots.txt vieta tutto. | Istituto di studi orientali Al-Biruni (copie solo su domanda): lettera di Urbino |
 | Turkmenistan | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
 | Kirghizistan | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
 | Tagikistan | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
-| Afghanistan | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
-| Pakistan | non ancora controllata | nessuna | nessuna | Nessuna nota di rilievo. |
+| Afghanistan | controllata, niente da agganciare | nessuna | Afghanistan Digital Library della New York University (prova del 27 ottobre 2026): libri e periodici a stampa del 1871-1930, non manoscritti. Afghanistan Centre at Kabul University: documenti moderni; il deposito digitale (afghandata.org, archive.af) è dietro Cloudflare e risponde 403 al server. Archivi nazionali di Kabul: nessuna copia digitale pubblica. | Nessuna raccolta pubblica di manoscritti digitalizzati trovata. |
+| Pakistan | controllata, bloccata | nessuna | Punjab University Library, Lahore (prova del 27 ottobre 2026; www.pulibrary.edu.pk): il fondo più grande del paese (circa 11.400 manoscritti arabi, persiani, urdu e panjabi e 8671 sanscriti e hindi) è digitalizzato solo per vendere le copie su richiesta, nessuna biblioteca digitale pubblica; anche il progetto Woolner (Lahore, Vienna e Geumgang) ha solo pagine informative, senza immagini. National Library of Pakistan (nlp.gov.pk): 580 manoscritti, nessuna copia digitale in rete. | Punjab University Library (copie digitali solo a pagamento): lettera di Urbino |
 | India | agganciata | Jatindramohan Sangrahashala, National Council of Education, Bengal (copie digitali di Penn), Kolkata: 3.279 codici (copie digitali di Penn); Kavikulaguru Kalidas Sanskrit University, Ramtek: 3.003; Government Oriental Manuscripts Library, Chennai: 924; Gurukul Kangri, Haridwar: 196 (queste tre dalle copie su Internet Archive) | nessuna | Missione nazionale per i manoscritti, IGNCA, Khuda Bakhsh, Rampur Raza, Asiatic Society, BORI |
 | Nepal | controllata, niente da agganciare | nessuna biblioteca nepalese; manoscritti sanscriti e newari del Nepal conservati fuori entrano da Cambridge (fonte «cudl») e Berlino (fonte «sbbor») | nessuna | Nepal-German Manuscript Cataloguing Project (immagini non aperte); testi nepalesi e tibetani nel BDRC (vietato dal robots.txt) |
 | Bhutan | non ancora controllata | nessuna | nessuna | Testi bhutanesi nel BDRC |
@@ -420,7 +422,8 @@ Asia centrale, Afghanistan, subcontinente indiano.
 | India | Bhandarkar Oriental Research Institute, Pune | www.bori.ac.in | non si sa | non si sa | bassa |
 | Nepal | Nepal-German Manuscript Cataloguing Project (catalogo; immagini non aperte) | www.ngmcp.uni-hamburg.de | no | decine di migliaia microfilmati | bassa |
 | Sri Lanka | Manoscritti su foglia di palma nei progetti dell'Endangered Archives Programme | eap.bl.uk | non si sa | alcune migliaia (stima) | bassa |
-| Uzbekistan | Istituto di studi orientali Al-Biruni, Tashkent | non trovato | non si sa | non si sa | bassa |
+| Uzbekistan | Istituto di studi orientali Al-Biruni, Tashkent | scam.beruni.uz (solo catalogo) | no | copie solo su domanda formale (prova del 27 ottobre 2026) | media |
+| Pakistan | Punjab University Library, Lahore (con la collezione Woolner) | www.pulibrary.edu.pk | no | digitalizzati in parte, copie solo a pagamento (prova del 27 ottobre 2026) | media |
 
 ## Asia orientale
 
