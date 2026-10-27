@@ -1,0 +1,34 @@
+# Corsia «stampe» (dal 27 ottobre 2026): stampe antiche utili alla filologia, cioè incunaboli (stampati fino al 1500) e edizioni principi
+# dei classici greci e latini, anche del Cinquecento (elenco curato in data/edizioni-principi.json). Fonte «stampe» (scripts/fonti/stampe.mjs):
+#   - Bayerische Staatsbibliothek e biblioteche bavaresi (API di ricerca del MDZ, www.digitale-sammlungen.de/api/search), più una ricerca
+#     mirata per ogni edizione principe del Cinquecento;
+#   - Heidelberg (OAI-PMH, insieme «sammlung13»), Bodleian e Cambridge (collezioni IIIF «incunabula»), Internet Archive (Boston Public
+#     Library e National Library of Medicine), Vaticana (fondo «Inc.» degli stampati, 10 secondi tra le richieste).
+# Bloccate e non usate: e-rara (robots.txt), Gallica (Cloudflare), BSB-Ink (robots.txt). Stato in data/stampe.json.
+# Ruota fino a lettura completa (manifesti di Bodleian, Cambridge e Heidelberg), poi il giro notturno delle 04:20 UTC.
+name: "Raccolta: corsia stampe"
+
+on:
+  schedule:
+    - cron: "20 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write   # per la ruota
+
+concurrency:
+  group: raccolta-stampe
+  cancel-in-progress: false
+
+jobs:
+  corsia:
+    uses: ./.github/workflows/corsia.yml
+    with:
+      corsia: stampe
+      fonti: stampe
+      argomenti: --stampe-minuti=120
+      cache: false
+      ruota: false
+      completa: true
+      flusso: raccolta-stampe.yml

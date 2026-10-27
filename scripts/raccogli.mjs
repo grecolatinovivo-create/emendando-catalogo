@@ -13,7 +13,7 @@
 //        [--nli-minuti=15] [--getty-minuti=15] [--harvard-minuti=10]
 //        [--kbdk-minuti=30] [--uva-minuti=5] [--onb-minuti=30] [--bncf-minuti=5] [--vallicelliana-minuti=5] [--malatestiana-minuti=20] [--polona-minuti=20] [--manuscriptorium-minuti=30] [--archive-minuti=10]
 //        [--crossasia-minuti=30] [--sbbasia-minuti=30] [--sbbor-minuti=30] [--nomfoundation-minuti=20]
-//        [--nb-minuti=60] [--manuscripta-minuti=15] [--bnl-minuti=5] [--ija-minuti=5]
+//        [--nb-minuti=60] [--manuscripta-minuti=15] [--bnl-minuti=5] [--ija-minuti=5] [--stampe-minuti=60]
 // Scrive il catalogo diviso per fonte (vedi costruisci.mjs): data/catalogo/indice.json, data/catalogo/indice/<fonte>-<n>.json, data/catalogo/voci/<fonte>-<n>.json,
 // più data/manoscritti.json (compatibilità: solo i codici con autori classici), e gli stati delle scansioni a riprese
 // (data/vaticana.json, data/bodleian.json, data/laurenziana.json, data/leiden.json, data/heidelberg-indici.json; data/<fonte>.json per le fonti del Handschriftenportal: wolfenbuettel, bamberga, karlsruhe, stoccarda, colonia, lipsia; data/yale.json, data/penn.json, data/walters.json).
@@ -93,6 +93,7 @@ import { scansionaNb, recordNb } from "./fonti/nb.mjs";
 import { scansionaManuscripta, recordManuscripta } from "./fonti/manuscripta.mjs";
 import { scansionaBnl, recordBnl } from "./fonti/bnl.mjs";
 import { scansionaIja, recordIja } from "./fonti/ija.mjs";
+import { scansionaStampe, recordStampe } from "./fonti/stampe.mjs";
 import { scriviRegistro, registraEsiti } from "./registro.mjs";
 import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 import { tipoDa } from "./carte.mjs";
@@ -100,7 +101,7 @@ import { miniatoDa } from "./miniati.mjs";
 import { musicaDa } from "./musica.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
-const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,kbdk,uva,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,bl,isos,manchester,cudl,cbl,parker,nlw,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,auc,northwestern,nli,getty,harvard,nbkm,libfond,bms,archive,crossasia,sbbasia,sbbor,nomfoundation,vaticana").split(",");
+const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,kbdk,uva,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,bl,isos,manchester,cudl,cbl,parker,nlw,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,auc,northwestern,nli,getty,harvard,nbkm,libfond,bms,archive,crossasia,sbbasia,sbbor,nomfoundation,stampe,vaticana").split(",");
 const INIZIO = Date.now();
 export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)", berlino: "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
   bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -180,6 +181,8 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   bnl: "Bibliothèque nationale du Luxembourg (eluxemburgensia.lu; manifesti scritti dal catalogo con le immagini IIIF della biblioteca)",
   // Vicino Oriente e Golfo (corsia «medioriente», dal 27 ottobre 2026)
   ija: "Iraqi Jewish Archive: frammenti di rotoli della Torah e di Ester della comunità ebraica di Baghdad (ijarchive.org, U.S. National Archives; manifesti IIIF del sito)",
+  // stampe antiche (corsia «stampe», dal 27 ottobre 2026): incunaboli e edizioni principi dei classici (scripts/fonti/stampe.mjs)
+  stampe: "Stampe antiche: incunaboli e edizioni principi dei classici (Bayerische Staatsbibliothek e biblioteche bavaresi, Heidelberg, Bodleian, Cambridge, Boston Public Library e National Library of Medicine su Internet Archive, Vaticana)",
   vaticana: "Biblioteca Apostolica Vaticana (digi.vatlib.it)" };
 
 // i tre codici del Truculentus restano sempre nel catalogo, anche se una fonte non li ha ancora restituiti
@@ -219,6 +222,9 @@ export function voce(r, AUTORI, sigle = new Map(TRUCULENTUS.map(t => [t.manifest
   const ind = correggiIndigene(v);
   if (ind) { v.lingue = ind.lingue; v.lingua_dedotta = ind.dedotta; }
   if (r.anteprima) v.anteprima = r.anteprima;
+  // stampe antiche (dal 27 ottobre 2026): luogo e tipografo, contrassegno dell'edizione principe
+  if (r.stampa && Object.keys(r.stampa).length) v.stampa = r.stampa;
+  if (r.editio_princeps) v.editio_princeps = r.editio_princeps;
   if (sigla) v.truculentus = sigla;
   // carte geografiche manoscritte (dal 26 ottobre 2026): categoria a parte, «tipo: "carta"»; i codici restano senza campo (scripts/carte.mjs)
   const tipo = tipoDa({ tipo: r.tipo, titolo: r.titolo, descrizione: r.descrizione, generi: r.generi, tecnica: r.tecnica, segnatura: v.segnatura });
@@ -443,6 +449,18 @@ async function main() {
     bnl: async () => recordBnl(await scansionaBnl({ minuti: min("bnl", +(arg["bnl-minuti"] ?? 5)), soloCache: sc("bnl") })),
     // Vicino Oriente e Golfo (corsia «medioriente», dal 27 ottobre 2026): Iraqi Jewish Archive (Omeka S, manifesti IIIF del sito)
     ija: async () => recordIja(await scansionaIja({ minuti: min("ija", +(arg["ija-minuti"] ?? 5)), soloCache: sc("ija") })),
+    // stampe antiche (corsia «stampe», dal 27 ottobre 2026): incunaboli e edizioni principi; stato in data/stampe.json. Le copie che il
+    // catalogo ha già da altre fonti (stesso manifesto) restano a quelle fonti
+    stampe: async () => {
+      let st;
+      try { st = await scansionaStampe({ minuti: min("stampe", +(arg["stampe-minuti"] ?? 60)), soloCache: sc("stampe") }); }
+      catch (e) { if (!e.stato) throw e; log("stampe", e.message); st = e.stato; }
+      const gia = new Set(Object.keys(perFonte).filter(f => f !== "stampe").flatMap(f => perFonte[f].map(r => r.manifest)));
+      for (const v of prima) if (v.fonte !== "stampe" && !perFonte[v.fonte]) gia.add(v.manifest);
+      const rs = recordStampe(st).filter(r => !gia.has(r.manifest));
+      dettagli.stampe = { incunaboli: rs.filter(r => r.tipo === "incunabolo").length, edizioni_principi: rs.filter(r => r.editio_princeps).length };
+      return rs;
+    },
     vaticana: async () => {
       let minuti = +(arg["vaticana-minuti"] ?? 20);
       // con un tempo complessivo si lasciano 10 minuti per costruire il catalogo, provarlo e salvarlo

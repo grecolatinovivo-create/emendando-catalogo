@@ -587,6 +587,41 @@ Un solo aggregatore può coprire molte nazioni insieme.
 | Handschriftenportal | handschriftenportal.de | rimanda ai manifesti delle biblioteche | tutte le biblioteche tedesche | — | Già usato per sei biblioteche tedesche. È la strada per molte biblioteche tedesche che mancano. |
 | Fragmentarium | fragmentarium.ms | sì | alcune migliaia di frammenti medievali | bassa | Non è nel registro. |
 
+## Stampe antiche
+
+Dal 27 ottobre 2026 il catalogo comprende anche le stampe antiche utili alla filologia: gli incunaboli (stampati fino al 1500) e le edizioni principi dei classici greci e latini, anche del Cinquecento. Le altre cinquecentine restano fuori.
+Fonte «stampe» (scripts/fonti/stampe.mjs), corsia «stampe» (.github/workflows/raccolta-stampe.yml), stato in data/stampe.json.
+Nell'indice le voci hanno «tipo» «incunabolo» oppure «stampa» (edizione principe cinquecentesca) e, per le edizioni principi, il contrassegno «editio_princeps». Contano nei totali e nei conteggi delle biblioteche; «manoscritti» e «stampe_antiche» danno i totali separati.
+
+### Edizioni principi
+
+Elenco curato in data/edizioni-principi.json: 104 edizioni (autore, opera, luogo, tipografo, anno), dalle prime stampe romane e veneziane dei classici latini (1465-1475) alle aldine e alle edizioni di Basilea e Parigi del Cinquecento, fino a Fedro (Troyes 1596) e Longo (Firenze 1598).
+Il riconoscimento confronta autore, opera, anni, luogo e tipografo della scheda della biblioteca. Al primo giro (27 ottobre 2026) le copie digitali trovate sono 105, per 53 edizioni diverse. Le altre aspettano copie digitali in IIIF nelle fonti agganciate.
+
+### Fonti agganciate
+
+| Biblioteca | Come | Stampe nel catalogo (27 ottobre 2026) | Stima a lettura finita |
+|---|---|---|---|
+| Bayerische Staatsbibliothek e biblioteche bavaresi (MDZ) | API di ricerca del sito (www.digitale-sammlungen.de/api/search), stampati fino al 1500; ricerca mirata per ogni edizione principe del Cinquecento | 9.369 (tra cui 53 edizioni principi del Cinquecento) | 9.369 (lettura completa) |
+| Boston Public Library (Internet Archive, collezione bplscinc) | ricerca di Internet Archive | 315 | 315 |
+| Universitätsbibliothek Heidelberg | OAI-PMH, insieme «sammlung13» (Inkunabeln), poi l'inizio dei manifesti | 232 | 232 |
+| National Library of Medicine (Internet Archive) | ricerca di Internet Archive, data fino al 1500 | 151 | 151 |
+| Cambridge University Library | collezione IIIF «incunabula» | 46 | 46 |
+| Bodleian Libraries | collezione IIIF «incunabula» (Incunabula and Blockbooks), 701 manifesti | 46 (lettura in corso: 651 manifesti da leggere) | circa 650 |
+| Biblioteca Apostolica Vaticana | fondo «Inc.» degli stampati (digi.vatlib.it/stp) | 5 | 5 |
+
+In tutto: 10.164 stampe antiche al primo giro (10.111 incunaboli e 53 edizioni principi del Cinquecento); stima a lettura finita circa 10.770 (manca quasi tutta la Bodleian, che la corsia legge nei prossimi giri).
+
+### Bloccate o non usate
+
+| Biblioteca | Motivo |
+|---|---|
+| e-rara (biblioteche svizzere) | Il robots.txt vieta tutto agli agenti generici, anche l'OAI-PMH. Non si usa. |
+| Gallica (BnF) | Cloudflare respinge le richieste dei server (403). Non si usa. |
+| BSB-Ink (inkunabeln.digitale-sammlungen.de) | Il robots.txt vieta tutto. Gli stessi incunaboli si leggono dall'API di ricerca del MDZ. |
+| Vaticana, altri fondi degli stampati (Aldine, Stamp. Ross. e altri, circa 1.200 volumi) | I manifesti degli stampati hanno solo la segnatura, senza titolo, autore o data: non si riconoscono incunaboli ed edizioni principi. |
+| ISTC e GW | Non usati: i metadati vengono dalle schede delle biblioteche. |
+
 ## Da dove vengono i dati
 
 - Biblioteche e codici nel catalogo: data/catalogo/indice.json (fonti, biblioteche e righe dell'indice).

@@ -1,0 +1,2012 @@
+{
+ "nota": "Elenco curato delle editiones principes dei classici greci e latini (autore, opera, luogo, tipografo, anno). «riconosci» serve a collegare le copie digitali: «autore» si cerca in autori e titolo della scheda, «opera» (se c'è) nel titolo, «anni» nella datazione, «luogo» (chiave di «luoghi») nel luogo di stampa quando la scheda lo dà; «parola» è il termine della ricerca mirata nella Bayerische Staatsbibliothek per le edizioni del Cinquecento. Datazioni e tipografi secondo i repertori correnti (ISTC, GW, EDIT16); le voci con «c.» o tra parentesi quadre sono attribuite. «tipografo» (se c'è) si cerca nel nome del tipografo quando la scheda lo dà; per le edizioni greche senza tipografo nella scheda serve la lingua greca (scheda o titolo).",
+ "luoghi": {
+  "venezia": "venez|venedig|venice|venet|venise|vinegia",
+  "roma": "(^|[^a-z])rom(a|ae|e)?([^a-z]|$)",
+  "firenze": "firenz|florenz|florence|florent",
+  "milano": "milan|mailand|mediolan",
+  "basilea": "basel|basil|bâle",
+  "parigi": "paris|parigi|lutet",
+  "strasburgo": "stra(ss|ß)burg|strasbourg|argentor",
+  "norimberga": "n(ü|u|ue)rnberg|nuremberg|norimberg|norimb",
+  "bologna": "bologn|bonon",
+  "napoli": "napol|neapel|naples|neapol",
+  "brescia": "bresc|brixi",
+  "ferrara": "ferrar",
+  "vicenza": "vicenz|vicentia|vicetia",
+  "zurigo": "z(ü|u|ue)rich|tigur",
+  "hagenau": "hagenau|haguenau|hagano",
+  "troyes": "troyes|tricass",
+  "subiaco": "subiaco|sublac",
+  "magonza": "mainz|magonz|mogunt|mayence"
+ },
+ "edizioni": [
+  {
+   "id": "cicerone-de-officiis",
+   "autore": "Cicerone",
+   "opera": "De officiis; Paradoxa Stoicorum",
+   "lingua": "la",
+   "luogo": "Magonza",
+   "tipografo": "Johann Fust e Peter Schoeffer",
+   "anno": "1465",
+   "riconosci": {
+    "autore": "cicer|tull",
+    "opera": "offic",
+    "anni": [
+     1465,
+     1466
+    ],
+    "luogo": "magonza",
+    "parola": "Cicero",
+    "tipografo": "fust|sch(o|ö|oe)ffer"
+   }
+  },
+  {
+   "id": "cicerone-de-oratore",
+   "autore": "Cicerone",
+   "opera": "De oratore",
+   "lingua": "la",
+   "luogo": "Subiaco",
+   "tipografo": "Konrad Sweynheym e Arnold Pannartz",
+   "anno": "c. 1465",
+   "riconosci": {
+    "autore": "cicer|tull",
+    "opera": "\\borat",
+    "anni": [
+     1465,
+     1466
+    ],
+    "luogo": "subiaco",
+    "parola": "Cicero",
+    "tipografo": "sweynheym|pannartz|swe[iy]nhe[iy]m"
+   }
+  },
+  {
+   "id": "cicerone-ad-familiares",
+   "autore": "Cicerone",
+   "opera": "Epistulae ad familiares",
+   "lingua": "la",
+   "luogo": "Roma",
+   "tipografo": "Konrad Sweynheym e Arnold Pannartz",
+   "anno": "1467",
+   "riconosci": {
+    "autore": "cicer|tull",
+    "opera": "famil|epist",
+    "anni": [
+     1467,
+     1467
+    ],
+    "luogo": "roma",
+    "parola": "Cicero",
+    "tipografo": "sweynheym|pannartz|swe[iy]nhe[iy]m"
+   }
+  },
+  {
+   "id": "cicerone-ad-atticum",
+   "autore": "Cicerone",
+   "opera": "Epistulae ad Atticum, ad Brutum, ad Quintum fratrem",
+   "lingua": "la",
+   "luogo": "Roma",
+   "tipografo": "Konrad Sweynheym e Arnold Pannartz",
+   "anno": "1470",
+   "riconosci": {
+    "autore": "cicer|tull",
+    "opera": "attic",
+    "anni": [
+     1470,
+     1470
+    ],
+    "luogo": "roma",
+    "parola": "Cicero",
+    "tipografo": "sweynheym|pannartz|swe[iy]nhe[iy]m"
+   }
+  },
+  {
+   "id": "cicerone-orationes",
+   "autore": "Cicerone",
+   "opera": "Orationes",
+   "lingua": "la",
+   "luogo": "Roma",
+   "tipografo": "Konrad Sweynheym e Arnold Pannartz",
+   "anno": "1471",
+   "riconosci": {
+    "autore": "cicer|tull",
+    "opera": "oration",
+    "anni": [
+     1471,
+     1471
+    ],
+    "luogo": "roma",
+    "parola": "Cicero",
+    "tipografo": "sweynheym|pannartz|swe[iy]nhe[iy]m"
+   }
+  },
+  {
+   "id": "cicerone-opera",
+   "autore": "Cicerone",
+   "opera": "Opera omnia",
+   "lingua": "la",
+   "luogo": "Milano",
+   "tipografo": "Alessandro Minuziano",
+   "anno": "1498-1499",
+   "riconosci": {
+    "autore": "cicer|tull",
+    "opera": "opera",
+    "anni": [
+     1498,
+     1499
+    ],
+    "luogo": "milano",
+    "parola": "Cicero",
+    "tipografo": "minuzian|minutian"
+   }
+  },
+  {
+   "id": "cesare",
+   "autore": "Cesare",
+   "opera": "Commentarii",
+   "lingua": "la",
+   "luogo": "Roma",
+   "tipografo": "Konrad Sweynheym e Arnold Pannartz",
+   "anno": "1469",
+   "riconosci": {
+    "autore": "caesar,? ?(gaius|caius|c\\.)?|iulius caesar|julius caesar",
+    "opera": "comment|bell",
+    "anni": [
+     1469,
+     1469
+    ],
+    "luogo": "roma",
+    "parola": "Caesar",
+    "tipografo": "sweynheym|pannartz|swe[iy]nhe[iy]m"
+   }
+  },
+  {
+   "id": "livio",
+   "autore": "Tito Livio",
+   "opera": "Ab urbe condita",
+   "lingua": "la",
+   "luogo": "Roma",
+   "tipografo": "Konrad Sweynheym e Arnold Pannartz",
+   "anno": "c. 1469",
+   "riconosci": {
+    "autore": "\\blivi(us|o)\\b|titus livius|t\\. livius",
+    "anni": [
+     1469,
+     1470
+    ],
+    "luogo": "roma",
+    "parola": "Livius",
+    "tipografo": "sweynheym|pannartz|swe[iy]nhe[iy]m"
+   }
+  },
+  {
+   "id": "virgilio",
+   "autore": "Virgilio",
+   "opera": "Opera",
+   "lingua": "la",
+   "luogo": "Roma",
+   "tipografo": "Konrad Sweynheym e Arnold Pannartz",
+   "anno": "c. 1469",
+   "riconosci": {
+    "autore": "vergil|virgil",
+    "anni": [
+     1469,
+     1470
+    ],
+    "luogo": "roma",
+    "parola": "Vergilius",
+    "tipografo": "sweynheym|pannartz|swe[iy]nhe[iy]m"
+   }
+  },
+  {
+   "id": "lucano",
+   "autore": "Lucano",
+   "opera": "Pharsalia",
+   "lingua": "la",
+   "luogo": "Roma",
+   "tipografo": "Konrad Sweynheym e Arnold Pannartz",
+   "anno": "1469",
+   "riconosci": {
+    "autore": "lucan",
+    "anni": [
+     1469,
+     1469
+    ],
+    "luogo": "roma",
+    "parola": "Lucanus",
+    "tipografo": "sweynheym|pannartz|swe[iy]nhe[iy]m"
+   }
+  },
+  {
+   "id": "apuleio",
+   "autore": "Apuleio",
+   "opera": "Opera",
+   "lingua": "la",
+   "luogo": "Roma",
+   "tipografo": "Konrad Sweynheym e Arnold Pannartz",
+   "anno": "1469",
+   "riconosci": {
+    "autore": "apulei",
+    "anni": [
+     1469,
+     1469
+    ],
+    "luogo": "roma",
+    "parola": "Apuleius",
+    "tipografo": "sweynheym|pannartz|swe[iy]nhe[iy]m"
+   }
+  },
+  {
+   "id": "gellio",
+   "autore": "Aulo Gellio",
+   "opera": "Noctes Atticae",
+   "lingua": "la",
+   "luogo": "Roma",
+   "tipografo": "Konrad Sweynheym e Arnold Pannartz",
+   "anno": "1469",
+   "riconosci": {
+    "autore": "gelli",
+    "anni": [
+     1469,
+     1469
+    ],
+    "luogo": "roma",
+    "parola": "Gellius",
+    "tipografo": "sweynheym|pannartz|swe[iy]nhe[iy]m"
+   }
+  },
+  {
+   "id": "plinio-vecchio",
+   "autore": "Plinio il Vecchio",
+   "opera": "Naturalis historia",
+   "lingua": "la",
+   "luogo": "Venezia",
+   "tipografo": "Giovanni da Spira",
+   "anno": "1469",
+   "riconosci": {
+    "autore": "plini",
+    "opera": "natural|histor",
+    "anni": [
+     1469,
+     1469
+    ],
+    "luogo": "venezia",
+    "parola": "Plinius",
+    "tipografo": "spira|speyer"
+   }
+  },
+  {
+   "id": "plauto",
+   "autore": "Plauto",
+   "opera": "Comoediae",
+   "lingua": "la",
+   "luogo": "Venezia",
+   "tipografo": "Vindelino da Spira",
+   "anno": "1472",
+   "riconosci": {
+    "autore": "plaut",
+    "anni": [
+     1472,
+     1472
+    ],
+    "luogo": "venezia",
+    "parola": "Plautus",
+    "tipografo": "vindelin|wendelin|windelin|spira|speyer"
+   }
+  },
+  {
+   "id": "terenzio",
+   "autore": "Terenzio",
+   "opera": "Comoediae",
+   "lingua": "la",
+   "luogo": "Strasburgo",
+   "tipografo": "Johann Mentelin",
+   "anno": "c. 1470",
+   "riconosci": {
+    "autore": "terent",
+    "anni": [
+     1469,
+     1471
+    ],
+    "luogo": "strasburgo",
+    "parola": "Terentius",
+    "tipografo": "mentelin"
+   }
+  },
+  {
+   "id": "ovidio",
+   "autore": "Ovidio",
+   "opera": "Opera",
+   "lingua": "la",
+   "luogo": "Bologna",
+   "tipografo": "Baldassarre Azzoguidi",
+   "anno": "1471",
+   "riconosci": {
+    "autore": "ovid",
+    "anni": [
+     1471,
+     1471
+    ],
+    "luogo": "bologna",
+    "parola": "Ovidius",
+    "tipografo": "azzoguid|azoguid"
+   }
+  },
+  {
+   "id": "orazio",
+   "autore": "Orazio",
+   "opera": "Opera",
+   "lingua": "la",
+   "luogo": "[Italia]",
+   "tipografo": "[tipografo dell'Orazio]",
+   "anno": "c. 1471",
+   "riconosci": {
+    "autore": "horat|horaz",
+    "opera": "carmin|opera|\\bod(ae|arum|e)\\b|horat|epist|sermon|poet",
+    "anni": [
+     1470,
+     1472
+    ],
+    "parola": "Horatius"
+   }
+  },
+  {
+   "id": "giovenale",
+   "autore": "Giovenale",
+   "opera": "Saturae",
+   "lingua": "la",
+   "luogo": "Roma",
+   "tipografo": "Ulrich Han",
+   "anno": "c. 1469-1470",
+   "riconosci": {
+    "autore": "iuvenal|juvenal",
+    "anni": [
+     1469,
+     1470
+    ],
+    "luogo": "roma",
+    "parola": "Juvenalis",
+    "tipografo": "\\bhan\\b|gallus"
+   }
+  },
+  {
+   "id": "persio",
+   "autore": "Persio",
+   "opera": "Saturae",
+   "lingua": "la",
+   "luogo": "Roma",
+   "tipografo": "Ulrich Han",
+   "anno": "c. 1469-1470",
+   "riconosci": {
+    "autore": "\\bpersi(us|i|o)\\b",
+    "anni": [
+     1469,
+     1470
+    ],
+    "luogo": "roma",
+    "parola": "Persius",
+    "tipografo": "\\bhan\\b|gallus"
+   }
+  },
+  {
+   "id": "catullo-tibullo-properzio",
+   "autore": "Catullo, Tibullo, Properzio, Stazio",
+   "opera": "Carmina; Elegiae; Silvae",
+   "lingua": "la",
+   "luogo": "Venezia",
+   "tipografo": "Vindelino da Spira",
+   "anno": "1472",
+   "riconosci": {
+    "autore": "catull|tibull|properti|properz",
+    "anni": [
+     1472,
+     1472
+    ],
+    "luogo": "venezia",
+    "parola": "Catullus",
+    "tipografo": "vindelin|wendelin|windelin|spira|speyer"
+   }
+  },
+  {
+   "id": "svetonio",
+   "autore": "Svetonio",
+   "opera": "De vita Caesarum",
+   "lingua": "la",
+   "luogo": "Roma",
+   "tipografo": "Konrad Sweynheym e Arnold Pannartz",
+   "anno": "1470",
+   "riconosci": {
+    "autore": "sueton|svetoni",
+    "anni": [
+     1470,
+     1470
+    ],
+    "luogo": "roma",
+    "parola": "Suetonius",
+    "tipografo": "sweynheym|pannartz|swe[iy]nhe[iy]m"
+   }
+  },
+  {
+   "id": "quintiliano",
+   "autore": "Quintiliano",
+   "opera": "Institutio oratoria",
+   "lingua": "la",
+   "luogo": "Roma",
+   "tipografo": "Giovanni Filippo de Lignamine",
+   "anno": "1470",
+   "riconosci": {
+    "autore": "quintilian",
+    "anni": [
+     1470,
+     1470
+    ],
+    "luogo": "roma",
+    "parola": "Quintilianus",
+    "tipografo": "lignamin"
+   }
+  },
+  {
+   "id": "sallustio",
+   "autore": "Sallustio",
+   "opera": "Bellum Catilinae; Bellum Iugurthinum",
+   "lingua": "la",
+   "luogo": "Venezia",
+   "tipografo": "Vindelino da Spira",
+   "anno": "1470",
+   "riconosci": {
+    "autore": "sallust",
+    "anni": [
+     1470,
+     1470
+    ],
+    "luogo": "venezia",
+    "parola": "Sallustius",
+    "tipografo": "vindelin|wendelin|windelin|spira|speyer"
+   }
+  },
+  {
+   "id": "tacito",
+   "autore": "Tacito",
+   "opera": "Annales XI-XVI, Historiae, Germania, Dialogus de oratoribus",
+   "lingua": "la",
+   "luogo": "Venezia",
+   "tipografo": "Vindelino da Spira",
+   "anno": "c. 1472",
+   "riconosci": {
+    "autore": "tacit",
+    "anni": [
+     1470,
+     1473
+    ],
+    "luogo": "venezia",
+    "parola": "Tacitus",
+    "tipografo": "vindelin|wendelin|windelin|spira|speyer"
+   }
+  },
+  {
+   "id": "tacito-annales-1-6",
+   "autore": "Tacito",
+   "opera": "Annales I-VI",
+   "lingua": "la",
+   "luogo": "Roma",
+   "tipografo": "Étienne Guillery (a cura di Filippo Beroaldo il Giovane)",
+   "anno": "1515",
+   "riconosci": {
+    "autore": "tacit",
+    "anni": [
+     1515,
+     1515
+    ],
+    "luogo": "roma",
+    "parola": "Tacitus",
+    "tipografo": "guiller|guillir"
+   }
+  },
+  {
+   "id": "nepote",
+   "autore": "Cornelio Nepote",
+   "opera": "Vitae (sotto il nome di Emilio Probo)",
+   "lingua": "la",
+   "luogo": "Venezia",
+   "tipografo": "Nicolas Jenson",
+   "anno": "1471",
+   "riconosci": {
+    "autore": "nepos|nepot|aemili(us)? prob",
+    "anni": [
+     1471,
+     1471
+    ],
+    "luogo": "venezia",
+    "parola": "Nepos",
+    "tipografo": "jenson|ienson"
+   }
+  },
+  {
+   "id": "valerio-massimo",
+   "autore": "Valerio Massimo",
+   "opera": "Facta et dicta memorabilia",
+   "lingua": "la",
+   "luogo": "Strasburgo",
+   "tipografo": "Johann Mentelin",
+   "anno": "c. 1470",
+   "riconosci": {
+    "autore": "valeri(us)? maxim",
+    "anni": [
+     1469,
+     1471
+    ],
+    "luogo": "strasburgo",
+    "parola": "Valerius Maximus",
+    "tipografo": "mentelin"
+   }
+  },
+  {
+   "id": "lucrezio",
+   "autore": "Lucrezio",
+   "opera": "De rerum natura",
+   "lingua": "la",
+   "luogo": "Brescia",
+   "tipografo": "Tommaso Ferrando",
+   "anno": "c. 1473",
+   "riconosci": {
+    "autore": "lucret",
+    "anni": [
+     1472,
+     1474
+    ],
+    "luogo": "brescia",
+    "parola": "Lucretius",
+    "tipografo": "ferrand"
+   }
+  },
+  {
+   "id": "seneca-opera",
+   "autore": "Seneca",
+   "opera": "Opera philosophica",
+   "lingua": "la",
+   "luogo": "Napoli",
+   "tipografo": "Mattia Moravo",
+   "anno": "1475",
+   "riconosci": {
+    "autore": "seneca",
+    "anni": [
+     1475,
+     1475
+    ],
+    "luogo": "napoli",
+    "parola": "Seneca",
+    "tipografo": "morav"
+   }
+  },
+  {
+   "id": "seneca-tragoediae",
+   "autore": "Seneca",
+   "opera": "Tragoediae",
+   "lingua": "la",
+   "luogo": "Ferrara",
+   "tipografo": "Andrea Belforte",
+   "anno": "c. 1484",
+   "riconosci": {
+    "autore": "seneca",
+    "opera": "trag",
+    "anni": [
+     1478,
+     1485
+    ],
+    "luogo": "ferrara",
+    "parola": "Seneca",
+    "tipografo": "belfort"
+   }
+  },
+  {
+   "id": "manilio",
+   "autore": "Manilio",
+   "opera": "Astronomica",
+   "lingua": "la",
+   "luogo": "Norimberga",
+   "tipografo": "Regiomontano",
+   "anno": "c. 1473",
+   "riconosci": {
+    "autore": "manili",
+    "anni": [
+     1472,
+     1474
+    ],
+    "luogo": "norimberga",
+    "parola": "Manilius",
+    "tipografo": "regiomontan|m(ü|u|ue)ller"
+   }
+  },
+  {
+   "id": "celso",
+   "autore": "Celso",
+   "opera": "De medicina",
+   "lingua": "la",
+   "luogo": "Firenze",
+   "tipografo": "Niccolò di Lorenzo",
+   "anno": "1478",
+   "riconosci": {
+    "autore": "\\bcels(us|i|o)\\b",
+    "anni": [
+     1478,
+     1478
+    ],
+    "luogo": "firenze",
+    "parola": "Celsus",
+    "tipografo": "lorenz|laurenti"
+   }
+  },
+  {
+   "id": "vitruvio",
+   "autore": "Vitruvio",
+   "opera": "De architectura",
+   "lingua": "la",
+   "luogo": "Roma",
+   "tipografo": "Eucharius Silber (a cura di Giovanni Sulpicio)",
+   "anno": "c. 1486",
+   "riconosci": {
+    "autore": "vitruv",
+    "anni": [
+     1486,
+     1487
+    ],
+    "luogo": "roma",
+    "parola": "Vitruvius",
+    "tipografo": "silber|argenteus|eucharius"
+   }
+  },
+  {
+   "id": "silio-italico",
+   "autore": "Silio Italico",
+   "opera": "Punica",
+   "lingua": "la",
+   "luogo": "Roma",
+   "tipografo": "Konrad Sweynheym e Arnold Pannartz",
+   "anno": "1471",
+   "riconosci": {
+    "autore": "\\bsili(us|i|o)\\b",
+    "anni": [
+     1471,
+     1471
+    ],
+    "luogo": "roma",
+    "parola": "Silius",
+    "tipografo": "sweynheym|pannartz|swe[iy]nhe[iy]m"
+   }
+  },
+  {
+   "id": "valerio-flacco",
+   "autore": "Valerio Flacco",
+   "opera": "Argonautica",
+   "lingua": "la",
+   "luogo": "Bologna",
+   "tipografo": "Ugo Ruggeri e Donnino Bertocchi",
+   "anno": "1474",
+   "riconosci": {
+    "autore": "valeri(us)? flacc",
+    "anni": [
+     1474,
+     1474
+    ],
+    "luogo": "bologna",
+    "parola": "Valerius Flaccus",
+    "tipografo": "rug(g)?er|bertoch"
+   }
+  },
+  {
+   "id": "plinio-giovane",
+   "autore": "Plinio il Giovane",
+   "opera": "Epistulae",
+   "lingua": "la",
+   "luogo": "Venezia",
+   "tipografo": "Cristoforo Valdarfer",
+   "anno": "1471",
+   "riconosci": {
+    "autore": "plini",
+    "opera": "epist",
+    "anni": [
+     1471,
+     1471
+    ],
+    "luogo": "venezia",
+    "parola": "Plinius",
+    "tipografo": "valdarfer|waldarfer"
+   }
+  },
+  {
+   "id": "curzio-rufo",
+   "autore": "Curzio Rufo",
+   "opera": "Historiae Alexandri Magni",
+   "lingua": "la",
+   "luogo": "Roma",
+   "tipografo": "Georg Lauer",
+   "anno": "c. 1470",
+   "riconosci": {
+    "autore": "curti",
+    "anni": [
+     1470,
+     1472
+    ],
+    "luogo": "roma",
+    "parola": "Curtius",
+    "tipografo": "lauer"
+   }
+  },
+  {
+   "id": "floro",
+   "autore": "Floro",
+   "opera": "Epitome",
+   "lingua": "la",
+   "luogo": "Parigi",
+   "tipografo": "Ulrich Gering, Martin Crantz e Michael Friburger",
+   "anno": "c. 1471",
+   "riconosci": {
+    "autore": "\\bflor(us|i|o)\\b",
+    "anni": [
+     1470,
+     1472
+    ],
+    "luogo": "parigi",
+    "parola": "Florus",
+    "tipografo": "gering|crantz|friburger"
+   }
+  },
+  {
+   "id": "giustino",
+   "autore": "Giustino",
+   "opera": "Epitoma historiarum Philippicarum",
+   "lingua": "la",
+   "luogo": "Venezia",
+   "tipografo": "Nicolas Jenson",
+   "anno": "1470",
+   "riconosci": {
+    "autore": "iustin(us|i)\\b|justin(us|i)\\b",
+    "anni": [
+     1470,
+     1470
+    ],
+    "luogo": "venezia",
+    "parola": "Justinus",
+    "tipografo": "jenson|ienson"
+   }
+  },
+  {
+   "id": "eutropio",
+   "autore": "Eutropio",
+   "opera": "Breviarium ab urbe condita",
+   "lingua": "la",
+   "luogo": "Roma",
+   "tipografo": "Georg Lauer",
+   "anno": "1471",
+   "riconosci": {
+    "autore": "eutrop",
+    "anni": [
+     1471,
+     1471
+    ],
+    "luogo": "roma",
+    "parola": "Eutropius",
+    "tipografo": "lauer"
+   }
+  },
+  {
+   "id": "macrobio",
+   "autore": "Macrobio",
+   "opera": "Saturnalia; Commentarii in Somnium Scipionis",
+   "lingua": "la",
+   "luogo": "Venezia",
+   "tipografo": "Nicolas Jenson",
+   "anno": "1472",
+   "riconosci": {
+    "autore": "macrob",
+    "anni": [
+     1472,
+     1472
+    ],
+    "luogo": "venezia",
+    "parola": "Macrobius",
+    "tipografo": "jenson|ienson"
+   }
+  },
+  {
+   "id": "varrone-lingua-latina",
+   "autore": "Varrone",
+   "opera": "De lingua Latina",
+   "lingua": "la",
+   "luogo": "Roma",
+   "tipografo": "Georg Lauer",
+   "anno": "c. 1471",
+   "riconosci": {
+    "autore": "varr",
+    "opera": "lingua",
+    "anni": [
+     1471,
+     1472
+    ],
+    "luogo": "roma",
+    "parola": "Varro",
+    "tipografo": "lauer"
+   }
+  },
+  {
+   "id": "scriptores-rei-rusticae",
+   "autore": "Catone, Varrone, Columella, Palladio",
+   "opera": "Scriptores rei rusticae",
+   "lingua": "la",
+   "luogo": "Venezia",
+   "tipografo": "Nicolas Jenson",
+   "anno": "1472",
+   "riconosci": {
+    "autore": "columell|rei rustic|re rustic|palladi",
+    "anni": [
+     1472,
+     1472
+    ],
+    "luogo": "venezia",
+    "parola": "Columella",
+    "tipografo": "jenson|ienson"
+   }
+  },
+  {
+   "id": "ausonio",
+   "autore": "Ausonio",
+   "opera": "Opera",
+   "lingua": "la",
+   "luogo": "Venezia",
+   "tipografo": "Bartolomeo Girardini",
+   "anno": "1472",
+   "riconosci": {
+    "autore": "auson",
+    "anni": [
+     1472,
+     1472
+    ],
+    "luogo": "venezia",
+    "parola": "Ausonius",
+    "tipografo": "girardin"
+   }
+  },
+  {
+   "id": "claudiano",
+   "autore": "Claudiano",
+   "opera": "Carmina",
+   "lingua": "la",
+   "luogo": "Vicenza",
+   "tipografo": "Jacopo Dusense",
+   "anno": "1482",
+   "riconosci": {
+    "autore": "claudian",
+    "anni": [
+     1482,
+     1482
+    ],
+    "luogo": "vicenza",
+    "parola": "Claudianus",
+    "tipografo": "dusens|lichtenstein"
+   }
+  },
+  {
+   "id": "velleio",
+   "autore": "Velleio Patercolo",
+   "opera": "Historiae Romanae",
+   "lingua": "la",
+   "luogo": "Basilea",
+   "tipografo": "Johann Froben (a cura di Beatus Rhenanus)",
+   "anno": "1520",
+   "riconosci": {
+    "autore": "vellei",
+    "anni": [
+     1520,
+     1521
+    ],
+    "luogo": "basilea",
+    "parola": "Velleius",
+    "tipografo": "froben|frobenius"
+   }
+  },
+  {
+   "id": "ammiano",
+   "autore": "Ammiano Marcellino",
+   "opera": "Res gestae (libri XIV-XXVI)",
+   "lingua": "la",
+   "luogo": "Roma",
+   "tipografo": "Giorgio Sachsel e Bartolomeo Golsch",
+   "anno": "1474",
+   "riconosci": {
+    "autore": "ammian",
+    "anni": [
+     1474,
+     1474
+    ],
+    "luogo": "roma",
+    "parola": "Ammianus",
+    "tipografo": "sachsel|golsch"
+   }
+  },
+  {
+   "id": "historia-augusta",
+   "autore": "Scriptores Historiae Augustae",
+   "opera": "Historia Augusta",
+   "lingua": "la",
+   "luogo": "Milano",
+   "tipografo": "Filippo Lavagna",
+   "anno": "1475",
+   "riconosci": {
+    "autore": "historia(e)? august|scriptores historiae|spartian|capitolin|lamprid",
+    "anni": [
+     1475,
+     1475
+    ],
+    "luogo": "milano",
+    "parola": "Historia Augusta",
+    "tipografo": "lavagn"
+   }
+  },
+  {
+   "id": "pomponio-mela",
+   "autore": "Pomponio Mela",
+   "opera": "De chorographia",
+   "lingua": "la",
+   "luogo": "Milano",
+   "tipografo": "Pamfilo Castaldi",
+   "anno": "1471",
+   "riconosci": {
+    "autore": "pomponi(us)? mela|\\bmela\\b",
+    "anni": [
+     1471,
+     1471
+    ],
+    "luogo": "milano",
+    "parola": "Mela",
+    "tipografo": "castald"
+   }
+  },
+  {
+   "id": "solino",
+   "autore": "Solino",
+   "opera": "Collectanea rerum memorabilium",
+   "lingua": "la",
+   "luogo": "Venezia",
+   "tipografo": "Nicolas Jenson",
+   "anno": "1473",
+   "riconosci": {
+    "autore": "solin",
+    "anni": [
+     1473,
+     1473
+    ],
+    "luogo": "venezia",
+    "parola": "Solinus",
+    "tipografo": "jenson|ienson"
+   }
+  },
+  {
+   "id": "igino",
+   "autore": "Igino",
+   "opera": "De astronomia",
+   "lingua": "la",
+   "luogo": "Ferrara",
+   "tipografo": "Agostino Carnerio",
+   "anno": "1475",
+   "riconosci": {
+    "autore": "hygin|igin",
+    "anni": [
+     1475,
+     1475
+    ],
+    "luogo": "ferrara",
+    "parola": "Hyginus",
+    "tipografo": "carner"
+   }
+  },
+  {
+   "id": "servio",
+   "autore": "Servio",
+   "opera": "Commentarii in Vergilium",
+   "lingua": "la",
+   "luogo": "Firenze",
+   "tipografo": "Bernardo Cennini",
+   "anno": "1471-1472",
+   "riconosci": {
+    "autore": "\\bservi(us|i)\\b",
+    "anni": [
+     1471,
+     1472
+    ],
+    "luogo": "firenze",
+    "parola": "Servius",
+    "tipografo": "cennin"
+   }
+  },
+  {
+   "id": "prisciano",
+   "autore": "Prisciano",
+   "opera": "Opera grammatica",
+   "lingua": "la",
+   "luogo": "Venezia",
+   "tipografo": "Vindelino da Spira",
+   "anno": "1470",
+   "riconosci": {
+    "autore": "priscian",
+    "anni": [
+     1470,
+     1470
+    ],
+    "luogo": "venezia",
+    "parola": "Priscianus",
+    "tipografo": "vindelin|wendelin|windelin|spira|speyer"
+   }
+  },
+  {
+   "id": "fedro",
+   "autore": "Fedro",
+   "opera": "Fabulae",
+   "lingua": "la",
+   "luogo": "Troyes",
+   "tipografo": "Jean Oudot (a cura di Pierre Pithou)",
+   "anno": "1596",
+   "riconosci": {
+    "autore": "phaedr|phèdre",
+    "anni": [
+     1596,
+     1596
+    ],
+    "luogo": "troyes",
+    "parola": "Phaedrus",
+    "tipografo": "oudot|odot"
+   }
+  },
+  {
+   "id": "omero",
+   "autore": "Omero",
+   "opera": "Opera (Iliade, Odissea, Inni)",
+   "lingua": "grc",
+   "luogo": "Firenze",
+   "tipografo": "Bartolomeo de' Libri (a cura di Demetrio Calcondila)",
+   "anno": "1488-1489",
+   "riconosci": {
+    "autore": "homer|homér|omero",
+    "anni": [
+     1488,
+     1489
+    ],
+    "luogo": "firenze",
+    "parola": "Homerus",
+    "tipografo": "libri|nerli"
+   }
+  },
+  {
+   "id": "batrachomyomachia",
+   "autore": "Pseudo-Omero",
+   "opera": "Batrachomyomachia",
+   "lingua": "grc",
+   "luogo": "Brescia",
+   "tipografo": "Tommaso Ferrando",
+   "anno": "c. 1474",
+   "riconosci": {
+    "autore": "batrach",
+    "anni": [
+     1473,
+     1475
+    ],
+    "luogo": "brescia",
+    "parola": "Batrachomyomachia",
+    "tipografo": "ferrand"
+   }
+  },
+  {
+   "id": "esopo",
+   "autore": "Esopo",
+   "opera": "Fabulae (in greco, con la Vita)",
+   "lingua": "grc",
+   "luogo": "Milano",
+   "tipografo": "Bono Accorsio",
+   "anno": "c. 1478",
+   "riconosci": {
+    "autore": "aesop|äsop|esop",
+    "anni": [
+     1477,
+     1480
+    ],
+    "luogo": "milano",
+    "parola": "Aesopus",
+    "tipografo": "accurs|accors"
+   }
+  },
+  {
+   "id": "teocrito",
+   "autore": "Teocrito",
+   "opera": "Idilli; Esiodo, Opere e giorni",
+   "lingua": "grc",
+   "luogo": "Milano",
+   "tipografo": "[Bono Accorsio?]",
+   "anno": "c. 1480",
+   "riconosci": {
+    "autore": "theocrit|theokrit",
+    "anni": [
+     1479,
+     1481
+    ],
+    "luogo": "milano",
+    "parola": "Theocritus",
+    "tipografo": "accurs|accors"
+   }
+  },
+  {
+   "id": "isocrate",
+   "autore": "Isocrate",
+   "opera": "Orationes",
+   "lingua": "grc",
+   "luogo": "Milano",
+   "tipografo": "Enrico Germano e Sebastiano da Pontremoli",
+   "anno": "1493",
+   "riconosci": {
+    "autore": "isocrat|isokrat",
+    "anni": [
+     1493,
+     1493
+    ],
+    "luogo": "milano",
+    "parola": "Isocrates",
+    "tipografo": "germanus|pontremol|scinzenzeler"
+   }
+  },
+  {
+   "id": "anthologia-planudea",
+   "autore": "Anthologia Planudea",
+   "opera": "Epigrammi greci",
+   "lingua": "grc",
+   "luogo": "Firenze",
+   "tipografo": "Lorenzo di Alopa (a cura di Giano Lascaris)",
+   "anno": "1494",
+   "riconosci": {
+    "autore": "anthologi|epigramm",
+    "anni": [
+     1494,
+     1494
+    ],
+    "luogo": "firenze",
+    "parola": "Anthologia",
+    "tipografo": "alopa|lascar"
+   }
+  },
+  {
+   "id": "euripide-quattro",
+   "autore": "Euripide",
+   "opera": "Medea, Ippolito, Alcesti, Andromaca",
+   "lingua": "grc",
+   "luogo": "Firenze",
+   "tipografo": "Lorenzo di Alopa",
+   "anno": "c. 1494",
+   "riconosci": {
+    "autore": "euripid",
+    "anni": [
+     1494,
+     1496
+    ],
+    "luogo": "firenze",
+    "parola": "Euripides",
+    "tipografo": "alopa|lascar"
+   }
+  },
+  {
+   "id": "callimaco",
+   "autore": "Callimaco",
+   "opera": "Inni",
+   "lingua": "grc",
+   "luogo": "Firenze",
+   "tipografo": "Lorenzo di Alopa",
+   "anno": "c. 1496",
+   "riconosci": {
+    "autore": "callimach|kallimach",
+    "anni": [
+     1494,
+     1497
+    ],
+    "luogo": "firenze",
+    "parola": "Callimachus",
+    "tipografo": "alopa|lascar"
+   }
+  },
+  {
+   "id": "apollonio-rodio",
+   "autore": "Apollonio Rodio",
+   "opera": "Argonautiche",
+   "lingua": "grc",
+   "luogo": "Firenze",
+   "tipografo": "Lorenzo di Alopa",
+   "anno": "1496",
+   "riconosci": {
+    "autore": "apolloni",
+    "anni": [
+     1496,
+     1496
+    ],
+    "luogo": "firenze",
+    "parola": "Apollonius",
+    "tipografo": "alopa|lascar"
+   }
+  },
+  {
+   "id": "luciano",
+   "autore": "Luciano",
+   "opera": "Opera",
+   "lingua": "grc",
+   "luogo": "Firenze",
+   "tipografo": "Lorenzo di Alopa",
+   "anno": "1496",
+   "riconosci": {
+    "autore": "lucian|lukian",
+    "anni": [
+     1496,
+     1496
+    ],
+    "luogo": "firenze",
+    "parola": "Lucianus",
+    "tipografo": "alopa|lascar"
+   }
+  },
+  {
+   "id": "aristotele",
+   "autore": "Aristotele",
+   "opera": "Opera",
+   "lingua": "grc",
+   "luogo": "Venezia",
+   "tipografo": "Aldo Manuzio",
+   "anno": "1495-1498",
+   "riconosci": {
+    "autore": "aristot",
+    "anni": [
+     1495,
+     1498
+    ],
+    "luogo": "venezia",
+    "parola": "Aristoteles",
+    "tipografo": "\\bald|manut|manuz|torresan|asulan"
+   }
+  },
+  {
+   "id": "teofrasto",
+   "autore": "Teofrasto",
+   "opera": "Opera (nel IV volume dell'Aristotele aldino)",
+   "lingua": "grc",
+   "luogo": "Venezia",
+   "tipografo": "Aldo Manuzio",
+   "anno": "1497",
+   "riconosci": {
+    "autore": "theophrast",
+    "anni": [
+     1497,
+     1497
+    ],
+    "luogo": "venezia",
+    "parola": "Theophrastus",
+    "tipografo": "\\bald|manut|manuz|torresan|asulan"
+   }
+  },
+  {
+   "id": "aristofane",
+   "autore": "Aristofane",
+   "opera": "Nove commedie",
+   "lingua": "grc",
+   "luogo": "Venezia",
+   "tipografo": "Aldo Manuzio",
+   "anno": "1498",
+   "riconosci": {
+    "autore": "aristophan",
+    "anni": [
+     1498,
+     1498
+    ],
+    "luogo": "venezia",
+    "parola": "Aristophanes",
+    "tipografo": "\\bald|manut|manuz|torresan|asulan"
+   }
+  },
+  {
+   "id": "suda",
+   "autore": "Suda",
+   "opera": "Lessico",
+   "lingua": "grc",
+   "luogo": "Milano",
+   "tipografo": "Giovanni Bissoli e Benedetto Mangio (a cura di Demetrio Calcondila)",
+   "anno": "1499",
+   "riconosci": {
+    "autore": "\\bsuid|\\bsuda\\b",
+    "anni": [
+     1499,
+     1499
+    ],
+    "luogo": "milano",
+    "parola": "Suidas",
+    "tipografo": "bissol|mang"
+   }
+  },
+  {
+   "id": "sofocle",
+   "autore": "Sofocle",
+   "opera": "Tragoediae",
+   "lingua": "grc",
+   "luogo": "Venezia",
+   "tipografo": "Aldo Manuzio",
+   "anno": "1502",
+   "riconosci": {
+    "autore": "sophocl|sophokl|sofocl",
+    "anni": [
+     1502,
+     1502
+    ],
+    "luogo": "venezia",
+    "parola": "Sophocles",
+    "tipografo": "\\bald|manut|manuz|torresan|asulan"
+   }
+  },
+  {
+   "id": "tucidide",
+   "autore": "Tucidide",
+   "opera": "Historiae",
+   "lingua": "grc",
+   "luogo": "Venezia",
+   "tipografo": "Aldo Manuzio",
+   "anno": "1502",
+   "riconosci": {
+    "autore": "thucyd|thukyd|tucid",
+    "anni": [
+     1502,
+     1502
+    ],
+    "luogo": "venezia",
+    "parola": "Thucydides",
+    "tipografo": "\\bald|manut|manuz|torresan|asulan"
+   }
+  },
+  {
+   "id": "erodoto",
+   "autore": "Erodoto",
+   "opera": "Historiae",
+   "lingua": "grc",
+   "luogo": "Venezia",
+   "tipografo": "Aldo Manuzio",
+   "anno": "1502",
+   "riconosci": {
+    "autore": "herodot|erodot",
+    "anni": [
+     1502,
+     1502
+    ],
+    "luogo": "venezia",
+    "parola": "Herodotus",
+    "tipografo": "\\bald|manut|manuz|torresan|asulan"
+   }
+  },
+  {
+   "id": "euripide",
+   "autore": "Euripide",
+   "opera": "Diciassette tragedie",
+   "lingua": "grc",
+   "luogo": "Venezia",
+   "tipografo": "Aldo Manuzio",
+   "anno": "1503",
+   "riconosci": {
+    "autore": "euripid",
+    "anni": [
+     1503,
+     1503
+    ],
+    "luogo": "venezia",
+    "parola": "Euripides",
+    "tipografo": "\\bald|manut|manuz|torresan|asulan"
+   }
+  },
+  {
+   "id": "demostene",
+   "autore": "Demostene",
+   "opera": "Orationes",
+   "lingua": "grc",
+   "luogo": "Venezia",
+   "tipografo": "Aldo Manuzio",
+   "anno": "1504",
+   "riconosci": {
+    "autore": "demosthen",
+    "anni": [
+     1504,
+     1504
+    ],
+    "luogo": "venezia",
+    "parola": "Demosthenes",
+    "tipografo": "\\bald|manut|manuz|torresan|asulan"
+   }
+  },
+  {
+   "id": "quinto-smirneo",
+   "autore": "Quinto Smirneo",
+   "opera": "Posthomerica",
+   "lingua": "grc",
+   "luogo": "Venezia",
+   "tipografo": "Aldo Manuzio",
+   "anno": "c. 1505",
+   "riconosci": {
+    "autore": "quint(us)? (smyrn|calab)|smyrnae",
+    "anni": [
+     1504,
+     1505
+    ],
+    "luogo": "venezia",
+    "parola": "Quintus",
+    "tipografo": "\\bald|manut|manuz|torresan|asulan"
+   }
+  },
+  {
+   "id": "plutarco-moralia",
+   "autore": "Plutarco",
+   "opera": "Moralia",
+   "lingua": "grc",
+   "luogo": "Venezia",
+   "tipografo": "Aldo Manuzio",
+   "anno": "1509",
+   "riconosci": {
+    "autore": "plutarch",
+    "anni": [
+     1509,
+     1509
+    ],
+    "luogo": "venezia",
+    "parola": "Plutarchus",
+    "tipografo": "\\bald|manut|manuz|torresan|asulan"
+   }
+  },
+  {
+   "id": "platone",
+   "autore": "Platone",
+   "opera": "Opera",
+   "lingua": "grc",
+   "luogo": "Venezia",
+   "tipografo": "Aldo Manuzio (a cura di Marco Musuro)",
+   "anno": "1513",
+   "riconosci": {
+    "autore": "\\bplato(n|nis)?\\b",
+    "anni": [
+     1513,
+     1513
+    ],
+    "luogo": "venezia",
+    "parola": "Plato",
+    "tipografo": "\\bald|manut|manuz|torresan|asulan"
+   }
+  },
+  {
+   "id": "pindaro",
+   "autore": "Pindaro",
+   "opera": "Epinici",
+   "lingua": "grc",
+   "luogo": "Venezia",
+   "tipografo": "Aldo Manuzio",
+   "anno": "1513",
+   "riconosci": {
+    "autore": "pindar",
+    "anni": [
+     1513,
+     1513
+    ],
+    "luogo": "venezia",
+    "parola": "Pindarus",
+    "tipografo": "\\bald|manut|manuz|torresan|asulan"
+   }
+  },
+  {
+   "id": "oratori-greci",
+   "autore": "Oratori attici",
+   "opera": "Rhetores Graeci: Eschine, Lisia, Andocide, Iseo, Lisia e altri",
+   "lingua": "grc",
+   "luogo": "Venezia",
+   "tipografo": "Aldo Manuzio",
+   "anno": "1513",
+   "riconosci": {
+    "autore": "aeschin|lysia|andocid|isae|orator",
+    "anni": [
+     1513,
+     1513
+    ],
+    "luogo": "venezia",
+    "parola": "Aeschines",
+    "tipografo": "\\bald|manut|manuz|torresan|asulan"
+   }
+  },
+  {
+   "id": "ateneo",
+   "autore": "Ateneo",
+   "opera": "Deipnosophistae",
+   "lingua": "grc",
+   "luogo": "Venezia",
+   "tipografo": "Aldo Manuzio",
+   "anno": "1514",
+   "riconosci": {
+    "autore": "athenae|athenai",
+    "anni": [
+     1514,
+     1514
+    ],
+    "luogo": "venezia",
+    "parola": "Athenaeus",
+    "tipografo": "\\bald|manut|manuz|torresan|asulan"
+   }
+  },
+  {
+   "id": "esichio",
+   "autore": "Esichio",
+   "opera": "Lessico",
+   "lingua": "grc",
+   "luogo": "Venezia",
+   "tipografo": "Aldo Manuzio",
+   "anno": "1514",
+   "riconosci": {
+    "autore": "hesych",
+    "anni": [
+     1514,
+     1514
+    ],
+    "luogo": "venezia",
+    "parola": "Hesychius",
+    "tipografo": "\\bald|manut|manuz|torresan|asulan"
+   }
+  },
+  {
+   "id": "pausania",
+   "autore": "Pausania",
+   "opera": "Periegesi della Grecia",
+   "lingua": "grc",
+   "luogo": "Venezia",
+   "tipografo": "Aldo Manuzio e Andrea Torresani",
+   "anno": "1516",
+   "riconosci": {
+    "autore": "pausan",
+    "anni": [
+     1516,
+     1516
+    ],
+    "luogo": "venezia",
+    "parola": "Pausanias",
+    "tipografo": "\\bald|manut|manuz|torresan|asulan"
+   }
+  },
+  {
+   "id": "strabone",
+   "autore": "Strabone",
+   "opera": "Geographica",
+   "lingua": "grc",
+   "luogo": "Venezia",
+   "tipografo": "Aldo Manuzio e Andrea Torresani",
+   "anno": "1516",
+   "riconosci": {
+    "autore": "strab",
+    "anni": [
+     1516,
+     1516
+    ],
+    "luogo": "venezia",
+    "parola": "Strabo",
+    "tipografo": "\\bald|manut|manuz|torresan|asulan"
+   }
+  },
+  {
+   "id": "senofonte",
+   "autore": "Senofonte",
+   "opera": "Opera",
+   "lingua": "grc",
+   "luogo": "Firenze",
+   "tipografo": "Filippo Giunta",
+   "anno": "1516",
+   "riconosci": {
+    "autore": "xenoph|senofont",
+    "anni": [
+     1516,
+     1516
+    ],
+    "luogo": "firenze",
+    "parola": "Xenophon",
+    "tipografo": "giunt|junt|iunt"
+   }
+  },
+  {
+   "id": "plutarco-vite",
+   "autore": "Plutarco",
+   "opera": "Vitae parallelae",
+   "lingua": "grc",
+   "luogo": "Firenze",
+   "tipografo": "Filippo Giunta",
+   "anno": "1517",
+   "riconosci": {
+    "autore": "plutarch",
+    "anni": [
+     1517,
+     1517
+    ],
+    "luogo": "firenze",
+    "parola": "Plutarchus",
+    "tipografo": "giunt|junt|iunt"
+   }
+  },
+  {
+   "id": "elio-aristide",
+   "autore": "Elio Aristide",
+   "opera": "Orationes",
+   "lingua": "grc",
+   "luogo": "Firenze",
+   "tipografo": "Filippo Giunta",
+   "anno": "1517",
+   "riconosci": {
+    "autore": "aristid",
+    "anni": [
+     1517,
+     1517
+    ],
+    "luogo": "firenze",
+    "parola": "Aristides",
+    "tipografo": "giunt|junt|iunt"
+   }
+  },
+  {
+   "id": "eschilo",
+   "autore": "Eschilo",
+   "opera": "Tragoediae",
+   "lingua": "grc",
+   "luogo": "Venezia",
+   "tipografo": "Aldo Manuzio e Andrea Torresani",
+   "anno": "1518",
+   "riconosci": {
+    "autore": "aeschyl|aischyl|eschil",
+    "anni": [
+     1518,
+     1518
+    ],
+    "luogo": "venezia",
+    "parola": "Aeschylus",
+    "tipografo": "\\bald|manut|manuz|torresan|asulan"
+   }
+  },
+  {
+   "id": "galeno",
+   "autore": "Galeno",
+   "opera": "Opera",
+   "lingua": "grc",
+   "luogo": "Venezia",
+   "tipografo": "Aldo Manuzio e Andrea Torresani",
+   "anno": "1525",
+   "riconosci": {
+    "autore": "galen",
+    "anni": [
+     1525,
+     1525
+    ],
+    "luogo": "venezia",
+    "parola": "Galenus",
+    "tipografo": "\\bald|manut|manuz|torresan|asulan"
+   }
+  },
+  {
+   "id": "ippocrate",
+   "autore": "Ippocrate",
+   "opera": "Opera",
+   "lingua": "grc",
+   "luogo": "Venezia",
+   "tipografo": "Aldo Manuzio e Andrea Torresani",
+   "anno": "1526",
+   "riconosci": {
+    "autore": "hippocrat|hippokrat|ippocrat",
+    "anni": [
+     1526,
+     1526
+    ],
+    "luogo": "venezia",
+    "parola": "Hippocrates",
+    "tipografo": "\\bald|manut|manuz|torresan|asulan"
+   }
+  },
+  {
+   "id": "polibio",
+   "autore": "Polibio",
+   "opera": "Historiae (libri I-V)",
+   "lingua": "grc",
+   "luogo": "Hagenau",
+   "tipografo": "Johann Setzer (a cura di Vincentius Opsopoeus)",
+   "anno": "1530",
+   "riconosci": {
+    "autore": "polyb",
+    "anni": [
+     1530,
+     1530
+    ],
+    "luogo": "hagenau",
+    "parola": "Polybius",
+    "tipografo": "setzer|secer|secerius|setzerus"
+   }
+  },
+  {
+   "id": "tolomeo-geografia",
+   "autore": "Tolomeo",
+   "opera": "Geographia (in greco)",
+   "lingua": "grc",
+   "luogo": "Basilea",
+   "tipografo": "Hieronymus Froben e Nikolaus Episcopius (a cura di Erasmo)",
+   "anno": "1533",
+   "riconosci": {
+    "autore": "ptolem",
+    "anni": [
+     1533,
+     1533
+    ],
+    "luogo": "basilea",
+    "parola": "Ptolemaeus",
+    "tipografo": "froben|episcop"
+   }
+  },
+  {
+   "id": "euclide",
+   "autore": "Euclide",
+   "opera": "Elementa (in greco)",
+   "lingua": "grc",
+   "luogo": "Basilea",
+   "tipografo": "Johann Herwagen (a cura di Simon Grynaeus)",
+   "anno": "1533",
+   "riconosci": {
+    "autore": "euclid|eukleid",
+    "anni": [
+     1533,
+     1533
+    ],
+    "luogo": "basilea",
+    "parola": "Euclides",
+    "tipografo": "herwag|hervag"
+   }
+  },
+  {
+   "id": "diogene-laerzio",
+   "autore": "Diogene Laerzio",
+   "opera": "Vitae philosophorum (in greco)",
+   "lingua": "grc",
+   "luogo": "Basilea",
+   "tipografo": "Hieronymus Froben e Nikolaus Episcopius",
+   "anno": "1533",
+   "riconosci": {
+    "autore": "diogen\\w* laert",
+    "anni": [
+     1533,
+     1533
+    ],
+    "luogo": "basilea",
+    "parola": "Diogenes Laertius",
+    "tipografo": "froben|episcop"
+   }
+  },
+  {
+   "id": "eliodoro",
+   "autore": "Eliodoro",
+   "opera": "Aethiopica",
+   "lingua": "grc",
+   "luogo": "Basilea",
+   "tipografo": "Johann Herwagen (a cura di Vincentius Opsopoeus)",
+   "anno": "1534",
+   "riconosci": {
+    "autore": "heliodor",
+    "anni": [
+     1534,
+     1534
+    ],
+    "luogo": "basilea",
+    "parola": "Heliodorus",
+    "tipografo": "herwag|hervag"
+   }
+  },
+  {
+   "id": "arriano",
+   "autore": "Arriano",
+   "opera": "Anabasis",
+   "lingua": "grc",
+   "luogo": "Venezia",
+   "tipografo": "Giovanni Antonio Nicolini da Sabbio (a cura di Vettore Trincavelli)",
+   "anno": "1535",
+   "riconosci": {
+    "autore": "arrian",
+    "anni": [
+     1535,
+     1535
+    ],
+    "luogo": "venezia",
+    "parola": "Arrianus",
+    "tipografo": "nicolin|sabbio|trincavell"
+   }
+  },
+  {
+   "id": "diodoro-siculo",
+   "autore": "Diodoro Siculo",
+   "opera": "Bibliotheca historica (libri XVI-XX)",
+   "lingua": "grc",
+   "luogo": "Basilea",
+   "tipografo": "Johannes Oporinus (a cura di Vincentius Opsopoeus)",
+   "anno": "1539",
+   "riconosci": {
+    "autore": "diodor",
+    "anni": [
+     1539,
+     1539
+    ],
+    "luogo": "basilea",
+    "parola": "Diodorus",
+    "tipografo": "oporin|herbst"
+   }
+  },
+  {
+   "id": "archimede",
+   "autore": "Archimede",
+   "opera": "Opera (in greco)",
+   "lingua": "grc",
+   "luogo": "Basilea",
+   "tipografo": "Johann Herwagen (a cura di Thomas Gechauff)",
+   "anno": "1544",
+   "riconosci": {
+    "autore": "archimed",
+    "anni": [
+     1544,
+     1544
+    ],
+    "luogo": "basilea",
+    "parola": "Archimedes",
+    "tipografo": "herwag|hervag"
+   }
+  },
+  {
+   "id": "flavio-giuseppe",
+   "autore": "Flavio Giuseppe",
+   "opera": "Opera (in greco)",
+   "lingua": "grc",
+   "luogo": "Basilea",
+   "tipografo": "Hieronymus Froben e Nikolaus Episcopius (a cura di Arnoldus Arlenius)",
+   "anno": "1544",
+   "riconosci": {
+    "autore": "ioseph|joseph",
+    "anni": [
+     1544,
+     1544
+    ],
+    "luogo": "basilea",
+    "parola": "Josephus",
+    "tipografo": "froben|episcop"
+   }
+  },
+  {
+   "id": "dionigi-alicarnasso",
+   "autore": "Dionigi di Alicarnasso",
+   "opera": "Antiquitates Romanae",
+   "lingua": "grc",
+   "luogo": "Parigi",
+   "tipografo": "Robert Estienne",
+   "anno": "1546-1547",
+   "riconosci": {
+    "autore": "dionys\\w* halicarn|dionys\\w* halikarn",
+    "opera": "archaiolog|antiquit",
+    "anni": [
+     1546,
+     1547
+    ],
+    "luogo": "parigi",
+    "parola": "Dionysius Halicarnassensis",
+    "tipografo": "estienne|stephan"
+   }
+  },
+  {
+   "id": "cassio-dione",
+   "autore": "Cassio Dione",
+   "opera": "Historia Romana",
+   "lingua": "grc",
+   "luogo": "Parigi",
+   "tipografo": "Robert Estienne",
+   "anno": "1548",
+   "riconosci": {
+    "autore": "dio(n)?\\w* cass|cassius dio",
+    "anni": [
+     1548,
+     1548
+    ],
+    "luogo": "parigi",
+    "parola": "Dio Cassius",
+    "tipografo": "estienne|stephan"
+   }
+  },
+  {
+   "id": "appiano",
+   "autore": "Appiano",
+   "opera": "Historia Romana",
+   "lingua": "grc",
+   "luogo": "Parigi",
+   "tipografo": "Charles Estienne",
+   "anno": "1551",
+   "riconosci": {
+    "autore": "appian",
+    "anni": [
+     1551,
+     1551
+    ],
+    "luogo": "parigi",
+    "parola": "Appianus",
+    "tipografo": "estienne|stephan"
+   }
+  },
+  {
+   "id": "anacreonte",
+   "autore": "Anacreonte",
+   "opera": "Anacreontea",
+   "lingua": "grc",
+   "luogo": "Parigi",
+   "tipografo": "Henri Estienne",
+   "anno": "1554",
+   "riconosci": {
+    "autore": "anacreon|anakreon",
+    "anni": [
+     1554,
+     1554
+    ],
+    "luogo": "parigi",
+    "parola": "Anacreon",
+    "tipografo": "estienne|stephan"
+   }
+  },
+  {
+   "id": "marco-aurelio",
+   "autore": "Marco Aurelio",
+   "opera": "Ad se ipsum",
+   "lingua": "grc",
+   "luogo": "Zurigo",
+   "tipografo": "Andreas Gessner (a cura di Wilhelm Xylander)",
+   "anno": "1559",
+   "riconosci": {
+    "autore": "marc\\w* aurel|antonin",
+    "anni": [
+     1558,
+     1559
+    ],
+    "luogo": "zurigo",
+    "parola": "Marcus Aurelius",
+    "tipografo": "ges(s)?ner"
+   }
+  },
+  {
+   "id": "plotino",
+   "autore": "Plotino",
+   "opera": "Enneadi (in greco)",
+   "lingua": "grc",
+   "luogo": "Basilea",
+   "tipografo": "Pietro Perna",
+   "anno": "1580",
+   "riconosci": {
+    "autore": "plotin",
+    "anni": [
+     1580,
+     1580
+    ],
+    "luogo": "basilea",
+    "parola": "Plotinus",
+    "tipografo": "perna"
+   }
+  },
+  {
+   "id": "longo",
+   "autore": "Longo Sofista",
+   "opera": "Dafni e Cloe",
+   "lingua": "grc",
+   "luogo": "Firenze",
+   "tipografo": "Filippo Giunta il Giovane",
+   "anno": "1598",
+   "riconosci": {
+    "autore": "\\blong(us|i|o)\\b",
+    "anni": [
+     1598,
+     1598
+    ],
+    "luogo": "firenze",
+    "parola": "Longus",
+    "tipografo": "giunt|junt|iunt"
+   }
+  }
+ ]
+}
