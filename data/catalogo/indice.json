@@ -1,13 +1,13 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T15:58:10.186Z",
- "totale": 601224,
+ "aggiornato": "2026-10-28T16:19:24.412Z",
+ "totale": 604051,
  "con_autori": 32584,
  "miniati": 11294,
  "musica": 21300,
  "manoscritti": 545144,
  "papiri": 18430,
- "epigrafi": 21991,
+ "epigrafi": 24818,
  "stampe_antiche": 15659,
  "incunaboli": 15587,
  "edizioni_principi": 172,
@@ -33,7 +33,7 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 177343
+   "codici": 177851
   },
   "la": {
    "nome": "latino",
@@ -107,6 +107,10 @@
    "nome": "tibetano",
    "codici": 6503
   },
+  "ojp": {
+   "nome": "giapponese antico",
+   "codici": 6441
+  },
   "nod": {
    "nome": "thai settentrionale (lanna)",
    "codici": 5516
@@ -118,10 +122,6 @@
   "pt": {
    "nome": "portoghese",
    "codici": 4892
-  },
-  "ojp": {
-   "nome": "giapponese antico",
-   "codici": 4122
   },
   "ca": {
    "nome": "catalano",
@@ -477,7 +477,7 @@
   },
   "epigrafe": {
    "nome": "epigrafi",
-   "codici": 21991
+   "codici": 24818
   }
  },
  "autori": {
@@ -8742,20 +8742,20 @@
   },
   "giappone": {
    "nome": "Giappone, scritture non librarie: tavolette di legno (mokkan) del Mokkanko di Nabunken e calchi di iscrizioni (takuhon) della National Diet Library e di Waseda",
-   "codici": 4306,
+   "codici": 7133,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
    "papiri": 0,
-   "epigrafi": 4306,
+   "epigrafi": 7133,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
    "con_autori": 0,
    "lingue": {
-    "ojp": 4122,
-    "ja": 182,
+    "ojp": 6441,
+    "ja": 690,
     "zh": 1,
     "?": 1
    },
@@ -8763,7 +8763,7 @@
    "prefissi": [
     "giap-"
    ],
-   "pezzi_voci": 6,
+   "pezzi_voci": 9,
    "indice": [
     "indice/giappone-0.json"
    ]
@@ -9334,7 +9334,7 @@
   {
    "file": "indice/giappone-0.json",
    "fonte": "giappone",
-   "righe": 4306
+   "righe": 7133
   },
   {
    "file": "indice/romani-0.json",
@@ -19635,7 +19635,7 @@
   189,
   108,
   22,
-  4300,
+  7127,
   8,
   4,
   1,
