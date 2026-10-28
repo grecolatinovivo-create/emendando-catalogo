@@ -57,6 +57,8 @@ export const INCOMPLETA = {
   // corsia «centro» (dal 27 ottobre 2026): Graz e Salisburgo (manifesti a riprese), ELTE Budapest
   vlaustria: s => !s || !s.completato,
   elte: s => !s || !s.completato,
+  // epigrafi dal browser (dal 28 ottobre 2026): elenchi raccolti a mano dal browser, nessuna lettura a riprese: conta sempre come finita
+  epibrowser: () => false,
   // corsia «medioriente» (dal 27 ottobre 2026): Iraqi Jewish Archive
   ija: s => !s || !s.completato,
 };

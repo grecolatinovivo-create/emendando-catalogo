@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T11:05:40.222Z",
+ "aggiornato": "2026-10-28T11:33:30.362Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -401,6 +401,11 @@
    "nome": "Musei: oggetti scritti del Museo Egizio di Torino (immagini CC0) e modelli 3D di oggetti scritti su Sketchfab",
    "codici": 0,
    "esito": "ok"
+  },
+  "epibrowser": {
+   "nome": "Epigrafi dal browser: J. Paul Getty Museum e Yale University Art Gallery (immagini CC0, manifesti IIIF dei musei; elenchi raccolti dal browser)",
+   "codici": 0,
+   "esito": "precedente"
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",

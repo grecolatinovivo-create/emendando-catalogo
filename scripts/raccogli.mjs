@@ -96,6 +96,7 @@ import { scansionaIja, recordIja } from "./fonti/ija.mjs";
 import { scansionaStampe, recordStampe } from "./fonti/stampe.mjs";
 import { scansionaPapiri, recordPapiri, papiroDa } from "./fonti/papiri.mjs";
 import { scansionaEpigrafi, recordEpigrafi } from "./fonti/epigrafi.mjs";
+import { recordEpigrafiBrowser } from "./fonti/epigrafi-browser.mjs";
 import { scansionaMusei, recordMusei } from "./fonti/musei.mjs";
 import { scansionaGiappone, recordGiappone } from "./fonti/giappone-scritture.mjs";
 import { scriviRegistro, registraEsiti } from "./registro.mjs";
@@ -195,6 +196,8 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   musei: "Musei: oggetti scritti del Museo Egizio di Torino (immagini CC0) e modelli 3D di oggetti scritti su Sketchfab",
   // Giappone, scritture non librarie (corsia «giappone-scritture», dal 28 ottobre 2026): mokkan e takuhon (scripts/fonti/giappone-scritture.mjs, docs/EPIGRAFI.md)
   giappone: "Giappone, scritture non librarie: tavolette di legno (mokkan) del Mokkanko di Nabunken e calchi di iscrizioni (takuhon) della National Diet Library e di Waseda",
+  // epigrafi dal browser (dal 28 ottobre 2026): musei che dal server non rispondono, letti dal browser (scripts/fonti/epigrafi-browser.mjs, docs/EPIGRAFI.md)
+  epibrowser: "Epigrafi dal browser: J. Paul Getty Museum e Yale University Art Gallery (immagini CC0, manifesti IIIF dei musei; elenchi raccolti dal browser)",
   vaticana: "Biblioteca Apostolica Vaticana (digi.vatlib.it)" };
 
 // i tre codici del Truculentus restano sempre nel catalogo, anche se una fonte non li ha ancora restituiti
@@ -532,6 +535,17 @@ async function main() {
       const rs = recordGiappone(st).filter(r => !gia.has(r.manifest));
       const per = {}; for (const r of rs) { const k = r.id.split("-")[1]; per[k] = (per[k] || 0) + 1; }
       dettagli.giappone = { perRaccolta: per, conTesto: rs.filter(r => r.epigrafe && r.epigrafe.testo).length };
+      return rs;
+    },
+    // epigrafi dal browser (dal 28 ottobre 2026): nessuna richiesta, gli elenchi vengono dal browser (scripts/browser/epigrafi-getty.js ->
+    // data/epigrafi-getty.json, scripts/browser/epigrafi-yale.js -> data/epigrafi-yale.json). Le iscrizioni che il catalogo ha già da
+    // altre fonti (stesso manifesto) restano a quelle fonti
+    epibrowser: async () => {
+      const gia = new Set(Object.keys(perFonte).filter(f => f !== "epibrowser").flatMap(f => perFonte[f].map(r => r.manifest)));
+      for (const v of prima) if (v.fonte !== "epibrowser" && !perFonte[v.fonte]) gia.add(v.manifest);
+      const rs = recordEpigrafiBrowser({ esistenti: gia });
+      const per = {}; for (const r of rs) { const k = r.id.split("-")[1]; per[k] = (per[k] || 0) + 1; }
+      dettagli.epibrowser = { perRaccolta: per };
       return rs;
     },
     vaticana: async () => {

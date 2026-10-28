@@ -38,6 +38,7 @@ Non è una consulenza legale.
 | Non dichiarata | 43 | da chiedere |
 | Mista | 1 (stampe antiche) | secondo la biblioteca d'origine |
 | In arrivo: papiri | 1 | attribuzione per papyri.info; il resto secondo la raccolta |
+| Epigrafi dal browser (mista) | 1 | Getty CC BY 4.0 per i testi (aperta, con attribuzione); Yale CC0 (si può chiudere) |
 | Epigrafi (mista) | 1 | EDH CC BY-SA 4.0 (resta aperta); Met e Wikidata CC0 (si può chiudere) |
 | Musei (mista) | 1 | Museo Egizio: dati non dichiarati, foto CC0 (da chiedere per i dati); TPOP: foto CC0, schede degli editori da citare; Sketchfab: descrizioni degli autori dei modelli (da chiedere), modelli solo incorporati |
 
@@ -130,6 +131,8 @@ che vogliamo noi, e va chiesto il permesso anche per la raccolta che già faccia
 | Bibliothèque nationale du Luxembourg (`bnl`) | non dichiarata | eluxemburgensia.lu | da chiedere |
 | Iraqi Jewish Archive, NARA (`ija`) | pubblico dominio: opere del governo federale degli Stati Uniti (17 U.S.C. § 105) | legge statunitense | si può chiudere |
 | Stampe antiche (`stampe`) | mista: BSB e Heidelberg CC0, Gallica Licence Ouverte, Cambridge CC BY-NC, Bodleian e Internet Archive non dichiarata, Vaticana riservata | righe delle singole biblioteche in questa tabella | secondo la biblioteca d'origine |
+| Epigrafi dal browser (`epibrowser`): J. Paul Getty Museum (id «epb-getty-…») | testi delle schede © J. Paul Getty Trust, CC BY 4.0 (dichiarato nell'attribuzione di ogni manifesto); dati Linked Art CC0 | https://www.getty.edu/about/opencontent.html | si può chiudere con l'attribuzione al Getty (CC BY non obbliga a lasciarla aperta) |
+| Epigrafi dal browser (`epibrowser`): Yale University Art Gallery (id «epb-yale-…») | pubblico dominio («Data Provided about Yale University Art Gallery collections are public domain», nel manifesto) | https://manifests.collections.yale.edu/ | si può chiudere |
 | Epigrafi (`epigrafi`): Epigraphic Database Heidelberg (id «ep-edh-…») | CC BY-SA 4.0, anche per i testi trascritti («all data of the Open Data Repository ... can be reused under the CC BY-SA 4.0 licence») | https://edh.ub.uni-heidelberg.de/data | va ridistribuita alle stesse condizioni: resta fuori dal blocco chiuso, come i codici del Venezuela |
 | Epigrafi (`epigrafi`): The Metropolitan Museum of Art (id «ep-met-…») | CC0 (Open Access: dati e immagini in pubblico dominio) | https://metmuseum.github.io/ e https://www.metmuseum.org/policies/image-resources | si può chiudere |
 | Epigrafi (`epigrafi`): Wikidata (id «ep-wd-…») | CC0 (le immagini di Wikimedia Commons hanno la licenza di ogni file, scritta nella scheda) | https://www.wikidata.org/wiki/Wikidata:Licensing | si può chiudere |

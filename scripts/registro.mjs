@@ -10,6 +10,7 @@ import { FONTI_HSP } from "./fonti/hsp.mjs";
 import { ammessaYale } from "./fonti/yale.mjs";
 import { motivoLeiden, contestoLeiden } from "./fonti/leiden.mjs";
 import { leggiBrowser as leggiGallica, motivoGallica } from "./fonti/gallica.mjs";
+import { statoEpigrafiBrowser } from "./fonti/epigrafi-browser.mjs";
 
 export const FILE_REGISTRO = "docs/BIBLIOTECHE.md";
 export const FILE_RACCOLTE = "data/raccolte.json";
@@ -25,6 +26,7 @@ export const BIBLIOTECHE = {
   epigrafi: { biblioteca: "Epigrafi: Epigraphic Database Heidelberg (foto IIIF di heidICON, dati CC BY-SA 4.0), The Metropolitan Museum of Art (CC0) e Wikidata con Wikimedia Commons", citta: "varie", come: "corsia epigrafi: a ruota finché la prima lettura non è finita, poi ogni notte (elenchi ogni 30 giorni)" },
   musei: { biblioteca: "Musei: oggetti scritti del Museo Egizio di Torino (immagini CC0) e modelli 3D di oggetti scritti su Sketchfab (account di musei e università)", citta: "varie", come: "corsia musei: a ruota finché la prima lettura non è finita, poi ogni notte (elenchi ogni 30 giorni)" },
   giappone: { biblioteca: "Giappone, scritture non librarie: mokkan del 木簡庫 Mokkanko (Nabunken, uso libero con citazione) e takuhon della National Diet Library e di Waseda", citta: "Nara, Tokyo", come: "corsia giappone-scritture: a ruota finché la prima lettura non è finita, poi ogni notte (elenchi ogni 60 giorni)" },
+  epibrowser: { biblioteca: "Epigrafi dal browser: J. Paul Getty Museum e Yale University Art Gallery (immagini CC0, manifesti IIIF dei musei)", citta: "varie", come: "va rifatta a mano dal browser (scripts/browser/epigrafi-getty.js, scripts/browser/epigrafi-yale.js)" },
   berlino: { biblioteca: "Staatsbibliothek zu Berlin", citta: "Berlino", come: "ogni notte, da sola" },
   sbbor: { biblioteca: "Staatsbibliothek zu Berlin, manoscritti non europei (tibetani, mongoli, sanscriti, islamici, ebraici, cristiano-orientali, africani)", citta: "Berlino", come: "corsia asia, ogni notte (raccolta completa ogni 14 giorni)" },
   bodleian: { biblioteca: "Bodleian Libraries e college", citta: "Oxford", come: "corsia propria: a ruota finché non sono letti tutti, poi ogni notte" },
@@ -271,6 +273,11 @@ export const AVANZAMENTO = {
     const n = Object.keys(s.voci || {}).length;
     if (s.cursore) return { testo: `in corso: pagina ${num(s.cursore.p)} di ${num(s.pagine)} (${num(n)} manoscritti finora)`, data: s.aggiornato };
     return { testo: `schede lette tutte (${num(s.totale)} manoscritti con immagini; ${num(n)} con immagini proprie; fuori i libri a stampa e la NDL)`, data: s.completato || s.aggiornato };
+  },
+  epibrowser: () => {
+    const st = statoEpigrafiBrowser(); const p = Object.entries(st).filter(([, x]) => x);
+    if (!p.length) return { testo: "elenchi non ancora raccolti: vanno lanciati scripts/browser/epigrafi-getty.js e scripts/browser/epigrafi-yale.js dal browser" };
+    return { testo: p.map(([k, x]) => `${k === "getty" ? "Getty" : "Yale University Art Gallery"}: ${num(x.voci)} schede raccolte dal browser il ${giorno(x.raccolto)}`).join("; "), data: p.map(([, x]) => x.raccolto).sort().pop() };
   },
   slv: () => {
     const s = leggi("data/slv.json"); if (!s) return { testo: "elenco non ancora raccolto: va lanciato scripts/browser/slv.js dal browser" };

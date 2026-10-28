@@ -1,13 +1,13 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T11:05:40.222Z",
- "totale": 586159,
+ "aggiornato": "2026-10-28T11:33:30.362Z",
+ "totale": 586448,
  "con_autori": 32373,
  "miniati": 11291,
  "musica": 21300,
  "manoscritti": 543480,
  "papiri": 13195,
- "epigrafi": 13825,
+ "epigrafi": 14114,
  "stampe_antiche": 15659,
  "incunaboli": 15587,
  "edizioni_principi": 172,
@@ -37,11 +37,11 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 103056
+   "codici": 103064
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 51498
+   "codici": 51640
   },
   "fr": {
    "nome": "francese",
@@ -53,7 +53,7 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 24812
+   "codici": 24904
   },
   "ar": {
    "nome": "arabo",
@@ -137,7 +137,7 @@
   },
   "cop": {
    "nome": "copto",
-   "codici": 2554
+   "codici": 2559
   },
   "gez": {
    "nome": "etiopico",
@@ -173,7 +173,7 @@
   },
   "akk": {
    "nome": "accadico",
-   "codici": 649
+   "codici": 650
   },
   "hy": {
    "nome": "armeno",
@@ -181,7 +181,7 @@
   },
   "arc": {
    "nome": "aramaico",
-   "codici": 553
+   "codici": 562
   },
   "ru": {
    "nome": "russo",
@@ -189,7 +189,7 @@
   },
   "egy": {
    "nome": "egiziano antico (geroglifico, ieratico, demotico)",
-   "codici": 330
+   "codici": 365
   },
   "ms": {
    "nome": "malese",
@@ -465,7 +465,7 @@
   },
   "epigrafe": {
    "nome": "epigrafi",
-   "codici": 13825
+   "codici": 14114
   }
  },
  "autori": {
@@ -5490,6 +5490,7 @@
   "Xanten, LVR-Archäolog. Park Xanten / Römer-Mus.// Bonn, Rhein. Landesmus. (Kopie)",
   "Xàtiva, Mus. de l' Almodí",
   "Yale University Art Gallery",
+  "Yale University Art Gallery, New Haven",
   "Yalvaç, Mus.",
   "York, Yorkshire Mus.",
   "Zadar, Arh. Muz.",
@@ -8635,6 +8636,37 @@
     "indice/musei-0.json"
    ]
   },
+  "epibrowser": {
+   "nome": "Epigrafi dal browser: J. Paul Getty Museum e Yale University Art Gallery (immagini CC0, manifesti IIIF dei musei; elenchi raccolti dal browser)",
+   "codici": 289,
+   "carte": 0,
+   "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 0,
+   "papiri": 0,
+   "epigrafi": 289,
+   "incunaboli": 0,
+   "stampe": 0,
+   "edizioni_principi": 0,
+   "con_autori": 0,
+   "lingue": {
+    "grc": 92,
+    "?": 142,
+    "la": 8,
+    "arc": 9,
+    "egy": 35,
+    "akk": 1,
+    "cop": 5
+   },
+   "esito": "precedente",
+   "prefissi": [
+    "epb-"
+   ],
+   "pezzi_voci": 1,
+   "indice": [
+    "indice/epibrowser-0.json"
+   ]
+  },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
    "codici": 26403,
@@ -9137,6 +9169,11 @@
    "file": "indice/musei-0.json",
    "fonte": "musei",
    "righe": 999
+  },
+  {
+   "file": "indice/epibrowser-0.json",
+   "fonte": "epibrowser",
+   "righe": 289
   },
   {
    "file": "indice/vaticana-0.json",
@@ -12131,6 +12168,7 @@
   "museo",
   "museo",
   "museo",
+  "museo",
   "biblioteca",
   "biblioteca",
   "museo",
@@ -12159,7 +12197,7 @@
  ],
  "totali": {
   "biblioteche": 1438,
-  "musei": 1567,
+  "musei": 1568,
   "senza_luogo": 1899
  },
  "luoghi": {
@@ -17741,6 +17779,7 @@
   null,
   null,
   null,
+  "new-haven",
   null,
   null,
   null,
@@ -18860,7 +18899,7 @@
   1,
   1,
   1,
-  277,
+  359,
   3,
   2,
   1,
@@ -20749,6 +20788,7 @@
   1,
   12,
   53,
+  207,
   1,
   8,
   29,
