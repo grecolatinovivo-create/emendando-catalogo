@@ -1,12 +1,12 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T21:01:14.680Z",
- "totale": 629427,
- "con_autori": 32702,
- "miniati": 11309,
+ "aggiornato": "2026-10-28T22:12:27.801Z",
+ "totale": 634556,
+ "con_autori": 32784,
+ "miniati": 11357,
  "musica": 21303,
  "manoscritti": 546799,
- "papiri": 28785,
+ "papiri": 33914,
  "epigrafi": 38184,
  "stampe_antiche": 15659,
  "incunaboli": 15587,
@@ -37,23 +37,23 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 107906
+   "codici": 107935
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 54565
+   "codici": 54572
   },
   "grc": {
    "nome": "greco",
-   "codici": 33140
+   "codici": 35092
+  },
+  "ar": {
+   "nome": "arabo",
+   "codici": 30774
   },
   "fr": {
    "nome": "francese",
    "codici": 29293
-  },
-  "ar": {
-   "nome": "arabo",
-   "codici": 28250
   },
   "de": {
    "nome": "tedesco",
@@ -61,11 +61,11 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 20712
+   "codici": 20787
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 19674
+   "codici": 19855
   },
   "pi": {
    "nome": "pali",
@@ -111,6 +111,10 @@
    "nome": "tibetano",
    "codici": 6503
   },
+  "cop": {
+   "nome": "copto",
+   "codici": 5527
+  },
   "nod": {
    "nome": "thai settentrionale (lanna)",
    "codici": 5516
@@ -122,10 +126,6 @@
   "pt": {
    "nome": "portoghese",
    "codici": 4892
-  },
-  "cop": {
-   "nome": "copto",
-   "codici": 4817
   },
   "ca": {
    "nome": "catalano",
@@ -145,7 +145,7 @@
   },
   "egy": {
    "nome": "egiziano antico (geroglifico, ieratico, demotico)",
-   "codici": 2365
+   "codici": 2370
   },
   "gez": {
    "nome": "etiopico",
@@ -153,7 +153,7 @@
   },
   "syr": {
    "nome": "siriaco",
-   "codici": 1268
+   "codici": 1274
   },
   "cs": {
    "nome": "ceco",
@@ -189,7 +189,7 @@
   },
   "arc": {
    "nome": "aramaico",
-   "codici": 583
+   "codici": 603
   },
   "ru": {
    "nome": "russo",
@@ -435,15 +435,15 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 8209
+   "codici": 8212
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7750
+   "codici": 7784
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15995
+   "codici": 16040
   },
   "medievale": {
    "nome": "autori medievali",
@@ -473,7 +473,7 @@
   },
   "papiro": {
    "nome": "papiri",
-   "codici": 28785
+   "codici": 33914
   },
   "epigrafe": {
    "nome": "epigrafi",
@@ -491,7 +491,7 @@
    "nome": "Terenzio",
    "latino": "Terentius",
    "categoria": "classico-latino",
-   "codici": 284
+   "codici": 285
   },
   "lucrezio": {
    "nome": "Lucrezio",
@@ -527,7 +527,7 @@
    "nome": "Virgilio",
    "latino": "Vergilius",
    "categoria": "classico-latino",
-   "codici": 576
+   "codici": 577
   },
   "orazio": {
    "nome": "Orazio",
@@ -593,7 +593,7 @@
    "nome": "Stazio",
    "latino": "Statius",
    "categoria": "classico-latino",
-   "codici": 152
+   "codici": 153
   },
   "plinio-vecchio": {
    "nome": "Plinio il Vecchio",
@@ -911,7 +911,7 @@
    "nome": "Omero",
    "latino": "Homerus",
    "categoria": "classico-greco",
-   "codici": 597
+   "codici": 613
   },
   "esiodo": {
    "nome": "Esiodo",
@@ -983,7 +983,7 @@
    "nome": "Euripide",
    "latino": "Euripides",
    "categoria": "classico-greco",
-   "codici": 174
+   "codici": 176
   },
   "aristofane": {
    "nome": "Aristofane",
@@ -1013,7 +1013,7 @@
    "nome": "Senofonte",
    "latino": "Xenophon",
    "categoria": "classico-greco",
-   "codici": 146
+   "codici": 148
   },
   "platone": {
    "nome": "Platone",
@@ -1043,19 +1043,19 @@
    "nome": "Isocrate",
    "latino": "Isocrates",
    "categoria": "classico-greco",
-   "codici": 100
+   "codici": 105
   },
   "demostene": {
    "nome": "Demostene",
    "latino": "Demosthenes",
    "categoria": "classico-greco",
-   "codici": 170
+   "codici": 174
   },
   "eschine": {
    "nome": "Eschine",
    "latino": "Aeschines",
    "categoria": "classico-greco",
-   "codici": 56
+   "codici": 58
   },
   "andocide": {
    "nome": "Andocide",
@@ -1145,7 +1145,7 @@
    "nome": "Teocrito",
    "latino": "Theocritus",
    "categoria": "classico-greco",
-   "codici": 74
+   "codici": 75
   },
   "callimaco": {
    "nome": "Callimaco",
@@ -1331,7 +1331,7 @@
    "nome": "Caritone",
    "latino": "Chariton",
    "categoria": "classico-greco",
-   "codici": 2
+   "codici": 3
   },
   "senofonte-efesio": {
    "nome": "Senofonte Efesio",
@@ -1361,7 +1361,7 @@
    "nome": "Esopo",
    "latino": "Aesopus",
    "categoria": "classico-greco",
-   "codici": 191
+   "codici": 192
   },
   "flavio-giuseppe": {
    "nome": "Flavio Giuseppe",
@@ -1451,7 +1451,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7464
+   "codici": 7505
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1523,7 +1523,7 @@
    "nome": "Atanasio",
    "latino": "Athanasius",
    "categoria": "cristiano",
-   "codici": 410
+   "codici": 414
   },
   "gregorio-nisseno": {
    "nome": "Gregorio di Nissa",
@@ -8646,37 +8646,37 @@
   },
   "papiri": {
    "nome": "Papiri: Michigan, Yale, Duke, Princeton, Vienna (ÖNB), Colonia e Berkeley, con le schede di papyri.info",
-   "codici": 23815,
+   "codici": 28944,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 25,
+   "miniati": 73,
    "musica": 1,
-   "papiri": 23815,
+   "papiri": 28944,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 530,
+   "con_autori": 612,
    "lingue": {
-    "grc": 14849,
-    "ar": 5236,
-    "xx": 661,
-    "cop": 2630,
-    "la": 207,
-    "?": 178,
-    "egy": 920,
+    "grc": 16801,
+    "ar": 7760,
+    "xx": 842,
+    "cop": 3340,
+    "la": 236,
+    "?": 185,
+    "egy": 925,
     "it": 1,
-    "he": 111,
+    "he": 186,
     "fa": 1,
-    "arc": 29,
-    "de": 2,
-    "syr": 2
+    "arc": 49,
+    "syr": 8,
+    "de": 2
    },
    "esito": "ok",
    "prefissi": [
     "pap-"
    ],
-   "pezzi_voci": 30,
+   "pezzi_voci": 37,
    "indice": [
     "indice/papiri-0.json",
     "indice/papiri-1.json"
@@ -9349,7 +9349,7 @@
   {
    "file": "indice/papiri-1.json",
    "fonte": "papiri",
-   "righe": 3815
+   "righe": 8944
   },
   {
    "file": "indice/epigrafi-0.json",
@@ -20493,7 +20493,7 @@
   1,
   1,
   3,
-  10122,
+  15251,
   5788,
   3,
   1,
