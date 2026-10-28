@@ -617,7 +617,7 @@ In tutto: 10.164 stampe antiche al primo giro (10.111 incunaboli e 53 edizioni p
 | Biblioteca | Motivo |
 |---|---|
 | e-rara (biblioteche svizzere) | Il robots.txt vieta tutto agli agenti generici, anche l'OAI-PMH. Non si usa. |
-| Gallica (BnF) | Cloudflare respinge le richieste dei server (403). Non si usa. |
+| Gallica (BnF e biblioteche partner) | Cloudflare respinge le richieste dei server (403): la raccolta si fa dal browser con scripts/browser/stampe-gallica.js (SRU di Gallica, una pagina ogni 5,5 secondi come chiede il robots.txt) e finisce in data/stampe-gallica.json, che la fonte «stampe» legge soltanto. Raccolta del 28 ottobre 2026 nel Chrome di Giampiero: 5.014 schede con ark su Gallica (5.003 a stampa, 4.855 con data fino al 1500), più 30 schede dalle ricerche mirate sulle edizioni principi del Cinquecento; manifesti IIIF verificati a campione (5 su 5). Il file non è ancora nel repository: per portarlo qui serve scaricarlo dal browser (incollando lo script nella console di Gallica parte subito il download, la raccolta è già completa nel browser). Le 2.037 schede senza ark (copie di e-rara, Lione e altre biblioteche fuori da Gallica) non hanno manifesto Gallica e restano fuori. |
 | BSB-Ink (inkunabeln.digitale-sammlungen.de) | Il robots.txt vieta tutto. Gli stessi incunaboli si leggono dall'API di ricerca del MDZ. |
 | Vaticana, altri fondi degli stampati (Aldine, Stamp. Ross. e altri, circa 1.200 volumi) | I manifesti degli stampati hanno solo la segnatura, senza titolo, autore o data: non si riconoscono incunaboli ed edizioni principi. |
 | ISTC e GW | Non usati: i metadati vengono dalle schede delle biblioteche. |

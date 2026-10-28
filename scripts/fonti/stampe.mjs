@@ -13,20 +13,25 @@
 //   cudl       Cambridge University Library: collezione IIIF «incunabula», inizio di ogni manifesto
 //   archive    Internet Archive: incunaboli della Boston Public Library (collezione bplscinc) e della National Library of Medicine
 //   vaticana   Biblioteca Apostolica Vaticana: fondo «Inc.» degli stampati (digi.vatlib.it/stp/ajax/category/Inc, 10 secondi tra le richieste)
-// Bloccate e non usate: e-rara (robots.txt vieta tutto), Gallica (Cloudflare respinge i server), BSB-Ink (robots.txt).
+//   gallica    Gallica (BnF e biblioteche partner): Cloudflare respinge i server, quindi NESSUNA richiesta da qui. Gli incunaboli e le copie
+//              delle edizioni principi del Cinquecento si raccolgono dal browser (SRU di Gallica, una pagina di 50 schede ogni 5 secondi
+//              come chiede il Crawl-delay del robots.txt) e stanno in data/stampe-gallica.json, che questa fonte si limita a leggere.
+// Bloccate e non usate dai server: e-rara (robots.txt vieta tutto), Gallica (Cloudflare respinge i server: entra dal browser), BSB-Ink (robots.txt).
 // Stato in data/stampe.json (una voce per riga): ogni elenco si rilegge ogni GIORNI giorni, ogni manifesto una volta sola.
 import fs from "node:fs";
 import { scarica, log, tag, records, token } from "../rete.mjs";
 import { lingueDa } from "../lingue.mjs";
 import { metadatiTesta } from "./cudl-piattaforma.mjs";
+import { luogoGallica } from "./gallica.mjs";
 
 export const FILE_STATO = "data/stampe.json";
 export const FILE_EP = "data/edizioni-principi.json";
+export const FILE_GALLICA = "data/stampe-gallica.json";
 const VERSIONE = 1, GIORNI = 30;
 export const PARTI = ["bsb", "heidelberg", "bodleian", "cudl", "archive", "vaticana", "ep"];
 export const BLOCCATE = {
   "e-rara.ch": "robots.txt vieta tutto agli agenti generici (anche l'OAI-PMH)",
-  "gallica.bnf.fr": "Cloudflare respinge le richieste dei server (403, «Attention Required»)",
+  "gallica.bnf.fr": "Cloudflare respinge le richieste dei server (403, «Attention Required»): la raccolta si fa dal browser (data/stampe-gallica.json)",
   "inkunabeln.digitale-sammlungen.de": "robots.txt vieta tutto (BSB-Ink); gli stessi incunaboli si leggono dall'API di ricerca del MDZ",
 };
 
@@ -281,10 +286,33 @@ export async function scansionaStampe({ minuti = 30, soloCache = false, parti = 
   return st;
 }
 
+// ------------------------------------------------------------------------------------------------ Gallica (raccolta dal browser)
+// data/stampe-gallica.json: { formato: 1, raccolto, query, totale, completa, ricerche_ep, record: [scheda, ...] }
+// scheda (Dublin Core dell'SRU di Gallica): k ark, y tipi, t titolo, c autori (con il ruolo), d data, p editori («Tipografo (Luogo)»),
+// s fonti (biblioteca e segnatura), g lingue, f formato, r diritti («dp» = domaine public), e (se c'è) id dell'edizione principe cercata
+// voci compatte «gallica:<ark>» come le altre parti; solo i documenti a stampa (non i manoscritti, che sono della fonte «gallica»)
+export function vociGallica(file = FILE_GALLICA) {
+  let d; try { d = JSON.parse(fs.readFileSync(file, "utf8")); } catch (e) { return {}; }
+  const out = {};
+  for (const o of d.record || []) {
+    if (!o || !o.k || !(o.y || []).some(y => /imprim|printed/i.test(y)) || (o.y || []).some(y => /manuscrit/i.test(y))) continue;
+    const L = luogoGallica(o.s) || {};
+    const editori = (o.p || []).map(x => /^(.*?)\s*\(([^()]*)\)\s*$/.exec(x) || [x, x, null]);
+    out["gallica:" + o.k] = pulisci({ s: L.segnatura || null, b: L.biblioteca || "Bibliothèque nationale de France", c: L.citta || null, t: o.t || null,
+      a: (o.c || []).map(x => x.replace(/\.\s*(Auteur|[ÉE]diteur|Traducteur|Commentateur|Annotateur|Pr[ée]facier|Imprimeur|Libraire|Illustrateur|Compilateur|Glossateur|Correcteur|Destinataire|Auteur adapt)[^.]*$/i, "").trim()).filter(Boolean).slice(0, 6),
+      // «14» o «14..» (secolo XV senza anno) = incunabolo senza data precisa
+      d: /^14(\.\.|--|\?\?)?$/.test(String(o.d || "").trim()) ? "[14..]" : o.d || null, i: /^14(\.\.|--|\?\?)?$/.test(String(o.d || "").trim()) ? 1 : null, l: [...new Set(editori.map(m => m[2]).filter(Boolean).map(x => x.replace(/[\[\]]/g, "")))].join(" ; ") || null,
+      // «(Venetiis in aedibus Aldi ...)» senza tipografo davanti: la nota tipografica intera vale anche come tipografo
+      p: editori.map(m => (m[1].replace(/[\[\]]/g, "").trim() || (m[2] || "").replace(/[\[\]]/g, "").trim())).filter(Boolean).join(" ; ") || null, g: lingueDa(o.g || []), r: o.r === "dp" ? "dp" : null });
+  }
+  return out;
+}
+
 // ------------------------------------------------------------------------------------------------ record per il catalogo
 const LICENZE = { bsb: "Bayerische Staatsbibliothek: condizioni d'uso del MDZ (digitale-sammlungen.de)", ep: "Bayerische Staatsbibliothek: condizioni d'uso del MDZ (digitale-sammlungen.de)",
   heidelberg: "Public Domain Mark 1.0", bodleian: "Digital Bodleian: https://digital.bodleian.ox.ac.uk/terms/",
-  cudl: "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library)", archive: "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto", vaticana: "" };
+  cudl: "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library)", archive: "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto", vaticana: "",
+  gallica: "Source gallica.bnf.fr / BnF: riuso non commerciale libero con la menzione della fonte (condizioni d'uso di Gallica)" };
 function indirizzi(parte, id, v) {
   switch (parte) {
     case "bsb": case "ep": return { manifest: `https://api.digitale-sammlungen.de/iiif/presentation/v2/${id}/manifest`, pagina: `https://www.digitale-sammlungen.de/view/${id}` };
@@ -292,27 +320,32 @@ function indirizzi(parte, id, v) {
     case "bodleian": return { manifest: `https://iiif.bodleian.ox.ac.uk/iiif/manifest/${id}.json`, pagina: `https://digital.bodleian.ox.ac.uk/objects/${id}/` };
     case "cudl": return { manifest: `https://cudl.lib.cam.ac.uk/iiif/${id}`, pagina: `https://cudl.lib.cam.ac.uk/view/${id}` };
     case "archive": return { manifest: `https://iiif.archive.org/iiif/3/${encodeURIComponent(id)}/manifest.json`, pagina: `https://archive.org/details/${id}` };
+    case "gallica": return { manifest: `https://gallica.bnf.fr/iiif/ark:/12148/${id}/manifest.json`, pagina: `https://gallica.bnf.fr/ark:/12148/${id}` };
     case "vaticana": return { manifest: `https://digi.vatlib.it/iiif/STP_${encodeURI(id)}/manifest.json`, pagina: `https://digi.vatlib.it/view/STP_${encodeURI(id)}` };
   }
   return {};
 }
+// Gallica: la BnF chiede «Source gallica.bnf.fr / BnF»; per le biblioteche partner valgono le loro condizioni
+const licenza = (parte, v) => parte !== "gallica" ? LICENZE[parte] || null
+  : /Biblioth[èe]que nationale de France|Arsenal \(BnF\)/.test(v.b || "") && v.r === "dp" ? LICENZE.gallica
+  : `Source gallica.bnf.fr / ${v.b || "biblioteca partner"}: condizioni d'uso della biblioteca partner`;
 const idCatalogo = (parte, id) => "stp-" + (parte === "ep" ? "bsb" : parte) + "-" + String(id).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 // st -> record compatti delle fonti (fonte «stampe»); solo incunaboli (fino al 1500) e edizioni principi
-export function recordStampe(st = leggiStato(), EP = leggiEdizioni()) {
+export function recordStampe(st = leggiStato(), EP = leggiEdizioni(), gallica = vociGallica()) {
   const out = [], visti = new Set();
   const perEp = Object.fromEntries(EP.map(e => [e.id, e]));
-  for (const [k, v] of Object.entries(st.voci)) {
+  for (const [k, v] of [...Object.entries(st.voci), ...Object.entries(gallica)]) {
     if (!v || v.q || v.x) continue;
     const i = k.indexOf(":"), parte = k.slice(0, i), id = k.slice(i + 1);
     const cid = idCatalogo(parte, id); if (visti.has(cid)) continue;
     const anni = anniDi(v.d);
     const ep = edizioneDi(v, EP);
-    const incunabolo = parte === "vaticana" || (anni && anni[0] <= 1500);
+    const incunabolo = parte === "vaticana" || v.i === 1 || (anni && anni[0] <= 1500);
     if (!incunabolo && !ep) continue;      // cinquecentine che non sono edizioni principi: fuori
     visti.add(cid);
     const e = ep ? perEp[ep] : null;
     out.push({ fonte: "stampe", id: cid, citta: v.c || null, biblioteca: v.b || null, segnatura: v.s || id, datazione: v.d || null, titolo: v.t || null,
-      autori_fonte: v.a || [], lingue: v.g || [], ...indirizzi(parte, id, v), licenza: LICENZE[parte] || null,
+      autori_fonte: v.a || [], lingue: v.g || [], ...indirizzi(parte, id, v), licenza: licenza(parte, v),
       tipo: incunabolo ? "incunabolo" : "stampa", stampa: pulisci({ luogo: v.l || null, tipografo: v.p || null }),
       ...(e ? { editio_princeps: { id: e.id, autore: e.autore, opera: e.opera, luogo: e.luogo, tipografo: e.tipografo, anno: e.anno } } : {}) });
   }

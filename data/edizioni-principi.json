@@ -9,11 +9,11 @@
   "parigi": "paris|parigi|lutet",
   "strasburgo": "stra(ss|ß)burg|strasbourg|argentor",
   "norimberga": "n(ü|u|ue)rnberg|nuremberg|norimberg|norimb",
-  "bologna": "bologn|bonon",
+  "bologna": "bologn|bonon|bologne",
   "napoli": "napol|neapel|naples|neapol",
   "brescia": "bresc|brixi",
   "ferrara": "ferrar",
-  "vicenza": "vicenz|vicentia|vicetia",
+  "vicenza": "vicenz|vicentia|vicetia|vicence",
   "zurigo": "z(ü|u|ue)rich|tigur",
   "hagenau": "hagenau|haguenau|hagano",
   "troyes": "troyes|tricass",
@@ -30,7 +30,7 @@
    "tipografo": "Johann Fust e Peter Schoeffer",
    "anno": "1465",
    "riconosci": {
-    "autore": "cicer|tull",
+    "autore": "cicer|tull|cicéron",
     "opera": "offic",
     "anni": [
      1465,
@@ -50,7 +50,7 @@
    "tipografo": "Konrad Sweynheym e Arnold Pannartz",
    "anno": "c. 1465",
    "riconosci": {
-    "autore": "cicer|tull",
+    "autore": "cicer|tull|cicéron",
     "opera": "\\borat",
     "anni": [
      1465,
@@ -70,7 +70,7 @@
    "tipografo": "Konrad Sweynheym e Arnold Pannartz",
    "anno": "1467",
    "riconosci": {
-    "autore": "cicer|tull",
+    "autore": "cicer|tull|cicéron",
     "opera": "famil|epist",
     "anni": [
      1467,
@@ -90,7 +90,7 @@
    "tipografo": "Konrad Sweynheym e Arnold Pannartz",
    "anno": "1470",
    "riconosci": {
-    "autore": "cicer|tull",
+    "autore": "cicer|tull|cicéron",
     "opera": "attic",
     "anni": [
      1470,
@@ -110,7 +110,7 @@
    "tipografo": "Konrad Sweynheym e Arnold Pannartz",
    "anno": "1471",
    "riconosci": {
-    "autore": "cicer|tull",
+    "autore": "cicer|tull|cicéron",
     "opera": "oration",
     "anni": [
      1471,
@@ -130,7 +130,7 @@
    "tipografo": "Alessandro Minuziano",
    "anno": "1498-1499",
    "riconosci": {
-    "autore": "cicer|tull",
+    "autore": "cicer|tull|cicéron",
     "opera": "opera",
     "anni": [
      1498,
@@ -150,7 +150,7 @@
    "tipografo": "Konrad Sweynheym e Arnold Pannartz",
    "anno": "1469",
    "riconosci": {
-    "autore": "caesar,? ?(gaius|caius|c\\.)?|iulius caesar|julius caesar",
+    "autore": "caesar,? ?(gaius|caius|c\\.)?|iulius caesar|julius caesar|césar",
     "opera": "comment|bell",
     "anni": [
      1469,
@@ -170,7 +170,7 @@
    "tipografo": "Konrad Sweynheym e Arnold Pannartz",
    "anno": "c. 1469",
    "riconosci": {
-    "autore": "\\blivi(us|o)\\b|titus livius|t\\. livius",
+    "autore": "\\blivi(us|o)\\b|titus livius|t\\. livius|tite-live",
     "anni": [
      1469,
      1470
@@ -208,7 +208,7 @@
    "tipografo": "Konrad Sweynheym e Arnold Pannartz",
    "anno": "1469",
    "riconosci": {
-    "autore": "lucan",
+    "autore": "lucan|lucain",
     "anni": [
      1469,
      1469
@@ -227,7 +227,7 @@
    "tipografo": "Konrad Sweynheym e Arnold Pannartz",
    "anno": "1469",
    "riconosci": {
-    "autore": "apulei",
+    "autore": "apulei|apulée",
     "anni": [
      1469,
      1469
@@ -246,7 +246,7 @@
    "tipografo": "Konrad Sweynheym e Arnold Pannartz",
    "anno": "1469",
    "riconosci": {
-    "autore": "gelli",
+    "autore": "gelli|aulu-gelle",
     "anni": [
      1469,
      1469
@@ -265,7 +265,7 @@
    "tipografo": "Giovanni da Spira",
    "anno": "1469",
    "riconosci": {
-    "autore": "plini",
+    "autore": "plini|pline",
     "opera": "natural|histor",
     "anni": [
      1469,
@@ -304,7 +304,7 @@
    "tipografo": "Johann Mentelin",
    "anno": "c. 1470",
    "riconosci": {
-    "autore": "terent",
+    "autore": "terent|térence",
     "anni": [
      1469,
      1471
@@ -342,7 +342,7 @@
    "tipografo": "[tipografo dell'Orazio]",
    "anno": "c. 1471",
    "riconosci": {
-    "autore": "horat|horaz",
+    "autore": "horat|horaz|horace",
     "opera": "carmin|opera|\\bod(ae|arum|e)\\b|horat|epist|sermon|poet",
     "anni": [
      1470,
@@ -360,7 +360,7 @@
    "tipografo": "Ulrich Han",
    "anno": "c. 1469-1470",
    "riconosci": {
-    "autore": "iuvenal|juvenal",
+    "autore": "iuvenal|juvenal|juvénal",
     "anni": [
      1469,
      1470
@@ -379,7 +379,7 @@
    "tipografo": "Ulrich Han",
    "anno": "c. 1469-1470",
    "riconosci": {
-    "autore": "\\bpersi(us|i|o)\\b",
+    "autore": "\\bpersi(us|i|o)\\b|\\bperse\\b",
     "anni": [
      1469,
      1470
@@ -398,7 +398,7 @@
    "tipografo": "Vindelino da Spira",
    "anno": "1472",
    "riconosci": {
-    "autore": "catull|tibull|properti|properz",
+    "autore": "catull|tibull|properti|properz|properce",
     "anni": [
      1472,
      1472
@@ -417,7 +417,7 @@
    "tipografo": "Konrad Sweynheym e Arnold Pannartz",
    "anno": "1470",
    "riconosci": {
-    "autore": "sueton|svetoni",
+    "autore": "sueton|svetoni|suétone",
     "anni": [
      1470,
      1470
@@ -436,7 +436,7 @@
    "tipografo": "Giovanni Filippo de Lignamine",
    "anno": "1470",
    "riconosci": {
-    "autore": "quintilian",
+    "autore": "quintilian|quintilien",
     "anni": [
      1470,
      1470
@@ -512,7 +512,7 @@
    "tipografo": "Nicolas Jenson",
    "anno": "1471",
    "riconosci": {
-    "autore": "nepos|nepot|aemili(us)? prob",
+    "autore": "nepos|nepot|aemili(us)? prob|cornélius népos",
     "anni": [
      1471,
      1471
@@ -531,7 +531,7 @@
    "tipografo": "Johann Mentelin",
    "anno": "c. 1470",
    "riconosci": {
-    "autore": "valeri(us)? maxim",
+    "autore": "valeri(us)? maxim|valère maxime",
     "anni": [
      1469,
      1471
@@ -550,7 +550,7 @@
    "tipografo": "Tommaso Ferrando",
    "anno": "c. 1473",
    "riconosci": {
-    "autore": "lucret",
+    "autore": "lucret|lucrèce",
     "anni": [
      1472,
      1474
@@ -569,7 +569,7 @@
    "tipografo": "Mattia Moravo",
    "anno": "1475",
    "riconosci": {
-    "autore": "seneca",
+    "autore": "seneca|sénèque",
     "anni": [
      1475,
      1475
@@ -588,7 +588,7 @@
    "tipografo": "Andrea Belforte",
    "anno": "c. 1484",
    "riconosci": {
-    "autore": "seneca",
+    "autore": "seneca|sénèque",
     "opera": "trag",
     "anni": [
      1478,
@@ -627,7 +627,7 @@
    "tipografo": "Niccolò di Lorenzo",
    "anno": "1478",
    "riconosci": {
-    "autore": "\\bcels(us|i|o)\\b",
+    "autore": "\\bcels(us|i|o)\\b|\\bcelse\\b",
     "anni": [
      1478,
      1478
@@ -703,7 +703,7 @@
    "tipografo": "Cristoforo Valdarfer",
    "anno": "1471",
    "riconosci": {
-    "autore": "plini",
+    "autore": "plini|pline",
     "opera": "epist",
     "anni": [
      1471,
@@ -723,7 +723,7 @@
    "tipografo": "Georg Lauer",
    "anno": "c. 1470",
    "riconosci": {
-    "autore": "curti",
+    "autore": "curti|quinte-curce",
     "anni": [
      1470,
      1472
@@ -761,7 +761,7 @@
    "tipografo": "Nicolas Jenson",
    "anno": "1470",
    "riconosci": {
-    "autore": "iustin(us|i)\\b|justin(us|i)\\b",
+    "autore": "iustin(us|i)\\b|justin(us|i)\\b|\\bjustin\\b",
     "anni": [
      1470,
      1470
@@ -876,7 +876,7 @@
    "tipografo": "Jacopo Dusense",
    "anno": "1482",
    "riconosci": {
-    "autore": "claudian",
+    "autore": "claudian|claudien",
     "anni": [
      1482,
      1482
@@ -914,7 +914,7 @@
    "tipografo": "Giorgio Sachsel e Bartolomeo Golsch",
    "anno": "1474",
    "riconosci": {
-    "autore": "ammian",
+    "autore": "ammian|ammien",
     "anni": [
      1474,
      1474
@@ -1028,7 +1028,7 @@
    "tipografo": "Vindelino da Spira",
    "anno": "1470",
    "riconosci": {
-    "autore": "priscian",
+    "autore": "priscian|priscien",
     "anni": [
      1470,
      1470
@@ -1066,7 +1066,7 @@
    "tipografo": "Bartolomeo de' Libri (a cura di Demetrio Calcondila)",
    "anno": "1488-1489",
    "riconosci": {
-    "autore": "homer|homér|omero",
+    "autore": "homer|homér|omero|homère",
     "anni": [
      1488,
      1489
@@ -1104,7 +1104,7 @@
    "tipografo": "Bono Accorsio",
    "anno": "c. 1478",
    "riconosci": {
-    "autore": "aesop|äsop|esop",
+    "autore": "aesop|äsop|esop|ésope",
     "anni": [
      1477,
      1480
@@ -1123,7 +1123,7 @@
    "tipografo": "[Bono Accorsio?]",
    "anno": "c. 1480",
    "riconosci": {
-    "autore": "theocrit|theokrit",
+    "autore": "theocrit|theokrit|théocrite",
     "anni": [
      1479,
      1481
@@ -1199,7 +1199,7 @@
    "tipografo": "Lorenzo di Alopa",
    "anno": "c. 1496",
    "riconosci": {
-    "autore": "callimach|kallimach",
+    "autore": "callimach|kallimach|callimaque",
     "anni": [
      1494,
      1497
@@ -1237,7 +1237,7 @@
    "tipografo": "Lorenzo di Alopa",
    "anno": "1496",
    "riconosci": {
-    "autore": "lucian|lukian",
+    "autore": "lucian|lukian|lucien",
     "anni": [
      1496,
      1496
@@ -1275,7 +1275,7 @@
    "tipografo": "Aldo Manuzio",
    "anno": "1497",
    "riconosci": {
-    "autore": "theophrast",
+    "autore": "theophrast|théophraste",
     "anni": [
      1497,
      1497
@@ -1370,7 +1370,7 @@
    "tipografo": "Aldo Manuzio",
    "anno": "1502",
    "riconosci": {
-    "autore": "herodot|erodot",
+    "autore": "herodot|erodot|hérodote",
     "anni": [
      1502,
      1502
@@ -1408,7 +1408,7 @@
    "tipografo": "Aldo Manuzio",
    "anno": "1504",
    "riconosci": {
-    "autore": "demosthen",
+    "autore": "demosthen|démosthène",
     "anni": [
      1504,
      1504
@@ -1427,7 +1427,7 @@
    "tipografo": "Aldo Manuzio",
    "anno": "c. 1505",
    "riconosci": {
-    "autore": "quint(us)? (smyrn|calab)|smyrnae",
+    "autore": "quint(us)? (smyrn|calab)|smyrnae|quintus de smyrne",
     "anni": [
      1504,
      1505
@@ -1446,7 +1446,7 @@
    "tipografo": "Aldo Manuzio",
    "anno": "1509",
    "riconosci": {
-    "autore": "plutarch",
+    "autore": "plutarch|plutarque",
     "anni": [
      1509,
      1509
@@ -1522,7 +1522,7 @@
    "tipografo": "Aldo Manuzio",
    "anno": "1514",
    "riconosci": {
-    "autore": "athenae|athenai",
+    "autore": "athenae|athenai|athénée",
     "anni": [
      1514,
      1514
@@ -1541,7 +1541,7 @@
    "tipografo": "Aldo Manuzio",
    "anno": "1514",
    "riconosci": {
-    "autore": "hesych",
+    "autore": "hesych|hésychius",
     "anni": [
      1514,
      1514
@@ -1598,7 +1598,7 @@
    "tipografo": "Filippo Giunta",
    "anno": "1516",
    "riconosci": {
-    "autore": "xenoph|senofont",
+    "autore": "xenoph|senofont|xénophon",
     "anni": [
      1516,
      1516
@@ -1617,7 +1617,7 @@
    "tipografo": "Filippo Giunta",
    "anno": "1517",
    "riconosci": {
-    "autore": "plutarch",
+    "autore": "plutarch|plutarque",
     "anni": [
      1517,
      1517
@@ -1655,7 +1655,7 @@
    "tipografo": "Aldo Manuzio e Andrea Torresani",
    "anno": "1518",
    "riconosci": {
-    "autore": "aeschyl|aischyl|eschil",
+    "autore": "aeschyl|aischyl|eschil|eschyle",
     "anni": [
      1518,
      1518
@@ -1674,7 +1674,7 @@
    "tipografo": "Aldo Manuzio e Andrea Torresani",
    "anno": "1525",
    "riconosci": {
-    "autore": "galen",
+    "autore": "galen|galien",
     "anni": [
      1525,
      1525
@@ -1731,7 +1731,7 @@
    "tipografo": "Hieronymus Froben e Nikolaus Episcopius (a cura di Erasmo)",
    "anno": "1533",
    "riconosci": {
-    "autore": "ptolem",
+    "autore": "ptolem|ptolémée",
     "anni": [
      1533,
      1533
@@ -1769,7 +1769,7 @@
    "tipografo": "Hieronymus Froben e Nikolaus Episcopius",
    "anno": "1533",
    "riconosci": {
-    "autore": "diogen\\w* laert",
+    "autore": "diogen\\w* laert|diogène laërce",
     "anni": [
      1533,
      1533
@@ -1788,7 +1788,7 @@
    "tipografo": "Johann Herwagen (a cura di Vincentius Opsopoeus)",
    "anno": "1534",
    "riconosci": {
-    "autore": "heliodor",
+    "autore": "heliodor|héliodore",
     "anni": [
      1534,
      1534
@@ -1807,7 +1807,7 @@
    "tipografo": "Giovanni Antonio Nicolini da Sabbio (a cura di Vettore Trincavelli)",
    "anno": "1535",
    "riconosci": {
-    "autore": "arrian",
+    "autore": "arrian|arrien",
     "anni": [
      1535,
      1535
@@ -1845,7 +1845,7 @@
    "tipografo": "Johann Herwagen (a cura di Thomas Gechauff)",
    "anno": "1544",
    "riconosci": {
-    "autore": "archimed",
+    "autore": "archimed|archimède",
     "anni": [
      1544,
      1544
@@ -1864,7 +1864,7 @@
    "tipografo": "Hieronymus Froben e Nikolaus Episcopius (a cura di Arnoldus Arlenius)",
    "anno": "1544",
    "riconosci": {
-    "autore": "ioseph|joseph",
+    "autore": "ioseph|joseph|josèphe",
     "anni": [
      1544,
      1544
@@ -1883,7 +1883,7 @@
    "tipografo": "Robert Estienne",
    "anno": "1546-1547",
    "riconosci": {
-    "autore": "dionys\\w* halicarn|dionys\\w* halikarn",
+    "autore": "dionys\\w* halicarn|dionys\\w* halikarn|denys d'halicarnasse",
     "opera": "archaiolog|antiquit",
     "anni": [
      1546,
@@ -1922,7 +1922,7 @@
    "tipografo": "Charles Estienne",
    "anno": "1551",
    "riconosci": {
-    "autore": "appian",
+    "autore": "appian|appien",
     "anni": [
      1551,
      1551
@@ -1941,7 +1941,7 @@
    "tipografo": "Henri Estienne",
    "anno": "1554",
    "riconosci": {
-    "autore": "anacreon|anakreon",
+    "autore": "anacreon|anakreon|anacréon",
     "anni": [
      1554,
      1554
@@ -1960,7 +1960,7 @@
    "tipografo": "Andreas Gessner (a cura di Wilhelm Xylander)",
    "anno": "1559",
    "riconosci": {
-    "autore": "marc\\w* aurel|antonin",
+    "autore": "marc\\w* aurel|antonin|marc aurèle|marc-aurèle",
     "anni": [
      1558,
      1559
