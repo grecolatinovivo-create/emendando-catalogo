@@ -12430,6 +12430,1433 @@
    "lat": 42.3596,
    "lon": -1.1284,
    "geonames": 3107275
+  },
+  "gb-aberdeen-city": {
+   "nome": "Aberdeen City",
+   "paese": "GB",
+   "lat": 57.1667,
+   "lon": -2.1667,
+   "geonames": 3333224
+  },
+  "gb-aberdeenshire": {
+   "nome": "Aberdeenshire",
+   "paese": "GB",
+   "lat": 57.1667,
+   "lon": -2.6667,
+   "geonames": 2657830
+  },
+  "gb-anglesey": {
+   "nome": "Anglesey",
+   "paese": "GB",
+   "lat": 53.25,
+   "lon": -4.3333,
+   "geonames": 2657311
+  },
+  "gb-angus": {
+   "nome": "Angus",
+   "paese": "GB",
+   "lat": 56.6667,
+   "lon": -2.9167,
+   "geonames": 2657306
+  },
+  "gb-antrim-and-newtownabbey": {
+   "nome": "Antrim and Newtownabbey",
+   "paese": "GB",
+   "lat": 54.7018,
+   "lon": -6.1977,
+   "geonames": 11353069
+  },
+  "gb-ards-and-north-down": {
+   "nome": "Ards and North Down",
+   "paese": "GB",
+   "lat": 54.5344,
+   "lon": -5.6295,
+   "geonames": 11353074
+  },
+  "gb-argyll-and-bute": {
+   "nome": "Argyll and Bute",
+   "paese": "GB",
+   "lat": 56.0369,
+   "lon": -5.4368,
+   "geonames": 6457407
+  },
+  "gb-armagh-city-banbridge-and-craigavon": {
+   "nome": "Armagh City Banbridge and Craigavon",
+   "paese": "GB",
+   "lat": 54.3692,
+   "lon": -6.4565,
+   "geonames": 11353076
+  },
+  "gb-avon": {
+   "nome": "Avon",
+   "paese": "GB",
+   "lat": 51.45,
+   "lon": -2.6
+  },
+  "gb-barnsley": {
+   "nome": "Barnsley",
+   "paese": "GB",
+   "lat": 53.5333,
+   "lon": -1.5,
+   "geonames": 3333122
+  },
+  "gb-bath-and-north-east-somerset": {
+   "nome": "Bath and North East Somerset",
+   "paese": "GB",
+   "lat": 51.3333,
+   "lon": -2.5,
+   "geonames": 3333123
+  },
+  "gb-bedford": {
+   "nome": "Bedford",
+   "paese": "GB",
+   "lat": 52.1883,
+   "lon": -0.4532,
+   "geonames": 7290534
+  },
+  "gb-bedfordshire": {
+   "nome": "Bedfordshire",
+   "paese": "GB",
+   "lat": 52.08,
+   "lon": -0.45
+  },
+  "gb-belfast": {
+   "nome": "Belfast",
+   "paese": "GB",
+   "lat": 54.5833,
+   "lon": -5.9167,
+   "geonames": 3333223
+  },
+  "gb-berkshire": {
+   "nome": "Berkshire",
+   "paese": "GB",
+   "lat": 51.45,
+   "lon": -1.08
+  },
+  "gb-birmingham": {
+   "nome": "Birmingham",
+   "paese": "GB",
+   "lat": 52.4805,
+   "lon": -1.8982,
+   "geonames": 3333125
+  },
+  "gb-blackburn-with-darwen": {
+   "nome": "Blackburn with Darwen",
+   "paese": "GB",
+   "lat": 53.6667,
+   "lon": -2.4667,
+   "geonames": 3333126
+  },
+  "gb-blackpool": {
+   "nome": "Blackpool",
+   "paese": "GB",
+   "lat": 53.8333,
+   "lon": -3.0333,
+   "geonames": 3333127
+  },
+  "gb-blaenau-gwent": {
+   "nome": "Blaenau Gwent",
+   "paese": "GB",
+   "lat": 51.75,
+   "lon": -3.1667,
+   "geonames": 3333238
+  },
+  "gb-bolton": {
+   "nome": "Bolton",
+   "paese": "GB",
+   "lat": 53.5833,
+   "lon": -2.5,
+   "geonames": 3333128
+  },
+  "gb-bournemouth-christchurch-and-poole": {
+   "nome": "Bournemouth, Christchurch and Poole",
+   "paese": "GB",
+   "lat": 50.7315,
+   "lon": -1.907,
+   "geonames": 12165737
+  },
+  "gb-bracknell-forest": {
+   "nome": "Bracknell Forest",
+   "paese": "GB",
+   "lat": 51.4167,
+   "lon": -0.75,
+   "geonames": 3333130
+  },
+  "gb-bradford": {
+   "nome": "Bradford",
+   "paese": "GB",
+   "lat": 53.8333,
+   "lon": -1.8333,
+   "geonames": 3333131
+  },
+  "gb-bridgend": {
+   "nome": "Bridgend",
+   "paese": "GB",
+   "lat": 51.55,
+   "lon": -3.5833,
+   "geonames": 3333239
+  },
+  "gb-brighton-and-hove": {
+   "nome": "Brighton and Hove",
+   "paese": "GB",
+   "lat": 50.8333,
+   "lon": -0.1333,
+   "geonames": 3333133
+  },
+  "gb-bristol": {
+   "nome": "Bristol",
+   "paese": "GB",
+   "lat": 51.45,
+   "lon": -2.6,
+   "geonames": 3333134
+  },
+  "gb-buckinghamshire": {
+   "nome": "Buckinghamshire",
+   "paese": "GB",
+   "lat": 51.75,
+   "lon": -0.75,
+   "geonames": 2654408
+  },
+  "gb-bury": {
+   "nome": "Bury",
+   "paese": "GB",
+   "lat": 53.5833,
+   "lon": -2.3333,
+   "geonames": 3333136
+  },
+  "gb-caerphilly": {
+   "nome": "Caerphilly",
+   "paese": "GB",
+   "lat": 51.6667,
+   "lon": -3.1667,
+   "geonames": 3333240
+  },
+  "gb-calderdale": {
+   "nome": "Calderdale",
+   "paese": "GB",
+   "lat": 53.7,
+   "lon": -2.0,
+   "geonames": 3333137
+  },
+  "gb-cambridgeshire": {
+   "nome": "Cambridgeshire",
+   "paese": "GB",
+   "lat": 52.3333,
+   "lon": 0.0833,
+   "geonames": 2653940
+  },
+  "gb-cardiff": {
+   "nome": "Cardiff",
+   "paese": "GB",
+   "lat": 51.5,
+   "lon": -3.1667,
+   "geonames": 3333241
+  },
+  "gb-carmarthenshire": {
+   "nome": "Carmarthenshire",
+   "paese": "GB",
+   "lat": 51.8333,
+   "lon": -4.1667,
+   "geonames": 2653753
+  },
+  "gb-causeway-coast-and-glens": {
+   "nome": "Causeway Coast and Glens",
+   "paese": "GB",
+   "lat": 55.0601,
+   "lon": -6.5908,
+   "geonames": 11353070
+  },
+  "gb-central-bedfordshire": {
+   "nome": "Central Bedfordshire",
+   "paese": "GB",
+   "lat": 51.9975,
+   "lon": -0.4215,
+   "geonames": 7290535
+  },
+  "gb-ceredigion": {
+   "nome": "Ceredigion",
+   "paese": "GB",
+   "lat": 52.25,
+   "lon": -4.0,
+   "geonames": 2653814
+  },
+  "gb-cheshire": {
+   "nome": "Cheshire",
+   "paese": "GB",
+   "lat": 53.17,
+   "lon": -2.55
+  },
+  "gb-cheshire-east": {
+   "nome": "Cheshire East",
+   "paese": "GB",
+   "lat": 53.167,
+   "lon": -2.3624,
+   "geonames": 7290536
+  },
+  "gb-cheshire-west-and-chester": {
+   "nome": "Cheshire West and Chester",
+   "paese": "GB",
+   "lat": 53.1635,
+   "lon": -2.7359,
+   "geonames": 7290537
+  },
+  "gb-clackmannanshire": {
+   "nome": "Clackmannanshire",
+   "paese": "GB",
+   "lat": 56.1667,
+   "lon": -3.75,
+   "geonames": 2652975
+  },
+  "gb-cleveland": {
+   "nome": "Cleveland",
+   "paese": "GB",
+   "lat": 54.55,
+   "lon": -1.2
+  },
+  "gb-clwyd": {
+   "nome": "Clwyd",
+   "paese": "GB",
+   "lat": 53.1,
+   "lon": -3.3
+  },
+  "gb-conwy": {
+   "nome": "Conwy",
+   "paese": "GB",
+   "lat": 53.0833,
+   "lon": -3.75,
+   "geonames": 3333242
+  },
+  "gb-cornwall": {
+   "nome": "Cornwall",
+   "paese": "GB",
+   "lat": 50.4167,
+   "lon": -4.75,
+   "geonames": 2652355
+  },
+  "gb-county-durham": {
+   "nome": "County Durham",
+   "paese": "GB",
+   "lat": 54.7768,
+   "lon": -1.5757,
+   "geonames": 2650629
+  },
+  "gb-coventry": {
+   "nome": "Coventry",
+   "paese": "GB",
+   "lat": 52.4167,
+   "lon": -1.5,
+   "geonames": 3333139
+  },
+  "gb-cumbria": {
+   "nome": "Cumbria",
+   "paese": "GB",
+   "lat": 54.5833,
+   "lon": -2.8333,
+   "geonames": 2651712
+  },
+  "gb-darlington": {
+   "nome": "Darlington",
+   "paese": "GB",
+   "lat": 54.5333,
+   "lon": -1.5333,
+   "geonames": 3333141
+  },
+  "gb-denbighshire": {
+   "nome": "Denbighshire",
+   "paese": "GB",
+   "lat": 53.0833,
+   "lon": -3.3333,
+   "geonames": 2651385
+  },
+  "gb-derby": {
+   "nome": "Derby",
+   "paese": "GB",
+   "lat": 52.9207,
+   "lon": -1.4722,
+   "geonames": 3333142
+  },
+  "gb-derbyshire": {
+   "nome": "Derbyshire",
+   "paese": "GB",
+   "lat": 53.1667,
+   "lon": -1.5833,
+   "geonames": 2651346
+  },
+  "gb-derry-city-and-strabane": {
+   "nome": "Derry City and Strabane",
+   "paese": "GB",
+   "lat": 54.8205,
+   "lon": -7.3596,
+   "geonames": 11353073
+  },
+  "gb-devon": {
+   "nome": "Devon",
+   "paese": "GB",
+   "lat": 50.75,
+   "lon": -3.75,
+   "geonames": 2651292
+  },
+  "gb-doncaster": {
+   "nome": "Doncaster",
+   "paese": "GB",
+   "lat": 53.5,
+   "lon": -1.0833,
+   "geonames": 3333143
+  },
+  "gb-dorset": {
+   "nome": "Dorset",
+   "paese": "GB",
+   "lat": 50.75,
+   "lon": -2.3333,
+   "geonames": 2651079
+  },
+  "gb-dudley": {
+   "nome": "Dudley",
+   "paese": "GB",
+   "lat": 52.5,
+   "lon": -2.1167,
+   "geonames": 3333144
+  },
+  "gb-dumfries-and-galloway": {
+   "nome": "Dumfries and Galloway",
+   "paese": "GB",
+   "lat": 55.0833,
+   "lon": -3.8333,
+   "geonames": 2650797
+  },
+  "gb-dundee-city": {
+   "nome": "Dundee City",
+   "paese": "GB",
+   "lat": 56.4667,
+   "lon": -2.9167,
+   "geonames": 3333225
+  },
+  "gb-dyfed": {
+   "nome": "Dyfed",
+   "paese": "GB",
+   "lat": 51.95,
+   "lon": -4.3
+  },
+  "gb-east-ayrshire": {
+   "nome": "East Ayrshire",
+   "paese": "GB",
+   "lat": 55.5,
+   "lon": -4.25,
+   "geonames": 3333226
+  },
+  "gb-east-dunbartonshire": {
+   "nome": "East Dunbartonshire",
+   "paese": "GB",
+   "lat": 55.9333,
+   "lon": -4.2,
+   "geonames": 3333227
+  },
+  "gb-east-lothian": {
+   "nome": "East Lothian",
+   "paese": "GB",
+   "lat": 55.9167,
+   "lon": -2.75,
+   "geonames": 2650386
+  },
+  "gb-east-renfrewshire": {
+   "nome": "East Renfrewshire",
+   "paese": "GB",
+   "lat": 55.75,
+   "lon": -4.3333,
+   "geonames": 3333228
+  },
+  "gb-east-riding-of-yorkshire": {
+   "nome": "East Riding of Yorkshire",
+   "paese": "GB",
+   "lat": 53.9167,
+   "lon": -0.5,
+   "geonames": 2650345
+  },
+  "gb-east-sussex": {
+   "nome": "East Sussex",
+   "paese": "GB",
+   "lat": 50.9167,
+   "lon": 0.3333,
+   "geonames": 2650328
+  },
+  "gb-edinburgh": {
+   "nome": "Edinburgh",
+   "paese": "GB",
+   "lat": 55.9497,
+   "lon": -3.1933,
+   "geonames": 3333229
+  },
+  "gb-eilean-siar": {
+   "nome": "Eilean Siar",
+   "paese": "GB",
+   "lat": 57.6667,
+   "lon": -7.1667,
+   "geonames": 2634428
+  },
+  "gb-essex": {
+   "nome": "Essex",
+   "paese": "GB",
+   "lat": 51.8333,
+   "lon": 0.5833,
+   "geonames": 2649889
+  },
+  "gb-falkirk": {
+   "nome": "Falkirk",
+   "paese": "GB",
+   "lat": 56.0,
+   "lon": -3.75,
+   "geonames": 3333230
+  },
+  "gb-fermanagh-and-omagh": {
+   "nome": "Fermanagh and Omagh",
+   "paese": "GB",
+   "lat": 54.4426,
+   "lon": -7.503,
+   "geonames": 11353071
+  },
+  "gb-fife": {
+   "nome": "Fife",
+   "paese": "GB",
+   "lat": 56.25,
+   "lon": -3.1667,
+   "geonames": 2649469
+  },
+  "gb-flintshire": {
+   "nome": "Flintshire",
+   "paese": "GB",
+   "lat": 53.25,
+   "lon": -3.1667,
+   "geonames": 2649298
+  },
+  "gb-gateshead": {
+   "nome": "Gateshead",
+   "paese": "GB",
+   "lat": 54.9333,
+   "lon": -1.6667,
+   "geonames": 2648772
+  },
+  "gb-glamorgan": {
+   "nome": "Glamorgan",
+   "paese": "GB",
+   "lat": 51.55,
+   "lon": -3.4
+  },
+  "gb-glasgow-city": {
+   "nome": "Glasgow City",
+   "paese": "GB",
+   "lat": 55.8667,
+   "lon": -4.25,
+   "geonames": 3333231
+  },
+  "gb-gloucestershire": {
+   "nome": "Gloucestershire",
+   "paese": "GB",
+   "lat": 51.8333,
+   "lon": -2.1667,
+   "geonames": 2648402
+  },
+  "gb-greater-london": {
+   "nome": "Greater London",
+   "paese": "GB",
+   "lat": 51.5,
+   "lon": -0.1667,
+   "geonames": 2648110
+  },
+  "gb-greater-manchester": {
+   "nome": "Greater Manchester",
+   "paese": "GB",
+   "lat": 53.48,
+   "lon": -2.3
+  },
+  "gb-gwent": {
+   "nome": "Gwent",
+   "paese": "GB",
+   "lat": 51.7,
+   "lon": -3.0
+  },
+  "gb-gwynedd": {
+   "nome": "Gwynedd",
+   "paese": "GB",
+   "lat": 52.8333,
+   "lon": -3.9167,
+   "geonames": 2647716
+  },
+  "gb-halton": {
+   "nome": "Halton",
+   "paese": "GB",
+   "lat": 53.3333,
+   "lon": -2.75,
+   "geonames": 2647601
+  },
+  "gb-hampshire": {
+   "nome": "Hampshire",
+   "paese": "GB",
+   "lat": 51.0,
+   "lon": -1.25,
+   "geonames": 2647554
+  },
+  "gb-hartlepool": {
+   "nome": "Hartlepool",
+   "paese": "GB",
+   "lat": 54.6667,
+   "lon": -1.25,
+   "geonames": 3333152
+  },
+  "gb-hereford-and-worcester": {
+   "nome": "Hereford and Worcester",
+   "paese": "GB",
+   "lat": 52.2,
+   "lon": -2.5
+  },
+  "gb-herefordshire": {
+   "nome": "Herefordshire",
+   "paese": "GB",
+   "lat": 52.0833,
+   "lon": -2.75,
+   "geonames": 2647071
+  },
+  "gb-hertfordshire": {
+   "nome": "Hertfordshire",
+   "paese": "GB",
+   "lat": 51.8333,
+   "lon": -0.25,
+   "geonames": 2647043
+  },
+  "gb-highland": {
+   "nome": "Highland",
+   "paese": "GB",
+   "lat": 57.5,
+   "lon": -5.0,
+   "geonames": 2646944
+  },
+  "gb-humberside": {
+   "nome": "Humberside",
+   "paese": "GB",
+   "lat": 53.7,
+   "lon": -0.6
+  },
+  "gb-inverclyde": {
+   "nome": "Inverclyde",
+   "paese": "GB",
+   "lat": 55.9,
+   "lon": -4.75,
+   "geonames": 2646127
+  },
+  "gb-isle-of-wight": {
+   "nome": "Isle of Wight",
+   "paese": "GB",
+   "lat": 50.6667,
+   "lon": -1.3333,
+   "geonames": 2646007
+  },
+  "gb-isles-of-scilly": {
+   "nome": "Isles of Scilly",
+   "paese": "GB",
+   "lat": 49.9212,
+   "lon": -6.2943,
+   "geonames": 2638384
+  },
+  "gb-kent": {
+   "nome": "Kent",
+   "paese": "GB",
+   "lat": 51.1667,
+   "lon": 0.6667,
+   "geonames": 3333158
+  },
+  "gb-kingston-upon-hull": {
+   "nome": "Kingston upon Hull",
+   "paese": "GB",
+   "lat": 53.75,
+   "lon": -0.3333,
+   "geonames": 3333159
+  },
+  "gb-kirklees": {
+   "nome": "Kirklees",
+   "paese": "GB",
+   "lat": 53.5833,
+   "lon": -1.75,
+   "geonames": 3333161
+  },
+  "gb-knowsley": {
+   "nome": "Knowsley",
+   "paese": "GB",
+   "lat": 53.4167,
+   "lon": -2.8333,
+   "geonames": 3333162
+  },
+  "gb-lancashire": {
+   "nome": "Lancashire",
+   "paese": "GB",
+   "lat": 53.8333,
+   "lon": -2.5,
+   "geonames": 2644974
+  },
+  "gb-leeds": {
+   "nome": "Leeds",
+   "paese": "GB",
+   "lat": 53.7964,
+   "lon": -1.5477,
+   "geonames": 3333164
+  },
+  "gb-leicester": {
+   "nome": "Leicester",
+   "paese": "GB",
+   "lat": 52.6333,
+   "lon": -1.1333,
+   "geonames": 3333165
+  },
+  "gb-leicestershire": {
+   "nome": "Leicestershire",
+   "paese": "GB",
+   "lat": 52.6667,
+   "lon": -1.0,
+   "geonames": 2644667
+  },
+  "gb-lincolnshire": {
+   "nome": "Lincolnshire",
+   "paese": "GB",
+   "lat": 53.1667,
+   "lon": -0.26,
+   "geonames": 2644486
+  },
+  "gb-lisburn-and-castlereagh": {
+   "nome": "Lisburn and Castlereagh",
+   "paese": "GB",
+   "lat": 54.5082,
+   "lon": -6.0525,
+   "geonames": 11353072
+  },
+  "gb-liverpool": {
+   "nome": "Liverpool",
+   "paese": "GB",
+   "lat": 53.4167,
+   "lon": -2.9167,
+   "geonames": 3333167
+  },
+  "gb-luton": {
+   "nome": "Luton",
+   "paese": "GB",
+   "lat": 51.8911,
+   "lon": -0.4279,
+   "geonames": 3333168
+  },
+  "gb-manchester": {
+   "nome": "Manchester",
+   "paese": "GB",
+   "lat": 53.4167,
+   "lon": -2.25,
+   "geonames": 3333169
+  },
+  "gb-medway": {
+   "nome": "Medway",
+   "paese": "GB",
+   "lat": 51.4167,
+   "lon": 0.5,
+   "geonames": 3333170
+  },
+  "gb-merseyside": {
+   "nome": "Merseyside",
+   "paese": "GB",
+   "lat": 53.42,
+   "lon": -2.95
+  },
+  "gb-merthyr-tydfil": {
+   "nome": "Merthyr Tydfil",
+   "paese": "GB",
+   "lat": 51.75,
+   "lon": -3.3333,
+   "geonames": 3333243
+  },
+  "gb-mid-and-east-antrim": {
+   "nome": "Mid and East Antrim",
+   "paese": "GB",
+   "lat": 54.8744,
+   "lon": -6.1014,
+   "geonames": 11353078
+  },
+  "gb-mid-glamorgan": {
+   "nome": "Mid Glamorgan",
+   "paese": "GB",
+   "lat": 51.6,
+   "lon": -3.35
+  },
+  "gb-mid-ulster": {
+   "nome": "Mid Ulster",
+   "paese": "GB",
+   "lat": 54.6219,
+   "lon": -6.791,
+   "geonames": 11353068
+  },
+  "gb-middlesbrough": {
+   "nome": "Middlesbrough",
+   "paese": "GB",
+   "lat": 54.5333,
+   "lon": -1.2,
+   "geonames": 3333172
+  },
+  "gb-middlesex": {
+   "nome": "Middlesex",
+   "paese": "GB",
+   "lat": 51.55,
+   "lon": -0.4
+  },
+  "gb-midlothian": {
+   "nome": "Midlothian",
+   "paese": "GB",
+   "lat": 55.8235,
+   "lon": -3.0933,
+   "geonames": 2642559
+  },
+  "gb-milton-keynes": {
+   "nome": "Milton Keynes",
+   "paese": "GB",
+   "lat": 52.0833,
+   "lon": -0.75,
+   "geonames": 3333173
+  },
+  "gb-monmouthshire": {
+   "nome": "Monmouthshire",
+   "paese": "GB",
+   "lat": 51.75,
+   "lon": -2.8333,
+   "geonames": 3333244
+  },
+  "gb-moray": {
+   "nome": "Moray",
+   "paese": "GB",
+   "lat": 57.4167,
+   "lon": -3.25,
+   "geonames": 2642240
+  },
+  "gb-neath-port-talbot": {
+   "nome": "Neath Port Talbot",
+   "paese": "GB",
+   "lat": 51.6667,
+   "lon": -3.75,
+   "geonames": 3333245
+  },
+  "gb-newcastle-upon-tyne": {
+   "nome": "Newcastle upon Tyne",
+   "paese": "GB",
+   "lat": 55.0,
+   "lon": -1.6667,
+   "geonames": 3333174
+  },
+  "gb-newport": {
+   "nome": "Newport",
+   "paese": "GB",
+   "lat": 51.5833,
+   "lon": -3.0,
+   "geonames": 3333246
+  },
+  "gb-newry-mourne-and-down": {
+   "nome": "Newry Mourne and Down",
+   "paese": "GB",
+   "lat": 54.2362,
+   "lon": -6.0669,
+   "geonames": 11353077
+  },
+  "gb-norfolk": {
+   "nome": "Norfolk",
+   "paese": "GB",
+   "lat": 52.6667,
+   "lon": 1.0,
+   "geonames": 2641455
+  },
+  "gb-north-ayrshire": {
+   "nome": "North Ayrshire",
+   "paese": "GB",
+   "lat": 55.6969,
+   "lon": -4.7337,
+   "geonames": 3333232
+  },
+  "gb-north-east-lincolnshire": {
+   "nome": "North East Lincolnshire",
+   "paese": "GB",
+   "lat": 53.5333,
+   "lon": -0.0833,
+   "geonames": 3333175
+  },
+  "gb-north-lanarkshire": {
+   "nome": "North Lanarkshire",
+   "paese": "GB",
+   "lat": 55.8667,
+   "lon": -3.9167,
+   "geonames": 3333233
+  },
+  "gb-north-lincolnshire": {
+   "nome": "North Lincolnshire",
+   "paese": "GB",
+   "lat": 53.5833,
+   "lon": -0.5,
+   "geonames": 3333176
+  },
+  "gb-north-northamptonshire": {
+   "nome": "North Northamptonshire",
+   "paese": "GB",
+   "lat": 52.4288,
+   "lon": -0.6242,
+   "geonames": 13192429
+  },
+  "gb-north-somerset": {
+   "nome": "North Somerset",
+   "paese": "GB",
+   "lat": 51.3333,
+   "lon": -2.8333,
+   "geonames": 3333177
+  },
+  "gb-north-tyneside": {
+   "nome": "North Tyneside",
+   "paese": "GB",
+   "lat": 55.0333,
+   "lon": -1.5,
+   "geonames": 2641238
+  },
+  "gb-north-yorkshire": {
+   "nome": "North Yorkshire",
+   "paese": "GB",
+   "lat": 54.1667,
+   "lon": -1.5,
+   "geonames": 2641209
+  },
+  "gb-northamptonshire": {
+   "nome": "Northamptonshire",
+   "paese": "GB",
+   "lat": 52.27,
+   "lon": -0.88
+  },
+  "gb-northumberland": {
+   "nome": "Northumberland",
+   "paese": "GB",
+   "lat": 55.25,
+   "lon": -2.0,
+   "geonames": 2641235
+  },
+  "gb-nottingham": {
+   "nome": "Nottingham",
+   "paese": "GB",
+   "lat": 52.9667,
+   "lon": -1.15,
+   "geonames": 3333178
+  },
+  "gb-nottinghamshire": {
+   "nome": "Nottinghamshire",
+   "paese": "GB",
+   "lat": 53.1667,
+   "lon": -1.0,
+   "geonames": 2641169
+  },
+  "gb-oldham": {
+   "nome": "Oldham",
+   "paese": "GB",
+   "lat": 53.55,
+   "lon": -2.0833,
+   "geonames": 3333179
+  },
+  "gb-orkney-islands": {
+   "nome": "Orkney Islands",
+   "paese": "GB",
+   "lat": 59.0,
+   "lon": -3.0,
+   "geonames": 2640923
+  },
+  "gb-oxfordshire": {
+   "nome": "Oxfordshire",
+   "paese": "GB",
+   "lat": 51.8333,
+   "lon": -1.25,
+   "geonames": 2640726
+  },
+  "gb-pembrokeshire": {
+   "nome": "Pembrokeshire",
+   "paese": "GB",
+   "lat": 51.8333,
+   "lon": -4.9167,
+   "geonames": 2640500
+  },
+  "gb-perth-and-kinross": {
+   "nome": "Perth and Kinross",
+   "paese": "GB",
+   "lat": 56.5,
+   "lon": -3.75,
+   "geonames": 3333234
+  },
+  "gb-peterborough": {
+   "nome": "Peterborough",
+   "paese": "GB",
+   "lat": 52.5833,
+   "lon": -0.25,
+   "geonames": 3333180
+  },
+  "gb-plymouth": {
+   "nome": "Plymouth",
+   "paese": "GB",
+   "lat": 50.3833,
+   "lon": -4.1333,
+   "geonames": 3333181
+  },
+  "gb-portsmouth": {
+   "nome": "Portsmouth",
+   "paese": "GB",
+   "lat": 50.8,
+   "lon": -1.0667,
+   "geonames": 3333183
+  },
+  "gb-powys": {
+   "nome": "Powys",
+   "paese": "GB",
+   "lat": 52.3333,
+   "lon": -3.4167,
+   "geonames": 2639944
+  },
+  "gb-reading": {
+   "nome": "Reading",
+   "paese": "GB",
+   "lat": 51.45,
+   "lon": -0.9667,
+   "geonames": 3333184
+  },
+  "gb-redcar-and-cleveland": {
+   "nome": "Redcar and Cleveland",
+   "paese": "GB",
+   "lat": 54.55,
+   "lon": -1.0,
+   "geonames": 3333186
+  },
+  "gb-renfrewshire": {
+   "nome": "Renfrewshire",
+   "paese": "GB",
+   "lat": 55.8333,
+   "lon": -4.5,
+   "geonames": 2639494
+  },
+  "gb-rhondda-cynon-taf": {
+   "nome": "Rhondda Cynon Taf",
+   "paese": "GB",
+   "lat": 51.6667,
+   "lon": -3.5,
+   "geonames": 3333247
+  },
+  "gb-rochdale": {
+   "nome": "Rochdale",
+   "paese": "GB",
+   "lat": 53.5833,
+   "lon": -2.1667,
+   "geonames": 3333188
+  },
+  "gb-rotherham": {
+   "nome": "Rotherham",
+   "paese": "GB",
+   "lat": 53.4167,
+   "lon": -1.25,
+   "geonames": 3333189
+  },
+  "gb-rutland": {
+   "nome": "Rutland",
+   "paese": "GB",
+   "lat": 52.6667,
+   "lon": -0.6667,
+   "geonames": 2638918
+  },
+  "gb-salford": {
+   "nome": "Salford",
+   "paese": "GB",
+   "lat": 53.5,
+   "lon": -2.3333,
+   "geonames": 3333190
+  },
+  "gb-sandwell": {
+   "nome": "Sandwell",
+   "paese": "GB",
+   "lat": 52.5,
+   "lon": -2.0,
+   "geonames": 3333191
+  },
+  "gb-sefton": {
+   "nome": "Sefton",
+   "paese": "GB",
+   "lat": 53.5,
+   "lon": -3.0,
+   "geonames": 3333192
+  },
+  "gb-sheffield": {
+   "nome": "Sheffield",
+   "paese": "GB",
+   "lat": 53.4167,
+   "lon": -1.5,
+   "geonames": 3333193
+  },
+  "gb-shetland-islands": {
+   "nome": "Shetland Islands",
+   "paese": "GB",
+   "lat": 60.3333,
+   "lon": -1.3333,
+   "geonames": 2638010
+  },
+  "gb-shropshire": {
+   "nome": "Shropshire",
+   "paese": "GB",
+   "lat": 52.6667,
+   "lon": -2.75,
+   "geonames": 2638655
+  },
+  "gb-slough": {
+   "nome": "Slough",
+   "paese": "GB",
+   "lat": 51.5,
+   "lon": -0.5667,
+   "geonames": 3333194
+  },
+  "gb-solihull": {
+   "nome": "Solihull",
+   "paese": "GB",
+   "lat": 52.4167,
+   "lon": -1.75,
+   "geonames": 3333195
+  },
+  "gb-somerset": {
+   "nome": "Somerset",
+   "paese": "GB",
+   "lat": 51.0833,
+   "lon": -3.0,
+   "geonames": 2637532
+  },
+  "gb-south-ayrshire": {
+   "nome": "South Ayrshire",
+   "paese": "GB",
+   "lat": 55.25,
+   "lon": -4.6667,
+   "geonames": 3333235
+  },
+  "gb-south-glamorgan": {
+   "nome": "South Glamorgan",
+   "paese": "GB",
+   "lat": 51.48,
+   "lon": -3.2
+  },
+  "gb-south-gloucestershire": {
+   "nome": "South Gloucestershire",
+   "paese": "GB",
+   "lat": 51.5,
+   "lon": -2.4167,
+   "geonames": 3333198
+  },
+  "gb-south-lanarkshire": {
+   "nome": "South Lanarkshire",
+   "paese": "GB",
+   "lat": 55.5833,
+   "lon": -3.8333,
+   "geonames": 3333236
+  },
+  "gb-south-tyneside": {
+   "nome": "South Tyneside",
+   "paese": "GB",
+   "lat": 54.95,
+   "lon": -1.4167,
+   "geonames": 3333199
+  },
+  "gb-south-yorkshire": {
+   "nome": "South Yorkshire",
+   "paese": "GB",
+   "lat": 53.47,
+   "lon": -1.3
+  },
+  "gb-southampton": {
+   "nome": "Southampton",
+   "paese": "GB",
+   "lat": 50.9167,
+   "lon": -1.3833,
+   "geonames": 3333196
+  },
+  "gb-southend-on-sea": {
+   "nome": "Southend-on-Sea",
+   "paese": "GB",
+   "lat": 51.5333,
+   "lon": 0.7,
+   "geonames": 3333197
+  },
+  "gb-st-helens": {
+   "nome": "St. Helens",
+   "paese": "GB",
+   "lat": 53.4167,
+   "lon": -2.75,
+   "geonames": 3333201
+  },
+  "gb-staffordshire": {
+   "nome": "Staffordshire",
+   "paese": "GB",
+   "lat": 52.8333,
+   "lon": -2.0,
+   "geonames": 2637141
+  },
+  "gb-stirling": {
+   "nome": "Stirling",
+   "paese": "GB",
+   "lat": 56.1153,
+   "lon": -4.2339,
+   "geonames": 2636909
+  },
+  "gb-stockport": {
+   "nome": "Stockport",
+   "paese": "GB",
+   "lat": 53.4167,
+   "lon": -2.1667,
+   "geonames": 3333202
+  },
+  "gb-stockton-on-tees": {
+   "nome": "Stockton-on-Tees",
+   "paese": "GB",
+   "lat": 54.55,
+   "lon": -1.3333,
+   "geonames": 3333203
+  },
+  "gb-stoke-on-trent": {
+   "nome": "Stoke-on-Trent",
+   "paese": "GB",
+   "lat": 53.0,
+   "lon": -2.1667,
+   "geonames": 3333204
+  },
+  "gb-suffolk": {
+   "nome": "Suffolk",
+   "paese": "GB",
+   "lat": 52.1667,
+   "lon": 1.0,
+   "geonames": 2636561
+  },
+  "gb-sunderland": {
+   "nome": "Sunderland",
+   "paese": "GB",
+   "lat": 54.8833,
+   "lon": -1.4167,
+   "geonames": 3333205
+  },
+  "gb-surrey": {
+   "nome": "Surrey",
+   "paese": "GB",
+   "lat": 51.25,
+   "lon": -0.3333,
+   "geonames": 2636512
+  },
+  "gb-swansea": {
+   "nome": "Swansea",
+   "paese": "GB",
+   "lat": 51.5833,
+   "lon": -4.0,
+   "geonames": 3333248
+  },
+  "gb-swindon": {
+   "nome": "Swindon",
+   "paese": "GB",
+   "lat": 51.5833,
+   "lon": -1.75,
+   "geonames": 3333207
+  },
+  "gb-tameside": {
+   "nome": "Tameside",
+   "paese": "GB",
+   "lat": 53.5,
+   "lon": -2.0833,
+   "geonames": 3333208
+  },
+  "gb-telford-and-wrekin": {
+   "nome": "Telford and Wrekin",
+   "paese": "GB",
+   "lat": 52.75,
+   "lon": -2.5,
+   "geonames": 3333209
+  },
+  "gb-the-scottish-borders": {
+   "nome": "The Scottish Borders",
+   "paese": "GB",
+   "lat": 55.5833,
+   "lon": -2.8333,
+   "geonames": 2655192
+  },
+  "gb-thurrock": {
+   "nome": "Thurrock",
+   "paese": "GB",
+   "lat": 51.5,
+   "lon": 0.4167,
+   "geonames": 2635885
+  },
+  "gb-torbay": {
+   "nome": "Torbay",
+   "paese": "GB",
+   "lat": 50.4516,
+   "lon": -3.5579,
+   "geonames": 3333210
+  },
+  "gb-torfaen": {
+   "nome": "Torfaen",
+   "paese": "GB",
+   "lat": 51.7015,
+   "lon": -3.0514,
+   "geonames": 3333249
+  },
+  "gb-trafford": {
+   "nome": "Trafford",
+   "paese": "GB",
+   "lat": 53.4167,
+   "lon": -2.3333,
+   "geonames": 3333211
+  },
+  "gb-tyne-and-wear": {
+   "nome": "Tyne and Wear",
+   "paese": "GB",
+   "lat": 54.95,
+   "lon": -1.55
+  },
+  "gb-vale-of-glamorgan": {
+   "nome": "Vale of Glamorgan",
+   "paese": "GB",
+   "lat": 51.4167,
+   "lon": -3.4167,
+   "geonames": 2635028
+  },
+  "gb-wakefield": {
+   "nome": "Wakefield",
+   "paese": "GB",
+   "lat": 53.6808,
+   "lon": -1.499,
+   "geonames": 3333212
+  },
+  "gb-walsall": {
+   "nome": "Walsall",
+   "paese": "GB",
+   "lat": 52.5833,
+   "lon": -2.0,
+   "geonames": 3333213
+  },
+  "gb-warrington": {
+   "nome": "Warrington",
+   "paese": "GB",
+   "lat": 53.4167,
+   "lon": -2.5833,
+   "geonames": 3333216
+  },
+  "gb-warwickshire": {
+   "nome": "Warwickshire",
+   "paese": "GB",
+   "lat": 52.3333,
+   "lon": -1.5833,
+   "geonames": 2634723
+  },
+  "gb-west-berkshire": {
+   "nome": "West Berkshire",
+   "paese": "GB",
+   "lat": 51.4167,
+   "lon": -1.25,
+   "geonames": 3333217
+  },
+  "gb-west-dunbartonshire": {
+   "nome": "West Dunbartonshire",
+   "paese": "GB",
+   "lat": 55.9667,
+   "lon": -4.5333,
+   "geonames": 3333237
+  },
+  "gb-west-glamorgan": {
+   "nome": "West Glamorgan",
+   "paese": "GB",
+   "lat": 51.65,
+   "lon": -3.85
+  },
+  "gb-west-lothian": {
+   "nome": "West Lothian",
+   "paese": "GB",
+   "lat": 55.9167,
+   "lon": -3.5,
+   "geonames": 2634354
+  },
+  "gb-west-midlands": {
+   "nome": "West Midlands",
+   "paese": "GB",
+   "lat": 52.48,
+   "lon": -1.9
+  },
+  "gb-west-northamptonshire": {
+   "nome": "West Northamptonshire",
+   "paese": "GB",
+   "lat": 52.2232,
+   "lon": -1.0338,
+   "geonames": 13192427
+  },
+  "gb-west-sussex": {
+   "nome": "West Sussex",
+   "paese": "GB",
+   "lat": 51.0,
+   "lon": -0.4167,
+   "geonames": 2634258
+  },
+  "gb-west-yorkshire": {
+   "nome": "West Yorkshire",
+   "paese": "GB",
+   "lat": 53.75,
+   "lon": -1.62
+  },
+  "gb-wigan": {
+   "nome": "Wigan",
+   "paese": "GB",
+   "lat": 53.5,
+   "lon": -2.5833,
+   "geonames": 3333219
+  },
+  "gb-wiltshire": {
+   "nome": "Wiltshire",
+   "paese": "GB",
+   "lat": 51.25,
+   "lon": -1.9167,
+   "geonames": 2633868
+  },
+  "gb-windsor-and-maidenhead": {
+   "nome": "Windsor and Maidenhead",
+   "paese": "GB",
+   "lat": 51.4667,
+   "lon": -0.6667,
+   "geonames": 2633840
+  },
+  "gb-wirral": {
+   "nome": "Wirral",
+   "paese": "GB",
+   "lat": 53.3333,
+   "lon": -3.0833,
+   "geonames": 3333220
+  },
+  "gb-wokingham": {
+   "nome": "Wokingham",
+   "paese": "GB",
+   "lat": 51.4167,
+   "lon": -0.9167,
+   "geonames": 3333221
+  },
+  "gb-wolverhampton": {
+   "nome": "Wolverhampton",
+   "paese": "GB",
+   "lat": 52.5833,
+   "lon": -2.1167,
+   "geonames": 3333222
+  },
+  "gb-worcestershire": {
+   "nome": "Worcestershire",
+   "paese": "GB",
+   "lat": 52.1667,
+   "lon": -2.1667,
+   "geonames": 2633560
+  },
+  "gb-wrexham": {
+   "nome": "Wrexham",
+   "paese": "GB",
+   "lat": 53.0,
+   "lon": -3.0,
+   "geonames": 2633484
+  },
+  "gb-york": {
+   "nome": "York",
+   "paese": "GB",
+   "lat": 53.964,
+   "lon": -1.0914,
+   "geonames": 2633351
   }
  },
  "citta": {
@@ -14561,7 +15988,250 @@
   "Manacor": "manacor",
   "Castricum": "castricum",
   "Piombino": "piombino",
-  "Uncastillo": "uncastillo"
+  "Uncastillo": "uncastillo",
+  "Aberdeen City": "gb-aberdeen-city",
+  "Aberdeenshire": "gb-aberdeenshire",
+  "Anglesey": "gb-anglesey",
+  "Isle of Anglesey": "gb-anglesey",
+  "Angus": "gb-angus",
+  "Antrim and Newtownabbey": "gb-antrim-and-newtownabbey",
+  "Ards and North Down": "gb-ards-and-north-down",
+  "Argyll and Bute": "gb-argyll-and-bute",
+  "Armagh City Banbridge and Craigavon": "gb-armagh-city-banbridge-and-craigavon",
+  "Avon": "gb-avon",
+  "Barnsley": "gb-barnsley",
+  "Bath and North East Somerset": "gb-bath-and-north-east-somerset",
+  "Bedford": "gb-bedford",
+  "Bedfordshire": "gb-bedfordshire",
+  "Belfast": "gb-belfast",
+  "City of Belfast": "gb-belfast",
+  "Berkshire": "gb-berkshire",
+  "Birmingham": "gb-birmingham",
+  "City and Borough of Birmingham": "gb-birmingham",
+  "Blackburn with Darwen": "gb-blackburn-with-darwen",
+  "Blackpool": "gb-blackpool",
+  "Blaenau Gwent": "gb-blaenau-gwent",
+  "Bolton": "gb-bolton",
+  "Borough of Bolton": "gb-bolton",
+  "Bournemouth": "gb-bournemouth-christchurch-and-poole",
+  "Bournemouth, Christchurch and Poole": "gb-bournemouth-christchurch-and-poole",
+  "Bournemouth, Christchurch and Poole Council": "gb-bournemouth-christchurch-and-poole",
+  "Christchurch": "gb-bournemouth-christchurch-and-poole",
+  "Poole": "gb-bournemouth-christchurch-and-poole",
+  "Bracknell Forest": "gb-bracknell-forest",
+  "Bradford": "gb-bradford",
+  "Bridgend": "gb-bridgend",
+  "Bridgend county borough": "gb-bridgend",
+  "Brighton and Hove": "gb-brighton-and-hove",
+  "Bristol": "gb-bristol",
+  "City of Bristol": "gb-bristol",
+  "Buckinghamshire": "gb-buckinghamshire",
+  "Borough of Bury": "gb-bury",
+  "Bury": "gb-bury",
+  "Caerphilly": "gb-caerphilly",
+  "Caerphilly County Borough": "gb-caerphilly",
+  "Calderdale": "gb-calderdale",
+  "Cambridgeshire": "gb-cambridgeshire",
+  "Cardiff": "gb-cardiff",
+  "Carmarthenshire": "gb-carmarthenshire",
+  "Causeway Coast and Glens": "gb-causeway-coast-and-glens",
+  "Central Bedfordshire": "gb-central-bedfordshire",
+  "Ceredigion": "gb-ceredigion",
+  "County of Ceredigion": "gb-ceredigion",
+  "Cheshire": "gb-cheshire",
+  "Cheshire East": "gb-cheshire-east",
+  "Cheshire West and Chester": "gb-cheshire-west-and-chester",
+  "Clackmannanshire": "gb-clackmannanshire",
+  "Clwyd": "gb-clwyd",
+  "Conwy": "gb-conwy",
+  "Cornwall": "gb-cornwall",
+  "County Durham": "gb-county-durham",
+  "Durham": "gb-county-durham",
+  "Coventry": "gb-coventry",
+  "Cumbria": "gb-cumbria",
+  "Darlington": "gb-darlington",
+  "Denbighshire": "gb-denbighshire",
+  "Derby": "gb-derby",
+  "Derbyshire": "gb-derbyshire",
+  "Derry City and Strabane": "gb-derry-city-and-strabane",
+  "Devon": "gb-devon",
+  "Doncaster": "gb-doncaster",
+  "Dorset": "gb-dorset",
+  "Dudley": "gb-dudley",
+  "Dumfries and Galloway": "gb-dumfries-and-galloway",
+  "Dundee City": "gb-dundee-city",
+  "Dyfed": "gb-dyfed",
+  "East Ayrshire": "gb-east-ayrshire",
+  "East Dunbartonshire": "gb-east-dunbartonshire",
+  "East Lothian": "gb-east-lothian",
+  "East Renfrewshire": "gb-east-renfrewshire",
+  "East Riding of Yorkshire": "gb-east-riding-of-yorkshire",
+  "East Sussex": "gb-east-sussex",
+  "City of Edinburgh": "gb-edinburgh",
+  "Eilean Siar": "gb-eilean-siar",
+  "Na h-Eileanan Siar": "gb-eilean-siar",
+  "Western Isles": "gb-eilean-siar",
+  "Essex": "gb-essex",
+  "Falkirk": "gb-falkirk",
+  "Fermanagh and Omagh": "gb-fermanagh-and-omagh",
+  "Fife": "gb-fife",
+  "County of Flintshire": "gb-flintshire",
+  "Flintshire": "gb-flintshire",
+  "Gateshead": "gb-gateshead",
+  "Glamorgan": "gb-glamorgan",
+  "Glasgow City": "gb-glasgow-city",
+  "Gloucestershire": "gb-gloucestershire",
+  "Greater London": "gb-greater-london",
+  "Greater London Authority": "gb-greater-london",
+  "Greater Manchester": "gb-greater-manchester",
+  "Gwent": "gb-gwent",
+  "Gwynedd": "gb-gwynedd",
+  "Borough of Halton": "gb-halton",
+  "Halton": "gb-halton",
+  "Hampshire": "gb-hampshire",
+  "Hartlepool": "gb-hartlepool",
+  "Hereford and Worcester": "gb-hereford-and-worcester",
+  "Herefordshire": "gb-herefordshire",
+  "Hertfordshire": "gb-hertfordshire",
+  "Highland": "gb-highland",
+  "Humberside": "gb-humberside",
+  "Inverclyde": "gb-inverclyde",
+  "Isle of Wight": "gb-isle-of-wight",
+  "Isles of Scilly": "gb-isles-of-scilly",
+  "Kent": "gb-kent",
+  "City of Kingston upon Hull": "gb-kingston-upon-hull",
+  "Kingston upon Hull": "gb-kingston-upon-hull",
+  "Kirklees": "gb-kirklees",
+  "Knowsley": "gb-knowsley",
+  "Lancashire": "gb-lancashire",
+  "City and Borough of Leeds": "gb-leeds",
+  "Leeds": "gb-leeds",
+  "City of Leicester": "gb-leicester",
+  "Leicester": "gb-leicester",
+  "Leicestershire": "gb-leicestershire",
+  "Lincolnshire": "gb-lincolnshire",
+  "Lisburn and Castlereagh": "gb-lisburn-and-castlereagh",
+  "Luton": "gb-luton",
+  "Medway": "gb-medway",
+  "Merseyside": "gb-merseyside",
+  "Merthyr Tydfil": "gb-merthyr-tydfil",
+  "Merthyr Tydfil County Borough": "gb-merthyr-tydfil",
+  "Mid and East Antrim": "gb-mid-and-east-antrim",
+  "Mid Glamorgan": "gb-mid-glamorgan",
+  "Mid Ulster": "gb-mid-ulster",
+  "Middlesbrough": "gb-middlesbrough",
+  "Middlesex": "gb-middlesex",
+  "Midlothian": "gb-midlothian",
+  "Milton Keynes": "gb-milton-keynes",
+  "Monmouthshire": "gb-monmouthshire",
+  "Moray": "gb-moray",
+  "Neath Port Talbot": "gb-neath-port-talbot",
+  "Newcastle upon Tyne": "gb-newcastle-upon-tyne",
+  "Newport": "gb-newport",
+  "Newry Mourne and Down": "gb-newry-mourne-and-down",
+  "Norfolk": "gb-norfolk",
+  "North Ayrshire": "gb-north-ayrshire",
+  "North East Lincolnshire": "gb-north-east-lincolnshire",
+  "North Lanarkshire": "gb-north-lanarkshire",
+  "North Lincolnshire": "gb-north-lincolnshire",
+  "North Northamptonshire": "gb-north-northamptonshire",
+  "North Somerset": "gb-north-somerset",
+  "North Tyneside": "gb-north-tyneside",
+  "North Yorkshire": "gb-north-yorkshire",
+  "Northamptonshire": "gb-northamptonshire",
+  "Northumberland": "gb-northumberland",
+  "Nottingham": "gb-nottingham",
+  "Nottinghamshire": "gb-nottinghamshire",
+  "Borough of Oldham": "gb-oldham",
+  "Oldham": "gb-oldham",
+  "Orkney Islands": "gb-orkney-islands",
+  "Oxfordshire": "gb-oxfordshire",
+  "Pembrokeshire": "gb-pembrokeshire",
+  "Perth and Kinross": "gb-perth-and-kinross",
+  "Peterborough": "gb-peterborough",
+  "Plymouth": "gb-plymouth",
+  "Portsmouth": "gb-portsmouth",
+  "Powys": "gb-powys",
+  "Sir Powys": "gb-powys",
+  "Reading": "gb-reading",
+  "Redcar and Cleveland": "gb-redcar-and-cleveland",
+  "Renfrewshire": "gb-renfrewshire",
+  "Rhondda Cynon Taf": "gb-rhondda-cynon-taf",
+  "Borough of Rochdale": "gb-rochdale",
+  "Rochdale": "gb-rochdale",
+  "Rotherham": "gb-rotherham",
+  "District of Rutland": "gb-rutland",
+  "Rutland": "gb-rutland",
+  "City and Borough of Salford": "gb-salford",
+  "Salford": "gb-salford",
+  "Sandwell": "gb-sandwell",
+  "Sefton": "gb-sefton",
+  "Sheffield": "gb-sheffield",
+  "Shetland Islands": "gb-shetland-islands",
+  "Shropshire": "gb-shropshire",
+  "Slough": "gb-slough",
+  "Solihull": "gb-solihull",
+  "Somerset": "gb-somerset",
+  "South Ayrshire": "gb-south-ayrshire",
+  "South Glamorgan": "gb-south-glamorgan",
+  "South Gloucestershire": "gb-south-gloucestershire",
+  "South Lanarkshire": "gb-south-lanarkshire",
+  "South Tyneside": "gb-south-tyneside",
+  "South Yorkshire": "gb-south-yorkshire",
+  "Southampton": "gb-southampton",
+  "Southend-on-Sea": "gb-southend-on-sea",
+  "St. Helens": "gb-st-helens",
+  "Staffordshire": "gb-staffordshire",
+  "Stirling": "gb-stirling",
+  "Borough of Stockport": "gb-stockport",
+  "Stockport": "gb-stockport",
+  "Stockton-on-Tees": "gb-stockton-on-tees",
+  "Stoke-on-Trent": "gb-stoke-on-trent",
+  "Suffolk": "gb-suffolk",
+  "Sunderland": "gb-sunderland",
+  "Surrey": "gb-surrey",
+  "City and County of Swansea": "gb-swansea",
+  "Borough of Swindon": "gb-swindon",
+  "Swindon": "gb-swindon",
+  "Borough of Tameside": "gb-tameside",
+  "Tameside": "gb-tameside",
+  "Telford and Wrekin": "gb-telford-and-wrekin",
+  "The Scottish Borders": "gb-the-scottish-borders",
+  "Borough of Thurrock": "gb-thurrock",
+  "Thurrock": "gb-thurrock",
+  "Borough of Torbay": "gb-torbay",
+  "Torbay": "gb-torbay",
+  "Torfaen": "gb-torfaen",
+  "Torfaen County Borough": "gb-torfaen",
+  "Trafford": "gb-trafford",
+  "Tyne and Wear": "gb-tyne-and-wear",
+  "Vale of Glamorgan": "gb-vale-of-glamorgan",
+  "City and Borough of Wakefield": "gb-wakefield",
+  "Wakefield": "gb-wakefield",
+  "Walsall": "gb-walsall",
+  "Warrington": "gb-warrington",
+  "Warwickshire": "gb-warwickshire",
+  "West Berkshire": "gb-west-berkshire",
+  "West Dunbartonshire": "gb-west-dunbartonshire",
+  "West Glamorgan": "gb-west-glamorgan",
+  "West Lothian": "gb-west-lothian",
+  "West Midlands": "gb-west-midlands",
+  "West Northamptonshire": "gb-west-northamptonshire",
+  "West Sussex": "gb-west-sussex",
+  "West Yorkshire": "gb-west-yorkshire",
+  "Borough of Wigan": "gb-wigan",
+  "Wigan": "gb-wigan",
+  "Wiltshire": "gb-wiltshire",
+  "Royal Borough of Windsor and Maidenhead": "gb-windsor-and-maidenhead",
+  "Windsor and Maidenhead": "gb-windsor-and-maidenhead",
+  "Metropolitan Borough of Wirral": "gb-wirral",
+  "Wirral": "gb-wirral",
+  "Wokingham": "gb-wokingham",
+  "Wolverhampton": "gb-wolverhampton",
+  "Worcestershire": "gb-worcestershire",
+  "Wrexham": "gb-wrexham",
+  "City of York": "gb-york",
+  "York": "gb-york"
  },
  "biblioteche": {
   "Bibliothèque Carré d'art / Nîmes": "nimes",

@@ -13,7 +13,7 @@
 //        [--nli-minuti=15] [--getty-minuti=15] [--harvard-minuti=10]
 //        [--kbdk-minuti=30] [--uva-minuti=5] [--onb-minuti=30] [--bncf-minuti=5] [--vallicelliana-minuti=5] [--malatestiana-minuti=20] [--polona-minuti=20] [--manuscriptorium-minuti=30] [--archive-minuti=10]
 //        [--crossasia-minuti=30] [--sbbasia-minuti=30] [--sbbor-minuti=30] [--nomfoundation-minuti=20]
-//        [--nb-minuti=60] [--manuscripta-minuti=15] [--bnl-minuti=5] [--ija-minuti=5] [--stampe-minuti=60] [--papiri-minuti=60] [--epigrafi-minuti=60] [--musei-minuti=60] [--giappone-minuti=60]
+//        [--nb-minuti=60] [--manuscripta-minuti=15] [--bnl-minuti=5] [--ija-minuti=5] [--stampe-minuti=60] [--papiri-minuti=60] [--epigrafi-minuti=60] [--musei-minuti=60] [--giappone-minuti=60] [--romani-minuti=60]
 // Scrive il catalogo diviso per fonte (vedi costruisci.mjs): data/catalogo/indice.json, data/catalogo/indice/<fonte>-<n>.json, data/catalogo/voci/<fonte>-<n>.json,
 // più data/manoscritti.json (compatibilità: solo i codici con autori classici), e gli stati delle scansioni a riprese
 // (data/vaticana.json, data/bodleian.json, data/laurenziana.json, data/leiden.json, data/heidelberg-indici.json; data/<fonte>.json per le fonti del Handschriftenportal: wolfenbuettel, bamberga, karlsruhe, stoccarda, colonia, lipsia; data/yale.json, data/penn.json, data/walters.json).
@@ -99,6 +99,7 @@ import { scansionaEpigrafi, recordEpigrafi } from "./fonti/epigrafi.mjs";
 import { recordEpigrafiBrowser } from "./fonti/epigrafi-browser.mjs";
 import { scansionaMusei, recordMusei } from "./fonti/musei.mjs";
 import { scansionaGiappone, recordGiappone } from "./fonti/giappone-scritture.mjs";
+import { scansionaRomani, recordRomani, vociScelte as vociRomani } from "./fonti/romani-instrumentum.mjs";
 import { scriviRegistro, registraEsiti } from "./registro.mjs";
 import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 import { tipoDa } from "./carte.mjs";
@@ -106,7 +107,7 @@ import { miniatoDa } from "./miniati.mjs";
 import { musicaDa } from "./musica.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
-const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,kbdk,uva,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,bl,isos,manchester,cudl,cbl,parker,nlw,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,auc,northwestern,nli,getty,harvard,nbkm,libfond,bms,archive,crossasia,sbbasia,sbbor,nomfoundation,stampe,papiri,epigrafi,musei,giappone,vaticana").split(",");
+const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,kbdk,uva,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,bl,isos,manchester,cudl,cbl,parker,nlw,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,auc,northwestern,nli,getty,harvard,nbkm,libfond,bms,archive,crossasia,sbbasia,sbbor,nomfoundation,stampe,papiri,epigrafi,musei,giappone,romani,vaticana").split(",");
 const INIZIO = Date.now();
 export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)", berlino: "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
   bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -196,6 +197,8 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   musei: "Musei: oggetti scritti del Museo Egizio di Torino (immagini CC0) e modelli 3D di oggetti scritti su Sketchfab",
   // Giappone, scritture non librarie (corsia «giappone-scritture», dal 28 ottobre 2026): mokkan e takuhon (scripts/fonti/giappone-scritture.mjs, docs/EPIGRAFI.md)
   giappone: "Giappone, scritture non librarie: tavolette di legno (mokkan) del Mokkanko di Nabunken e calchi di iscrizioni (takuhon) della National Diet Library e di Waseda",
+  // instrumentum romano (corsia «romani», dal 28 ottobre 2026): oggetti scritti del Portable Antiquities Scheme e tavolette di Vindolanda (scripts/fonti/romani-instrumentum.mjs, docs/EPIGRAFI.md)
+  romani: "Instrumentum romano: oggetti scritti del Portable Antiquities Scheme (British Museum; foto e schede CC BY-SA da Wikimedia Commons) e tavolette di Vindolanda (foto di Wikimedia Commons, testi di RIB online CC BY 4.0)",
   // epigrafi dal browser (dal 28 ottobre 2026): musei che dal server non rispondono, letti dal browser (scripts/fonti/epigrafi-browser.mjs, docs/EPIGRAFI.md)
   epibrowser: "Epigrafi dal browser: J. Paul Getty Museum e Yale University Art Gallery (immagini CC0, manifesti IIIF dei musei; elenchi raccolti dal browser)",
   vaticana: "Biblioteca Apostolica Vaticana (digi.vatlib.it)" };
@@ -535,6 +538,18 @@ async function main() {
       const rs = recordGiappone(st).filter(r => !gia.has(r.manifest));
       const per = {}; for (const r of rs) { const k = r.id.split("-")[1]; per[k] = (per[k] || 0) + 1; }
       dettagli.giappone = { perRaccolta: per, conTesto: rs.filter(r => r.epigrafe && r.epigrafe.testo).length };
+      return rs;
+    },
+    // instrumentum romano (corsia «romani», dal 28 ottobre 2026): stato in data/romani.json. Oggetti scritti del PAS (da Wikimedia Commons) e
+    // tavolette di Vindolanda; quelli che il catalogo ha già da altre fonti (stesso manifesto) restano a quelle fonti
+    romani: async () => {
+      const st = await scansionaRomani({ minuti: min("romani", +(arg["romani-minuti"] ?? 60)), soloCache: sc("romani") });
+      const gia = new Set(Object.keys(perFonte).filter(f => f !== "romani").flatMap(f => perFonte[f].map(r => r.manifest)));
+      for (const v of prima) if (v.fonte !== "romani" && !perFonte[v.fonte]) gia.add(v.manifest);
+      const rs = recordRomani(st).filter(r => !gia.has(r.manifest));
+      const per = {}; for (const r of rs) { const k = r.id.split("-")[1] === "pas" ? "pas " + r.epigrafe.oggetto : r.id.split("-")[1]; per[k] = (per[k] || 0) + 1; }
+      const sc_ = vociRomani(st);
+      dettagli.romani = { perTipo: per, conTesto: rs.filter(r => r.epigrafe && r.epigrafe.testo).length, monete: sc_.moneteTotali, moneteFuoriQuota: sc_.moneteFuori };
       return rs;
     },
     // epigrafi dal browser (dal 28 ottobre 2026): nessuna richiesta, gli elenchi vengono dal browser (scripts/browser/epigrafi-getty.js ->

@@ -1006,3 +1006,31 @@ test("Musei: scheda del Museo Egizio, classi, Sketchfab e collegamenti", async (
   const man = M.manifestiMusei(st, edh);
   assert.ok(man["musei-egizio"]["cat_1558"]); assert.equal(man["musei-3d"].cccc.items[0].items[0].items[0].body.id, "https://media.sketchfab.com/z.jpeg");
 });
+
+test("Instrumentum romano (fonte «romani»): schede del PAS da Wikimedia Commons, legende delle monete, tavolette di Vindolanda", async () => {
+  const R = await import("../scripts/fonti/romani-instrumentum.mjs");
+  const w = `== {{int:filedesc}} ==\n{{photograph\n|title = Roman Coin: Nummus of Constantine II\n|description = {{en|1=Copper alloy coin. Nummus of Constantine II (317-340).</p>\n\n<p>Obverse inscription: CONSTANTINVS IVN NOB C</p>\n\n<p>Reverse inscription: PROVIDENTI  AE CAESS</p>\n\n<p>Cliff Reeves kindly identified this coin.</p>\n\n<p>Diameter: 18.2mm, Weight: 2.22gms}}\n|date = ROMAN\n|depicted place = (County of findspot) Lincolnshire\n|photographer = North Lincolnshire Museum, Martin Foreman, 2014-07-09 11:42:50\n|accession number = FindID: 626734<br>Old ref: NLM-BE47D9<br>Filename: NLM25708.jpg\n|notes = \n}}\n{{cc-by-sa-4.0|1=The Portable Antiquities Scheme/ The Trustees of the British Museum}}`;
+  const s = R.schedaPas("File:Roman Coin, Nummus of Constantine II (FindID 626734).jpg", w);
+  assert.equal(s.fid, "626734"); assert.equal(s.pid, "NLM-BE47D9"); assert.equal(s.c, "Lincolnshire");
+  const v = R.vocePas(s);
+  assert.equal(v.o, "moneta"); assert.equal(v.per, "R"); assert.equal(v.tx, "D/ CONSTANTINVS IVN NOB C ; R/ PROVIDENTI AE CAESS");
+  assert.equal(R.legendaDa("the reverse legend P M TR P COS III. The reverse depicts Roma"), "R/ P M TR P COS III");
+  assert.equal(R.legendaDa("DOMINOR NOSTROR CAESS reverse type, depicting the inscription VOT V within a wreath"), "VOT V ; R/ DOMINOR NOSTROR CAESS");
+  assert.equal(R.vocePas({ fid: "1", t: "Roman coin", d: "Obverse: Bust right. Reverse: Wolf and twins. Inscription: Not applicable", dc: "ROMAN" }).x, "moneta senza legenda registrata");
+  assert.equal(R.vocePas({ fid: "2", t: "Roman seal box", d: "Roman seal box", dc: "ROMAN" }).x, "senza scrittura");
+  assert.equal(R.vocePas({ fid: "3", t: "Medieval seal matrix", d: "Inscription reads +S'SIBIL' FIL' hENR'", dc: "{{between|1200|1300}}" }).x, "periodo");
+  const anello = R.vocePas({ fid: "4", t: "Roman ring inscribed DEO TOTA", d: "Roman silver finger ring found at Hockliffe, Bedfordshire in 2005. Inscribed \"DEO TOTA\" on the front. The inscription translates: To the god Toutatis", dc: "2007-11-03" });
+  assert.equal(anello.o, "anello"); assert.equal(anello.tx, "DEO TOTA"); assert.equal(R.supportoDa(anello.o, anello.m), "metallo (anello)");
+  assert.equal(R.supportoDa("defixio", "piombo"), "piombo (defixio)"); assert.equal(R.conteaNelTesto("found at Hockliffe, Bedfordshire in 2005"), "Bedfordshire");
+  const img = ["Roman Coin.jpg", "https://upload.wikimedia.org/x.jpg", 3000, 1250, "CC BY-SA 4.0", "Martin Foreman"];
+  const r = R.recordPas("626734", { ...v, f: [img] });
+  assert.equal(r.id, "rom-pas-626734"); assert.equal(r.tipo, "epigrafe"); assert.equal(r.citta, "Lincolnshire"); assert.equal(r.epigrafe.supporto, "metallo (moneta)");
+  assert.equal(r.segnatura, "PAS NLM-BE47D9"); assert.equal(r.pagina, "https://finds.org.uk/database/artefacts/record/id/626734"); assert.equal(r.epigrafe.aperta, true);
+  const rib = R.schedaRib(`<h1>\n <em>Tab.Vindol.</em> 291. Birthday Invitation\n</h1><dl class="meta"><dt>Type of object</dt>\n<dd>Ink writing tablet</dd><dt>Modern location</dt><dd>Now in the  British Museum.</dd><dt>Institution/acc. #</dt><dd><a>British Museum</a>: <a>1986,1001.64</a> <br></dd><dt>Date</dt><dd><span class="sc">a.d.</span> 97-105</dd></dl><div class="interpretive" id="edition-interpretive" style="display: block;" lang="la"><div class="textpartnumber" id="abi-2">i</div><div class="textpart"><a id="l1"></a> Cl(audia) Seuera Lepidinae <br id="l2"> salutem </div></div><div class="diplomatic"></div>`);
+  assert.equal(rib.tx, "[i] Cl(audia) Seuera Lepidinae / salutem");
+  const tv = R.recordVindolanda("291", { f: [img], rib });
+  assert.equal(tv.citta, "Londra"); assert.equal(tv.segnatura, "Tab. Vindol. 291 (British Museum 1986,1001.64)"); assert.equal(tv.datazione, "97-105 d.C."); assert.equal(tv.epigrafe.supporto, "legno (tavoletta)");
+  const m = R.manifestiRomani({ voci: { "pas:626734": { ...v, f: [img] }, "vindolanda:309": { f: [img], rib } } });
+  assert.equal(m["romani-pas"]["626734"].items[0].items[0].items[0].body.id, "https://upload.wikimedia.org/x.jpg");
+  assert.ok(m["romani-vindolanda"]["309"]);
+});

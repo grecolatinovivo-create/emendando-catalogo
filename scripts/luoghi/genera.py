@@ -57,6 +57,11 @@ for a, lst in cand.items():
     if k in out and out[k]['geonames'] != int(gid): k += '-' + gid
     out[k] = {"nome": name, "paese": "JP", "lat": round(lat, 4), "lon": round(lon, 4), "geonames": int(gid)}
     citta[a] = k
+# contee del Regno Unito (dal 28 ottobre 2026): luogo delle voci del Portable Antiquities Scheme (fonte «romani»), la cui «città» è la
+# contea di ritrovamento; tabella in contee-gb.json (scritta da GeoNames ADM2). I nomi già usati da una città non si toccano.
+for k, c in json.load(open(sys.argv[1] + '/contee-gb.json', encoding='utf8'))['contee'].items():
+    out.setdefault(k, {x: c[x] for x in ('nome', 'paese', 'lat', 'lon', 'geonames') if x in c})
+    for a in c['alias']: citta.setdefault(a, k)
 res = {
  "nota": "Luoghi delle biblioteche per la mappa del catalogo. Coordinate da GeoNames (geonames.org, CC BY 4.0), id in «geonames». "
          "Il luogo di una voce si cerca in quest'ordine: nome della biblioteca in «biblioteche», città della voce in «citta», ultima parte del nome della biblioteca dopo la virgola in «citta», fonte in «fonti». "

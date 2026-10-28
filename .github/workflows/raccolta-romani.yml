@@ -1,0 +1,33 @@
+# Corsia «romani» (dal 28 ottobre 2026): instrumentum romano scritto con foto che si aprono nel visore di Emendando
+# (censimento in docs/EPIGRAFI.md, sezione «Instrumentum romano»). Fonte «romani» (scripts/fonti/romani-instrumentum.mjs):
+#   - Portable Antiquities Scheme (finds.org.uk, British Museum): il sito risponde al server con la verifica Cloudflare, che non si aggira;
+#     foto e schede del PAS si leggono da Wikimedia Commons (API, ricerche dentro la categoria «Portable Antiquities Scheme», 50 file per
+#     richiesta, una richiesta ogni 2 secondi). Solo oggetti romani e altomedievali con scrittura; monete solo con la legenda, al massimo 20.000;
+#   - tavolette di Vindolanda: foto libere di Wikimedia Commons, dati e testo di RIB online (CC BY 4.0, Crawl-delay 20 rispettato).
+# Stato in data/romani.json. Ruota fino a lettura completa, poi il giro notturno delle 04:40 UTC (ricerche ogni 30 giorni).
+name: "Raccolta: corsia romani"
+
+on:
+  schedule:
+    - cron: "40 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write   # per la ruota
+
+concurrency:
+  group: raccolta-romani
+  cancel-in-progress: false
+
+jobs:
+  corsia:
+    uses: ./.github/workflows/corsia.yml
+    with:
+      corsia: romani
+      fonti: romani
+      argomenti: --romani-minuti=130
+      cache: false
+      ruota: false
+      completa: true
+      flusso: raccolta-romani.yml

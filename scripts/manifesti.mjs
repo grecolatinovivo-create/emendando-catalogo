@@ -29,6 +29,8 @@
 //   - musei (dal 28 ottobre 2026): Museo Egizio e anteprime dei modelli 3D di Sketchfab (scripts/fonti/musei.mjs, manifestiMusei);
 //   - mokkan del 木簡庫 Mokkanko di Nabunken (dal 28 ottobre 2026): niente IIIF, foto JPEG del sito (senza CORS): manifesti P3 con le
 //     misure date dalla pagina (scripts/fonti/giappone-scritture.mjs, manifestiGiappone);
+//   - instrumentum romano (dal 28 ottobre 2026): oggetti scritti del Portable Antiquities Scheme e tavolette di Vindolanda, con le foto
+//     di Wikimedia Commons (upload.wikimedia.org, CORS aperto) (scripts/fonti/romani-instrumentum.mjs, manifestiRomani);
 //   - Biblioteca della Matica srpska, Novi Sad (scripts/fonti/bms.mjs): niente IIIF, JPEG del visore caricabili come <img>: manifesti P2
 //     con le misure di ciascuna immagine;
 // Nessuna richiesta di rete: si scrivono dagli stati delle raccolte (data/loc.json, data/nlg.json, data/malatestiana.json, data/handrit.json, data/darmstadt.json e gli altri).
@@ -55,6 +57,7 @@ import * as papiri from "./fonti/papiri.mjs";
 import * as epigrafi from "./fonti/epigrafi.mjs";
 import * as musei from "./fonti/musei.mjs";
 import * as giappone from "./fonti/giappone-scritture.mjs";
+import * as romani from "./fonti/romani-instrumentum.mjs";
 
 // scrive i manifesti che mancano o sono cambiati e toglie quelli dei codici usciti (solo se lo stato ha voci)
 export function scriviManifesti(voci, cartella, scrivi) {
@@ -103,6 +106,8 @@ export function scriviTutti(dir = ".") {
     ...Object.fromEntries(Object.entries(musei.manifestiMusei()).map(([f, vs]) => [f, scriviManifesti(vs, path.join(dir, "data/manifesti", f), (id, m) => m)])),
     // mokkan (dal 28 ottobre 2026): foto in bianco e nero del 木簡庫 Mokkanko (Nabunken), uso libero con citazione della fonte
     ...Object.fromEntries(Object.entries(giappone.manifestiGiappone()).map(([f, vs]) => [f, scriviManifesti(vs, path.join(dir, "data/manifesti", f), (id, m) => m)])),
+    // instrumentum romano (dal 28 ottobre 2026): foto di Wikimedia Commons (PAS, CC BY-SA; Vindolanda), manifesti P3 con le misure di ogni foto
+    ...Object.fromEntries(Object.entries(romani.manifestiRomani()).map(([f, vs]) => [f, scriviManifesti(vs, path.join(dir, "data/manifesti", f), (id, m) => m)])),
     handrit: scriviManifesti(handrit.leggiStato().voci || {}, path.join(dir, "data/manifesti/handrit"), (id, v) => (v && handrit.numeroPagine(v) ? handrit.manifestoScritto(id, v) : null)),
     // Fondazione per la conservazione del Nôm (Vietnam): immagini JPEG del sito a misura fissa; un file per volume, col nome dell'identificativo («nlvnpf-0106.json»)
     nomfoundation: scriviManifesti(Object.fromEntries(Object.entries(nom.leggiStato().voci || {}).filter(([, v]) => nom.ammessaNom(v)).map(([k, v]) => [v.img.toLowerCase(), { k, v }])),
