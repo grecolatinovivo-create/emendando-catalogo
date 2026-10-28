@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-27T22:28:14.483Z",
- "totale": 554809,
- "con_autori": 30562,
+ "aggiornato": "2026-10-28T00:04:59.330Z",
+ "totale": 555647,
+ "con_autori": 30603,
  "miniati": 11278,
  "musica": 21286,
- "manoscritti": 544024,
+ "manoscritti": 544862,
  "stampe_antiche": 10785,
  "incunaboli": 10732,
  "edizioni_principi": 109,
@@ -35,11 +35,11 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 86243
+   "codici": 86244
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 50732
+   "codici": 50946
   },
   "fr": {
    "nome": "francese",
@@ -67,7 +67,7 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 14695
+   "codici": 15317
   },
   "cu": {
    "nome": "slavo ecclesiastico",
@@ -171,7 +171,7 @@
   },
   "hy": {
    "nome": "armeno",
-   "codici": 551
+   "codici": 552
   },
   "ru": {
    "nome": "russo",
@@ -381,11 +381,11 @@
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 6888
+   "codici": 6914
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15370
+   "codici": 15385
   },
   "medievale": {
    "nome": "autori medievali",
@@ -395,7 +395,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 538709
+   "codici": 539547
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -845,7 +845,7 @@
    "nome": "Omero",
    "latino": "Homerus",
    "categoria": "classico-greco",
-   "codici": 366
+   "codici": 367
   },
   "esiodo": {
    "nome": "Esiodo",
@@ -905,7 +905,7 @@
    "nome": "Eschilo",
    "latino": "Aeschylus",
    "categoria": "classico-greco",
-   "codici": 48
+   "codici": 49
   },
   "sofocle": {
    "nome": "Sofocle",
@@ -917,13 +917,13 @@
    "nome": "Euripide",
    "latino": "Euripides",
    "categoria": "classico-greco",
-   "codici": 155
+   "codici": 156
   },
   "aristofane": {
    "nome": "Aristofane",
    "latino": "Aristophanes",
    "categoria": "classico-greco",
-   "codici": 124
+   "codici": 125
   },
   "menandro": {
    "nome": "Menandro",
@@ -941,7 +941,7 @@
    "nome": "Tucidide",
    "latino": "Thucydides",
    "categoria": "classico-greco",
-   "codici": 62
+   "codici": 63
   },
   "senofonte": {
    "nome": "Senofonte",
@@ -959,7 +959,7 @@
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 2303
+   "codici": 2312
   },
   "teofrasto": {
    "nome": "Teofrasto",
@@ -977,7 +977,7 @@
    "nome": "Isocrate",
    "latino": "Isocrates",
    "categoria": "classico-greco",
-   "codici": 81
+   "codici": 83
   },
   "demostene": {
    "nome": "Demostene",
@@ -1019,7 +1019,7 @@
    "nome": "Polibio",
    "latino": "Polybius",
    "categoria": "classico-greco",
-   "codici": 48
+   "codici": 49
   },
   "diodoro": {
    "nome": "Diodoro Siculo",
@@ -1043,7 +1043,7 @@
    "nome": "Plutarco",
    "latino": "Plutarchus",
    "categoria": "classico-greco",
-   "codici": 334
+   "codici": 336
   },
   "luciano": {
    "nome": "Luciano di Samosata",
@@ -1133,13 +1133,13 @@
    "nome": "Tolomeo",
    "latino": "Ptolemaeus",
    "categoria": "classico-greco",
-   "codici": 280
+   "codici": 281
   },
   "euclide": {
    "nome": "Euclide",
    "latino": "Euclides",
    "categoria": "classico-greco",
-   "codici": 246
+   "codici": 248
   },
   "archimede": {
    "nome": "Archimede",
@@ -1181,7 +1181,7 @@
    "nome": "Suda",
    "latino": "Suda",
    "categoria": "classico-greco",
-   "codici": 27
+   "codici": 30
   },
   "fozio": {
    "nome": "Fozio",
@@ -1289,7 +1289,7 @@
    "nome": "Eliodoro",
    "latino": "Heliodorus",
    "categoria": "classico-greco",
-   "codici": 11
+   "codici": 12
   },
   "esopo": {
    "nome": "Esopo",
@@ -1373,19 +1373,19 @@
    "nome": "Gregorio di Nazianzo",
    "latino": "Gregorius Nazianzenus",
    "categoria": "cristiano",
-   "codici": 528
+   "codici": 531
   },
   "giovanni-crisostomo": {
    "nome": "Giovanni Crisostomo",
    "latino": "Iohannes Chrysostomus",
    "categoria": "cristiano",
-   "codici": 1272
+   "codici": 1274
   },
   "bibbia": {
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7171
+   "codici": 7181
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -6713,7 +6713,7 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 22225,
+   "codici": 23063,
    "carte": 2,
    "carte_stampa": 0,
    "miniati": 4,
@@ -6721,13 +6721,14 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 955,
+   "con_autori": 996,
    "lingue": {
-    "la": 20434,
+    "la": 20435,
     "fr": 24,
     "it": 264,
-    "?": 1467,
-    "grc": 2,
+    "?": 1681,
+    "grc": 624,
+    "hy": 1,
     "xx": 18,
     "de": 3,
     "es": 15,
@@ -6739,7 +6740,7 @@
    "prefissi": [
     "bav-"
    ],
-   "pezzi_voci": 28,
+   "pezzi_voci": 29,
    "indice": [
     "indice/vaticana-0.json",
     "indice/vaticana-1.json"
@@ -7200,7 +7201,7 @@
   {
    "file": "indice/vaticana-1.json",
    "fonte": "vaticana",
-   "righe": 2225
+   "righe": 3063
   }
  ],
  "luoghi": {
@@ -11259,7 +11260,7 @@
   1,
   2,
   3,
-  22230,
+  23068,
   1,
   43,
   8,

@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27T22:03:01.045Z",
+ "aggiornato": "2026-10-28T00:04:59.330Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -389,11 +389,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 518,
+   "codici": 544,
    "esito": "ok"
   }
  },
- "totale": 12544,
+ "totale": 12570,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -54441,6 +54441,840 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.1324/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.1324",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-65-pt-1",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 65 pt. 1",
+   "datazione": "sec. XI med",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Orationes",
+   "autori": [
+    {
+     "id": "isocrate",
+     "autore": "Isocrate",
+     "latino": "Isocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «Isocrates, 436/35-338 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.65.pt.1/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.65.pt.1",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-65-pt-2",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 65 pt. 2",
+   "datazione": "sec. XI med",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Orationes",
+   "autori": [
+    {
+     "id": "isocrate",
+     "autore": "Isocrate",
+     "latino": "Isocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «Isocrates, 436/35-338 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.65.pt.2/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.65.pt.2",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-124",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 124",
+   "datazione": "sec. X ex",
+   "secolo": [
+    10,
+    10
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Historiae",
+   "autori": [
+    {
+     "id": "polibio",
+     "autore": "Polibio",
+     "latino": "Polybius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Storie"
+     ],
+     "corrispondenza": "autore: «Polybius, c. 205-c. 120 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.124/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.124",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-126",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 126",
+   "datazione": "sec. XI",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Historiae",
+   "autori": [
+    {
+     "id": "tucidide",
+     "autore": "Tucidide",
+     "latino": "Thucydides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Guerra del Peloponneso"
+     ],
+     "corrispondenza": "autore: «Thucydides, c. 465-395 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.126/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.126",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-139",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 139",
+   "datazione": "Sec. XIII-XIV",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Moralia",
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Moralia"
+     ],
+     "corrispondenza": "autore: «Plutarchus, c. 50-127»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.139/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.139",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-157",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 157",
+   "datazione": "sec. XI",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Heliodori Aethiopica Historia",
+   "autori": [
+    {
+     "id": "eliodoro",
+     "autore": "Eliodoro",
+     "latino": "Heliodorus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Etiopiche"
+     ],
+     "corrispondenza": "titolo: «Heliodori Aethiopica Historia»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.157/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.157",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-180",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 180",
+   "datazione": "Sec. X",
+   "secolo": [
+    10,
+    10
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Syntaxis mathematica",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Almagesto"
+     ],
+     "corrispondenza": "titolo: «Syntaxis mathematica»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.180/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.180",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-190-pt-1",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 190 pt. 1",
+   "datazione": "sec. IX",
+   "secolo": [
+    9,
+    9
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Elementa",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Elementi"
+     ],
+     "corrispondenza": "autore: «Euclides, sec. III a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.190.pt.1/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.190.pt.1",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-190-pt-2",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 190 pt. 2",
+   "datazione": "sec. IX",
+   "secolo": [
+    9,
+    9
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Elementa",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Elementi"
+     ],
+     "corrispondenza": "autore: «Euclides, sec. III a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.190.pt.2/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.190.pt.2",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-241",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 241",
+   "datazione": "sec. XIII",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Aristotelis opera conplura",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.241/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.241",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-244",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 244",
+   "datazione": "sec. XIII",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Organon",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Organon"
+     ],
+     "corrispondenza": "autore: «Aristoteles, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.244/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.244",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-256-pt-1",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 256 pt. 1",
+   "datazione": "1320-1321 (?)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Metaphysica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica"
+     ],
+     "corrispondenza": "autore: «Aristoteles, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.256.pt.1/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.256.pt.1",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-256-pt-2",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 256 pt. 2",
+   "datazione": "sec. XIV in",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Aristotelis opera conplura",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.256.pt.2/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.256.pt.2",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-260",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 260",
+   "datazione": "sec. XI (ff. 1r-7v sec. XV ante an. 1449)",
+   "secolo": [
+    11,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Aristotelis opera",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.260/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.260",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-261-pt-1",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 261 pt. 1",
+   "datazione": "sec. XIII-XIV",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Aristotelis opera",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.261.pt.1/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.261.pt.1",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-261-pt-2",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 261 pt. 2",
+   "datazione": "sec. XIII-XIV",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Aristotelis opera",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.261.pt.2/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.261.pt.2",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-266",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 266",
+   "datazione": "sec. XIV (ff. IV-VI. 240 sec. XIV-XV; ff. 209a et 233 sec. XV)",
+   "secolo": [
+    4,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Aristotelis opera naturalia conplura",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.266/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.266",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-307",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 307",
+   "datazione": "sec. XIII",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Physica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Fisica"
+     ],
+     "corrispondenza": "autore: «Aristoteles, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.307/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.307",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-903",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 903",
+   "datazione": "sec. XII",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Homeri Ilias cum scholiis (scholia D)",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "titolo: «Homeri Ilias cum scholiis (scholia D)»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.903/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.903",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-909",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 909",
+   "datazione": "Sec. XIII ex.",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Euripidis fabulae novem",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Euripides, 480-407 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.909/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.909",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-920-pt-1",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 920 pt. 1",
+   "datazione": "sec XIV med",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Comoediae tres",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristophanes, c. 445-c. 385 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.920.pt.1/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.920.pt.1",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-920-pt-2",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 920 pt. 2",
+   "datazione": "sec XIV med",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Tragoediae tres",
+   "autori": [
+    {
+     "id": "eschilo",
+     "autore": "Eschilo",
+     "latino": "Aeschylus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aeschylus, c. 525/4 a.C.-458/6 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.920.pt.2/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.920.pt.2",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-1007",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 1007",
+   "datazione": "sec. XV med",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Vitae parallelae",
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Vite parallele"
+     ],
+     "corrispondenza": "autore: «Plutarchus, c. 50-127»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.1007/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.1007",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-1296-pt-1",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 1296 pt. 1",
+   "datazione": "sec. XIII in",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Suda",
+   "autori": [
+    {
+     "id": "suda",
+     "autore": "Suda",
+     "latino": "Suda",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Suda»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.1296.pt.1/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.1296.pt.1",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-1296-pt-2",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 1296 pt. 2",
+   "datazione": "sec. XIII in",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Suda",
+   "autori": [
+    {
+     "id": "suda",
+     "autore": "Suda",
+     "latino": "Suda",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Suda»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.1296.pt.2/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.1296.pt.2",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-1296-pt-3",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 1296 pt. 3",
+   "datazione": "sec. XIII in",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Suda",
+   "autori": [
+    {
+     "id": "suda",
+     "autore": "Suda",
+     "latino": "Suda",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Suda»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.1296.pt.3/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.1296.pt.3",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },
