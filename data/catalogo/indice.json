@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T23:24:55.569Z",
- "totale": 640174,
- "con_autori": 32815,
+ "aggiornato": "2026-10-28T23:48:34.208Z",
+ "totale": 640535,
+ "con_autori": 32820,
  "miniati": 11358,
  "musica": 21303,
- "manoscritti": 547613,
+ "manoscritti": 547974,
  "papiri": 33914,
  "epigrafi": 42988,
  "stampe_antiche": 15659,
@@ -41,7 +41,7 @@
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 54742
+   "codici": 54747
   },
   "grc": {
    "nome": "greco",
@@ -69,7 +69,7 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 19930
+   "codici": 19935
   },
   "pi": {
    "nome": "pali",
@@ -77,7 +77,7 @@
   },
   "cu": {
    "nome": "slavo ecclesiastico",
-   "codici": 14234
+   "codici": 14261
   },
   "zh": {
    "nome": "cinese",
@@ -137,7 +137,7 @@
   },
   "tr": {
    "nome": "turco",
-   "codici": 2678
+   "codici": 2893
   },
   "ko": {
    "nome": "coreano",
@@ -149,7 +149,7 @@
   },
   "syr": {
    "nome": "siriaco",
-   "codici": 1536
+   "codici": 1645
   },
   "gez": {
    "nome": "etiopico",
@@ -443,7 +443,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 16067
+   "codici": 16072
   },
   "medievale": {
    "nome": "autori medievali",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 542298
+   "codici": 542659
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -1451,7 +1451,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7528
+   "codici": 7533
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -8852,7 +8852,7 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 30534,
+   "codici": 30895,
    "carte": 2,
    "carte_stampa": 0,
    "miniati": 5,
@@ -8862,15 +8862,15 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 1380,
+   "con_autori": 1385,
    "lingue": {
     "la": 20986,
     "it": 470,
-    "?": 3885,
+    "?": 3890,
     "grc": 2983,
     "fr": 24,
-    "xx": 100,
-    "syr": 308,
+    "xx": 105,
+    "syr": 417,
     "cop": 213,
     "ar": 492,
     "th": 1,
@@ -8879,8 +8879,8 @@
     "gez": 53,
     "pit": 4,
     "fa": 85,
-    "tr": 11,
-    "cu": 53,
+    "tr": 226,
+    "cu": 80,
     "de": 3,
     "es": 15,
     "en": 1
@@ -9390,7 +9390,7 @@
   {
    "file": "indice/vaticana-1.json",
    "fonte": "vaticana",
-   "righe": 10534
+   "righe": 10895
   }
  ],
  "biblioteche_tipo": [
@@ -18993,7 +18993,7 @@
   3,
   2,
   3,
-  30539,
+  30900,
   1,
   43,
   8,
