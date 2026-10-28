@@ -1,13 +1,13 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T14:55:40.373Z",
- "totale": 598756,
- "con_autori": 32582,
+ "aggiornato": "2026-10-28T15:22:56.048Z",
+ "totale": 599670,
+ "con_autori": 32584,
  "miniati": 11294,
  "musica": 21300,
  "manoscritti": 545144,
- "papiri": 18311,
- "epigrafi": 19642,
+ "papiri": 18430,
+ "epigrafi": 20437,
  "stampe_antiche": 15659,
  "incunaboli": 15587,
  "edizioni_principi": 172,
@@ -41,7 +41,7 @@
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 53843
+   "codici": 53835
   },
   "fr": {
    "nome": "francese",
@@ -49,7 +49,7 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 28201
+   "codici": 28216
   },
   "de": {
    "nome": "tedesco",
@@ -57,7 +57,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 24629
+   "codici": 24635
   },
   "he": {
    "nome": "ebraico",
@@ -133,7 +133,7 @@
   },
   "cop": {
    "nome": "copto",
-   "codici": 3225
+   "codici": 3232
   },
   "tr": {
    "nome": "turco",
@@ -142,6 +142,10 @@
   "ko": {
    "nome": "coreano",
    "codici": 2571
+  },
+  "egy": {
+   "nome": "egiziano antico (geroglifico, ieratico, demotico)",
+   "codici": 1719
   },
   "gez": {
    "nome": "etiopico",
@@ -174,10 +178,6 @@
   "sv": {
    "nome": "svedese",
    "codici": 926
-  },
-  "egy": {
-   "nome": "egiziano antico (geroglifico, ieratico, demotico)",
-   "codici": 817
   },
   "akk": {
    "nome": "accadico",
@@ -443,7 +443,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15922
+   "codici": 15924
   },
   "medievale": {
    "nome": "autori medievali",
@@ -473,11 +473,11 @@
   },
   "papiro": {
    "nome": "papiri",
-   "codici": 18311
+   "codici": 18430
   },
   "epigrafe": {
    "nome": "epigrafi",
-   "codici": 19642
+   "codici": 20437
   }
  },
  "autori": {
@@ -1523,7 +1523,7 @@
    "nome": "Atanasio",
    "latino": "Athanasius",
    "categoria": "cristiano",
-   "codici": 402
+   "codici": 404
   },
   "gregorio-nisseno": {
    "nome": "Gregorio di Nissa",
@@ -8641,30 +8641,30 @@
   },
   "musei": {
    "nome": "Musei: oggetti scritti del Museo Egizio di Torino (immagini CC0) e modelli 3D di oggetti scritti su Sketchfab",
-   "codici": 1147,
+   "codici": 2061,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
-   "papiri": 129,
-   "epigrafi": 1016,
+   "papiri": 248,
+   "epigrafi": 1811,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 1,
+   "con_autori": 3,
    "lingue": {
-    "?": 177,
+    "?": 169,
     "la": 52,
-    "grc": 58,
+    "grc": 73,
     "akk": 660,
-    "egy": 176,
+    "egy": 1078,
     "arc": 8,
     "phn": 1,
     "xib": 5,
     "xsa": 5,
-    "ar": 5,
+    "ar": 11,
     "ett": 5,
-    "cop": 4,
+    "cop": 11,
     "he": 1,
     "sux": 6,
     "hy": 1
@@ -8673,7 +8673,7 @@
    "prefissi": [
     "mu-"
    ],
-   "pezzi_voci": 2,
+   "pezzi_voci": 3,
    "indice": [
     "indice/musei-0.json"
    ]
@@ -9241,7 +9241,7 @@
   {
    "file": "indice/musei-0.json",
    "fonte": "musei",
-   "righe": 1147
+   "righe": 2061
   },
   {
    "file": "indice/giappone-0.json",
@@ -19523,7 +19523,7 @@
   1,
   1,
   81,
-  144,
+  1058,
   1,
   339,
   313,
