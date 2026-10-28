@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T02:32:34.717Z",
+ "aggiornato": "2026-10-28T05:01:12.396Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -389,11 +389,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 550,
+   "codici": 652,
    "esito": "ok"
   }
  },
- "totale": 12576,
+ "totale": 12678,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -41374,6 +41374,3107 @@
    "anteprima": "https://e-codices.ch/loris/bkm/bkm-SI-0177/bkm-SI-0177_001r.jp2/full/,150/0/default/jpg"
   },
   {
+   "id": "bav-barb-gr-1",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 1",
+   "datazione": "sec. XVII",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Fructus sive centiloquium",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Centiloquium"
+     ],
+     "corrispondenza": "titolo: «Fructus sive centiloquium»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.1/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.1",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-10",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 10",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ars minor Greco",
+   "autori": [
+    {
+     "id": "donato",
+     "autore": "Donato",
+     "latino": "Donatus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ars minor"
+     ],
+     "corrispondenza": "autore: «Donatus, Aelius, sec. IV»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.10/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.10",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-11",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 11",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Aphorismi",
+   "autori": [
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Aforismi"
+     ],
+     "corrispondenza": "autore: «Hippocrates, c. 460-370 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.11/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.11",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-19",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 19",
+   "datazione": "sec. XV-XVI",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Enchiridion de metris",
+   "autori": [
+    {
+     "id": "efestione",
+     "autore": "Efestione",
+     "latino": "Hephaestion",
+     "categoria": "classico-greco",
+     "opere": [
+      "Manuale di metrica"
+     ],
+     "corrispondenza": "titolo: «Enchiridion de metris»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.19/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.19",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-21",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 21",
+   "datazione": "sec. XVI in",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Vitae philosophorum",
+   "autori": [
+    {
+     "id": "diogene-laerzio",
+     "autore": "Diogene Laerzio",
+     "latino": "Diogenes Laertius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Vite dei filosofi"
+     ],
+     "corrispondenza": "autore: «Diogenes Laertius, sec. III?»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.21/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.21",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-22",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 22",
+   "datazione": "sec. XVI in",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Orationes",
+   "autori": [
+    {
+     "id": "eschine",
+     "autore": "Eschine",
+     "latino": "Aeschines",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aeschines, 390/89-c. 315 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.22/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.22",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-23",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 23",
+   "datazione": "sec. XVII in",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In Aristotelis physica paraphrasis",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Fisica"
+     ],
+     "corrispondenza": "titolo: «In Aristotelis physica paraphrasis»"
+    },
+    {
+     "id": "temistio",
+     "autore": "Temistio",
+     "latino": "Themistius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Parafrasi di Aristotele"
+     ],
+     "corrispondenza": "autore: «Themistius, c. 317-c. 388»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.23/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.23",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-24",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 24",
+   "datazione": "sec. XVII in",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In Aristotelis physica paraphrasis",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Fisica"
+     ],
+     "corrispondenza": "titolo: «In Aristotelis physica paraphrasis»"
+    },
+    {
+     "id": "temistio",
+     "autore": "Temistio",
+     "latino": "Themistius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Parafrasi di Aristotele"
+     ],
+     "corrispondenza": "autore: «Themistius, c. 317-c. 388»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.24/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.24",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-25",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 25",
+   "datazione": "sec. XVII in",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In Aristotelis physica paraphrasis",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Fisica"
+     ],
+     "corrispondenza": "titolo: «In Aristotelis physica paraphrasis»"
+    },
+    {
+     "id": "temistio",
+     "autore": "Temistio",
+     "latino": "Themistius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Parafrasi di Aristotele"
+     ],
+     "corrispondenza": "autore: «Themistius, c. 317-c. 388»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.25/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.25",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-28",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 28",
+   "datazione": "sec. XVI in",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Onomasticon",
+   "autori": [
+    {
+     "id": "polluce",
+     "autore": "Polluce",
+     "latino": "Iulius Pollux",
+     "categoria": "classico-greco",
+     "opere": [
+      "Onomasticon"
+     ],
+     "corrispondenza": "autore: «Pollux, Iulius, di Naucratis, sec. II»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.28/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.28",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-31",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 31",
+   "datazione": "sec. XVI",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Odyssea",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Odissea"
+     ],
+     "corrispondenza": "autore: «Homerus, sec. VIII a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.31/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.31",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-32",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 32",
+   "datazione": "sec. XVII med",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Epistulae",
+   "autori": [
+    {
+     "id": "libanio",
+     "autore": "Libanio",
+     "latino": "Libanius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Lettere"
+     ],
+     "corrispondenza": "autore: «Libanius, c. 314-392/393»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.32/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.32",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-37",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 37",
+   "datazione": "sec. XVII in",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Lysis",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Plato, 427-347 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.37/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.37",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-42",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 42",
+   "datazione": "sec. XVI med",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In Platonis Cratylum",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «In Platonis Cratylum»"
+    },
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Proclus Atheniensis, 410-c. 485»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.42/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.42",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-46",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 46",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Aristophanis comoediae",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristophanes, c. 445-c. 385 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.46/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.46",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-47",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 47",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Fabulae",
+   "autori": [
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "autore: «Aesopus, sec. VI a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.47/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.47",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-52",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 52",
+   "datazione": "sec. XVII",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Επιτομὴ τῶν διαλεκτικῶν κανόνων, ἤτοι εἰσαγωγὴ εἰς τὴν καθόλου λογικήν, καὶ τὸ Αριστοτέλους ὄργανον",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…ς τὴν καθόλου λογικήν, καὶ τὸ Αριστοτέλους ὄργανον»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.52/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.52",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-58",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 58",
+   "datazione": "sec. XVI ex",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Strategemata",
+   "autori": [
+    {
+     "id": "frontino",
+     "autore": "Frontino",
+     "latino": "Frontinus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Strategemata"
+     ],
+     "corrispondenza": "titolo: «Strategemata»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.58/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.58",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-62",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 62",
+   "datazione": "sec. XV-XVI",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De mysteriis",
+   "autori": [
+    {
+     "id": "giamblico",
+     "autore": "Giamblico",
+     "latino": "Iamblichus",
+     "categoria": "classico-greco",
+     "opere": [
+      "De mysteriis"
+     ],
+     "corrispondenza": "autore: «Iamblichus Chalcidensis, c. 250/75-330/35»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.62/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.62",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-65",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 65",
+   "datazione": "sec. XVII",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In Platonis Rempublicam commentarii",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «In Platonis Rempublicam commentarii»"
+    },
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Proclus Atheniensis, 410-c. 485»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.65/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.65",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-66",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 66",
+   "datazione": "1582",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In Platonis Alcibiadem primum",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «In Platonis Alcibiadem primum»"
+    },
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Proclus Atheniensis, 410-c. 485»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.66/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.66",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-67",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 67",
+   "datazione": "sec. XVI ex",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In Platonis Cratylum",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «In Platonis Cratylum»"
+    },
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Proclus Atheniensis, 410-c. 485»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.67/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.67",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-68",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 68",
+   "datazione": "1583",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In Platonis Parmenidem",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «In Platonis Parmenidem»"
+    },
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Proclus Atheniensis, 410-c. 485»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.68/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.68",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-70",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 70",
+   "datazione": "sec. XI (ff. 6-9, min. mod., sec. XIV; ff. 149-155 sec. XII)",
+   "secolo": [
+    11,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Etymologicum Gudianum",
+   "autori": [
+    {
+     "id": "etymologicum",
+     "autore": "Etymologicum Magnum",
+     "latino": "Etymologicum Magnum",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Etymologicum Gudianum»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.70/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.70",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-75",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 75",
+   "datazione": "sec. XIII",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ethica Nicomachea",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Etica Nicomachea"
+     ],
+     "corrispondenza": "autore: «Aristoteles, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.75/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.75",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-76",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 76",
+   "datazione": "sec. XVI",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In Epicteti Enchiridion",
+   "autori": [
+    {
+     "id": "epitteto",
+     "autore": "Epitteto",
+     "latino": "Epictetus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Manuale"
+     ],
+     "corrispondenza": "titolo: «In Epicteti Enchiridion»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.76/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.76",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-77",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 77",
+   "datazione": "sec. XVI-XVII",
+   "secolo": [
+    16,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Plutus",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Pluto"
+     ],
+     "corrispondenza": "autore: «Aristophanes, c. 445-c. 385 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.77/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.77",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-80",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 80",
+   "datazione": "sec. XVII in",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Galeni opera",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus, Claudius, 129-199»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.80/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.80",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-87",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 87",
+   "datazione": "sec. X (ff. 257-264 sec. XV)",
+   "secolo": [
+    10,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Aristotelis Logica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.87/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.87",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-93",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 93",
+   "datazione": "sec. XVI (ff. 1-10). circiter sec. XVI med (ff. 11-24). sec. XVI in (ff. 25-30)",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ex Homeri Odyssea ac Iliade excerpta",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade",
+      "Odissea"
+     ],
+     "corrispondenza": "autore: «Homerus, sec. VIII a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.93/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.93",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-95",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 95",
+   "datazione": "sec. XV ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Historiae",
+   "autori": [
+    {
+     "id": "tucidide",
+     "autore": "Tucidide",
+     "latino": "Thucydides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Guerra del Peloponneso"
+     ],
+     "corrispondenza": "autore: «Thucydides, c. 465-395 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.95/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.95",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-97",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 97",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Characteres",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "autore: «Theophrastus, c. 371-c. 286 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.97/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.97",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-99",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 99",
+   "datazione": "sec. XV ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Isagoge, sive, Quinque voces",
+   "autori": [
+    {
+     "id": "porfirio",
+     "autore": "Porfirio",
+     "latino": "Porphyrius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Isagoge"
+     ],
+     "corrispondenza": "autore: «Porphyrius Tyrius, 232/233-305?»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.99/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.99",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-100",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 100",
+   "datazione": "sec. XV-XVI",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Contra Apionem",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Contro Apione"
+     ],
+     "corrispondenza": "autore: «Iosephus, Flavius, sec. I»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.100/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.100",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-101",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 101",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In primum Euclidis Elementorum librum commentarii",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «In primum Euclidis Elementorum librum commentarii»"
+    },
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Proclus Atheniensis, 410-c. 485»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.101/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.101",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-104",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 104",
+   "datazione": "sec. XVI. sec. XVI-XVII (ff. 92-100)",
+   "secolo": [
+    16,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Orationes",
+   "autori": [
+    {
+     "id": "demostene",
+     "autore": "Demostene",
+     "latino": "Demosthenes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «Demosthenes, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.104/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.104",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-105",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 105",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Fabulae",
+   "autori": [
+    {
+     "id": "esopo",
+     "autore": "Esopo",
+     "latino": "Aesopus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Favole"
+     ],
+     "corrispondenza": "autore: «Aesopus, sec. VI a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.105/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.105",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-106",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 106",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Vita Procli",
+   "autori": [
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Vita Procli»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.106/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.106",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-110",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 110",
+   "datazione": "sec. XVI-XVII",
+   "secolo": [
+    16,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Plutus",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Pluto"
+     ],
+     "corrispondenza": "autore: «Aristophanes, c. 445-c. 385 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.110/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.110",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-115",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 115",
+   "datazione": "sec. XVI med",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Quomodo adolescens poetas audire debeat",
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Plutarchus, c. 50-127»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.115/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.115",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-120",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 120",
+   "datazione": "sec. XVI",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In Aristotelis Analytica priora commentaria",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Organon"
+     ],
+     "corrispondenza": "titolo: «In Aristotelis Analytica priora commentaria»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.120/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.120",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-121",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 121",
+   "datazione": "sec. XIV",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Heroides. Greco",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Eroidi"
+     ],
+     "corrispondenza": "autore: «Ovidius Naso, Publius, 43 a.C.-17/18 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.121/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.121",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-126",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 126",
+   "datazione": "sec. XIV",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Aristophanis comoediae tres",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristophanes, c. 445-c. 385 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.126/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.126",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-128",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 128",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Theognidis elegiae",
+   "autori": [
+    {
+     "id": "teognide",
+     "autore": "Teognide",
+     "latino": "Theognis",
+     "categoria": "classico-greco",
+     "opere": [
+      "Elegie"
+     ],
+     "corrispondenza": "autore: «Theognis Megareus, sec. VI a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.128/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.128",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-135",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 135",
+   "datazione": "sec. XV-XVI",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Aeschyli tragoediae tres",
+   "autori": [
+    {
+     "id": "eschilo",
+     "autore": "Eschilo",
+     "latino": "Aeschylus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aeschylus, c. 525/4 a.C.-458/6 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.135/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.135",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-136",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 136",
+   "datazione": "sec. XII (ff. 1r-146r). sec. XIV in (ff. 147r-179v)",
+   "secolo": [
+    12,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Physica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Fisica"
+     ],
+     "corrispondenza": "autore: «Aristoteles, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.136/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.136",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-139",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 139",
+   "datazione": "sec. XV-XVI",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Aristotelis Logica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.139/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.139",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-142",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 142",
+   "datazione": "sec. XV med vel ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Argonautica",
+   "autori": [
+    {
+     "id": "apollonio-rodio",
+     "autore": "Apollonio Rodio",
+     "latino": "Apollonius Rhodius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Argonautiche"
+     ],
+     "corrispondenza": "autore: «Apollonius Rhodius, c. 295-c. 215 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.142/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.142",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-143",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 143",
+   "datazione": "sec. XV med vel ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Argonautica",
+   "autori": [
+    {
+     "id": "apollonio-rodio",
+     "autore": "Apollonio Rodio",
+     "latino": "Apollonius Rhodius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Argonautiche"
+     ],
+     "corrispondenza": "autore: «Apollonius Rhodius, c. 295-c. 215 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.143/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.143",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-145",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 145",
+   "datazione": "sec. XVI in",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In primum Euclidis Elementorum librum commentarii",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «In primum Euclidis Elementorum librum commentarii»"
+    },
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Proclus Atheniensis, 410-c. 485»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.145/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.145",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-147",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 147",
+   "datazione": "sec. XVI in (ff. 1-47). sec. XV fere ex (ff. 48-201)",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De remediis parabilibus",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus, Claudius, 129-199. Opere spurie e dubbie»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.147/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.147",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-148",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 148",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Plutus",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Pluto"
+     ],
+     "corrispondenza": "autore: «Aristophanes, c. 445-c. 385 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.148/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.148",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-149",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 149",
+   "datazione": "sec. XVI",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Plutarchi opera",
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Plutarchus, c. 50-127»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.149/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.149",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-153",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 153",
+   "datazione": "sec. XV med vel ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Odyssea",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Odissea"
+     ],
+     "corrispondenza": "autore: «Homerus, sec. VIII a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.153/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.153",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-161",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 161",
+   "datazione": "sec. XIV in",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ilias",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "autore: «Homerus, sec. VIII a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.161/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.161",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-163",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 163",
+   "datazione": "sec. XV ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Geographia",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Geografia"
+     ],
+     "corrispondenza": "autore: «Ptolemaeus, Claudius, sec. II»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.163/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.163",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-164",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 164",
+   "datazione": "1294",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Aristotelis Logica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.164/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.164",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-166",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 166",
+   "datazione": "1476",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Posthomerica",
+   "autori": [
+    {
+     "id": "quinto-smirneo",
+     "autore": "Quinto Smirneo",
+     "latino": "Quintus Smyrnaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Posthomerica"
+     ],
+     "corrispondenza": "autore: «Quintus Smyrnaeus, sec. IV»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.166/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.166",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-173",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 173",
+   "datazione": "sec. XVII",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In Platonis Cratylum",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «In Platonis Cratylum»"
+    },
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Proclus Atheniensis, 410-c. 485»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.173/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.173",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-182",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 182",
+   "datazione": "sec. XI (ff. 2-312), sec. XIV (ff. I. 1. 313-389. II. III)",
+   "secolo": [
+    1,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Plutarchi opera moralia nonnulla",
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Moralia"
+     ],
+     "corrispondenza": "autore: «Plutarchus, c. 50-127»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.182/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.182",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-183",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 183",
+   "datazione": "1620",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In calumniatores Platonis",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «In calumniatores Platonis»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.183/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.183",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-187",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 187",
+   "datazione": "sec. XVII",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Vita Procli",
+   "autori": [
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Vita Procli»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.187/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.187",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-193",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 193",
+   "datazione": "sec. XVII",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Iamblichi Chalcidensis opera",
+   "autori": [
+    {
+     "id": "giamblico",
+     "autore": "Giamblico",
+     "latino": "Iamblichus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Iamblichus Chalcidensis, c. 250/75-330/35»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.193/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.193",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-200",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 200",
+   "datazione": "sec. XVII",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Arriani opera cum Holstenii latinis interpretationibus",
+   "autori": [
+    {
+     "id": "arriano",
+     "autore": "Arriano",
+     "latino": "Arrianus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Arrianus, Flavius, c. 95-c. 175»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.200/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.200",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-201",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 201",
+   "datazione": "sec. XVII",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Arriani et Euctenii opera cum Holstenii interpretationibus",
+   "autori": [
+    {
+     "id": "arriano",
+     "autore": "Arriano",
+     "latino": "Arrianus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Arriani et Euctenii opera cum Holstenii interpretationibus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.201/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.201",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-207",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 207",
+   "datazione": "sec. XVI ex",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Dialogi marini",
+   "autori": [
+    {
+     "id": "luciano",
+     "autore": "Luciano di Samosata",
+     "latino": "Lucianus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Dialoghi"
+     ],
+     "corrispondenza": "autore: «Lucianus, 120-c. 180»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.207/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.207",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-208",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 208",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Analyticorum posteriorum paraphrasis",
+   "autori": [
+    {
+     "id": "temistio",
+     "autore": "Temistio",
+     "latino": "Themistius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Parafrasi di Aristotele"
+     ],
+     "corrispondenza": "autore: «Themistius, c. 317-c. 388»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.208/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.208",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-209",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 209",
+   "datazione": "sec. XVI in",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Leges",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [
+      "Leggi"
+     ],
+     "corrispondenza": "autore: «Plato, 427-347 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.209/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.209",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-210",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 210",
+   "datazione": "sec. XVI",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ars rhetorica",
+   "autori": [
+    {
+     "id": "dionigi-alicarnasso",
+     "autore": "Dionigi di Alicarnasso",
+     "latino": "Dionysius Halicarnassensis",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Dionysius Halicarnassensis, sec. I a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.210/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.210",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-215",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 215",
+   "datazione": "sec. XV ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Politica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Politica"
+     ],
+     "corrispondenza": "autore: «Aristoteles, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.215/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.215",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-217",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 217",
+   "datazione": "sec. XVI",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In Platonis Phaedrum",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «In Platonis Phaedrum»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.217/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.217",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-218",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 218",
+   "datazione": "sec. XVII",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Heliodori in Aristotelis Ethica Nicomachea paraphrasis",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Etica Nicomachea"
+     ],
+     "corrispondenza": "titolo: «Heliodori in Aristotelis Ethica Nicomachea paraphrasis»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.218/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.218",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-220",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 220",
+   "datazione": "sec. XV in",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Libanii sophistae opera",
+   "autori": [
+    {
+     "id": "libanio",
+     "autore": "Libanio",
+     "latino": "Libanius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Libanius, c. 314-392/393»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.220/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.220",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-221",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 221",
+   "datazione": "sec. XV-XVI",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De diebus decretoriis",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus, Claudius, 129-199»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.221/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.221",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-230",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 230",
+   "datazione": "sec. XV-XVI",
+   "secolo": [
+    15,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ethica Nicomachea",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Etica Nicomachea"
+     ],
+     "corrispondenza": "autore: «Aristoteles, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.230/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.230",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-231",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 231",
+   "datazione": "sec. XVI",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Theologia Platonica",
+   "autori": [
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Proclus Atheniensis, 410-c. 485»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.231/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.231",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-239",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 239",
+   "datazione": "sec. XIV",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Epistulae",
+   "autori": [
+    {
+     "id": "libanio",
+     "autore": "Libanio",
+     "latino": "Libanius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Lettere"
+     ],
+     "corrispondenza": "autore: «Libanius, c. 314-392/393»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.239/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.239",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-243",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 243",
+   "datazione": "sec. XVI",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In Aristotelis De anima libros commentarium",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "De anima"
+     ],
+     "corrispondenza": "titolo: «In Aristotelis De anima libros commentarium»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.243/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.243",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-244",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 244",
+   "datazione": "sec. XVI",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Elementa",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Elementi"
+     ],
+     "corrispondenza": "autore: «Euclides, sec. III a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.244/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.244",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-245",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 245",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Arriani opera duo graece et latine",
+   "autori": [
+    {
+     "id": "arriano",
+     "autore": "Arriano",
+     "latino": "Arrianus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Arrianus, Flavius, c. 95-c. 175»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.245/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.245",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-247",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 247",
+   "datazione": "sec. XVII",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In Platonis Gorgiam",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «In Platonis Gorgiam»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.247/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.247",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-252",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 252",
+   "datazione": "sec. XVI med",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Miscellanea Eunapii atque Porphyrii operum",
+   "autori": [
+    {
+     "id": "porfirio",
+     "autore": "Porfirio",
+     "latino": "Porphyrius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Miscellanea Eunapii atque Porphyrii operum»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.252/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.252",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-253",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 253",
+   "datazione": "sec. XVI",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In Aristotelis physica paraphrasis",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Fisica"
+     ],
+     "corrispondenza": "titolo: «In Aristotelis physica paraphrasis»"
+    },
+    {
+     "id": "temistio",
+     "autore": "Temistio",
+     "latino": "Themistius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Parafrasi di Aristotele"
+     ],
+     "corrispondenza": "autore: «Themistius, c. 317-c. 388»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.253/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.253",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-254",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 254",
+   "datazione": "sec. XVII",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De communi mathematica scientia",
+   "autori": [
+    {
+     "id": "giamblico",
+     "autore": "Giamblico",
+     "latino": "Iamblichus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Iamblichus Chalcidensis, c. 250/75-330/35»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.254/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.254",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-255",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 255",
+   "datazione": "sec. XVI",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In Platonis Alcibiadem primum",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «In Platonis Alcibiadem primum»"
+    },
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Proclus Atheniensis, 410-c. 485»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.255/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.255",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-260",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 260",
+   "datazione": "sec. XVI",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Euclidis opera nonnulla",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Euclides, sec. III a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.260/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.260",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-262",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 262",
+   "datazione": "sec. XVI (ff. 43-62), anno 1642 (ff. II. 1-42)",
+   "secolo": [
+    2,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Introductio in Tetrabiblum Ptolemaei",
+   "autori": [
+    {
+     "id": "porfirio",
+     "autore": "Porfirio",
+     "latino": "Porphyrius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Porphyrius Tyrius, 232/233-305?»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.262/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.262",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-263",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 263",
+   "datazione": "sec. XVI",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Strategemata",
+   "autori": [
+    {
+     "id": "frontino",
+     "autore": "Frontino",
+     "latino": "Frontinus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Strategemata"
+     ],
+     "corrispondenza": "titolo: «Strategemata»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.263/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.263",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-269",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 269",
+   "datazione": "sec. XVI p. m.",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In Aristotelis Metaphysicorum libros",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «In Aristotelis Metaphysicorum libros»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.269/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.269",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-270",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 270",
+   "datazione": "sec. XIII-XIV",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Platonis et Pseudo-Platonis opera nonnulla",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Platonis et Pseudo-Platonis opera nonnulla»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.270/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.270",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-271",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 271",
+   "datazione": "sec. XVI a. m.",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De natura animalium",
+   "autori": [
+    {
+     "id": "eliano",
+     "autore": "Eliano",
+     "latino": "Aelianus",
+     "categoria": "classico-greco",
+     "opere": [
+      "La natura degli animali"
+     ],
+     "corrispondenza": "titolo: «De natura animalium»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.271/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.271",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-275",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 275",
+   "datazione": "sec. XVI in",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Enneades",
+   "autori": [
+    {
+     "id": "plotino",
+     "autore": "Plotino",
+     "latino": "Plotinus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Enneadi"
+     ],
+     "corrispondenza": "autore: «Plotinus, 203/6-270»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.275/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.275",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-barb-gr-277",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Barb. gr. 277",
+   "datazione": "sec. XVI",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "De Thucydide",
+   "autori": [
+    {
+     "id": "tucidide",
+     "autore": "Tucidide",
+     "latino": "Thucydides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «De Thucydide»"
+    },
+    {
+     "id": "dionigi-alicarnasso",
+     "autore": "Dionigi di Alicarnasso",
+     "latino": "Dionysius Halicarnassensis",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Dionysius Halicarnassensis, sec. I a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.gr.277/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Barb.gr.277",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
    "id": "bav-barb-lat-154",
    "fonte": "vaticana",
    "biblioteca": "Biblioteca Apostolica Vaticana",
@@ -53645,6 +56746,305 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Ross.893/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Ross.893",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-gr-33",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. gr. 33",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Opera Platonis, Epistula Basilii et Oratio Plutarchi",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Opera Platonis, Epistula Basilii et Oratio Plutarchi»"
+    },
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Opera Platonis, Epistula Basilii et Oratio Plutarchi»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.gr.33/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.gr.33",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-gr-35",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. gr. 35",
+   "datazione": "sec. X",
+   "secolo": [
+    10,
+    10
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Aristotelis opera",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Aristotelis opera»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.gr.35/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.gr.35",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-gr-61",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. gr. 61",
+   "datazione": "sec. IX/X",
+   "secolo": [
+    9,
+    10
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Theophrasti Historia plantarum",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Historia plantarum"
+     ],
+     "corrispondenza": "titolo: «Theophrasti Historia plantarum»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.gr.61/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.gr.61",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-gr-82",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. gr. 82",
+   "datazione": "sec. XI",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ptolemaei Claudii Geographia",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Geografia"
+     ],
+     "corrispondenza": "titolo: «Ptolemaei Claudii Geographia»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.gr.82/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.gr.82",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-gr-83",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. gr. 83",
+   "datazione": "sec. XV ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Claudii Ptolemaei Geographia",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Geografia"
+     ],
+     "corrispondenza": "titolo: «Claudii Ptolemaei Geographia»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.gr.83/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.gr.83",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-gr-99",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. gr. 99",
+   "datazione": "Sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": null,
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Plutarchus, c. 50-127»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.gr.99/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.gr.99",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-gr-105",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. gr. 105",
+   "datazione": "sec. X, sec. XI (ff. 1-55)",
+   "secolo": [
+    10,
+    11
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Dionysii Halicarnassensis Antiquitates Romanae",
+   "autori": [
+    {
+     "id": "dionigi-alicarnasso",
+     "autore": "Dionigi di Alicarnasso",
+     "latino": "Dionysius Halicarnassensis",
+     "categoria": "classico-greco",
+     "opere": [
+      "Antichità romane"
+     ],
+     "corrispondenza": "titolo: «Dionysii Halicarnassensis Antiquitates Romanae»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.gr.105/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.gr.105",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-gr-110",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. gr. 110",
+   "datazione": "sec. XIV-XV",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Philostrati De vita Apollonii Tyanei",
+   "autori": [
+    {
+     "id": "filostrato",
+     "autore": "Filostrato",
+     "latino": "Philostratus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Vita di Apollonio di Tiana"
+     ],
+     "corrispondenza": "titolo: «Philostrati De vita Apollonii Tyanei»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.gr.110/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.gr.110",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-urb-gr-137",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Urb. gr. 137",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Homeri Ilias",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Iliade"
+     ],
+     "corrispondenza": "titolo: «Homeri Ilias»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.gr.137/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Urb.gr.137",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },
