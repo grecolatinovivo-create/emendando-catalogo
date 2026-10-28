@@ -1,13 +1,13 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T20:09:06.217Z",
- "totale": 624349,
+ "aggiornato": "2026-10-28T21:01:14.680Z",
+ "totale": 629427,
  "con_autori": 32702,
  "miniati": 11309,
  "musica": 21303,
  "manoscritti": 546799,
  "papiri": 28785,
- "epigrafi": 33106,
+ "epigrafi": 38184,
  "stampe_antiche": 15659,
  "incunaboli": 15587,
  "edizioni_principi": 172,
@@ -33,7 +33,7 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 177891
+   "codici": 178027
   },
   "la": {
    "nome": "latino",
@@ -71,6 +71,10 @@
    "nome": "pali",
    "codici": 17848
   },
+  "ojp": {
+   "nome": "giapponese antico",
+   "codici": 16479
+  },
   "cu": {
    "nome": "slavo ecclesiastico",
    "codici": 14234
@@ -78,10 +82,6 @@
   "zh": {
    "nome": "cinese",
    "codici": 13121
-  },
-  "ojp": {
-   "nome": "giapponese antico",
-   "codici": 11537
   },
   "lo": {
    "nome": "lao",
@@ -477,7 +477,7 @@
   },
   "epigrafe": {
    "nome": "epigrafi",
-   "codici": 33106
+   "codici": 38184
   }
  },
  "autori": {
@@ -8766,20 +8766,20 @@
   },
   "giappone": {
    "nome": "Giappone, scritture non librarie: tavolette di legno (mokkan) del Mokkanko di Nabunken e calchi di iscrizioni (takuhon) della National Diet Library e di Waseda",
-   "codici": 12269,
+   "codici": 17347,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
    "papiri": 0,
-   "epigrafi": 12269,
+   "epigrafi": 17347,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
    "con_autori": 0,
    "lingue": {
-    "ojp": 11537,
-    "ja": 730,
+    "ojp": 16479,
+    "ja": 866,
     "zh": 1,
     "?": 1
    },
@@ -8787,7 +8787,7 @@
    "prefissi": [
     "giap-"
    ],
-   "pezzi_voci": 16,
+   "pezzi_voci": 22,
    "indice": [
     "indice/giappone-0.json"
    ]
@@ -9364,7 +9364,7 @@
   {
    "file": "indice/giappone-0.json",
    "fonte": "giappone",
-   "righe": 12269
+   "righe": 17347
   },
   {
    "file": "indice/romani-0.json",
@@ -19807,7 +19807,7 @@
   189,
   108,
   22,
-  12263,
+  17341,
   8,
   4,
   1,
