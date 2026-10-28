@@ -1,13 +1,13 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T11:42:08.663Z",
- "totale": 586747,
+ "aggiornato": "2026-10-28T11:47:14.159Z",
+ "totale": 587772,
  "con_autori": 32373,
  "miniati": 11291,
  "musica": 21300,
  "manoscritti": 543480,
  "papiri": 13195,
- "epigrafi": 14413,
+ "epigrafi": 15438,
  "stampe_antiche": 15659,
  "incunaboli": 15587,
  "edizioni_principi": 172,
@@ -37,23 +37,23 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 103064
+   "codici": 103065
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 51641
+   "codici": 52400
   },
   "fr": {
    "nome": "francese",
    "codici": 29293
   },
+  "grc": {
+   "nome": "greco",
+   "codici": 24958
+  },
   "de": {
    "nome": "tedesco",
    "codici": 24949
-  },
-  "grc": {
-   "nome": "greco",
-   "codici": 24904
   },
   "ar": {
    "nome": "arabo",
@@ -179,6 +179,10 @@
    "nome": "armeno",
    "codici": 635
   },
+  "egy": {
+   "nome": "egiziano antico (geroglifico, ieratico, demotico)",
+   "codici": 575
+  },
   "arc": {
    "nome": "aramaico",
    "codici": 562
@@ -186,10 +190,6 @@
   "ru": {
    "nome": "russo",
    "codici": 470
-  },
-  "egy": {
-   "nome": "egiziano antico (geroglifico, ieratico, demotico)",
-   "codici": 365
   },
   "ms": {
    "nome": "malese",
@@ -347,6 +347,10 @@
    "nome": "elamita",
    "codici": 4
   },
+  "xsa": {
+   "nome": "xsa",
+   "codici": 4
+  },
   "lzh": {
    "nome": "cinese classico",
    "codici": 3
@@ -369,10 +373,6 @@
   },
   "osc": {
    "nome": "osco",
-   "codici": 3
-  },
-  "xsa": {
-   "nome": "xsa",
    "codici": 3
   },
   "nai": {
@@ -473,7 +473,7 @@
   },
   "epigrafe": {
    "nome": "epigrafi",
-   "codici": 14413
+   "codici": 15438
   }
  },
  "autori": {
@@ -8571,42 +8571,43 @@
   },
   "epigrafi": {
    "nome": "Epigrafi: Epigraphic Database Heidelberg (foto IIIF di heidICON), The Metropolitan Museum of Art e Wikidata con Wikimedia Commons",
-   "codici": 12955,
+   "codici": 13980,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
    "papiri": 0,
-   "epigrafi": 12955,
+   "epigrafi": 13980,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
    "con_autori": 0,
    "lingue": {
-    "la": 12338,
+    "la": 12339,
     "xx": 38,
     "sa": 1,
-    "grc": 342,
-    "?": 237,
+    "grc": 396,
+    "?": 996,
     "syr": 1,
     "sux": 2,
     "cop": 34,
     "elx": 4,
     "peo": 5,
-    "egy": 4,
+    "egy": 214,
     "akk": 6,
     "he": 9,
     "phn": 5,
     "xpu": 34,
     "ar": 1,
     "ett": 3,
-    "osc": 3
+    "osc": 3,
+    "xsa": 1
    },
    "esito": "ok",
    "prefissi": [
     "ep-"
    ],
-   "pezzi_voci": 17,
+   "pezzi_voci": 18,
    "indice": [
     "indice/epigrafi-0.json"
    ]
@@ -9201,7 +9202,7 @@
   {
    "file": "indice/epigrafi-0.json",
    "fonte": "epigrafi",
-   "righe": 12955
+   "righe": 13980
   },
   {
    "file": "indice/musei-0.json",
@@ -20381,7 +20382,7 @@
   29,
   1,
   383,
-  15,
+  1040,
   6,
   1,
   9,
