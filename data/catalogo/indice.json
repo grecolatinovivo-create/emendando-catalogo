@@ -1,13 +1,13 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T12:26:30.415Z",
- "totale": 588587,
+ "aggiornato": "2026-10-28T12:59:37.630Z",
+ "totale": 588638,
  "con_autori": 32390,
  "miniati": 11291,
  "musica": 21300,
  "manoscritti": 544307,
  "papiri": 13194,
- "epigrafi": 15427,
+ "epigrafi": 15478,
  "stampe_antiche": 15659,
  "incunaboli": 15587,
  "edizioni_principi": 172,
@@ -179,13 +179,13 @@
    "nome": "armeno",
    "codici": 635
   },
+  "egy": {
+   "nome": "egiziano antico (geroglifico, ieratico, demotico)",
+   "codici": 598
+  },
   "arc": {
    "nome": "aramaico",
    "codici": 562
-  },
-  "egy": {
-   "nome": "egiziano antico (geroglifico, ieratico, demotico)",
-   "codici": 547
   },
   "ru": {
    "nome": "russo",
@@ -477,7 +477,7 @@
   },
   "epigrafe": {
    "nome": "epigrafi",
-   "codici": 15427
+   "codici": 15478
   }
  },
  "autori": {
@@ -8575,13 +8575,13 @@
   },
   "epigrafi": {
    "nome": "Epigrafi: Epigraphic Database Heidelberg (foto IIIF di heidICON), The Metropolitan Museum of Art e Wikidata con Wikimedia Commons",
-   "codici": 13980,
+   "codici": 14031,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
    "papiri": 0,
-   "epigrafi": 13980,
+   "epigrafi": 14031,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -8597,7 +8597,7 @@
     "cop": 34,
     "elx": 4,
     "peo": 5,
-    "egy": 214,
+    "egy": 265,
     "akk": 6,
     "he": 9,
     "phn": 5,
@@ -9212,7 +9212,7 @@
   {
    "file": "indice/epigrafi-0.json",
    "fonte": "epigrafi",
-   "righe": 13980
+   "righe": 14031
   },
   {
    "file": "indice/musei-0.json",
@@ -20392,7 +20392,7 @@
   26,
   1,
   383,
-  1040,
+  1091,
   6,
   1,
   9,
