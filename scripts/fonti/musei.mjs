@@ -196,7 +196,22 @@ const MODERNO = /\b(?:replica|reproduction|copy of|cast of|plaster cast|facsimil
 // prova forte di scrittura: senza una di queste parole una stele, una lapide, una moneta o un sigillo non bastano (molte stele medievali,
 // molte lapidi e i sigilli figurati non hanno testo)
 const FORTE = /\binscri(?:bed|ption|ptions|ptio)\b|\bepigra(?:ph|f)|\bepitaph|\bmilestone|\bmiliar(?:io|ium)\b|\bcuneiform|\bwax tablet|\bwriting tablet|\bvindolanda|\bcurse tablet|\bdefixio|\bostra[ck](?:on|a)\b|\bpapyr(?:us|i)\b|\bstamped (?:tile|brick|amphora|handle)|\b(?:tile|brick|amphora) stamp|\bbollo\b|\bkudurru|\bhieroglyph|\bhieratic|\bdemotic|\bcartouche|\brune ?stone|\brunestone|\brunic|\bogham|\bcodex\b|\bmanuscript|\btorah|\blegend\b|\bnapis\b|\binschrift|\binscripci[oó]n?\b|\binscripció\b|\biscrizion|\bepigrafe|\bclay tablet|\bwritten\b|\btext of\b|\bletters? (?:read|reading)|\bdedicat(?:ion|ory|ed to)\b|\bdecree\b/i;
-export function scrittoSf(m) {
+// esclusi a mano dopo la verifica dell'elenco (28 ottobre 2026): monumenti moderni e oggetti la cui sola «scritta» è un'annotazione moderna
+export const ESCLUSI_SF = new Map([
+  ["9a546c62cee24635948e291dfe239a80", "monumento moderno a Marco Aurelio (Bad Deutsch-Altenburg), scritta in tedesco"],
+  ["f53bc35f3d774f11a9476bfdadae94f7", "tomba di Carl Menger (1840-1921), Zentralfriedhof di Vienna"],
+  ["3c35b2a1c02e41e7ba5a1398ce1c59c6", "stele con serpenti senza iscrizione antica (sul retro solo numeri arabi moderni)"],
+  ["47ababa2dd594379861de66212426d13", "ostrakon figurato, solo disegno (sul retro una nota moderna a matita)"],
+  ["b795363bc5194815a5e05c6202a5a0d6", "volto di sarcofago senza iscrizione antica (sul retro una nota d'archivio)"],
+  ["1c5c7836045d4e40809d9e01f28a8f4e", "patera senza iscrizione (la descrizione dice solo che le patere potevano averne)"],
+]);
+// date moderne nella descrizione o nei tag («c.1833-38», «eighteenth-century», «18th-century», «dates the gate to 1858», «Qing dynasty»)
+const DATA_MODERNA = /\bc\.\s?1[5-9]\d\d\b|\b(?:sixteenth|seventeenth|eighteenth|nineteenth|twentieth)[- ]century\b|\b(?:1[6-9]|20)th[- ]century\b|\bdates? (?:the \w+ )?to 1[5-9]\d\d\b|\bqing dynasty\b/i;
+export function scrittoSf(m, uid) {
+  if (uid && ESCLUSI_SF.has(uid)) return false;
+  if (DATA_MODERNA.test([m.d, (m.g || []).join(" ")].join(" ")) && !/\b(?:BC|BCE|B\.C\.)\b/.test(m.d || "")) return false;
+  // oggetti con papiro che non è scrittura (pane legato con strisce di papiro, sandali, corde, cesti)
+  if (/\bbound with papyrus|\bpapyrus (?:strips?|sandals?|rope|cord|basket|mat)\b|\bstrips? of papyrus/i.test([m.n, m.d].join(" ")) && !/\binscri|\bwritten\b|\btext\b/i.test(m.n || "")) return false;
   const tag = (m.g || []).join(" ");
   const x = [m.n, m.d, tag].join(" ; ");
   if (!SCRITTO.test(x) || !FORTE.test(x)) return false;
@@ -277,7 +292,7 @@ export function modelloSf(r) {
 async function leggiSketchfab(st, fine) {
   const p = st.parti.sketchfab = st.parti.sketchfab || {};
   // il filtro può diventare più severo: i modelli che non lo passano più escono dallo stato
-  for (const k of Object.keys(st.voci)) if (k.startsWith("sf:") && !scrittoSf(st.voci[k])) delete st.voci[k];
+  for (const k of Object.keys(st.voci)) if (k.startsWith("sf:") && !scrittoSf(st.voci[k], k.slice(3))) delete st.voci[k];
   // un giro di ricerche ogni GIORNI giorni; le ricerche fatte restano segnate («fatte»), così un account aggiunto dopo si legge al giro seguente
   if (!fresca(p) && !p.in_corso) { p.fatte = []; p.grandi = []; p.in_corso = true; }
   {
@@ -299,7 +314,7 @@ async function leggiSketchfab(st, fine) {
         for (const x of d.results || []) {
           if (!x.uid || !x.user || x.user.username !== u) continue;
           const m = modelloSf(x);
-          if (!m.ar && scrittoSf(m)) visti.set(x.uid, m);
+          if (!m.ar && scrittoSf(m, x.uid)) visti.set(x.uid, m);
         }
         url = d.next || null;
       }
@@ -373,13 +388,20 @@ export function recordEgizio(id, v, m3d) {
   if (m3d) r.modello3d = m3d;
   return r;
 }
+export function segnaturaSf(uid, m, museo) {
+  const nome = String(m.n || "").replace(/\s+/g, " ").replace(/^["'«]+|["'»]+$/g, "").trim();
+  if (!nome) return `${museo || "Sketchfab"}, modello 3D ${uid.slice(0, 8)}`;
+  const n = nome.length > 110 ? nome.slice(0, 110).replace(/\s+\S*$/, "") + "…" : nome;
+  return museo && !n.toLowerCase().includes(String(museo).toLowerCase()) ? `${n}, ${museo}` : n;
+}
 export function recordSketchfab(uid, m) {
-  if (!m || !m.e || !m.th || !scrittoSf(m)) return null;
+  if (!m || !m.e || !m.th || !scrittoSf(m, uid)) return null;
   const [museo, citta] = ACCOUNT[m.u] || [m.un || m.u, null];
   const t = tipoSf(m);
   const r = {
     fonte: "musei", id: "mu-3d-" + uid, tipo: t.tipo === "codice" ? undefined : t.tipo, citta, biblioteca: museo,
-    segnatura: `Sketchfab ${uid.slice(0, 8)}`, titolo: m.n || null, datazione: null, secolo: null, lingue: lingueSf(m),
+    // segnatura (titolo della voce nell'elenco, dal 28 ottobre 2026): nome del modello e museo, non più «Sketchfab <uid>»
+    segnatura: segnaturaSf(uid, m, museo), titolo: m.n || null, datazione: null, secolo: null, lingue: lingueSf(m),
     manifest: `${RAW}musei-3d/${uid}.json`, pagina: `https://sketchfab.com/3d-models/${uid}`, immagini: 1,
     licenza: `Modello 3D su Sketchfab di ${m.un || m.u} (${LIC_SF(m)}); immagine: anteprima del modello su Sketchfab`,
     modello3d: modello3d(uid, m),

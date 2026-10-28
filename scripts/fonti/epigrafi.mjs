@@ -277,7 +277,8 @@ export function recordEdh(hd, v) {
     // manifesto sempre scritto dal catalogo (dal 28 ottobre 2026): i manifesti dell'EDH sono dietro un controllo anti-robot (Anubis) e nei browser non si aprono
     manifest: `${RAW}epigrafi-edh/${hd.toLowerCase()}.json`,
     pagina: `${EDH}/edh/inschrift/${hd}`, immagini: fotos.length,
-    licenza: "Foto: diritti riservati (heidICON, Heidelberger Akademie der Wissenschaften), pubblicate con il manifesto IIIF dell'EDH" + (mic ? "; foto su concessione del Ministero della Cultura, divieto di ulteriore riproduzione" : "") + `. Dati e testo: ${LICENZA_EDH}`,
+    // dal 28 ottobre 2026 i manifesti sono nostri (sopra): il testo non dice più «manifesto IIIF dell'EDH»
+    licenza: "Foto: heidICON, Università di Heidelberg (Heidelberger Akademie der Wissenschaften), diritti riservati; manifesto IIIF di Emendando" + (mic ? "; foto su concessione del Ministero della Cultura, divieto di ulteriore riproduzione" : "") + `. Dati e testo: ${LICENZA_EDH}`,
     epigrafe: pulisci({ edizione: v.ed || null, edh: hd, tm: v.tm || null, provenienza: [luogo, v.fs].filter(Boolean).join(", ") || null, provincia: PROVINCE_EDH[v.pr] || v.pr || null,
       conservazione: v.co || null, supporto, genere, testo: v.tx || null, licenza_metadati: "CC BY-SA 4.0", aperta: true }),
   };
