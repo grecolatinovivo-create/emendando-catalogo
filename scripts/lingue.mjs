@@ -20,6 +20,8 @@ export const NOMI_LINGUE = {
   egy: "egiziano antico (geroglifico, ieratico, demotico)",
   // epigrafi (dal 28 ottobre 2026): altre lingue antiche delle iscrizioni
   akk: "accadico", sux: "sumerico", phn: "fenicio", xpu: "punico", arc: "aramaico", ett: "etrusco", osc: "osco", xlc: "licio", peo: "antico persiano", elx: "elamita",
+  // Giappone e Asia orientale, scritture non librarie (dal 28 ottobre 2026): mokkan e takuhon
+  ojp: "giapponese antico", lzh: "cinese classico",
   xx: "altre lingue",
 };
 
@@ -55,7 +57,7 @@ const CODICI = {
   cs: "cs", cze: "cs", ces: "cs", czech: "cs", tschechisch: "cs", pl: "pl", pol: "pl", polish: "pl", polnisch: "pl", hu: "hu", hun: "hu", hungarian: "hu", ungarisch: "hu",
   sv: "sv", swe: "sv", swedish: "sv", da: "da", dan: "da", danish: "da", is: "is", ice: "is", isl: "is", non: "is", icelandic: "is", "old norse": "is", norse: "is",
   ga: "ga", gle: "ga", sga: "ga", mga: "ga", irish: "ga", cy: "cy", wel: "cy", cym: "cy", welsh: "cy",
-  zh: "zh", chi: "zh", zho: "zh", chinese: "zh", ja: "ja", jpn: "ja", japanese: "ja", ko: "ko", kor: "ko", korean: "ko",
+  zh: "zh", chi: "zh", zho: "zh", chinese: "zh", ja: "ja", jpn: "ja", japanese: "ja", ojp: "ojp", "old japanese": "ojp", lzh: "lzh", "classical chinese": "lzh", "literary chinese": "lzh", ko: "ko", kor: "ko", korean: "ko",
   // nomi spagnoli, catalani, portoghesi e galeghi (biblioteche della penisola iberica)
   espanol: "es", castellano: "es", castella: "es", castelhano: "es", espanhol: "es", aljamiado: "es", llati: "la", griego: "grc", grego: "grc", hebreo: "he", hebraico: "he",
   frances: "fr", italia: "it", aleman: "de", alemany: "de", alemao: "de", ingles: "en", angles: "en", portugues: "pt", catala: "ca", valenciano: "ca", valencia: "ca",

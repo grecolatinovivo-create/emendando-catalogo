@@ -242,3 +242,24 @@ Le voci nuove create da un modello hanno come immagine del manifesto l'anteprima
 3. Louvre e Cleveland: leggere le condizioni delle foto e, se aperte, agganciarle.
 4. Permessi da chiedere (anche con la lettera dell'Università di Urbino): Ubi Erat Lupa, Inscriptions of Aphrodisias (King's College London), RIB, I.Sicily (foto intere).
 5. Europeana: chiave gratuita, se un giorno i link dei partner tornano vivi.
+
+## Giappone e Asia orientale
+
+Verifica del 28 ottobre 2026, dal server (mai dal browser in questo giro). Fonte del catalogo «giappone» (`scripts/fonti/giappone-scritture.mjs`, id «giap-…»), corsia `raccolta-giappone-scritture.yml`, stato in `data/giappone.json`. Le voci hanno «tipo» «epigrafe»; il supporto dice di che cosa si tratta: «legno (mokkan)» per le tavolette di legno scritte, «calco (takuhon)» per i calchi su carta delle iscrizioni. Lingue: «giapponese antico» (codice `ojp`) per le tavolette fino all'800, «giapponese» dopo; «cinese classico» (`lzh`) è pronto per i takuhon cinesi.
+
+| Fonte | Quante | Con foto | IIIF | Manifesto scritto da noi | Strumenti (CORS) | Licenza | Esito |
+|---|---|---|---|---|---|---|---|
+| 木簡庫 Mokkanko, Nabunken (mokkanko.nabunken.go.jp) | 36.953 tavolette nella ricerca «文化財研究所» (circa 53.000 in tutto il database, di tutti gli enti) | 293 su 326 lette il 28 ottobre (90%): stima circa 33.000 | No | Sì: le condizioni lo consentono | No (foto senza CORS: si vedono, l'inchiostro no) | Tavolette scavate da Nabunken: riuso libero, anche commerciale, senza richiesta, con citazione («出典：木簡庫（URL）»); le altre secondo l'ente che ha scavato | Dentro (solo «調査主体» Nabunken). Foto in bianco e nero, da 384 a circa 1.500 pixel di altezza. Testo (釈文), sito, scavo, strato, datazione, misure, legno, forma, genere, DOI. Lettura a ruota: circa 15 ore di richieste (una pagina ogni 1,5 secondi) |
+| ColBase, musei nazionali e Nabunken (colbase.nich.go.jp) | Non contate | Sì, alta risoluzione (anche dei mokkan) | Non verificato | Non verificato | Non verificato | Condizioni di ColBase da leggere | Da confermare dal browser: nessuna API pubblica documentata (il sito usa un'API interna che non usiamo) |
+| Japan Search (jpsearch.go.jp) | Aggregatore nazionale | Sì | Sì | Non serve | Non verificato | Licenza per voce | Fuori dal server: il robots.txt vieta ai programmi le API di ricerca (/api/item/search/jps-cross) e lo SPARQL (/rdf/). Da confermare dal browser |
+| National Diet Library (dl.ndl.go.jp, ricerca con NDL Search) | 13 candidati (titolo con 拓本 o 搨本, copie digitali, fuori i libri «図書») | 6 aperti in Internet (32 immagini) | Sì | Non serve | Sì | NDL; metadati di NDL Search CC BY 4.0 | Dentro: 6. Fuori 5 copie solo in biblioteca (manifesto 404) e 2 libri che non sono calchi. I 126 volumi del «医家墓碑拓本集» sono solo in biblioteca |
+| Università Waseda, 古典籍総合データベース | 24 takuhon (dalla ricerca di NDL Search) | Sì (dal catalogo) | Sì | Non serve | Non verificato | Condizioni della biblioteca | In attesa: il 28 ottobre il sito risponde «Site Maintenance» (503); la corsia riprova a ogni giro |
+| Shōsōin (正倉院) | Mokkan e iscrizioni tramandati | Sì | No | No | Non applicabile | Uso riservato | Fuori: niente IIIF, foto con diritti riservati |
+| Università di Kyoto, Istituto di studi umanistici (石刻拓本資料) | Migliaia di calchi cinesi | Sì | No (DjVu) | No | Non applicabile | «Tutto protetto dalla legge giapponese sul diritto d'autore» | Fuori |
+| Università di Kyoto, Rare Materials Digital Archive | Non contate | Sì | Sì | Non serve | Non verificato | Da leggere | Da confermare dal browser: il robots.txt vieta la ricerca (/search/) |
+| Altri archivi universitari giapponesi (KUDA, i-repository, Ryukoku, ADEAC) | Pochi takuhon ciascuno (3-4) | Sì | Non verificato | Non verificato | Non verificato | Non verificata | Annotati, non agganciati (troppo piccoli per ora) |
+| Harvard (calchi cinesi della Harvard-Yenching e della Fine Arts Library) | Non contate | Sì | Sì | Non serve | Sì (manifesti di Harvard) | Da leggere | Da confermare dal browser: LibraryCloud risponde 403 al nostro server |
+| Biblioteca nazionale cinese (碑帖菁华) | Decine di migliaia | Sì | No | No | Non applicabile | Non dichiarata | Fuori: niente IIIF né licenza aperta |
+| Corea, 한국금석문 종합영상정보시스템 e Museo nazionale | Migliaia di calchi | Sì | No | Non verificato | Non verificato | Museo nazionale: in parte KOGL tipo 1 | Fuori per ora: niente IIIF; da riprendere dal browser |
+
+Cosa serve nel sito: un'etichetta per il supporto «legno (mokkan)» e una per «calco (takuhon)»; per i mokkan conviene mostrare il testo (「本文」) in verticale e il campo «edizione» (per esempio «藤原宮3-1153»), il DOI di Mokkanko e il rimando obbligatorio alla fonte («出典：木簡庫»).

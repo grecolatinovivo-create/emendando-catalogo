@@ -1,0 +1,33 @@
+# Corsia «giappone-scritture» (dal 28 ottobre 2026): scritture giapponesi non librarie con foto che si aprono nel visore di Emendando
+# (censimento in docs/EPIGRAFI.md, sezione «Giappone e Asia orientale»). Fonte «giappone» (scripts/fonti/giappone-scritture.mjs):
+#   - 木簡庫 Mokkanko di Nabunken (mokkanko.nabunken.go.jp): tavolette di legno scritte (mokkan) scavate da Nabunken; elenco dalla ricerca
+#     del sito (96 righe per pagina), poi la pagina di ogni tavoletta, una volta sola; manifesti scritti dal catalogo con le foto del sito;
+#   - National Diet Library e Università Waseda: calchi di iscrizioni (takuhon) trovati con NDL Search, manifesti IIIF delle biblioteche.
+# Stato in data/giappone.json. Richieste in serie con la pausa di 1,5 secondi (scripts/rete.mjs). Ruota fino a lettura completa
+# (circa 37.000 pagine di Mokkanko), poi il giro notturno delle 04:10 UTC.
+name: "Raccolta: corsia giappone-scritture"
+
+on:
+  schedule:
+    - cron: "10 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write   # per la ruota
+
+concurrency:
+  group: raccolta-giappone-scritture
+  cancel-in-progress: false
+
+jobs:
+  corsia:
+    uses: ./.github/workflows/corsia.yml
+    with:
+      corsia: giappone-scritture
+      fonti: giappone
+      argomenti: --giappone-minuti=130
+      cache: false
+      ruota: false
+      completa: true
+      flusso: raccolta-giappone-scritture.yml

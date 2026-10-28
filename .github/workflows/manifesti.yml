@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
   # anche alla fine di ogni giro delle corsie: i codici nuovi entrano nel catalogo insieme al loro manifesto, senza aspettare il giorno dopo
   workflow_run:
-    workflows: ["Raccolta: corsia europa", "Raccolta: corsia est", "Raccolta: corsia balcani", "Raccolta: corsia medioriente", "Raccolta: corsia nord", "Raccolta: corsia iberia", "Raccolta: corsia usa", "Raccolta: corsia giornaliera", "Raccolta: corsia italia", "Raccolta: corsia asia", "Raccolta: corsia mondo", "Raccolta: corsia stampe", "Raccolta: corsia papiri", "Raccolta: corsia epigrafi", "Raccolta: corsia musei"]
+    workflows: ["Raccolta: corsia europa", "Raccolta: corsia est", "Raccolta: corsia balcani", "Raccolta: corsia medioriente", "Raccolta: corsia nord", "Raccolta: corsia iberia", "Raccolta: corsia usa", "Raccolta: corsia giornaliera", "Raccolta: corsia italia", "Raccolta: corsia asia", "Raccolta: corsia mondo", "Raccolta: corsia stampe", "Raccolta: corsia papiri", "Raccolta: corsia epigrafi", "Raccolta: corsia musei", "Raccolta: corsia giappone-scritture"]
     types: [completed]
 
 permissions:

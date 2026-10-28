@@ -1,6 +1,6 @@
 # Una «corsia» della raccolta del catalogo: il lavoro comune a tutte le corsie (raccolta, prove, salvataggio, ruota).
 # Non parte da sola: la chiamano i workflow delle corsie (raccolta-vaticana.yml, raccolta-yale.yml, raccolta-bodleian.yml,
-# raccolta-giornaliera.yml, raccolta-italia.yml, raccolta-mondo.yml, raccolta-usa.yml, raccolta-uk.yml, raccolta-iberia.yml, raccolta-europa.yml, raccolta-asia.yml, raccolta-est.yml, raccolta-balcani.yml, raccolta-medioriente.yml, raccolta-stampe.yml, raccolta-papiri.yml, raccolta-epigrafi.yml, raccolta-musei.yml), che decidono quando partire, quali fonti leggere e il gruppo di concurrency.
+# raccolta-giornaliera.yml, raccolta-italia.yml, raccolta-mondo.yml, raccolta-usa.yml, raccolta-uk.yml, raccolta-iberia.yml, raccolta-europa.yml, raccolta-asia.yml, raccolta-est.yml, raccolta-balcani.yml, raccolta-medioriente.yml, raccolta-stampe.yml, raccolta-papiri.yml, raccolta-epigrafi.yml, raccolta-musei.yml, raccolta-giappone-scritture.yml), che decidono quando partire, quali fonti leggere e il gruppo di concurrency.
 # Le corsie leggono biblioteche diverse (server diversi) e girano in parallelo; dentro una corsia le richieste restano in serie,
 # con le pause di sempre (10 secondi per la Vaticana), quindi nessuna biblioteca riceve più richieste di prima.
 # Salvataggio a prova di conflitto, anche con più corsie che salvano quasi insieme: si mettono da parte SOLO gli stati delle
@@ -99,6 +99,7 @@ jobs:
               stampe) s=data/$f.json ;;   # corsia stampe (incunaboli e edizioni principi)
               epigrafi) s=data/$f.json ;;   # corsia epigrafi (data/epigrafi-edh.json, iscrizioni dell'EDH, si aggiorna a mano con scripts/epigrafi-edh.mjs)
               papiri) s=data/$f.json ;;
+              giappone) s=data/$f.json ;;   # corsia giappone-scritture (mokkan e takuhon)
               musei) s=data/$f.json ;;   # corsia musei (Museo Egizio e modelli 3D di Sketchfab)   # corsia papiri (data/papiri-info.json, schede di papyri.info, si aggiorna a mano con scripts/papiri-info.mjs)
               heidelberg) s=data/heidelberg-indici.json ;;
               wolfenbuettel|bamberga|karlsruhe|stoccarda|colonia|lipsia|francoforte|dresda|tubinga|darmstadt) s=data/$f.json ;;   # Handschriftenportal
