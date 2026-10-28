@@ -1,12 +1,12 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T13:54:44.984Z",
- "totale": 596434,
- "con_autori": 32512,
+ "aggiornato": "2026-10-28T14:36:29.166Z",
+ "totale": 597921,
+ "con_autori": 32579,
  "miniati": 11294,
  "musica": 21300,
  "manoscritti": 544309,
- "papiri": 16824,
+ "papiri": 18311,
  "epigrafi": 19642,
  "stampe_antiche": 15659,
  "incunaboli": 15587,
@@ -37,7 +37,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 103071
+   "codici": 103075
   },
   "?": {
    "nome": "lingua non indicata",
@@ -49,7 +49,7 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 27222
+   "codici": 28201
   },
   "de": {
    "nome": "tedesco",
@@ -57,7 +57,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 24476
+   "codici": 24629
   },
   "he": {
    "nome": "ebraico",
@@ -65,7 +65,7 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 19262
+   "codici": 19280
   },
   "pi": {
    "nome": "pali",
@@ -133,7 +133,7 @@
   },
   "cop": {
    "nome": "copto",
-   "codici": 2968
+   "codici": 3225
   },
   "tr": {
    "nome": "turco",
@@ -177,7 +177,7 @@
   },
   "egy": {
    "nome": "egiziano antico (geroglifico, ieratico, demotico)",
-   "codici": 680
+   "codici": 817
   },
   "akk": {
    "nome": "accadico",
@@ -439,11 +439,11 @@
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7650
+   "codici": 7710
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15915
+   "codici": 15922
   },
   "medievale": {
    "nome": "autori medievali",
@@ -473,7 +473,7 @@
   },
   "papiro": {
    "nome": "papiri",
-   "codici": 16824
+   "codici": 18311
   },
   "epigrafe": {
    "nome": "epigrafi",
@@ -911,13 +911,13 @@
    "nome": "Omero",
    "latino": "Homerus",
    "categoria": "classico-greco",
-   "codici": 549
+   "codici": 578
   },
   "esiodo": {
    "nome": "Esiodo",
    "latino": "Hesiodus",
    "categoria": "classico-greco",
-   "codici": 139
+   "codici": 140
   },
   "pindaro": {
    "nome": "Pindaro",
@@ -929,13 +929,13 @@
    "nome": "Saffo",
    "latino": "Sappho",
    "categoria": "classico-greco",
-   "codici": 31
+   "codici": 33
   },
   "alceo": {
    "nome": "Alceo",
    "latino": "Alcaeus",
    "categoria": "classico-greco",
-   "codici": 4
+   "codici": 5
   },
   "anacreonte": {
    "nome": "Anacreonte",
@@ -977,25 +977,25 @@
    "nome": "Sofocle",
    "latino": "Sophocles",
    "categoria": "classico-greco",
-   "codici": 90
+   "codici": 91
   },
   "euripide": {
    "nome": "Euripide",
    "latino": "Euripides",
    "categoria": "classico-greco",
-   "codici": 170
+   "codici": 172
   },
   "aristofane": {
    "nome": "Aristofane",
    "latino": "Aristophanes",
    "categoria": "classico-greco",
-   "codici": 146
+   "codici": 148
   },
   "menandro": {
    "nome": "Menandro",
    "latino": "Menander",
    "categoria": "classico-greco",
-   "codici": 48
+   "codici": 52
   },
   "erodoto": {
    "nome": "Erodoto",
@@ -1007,19 +1007,19 @@
    "nome": "Tucidide",
    "latino": "Thucydides",
    "categoria": "classico-greco",
-   "codici": 71
+   "codici": 72
   },
   "senofonte": {
    "nome": "Senofonte",
    "latino": "Xenophon",
    "categoria": "classico-greco",
-   "codici": 145
+   "codici": 146
   },
   "platone": {
    "nome": "Platone",
    "latino": "Plato",
    "categoria": "classico-greco",
-   "codici": 381
+   "codici": 384
   },
   "aristotele": {
    "nome": "Aristotele",
@@ -1043,13 +1043,13 @@
    "nome": "Isocrate",
    "latino": "Isocrates",
    "categoria": "classico-greco",
-   "codici": 91
+   "codici": 97
   },
   "demostene": {
    "nome": "Demostene",
    "latino": "Demosthenes",
    "categoria": "classico-greco",
-   "codici": 165
+   "codici": 169
   },
   "eschine": {
    "nome": "Eschine",
@@ -1103,13 +1103,13 @@
    "nome": "Strabone",
    "latino": "Strabo",
    "categoria": "classico-greco",
-   "codici": 28
+   "codici": 29
   },
   "plutarco": {
    "nome": "Plutarco",
    "latino": "Plutarchus",
    "categoria": "classico-greco",
-   "codici": 366
+   "codici": 367
   },
   "luciano": {
    "nome": "Luciano di Samosata",
@@ -1145,7 +1145,7 @@
    "nome": "Teocrito",
    "latino": "Theocritus",
    "categoria": "classico-greco",
-   "codici": 72
+   "codici": 74
   },
   "callimaco": {
    "nome": "Callimaco",
@@ -1199,7 +1199,7 @@
    "nome": "Tolomeo",
    "latino": "Ptolemaeus",
    "categoria": "classico-greco",
-   "codici": 309
+   "codici": 310
   },
   "euclide": {
    "nome": "Euclide",
@@ -1451,7 +1451,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7404
+   "codici": 7411
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -8564,25 +8564,25 @@
   },
   "papiri": {
    "nome": "Papiri: Michigan, Yale, Duke, Princeton, Vienna (ÖNB), Colonia e Berkeley, con le schede di papyri.info",
-   "codici": 11973,
+   "codici": 13460,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 10,
    "musica": 1,
-   "papiri": 11973,
+   "papiri": 13460,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 372,
+   "con_autori": 439,
    "lingue": {
-    "grc": 8946,
-    "ar": 1885,
-    "xx": 250,
-    "cop": 824,
-    "la": 95,
+    "grc": 9925,
+    "ar": 2038,
+    "xx": 268,
+    "cop": 1081,
+    "la": 99,
     "?": 55,
-    "egy": 137,
+    "egy": 274,
     "he": 52,
     "arc": 15,
     "de": 1
@@ -8591,7 +8591,7 @@
    "prefissi": [
     "pap-"
    ],
-   "pezzi_voci": 15,
+   "pezzi_voci": 17,
    "indice": [
     "indice/papiri-0.json"
    ]
@@ -9231,7 +9231,7 @@
   {
    "file": "indice/papiri-0.json",
    "fonte": "papiri",
-   "righe": 11973
+   "righe": 13460
   },
   {
    "file": "indice/epigrafi-0.json",
@@ -18196,7 +18196,7 @@
   37964,
   1,
   2942,
-  1712,
+  2651,
   2,
   1,
   1,
@@ -18711,7 +18711,7 @@
   2,
   7,
   4,
-  1499,
+  1647,
   22,
   1,
   1,
@@ -19959,7 +19959,7 @@
   14,
   6,
   3062,
-  255,
+  386,
   1,
   1,
   3,
@@ -20785,7 +20785,7 @@
   16,
   289,
   4,
-  417,
+  686,
   241,
   1,
   1,
