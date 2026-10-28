@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T12:04:36.750Z",
- "totale": 587760,
- "con_autori": 32373,
+ "aggiornato": "2026-10-28T12:26:30.415Z",
+ "totale": 588587,
+ "con_autori": 32390,
  "miniati": 11291,
  "musica": 21300,
- "manoscritti": 543480,
+ "manoscritti": 544307,
  "papiri": 13194,
  "epigrafi": 15427,
  "stampe_antiche": 15659,
@@ -37,11 +37,11 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 103012
+   "codici": 103037
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 52447
+   "codici": 53164
   },
   "fr": {
    "nome": "francese",
@@ -61,7 +61,7 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 20108
+   "codici": 20122
   },
   "xx": {
    "nome": "altre lingue",
@@ -113,7 +113,7 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 5084
+   "codici": 5091
   },
   "pt": {
    "nome": "portoghese",
@@ -129,7 +129,7 @@
   },
   "tr": {
    "nome": "turco",
-   "codici": 2667
+   "codici": 2678
   },
   "ko": {
    "nome": "coreano",
@@ -141,15 +141,15 @@
   },
   "gez": {
    "nome": "etiopico",
-   "codici": 1286
+   "codici": 1292
+  },
+  "syr": {
+   "nome": "siriaco",
+   "codici": 1266
   },
   "cs": {
    "nome": "ceco",
    "codici": 1227
-  },
-  "syr": {
-   "nome": "siriaco",
-   "codici": 1221
   },
   "no": {
    "nome": "no",
@@ -311,6 +311,10 @@
    "nome": "balinese",
    "codici": 8
   },
+  "pit": {
+   "nome": "pittografia mesoamericana (senza testo alfabetico)",
+   "codici": 7
+  },
   "btk": {
    "nome": "batak",
    "codici": 7
@@ -326,10 +330,6 @@
   "phn": {
    "nome": "fenicio",
    "codici": 6
-  },
-  "pit": {
-   "nome": "pittografia mesoamericana (senza testo alfabetico)",
-   "codici": 5
   },
   "peo": {
    "nome": "antico persiano",
@@ -435,25 +435,25 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 8195
+   "codici": 8198
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7557
+   "codici": 7559
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15875
+   "codici": 15886
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 3498
+   "codici": 3500
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 538165
+   "codici": 538992
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -557,13 +557,13 @@
    "nome": "Livio",
    "latino": "Livius",
    "categoria": "classico-latino",
-   "codici": 307
+   "codici": 308
   },
   "seneca": {
    "nome": "Seneca",
    "latino": "Seneca",
    "categoria": "classico-latino",
-   "codici": 536
+   "codici": 537
   },
   "lucano": {
    "nome": "Lucano",
@@ -671,7 +671,7 @@
    "nome": "Boezio",
    "latino": "Boethius",
    "categoria": "classico-latino",
-   "codici": 830
+   "codici": 831
   },
   "ausonio": {
    "nome": "Ausonio",
@@ -1025,7 +1025,7 @@
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 2458
+   "codici": 2460
   },
   "teofrasto": {
    "nome": "Teofrasto",
@@ -1295,7 +1295,7 @@
    "nome": "Porfirio",
    "latino": "Porphyrius",
    "categoria": "classico-greco",
-   "codici": 280
+   "codici": 281
   },
   "proclo": {
    "nome": "Proclo",
@@ -1409,7 +1409,7 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 3167
+   "codici": 3168
   },
   "girolamo": {
    "nome": "Girolamo",
@@ -1451,7 +1451,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7368
+   "codici": 7377
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1505,7 +1505,7 @@
    "nome": "Cassiodoro",
    "latino": "Cassiodorus",
    "categoria": "cristiano",
-   "codici": 238
+   "codici": 239
   },
   "origene": {
    "nome": "Origene",
@@ -1583,7 +1583,7 @@
    "nome": "Tommaso d'Aquino",
    "latino": "Thomas de Aquino",
    "categoria": "medievale",
-   "codici": 745
+   "codici": 747
   },
   "bernardo": {
    "nome": "Bernardo di Chiaravalle",
@@ -8715,7 +8715,7 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 26403,
+   "codici": 27230,
    "carte": 2,
    "carte_stampa": 0,
    "miniati": 4,
@@ -8725,30 +8725,33 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 1302,
+   "con_autori": 1319,
    "lingue": {
-    "la": 20857,
+    "la": 20882,
     "it": 283,
-    "?": 1878,
+    "?": 2595,
     "grc": 2983,
     "fr": 24,
     "xx": 24,
-    "syr": 1,
+    "syr": 46,
     "cop": 177,
     "ar": 74,
     "th": 1,
     "hy": 84,
-    "he": 5,
+    "he": 19,
+    "gez": 6,
+    "pit": 4,
+    "fa": 7,
+    "tr": 11,
     "de": 3,
     "es": 15,
-    "en": 1,
-    "pit": 2
+    "en": 1
    },
    "esito": "ok",
    "prefissi": [
     "bav-"
    ],
-   "pezzi_voci": 34,
+   "pezzi_voci": 35,
    "indice": [
     "indice/vaticana-0.json",
     "indice/vaticana-1.json"
@@ -9234,7 +9237,7 @@
   {
    "file": "indice/vaticana-1.json",
    "fonte": "vaticana",
-   "righe": 6403
+   "righe": 7230
   }
  ],
  "biblioteche_tipo": [
@@ -18135,7 +18138,7 @@
   3,
   2,
   3,
-  26408,
+  27235,
   1,
   43,
   8,

@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T11:42:08.663Z",
+ "aggiornato": "2026-10-28T12:26:30.415Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -414,11 +414,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 738,
+   "codici": 742,
    "esito": "ok"
   }
  },
- "totale": 12742,
+ "totale": 12746,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -45098,6 +45098,150 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Barb.lat.154/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Barb.lat.154",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-borgh-8",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Borgh. 8",
+   "datazione": "sec. XIV",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aristotelis Metaphysica, Physica et De generatione et corruptione, omnia in Latina lingua translata e Graeca a Guillelmo de Moerbeka.",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica",
+      "Fisica",
+      "De generatione et corruptione"
+     ],
+     "corrispondenza": "autore: «Aristoteles, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Borgh.8/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Borgh.8",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-borgh-9",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Borgh. 9",
+   "datazione": "sec. XIV in",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "<Textus Porphyrii Tyrii, Aristotelis, Gilberti Porretani et Boethii>.",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…esc. di Poitiers, 1070-1154 ; Boethius, Anicius Manlius Torquatus Se…»"
+    },
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «…hyrius Tyrius, 232/233-305? ; Aristoteles, 384-322 a.C. ; Gilbertus Por…»"
+    },
+    {
+     "id": "porfirio",
+     "autore": "Porfirio",
+     "latino": "Porphyrius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Porphyrius Tyrius, 232/233-305? ; Aristo…»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Borgh.9/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Borgh.9",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-borgh-10",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Borgh. 10",
+   "datazione": "sec. XIII-XIV",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Incerti auctoris tabula sententiarum moralium e Seneca ad Lucilium epistulis excerptarum.",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus, 5/4 a.C.-65 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Borgh.10/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Borgh.10",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-borgh-368",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Borgh. 368",
+   "datazione": "sec. XV ex",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Ab Urbe condita (Livius, Titus, 59 a.C.-17 d.C.)",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "autore: «Livius, Titus, 59 a.C.-17 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Borgh.368/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Borgh.368",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },
