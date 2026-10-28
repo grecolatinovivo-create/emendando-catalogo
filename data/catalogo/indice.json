@@ -1,13 +1,13 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T17:24:56.310Z",
- "totale": 612264,
+ "aggiornato": "2026-10-28T18:35:51.991Z",
+ "totale": 617400,
  "con_autori": 32644,
  "miniati": 11303,
  "musica": 21303,
  "manoscritti": 545963,
  "papiri": 22672,
- "epigrafi": 27970,
+ "epigrafi": 33106,
  "stampe_antiche": 15659,
  "incunaboli": 15587,
  "edizioni_principi": 172,
@@ -33,7 +33,7 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 177851
+   "codici": 177891
   },
   "la": {
    "nome": "latino",
@@ -79,6 +79,10 @@
    "nome": "cinese",
    "codici": 13121
   },
+  "ojp": {
+   "nome": "giapponese antico",
+   "codici": 11537
+  },
   "lo": {
    "nome": "lao",
    "codici": 10873
@@ -106,10 +110,6 @@
   "bo": {
    "nome": "tibetano",
    "codici": 6503
-  },
-  "ojp": {
-   "nome": "giapponese antico",
-   "codici": 6441
   },
   "nod": {
    "nome": "thai settentrionale (lanna)",
@@ -477,7 +477,7 @@
   },
   "epigrafe": {
    "nome": "epigrafi",
-   "codici": 27970
+   "codici": 33106
   }
  },
  "autori": {
@@ -8763,20 +8763,20 @@
   },
   "giappone": {
    "nome": "Giappone, scritture non librarie: tavolette di legno (mokkan) del Mokkanko di Nabunken e calchi di iscrizioni (takuhon) della National Diet Library e di Waseda",
-   "codici": 7133,
+   "codici": 12269,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
    "papiri": 0,
-   "epigrafi": 7133,
+   "epigrafi": 12269,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
    "con_autori": 0,
    "lingue": {
-    "ojp": 6441,
-    "ja": 690,
+    "ojp": 11537,
+    "ja": 730,
     "zh": 1,
     "?": 1
    },
@@ -8784,7 +8784,7 @@
    "prefissi": [
     "giap-"
    ],
-   "pezzi_voci": 9,
+   "pezzi_voci": 16,
    "indice": [
     "indice/giappone-0.json"
    ]
@@ -9356,7 +9356,7 @@
   {
    "file": "indice/giappone-0.json",
    "fonte": "giappone",
-   "righe": 7133
+   "righe": 12269
   },
   {
    "file": "indice/romani-0.json",
@@ -19799,7 +19799,7 @@
   189,
   108,
   22,
-  7127,
+  12263,
   8,
   4,
   1,
