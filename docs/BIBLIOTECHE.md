@@ -18,7 +18,7 @@ Come leggere le colonne:
 - **Ultima raccolta**: com'è andata l'ultima volta.
 
 <!-- inizio automatico -->
-Codici nel catalogo, in tutto: **592.427**, di cui **32.512** con almeno un autore riconosciuto.
+Codici nel catalogo, in tutto: **596.434**, di cui **32.512** con almeno un autore riconosciuto.
 
 | Biblioteca | Città | Codici totali | Di cui con autori riconosciuti | Lingue | Avanzamento della lettura | Come si aggiorna | Ultimo aggiornamento | Ultima raccolta |
 |---|---|---|---|---|---|---|---|---|
@@ -106,7 +106,7 @@ Codici nel catalogo, in tutto: **592.427**, di cui **32.512** con almeno un auto
 | Papiri: Michigan, Yale, Duke, Princeton, Vienna (ÖNB, solo uso non commerciale), Colonia e Berkeley, con le schede di papyri.info (CC BY 3.0) | varie | 11.973 | 372 | greco 8946, arabo 1885, copto 824, altre 605 |  | corsia papiri: a ruota finché la prima lettura non è finita, poi ogni notte (elenchi ogni 30 giorni) | 2026-10-28 | riuscita |
 | Epigrafi: Epigraphic Database Heidelberg (foto IIIF di heidICON, dati CC BY-SA 4.0), The Metropolitan Museum of Art (CC0) e Wikidata con Wikimedia Commons | varie | 14.031 | 0 | latino 12.339, non indicata 996, greco 396, altre 412 |  | corsia epigrafi: a ruota finché la prima lettura non è finita, poi ogni notte (elenchi ogni 30 giorni) | 2026-10-28 | riuscita |
 | Musei: oggetti scritti del Museo Egizio di Torino (immagini CC0) e modelli 3D di oggetti scritti su Sketchfab (account di musei e università) | varie | 1147 | 1 | accadico 660, non indicata 177, egiziano antico (geroglifico, ieratico, demotico) 176, altre 151 |  | corsia musei: a ruota finché la prima lettura non è finita, poi ogni notte (elenchi ogni 30 giorni) | 2026-10-28 | riuscita |
-| Giappone, scritture non librarie: mokkan del 木簡庫 Mokkanko (Nabunken, uso libero con citazione) e takuhon della National Diet Library e di Waseda | Nara, Tokyo | 299 | 0 | giapponese antico 277, giapponese 20, cinese 1, altre 1 |  | corsia giappone-scritture: a ruota finché la prima lettura non è finita, poi ogni notte (elenchi ogni 60 giorni) | — | — |
+| Giappone, scritture non librarie: mokkan del 木簡庫 Mokkanko (Nabunken, uso libero con citazione) e takuhon della National Diet Library e di Waseda | Nara, Tokyo | 4306 | 0 | giapponese antico 4122, giapponese 182, cinese 1, altre 1 |  | corsia giappone-scritture: a ruota finché la prima lettura non è finita, poi ogni notte (elenchi ogni 60 giorni) | 2026-10-28 | riuscita |
 | Epigrafi dal browser: J. Paul Getty Museum e Yale University Art Gallery (immagini CC0, manifesti IIIF dei musei) | varie | 289 | 0 | non indicata 142, greco 92, egiziano antico (geroglifico, ieratico, demotico) 35, altre 23 | Getty: 103 schede raccolte dal browser il 2026-10-28; Yale University Art Gallery: 299 schede raccolte dal browser il 2026-10-28 | va rifatta a mano dal browser (scripts/browser/epigrafi-getty.js, scripts/browser/epigrafi-yale.js) | 2026-10-28 | — |
 | Biblioteca Apostolica Vaticana | Città del Vaticano | 27.230 | 1319 | latino 20.882, greco 2983, non indicata 2595, altre 779 | 27.230 codici letti su 31.127 digitalizzati; fondo in corso: Capp. Sist.; restano circa 3667 manifesti da leggere, cioè circa 12 ore (un manifesto ogni 10 secondi, come chiede la biblioteca) | corsia propria: a ruota, senza pause tra un'esecuzione e l'altra | 2026-10-28 | riuscita |
 
