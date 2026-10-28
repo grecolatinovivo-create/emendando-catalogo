@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T05:01:12.396Z",
+ "aggiornato": "2026-10-28T06:53:19.197Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -383,7 +383,7 @@
    "esito": "ok"
   },
   "stampe": {
-   "nome": "Stampe antiche: incunaboli e edizioni principi dei classici (Bayerische Staatsbibliothek e biblioteche bavaresi, Heidelberg, Bodleian, Cambridge, Boston Public Library e National Library of Medicine su Internet Archive, Vaticana)",
+   "nome": "Stampe antiche: incunaboli e edizioni principi dei classici (Bayerische Staatsbibliothek e biblioteche bavaresi, Heidelberg, Bodleian, Cambridge, Boston Public Library e National Library of Medicine su Internet Archive, Vaticana, Gallica dal browser)",
    "codici": 0,
    "esito": "ok"
   },

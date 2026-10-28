@@ -1,14 +1,14 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T05:01:12.396Z",
- "totale": 557324,
- "con_autori": 30733,
- "miniati": 11278,
- "musica": 21286,
+ "aggiornato": "2026-10-28T06:53:19.197Z",
+ "totale": 562198,
+ "con_autori": 31946,
+ "miniati": 11284,
+ "musica": 21288,
  "manoscritti": 546539,
- "stampe_antiche": 10785,
- "incunaboli": 10732,
- "edizioni_principi": 109,
+ "stampe_antiche": 15659,
+ "incunaboli": 15587,
+ "edizioni_principi": 172,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «tipo» è «incunabolo» per gli stampati fino al 1500 e «stampa» per le edizioni principi del Cinquecento (stampe antiche, dal 27 ottobre 2026: contano in «totale» e in «biblioteche_n»; «manoscritti» e «stampe_antiche» sono i totali separati); «editio_princeps» è l'id dell'edizione principe dei classici greci e latini (elenco curato in «edizioni_principi_elenco», con le copie digitali trovate; conteggio delle voci in «edizioni_principi»); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
   "id",
@@ -35,19 +35,19 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 86244
+   "codici": 90130
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 50946
+   "codici": 50963
   },
   "fr": {
    "nome": "francese",
-   "codici": 28605
+   "codici": 29293
   },
   "de": {
    "nome": "tedesco",
-   "codici": 24885
+   "codici": 24948
   },
   "ar": {
    "nome": "arabo",
@@ -55,11 +55,11 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 20056
+   "codici": 20065
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 19343
+   "codici": 19345
   },
   "pi": {
    "nome": "pali",
@@ -67,7 +67,7 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 16994
+   "codici": 17048
   },
   "cu": {
    "nome": "slavo ecclesiastico",
@@ -75,7 +75,7 @@
   },
   "zh": {
    "nome": "cinese",
-   "codici": 13122
+   "codici": 13123
   },
   "lo": {
    "nome": "lao",
@@ -87,19 +87,19 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10511
+   "codici": 10524
   },
   "pl": {
    "nome": "polacco",
    "codici": 8305
   },
-  "en": {
-   "nome": "inglese",
-   "codici": 7891
-  },
   "it": {
    "nome": "italiano",
-   "codici": 7854
+   "codici": 8033
+  },
+  "en": {
+   "nome": "inglese",
+   "codici": 7892
   },
   "bo": {
    "nome": "tibetano",
@@ -119,7 +119,7 @@
   },
   "ca": {
    "nome": "catalano",
-   "codici": 3440
+   "codici": 3441
   },
   "is": {
    "nome": "islandese e norreno",
@@ -157,13 +157,13 @@
    "nome": "danese",
    "codici": 978
   },
+  "nl": {
+   "nome": "nederlandese",
+   "codici": 940
+  },
   "khb": {
    "nome": "tai lü",
    "codici": 933
-  },
-  "nl": {
-   "nome": "nederlandese",
-   "codici": 930
   },
   "sv": {
    "nome": "svedese",
@@ -195,7 +195,7 @@
   },
   "oc": {
    "nome": "occitano",
-   "codici": 196
+   "codici": 200
   },
   "shn": {
    "nome": "shan",
@@ -377,19 +377,19 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 7616
+   "codici": 8171
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7018
+   "codici": 7302
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15407
+   "codici": 15728
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 3357
+   "codici": 3495
   }
  },
  "tipi": {
@@ -407,11 +407,11 @@
   },
   "incunabolo": {
    "nome": "incunaboli",
-   "codici": 10732
+   "codici": 15587
   },
   "stampa": {
    "nome": "edizioni principi del Cinquecento",
-   "codici": 53
+   "codici": 72
   }
  },
  "autori": {
@@ -419,127 +419,127 @@
    "nome": "Plauto",
    "latino": "Plautus",
    "categoria": "classico-latino",
-   "codici": 90
+   "codici": 98
   },
   "terenzio": {
    "nome": "Terenzio",
    "latino": "Terentius",
    "categoria": "classico-latino",
-   "codici": 262
+   "codici": 282
   },
   "lucrezio": {
    "nome": "Lucrezio",
    "latino": "Lucretius",
    "categoria": "classico-latino",
-   "codici": 39
+   "codici": 41
   },
   "catullo": {
    "nome": "Catullo",
    "latino": "Catullus",
    "categoria": "classico-latino",
-   "codici": 63
+   "codici": 66
   },
   "cicerone": {
    "nome": "Cicerone",
    "latino": "Cicero",
    "categoria": "classico-latino",
-   "codici": 1348
+   "codici": 1413
   },
   "cesare": {
    "nome": "Cesare",
    "latino": "Caesar",
    "categoria": "classico-latino",
-   "codici": 149
+   "codici": 154
   },
   "sallustio": {
    "nome": "Sallustio",
    "latino": "Sallustius",
    "categoria": "classico-latino",
-   "codici": 227
+   "codici": 250
   },
   "virgilio": {
    "nome": "Virgilio",
    "latino": "Vergilius",
    "categoria": "classico-latino",
-   "codici": 533
+   "codici": 572
   },
   "orazio": {
    "nome": "Orazio",
    "latino": "Horatius",
    "categoria": "classico-latino",
-   "codici": 302
+   "codici": 320
   },
   "tibullo": {
    "nome": "Tibullo",
    "latino": "Tibullus",
    "categoria": "classico-latino",
-   "codici": 65
+   "codici": 69
   },
   "properzio": {
    "nome": "Properzio",
    "latino": "Propertius",
    "categoria": "classico-latino",
-   "codici": 45
+   "codici": 50
   },
   "ovidio": {
    "nome": "Ovidio",
    "latino": "Ovidius",
    "categoria": "classico-latino",
-   "codici": 638
+   "codici": 681
   },
   "livio": {
    "nome": "Livio",
    "latino": "Livius",
    "categoria": "classico-latino",
-   "codici": 289
+   "codici": 306
   },
   "seneca": {
    "nome": "Seneca",
    "latino": "Seneca",
    "categoria": "classico-latino",
-   "codici": 503
+   "codici": 534
   },
   "lucano": {
    "nome": "Lucano",
    "latino": "Lucanus",
    "categoria": "classico-latino",
-   "codici": 180
+   "codici": 190
   },
   "persio": {
    "nome": "Persio",
    "latino": "Persius",
    "categoria": "classico-latino",
-   "codici": 133
+   "codici": 141
   },
   "giovenale": {
    "nome": "Giovenale",
    "latino": "Iuvenalis",
    "categoria": "classico-latino",
-   "codici": 175
+   "codici": 193
   },
   "marziale": {
    "nome": "Marziale",
    "latino": "Martialis",
    "categoria": "classico-latino",
-   "codici": 68
+   "codici": 74
   },
   "stazio": {
    "nome": "Stazio",
    "latino": "Statius",
    "categoria": "classico-latino",
-   "codici": 138
+   "codici": 148
   },
   "plinio-vecchio": {
    "nome": "Plinio il Vecchio",
    "latino": "Plinius maior",
    "categoria": "classico-latino",
-   "codici": 215
+   "codici": 221
   },
   "plinio-giovane": {
    "nome": "Plinio il Giovane",
    "latino": "Plinius minor",
    "categoria": "classico-latino",
-   "codici": 51
+   "codici": 57
   },
   "tacito": {
    "nome": "Tacito",
@@ -551,19 +551,19 @@
    "nome": "Svetonio",
    "latino": "Suetonius",
    "categoria": "classico-latino",
-   "codici": 119
+   "codici": 129
   },
   "quintiliano": {
    "nome": "Quintiliano",
    "latino": "Quintilianus",
    "categoria": "classico-latino",
-   "codici": 130
+   "codici": 144
   },
   "apuleio": {
    "nome": "Apuleio",
    "latino": "Apuleius",
    "categoria": "classico-latino",
-   "codici": 89
+   "codici": 93
   },
   "ammiano": {
    "nome": "Ammiano Marcellino",
@@ -575,55 +575,55 @@
    "nome": "Claudiano",
    "latino": "Claudianus",
    "categoria": "classico-latino",
-   "codici": 89
+   "codici": 94
   },
   "prisciano": {
    "nome": "Prisciano",
    "latino": "Priscianus",
    "categoria": "classico-latino",
-   "codici": 273
+   "codici": 284
   },
   "donato": {
    "nome": "Donato",
    "latino": "Donatus",
    "categoria": "classico-latino",
-   "codici": 313
+   "codici": 347
   },
   "servio": {
    "nome": "Servio",
    "latino": "Servius",
    "categoria": "classico-latino",
-   "codici": 138
+   "codici": 150
   },
   "macrobio": {
    "nome": "Macrobio",
    "latino": "Macrobius",
    "categoria": "classico-latino",
-   "codici": 152
+   "codici": 154
   },
   "boezio": {
    "nome": "Boezio",
    "latino": "Boethius",
    "categoria": "classico-latino",
-   "codici": 774
+   "codici": 828
   },
   "ausonio": {
    "nome": "Ausonio",
    "latino": "Ausonius",
    "categoria": "classico-latino",
-   "codici": 68
+   "codici": 69
   },
   "valerio-massimo": {
    "nome": "Valerio Massimo",
    "latino": "Valerius Maximus",
    "categoria": "classico-latino",
-   "codici": 169
+   "codici": 184
   },
   "curzio-rufo": {
    "nome": "Curzio Rufo",
    "latino": "Curtius Rufus",
    "categoria": "classico-latino",
-   "codici": 81
+   "codici": 89
   },
   "giustino": {
    "nome": "Giustino",
@@ -635,109 +635,109 @@
    "nome": "Floro",
    "latino": "Florus",
    "categoria": "classico-latino",
-   "codici": 31
+   "codici": 39
   },
   "eutropio": {
    "nome": "Eutropio",
    "latino": "Eutropius",
    "categoria": "classico-latino",
-   "codici": 43
+   "codici": 44
   },
   "vegezio": {
    "nome": "Vegezio",
    "latino": "Vegetius",
    "categoria": "classico-latino",
-   "codici": 104
+   "codici": 110
   },
   "columella": {
    "nome": "Columella",
    "latino": "Columella",
    "categoria": "classico-latino",
-   "codici": 22
+   "codici": 25
   },
   "varrone": {
    "nome": "Varrone",
    "latino": "Varro",
    "categoria": "classico-latino",
-   "codici": 44
+   "codici": 54
   },
   "vitruvio": {
    "nome": "Vitruvio",
    "latino": "Vitruvius",
    "categoria": "classico-latino",
-   "codici": 54
+   "codici": 56
   },
   "frontino": {
    "nome": "Frontino",
    "latino": "Frontinus",
    "categoria": "classico-latino",
-   "codici": 42
+   "codici": 49
   },
   "gellio": {
    "nome": "Aulo Gellio",
    "latino": "Gellius",
    "categoria": "classico-latino",
-   "codici": 58
+   "codici": 64
   },
   "valerio-flacco": {
    "nome": "Valerio Flacco",
    "latino": "Valerius Flaccus",
    "categoria": "classico-latino",
-   "codici": 14
+   "codici": 15
   },
   "silio-italico": {
    "nome": "Silio Italico",
    "latino": "Silius Italicus",
    "categoria": "classico-latino",
-   "codici": 33
+   "codici": 40
   },
   "manilio": {
    "nome": "Manilio",
    "latino": "Manilius",
    "categoria": "classico-latino",
-   "codici": 19
+   "codici": 29
   },
   "fedro": {
    "nome": "Fedro",
    "latino": "Phaedrus",
    "categoria": "classico-latino",
-   "codici": 11
+   "codici": 13
   },
   "aviano": {
    "nome": "Aviano",
    "latino": "Avianus",
    "categoria": "classico-latino",
-   "codici": 33
+   "codici": 39
   },
   "avieno": {
    "nome": "Avieno",
    "latino": "Avienus",
    "categoria": "classico-latino",
-   "codici": 16
+   "codici": 18
   },
   "marziano-capella": {
    "nome": "Marziano Capella",
    "latino": "Martianus Capella",
    "categoria": "classico-latino",
-   "codici": 76
+   "codici": 77
   },
   "solino": {
    "nome": "Solino",
    "latino": "Solinus",
    "categoria": "classico-latino",
-   "codici": 99
+   "codici": 107
   },
   "celso": {
    "nome": "Celso",
    "latino": "Celsus",
    "categoria": "classico-latino",
-   "codici": 18
+   "codici": 22
   },
   "nepote": {
    "nome": "Cornelio Nepote",
    "latino": "Cornelius Nepos",
    "categoria": "classico-latino",
-   "codici": 31
+   "codici": 32
   },
   "velleio": {
    "nome": "Velleio Patercolo",
@@ -755,49 +755,49 @@
    "nome": "Calpurnio Siculo",
    "latino": "Calpurnius Siculus",
    "categoria": "classico-latino",
-   "codici": 8
+   "codici": 10
   },
   "disticha-catonis": {
    "nome": "Disticha Catonis",
    "latino": "Disticha Catonis",
    "categoria": "classico-latino",
-   "codici": 90
+   "codici": 98
   },
   "catone": {
    "nome": "Catone il Censore",
    "latino": "Cato maior",
    "categoria": "classico-latino",
-   "codici": 30
+   "codici": 37
   },
   "pomponio-mela": {
    "nome": "Pomponio Mela",
    "latino": "Pomponius Mela",
    "categoria": "classico-latino",
-   "codici": 34
+   "codici": 44
   },
   "igino": {
    "nome": "Igino",
    "latino": "Hyginus",
    "categoria": "classico-latino",
-   "codici": 43
+   "codici": 50
   },
   "censorino": {
    "nome": "Censorino",
    "latino": "Censorinus",
    "categoria": "classico-latino",
-   "codici": 8
+   "codici": 10
   },
   "festo": {
    "nome": "Festo",
    "latino": "Festus",
    "categoria": "classico-latino",
-   "codici": 37
+   "codici": 39
   },
   "nonio": {
    "nome": "Nonio Marcello",
    "latino": "Nonius Marcellus",
    "categoria": "classico-latino",
-   "codici": 56
+   "codici": 59
   },
   "carisio": {
    "nome": "Carisio",
@@ -809,19 +809,19 @@
    "nome": "Palladio",
    "latino": "Palladius",
    "categoria": "classico-latino",
-   "codici": 44
+   "codici": 47
   },
   "apicio": {
    "nome": "Apicio",
    "latino": "Apicius",
    "categoria": "classico-latino",
-   "codici": 10
+   "codici": 11
   },
   "aurelio-vittore": {
    "nome": "Aurelio Vittore",
    "latino": "Aurelius Victor",
    "categoria": "classico-latino",
-   "codici": 24
+   "codici": 26
   },
   "ilias-latina": {
    "nome": "Ilias Latina",
@@ -833,25 +833,25 @@
    "nome": "Darete Frigio",
    "latino": "Dares Phrygius",
    "categoria": "classico-latino",
-   "codici": 49
+   "codici": 50
   },
   "ditti": {
    "nome": "Ditti Cretese",
    "latino": "Dictys Cretensis",
    "categoria": "classico-latino",
-   "codici": 19
+   "codici": 21
   },
   "omero": {
    "nome": "Omero",
    "latino": "Homerus",
    "categoria": "classico-greco",
-   "codici": 373
+   "codici": 377
   },
   "esiodo": {
    "nome": "Esiodo",
    "latino": "Hesiodus",
    "categoria": "classico-greco",
-   "codici": 121
+   "codici": 130
   },
   "pindaro": {
    "nome": "Pindaro",
@@ -863,7 +863,7 @@
    "nome": "Saffo",
    "latino": "Sappho",
    "categoria": "classico-greco",
-   "codici": 28
+   "codici": 31
   },
   "alceo": {
    "nome": "Alceo",
@@ -875,7 +875,7 @@
    "nome": "Anacreonte",
    "latino": "Anacreon",
    "categoria": "classico-greco",
-   "codici": 17
+   "codici": 18
   },
   "simonide": {
    "nome": "Simonide",
@@ -887,13 +887,13 @@
    "nome": "Teognide",
    "latino": "Theognis",
    "categoria": "classico-greco",
-   "codici": 21
+   "codici": 22
   },
   "archiloco": {
    "nome": "Archiloco",
    "latino": "Archilochus",
    "categoria": "classico-greco",
-   "codici": 1
+   "codici": 2
   },
   "tirteo": {
    "nome": "Tirteo",
@@ -911,19 +911,19 @@
    "nome": "Sofocle",
    "latino": "Sophocles",
    "categoria": "classico-greco",
-   "codici": 82
+   "codici": 83
   },
   "euripide": {
    "nome": "Euripide",
    "latino": "Euripides",
    "categoria": "classico-greco",
-   "codici": 156
+   "codici": 159
   },
   "aristofane": {
    "nome": "Aristofane",
    "latino": "Aristophanes",
    "categoria": "classico-greco",
-   "codici": 130
+   "codici": 134
   },
   "menandro": {
    "nome": "Menandro",
@@ -935,31 +935,31 @@
    "nome": "Erodoto",
    "latino": "Herodotus",
    "categoria": "classico-greco",
-   "codici": 53
+   "codici": 58
   },
   "tucidide": {
    "nome": "Tucidide",
    "latino": "Thucydides",
    "categoria": "classico-greco",
-   "codici": 65
+   "codici": 66
   },
   "senofonte": {
    "nome": "Senofonte",
    "latino": "Xenophon",
    "categoria": "classico-greco",
-   "codici": 135
+   "codici": 136
   },
   "platone": {
    "nome": "Platone",
    "latino": "Plato",
    "categoria": "classico-greco",
-   "codici": 362
+   "codici": 377
   },
   "aristotele": {
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 2329
+   "codici": 2441
   },
   "teofrasto": {
    "nome": "Teofrasto",
@@ -971,49 +971,49 @@
    "nome": "Lisia",
    "latino": "Lysias",
    "categoria": "classico-greco",
-   "codici": 24
+   "codici": 25
   },
   "isocrate": {
    "nome": "Isocrate",
    "latino": "Isocrates",
    "categoria": "classico-greco",
-   "codici": 83
+   "codici": 86
   },
   "demostene": {
    "nome": "Demostene",
    "latino": "Demosthenes",
    "categoria": "classico-greco",
-   "codici": 141
+   "codici": 143
   },
   "eschine": {
    "nome": "Eschine",
    "latino": "Aeschines",
    "categoria": "classico-greco",
-   "codici": 50
+   "codici": 52
   },
   "andocide": {
    "nome": "Andocide",
    "latino": "Andocides",
    "categoria": "classico-greco",
-   "codici": 2
+   "codici": 3
   },
   "antifonte": {
    "nome": "Antifonte",
    "latino": "Antiphon",
    "categoria": "classico-greco",
-   "codici": 4
+   "codici": 5
   },
   "iseo": {
    "nome": "Iseo",
    "latino": "Isaeus",
    "categoria": "classico-greco",
-   "codici": 4
+   "codici": 5
   },
   "dinarco": {
    "nome": "Dinarco",
    "latino": "Dinarchus",
    "categoria": "classico-greco",
-   "codici": 1
+   "codici": 2
   },
   "polibio": {
    "nome": "Polibio",
@@ -1025,31 +1025,31 @@
    "nome": "Diodoro Siculo",
    "latino": "Diodorus Siculus",
    "categoria": "classico-greco",
-   "codici": 58
+   "codici": 59
   },
   "dionigi-alicarnasso": {
    "nome": "Dionigi di Alicarnasso",
    "latino": "Dionysius Halicarnassensis",
    "categoria": "classico-greco",
-   "codici": 25
+   "codici": 29
   },
   "strabone": {
    "nome": "Strabone",
    "latino": "Strabo",
    "categoria": "classico-greco",
-   "codici": 26
+   "codici": 28
   },
   "plutarco": {
    "nome": "Plutarco",
    "latino": "Plutarchus",
    "categoria": "classico-greco",
-   "codici": 341
+   "codici": 361
   },
   "luciano": {
    "nome": "Luciano di Samosata",
    "latino": "Lucianus",
    "categoria": "classico-greco",
-   "codici": 133
+   "codici": 134
   },
   "pausania": {
    "nome": "Pausania",
@@ -1067,37 +1067,37 @@
    "nome": "Cassio Dione",
    "latino": "Cassius Dio",
    "categoria": "classico-greco",
-   "codici": 7
+   "codici": 8
   },
   "apollonio-rodio": {
    "nome": "Apollonio Rodio",
    "latino": "Apollonius Rhodius",
    "categoria": "classico-greco",
-   "codici": 17
+   "codici": 19
   },
   "teocrito": {
    "nome": "Teocrito",
    "latino": "Theocritus",
    "categoria": "classico-greco",
-   "codici": 68
+   "codici": 71
   },
   "callimaco": {
    "nome": "Callimaco",
    "latino": "Callimachus",
    "categoria": "classico-greco",
-   "codici": 24
+   "codici": 25
   },
   "arato": {
    "nome": "Arato",
    "latino": "Aratus",
    "categoria": "classico-greco",
-   "codici": 53
+   "codici": 58
   },
   "nicandro": {
    "nome": "Nicandro",
    "latino": "Nicander",
    "categoria": "classico-greco",
-   "codici": 15
+   "codici": 17
   },
   "oppiano": {
    "nome": "Oppiano",
@@ -1121,31 +1121,31 @@
    "nome": "Galeno",
    "latino": "Galenus",
    "categoria": "classico-greco",
-   "codici": 567
+   "codici": 580
   },
   "ippocrate": {
    "nome": "Ippocrate",
    "latino": "Hippocrates",
    "categoria": "classico-greco",
-   "codici": 443
+   "codici": 455
   },
   "tolomeo": {
    "nome": "Tolomeo",
    "latino": "Ptolemaeus",
    "categoria": "classico-greco",
-   "codici": 286
+   "codici": 303
   },
   "euclide": {
    "nome": "Euclide",
    "latino": "Euclides",
    "categoria": "classico-greco",
-   "codici": 252
+   "codici": 257
   },
   "archimede": {
    "nome": "Archimede",
    "latino": "Archimedes",
    "categoria": "classico-greco",
-   "codici": 37
+   "codici": 38
   },
   "dionisio-trace": {
    "nome": "Dionisio Trace",
@@ -1157,13 +1157,13 @@
    "nome": "Apollonio Discolo",
    "latino": "Apollonius Dyscolus",
    "categoria": "classico-greco",
-   "codici": 36
+   "codici": 38
   },
   "erodiano": {
    "nome": "Erodiano",
    "latino": "Herodianus",
    "categoria": "classico-greco",
-   "codici": 60
+   "codici": 64
   },
   "efestione": {
    "nome": "Efestione",
@@ -1175,13 +1175,13 @@
    "nome": "Esichio",
    "latino": "Hesychius",
    "categoria": "classico-greco",
-   "codici": 36
+   "codici": 37
   },
   "suda": {
    "nome": "Suda",
    "latino": "Suda",
    "categoria": "classico-greco",
-   "codici": 30
+   "codici": 31
   },
   "fozio": {
    "nome": "Fozio",
@@ -1205,55 +1205,55 @@
    "nome": "Etymologicum Magnum",
    "latino": "Etymologicum Magnum",
    "categoria": "classico-greco",
-   "codici": 15
+   "codici": 16
   },
   "epitteto": {
    "nome": "Epitteto",
    "latino": "Epictetus",
    "categoria": "classico-greco",
-   "codici": 40
+   "codici": 42
   },
   "marco-aurelio": {
    "nome": "Marco Aurelio",
    "latino": "Marcus Aurelius",
    "categoria": "classico-greco",
-   "codici": 10
+   "codici": 11
   },
   "plotino": {
    "nome": "Plotino",
    "latino": "Plotinus",
    "categoria": "classico-greco",
-   "codici": 34
+   "codici": 35
   },
   "porfirio": {
    "nome": "Porfirio",
    "latino": "Porphyrius",
    "categoria": "classico-greco",
-   "codici": 268
+   "codici": 279
   },
   "proclo": {
    "nome": "Proclo",
    "latino": "Proclus",
    "categoria": "classico-greco",
-   "codici": 207
+   "codici": 212
   },
   "giamblico": {
    "nome": "Giamblico",
    "latino": "Iamblichus",
    "categoria": "classico-greco",
-   "codici": 39
+   "codici": 42
   },
   "libanio": {
    "nome": "Libanio",
    "latino": "Libanius",
    "categoria": "classico-greco",
-   "codici": 156
+   "codici": 158
   },
   "temistio": {
    "nome": "Temistio",
    "latino": "Themistius",
    "categoria": "classico-greco",
-   "codici": 78
+   "codici": 80
   },
   "giuliano": {
    "nome": "Giuliano imperatore",
@@ -1295,19 +1295,19 @@
    "nome": "Esopo",
    "latino": "Aesopus",
    "categoria": "classico-greco",
-   "codici": 165
+   "codici": 188
   },
   "flavio-giuseppe": {
    "nome": "Flavio Giuseppe",
    "latino": "Flavius Iosephus",
    "categoria": "classico-greco",
-   "codici": 263
+   "codici": 274
   },
   "diogene-laerzio": {
    "nome": "Diogene Laerzio",
    "latino": "Diogenes Laertius",
    "categoria": "classico-greco",
-   "codici": 48
+   "codici": 53
   },
   "ateneo": {
    "nome": "Ateneo",
@@ -1319,7 +1319,7 @@
    "nome": "Eliano",
    "latino": "Aelianus",
    "categoria": "classico-greco",
-   "codici": 19
+   "codici": 21
   },
   "ermogene": {
    "nome": "Ermogene",
@@ -1331,43 +1331,43 @@
    "nome": "Aftonio",
    "latino": "Aphthonius",
    "categoria": "classico-greco",
-   "codici": 44
+   "codici": 45
   },
   "filostrato": {
    "nome": "Filostrato",
    "latino": "Philostratus",
    "categoria": "classico-greco",
-   "codici": 94
+   "codici": 95
   },
   "agostino": {
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 3064
+   "codici": 3162
   },
   "girolamo": {
    "nome": "Girolamo",
    "latino": "Hieronymus",
    "categoria": "cristiano",
-   "codici": 1409
+   "codici": 1479
   },
   "ambrogio": {
    "nome": "Ambrogio",
    "latino": "Ambrosius",
    "categoria": "cristiano",
-   "codici": 460
+   "codici": 471
   },
   "gregorio-magno": {
    "nome": "Gregorio Magno",
    "latino": "Gregorius Magnus",
    "categoria": "cristiano",
-   "codici": 1002
+   "codici": 1009
   },
   "basilio": {
    "nome": "Basilio Magno",
    "latino": "Basilius Magnus",
    "categoria": "cristiano",
-   "codici": 598
+   "codici": 601
   },
   "gregorio-nazianzeno": {
    "nome": "Gregorio di Nazianzo",
@@ -1379,19 +1379,19 @@
    "nome": "Giovanni Crisostomo",
    "latino": "Iohannes Chrysostomus",
    "categoria": "cristiano",
-   "codici": 1277
+   "codici": 1283
   },
   "bibbia": {
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7189
+   "codici": 7280
   },
   "prudenzio": {
    "nome": "Prudenzio",
    "latino": "Prudentius",
    "categoria": "cristiano",
-   "codici": 121
+   "codici": 123
   },
   "sedulio": {
    "nome": "Sedulio",
@@ -1403,25 +1403,25 @@
    "nome": "Giovenco",
    "latino": "Iuvencus",
    "categoria": "cristiano",
-   "codici": 26
+   "codici": 28
   },
   "aratore": {
    "nome": "Aratore",
    "latino": "Arator",
    "categoria": "cristiano",
-   "codici": 34
+   "codici": 35
   },
   "lattanzio": {
    "nome": "Lattanzio",
    "latino": "Lactantius",
    "categoria": "cristiano",
-   "codici": 136
+   "codici": 149
   },
   "tertulliano": {
    "nome": "Tertulliano",
    "latino": "Tertullianus",
    "categoria": "cristiano",
-   "codici": 56
+   "codici": 59
   },
   "cipriano": {
    "nome": "Cipriano",
@@ -1439,61 +1439,61 @@
    "nome": "Cassiodoro",
    "latino": "Cassiodorus",
    "categoria": "cristiano",
-   "codici": 232
+   "codici": 237
   },
   "origene": {
    "nome": "Origene",
    "latino": "Origenes",
    "categoria": "cristiano",
-   "codici": 360
+   "codici": 362
   },
   "eusebio": {
    "nome": "Eusebio di Cesarea",
    "latino": "Eusebius Caesariensis",
    "categoria": "cristiano",
-   "codici": 337
+   "codici": 354
   },
   "atanasio": {
    "nome": "Atanasio",
    "latino": "Athanasius",
    "categoria": "cristiano",
-   "codici": 389
+   "codici": 392
   },
   "gregorio-nisseno": {
    "nome": "Gregorio di Nissa",
    "latino": "Gregorius Nyssenus",
    "categoria": "cristiano",
-   "codici": 272
+   "codici": 273
   },
   "giovanni-damasceno": {
    "nome": "Giovanni Damasceno",
    "latino": "Iohannes Damascenus",
    "categoria": "cristiano",
-   "codici": 349
+   "codici": 350
   },
   "dionigi-areopagita": {
    "nome": "Dionigi Areopagita",
    "latino": "Dionysius Areopagita",
    "categoria": "cristiano",
-   "codici": 158
+   "codici": 162
   },
   "isidoro": {
    "nome": "Isidoro di Siviglia",
    "latino": "Isidorus Hispalensis",
    "categoria": "medievale",
-   "codici": 737
+   "codici": 757
   },
   "beda": {
    "nome": "Beda",
    "latino": "Beda Venerabilis",
    "categoria": "medievale",
-   "codici": 801
+   "codici": 807
   },
   "alcuino": {
    "nome": "Alcuino",
    "latino": "Alcuinus",
    "categoria": "medievale",
-   "codici": 320
+   "codici": 323
   },
   "rabano-mauro": {
    "nome": "Rabano Mauro",
@@ -1505,25 +1505,25 @@
    "nome": "Paolo Diacono",
    "latino": "Paulus Diaconus",
    "categoria": "medievale",
-   "codici": 203
+   "codici": 204
   },
   "pietro-lombardo": {
    "nome": "Pietro Lombardo",
    "latino": "Petrus Lombardus",
    "categoria": "medievale",
-   "codici": 370
+   "codici": 378
   },
   "tommaso-aquino": {
    "nome": "Tommaso d'Aquino",
    "latino": "Thomas de Aquino",
    "categoria": "medievale",
-   "codici": 680
+   "codici": 744
   },
   "bernardo": {
    "nome": "Bernardo di Chiaravalle",
    "latino": "Bernardus Claraevallensis",
    "categoria": "medievale",
-   "codici": 396
+   "codici": 432
   }
  },
  "edizioni_principi_elenco": {
@@ -1534,7 +1534,7 @@
    "luogo": "Magonza",
    "tipografo": "Johann Fust e Peter Schoeffer",
    "anno": "1465",
-   "copie": 2
+   "copie": 3
   },
   "cicerone-de-oratore": {
    "autore": "Cicerone",
@@ -1552,7 +1552,7 @@
    "luogo": "Roma",
    "tipografo": "Konrad Sweynheym e Arnold Pannartz",
    "anno": "1467",
-   "copie": 0
+   "copie": 1
   },
   "cicerone-ad-atticum": {
    "autore": "Cicerone",
@@ -1597,7 +1597,7 @@
    "luogo": "Roma",
    "tipografo": "Konrad Sweynheym e Arnold Pannartz",
    "anno": "c. 1469",
-   "copie": 1
+   "copie": 3
   },
   "virgilio": {
    "autore": "Virgilio",
@@ -1624,7 +1624,7 @@
    "luogo": "Roma",
    "tipografo": "Konrad Sweynheym e Arnold Pannartz",
    "anno": "1469",
-   "copie": 1
+   "copie": 2
   },
   "gellio": {
    "autore": "Aulo Gellio",
@@ -1642,7 +1642,7 @@
    "luogo": "Venezia",
    "tipografo": "Giovanni da Spira",
    "anno": "1469",
-   "copie": 0
+   "copie": 1
   },
   "plauto": {
    "autore": "Plauto",
@@ -1651,7 +1651,7 @@
    "luogo": "Venezia",
    "tipografo": "Vindelino da Spira",
    "anno": "1472",
-   "copie": 0
+   "copie": 1
   },
   "terenzio": {
    "autore": "Terenzio",
@@ -1660,7 +1660,7 @@
    "luogo": "Strasburgo",
    "tipografo": "Johann Mentelin",
    "anno": "c. 1470",
-   "copie": 0
+   "copie": 1
   },
   "ovidio": {
    "autore": "Ovidio",
@@ -1669,7 +1669,7 @@
    "luogo": "Bologna",
    "tipografo": "Baldassarre Azzoguidi",
    "anno": "1471",
-   "copie": 1
+   "copie": 2
   },
   "orazio": {
    "autore": "Orazio",
@@ -1678,7 +1678,7 @@
    "luogo": "[Italia]",
    "tipografo": "[tipografo dell'Orazio]",
    "anno": "c. 1471",
-   "copie": 0
+   "copie": 1
   },
   "giovenale": {
    "autore": "Giovenale",
@@ -1705,7 +1705,7 @@
    "luogo": "Venezia",
    "tipografo": "Vindelino da Spira",
    "anno": "1472",
-   "copie": 1
+   "copie": 2
   },
   "svetonio": {
    "autore": "Svetonio",
@@ -1714,7 +1714,7 @@
    "luogo": "Roma",
    "tipografo": "Konrad Sweynheym e Arnold Pannartz",
    "anno": "1470",
-   "copie": 1
+   "copie": 2
   },
   "quintiliano": {
    "autore": "Quintiliano",
@@ -1759,7 +1759,7 @@
    "luogo": "Venezia",
    "tipografo": "Nicolas Jenson",
    "anno": "1471",
-   "copie": 1
+   "copie": 2
   },
   "valerio-massimo": {
    "autore": "Valerio Massimo",
@@ -1768,7 +1768,7 @@
    "luogo": "Strasburgo",
    "tipografo": "Johann Mentelin",
    "anno": "c. 1470",
-   "copie": 0
+   "copie": 1
   },
   "lucrezio": {
    "autore": "Lucrezio",
@@ -1786,7 +1786,7 @@
    "luogo": "Napoli",
    "tipografo": "Mattia Moravo",
    "anno": "1475",
-   "copie": 0
+   "copie": 2
   },
   "seneca-tragoediae": {
    "autore": "Seneca",
@@ -1795,7 +1795,7 @@
    "luogo": "Ferrara",
    "tipografo": "Andrea Belforte",
    "anno": "c. 1484",
-   "copie": 1
+   "copie": 2
   },
   "manilio": {
    "autore": "Manilio",
@@ -1813,7 +1813,7 @@
    "luogo": "Firenze",
    "tipografo": "Niccolò di Lorenzo",
    "anno": "1478",
-   "copie": 2
+   "copie": 4
   },
   "vitruvio": {
    "autore": "Vitruvio",
@@ -1822,7 +1822,7 @@
    "luogo": "Roma",
    "tipografo": "Eucharius Silber (a cura di Giovanni Sulpicio)",
    "anno": "c. 1486",
-   "copie": 1
+   "copie": 2
   },
   "silio-italico": {
    "autore": "Silio Italico",
@@ -1831,7 +1831,7 @@
    "luogo": "Roma",
    "tipografo": "Konrad Sweynheym e Arnold Pannartz",
    "anno": "1471",
-   "copie": 1
+   "copie": 2
   },
   "valerio-flacco": {
    "autore": "Valerio Flacco",
@@ -1849,7 +1849,7 @@
    "luogo": "Venezia",
    "tipografo": "Cristoforo Valdarfer",
    "anno": "1471",
-   "copie": 1
+   "copie": 2
   },
   "curzio-rufo": {
    "autore": "Curzio Rufo",
@@ -1867,7 +1867,7 @@
    "luogo": "Parigi",
    "tipografo": "Ulrich Gering, Martin Crantz e Michael Friburger",
    "anno": "c. 1471",
-   "copie": 0
+   "copie": 1
   },
   "giustino": {
    "autore": "Giustino",
@@ -1903,7 +1903,7 @@
    "luogo": "Roma",
    "tipografo": "Georg Lauer",
    "anno": "c. 1471",
-   "copie": 0
+   "copie": 1
   },
   "scriptores-rei-rusticae": {
    "autore": "Catone, Varrone, Columella, Palladio",
@@ -1912,7 +1912,7 @@
    "luogo": "Venezia",
    "tipografo": "Nicolas Jenson",
    "anno": "1472",
-   "copie": 0
+   "copie": 1
   },
   "ausonio": {
    "autore": "Ausonio",
@@ -1957,7 +1957,7 @@
    "luogo": "Milano",
    "tipografo": "Filippo Lavagna",
    "anno": "1475",
-   "copie": 2
+   "copie": 3
   },
   "pomponio-mela": {
    "autore": "Pomponio Mela",
@@ -1966,7 +1966,7 @@
    "luogo": "Milano",
    "tipografo": "Pamfilo Castaldi",
    "anno": "1471",
-   "copie": 0
+   "copie": 1
   },
   "solino": {
    "autore": "Solino",
@@ -1984,7 +1984,7 @@
    "luogo": "Ferrara",
    "tipografo": "Agostino Carnerio",
    "anno": "1475",
-   "copie": 1
+   "copie": 2
   },
   "servio": {
    "autore": "Servio",
@@ -1993,7 +1993,7 @@
    "luogo": "Firenze",
    "tipografo": "Bernardo Cennini",
    "anno": "1471-1472",
-   "copie": 0
+   "copie": 1
   },
   "prisciano": {
    "autore": "Prisciano",
@@ -2011,7 +2011,7 @@
    "luogo": "Troyes",
    "tipografo": "Jean Oudot (a cura di Pierre Pithou)",
    "anno": "1596",
-   "copie": 0
+   "copie": 1
   },
   "omero": {
    "autore": "Omero",
@@ -2020,7 +2020,7 @@
    "luogo": "Firenze",
    "tipografo": "Bartolomeo de' Libri (a cura di Demetrio Calcondila)",
    "anno": "1488-1489",
-   "copie": 4
+   "copie": 5
   },
   "batrachomyomachia": {
    "autore": "Pseudo-Omero",
@@ -2056,7 +2056,7 @@
    "luogo": "Milano",
    "tipografo": "Enrico Germano e Sebastiano da Pontremoli",
    "anno": "1493",
-   "copie": 1
+   "copie": 2
   },
   "anthologia-planudea": {
    "autore": "Anthologia Planudea",
@@ -2065,7 +2065,7 @@
    "luogo": "Firenze",
    "tipografo": "Lorenzo di Alopa (a cura di Giano Lascaris)",
    "anno": "1494",
-   "copie": 1
+   "copie": 2
   },
   "euripide-quattro": {
    "autore": "Euripide",
@@ -2074,7 +2074,7 @@
    "luogo": "Firenze",
    "tipografo": "Lorenzo di Alopa",
    "anno": "c. 1494",
-   "copie": 1
+   "copie": 2
   },
   "callimaco": {
    "autore": "Callimaco",
@@ -2083,7 +2083,7 @@
    "luogo": "Firenze",
    "tipografo": "Lorenzo di Alopa",
    "anno": "c. 1496",
-   "copie": 0
+   "copie": 1
   },
   "apollonio-rodio": {
    "autore": "Apollonio Rodio",
@@ -2092,7 +2092,7 @@
    "luogo": "Firenze",
    "tipografo": "Lorenzo di Alopa",
    "anno": "1496",
-   "copie": 1
+   "copie": 2
   },
   "luciano": {
    "autore": "Luciano",
@@ -2110,7 +2110,7 @@
    "luogo": "Venezia",
    "tipografo": "Aldo Manuzio",
    "anno": "1495-1498",
-   "copie": 12
+   "copie": 16
   },
   "teofrasto": {
    "autore": "Teofrasto",
@@ -2128,7 +2128,7 @@
    "luogo": "Venezia",
    "tipografo": "Aldo Manuzio",
    "anno": "1498",
-   "copie": 2
+   "copie": 6
   },
   "suda": {
    "autore": "Suda",
@@ -2137,7 +2137,7 @@
    "luogo": "Milano",
    "tipografo": "Giovanni Bissoli e Benedetto Mangio (a cura di Demetrio Calcondila)",
    "anno": "1499",
-   "copie": 1
+   "copie": 2
   },
   "sofocle": {
    "autore": "Sofocle",
@@ -2146,7 +2146,7 @@
    "luogo": "Venezia",
    "tipografo": "Aldo Manuzio",
    "anno": "1502",
-   "copie": 0
+   "copie": 1
   },
   "tucidide": {
    "autore": "Tucidide",
@@ -2164,7 +2164,7 @@
    "luogo": "Venezia",
    "tipografo": "Aldo Manuzio",
    "anno": "1502",
-   "copie": 0
+   "copie": 2
   },
   "euripide": {
    "autore": "Euripide",
@@ -2173,7 +2173,7 @@
    "luogo": "Venezia",
    "tipografo": "Aldo Manuzio",
    "anno": "1503",
-   "copie": 4
+   "copie": 5
   },
   "demostene": {
    "autore": "Demostene",
@@ -2182,7 +2182,7 @@
    "luogo": "Venezia",
    "tipografo": "Aldo Manuzio",
    "anno": "1504",
-   "copie": 0
+   "copie": 1
   },
   "quinto-smirneo": {
    "autore": "Quinto Smirneo",
@@ -2209,7 +2209,7 @@
    "luogo": "Venezia",
    "tipografo": "Aldo Manuzio (a cura di Marco Musuro)",
    "anno": "1513",
-   "copie": 0
+   "copie": 1
   },
   "pindaro": {
    "autore": "Pindaro",
@@ -2227,7 +2227,7 @@
    "luogo": "Venezia",
    "tipografo": "Aldo Manuzio",
    "anno": "1513",
-   "copie": 0
+   "copie": 1
   },
   "ateneo": {
    "autore": "Ateneo",
@@ -2245,7 +2245,7 @@
    "luogo": "Venezia",
    "tipografo": "Aldo Manuzio",
    "anno": "1514",
-   "copie": 2
+   "copie": 3
   },
   "pausania": {
    "autore": "Pausania",
@@ -2281,7 +2281,7 @@
    "luogo": "Firenze",
    "tipografo": "Filippo Giunta",
    "anno": "1517",
-   "copie": 2
+   "copie": 3
   },
   "elio-aristide": {
    "autore": "Elio Aristide",
@@ -2290,7 +2290,7 @@
    "luogo": "Firenze",
    "tipografo": "Filippo Giunta",
    "anno": "1517",
-   "copie": 1
+   "copie": 2
   },
   "eschilo": {
    "autore": "Eschilo",
@@ -2308,7 +2308,7 @@
    "luogo": "Venezia",
    "tipografo": "Aldo Manuzio e Andrea Torresani",
    "anno": "1525",
-   "copie": 5
+   "copie": 6
   },
   "ippocrate": {
    "autore": "Ippocrate",
@@ -2317,7 +2317,7 @@
    "luogo": "Venezia",
    "tipografo": "Aldo Manuzio e Andrea Torresani",
    "anno": "1526",
-   "copie": 0
+   "copie": 1
   },
   "polibio": {
    "autore": "Polibio",
@@ -2344,7 +2344,7 @@
    "luogo": "Basilea",
    "tipografo": "Johann Herwagen (a cura di Simon Grynaeus)",
    "anno": "1533",
-   "copie": 2
+   "copie": 3
   },
   "diogene-laerzio": {
    "autore": "Diogene Laerzio",
@@ -2389,7 +2389,7 @@
    "luogo": "Basilea",
    "tipografo": "Johann Herwagen (a cura di Thomas Gechauff)",
    "anno": "1544",
-   "copie": 1
+   "copie": 2
   },
   "flavio-giuseppe": {
    "autore": "Flavio Giuseppe",
@@ -2425,7 +2425,7 @@
    "luogo": "Parigi",
    "tipografo": "Charles Estienne",
    "anno": "1551",
-   "copie": 1
+   "copie": 3
   },
   "anacreonte": {
    "autore": "Anacreonte",
@@ -2434,7 +2434,7 @@
    "luogo": "Parigi",
    "tipografo": "Henri Estienne",
    "anno": "1554",
-   "copie": 0
+   "copie": 1
   },
   "marco-aurelio": {
    "autore": "Marco Aurelio",
@@ -2443,7 +2443,7 @@
    "luogo": "Zurigo",
    "tipografo": "Andreas Gessner (a cura di Wilhelm Xylander)",
    "anno": "1559",
-   "copie": 0
+   "copie": 1
   },
   "plotino": {
    "autore": "Plotino",
@@ -2683,6 +2683,7 @@
   "Bibliothèque Méjanes d'Aix-en-Provence",
   "Bibliothèque Méjanes d'Aix-en-Provence, Ms 1590-1591 (1455-1456)",
   "Bibliothèque Méjanes d'Aix-en-Provence, Ms 1597-1600 (1462-1465)",
+  "Bibliothèque multimédia intercommunale d''Épinal",
   "Bibliothèque multimédia intercommunale Épinal",
   "Bibliothèque muncipale de Rouen",
   "Bibliothèque municipale d'Abbeville",
@@ -2696,6 +2697,7 @@
   "Bibliothèque municipale de Nantes",
   "Bibliothèque municipale de Rouen",
   "Bibliothèque municipale de Toulouse",
+  "Bibliothèque municipale de Toulouse, Inc",
   "Bibliothèque municipale de Toulouse, Res, Mus",
   "Bibliothèque municipale de Valenciennes",
   "Bibliothèque municipale de Vesoul",
@@ -2703,6 +2705,7 @@
   "Bibliothèque Municipale du Mans",
   "Bibliothèque Municipale, Colmar",
   "Bibliothèque municipale, Mulhouse",
+  "Bibliothèque nationale de France",
   "Bibliotheque Nationale de France, Cambridge",
   "Bibliothèque nationale de France, Paris",
   "Bibliothèque nationale du Luxembourg, Lussemburgo",
@@ -2732,6 +2735,7 @@
   "Buffalo & Erie County Public Library",
   "Burgerbibliothek, Bern",
   "Burke Library at Union Theological Seminary, New York",
+  "Caen - Bibliothèque Alexis de Tocqueville",
   "California State Library, Sutro Library, San Francisco",
   "Cambridge University Library",
   "Cambridge University Library, Department of Manuscripts and University Archives",
@@ -2841,6 +2845,7 @@
   "Expozice Knihovny Latinské školy, Jáchymov",
   "Expozitura Latinské školy, Jáchymov",
   "F (copia digitale della National Library of Israel)",
+  "Facultés Loyola Paris",
   "Faculty of Classics Archives, University of Cambridge",
   "FERRARA TT (copia digitale della National Library of Israel)",
   "FIR RICC (copia digitale della National Library of Israel)",
@@ -3093,12 +3098,16 @@
   "McGill University Library Ms. Persian 39, Cambridge",
   "McGill University Library, Cambridge",
   "McGill University Library, Rare Books and Special Collections, Montréal",
+  "Médiathèque André Malraux de Strasbourg",
   "Médiathèque André Malraux, Strasbourg",
   "Médiathèque de Troyes Champagne Métropole",
+  "Médiathèque Jacques-Chirac, Troyes Champagne Métropole",
   "Médiathèque Jean-Louis-Curtis Orthez",
+  "Médiathèque Louis Aragon, Le Mans",
   "Médiathèque Michel-Crépeau / La Rochelle",
   "Médiathèque municipale d'Agen",
   "Médiathèque Valais, Sion/Sitten",
+  "Médiathèques André Malraux de Strasbourg",
   "Médiathèques de Plaine Commune",
   "Medical Historical Library, Cushing/Whitney Medical Library, New Haven",
   "Medieval Mile Museum, Kilkenny",
@@ -3423,6 +3432,7 @@
   "Page (copia digitale della National Library of Israel)",
   "Památník národního písemnictví - knihovna, Praga",
   "Památník národního písemnictví (správce), Praga",
+  "Paris, Société de l'histoire du protestantisme français",
   "Parker Library, Corpus Christi College, Cambridge",
   "Parker Library: on long-term deposit at Cambridge University Library",
   "Parlamentní knihovna, Praga",
@@ -6674,31 +6684,32 @@
    ]
   },
   "stampe": {
-   "nome": "Stampe antiche: incunaboli e edizioni principi dei classici (Bayerische Staatsbibliothek e biblioteche bavaresi, Heidelberg, Bodleian, Cambridge, Boston Public Library e National Library of Medicine su Internet Archive, Vaticana)",
-   "codici": 10785,
+   "nome": "Stampe antiche: incunaboli e edizioni principi dei classici (Bayerische Staatsbibliothek e biblioteche bavaresi, Heidelberg, Bodleian, Cambridge, Boston Public Library e National Library of Medicine su Internet Archive, Vaticana, Gallica dal browser)",
+   "codici": 15659,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 2,
-   "musica": 15,
-   "incunaboli": 10732,
-   "stampe": 53,
-   "edizioni_principi": 109,
-   "con_autori": 2295,
+   "miniati": 8,
+   "musica": 17,
+   "incunaboli": 15587,
+   "stampe": 72,
+   "edizioni_principi": 172,
+   "con_autori": 3508,
    "lingue": {
-    "grc": 125,
-    "la": 2449,
-    "de": 2186,
-    "?": 5826,
-    "it": 120,
-    "es": 14,
-    "fr": 38,
-    "zh": 3,
-    "nl": 9,
-    "he": 19,
+    "grc": 179,
+    "la": 6335,
+    "de": 2249,
+    "?": 5843,
+    "it": 299,
+    "es": 27,
+    "fr": 726,
+    "zh": 4,
+    "nl": 19,
+    "he": 28,
     "tr": 2,
-    "en": 38,
-    "xx": 10,
-    "ca": 1,
+    "oc": 4,
+    "xx": 12,
+    "ca": 2,
+    "en": 39,
     "ar": 2,
     "fa": 1
    },
@@ -6706,7 +6717,7 @@
    "prefissi": [
     "stp-"
    ],
-   "pezzi_voci": 14,
+   "pezzi_voci": 20,
    "indice": [
     "indice/stampe-0.json"
    ]
@@ -7191,7 +7202,7 @@
   {
    "file": "indice/stampe-0.json",
    "fonte": "stampe",
-   "righe": 10785
+   "righe": 15659
   },
   {
    "file": "indice/vaticana-0.json",
@@ -9974,6 +9985,7 @@
   "aix",
   "aix",
   "aix",
+  null,
   "epinal",
   "rouen",
   "abbeville",
@@ -9987,6 +9999,7 @@
   "nantes",
   "rouen",
   "tolosa",
+  null,
   "tolosa",
   "valenciennes",
   "vesoul",
@@ -9994,6 +10007,7 @@
   "le-mans",
   "colmar",
   "mulhouse",
+  null,
   "cambridge",
   "parigi",
   "lussemburgo",
@@ -10023,6 +10037,7 @@
   "buffalo",
   "berna",
   "new-york",
+  null,
   "san-francisco",
   "cambridge",
   "cambridge",
@@ -10132,6 +10147,7 @@
   "jachymov",
   "jachymov",
   "gerusalemme",
+  null,
   "cambridge",
   "gerusalemme",
   "gerusalemme",
@@ -10385,11 +10401,15 @@
   "cambridge",
   "montreal",
   "strasburgo",
+  "strasburgo",
+  "troyes",
   "troyes",
   "orthez",
+  "le-mans",
   "la-rochelle",
   "agen",
   "sion",
+  "strasburgo",
   "saint-denis",
   "new-haven",
   "kilkenny",
@@ -10714,6 +10734,7 @@
   "gerusalemme",
   "praga",
   "praga",
+  null,
   "cambridge",
   "cambridge",
   "praga",
@@ -11385,10 +11406,10 @@
   34,
   121,
   53,
-  940,
+  997,
   5,
   108,
-  1406,
+  1923,
   7,
   1,
   1,
@@ -11398,6 +11419,7 @@
   22,
   1,
   1,
+  2,
   59,
   1,
   1,
@@ -11405,12 +11427,13 @@
   5,
   5,
   64,
-  392,
+  422,
   309,
   15,
-  245,
+  434,
   639,
   301,
+  34,
   4,
   68,
   1,
@@ -11418,10 +11441,11 @@
   3,
   1,
   1,
+  1553,
   24,
-  76280,
+  78357,
   28,
-  724,
+  770,
   4,
   27,
   454,
@@ -11447,6 +11471,7 @@
   31,
   67,
   8,
+  1,
   37,
   4020,
   2,
@@ -11464,7 +11489,7 @@
   8,
   1,
   1,
-  20,
+  21,
   3,
   4,
   1313,
@@ -11556,6 +11581,7 @@
   5,
   1,
   7,
+  14,
   13,
   1,
   1,
@@ -11808,12 +11834,16 @@
   1,
   16,
   829,
+  254,
   1,
   202,
+  10,
   255,
+  25,
   46,
   1,
   18,
+  1,
   5,
   16,
   1,
@@ -11832,7 +11862,7 @@
   1668,
   1,
   1,
-  978,
+  1036,
   6,
   3,
   1,
@@ -12138,6 +12168,7 @@
   11,
   2,
   1,
+  5,
   553,
   17,
   13,
