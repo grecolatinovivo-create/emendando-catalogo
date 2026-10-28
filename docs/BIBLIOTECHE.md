@@ -18,7 +18,7 @@ Come leggere le colonne:
 - **Ultima raccolta**: com'è andata l'ultima volta.
 
 <!-- inizio automatico -->
-Codici nel catalogo, in tutto: **563.030**, di cui **32.079** con almeno un autore riconosciuto.
+Codici nel catalogo, in tutto: **567.643**, di cui **32.243** con almeno un autore riconosciuto.
 
 | Biblioteca | Città | Codici totali | Di cui con autori riconosciuti | Lingue | Avanzamento della lettura | Come si aggiorna | Ultimo aggiornamento | Ultima raccolta |
 |---|---|---|---|---|---|---|---|---|
@@ -103,6 +103,7 @@ Codici nel catalogo, in tutto: **563.030**, di cui **32.079** con almeno un auto
 | Bibliothèque nationale du Luxembourg: manoscritti di eluxemburgensia (codici di Echternach, Codex Mariendalensis, corsi dei Gesuiti; manifesti IIIF scritti da Emendando) | Lussemburgo | 28 | 8 | latino 23, tedesco 3, lb 3, altre 8 | schede lette tutte (28 manoscritti, 28 con le pagine) | corsia nord, ogni notte (elenco ogni 14 giorni; pagine solo dei codici nuovi) | 2026-10-28 | riuscita |
 | Iraqi Jewish Archive (U.S. National Archives and Records Administration): frammenti di rotoli della Torah e di Ester della comunità ebraica di Baghdad | College Park (Stati Uniti), da Baghdad | 49 | 0 | ebraico 49, inglese 1 | schede lette tutte (3604 oggetti; 63 manoscritti candidati; entrano quelli con la copia intera nelle immagini IIIF, fuori i libri con la copia intera solo in PDF) | corsia medioriente, ogni notte (elenco ogni 14 giorni; media solo dei candidati nuovi) | 2026-10-28 | riuscita |
 | Stampe antiche: incunaboli e edizioni principi dei classici (Bayerische Staatsbibliothek e biblioteche bavaresi, Heidelberg, Bodleian, Cambridge, Boston Public Library e National Library of Medicine su Internet Archive, Vaticana, Gallica dal browser) | varie | 15.659 | 3508 | latino 6335, non indicata 5843, tedesco 2249, altre 1344 |  | corsia stampe: a ruota finché la prima lettura non è finita, poi ogni notte (elenchi ogni 30 giorni) | 2026-10-28 | riuscita |
+| Papiri: Michigan, Yale, Duke, Princeton, Vienna (ÖNB, solo uso non commerciale), Colonia e Berkeley, con le schede di papyri.info (CC BY 3.0) | varie | 4613 | 164 | greco 4112, copto 212, arabo 102, altre 229 |  | corsia papiri: a ruota finché la prima lettura non è finita, poi ogni notte (elenchi ogni 30 giorni) | — | — |
 | Biblioteca Apostolica Vaticana | Città del Vaticano | 25.572 | 1259 | latino 20.573, greco 2983, non indicata 1691, altre 331 | 25.572 codici letti su 31.127 digitalizzati; fondo in corso: Arch. Cap. S. Pietro.; restano circa 5325 manifesti da leggere, cioè circa 17 ore (un manifesto ogni 10 secondi, come chiede la biblioteca) | corsia propria: a ruota, senza pause tra un'esecuzione e l'altra | 2026-10-28 | riuscita |
 
 Digital Scriptorium, codici per istituzione: Princeton University Library 3062; Columbia University, Rare Book & Manuscript Library 835; University of Pennsylvania Libraries 721; Harvard University, Houghton Library 603; The Huntington Library 383; Free Library of Philadelphia 356; Newberry Library 235; Boston Public Library 234; University of Kansas, Kenneth Spencer Research Library 190; University of California, Berkeley, Bancroft Library 181; University of Chicago Library 165; Western Michigan University 113; Rutgers University Libraries 112; Indiana University, Lilly Library 101; Ohio University Libraries 78; Rochester Institute of Technology, Cary Graphic Arts Collection 69; Saint Louis University 65; Bryn Mawr College 52; Conception Abbey and Seminary 39; California State Library, Sutro Library 37; Nelson-Atkins Museum of Art 35; University of California, Davis 32; Buffalo & Erie County Public Library 31; General Theological Seminary 18; Grolier Club 14; Smith College 11; New York University 8; Burke Library at Union Theological Seminary 8; Newberry Library e Western Michigan University 7; Providence Public Library 5; Fordham University 4; American Academy in Rome 2; Harry Ransom Center, University of Texas 2; City College of New York 1; Pepperdine University 1. Lasciati alle fonti Penn e Yale (doppioni): 4197. Fuori per manifesto non raggiungibile o da verificare: 120.
@@ -622,20 +623,20 @@ Valutazione del 26 ottobre 2026. Decisione dello stesso giorno: si prendono i po
 | Biblioteca Nacional Ernesto J. Castillero (Panamá) | 0: nessun manoscritto librario in linea trovato (biblioteca e hemeroteca digitali con PDF di libri e periodici) | non dichiarata | 0 | no (niente da copiare) |
 | Università di Porto Rico, Río Piedras (Omeka `coleccionesuprrpcaribe.omeka.net`) | 0 codici librari: 847 elementi d'archivio (censimenti, microfilm NARA, carte teatrali) | «Uso justo» solo per docenza e ricerca; il robots.txt vieta `/files/`, dove stanno i PDF | 0 | no |
 
-### Papiri (in attesa di decisione)
+### Papiri
 
-Per ora si aspetta: nessuna raccolta apposta di papiri. La scelta in attesa è tra entrare solo con le raccolte a licenza libera (circa 30.000 papiri) oppure con tutte quelle possibili. Per Berlino, PSI e Ossirinco servirebbe un permesso scritto. I papiri di Heidelberg sono già nel catalogo perché arrivano con la raccolta OAI della biblioteca. I dettagli della verifica (immagini, IIIF, CORS, licenze) sono in [PAPIRI.md](PAPIRI.md).
+Dal 28 ottobre 2026 entrano le raccolte «Dentro» di [PAPIRI.md](PAPIRI.md) con la corsia «papiri» (fonte «papiri», tipo «papiro»): Michigan, Berkeley, Yale, Duke, Vienna (licenza non commerciale), Colonia (senza strumenti di inchiostro) e Princeton; i papiri di Heidelberg e della BSB restano alle loro fonti con il tipo «papiro». Per Berlino, PSI e Ossirinco servirebbe un permesso scritto. Stato per fonte e numeri in [PAPIRI.md](PAPIRI.md).
 
 | Raccolta | Papiri con immagine | Stato | Note |
 |---|---|---|---|
-| Berkeley (Tebtunis) | circa 11.100 | dentro con strumenti | IIIF e CORS aperti, uso libero. |
-| Yale (Beinecke) | circa 6300 | dentro con strumenti | IIIF e CORS aperti; licenza da rileggere caso per caso. |
-| Heidelberg | circa 4700 | dentro con strumenti | Già nel catalogo; immagini pubbliche piccole; per pubblicare serve il permesso dell'Istituto di papirologia. |
-| Colonia (Kölner Papyri) | circa 4500 | dentro con strumenti | Solo con la copia delle immagini sui nostri server (CC BY 4.0, niente CORS). |
-| Duke | circa 1750 | dentro con strumenti | Immagini piccole; solo ricerca e didattica. |
-| Michigan (APIS) | circa 3900 | da provare dal browser | Pubblico dominio, manifesti IIIF pronti; CORS da provare. |
-| Vienna (ÖNB) | circa 4800 | da provare dal browser | Solo uso non commerciale. |
-| Princeton | circa 600 | da provare dal browser | IIIF; licenza e CORS da provare. |
+| Berkeley (Tebtunis) | circa 11.100 | agganciata (28 ottobre 2026, elenco in corso) | IIIF e CORS aperti, uso libero. |
+| Yale (Beinecke) | circa 6300 | agganciata (28 ottobre 2026, in corso) | IIIF e CORS aperti; accesso pubblico. |
+| Heidelberg | circa 4700 | agganciata (fonte «heidelberg», tipo «papiro») | Immagini pubbliche piccole; per pubblicare serve il permesso dell'Istituto di papirologia. |
+| Colonia (Kölner Papyri) | circa 1000 delle pubblicazioni (4500 in tutto) | agganciata (28 ottobre 2026, in corso) | CC BY 4.0, niente CORS: senza strumenti di inchiostro; l'elenco completo (/uebersicht) è vietato dal robots.txt. |
+| Duke | circa 1650 | agganciata (28 ottobre 2026, in corso) | Immagini piccole; solo ricerca e didattica; manifesti scritti dal catalogo. |
+| Michigan (APIS) | circa 2960 papiri | agganciata (28 ottobre 2026) | Pubblico dominio, manifesti IIIF con CORS aperto. |
+| Vienna (ÖNB) | da contare (27.518 oggetti «P.Vindob.») | agganciata (28 ottobre 2026, in corso) | Solo uso non commerciale; entra solo il materiale «Papyrus». |
+| Princeton | circa 510 | agganciata (28 ottobre 2026, in corso) | IIIF e CORS aperti; «No Known Copyright». |
 | Berlino (BerlPap) | circa 9400 | fuori | Vietato ripubblicare: serve un permesso scritto. |
 | Ossirinco (Oxford, P.Oxy.) | circa 3800 | fuori | Diritti riservati (Egypt Exploration Society): serve un permesso scritto. |
 | PSI Firenze (PSIonline) | circa 2200 | fuori | Riproduzione vietata senza permesso scritto. |

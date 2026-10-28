@@ -16,6 +16,8 @@ export const NOMI_LINGUE = {
   sai: "altre lingue indigene del Sud America", chr: "cherokee", dak: "dakota e lakota", oji: "ojibwe", cre: "cree", moh: "mohawk",
   iro: "lingue irochesi", alg: "lingue algonchine", nai: "altre lingue indigene del Nord America",
   pit: "pittografia mesoamericana (senza testo alfabetico)",
+  // papiri (dal 28 ottobre 2026): egiziano antico (geroglifico, ieratico, demotico)
+  egy: "egiziano antico (geroglifico, ieratico, demotico)",
   xx: "altre lingue",
 };
 
@@ -34,6 +36,8 @@ const CODICI = {
   ar: "ar", ara: "ar", arabic: "ar", arabisch: "ar", arabe: "ar", arabo: "ar",
   syr: "syr", syc: "syr", syriac: "syr", syrisch: "syr", syriaque: "syr", siriaco: "syr",
   cop: "cop", coptic: "cop", koptisch: "cop", copte: "cop", copto: "cop",
+  egy: "egy", "egy-egyd": "egy", "egy-egyh": "egy", "egy-egyp": "egy", demotic: "egy", demotisch: "egy", demotique: "egy", demotico: "egy", hieratic: "egy", hieratisch: "egy",
+  hieroglyphic: "egy", hieroglyphisch: "egy", "ancient egyptian": "egy", "egyptian (ancient)": "egy", agyptisch: "egy", "altagyptisch": "egy",
   hy: "hy", arm: "hy", hye: "hy", xcl: "hy", armenian: "hy", armenisch: "hy", armenien: "hy", armeno: "hy",
   ka: "ka", geo: "ka", kat: "ka", georgian: "ka", georgisch: "ka",
   gez: "gez", eth: "gez", ethiopic: "gez", geez: "gez", amh: "gez", amharic: "gez", athiopisch: "gez", ethiopien: "gez",

@@ -1,15 +1,16 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T07:29:12.300Z",
- "totale": 563030,
- "con_autori": 32079,
- "miniati": 11284,
- "musica": 21294,
- "manoscritti": 547371,
+ "aggiornato": "2026-10-28T08:18:18.166Z",
+ "totale": 567643,
+ "con_autori": 32243,
+ "miniati": 11287,
+ "musica": 21295,
+ "manoscritti": 542649,
+ "papiri": 9335,
  "stampe_antiche": 15659,
  "incunaboli": 15587,
  "edizioni_principi": 172,
- "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «tipo» è «incunabolo» per gli stampati fino al 1500 e «stampa» per le edizioni principi del Cinquecento (stampe antiche, dal 27 ottobre 2026: contano in «totale» e in «biblioteche_n»; «manoscritti» e «stampe_antiche» sono i totali separati); «editio_princeps» è l'id dell'edizione principe dei classici greci e latini (elenco curato in «edizioni_principi_elenco», con le copie digitali trovate; conteggio delle voci in «edizioni_principi»); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
+ "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «tipo» è «incunabolo» per gli stampati fino al 1500 e «stampa» per le edizioni principi del Cinquecento (stampe antiche, dal 27 ottobre 2026: contano in «totale» e in «biblioteche_n»; «manoscritti» e «stampe_antiche» sono i totali separati); «tipo» è «papiro» per i papiri (dal 28 ottobre 2026: fonte «papiri», con i dati papirologici nella voce completa in «papiro», e i papiri di Heidelberg e della BSB; contano in «totale» e in «biblioteche_n», totale separato in «papiri» e, per fonte, nello stesso campo); «editio_princeps» è l'id dell'edizione principe dei classici greci e latini (elenco curato in «edizioni_principi_elenco», con le copie digitali trovate; conteggio delle voci in «edizioni_principi»); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
   "id",
   "segnatura",
@@ -35,11 +36,11 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 90268
+   "codici": 90324
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 50973
+   "codici": 51015
   },
   "fr": {
    "nome": "francese",
@@ -51,23 +52,23 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 22511
+   "codici": 22613
+  },
+  "grc": {
+   "nome": "greco",
+   "codici": 21842
   },
   "he": {
    "nome": "ebraico",
-   "codici": 20065
+   "codici": 20066
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 19346
+   "codici": 19373
   },
   "pi": {
    "nome": "pali",
    "codici": 17848
-  },
-  "grc": {
-   "nome": "greco",
-   "codici": 17730
   },
   "cu": {
    "nome": "slavo ecclesiastico",
@@ -135,7 +136,7 @@
   },
   "cop": {
    "nome": "copto",
-   "codici": 1924
+   "codici": 2136
   },
   "gez": {
    "nome": "etiopico",
@@ -224,6 +225,10 @@
   "my": {
    "nome": "birmano",
    "codici": 106
+  },
+  "egy": {
+   "nome": "egiziano antico (geroglifico, ieratico, demotico)",
+   "codici": 103
   },
   "hu": {
    "nome": "ungherese",
@@ -377,15 +382,15 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 8174
+   "codici": 8177
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7363
+   "codici": 7512
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15795
+   "codici": 15807
   },
   "medievale": {
    "nome": "autori medievali",
@@ -395,7 +400,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 542056
+   "codici": 537334
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -412,6 +417,10 @@
   "stampa": {
    "nome": "edizioni principi del Cinquecento",
    "codici": 72
+  },
+  "papiro": {
+   "nome": "papiri",
+   "codici": 9335
   }
  },
  "autori": {
@@ -461,7 +470,7 @@
    "nome": "Virgilio",
    "latino": "Vergilius",
    "categoria": "classico-latino",
-   "codici": 572
+   "codici": 573
   },
   "orazio": {
    "nome": "Orazio",
@@ -533,7 +542,7 @@
    "nome": "Plinio il Vecchio",
    "latino": "Plinius maior",
    "categoria": "classico-latino",
-   "codici": 221
+   "codici": 222
   },
   "plinio-giovane": {
    "nome": "Plinio il Giovane",
@@ -839,25 +848,25 @@
    "nome": "Ditti Cretese",
    "latino": "Dictys Cretensis",
    "categoria": "classico-latino",
-   "codici": 21
+   "codici": 22
   },
   "omero": {
    "nome": "Omero",
    "latino": "Homerus",
    "categoria": "classico-greco",
-   "codici": 384
+   "codici": 479
   },
   "esiodo": {
    "nome": "Esiodo",
    "latino": "Hesiodus",
    "categoria": "classico-greco",
-   "codici": 130
+   "codici": 137
   },
   "pindaro": {
    "nome": "Pindaro",
    "latino": "Pindarus",
    "categoria": "classico-greco",
-   "codici": 58
+   "codici": 59
   },
   "saffo": {
    "nome": "Saffo",
@@ -869,7 +878,7 @@
    "nome": "Alceo",
    "latino": "Alcaeus",
    "categoria": "classico-greco",
-   "codici": 3
+   "codici": 4
   },
   "anacreonte": {
    "nome": "Anacreonte",
@@ -905,67 +914,67 @@
    "nome": "Eschilo",
    "latino": "Aeschylus",
    "categoria": "classico-greco",
-   "codici": 51
+   "codici": 52
   },
   "sofocle": {
    "nome": "Sofocle",
    "latino": "Sophocles",
    "categoria": "classico-greco",
-   "codici": 84
+   "codici": 88
   },
   "euripide": {
    "nome": "Euripide",
    "latino": "Euripides",
    "categoria": "classico-greco",
-   "codici": 161
+   "codici": 163
   },
   "aristofane": {
    "nome": "Aristofane",
    "latino": "Aristophanes",
    "categoria": "classico-greco",
-   "codici": 136
+   "codici": 140
   },
   "menandro": {
    "nome": "Menandro",
    "latino": "Menander",
    "categoria": "classico-greco",
-   "codici": 44
+   "codici": 46
   },
   "erodoto": {
    "nome": "Erodoto",
    "latino": "Herodotus",
    "categoria": "classico-greco",
-   "codici": 58
+   "codici": 60
   },
   "tucidide": {
    "nome": "Tucidide",
    "latino": "Thucydides",
    "categoria": "classico-greco",
-   "codici": 67
+   "codici": 69
   },
   "senofonte": {
    "nome": "Senofonte",
    "latino": "Xenophon",
    "categoria": "classico-greco",
-   "codici": 137
+   "codici": 143
   },
   "platone": {
    "nome": "Platone",
    "latino": "Plato",
    "categoria": "classico-greco",
-   "codici": 378
+   "codici": 380
   },
   "aristotele": {
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 2456
+   "codici": 2457
   },
   "teofrasto": {
    "nome": "Teofrasto",
    "latino": "Theophrastus",
    "categoria": "classico-greco",
-   "codici": 131
+   "codici": 132
   },
   "lisia": {
    "nome": "Lisia",
@@ -977,13 +986,13 @@
    "nome": "Isocrate",
    "latino": "Isocrates",
    "categoria": "classico-greco",
-   "codici": 86
+   "codici": 89
   },
   "demostene": {
    "nome": "Demostene",
    "latino": "Demosthenes",
    "categoria": "classico-greco",
-   "codici": 146
+   "codici": 152
   },
   "eschine": {
    "nome": "Eschine",
@@ -1085,7 +1094,7 @@
    "nome": "Callimaco",
    "latino": "Callimachus",
    "categoria": "classico-greco",
-   "codici": 25
+   "codici": 29
   },
   "arato": {
    "nome": "Arato",
@@ -1127,13 +1136,13 @@
    "nome": "Ippocrate",
    "latino": "Hippocrates",
    "categoria": "classico-greco",
-   "codici": 457
+   "codici": 458
   },
   "tolomeo": {
    "nome": "Tolomeo",
    "latino": "Ptolemaeus",
    "categoria": "classico-greco",
-   "codici": 305
+   "codici": 309
   },
   "euclide": {
    "nome": "Euclide",
@@ -1295,7 +1304,7 @@
    "nome": "Esopo",
    "latino": "Aesopus",
    "categoria": "classico-greco",
-   "codici": 188
+   "codici": 190
   },
   "flavio-giuseppe": {
    "nome": "Flavio Giuseppe",
@@ -1385,7 +1394,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7297
+   "codici": 7309
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -2527,6 +2536,7 @@
   "Australia: Newman College and St. Mary's College, Melbourne (Australia)",
   "Australia: Victoria State Library, Melbourne (Australia)",
   "Balliol College, Oxford",
+  "Bancroft Library, University of California, Berkeley (Center for the Tebtunis Papyri)",
   "Bar-Ilan University Library (copia digitale della National Library of Israel)",
   "Bar-Ilan University Library (copia digitale della National Library of Israel), Ramat Gan",
   "Barbara Bates Center for the Study of the History of Nursing, Philadelphia",
@@ -2534,6 +2544,7 @@
   "Bayerische Staatsbibliothek, Cambridge",
   "Bayerische Staatsbibliothek, München",
   "Beinecke Rare Book and Manuscript Library, New Haven",
+  "Beinecke Rare Book and Manuscript Library, Yale University, New Haven",
   "Belton House, Cambridge",
   "Benediktinerinnenkloster St. Johann, Müstair",
   "Benediktinerinnenkloster, Hermetschwil",
@@ -2829,6 +2840,7 @@
   "Downing College Archive, Cambridge",
   "Draiflessen Collection (Liberna)",
   "Dublin City University, Dublino",
+  "Duke University, David M. Rubenstein Rare Book & Manuscript Library, Durham (NC)",
   "Ecole nationale des ponts et chaussées",
   "École nationale des ponts et chaussées",
   "École nationale des ponts et chaussées (Marne-la-Vallée, Seine-et-Marne",
@@ -3288,6 +3300,7 @@
   "Olomouc ZA (copia digitale della National Library of Israel)",
   "Osservatorio astronomico nazionale del Giappone (国立天文台図書室), Mitaka",
   "Osterreichische Nationalbibliothek, Cambridge",
+  "Österreichische Nationalbibliothek, Papyrussammlung, Vienna",
   "Österreichische Nationalbibliothek, Vienna",
   "Österreichische Nationalbibliothek, Wien",
   "Österreichisches Staatsarchiv, Wien",
@@ -3852,6 +3865,7 @@
   "University of Chicago Library",
   "University of Kansas Libraries, collezione di storia naturale giapponese (カンザス大学図書館 日本自然史コレクション), Lawrence (Stati Uniti)",
   "University of Kansas, Kenneth Spencer Research Library, Lawrence (Kansas)",
+  "University of Michigan Library, Papyrology Collection, Ann Arbor",
   "University of Michigan Museum of Art, Cambridge",
   "University of Pennsylvania Libraries, Kislak Center, Philadelphia",
   "University of Pennsylvania Libraries, Philadelphia",
@@ -3906,6 +3920,7 @@
    "carte_stampa": 0,
    "miniati": 18,
    "musica": 79,
+   "papiri": 4629,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -3945,6 +3960,7 @@
    "carte_stampa": 0,
    "miniati": 526,
    "musica": 205,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -3990,6 +4006,7 @@
    "carte_stampa": 1,
    "miniati": 1157,
    "musica": 8800,
+   "papiri": 93,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4050,6 +4067,7 @@
    "carte_stampa": 0,
    "miniati": 2,
    "musica": 23,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4090,6 +4108,7 @@
    "carte_stampa": 0,
    "miniati": 53,
    "musica": 160,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4102,7 +4121,7 @@
     "en": 2515,
     "?": 947,
     "zh": 656,
-    "xx": 432,
+    "xx": 425,
     "mnc": 6,
     "mn": 2,
     "pt": 6,
@@ -4133,6 +4152,7 @@
     "my": 2,
     "cs": 1,
     "ms": 2,
+    "egy": 7,
     "ja": 13,
     "su": 1,
     "ru": 2,
@@ -4155,6 +4175,7 @@
    "carte_stampa": 2,
    "miniati": 2376,
    "musica": 880,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4171,7 +4192,7 @@
     "it": 1182,
     "es": 473,
     "en": 205,
-    "xx": 3442,
+    "xx": 3382,
     "ca": 76,
     "zh": 8284,
     "nl": 84,
@@ -4205,6 +4226,7 @@
     "ms": 163,
     "ga": 33,
     "mnc": 6,
+    "egy": 60,
     "lo": 1,
     "btk": 2,
     "ban": 2,
@@ -4238,6 +4260,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 11,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4266,6 +4289,7 @@
    "carte_stampa": 0,
    "miniati": 21,
    "musica": 6,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4300,6 +4324,7 @@
    "carte_stampa": 0,
    "miniati": 9,
    "musica": 8,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4324,6 +4349,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 8,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4348,6 +4374,7 @@
    "carte_stampa": 0,
    "miniati": 2,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4377,6 +4404,7 @@
    "carte_stampa": 0,
    "miniati": 20,
    "musica": 26,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4410,6 +4438,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4434,6 +4463,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 2,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4459,6 +4489,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4485,6 +4516,7 @@
    "carte_stampa": 0,
    "miniati": 1,
    "musica": 9,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4523,6 +4555,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 7,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4549,6 +4582,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 43,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4575,6 +4609,7 @@
    "carte_stampa": 0,
    "miniati": 2,
    "musica": 71,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4609,6 +4644,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 88,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4643,6 +4679,7 @@
    "carte_stampa": 0,
    "miniati": 6,
    "musica": 4,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4682,6 +4719,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 3,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4711,6 +4749,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 18,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4741,6 +4780,7 @@
    "carte_stampa": 0,
    "miniati": 51,
    "musica": 156,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4790,6 +4830,7 @@
    "carte_stampa": 50,
    "miniati": 512,
    "musica": 164,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4845,6 +4886,7 @@
    "carte_stampa": 0,
    "miniati": 418,
    "musica": 88,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4914,6 +4956,7 @@
    "carte_stampa": 1,
    "miniati": 23,
    "musica": 229,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -4971,6 +5014,7 @@
    "carte_stampa": 0,
    "miniati": 120,
    "musica": 59,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5023,6 +5067,7 @@
    "carte_stampa": 0,
    "miniati": 174,
    "musica": 64,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5057,6 +5102,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5087,6 +5133,7 @@
    "carte_stampa": 0,
    "miniati": 134,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5133,6 +5180,7 @@
    "carte_stampa": 0,
    "miniati": 338,
    "musica": 113,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5192,6 +5240,7 @@
    "carte_stampa": 0,
    "miniati": 1,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5217,6 +5266,7 @@
    "carte_stampa": 0,
    "miniati": 95,
    "musica": 13,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5260,6 +5310,7 @@
    "carte_stampa": 0,
    "miniati": 326,
    "musica": 31,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5310,6 +5361,7 @@
    "carte_stampa": 0,
    "miniati": 720,
    "musica": 5,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5359,6 +5411,7 @@
    "carte_stampa": 0,
    "miniati": 81,
    "musica": 16,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5387,6 +5440,7 @@
    "carte_stampa": 0,
    "miniati": 4,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5415,6 +5469,7 @@
    "carte_stampa": 0,
    "miniati": 1426,
    "musica": 169,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5442,6 +5497,7 @@
    "carte_stampa": 0,
    "miniati": 298,
    "musica": 311,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5471,6 +5527,7 @@
    "carte_stampa": 0,
    "miniati": 9,
    "musica": 53,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5509,6 +5566,7 @@
    "carte_stampa": 0,
    "miniati": 184,
    "musica": 888,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5565,6 +5623,7 @@
    "carte_stampa": 0,
    "miniati": 22,
    "musica": 571,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5617,6 +5676,7 @@
    "carte_stampa": 0,
    "miniati": 23,
    "musica": 7,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5666,6 +5726,7 @@
    "carte_stampa": 0,
    "miniati": 32,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5693,6 +5754,7 @@
    "carte_stampa": 0,
    "miniati": 351,
    "musica": 47,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5725,6 +5787,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 17,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5761,6 +5824,7 @@
    "carte_stampa": 0,
    "miniati": 1,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5789,6 +5853,7 @@
    "carte_stampa": 0,
    "miniati": 11,
    "musica": 4,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5823,6 +5888,7 @@
    "carte_stampa": 0,
    "miniati": 27,
    "musica": 4,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5856,6 +5922,7 @@
    "carte_stampa": 0,
    "miniati": 93,
    "musica": 5,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5889,6 +5956,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5920,6 +5988,7 @@
    "carte_stampa": 0,
    "miniati": 3,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5946,6 +6015,7 @@
    "carte_stampa": 0,
    "miniati": 140,
    "musica": 30,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -5985,6 +6055,7 @@
    "carte_stampa": 0,
    "miniati": 2,
    "musica": 2,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -6019,6 +6090,7 @@
    "carte_stampa": 0,
    "miniati": 15,
    "musica": 1,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -6048,6 +6120,7 @@
    "carte_stampa": 0,
    "miniati": 31,
    "musica": 18,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -6081,6 +6154,7 @@
    "carte_stampa": 0,
    "miniati": 1,
    "musica": 1,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -6106,6 +6180,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -6129,6 +6204,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -6153,6 +6229,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -6176,6 +6253,7 @@
    "carte_stampa": 0,
    "miniati": 9,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -6201,6 +6279,7 @@
    "carte_stampa": 0,
    "miniati": 913,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -6243,6 +6322,7 @@
    "carte_stampa": 0,
    "miniati": 206,
    "musica": 82,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -6267,6 +6347,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -6296,6 +6377,7 @@
    "carte_stampa": 16,
    "miniati": 0,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -6327,6 +6409,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -6355,6 +6438,7 @@
    "carte_stampa": 0,
    "miniati": 182,
    "musica": 20,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -6414,6 +6498,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -6447,6 +6532,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -6494,6 +6580,7 @@
    "carte_stampa": 0,
    "miniati": 87,
    "musica": 15,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -6543,6 +6630,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -6567,6 +6655,7 @@
    "carte_stampa": 3145,
    "miniati": 8,
    "musica": 7600,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -6602,6 +6691,7 @@
    "carte_stampa": 0,
    "miniati": 8,
    "musica": 22,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -6638,6 +6728,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -6666,6 +6757,7 @@
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -6690,6 +6782,7 @@
    "carte_stampa": 0,
    "miniati": 8,
    "musica": 17,
+   "papiri": 0,
    "incunaboli": 15587,
    "stampe": 72,
    "edizioni_principi": 172,
@@ -6722,6 +6815,37 @@
     "indice/stampe-0.json"
    ]
   },
+  "papiri": {
+   "nome": "Papiri: Michigan, Yale, Duke, Princeton, Vienna (ÖNB), Colonia e Berkeley, con le schede di papyri.info",
+   "codici": 4613,
+   "carte": 0,
+   "carte_stampa": 0,
+   "miniati": 3,
+   "musica": 1,
+   "papiri": 4613,
+   "incunaboli": 0,
+   "stampe": 0,
+   "edizioni_principi": 0,
+   "con_autori": 164,
+   "lingue": {
+    "grc": 4112,
+    "xx": 94,
+    "la": 56,
+    "?": 42,
+    "egy": 36,
+    "ar": 102,
+    "cop": 212,
+    "he": 1
+   },
+   "esito": "ok",
+   "prefissi": [
+    "pap-"
+   ],
+   "pezzi_voci": 6,
+   "indice": [
+    "indice/papiri-0.json"
+   ]
+  },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
    "codici": 25572,
@@ -6729,6 +6853,7 @@
    "carte_stampa": 0,
    "miniati": 4,
    "musica": 21,
+   "papiri": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
@@ -7203,6 +7328,11 @@
    "file": "indice/stampe-0.json",
    "fonte": "stampe",
    "righe": 15659
+  },
+  {
+   "file": "indice/papiri-0.json",
+   "fonte": "papiri",
+   "righe": 4613
   },
   {
    "file": "indice/vaticana-0.json",
@@ -9829,12 +9959,14 @@
   "melbourne",
   "melbourne",
   "oxford",
+  "berkeley",
   "gerusalemme",
   "ramat-gan",
   "philadelphia",
   "gerusalemme",
   "cambridge",
   "monaco-di-baviera",
+  "new-haven",
   "new-haven",
   "cambridge",
   "muestair",
@@ -10131,6 +10263,7 @@
   "cambridge",
   "mettingen",
   "dublino",
+  null,
   "champs-sur-marne",
   "champs-sur-marne",
   "champs-sur-marne",
@@ -10590,6 +10723,7 @@
   "gerusalemme",
   "jp-mitaka",
   "cambridge",
+  "vienna",
   "vienna",
   "vienna",
   "vienna",
@@ -11154,6 +11288,7 @@
   "chicago",
   "lawrence",
   "lawrence",
+  null,
   "cambridge",
   "philadelphia",
   "philadelphia",
@@ -11263,6 +11398,7 @@
   2,
   3,
   8,
+  1499,
   1,
   957,
   1,
@@ -11270,6 +11406,7 @@
   3,
   37964,
   2942,
+  45,
   1,
   8,
   56,
@@ -11565,6 +11702,7 @@
   2,
   1,
   4,
+  43,
   4,
   29,
   2,
@@ -12024,6 +12162,7 @@
   5,
   199,
   3,
+  69,
   5788,
   3,
   1,
@@ -12588,6 +12727,7 @@
   165,
   34,
   190,
+  2957,
   2,
   6882,
   891,

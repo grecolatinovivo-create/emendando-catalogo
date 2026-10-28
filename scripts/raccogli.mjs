@@ -13,7 +13,7 @@
 //        [--nli-minuti=15] [--getty-minuti=15] [--harvard-minuti=10]
 //        [--kbdk-minuti=30] [--uva-minuti=5] [--onb-minuti=30] [--bncf-minuti=5] [--vallicelliana-minuti=5] [--malatestiana-minuti=20] [--polona-minuti=20] [--manuscriptorium-minuti=30] [--archive-minuti=10]
 //        [--crossasia-minuti=30] [--sbbasia-minuti=30] [--sbbor-minuti=30] [--nomfoundation-minuti=20]
-//        [--nb-minuti=60] [--manuscripta-minuti=15] [--bnl-minuti=5] [--ija-minuti=5] [--stampe-minuti=60]
+//        [--nb-minuti=60] [--manuscripta-minuti=15] [--bnl-minuti=5] [--ija-minuti=5] [--stampe-minuti=60] [--papiri-minuti=60]
 // Scrive il catalogo diviso per fonte (vedi costruisci.mjs): data/catalogo/indice.json, data/catalogo/indice/<fonte>-<n>.json, data/catalogo/voci/<fonte>-<n>.json,
 // più data/manoscritti.json (compatibilità: solo i codici con autori classici), e gli stati delle scansioni a riprese
 // (data/vaticana.json, data/bodleian.json, data/laurenziana.json, data/leiden.json, data/heidelberg-indici.json; data/<fonte>.json per le fonti del Handschriftenportal: wolfenbuettel, bamberga, karlsruhe, stoccarda, colonia, lipsia; data/yale.json, data/penn.json, data/walters.json).
@@ -94,6 +94,7 @@ import { scansionaManuscripta, recordManuscripta } from "./fonti/manuscripta.mjs
 import { scansionaBnl, recordBnl } from "./fonti/bnl.mjs";
 import { scansionaIja, recordIja } from "./fonti/ija.mjs";
 import { scansionaStampe, recordStampe } from "./fonti/stampe.mjs";
+import { scansionaPapiri, recordPapiri, papiroDa } from "./fonti/papiri.mjs";
 import { scriviRegistro, registraEsiti } from "./registro.mjs";
 import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 import { tipoDa } from "./carte.mjs";
@@ -101,7 +102,7 @@ import { miniatoDa } from "./miniati.mjs";
 import { musicaDa } from "./musica.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
-const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,kbdk,uva,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,bl,isos,manchester,cudl,cbl,parker,nlw,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,auc,northwestern,nli,getty,harvard,nbkm,libfond,bms,archive,crossasia,sbbasia,sbbor,nomfoundation,stampe,vaticana").split(",");
+const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,kbdk,uva,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,bl,isos,manchester,cudl,cbl,parker,nlw,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,auc,northwestern,nli,getty,harvard,nbkm,libfond,bms,archive,crossasia,sbbasia,sbbor,nomfoundation,stampe,papiri,vaticana").split(",");
 const INIZIO = Date.now();
 export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)", berlino: "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
   bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -183,6 +184,8 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   ija: "Iraqi Jewish Archive: frammenti di rotoli della Torah e di Ester della comunità ebraica di Baghdad (ijarchive.org, U.S. National Archives; manifesti IIIF del sito)",
   // stampe antiche (corsia «stampe», dal 27 ottobre 2026): incunaboli e edizioni principi dei classici (scripts/fonti/stampe.mjs)
   stampe: "Stampe antiche: incunaboli e edizioni principi dei classici (Bayerische Staatsbibliothek e biblioteche bavaresi, Heidelberg, Bodleian, Cambridge, Boston Public Library e National Library of Medicine su Internet Archive, Vaticana, Gallica dal browser)",
+  // papiri (corsia «papiri», dal 28 ottobre 2026): raccolte che si aprono nel visore (scripts/fonti/papiri.mjs, docs/PAPIRI.md)
+  papiri: "Papiri: Michigan, Yale, Duke, Princeton, Vienna (ÖNB), Colonia e Berkeley, con le schede di papyri.info",
   vaticana: "Biblioteca Apostolica Vaticana (digi.vatlib.it)" };
 
 // i tre codici del Truculentus restano sempre nel catalogo, anche se una fonte non li ha ancora restituiti
@@ -217,7 +220,7 @@ export function voce(r, AUTORI, sigle = new Map(TRUCULENTUS.map(t => [t.manifest
   const dichiarate = r.lingue && r.lingue.length ? r.lingue : null;
   const lingue = dichiarate || deduciLingue(r.segnatura, r.titolo, autori);
   const v = { id: r.id, fonte: r.fonte, biblioteca: r.biblioteca || null, citta: r.citta || null, segnatura: r.segnatura || r.id, datazione: r.datazione || null,
-    secolo: secoli(r.datazione), lingue, lingua_dedotta: !dichiarate && lingue.length > 0, titolo: (r.titolo || "").slice(0, 400) || null, autori, manifest: r.manifest, pagina: r.pagina || null, licenza: r.licenza || null, immagini: r.immagini ?? null };
+    secolo: r.secolo !== undefined ? r.secolo : secoli(r.datazione), lingue, lingua_dedotta: !dichiarate && lingue.length > 0, titolo: (r.titolo || "").slice(0, 400) || null, autori, manifest: r.manifest, pagina: r.pagina || null, licenza: r.licenza || null, immagini: r.immagini ?? null };
   // lingue indigene delle Americhe e hawaiano (dal 26 ottobre 2026): codici pittografici noti, poi il titolo al posto di «altre lingue»
   const ind = correggiIndigene(v);
   if (ind) { v.lingue = ind.lingue; v.lingua_dedotta = ind.dedotta; }
@@ -225,9 +228,12 @@ export function voce(r, AUTORI, sigle = new Map(TRUCULENTUS.map(t => [t.manifest
   // stampe antiche (dal 27 ottobre 2026): luogo e tipografo, contrassegno dell'edizione principe
   if (r.stampa && Object.keys(r.stampa).length) v.stampa = r.stampa;
   if (r.editio_princeps) v.editio_princeps = r.editio_princeps;
+  // papiri (dal 28 ottobre 2026): edizione, provenienza, letterario o documentario, numero Trismegistos, materiale
+  if (r.papiro && Object.keys(r.papiro).length) v.papiro = r.papiro;
   if (sigla) v.truculentus = sigla;
   // carte geografiche manoscritte (dal 26 ottobre 2026): categoria a parte, «tipo: "carta"»; i codici restano senza campo (scripts/carte.mjs)
-  const tipo = tipoDa({ tipo: r.tipo, titolo: r.titolo, descrizione: r.descrizione, generi: r.generi, tecnica: r.tecnica, segnatura: v.segnatura });
+  // papiri già nel catalogo da altre fonti (Heidelberger Papyrussammlung, «Pap.» della BSB): tipo «papiro» (scripts/fonti/papiri.mjs)
+  const tipo = tipoDa({ tipo: r.tipo || papiroDa({ fonte: r.fonte, biblioteca: r.biblioteca, segnatura: v.segnatura }), titolo: r.titolo, descrizione: r.descrizione, generi: r.generi, tecnica: r.tecnica, segnatura: v.segnatura });
   if (tipo) v.tipo = tipo;
   // codici miniati e illustrati, codici musicali (dal 26 ottobre 2026): solo dai metadati salvati (scripts/miniati.mjs, scripts/musica.mjs)
   const dati = { tipo: v.tipo, titolo: r.titolo, descrizione: r.descrizione, generi: r.generi, tecnica: r.tecnica, indice: r.indice, segnatura: v.segnatura };
@@ -461,6 +467,19 @@ async function main() {
       dettagli.stampe = { incunaboli: rs.filter(r => r.tipo === "incunabolo").length, edizioni_principi: rs.filter(r => r.editio_princeps).length };
       return rs;
     },
+    // papiri (corsia «papiri», dal 28 ottobre 2026): stato in data/papiri.json, schede di papyri.info in data/papiri-info.json. I papiri che il
+    // catalogo ha già da altre fonti (stesso manifesto) restano a quelle fonti
+    papiri: async () => {
+      let st;
+      try { st = await scansionaPapiri({ minuti: min("papiri", +(arg["papiri-minuti"] ?? 60)), soloCache: sc("papiri") }); }
+      catch (e) { if (!e.stato) throw e; log("papiri", e.message); st = e.stato; }
+      const gia = new Set(Object.keys(perFonte).filter(f => f !== "papiri").flatMap(f => perFonte[f].map(r => r.manifest)));
+      for (const v of prima) if (v.fonte !== "papiri" && !perFonte[v.fonte]) gia.add(v.manifest);
+      const rs = recordPapiri(st).filter(r => !gia.has(r.manifest));
+      const per = {}; for (const r of rs) { const k = r.id.split("-")[1]; per[k] = (per[k] || 0) + 1; }
+      dettagli.papiri = { perRaccolta: per, letterari: rs.filter(r => r.papiro && r.papiro.genere === "letterario").length };
+      return rs;
+    },
     vaticana: async () => {
       let minuti = +(arg["vaticana-minuti"] ?? 20);
       // con un tempo complessivo si lasciano 10 minuti per costruire il catalogo, provarlo e salvarlo
@@ -500,7 +519,7 @@ async function main() {
       if (!v.lingue.length) { v.lingue = deduciLingue(v.segnatura, v.titolo, v.autori); v.lingua_dedotta = v.lingue.length > 0; }
       { const ind = correggiIndigene(v); if (ind) { v.lingue = ind.lingue; v.lingua_dedotta = ind.dedotta; } }
       // tipo: quello già deciso dalla fonte, altrimenti dal titolo
-      if (!v.tipo) { const tipo = tipoDa(v); if (tipo) v.tipo = tipo; }
+      if (!v.tipo) { const tipo = papiroDa(v) || tipoDa(v); if (tipo) v.tipo = tipo; }
       // miniati e musica: quelli già decisi, altrimenti da titolo e segnatura (le carte non lo sono mai)
       if (/^carta/.test(v.tipo || "")) { delete v.miniato; delete v.musica; }
       else { if (!v.miniato && miniatoDa(v)) v.miniato = true; if (!v.musica && musicaDa(v)) v.musica = true; }

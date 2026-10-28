@@ -1,8 +1,33 @@
 # Papiri nel catalogo di Emendando: cosa entra e cosa no
 
-Verifica fatta il 24 ottobre 2026. Per ora nessun papiro viene raccolto apposta: la scelta è in attesa (vedi docs/BIBLIOTECHE.md, «Papiri»).
+Verifica fatta il 24 ottobre 2026. Dal 28 ottobre 2026 i papiri «Dentro» si raccolgono nella corsia «papiri» (`.github/workflows/raccolta-papiri.yml`, fonte «papiri», `scripts/fonti/papiri.mjs`): nel catalogo sono il tipo «papiro», con totale a parte («papiri» in `indice.json`), filtro «Papiri» e etichetta «Papiro» nel sito, e contano nel numero dei testimoni della home e nella mappa.
+
+## Stato reale per fonte (28 ottobre 2026)
+
+Numeri del catalogo ricostruito il 28 ottobre 2026, dopo le prime prove brevi della corsia; la corsia gira a ruota finché la prima lettura non è finita.
+Le schede si arricchiscono con papyri.info (repository `papyri/idp.data`, dati CC BY 3.0), estratto in `data/papiri-info.json` da `scripts/papiri-info.mjs` (da rifare a mano ogni tanto, con una copia locale del repository): edizione, data, provenienza, testo letterario o documentario, numero Trismegistos, autore e opera dei letterari (DCLP), riconosciuti poi con gli autori del catalogo (Omero, Menandro e gli altri).
+Entrano solo i papiri: legno, ostraka, tavolette, pergamena e carta restano fuori quando la scheda dice il materiale.
+
+| Fonte | Nel catalogo il 28 ottobre 2026 | Attesi a lettura finita | Come | Strumenti di inchiostro | Licenza |
+|---|---|---|---|---|---|
+| Michigan | 2957 | circa 2960 (3863 schede con immagini, tolti ostraka e tavolette di legno) | manifesti di quod.lib.umich.edu dalle schede APIS, nessuna richiesta | sì (CORS aperto, verificato il 28 ottobre 2026) | pubblico dominio («No Copyright») |
+| Berkeley (Tebtunis) | 1499 (elenco in corso) | circa 11.000 | OAI-PMH, insieme «apis», 5 secondi tra le richieste | sì (manifesto con CORS aperto) | uso libero del materiale di pubblico dominio |
+| Yale (Beinecke) | 45 (in corso) | circa 6300 | handle delle schede APIS risolto con l'API del Handle System; il manifesto lo apre solo il browser di chi legge | sì | accesso pubblico |
+| Duke | 43 (in corso) | circa 1650 | misure delle GIF a 150 dpi, manifesti scritti dal catalogo (ramo «manifesti») | sì (immagini piccole) | solo ricerca e didattica |
+| Vienna (ÖNB) | 69 (in corso) | da contare: 27.518 oggetti «P.Vindob.» in ÖNB Digital, entrano quelli di materiale «Papyrus» (i primi 69 letti lo sono tutti) | ricerca di ÖNB Digital, poi un manifesto IIIF per oggetto | sì (CORS aperto, verificato il 28 ottobre 2026) | solo uso non commerciale (scritto nella scheda) |
+| Colonia | 0 (in corso) | circa 1000 (1071 indirizzi dall'elenco) | pagine delle pubblicazioni e link di papyri.info, poi la pagina di ogni oggetto (5 secondi tra le richieste); manifesti scritti dal catalogo | no: le immagini si vedono, ma il server non manda il CORS (le copie sui nostri server non sono fatte) | CC BY 4.0 |
+| Princeton | 0 (in corso) | circa 510 | schede JSON della mostra (dpul.princeton.edu, 10 secondi tra le richieste) con l'indirizzo del manifesto di figgy | sì (manifesto e immagini con CORS aperto, verificato il 28 ottobre 2026) | «No Known Copyright» |
+| Heidelberg | 4629 (già nel catalogo, ora tipo «papiro») | | fonte «heidelberg», nessun doppione | sì | pubblicazione solo con permesso |
+| Bayerische Staatsbibliothek | 93 (già nel catalogo, segnature «Pap.», ora tipo «papiro») | | fonte «bsb» | sì | condizioni del MDZ |
+
+Totale papiri nel catalogo il 28 ottobre 2026: 9335 (4613 della fonte «papiri», 4629 di Heidelberg, 93 della BSB).
+
+Colonia: l'elenco completo della collezione (`/uebersicht`, con gli inediti, circa 4500 oggetti) è vietato dal robots.txt: entrano solo gli oggetti delle pubblicazioni e quelli collegati da papyri.info.
+Berkeley: alle 07:20 UTC del 28 ottobre 2026 il server rispondeva 504 anche dal browser; alle 07:45 è tornato e l'elenco è partito.
+Princeton: dal nostro server di prova le richieste di Node ricevevano 503, quelle di curl 200; la corsia su GitHub lo dirà.
 
 Regola usata: entra solo il papiro che si apre dentro il sito, con l'immagine nel nostro visore.
+
 Niente schede che mandano l'utente su un altro sito.
 
 Due esiti:

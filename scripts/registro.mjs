@@ -21,6 +21,7 @@ export const BIBLIOTECHE = {
   ecodices: { biblioteca: "e-codices (biblioteche svizzere: San Gallo, Einsiedeln, Bodmer e altre)", citta: "Svizzera", come: "ogni notte, da sola" },
   bsb: { biblioteca: "Bayerische Staatsbibliothek", citta: "Monaco di Baviera", come: "ogni notte, da sola" },
   stampe: { biblioteca: "Stampe antiche: incunaboli e edizioni principi dei classici (Bayerische Staatsbibliothek e biblioteche bavaresi, Heidelberg, Bodleian, Cambridge, Boston Public Library e National Library of Medicine su Internet Archive, Vaticana, Gallica dal browser)", citta: "varie", come: "corsia stampe: a ruota finché la prima lettura non è finita, poi ogni notte (elenchi ogni 30 giorni)" },
+  papiri: { biblioteca: "Papiri: Michigan, Yale, Duke, Princeton, Vienna (ÖNB, solo uso non commerciale), Colonia e Berkeley, con le schede di papyri.info (CC BY 3.0)", citta: "varie", come: "corsia papiri: a ruota finché la prima lettura non è finita, poi ogni notte (elenchi ogni 30 giorni)" },
   berlino: { biblioteca: "Staatsbibliothek zu Berlin", citta: "Berlino", come: "ogni notte, da sola" },
   sbbor: { biblioteca: "Staatsbibliothek zu Berlin, manoscritti non europei (tibetani, mongoli, sanscriti, islamici, ebraici, cristiano-orientali, africani)", citta: "Berlino", come: "corsia asia, ogni notte (raccolta completa ogni 14 giorni)" },
   bodleian: { biblioteca: "Bodleian Libraries e college", citta: "Oxford", come: "corsia propria: a ruota finché non sono letti tutti, poi ogni notte" },

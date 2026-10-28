@@ -6,7 +6,9 @@ import crypto from "node:crypto";
 
 export const UA = "Emendando catalogo (https://www.emendando.com; https://github.com/grecolatinovivo-create/emendando-catalogo)";
 export const CACHE = process.env.CATALOGO_CACHE || path.resolve(".cache/catalogo");
-const PAUSA = { "digi.vatlib.it": 10000, "gallica.bnf.fr": 3000, "digitalcollections.universiteitleiden.nl": 10000, "www.loc.gov": 5000, "viewer.cbl.ie": 10000, "uvaerfgoed.nl": 10000 };   // Crawl-delay: 10 nei robots.txt di Vaticana e Leida, 5 in quello di loc.gov, 10 in quello di viewer.cbl.ie (Chester Beatty) e in quello di uvaerfgoed.nl (Allard Pierson, Amsterdam); Gallica: prudenza
+const PAUSA = { "digi.vatlib.it": 10000, "gallica.bnf.fr": 3000, "digitalcollections.universiteitleiden.nl": 10000, "www.loc.gov": 5000, "viewer.cbl.ie": 10000, "uvaerfgoed.nl": 10000,
+  // papiri (dal 28 ottobre 2026): Crawl-delay 10 di dpul.princeton.edu, 5 di papyri.uni-koeln.de e di digicoll.lib.berkeley.edu
+  "dpul.princeton.edu": 10000, "papyri.uni-koeln.de": 5000, "digicoll.lib.berkeley.edu": 5000 };   // Crawl-delay: 10 nei robots.txt di Vaticana e Leida, 5 in quello di loc.gov, 10 in quello di viewer.cbl.ie (Chester Beatty) e in quello di uvaerfgoed.nl (Allard Pierson, Amsterdam); Gallica: prudenza
 const PAUSA_BASE = +process.env.CATALOGO_PAUSA_MS || 1500;
 const ultimo = new Map();
 const attendi = ms => new Promise(r => setTimeout(r, ms));
