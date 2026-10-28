@@ -1,13 +1,13 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T22:37:35.172Z",
- "totale": 635370,
+ "aggiornato": "2026-10-28T23:24:55.569Z",
+ "totale": 640174,
  "con_autori": 32815,
  "miniati": 11358,
  "musica": 21303,
  "manoscritti": 547613,
  "papiri": 33914,
- "epigrafi": 38184,
+ "epigrafi": 42988,
  "stampe_antiche": 15659,
  "incunaboli": 15587,
  "edizioni_principi": 172,
@@ -33,7 +33,7 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 178027
+   "codici": 178071
   },
   "la": {
    "nome": "latino",
@@ -59,6 +59,10 @@
    "nome": "tedesco",
    "codici": 24950
   },
+  "ojp": {
+   "nome": "giapponese antico",
+   "codici": 21239
+  },
   "he": {
    "nome": "ebraico",
    "codici": 20989
@@ -70,10 +74,6 @@
   "pi": {
    "nome": "pali",
    "codici": 17848
-  },
-  "ojp": {
-   "nome": "giapponese antico",
-   "codici": 16479
   },
   "cu": {
    "nome": "slavo ecclesiastico",
@@ -477,7 +477,7 @@
   },
   "epigrafe": {
    "nome": "epigrafi",
-   "codici": 38184
+   "codici": 42988
   }
  },
  "autori": {
@@ -8766,20 +8766,20 @@
   },
   "giappone": {
    "nome": "Giappone, scritture non librarie: tavolette di legno (mokkan) del Mokkanko di Nabunken e calchi di iscrizioni (takuhon) della National Diet Library e di Waseda",
-   "codici": 17347,
+   "codici": 22151,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
    "papiri": 0,
-   "epigrafi": 17347,
+   "epigrafi": 22151,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
    "con_autori": 0,
    "lingue": {
-    "ojp": 16479,
-    "ja": 866,
+    "ojp": 21239,
+    "ja": 910,
     "zh": 1,
     "?": 1
    },
@@ -8787,9 +8787,10 @@
    "prefissi": [
     "giap-"
    ],
-   "pezzi_voci": 22,
+   "pezzi_voci": 28,
    "indice": [
-    "indice/giappone-0.json"
+    "indice/giappone-0.json",
+    "indice/giappone-1.json"
    ]
   },
   "romani": {
@@ -9364,7 +9365,12 @@
   {
    "file": "indice/giappone-0.json",
    "fonte": "giappone",
-   "righe": 17347
+   "righe": 20000
+  },
+  {
+   "file": "indice/giappone-1.json",
+   "fonte": "giappone",
+   "righe": 2151
   },
   {
    "file": "indice/romani-0.json",
@@ -19807,7 +19813,7 @@
   189,
   108,
   22,
-  17341,
+  22145,
   8,
   4,
   1,
