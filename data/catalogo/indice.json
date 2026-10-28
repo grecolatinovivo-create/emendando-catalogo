@@ -1,6 +1,6 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T11:56:55.064Z",
+ "aggiornato": "2026-10-28T12:04:36.750Z",
  "totale": 587760,
  "con_autori": 32373,
  "miniati": 11291,
@@ -37,11 +37,11 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 103059
+   "codici": 103012
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 52398
+   "codici": 52447
   },
   "fr": {
    "nome": "francese",
@@ -49,7 +49,7 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 24958
+   "codici": 24956
   },
   "de": {
    "nome": "tedesco",
@@ -57,7 +57,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 23539
+   "codici": 23544
   },
   "he": {
    "nome": "ebraico",
@@ -179,13 +179,13 @@
    "nome": "armeno",
    "codici": 635
   },
-  "egy": {
-   "nome": "egiziano antico (geroglifico, ieratico, demotico)",
-   "codici": 571
-  },
   "arc": {
    "nome": "aramaico",
    "codici": 562
+  },
+  "egy": {
+   "nome": "egiziano antico (geroglifico, ieratico, demotico)",
+   "codici": 547
   },
   "ru": {
    "nome": "russo",
@@ -315,6 +315,10 @@
    "nome": "batak",
    "codici": 7
   },
+  "ett": {
+   "nome": "etrusco",
+   "codici": 7
+  },
   "be": {
    "nome": "be",
    "codici": 6
@@ -329,6 +333,10 @@
   },
   "peo": {
    "nome": "antico persiano",
+   "codici": 5
+  },
+  "xsa": {
+   "nome": "sudarabico antico",
    "codici": 5
   },
   "su": {
@@ -347,10 +355,6 @@
    "nome": "elamita",
    "codici": 4
   },
-  "xsa": {
-   "nome": "xsa",
-   "codici": 4
-  },
   "lzh": {
    "nome": "cinese classico",
    "codici": 3
@@ -367,12 +371,12 @@
    "nome": "lb",
    "codici": 3
   },
-  "ett": {
-   "nome": "etrusco",
-   "codici": 3
-  },
   "osc": {
    "nome": "osco",
+   "codici": 3
+  },
+  "xib": {
+   "nome": "iberico",
    "codici": 3
   },
   "nai": {
@@ -8626,13 +8630,16 @@
    "edizioni_principi": 0,
    "con_autori": 1,
    "lingue": {
-    "?": 54,
-    "la": 86,
-    "grc": 51,
-    "egy": 172,
+    "?": 103,
+    "grc": 49,
+    "la": 39,
     "arc": 8,
     "phn": 1,
-    "xsa": 3,
+    "xib": 3,
+    "xsa": 4,
+    "ar": 5,
+    "ett": 4,
+    "egy": 148,
     "akk": 632,
     "cop": 4,
     "he": 1,

@@ -249,20 +249,54 @@ export function tipoSf(m) {
     : /\bkudurru/i.test(x) ? "kudurru" : /\brune ?stone|\brunestone/i.test(x) ? "pietra runica" : null;
   return { tipo: "epigrafe", supporto: su };
 }
+// lingue del modello (dal 28 ottobre 2026): solo quando il nome, la descrizione o i tag nominano la lingua o la scrittura
+// («Greek», «Latin», «hieroglyphic», «cuneiform», «Kufic»…); «Roman», «Egypt» o «Byzantine» da soli non bastano (una dedica greca
+// a Nerone dal Fayum non è latina né egiziana). Eccezione: un'iscrizione o una lapide «romana» senza altre lingue nominate è latina.
 export function lingueSf(m) {
   const x = [m.n, m.d, (m.g || []).join(" ")].join(" ");
   const l = [];
-  if (/\blatin\b|\broman\b|\brömisch|\broman[oa]\b|\brzymsk/i.test(x)) l.push("la");
-  if (/\bgreek\b|\bgriech|\bgreca?\b|\bbyzant/i.test(x)) l.push("grc");
-  if (/\begypt|\bhieroglyph|\bhieratic|\bdemotic|\bpharaoh/i.test(x)) l.push("egy");
-  if (/\bcoptic/i.test(x)) l.push("cop");
-  if (/\bsumer/i.test(x)) l.push("sux");
-  if (/\bakkad|\bbabylon|\bassyr|\bcuneiform/i.test(x) && !/\bsumer/i.test(x)) l.push("akk");
-  if (/\baramaic|\bpalmyr|\bnabat/i.test(x)) l.push("arc");
+  if (/\blatin[aeo]?\b|\blateinisch|\bllat[ií]\b/i.test(x)) l.push("la");
+  if (/\bgreek\b|\bgriechisch|\bgrec[ao]?\b|\bgrega\b/i.test(x)) l.push("grc");
+  if (/\bhieroglyph|\bhieratic|\bdemotic|\bgerogl/i.test(x)) l.push("egy");
+  if (/\bcoptic|\bkoptisch/i.test(x)) l.push("cop");
+  if (/\bsumerian/i.test(x)) l.push("sux");
+  if (/\bakkadian|\bcuneiform|\bbabylonian|\bassyrian/i.test(x) && !/\bsumerian/i.test(x)) l.push("akk");
+  if (/\baramaic|\bnabat(?:a|ae)an|\bpalmyrene/i.test(x)) l.push("arc");
   if (/\bhebrew|\btorah/i.test(x)) l.push("he");
-  if (/\bphoenic|\bpunic/i.test(x)) l.push("phn");
-  if (/\bsouth arabian|\bsabaean/i.test(x)) l.push("xsa");
+  if (/\bphoenician|\bpunic|\bammonite/i.test(x)) l.push("phn");
+  if (/\bsouth[- ]arabian|\bsabaean|\bmusnad/i.test(x)) l.push("xsa");
+  if (/\barabic|\bkufic/i.test(x)) l.push("ar");
+  if (/\betruscan|\betrusc[ao]/i.test(x)) l.push("ett");
+  if (/\biberi(?:an|c)\b|\bib[eè]ric[ao]?\b/i.test(x)) l.push("xib");
+  if (!l.length && /\broman[oa]?\b|\bromà\b|\brömisch/i.test(m.n || "") && /\binscri|\btombstone|\bepitaph|\bmilestone|\baltar|\bara\b|\bstel[ae]|\bgrabstein|\biscrizion/i.test(m.n || "")) l.push("la");
   return [...new Set(l)];
+}
+// datazione del modello: solo se la descrizione la dice («1st–2nd century CE», «47–46 BCE», «c. 664–525 BC», «AD 14», «3rd century AD»)
+const ORD = "(\\d{1,2})(?:st|nd|rd|th)";
+export function datazioneSf(m) {
+  const d = String(m.d || "").replace(/\s+/g, " ").slice(0, 1500);
+  const bc = s => /\bB\.?C\.?(?:E\b)?|\bBCE\b/.test(s || "");
+  let r = new RegExp(`\\b${ORD}(?:\\s*(?:[–-]|and|or|to)\\s*(?:the\\s+)?(?:early|late|mid-?|middle of the)?\\s*${ORD})?\\s+centur(?:y|ies)\\s*(B\\.?C\\.?E?\\.?|BCE|BC|A\\.?D\\.?|AD|CE)?`, "i").exec(d);
+  if (r) {
+    const a = +r[1], b = +(r[2] || r[1]), av = bc(r[3]);
+    if (a >= 1 && b >= a - 0 && b <= 21 || av) {
+      const sec = av ? null : [a, Math.max(a, b)];
+      if (sec && sec[1] > 15) return null;
+      const t = a === b ? `${a}° secolo` : `${a}°-${b}° secolo`;
+      return { datazione: t + (av ? " a.C." : " d.C."), secolo: sec };
+    }
+  }
+  r = /\b(?:c(?:a|irca)?\.\s*)?(\d{1,4})\s*[–-]\s*(\d{1,4})\s*(BCE|BC|B\.C\.|CE|AD|A\.D\.)/.exec(d)
+    || /\b(?:c(?:a|irca)?\.\s*)?(\d{1,4})()\s*(BCE|BC|B\.C\.)/.exec(d);
+  if (r) {
+    const av = bc(r[3]), a = +r[1], b = +(r[2] || r[1]);
+    if (!av && Math.max(a, b) > 1500) return null;
+    const dn = av ? [-a, -b] : [a, b];
+    return { datazione: dataItaliana(dn), secolo: secoloDa(dn) };
+  }
+  r = /\b(?:AD|A\.D\.)\s?(\d{1,4})(?:\s*[–-]\s*(\d{1,4}))?\b/.exec(d);
+  if (r && +(r[2] || r[1]) <= 1500) { const dn = [+r[1], +(r[2] || r[1])]; return { datazione: dataItaliana(dn), secolo: secoloDa(dn) }; }
+  return null;
 }
 // riferimenti epigrafici nella descrizione: numeri HD dell'EDH ed edizioni CIL, AE, RIB (per collegare il modello alla voce dell'EDH)
 const ROMANI = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6, VII: 7, VIII: 8, IX: 9, X: 10, XI: 11, XII: 12, XIII: 13, XIV: 14, XV: 15, XVI: 16, XVII: 17, XVIII: 18 };
@@ -401,7 +435,7 @@ export function recordSketchfab(uid, m) {
   const r = {
     fonte: "musei", id: "mu-3d-" + uid, tipo: t.tipo === "codice" ? undefined : t.tipo, citta, biblioteca: museo,
     // segnatura (titolo della voce nell'elenco, dal 28 ottobre 2026): nome del modello e museo, non più «Sketchfab <uid>»
-    segnatura: segnaturaSf(uid, m, museo), titolo: m.n || null, datazione: null, secolo: null, lingue: lingueSf(m),
+    segnatura: segnaturaSf(uid, m, museo), titolo: m.n || null, datazione: (datazioneSf(m) || {}).datazione || null, secolo: (datazioneSf(m) || {}).secolo || null, lingue: lingueSf(m),
     manifest: `${RAW}musei-3d/${uid}.json`, pagina: `https://sketchfab.com/3d-models/${uid}`, immagini: 1,
     licenza: `Modello 3D su Sketchfab di ${m.un || m.u} (${LIC_SF(m)}); immagine: anteprima del modello su Sketchfab`,
     modello3d: modello3d(uid, m),

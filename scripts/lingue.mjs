@@ -21,7 +21,7 @@ export const NOMI_LINGUE = {
   // epigrafi (dal 28 ottobre 2026): altre lingue antiche delle iscrizioni
   akk: "accadico", sux: "sumerico", phn: "fenicio", xpu: "punico", arc: "aramaico", ett: "etrusco", osc: "osco", xlc: "licio", peo: "antico persiano", elx: "elamita",
   // Giappone e Asia orientale, scritture non librarie (dal 28 ottobre 2026): mokkan e takuhon
-  ojp: "giapponese antico", lzh: "cinese classico",
+  ojp: "giapponese antico", lzh: "cinese classico", xsa: "sudarabico antico", xib: "iberico",
   xx: "altre lingue",
 };
 
