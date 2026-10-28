@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T22:12:27.801Z",
- "totale": 634556,
- "con_autori": 32784,
- "miniati": 11357,
+ "aggiornato": "2026-10-28T22:37:35.172Z",
+ "totale": 635370,
+ "con_autori": 32815,
+ "miniati": 11358,
  "musica": 21303,
- "manoscritti": 546799,
+ "manoscritti": 547613,
  "papiri": 33914,
  "epigrafi": 38184,
  "stampe_antiche": 15659,
@@ -37,11 +37,11 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 107935
+   "codici": 107938
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 54572
+   "codici": 54742
   },
   "grc": {
    "nome": "greco",
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 30774
+   "codici": 30775
   },
   "fr": {
    "nome": "francese",
@@ -61,11 +61,11 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 20787
+   "codici": 20989
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 19855
+   "codici": 19930
   },
   "pi": {
    "nome": "pali",
@@ -121,7 +121,7 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 5116
+   "codici": 5170
   },
   "pt": {
    "nome": "portoghese",
@@ -147,13 +147,13 @@
    "nome": "egiziano antico (geroglifico, ieratico, demotico)",
    "codici": 2370
   },
-  "gez": {
-   "nome": "etiopico",
-   "codici": 1292
-  },
   "syr": {
    "nome": "siriaco",
-   "codici": 1274
+   "codici": 1536
+  },
+  "gez": {
+   "nome": "etiopico",
+   "codici": 1339
   },
   "cs": {
    "nome": "ceco",
@@ -435,25 +435,25 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 8212
+   "codici": 8213
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7784
+   "codici": 7787
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 16040
+   "codici": 16067
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 3501
+   "codici": 3502
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 541484
+   "codici": 542298
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -533,7 +533,7 @@
    "nome": "Orazio",
    "latino": "Horatius",
    "categoria": "classico-latino",
-   "codici": 320
+   "codici": 321
   },
   "tibullo": {
    "nome": "Tibullo",
@@ -1025,7 +1025,7 @@
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 2466
+   "codici": 2468
   },
   "teofrasto": {
    "nome": "Teofrasto",
@@ -1187,13 +1187,13 @@
    "nome": "Galeno",
    "latino": "Galenus",
    "categoria": "classico-greco",
-   "codici": 581
+   "codici": 582
   },
   "ippocrate": {
    "nome": "Ippocrate",
    "latino": "Hippocrates",
    "categoria": "classico-greco",
-   "codici": 460
+   "codici": 461
   },
   "tolomeo": {
    "nome": "Tolomeo",
@@ -1295,7 +1295,7 @@
    "nome": "Porfirio",
    "latino": "Porphyrius",
    "categoria": "classico-greco",
-   "codici": 281
+   "codici": 282
   },
   "proclo": {
    "nome": "Proclo",
@@ -1439,7 +1439,7 @@
    "nome": "Gregorio di Nazianzo",
    "latino": "Gregorius Nazianzenus",
    "categoria": "cristiano",
-   "codici": 549
+   "codici": 550
   },
   "giovanni-crisostomo": {
    "nome": "Giovanni Crisostomo",
@@ -1451,7 +1451,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7505
+   "codici": 7528
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1523,13 +1523,13 @@
    "nome": "Atanasio",
    "latino": "Athanasius",
    "categoria": "cristiano",
-   "codici": 414
+   "codici": 415
   },
   "gregorio-nisseno": {
    "nome": "Gregorio di Nissa",
    "latino": "Gregorius Nyssenus",
    "categoria": "cristiano",
-   "codici": 281
+   "codici": 282
   },
   "giovanni-damasceno": {
    "nome": "Giovanni Damasceno",
@@ -1541,7 +1541,7 @@
    "nome": "Dionigi Areopagita",
    "latino": "Dionysius Areopagita",
    "categoria": "cristiano",
-   "codici": 163
+   "codici": 164
   },
   "isidoro": {
    "nome": "Isidoro di Siviglia",
@@ -1583,7 +1583,7 @@
    "nome": "Tommaso d'Aquino",
    "latino": "Thomas de Aquino",
    "categoria": "medievale",
-   "codici": 748
+   "codici": 749
   },
   "bernardo": {
    "nome": "Bernardo di Chiaravalle",
@@ -8851,33 +8851,33 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 29720,
+   "codici": 30534,
    "carte": 2,
    "carte_stampa": 0,
-   "miniati": 4,
+   "miniati": 5,
    "musica": 29,
    "papiri": 0,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 1349,
+   "con_autori": 1380,
    "lingue": {
-    "la": 20983,
+    "la": 20986,
     "it": 470,
-    "?": 3715,
+    "?": 3885,
     "grc": 2983,
     "fr": 24,
-    "xx": 25,
-    "syr": 46,
+    "xx": 100,
+    "syr": 308,
     "cop": 213,
-    "ar": 491,
+    "ar": 492,
     "th": 1,
     "hy": 127,
-    "he": 527,
-    "gez": 6,
+    "he": 729,
+    "gez": 53,
     "pit": 4,
-    "fa": 31,
+    "fa": 85,
     "tr": 11,
     "cu": 53,
     "de": 3,
@@ -8888,7 +8888,7 @@
    "prefissi": [
     "bav-"
    ],
-   "pezzi_voci": 38,
+   "pezzi_voci": 39,
    "indice": [
     "indice/vaticana-0.json",
     "indice/vaticana-1.json"
@@ -9384,7 +9384,7 @@
   {
    "file": "indice/vaticana-1.json",
    "fonte": "vaticana",
-   "righe": 9720
+   "righe": 10534
   }
  ],
  "biblioteche_tipo": [
@@ -18987,7 +18987,7 @@
   3,
   2,
   3,
-  29725,
+  30539,
   1,
   43,
   8,

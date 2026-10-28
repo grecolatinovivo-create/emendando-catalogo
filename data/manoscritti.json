@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T20:09:06.217Z",
+ "aggiornato": "2026-10-28T22:37:35.172Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -419,11 +419,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 755,
+   "codici": 759,
    "esito": "ok"
   }
  },
- "totale": 12759,
+ "totale": 12763,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -61081,6 +61081,115 @@
    "immagini": null
   },
   {
+   "id": "bav-vat-ebr-426",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. ebr. 426",
+   "datazione": "Late 14th century (ff. 1–101). 1371 (ff. 102–176)",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In Hippocratis aphorismos commentarii. Ebraico",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Galenus, Claudius, 129-199»"
+    },
+    {
+     "id": "ippocrate",
+     "autore": "Ippocrate",
+     "latino": "Hippocrates",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «In Hippocratis aphorismos commentarii. Ebraico»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.426/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.ebr.426",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-ebr-556",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. ebr. 556",
+   "datazione": "15th century",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Commentary on Averroes' Middle Commentary on the Nichomachean Ethics by Aristotle",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Commentary on Averroes' Middle Commentary on the Nichomachean Ethics by Aristotle»"
+    },
+    {
+     "id": "tommaso-aquino",
+     "autore": "Tommaso d'Aquino",
+     "latino": "Thomas de Aquino",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "autore: «Thomas Aquinas, s., c. 1225-1274»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.556/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.ebr.556",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-estr-or-55",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. estr. or. 55",
+   "datazione": "sec. XVIII",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "xx"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Carte e appunti appartenenti al P. Carlo Orazio da Castorano.",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Carte e appunti appartenenti al P. Carlo Orazio da Castorano.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.estr.or.55/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.estr.or.55",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
    "id": "bav-vat-gr-65-pt-1",
    "fonte": "vaticana",
    "biblioteca": "Biblioteca Apostolica Vaticana",
@@ -66425,6 +66534,42 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.11559/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Vat.lat.11559",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-sir-158",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. sir. 158",
+   "datazione": "IX c.",
+   "secolo": null,
+   "lingue": [
+    "syr"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Philosophical Works",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Porphyrius Tyrius ; Aristóteles ; Iacobus Edessenus»"
+    },
+    {
+     "id": "porfirio",
+     "autore": "Porfirio",
+     "latino": "Porphyrius",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Porphyrius Tyrius ; Aristóteles ; Iacobus Edessenus»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.sir.158/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.sir.158",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },
