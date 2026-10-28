@@ -1,13 +1,13 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T11:33:30.362Z",
- "totale": 586448,
+ "aggiornato": "2026-10-28T11:42:08.663Z",
+ "totale": 586747,
  "con_autori": 32373,
  "miniati": 11291,
  "musica": 21300,
  "manoscritti": 543480,
  "papiri": 13195,
- "epigrafi": 14114,
+ "epigrafi": 14413,
  "stampe_antiche": 15659,
  "incunaboli": 15587,
  "edizioni_principi": 172,
@@ -33,7 +33,7 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 177161
+   "codici": 177181
   },
   "la": {
    "nome": "latino",
@@ -41,7 +41,7 @@
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 51640
+   "codici": 51641
   },
   "fr": {
    "nome": "francese",
@@ -77,7 +77,7 @@
   },
   "zh": {
    "nome": "cinese",
-   "codici": 13123
+   "codici": 13121
   },
   "lo": {
    "nome": "lao",
@@ -202,6 +202,10 @@
   "vi": {
    "nome": "vietnamita (hán-nôm)",
    "codici": 281
+  },
+  "ojp": {
+   "nome": "giapponese antico",
+   "codici": 277
   },
   "th": {
    "nome": "thailandese",
@@ -343,6 +347,10 @@
    "nome": "elamita",
    "codici": 4
   },
+  "lzh": {
+   "nome": "cinese classico",
+   "codici": 3
+  },
   "hr": {
    "nome": "hr",
    "codici": 3
@@ -465,7 +473,7 @@
   },
   "epigrafe": {
    "nome": "epigrafi",
-   "codici": 14114
+   "codici": 14413
   }
  },
  "autori": {
@@ -3594,6 +3602,7 @@
   "Istituto nazionale di letteratura giapponese, libri rari (国文学研究資料館 貴重書), Tachikawa",
   "Istituto nazionale di letteratura giapponese, scritti della famiglia Yoshida del feudo di Usuki (国文学研究資料館 臼杵藩吉田家歴代詩文), Tachikawa",
   "Istituto nazionale di lingua giapponese e linguistica (国立国語研究所), Tachikawa",
+  "Istituto nazionale di ricerca sui beni culturali di Nara (Nabunken)",
   "Istituto superiore di tecnologia di Toyota (豊田工業高等専門学校図書館)",
   "Istria, Muzeul",
   "Italian translation of the Siddur JER NLI Var. (copia digitale della National Library of Israel)",
@@ -4169,6 +4178,7 @@
   "National Archaeological Museum of Athens",
   "National Archaeological Museum of the Marches",
   "National Diet Library (国立国会図書館), Tokyo",
+  "National Diet Library, Tokyo",
   "National Gallery of Victoria, Cambridge",
   "National Libary of Romania - Batthyaneum, Alba Iulia",
   "National Library of Finland, Fragmenta membranea collection, Helsinki",
@@ -6938,7 +6948,7 @@
     "tr": 10,
     "hy": 1,
     "fr": 13,
-    "zh": 3,
+    "lzh": 3,
     "mnc": 1,
     "en": 54,
     "la": 81,
@@ -8636,6 +8646,34 @@
     "indice/musei-0.json"
    ]
   },
+  "giappone": {
+   "nome": "Giappone, scritture non librarie: tavolette di legno (mokkan) del Mokkanko di Nabunken e calchi di iscrizioni (takuhon) della National Diet Library e di Waseda",
+   "codici": 299,
+   "carte": 0,
+   "carte_stampa": 0,
+   "miniati": 0,
+   "musica": 0,
+   "papiri": 0,
+   "epigrafi": 299,
+   "incunaboli": 0,
+   "stampe": 0,
+   "edizioni_principi": 0,
+   "con_autori": 0,
+   "lingue": {
+    "ojp": 277,
+    "ja": 20,
+    "zh": 1,
+    "?": 1
+   },
+   "esito": "ok",
+   "prefissi": [
+    "giap-"
+   ],
+   "pezzi_voci": 1,
+   "indice": [
+    "indice/giappone-0.json"
+   ]
+  },
   "epibrowser": {
    "nome": "Epigrafi dal browser: J. Paul Getty Museum e Yale University Art Gallery (immagini CC0, manifesti IIIF dei musei; elenchi raccolti dal browser)",
    "codici": 289,
@@ -9169,6 +9207,11 @@
    "file": "indice/musei-0.json",
    "fonte": "musei",
    "righe": 999
+  },
+  {
+   "file": "indice/giappone-0.json",
+   "fonte": "giappone",
+   "righe": 299
   },
   {
    "file": "indice/epibrowser-0.json",
@@ -10262,6 +10305,7 @@
   "biblioteca",
   "biblioteca",
   "biblioteca",
+  "museo",
   "biblioteca",
   "museo",
   "biblioteca",
@@ -10837,6 +10881,7 @@
   "museo",
   "museo",
   "biblioteca",
+  "museo",
   "biblioteca",
   "biblioteca",
   "biblioteca",
@@ -12197,7 +12242,7 @@
  ],
  "totali": {
   "biblioteche": 1438,
-  "musei": 1568,
+  "musei": 1570,
   "senza_luogo": 1899
  },
  "luoghi": {
@@ -15883,6 +15928,7 @@
   "jp-tachikawa",
   "jp-tachikawa",
   "jp-tachikawa",
+  "jp-nara",
   "jp-toyota",
   null,
   "gerusalemme",
@@ -16457,6 +16503,7 @@
   null,
   null,
   null,
+  "tokyo",
   "tokyo",
   "cambridge",
   "alba-iulia",
@@ -18892,6 +18939,7 @@
   189,
   108,
   22,
+  293,
   8,
   4,
   1,
@@ -19467,6 +19515,7 @@
   1,
   2,
   37950,
+  6,
   1,
   1,
   1617,

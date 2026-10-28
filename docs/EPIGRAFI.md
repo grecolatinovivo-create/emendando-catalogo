@@ -28,7 +28,7 @@ Senza CORS la foto si vede, ma il browser non lascia leggere i pixel.
 | Museo Egizio, Turin Papyrus Online Platform, parte pubblica (fonte «musei», tipo «papiro») | 128 papiri | 128 (131 pubblici, 3 disegni senza scrittura) | letta dal browser, file `data/musei-tpop.json` | sì (CORS aperto, verificato) | foto CC0, schede degli editori da citare | CC0 |
 | Modelli 3D di Sketchfab (fonte «musei») | 871 | più di 871: continuano le ricerche negli account grandi | API pubblica di ricerca e oEmbed; anteprima come immagine | sì (`media.sketchfab.com` con CORS aperto) | descrizioni degli autori | licenza di ogni modello, solo incorporato |
 
-Totale epigrafi nel catalogo il 28 ottobre 2026: 12.955 dalla fonte «epigrafi», 870 dalla fonte «musei» (modelli 3D) e 289 dalla fonte «epibrowser» (Getty 82, Yale University Art Gallery 207, raccolte dal browser), 14.114 in tutto. Lingue: latino 12.438, greco 479, poi aramaico, copto, egiziano, punico, accadico, fenicio, sumerico, elamita e antico persiano (da Wikidata e dal Met).
+Totale epigrafi nel catalogo il 28 ottobre 2026: 12.955 dalla fonte «epigrafi», 870 dalla fonte «musei» (modelli 3D), 289 dalla fonte «epibrowser» (Getty 82, Yale University Art Gallery 207, raccolte dal browser) e 299 dalla fonte «giappone» (mokkan e takuhon), 14.413 in tutto. Lingue: latino 12.438, greco 479, poi aramaico, copto, egiziano, punico, accadico, fenicio, sumerico, elamita e antico persiano (da Wikidata e dal Met).
 La corsia gira a ruota finché non sono lette tutte le schede del Met, poi ogni notte alle 03:55 UTC (elenchi ogni 30 giorni).
 
 Cosa c'è in ogni scheda («epigrafe» nella voce completa): edizione (CIL, AE e il primo rimando della bibliografia EDH), numero EDH e numero Trismegistos, luogo di ritrovamento (antico e moderno) e provincia romana, luogo di conservazione (museo o collezione, con la città per la mappa quando la scheda la dà), datazione, supporto e materiale, genere dell'iscrizione (sepolcrale, votiva, onoraria, miliario…), testo trascritto dove la licenza lo consente (EDH, CC BY-SA 4.0, al massimo 800 caratteri), licenza dei metadati («licenza_metadati»; «aperta: true» per i dati che devono restare aperti).
@@ -162,7 +162,7 @@ Da chiedere con permesso:
 - **EDB, Epigraphic Database Bari** (www.edb.uniba.it): robots.txt aperto; 42.333 schede e 11.636 immagini. Dati CC BY-SA 4.0 («The data related to the epigraphs are released under the CC-by-SA 4.0 license»), ma il sito è «All rights reserved» e le foto vengono dall'archivio della Pontificia Commissione di Archeologia Sacra: senza permesso non entrano. Iscrizioni cristiane di Roma, latine e greche.
 - **Louvre** (collections.louvre.fr): testi delle schede in Licence Ouverte Etalab (aperti); foto gratuite solo per gli usi elencati (museali, didattici, scientifici, comprese le «pubblicazioni digitali scientifiche e didattiche» con credito e link), a pagamento gli altri. Molte iscrizioni greche: vale la pena chiedere se il visore di Emendando rientra.
 
-Nuovo conteggio delle epigrafi nel catalogo (indice del 28 ottobre 2026, dopo `node scripts/raccogli.mjs --solo-costruisci`): 14.114; greche 479, latine 12.438.
+Nuovo conteggio delle epigrafi nel catalogo (indice del 28 ottobre 2026, dopo `node scripts/raccogli.mjs --solo-costruisci`, compresi i 299 mokkan e takuhon della fonte «giappone»): 14.413; greche 479, latine 12.438.
 
 ## RTI e 3D
 

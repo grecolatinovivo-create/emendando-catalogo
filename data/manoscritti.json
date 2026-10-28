@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T11:33:30.362Z",
+ "aggiornato": "2026-10-28T11:42:08.663Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -399,6 +399,11 @@
   },
   "musei": {
    "nome": "Musei: oggetti scritti del Museo Egizio di Torino (immagini CC0) e modelli 3D di oggetti scritti su Sketchfab",
+   "codici": 0,
+   "esito": "ok"
+  },
+  "giappone": {
+   "nome": "Giappone, scritture non librarie: tavolette di legno (mokkan) del Mokkanko di Nabunken e calchi di iscrizioni (takuhon) della National Diet Library e di Waseda",
    "codici": 0,
    "esito": "ok"
   },
