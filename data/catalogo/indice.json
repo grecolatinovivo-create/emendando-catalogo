@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T00:04:59.330Z",
- "totale": 555647,
- "con_autori": 30603,
+ "aggiornato": "2026-10-28T02:32:34.717Z",
+ "totale": 556486,
+ "con_autori": 30622,
  "miniati": 11278,
  "musica": 21286,
- "manoscritti": 544862,
+ "manoscritti": 545701,
  "stampe_antiche": 10785,
  "incunaboli": 10732,
  "edizioni_principi": 109,
@@ -67,7 +67,7 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 15317
+   "codici": 16156
   },
   "cu": {
    "nome": "slavo ecclesiastico",
@@ -381,11 +381,11 @@
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 6914
+   "codici": 6920
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15385
+   "codici": 15398
   },
   "medievale": {
    "nome": "autori medievali",
@@ -395,7 +395,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 539547
+   "codici": 540386
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -845,7 +845,7 @@
    "nome": "Omero",
    "latino": "Homerus",
    "categoria": "classico-greco",
-   "codici": 367
+   "codici": 368
   },
   "esiodo": {
    "nome": "Esiodo",
@@ -947,13 +947,13 @@
    "nome": "Senofonte",
    "latino": "Xenophon",
    "categoria": "classico-greco",
-   "codici": 134
+   "codici": 135
   },
   "platone": {
    "nome": "Platone",
    "latino": "Plato",
    "categoria": "classico-greco",
-   "codici": 347
+   "codici": 348
   },
   "aristotele": {
    "nome": "Aristotele",
@@ -1103,7 +1103,7 @@
    "nome": "Oppiano",
    "latino": "Oppianus",
    "categoria": "classico-greco",
-   "codici": 47
+   "codici": 48
   },
   "quinto-smirneo": {
    "nome": "Quinto Smirneo",
@@ -1133,7 +1133,7 @@
    "nome": "Tolomeo",
    "latino": "Ptolemaeus",
    "categoria": "classico-greco",
-   "codici": 281
+   "codici": 282
   },
   "euclide": {
    "nome": "Euclide",
@@ -1235,7 +1235,7 @@
    "nome": "Proclo",
    "latino": "Proclus",
    "categoria": "classico-greco",
-   "codici": 194
+   "codici": 195
   },
   "giamblico": {
    "nome": "Giamblico",
@@ -1301,7 +1301,7 @@
    "nome": "Flavio Giuseppe",
    "latino": "Flavius Iosephus",
    "categoria": "classico-greco",
-   "codici": 261
+   "codici": 262
   },
   "diogene-laerzio": {
    "nome": "Diogene Laerzio",
@@ -1361,19 +1361,19 @@
    "nome": "Gregorio Magno",
    "latino": "Gregorius Magnus",
    "categoria": "cristiano",
-   "codici": 1001
+   "codici": 1002
   },
   "basilio": {
    "nome": "Basilio Magno",
    "latino": "Basilius Magnus",
    "categoria": "cristiano",
-   "codici": 595
+   "codici": 597
   },
   "gregorio-nazianzeno": {
    "nome": "Gregorio di Nazianzo",
    "latino": "Gregorius Nazianzenus",
    "categoria": "cristiano",
-   "codici": 531
+   "codici": 534
   },
   "giovanni-crisostomo": {
    "nome": "Giovanni Crisostomo",
@@ -1385,7 +1385,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7181
+   "codici": 7188
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1463,7 +1463,7 @@
    "nome": "Gregorio di Nissa",
    "latino": "Gregorius Nyssenus",
    "categoria": "cristiano",
-   "codici": 271
+   "codici": 272
   },
   "giovanni-damasceno": {
    "nome": "Giovanni Damasceno",
@@ -6713,7 +6713,7 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 23063,
+   "codici": 23902,
    "carte": 2,
    "carte_stampa": 0,
    "miniati": 4,
@@ -6721,13 +6721,13 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 996,
+   "con_autori": 1015,
    "lingue": {
     "la": 20435,
     "fr": 24,
     "it": 264,
     "?": 1681,
-    "grc": 624,
+    "grc": 1463,
     "hy": 1,
     "xx": 18,
     "de": 3,
@@ -6740,7 +6740,7 @@
    "prefissi": [
     "bav-"
    ],
-   "pezzi_voci": 29,
+   "pezzi_voci": 30,
    "indice": [
     "indice/vaticana-0.json",
     "indice/vaticana-1.json"
@@ -7201,7 +7201,7 @@
   {
    "file": "indice/vaticana-1.json",
    "fonte": "vaticana",
-   "righe": 3063
+   "righe": 3902
   }
  ],
  "luoghi": {
@@ -11260,7 +11260,7 @@
   1,
   2,
   3,
-  23068,
+  23907,
   1,
   43,
   8,

@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T00:04:59.330Z",
+ "aggiornato": "2026-10-28T02:32:34.717Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -389,11 +389,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 544,
+   "codici": 550,
    "esito": "ok"
   }
  },
- "totale": 12570,
+ "totale": 12576,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -41717,6 +41717,72 @@
    "immagini": null
   },
   {
+   "id": "bav-pal-gr-14",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. gr. 14",
+   "datazione": "sec. X",
+   "secolo": [
+    10,
+    10
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Antiquitates Iudaicae libri XI-XVII",
+   "autori": [
+    {
+     "id": "flavio-giuseppe",
+     "autore": "Flavio Giuseppe",
+     "latino": "Flavius Iosephus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Antichità giudaiche"
+     ],
+     "corrispondenza": "autore: «Iosephus, Flavius, sec. I»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.gr.14/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.gr.14",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-pal-gr-140",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Pal. gr. 140",
+   "datazione": "Sec. XIV",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Hellenica",
+   "autori": [
+    {
+     "id": "senofonte",
+     "autore": "Senofonte",
+     "latino": "Xenophon",
+     "categoria": "classico-greco",
+     "opere": [
+      "Elleniche"
+     ],
+     "corrispondenza": "autore: «Xenophon, 427/26-c. 353 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Pal.gr.140/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Pal.gr.140",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
    "id": "bav-pal-lat-264",
    "fonte": "vaticana",
    "biblioteca": "Biblioteca Apostolica Vaticana",
@@ -55275,6 +55341,142 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.1296.pt.3/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.1296.pt.3",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-1594",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 1594",
+   "datazione": "sec. IX",
+   "secolo": [
+    9,
+    9
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Claudii Ptolemaei Opera",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Claudii Ptolemaei Opera»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.1594/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.1594",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-1627",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 1627",
+   "datazione": "1477",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Odyssea",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Odissea"
+     ],
+     "corrispondenza": "autore: «Homerus, sec. VIII a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.1627/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.1627",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-1758",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 1758",
+   "datazione": "sec. XIV",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Oppiani Halieutica",
+   "autori": [
+    {
+     "id": "oppiano",
+     "autore": "Oppiano",
+     "latino": "Oppianus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Halieutica"
+     ],
+     "corrispondenza": "autore: «Oppianus Anazarbensis, m. 211-212»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.1758/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.1758",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-gr-2197",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. gr. 2197",
+   "datazione": "sec. IX p.m. (probabiliter 850-875)",
+   "secolo": [
+    9,
+    9
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "In Platonis Rempublicam commentarii",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «In Platonis Rempublicam commentarii»"
+    },
+    {
+     "id": "proclo",
+     "autore": "Proclo",
+     "latino": "Proclus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Proclus Atheniensis, 410-c. 485»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.gr.2197/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.gr.2197",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },
