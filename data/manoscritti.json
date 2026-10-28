@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T08:18:18.166Z",
+ "aggiornato": "2026-10-28T09:22:53.840Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -389,6 +389,11 @@
   },
   "papiri": {
    "nome": "Papiri: Michigan, Yale, Duke, Princeton, Vienna (ÖNB), Colonia e Berkeley, con le schede di papyri.info",
+   "codici": 0,
+   "esito": "ok"
+  },
+  "epigrafi": {
+   "nome": "Epigrafi: Epigraphic Database Heidelberg (foto IIIF di heidICON), The Metropolitan Museum of Art e Wikidata con Wikimedia Commons",
    "codici": 0,
    "esito": "ok"
   },
