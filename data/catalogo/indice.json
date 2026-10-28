@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T19:55:09.931Z",
- "totale": 623513,
- "con_autori": 32686,
+ "aggiornato": "2026-10-28T20:09:06.217Z",
+ "totale": 624349,
+ "con_autori": 32702,
  "miniati": 11309,
  "musica": 21303,
- "manoscritti": 545963,
+ "manoscritti": 546799,
  "papiri": 28785,
  "epigrafi": 33106,
  "stampe_antiche": 15659,
@@ -53,7 +53,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 27895
+   "codici": 28250
   },
   "de": {
    "nome": "tedesco",
@@ -61,7 +61,7 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 20308
+   "codici": 20712
   },
   "xx": {
    "nome": "altre lingue",
@@ -125,7 +125,7 @@
   },
   "cop": {
    "nome": "copto",
-   "codici": 4783
+   "codici": 4817
   },
   "ca": {
    "nome": "catalano",
@@ -179,13 +179,13 @@
    "nome": "svedese",
    "codici": 926
   },
+  "hy": {
+   "nome": "armeno",
+   "codici": 679
+  },
   "akk": {
    "nome": "accadico",
    "codici": 678
-  },
-  "hy": {
-   "nome": "armeno",
-   "codici": 636
   },
   "arc": {
    "nome": "aramaico",
@@ -439,11 +439,11 @@
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7744
+   "codici": 7750
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15985
+   "codici": 15995
   },
   "medievale": {
    "nome": "autori medievali",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 540648
+   "codici": 541484
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -1025,7 +1025,7 @@
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 2462
+   "codici": 2466
   },
   "teofrasto": {
    "nome": "Teofrasto",
@@ -1199,7 +1199,7 @@
    "nome": "Tolomeo",
    "latino": "Ptolemaeus",
    "categoria": "classico-greco",
-   "codici": 310
+   "codici": 312
   },
   "euclide": {
    "nome": "Euclide",
@@ -1451,7 +1451,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7454
+   "codici": 7464
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -8851,7 +8851,7 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 28884,
+   "codici": 29720,
    "carte": 2,
    "carte_stampa": 0,
    "miniati": 4,
@@ -8861,7 +8861,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 1333,
+   "con_autori": 1349,
    "lingue": {
     "la": 20983,
     "it": 470,
@@ -8870,11 +8870,11 @@
     "fr": 24,
     "xx": 25,
     "syr": 46,
-    "cop": 179,
-    "ar": 136,
+    "cop": 213,
+    "ar": 491,
     "th": 1,
-    "hy": 84,
-    "he": 123,
+    "hy": 127,
+    "he": 527,
     "gez": 6,
     "pit": 4,
     "fa": 31,
@@ -8888,7 +8888,7 @@
    "prefissi": [
     "bav-"
    ],
-   "pezzi_voci": 37,
+   "pezzi_voci": 38,
    "indice": [
     "indice/vaticana-0.json",
     "indice/vaticana-1.json"
@@ -9384,7 +9384,7 @@
   {
    "file": "indice/vaticana-1.json",
    "fonte": "vaticana",
-   "righe": 8884
+   "righe": 9720
   }
  ],
  "biblioteche_tipo": [
@@ -18987,7 +18987,7 @@
   3,
   2,
   3,
-  28889,
+  29725,
   1,
   43,
   8,

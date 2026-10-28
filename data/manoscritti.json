@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T17:24:56.310Z",
+ "aggiornato": "2026-10-28T20:09:06.217Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -419,11 +419,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 749,
+   "codici": 755,
    "esito": "ok"
   }
  },
- "totale": 12753,
+ "totale": 12759,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -60882,6 +60882,201 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Urb.lat.1324/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Urb.lat.1324",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-ebr-342",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. ebr. 342",
+   "datazione": "1488 (ff. 1–310). (ff. 311–399)",
+   "secolo": [
+    4,
+    15
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Supercommentary on Averroes' compendium of Aristotle's Physics",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Fisica"
+     ],
+     "corrispondenza": "titolo: «Supercommentary on Averroes' compendium of Aristotle's Physics»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.342/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.ebr.342",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-ebr-350",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. ebr. 350",
+   "datazione": "Late 15th century",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Supercommentary on the Middle Commentary by Averroes on Aristotle's Analytica Posteriora",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Organon"
+     ],
+     "corrispondenza": "titolo: «Supercommentary on the Middle Commentary by Averroes on Aristotle's Analytica Posteriora»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.350/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.ebr.350",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-ebr-352",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. ebr. 352",
+   "datazione": "Ethica Nicomachea",
+   "secolo": null,
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ethica Nicomachea. Ebraico",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Etica Nicomachea"
+     ],
+     "corrispondenza": "autore: «Aristoteles, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.352/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.ebr.352",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-ebr-378",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. ebr. 378",
+   "datazione": "Mid-15th century",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Meteorologica. Arabo",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Meteorologica"
+     ],
+     "corrispondenza": "autore: «Aristoteles, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.378/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.ebr.378",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-ebr-384-pt-2",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. ebr. 384 pt. 2",
+   "datazione": "15th century",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Almagestum. Ebraico",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Almagesto"
+     ],
+     "corrispondenza": "titolo: «Almagestum. Ebraico»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.384.pt.2/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.ebr.384.pt.2",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-vat-ebr-392",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Vat. ebr. 392",
+   "datazione": "Ca. 1400",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Anonymous compendium of Ptolemy's Almagest",
+   "autori": [
+    {
+     "id": "tolomeo",
+     "autore": "Tolomeo",
+     "latino": "Ptolemaeus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Almagesto"
+     ],
+     "corrispondenza": "titolo: «Anonymous compendium of Ptolemy's Almagest»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.392/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Vat.ebr.392",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },
