@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T16:55:37.894Z",
- "totale": 611445,
- "con_autori": 32633,
+ "aggiornato": "2026-10-28T17:24:56.310Z",
+ "totale": 612264,
+ "con_autori": 32644,
  "miniati": 11303,
- "musica": 21300,
- "manoscritti": 545144,
+ "musica": 21303,
+ "manoscritti": 545963,
  "papiri": 22672,
  "epigrafi": 27970,
  "stampe_antiche": 15659,
@@ -37,11 +37,11 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 107758
+   "codici": 107808
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 53934
+   "codici": 54457
   },
   "grc": {
    "nome": "greco",
@@ -53,7 +53,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 26091
+   "codici": 26153
   },
   "de": {
    "nome": "tedesco",
@@ -61,11 +61,11 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 20162
+   "codici": 20266
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 19378
+   "codici": 19379
   },
   "pi": {
    "nome": "pali",
@@ -73,7 +73,7 @@
   },
   "cu": {
    "nome": "slavo ecclesiastico",
-   "codici": 14181
+   "codici": 14234
   },
   "zh": {
    "nome": "cinese",
@@ -117,7 +117,7 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 5091
+   "codici": 5115
   },
   "pt": {
    "nome": "portoghese",
@@ -125,7 +125,7 @@
   },
   "cop": {
    "nome": "copto",
-   "codici": 3741
+   "codici": 3743
   },
   "ca": {
    "nome": "catalano",
@@ -435,25 +435,25 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 8206
+   "codici": 8208
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7734
+   "codici": 7736
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15946
+   "codici": 15952
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 3500
+   "codici": 3501
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 539829
+   "codici": 540648
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -557,7 +557,7 @@
    "nome": "Livio",
    "latino": "Livius",
    "categoria": "classico-latino",
-   "codici": 308
+   "codici": 309
   },
   "seneca": {
    "nome": "Seneca",
@@ -671,7 +671,7 @@
    "nome": "Boezio",
    "latino": "Boethius",
    "categoria": "classico-latino",
-   "codici": 831
+   "codici": 832
   },
   "ausonio": {
    "nome": "Ausonio",
@@ -1025,7 +1025,7 @@
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 2460
+   "codici": 2462
   },
   "teofrasto": {
    "nome": "Teofrasto",
@@ -1451,7 +1451,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7430
+   "codici": 7436
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1583,7 +1583,7 @@
    "nome": "Tommaso d'Aquino",
    "latino": "Thomas de Aquino",
    "categoria": "medievale",
-   "codici": 747
+   "codici": 748
   },
   "bernardo": {
    "nome": "Bernardo di Chiaravalle",
@@ -8848,34 +8848,35 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 28065,
+   "codici": 28884,
    "carte": 2,
    "carte_stampa": 0,
    "miniati": 4,
-   "musica": 26,
+   "musica": 29,
    "papiri": 0,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 1322,
+   "con_autori": 1333,
    "lingue": {
-    "la": 20933,
+    "la": 20983,
     "it": 470,
-    "?": 3192,
+    "?": 3715,
     "grc": 2983,
     "fr": 24,
-    "xx": 24,
+    "xx": 25,
     "syr": 46,
-    "cop": 177,
-    "ar": 74,
+    "cop": 179,
+    "ar": 136,
     "th": 1,
     "hy": 84,
-    "he": 19,
+    "he": 123,
     "gez": 6,
     "pit": 4,
-    "fa": 7,
+    "fa": 31,
     "tr": 11,
+    "cu": 53,
     "de": 3,
     "es": 15,
     "en": 1
@@ -8884,7 +8885,7 @@
    "prefissi": [
     "bav-"
    ],
-   "pezzi_voci": 36,
+   "pezzi_voci": 37,
    "indice": [
     "indice/vaticana-0.json",
     "indice/vaticana-1.json"
@@ -9375,7 +9376,7 @@
   {
    "file": "indice/vaticana-1.json",
    "fonte": "vaticana",
-   "righe": 8065
+   "righe": 8884
   }
  ],
  "biblioteche_tipo": [
@@ -18978,7 +18979,7 @@
   3,
   2,
   3,
-  28070,
+  28889,
   1,
   43,
   8,

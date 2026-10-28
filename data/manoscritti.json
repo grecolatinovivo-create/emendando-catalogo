@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T15:58:10.186Z",
+ "aggiornato": "2026-10-28T17:24:56.310Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -419,11 +419,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 745,
+   "codici": 749,
    "esito": "ok"
   }
  },
- "totale": 12749,
+ "totale": 12753,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -45377,6 +45377,136 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Chig.H.VI.188/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Chig.H.VI.188",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-ferr-562",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Ferr. 562",
+   "datazione": "sec. XV in",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Ab Urbe condita (Livius, Titus, 59 a.C.-17 d.C.)",
+   "autori": [
+    {
+     "id": "livio",
+     "autore": "Livio",
+     "latino": "Livius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ab urbe condita"
+     ],
+     "corrispondenza": "autore: «Livius, Titus, 59 a.C.-17 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Ferr.562/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Ferr.562",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-neofiti-8",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Neofiti. 8",
+   "datazione": "1439",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Consolatio philosophiae. Ebraico",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "autore: «Boethius, Anicius Manlius Torquatus Severinus, 475/480-c. 524/525»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Neofiti.8/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Neofiti.8",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-neofiti-16",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Neofiti. 16",
+   "datazione": "15th century",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Averroes' Middle Commentary on Aristotle's Analytica posteriora and Analytica priora",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Organon"
+     ],
+     "corrispondenza": "titolo: «Averroes' Middle Commentary on Aristotle's Analytica posteriora and Analytica priora»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Neofiti.16/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Neofiti.16",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-neofiti-47",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Neofiti. 47",
+   "datazione": "1465-1466",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": true,
+   "titolo": "Ethica Nicomachea. Ebraico",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Etica Nicomachea"
+     ],
+     "corrispondenza": "autore: «Aristoteles, 384-322 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Neofiti.47/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Neofiti.47",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },
