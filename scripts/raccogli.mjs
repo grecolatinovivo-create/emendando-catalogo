@@ -13,7 +13,7 @@
 //        [--nli-minuti=15] [--getty-minuti=15] [--harvard-minuti=10]
 //        [--kbdk-minuti=30] [--uva-minuti=5] [--onb-minuti=30] [--bncf-minuti=5] [--vallicelliana-minuti=5] [--malatestiana-minuti=20] [--polona-minuti=20] [--manuscriptorium-minuti=30] [--archive-minuti=10]
 //        [--crossasia-minuti=30] [--sbbasia-minuti=30] [--sbbor-minuti=30] [--nomfoundation-minuti=20]
-//        [--nb-minuti=60] [--manuscripta-minuti=15] [--bnl-minuti=5] [--ija-minuti=5] [--stampe-minuti=60] [--papiri-minuti=60] [--epigrafi-minuti=60]
+//        [--nb-minuti=60] [--manuscripta-minuti=15] [--bnl-minuti=5] [--ija-minuti=5] [--stampe-minuti=60] [--papiri-minuti=60] [--epigrafi-minuti=60] [--musei-minuti=60]
 // Scrive il catalogo diviso per fonte (vedi costruisci.mjs): data/catalogo/indice.json, data/catalogo/indice/<fonte>-<n>.json, data/catalogo/voci/<fonte>-<n>.json,
 // più data/manoscritti.json (compatibilità: solo i codici con autori classici), e gli stati delle scansioni a riprese
 // (data/vaticana.json, data/bodleian.json, data/laurenziana.json, data/leiden.json, data/heidelberg-indici.json; data/<fonte>.json per le fonti del Handschriftenportal: wolfenbuettel, bamberga, karlsruhe, stoccarda, colonia, lipsia; data/yale.json, data/penn.json, data/walters.json).
@@ -96,6 +96,7 @@ import { scansionaIja, recordIja } from "./fonti/ija.mjs";
 import { scansionaStampe, recordStampe } from "./fonti/stampe.mjs";
 import { scansionaPapiri, recordPapiri, papiroDa } from "./fonti/papiri.mjs";
 import { scansionaEpigrafi, recordEpigrafi } from "./fonti/epigrafi.mjs";
+import { scansionaMusei, recordMusei } from "./fonti/musei.mjs";
 import { scriviRegistro, registraEsiti } from "./registro.mjs";
 import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
 import { tipoDa } from "./carte.mjs";
@@ -103,7 +104,7 @@ import { miniatoDa } from "./miniati.mjs";
 import { musicaDa } from "./musica.mjs";
 
 const arg = Object.fromEntries(process.argv.slice(2).map(a => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true]; }));
-const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,kbdk,uva,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,bl,isos,manchester,cudl,cbl,parker,nlw,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,auc,northwestern,nli,getty,harvard,nbkm,libfond,bms,archive,crossasia,sbbasia,sbbor,nomfoundation,stampe,papiri,epigrafi,vaticana").split(",");
+const FONTI = String(arg.fonti || "heidelberg,ecodices,bsb,berlino,bodleian,gallica,laurenziana,ambrosiana,montecassino,casanatense,bub,bncf,vallicelliana,malatestiana,leiden,wolfenbuettel,bamberga,karlsruhe,stoccarda,colonia,lipsia,francoforte,dresda,tubinga,darmstadt,handrit,polona,manuscriptorium,kbdk,uva,onb,yale,penn,ds,walters,loc,nlg,ndl,kokusho,auckland,toronto,wellcome,bl,isos,manchester,cudl,cbl,parker,nlw,mdc,ub,realbiblioteca,ucm,sevilla,rah,bnchile,bnv,pergamos,rousanou,auc,northwestern,nli,getty,harvard,nbkm,libfond,bms,archive,crossasia,sbbasia,sbbor,nomfoundation,stampe,papiri,epigrafi,musei,vaticana").split(",");
 const INIZIO = Date.now();
 export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)", ecodices: "e-codices", bsb: "Bayerische Staatsbibliothek (digitale-sammlungen.de)", berlino: "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
   bodleian: "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)", gallica: "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -189,6 +190,8 @@ export const NOMI_FONTI = { heidelberg: "Heidelberg (digi.ub.uni-heidelberg.de)"
   papiri: "Papiri: Michigan, Yale, Duke, Princeton, Vienna (ÖNB), Colonia e Berkeley, con le schede di papyri.info",
   // epigrafi (corsia «epigrafi», dal 28 ottobre 2026): iscrizioni con foto che si aprono nel visore (scripts/fonti/epigrafi.mjs, docs/EPIGRAFI.md)
   epigrafi: "Epigrafi: Epigraphic Database Heidelberg (foto IIIF di heidICON), The Metropolitan Museum of Art e Wikidata con Wikimedia Commons",
+  // musei (corsia «musei», dal 28 ottobre 2026): oggetti scritti del Museo Egizio di Torino e modelli 3D di oggetti scritti su Sketchfab (scripts/fonti/musei.mjs)
+  musei: "Musei: oggetti scritti del Museo Egizio di Torino (immagini CC0) e modelli 3D di oggetti scritti su Sketchfab",
   vaticana: "Biblioteca Apostolica Vaticana (digi.vatlib.it)" };
 
 // i tre codici del Truculentus restano sempre nel catalogo, anche se una fonte non li ha ancora restituiti
@@ -236,6 +239,8 @@ export function voce(r, AUTORI, sigle = new Map(TRUCULENTUS.map(t => [t.manifest
   if (r.papiro && Object.keys(r.papiro).length) v.papiro = r.papiro;
   // epigrafi (dal 28 ottobre 2026): edizione, numeri EDH e Trismegistos, provenienza, conservazione, supporto, genere, testo, licenza dei metadati
   if (r.epigrafe && Object.keys(r.epigrafe).length) v.epigrafe = r.epigrafe;
+  // modello 3D di Sketchfab (fonte «musei», dal 28 ottobre 2026): { sketchfab: uid, licenza, autore, account, url, titolo }
+  if (r.modello3d) v.modello3d = r.modello3d;
   if (sigla) v.truculentus = sigla;
   // carte geografiche manoscritte (dal 26 ottobre 2026): categoria a parte, «tipo: "carta"»; i codici restano senza campo (scripts/carte.mjs)
   // papiri già nel catalogo da altre fonti (Heidelberger Papyrussammlung, «Pap.» della BSB): tipo «papiro» (scripts/fonti/papiri.mjs)
@@ -277,7 +282,7 @@ const naturale = (a, b) => String(a).localeCompare(String(b), "it", { numeric: t
 async function main() {
   const AUTORI = caricaAutori();
   const prima = catalogoPrecedente();
-  const perFonte = {}, esito = {}, dettagli = {};
+  const perFonte = {}, esito = {}, dettagli = {}, modelli3d = {};
   // minuti per una fonte: il suo limite, ridotto a quanto resta del tempo complessivo (10 minuti restano per costruire, provare e salvare)
   const tempo = cap => {
     if (!arg["minuti-totali"]) return cap;
@@ -500,6 +505,21 @@ async function main() {
       dettagli.epigrafi = { perRaccolta: per, conTesto: rs.filter(r => r.epigrafe && r.epigrafe.testo).length };
       return rs;
     },
+    // musei (corsia «musei», dal 28 ottobre 2026): stato in data/musei.json. I modelli 3D dello stesso oggetto di una voce già nel catalogo
+    // (EDH) non fanno una voce nuova: si attaccano a quella voce come «modello3d» (modelli3d, sotto)
+    musei: async () => {
+      let st;
+      try { st = await scansionaMusei({ minuti: min("musei", +(arg["musei-minuti"] ?? 60)), soloCache: sc("musei") }); }
+      catch (e) { if (!e.stato) throw e; log("musei", e.message); st = e.stato; }
+      const { record, modelli } = recordMusei(st);
+      Object.assign(modelli3d, modelli);
+      const gia = new Set(Object.keys(perFonte).filter(f => f !== "musei").flatMap(f => perFonte[f].map(r => r.manifest)));
+      for (const v of prima) if (v.fonte !== "musei" && !perFonte[v.fonte]) gia.add(v.manifest);
+      const rs = record.filter(r => !gia.has(r.manifest));
+      const per = {}; for (const r of rs) { const k = r.id.split("-")[1]; per[k] = (per[k] || 0) + 1; }
+      dettagli.musei = { perRaccolta: per, conModello3d: rs.filter(r => r.modello3d).length, modelliCollegati: Object.keys(modelli).length };
+      return rs;
+    },
     vaticana: async () => {
       let minuti = +(arg["vaticana-minuti"] ?? 20);
       // con un tempo complessivo si lasciano 10 minuti per costruire il catalogo, provarlo e salvarlo
@@ -547,6 +567,9 @@ async function main() {
     }
   }
   for (const t of TRUCULENTUS) if (![...voci.values()].some(v => v.manifest === t.manifest)) voci.set(t.id, voce(t, AUTORI, sigle));
+  // modelli 3D (fonte «musei», dal 28 ottobre 2026) attaccati alle voci di altre fonti per lo stesso oggetto; si riattaccano a ogni costruzione
+  for (const v of voci.values()) if (v.modello3d && v.fonte !== "musei") delete v.modello3d;
+  for (const [id, m] of Object.entries(modelli3d)) { const v = voci.get(id); if (v) v.modello3d = m; }
   log(`riconoscimento: ${voci.size} codici in ${Math.round((Date.now() - t0) / 1000)} secondi`);
   const manoscritti = [...voci.values()].sort((a, b) => naturale(a.biblioteca, b.biblioteca) || naturale(a.segnatura, b.segnatura) || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
   const daIndici = manoscritti.filter(v => v.autori.some(a => a.corrispondenza.startsWith("indice:"))).length;

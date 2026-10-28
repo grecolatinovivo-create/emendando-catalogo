@@ -312,6 +312,21 @@ L = {
  "chiang-mai": ("Chiang Mai", None, "Chiang Mai", "TH", "#1153671", ["Chiang Mai", "Chiang Mai (Thailandia)"]),
  "hanoi": ("Hanoi", None, "Hanoi", "VN", "#1581130", ["Hanoi", "Hanoi (Vietnam)"]),
  "haverford": ("Haverford", None, "Haverford", "US", "#5192907", ["Haverford"]),
+    # musei (dal 28 ottobre 2026): Museo Egizio e account di Sketchfab (scripts/fonti/musei.mjs)
+    "torino": ("Torino", "Turin", "Turin", "IT", None, ["Torino", "Turin"]),
+    "napoli": ("Napoli", "Naples", "Naples", "IT", None, ["Napoli", "Naples"]),
+    "tarragona": ("Tarragona", None, "Tarragona", "ES", None, ["Tarragona"]),
+    "swansea": ("Swansea", None, "Swansea", "GB", None, ["Swansea"]),
+    "ann-arbor": ("Ann Arbor", None, "Ann Arbor", "US", "MI", ["Ann Arbor"]),
+    "minneapolis": ("Minneapolis", None, "Minneapolis", "US", "MN", ["Minneapolis"]),
+    "liverpool": ("Liverpool", None, "Liverpool", "GB", None, ["Liverpool"]),
+    "bonn": ("Bonn", None, "Bonn", "DE", None, ["Bonn"]),
+    "santander": ("Santander", None, "Santander", "ES", None, ["Santander"]),
+    "cartagena": ("Cartagena", None, "Cartagena", "ES", None, ["Cartagena"]),
+    "manacor": ("Manacor", None, "Manacor", "ES", None, ["Manacor"]),
+    "castricum": ("Castricum", None, "Castricum", "NL", None, ["Castricum"]),
+    "piombino": ("Piombino", None, "Piombino", "IT", None, ["Piombino"]),
+    "uncastillo": ("Uncastillo", None, "Uncastillo", "ES", None, ["Uncastillo"]),
 }
 # biblioteche senza città nel catalogo (o con città non geografica): nome esatto -> id
 BIB = {

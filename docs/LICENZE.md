@@ -4,7 +4,7 @@ Verifica del 28 ottobre 2026. Riguarda solo i **metadati** (segnature, titoli, d
 Serve a capire che cosa possiamo fare quando il catalogo esce dal repository pubblico e viene servito a pezzi dal sito
 (progetto in `docs/PROTEZIONE_CATALOGO.md` del repository `emendando`).
 
-Le fonti sono le 78 elencate in `data/catalogo/indice.json` (campo `fonti`) più i papiri e le epigrafi (dal 28 ottobre 2026).
+Le fonti sono le 78 elencate in `data/catalogo/indice.json` (campo `fonti`) più i papiri, le epigrafi e i musei (dal 28 ottobre 2026).
 La «fonte dell'informazione» è la pagina in cui la licenza è dichiarata; quando una pagina non c'è, la licenza è
 «non dichiarata» (nessuna supposizione). Le licenze delle immagini che si vedono nelle schede del catalogo (campo `licenza`)
 non contano qui, salvo dove la fonte le estende espressamente ai metadati.
@@ -39,6 +39,7 @@ Non è una consulenza legale.
 | Mista | 1 (stampe antiche) | secondo la biblioteca d'origine |
 | In arrivo: papiri | 1 | attribuzione per papyri.info; il resto secondo la raccolta |
 | Epigrafi (mista) | 1 | EDH CC BY-SA 4.0 (resta aperta); Met e Wikidata CC0 (si può chiudere) |
+| Musei (mista) | 1 | Museo Egizio: dati non dichiarati, foto CC0 (da chiedere per i dati); TPOP: foto CC0, schede degli editori da citare; Sketchfab: descrizioni degli autori dei modelli (da chiedere), modelli solo incorporati |
 
 Bloccano davvero la chiusura soltanto i dati in «condividi allo stesso modo»: i 3 codici della Biblioteca Nacional
 de Venezuela e, dal 28 ottobre 2026, le 12.205 iscrizioni dell'Epigraphic Database Heidelberg (fonte `epigrafi`, id «ep-edh-…»,
@@ -132,6 +133,9 @@ che vogliamo noi, e va chiesto il permesso anche per la raccolta che già faccia
 | Epigrafi (`epigrafi`): Epigraphic Database Heidelberg (id «ep-edh-…») | CC BY-SA 4.0, anche per i testi trascritti («all data of the Open Data Repository ... can be reused under the CC BY-SA 4.0 licence») | https://edh.ub.uni-heidelberg.de/data | va ridistribuita alle stesse condizioni: resta fuori dal blocco chiuso, come i codici del Venezuela |
 | Epigrafi (`epigrafi`): The Metropolitan Museum of Art (id «ep-met-…») | CC0 (Open Access: dati e immagini in pubblico dominio) | https://metmuseum.github.io/ e https://www.metmuseum.org/policies/image-resources | si può chiudere |
 | Epigrafi (`epigrafi`): Wikidata (id «ep-wd-…») | CC0 (le immagini di Wikimedia Commons hanno la licenza di ogni file, scritta nella scheda) | https://www.wikidata.org/wiki/Wikidata:Licensing | si può chiudere |
+| Musei (`musei`): Museo Egizio, collezione online (id «mu-egizio-…») | non dichiarata per i dati; foto CC0 («Le immagini sono liberamente scaricabili e riutilizzabili con licenza Creative Commons CC0», in ogni pagina) | https://collezioni.museoegizio.it | da chiedere (le foto sono libere) |
+| Musei (`musei`): Museo Egizio, Turin Papyrus Online Platform, parte pubblica (id «mu-tpop-…») | foto CC0; testi delle schede degli editori, da citare con i nomi di editori e collaboratori (scritti nella voce, `papiro.editori`) | https://collezionepapiri.museoegizio.it/it-IT/section/Database-Papiri/Politica-di-accesso-e-utilizzo/ | si può chiudere con attribuzione agli editori |
+| Musei (`musei`): modelli 3D di Sketchfab (id «mu-3d-…» e campo `modello3d` su voci di altre fonti) | nome, descrizione e tag sono degli autori dei modelli: licenza non dichiarata per i metadati; i modelli hanno la licenza scelta dall'autore (CC0, CC BY, CC BY-NC, CC BY-NC-SA, oppure la licenza standard di Sketchfab) e si mostrano solo nel visualizzatore incorporato, con autore, licenza e link | https://sketchfab.com/terms e la pagina di ogni modello | da chiedere per le descrizioni (nel catalogo ne teniamo solo 500 caratteri); il modello non si copia |
 | Biblioteca Apostolica Vaticana (`vaticana`) | riservata («Neither the text nor the images may be reproduced, in any form, without the authorisation of the Vatican Library») | https://digi.vatlib.it/ | da chiedere |
 | Papiri (`papiri`, in arrivo) | schede di papyri.info: CC BY 3.0; manifesti e schede delle raccolte (Michigan, Duke, Yale, Princeton, Vienna, Colonia, Berkeley) secondo ciascuna | README di https://github.com/papyri/idp.data | si può chiudere con attribuzione per papyri.info; la licenza 3.0 vieta di imporre condizioni o misure tecniche che limitino chi riceve quelle schede |
 

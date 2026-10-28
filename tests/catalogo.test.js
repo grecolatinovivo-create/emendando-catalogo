@@ -936,7 +936,8 @@ test("Epigrafi: EDH (CSV e schede), Met, Wikidata, misure dei JPEG", async () =>
   assert.match(r.manifest, /manifesti\/data\/manifesti\/epigrafi-edh\/hd000001\.json$/);
   const m = manifestiEpigrafi({ voci: {} }, { voci: ed })["epigrafi-edh"].hd000001;
   assert.equal(m.items.length, 2); assert.equal(m.items[0].items[0].items[0].body.service[0].id, "https://heidicon.ub.uni-heidelberg.de/iiif/2/1374077%3A761105");
-  assert.equal(recordEdh("HD000009", { f: [["F000009", "1%3A2", 10, 20, ""]] }).manifest, "https://edh.ub.uni-heidelberg.de/iiif/edh/F000009.manifest.json");
+  assert.match(recordEdh("HD000009", { f: [["F000009", "1%3A2", 10, 20, ""]] }).manifest, /manifesti\/data\/manifesti\/epigrafi-edh\/hd000009\.json$/);
+  assert.ok(manifestiEpigrafi({ voci: {} }, { voci: { HD000009: { f: [["F000009", "1%3A2", 10, 20, ""]] } } })["epigrafi-edh"].hd000009);
   assert.deepEqual(lingueEdh("GL"), ["la", "grc"]);
   assert.ok(iscrizioneMet({ isPublicDomain: true, primaryImage: "x", objectName: "Inscription, Athenian decree fragment", classification: "Stone Sculpture" }));
   assert.ok(!iscrizioneMet({ isPublicDomain: true, primaryImage: "x", objectName: "Lekythos", title: "Terracotta lekythos with inscription", classification: "Vases" }));
@@ -958,4 +959,50 @@ test("Epigrafi: tipo «epigrafe» e totale «epigrafi» nell'indice, fuori da «
   assert.equal(ind.epigrafi, 1); assert.equal(ind.manoscritti, 1); assert.equal(ind.papiri, 1); assert.equal(ind.tipi.epigrafe.codici, 1); assert.equal(ind.fonti.f.epigrafi, 1);
   const righe = JSON.parse(fs.readFileSync(path.join(dir, "indice/f-0.json"), "utf8")).righe;
   assert.equal(righe.find(r => r[0] === "b")[CAMPI.indexOf("tipo")], "epigrafe");
+});
+
+test("Biblioteche e musei nell'indice: segnaposto riuniti, «biblioteche_tipo» e «totali»", () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), "cat-bib-"));
+  const v = (id, bib, tipo, fonte = "f") => ({ id, fonte, biblioteca: bib, segnatura: id, lingue: ["la"], secolo: null, autori: [], manifest: "m" + id, ...(tipo ? { tipo } : {}) });
+  scriviCatalogo([v("a", "Bib A"), v("b", "Museo X", "epigrafe"), v("c", "-", "epigrafe"), v("d", "Luogo di conservazione non indicato (EDH)", "epigrafe"), v("e", "Museo Egizio", "papiro", "musei")],
+    { dir, compat: path.join(dir, "m.json"), luoghi: null, fileEp: path.join(dir, "ep.json") });
+  const ind = JSON.parse(fs.readFileSync(path.join(dir, "indice.json"), "utf8"));
+  assert.equal(ind.biblioteche.length, 4);
+  assert.deepEqual(ind.totali, { biblioteche: 1, musei: 2, senza_luogo: 2 });
+  assert.equal(ind.biblioteche_tipo[ind.biblioteche.indexOf("Museo Egizio")], "museo");
+  assert.equal(ind.biblioteche_tipo[ind.biblioteche.indexOf("Luogo di conservazione non indicato")], "non_indicato");
+});
+
+test("Musei: scheda del Museo Egizio, classi, Sketchfab e collegamenti", async () => {
+  const M = await import("../scripts/fonti/musei.mjs");
+  const html = `<h1>Stele di Pamermesha</h1><div class="general-info"><div class="single-value">Testo in geroglifico.</div></div>
+    <label>Nr. inv.:</label></div><div class="col-lg-9"><span class="value">Cat. 1558</span></div>
+    <label for="">Datazione:</label></div><div class="col-lg-9"><span class="value">1550–1070 a.C.</span></div>
+    <div class="owl-carousel owl-theme gallery-object"><img style="background-image: url('/public/objects/images/0016TX_AB_big.jpg');"></div><div class="row"><div class="col-lg-12">`;
+  const v = M.schedaEgizio(html);
+  assert.equal(v.inv, "Cat. 1558"); assert.deepEqual(v.img, ["0016TX_AB"]); assert.deepEqual(M.anniEgizio(v.dat), [-1550, -1070]);
+  assert.deepEqual(M.classeEgizio(v), { tipo: "epigrafe", supporto: "stele" });
+  assert.equal(M.classeEgizio({ t: "Statuetta di Osiride" }), null);
+  assert.equal(M.classeEgizio({ t: "Ushabti di Pakep" }).supporto, "ushabti");
+  assert.equal(M.classeEgizio({ t: "Papiro funerario di Djehutymes", mat: "Fibra vegetale / Papiro" }).tipo, "papiro");
+  assert.equal(M.chiaveInv("C.1558"), "cat-1558");
+  const r = M.recordEgizio("Cat_1558", { ...v, c: "epigrafe", su: "stele", p: [["0016TX_AB", 6000, 4000]] });
+  assert.equal(r.id, "mu-egizio-cat-1558"); assert.equal(r.citta, "Torino"); assert.deepEqual(r.lingue, ["egy"]); assert.equal(r.epigrafe.scrittura, "geroglifico");
+  assert.ok(M.scrittoSf({ n: "Roman altar with inscription", d: "Carnuntum" }));
+  assert.ok(!M.scrittoSf({ n: "Grey granite papyrus-column", d: "Egyptian" }));
+  assert.ok(!M.scrittoSf({ n: "Inscribed plaque 1912", d: "Roman style replica" }));
+  assert.deepEqual(M.riferimenti("CIL XIII 6667 e HD012345"), ["hd012345", "cil-13-6667"]);
+  assert.deepEqual(M.chiaviEdizione("CIL 13, 06667"), ["cil-13-6667"]);
+  const st = { voci: { "egizio:Cat_1558": { ...v, c: "epigrafe", p: [["0016TX_AB", 6000, 4000]] },
+    "sf:aaaa": { n: "Stela of Pamermesha", u: "Museoegizio", un: "Museo Egizio", d: "Inv. no.: Cat. 1558", e: 1, th: ["https://media.sketchfab.com/x.jpeg", 1024, 576] },
+    "sf:bbbb": { n: "Roman tombstone", u: "britishmuseum", un: "The British Museum", d: "CIL XIII 6667", e: 1, th: ["https://media.sketchfab.com/y.jpeg", 1024, 576] },
+    "sf:cccc": { n: "Cuneiform tablet", u: "hmane", un: "HMANE", d: "Old Babylonian", e: 1, th: ["https://media.sketchfab.com/z.jpeg", 1024, 576], li: "CC0 Public Domain" } } };
+  const edh = { voci: { HD000001: { ed: "CIL 13, 06667", f: [["F1", "1%3A2", 10, 20, ""]] } } };
+  const { record, modelli } = M.recordMusei(st, edh);
+  assert.equal(record.find(x => x.id === "mu-egizio-cat-1558").modello3d.sketchfab, "aaaa");
+  assert.equal(modelli["ep-edh-hd000001"].sketchfab, "bbbb");
+  const t = record.find(x => x.id === "mu-3d-cccc");
+  assert.equal(t.tipo, "epigrafe"); assert.equal(t.epigrafe.supporto, "tavoletta"); assert.equal(t.biblioteca, "Harvard Museum of the Ancient Near East"); assert.equal(t.citta, "Cambridge (Massachusetts)");
+  const man = M.manifestiMusei(st, edh);
+  assert.ok(man["musei-egizio"]["cat_1558"]); assert.equal(man["musei-3d"].cccc.items[0].items[0].items[0].body.id, "https://media.sketchfab.com/z.jpeg");
 });

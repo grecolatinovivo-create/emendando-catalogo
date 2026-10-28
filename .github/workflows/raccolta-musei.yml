@@ -1,0 +1,34 @@
+# Corsia «musei» (dal 28 ottobre 2026): oggetti scritti dei musei con foto che si aprono nel visore di Emendando e modelli 3D di oggetti
+# scritti (verifica in docs/EPIGRAFI.md). Fonte «musei» (scripts/fonti/musei.mjs):
+#   - Museo Egizio, Torino (collezioni.museoegizio.it): elenco dalla sitemap, poi la scheda di ogni oggetto, una volta sola, a una richiesta
+#     ogni 1,5 secondi; entrano papiri, stele, ostraka, tavolette, sarcofagi, statue e oggetti iscritti; immagini CC0, manifesti scritti
+#     dal catalogo;
+#   - Sketchfab: API pubblica di ricerca, solo account di musei, università e progetti seri, solo modelli di oggetti scritti antichi e
+#     medievali con incorporamento consentito (oEmbed); collegati alla voce che il catalogo ha già (Egizio, EDH) o voci nuove.
+# Stato in data/musei.json. Ruota fino a lettura completa (schede e immagini dell'Egizio), poi il giro notturno delle 04:25 UTC.
+name: "Raccolta: corsia musei"
+
+on:
+  schedule:
+    - cron: "25 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write   # per la ruota
+
+concurrency:
+  group: raccolta-musei
+  cancel-in-progress: false
+
+jobs:
+  corsia:
+    uses: ./.github/workflows/corsia.yml
+    with:
+      corsia: musei
+      fonti: musei
+      argomenti: --musei-minuti=130
+      cache: false
+      ruota: false
+      completa: true
+      flusso: raccolta-musei.yml

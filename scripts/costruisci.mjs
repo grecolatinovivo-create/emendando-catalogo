@@ -38,6 +38,13 @@ export function fnv1a(s) {
 }
 export const pezzoDi = (id, pezzi) => fnv1a(id) % pezzi;
 export const nomeBib = m => [m.biblioteca, m.citta && !(m.biblioteca || "").includes(m.citta) ? m.citta : null].filter(Boolean).join(", ") || "Biblioteca non indicata";
+// luoghi di conservazione vuoti o segnaposto («-», «non indicato», «sconosciuto»): nell'indice si riuniscono in una voce sola,
+// «Luogo di conservazione non indicato», con tipo «non_indicato», fuori dal conteggio delle biblioteche e dei musei (dal 28 ottobre 2026)
+export const BIB_IGNOTA = "Luogo di conservazione non indicato";
+export const segnaposto = n => /^[\s\-–—?.]*$|non indicat|sconosciut|Biblioteca non indicata/i.test(String(n || ""));
+export const bibIndice = v => { const n = nomeBib(v); return segnaposto(n) ? BIB_IGNOTA : n; };
+// tipo di un luogo dell'indice: «museo» quando tutte le sue voci sono epigrafi od oggetti di museo (fonte «musei»), altrimenti «biblioteca»
+export const eMuseo = v => v.tipo === "epigrafe" || v.fonte === "musei";
 const naturale = (a, b) => String(a).localeCompare(String(b), "it", { numeric: true, sensitivity: "base" });
 const breve = (s, n) => { s = String(s || "").replace(/\s+/g, " ").trim(); return s.length > n ? s.slice(0, n - 1).trimEnd() + "…" : s; };
 
@@ -82,15 +89,19 @@ export function scriviCatalogo(manoscritti, { fonti, nomi = {}, esito = {}, auto
   for (const v of manoscritti) (perFonte[v.fonte] = perFonte[v.fonte] || []).push(v);
   const ordine = [...new Set([...(fonti || []), ...Object.keys(perFonte)])].filter(f => perFonte[f]);
   const biblioteche = [], bibIdx = new Map();
-  const idxBib = v => { const n = nomeBib(v); if (!bibIdx.has(n)) { bibIdx.set(n, biblioteche.length); biblioteche.push(n); } return bibIdx.get(n); };
+  const idxBib = v => { const n = bibIndice(v); if (!bibIdx.has(n)) { bibIdx.set(n, biblioteche.length); biblioteche.push(n); } return bibIdx.get(n); };
   // biblioteche in ordine alfabetico (indici stabili tra una raccolta e l'altra se non cambiano i nomi)
-  for (const n of [...new Set(manoscritti.map(nomeBib))].sort(naturale)) { bibIdx.set(n, biblioteche.length); biblioteche.push(n); }
+  for (const n of [...new Set(manoscritti.map(bibIndice))].sort(naturale)) { bibIdx.set(n, biblioteche.length); biblioteche.push(n); }
   // luogo di ogni biblioteca (id in «luoghi», null se non risolto)
   const bibLuogo = biblioteche.map(() => null);
-  if (luoghi) for (const v of manoscritti) { const i = bibIdx.get(nomeBib(v)); if (bibLuogo[i] === null) bibLuogo[i] = luogoDi(v, luoghi); }
+  if (luoghi) for (const v of manoscritti) { const n = bibIndice(v); if (n === BIB_IGNOTA) continue; const i = bibIdx.get(n); if (bibLuogo[i] === null) bibLuogo[i] = luogoDi(v, luoghi); }
   // codici di ogni biblioteca (parallelo a «biblioteche»): li legge la mappa della home, sempre aggiornati a ogni costruzione
   const bibN = biblioteche.map(() => 0);
-  for (const v of manoscritti) bibN[bibIdx.get(nomeBib(v))]++;
+  for (const v of manoscritti) bibN[bibIdx.get(bibIndice(v))]++;
+  // biblioteca o museo (dal 28 ottobre 2026), parallelo a «biblioteche»: «non_indicato» per la voce che riunisce i segnaposto
+  const bibMuseo = biblioteche.map(() => true);
+  for (const v of manoscritti) if (!eMuseo(v)) bibMuseo[bibIdx.get(bibIndice(v))] = false;
+  const bibTipo = biblioteche.map((n, i) => n === BIB_IGNOTA ? "non_indicato" : bibMuseo[i] ? "museo" : "biblioteca");
   const usati = [...new Set(bibLuogo.filter(Boolean))].sort();
   const luoghiIndice = luoghi ? Object.fromEntries(usati.map(id => { const l = luoghi.luoghi[id]; return [id, { nome: l.nome, ...(l.en ? { en: l.en } : {}), paese: l.paese, lat: l.lat, lon: l.lon }]; })) : null;
   const conteggio = {}, conAutori = {}, lingueFonte = {}, pezzi = [], infoFonti = {};
@@ -138,13 +149,18 @@ export function scriviCatalogo(manoscritti, { fonti, nomi = {}, esito = {}, auto
     incunaboli: manoscritti.filter(v => v.tipo === "incunabolo").length, edizioni_principi: manoscritti.filter(v => v.editio_princeps).length,
     nota: "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; " +
       "«biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte " +
-      "(data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «tipo» è «incunabolo» per gli stampati fino al 1500 e «stampa» per le edizioni principi del Cinquecento (stampe antiche, dal 27 ottobre 2026: contano in «totale» e in «biblioteche_n»; «manoscritti» e «stampe_antiche» sono i totali separati); «tipo» è «papiro» per i papiri (dal 28 ottobre 2026: fonte «papiri», con i dati papirologici nella voce completa in «papiro», e i papiri di Heidelberg e della BSB; contano in «totale» e in «biblioteche_n», totale separato in «papiri» e, per fonte, nello stesso campo); «tipo» è «epigrafe» per le iscrizioni (dal 28 ottobre 2026: fonte «epigrafi», con i dati epigrafici nella voce completa in «epigrafe», compresa «licenza_metadati»; contano in «totale» e in «biblioteche_n», totale separato in «epigrafi» e, per fonte, nello stesso campo); «editio_princeps» è l'id dell'edizione principe dei classici greci e latini (elenco curato in «edizioni_principi_elenco», con le copie digitali trovate; conteggio delle voci in «edizioni_principi»); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
+      "(data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «tipo» è «incunabolo» per gli stampati fino al 1500 e «stampa» per le edizioni principi del Cinquecento (stampe antiche, dal 27 ottobre 2026: contano in «totale» e in «biblioteche_n»; «manoscritti» e «stampe_antiche» sono i totali separati); «tipo» è «papiro» per i papiri (dal 28 ottobre 2026: fonte «papiri», con i dati papirologici nella voce completa in «papiro», e i papiri di Heidelberg e della BSB; contano in «totale» e in «biblioteche_n», totale separato in «papiri» e, per fonte, nello stesso campo); «tipo» è «epigrafe» per le iscrizioni (dal 28 ottobre 2026: fonte «epigrafi», con i dati epigrafici nella voce completa in «epigrafe», compresa «licenza_metadati»; contano in «totale» e in «biblioteche_n», totale separato in «epigrafi» e, per fonte, nello stesso campo); «editio_princeps» è l'id dell'edizione principe dei classici greci e latini (elenco curato in «edizioni_principi_elenco», con le copie digitali trovate; conteggio delle voci in «edizioni_principi»); «biblioteche_tipo» (dal 28 ottobre 2026), parallelo a «biblioteche», dice se il luogo è una «biblioteca» o un «museo» (musei e luoghi di conservazione di epigrafi e oggetti) oppure «non_indicato» (voce unica che riunisce i luoghi vuoti o segnaposto), e «totali» conta biblioteche e musei veri («totali.biblioteche», «totali.musei») e le voci senza luogo («totali.senza_luogo»); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
     campi: CAMPI, hash: "fnv1a-32",
     lingue: Object.fromEntries(Object.entries(lingue).sort((a, b) => b[1] - a[1]).map(([k, n]) => [k, { nome: k === "?" ? "lingua non indicata" : NOMI_LINGUE[k] || k, codici: n }])),
     categorie: Object.fromEntries(Object.entries(CATEGORIE).map(([k, nome]) => [k, { nome, codici: categorie[k] || 0 }])),
     tipi: Object.fromEntries(Object.entries(TIPI).map(([k, nome]) => [k, { nome, codici: tipi[k] || 0 }])),
     autori: nomiAutori, edizioni_principi_elenco: edizioniPrincipi, biblioteche, fonti: infoFonti, pezzi,
   };
+  // biblioteche e musei separati (dal 28 ottobre 2026): «biblioteche_tipo» parallelo a «biblioteche» («biblioteca», «museo» o «non_indicato»);
+  // «totali» conta i luoghi veri, senza la voce dei segnaposto («senza_luogo» sono le voci senza luogo di conservazione)
+  indice.biblioteche_tipo = bibTipo;
+  indice.totali = { biblioteche: bibTipo.filter(t => t === "biblioteca").length, musei: bibTipo.filter(t => t === "museo").length,
+    senza_luogo: bibTipo.includes("non_indicato") ? bibN[bibTipo.indexOf("non_indicato")] : 0 };
   // luoghi delle biblioteche (mappa): «biblioteche_luogo» è parallelo a «biblioteche», con l'id del luogo o null
   if (luoghiIndice) { indice.luoghi = luoghiIndice; indice.biblioteche_luogo = bibLuogo; }
   indice.biblioteche_n = bibN;   // numero dei codici di ogni biblioteca, parallelo a «biblioteche»

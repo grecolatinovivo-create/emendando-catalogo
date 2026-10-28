@@ -6,9 +6,9 @@
 //
 // Raccolte (una «parte» ciascuna, in serie, con le pause di scripts/rete.mjs):
 //   edh        Epigraphic Database Heidelberg: nessuna richiesta. Estratto dei dati aperti (CC BY-SA 4.0) in data/epigrafi-edh.json,
-//              scritto da scripts/epigrafi-edh.mjs; foto nel server IIIF di heidICON (CORS aperto). Una foto: manifesto IIIF dell'EDH
-//              (edh.ub.uni-heidelberg.de/iiif/edh/<F>.manifest.json); più foto: manifesto scritto dal catalogo (ramo «manifesti») con
-//              i servizi IIIF di heidICON. Metadati e testi CC BY-SA 4.0: restano aperti (docs/LICENZE.md).
+//              scritto da scripts/epigrafi-edh.mjs; foto nel server IIIF di heidICON (CORS aperto). Manifesti scritti dal catalogo (ramo «manifesti»)
+//              con i servizi IIIF di heidICON, per tutte le iscrizioni, anche con una sola foto (dal 28 ottobre 2026: i manifesti
+//              dell'EDH sono dietro un controllo anti-robot, Anubis, e nei browser non si aprono; non si usano). Metadati e testi CC BY-SA 4.0: restano aperti (docs/LICENZE.md).
 //   met        The Metropolitan Museum of Art: ricerca dell'API (collectionapi.metmuseum.org, v1.1) per dipartimento, poi la scheda di
 //              ogni oggetto, una volta sola; entrano solo le iscrizioni in pubblico dominio (Open Access, CC0) con immagine. Niente IIIF:
 //              manifesti scritti dal catalogo, con le misure lette dai primi 64 KB di ogni JPEG (images.metmuseum.org, CORS aperto).
@@ -261,7 +261,7 @@ const maiuscola = s => s ? s[0].toUpperCase() + s.slice(1) : s;
 
 export function recordEdh(hd, v) {
   const fotos = v.f || []; if (!fotos.length) return null;
-  const co = v.co && !/^verschollen|^unbekannt|^nicht/i.test(v.co) ? v.co : null;
+  const co = v.co && !/^verschollen|^unbekannt|^nicht|^[-–?\s]*$/i.test(v.co) ? v.co : null;
   const citta = co ? (co.includes(",") ? co.split(",")[0].trim() : null) : null;
   const presso = x => x ? x.replace(/,\s*bei\b/g, " (nei pressi)").replace(/\bbei\s+/g, "presso ") : x;
   const luogo = [presso(v.fa), v.fm && v.fm !== v.fa ? presso(v.fm) : null].filter(Boolean).join(" / ") || null;
@@ -270,11 +270,12 @@ export function recordEdh(hd, v) {
   const mic = fotos.some(f => CONC_MIC.test(f[4] || ""));
   return {
     fonte: "epigrafi", id: "ep-edh-" + hd.toLowerCase(), tipo: "epigrafe",
-    citta, biblioteca: co || (v.co ? "Luogo di conservazione sconosciuto (EDH: " + v.co + ")" : "Luogo di conservazione non indicato (EDH)"),
+    citta, biblioteca: co || (v.co && !/^[-–?\s]*$/.test(v.co) ? "Luogo di conservazione sconosciuto (EDH: " + v.co + ")" : "Luogo di conservazione non indicato (EDH)"),
     segnatura: v.ed ? `${v.ed} (EDH ${hd})` : `EDH ${hd}`,
     titolo: [maiuscola(genere || "iscrizione"), luogo ? "da " + luogo : null].filter(Boolean).join(" ") || null,
     datazione, secolo: secoloDa(v.dn, datazione), lingue: lingueEdh(v.li),
-    manifest: fotos.length === 1 ? `${EDH}/iiif/edh/${fotos[0][0]}.manifest.json` : `${RAW}epigrafi-edh/${hd.toLowerCase()}.json`,
+    // manifesto sempre scritto dal catalogo (dal 28 ottobre 2026): i manifesti dell'EDH sono dietro un controllo anti-robot (Anubis) e nei browser non si aprono
+    manifest: `${RAW}epigrafi-edh/${hd.toLowerCase()}.json`,
     pagina: `${EDH}/edh/inschrift/${hd}`, immagini: fotos.length,
     licenza: "Foto: diritti riservati (heidICON, Heidelberger Akademie der Wissenschaften), pubblicate con il manifesto IIIF dell'EDH" + (mic ? "; foto su concessione del Ministero della Cultura, divieto di ulteriore riproduzione" : "") + `. Dati e testo: ${LICENZA_EDH}`,
     epigrafe: pulisci({ edizione: v.ed || null, edh: hd, tm: v.tm || null, provenienza: [luogo, v.fs].filter(Boolean).join(", ") || null, provincia: PROVINCE_EDH[v.pr] || v.pr || null,
@@ -366,7 +367,7 @@ export function manifestiEpigrafi(st = leggiStato(), edh = leggiEdh()) {
   const out = { "epigrafi-edh": {}, "epigrafi-met": {}, "epigrafi-wd": {} };
   const rs = new Map(recordEpigrafi(st, edh).map(r => [r.id, r]));
   for (const [hd, v] of Object.entries(edh.voci || {})) {
-    const r = rs.get("ep-edh-" + hd.toLowerCase()); if (!r || (v.f || []).length < 2) continue;
+    const r = rs.get("ep-edh-" + hd.toLowerCase()); if (!r || !(v.f || []).length) continue;
     const ok = v.f.filter(f => f[2] && f[3]); if (!ok.length) continue;
     const crediti = [...new Set(ok.map(f => f[4]).filter(Boolean))].join(" ; ");
     out["epigrafi-edh"][hd.toLowerCase()] = manifestoEpigrafe(`${RAW}epigrafi-edh/${hd.toLowerCase()}.json`, `EDH ${hd}: ${r.titolo || "iscrizione"}`, metaEp(r),

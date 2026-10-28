@@ -2,7 +2,7 @@
 // Iscrizioni dell'Epigraphic Database Heidelberg (dal 28 ottobre 2026): estratto compatto dei dati aperti dell'EDH (CC BY-SA 4.0),
 // usato dalla fonte «epigrafi» (scripts/fonti/epigrafi.mjs, parte «edh»). Entrano solo le iscrizioni con almeno una foto nel server
 // IIIF di heidICON (Universitätsbibliothek Heidelberg): ogni foto ha il suo manifesto IIIF pubblicato dall'EDH
-// (edh.ub.uni-heidelberg.de/iiif/edh/<F>.manifest.json, CORS aperto) e le misure dell'immagine nei dati, quindi nessuna richiesta
+// (edh.ub.uni-heidelberg.de/iiif/edh/<F>.manifest.json; dal 28 ottobre 2026 non si usano più, sono dietro il controllo anti-robot Anubis: i manifesti li scrive il catalogo) e le misure dell'immagine nei dati, quindi nessuna richiesta
 // alle pagine del sito.
 // Il progetto EDH si è chiuso nel 2021: i dati non cambiano più, l'estratto si rifà solo se l'EDH pubblica dati nuovi.
 // Uso:

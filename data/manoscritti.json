@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T09:56:33.019Z",
+ "aggiornato": "2026-10-28T11:05:40.222Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -394,6 +394,11 @@
   },
   "epigrafi": {
    "nome": "Epigrafi: Epigraphic Database Heidelberg (foto IIIF di heidICON), The Metropolitan Museum of Art e Wikidata con Wikimedia Commons",
+   "codici": 0,
+   "esito": "ok"
+  },
+  "musei": {
+   "nome": "Musei: oggetti scritti del Museo Egizio di Torino (immagini CC0) e modelli 3D di oggetti scritti su Sketchfab",
    "codici": 0,
    "esito": "ok"
   },

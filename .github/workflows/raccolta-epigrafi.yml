@@ -1,7 +1,7 @@
 # Corsia «epigrafi» (dal 28 ottobre 2026): iscrizioni greche, latine e di altre lingue antiche con foto che si aprono nel visore di Emendando
 # (verifica in docs/EPIGRAFI.md). Fonte «epigrafi» (scripts/fonti/epigrafi.mjs):
 #   - Epigraphic Database Heidelberg: nessuna richiesta (estratto dei dati aperti CC BY-SA 4.0 in data/epigrafi-edh.json, scritto da
-#     scripts/epigrafi-edh.mjs; foto nel server IIIF di heidICON, manifesti dell'EDH o scritti dal catalogo per le iscrizioni con più foto);
+#     scripts/epigrafi-edh.mjs; foto nel server IIIF di heidICON, manifesti scritti dal catalogo per tutte le iscrizioni);
 #   - The Metropolitan Museum of Art: API delle collezioni (ricerca per dipartimento, poi una scheda per oggetto), misure dai primi 64 KB
 #     di ogni JPEG, manifesti scritti dal catalogo; solo Open Access (CC0);
 #   - Wikidata (CC0): una interrogazione SPARQL, poi misure e licenze delle immagini dall'API di Wikimedia Commons.

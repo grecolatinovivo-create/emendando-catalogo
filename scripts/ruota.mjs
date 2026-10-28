@@ -24,7 +24,7 @@ export const INCOMPLETA = {
   ...Object.fromEntries(["kokusho", "penn", "loc", "auckland", "toronto", "ds", "montecassino", "casanatense", "bub", "laurenziana", "leiden",
     "wolfenbuettel", "bamberga", "karlsruhe", "stoccarda", "colonia", "lipsia", "francoforte", "dresda", "tubinga",
     "handrit", "polona", "manuscriptorium", "onb", "kbdk", "uva",
-    "wellcome", "bl", "isos", "manchester", "cudl", "cbl", "parker", "nlw", "mdc", "ub", "realbiblioteca", "ucm", "sevilla", "pergamos", "auc", "northwestern", "archive", "nbkm", "libfond", "getty", "bms", "stampe", "papiri", "epigrafi"].map(f => [f, s => !s || !s.completato]),
+    "wellcome", "bl", "isos", "manchester", "cudl", "cbl", "parker", "nlw", "mdc", "ub", "realbiblioteca", "ucm", "sevilla", "pergamos", "auc", "northwestern", "archive", "nbkm", "libfond", "getty", "bms", "stampe", "papiri", "epigrafi", "musei"].map(f => [f, s => !s || !s.completato]),
   ),
   // National Diet Library: lettura finita e manifesti di tutte le voci controllati (m = «ok» o «ng»; scripts/fonti/ndl.mjs)
   ndl: s => !s || !s.completato || daControllareNdl(s).length > 0,

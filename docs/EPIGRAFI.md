@@ -19,11 +19,14 @@ Senza CORS la foto si vede, ma il browser non lascia leggere i pixel.
 
 | Fonte | Nel catalogo il 28 ottobre 2026 | Attese a lettura finita | Come | Strumenti (CORS) | Licenza dei metadati | Licenza delle foto |
 |---|---|---|---|---|---|---|
-| Epigraphic Database Heidelberg (EDH) | 12.205 | 12.205 (dati chiusi dal 2021) | nessuna richiesta: dati aperti dell'EDH in `data/epigrafi-edh.json` (scritto da `scripts/epigrafi-edh.mjs`); una foto: manifesto IIIF dell'EDH; più foto (5.653 iscrizioni): manifesto scritto dal catalogo con i servizi IIIF di heidICON | sì (heidICON e manifesti dell'EDH con CORS aperto, verificato) | CC BY-SA 4.0: va servita aperta | diritti riservati (heidICON: «In Copyright»; manifesti dell'EDH: «Rechte vorbehalten, freier Zugang»); le foto italiane «Conc. Min. BB.AA.CC.» hanno il divieto di ulteriore riproduzione |
+| Epigraphic Database Heidelberg (EDH) | 12.205 | 12.205 (dati chiusi dal 2021) | nessuna richiesta: dati aperti dell'EDH in `data/epigrafi-edh.json` (scritto da `scripts/epigrafi-edh.mjs`); manifesti scritti dal catalogo con i servizi IIIF di heidICON per tutte le 12.205 iscrizioni (dal 28 ottobre 2026: i manifesti dell'EDH sono dietro il controllo anti-robot Anubis e nei browser non si aprono, quindi non si usano) | sì (heidICON con CORS aperto, verificato) | CC BY-SA 4.0: va servita aperta | diritti riservati (heidICON: «In Copyright»; manifesti dell'EDH: «Rechte vorbehalten, freier Zugang»); le foto italiane «Conc. Min. BB.AA.CC.» hanno il divieto di ulteriore riproduzione |
 | Wikidata con Wikimedia Commons | 735 | circa 735 (749 iscrizioni antiche con immagine, tolti i doppioni dell'EDH e del Met e i file senza licenza libera) | una interrogazione SPARQL, poi l'API di Commons (50 file per richiesta); manifesti scritti dal catalogo | sì (upload.wikimedia.org con CORS aperto, verificato) | CC0 | licenze libere di Commons, file per file (CC BY-SA, CC BY, CC0, pubblico dominio) |
 | The Metropolitan Museum of Art | 15 (lettura appena iniziata) | stima 1.000-2.500 (5.506 oggetti candidati dalle ricerche; nelle prime schede lette ne entra circa una su due) | API delle collezioni (ricerca v1.1 per dipartimento, poi una scheda per oggetto); misure dai primi 64 KB di ogni JPEG; manifesti scritti dal catalogo | sì (images.metmuseum.org con CORS aperto, verificato) | CC0 (Open Access) | CC0 (Open Access) |
+| Museo Egizio, collezione online (fonte «musei») | 0 (lettura appena avviata) | circa 700 (fra 500 e 1.000; 5.483 oggetti nella sitemap) | sitemap, poi una scheda per oggetto a una richiesta ogni 1,5 secondi; misure dai primi 64 KB di ogni JPEG; manifesti scritti dal catalogo | sì (CORS aperto, verificato) | non dichiarata | CC0 |
+| Museo Egizio, Turin Papyrus Online Platform, parte pubblica (fonte «musei», tipo «papiro») | 128 papiri | 128 (131 pubblici, 3 disegni senza scrittura) | letta dal browser, file `data/musei-tpop.json` | sì (CORS aperto, verificato) | foto CC0, schede degli editori da citare | CC0 |
+| Modelli 3D di Sketchfab (fonte «musei») | 871 | più di 871: continuano le ricerche negli account grandi | API pubblica di ricerca e oEmbed; anteprima come immagine | sì (`media.sketchfab.com` con CORS aperto) | descrizioni degli autori | licenza di ogni modello, solo incorporato |
 
-Totale epigrafi nel catalogo il 28 ottobre 2026: 12.955. Lingue: latino 12.338, greco 342, poi aramaico, copto, egiziano, punico, accadico, fenicio, sumerico, elamita e antico persiano (da Wikidata e dal Met).
+Totale epigrafi nel catalogo il 28 ottobre 2026: 12.955 dalla fonte «epigrafi» più 870 dalla fonte «musei» (modelli 3D), 13.825 in tutto. Lingue: latino 12.338, greco 342, poi aramaico, copto, egiziano, punico, accadico, fenicio, sumerico, elamita e antico persiano (da Wikidata e dal Met).
 La corsia gira a ruota finché non sono lette tutte le schede del Met, poi ogni notte alle 03:55 UTC (elenchi ogni 30 giorni).
 
 Cosa c'è in ogni scheda («epigrafe» nella voce completa): edizione (CIL, AE e il primo rimando della bibliografia EDH), numero EDH e numero Trismegistos, luogo di ritrovamento (antico e moderno) e provincia romana, luogo di conservazione (museo o collezione, con la città per la mappa quando la scheda la dà), datazione, supporto e materiale, genere dell'iscrizione (sepolcrale, votiva, onoraria, miliario…), testo trascritto dove la licenza lo consente (EDH, CC BY-SA 4.0, al massimo 800 caratteri), licenza dei metadati («licenza_metadati»; «aperta: true» per i dati che devono restare aperti).
@@ -69,10 +72,10 @@ Progetto della Heidelberger Akademie der Wissenschaften dal 1993 al 2021: i dati
 Dati aperti (CSV, EpiDoc, API) con licenza CC BY-SA 4.0, scritta sulla pagina dei dati (`https://edh.ub.uni-heidelberg.de/data`).
 Usati due file: `edh_data_text.csv` (60 MB, 82.450 iscrizioni) e `edh_data_foto.csv` (22 MB, 43.093 foto). Il robots.txt non c'è (404).
 Le foto sono nel server IIIF di heidICON (`heidicon.ub.uni-heidelberg.de/iiif/2/<id>`, Cantaloupe, livello 2, CORS aperto, verificato); il CSV dà già le misure di ogni foto, quindi non serve nessuna richiesta.
-Ogni foto ha un manifesto IIIF pubblicato dall'EDH per il riuso (`https://edh.ub.uni-heidelberg.de/iiif/edh/F000001.manifest.json`, CORS aperto, licenza «rv-fz»: diritti riservati, accesso libero).
+Ogni foto ha un manifesto IIIF pubblicato dall'EDH per il riuso (`https://edh.ub.uni-heidelberg.de/iiif/edh/F000001.manifest.json`, licenza «rv-fz»: diritti riservati, accesso libero). Dal 28 ottobre 2026 quei manifesti sono dietro un controllo anti-robot (Anubis) e nei browser non si aprono: non si usano e non si aggirano. Il catalogo scrive il proprio manifesto per ogni iscrizione (ramo «manifesti», `data/manifesti/epigrafi-edh/<hd>.json`) con i servizi IIIF di heidICON, che restano aperti.
 Nella scheda dell'oggetto heidICON la licenza è «In Copyright (InC)», titolare la Heidelberger Akademie. Il robots.txt di heidICON vieta /detail/, che non usiamo.
 Le foto italiane (8.935 schede di foto) portano la dicitura «Conc. Min. BB.AA.CC. Div. riprod.»: concessione del Ministero con divieto di ulteriore riproduzione. Noi non copiamo nulla: il visore apre le foto dal server di Heidelberg; la dicitura è scritta nella licenza della scheda.
-Iscrizioni con foto: 12.205 (6.552 con una foto, 5.653 con due o più; per queste il catalogo scrive un manifesto che le riunisce).
+Iscrizioni con foto: 12.205 (6.552 con una foto, 5.653 con due o più; per tutte il catalogo scrive un manifesto, che per le seconde riunisce le foto).
 Attenzione per il visore: l'info.json di heidICON dichiara il proprio indirizzo in http (non https).
 
 ### Wikidata e Wikimedia Commons
@@ -165,6 +168,72 @@ Autori con più modelli di iscrizioni: British Museum (CC BY-NC-SA 4.0: Rosetta 
 Formati: glTF o OBJ scaricabili quando l'autore lo permette; la visione nella pagina passa dal visore di Sketchfab.
 Smithsonian 3D (CC0): `3d.si.edu` risponde 403 al nostro server.
 Per il visore RTI di Emendando, la «luce radente virtuale» può già lavorare sulle foto normali; i file RTI veri (PTM, RTI, Relight) sono pochi e sparsi: conviene partire dal caso di Palaikastron (CC BY 4.0) e dagli insiemi di Münster.
+
+## Museo Egizio di Torino (fonte «musei», dal 28 ottobre 2026)
+
+Verifica del 28 ottobre 2026 dal nostro server (collezione online) e dal browser di Giampiero (piattaforma dei papiri).
+
+**Collezione online** (`collezioni.museoegizio.it`): 5.483 oggetti nella sitemap (il sito ne dichiara «oltre 4.000» consultabili; alcune schede della sitemap sono vuote). Il robots.txt vieta solo `/xml/`, `/js/`, `/libs/` e `/Error.aspx` e non dichiara un Crawl-delay: si legge la sitemap, poi la scheda italiana di ogni oggetto, una volta sola, a una richiesta ogni 1,5 secondi (circa due ore e mezza per la prima lettura, divisa fra più giri della corsia). Le immagini sono dichiarate dal museo «liberamente scaricabili e riutilizzabili con licenza Creative Commons CC0» (nella pagina e in ogni foto); i JPEG interi (`/public/objects/images/<id>_full.jpg`, fino a circa 6.000 pixel) hanno CORS aperto: si vedono nel visore e funzionano gli strumenti. Niente IIIF: il catalogo scrive i manifesti (ramo «manifesti», `data/manifesti/musei-egizio/<id>.json`) con le misure lette dai primi 64 KB di ogni JPEG.
+
+Entrano solo gli oggetti con scrittura, decisi dal titolo e dalla descrizione del museo (in dubbio fuori):
+papiri (tipo «papiro»), poi come tipo «epigrafe» con il supporto: stele, ostraka, tavolette, etichette di mummia, coni funerari, e sarcofagi, ushabti, statue, vasi canopi, tavole d'offerta, scarabei, sigilli, amuleti ed elementi architettonici solo quando la descrizione parla di iscrizione, geroglifici, ieratico, demotico, cartigli, formula d'offerta o Libro dei Morti, oppure il titolo porta il nome di una persona («Ushabti di Pakep», «Statua di Amenhotep II»: il nome viene dall'iscrizione; i nomi di divinità non contano). Fuori gli amuleti e le statuette di divinità senza testo, i sarcofagi di animali, la ceramica.
+Ogni voce ha inventario (Cat., S., Suppl., Provv.), materiale, misure, datazione con periodo, dinastia e regno, provenienza, acquisizione, scrittura (geroglifico, ieratico, demotico, copto, greco, quando la scheda lo dice; lingua «egiziano» se non lo dice), una descrizione breve. Luogo per la mappa: Museo Egizio, Torino.
+Stato il 28 ottobre 2026: la corsia «musei» (`.github/workflows/raccolta-musei.yml`) è avviata; nel catalogo non c'è ancora nessun oggetto della collezione online. Attesi, da un campione di 45 schede lette dal server (6 entrano, 2 papiri senza foto restano fuori): circa 700 oggetti, fra 500 e 1.000, quasi tutti «epigrafe» più alcune decine di papiri.
+
+**Piattaforma dei papiri** (`collezionepapiri.museoegizio.it`, Turin Papyrus Online Platform, TPOP): il nostro server non la raggiunge; verificata dal browser. Il robots.txt è lo stesso della collezione (vieta solo `/xml/`, `/js/`, `/libs/`, `/Error.aspx`). La pagina «Politica di accesso e utilizzo» dice che le foto si possono usare con licenza CC0; descrizioni, trascrizioni e traduzioni sono degli editori indicati nella scheda, da citare. Il database completo (più di 12.000 papiri e frammenti) chiede la registrazione: non lo usiamo (non si creano account). Il vecchio `papyri.museoegizio.it`, dove sta il login, è vietato dal suo robots.txt e non si tocca.
+Senza registrazione sono pubblici 131 papiri: letti dal browser il 28 ottobre 2026 a una richiesta ogni 1,2 secondi (scheda e primi 64 KB di ogni foto) e salvati in `data/musei-tpop.json`. Le foto (`/media/<id>/[…](1).jpg`, JPEG interi fino a circa 6.000 pixel) hanno CORS aperto. Entrano 128 papiri (3 sono disegni senza scrittura): 210 foto; ieratico, geroglifico corsivo, demotico, greco (6), aramaico (1) e copto (1). Id «mu-tpop-<numero del documento>», manifesti scritti dal catalogo (`data/manifesti/musei-tpop/<n>.json`). Un papiro che compare anche nella collezione online (stesso inventario) resta solo nella voce TPOP, che ha le schede degli editori.
+La lettura non si ripete da sola: per aggiornarla si rifà dal browser (stesso metodo) e si sostituisce il file.
+
+## Modelli 3D (Sketchfab, fonte «musei», dal 28 ottobre 2026)
+
+Verifica e prima raccolta del 28 ottobre 2026 dal nostro server. L'API pubblica di ricerca (`api.sketchfab.com/v3/search`) non è vietata dal robots.txt di sketchfab.com (vieta solo `/admin*`, `/i/*` e `/models/*/ar-redirect`); si legge a una richiesta ogni 1,5 secondi.
+
+Come si raccoglie (`scripts/fonti/musei.mjs`, parte «sketchfab»):
+
+1. Solo account seri: 49 account di musei, università e progetti (British Museum, Global Digital Heritage, noe-3d.at e Landessammlungen Niederösterreich, Wirtualne Muzea Małopolski, Harvard Museum of the Ancient Near East, Fitzwilliam, MAA Cambridge, Museu Nacional Arqueològic de Tarragona, MicroPasts, Smithsonian, Minneapolis Institute of Art, CNR ISPC, Museo Egizio, Egypt Centre di Swansea, Kelsey Museum, British Library, John Rylands Library, MKG Hamburg, National Museums Scotland, MANN, Historic England e altri; elenco in `ACCOUNT`). Di ogni account si leggono tutti i modelli (fino a 40 pagine); per gli account più grandi si cerca per 33 parole chiave (iscrizione, stele, altare, cippo, miliario, tavoletta, cuneiforme, ostrakon, papiro, sigillo, bollo, lucerna, peso, moneta, legenda, sarcofago, mosaico, codice, legatura, rotolo, geroglifici, rune, ogham, nelle lingue dei musei).
+2. Entra solo un oggetto scritto antico o medievale, deciso da nome, descrizione e tag, con tre prove insieme: una parola di oggetto scritto, una parola di antichità o di medioevo, e una prova forte di scrittura (iscrizione, epigrafe, cuneiforme, geroglifici, ostrakon, papiro, bollo, legenda…) nel nome oppure, per un oggetto il cui nome non dice nulla, una frase esplicita nella descrizione («with an inscription», «inscribed with», «bears the inscription», «mit Inschrift»). Fuori: copie, calchi, ricostruzioni, oggetti moderni (date dal Cinquecento in poi nel nome o nella descrizione), recipienti, sculture ed elementi architettonici senza testo dichiarato, affreschi, colonne a papiro, modelli con limite d'età. In dubbio fuori.
+3. Entra solo un modello pubblico il cui incorporamento è consentito: si controlla l'oEmbed di sketchfab.com, che deve restituire l'iframe ufficiale `https://sketchfab.com/models/<uid>/embed`.
+4. Collegamento: se il modello è lo stesso oggetto di una voce che il catalogo ha già, non fa una voce nuova ma aggiunge `modello3d` a quella voce: Museo Egizio per inventario (i modelli dell'account del museo scrivono «Inv. no.: Cat. 1656», «C.1587», «S.13115»), EDH per numero HD o per edizione CIL, AE, RIB scritta nella descrizione. Altrimenti è una voce nuova («mu-3d-<uid>», tipo «epigrafe» con il supporto, «papiro», oppure codice per legature e manoscritti), con l'anteprima del modello (JPEG di `media.sketchfab.com`, CORS aperto, fino a 1280 pixel) come unica immagine del manifesto scritto dal catalogo (`data/manifesti/musei-3d/<uid>.json`).
+
+Stato reale il 28 ottobre 2026 (prima parte della lettura: tutti i modelli dei primi account, le ricerche degli account grandi continuano nella corsia «musei»):
+
+| Account | Modelli nel catalogo |
+|---|---|
+| Harvard Museum of the Ancient Near East | 650 (tavolette cuneiformi) |
+| Global Digital Heritage | 97 (iscrizioni romane di Spagna, Bosnia, Montenegro e Italia, iscrizioni preislamiche di Mleiha, iscrizioni medievali di Sigüenza) |
+| The Egypt Centre, Swansea | 29 |
+| noe-3d.at e Landessammlungen Niederösterreich | 24 (Carnuntum: lapidi, bolli laterizi, lucerne, monete) |
+| The British Museum | 19 (Stele di Rosetta, decreti ateniesi, tavolette, stele) |
+| Museo Egizio | 17 (si collegano alle voci dell'Egizio quando la collezione online sarà letta) |
+| Wirtualne Muzea Małopolski | 12 (ostraka greci, sigilli) |
+| Kelsey Museum | 8 |
+| Museu Nacional Arqueològic de Tarragona | 5 |
+| Fitzwilliam Museum | 4 |
+| Minneapolis Institute of Art | 3 |
+| British Library | 2 |
+| MAA Cambridge | 1 |
+| **Totale** | **871** |
+
+Tipi: 870 «epigrafe» (635 tavolette, 33 stele, 29 ostraka, 12 lapidi, 8 altari, 7 sigilli, 6 monete, 4 anelli, 3 lucerne, 2 bolli, 2 cippi, 2 miliari, 2 pesi, 1 mosaico, 124 altri oggetti iscritti) e 1 «papiro».
+Licenze dei modelli: 656 con la licenza standard di Sketchfab (si vedono solo incorporati), 94 CC BY-NC, 90 CC BY, 18 CC BY-NC-SA, 10 CC0, 1 CC BY-NC-ND, 2 «Standard». Tutti i 871 hanno l'incorporamento consentito (oEmbed verificato).
+Collegati a voci già nel catalogo: 0 il 28 ottobre 2026 (i 17 modelli del Museo Egizio si collegano appena la corsia avrà letto le schede del museo; nessuna descrizione dei modelli raccolti cita un numero HD o un'edizione dell'EDH).
+Il catalogo non copia i modelli: si vedono soltanto nel visualizzatore ufficiale di Sketchfab, con autore, licenza e link.
+
+### Specifica per il sito: linguetta «3D»
+
+Quando una voce ha il campo `modello3d` (voce completa, in `data/catalogo/voci/<fonte>-<pezzo>.json`), la scheda e il visore mostrano una linguetta «3D» accanto alle immagini.
+
+Il campo è fatto così: `modello3d: { sketchfab: "<uid>", licenza: "<licenza>", autore: "<nome dell'autore o del museo>", account: "<username su Sketchfab>", url: "https://sketchfab.com/3d-models/<uid>", titolo: "<nome del modello>" }`.
+Può stare su una voce della fonte «musei» (oggetto nuovo, che come immagine ha solo l'anteprima del modello) oppure su una voce di un'altra fonte (per esempio un'iscrizione dell'EDH): in quel caso il visore apre le foto come sempre e la linguetta «3D» aggiunge il modello.
+
+Cosa mostra la linguetta:
+
+1. Il visualizzatore ufficiale di Sketchfab incorporato, e nient'altro al suo posto: `<iframe src="https://sketchfab.com/models/<uid>/embed" title="<titolo>" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy">`. Niente download del modello e niente visore nostro: il modello resta su Sketchfab.
+2. Sotto l'iframe, sempre visibile, la riga di attribuzione che Sketchfab chiede per gli incorporamenti: il nome del modello con il link alla sua pagina (`url`), l'autore con il link al suo profilo (`https://sketchfab.com/<account>`), la licenza (`licenza`) e «su Sketchfab» con il link a `https://sketchfab.com`. Per le licenze Creative Commons il nome della licenza porta alla sua pagina.
+3. L'iframe si carica solo quando si apre la linguetta (non con la scheda), perché il visualizzatore è pesante.
+4. Dal 28 ottobre 2026 nell'indice leggero non c'è un campo per il 3D: la linguetta si decide dalla voce completa. Se servirà un filtro «con modello 3D» nella ricerca, si aggiunge una colonna in fondo a `campi`.
+
+Le voci nuove create da un modello hanno come immagine del manifesto l'anteprima di Sketchfab (`media.sketchfab.com`, CORS aperto): per loro conviene aprire la scheda direttamente sulla linguetta «3D».
 
 ## Da fare
 

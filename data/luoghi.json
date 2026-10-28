@@ -12330,6 +12330,106 @@
    "lat": 56.312,
    "lon": 38.1387,
    "geonames": 496638
+  },
+  "torino": {
+   "nome": "Torino",
+   "en": "Turin",
+   "paese": "IT",
+   "lat": 45.0705,
+   "lon": 7.6868,
+   "geonames": 3165524
+  },
+  "napoli": {
+   "nome": "Napoli",
+   "en": "Naples",
+   "paese": "IT",
+   "lat": 40.8522,
+   "lon": 14.2681,
+   "geonames": 3172394
+  },
+  "tarragona": {
+   "nome": "Tarragona",
+   "paese": "ES",
+   "lat": 41.1191,
+   "lon": 1.2454,
+   "geonames": 3108288
+  },
+  "swansea": {
+   "nome": "Swansea",
+   "paese": "GB",
+   "lat": 51.6208,
+   "lon": -3.9432,
+   "geonames": 2636432
+  },
+  "ann-arbor": {
+   "nome": "Ann Arbor",
+   "paese": "US",
+   "lat": 42.2776,
+   "lon": -83.7409,
+   "geonames": 4984247
+  },
+  "minneapolis": {
+   "nome": "Minneapolis",
+   "paese": "US",
+   "lat": 44.98,
+   "lon": -93.2638,
+   "geonames": 5037649
+  },
+  "liverpool": {
+   "nome": "Liverpool",
+   "paese": "GB",
+   "lat": 53.4106,
+   "lon": -2.9779,
+   "geonames": 2644210
+  },
+  "bonn": {
+   "nome": "Bonn",
+   "paese": "DE",
+   "lat": 50.7344,
+   "lon": 7.0955,
+   "geonames": 2946447
+  },
+  "santander": {
+   "nome": "Santander",
+   "paese": "ES",
+   "lat": 43.4659,
+   "lon": -3.8049,
+   "geonames": 3109718
+  },
+  "cartagena": {
+   "nome": "Cartagena",
+   "paese": "ES",
+   "lat": 37.602,
+   "lon": -0.984,
+   "geonames": 2520058
+  },
+  "manacor": {
+   "nome": "Manacor",
+   "paese": "ES",
+   "lat": 39.5696,
+   "lon": 3.2096,
+   "geonames": 2514216
+  },
+  "castricum": {
+   "nome": "Castricum",
+   "paese": "NL",
+   "lat": 52.5483,
+   "lon": 4.6694,
+   "geonames": 2757991
+  },
+  "piombino": {
+   "nome": "Piombino",
+   "paese": "IT",
+   "lat": 42.9255,
+   "lon": 10.5259,
+   "geonames": 3170674
+  },
+  "uncastillo": {
+   "nome": "Uncastillo",
+   "paese": "ES",
+   "lat": 42.3596,
+   "lon": -1.1284,
+   "geonames": 3107275
   }
  },
  "citta": {
@@ -14445,7 +14545,23 @@
   "Moscow": "mosca",
   "Москва": "mosca",
   "Sergiev Posad": "sergiev-posad",
-  "Сергиев Посад": "sergiev-posad"
+  "Сергиев Посад": "sergiev-posad",
+  "Torino": "torino",
+  "Turin": "torino",
+  "Naples": "napoli",
+  "Napoli": "napoli",
+  "Tarragona": "tarragona",
+  "Swansea": "swansea",
+  "Ann Arbor": "ann-arbor",
+  "Minneapolis": "minneapolis",
+  "Liverpool": "liverpool",
+  "Bonn": "bonn",
+  "Santander": "santander",
+  "Cartagena": "cartagena",
+  "Manacor": "manacor",
+  "Castricum": "castricum",
+  "Piombino": "piombino",
+  "Uncastillo": "uncastillo"
  },
  "biblioteche": {
   "Bibliothèque Carré d'art / Nîmes": "nimes",
