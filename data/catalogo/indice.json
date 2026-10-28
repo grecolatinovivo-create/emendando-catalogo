@@ -1,12 +1,12 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T12:59:37.630Z",
- "totale": 588638,
- "con_autori": 32390,
- "miniati": 11291,
+ "aggiornato": "2026-10-28T13:04:41.023Z",
+ "totale": 592267,
+ "con_autori": 32512,
+ "miniati": 11294,
  "musica": 21300,
  "manoscritti": 544307,
- "papiri": 13194,
+ "papiri": 16823,
  "epigrafi": 15478,
  "stampe_antiche": 15659,
  "incunaboli": 15587,
@@ -37,11 +37,11 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 103037
+   "codici": 103058
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 53164
+   "codici": 53172
   },
   "fr": {
    "nome": "francese",
@@ -49,7 +49,7 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 24956
+   "codici": 27213
   },
   "de": {
    "nome": "tedesco",
@@ -57,15 +57,15 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 23544
+   "codici": 24476
   },
   "he": {
    "nome": "ebraico",
-   "codici": 20122
+   "codici": 20145
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 19193
+   "codici": 19262
   },
   "pi": {
    "nome": "pali",
@@ -127,6 +127,10 @@
    "nome": "islandese e norreno",
    "codici": 3431
   },
+  "cop": {
+   "nome": "copto",
+   "codici": 2968
+  },
   "tr": {
    "nome": "turco",
    "codici": 2678
@@ -134,10 +138,6 @@
   "ko": {
    "nome": "coreano",
    "codici": 2571
-  },
-  "cop": {
-   "nome": "copto",
-   "codici": 2559
   },
   "gez": {
    "nome": "etiopico",
@@ -171,6 +171,10 @@
    "nome": "svedese",
    "codici": 926
   },
+  "egy": {
+   "nome": "egiziano antico (geroglifico, ieratico, demotico)",
+   "codici": 652
+  },
   "akk": {
    "nome": "accadico",
    "codici": 650
@@ -179,13 +183,9 @@
    "nome": "armeno",
    "codici": 635
   },
-  "egy": {
-   "nome": "egiziano antico (geroglifico, ieratico, demotico)",
-   "codici": 598
-  },
   "arc": {
    "nome": "aramaico",
-   "codici": 562
+   "codici": 569
   },
   "ru": {
    "nome": "russo",
@@ -435,15 +435,15 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 8198
+   "codici": 8200
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7559
+   "codici": 7650
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15886
+   "codici": 15915
   },
   "medievale": {
    "nome": "autori medievali",
@@ -473,7 +473,7 @@
   },
   "papiro": {
    "nome": "papiri",
-   "codici": 13194
+   "codici": 16823
   },
   "epigrafe": {
    "nome": "epigrafi",
@@ -509,7 +509,7 @@
    "nome": "Cicerone",
    "latino": "Cicero",
    "categoria": "classico-latino",
-   "codici": 1419
+   "codici": 1420
   },
   "cesare": {
    "nome": "Cesare",
@@ -593,7 +593,7 @@
    "nome": "Stazio",
    "latino": "Statius",
    "categoria": "classico-latino",
-   "codici": 149
+   "codici": 150
   },
   "plinio-vecchio": {
    "nome": "Plinio il Vecchio",
@@ -911,13 +911,13 @@
    "nome": "Omero",
    "latino": "Homerus",
    "categoria": "classico-greco",
-   "codici": 495
+   "codici": 549
   },
   "esiodo": {
    "nome": "Esiodo",
    "latino": "Hesiodus",
    "categoria": "classico-greco",
-   "codici": 137
+   "codici": 139
   },
   "pindaro": {
    "nome": "Pindaro",
@@ -959,7 +959,7 @@
    "nome": "Archiloco",
    "latino": "Archilochus",
    "categoria": "classico-greco",
-   "codici": 2
+   "codici": 3
   },
   "tirteo": {
    "nome": "Tirteo",
@@ -971,25 +971,25 @@
    "nome": "Eschilo",
    "latino": "Aeschylus",
    "categoria": "classico-greco",
-   "codici": 52
+   "codici": 53
   },
   "sofocle": {
    "nome": "Sofocle",
    "latino": "Sophocles",
    "categoria": "classico-greco",
-   "codici": 88
+   "codici": 90
   },
   "euripide": {
    "nome": "Euripide",
    "latino": "Euripides",
    "categoria": "classico-greco",
-   "codici": 166
+   "codici": 170
   },
   "aristofane": {
    "nome": "Aristofane",
    "latino": "Aristophanes",
    "categoria": "classico-greco",
-   "codici": 143
+   "codici": 146
   },
   "menandro": {
    "nome": "Menandro",
@@ -1001,13 +1001,13 @@
    "nome": "Erodoto",
    "latino": "Herodotus",
    "categoria": "classico-greco",
-   "codici": 62
+   "codici": 64
   },
   "tucidide": {
    "nome": "Tucidide",
    "latino": "Thucydides",
    "categoria": "classico-greco",
-   "codici": 70
+   "codici": 71
   },
   "senofonte": {
    "nome": "Senofonte",
@@ -1043,19 +1043,19 @@
    "nome": "Isocrate",
    "latino": "Isocrates",
    "categoria": "classico-greco",
-   "codici": 89
+   "codici": 91
   },
   "demostene": {
    "nome": "Demostene",
    "latino": "Demosthenes",
    "categoria": "classico-greco",
-   "codici": 155
+   "codici": 165
   },
   "eschine": {
    "nome": "Eschine",
    "latino": "Aeschines",
    "categoria": "classico-greco",
-   "codici": 54
+   "codici": 56
   },
   "andocide": {
    "nome": "Andocide",
@@ -1067,7 +1067,7 @@
    "nome": "Antifonte",
    "latino": "Antiphon",
    "categoria": "classico-greco",
-   "codici": 5
+   "codici": 6
   },
   "iseo": {
    "nome": "Iseo",
@@ -1139,7 +1139,7 @@
    "nome": "Apollonio Rodio",
    "latino": "Apollonius Rhodius",
    "categoria": "classico-greco",
-   "codici": 19
+   "codici": 21
   },
   "teocrito": {
    "nome": "Teocrito",
@@ -1157,7 +1157,7 @@
    "nome": "Arato",
    "latino": "Aratus",
    "categoria": "classico-greco",
-   "codici": 58
+   "codici": 60
   },
   "nicandro": {
    "nome": "Nicandro",
@@ -1193,7 +1193,7 @@
    "nome": "Ippocrate",
    "latino": "Hippocrates",
    "categoria": "classico-greco",
-   "codici": 458
+   "codici": 460
   },
   "tolomeo": {
    "nome": "Tolomeo",
@@ -1361,7 +1361,7 @@
    "nome": "Esopo",
    "latino": "Aesopus",
    "categoria": "classico-greco",
-   "codici": 190
+   "codici": 191
   },
   "flavio-giuseppe": {
    "nome": "Flavio Giuseppe",
@@ -1451,7 +1451,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7377
+   "codici": 7404
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1523,7 +1523,7 @@
    "nome": "Atanasio",
    "latino": "Athanasius",
    "categoria": "cristiano",
-   "codici": 400
+   "codici": 402
   },
   "gregorio-nisseno": {
    "nome": "Gregorio di Nissa",
@@ -8541,34 +8541,34 @@
   },
   "papiri": {
    "nome": "Papiri: Michigan, Yale, Duke, Princeton, Vienna (ÖNB), Colonia e Berkeley, con le schede di papyri.info",
-   "codici": 8344,
+   "codici": 11973,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 7,
+   "miniati": 10,
    "musica": 1,
-   "papiri": 8344,
+   "papiri": 11973,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 250,
+   "con_autori": 372,
    "lingue": {
-    "grc": 6689,
-    "ar": 953,
-    "xx": 181,
-    "cop": 415,
-    "la": 74,
-    "?": 47,
-    "egy": 83,
-    "he": 29,
-    "arc": 8,
+    "grc": 8946,
+    "ar": 1885,
+    "xx": 250,
+    "cop": 824,
+    "la": 95,
+    "?": 55,
+    "egy": 137,
+    "he": 52,
+    "arc": 15,
     "de": 1
    },
    "esito": "ok",
    "prefissi": [
     "pap-"
    ],
-   "pezzi_voci": 11,
+   "pezzi_voci": 15,
    "indice": [
     "indice/papiri-0.json"
    ]
@@ -9207,7 +9207,7 @@
   {
    "file": "indice/papiri-0.json",
    "fonte": "papiri",
-   "righe": 8344
+   "righe": 11973
   },
   {
    "file": "indice/epigrafi-0.json",
@@ -18108,7 +18108,7 @@
   37964,
   1,
   2942,
-  859,
+  1712,
   2,
   1,
   1,
@@ -18622,7 +18622,7 @@
   2,
   7,
   4,
-  773,
+  1499,
   22,
   1,
   1,
@@ -19627,7 +19627,7 @@
   1,
   1,
   3,
-  1788,
+  3502,
   5788,
   3,
   1,
@@ -19855,7 +19855,7 @@
   14,
   6,
   3062,
-  128,
+  255,
   1,
   1,
   3,
@@ -20679,7 +20679,7 @@
   16,
   289,
   4,
-  208,
+  417,
   241,
   1,
   1,
