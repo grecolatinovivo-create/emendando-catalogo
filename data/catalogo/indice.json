@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T14:36:29.166Z",
- "totale": 597921,
- "con_autori": 32579,
+ "aggiornato": "2026-10-28T14:55:40.373Z",
+ "totale": 598756,
+ "con_autori": 32582,
  "miniati": 11294,
  "musica": 21300,
- "manoscritti": 544309,
+ "manoscritti": 545144,
  "papiri": 18311,
  "epigrafi": 19642,
  "stampe_antiche": 15659,
@@ -37,11 +37,11 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 103075
+   "codici": 103126
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 53246
+   "codici": 53843
   },
   "fr": {
    "nome": "francese",
@@ -97,7 +97,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 8052
+   "codici": 8239
   },
   "en": {
    "nome": "inglese",
@@ -435,11 +435,11 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 8200
+   "codici": 8202
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7710
+   "codici": 7711
   },
   "cristiano": {
    "nome": "autori cristiani",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 538994
+   "codici": 539829
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -515,7 +515,7 @@
    "nome": "Cesare",
    "latino": "Caesar",
    "categoria": "classico-latino",
-   "codici": 154
+   "codici": 155
   },
   "sallustio": {
    "nome": "Sallustio",
@@ -611,7 +611,7 @@
    "nome": "Tacito",
    "latino": "Tacitus",
    "categoria": "classico-latino",
-   "codici": 56
+   "codici": 57
   },
   "svetonio": {
    "nome": "Svetonio",
@@ -1109,7 +1109,7 @@
    "nome": "Plutarco",
    "latino": "Plutarchus",
    "categoria": "classico-greco",
-   "codici": 367
+   "codici": 368
   },
   "luciano": {
    "nome": "Luciano di Samosata",
@@ -8739,7 +8739,7 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 27230,
+   "codici": 28065,
    "carte": 2,
    "carte_stampa": 0,
    "miniati": 4,
@@ -8749,11 +8749,11 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 1319,
+   "con_autori": 1322,
    "lingue": {
-    "la": 20882,
-    "it": 283,
-    "?": 2595,
+    "la": 20933,
+    "it": 470,
+    "?": 3192,
     "grc": 2983,
     "fr": 24,
     "xx": 24,
@@ -8775,7 +8775,7 @@
    "prefissi": [
     "bav-"
    ],
-   "pezzi_voci": 35,
+   "pezzi_voci": 36,
    "indice": [
     "indice/vaticana-0.json",
     "indice/vaticana-1.json"
@@ -9261,7 +9261,7 @@
   {
    "file": "indice/vaticana-1.json",
    "fonte": "vaticana",
-   "righe": 7230
+   "righe": 8065
   }
  ],
  "biblioteche_tipo": [
@@ -18226,7 +18226,7 @@
   3,
   2,
   3,
-  27235,
+  28070,
   1,
   43,
   8,

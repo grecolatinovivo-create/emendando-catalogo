@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T12:26:30.415Z",
+ "aggiornato": "2026-10-28T14:55:40.373Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -414,11 +414,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 742,
+   "codici": 745,
    "esito": "ok"
   }
  },
- "totale": 12746,
+ "totale": 12749,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -45242,6 +45242,99 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Borgh.368/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Borgh.368",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-cappon-32",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Cappon. 32",
+   "datazione": "Sec. XVII",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Lettere",
+   "autori": [
+    {
+     "id": "cesare",
+     "autore": "Cesare",
+     "latino": "Caesar",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…card., 1526-1585 ; Riccardi, Giulio Cesare, 1550-1602»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Cappon.32/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Cappon.32",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-cappon-95",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Cappon. 95",
+   "datazione": "Sec. XVII",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": null,
+   "autori": [
+    {
+     "id": "tacito",
+     "autore": "Tacito",
+     "latino": "Tacitus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Tacitus, Cornelius, 56-c. 120»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Cappon.95/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Cappon.95",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-cappon-247",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Cappon. 247",
+   "datazione": "Sec. XVI",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": null,
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Brutus, Marcus Iunius, m. 42 a.C. ; Plutarchus, c. 50-127»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Cappon.247/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Cappon.247",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },
