@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T14:55:40.373Z",
+ "aggiornato": "2026-10-28T15:58:10.186Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -404,6 +404,11 @@
   },
   "giappone": {
    "nome": "Giappone, scritture non librarie: tavolette di legno (mokkan) del Mokkanko di Nabunken e calchi di iscrizioni (takuhon) della National Diet Library e di Waseda",
+   "codici": 0,
+   "esito": "ok"
+  },
+  "romani": {
+   "nome": "Instrumentum romano: oggetti scritti del Portable Antiquities Scheme (British Museum; foto e schede CC BY-SA da Wikimedia Commons) e tavolette di Vindolanda (foto di Wikimedia Commons, testi di RIB online CC BY 4.0)",
    "codici": 0,
    "esito": "ok"
   },
