@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-28T09:22:53.840Z",
+ "aggiornato": "2026-10-28T09:56:33.019Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -399,11 +399,11 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 716,
+   "codici": 738,
    "esito": "ok"
   }
  },
- "totale": 12720,
+ "totale": 12742,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -41235,6 +41235,720 @@
    ],
    "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.C.132/manifest.json",
    "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.C.132",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-arch-cap-s-pietro-e-27",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Arch. Cap. S. Pietro. E. 27",
+   "datazione": "Sec. XV in.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": null,
+   "autori": [
+    {
+     "id": "ammiano",
+     "autore": "Ammiano Marcellino",
+     "latino": "Ammianus Marcellinus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Ammianus Marcellinus, 330-395»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.E.27/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.E.27",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-arch-cap-s-pietro-e-28",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Arch. Cap. S. Pietro. E. 28",
+   "datazione": "Sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": null,
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Plutarchus, c. 50-127»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.E.28/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.E.28",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-arch-cap-s-pietro-e-30",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Arch. Cap. S. Pietro. E. 30",
+   "datazione": "Sec. XIV-XV",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": null,
+   "autori": [
+    {
+     "id": "giustino",
+     "autore": "Giustino",
+     "latino": "Iustinus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «(Iustinus, Marcus Iunianus, sec. III»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.E.30/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.E.30",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-arch-cap-s-pietro-e-31",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Arch. Cap. S. Pietro. E. 31",
+   "datazione": "Sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": null,
+   "autori": [
+    {
+     "id": "eutropio",
+     "autore": "Eutropio",
+     "latino": "Eutropius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Eutropius, sec. IV»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.E.31/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.E.31",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-arch-cap-s-pietro-e-33",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Arch. Cap. S. Pietro. E. 33",
+   "datazione": "Sec. XV <in.>",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Virorum illustrium vitae aliquot variis interpretibus",
+   "autori": [
+    {
+     "id": "plutarco",
+     "autore": "Plutarco",
+     "latino": "Plutarchus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Vite parallele"
+     ],
+     "corrispondenza": "autore: «Plutarchus, c. 50-127»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.E.33/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.E.33",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-arch-cap-s-pietro-h-8",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Arch. Cap. S. Pietro. H. 8",
+   "datazione": "Sec. XIII",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De constructione",
+   "autori": [
+    {
+     "id": "prisciano",
+     "autore": "Prisciano",
+     "latino": "Priscianus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Institutiones grammaticae"
+     ],
+     "corrispondenza": "autore: «Priscianus Caesariensis, sec. V-VI»"
+    },
+    {
+     "id": "apollonio-discolo",
+     "autore": "Apollonio Discolo",
+     "latino": "Apollonius Dyscolus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Sintassi"
+     ],
+     "corrispondenza": "titolo: «De constructione»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.H.8/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.H.8",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-arch-cap-s-pietro-h-15",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Arch. Cap. S. Pietro. H. 15",
+   "datazione": "sec. XV in",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Thebais",
+   "autori": [
+    {
+     "id": "stazio",
+     "autore": "Stazio",
+     "latino": "Statius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tebaide"
+     ],
+     "corrispondenza": "autore: «Statius, Publius Papinius, c. 40-c. 96»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.H.15/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.H.15",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-arch-cap-s-pietro-h-16",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Arch. Cap. S. Pietro. H. 16",
+   "datazione": "Sec. XIV ex.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Tragoediae cum notis marginalibus et glossis interlineas",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Tragedie"
+     ],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus, 5/4 a.C.-65 d.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.H.16/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.H.16",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-arch-cap-s-pietro-h-18",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Arch. Cap. S. Pietro. H. 18",
+   "datazione": "Sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": null,
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Terentius Afer, Publius, c. 195-159 a.C»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.H.18/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.H.18",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-arch-cap-s-pietro-h-19",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Arch. Cap. S. Pietro. H. 19",
+   "datazione": "sec. XI in",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "Comoediae (Terentius Afer, Publius, c. 195-159 a.C.). Gruppi, scelte",
+   "autori": [
+    {
+     "id": "terenzio",
+     "autore": "Terenzio",
+     "latino": "Terentius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Commedie"
+     ],
+     "corrispondenza": "autore: «Terentius Afer, Publius, c. 195-159 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.H.19/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.H.19",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-arch-cap-s-pietro-h-22",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Arch. Cap. S. Pietro. H. 22",
+   "datazione": "Sec. XIV ex.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": null,
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius, 106-43 a.C»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.H.22/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.H.22",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-arch-cap-s-pietro-h-23",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Arch. Cap. S. Pietro. H. 23",
+   "datazione": "Sec. XIV ex.",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": null,
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius, 106-43 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.H.23/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.H.23",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-arch-cap-s-pietro-h-24",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Arch. Cap. S. Pietro. H. 24",
+   "datazione": "Sec. XV in.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Orationes",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius, 106-43 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.H.24/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.H.24",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-arch-cap-s-pietro-h-25",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Arch. Cap. S. Pietro. H. 25",
+   "datazione": "Sec. IX med.",
+   "secolo": [
+    9,
+    9
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Orationes",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius, 106-43 a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.H.25/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.H.25",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-arch-cap-s-pietro-h-33",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Arch. Cap. S. Pietro. H. 33",
+   "datazione": "Sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epitoma rei militaris (Vegetius Renatus, Flavius, c. 400)",
+   "autori": [
+    {
+     "id": "vegezio",
+     "autore": "Vegezio",
+     "latino": "Vegetius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epitoma rei militaris"
+     ],
+     "corrispondenza": "autore: «Vegetius Renatus, Flavius, c. 400»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.H.33/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.H.33",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-arch-cap-s-pietro-h-34",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Arch. Cap. S. Pietro. H. 34",
+   "datazione": "Sec. XIV",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": null,
+   "autori": [
+    {
+     "id": "vitruvio",
+     "autore": "Vitruvio",
+     "latino": "Vitruvius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Vitruvius Pollio, sec. I a.C»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.H.34/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.H.34",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-arch-cap-s-pietro-h-35",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Arch. Cap. S. Pietro. H. 35",
+   "datazione": "Sec. XIV",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": null,
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Euclides, sec. III a.C.»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.H.35/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.H.35",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-arch-cap-s-pietro-h-40",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Arch. Cap. S. Pietro. H. 40",
+   "datazione": "Sec. XIII-XIV",
+   "secolo": [
+    13,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": null,
+   "autori": [
+    {
+     "id": "palladio",
+     "autore": "Palladio",
+     "latino": "Palladius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Palladius, Rutilius Taurus Aemilianus, sec. IV-V»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.H.40/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.H.40",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-arch-cap-s-pietro-h-44",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Arch. Cap. S. Pietro. H. 44",
+   "datazione": "Sec. XII",
+   "secolo": [
+    12,
+    12
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Passionarius Galeni (Gariopontus, m. c. 1050)",
+   "autori": [
+    {
+     "id": "galeno",
+     "autore": "Galeno",
+     "latino": "Galenus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Passionarius Galeni (Gariopontus, m. c. 1050)»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.H.44/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.H.44",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-arch-cap-s-pietro-h-47",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Arch. Cap. S. Pietro. H. 47",
+   "datazione": "sec.  XV in",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [],
+   "lingua_dedotta": false,
+   "titolo": "De consolatione ad Polybium",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "Consolationes"
+     ],
+     "corrispondenza": "autore: «Seneca, Lucius Annaeus, 5/4 a.C.-65 d.C.»"
+    },
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "titolo: «De consolatione ad Polybium»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.H.47/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.H.47",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-arch-cap-s-pietro-h-52",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Arch. Cap. S. Pietro. H. 52",
+   "datazione": "Sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Platonis, Dialogi",
+   "autori": [
+    {
+     "id": "platone",
+     "autore": "Platone",
+     "latino": "Plato",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Platonis, Dialogi»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.H.52/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.H.52",
+   "licenza": "© Biblioteca Apostolica Vaticana",
+   "immagini": null
+  },
+  {
+   "id": "bav-arch-cap-s-pietro-h-53",
+   "fonte": "vaticana",
+   "biblioteca": "Biblioteca Apostolica Vaticana",
+   "citta": "Città del Vaticano",
+   "segnatura": "Arch. Cap. S. Pietro. H. 53",
+   "datazione": "Sec. XIV",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aristotelis, Ethica libri I- <X>",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Aristotelis, Ethica libri I- <X>»"
+    }
+   ],
+   "manifest": "https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.H.53/manifest.json",
+   "pagina": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.H.53",
    "licenza": "© Biblioteca Apostolica Vaticana",
    "immagini": null
   },
