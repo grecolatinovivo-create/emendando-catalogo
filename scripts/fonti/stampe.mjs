@@ -16,7 +16,8 @@
 //   gallica    Gallica (BnF e biblioteche partner): Cloudflare respinge i server, quindi NESSUNA richiesta da qui. Gli incunaboli e le copie
 //              delle edizioni principi del Cinquecento si raccolgono dal browser (SRU di Gallica, una pagina di 50 schede ogni 5 secondi
 //              come chiede il Crawl-delay del robots.txt) e stanno in data/stampe-gallica.json, che questa fonte si limita a leggere.
-// Bloccate e non usate dai server: e-rara (robots.txt vieta tutto), Gallica (Cloudflare respinge i server: entra dal browser), BSB-Ink (robots.txt).
+// Bloccate e non usate dai server: e-rara (robots.txt vieta tutto), Gallica (Cloudflare respinge i server: entra dal browser), BSB-Ink (robots.txt),
+// OPAC della Vaticana (robots.txt vieta tutto tranne la pagina iniziale: gli altri fondi a stampa di digi.vatlib.it, senza metadati nei manifesti, restano fuori).
 // Stato in data/stampe.json (una voce per riga): ogni elenco si rilegge ogni GIORNI giorni, ogni manifesto una volta sola.
 import fs from "node:fs";
 import { scarica, log, tag, records, token } from "../rete.mjs";
@@ -33,6 +34,7 @@ export const BLOCCATE = {
   "e-rara.ch": "robots.txt vieta tutto agli agenti generici (anche l'OAI-PMH)",
   "gallica.bnf.fr": "Cloudflare respinge le richieste dei server (403, «Attention Required»): la raccolta si fa dal browser (data/stampe-gallica.json)",
   "inkunabeln.digitale-sammlungen.de": "robots.txt vieta tutto (BSB-Ink); gli stessi incunaboli si leggono dall'API di ricerca del MDZ",
+  "opac.vatlib.it": "robots.txt consente solo la pagina iniziale e vieta tutto il resto (28 ottobre 2026): niente schede per i fondi a stampa della Vaticana, che restano fuori tranne «Inc.»",
 };
 
 // ------------------------------------------------------------------------------------------------ stato
