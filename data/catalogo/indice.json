@@ -1,12 +1,12 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T19:16:00.927Z",
- "totale": 622504,
+ "aggiornato": "2026-10-28T19:55:09.931Z",
+ "totale": 623513,
  "con_autori": 32686,
  "miniati": 11309,
  "musica": 21303,
  "manoscritti": 545963,
- "papiri": 27776,
+ "papiri": 28785,
  "epigrafi": 33106,
  "stampe_antiche": 15659,
  "incunaboli": 15587,
@@ -37,15 +37,15 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 107828
+   "codici": 107906
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 54484
+   "codici": 54565
   },
   "grc": {
    "nome": "greco",
-   "codici": 32839
+   "codici": 33140
   },
   "fr": {
    "nome": "francese",
@@ -53,7 +53,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 27688
+   "codici": 27895
   },
   "de": {
    "nome": "tedesco",
@@ -61,11 +61,11 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 20307
+   "codici": 20308
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 19673
+   "codici": 19674
   },
   "pi": {
    "nome": "pali",
@@ -117,7 +117,7 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 5115
+   "codici": 5116
   },
   "pt": {
    "nome": "portoghese",
@@ -125,7 +125,7 @@
   },
   "cop": {
    "nome": "copto",
-   "codici": 4743
+   "codici": 4783
   },
   "ca": {
    "nome": "catalano",
@@ -145,7 +145,7 @@
   },
   "egy": {
    "nome": "egiziano antico (geroglifico, ieratico, demotico)",
-   "codici": 2007
+   "codici": 2365
   },
   "gez": {
    "nome": "etiopico",
@@ -189,7 +189,7 @@
   },
   "arc": {
    "nome": "aramaico",
-   "codici": 582
+   "codici": 583
   },
   "ru": {
    "nome": "russo",
@@ -473,7 +473,7 @@
   },
   "papiro": {
    "nome": "papiri",
-   "codici": 27776
+   "codici": 28785
   },
   "epigrafe": {
    "nome": "epigrafi",
@@ -8646,28 +8646,29 @@
   },
   "papiri": {
    "nome": "Papiri: Michigan, Yale, Duke, Princeton, Vienna (ÖNB), Colonia e Berkeley, con le schede di papyri.info",
-   "codici": 22806,
+   "codici": 23815,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 25,
    "musica": 1,
-   "papiri": 22806,
+   "papiri": 23815,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
    "con_autori": 530,
    "lingue": {
-    "grc": 14548,
-    "ar": 5029,
-    "xx": 660,
-    "cop": 2590,
-    "la": 129,
-    "?": 97,
-    "egy": 562,
+    "grc": 14849,
+    "ar": 5236,
+    "xx": 661,
+    "cop": 2630,
+    "la": 207,
+    "?": 178,
+    "egy": 920,
     "it": 1,
-    "he": 110,
-    "arc": 28,
+    "he": 111,
+    "fa": 1,
+    "arc": 29,
     "de": 2,
     "syr": 2
    },
@@ -8675,7 +8676,7 @@
    "prefissi": [
     "pap-"
    ],
-   "pezzi_voci": 29,
+   "pezzi_voci": 30,
    "indice": [
     "indice/papiri-0.json",
     "indice/papiri-1.json"
@@ -9348,7 +9349,7 @@
   {
    "file": "indice/papiri-1.json",
    "fonte": "papiri",
-   "righe": 2806
+   "righe": 3815
   },
   {
    "file": "indice/epigrafi-0.json",
@@ -18956,7 +18957,7 @@
   37964,
   1,
   2942,
-  5084,
+  6093,
   2,
   1,
   1,
