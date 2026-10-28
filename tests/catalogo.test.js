@@ -916,3 +916,46 @@ test("Corsia europa: Darmstadt (TUdigit), handrit.is, Polona, Manuscriptorium", 
   assert.ok(motivoManuscriptorium({ m: "https://e-codices.ch/metadata/iiif/x/manifest.json", b: "Aargauer Kantonsbibliothek" }));
   assert.ok(motivoManuscriptorium({ m: mc, b: "Universitätsbibliothek Heidelberg", s: "Cod. Pal. graec. 45" }));
 });
+
+test("Epigrafi: EDH (CSV e schede), Met, Wikidata, misure dei JPEG", async () => {
+  const { leggiCsv, estraiEdh } = await import("../scripts/epigrafi-edh.mjs");
+  const testi = leggiCsv('hd_nr,tm_nr,provinz,fo_antik,aufbewahrung,i_gattung,denkmaltyp,material,dat_jahr_a,dat_jahr_e,nl_text,atext,literatur,foto_nr\n' +
+    'HD000001,123,LaC,Cumae,"Napoli, Mus. Naz.",titsep,Tafel,Marmor,71,130,L,"D(is) M(anibus) / ""Noniae""","AE 1983, 0192. # M. Annecchino #",F000001|https://x F000002|https://y\n' +
+    'HD000002,,Rom,Roma,,titsac,,,,,G,X,,\n');
+  const foto = leggiCsv('f_nr,cil,ae,aufschrift,tiff_geometry,heidicon_iiif\nF000001,"10, 01234",,© G. Alföldy,1514x1996,https://heidicon.ub.uni-heidelberg.de/iiif/2/1374077%3A761105\n' +
+    'F000002,,,Conc.Min.BB.AA.CC.Div.riprod.,2000x1000,https://heidicon.ub.uni-heidelberg.de/iiif/2/1%3A2\n');
+  assert.equal(testi[0].atext, 'D(is) M(anibus) / "Noniae"');
+  const ed = estraiEdh(testi, foto);
+  assert.deepEqual(Object.keys(ed), ["HD000001"]);   // senza foto non entra
+  assert.equal(ed.HD000001.ed, "CIL 10, 01234 ; AE 1983, 0192");
+  const { recordEdh, manifestiEpigrafi, iscrizioneMet, misureJpeg, anticaWd, recordWikidata, lingueEdh } = await import("../scripts/fonti/epigrafi.mjs");
+  const r = recordEdh("HD000001", ed.HD000001);
+  assert.equal(r.tipo, "epigrafe"); assert.equal(r.citta, "Napoli"); assert.deepEqual(r.lingue, ["la"]); assert.deepEqual(r.secolo, [1, 2]);
+  assert.equal(r.epigrafe.genere, "iscrizione sepolcrale"); assert.equal(r.epigrafe.supporto, "tavola, marmo"); assert.equal(r.epigrafe.licenza_metadati, "CC BY-SA 4.0");
+  assert.match(r.licenza, /divieto di ulteriore riproduzione/);
+  assert.match(r.manifest, /manifesti\/data\/manifesti\/epigrafi-edh\/hd000001\.json$/);
+  const m = manifestiEpigrafi({ voci: {} }, { voci: ed })["epigrafi-edh"].hd000001;
+  assert.equal(m.items.length, 2); assert.equal(m.items[0].items[0].items[0].body.service[0].id, "https://heidicon.ub.uni-heidelberg.de/iiif/2/1374077%3A761105");
+  assert.equal(recordEdh("HD000009", { f: [["F000009", "1%3A2", 10, 20, ""]] }).manifest, "https://edh.ub.uni-heidelberg.de/iiif/edh/F000009.manifest.json");
+  assert.deepEqual(lingueEdh("GL"), ["la", "grc"]);
+  assert.ok(iscrizioneMet({ isPublicDomain: true, primaryImage: "x", objectName: "Inscription, Athenian decree fragment", classification: "Stone Sculpture" }));
+  assert.ok(!iscrizioneMet({ isPublicDomain: true, primaryImage: "x", objectName: "Lekythos", title: "Terracotta lekythos with inscription", classification: "Vases" }));
+  assert.ok(!iscrizioneMet({ isPublicDomain: false, primaryImage: "x", objectName: "Inscription" }));
+  const jpg = Buffer.from([0xFF, 0xD8, 0xFF, 0xE0, 0, 4, 0, 0, 0xFF, 0xC0, 0, 17, 8, 0x0F, 0xA0, 0x0E, 0x6B, 3]);
+  assert.deepEqual(misureJpeg(jpg), [0x0E6B, 0x0FA0]);   // [larghezza 3691, altezza 4000]
+  assert.ok(anticaWd({ lingue: ["grc"] })); assert.ok(anticaWd({ edh: "HD1" })); assert.ok(anticaWd({ inc: "-0195-01-01T00:00:00Z" }));
+  assert.ok(!anticaWd({ lingue: ["sv"], inc: "1050-01-01T00:00:00Z" }));
+  const w = recordWikidata("Q48584", { l: "Rosetta Stone", lingue: ["egy", "grc"], coll: "British Museum", inv: "EA24", inc: "-0195-01-01T00:00:00Z",
+    p: [["https://upload.wikimedia.org/a.jpg", 3000, 2000, "CC BY-SA 4.0", "Autore"], ["https://upload.wikimedia.org/b.jpg", 10, 10, "Fair use", ""]] });
+  assert.equal(w.immagini, 1); assert.equal(w.segnatura, "EA24"); assert.deepEqual(w.lingue, ["egy", "grc"]); assert.equal(w.secolo, null);
+});
+
+test("Epigrafi: tipo «epigrafe» e totale «epigrafi» nell'indice, fuori da «manoscritti» e dal formato 1", () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), "cat-ep-"));
+  const v = (id, tipo, extra = {}) => ({ id, fonte: "f", biblioteca: "B", segnatura: id, lingue: ["la"], secolo: null, autori: [], manifest: "m" + id, ...(tipo ? { tipo } : {}), ...extra });
+  scriviCatalogo([v("a"), v("b", "epigrafe"), v("c", "papiro")], { dir, compat: path.join(dir, "m.json"), luoghi: null, fileEp: path.join(dir, "ep.json") });
+  const ind = JSON.parse(fs.readFileSync(path.join(dir, "indice.json"), "utf8"));
+  assert.equal(ind.epigrafi, 1); assert.equal(ind.manoscritti, 1); assert.equal(ind.papiri, 1); assert.equal(ind.tipi.epigrafe.codici, 1); assert.equal(ind.fonti.f.epigrafi, 1);
+  const righe = JSON.parse(fs.readFileSync(path.join(dir, "indice/f-0.json"), "utf8")).righe;
+  assert.equal(righe.find(r => r[0] === "b")[CAMPI.indexOf("tipo")], "epigrafe");
+});

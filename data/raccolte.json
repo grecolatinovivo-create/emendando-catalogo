@@ -114,6 +114,11 @@
   "esito": "ok",
   "ultimo_ok": "2026-10-28T04:25:45.415Z"
  },
+ "epigrafi": {
+  "quando": "2026-10-28T09:07:13.220Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-10-28T09:07:13.220Z"
+ },
  "francoforte": {
   "quando": "2026-10-28T01:03:38.890Z",
   "esito": "ok",
@@ -155,7 +160,7 @@
   "ultimo_ok": "2026-10-28T04:32:57.189Z"
  },
  "karlsruhe": {
-  "quando": "2026-10-28T03:09:37.698Z",
+  "quando": "2026-10-28T09:07:13.220Z",
   "esito": "sospesa: digital.blb-karlsruhe.de risponde 403",
   "ultimo_ok": "2026-10-24T19:49:16.763Z"
  },
@@ -325,7 +330,7 @@
   "ultimo_ok": "2026-10-28T04:31:22.456Z"
  },
  "stoccarda": {
-  "quando": "2026-10-28T03:09:37.698Z",
+  "quando": "2026-10-28T09:07:13.220Z",
   "esito": "sospesa: manifesti di Marburgo non raggiungibili",
   "ultimo_ok": "2026-10-24T19:49:16.763Z"
  },
@@ -370,7 +375,7 @@
   "ultimo_ok": "2026-10-28T04:25:45.415Z"
  },
  "walters": {
-  "quando": "2026-10-28T04:45:50.763Z",
+  "quando": "2026-10-28T09:07:13.220Z",
   "esito": "sospesa: le immagini di thedigitalwalters.org non si caricano nemmeno dal browser (errore 522 del server del museo, 25 ottobre 2026)",
   "ultimo_ok": null
  },
@@ -380,7 +385,7 @@
   "ultimo_ok": "2026-10-28T04:32:57.189Z"
  },
  "wolfenbuettel": {
-  "quando": "2026-10-28T03:09:37.698Z",
+  "quando": "2026-10-28T09:07:13.220Z",
   "esito": "sospesa: server iiif.hab.de non raggiungibile",
   "ultimo_ok": "2026-10-24T19:49:16.763Z"
  },

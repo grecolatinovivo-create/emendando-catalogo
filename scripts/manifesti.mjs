@@ -25,6 +25,7 @@
 //   - lib-fond.ru (scripts/fonti/libfond.mjs): niente IIIF, JPEG di anteprima caricabili come <img>: manifesti P2 a misura fissa;
 //   - papiri di Duke (GIF a 150 dpi) e di Colonia (JPEG originali, senza IIIF né CORS): manifesti P3 con le misure di ogni immagine
 //     (scripts/fonti/papiri.mjs, manifestiPapiri);
+//   - epigrafi (dal 28 ottobre 2026): EDH con più foto, Met e Wikidata (scripts/fonti/epigrafi.mjs, manifestiEpigrafi);
 //   - Biblioteca della Matica srpska, Novi Sad (scripts/fonti/bms.mjs): niente IIIF, JPEG del visore caricabili come <img>: manifesti P2
 //     con le misure di ciascuna immagine;
 // Nessuna richiesta di rete: si scrivono dagli stati delle raccolte (data/loc.json, data/nlg.json, data/malatestiana.json, data/handrit.json, data/darmstadt.json e gli altri).
@@ -48,6 +49,7 @@ import * as nbkm from "./fonti/nbkm.mjs";
 import * as libfond from "./fonti/libfond.mjs";
 import * as bms from "./fonti/bms.mjs";
 import * as papiri from "./fonti/papiri.mjs";
+import * as epigrafi from "./fonti/epigrafi.mjs";
 
 // scrive i manifesti che mancano o sono cambiati e toglie quelli dei codici usciti (solo se lo stato ha voci)
 export function scriviManifesti(voci, cartella, scrivi) {
@@ -90,6 +92,8 @@ export function scriviTutti(dir = ".") {
     bms: scriviManifesti(bms.leggiStato().voci || {}, path.join(dir, "data/manifesti/bms"), (id, v) => (bms.ammessaBms(v) ? bms.manifestoScritto(id, v) : null)),
     // papiri (dal 28 ottobre 2026): Duke (GIF a 150 dpi, CORS aperto) e Colonia (JPEG originali, senza CORS), con le misure di ogni immagine
     ...Object.fromEntries(Object.entries(papiri.manifestiPapiri()).map(([f, vs]) => [f, scriviManifesti(vs, path.join(dir, "data/manifesti", f), (id, m) => m)])),
+    // epigrafi (dal 28 ottobre 2026): EDH con più foto (servizi IIIF di heidICON), Met (JPEG del museo, CC0), Wikidata (immagini di Wikimedia Commons)
+    ...Object.fromEntries(Object.entries(epigrafi.manifestiEpigrafi()).map(([f, vs]) => [f, scriviManifesti(vs, path.join(dir, "data/manifesti", f), (id, m) => m)])),
     handrit: scriviManifesti(handrit.leggiStato().voci || {}, path.join(dir, "data/manifesti/handrit"), (id, v) => (v && handrit.numeroPagine(v) ? handrit.manifestoScritto(id, v) : null)),
     // Fondazione per la conservazione del Nôm (Vietnam): immagini JPEG del sito a misura fissa; un file per volume, col nome dell'identificativo («nlvnpf-0106.json»)
     nomfoundation: scriviManifesti(Object.fromEntries(Object.entries(nom.leggiStato().voci || {}).filter(([, v]) => nom.ammessaNom(v)).map(([k, v]) => [v.img.toLowerCase(), { k, v }])),

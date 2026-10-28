@@ -18,6 +18,8 @@ export const NOMI_LINGUE = {
   pit: "pittografia mesoamericana (senza testo alfabetico)",
   // papiri (dal 28 ottobre 2026): egiziano antico (geroglifico, ieratico, demotico)
   egy: "egiziano antico (geroglifico, ieratico, demotico)",
+  // epigrafi (dal 28 ottobre 2026): altre lingue antiche delle iscrizioni
+  akk: "accadico", sux: "sumerico", phn: "fenicio", xpu: "punico", arc: "aramaico", ett: "etrusco", osc: "osco", xlc: "licio", peo: "antico persiano", elx: "elamita",
   xx: "altre lingue",
 };
 
@@ -38,6 +40,12 @@ const CODICI = {
   cop: "cop", coptic: "cop", koptisch: "cop", copte: "cop", copto: "cop",
   egy: "egy", "egy-egyd": "egy", "egy-egyh": "egy", "egy-egyp": "egy", demotic: "egy", demotisch: "egy", demotique: "egy", demotico: "egy", hieratic: "egy", hieratisch: "egy",
   hieroglyphic: "egy", hieroglyphisch: "egy", "ancient egyptian": "egy", "egyptian (ancient)": "egy", agyptisch: "egy", "altagyptisch": "egy",
+  // epigrafi (dal 28 ottobre 2026)
+  akk: "akk", akkadian: "akk", akkadisch: "akk", accadico: "akk", babylonian: "akk", assyrian: "akk", sux: "sux", sumerian: "sux", sumerisch: "sux", sumerico: "sux",
+  phn: "phn", phoenician: "phn", phonizisch: "phn", fenicio: "phn", xpu: "xpu", punic: "xpu", punisch: "xpu", punico: "xpu",
+  arc: "arc", aramaic: "arc", aramaisch: "arc", aramaico: "arc", "imperial aramaic": "arc", "palmyrene aramaic": "arc",
+  ett: "ett", etruscan: "ett", etruskisch: "ett", etrusco: "ett", osc: "osc", oscan: "osc", oskisch: "osc", osco: "osc",
+  xlc: "xlc", lycian: "xlc", lykisch: "xlc", licio: "xlc", peo: "peo", "old persian": "peo", altpersisch: "peo", elx: "elx", elamite: "elx", elamisch: "elx",
   hy: "hy", arm: "hy", hye: "hy", xcl: "hy", armenian: "hy", armenisch: "hy", armenien: "hy", armeno: "hy",
   ka: "ka", geo: "ka", kat: "ka", georgian: "ka", georgisch: "ka",
   gez: "gez", eth: "gez", ethiopic: "gez", geez: "gez", amh: "gez", amharic: "gez", athiopisch: "gez", ethiopien: "gez",

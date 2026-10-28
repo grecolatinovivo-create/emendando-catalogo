@@ -4,7 +4,7 @@ Verifica del 28 ottobre 2026. Riguarda solo i **metadati** (segnature, titoli, d
 Serve a capire che cosa possiamo fare quando il catalogo esce dal repository pubblico e viene servito a pezzi dal sito
 (progetto in `docs/PROTEZIONE_CATALOGO.md` del repository `emendando`).
 
-Le fonti sono le 78 elencate in `data/catalogo/indice.json` (campo `fonti`) più i papiri, che stanno entrando ora.
+Le fonti sono le 78 elencate in `data/catalogo/indice.json` (campo `fonti`) più i papiri e le epigrafi (dal 28 ottobre 2026).
 La «fonte dell'informazione» è la pagina in cui la licenza è dichiarata; quando una pagina non c'è, la licenza è
 «non dichiarata» (nessuna supposizione). Le licenze delle immagini che si vedono nelle schede del catalogo (campo `licenza`)
 non contano qui, salvo dove la fonte le estende espressamente ai metadati.
@@ -32,15 +32,18 @@ Non è una consulenza legale.
 |---|---|---|
 | CC0, pubblico dominio o uso libero dichiarato | 22 | si può chiudere |
 | Aperta con attribuzione (CC BY 4.0, Licence Ouverte, condizioni della NDL) | 3 | si può chiudere (con attribuzione) |
-| Condividi allo stesso modo (CC BY-SA) | 1 (Biblioteca Nacional de Venezuela, 3 codici) | va ridistribuita alle stesse condizioni |
+| Condividi allo stesso modo (CC BY-SA) | 2 (Biblioteca Nacional de Venezuela, 3 codici; Epigraphic Database Heidelberg dentro la fonte `epigrafi`, 12.205 iscrizioni) | va ridistribuita alle stesse condizioni |
 | Non commerciale | 3 (Cambridge Digital Library, CrossAsia, Manchester) | solo uso non commerciale |
 | Diritti riservati | 5 (Vaticana, Ambrosiana, Montecassino, Vallicelliana, ISOS) | da chiedere |
 | Non dichiarata | 43 | da chiedere |
 | Mista | 1 (stampe antiche) | secondo la biblioteca d'origine |
 | In arrivo: papiri | 1 | attribuzione per papyri.info; il resto secondo la raccolta |
+| Epigrafi (mista) | 1 | EDH CC BY-SA 4.0 (resta aperta); Met e Wikidata CC0 (si può chiudere) |
 
-Bloccano davvero la chiusura soltanto i dati in «condividi allo stesso modo»: oggi i 3 codici della Biblioteca Nacional
-de Venezuela, che si possono servire a parte con la loro licenza o togliere. Le tre fonti non commerciali (circa 25.600
+Bloccano davvero la chiusura soltanto i dati in «condividi allo stesso modo»: i 3 codici della Biblioteca Nacional
+de Venezuela e, dal 28 ottobre 2026, le 12.205 iscrizioni dell'Epigraphic Database Heidelberg (fonte `epigrafi`, id «ep-edh-…»,
+con il testo trascritto). Si servono a parte, aperte, con la loro licenza e l'attribuzione; nel catalogo ogni voce lo dice da sola
+(`epigrafe.licenza_metadati` «CC BY-SA 4.0» e `epigrafe.aperta` true). Le tre fonti non commerciali (circa 25.600
 codici, quasi tutti di CrossAsia) non impediscono di chiudere, ma restano fuori da qualunque offerta a pagamento.
 Manchester, inoltre, vieta nelle sue condizioni proprio l'estrazione sistematica di parti sostanziali: è la stessa tutela
 che vogliamo noi, e va chiesto il permesso anche per la raccolta che già facciamo.
@@ -126,6 +129,9 @@ che vogliamo noi, e va chiesto il permesso anche per la raccolta che già faccia
 | Bibliothèque nationale du Luxembourg (`bnl`) | non dichiarata | eluxemburgensia.lu | da chiedere |
 | Iraqi Jewish Archive, NARA (`ija`) | pubblico dominio: opere del governo federale degli Stati Uniti (17 U.S.C. § 105) | legge statunitense | si può chiudere |
 | Stampe antiche (`stampe`) | mista: BSB e Heidelberg CC0, Gallica Licence Ouverte, Cambridge CC BY-NC, Bodleian e Internet Archive non dichiarata, Vaticana riservata | righe delle singole biblioteche in questa tabella | secondo la biblioteca d'origine |
+| Epigrafi (`epigrafi`): Epigraphic Database Heidelberg (id «ep-edh-…») | CC BY-SA 4.0, anche per i testi trascritti («all data of the Open Data Repository ... can be reused under the CC BY-SA 4.0 licence») | https://edh.ub.uni-heidelberg.de/data | va ridistribuita alle stesse condizioni: resta fuori dal blocco chiuso, come i codici del Venezuela |
+| Epigrafi (`epigrafi`): The Metropolitan Museum of Art (id «ep-met-…») | CC0 (Open Access: dati e immagini in pubblico dominio) | https://metmuseum.github.io/ e https://www.metmuseum.org/policies/image-resources | si può chiudere |
+| Epigrafi (`epigrafi`): Wikidata (id «ep-wd-…») | CC0 (le immagini di Wikimedia Commons hanno la licenza di ogni file, scritta nella scheda) | https://www.wikidata.org/wiki/Wikidata:Licensing | si può chiudere |
 | Biblioteca Apostolica Vaticana (`vaticana`) | riservata («Neither the text nor the images may be reproduced, in any form, without the authorisation of the Vatican Library») | https://digi.vatlib.it/ | da chiedere |
 | Papiri (`papiri`, in arrivo) | schede di papyri.info: CC BY 3.0; manifesti e schede delle raccolte (Michigan, Duke, Yale, Princeton, Vienna, Colonia, Berkeley) secondo ciascuna | README di https://github.com/papyri/idp.data | si può chiudere con attribuzione per papyri.info; la licenza 3.0 vieta di imporre condizioni o misure tecniche che limitino chi riceve quelle schede |
 
