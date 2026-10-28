@@ -1,12 +1,12 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-28T09:56:33.019Z",
- "totale": 581429,
- "con_autori": 32286,
- "miniati": 11287,
+ "aggiornato": "2026-10-28T10:35:34.351Z",
+ "totale": 585160,
+ "con_autori": 32372,
+ "miniati": 11291,
  "musica": 21300,
  "manoscritti": 543480,
- "papiri": 9335,
+ "papiri": 13066,
  "epigrafi": 12955,
  "stampe_antiche": 15659,
  "incunaboli": 15587,
@@ -37,11 +37,11 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 102946
+   "codici": 102964
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 51437
+   "codici": 51442
   },
   "fr": {
    "nome": "francese",
@@ -49,23 +49,23 @@
   },
   "de": {
    "nome": "tedesco",
-   "codici": 24948
-  },
-  "ar": {
-   "nome": "arabo",
-   "codici": 22688
+   "codici": 24949
   },
   "grc": {
    "nome": "greco",
-   "codici": 22184
+   "codici": 24761
+  },
+  "ar": {
+   "nome": "arabo",
+   "codici": 23539
   },
   "he": {
    "nome": "ebraico",
-   "codici": 20079
+   "codici": 20107
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 19106
+   "codici": 19193
   },
   "pi": {
    "nome": "pali",
@@ -137,7 +137,7 @@
   },
   "cop": {
    "nome": "copto",
-   "codici": 2347
+   "codici": 2550
   },
   "gez": {
    "nome": "etiopico",
@@ -177,7 +177,7 @@
   },
   "arc": {
    "nome": "aramaico",
-   "codici": 537
+   "codici": 545
   },
   "ru": {
    "nome": "russo",
@@ -207,6 +207,10 @@
    "nome": "shan",
    "codici": 175
   },
+  "egy": {
+   "nome": "egiziano antico (geroglifico, ieratico, demotico)",
+   "codici": 154
+  },
   "jv": {
    "nome": "giavanese",
    "codici": 153
@@ -226,10 +230,6 @@
   "cy": {
    "nome": "gallese",
    "codici": 114
-  },
-  "egy": {
-   "nome": "egiziano antico (geroglifico, ieratico, demotico)",
-   "codici": 107
   },
   "my": {
    "nome": "birmano",
@@ -419,15 +419,15 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 8193
+   "codici": 8195
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7519
+   "codici": 7557
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15827
+   "codici": 15874
   },
   "medievale": {
    "nome": "autori medievali",
@@ -457,7 +457,7 @@
   },
   "papiro": {
    "nome": "papiri",
-   "codici": 9335
+   "codici": 13066
   },
   "epigrafe": {
    "nome": "epigrafi",
@@ -493,7 +493,7 @@
    "nome": "Cicerone",
    "latino": "Cicero",
    "categoria": "classico-latino",
-   "codici": 1418
+   "codici": 1419
   },
   "cesare": {
    "nome": "Cesare",
@@ -511,7 +511,7 @@
    "nome": "Virgilio",
    "latino": "Vergilius",
    "categoria": "classico-latino",
-   "codici": 573
+   "codici": 574
   },
   "orazio": {
    "nome": "Orazio",
@@ -895,7 +895,7 @@
    "nome": "Omero",
    "latino": "Homerus",
    "categoria": "classico-greco",
-   "codici": 479
+   "codici": 495
   },
   "esiodo": {
    "nome": "Esiodo",
@@ -907,7 +907,7 @@
    "nome": "Pindaro",
    "latino": "Pindarus",
    "categoria": "classico-greco",
-   "codici": 59
+   "codici": 60
   },
   "saffo": {
    "nome": "Saffo",
@@ -967,37 +967,37 @@
    "nome": "Euripide",
    "latino": "Euripides",
    "categoria": "classico-greco",
-   "codici": 163
+   "codici": 166
   },
   "aristofane": {
    "nome": "Aristofane",
    "latino": "Aristophanes",
    "categoria": "classico-greco",
-   "codici": 140
+   "codici": 143
   },
   "menandro": {
    "nome": "Menandro",
    "latino": "Menander",
    "categoria": "classico-greco",
-   "codici": 46
+   "codici": 48
   },
   "erodoto": {
    "nome": "Erodoto",
    "latino": "Herodotus",
    "categoria": "classico-greco",
-   "codici": 60
+   "codici": 62
   },
   "tucidide": {
    "nome": "Tucidide",
    "latino": "Thucydides",
    "categoria": "classico-greco",
-   "codici": 69
+   "codici": 70
   },
   "senofonte": {
    "nome": "Senofonte",
    "latino": "Xenophon",
    "categoria": "classico-greco",
-   "codici": 143
+   "codici": 145
   },
   "platone": {
    "nome": "Platone",
@@ -1033,13 +1033,13 @@
    "nome": "Demostene",
    "latino": "Demosthenes",
    "categoria": "classico-greco",
-   "codici": 152
+   "codici": 155
   },
   "eschine": {
    "nome": "Eschine",
    "latino": "Aeschines",
    "categoria": "classico-greco",
-   "codici": 52
+   "codici": 54
   },
   "andocide": {
    "nome": "Andocide",
@@ -1093,7 +1093,7 @@
    "nome": "Plutarco",
    "latino": "Plutarchus",
    "categoria": "classico-greco",
-   "codici": 365
+   "codici": 366
   },
   "luciano": {
    "nome": "Luciano di Samosata",
@@ -1129,7 +1129,7 @@
    "nome": "Teocrito",
    "latino": "Theocritus",
    "categoria": "classico-greco",
-   "codici": 71
+   "codici": 72
   },
   "callimaco": {
    "nome": "Callimaco",
@@ -1327,7 +1327,7 @@
    "nome": "Achille Tazio",
    "latino": "Achilles Tatius",
    "categoria": "classico-greco",
-   "codici": 7
+   "codici": 8
   },
   "longo-sofista": {
    "nome": "Longo Sofista",
@@ -1435,7 +1435,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7323
+   "codici": 7367
   },
   "prudenzio": {
    "nome": "Prudenzio",
@@ -1495,7 +1495,7 @@
    "nome": "Origene",
    "latino": "Origenes",
    "categoria": "cristiano",
-   "codici": 364
+   "codici": 365
   },
   "eusebio": {
    "nome": "Eusebio di Cesarea",
@@ -1507,7 +1507,7 @@
    "nome": "Atanasio",
    "latino": "Athanasius",
    "categoria": "cristiano",
-   "codici": 397
+   "codici": 400
   },
   "gregorio-nisseno": {
    "nome": "Gregorio di Nissa",
@@ -4495,6 +4495,7 @@
   "Pražská konzervatoř, Praga",
   "Pražská konzervatoř, Praha, Praga",
   "Princeton University Library",
+  "Princeton University Library, Princeton Papyri Collections",
   "Prishtinë / Priština, Muz. i Kosovës",
   "Priština, Pokrajinski Muz.",
   "Privatbesitz",
@@ -5315,6 +5316,7 @@
   "Università Waseda, Museo teatrale Tsubouchi, fondo Yasuda (早稲田大学坪内博士記念演劇博物館 安田文庫), Tokyo",
   "Universitat de Barcelona, CRAI Biblioteca de Fons Antic, Barcellona",
   "Universität Heidelberg",
+  "Universität zu Köln, Papyrussammlung",
   "Universitäts- und Landesbibliothek Darmstadt",
   "Universitäts- und Landesbibliothek, Darmstadt",
   "Universitäts- und Stadtbibliothek, Colonia",
@@ -8518,32 +8520,34 @@
   },
   "papiri": {
    "nome": "Papiri: Michigan, Yale, Duke, Princeton, Vienna (ÖNB), Colonia e Berkeley, con le schede di papyri.info",
-   "codici": 4613,
+   "codici": 8344,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 3,
+   "miniati": 7,
    "musica": 1,
-   "papiri": 4613,
+   "papiri": 8344,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 164,
+   "con_autori": 250,
    "lingue": {
-    "grc": 4112,
-    "xx": 94,
-    "la": 56,
-    "?": 42,
-    "egy": 36,
-    "ar": 102,
-    "cop": 212,
-    "he": 1
+    "grc": 6689,
+    "ar": 953,
+    "xx": 181,
+    "cop": 415,
+    "la": 74,
+    "?": 47,
+    "egy": 83,
+    "he": 29,
+    "arc": 8,
+    "de": 1
    },
    "esito": "ok",
    "prefissi": [
     "pap-"
    ],
-   "pezzi_voci": 6,
+   "pezzi_voci": 11,
    "indice": [
     "indice/papiri-0.json"
    ]
@@ -9081,7 +9085,7 @@
   {
    "file": "indice/papiri-0.json",
    "fonte": "papiri",
-   "righe": 4613
+   "righe": 8344
   },
   {
    "file": "indice/epigrafi-0.json",
@@ -13631,6 +13635,7 @@
   "praga",
   "praga",
   "princeton",
+  "princeton",
   null,
   null,
   null,
@@ -14451,6 +14456,7 @@
   "tokyo",
   "barcellona",
   "heidelberg",
+  "colonia",
   "darmstadt",
   "darmstadt",
   "colonia",
@@ -14864,7 +14870,7 @@
   1,
   8,
   4,
-  1499,
+  1631,
   1,
   957,
   1,
@@ -14889,7 +14895,7 @@
   37964,
   1,
   2942,
-  45,
+  859,
   2,
   1,
   1,
@@ -15404,7 +15410,7 @@
   2,
   7,
   4,
-  43,
+  773,
   22,
   1,
   1,
@@ -16407,7 +16413,7 @@
   1,
   1,
   3,
-  69,
+  1788,
   5788,
   3,
   1,
@@ -16635,6 +16641,7 @@
   14,
   6,
   3062,
+  128,
   1,
   1,
   3,
@@ -17455,6 +17462,7 @@
   16,
   289,
   4,
+  208,
   241,
   1,
   1,

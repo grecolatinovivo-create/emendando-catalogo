@@ -18,7 +18,7 @@ Come leggere le colonne:
 - **Ultima raccolta**: com'è andata l'ultima volta.
 
 <!-- inizio automatico -->
-Codici nel catalogo, in tutto: **581.429**, di cui **32.286** con almeno un autore riconosciuto.
+Codici nel catalogo, in tutto: **585.160**, di cui **32.372** con almeno un autore riconosciuto.
 
 | Biblioteca | Città | Codici totali | Di cui con autori riconosciuti | Lingue | Avanzamento della lettura | Come si aggiorna | Ultimo aggiornamento | Ultima raccolta |
 |---|---|---|---|---|---|---|---|---|
@@ -103,7 +103,7 @@ Codici nel catalogo, in tutto: **581.429**, di cui **32.286** con almeno un auto
 | Bibliothèque nationale du Luxembourg: manoscritti di eluxemburgensia (codici di Echternach, Codex Mariendalensis, corsi dei Gesuiti; manifesti IIIF scritti da Emendando) | Lussemburgo | 28 | 8 | latino 23, tedesco 3, lb 3, altre 8 | schede lette tutte (28 manoscritti, 28 con le pagine) | corsia nord, ogni notte (elenco ogni 14 giorni; pagine solo dei codici nuovi) | 2026-10-28 | riuscita |
 | Iraqi Jewish Archive (U.S. National Archives and Records Administration): frammenti di rotoli della Torah e di Ester della comunità ebraica di Baghdad | College Park (Stati Uniti), da Baghdad | 49 | 0 | ebraico 49, inglese 1 | schede lette tutte (3604 oggetti; 63 manoscritti candidati; entrano quelli con la copia intera nelle immagini IIIF, fuori i libri con la copia intera solo in PDF) | corsia medioriente, ogni notte (elenco ogni 14 giorni; media solo dei candidati nuovi) | 2026-10-28 | riuscita |
 | Stampe antiche: incunaboli e edizioni principi dei classici (Bayerische Staatsbibliothek e biblioteche bavaresi, Heidelberg, Bodleian, Cambridge, Boston Public Library e National Library of Medicine su Internet Archive, Vaticana, Gallica dal browser) | varie | 15.659 | 3508 | latino 6335, non indicata 5843, tedesco 2249, altre 1344 |  | corsia stampe: a ruota finché la prima lettura non è finita, poi ogni notte (elenchi ogni 30 giorni) | 2026-10-28 | riuscita |
-| Papiri: Michigan, Yale, Duke, Princeton, Vienna (ÖNB, solo uso non commerciale), Colonia e Berkeley, con le schede di papyri.info (CC BY 3.0) | varie | 4613 | 164 | greco 4112, copto 212, arabo 102, altre 229 |  | corsia papiri: a ruota finché la prima lettura non è finita, poi ogni notte (elenchi ogni 30 giorni) | — | — |
+| Papiri: Michigan, Yale, Duke, Princeton, Vienna (ÖNB, solo uso non commerciale), Colonia e Berkeley, con le schede di papyri.info (CC BY 3.0) | varie | 8344 | 250 | greco 6689, arabo 953, copto 415, altre 423 |  | corsia papiri: a ruota finché la prima lettura non è finita, poi ogni notte (elenchi ogni 30 giorni) | 2026-10-28 | riuscita |
 | Epigrafi: Epigraphic Database Heidelberg (foto IIIF di heidICON, dati CC BY-SA 4.0), The Metropolitan Museum of Art (CC0) e Wikidata con Wikimedia Commons | varie | 12.955 | 0 | latino 12.338, greco 342, non indicata 237, altre 150 |  | corsia epigrafi: a ruota finché la prima lettura non è finita, poi ogni notte (elenchi ogni 30 giorni) | 2026-10-28 | riuscita |
 | Biblioteca Apostolica Vaticana | Città del Vaticano | 26.403 | 1302 | latino 20.857, greco 2983, non indicata 1878, altre 694 | 26.403 codici letti su 31.127 digitalizzati; fondo in corso: Borg. ebr.; restano circa 4494 manifesti da leggere, cioè circa 14 ore (un manifesto ogni 10 secondi, come chiede la biblioteca) | corsia propria: a ruota, senza pause tra un'esecuzione e l'altra | 2026-10-28 | riuscita |
 
