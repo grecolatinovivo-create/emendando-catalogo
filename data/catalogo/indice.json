@@ -1,13 +1,13 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-29T03:57:00.714Z",
- "totale": 656824,
+ "aggiornato": "2026-10-29T04:03:45.307Z",
+ "totale": 660456,
  "con_autori": 33047,
  "miniati": 11386,
  "musica": 21309,
  "manoscritti": 547974,
  "papiri": 46179,
- "epigrafi": 47012,
+ "epigrafi": 50644,
  "stampe_antiche": 15659,
  "incunaboli": 15587,
  "edizioni_principi": 172,
@@ -33,7 +33,7 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 178094
+   "codici": 178310
   },
   "la": {
    "nome": "latino",
@@ -57,7 +57,7 @@
   },
   "ojp": {
    "nome": "giapponese antico",
-   "codici": 25240
+   "codici": 28656
   },
   "de": {
    "nome": "tedesco",
@@ -477,7 +477,7 @@
   },
   "epigrafe": {
    "nome": "epigrafi",
-   "codici": 47012
+   "codici": 50644
   }
  },
  "autori": {
@@ -8767,20 +8767,20 @@
   },
   "giappone": {
    "nome": "Giappone, scritture non librarie: tavolette di legno (mokkan) del Mokkanko di Nabunken e calchi di iscrizioni (takuhon) della National Diet Library e di Waseda",
-   "codici": 26175,
+   "codici": 29807,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
    "papiri": 0,
-   "epigrafi": 26175,
+   "epigrafi": 29807,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
    "con_autori": 0,
    "lingue": {
-    "ja": 933,
-    "ojp": 25240,
+    "ja": 1149,
+    "ojp": 28656,
     "zh": 1,
     "?": 1
    },
@@ -8788,7 +8788,7 @@
    "prefissi": [
     "giap-"
    ],
-   "pezzi_voci": 33,
+   "pezzi_voci": 38,
    "indice": [
     "indice/giappone-0.json",
     "indice/giappone-1.json"
@@ -9376,7 +9376,7 @@
   {
    "file": "indice/giappone-1.json",
    "fonte": "giappone",
-   "righe": 6175
+   "righe": 9807
   },
   {
    "file": "indice/romani-0.json",
@@ -19819,7 +19819,7 @@
   189,
   108,
   22,
-  26169,
+  29801,
   8,
   4,
   1,
