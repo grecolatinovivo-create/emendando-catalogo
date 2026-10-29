@@ -53,7 +53,15 @@ async function leggiVoci(st, parte, fine, leggi) {
     if (Date.now() > fine) break;
     let nuova;
     try { nuova = await leggi(k.slice(parte.length + 1), st.voci[k], fine); errori = 0; }
-    catch (e) { if (e instanceof TempoFinito) break; log("epigrafi", parte, k, e.message); if (++errori >= 5) throw new Error(`${parte}: troppi errori di fila (${e.message})`); continue; }
+    catch (e) {
+      if (e instanceof TempoFinito) break;
+      log("epigrafi", parte, k, e.message);
+      // una voce che fallisce 3 volte (in esecuzioni diverse) si lascia fuori: prima la corsia ripartiva all'infinito per una sola scheda (met:327710, 29 ottobre 2026)
+      st.voci[k].tentativi = (st.voci[k].tentativi || 0) + 1;
+      if (st.voci[k].tentativi >= 3) { st.voci[k] = { x: "scheda non leggibile dopo 3 tentativi: " + String(e.message).slice(0, 120) }; log("epigrafi", parte, k, "lasciata fuori dopo 3 tentativi"); }
+      if (++errori >= 5) throw new Error(`${parte}: troppi errori di fila (${e.message})`);
+      continue;
+    }
     if (nuova) { st.voci[k] = pulisci(nuova); delete st.voci[k].q; }
     if (++letti % 50 === 0) { st.aggiornato = new Date().toISOString(); salvaStato(st); log("epigrafi", `${parte}: ${letti} letti su ${da.length}`); }
   }
