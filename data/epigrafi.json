@@ -1,4 +1,4 @@
-{"versione":1,"aggiornato":"2026-10-29T14:27:10.873Z","completato":null,"parti":{"edh":{"totale":12205,"completato":"2026-10-29T14:19:55.716Z"},"wikidata":{"totale":749,"completato":"2026-10-28T08:56:07.774Z"},"met":{"totale":5506,"completato":"2026-10-28T08:59:52.108Z"}},"voci":{
+{"versione":1,"aggiornato":"2026-10-29T14:45:50.543Z","completato":"2026-10-29T14:45:50.543Z","parti":{"edh":{"totale":12205,"completato":"2026-10-29T14:38:34.594Z"},"wikidata":{"totale":749,"completato":"2026-10-28T08:56:07.774Z"},"met":{"totale":5506,"completato":"2026-10-28T08:59:52.108Z"}},"voci":{
 "met:32838":{"x":"non è un'iscrizione"},
 "met:239584":{"x":"non è un'iscrizione"},
 "met:239634":{"x":"non è un'iscrizione"},
@@ -1758,7 +1758,7 @@
 "met:327699":{"x":"non è un'iscrizione"},
 "met:327702":{"x":"non è un'iscrizione"},
 "met:327708":{"x":"non è un'iscrizione"},
-"met:327710":{"q":1,"tentativi":2},
+"met:327710":{"x":"scheda non leggibile dopo 3 tentativi: This operation was aborted"},
 "met:327722":{"x":"non è un'iscrizione"},
 "met:327725":{"x":"non è un'iscrizione"},
 "met:327726":{"x":"non è un'iscrizione"},
