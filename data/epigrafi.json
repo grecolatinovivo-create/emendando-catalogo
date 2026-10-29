@@ -1,4 +1,4 @@
-{"versione":1,"aggiornato":"2026-10-29T13:51:48.693Z","completato":null,"parti":{"edh":{"totale":12205,"completato":"2026-10-29T13:44:33.535Z"},"wikidata":{"totale":749,"completato":"2026-10-28T08:56:07.774Z"},"met":{"totale":5506,"completato":"2026-10-28T08:59:52.108Z"}},"voci":{
+{"versione":1,"aggiornato":"2026-10-29T14:10:41.011Z","completato":null,"parti":{"edh":{"totale":12205,"completato":"2026-10-29T14:03:25.755Z"},"wikidata":{"totale":749,"completato":"2026-10-28T08:56:07.774Z"},"met":{"totale":5506,"completato":"2026-10-28T08:59:52.108Z"}},"voci":{
 "met:32838":{"x":"non è un'iscrizione"},
 "met:239584":{"x":"non è un'iscrizione"},
 "met:239634":{"x":"non è un'iscrizione"},
@@ -1758,7 +1758,7 @@
 "met:327699":{"x":"non è un'iscrizione"},
 "met:327702":{"x":"non è un'iscrizione"},
 "met:327708":{"x":"non è un'iscrizione"},
-"met:327710":{"q":1},
+"met:327710":{"q":1,"tentativi":1},
 "met:327722":{"x":"non è un'iscrizione"},
 "met:327725":{"x":"non è un'iscrizione"},
 "met:327726":{"x":"non è un'iscrizione"},
