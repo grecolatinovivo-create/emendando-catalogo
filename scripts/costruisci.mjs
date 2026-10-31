@@ -139,7 +139,9 @@ export function scriviCatalogo(manoscritti, { fonti, nomi = {}, esito = {}, auto
   const copieEp = {}; for (const v of manoscritti) if (v.editio_princeps) copieEp[v.editio_princeps.id] = (copieEp[v.editio_princeps.id] || 0) + 1;
   let elencoEp = []; try { elencoEp = JSON.parse(fs.readFileSync(fileEp, "utf8")).edizioni || []; } catch (e) {}
   const edizioniPrincipi = Object.fromEntries(elencoEp.map(e => [e.id, { autore: e.autore, opera: e.opera, lingua: e.lingua, luogo: e.luogo, tipografo: e.tipografo, anno: e.anno, copie: copieEp[e.id] || 0 }]));
-  const nomiAutori = Object.fromEntries(autori.filter(a => contaAutori[a.id]).map(a => [a.id, { nome: a.nome, latino: a.latino, categoria: a.categoria, codici: contaAutori[a.id] }]));
+  // «forme» (dal 31 ottobre 2026): altri nomi dell'autore (Plautus, Plauti, Plaute…), per la ricerca del sito
+  let formeRaw = {}; try { for (const a of JSON.parse(fs.readFileSync("data/autori.json", "utf8")).autori || []) formeRaw[a.id] = [...new Set(a.nomi || [])].filter(x => x !== a.nome && x !== a.latino).slice(0, 12); } catch (e) {}
+  const nomiAutori = Object.fromEntries(autori.filter(a => contaAutori[a.id]).map(a => [a.id, { nome: a.nome, latino: a.latino, categoria: a.categoria, codici: contaAutori[a.id], ...(formeRaw[a.id] && formeRaw[a.id].length ? { forme: formeRaw[a.id] } : {}) }]));
   const indice = {
     versione: 2, aggiornato: null, totale: manoscritti.length, con_autori: manoscritti.filter(v => v.autori.length).length,
     miniati: manoscritti.filter(v => v.miniato).length, musica: manoscritti.filter(v => v.musica).length,

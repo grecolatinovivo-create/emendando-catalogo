@@ -1,13 +1,13 @@
 {"righe":[
 ["bcas-1332","1332",264,"",0,0,"","","","",0,"","","",""],
-["bcas-1942","Ms. 24",264,"",14,15,"","","","",0,"","","",""],
-["bcas-1543","Ms. 175",264,"",15,15,"","","","",0,"","","",""],
+["bcas-1942","Ms. 24",264,"",14,15,"petrarca","","","",0,"","","",""],
+["bcas-1543","Ms. 175",264,"",15,15,"petrarca","","","",0,"","","",""],
 ["bcas-9767","Ms. 251",264,"",14,15,"","","","",0,"","","",""],
-["bcas-1462","Ms. 280",264,"",15,15,"","","","",0,"","","",""],
+["bcas-1462","Ms. 280",264,"",15,15,"petrarca","","","",0,"","","",""],
 ["bcas-649","Ms. 369",264,"la",12,12,"","Liber Pantegni (cc. 1r-34v); [Tractatus de Gradibus medicinarum] (cc. 34v-36v)","","",0,"","","",""],
-["bcas-10288","Ms. 392",264,"",15,15,"lattanzio","","Divinae institutiones","",0,"","","",""],
-["bcas-14253","Ms. 393",264,"",14,15,"","Divina commedia","","",0,"","","",""],
-["bcas-11008","Ms. 433",264,"",15,16,"","","","",0,"","","",""],
+["bcas-10288","Ms. 392",264,"",15,15,"lattanzio,dante","","Divinae institutiones, Divina Commedia, Commedia","",0,"","","",""],
+["bcas-14253","Ms. 393",264,"",14,15,"dante","Divina commedia","Divina Commedia, Commedia","",0,"","","",""],
+["bcas-11008","Ms. 433",264,"",15,16,"bonaventura,dante,petrarca","","Divina Commedia, Commedia","",0,"","","",""],
 ["bcas-601","Ms. 716",264,"la",12,12,"","Prologus Geronimi Presbiteri (cc.1r-2r), Omiliario. Sezione estiva (dalla s. Pasqua alla Trinità, dalla natività di s. Marco a s. Andrea) (…","","",0,"","","",""],
 ["bcas-3285","Ms. 717",264,"",12,12,"","","","",0,"","","",""],
 ["bcas-4342","Ms. 718",264,"",12,12,"","","","",0,"","","",""],
@@ -17,7 +17,7 @@
 ["bcas-6436","Ms. 723",264,"",12,12,"","","","",0,"","","",""],
 ["bcas-7653","Ms. 726",264,"",12,12,"","","","",0,"","","",""],
 ["bcas-13685","Ms. 898",264,"",15,15,"tommaso-aquino","","","",0,"","","",""],
-["bcas-8465","Ms. 924",264,"",16,16,"","","","",0,"","","",""],
+["bcas-8465","Ms. 924",264,"",16,16,"petrarca","","","",0,"","","",""],
 ["bcas-13147","Ms. 946",264,"",15,15,"plutarco","","","",0,"","","",""],
 ["bcas-13319","Ms. 956",264,"",15,15,"","","","",0,"","","",""],
 ["bcas-11989","Ms. 1005",264,"",15,15,"basilio","","","",0,"","","",""],
@@ -41,5 +41,5 @@
 ["bcas-13694","Ms. 4864",264,"",17,17,"","Carta nautica del Mediterraneo","","",0,"carta","","",""],
 ["bcas-13691","Ms. 4865",264,"",16,16,"","Carta nautica del Mediterraneo","","",0,"carta","","",""],
 ["bcas-13688","Ms. 4866",264,"",16,16,"","Carta nautica dell'Europa, Turchia, Palestina e coste settentrionali dell'Africa","","",0,"carta","","",""],
-["bcas-8924","Ms. 5067",264,"",14,14,"","c. 1r; Titolo identificato: Divina Commedia. Paradiso","","",0,"","","",""]
+["bcas-8924","Ms. 5067",264,"",14,14,"dante","c. 1r; Titolo identificato: Divina Commedia. Paradiso","Divina Commedia, Commedia","",0,"","","",""]
 ]}

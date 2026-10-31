@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-31T06:32:07.503Z",
- "totale": 644574,
- "con_autori": 31266,
+ "aggiornato": "2026-10-31T07:16:48.016Z",
+ "totale": 644575,
+ "con_autori": 37169,
  "miniati": 10978,
  "musica": 21117,
- "manoscritti": 532091,
+ "manoscritti": 532092,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,15 +37,15 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 105717
+   "codici": 105896
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 54530
+   "codici": 55774
   },
   "grc": {
    "nome": "greco",
-   "codici": 40064
+   "codici": 40063
   },
   "ar": {
    "nome": "arabo",
@@ -61,7 +61,7 @@
   },
   "de": {
    "nome": "tedesco",
-   "codici": 24891
+   "codici": 23465
   },
   "xx": {
    "nome": "altre lingue",
@@ -89,7 +89,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10463
+   "codici": 10464
   },
   "zh": {
    "nome": "cinese",
@@ -101,7 +101,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 8097
+   "codici": 8101
   },
   "en": {
    "nome": "inglese",
@@ -439,21 +439,21 @@
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7413
+   "codici": 7414
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15234
+   "codici": 15663
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 3310
+   "codici": 9713
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 526785
+   "codici": 526786
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -485,1111 +485,2813 @@
    "nome": "Plauto",
    "latino": "Plautus",
    "categoria": "classico-latino",
-   "codici": 93
+   "codici": 93,
+   "forme": [
+    "Plauti",
+    "Plaute",
+    "Plautum",
+    "Titus Maccius Plautus",
+    "Maccius Plautus"
+   ]
   },
   "terenzio": {
    "nome": "Terenzio",
    "latino": "Terentius",
    "categoria": "classico-latino",
-   "codici": 270
+   "codici": 270,
+   "forme": [
+    "Terentii",
+    "Terentio",
+    "Terentium",
+    "Terence",
+    "Terenz",
+    "Publius Terentius Afer",
+    "Terentius Afer"
+   ]
   },
   "lucrezio": {
    "nome": "Lucrezio",
    "latino": "Lucretius",
    "categoria": "classico-latino",
-   "codici": 40
+   "codici": 40,
+   "forme": [
+    "Lucretii",
+    "Lucrece",
+    "Lukrez",
+    "Titus Lucretius Carus",
+    "Lucretius Carus"
+   ]
   },
   "catullo": {
    "nome": "Catullo",
    "latino": "Catullus",
    "categoria": "classico-latino",
-   "codici": 61
+   "codici": 61,
+   "forme": [
+    "Catulli",
+    "Catulle",
+    "Catull",
+    "Gaius Valerius Catullus",
+    "Valerius Catullus"
+   ]
   },
   "cicerone": {
    "nome": "Cicerone",
    "latino": "Cicero",
    "categoria": "classico-latino",
-   "codici": 1381
+   "codici": 1381,
+   "forme": [
+    "Ciceronis",
+    "Ciceronem",
+    "Ciceroni",
+    "Ciceron",
+    "Marcus Tullius Cicero",
+    "Marci Tullii Ciceronis",
+    "Tullius Cicero",
+    "Tully"
+   ]
   },
   "cesare": {
    "nome": "Cesare",
    "latino": "Caesar",
    "categoria": "classico-latino",
-   "codici": 145
+   "codici": 145,
+   "forme": [
+    "Gaius Iulius Caesar",
+    "Gaius Julius Caesar",
+    "C Iulius Caesar",
+    "Caesar Gaius Iulius",
+    "Caesar Gaius Julius",
+    "Iulius Caesar",
+    "Julius Caesar",
+    "Iulii Caesaris",
+    "Giulio Cesare",
+    "Jules Cesar",
+    "Casar"
+   ]
   },
   "sallustio": {
    "nome": "Sallustio",
    "latino": "Sallustius",
    "categoria": "classico-latino",
-   "codici": 240
+   "codici": 240,
+   "forme": [
+    "Sallustii",
+    "Sallustium",
+    "Salustius",
+    "Salustii",
+    "Salustio",
+    "Sallust",
+    "Salluste",
+    "Gaius Sallustius Crispus",
+    "Sallustius Crispus"
+   ]
   },
   "virgilio": {
    "nome": "Virgilio",
    "latino": "Vergilius",
    "categoria": "classico-latino",
-   "codici": 542
+   "codici": 542,
+   "forme": [
+    "Vergilii",
+    "Vergilio",
+    "Vergilium",
+    "Virgilius",
+    "Virgilii",
+    "Virgilium",
+    "Vergil",
+    "Virgil",
+    "Virgile",
+    "Publius Vergilius Maro",
+    "Vergilius Maro",
+    "Virgilius Maro"
+   ]
   },
   "orazio": {
    "nome": "Orazio",
    "latino": "Horatius",
    "categoria": "classico-latino",
-   "codici": 302
+   "codici": 302,
+   "forme": [
+    "Horatii",
+    "Horatio",
+    "Horatium",
+    "Oratius",
+    "Oratii",
+    "Horace",
+    "Horaz",
+    "Quintus Horatius Flaccus",
+    "Horatius Flaccus"
+   ]
   },
   "tibullo": {
    "nome": "Tibullo",
    "latino": "Tibullus",
    "categoria": "classico-latino",
-   "codici": 65
+   "codici": 65,
+   "forme": [
+    "Tibulli",
+    "Tibulle",
+    "Tibull",
+    "Albius Tibullus",
+    "Corpus Tibullianum"
+   ]
   },
   "properzio": {
    "nome": "Properzio",
    "latino": "Propertius",
    "categoria": "classico-latino",
-   "codici": 47
+   "codici": 47,
+   "forme": [
+    "Propertii",
+    "Properce",
+    "Properz",
+    "Sextus Propertius"
+   ]
   },
   "ovidio": {
    "nome": "Ovidio",
    "latino": "Ovidius",
    "categoria": "classico-latino",
-   "codici": 646
+   "codici": 646,
+   "forme": [
+    "Ovidii",
+    "Ovidium",
+    "Ovid",
+    "Ovide",
+    "Publius Ovidius Naso",
+    "Ovidius Naso",
+    "Ovidii Nasonis"
+   ]
   },
   "livio": {
    "nome": "Livio",
    "latino": "Livius",
    "categoria": "classico-latino",
-   "codici": 283
+   "codici": 283,
+   "forme": [
+    "Titus Livius",
+    "Titi Livii",
+    "Livii",
+    "Tito Livio",
+    "Livy",
+    "Tite Live",
+    "Livius Patavinus"
+   ]
   },
   "seneca": {
    "nome": "Seneca",
    "latino": "Seneca",
    "categoria": "classico-latino",
-   "codici": 512
+   "codici": 512,
+   "forme": [
+    "Senecae",
+    "Senecam",
+    "Seneque",
+    "Lucius Annaeus Seneca",
+    "Annaeus Seneca",
+    "Seneca Lucius Annaeus"
+   ]
   },
   "lucano": {
    "nome": "Lucano",
    "latino": "Lucanus",
    "categoria": "classico-latino",
-   "codici": 183
+   "codici": 183,
+   "forme": [
+    "Lucani",
+    "Lucanum",
+    "Lucan",
+    "Lucain",
+    "Lukan",
+    "Marcus Annaeus Lucanus",
+    "Annaeus Lucanus"
+   ]
   },
   "persio": {
    "nome": "Persio",
    "latino": "Persius",
    "categoria": "classico-latino",
-   "codici": 133
+   "codici": 133,
+   "forme": [
+    "Persii",
+    "Aulus Persius Flaccus",
+    "Persius Flaccus"
+   ]
   },
   "giovenale": {
    "nome": "Giovenale",
    "latino": "Iuvenalis",
    "categoria": "classico-latino",
-   "codici": 187
+   "codici": 187,
+   "forme": [
+    "Juvenalis",
+    "Iuvenal",
+    "Juvenal",
+    "Decimus Iunius Iuvenalis",
+    "Decimus Junius Juvenalis"
+   ]
   },
   "marziale": {
    "nome": "Marziale",
    "latino": "Martialis",
    "categoria": "classico-latino",
-   "codici": 73
+   "codici": 73,
+   "forme": [
+    "Marcus Valerius Martialis",
+    "Valerius Martialis",
+    "Martialis Marcus Valerius",
+    "Marco Valerio Marziale"
+   ]
   },
   "stazio": {
    "nome": "Stazio",
    "latino": "Statius",
    "categoria": "classico-latino",
-   "codici": 139
+   "codici": 139,
+   "forme": [
+    "Statii",
+    "Stace",
+    "Publius Papinius Statius",
+    "Papinius Statius",
+    "Papinii Statii"
+   ]
   },
   "plinio-vecchio": {
    "nome": "Plinio il Vecchio",
    "latino": "Plinius maior",
    "categoria": "classico-latino",
-   "codici": 207
+   "codici": 207,
+   "forme": [
+    "Plinius Secundus maior",
+    "Gaius Plinius Secundus",
+    "Plinius Secundus Gaius",
+    "C Plinius Secundus",
+    "Pliny the Elder",
+    "Plinius der Altere",
+    "Pline l Ancien"
+   ]
   },
   "plinio-giovane": {
    "nome": "Plinio il Giovane",
    "latino": "Plinius minor",
    "categoria": "classico-latino",
-   "codici": 56
+   "codici": 56,
+   "forme": [
+    "Gaius Plinius Caecilius Secundus",
+    "Plinius Caecilius Secundus",
+    "Plinius Caecilius",
+    "Caecilius Secundus",
+    "Pliny the Younger",
+    "Plinius der Jungere",
+    "Pline le Jeune"
+   ]
   },
   "tacito": {
    "nome": "Tacito",
    "latino": "Tacitus",
    "categoria": "classico-latino",
-   "codici": 57
+   "codici": 57,
+   "forme": [
+    "Taciti",
+    "Tacite",
+    "Publius Cornelius Tacitus",
+    "Cornelius Tacitus",
+    "Cornelii Taciti"
+   ]
   },
   "svetonio": {
    "nome": "Svetonio",
    "latino": "Suetonius",
    "categoria": "classico-latino",
-   "codici": 124
+   "codici": 124,
+   "forme": [
+    "Suetonii",
+    "Suetone",
+    "Sueton",
+    "Suetonius Tranquillus",
+    "Gaius Suetonius Tranquillus",
+    "Suetonio"
+   ]
   },
   "quintiliano": {
    "nome": "Quintiliano",
    "latino": "Quintilianus",
    "categoria": "classico-latino",
-   "codici": 139
+   "codici": 139,
+   "forme": [
+    "Quintiliani",
+    "Quintilian",
+    "Quintilien",
+    "Marcus Fabius Quintilianus",
+    "Fabius Quintilianus"
+   ]
   },
   "apuleio": {
    "nome": "Apuleio",
    "latino": "Apuleius",
    "categoria": "classico-latino",
-   "codici": 86
+   "codici": 86,
+   "forme": [
+    "Apulei",
+    "Apuleii",
+    "Apulee",
+    "Apulejus",
+    "Lucius Apuleius",
+    "Apuleius Madaurensis"
+   ]
   },
   "ammiano": {
    "nome": "Ammiano Marcellino",
    "latino": "Ammianus Marcellinus",
    "categoria": "classico-latino",
-   "codici": 9
+   "codici": 9,
+   "forme": [
+    "Ammiani Marcellini",
+    "Ammianus",
+    "Ammien Marcellin",
+    "Ammiano"
+   ]
   },
   "claudiano": {
    "nome": "Claudiano",
    "latino": "Claudianus",
    "categoria": "classico-latino",
-   "codici": 90
+   "codici": 90,
+   "forme": [
+    "Claudiani",
+    "Claudian",
+    "Claudien",
+    "Claudius Claudianus"
+   ]
   },
   "prisciano": {
    "nome": "Prisciano",
    "latino": "Priscianus",
    "categoria": "classico-latino",
-   "codici": 262
+   "codici": 262,
+   "forme": [
+    "Prisciani",
+    "Priscian",
+    "Priscien",
+    "Priscianus Caesariensis"
+   ]
   },
   "donato": {
    "nome": "Donato",
    "latino": "Donatus",
    "categoria": "classico-latino",
-   "codici": 339
+   "codici": 339,
+   "forme": [
+    "Donati",
+    "Donat",
+    "Aelius Donatus",
+    "Aelii Donati",
+    "Tiberius Claudius Donatus"
+   ]
   },
   "servio": {
    "nome": "Servio",
    "latino": "Servius",
    "categoria": "classico-latino",
-   "codici": 138
+   "codici": 138,
+   "forme": [
+    "Servii",
+    "Maurus Servius Honoratus",
+    "Servius Honoratus",
+    "Servius grammaticus"
+   ]
   },
   "macrobio": {
    "nome": "Macrobio",
    "latino": "Macrobius",
    "categoria": "classico-latino",
-   "codici": 142
+   "codici": 142,
+   "forme": [
+    "Macrobii",
+    "Macrobe",
+    "Ambrosius Theodosius Macrobius",
+    "Macrobius Ambrosius Theodosius"
+   ]
   },
   "boezio": {
    "nome": "Boezio",
    "latino": "Boethius",
    "categoria": "classico-latino",
-   "codici": 759
+   "codici": 759,
+   "forme": [
+    "Boetius",
+    "Boethii",
+    "Boetii",
+    "Boethio",
+    "Boetio",
+    "Boece",
+    "Anicius Manlius Severinus Boethius",
+    "Severinus Boethius",
+    "Manlius Severinus Boethius"
+   ]
   },
   "ausonio": {
    "nome": "Ausonio",
    "latino": "Ausonius",
    "categoria": "classico-latino",
-   "codici": 66
+   "codici": 66,
+   "forme": [
+    "Ausonii",
+    "Ausone",
+    "Decimus Magnus Ausonius",
+    "Decimus Ausonius"
+   ]
   },
   "valerio-massimo": {
    "nome": "Valerio Massimo",
    "latino": "Valerius Maximus",
    "categoria": "classico-latino",
-   "codici": 171
+   "codici": 171,
+   "forme": [
+    "Valerii Maximi",
+    "Valere Maxime"
+   ]
   },
   "curzio-rufo": {
    "nome": "Curzio Rufo",
    "latino": "Curtius Rufus",
    "categoria": "classico-latino",
-   "codici": 83
+   "codici": 83,
+   "forme": [
+    "Quintus Curtius Rufus",
+    "Curtii Rufi",
+    "Quintus Curtius",
+    "Quinti Curtii",
+    "Quinte Curce"
+   ]
   },
   "giustino": {
    "nome": "Giustino",
    "latino": "Iustinus",
    "categoria": "classico-latino",
-   "codici": 55
+   "codici": 55,
+   "forme": [
+    "Marcus Iunianus Iustinus",
+    "Marcus Junianus Justinus",
+    "Iunianus Iustinus",
+    "Junianus Justinus",
+    "Iustinus Marcus Iunianus",
+    "Justinus Marcus Junianus",
+    "Giustino storico"
+   ]
   },
   "floro": {
    "nome": "Floro",
    "latino": "Florus",
    "categoria": "classico-latino",
-   "codici": 38
+   "codici": 38,
+   "forme": [
+    "Lucius Annaeus Florus",
+    "Annaeus Florus",
+    "Florus Lucius Annaeus",
+    "Iulius Florus"
+   ]
   },
   "eutropio": {
    "nome": "Eutropio",
    "latino": "Eutropius",
    "categoria": "classico-latino",
-   "codici": 42
+   "codici": 42,
+   "forme": [
+    "Eutropii",
+    "Eutrope"
+   ]
   },
   "vegezio": {
    "nome": "Vegezio",
    "latino": "Vegetius",
    "categoria": "classico-latino",
-   "codici": 99
+   "codici": 99,
+   "forme": [
+    "Vegetii",
+    "Vegece",
+    "Publius Flavius Vegetius Renatus",
+    "Flavius Vegetius Renatus",
+    "Vegetius Renatus"
+   ]
   },
   "columella": {
    "nome": "Columella",
    "latino": "Columella",
    "categoria": "classico-latino",
-   "codici": 24
+   "codici": 24,
+   "forme": [
+    "Columellae",
+    "Lucius Iunius Moderatus Columella",
+    "Lucius Junius Moderatus Columella",
+    "Iunius Moderatus Columella"
+   ]
   },
   "varrone": {
    "nome": "Varrone",
    "latino": "Varro",
    "categoria": "classico-latino",
-   "codici": 53
+   "codici": 53,
+   "forme": [
+    "Varronis",
+    "Varron",
+    "Marcus Terentius Varro",
+    "Terentius Varro",
+    "Terentii Varronis"
+   ]
   },
   "vitruvio": {
    "nome": "Vitruvio",
    "latino": "Vitruvius",
    "categoria": "classico-latino",
-   "codici": 57
+   "codici": 57,
+   "forme": [
+    "Vitruvii",
+    "Vitruve",
+    "Vitruv",
+    "Marcus Vitruvius Pollio",
+    "Vitruvius Pollio"
+   ]
   },
   "frontino": {
    "nome": "Frontino",
    "latino": "Frontinus",
    "categoria": "classico-latino",
-   "codici": 47
+   "codici": 47,
+   "forme": [
+    "Frontini",
+    "Frontin",
+    "Sextus Iulius Frontinus",
+    "Sextus Julius Frontinus",
+    "Iulius Frontinus"
+   ]
   },
   "gellio": {
    "nome": "Aulo Gellio",
    "latino": "Gellius",
    "categoria": "classico-latino",
-   "codici": 62
+   "codici": 62,
+   "forme": [
+    "Aulus Gellius",
+    "Auli Gellii",
+    "Gellii",
+    "Aulu Gelle",
+    "Agellius"
+   ]
   },
   "valerio-flacco": {
    "nome": "Valerio Flacco",
    "latino": "Valerius Flaccus",
    "categoria": "classico-latino",
-   "codici": 14
+   "codici": 14,
+   "forme": [
+    "Valerii Flacci",
+    "Gaius Valerius Flaccus",
+    "Valerius Flaccus Setinus Balbus"
+   ]
   },
   "silio-italico": {
    "nome": "Silio Italico",
    "latino": "Silius Italicus",
    "categoria": "classico-latino",
-   "codici": 39
+   "codici": 39,
+   "forme": [
+    "Silii Italici",
+    "Tiberius Catius Asconius Silius Italicus",
+    "Silius"
+   ]
   },
   "manilio": {
    "nome": "Manilio",
    "latino": "Manilius",
    "categoria": "classico-latino",
-   "codici": 29
+   "codici": 29,
+   "forme": [
+    "Marcus Manilius",
+    "Manilii",
+    "Manile"
+   ]
   },
   "fedro": {
    "nome": "Fedro",
    "latino": "Phaedrus",
    "categoria": "classico-latino",
-   "codici": 13
+   "codici": 13,
+   "forme": [
+    "Phaedrus Augusti libertus",
+    "Phadrus",
+    "Phedre"
+   ]
   },
   "aviano": {
    "nome": "Aviano",
    "latino": "Avianus",
    "categoria": "classico-latino",
-   "codici": 36
+   "codici": 36,
+   "forme": [
+    "Aviani",
+    "Avien",
+    "Flavius Avianus"
+   ]
   },
   "avieno": {
    "nome": "Avieno",
    "latino": "Avienus",
    "categoria": "classico-latino",
-   "codici": 17
+   "codici": 17,
+   "forme": [
+    "Rufius Festus Avienus",
+    "Avieni"
+   ]
   },
   "marziano-capella": {
    "nome": "Marziano Capella",
    "latino": "Martianus Capella",
    "categoria": "classico-latino",
-   "codici": 70
+   "codici": 70,
+   "forme": [
+    "Martiani Capellae",
+    "Martianus Minneus Felix Capella"
+   ]
   },
   "solino": {
    "nome": "Solino",
    "latino": "Solinus",
    "categoria": "classico-latino",
-   "codici": 105
+   "codici": 105,
+   "forme": [
+    "Gaius Iulius Solinus",
+    "Gaius Julius Solinus",
+    "Iulius Solinus",
+    "Solini",
+    "Solin"
+   ]
   },
   "celso": {
    "nome": "Celso",
    "latino": "Celsus",
    "categoria": "classico-latino",
-   "codici": 22
+   "codici": 22,
+   "forme": [
+    "Aulus Cornelius Celsus",
+    "Cornelius Celsus",
+    "Cornelii Celsi",
+    "Aulo Cornelio Celso"
+   ]
   },
   "nepote": {
    "nome": "Cornelio Nepote",
    "latino": "Cornelius Nepos",
    "categoria": "classico-latino",
-   "codici": 30
+   "codici": 30,
+   "forme": [
+    "Cornelii Nepotis"
+   ]
   },
   "velleio": {
    "nome": "Velleio Patercolo",
    "latino": "Velleius Paterculus",
    "categoria": "classico-latino",
-   "codici": 11
+   "codici": 11,
+   "forme": [
+    "Velleii Paterculi",
+    "Marcus Velleius Paterculus"
+   ]
   },
   "historia-augusta": {
    "nome": "Historia Augusta",
    "latino": "Historia Augusta",
    "categoria": "classico-latino",
-   "codici": 15
+   "codici": 15,
+   "forme": [
+    "Scriptores historiae Augustae",
+    "Scriptores Historiae Augustae",
+    "Historiae Augustae scriptores",
+    "Vitae diversorum principum et tyrannorum"
+   ]
   },
   "calpurnio": {
    "nome": "Calpurnio Siculo",
    "latino": "Calpurnius Siculus",
    "categoria": "classico-latino",
-   "codici": 9
+   "codici": 9,
+   "forme": [
+    "Calpurnii Siculi",
+    "Titus Calpurnius Siculus"
+   ]
   },
   "disticha-catonis": {
    "nome": "Disticha Catonis",
    "latino": "Disticha Catonis",
    "categoria": "classico-latino",
-   "codici": 91
+   "codici": 91,
+   "forme": [
+    "Dicta Catonis",
+    "Distichia Catonis",
+    "Catonis disticha",
+    "Distica Catonis",
+    "Dionysius Cato",
+    "Cato Dionysius",
+    "Liber Catonis",
+    "Catonis distichorum",
+    "Monosticha Catonis",
+    "Cato novus",
+    "Cato interpretatus",
+    "Catonis dicta"
+   ]
   },
   "catone": {
    "nome": "Catone il Censore",
    "latino": "Cato maior",
    "categoria": "classico-latino",
-   "codici": 37
+   "codici": 37,
+   "forme": [
+    "Marcus Porcius Cato",
+    "Porcius Cato",
+    "Cato Censorius",
+    "Cato the Elder",
+    "Caton l Ancien",
+    "Cato Marcus Porcius"
+   ]
   },
   "pomponio-mela": {
    "nome": "Pomponio Mela",
    "latino": "Pomponius Mela",
    "categoria": "classico-latino",
-   "codici": 42
+   "codici": 42,
+   "forme": [
+    "Pomponii Melae"
+   ]
   },
   "igino": {
    "nome": "Igino",
    "latino": "Hyginus",
    "categoria": "classico-latino",
-   "codici": 47
+   "codici": 47,
+   "forme": [
+    "Hygini",
+    "Hygin",
+    "Gaius Iulius Hyginus",
+    "Hyginus Mythographus"
+   ]
   },
   "censorino": {
    "nome": "Censorino",
    "latino": "Censorinus",
    "categoria": "classico-latino",
-   "codici": 10
+   "codici": 10,
+   "forme": [
+    "Censorini"
+   ]
   },
   "festo": {
    "nome": "Festo",
    "latino": "Festus",
    "categoria": "classico-latino",
-   "codici": 38
+   "codici": 38,
+   "forme": [
+    "Sextus Pompeius Festus",
+    "Pompeius Festus",
+    "Pompei Festi"
+   ]
   },
   "nonio": {
    "nome": "Nonio Marcello",
    "latino": "Nonius Marcellus",
    "categoria": "classico-latino",
-   "codici": 56
+   "codici": 56,
+   "forme": [
+    "Nonii Marcelli"
+   ]
   },
   "carisio": {
    "nome": "Carisio",
    "latino": "Charisius",
    "categoria": "classico-latino",
-   "codici": 3
+   "codici": 3,
+   "forme": [
+    "Flavius Sosipater Charisius",
+    "Sosipater Charisius",
+    "Charisii"
+   ]
   },
   "palladio": {
    "nome": "Palladio",
    "latino": "Palladius",
    "categoria": "classico-latino",
-   "codici": 46
+   "codici": 46,
+   "forme": [
+    "Rutilius Taurus Aemilianus Palladius",
+    "Palladius Rutilius Taurus Aemilianus",
+    "Rutilius Palladius",
+    "Palladius Rutilius"
+   ]
   },
   "apicio": {
    "nome": "Apicio",
    "latino": "Apicius",
    "categoria": "classico-latino",
-   "codici": 10
+   "codici": 10,
+   "forme": [
+    "Apicii",
+    "Caelius Apicius",
+    "Marcus Gavius Apicius"
+   ]
   },
   "aurelio-vittore": {
    "nome": "Aurelio Vittore",
    "latino": "Aurelius Victor",
    "categoria": "classico-latino",
-   "codici": 24
+   "codici": 24,
+   "forme": [
+    "Sextus Aurelius Victor",
+    "Aurelii Victoris"
+   ]
   },
   "ilias-latina": {
    "nome": "Ilias Latina",
    "latino": "Ilias Latina",
    "categoria": "classico-latino",
-   "codici": 19
+   "codici": 19,
+   "forme": [
+    "Homerus Latinus",
+    "Baebius Italicus",
+    "Ilias latina",
+    "Pindarus Thebanus"
+   ]
   },
   "darete": {
    "nome": "Darete Frigio",
    "latino": "Dares Phrygius",
    "categoria": "classico-latino",
-   "codici": 45
+   "codici": 45,
+   "forme": [
+    "Daretis Phrygii",
+    "Dares Frigius",
+    "Dares der Phrygier",
+    "Dares le Phrygien"
+   ]
   },
   "ditti": {
    "nome": "Ditti Cretese",
    "latino": "Dictys Cretensis",
    "categoria": "classico-latino",
-   "codici": 20
+   "codici": 20,
+   "forme": [
+    "Dictyis Cretensis",
+    "Dictys",
+    "Dictys von Kreta"
+   ]
   },
   "omero": {
    "nome": "Omero",
    "latino": "Homerus",
    "categoria": "classico-greco",
-   "codici": 644
+   "codici": 644,
+   "forme": [
+    "Homeri",
+    "Homero",
+    "Homerum",
+    "Homère",
+    "Homer",
+    "Ὅμηρος",
+    "Ὁμήρου"
+   ]
   },
   "esiodo": {
    "nome": "Esiodo",
    "latino": "Hesiodus",
    "categoria": "classico-greco",
-   "codici": 129
+   "codici": 129,
+   "forme": [
+    "Hesiodi",
+    "Hésiode",
+    "Hesiod",
+    "Ἡσίοδος",
+    "Ἡσιόδου"
+   ]
   },
   "pindaro": {
    "nome": "Pindaro",
    "latino": "Pindarus",
    "categoria": "classico-greco",
-   "codici": 57
+   "codici": 57,
+   "forme": [
+    "Pindari",
+    "Pindar",
+    "Pindare",
+    "Πίνδαρος",
+    "Πινδάρου"
+   ]
   },
   "saffo": {
    "nome": "Saffo",
    "latino": "Sappho",
    "categoria": "classico-greco",
-   "codici": 32
+   "codici": 32,
+   "forme": [
+    "Sapphus",
+    "Sapho",
+    "Σαπφώ",
+    "Σαπφοῦς"
+   ]
   },
   "alceo": {
    "nome": "Alceo",
    "latino": "Alcaeus",
    "categoria": "classico-greco",
-   "codici": 5
+   "codici": 5,
+   "forme": [
+    "Alcaei",
+    "Alcée",
+    "Alkaios",
+    "Ἀλκαῖος"
+   ]
   },
   "anacreonte": {
    "nome": "Anacreonte",
    "latino": "Anacreon",
    "categoria": "classico-greco",
-   "codici": 17
+   "codici": 17,
+   "forme": [
+    "Anacreontis",
+    "Anakreon",
+    "Anacréon",
+    "Ἀνακρέων",
+    "Ἀνακρέοντος"
+   ]
   },
   "simonide": {
    "nome": "Simonide",
    "latino": "Simonides",
    "categoria": "classico-greco",
-   "codici": 4
+   "codici": 4,
+   "forme": [
+    "Simonidis",
+    "Σιμωνίδης",
+    "Σιμωνίδου"
+   ]
   },
   "teognide": {
    "nome": "Teognide",
    "latino": "Theognis",
    "categoria": "classico-greco",
-   "codici": 20
+   "codici": 20,
+   "forme": [
+    "Theognidis",
+    "Théognis",
+    "Θέογνις",
+    "Θεόγνιδος"
+   ]
   },
   "archiloco": {
    "nome": "Archiloco",
    "latino": "Archilochus",
    "categoria": "classico-greco",
-   "codici": 3
+   "codici": 3,
+   "forme": [
+    "Archilochi",
+    "Archilochos",
+    "Archiloque",
+    "Ἀρχίλοχος"
+   ]
   },
   "tirteo": {
    "nome": "Tirteo",
    "latino": "Tyrtaeus",
    "categoria": "classico-greco",
-   "codici": 2
+   "codici": 2,
+   "forme": [
+    "Tyrtaei",
+    "Tyrtée",
+    "Tyrtaios",
+    "Τυρταῖος"
+   ]
   },
   "eschilo": {
    "nome": "Eschilo",
    "latino": "Aeschylus",
    "categoria": "classico-greco",
-   "codici": 52
+   "codici": 52,
+   "forme": [
+    "Aeschyli",
+    "Aischylos",
+    "Eschyle",
+    "Αἰσχύλος",
+    "Αἰσχύλου"
+   ]
   },
   "sofocle": {
    "nome": "Sofocle",
    "latino": "Sophocles",
    "categoria": "classico-greco",
-   "codici": 86
+   "codici": 86,
+   "forme": [
+    "Sophoclis",
+    "Sophokles",
+    "Sophocle",
+    "Σοφοκλῆς",
+    "Σοφοκλέους"
+   ]
   },
   "euripide": {
    "nome": "Euripide",
    "latino": "Euripides",
    "categoria": "classico-greco",
-   "codici": 166
+   "codici": 166,
+   "forme": [
+    "Euripidis",
+    "Εὐριπίδης",
+    "Εὐριπίδου"
+   ]
   },
   "aristofane": {
    "nome": "Aristofane",
    "latino": "Aristophanes",
    "categoria": "classico-greco",
-   "codici": 149
+   "codici": 149,
+   "forme": [
+    "Aristophanis",
+    "Aristophane",
+    "Ἀριστοφάνης",
+    "Ἀριστοφάνους"
+   ]
   },
   "menandro": {
    "nome": "Menandro",
    "latino": "Menander",
    "categoria": "classico-greco",
-   "codici": 48
+   "codici": 48,
+   "forme": [
+    "Menandri",
+    "Ménandre",
+    "Μένανδρος",
+    "Μενάνδρου"
+   ]
   },
   "erodoto": {
    "nome": "Erodoto",
    "latino": "Herodotus",
    "categoria": "classico-greco",
-   "codici": 62
+   "codici": 62,
+   "forme": [
+    "Herodoti",
+    "Herodot",
+    "Hérodote",
+    "Ἡρόδοτος",
+    "Ἡροδότου"
+   ]
   },
   "tucidide": {
    "nome": "Tucidide",
    "latino": "Thucydides",
    "categoria": "classico-greco",
-   "codici": 69
+   "codici": 69,
+   "forme": [
+    "Thucydidis",
+    "Thukydides",
+    "Thucydide",
+    "Θουκυδίδης",
+    "Θουκυδίδου"
+   ]
   },
   "senofonte": {
    "nome": "Senofonte",
    "latino": "Xenophon",
    "categoria": "classico-greco",
-   "codici": 149
+   "codici": 149,
+   "forme": [
+    "Xenophontis",
+    "Xénophon",
+    "Ξενοφῶν",
+    "Ξενοφῶντος"
+   ]
   },
   "platone": {
    "nome": "Platone",
    "latino": "Plato",
    "categoria": "classico-greco",
-   "codici": 358
+   "codici": 358,
+   "forme": [
+    "Platonis",
+    "Platon",
+    "Πλάτων",
+    "Πλάτωνος"
+   ]
   },
   "aristotele": {
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 2317
+   "codici": 2317,
+   "forme": [
+    "Aristotelis",
+    "Aristotle",
+    "Aristote",
+    "Ἀριστοτέλης",
+    "Ἀριστοτέλους"
+   ]
   },
   "teofrasto": {
    "nome": "Teofrasto",
    "latino": "Theophrastus",
    "categoria": "classico-greco",
-   "codici": 126
+   "codici": 126,
+   "forme": [
+    "Theophrasti",
+    "Theophrast",
+    "Théophraste",
+    "Θεόφραστος",
+    "Θεοφράστου"
+   ]
   },
   "lisia": {
    "nome": "Lisia",
    "latino": "Lysias",
    "categoria": "classico-greco",
-   "codici": 25
+   "codici": 25,
+   "forme": [
+    "Lysiae",
+    "Λυσίας",
+    "Λυσίου"
+   ]
   },
   "isocrate": {
    "nome": "Isocrate",
    "latino": "Isocrates",
    "categoria": "classico-greco",
-   "codici": 109
+   "codici": 109,
+   "forme": [
+    "Isocratis",
+    "Isokrates",
+    "Ἰσοκράτης",
+    "Ἰσοκράτους"
+   ]
   },
   "demostene": {
    "nome": "Demostene",
    "latino": "Demosthenes",
    "categoria": "classico-greco",
-   "codici": 170
+   "codici": 170,
+   "forme": [
+    "Demosthenis",
+    "Démosthène",
+    "Δημοσθένης",
+    "Δημοσθένους"
+   ]
   },
   "eschine": {
    "nome": "Eschine",
    "latino": "Aeschines",
    "categoria": "classico-greco",
-   "codici": 55
+   "codici": 55,
+   "forme": [
+    "Aeschinis",
+    "Aischines",
+    "Αἰσχίνης",
+    "Αἰσχίνου"
+   ]
   },
   "andocide": {
    "nome": "Andocide",
    "latino": "Andocides",
    "categoria": "classico-greco",
-   "codici": 3
+   "codici": 3,
+   "forme": [
+    "Andocidis",
+    "Andokides",
+    "Ἀνδοκίδης"
+   ]
   },
   "antifonte": {
    "nome": "Antifonte",
    "latino": "Antiphon",
    "categoria": "classico-greco",
-   "codici": 6
+   "codici": 6,
+   "forme": [
+    "Antiphontis",
+    "Ἀντιφῶν",
+    "Ἀντιφῶντος"
+   ]
   },
   "iseo": {
    "nome": "Iseo",
    "latino": "Isaeus",
    "categoria": "classico-greco",
-   "codici": 7
+   "codici": 7,
+   "forme": [
+    "Isaei",
+    "Isaios",
+    "Ἰσαῖος"
+   ]
   },
   "dinarco": {
    "nome": "Dinarco",
    "latino": "Dinarchus",
    "categoria": "classico-greco",
-   "codici": 2
+   "codici": 2,
+   "forme": [
+    "Dinarchi",
+    "Deinarchos",
+    "Δείναρχος"
+   ]
   },
   "polibio": {
    "nome": "Polibio",
    "latino": "Polybius",
    "categoria": "classico-greco",
-   "codici": 48
+   "codici": 48,
+   "forme": [
+    "Polybii",
+    "Polybios",
+    "Polybe",
+    "Πολύβιος",
+    "Πολυβίου"
+   ]
   },
   "diodoro": {
    "nome": "Diodoro Siculo",
    "latino": "Diodorus Siculus",
    "categoria": "classico-greco",
-   "codici": 57
+   "codici": 57,
+   "forme": [
+    "Diodori Siculi",
+    "Diodor von Sizilien",
+    "Diodore de Sicile",
+    "Diodorus of Sicily",
+    "Διόδωρος Σικελιώτης",
+    "Διοδώρου Σικελιώτου"
+   ]
   },
   "dionigi-alicarnasso": {
    "nome": "Dionigi di Alicarnasso",
    "latino": "Dionysius Halicarnassensis",
    "categoria": "classico-greco",
-   "codici": 27
+   "codici": 27,
+   "forme": [
+    "Dionysii Halicarnassensis",
+    "Dionysios von Halikarnassos",
+    "Denys d Halicarnasse",
+    "Dionysius of Halicarnassus",
+    "Διονύσιος Ἁλικαρνασσεύς",
+    "Διονυσίου Ἁλικαρνασσέως"
+   ]
   },
   "strabone": {
    "nome": "Strabone",
    "latino": "Strabo",
    "categoria": "classico-greco",
-   "codici": 27
+   "codici": 27,
+   "forme": [
+    "Strabo Geographus",
+    "Strabon",
+    "Στράβων",
+    "Στράβωνος"
+   ]
   },
   "plutarco": {
    "nome": "Plutarco",
    "latino": "Plutarchus",
    "categoria": "classico-greco",
-   "codici": 344
+   "codici": 344,
+   "forme": [
+    "Plutarchi",
+    "Plutarcho",
+    "Plutarch",
+    "Plutarque",
+    "Πλούταρχος",
+    "Πλουτάρχου"
+   ]
   },
   "luciano": {
    "nome": "Luciano di Samosata",
    "latino": "Lucianus",
    "categoria": "classico-greco",
-   "codici": 127
+   "codici": 127,
+   "forme": [
+    "Luciani",
+    "Lukian",
+    "Lucian",
+    "Λουκιανός",
+    "Λουκιανοῦ",
+    "Lucianus Samosatensis"
+   ]
   },
   "pausania": {
    "nome": "Pausania",
    "latino": "Pausanias",
    "categoria": "classico-greco",
-   "codici": 10
+   "codici": 10,
+   "forme": [
+    "Pausanias Periegeta",
+    "Pausanias Periegetes",
+    "Pausania il Periegeta",
+    "Παυσανίας"
+   ]
   },
   "arriano": {
    "nome": "Arriano",
    "latino": "Arrianus",
    "categoria": "classico-greco",
-   "codici": 43
+   "codici": 43,
+   "forme": [
+    "Arriani",
+    "Arrian",
+    "Arrien",
+    "Ἀρριανός",
+    "Ἀρριανοῦ"
+   ]
   },
   "cassio-dione": {
    "nome": "Cassio Dione",
    "latino": "Cassius Dio",
    "categoria": "classico-greco",
-   "codici": 8
+   "codici": 8,
+   "forme": [
+    "Dio Cassius",
+    "Cassii Dionis",
+    "Dionis Cassii",
+    "Dione Cassio",
+    "Dion Cassius",
+    "Δίων Κάσσιος"
+   ]
   },
   "apollonio-rodio": {
    "nome": "Apollonio Rodio",
    "latino": "Apollonius Rhodius",
    "categoria": "classico-greco",
-   "codici": 21
+   "codici": 21,
+   "forme": [
+    "Apollonii Rhodii",
+    "Apollonios von Rhodos",
+    "Apollonios de Rhodes",
+    "Apollonius of Rhodes",
+    "Ἀπολλώνιος Ῥόδιος",
+    "Ἀπολλωνίου Ῥοδίου"
+   ]
   },
   "teocrito": {
    "nome": "Teocrito",
    "latino": "Theocritus",
    "categoria": "classico-greco",
-   "codici": 71
+   "codici": 71,
+   "forme": [
+    "Theocriti",
+    "Theokrit",
+    "Théocrite",
+    "Θεόκριτος",
+    "Θεοκρίτου"
+   ]
   },
   "callimaco": {
    "nome": "Callimaco",
    "latino": "Callimachus",
    "categoria": "classico-greco",
-   "codici": 30
+   "codici": 30,
+   "forme": [
+    "Callimachi",
+    "Kallimachos",
+    "Callimaque",
+    "Καλλίμαχος",
+    "Καλλιμάχου"
+   ]
   },
   "arato": {
    "nome": "Arato",
    "latino": "Aratus",
    "categoria": "classico-greco",
-   "codici": 58
+   "codici": 58,
+   "forme": [
+    "Arati",
+    "Aratos",
+    "Ἄρατος",
+    "Ἀράτου"
+   ]
   },
   "nicandro": {
    "nome": "Nicandro",
    "latino": "Nicander",
    "categoria": "classico-greco",
-   "codici": 17
+   "codici": 17,
+   "forme": [
+    "Nicandri",
+    "Nikandros",
+    "Nicandre",
+    "Νίκανδρος",
+    "Νικάνδρου"
+   ]
   },
   "oppiano": {
    "nome": "Oppiano",
    "latino": "Oppianus",
    "categoria": "classico-greco",
-   "codici": 40
+   "codici": 40,
+   "forme": [
+    "Oppiani",
+    "Oppian",
+    "Oppien",
+    "Ὀππιανός",
+    "Ὀππιανοῦ"
+   ]
   },
   "quinto-smirneo": {
    "nome": "Quinto Smirneo",
    "latino": "Quintus Smyrnaeus",
    "categoria": "classico-greco",
-   "codici": 6
+   "codici": 6,
+   "forme": [
+    "Quinti Smyrnaei",
+    "Quintus von Smyrna",
+    "Quintus de Smyrne",
+    "Quintus of Smyrna",
+    "Quintus Calaber",
+    "Κόϊντος Σμυρναῖος"
+   ]
   },
   "nonno": {
    "nome": "Nonno di Panopoli",
    "latino": "Nonnus",
    "categoria": "classico-greco",
-   "codici": 20
+   "codici": 20,
+   "forme": [
+    "Nonnus Panopolitanus",
+    "Nonnos von Panopolis",
+    "Nonnos de Panopolis",
+    "Nonnus of Panopolis",
+    "Νόννος"
+   ]
   },
   "galeno": {
    "nome": "Galeno",
    "latino": "Galenus",
    "categoria": "classico-greco",
-   "codici": 533
+   "codici": 533,
+   "forme": [
+    "Galeni",
+    "Galen",
+    "Galien",
+    "Γαληνός",
+    "Γαληνοῦ"
+   ]
   },
   "ippocrate": {
    "nome": "Ippocrate",
    "latino": "Hippocrates",
    "categoria": "classico-greco",
-   "codici": 424
+   "codici": 424,
+   "forme": [
+    "Hippocratis",
+    "Hippokrates",
+    "Hippocrate",
+    "Ἱπποκράτης",
+    "Ἱπποκράτους"
+   ]
   },
   "tolomeo": {
    "nome": "Tolomeo",
    "latino": "Ptolemaeus",
    "categoria": "classico-greco",
-   "codici": 272
+   "codici": 272,
+   "forme": [
+    "Claudius Ptolemaeus",
+    "Claudii Ptolemaei",
+    "Ptolemaeus astronomus",
+    "Claudio Tolomeo",
+    "Ptolemy",
+    "Ptolémée",
+    "Ptolemäus",
+    "Κλαύδιος Πτολεμαῖος"
+   ]
   },
   "euclide": {
    "nome": "Euclide",
    "latino": "Euclides",
    "categoria": "classico-greco",
-   "codici": 235
+   "codici": 235,
+   "forme": [
+    "Euclidis",
+    "Euklid",
+    "Euclid",
+    "Εὐκλείδης",
+    "Εὐκλείδου"
+   ]
   },
   "archimede": {
    "nome": "Archimede",
    "latino": "Archimedes",
    "categoria": "classico-greco",
-   "codici": 36
+   "codici": 36,
+   "forme": [
+    "Archimedis",
+    "Archimède",
+    "Ἀρχιμήδης",
+    "Ἀρχιμήδους"
+   ]
   },
   "dionisio-trace": {
    "nome": "Dionisio Trace",
    "latino": "Dionysius Thrax",
    "categoria": "classico-greco",
-   "codici": 9
+   "codici": 9,
+   "forme": [
+    "Dionysii Thracis",
+    "Dionysios Thrax",
+    "Denys le Thrace",
+    "Διονύσιος ὁ Θρᾷξ",
+    "Διονυσίου τοῦ Θρᾳκός"
+   ]
   },
   "apollonio-discolo": {
    "nome": "Apollonio Discolo",
    "latino": "Apollonius Dyscolus",
    "categoria": "classico-greco",
-   "codici": 36
+   "codici": 36,
+   "forme": [
+    "Apollonii Dyscoli",
+    "Apollonios Dyskolos",
+    "Ἀπολλώνιος Δύσκολος",
+    "Ἀπολλωνίου τοῦ Δυσκόλου"
+   ]
   },
   "erodiano": {
    "nome": "Erodiano",
    "latino": "Herodianus",
    "categoria": "classico-greco",
-   "codici": 64
+   "codici": 64,
+   "forme": [
+    "Herodiani",
+    "Herodian",
+    "Hérodien",
+    "Ἡρωδιανός",
+    "Ἡρωδιανοῦ"
+   ]
   },
   "efestione": {
    "nome": "Efestione",
    "latino": "Hephaestion",
    "categoria": "classico-greco",
-   "codici": 23
+   "codici": 23,
+   "forme": [
+    "Hephaestio grammaticus",
+    "Efestione grammatico"
+   ]
   },
   "esichio": {
    "nome": "Esichio",
    "latino": "Hesychius",
    "categoria": "classico-greco",
-   "codici": 33
+   "codici": 33,
+   "forme": [
+    "Hesychius Alexandrinus",
+    "Hesychii",
+    "Hésychius",
+    "Ἡσύχιος",
+    "Ἡσυχίου"
+   ]
   },
   "suda": {
    "nome": "Suda",
    "latino": "Suda",
    "categoria": "classico-greco",
-   "codici": 27
+   "codici": 27,
+   "forme": [
+    "Suidas",
+    "Suidae",
+    "Σοῦδα",
+    "Σουΐδας",
+    "Lexicon Suidae",
+    "Lessico Suda"
+   ]
   },
   "fozio": {
    "nome": "Fozio",
    "latino": "Photius",
    "categoria": "classico-greco",
-   "codici": 101
+   "codici": 101,
+   "forme": [
+    "Photii",
+    "Photios",
+    "Photius patriarcha",
+    "Φώτιος",
+    "Φωτίου"
+   ]
   },
   "arpocrazione": {
    "nome": "Arpocrazione",
    "latino": "Harpocration",
    "categoria": "classico-greco",
-   "codici": 10
+   "codici": 10,
+   "forme": [
+    "Harpocrationis",
+    "Harpokration",
+    "Ἁρποκρατίων"
+   ]
   },
   "polluce": {
    "nome": "Polluce",
    "latino": "Iulius Pollux",
    "categoria": "classico-greco",
-   "codici": 21
+   "codici": 21,
+   "forme": [
+    "Julius Pollux",
+    "Giulio Polluce",
+    "Ἰούλιος Πολυδεύκης"
+   ]
   },
   "etymologicum": {
    "nome": "Etymologicum Magnum",
    "latino": "Etymologicum Magnum",
    "categoria": "classico-greco",
-   "codici": 16
+   "codici": 16,
+   "forme": [
+    "Etymologicum Gudianum",
+    "Etymologicum Genuinum",
+    "Etymologicum",
+    "Ἐτυμολογικὸν μέγα",
+    "Ἐτυμολογικόν"
+   ]
   },
   "epitteto": {
    "nome": "Epitteto",
    "latino": "Epictetus",
    "categoria": "classico-greco",
-   "codici": 40
+   "codici": 40,
+   "forme": [
+    "Epicteti",
+    "Epiktet",
+    "Épictète",
+    "Epictetos",
+    "Ἐπίκτητος",
+    "Ἐπικτήτου"
+   ]
   },
   "marco-aurelio": {
    "nome": "Marco Aurelio",
    "latino": "Marcus Aurelius",
    "categoria": "classico-greco",
-   "codici": 11
+   "codici": 11,
+   "forme": [
+    "Marci Aurelii",
+    "Marc Aurèle",
+    "Mark Aurel",
+    "Marcus Aurelius Antoninus",
+    "Μάρκος Αὐρήλιος",
+    "Μάρκου Ἀντωνίνου"
+   ]
   },
   "plotino": {
    "nome": "Plotino",
    "latino": "Plotinus",
    "categoria": "classico-greco",
-   "codici": 34
+   "codici": 34,
+   "forme": [
+    "Plotini",
+    "Plotin",
+    "Plotinos",
+    "Πλωτῖνος",
+    "Πλωτίνου"
+   ]
   },
   "porfirio": {
    "nome": "Porfirio",
    "latino": "Porphyrius",
    "categoria": "classico-greco",
-   "codici": 257
+   "codici": 257,
+   "forme": [
+    "Porphyrii",
+    "Porphyry",
+    "Porphyre",
+    "Porphyrios",
+    "Πορφύριος",
+    "Πορφυρίου"
+   ]
   },
   "proclo": {
    "nome": "Proclo",
    "latino": "Proclus",
    "categoria": "classico-greco",
-   "codici": 198
+   "codici": 198,
+   "forme": [
+    "Procli",
+    "Proklos",
+    "Proclus Diadochus",
+    "Πρόκλος",
+    "Πρόκλου"
+   ]
   },
   "giamblico": {
    "nome": "Giamblico",
    "latino": "Iamblichus",
    "categoria": "classico-greco",
-   "codici": 41
+   "codici": 41,
+   "forme": [
+    "Iamblichi",
+    "Jamblichus",
+    "Jamblique",
+    "Jamblichos",
+    "Ἰάμβλιχος",
+    "Ἰαμβλίχου"
+   ]
   },
   "libanio": {
    "nome": "Libanio",
    "latino": "Libanius",
    "categoria": "classico-greco",
-   "codici": 155
+   "codici": 155,
+   "forme": [
+    "Libanii",
+    "Libanios",
+    "Λιβάνιος",
+    "Λιβανίου"
+   ]
   },
   "temistio": {
    "nome": "Temistio",
    "latino": "Themistius",
    "categoria": "classico-greco",
-   "codici": 76
+   "codici": 76,
+   "forme": [
+    "Themistii",
+    "Themistios",
+    "Thémistios",
+    "Θεμίστιος",
+    "Θεμιστίου"
+   ]
   },
   "giuliano": {
    "nome": "Giuliano imperatore",
    "latino": "Iulianus Imperator",
    "categoria": "classico-greco",
-   "codici": 40
+   "codici": 40,
+   "forme": [
+    "Iulianus Apostata",
+    "Julianus Apostata",
+    "Iulianus imperator",
+    "Julianus imperator",
+    "Giuliano l Apostata",
+    "Julian the Apostate",
+    "Julian Apostata",
+    "Julien l Apostat",
+    "Flavius Claudius Iulianus",
+    "Ἰουλιανὸς αὐτοκράτωρ"
+   ]
   },
   "caritone": {
    "nome": "Caritone",
    "latino": "Chariton",
    "categoria": "classico-greco",
-   "codici": 4
+   "codici": 4,
+   "forme": [
+    "Charitonis",
+    "Chariton von Aphrodisias",
+    "Χαρίτων"
+   ]
   },
   "senofonte-efesio": {
    "nome": "Senofonte Efesio",
    "latino": "Xenophon Ephesius",
    "categoria": "classico-greco",
-   "codici": 1
+   "codici": 1,
+   "forme": [
+    "Xenophon von Ephesos",
+    "Xénophon d Éphèse",
+    "Xenophon of Ephesus",
+    "Ξενοφῶν Ἐφέσιος"
+   ]
   },
   "achille-tazio": {
    "nome": "Achille Tazio",
    "latino": "Achilles Tatius",
    "categoria": "classico-greco",
-   "codici": 8
+   "codici": 8,
+   "forme": [
+    "Achillis Tatii",
+    "Achilleus Tatios",
+    "Achille Tatius",
+    "Ἀχιλλεὺς Τάτιος"
+   ]
   },
   "longo-sofista": {
    "nome": "Longo Sofista",
    "latino": "Longus",
    "categoria": "classico-greco",
-   "codici": 1
+   "codici": 1,
+   "forme": [
+    "Longus Sophista",
+    "Longos",
+    "Λόγγος"
+   ]
   },
   "eliodoro": {
    "nome": "Eliodoro",
    "latino": "Heliodorus",
    "categoria": "classico-greco",
-   "codici": 13
+   "codici": 13,
+   "forme": [
+    "Heliodorus Emesenus",
+    "Eliodoro di Emesa",
+    "Heliodor von Emesa",
+    "Héliodore d Émèse"
+   ]
   },
   "esopo": {
    "nome": "Esopo",
    "latino": "Aesopus",
    "categoria": "classico-greco",
-   "codici": 185
+   "codici": 185,
+   "forme": [
+    "Aesopi",
+    "Äsop",
+    "Ésope",
+    "Aesop",
+    "Esopus",
+    "Αἴσωπος",
+    "Αἰσώπου"
+   ]
   },
   "flavio-giuseppe": {
    "nome": "Flavio Giuseppe",
    "latino": "Flavius Iosephus",
    "categoria": "classico-greco",
-   "codici": 245
+   "codici": 245,
+   "forme": [
+    "Flavius Josephus",
+    "Iosephus Flavius",
+    "Josephus Flavius",
+    "Giuseppe Flavio",
+    "Flavius Josèphe",
+    "Ἰώσηπος"
+   ]
   },
   "diogene-laerzio": {
    "nome": "Diogene Laerzio",
    "latino": "Diogenes Laertius",
    "categoria": "classico-greco",
-   "codici": 50
+   "codici": 50,
+   "forme": [
+    "Diogenis Laertii",
+    "Diogenes Laërtius",
+    "Diogène Laërce",
+    "Διογένης Λαέρτιος"
+   ]
   },
   "ateneo": {
    "nome": "Ateneo",
    "latino": "Athenaeus",
    "categoria": "classico-greco",
-   "codici": 5
+   "codici": 6,
+   "forme": [
+    "Athenaeus Naucratita",
+    "Ateneo di Naucrati",
+    "Athenaios"
+   ]
   },
   "eliano": {
    "nome": "Eliano",
    "latino": "Aelianus",
    "categoria": "classico-greco",
-   "codici": 20
+   "codici": 20,
+   "forme": [
+    "Claudius Aelianus",
+    "Claudio Eliano"
+   ]
   },
   "ermogene": {
    "nome": "Ermogene",
    "latino": "Hermogenes",
    "categoria": "classico-greco",
-   "codici": 29
+   "codici": 29,
+   "forme": [
+    "Hermogenes Tarsensis",
+    "Ermogene di Tarso",
+    "Ἑρμογένης"
+   ]
   },
   "aftonio": {
    "nome": "Aftonio",
    "latino": "Aphthonius",
    "categoria": "classico-greco",
-   "codici": 41
+   "codici": 41,
+   "forme": [
+    "Aphthonii",
+    "Aphthonios",
+    "Ἀφθόνιος",
+    "Ἀφθονίου"
+   ]
   },
   "filostrato": {
    "nome": "Filostrato",
    "latino": "Philostratus",
    "categoria": "classico-greco",
-   "codici": 86
+   "codici": 86,
+   "forme": [
+    "Philostrati",
+    "Philostrate",
+    "Philostratos",
+    "Φιλόστρατος",
+    "Φιλοστράτου"
+   ]
   },
   "agostino": {
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 2971
+   "codici": 2972,
+   "forme": [
+    "Augustini",
+    "Augustino",
+    "Augustinum",
+    "Aurelius Augustinus",
+    "Augustinus Hipponensis",
+    "Agostino d Ippona",
+    "Sant Agostino",
+    "Augustine",
+    "Augustine of Hippo",
+    "Augustin",
+    "Augustin von Hippo",
+    "Αὐγουστῖνος"
+   ]
   },
   "girolamo": {
    "nome": "Girolamo",
    "latino": "Hieronymus",
    "categoria": "cristiano",
-   "codici": 1384
+   "codici": 1384,
+   "forme": [
+    "Hieronymi",
+    "Hieronymo",
+    "Hieronymum",
+    "Eusebius Hieronymus",
+    "Sophronius Eusebius Hieronymus",
+    "Hieronymus Stridonensis",
+    "Hieronymus presbyter",
+    "San Girolamo",
+    "Saint Jerome",
+    "Jerome",
+    "Jérôme",
+    "Ἱερώνυμος"
+   ]
   },
   "ambrogio": {
    "nome": "Ambrogio",
    "latino": "Ambrosius",
    "categoria": "cristiano",
-   "codici": 431
+   "codici": 431,
+   "forme": [
+    "Ambrosii",
+    "Ambrosio",
+    "Ambrosius Mediolanensis",
+    "Ambrogio di Milano",
+    "Sant Ambrogio",
+    "Ambrose of Milan",
+    "Ambrosius von Mailand",
+    "Ambroise de Milan",
+    "Ἀμβρόσιος"
+   ]
   },
   "gregorio-magno": {
    "nome": "Gregorio Magno",
    "latino": "Gregorius Magnus",
    "categoria": "cristiano",
-   "codici": 955
+   "codici": 955,
+   "forme": [
+    "Gregorii Magni",
+    "Gregorius I papa",
+    "Gregorius papa I",
+    "Gregory the Great",
+    "Gregor der Große",
+    "Gregor der Grosse",
+    "Grégoire le Grand",
+    "Gregorius Dialogus",
+    "Γρηγόριος ὁ Διάλογος"
+   ]
   },
   "basilio": {
    "nome": "Basilio Magno",
    "latino": "Basilius Magnus",
    "categoria": "cristiano",
-   "codici": 568
+   "codici": 568,
+   "forme": [
+    "Basilius Caesariensis",
+    "Basilii Magni",
+    "Basilio di Cesarea",
+    "Basil the Great",
+    "Basil of Caesarea",
+    "Basilius der Große",
+    "Basile de Césarée",
+    "Basile le Grand",
+    "Μέγας Βασίλειος",
+    "Βασίλειος ὁ Μέγας",
+    "Βασιλείου τοῦ Μεγάλου"
+   ]
   },
   "gregorio-nazianzeno": {
    "nome": "Gregorio di Nazianzo",
    "latino": "Gregorius Nazianzenus",
    "categoria": "cristiano",
-   "codici": 526
+   "codici": 526,
+   "forme": [
+    "Gregorii Nazianzeni",
+    "Gregorius Theologus",
+    "Gregorio Nazianzeno",
+    "Gregory of Nazianzus",
+    "Gregory Nazianzen",
+    "Gregor von Nazianz",
+    "Grégoire de Nazianze",
+    "Γρηγόριος ὁ Θεολόγος",
+    "Γρηγορίου τοῦ Θεολόγου",
+    "Γρηγόριος Ναζιανζηνός",
+    "Γρηγορίου τοῦ Ναζιανζηνοῦ"
+   ]
   },
   "giovanni-crisostomo": {
    "nome": "Giovanni Crisostomo",
    "latino": "Iohannes Chrysostomus",
    "categoria": "cristiano",
-   "codici": 1250
+   "codici": 1250,
+   "forme": [
+    "Ioannes Chrysostomus",
+    "Johannes Chrysostomus",
+    "Chrysostomus",
+    "Chrysostomi",
+    "Crisostomo",
+    "John Chrysostom",
+    "Chrysostom",
+    "Johannes Chrysostomos",
+    "Jean Chrysostome",
+    "Ἰωάννης ὁ Χρυσόστομος",
+    "Ἰωάννου τοῦ Χρυσοστόμου",
+    "Χρυσόστομος"
+   ]
   },
   "bibbia": {
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7119
+   "codici": 7119,
+   "forme": [
+    "Bibliae",
+    "Biblia sacra",
+    "Bible",
+    "Bibel"
+   ]
   },
   "prudenzio": {
    "nome": "Prudenzio",
    "latino": "Prudentius",
    "categoria": "cristiano",
-   "codici": 114
+   "codici": 114,
+   "forme": [
+    "Prudentii",
+    "Prudence",
+    "Aurelius Prudentius Clemens"
+   ]
   },
   "sedulio": {
    "nome": "Sedulio",
    "latino": "Sedulius",
    "categoria": "cristiano",
-   "codici": 82
+   "codici": 82,
+   "forme": [
+    "Sedulii",
+    "Coelius Sedulius",
+    "Caelius Sedulius"
+   ]
   },
   "giovenco": {
    "nome": "Giovenco",
    "latino": "Iuvencus",
    "categoria": "cristiano",
-   "codici": 26
+   "codici": 26,
+   "forme": [
+    "Juvencus",
+    "Iuvenci",
+    "Juvenci",
+    "Gaius Vettius Aquilinus Iuvencus"
+   ]
   },
   "aratore": {
    "nome": "Aratore",
    "latino": "Arator",
    "categoria": "cristiano",
-   "codici": 32
+   "codici": 32,
+   "forme": [
+    "Arator subdiaconus"
+   ]
   },
   "lattanzio": {
    "nome": "Lattanzio",
    "latino": "Lactantius",
    "categoria": "cristiano",
-   "codici": 144
+   "codici": 144,
+   "forme": [
+    "Lactantii",
+    "Lactance",
+    "Laktanz",
+    "Lucius Caecilius Firmianus Lactantius",
+    "Firmianus Lactantius"
+   ]
   },
   "tertulliano": {
    "nome": "Tertulliano",
    "latino": "Tertullianus",
    "categoria": "cristiano",
-   "codici": 57
+   "codici": 57,
+   "forme": [
+    "Tertulliani",
+    "Tertullian",
+    "Tertullien",
+    "Quintus Septimius Florens Tertullianus"
+   ]
   },
   "cipriano": {
    "nome": "Cipriano",
    "latino": "Cyprianus",
    "categoria": "cristiano",
-   "codici": 51
+   "codici": 51,
+   "forme": [
+    "Cyprianus Carthaginiensis",
+    "Thascius Caecilius Cyprianus",
+    "Cipriano di Cartagine",
+    "Cyprian of Carthage",
+    "Cyprien de Carthage"
+   ]
   },
   "ilario": {
    "nome": "Ilario di Poitiers",
    "latino": "Hilarius Pictaviensis",
    "categoria": "cristiano",
-   "codici": 67
+   "codici": 67,
+   "forme": [
+    "Hilarii Pictaviensis",
+    "Hilary of Poitiers",
+    "Hilarius von Poitiers",
+    "Hilaire de Poitiers"
+   ]
   },
   "cassiodoro": {
    "nome": "Cassiodoro",
    "latino": "Cassiodorus",
    "categoria": "cristiano",
-   "codici": 226
+   "codici": 226,
+   "forme": [
+    "Cassiodori",
+    "Cassiodore",
+    "Magnus Aurelius Cassiodorus",
+    "Cassiodorus Senator"
+   ]
   },
   "origene": {
    "nome": "Origene",
    "latino": "Origenes",
    "categoria": "cristiano",
-   "codici": 346
+   "codici": 346,
+   "forme": [
+    "Origenis",
+    "Origen",
+    "Origène",
+    "Ὠριγένης",
+    "Ὠριγένους"
+   ]
   },
   "eusebio": {
    "nome": "Eusebio di Cesarea",
    "latino": "Eusebius Caesariensis",
    "categoria": "cristiano",
-   "codici": 327
+   "codici": 327,
+   "forme": [
+    "Eusebii Caesariensis",
+    "Eusebius Pamphili",
+    "Eusebius of Caesarea",
+    "Eusebius von Caesarea",
+    "Eusèbe de Césarée",
+    "Εὐσέβιος ὁ Παμφίλου"
+   ]
   },
   "atanasio": {
    "nome": "Atanasio",
    "latino": "Athanasius",
    "categoria": "cristiano",
-   "codici": 402
+   "codici": 402,
+   "forme": [
+    "Athanasii",
+    "Athanase",
+    "Athanasios",
+    "Athanasius Alexandrinus",
+    "Ἀθανάσιος",
+    "Ἀθανασίου"
+   ]
   },
   "gregorio-nisseno": {
    "nome": "Gregorio di Nissa",
    "latino": "Gregorius Nyssenus",
    "categoria": "cristiano",
-   "codici": 265
+   "codici": 265,
+   "forme": [
+    "Gregorii Nysseni",
+    "Gregory of Nyssa",
+    "Gregor von Nyssa",
+    "Grégoire de Nysse",
+    "Γρηγόριος Νύσσης",
+    "Γρηγορίου Νύσσης",
+    "Γρηγόριος ὁ Νύσσης"
+   ]
   },
   "giovanni-damasceno": {
    "nome": "Giovanni Damasceno",
    "latino": "Iohannes Damascenus",
    "categoria": "cristiano",
-   "codici": 337
+   "codici": 337,
+   "forme": [
+    "Ioannes Damascenus",
+    "Johannes Damascenus",
+    "John of Damascus",
+    "Johannes von Damaskus",
+    "Jean Damascène",
+    "Ἰωάννης ὁ Δαμασκηνός",
+    "Ἰωάννου τοῦ Δαμασκηνοῦ"
+   ]
   },
   "dionigi-areopagita": {
    "nome": "Dionigi Areopagita",
    "latino": "Dionysius Areopagita",
    "categoria": "cristiano",
-   "codici": 154
+   "codici": 155,
+   "forme": [
+    "Dionysii Areopagitae",
+    "Dionysius the Areopagite",
+    "Dionysios Areopagites",
+    "Denys l Aréopagite",
+    "Διονύσιος ὁ Ἀρεοπαγίτης",
+    "Διονυσίου τοῦ Ἀρεοπαγίτου"
+   ]
   },
   "isidoro": {
    "nome": "Isidoro di Siviglia",
    "latino": "Isidorus Hispalensis",
    "categoria": "medievale",
-   "codici": 688
+   "codici": 689,
+   "forme": [
+    "Isidori Hispalensis",
+    "Isidore of Seville",
+    "Isidor von Sevilla",
+    "Isidore de Séville"
+   ]
   },
   "beda": {
    "nome": "Beda",
    "latino": "Beda Venerabilis",
    "categoria": "medievale",
-   "codici": 737
+   "codici": 737,
+   "forme": [
+    "Bedae",
+    "Beda il Venerabile",
+    "Bede",
+    "Venerable Bede",
+    "Bède le Vénérable",
+    "Beda der Ehrwürdige"
+   ]
   },
   "alcuino": {
    "nome": "Alcuino",
    "latino": "Alcuinus",
    "categoria": "medievale",
-   "codici": 293
+   "codici": 293,
+   "forme": [
+    "Alcuini",
+    "Alcuin",
+    "Alkuin",
+    "Alchvine",
+    "Albinus Flaccus",
+    "Flaccus Albinus",
+    "Alcuin of York"
+   ]
   },
   "rabano-mauro": {
    "nome": "Rabano Mauro",
    "latino": "Hrabanus Maurus",
    "categoria": "medievale",
-   "codici": 226
+   "codici": 226,
+   "forme": [
+    "Rabanus Maurus",
+    "Rhabanus Maurus",
+    "Hrabani Mauri",
+    "Rabani Mauri",
+    "Hraban",
+    "Raban Maur",
+    "Hrabanus"
+   ]
   },
   "paolo-diacono": {
    "nome": "Paolo Diacono",
    "latino": "Paulus Diaconus",
    "categoria": "medievale",
-   "codici": 193
+   "codici": 193,
+   "forme": [
+    "Pauli Diaconi",
+    "Paul the Deacon",
+    "Paulus Warnefridus",
+    "Paulus Warnefridi"
+   ]
   },
   "pietro-lombardo": {
    "nome": "Pietro Lombardo",
    "latino": "Petrus Lombardus",
    "categoria": "medievale",
-   "codici": 370
+   "codici": 370,
+   "forme": [
+    "Petri Lombardi",
+    "Peter Lombard",
+    "Pierre Lombard",
+    "Magister Sententiarum"
+   ]
   },
   "tommaso-aquino": {
    "nome": "Tommaso d'Aquino",
    "latino": "Thomas de Aquino",
    "categoria": "medievale",
-   "codici": 733
+   "codici": 733,
+   "forme": [
+    "Thomae de Aquino",
+    "Thomas Aquinas",
+    "Tommaso d Aquino",
+    "San Tommaso d Aquino",
+    "Thomas von Aquin",
+    "Thomas d Aquin"
+   ]
   },
   "bernardo": {
    "nome": "Bernardo di Chiaravalle",
    "latino": "Bernardus Claraevallensis",
    "categoria": "medievale",
-   "codici": 417
+   "codici": 417,
+   "forme": [
+    "Bernardi Claraevallensis",
+    "Bernardus abbas Claraevallensis",
+    "Bernard of Clairvaux",
+    "Bernhard von Clairvaux",
+    "Bernard de Clairvaux",
+    "Bernardus Clarevallensis"
+   ]
+  },
+  "pietro-comestore": {
+   "nome": "Pietro Comestore",
+   "latino": "Petrus Comestor",
+   "categoria": "medievale",
+   "codici": 228,
+   "forme": [
+    "Petri Comestoris",
+    "Peter Comestor",
+    "Pierre le Mangeur",
+    "Petrus Manducator"
+   ]
+  },
+  "iacopo-da-varazze": {
+   "nome": "Iacopo da Varazze",
+   "latino": "Iacobus de Voragine",
+   "categoria": "medievale",
+   "codici": 439,
+   "forme": [
+    "Jacobus de Voragine",
+    "Iacobus de Varagine",
+    "Jacobus de Varagine",
+    "Jacopo da Varazze",
+    "Jacques de Voragine",
+    "Jacobus a Voragine"
+   ]
+  },
+  "nicola-di-lira": {
+   "nome": "Nicola di Lira",
+   "latino": "Nicolaus de Lyra",
+   "categoria": "medievale",
+   "codici": 360,
+   "forme": [
+    "Nicolai de Lyra",
+    "Nicholas of Lyra",
+    "Nicolas de Lyre",
+    "Nikolaus von Lyra",
+    "Niccolò da Lira",
+    "Nicolaus Lyranus"
+   ]
+  },
+  "graziano": {
+   "nome": "Graziano",
+   "latino": "Gratianus",
+   "categoria": "medievale",
+   "codici": 252,
+   "forme": [
+    "Gratiani",
+    "Gratian",
+    "Gratien"
+   ]
+  },
+  "decretali": {
+   "nome": "Decretali di Gregorio IX",
+   "latino": "Decretales Gregorii IX",
+   "categoria": "medievale",
+   "codici": 254,
+   "forme": [
+    "Gregorius IX",
+    "Gregorii IX",
+    "Gregorio IX",
+    "Raymundus de Pennaforte",
+    "Raimundus de Penyafort",
+    "Raymond of Penyafort"
+   ]
+  },
+  "corpus-iuris": {
+   "nome": "Corpus iuris civilis (Giustiniano)",
+   "latino": "Corpus iuris civilis",
+   "categoria": "medievale",
+   "codici": 747,
+   "forme": [
+    "Iustinianus",
+    "Justinianus",
+    "Iustiniani",
+    "Justiniani",
+    "Giustiniano",
+    "Justinian",
+    "Justinien",
+    "Corpus juris civilis"
+   ]
+  },
+  "bonaventura": {
+   "nome": "Bonaventura",
+   "latino": "Bonaventura",
+   "categoria": "medievale",
+   "codici": 519,
+   "forme": [
+    "Bonaventurae",
+    "Bonaventure",
+    "Bonaventura da Bagnoregio",
+    "Bonaventura de Balneoregio"
+   ]
+  },
+  "alberto-magno": {
+   "nome": "Alberto Magno",
+   "latino": "Albertus Magnus",
+   "categoria": "medievale",
+   "codici": 388,
+   "forme": [
+    "Alberti Magni",
+    "Albert the Great",
+    "Albert le Grand",
+    "Albertus Coloniensis"
+   ]
+  },
+  "ugo-san-vittore": {
+   "nome": "Ugo di San Vittore",
+   "latino": "Hugo de Sancto Victore",
+   "categoria": "medievale",
+   "codici": 318,
+   "forme": [
+    "Hugonis de Sancto Victore",
+    "Hugo de S Victore",
+    "Hugh of Saint Victor",
+    "Hugh of St Victor",
+    "Hugues de Saint Victor",
+    "Hugo von Sankt Viktor"
+   ]
+  },
+  "anselmo": {
+   "nome": "Anselmo d'Aosta",
+   "latino": "Anselmus Cantuariensis",
+   "categoria": "medievale",
+   "codici": 149,
+   "forme": [
+    "Anselmi Cantuariensis",
+    "Anselm of Canterbury",
+    "Anselme de Cantorbéry",
+    "Anselmo d Aosta",
+    "Anselmus archiepiscopus"
+   ]
+  },
+  "duns-scoto": {
+   "nome": "Giovanni Duns Scoto",
+   "latino": "Iohannes Duns Scotus",
+   "categoria": "medievale",
+   "codici": 83,
+   "forme": [
+    "Duns Scotus",
+    "Ioannes Duns Scotus",
+    "Johannes Duns Scotus",
+    "Duns Scoto",
+    "Iohannis Duns Scoti",
+    "Johannis Duns Scoti",
+    "Doctor subtilis"
+   ]
+  },
+  "ockham": {
+   "nome": "Guglielmo di Ockham",
+   "latino": "Guillelmus de Ockham",
+   "categoria": "medievale",
+   "codici": 36,
+   "forme": [
+    "Guilelmus de Ockham",
+    "William of Ockham",
+    "Wilhelm von Ockham",
+    "Guillaume d Ockham",
+    "Guillelmus Occam",
+    "Gulielmus Occam"
+   ]
+  },
+  "egidio-romano": {
+   "nome": "Egidio Romano",
+   "latino": "Aegidius Romanus",
+   "categoria": "medievale",
+   "codici": 150,
+   "forme": [
+    "Aegidii Romani",
+    "Giles of Rome",
+    "Gilles de Rome",
+    "Aegidius Columna",
+    "Egidio Colonna"
+   ]
+  },
+  "buridano": {
+   "nome": "Giovanni Buridano",
+   "latino": "Iohannes Buridanus",
+   "categoria": "medievale",
+   "codici": 24,
+   "forme": [
+    "Johannes Buridanus",
+    "Johannis Buridani",
+    "Iohannis Buridani",
+    "Jean Buridan",
+    "John Buridan"
+   ]
+  },
+  "guglielmo-durando": {
+   "nome": "Guglielmo Durando",
+   "latino": "Guillelmus Durandus",
+   "categoria": "medievale",
+   "codici": 122,
+   "forme": [
+    "Guilelmus Durandus",
+    "Gulielmus Durantis",
+    "Guillelmus Durantis",
+    "Guillaume Durand",
+    "Wilhelm Durandus",
+    "Guglielmo Durante"
+   ]
+  },
+  "vincenzo-beauvais": {
+   "nome": "Vincenzo di Beauvais",
+   "latino": "Vincentius Bellovacensis",
+   "categoria": "medievale",
+   "codici": 189,
+   "forme": [
+    "Vincentii Bellovacensis",
+    "Vincent de Beauvais",
+    "Vincent of Beauvais",
+    "Vinzenz von Beauvais"
+   ]
+  },
+  "dante": {
+   "nome": "Dante Alighieri",
+   "latino": "Dantes Alagherius",
+   "categoria": "medievale",
+   "codici": 289,
+   "forme": [
+    "Dantis Alagherii",
+    "Dante Alagherii",
+    "Dantes Aligherius",
+    "Dantis Aligherii"
+   ]
+  },
+  "petrarca": {
+   "nome": "Francesco Petrarca",
+   "latino": "Franciscus Petrarca",
+   "categoria": "medievale",
+   "codici": 458,
+   "forme": [
+    "Francisci Petrarcae",
+    "Petrarca",
+    "Petrarcha",
+    "Petrarch",
+    "Pétrarque",
+    "Petrarcae"
+   ]
+  },
+  "boccaccio": {
+   "nome": "Giovanni Boccaccio",
+   "latino": "Iohannes Boccaccius",
+   "categoria": "medievale",
+   "codici": 301,
+   "forme": [
+    "Johannes Boccaccius",
+    "Boccaccio",
+    "Boccace",
+    "Boccacio",
+    "Iohannis Boccaccii"
+   ]
+  },
+  "tommaso-kempis": {
+   "nome": "Tommaso da Kempis",
+   "latino": "Thomas a Kempis",
+   "categoria": "medievale",
+   "codici": 133,
+   "forme": [
+    "Thomas von Kempen",
+    "Thomas Hemerken",
+    "Thomas à Kempis",
+    "Thomae a Kempis"
+   ]
+  },
+  "ludolfo-sassonia": {
+   "nome": "Ludolfo di Sassonia",
+   "latino": "Ludolphus de Saxonia",
+   "categoria": "medievale",
+   "codici": 60,
+   "forme": [
+    "Ludolfus de Saxonia",
+    "Ludolf von Sachsen",
+    "Ludolph of Saxony",
+    "Ludolphe le Chartreux"
+   ]
+  },
+  "cassiano": {
+   "nome": "Giovanni Cassiano",
+   "latino": "Iohannes Cassianus",
+   "categoria": "cristiano",
+   "codici": 162,
+   "forme": [
+    "Johannes Cassianus",
+    "Ioannes Cassianus",
+    "Iohannis Cassiani",
+    "Johannis Cassiani",
+    "John Cassian",
+    "Jean Cassien",
+    "Cassianus"
+   ]
+  },
+  "benedetto": {
+   "nome": "Benedetto da Norcia",
+   "latino": "Benedictus de Nursia",
+   "categoria": "cristiano",
+   "codici": 106,
+   "forme": [
+    "Benedicti de Nursia",
+    "Benedict of Nursia",
+    "Benoît de Nursie"
+   ]
+  },
+  "gregorio-tours": {
+   "nome": "Gregorio di Tours",
+   "latino": "Gregorius Turonensis",
+   "categoria": "medievale",
+   "codici": 110,
+   "forme": [
+    "Gregorii Turonensis",
+    "Gregory of Tours",
+    "Grégoire de Tours",
+    "Gregor von Tours"
+   ]
+  },
+  "giovanni-climaco": {
+   "nome": "Giovanni Climaco",
+   "latino": "Iohannes Climacus",
+   "categoria": "cristiano",
+   "codici": 194,
+   "forme": [
+    "Johannes Climacus",
+    "Ioannes Climacus",
+    "John Climacus",
+    "Jean Climaque",
+    "Ἰωάννης τῆς Κλίμακος",
+    "Иоанн Лествичник",
+    "Иоанна Лествичника",
+    "Иоанн Синайский",
+    "Иоанна Синайского"
+   ]
+  },
+  "efrem-siro": {
+   "nome": "Efrem il Siro",
+   "latino": "Ephraem Syrus",
+   "categoria": "cristiano",
+   "codici": 83,
+   "forme": [
+    "Ephraim Syrus",
+    "Ephrem the Syrian",
+    "Éphrem le Syrien",
+    "Efrem Siro",
+    "Ephräm der Syrer",
+    "Ἐφραὶμ ὁ Σύρος",
+    "Ефрем Сирин",
+    "Ефрема Сирина"
+   ]
+  },
+  "bartolo": {
+   "nome": "Bartolo da Sassoferrato",
+   "latino": "Bartolus de Saxoferrato",
+   "categoria": "medievale",
+   "codici": 162,
+   "forme": [
+    "Bartoli de Saxoferrato",
+    "Bartolus a Saxoferrato",
+    "Bartole"
+   ]
+  },
+  "baldo": {
+   "nome": "Baldo degli Ubaldi",
+   "latino": "Baldus de Ubaldis",
+   "categoria": "medievale",
+   "codici": 99,
+   "forme": [
+    "Baldi de Ubaldis",
+    "Baldus de Perusio"
+   ]
+  },
+  "giovanni-andrea": {
+   "nome": "Giovanni d'Andrea",
+   "latino": "Iohannes Andreae",
+   "categoria": "medievale",
+   "codici": 233,
+   "forme": [
+    "Johannes Andreae",
+    "Ioannes Andreae",
+    "Giovanni d Andrea",
+    "Jean d André"
+   ]
+  },
+  "avicenna": {
+   "nome": "Avicenna",
+   "latino": "Avicenna",
+   "categoria": "medievale",
+   "codici": 568,
+   "forme": [
+    "Avicennae",
+    "Ibn Sina",
+    "Ibn Sīnā",
+    "Avicenne",
+    "ابن سينا"
+   ]
+  },
+  "averroe": {
+   "nome": "Averroè",
+   "latino": "Averroes",
+   "categoria": "medievale",
+   "codici": 227,
+   "forme": [
+    "Averrois",
+    "Ibn Rushd",
+    "Ibn Rušd",
+    "ابن رشد"
+   ]
+  },
+  "sacrobosco": {
+   "nome": "Giovanni di Sacrobosco",
+   "latino": "Iohannes de Sacrobosco",
+   "categoria": "medievale",
+   "codici": 198,
+   "forme": [
+    "Johannes de Sacrobosco",
+    "Ioannes de Sacro Bosco",
+    "Johannes de Sacro Bosco",
+    "John of Sacrobosco",
+    "Sacrobosco"
+   ]
   }
  },
  "edizioni_principi_elenco": {
@@ -5658,7 +7360,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 305,
+   "con_autori": 413,
    "lingue": {
     "de": 1460,
     "la": 1206,
@@ -5699,7 +7401,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 1031,
+   "con_autori": 1186,
    "lingue": {
     "xx": 170,
     "la": 2042,
@@ -5746,7 +7448,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 2212,
+   "con_autori": 2646,
    "lingue": {
     "?": 5804,
     "it": 529,
@@ -5808,7 +7510,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 269,
+   "con_autori": 327,
    "lingue": {
     "la": 713,
     "de": 1597,
@@ -5850,14 +7552,14 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 1252,
+   "con_autori": 1438,
    "lingue": {
-    "la": 3787,
+    "la": 3788,
     "fa": 94,
     "fr": 312,
     "cy": 23,
     "en": 2515,
-    "?": 947,
+    "?": 946,
     "zh": 656,
     "xx": 391,
     "mnc": 6,
@@ -5909,7 +7611,7 @@
   },
   "gallica": {
    "nome": "Bibliothèque nationale de France (gallica.bnf.fr)",
-   "codici": 68446,
+   "codici": 68447,
    "carte": 85,
    "carte_stampa": 2,
    "miniati": 1968,
@@ -5919,10 +7621,10 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 8457,
+   "con_autori": 9629,
    "lingue": {
     "fr": 19837,
-    "la": 13167,
+    "la": 13168,
     "grc": 4110,
     "?": 4283,
     "he": 1567,
@@ -6006,10 +7708,10 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 2206,
+   "con_autori": 2459,
    "lingue": {
-    "?": 3614,
-    "la": 725,
+    "?": 3611,
+    "la": 728,
     "grc": 3,
     "es": 3,
     "it": 5,
@@ -6036,17 +7738,17 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 269,
+   "con_autori": 293,
    "lingue": {
     "grc": 192,
     "ar": 43,
     "it": 334,
-    "la": 596,
+    "la": 597,
     "gez": 2,
     "fr": 9,
     "fa": 1,
     "arc": 2,
-    "?": 30,
+    "?": 29,
     "he": 15,
     "syr": 11,
     "tr": 1,
@@ -6073,7 +7775,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 106,
+   "con_autori": 114,
    "lingue": {
     "?": 202,
     "la": 8
@@ -6099,7 +7801,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 6,
+   "con_autori": 13,
    "lingue": {
     "?": 41,
     "la": 2
@@ -6156,7 +7858,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 91,
+   "con_autori": 175,
    "lingue": {
     "it": 848,
     "gl": 1,
@@ -6217,10 +7919,10 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 180,
+   "con_autori": 214,
    "lingue": {
-    "?": 260,
-    "la": 86,
+    "?": 258,
+    "la": 88,
     "it": 7
    },
    "esito": "errore: schede lette in parte (mancano 60): riprenderà alla prossima esecuzione",
@@ -6244,7 +7946,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 6,
+   "con_autori": 9,
    "lingue": {
     "it": 8,
     "?": 6,
@@ -6272,10 +7974,10 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 727,
+   "con_autori": 826,
    "lingue": {
-    "?": 2332,
-    "la": 607,
+    "?": 2331,
+    "la": 608,
     "ar": 165,
     "nl": 299,
     "grc": 83,
@@ -6312,7 +8014,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 106,
+   "con_autori": 108,
    "lingue": {
     "?": 15,
     "la": 150,
@@ -6340,7 +8042,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 107,
+   "con_autori": 124,
    "lingue": {
     "?": 324,
     "la": 27,
@@ -6368,7 +8070,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 542,
+   "con_autori": 724,
    "lingue": {
     "la": 2286,
     "de": 428,
@@ -6404,7 +8106,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 296,
+   "con_autori": 386,
    "lingue": {
     "?": 355,
     "la": 1444,
@@ -6440,7 +8142,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 91,
+   "con_autori": 103,
    "lingue": {
     "de": 834,
     "la": 605,
@@ -6481,7 +8183,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 20,
+   "con_autori": 34,
    "lingue": {
     "la": 271,
     "de": 58,
@@ -6512,7 +8214,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 34,
+   "con_autori": 52,
    "lingue": {
     "de": 52,
     "la": 178,
@@ -6544,10 +8246,10 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 683,
+   "con_autori": 756,
    "lingue": {
-    "?": 1424,
-    "la": 2113,
+    "?": 1423,
+    "la": 2114,
     "fr": 203,
     "es": 51,
     "it": 204,
@@ -6595,7 +8297,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 542,
+   "con_autori": 627,
    "lingue": {
     "fr": 167,
     "en": 586,
@@ -6653,7 +8355,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 239,
+   "con_autori": 288,
    "lingue": {
     "en": 1613,
     "xx": 2028,
@@ -6727,7 +8429,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 799,
+   "con_autori": 934,
    "lingue": {
     "la": 2526,
     "it": 279,
@@ -6787,7 +8489,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 48,
+   "con_autori": 52,
    "lingue": {
     "fa": 34,
     "tr": 29,
@@ -6842,7 +8544,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 646,
+   "con_autori": 673,
    "lingue": {
     "ar": 410,
     "grc": 1753,
@@ -6910,7 +8612,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 42,
+   "con_autori": 85,
    "lingue": {
     "grc": 14,
     "?": 346,
@@ -6958,7 +8660,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 452,
+   "con_autori": 489,
    "lingue": {
     "la": 649,
     "en": 381,
@@ -7046,7 +8748,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 69,
+   "con_autori": 78,
    "lingue": {
     "ar": 50,
     "cop": 1,
@@ -7092,7 +8794,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 483,
+   "con_autori": 499,
    "lingue": {
     "fa": 452,
     "en": 196,
@@ -7146,7 +8848,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 106,
+   "con_autori": 108,
    "lingue": {
     "ar": 186,
     "?": 60,
@@ -7197,7 +8899,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 141,
+   "con_autori": 177,
    "lingue": {
     "?": 504,
     "la": 42,
@@ -7317,7 +9019,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 81,
+   "con_autori": 88,
    "lingue": {
     "xx": 28,
     "da": 226,
@@ -7357,7 +9059,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 373,
+   "con_autori": 443,
    "lingue": {
     "la": 3339,
     "?": 1913,
@@ -7415,10 +9117,10 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 1185,
+   "con_autori": 1518,
    "lingue": {
-    "?": 1710,
-    "la": 6046,
+    "?": 1709,
+    "la": 6047,
     "de": 1660,
     "cs": 1136,
     "es": 668,
@@ -7470,7 +9172,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 69,
+   "con_autori": 77,
    "lingue": {
     "xx": 110,
     "da": 331,
@@ -7522,7 +9224,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 5,
+   "con_autori": 6,
    "lingue": {
     "?": 70,
     "la": 19,
@@ -7551,7 +9253,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 158,
+   "con_autori": 208,
    "lingue": {
     "?": 1146,
     "la": 184,
@@ -7585,7 +9287,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 37,
+   "con_autori": 52,
    "lingue": {
     "hu": 52,
     "la": 233,
@@ -7653,7 +9355,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 11,
+   "con_autori": 14,
    "lingue": {
     "ar": 8,
     "fa": 6,
@@ -7689,7 +9391,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 33,
+   "con_autori": 34,
    "lingue": {
     "?": 98,
     "he": 28,
@@ -7724,7 +9426,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 21,
+   "con_autori": 37,
    "lingue": {
     "ca": 3212,
     "es": 494,
@@ -7759,7 +9461,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 22,
+   "con_autori": 29,
    "lingue": {
     "es": 119,
     "ca": 73,
@@ -7820,7 +9522,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 212,
+   "con_autori": 234,
    "lingue": {
     "fr": 57,
     "es": 1094,
@@ -7861,7 +9563,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 115,
+   "con_autori": 120,
    "lingue": {
     "es": 6003,
     "la": 389,
@@ -7898,7 +9600,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 75,
+   "con_autori": 79,
    "lingue": {
     "es": 765,
     "la": 364,
@@ -7929,7 +9631,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 35,
+   "con_autori": 49,
    "lingue": {
     "la": 122,
     "es": 52,
@@ -8042,7 +9744,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 3,
+   "con_autori": 6,
    "lingue": {
     "grc": 38
    },
@@ -8094,7 +9796,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 21,
+   "con_autori": 22,
    "lingue": {
     "he": 13014,
     "arc": 160,
@@ -8139,7 +9841,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 52,
+   "con_autori": 64,
    "lingue": {
     "?": 273,
     "fr": 4
@@ -8165,7 +9867,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 0,
+   "con_autori": 2,
    "lingue": {
     "grc": 23,
     "cu": 257,
@@ -8229,7 +9931,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 43,
+   "con_autori": 143,
    "lingue": {
     "cu": 12940,
     "la": 202,
@@ -8259,7 +9961,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 110,
+   "con_autori": 145,
    "lingue": {
     "tr": 247,
     "it": 1158,
@@ -8404,7 +10106,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 74,
+   "con_autori": 88,
    "lingue": {
     "syr": 376,
     "de": 17,
@@ -8482,7 +10184,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 93,
+   "con_autori": 99,
    "lingue": {
     "no": 1122,
     "nl": 128,
@@ -8519,7 +10221,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 84,
+   "con_autori": 94,
    "lingue": {
     "grc": 126,
     "da": 38,
@@ -8557,7 +10259,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 8,
+   "con_autori": 9,
    "lingue": {
     "la": 23,
     "de": 3,
@@ -8613,14 +10315,14 @@
    "incunaboli": 15587,
    "stampe": 72,
    "edizioni_principi": 172,
-   "con_autori": 3509,
+   "con_autori": 4908,
    "lingue": {
-    "grc": 179,
-    "la": 6335,
-    "de": 2249,
-    "?": 5843,
-    "it": 299,
-    "es": 27,
+    "grc": 178,
+    "la": 6503,
+    "de": 823,
+    "?": 7097,
+    "it": 303,
+    "es": 28,
     "fr": 726,
     "zh": 4,
     "nl": 19,
@@ -8861,7 +10563,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 1385,
+   "con_autori": 1673,
    "lingue": {
     "la": 20986,
     "it": 470,
@@ -8944,7 +10646,7 @@
   {
    "file": "indice/gallica-3.json",
    "fonte": "gallica",
-   "righe": 8446
+   "righe": 8447
   },
   {
    "file": "indice/laurenziana-0.json",
@@ -19152,7 +20854,7 @@
   1,
   1553,
   24,
-  62712,
+  62713,
   28,
   752,
   4,

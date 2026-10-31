@@ -9057,6 +9057,1017 @@
      "d": true
     }
    ]
+  },
+  {
+   "id": "pietro-comestore",
+   "nome": "Pietro Comestore",
+   "latino": "Petrus Comestor",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Petrus Comestor",
+    "Petri Comestoris",
+    "Pietro Comestore",
+    "Peter Comestor",
+    "Pierre le Mangeur",
+    "Petrus Manducator"
+   ],
+   "opere": [
+    {
+     "t": "Historia scholastica",
+     "v": [
+      "Historia scholastica",
+      "Historia scolastica",
+      "Historiae scholasticae"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "iacopo-da-varazze",
+   "nome": "Iacopo da Varazze",
+   "latino": "Iacobus de Voragine",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Iacobus de Voragine",
+    "Jacobus de Voragine",
+    "Iacobus de Varagine",
+    "Jacobus de Varagine",
+    "Iacopo da Varazze",
+    "Jacopo da Varazze",
+    "Jacques de Voragine",
+    "Jacobus a Voragine"
+   ],
+   "opere": [
+    {
+     "t": "Legenda aurea",
+     "v": [
+      "Legenda aurea",
+      "Legenda sanctorum",
+      "Leggenda aurea",
+      "Goldene Legende",
+      "Légende dorée",
+      "Golden Legend"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "nicola-di-lira",
+   "nome": "Nicola di Lira",
+   "latino": "Nicolaus de Lyra",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Nicolaus de Lyra",
+    "Nicolai de Lyra",
+    "Nicholas of Lyra",
+    "Nicolas de Lyre",
+    "Nikolaus von Lyra",
+    "Niccolò da Lira",
+    "Nicolaus Lyranus"
+   ],
+   "opere": [
+    {
+     "t": "Postilla",
+     "v": [
+      "Postilla litteralis",
+      "Postillae perpetuae",
+      "Postilla moralis"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "graziano",
+   "nome": "Graziano",
+   "latino": "Gratianus",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Gratianus",
+    "Gratiani",
+    "Graziano",
+    "Gratian",
+    "Gratien"
+   ],
+   "escludi": [
+    "Gratianus imperator"
+   ],
+   "opere": [
+    {
+     "t": "Decretum",
+     "v": [
+      "Decretum Gratiani",
+      "Concordia discordantium canonum"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "decretali",
+   "nome": "Decretali di Gregorio IX",
+   "latino": "Decretales Gregorii IX",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Gregorius IX",
+    "Gregorii IX",
+    "Gregorio IX",
+    "Raymundus de Pennaforte",
+    "Raimundus de Penyafort",
+    "Raymond of Penyafort"
+   ],
+   "opere": [
+    {
+     "t": "Decretali",
+     "v": [
+      "Decretales Gregorii IX",
+      "Liber Extra",
+      "Decretales Gregorii noni",
+      "Compilatio Gregoriana"
+     ],
+     "d": true
+    },
+    {
+     "t": "Summa de casibus",
+     "v": [
+      "Summa de casibus",
+      "Summa de paenitentia",
+      "Summa de poenitentia"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "corpus-iuris",
+   "nome": "Corpus iuris civilis (Giustiniano)",
+   "latino": "Corpus iuris civilis",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Iustinianus",
+    "Justinianus",
+    "Iustiniani",
+    "Justiniani",
+    "Giustiniano",
+    "Justinian",
+    "Justinien",
+    "Corpus iuris civilis",
+    "Corpus juris civilis"
+   ],
+   "escludi": [
+    "Codex Theodosianus",
+    "Iustinus"
+   ],
+   "opere": [
+    {
+     "t": "Digesto",
+     "v": [
+      "Digestum vetus",
+      "Digestum novum",
+      "Infortiatum",
+      "Digesta",
+      "Pandectae",
+      "Digesti veteris",
+      "Digesti novi"
+     ],
+     "d": true
+    },
+    {
+     "t": "Codice",
+     "v": [
+      "Codex Iustinianus",
+      "Codex Justinianus",
+      "Codex Iustiniani",
+      "Codex Justiniani"
+     ],
+     "d": true
+    },
+    {
+     "t": "Istituzioni",
+     "v": [
+      "Institutiones Iustiniani",
+      "Institutiones Justiniani"
+     ],
+     "d": true
+    },
+    {
+     "t": "Novelle",
+     "v": [
+      "Authenticum",
+      "Novellae"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "bonaventura",
+   "nome": "Bonaventura",
+   "latino": "Bonaventura",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Bonaventura",
+    "Bonaventurae",
+    "Bonaventure",
+    "Bonaventura da Bagnoregio",
+    "Bonaventura de Balneoregio"
+   ],
+   "santi": true,
+   "escludi": [
+    "Bonaventura Vulcanius",
+    "Bonaventura Cavalieri"
+   ],
+   "opere": [
+    {
+     "t": "Breviloquium",
+     "v": [
+      "Breviloquium"
+     ],
+     "d": true
+    },
+    {
+     "t": "Itinerarium mentis in Deum",
+     "v": [
+      "Itinerarium mentis in Deum"
+     ],
+     "d": true
+    },
+    {
+     "t": "Legenda maior",
+     "v": [
+      "Legenda maior sancti Francisci",
+      "Legenda maior"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "alberto-magno",
+   "nome": "Alberto Magno",
+   "latino": "Albertus Magnus",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Albertus Magnus",
+    "Alberti Magni",
+    "Alberto Magno",
+    "Albert the Great",
+    "Albert le Grand",
+    "Albertus Coloniensis"
+   ],
+   "santi": true,
+   "opere": []
+  },
+  {
+   "id": "ugo-san-vittore",
+   "nome": "Ugo di San Vittore",
+   "latino": "Hugo de Sancto Victore",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Hugo de Sancto Victore",
+    "Hugonis de Sancto Victore",
+    "Hugo de S Victore",
+    "Hugh of Saint Victor",
+    "Hugh of St Victor",
+    "Hugues de Saint Victor",
+    "Ugo di San Vittore",
+    "Hugo von Sankt Viktor"
+   ],
+   "opere": [
+    {
+     "t": "Didascalicon",
+     "v": [
+      "Didascalicon",
+      "Didascalion"
+     ],
+     "d": true
+    },
+    {
+     "t": "De sacramentis",
+     "v": [
+      "De sacramentis christianae fidei"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "anselmo",
+   "nome": "Anselmo d'Aosta",
+   "latino": "Anselmus Cantuariensis",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Anselmus Cantuariensis",
+    "Anselmi Cantuariensis",
+    "Anselm of Canterbury",
+    "Anselme de Cantorbéry",
+    "Anselmo d Aosta",
+    "Anselmus archiepiscopus"
+   ],
+   "deboli": [
+    "Anselmus",
+    "Anselmi"
+   ],
+   "santi": true,
+   "escludi": [
+    "Anselmus Laudunensis"
+   ],
+   "opere": [
+    {
+     "t": "Proslogion",
+     "v": [
+      "Proslogion",
+      "Proslogium"
+     ],
+     "d": true
+    },
+    {
+     "t": "Monologion",
+     "v": [
+      "Monologion",
+      "Monologium"
+     ],
+     "d": true
+    },
+    {
+     "t": "Cur Deus homo",
+     "v": [
+      "Cur Deus homo"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "duns-scoto",
+   "nome": "Giovanni Duns Scoto",
+   "latino": "Iohannes Duns Scotus",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Duns Scotus",
+    "Ioannes Duns Scotus",
+    "Johannes Duns Scotus",
+    "Duns Scoto",
+    "Iohannis Duns Scoti",
+    "Johannis Duns Scoti",
+    "Doctor subtilis"
+   ],
+   "opere": []
+  },
+  {
+   "id": "ockham",
+   "nome": "Guglielmo di Ockham",
+   "latino": "Guillelmus de Ockham",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Guillelmus de Ockham",
+    "Guilelmus de Ockham",
+    "William of Ockham",
+    "Wilhelm von Ockham",
+    "Guglielmo di Ockham",
+    "Guillaume d Ockham",
+    "Guillelmus Occam",
+    "Gulielmus Occam"
+   ],
+   "opere": []
+  },
+  {
+   "id": "egidio-romano",
+   "nome": "Egidio Romano",
+   "latino": "Aegidius Romanus",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Aegidius Romanus",
+    "Aegidii Romani",
+    "Egidio Romano",
+    "Giles of Rome",
+    "Gilles de Rome",
+    "Aegidius Columna",
+    "Egidio Colonna"
+   ],
+   "opere": [
+    {
+     "t": "De regimine principum",
+     "v": [
+      "De regimine principum"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "buridano",
+   "nome": "Giovanni Buridano",
+   "latino": "Iohannes Buridanus",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Johannes Buridanus",
+    "Iohannes Buridanus",
+    "Johannis Buridani",
+    "Iohannis Buridani",
+    "Jean Buridan",
+    "Giovanni Buridano",
+    "John Buridan"
+   ],
+   "opere": []
+  },
+  {
+   "id": "guglielmo-durando",
+   "nome": "Guglielmo Durando",
+   "latino": "Guillelmus Durandus",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Guillelmus Durandus",
+    "Guilelmus Durandus",
+    "Gulielmus Durantis",
+    "Guillelmus Durantis",
+    "Guillaume Durand",
+    "Wilhelm Durandus",
+    "Guglielmo Durante"
+   ],
+   "opere": [
+    {
+     "t": "Rationale divinorum officiorum",
+     "v": [
+      "Rationale divinorum officiorum"
+     ],
+     "d": true
+    },
+    {
+     "t": "Speculum iudiciale",
+     "v": [
+      "Speculum iudiciale",
+      "Speculum judiciale"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "vincenzo-beauvais",
+   "nome": "Vincenzo di Beauvais",
+   "latino": "Vincentius Bellovacensis",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Vincentius Bellovacensis",
+    "Vincentii Bellovacensis",
+    "Vincent de Beauvais",
+    "Vincent of Beauvais",
+    "Vinzenz von Beauvais",
+    "Vincenzo di Beauvais"
+   ],
+   "opere": [
+    {
+     "t": "Speculum maius",
+     "v": [
+      "Speculum historiale",
+      "Speculum naturale",
+      "Speculum doctrinale",
+      "Speculum maius"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "dante",
+   "nome": "Dante Alighieri",
+   "latino": "Dantes Alagherius",
+   "categoria": "medievale",
+   "lingua": "it",
+   "nomi": [
+    "Dante Alighieri",
+    "Dantis Alagherii",
+    "Dante Alagherii",
+    "Dantes Aligherius",
+    "Dantis Aligherii",
+    "Dantes Alagherius"
+   ],
+   "deboli": [
+    "Dante",
+    "Dantis"
+   ],
+   "opere": [
+    {
+     "t": "Divina Commedia",
+     "v": [
+      "Divina Commedia",
+      "Comedia di Dante",
+      "Commedia di Dante",
+      "Divine Comedy",
+      "Göttliche Komödie"
+     ],
+     "d": true
+    },
+    {
+     "t": "Commedia",
+     "v": [
+      "Commedia",
+      "Comedia",
+      "Inferno",
+      "Purgatorio",
+      "Paradiso"
+     ]
+    },
+    {
+     "t": "Vita nova",
+     "v": [
+      "Vita nova",
+      "Vita nuova"
+     ]
+    },
+    {
+     "t": "Convivio",
+     "v": [
+      "Convivio"
+     ],
+     "d": true
+    },
+    {
+     "t": "Monarchia",
+     "v": [
+      "Monarchia"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "petrarca",
+   "nome": "Francesco Petrarca",
+   "latino": "Franciscus Petrarca",
+   "categoria": "medievale",
+   "lingua": "it",
+   "nomi": [
+    "Francesco Petrarca",
+    "Franciscus Petrarca",
+    "Francisci Petrarcae",
+    "Petrarca",
+    "Petrarcha",
+    "Petrarch",
+    "Pétrarque",
+    "Petrarcae"
+   ],
+   "opere": [
+    {
+     "t": "Canzoniere",
+     "v": [
+      "Canzoniere",
+      "Rerum vulgarium fragmenta",
+      "Rime sparse"
+     ],
+     "d": true
+    },
+    {
+     "t": "Trionfi",
+     "v": [
+      "Trionfi",
+      "Triumphi"
+     ],
+     "d": true
+    },
+    {
+     "t": "Secretum",
+     "v": [
+      "Secretum"
+     ]
+    },
+    {
+     "t": "Africa",
+     "v": [
+      "Africa"
+     ]
+    },
+    {
+     "t": "Epistolae familiares",
+     "v": [
+      "Epistolae familiares",
+      "Familiarium rerum libri",
+      "Rerum familiarium"
+     ],
+     "d": true
+    },
+    {
+     "t": "Bucolicum carmen",
+     "v": [
+      "Bucolicum carmen"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "boccaccio",
+   "nome": "Giovanni Boccaccio",
+   "latino": "Iohannes Boccaccius",
+   "categoria": "medievale",
+   "lingua": "it",
+   "nomi": [
+    "Giovanni Boccaccio",
+    "Iohannes Boccaccius",
+    "Johannes Boccaccius",
+    "Boccaccio",
+    "Boccace",
+    "Boccacio",
+    "Iohannis Boccaccii"
+   ],
+   "opere": [
+    {
+     "t": "Decameron",
+     "v": [
+      "Decameron",
+      "Decamerone"
+     ],
+     "d": true
+    },
+    {
+     "t": "Genealogia deorum gentilium",
+     "v": [
+      "Genealogia deorum gentilium",
+      "Genealogie deorum gentilium"
+     ],
+     "d": true
+    },
+    {
+     "t": "De mulieribus claris",
+     "v": [
+      "De mulieribus claris",
+      "De claris mulieribus"
+     ],
+     "d": true
+    },
+    {
+     "t": "De casibus virorum illustrium",
+     "v": [
+      "De casibus virorum illustrium"
+     ],
+     "d": true
+    },
+    {
+     "t": "Teseida",
+     "v": [
+      "Teseida"
+     ],
+     "d": true
+    },
+    {
+     "t": "Filostrato",
+     "v": [
+      "Filostrato"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tommaso-kempis",
+   "nome": "Tommaso da Kempis",
+   "latino": "Thomas a Kempis",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Thomas a Kempis",
+    "Thomas von Kempen",
+    "Thomas Hemerken",
+    "Tommaso da Kempis",
+    "Thomas à Kempis",
+    "Thomae a Kempis"
+   ],
+   "opere": [
+    {
+     "t": "De imitatione Christi",
+     "v": [
+      "De imitatione Christi",
+      "Imitatio Christi",
+      "Nachfolge Christi",
+      "Imitation de Jésus Christ",
+      "Imitazione di Cristo"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "ludolfo-sassonia",
+   "nome": "Ludolfo di Sassonia",
+   "latino": "Ludolphus de Saxonia",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Ludolphus de Saxonia",
+    "Ludolfus de Saxonia",
+    "Ludolf von Sachsen",
+    "Ludolph of Saxony",
+    "Ludolfo di Sassonia",
+    "Ludolphe le Chartreux"
+   ],
+   "opere": [
+    {
+     "t": "Vita Christi",
+     "v": [
+      "Vita Christi",
+      "Vita Jesu Christi"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cassiano",
+   "nome": "Giovanni Cassiano",
+   "latino": "Iohannes Cassianus",
+   "categoria": "cristiano",
+   "lingua": "la",
+   "nomi": [
+    "Iohannes Cassianus",
+    "Johannes Cassianus",
+    "Ioannes Cassianus",
+    "Iohannis Cassiani",
+    "Johannis Cassiani",
+    "John Cassian",
+    "Jean Cassien",
+    "Giovanni Cassiano",
+    "Cassianus"
+   ],
+   "opere": [
+    {
+     "t": "Collationes",
+     "v": [
+      "Collationes patrum",
+      "Conlationes patrum"
+     ],
+     "d": true
+    },
+    {
+     "t": "De institutis coenobiorum",
+     "v": [
+      "De institutis coenobiorum",
+      "De institutis coenobiorum et de octo principalium vitiorum remediis"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "benedetto",
+   "nome": "Benedetto da Norcia",
+   "latino": "Benedictus de Nursia",
+   "categoria": "cristiano",
+   "lingua": "la",
+   "nomi": [
+    "Benedictus de Nursia",
+    "Benedicti de Nursia",
+    "Benedetto da Norcia",
+    "Benedict of Nursia",
+    "Benoît de Nursie"
+   ],
+   "santi": true,
+   "opere": [
+    {
+     "t": "Regola",
+     "v": [
+      "Regula Benedicti",
+      "Regula sancti Benedicti",
+      "Regula S Benedicti",
+      "Regula monachorum",
+      "Benediktinerregel",
+      "Benediktsregel",
+      "Règle de saint Benoît",
+      "Rule of Saint Benedict",
+      "Regola di san Benedetto"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "gregorio-tours",
+   "nome": "Gregorio di Tours",
+   "latino": "Gregorius Turonensis",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Gregorius Turonensis",
+    "Gregorii Turonensis",
+    "Gregory of Tours",
+    "Grégoire de Tours",
+    "Gregor von Tours",
+    "Gregorio di Tours"
+   ],
+   "santi": true,
+   "opere": [
+    {
+     "t": "Historia Francorum",
+     "v": [
+      "Historia Francorum",
+      "Decem libri historiarum",
+      "Historiae Francorum"
+     ],
+     "d": true
+    },
+    {
+     "t": "Libri miraculorum",
+     "v": [
+      "Libri miraculorum",
+      "De gloria martyrum",
+      "De virtutibus sancti Martini"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "giovanni-climaco",
+   "nome": "Giovanni Climaco",
+   "latino": "Iohannes Climacus",
+   "categoria": "cristiano",
+   "lingua": "grc",
+   "nomi": [
+    "Iohannes Climacus",
+    "Johannes Climacus",
+    "Ioannes Climacus",
+    "John Climacus",
+    "Jean Climaque",
+    "Giovanni Climaco",
+    "Ἰωάννης τῆς Κλίμακος",
+    "Иоанн Лествичник",
+    "Иоанна Лествичника",
+    "Иоанн Синайский",
+    "Иоанна Синайского"
+   ],
+   "santi": true,
+   "opere": [
+    {
+     "t": "Scala paradisi",
+     "v": [
+      "Scala paradisi",
+      "Scala paradisi",
+      "Κλῖμαξ",
+      "Κλίμαξ",
+      "Лествица",
+      "Scala spiritualis"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "efrem-siro",
+   "nome": "Efrem il Siro",
+   "latino": "Ephraem Syrus",
+   "categoria": "cristiano",
+   "lingua": "grc",
+   "nomi": [
+    "Ephraem Syrus",
+    "Ephraim Syrus",
+    "Ephrem the Syrian",
+    "Éphrem le Syrien",
+    "Efrem Siro",
+    "Ephräm der Syrer",
+    "Ἐφραὶμ ὁ Σύρος",
+    "Ефрем Сирин",
+    "Ефрема Сирина"
+   ],
+   "santi": true,
+   "opere": []
+  },
+  {
+   "id": "bartolo",
+   "nome": "Bartolo da Sassoferrato",
+   "latino": "Bartolus de Saxoferrato",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Bartolus de Saxoferrato",
+    "Bartoli de Saxoferrato",
+    "Bartolo da Sassoferrato",
+    "Bartolus a Saxoferrato",
+    "Bartole"
+   ],
+   "opere": []
+  },
+  {
+   "id": "baldo",
+   "nome": "Baldo degli Ubaldi",
+   "latino": "Baldus de Ubaldis",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Baldus de Ubaldis",
+    "Baldi de Ubaldis",
+    "Baldo degli Ubaldi",
+    "Baldus de Perusio"
+   ],
+   "opere": []
+  },
+  {
+   "id": "giovanni-andrea",
+   "nome": "Giovanni d'Andrea",
+   "latino": "Iohannes Andreae",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Iohannes Andreae",
+    "Johannes Andreae",
+    "Ioannes Andreae",
+    "Giovanni d Andrea",
+    "Jean d André"
+   ],
+   "opere": [
+    {
+     "t": "Novella in Decretales",
+     "v": [
+      "Novella in Decretales",
+      "Novella super Decretalibus",
+      "Novella super Decretales"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "avicenna",
+   "nome": "Avicenna",
+   "latino": "Avicenna",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Avicenna",
+    "Avicennae",
+    "Ibn Sina",
+    "Ibn Sīnā",
+    "Avicenne",
+    "ابن سينا"
+   ],
+   "opere": [
+    {
+     "t": "Canone",
+     "v": [
+      "Canon medicinae",
+      "Liber canonis",
+      "Canon Avicennae",
+      "القانون في الطب"
+     ],
+     "d": true
+    }
+   ]
+  },
+  {
+   "id": "averroe",
+   "nome": "Averroè",
+   "latino": "Averroes",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Averroes",
+    "Averrois",
+    "Averroè",
+    "Ibn Rushd",
+    "Ibn Rušd",
+    "ابن رشد"
+   ],
+   "opere": []
+  },
+  {
+   "id": "sacrobosco",
+   "nome": "Giovanni di Sacrobosco",
+   "latino": "Iohannes de Sacrobosco",
+   "categoria": "medievale",
+   "lingua": "la",
+   "nomi": [
+    "Iohannes de Sacrobosco",
+    "Johannes de Sacrobosco",
+    "Ioannes de Sacro Bosco",
+    "Johannes de Sacro Bosco",
+    "John of Sacrobosco",
+    "Sacrobosco"
+   ],
+   "opere": [
+    {
+     "t": "De sphaera",
+     "v": [
+      "Tractatus de sphaera",
+      "De sphaera mundi",
+      "Sphaera mundi",
+      "De sphaera"
+     ],
+     "d": true
+    }
+   ]
   }
  ]
 }

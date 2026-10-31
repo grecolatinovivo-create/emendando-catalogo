@@ -244,7 +244,10 @@ export function deduciLingue(segnatura, titolo, autori = []) {
   const s = lingueDaSegnatura(segnatura); if (s.length) return s;
   // manoscritti musicali (Mus.ms. della BSB): titoli di brani, le parole non dicono la lingua
   if (/^Mus\b/i.test(String(segnatura || ""))) { const t = lingueDaTitolo(String(titolo || "").replace(/[A-Za-z]/g, "")); return t; }
-  const t = lingueDaTitolo(titolo);
+  // note del catalogatore dopo il titolo («Epistulae Heroidum : mit Kommentar von…», «… : im Auftrag von…», incunaboli della BSB):
+  // la lingua si deduce dal titolo vero, non dalla nota tedesca (dal 31 ottobre 2026)
+  const titoloVero = String(titolo || "").replace(/\s+[:;.]\s*(?:\[?enth\.|mit\b|im (?:anhang|auftrag)\b|gewidmet\b|hrsg\.|übers\.|nebst\b|darin\b).*$/i, "");
+  const t = lingueDaTitolo(titoloVero || titolo);
   if (t[0] === "la" && autori.length && autori.every(a => a.categoria === "classico-greco" || a.lingua === "grc")) return [];
   return t;
 }

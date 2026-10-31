@@ -599,6 +599,8 @@ async function main() {
     if (SOSPESE[f]) continue;
     if (perFonte[f]) { for (const r of perFonte[f]) { const v = voce(r, AUTORI, sigle); if (v) voci.set(v.id, v); } }
     else for (const v of prima.filter(x => x.fonte === f)) {
+      // voci precedenti senza autori (dal 31 ottobre 2026): si riprova il riconoscimento sul titolo, con l'elenco degli autori di oggi
+      if (v.tipo !== "epigrafe" && !(v.autori || []).length && v.titolo) { const au = riconosci([{ campo: "titolo", testo: v.titolo, forte: true }], AUTORI); if (au.length) v.autori = au; }
       // voci precedenti senza lingua: si prova la deduzione
       if (!v.lingue.length) { v.lingue = deduciLingue(v.segnatura, v.titolo, v.autori); v.lingua_dedotta = v.lingue.length > 0; }
       { const ind = correggiIndigene(v); if (ind) { v.lingue = ind.lingue; v.lingua_dedotta = ind.dedotta; } }

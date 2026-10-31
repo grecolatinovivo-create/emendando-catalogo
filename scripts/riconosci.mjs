@@ -17,14 +17,14 @@ const COMMENTO = new Set(["commentum", "commenta", "commentarius", "commentarii"
   "enarrationes", "expositiones", "sermones", "sermo", "predigten", "homiliae", "homeliae", "homilia", "omelie", "postilla", "postillae", "catena", "catenae", "σχολια", "υπομνημα", "εξηγησισ", "ερμηνεια"]);
 const PREP = new Set(["in", "super", "ad", "on", "zu", "zum", "zur", "sur", "a", "al", "all", "alla", "allo", "agli", "alle", "to", "de", "di", "uber"]);
 
-// minuscole, senza accenti né spiriti né punteggiatura, u per v e i per j, sigma finale come sigma; lettere latine e greche;
+// minuscole, senza accenti né spiriti né punteggiatura, u per v e i per j, sigma finale come sigma; lettere latine, greche, cirilliche e arabe (dal 31 ottobre 2026);
 // restituisce anche la mappa verso il testo originale
 const CAR = new Map();
 function carattere(ch) {
   let c = CAR.get(ch);
   if (c === undefined) {
     c = ch.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/æ/g, "ae").replace(/œ/g, "oe").replace(/ß/g, "ss").replace(/ς/g, "σ").replace(/v/g, "u").replace(/j/g, "i");
-    c = [...c].map(x => (/[a-z0-9\u03b1-\u03c9]/.test(x) ? x : " ")).join("");
+    c = [...c].map(x => (/[a-z0-9\u03b1-\u03c9\u0430-\u044f\u0451\u0621-\u064a]/.test(x) ? x : " ")).join("");
     CAR.set(ch, c);
   }
   return c;
