@@ -18856,8 +18856,7 @@
 ["bnf-btv1b8550865s","Latin 11636",425,"la",12,12,"agostino","Commentarium super epistolae sancti Pauli. --Augustinus.","","",0,"","","",""],
 ["bnf-btv1b9068307c","Latin 11637",425,"la",12,12,"agostino","Augustinus Hipponensis, Enchiridion ; De civitate Dei","De civitate Dei, Enchiridion","",0,"","","",""],
 ["bnf-btv1b10092948s","Latin 11638",425,"la",11,11,"agostino","Augustinus , De civitate Dei.","De civitate Dei","",0,"","","",""],
-["bnf-btv1b100764904","Latin 11641",425,"la",7,8,"agostino","Augustinus Hipponensis. Epistolae 27, 31, 24, 42, 45, 94, 260-261 (f. 1-20) et Sermones 351, 392, 18, 87, 77, 127 (f. 21-63)","Sermoni, Lettere","",0,"","","",""],
-["bnf-btv1b8438674r","Latin 11641",425,"la",0,0,"agostino","Augustinus Hipponensis. Epistolae 27, 31, 24, 42, 45, 94, 260-261 (f. 1-20) et Sermones 351, 392, 18, 87, 77, 127 (f. 21-63)","Sermoni, Lettere","",0,"","","",""],
+["bnf-btv1b100764904","Latin 11641",425,"la",0,0,"agostino","Augustinus Hipponensis. Epistolae 27, 31, 24, 42, 45, 94, 260-261 (f. 1-20) et Sermones 351, 392, 18, 87, 77, 127 (f. 21-63)","Sermoni, Lettere","",0,"","","",""],
 ["bnf-btv1b100343077","Latin 11642",425,"la",9,9,"agostino","Extraits de saint Augustin intitulés « liber Evipii ».","","",0,"","",1,""],
 ["bnf-btv1b9078224t","Latin 11645",425,"la",0,0,"agostino","Matériaux pour une édition de S. Augustin. Latin 11645","","",0,"","","",""],
 ["bnf-btv1b9065865m","Latin 11646",425,"la",0,0,"agostino","Matériaux pour une édition de S. Augustin. Latin 11646","","",0,"","","",""],
@@ -19998,5 +19997,6 @@
 ["bnf-btv1b90678657","Latin 14305",425,"la",12,12,"bernardo","Latin 14305","Sermoni sul Cantico, De diligendo Deo","",0,"","","",""],
 ["bnf-btv1b10721190n","Latin 14307",425,"la",0,0,"","Commentarii in quatuor libros Sententiarum Petri Lombardi. Lectura super Ium et IIum Sententiarum","","",0,"","","",""],
 ["bnf-btv1b10721169f","Latin 14308",425,"la",0,0,"","Commentarii in quatuor libros Sententiarum Petri Lombardi. Lectura super IIIum et IVum Sententiarum","","",0,"","","",""],
-["bnf-btv1b100386620","Latin 14310",425,"la",14,14,"","Guillelmus Parisiensis, Tractatus de universo.","","",0,"","","",""]
+["bnf-btv1b100386620","Latin 14310",425,"la",14,14,"","Guillelmus Parisiensis, Tractatus de universo.","","",0,"","","",""],
+["bnf-btv1b9067010h","Latin 14311",425,"la",14,14,"","Guillermus Alvernus, liber de fide et legibus ; Godefridus de Fontibus, Quodlibeta","","",0,"","","",""]
 ]}

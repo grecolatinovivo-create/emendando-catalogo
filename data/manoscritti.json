@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-31T07:09:12.000Z",
+ "aggiornato": "2026-10-31T09:50:24.742Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -310378,15 +310378,7 @@
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/64a66014-d534-4ff3-ac04-6178d105be09.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/64a66014-d534-4ff3-ac04-6178d105be09/",
    "licenza": "CC BY-NC 4.0",
-   "immagini": null,
-   "riproduzioni": [
-    {
-     "id": "hd-bodleian_mslaudlat29",
-     "fonte": "heidelberg",
-     "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/bodleian_mslaudlat29/manifest.json",
-     "pagina": "https://digi.ub.uni-heidelberg.de/diglit/bodleian_mslaudlat29"
-    }
-   ]
+   "immagini": null
   },
   {
    "id": "bod-138d165a-acb0-4269-ab7a-64babe8ba382",
@@ -311284,15 +311276,7 @@
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/f0e484d2-7549-4962-bae6-69edb5db2f87.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/f0e484d2-7549-4962-bae6-69edb5db2f87/",
    "licenza": "CC BY-NC 4.0",
-   "immagini": null,
-   "riproduzioni": [
-    {
-     "id": "hd-bodleian_mslaudmisc323",
-     "fonte": "heidelberg",
-     "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/bodleian_mslaudmisc323/manifest.json",
-     "pagina": "https://digi.ub.uni-heidelberg.de/diglit/bodleian_mslaudmisc323"
-    }
-   ]
+   "immagini": null
   },
   {
    "id": "bod-39648490-7d67-4a81-a904-70494a68b1d1",
@@ -311447,9 +311431,7 @@
     14,
     14
    ],
-   "lingue": [
-    "la"
-   ],
+   "lingue": [],
    "lingua_dedotta": false,
    "titolo": "Theological treatises, meditations and extracts",
    "autori": [
@@ -311517,15 +311499,7 @@
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/78ea2d5c-01ef-4b0a-87e2-dcb559cea873.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/78ea2d5c-01ef-4b0a-87e2-dcb559cea873/",
    "licenza": "CC BY-NC 4.0",
-   "immagini": null,
-   "riproduzioni": [
-    {
-     "id": "hd-bodleian_mslaudmisc493",
-     "fonte": "heidelberg",
-     "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/bodleian_mslaudmisc493/manifest.json",
-     "pagina": "https://digi.ub.uni-heidelberg.de/diglit/bodleian_mslaudmisc493"
-    }
-   ]
+   "immagini": null
   },
   {
    "id": "bod-aefef404-41c4-40d4-a82d-a94ad92adf2e",
