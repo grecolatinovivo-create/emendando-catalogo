@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-31T09:50:24.742Z",
- "totale": 644574,
+ "aggiornato": "2026-10-31T12:59:09.906Z",
+ "totale": 644577,
  "con_autori": 37165,
- "miniati": 10978,
+ "miniati": 10979,
  "musica": 21117,
- "manoscritti": 532091,
+ "manoscritti": 532094,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 35299
+   "codici": 35300
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -65,7 +65,7 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 19993
+   "codici": 19994
   },
   "he": {
    "nome": "ebraico",
@@ -105,7 +105,7 @@
   },
   "en": {
    "nome": "inglese",
-   "codici": 7878
+   "codici": 7879
   },
   "cop": {
    "nome": "copto",
@@ -137,7 +137,7 @@
   },
   "tr": {
    "nome": "turco",
-   "codici": 2764
+   "codici": 2765
   },
   "ko": {
    "nome": "coreano",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 526785
+   "codici": 526788
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -8287,10 +8287,10 @@
   },
   "yale": {
    "nome": "Yale University Library, Beinecke e altre (collections.library.yale.edu)",
-   "codici": 2969,
+   "codici": 2972,
    "carte": 165,
    "carte_stampa": 50,
-   "miniati": 512,
+   "miniati": 513,
    "musica": 164,
    "papiri": 0,
    "epigrafi": 0,
@@ -8300,17 +8300,17 @@
    "con_autori": 627,
    "lingue": {
     "fr": 167,
-    "en": 586,
+    "en": 587,
     "nl": 25,
-    "xx": 69,
+    "xx": 70,
     "la": 1449,
     "de": 84,
     "es": 48,
     "it": 215,
     "?": 39,
-    "ar": 307,
+    "ar": 308,
     "syr": 9,
-    "tr": 22,
+    "tr": 23,
     "fa": 73,
     "jv": 2,
     "pt": 4,
@@ -10741,7 +10741,7 @@
   {
    "file": "indice/yale-0.json",
    "fonte": "yale",
-   "righe": 2969
+   "righe": 2972
   },
   {
    "file": "indice/penn-0.json",
@@ -20661,7 +20661,7 @@
   3,
   37952,
   1,
-  2942,
+  2944,
   6093,
   2,
   1,
@@ -21321,7 +21321,7 @@
   1,
   1,
   1,
-  1,
+  2,
   5,
   6,
   97,
