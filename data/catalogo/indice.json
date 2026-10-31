@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-31T06:13:27.203Z",
- "totale": 644575,
- "con_autori": 31269,
+ "aggiornato": "2026-10-31T06:32:07.503Z",
+ "totale": 644574,
+ "con_autori": 31266,
  "miniati": 10978,
  "musica": 21117,
- "manoscritti": 532092,
+ "manoscritti": 532091,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,11 +37,11 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 105723
+   "codici": 105717
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 54526
+   "codici": 54530
   },
   "grc": {
    "nome": "greco",
@@ -61,7 +61,7 @@
   },
   "de": {
    "nome": "tedesco",
-   "codici": 24890
+   "codici": 24891
   },
   "xx": {
    "nome": "altre lingue",
@@ -439,21 +439,21 @@
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7414
+   "codici": 7413
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15235
+   "codici": 15234
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 3311
+   "codici": 3310
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 526786
+   "codici": 526785
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -1379,7 +1379,7 @@
    "nome": "Ateneo",
    "latino": "Athenaeus",
    "categoria": "classico-greco",
-   "codici": 6
+   "codici": 5
   },
   "eliano": {
    "nome": "Eliano",
@@ -1409,7 +1409,7 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 2972
+   "codici": 2971
   },
   "girolamo": {
    "nome": "Girolamo",
@@ -1547,7 +1547,7 @@
    "nome": "Isidoro di Siviglia",
    "latino": "Isidorus Hispalensis",
    "categoria": "medievale",
-   "codici": 689
+   "codici": 688
   },
   "beda": {
    "nome": "Beda",
@@ -5852,12 +5852,12 @@
    "edizioni_principi": 0,
    "con_autori": 1252,
    "lingue": {
-    "la": 3788,
+    "la": 3787,
     "fa": 94,
     "fr": 312,
     "cy": 23,
     "en": 2515,
-    "?": 946,
+    "?": 947,
     "zh": 656,
     "xx": 391,
     "mnc": 6,
@@ -5909,7 +5909,7 @@
   },
   "gallica": {
    "nome": "Bibliothèque nationale de France (gallica.bnf.fr)",
-   "codici": 68447,
+   "codici": 68446,
    "carte": 85,
    "carte_stampa": 2,
    "miniati": 1968,
@@ -5919,10 +5919,10 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 8458,
+   "con_autori": 8457,
    "lingue": {
     "fr": 19837,
-    "la": 13168,
+    "la": 13167,
     "grc": 4110,
     "?": 4283,
     "he": 1567,
@@ -6546,8 +6546,8 @@
    "edizioni_principi": 0,
    "con_autori": 683,
    "lingue": {
-    "?": 1423,
-    "la": 2114,
+    "?": 1424,
+    "la": 2113,
     "fr": 203,
     "es": 51,
     "it": 204,
@@ -8613,12 +8613,12 @@
    "incunaboli": 15587,
    "stampe": 72,
    "edizioni_principi": 172,
-   "con_autori": 3511,
+   "con_autori": 3509,
    "lingue": {
     "grc": 179,
-    "la": 6338,
-    "de": 2248,
-    "?": 5841,
+    "la": 6335,
+    "de": 2249,
+    "?": 5843,
     "it": 299,
     "es": 27,
     "fr": 726,
@@ -8944,7 +8944,7 @@
   {
    "file": "indice/gallica-3.json",
    "fonte": "gallica",
-   "righe": 8447
+   "righe": 8446
   },
   {
    "file": "indice/laurenziana-0.json",
@@ -19152,7 +19152,7 @@
   1,
   1553,
   24,
-  62713,
+  62712,
   28,
   752,
   4,
