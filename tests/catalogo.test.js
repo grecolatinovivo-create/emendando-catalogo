@@ -40,7 +40,7 @@ test("autori.json: struttura e assenza di doppioni", () => {
     "Agostino", "Girolamo", "Ambrogio", "Gregorio Magno", "Isidoro di Siviglia", "Beda", "Alcuino", "Basilio Magno", "Gregorio di Nazianzo", "Giovanni Crisostomo", "Bibbia"])
     assert.ok(d.autori.some(a => a.nome === nome), nome);
   const CAT = new Set(["classico-latino", "classico-greco", "cristiano", "medievale"]);
-  for (const a of d.autori) { assert.ok(CAT.has(a.categoria), a.id + " categoria"); assert.ok(/^[a-z]{2,3}$/.test(a.lingua), a.id + " lingua");   // dal 31 ottobre 2026 anche autori in volgare (Dante, Petrarca, Boccaccio: «it») }
+  for (const a of d.autori) { assert.ok(CAT.has(a.categoria), a.id + " categoria"); assert.ok(/^[a-z]{2,3}$/.test(a.lingua), a.id + " lingua"); /* dal 31 ottobre 2026 anche autori in volgare (Dante, Petrarca, Boccaccio: «it») */ }
   assert.equal(d.autori.find(a => a.id === "omero").categoria, "classico-greco");
   assert.equal(d.autori.find(a => a.id === "agostino").categoria, "cristiano");
   assert.equal(d.autori.find(a => a.id === "beda").categoria, "medievale");
