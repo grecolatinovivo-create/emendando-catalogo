@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-10-29T04:58:17.488Z",
- "totale": 660457,
+ "aggiornato": "2026-10-31T03:35:36.729Z",
+ "totale": 660458,
  "con_autori": 33047,
  "miniati": 11386,
  "musica": 21309,
- "manoscritti": 547974,
+ "manoscritti": 547975,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,7 +37,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 108003
+   "codici": 108004
   },
   "?": {
    "nome": "lingua non indicata",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 542659
+   "codici": 542660
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -5899,7 +5899,7 @@
     "pi": 1,
     "syr": 7
    },
-   "esito": "errore: fetch failed",
+   "esito": "ok",
    "prefissi": [
     "bod-"
    ],
@@ -6293,7 +6293,7 @@
     "he": 8,
     "en": 1
    },
-   "esito": "ok",
+   "esito": "errore: raccolta incompleta (ubl_manuscripts, pagina 92): riprenderà alla prossima esecuzione",
    "prefissi": [
     "lei-"
    ],
@@ -6360,7 +6360,7 @@
   },
   "lipsia": {
    "nome": "Universitätsbibliothek Leipzig, Lipsia (dati dal Handschriftenportal, handschriftenportal.de)",
-   "codici": 2677,
+   "codici": 2678,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 2,
@@ -6372,7 +6372,7 @@
    "edizioni_principi": 0,
    "con_autori": 542,
    "lingue": {
-    "la": 2286,
+    "la": 2287,
     "de": 428,
     "he": 102,
     "it": 16,
@@ -9016,7 +9016,7 @@
   {
    "file": "indice/lipsia-0.json",
    "fonte": "lipsia",
-   "righe": 2677
+   "righe": 2678
   },
   {
    "file": "indice/francoforte-0.json",
@@ -21650,7 +21650,7 @@
   1339,
   2236,
   1937,
-  2678,
+  2679,
   20,
   273,
   1,
