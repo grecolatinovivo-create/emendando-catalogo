@@ -102,6 +102,7 @@ import { scansionaGiappone, recordGiappone } from "./fonti/giappone-scritture.mj
 import { scansionaRomani, recordRomani, vociScelte as vociRomani } from "./fonti/romani-instrumentum.mjs";
 import { scriviRegistro, registraEsiti } from "./registro.mjs";
 import { scriviCatalogo, catalogoPrecedente } from "./costruisci.mjs";
+import { unisciDoppioni } from "./doppioni.mjs";
 import { tipoDa } from "./carte.mjs";
 import { miniatoDa } from "./miniati.mjs";
 import { musicaDa } from "./musica.mjs";
@@ -613,12 +614,15 @@ async function main() {
   // modelli 3D (fonte «musei», dal 28 ottobre 2026) attaccati alle voci di altre fonti per lo stesso oggetto; si riattaccano a ogni costruzione
   for (const v of voci.values()) if (v.modello3d && v.fonte !== "musei") delete v.modello3d;
   for (const [id, m] of Object.entries(modelli3d)) { const v = voci.get(id); if (v) v.modello3d = m; }
+  // doppioni (dal 31 ottobre 2026): stesso codice da due fonti, o due riproduzioni in Gallica; resta una voce sola (scripts/doppioni.mjs)
+  const dop = unisciDoppioni(voci);
+  log(`doppioni: ${dop.conta.tolte} voci unite in ${dop.conta.gruppi} codici (fonti diverse ${dop.conta.fonti_diverse}, Gallica ${dop.conta.gallica})`);
   log(`riconoscimento: ${voci.size} codici in ${Math.round((Date.now() - t0) / 1000)} secondi`);
   const manoscritti = [...voci.values()].sort((a, b) => naturale(a.biblioteca, b.biblioteca) || naturale(a.segnatura, b.segnatura) || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
   const daIndici = manoscritti.filter(v => v.autori.some(a => a.corrispondenza.startsWith("indice:"))).length;
   log(`riconosciuti grazie all'indice dei contenuti: ${daIndici}`);
   const nomiFonti = Object.fromEntries(Object.keys(lavori).map(f => [f, NOMI_FONTI[f]]));
-  const ris = scriviCatalogo(manoscritti, { fonti: Object.keys(lavori), nomi: nomiFonti, esito, autori: AUTORI });
+  const ris = scriviCatalogo(manoscritti, { fonti: Object.keys(lavori), nomi: nomiFonti, esito, autori: AUTORI, alias: dop.alias });
   // registro delle biblioteche (docs/BIBLIOTECHE.md): esiti delle raccolte vere e tabella delle fonti agganciate
   if (!arg["solo-costruisci"]) registraEsiti(Object.fromEntries(Object.keys(lavori).map(f => [f, esito[f]])));
   if (scriviRegistro({ fonti: Object.keys(lavori), conteggio: ris.conteggio, conAutori: ris.conAutori, lingue: ris.lingue, dettagli })) log("registro delle biblioteche aggiornato");

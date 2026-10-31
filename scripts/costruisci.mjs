@@ -82,7 +82,7 @@ function scriviSeCambia(file, testo, stat) {
 
 /* manoscritti: voci del catalogo (già ordinate); opz: { fonti: [ordine], nomi: {fonte: nome}, esito: {fonte: esito}, autori: AUTORI }
    restituisce { conteggio, conAutori, lingue (per fonte), cambiato, kb, file } */
-export function scriviCatalogo(manoscritti, { fonti, nomi = {}, esito = {}, autori = [], dir = DIR, compat: fileCompat = COMPAT, luoghi = leggiLuoghi(), fileEp = FILE_EP } = {}) {
+export function scriviCatalogo(manoscritti, { fonti, nomi = {}, esito = {}, autori = [], alias = [], dir = DIR, compat: fileCompat = COMPAT, luoghi = leggiLuoghi(), fileEp = FILE_EP } = {}) {
   const DIR = dir, COMPAT = fileCompat;
   const stat = { kb: 0, file: 0, cambiati: 0, scritti: new Set() };
   const perFonte = {};
@@ -122,6 +122,8 @@ export function scriviCatalogo(manoscritti, { fonti, nomi = {}, esito = {}, auto
     const nPezzi = Math.max(1, Math.ceil(vs.length / VOCI_PER_PEZZO));
     const gruppi = Array.from({ length: nPezzi }, () => []);
     for (const v of vs) gruppi[pezzoDi(v.id, nPezzi)].push(v);
+    // rimandi dei doppioni tolti (scripts/doppioni.mjs): restano nel pezzo dove li cercherebbe il sito, ma non nell'indice né nei conteggi
+    for (const a of alias) if (a.fonte === f) gruppi[pezzoDi(a.id, nPezzi)].push(a);
     gruppi.forEach((g, k) => scriviSeCambia(path.join(DIR, `voci/${f}-${k}.json`), righe({ fonte: f, pezzo: k, pezzi: nPezzi }, "manoscritti", g), stat));
     const prefissi = [...new Set(vs.map(v => v.id.replace(/-.*$/, "-")))];
     infoFonti[f] = { nome: nomi[f] || f, codici: vs.length, carte: vs.filter(v => v.tipo === "carta").length, carte_stampa: vs.filter(v => v.tipo === "carta_stampa").length, miniati: vs.filter(v => v.miniato).length, musica: vs.filter(v => v.musica).length,
@@ -194,7 +196,7 @@ export function catalogoPrecedente(DIR_ = DIR, COMPAT_ = COMPAT) {
   let ind = null; try { ind = JSON.parse(fs.readFileSync(path.join(DIR, "indice.json"), "utf8")); } catch (e) {}
   if (ind && ind.fonti) {
     for (const [f, info] of Object.entries(ind.fonti)) for (let k = 0; k < (info.pezzi_voci || 0); k++) {
-      try { out.push(...JSON.parse(fs.readFileSync(path.join(DIR, `voci/${f}-${k}.json`), "utf8")).manoscritti); } catch (e) {}
+      try { out.push(...JSON.parse(fs.readFileSync(path.join(DIR, `voci/${f}-${k}.json`), "utf8")).manoscritti.filter(v => v && !v.alias)); } catch (e) {}
     }
     return out;
   }

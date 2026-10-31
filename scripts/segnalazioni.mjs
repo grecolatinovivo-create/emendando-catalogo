@@ -168,7 +168,9 @@ async function voceCatalogo(id) {
     try { const r = await fetch(`https://raw.githubusercontent.com/${REPO}/main/data/catalogo/voci/${nome}`); return r.ok ? await r.json() : null; } catch { return null; }
   })());
   const d = await pezzi.get(nome);
-  return ((d && d.manoscritti) || []).find(m => m.id === id) || null;
+  const m = ((d && d.manoscritti) || []).find(m => m.id === id) || null;
+  // doppione tolto (scripts/doppioni.mjs): si segue il rimando alla voce tenuta
+  return m && m.alias && m.alias !== id ? voceCatalogo(m.alias) : m;
 }
 const hostDi = u => { try { return new URL(u).hostname; } catch { return ""; } };
 
