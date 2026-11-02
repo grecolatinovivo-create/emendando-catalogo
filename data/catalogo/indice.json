@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-02T02:05:44.627Z",
- "totale": 644629,
- "con_autori": 37166,
+ "aggiornato": "2026-11-02T02:57:48.014Z",
+ "totale": 644636,
+ "con_autori": 37173,
  "miniati": 10979,
  "musica": 21117,
- "manoscritti": 532146,
+ "manoscritti": 532153,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,7 +37,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 105918
+   "codici": 105920
   },
   "?": {
    "nome": "lingua non indicata",
@@ -101,7 +101,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 8104
+   "codici": 8109
   },
   "en": {
    "nome": "inglese",
@@ -439,7 +439,7 @@
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7413
+   "codici": 7414
   },
   "cristiano": {
    "nome": "autori cristiani",
@@ -447,13 +447,13 @@
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 9712
+   "codici": 9719
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 526840
+   "codici": 526847
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -2424,7 +2424,7 @@
    "nome": "Filostrato",
    "latino": "Philostratus",
    "categoria": "classico-greco",
-   "codici": 86,
+   "codici": 87,
    "forme": [
     "Philostrati",
     "Philostrate",
@@ -3092,7 +3092,7 @@
    "nome": "Dante Alighieri",
    "latino": "Dantes Alagherius",
    "categoria": "medievale",
-   "codici": 289,
+   "codici": 293,
    "forme": [
     "Dantis Alagherii",
     "Dante Alagherii",
@@ -3118,7 +3118,7 @@
    "nome": "Giovanni Boccaccio",
    "latino": "Iohannes Boccaccius",
    "categoria": "medievale",
-   "codici": 301,
+   "codici": 305,
    "forme": [
     "Johannes Boccaccius",
     "Boccaccio",
@@ -7859,7 +7859,7 @@
   },
   "bncf": {
    "nome": "Biblioteca Nazionale Centrale di Firenze (manoscritti pubblicati dalla Biblioteca su Internet Archive, archive.org)",
-   "codici": 1124,
+   "codici": 1131,
    "carte": 3,
    "carte_stampa": 0,
    "miniati": 20,
@@ -7869,12 +7869,12 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 175,
+   "con_autori": 182,
    "lingue": {
-    "it": 848,
+    "it": 853,
     "gl": 1,
     "?": 67,
-    "la": 220,
+    "la": 222,
     "fr": 10,
     "grc": 4,
     "es": 3,
@@ -10687,7 +10687,7 @@
   {
    "file": "indice/bncf-0.json",
    "fonte": "bncf",
-   "righe": 1124
+   "righe": 1131
   },
   {
    "file": "indice/vallicelliana-0.json",
@@ -20784,7 +20784,7 @@
   5644,
   3,
   296,
-  1124,
+  1131,
   49,
   765,
   1,

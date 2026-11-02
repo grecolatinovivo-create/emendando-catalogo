@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-01T04:08:38.372Z",
+ "aggiornato": "2026-11-02T02:57:48.014Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -59,7 +59,7 @@
   },
   "bncf": {
    "nome": "Biblioteca Nazionale Centrale di Firenze (manoscritti pubblicati dalla Biblioteca su Internet Archive, archive.org)",
-   "codici": 72,
+   "codici": 73,
    "esito": "ok"
   },
   "vallicelliana": {
@@ -145,7 +145,7 @@
   "loc": {
    "nome": "Library of Congress: microfilm del Sinai e dei Patriarcati di Gerusalemme (loc.gov; manifesti scritti dal catalogo)",
    "codici": 34,
-   "esito": "ok"
+   "esito": "errore: HTTP 429 https://www.loc.gov/collections/manuscripts-in-st-catherines-monastery-mount-sinai/?fo=json&c=100&sp=2"
   },
   "nlg": {
    "nome": "Biblioteca Nazionale di Grecia, Atene (digitalcollections.nlg.gr; copie dei manifesti scritte dal catalogo)",
@@ -275,7 +275,7 @@
   "ucm": {
    "nome": "Universidad Complutense de Madrid, Biblioteca Histórica (patrimoniodigital.ucm.es)",
    "codici": 41,
-   "esito": "ok"
+   "esito": "errore: fetch failed"
   },
   "sevilla": {
    "nome": "Biblioteca de la Universidad de Sevilla (copie digitali su Internet Archive)",
@@ -423,7 +423,7 @@
    "esito": "ok"
   }
  },
- "totale": 11938,
+ "totale": 11939,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -130841,6 +130841,47 @@
    ],
    "manifest": "https://iiif.archive.org/iiif/3/bncf-pal.-586-images/manifest.json",
    "pagina": "https://archive.org/details/bncf-pal.-586-images",
+   "licenza": "Biblioteca Nazionale Centrale di Firenze: pubblico dominio, riproduzioni solo per fini non commerciali (art. 108 del Codice dei Beni Culturali)",
+   "immagini": null
+  },
+  {
+   "id": "bncf-panc.-17",
+   "fonte": "bncf",
+   "biblioteca": "Biblioteca Nazionale Centrale di Firenze",
+   "citta": "Firenze",
+   "segnatura": "Panciatichiano 17",
+   "datazione": "sec. XIV",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Giovanni Boccaccio, Il filostrato , Guido delle Colonne, Storia della guerra troiana, ms., sec. XIV, Cart.,",
+   "autori": [
+    {
+     "id": "filostrato",
+     "autore": "Filostrato",
+     "latino": "Philostratus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Giovanni Boccaccio, Il filostrato , Guido delle Colonne, Storia…»"
+    },
+    {
+     "id": "boccaccio",
+     "autore": "Giovanni Boccaccio",
+     "latino": "Iohannes Boccaccius",
+     "categoria": "medievale",
+     "opere": [
+      "Filostrato"
+     ],
+     "corrispondenza": "autore: «Giovanni Boccaccio, Guido delle Colonne»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/panc.-17/manifest.json",
+   "pagina": "https://archive.org/details/panc.-17",
    "licenza": "Biblioteca Nazionale Centrale di Firenze: pubblico dominio, riproduzioni solo per fini non commerciali (art. 108 del Codice dei Beni Culturali)",
    "immagini": null
   },
