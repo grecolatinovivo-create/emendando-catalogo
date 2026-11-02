@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-02T01:57:17.932Z",
- "totale": 644608,
- "con_autori": 37167,
+ "aggiornato": "2026-11-02T02:05:44.627Z",
+ "totale": 644629,
+ "con_autori": 37166,
  "miniati": 10979,
  "musica": 21117,
- "manoscritti": 532125,
+ "manoscritti": 532146,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,7 +37,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 105913
+   "codici": 105918
   },
   "?": {
    "nome": "lingua non indicata",
@@ -61,7 +61,7 @@
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23471
+   "codici": 23472
   },
   "xx": {
    "nome": "altre lingue",
@@ -69,7 +69,7 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 19851
+   "codici": 19850
   },
   "pi": {
    "nome": "pali",
@@ -89,7 +89,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10465
+   "codici": 10469
   },
   "zh": {
    "nome": "cinese",
@@ -101,7 +101,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 8101
+   "codici": 8104
   },
   "en": {
    "nome": "inglese",
@@ -121,7 +121,7 @@
   },
   "pt": {
    "nome": "portoghese",
-   "codici": 4879
+   "codici": 4894
   },
   "bo": {
    "nome": "tibetano",
@@ -443,7 +443,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15663
+   "codici": 15662
   },
   "medievale": {
    "nome": "autori medievali",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 526819
+   "codici": 526840
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -2569,7 +2569,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7120,
+   "codici": 7119,
    "forme": [
     "Bibliae",
     "Biblia sacra",
@@ -8153,12 +8153,12 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 103,
+   "con_autori": 102,
    "lingue": {
-    "de": 834,
-    "la": 605,
+    "de": 835,
+    "la": 606,
     "grc": 82,
-    "he": 10,
+    "he": 9,
     "it": 290,
     "fr": 88,
     "?": 159,
@@ -9118,7 +9118,7 @@
   },
   "manuscriptorium": {
    "nome": "Manuscriptorium: Národní knihovna České republiky e altre biblioteche (manuscriptorium.com)",
-   "codici": 15168,
+   "codici": 15189,
    "carte": 63,
    "carte_stampa": 0,
    "miniati": 22,
@@ -9131,16 +9131,16 @@
    "con_autori": 1518,
    "lingue": {
     "?": 1709,
-    "la": 6047,
+    "la": 6051,
     "de": 1660,
     "cs": 1136,
-    "es": 668,
+    "es": 672,
     "en": 81,
     "fr": 461,
     "ar": 98,
     "ca": 7,
-    "pt": 4691,
-    "it": 281,
+    "pt": 4706,
+    "it": 284,
     "grc": 37,
     "xx": 65,
     "nl": 14,
@@ -10877,7 +10877,7 @@
   {
    "file": "indice/manuscriptorium-0.json",
    "fonte": "manuscriptorium",
-   "righe": 15168
+   "righe": 15189
   },
   {
    "file": "indice/kbdk-0.json",
@@ -20781,7 +20781,7 @@
   112,
   10,
   274,
-  5623,
+  5644,
   3,
   296,
   1124,
