@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-02T03:51:20.912Z",
+ "aggiornato": "2026-11-02T05:06:32.419Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -160,7 +160,7 @@
   "bl": {
    "nome": "British Library, Londra (catalogo searcharchives.bl.uk; manifesti bl.digirati.io e, per i codici orientali e scientifici, Qatar Digital Library)",
    "codici": 168,
-   "esito": "ok"
+   "esito": "errore: HTTP 500 https://searcharchives.bl.uk/?f%5Burl_stub_si%5D%5B%5D=iiif.bl.uk&per_page=100&page=1&sort=reference_for_sort_si+asc&format=json"
   },
   "isos": {
    "nome": "Irish Script on Screen: Royal Irish Academy, National Library of Ireland, Trinity College Dublin e altre (isos.dias.ie)",
@@ -174,7 +174,7 @@
   },
   "cudl": {
    "nome": "Cambridge Digital Library: University Library e college (cudl.lib.cam.ac.uk)",
-   "codici": 126,
+   "codici": 127,
    "esito": "ok"
   },
   "cbl": {
@@ -423,7 +423,7 @@
    "esito": "ok"
   }
  },
- "totale": 11939,
+ "totale": 11940,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -361790,6 +361790,40 @@
    ],
    "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-PEMBROKE-GRA-00004-00010",
    "pagina": "https://cudl.lib.cam.ac.uk/view/MS-PEMBROKE-GRA-00004-00010",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-pr-peterhouse-i-00003-00018",
+   "fonte": "cudl",
+   "biblioteca": "Perne Library",
+   "citta": "Cambridge",
+   "segnatura": "Peterhouse, PR I.3.18",
+   "datazione": "Printed in 1533 by Johann Herwagen.",
+   "secolo": [
+    16,
+    16
+   ],
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Euclid's Elements",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Elementi"
+     ],
+     "corrispondenza": "titolo: «Euclid's Elements»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/PR-PETERHOUSE-I-00003-00018",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/PR-PETERHOUSE-I-00003-00018",
    "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
    "immagini": null
   },

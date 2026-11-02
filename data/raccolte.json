@@ -30,8 +30,8 @@
   "ultimo_ok": "2026-11-02T03:25:54.246Z"
  },
  "bl": {
-  "quando": "2026-11-01T04:28:44.768Z",
-  "esito": "ok",
+  "quando": "2026-11-02T04:38:57.099Z",
+  "esito": "errore: HTTP 500 https://searcharchives.bl.uk/?f%5Burl_stub_si%5D%5B%5D=iiif.bl.uk&per_page=100&page=1&sort=reference_for_sort_si+asc&format=json",
   "ultimo_ok": "2026-11-01T04:28:44.768Z"
  },
  "bms": {
@@ -70,9 +70,9 @@
   "ultimo_ok": "2026-11-02T03:24:50.602Z"
  },
  "cbl": {
-  "quando": "2026-11-01T04:28:44.768Z",
+  "quando": "2026-11-02T04:38:57.099Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-01T04:28:44.768Z"
+  "ultimo_ok": "2026-11-02T04:38:57.099Z"
  },
  "colonia": {
   "quando": "2026-11-02T03:25:54.246Z",
@@ -85,9 +85,9 @@
   "ultimo_ok": "2026-11-02T01:23:35.138Z"
  },
  "cudl": {
-  "quando": "2026-11-01T04:28:44.768Z",
+  "quando": "2026-11-02T04:38:57.099Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-01T04:28:44.768Z"
+  "ultimo_ok": "2026-11-02T04:38:57.099Z"
  },
  "darmstadt": {
   "quando": "2026-11-02T01:54:54.187Z",
@@ -160,9 +160,9 @@
   "ultimo_ok": "2026-11-02T04:56:07.246Z"
  },
  "isos": {
-  "quando": "2026-11-01T04:28:44.768Z",
+  "quando": "2026-11-02T04:38:57.099Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-01T04:28:44.768Z"
+  "ultimo_ok": "2026-11-02T04:38:57.099Z"
  },
  "karlsruhe": {
   "quando": "2026-11-02T03:25:54.246Z",
@@ -210,9 +210,9 @@
   "ultimo_ok": null
  },
  "manchester": {
-  "quando": "2026-11-01T04:28:44.768Z",
+  "quando": "2026-11-02T04:38:57.099Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-01T04:28:44.768Z"
+  "ultimo_ok": "2026-11-02T04:38:57.099Z"
  },
  "manuscripta": {
   "quando": "2026-11-02T03:47:47.935Z",
@@ -265,9 +265,9 @@
   "ultimo_ok": "2026-11-01T05:17:36.526Z"
  },
  "nlw": {
-  "quando": "2026-11-01T04:28:44.768Z",
+  "quando": "2026-11-02T04:38:57.099Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-01T04:28:44.768Z"
+  "ultimo_ok": "2026-11-02T04:38:57.099Z"
  },
  "nomfoundation": {
   "quando": "2026-11-02T01:23:35.138Z",
@@ -290,9 +290,9 @@
   "ultimo_ok": "2026-11-02T03:47:12.834Z"
  },
  "parker": {
-  "quando": "2026-11-01T04:28:44.768Z",
+  "quando": "2026-11-02T04:38:57.099Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-01T04:28:44.768Z"
+  "ultimo_ok": "2026-11-02T04:38:57.099Z"
  },
  "penn": {
   "quando": "2026-11-01T04:56:25.829Z",
@@ -400,9 +400,9 @@
   "ultimo_ok": null
  },
  "wellcome": {
-  "quando": "2026-11-01T04:28:44.768Z",
+  "quando": "2026-11-02T04:38:57.099Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-01T04:28:44.768Z"
+  "ultimo_ok": "2026-11-02T04:38:57.099Z"
  },
  "wolfenbuettel": {
   "quando": "2026-11-02T03:25:54.246Z",

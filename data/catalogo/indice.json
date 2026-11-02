@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-02T03:51:20.912Z",
- "totale": 644636,
- "con_autori": 37173,
- "miniati": 10979,
+ "aggiornato": "2026-11-02T05:06:32.419Z",
+ "totale": 644654,
+ "con_autori": 37175,
+ "miniati": 10977,
  "musica": 21117,
- "manoscritti": 532153,
+ "manoscritti": 532171,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,19 +37,19 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 105920
+   "codici": 105919
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 55779
+   "codici": 55796
   },
   "grc": {
    "nome": "greco",
-   "codici": 40063
+   "codici": 40064
   },
   "ar": {
    "nome": "arabo",
-   "codici": 35300
+   "codici": 35301
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -61,7 +61,7 @@
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23472
+   "codici": 23468
   },
   "xx": {
    "nome": "altre lingue",
@@ -69,7 +69,7 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 19850
+   "codici": 19851
   },
   "pi": {
    "nome": "pali",
@@ -85,11 +85,11 @@
   },
   "sa": {
    "nome": "sanscrito",
-   "codici": 10531
+   "codici": 10530
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10469
+   "codici": 10470
   },
   "zh": {
    "nome": "cinese",
@@ -105,7 +105,7 @@
   },
   "en": {
    "nome": "inglese",
-   "codici": 7879
+   "codici": 7882
   },
   "cop": {
    "nome": "copto",
@@ -439,21 +439,21 @@
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7414
+   "codici": 7415
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15662
+   "codici": 15664
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 9719
+   "codici": 9718
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 526847
+   "codici": 526865
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -2008,7 +2008,7 @@
    "nome": "Euclide",
    "latino": "Euclides",
    "categoria": "classico-greco",
-   "codici": 235,
+   "codici": 236,
    "forme": [
     "Euclidis",
     "Euklid",
@@ -2569,7 +2569,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7119,
+   "codici": 7120,
    "forme": [
     "Bibliae",
     "Biblia sacra",
@@ -2686,7 +2686,7 @@
    "nome": "Origene",
    "latino": "Origenes",
    "categoria": "cristiano",
-   "codici": 346,
+   "codici": 347,
    "forme": [
     "Origenis",
     "Origen",
@@ -3259,7 +3259,7 @@
    "nome": "Avicenna",
    "latino": "Avicenna",
    "categoria": "medievale",
-   "codici": 568,
+   "codici": 567,
    "forme": [
     "Avicennae",
     "Ibn Sina",
@@ -8613,10 +8613,10 @@
   },
   "wellcome": {
    "nome": "Wellcome Collection, Londra (api.wellcomecollection.org)",
-   "codici": 1613,
+   "codici": 1620,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 134,
+   "miniati": 132,
    "musica": 0,
    "papiri": 0,
    "epigrafi": 0,
@@ -8626,18 +8626,18 @@
    "con_autori": 85,
    "lingue": {
     "grc": 14,
-    "?": 346,
+    "es": 8,
     "gn": 1,
-    "es": 7,
-    "ar": 199,
+    "?": 357,
+    "ar": 200,
     "fa": 10,
     "pi": 1,
     "zh": 3,
     "gez": 2,
     "he": 21,
     "xx": 44,
-    "la": 247,
-    "sa": 14,
+    "la": 244,
+    "sa": 13,
     "ja": 3,
     "ms": 10,
     "th": 1,
@@ -8645,7 +8645,7 @@
     "en": 470,
     "it": 109,
     "fr": 140,
-    "de": 84,
+    "de": 80,
     "nl": 4,
     "ca": 3,
     "pt": 2
@@ -8711,7 +8711,7 @@
     "ru": 2,
     "da": 1
    },
-   "esito": "ok",
+   "esito": "errore: HTTP 500 https://searcharchives.bl.uk/?f%5Burl_stub_si%5D%5B%5D=iiif.bl.uk&per_page=100&page=1&sort=reference_for_sort_si+asc&format=json",
    "prefissi": [
     "bl-"
    ],
@@ -8795,7 +8795,7 @@
   },
   "cudl": {
    "nome": "Cambridge Digital Library: University Library e college (cudl.lib.cam.ac.uk)",
-   "codici": 5401,
+   "codici": 5412,
    "carte": 1,
    "carte_stampa": 0,
    "miniati": 326,
@@ -8805,16 +8805,16 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 499,
+   "con_autori": 501,
    "lingue": {
     "fa": 452,
-    "en": 196,
+    "en": 199,
     "ko": 2,
     "nah": 1,
     "zh": 835,
     "ja": 464,
-    "la": 285,
-    "?": 910,
+    "la": 287,
+    "?": 916,
     "syr": 3,
     "ar": 95,
     "gez": 5,
@@ -8828,10 +8828,10 @@
     "it": 17,
     "de": 5,
     "nl": 2,
-    "he": 511,
+    "he": 512,
     "arc": 65,
     "akk": 4,
-    "grc": 272,
+    "grc": 273,
     "tr": 4,
     "is": 2,
     "cy": 1,
@@ -10782,7 +10782,7 @@
   {
    "file": "indice/wellcome-0.json",
    "fonte": "wellcome",
-   "righe": 1613
+   "righe": 1620
   },
   {
    "file": "indice/bl-0.json",
@@ -10802,7 +10802,7 @@
   {
    "file": "indice/cudl-0.json",
    "fonte": "cudl",
-   "righe": 5401
+   "righe": 5412
   },
   {
    "file": "indice/cbl-0.json",
@@ -20981,7 +20981,7 @@
   2,
   37,
   1,
-  4019,
+  4026,
   2,
   1,
   2,
@@ -21182,7 +21182,7 @@
   1,
   2,
   1,
-  2,
+  3,
   1,
   1,
   2,
@@ -22385,7 +22385,7 @@
   14,
   1,
   2,
-  1,
+  2,
   9,
   17,
   1,
@@ -23376,7 +23376,7 @@
   1232,
   232,
   32,
-  5,
+  6,
   165,
   34,
   190,
@@ -23472,13 +23472,13 @@
   1,
   3,
   2,
-  1613,
+  1620,
   12,
   1,
   1,
   1,
   113,
-  8,
+  9,
   10,
   1,
   4,
