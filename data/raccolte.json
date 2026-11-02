@@ -130,8 +130,8 @@
   "ultimo_ok": "2026-11-02T03:25:54.246Z"
  },
  "getty": {
-  "quando": "2026-11-01T04:56:25.829Z",
-  "esito": "ok",
+  "quando": "2026-11-02T04:51:09.680Z",
+  "esito": "errore: SPARQL: HTTP 401",
   "ultimo_ok": "2026-11-01T04:56:25.829Z"
  },
  "giappone": {
@@ -145,9 +145,9 @@
   "ultimo_ok": "2026-11-02T01:54:54.187Z"
  },
  "harvard": {
-  "quando": "2026-11-01T04:56:25.829Z",
+  "quando": "2026-11-02T04:51:09.680Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-01T04:56:25.829Z"
+  "ultimo_ok": "2026-11-02T04:51:09.680Z"
  },
  "heidelberg": {
   "quando": "2026-11-02T03:25:54.246Z",
@@ -200,7 +200,7 @@
   "ultimo_ok": "2026-11-02T03:25:54.246Z"
  },
  "loc": {
-  "quando": "2026-11-01T04:56:25.829Z",
+  "quando": "2026-11-02T04:51:09.680Z",
   "esito": "errore: HTTP 429 https://www.loc.gov/collections/manuscripts-in-st-catherines-monastery-mount-sinai/?fo=json&c=100&sp=2",
   "ultimo_ok": "2026-10-31T04:48:54.222Z"
  },
@@ -295,9 +295,9 @@
   "ultimo_ok": "2026-11-02T04:38:57.099Z"
  },
  "penn": {
-  "quando": "2026-11-01T04:56:25.829Z",
+  "quando": "2026-11-02T04:51:09.680Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-01T04:56:25.829Z"
+  "ultimo_ok": "2026-11-02T04:51:09.680Z"
  },
  "pergamos": {
   "quando": "2026-11-01T05:17:36.526Z",
@@ -395,7 +395,7 @@
   "ultimo_ok": "2026-11-01T04:22:45.013Z"
  },
  "walters": {
-  "quando": "2026-11-01T04:56:25.829Z",
+  "quando": "2026-11-02T04:51:09.680Z",
   "esito": "sospesa: le immagini di thedigitalwalters.org non si caricano nemmeno dal browser (errore 522 del server del museo, 25 ottobre 2026)",
   "ultimo_ok": null
  },
