@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-02T05:06:32.419Z",
- "totale": 644654,
- "con_autori": 37175,
- "miniati": 10977,
- "musica": 21117,
- "manoscritti": 532171,
+ "aggiornato": "2026-11-02T05:25:29.432Z",
+ "totale": 644657,
+ "con_autori": 37177,
+ "miniati": 10979,
+ "musica": 21118,
+ "manoscritti": 532174,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -101,11 +101,11 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 8109
+   "codici": 8110
   },
   "en": {
    "nome": "inglese",
-   "codici": 7882
+   "codici": 7884
   },
   "cop": {
    "nome": "copto",
@@ -443,7 +443,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15664
+   "codici": 15666
   },
   "medievale": {
    "nome": "autori medievali",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 526865
+   "codici": 526868
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -2569,7 +2569,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7120,
+   "codici": 7122,
    "forme": [
     "Bibliae",
     "Biblia sacra",
@@ -9392,26 +9392,26 @@
   },
   "toronto": {
    "nome": "University of Toronto, Thomas Fisher Rare Book Library (collections.library.utoronto.ca)",
-   "codici": 202,
+   "codici": 205,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 27,
-   "musica": 4,
+   "miniati": 29,
+   "musica": 5,
    "papiri": 0,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 34,
+   "con_autori": 36,
    "lingue": {
     "?": 98,
     "he": 28,
-    "en": 25,
+    "en": 27,
     "la": 29,
     "tr": 3,
     "ar": 2,
     "fr": 7,
-    "it": 9,
+    "it": 10,
     "nl": 2,
     "de": 2,
     "pt": 3
@@ -9857,7 +9857,7 @@
     "?": 273,
     "fr": 4
    },
-   "esito": "ok",
+   "esito": "errore: SPARQL: HTTP 401",
    "prefissi": [
     "getty-"
    ],
@@ -10912,7 +10912,7 @@
   {
    "file": "indice/toronto-0.json",
    "fonte": "toronto",
-   "righe": 202
+   "righe": 205
   },
   {
    "file": "indice/mdc-0.json",
@@ -23060,7 +23060,7 @@
   6,
   1,
   9,
-  202,
+  205,
   494,
   1,
   1,
