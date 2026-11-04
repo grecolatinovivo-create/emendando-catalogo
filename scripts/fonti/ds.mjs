@@ -31,6 +31,19 @@ export const DOMINI_DA_VERIFICARE = {
   "repository.wellesley.edu": "Wellesley College: Cloudflare dal container; dal browser non si apre (25 ottobre 2026)",
 };
 export const DOMINI_CONFERMATI = ["nrs.lib.harvard.edu", "figgy.princeton.edu", "digitalcollections.rit.edu", "digital.buffalolib.org"];
+// singoli manifesti che la biblioteca non apre al pubblico (403 «Users are not permitted to access the listed record») o che non
+// esistono più (404): fuori, dal 4 novembre 2026 (controllo di tutti i manifesti della Newberry: 9 su 241)
+export const MANIFESTI_ESCLUSI = new Set([
+  "https://collections.newberry.org/IIIF3/Presentation/Manifest/2KXJ8Z9UJZWK",   // 404
+  "https://collections.newberry.org/IIIF3/Presentation/Manifest/2KXJ8ZF908T7",   // 404
+  "https://collections.newberry.org/IIIF3/Presentation/Manifest/2KXJ8Z9UZDJR",   // 403
+  "https://collections.newberry.org/IIIF3/Presentation/Manifest/2KXJ8ZPBT0IO",   // 403
+  "https://collections.newberry.org/IIIF3/Presentation/Manifest/2KXJ8ZPBTD07",   // 403
+  "https://collections.newberry.org/IIIF3/Presentation/Manifest/2KXJ8ZPBTHPK",   // 403 (VAULT Case MS 4A 32 no. 2)
+  "https://collections.newberry.org/IIIF3/Presentation/Manifest/2KXJ8ZPBTN85",   // 403
+  "https://collections.newberry.org/IIIF3/Presentation/Manifest/2KXJ8ZPBTWV7",   // 403
+  "https://collections.newberry.org/IIIF3/Presentation/Manifest/2KXJ8ZPDNWAD",   // 403
+]);
 // manifesti che non esistono più (404): fuori
 export const DOMINI_ESCLUSI = { "colenda.library.upenn.edu": "vecchi manifesti di Colenda (404); i codici di Penn sono nella fonte penn" };
 
@@ -234,6 +247,7 @@ export function recordDs(st = leggiStato(), { esistenti = { manifesti: new Set()
   for (const [ds, v] of Object.entries(st.voci || {})) {
     const manifest = manifestoDs(v.m);
     if (!manifest || !ammesso(manifest, confermati)) { if (scarti) scarti.dominio = (scarti.dominio || 0) + 1; continue; }
+    if (MANIFESTI_ESCLUSI.has(manifest)) { if (scarti) scarti.chiusi = (scarti.chiusi || 0) + 1; continue; }
     const doppia = esistenti.manifesti.has(manifest) ||
       [...esistenti.segnature.entries()].some(([re, set]) => new RegExp(re).test(v.i || "") && set.has(norm(v.s)));
     if (doppia) { if (scarti) scarti.doppioni = (scarti.doppioni || 0) + 1; continue; }

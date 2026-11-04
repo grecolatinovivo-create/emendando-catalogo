@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-04T03:28:45.341Z",
+ "aggiornato": "2026-11-04T16:37:17.825Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -134,7 +134,7 @@
   },
   "ds": {
    "nome": "Digital Scriptorium: istituzioni statunitensi (search.digital-scriptorium.org)",
-   "codici": 174,
+   "codici": 171,
    "esito": "ok"
   },
   "harvard": {
@@ -423,7 +423,7 @@
    "esito": "ok"
   }
  },
- "totale": 11940,
+ "totale": 11937,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -19573,7 +19573,7 @@
    "biblioteca": "Bayerische Staatsbibliothek",
    "citta": "München",
    "segnatura": "Clm 21562",
-   "datazione": "Zwischen 1182 und 1197",
+   "datazione": "12. Jh.",
    "secolo": [
     12,
     12
@@ -19605,7 +19605,7 @@
    "biblioteca": "Bayerische Staatsbibliothek",
    "citta": "München",
    "segnatura": "Clm 21563",
-   "datazione": "Zwischen 1182 und 1197",
+   "datazione": "12. Jh.",
    "secolo": [
     12,
     12
@@ -310419,7 +310419,15 @@
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/64a66014-d534-4ff3-ac04-6178d105be09.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/64a66014-d534-4ff3-ac04-6178d105be09/",
    "licenza": "CC BY-NC 4.0",
-   "immagini": null
+   "immagini": null,
+   "riproduzioni": [
+    {
+     "id": "hd-bodleian_mslaudlat29",
+     "fonte": "heidelberg",
+     "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/bodleian_mslaudlat29/manifest.json",
+     "pagina": "https://digi.ub.uni-heidelberg.de/diglit/bodleian_mslaudlat29"
+    }
+   ]
   },
   {
    "id": "bod-138d165a-acb0-4269-ab7a-64babe8ba382",
@@ -311317,7 +311325,15 @@
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/f0e484d2-7549-4962-bae6-69edb5db2f87.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/f0e484d2-7549-4962-bae6-69edb5db2f87/",
    "licenza": "CC BY-NC 4.0",
-   "immagini": null
+   "immagini": null,
+   "riproduzioni": [
+    {
+     "id": "hd-bodleian_mslaudmisc323",
+     "fonte": "heidelberg",
+     "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/bodleian_mslaudmisc323/manifest.json",
+     "pagina": "https://digi.ub.uni-heidelberg.de/diglit/bodleian_mslaudmisc323"
+    }
+   ]
   },
   {
    "id": "bod-39648490-7d67-4a81-a904-70494a68b1d1",
@@ -311472,7 +311488,9 @@
     14,
     14
    ],
-   "lingue": [],
+   "lingue": [
+    "la"
+   ],
    "lingua_dedotta": false,
    "titolo": "Theological treatises, meditations and extracts",
    "autori": [
@@ -311540,7 +311558,15 @@
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/78ea2d5c-01ef-4b0a-87e2-dcb559cea873.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/78ea2d5c-01ef-4b0a-87e2-dcb559cea873/",
    "licenza": "CC BY-NC 4.0",
-   "immagini": null
+   "immagini": null,
+   "riproduzioni": [
+    {
+     "id": "hd-bodleian_mslaudmisc493",
+     "fonte": "heidelberg",
+     "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/bodleian_mslaudmisc493/manifest.json",
+     "pagina": "https://digi.ub.uni-heidelberg.de/diglit/bodleian_mslaudmisc493"
+    }
+   ]
   },
   {
    "id": "bod-aefef404-41c4-40d4-a82d-a94ad92adf2e",
@@ -345467,40 +345493,6 @@
    "immagini": null
   },
   {
-   "id": "ds-ds17916",
-   "fonte": "ds",
-   "biblioteca": "Newberry Library",
-   "citta": "Chicago",
-   "segnatura": "VAULT Ayer 6 .P9 M5 1518",
-   "datazione": "1518?",
-   "secolo": [
-    16,
-    16
-   ],
-   "lingue": [
-    "la"
-   ],
-   "lingua_dedotta": false,
-   "titolo": "Manuscript maps derived from an early 16th-century edition of Ptolemy's Geographia ; Geographia",
-   "autori": [
-    {
-     "id": "tolomeo",
-     "autore": "Tolomeo",
-     "latino": "Ptolemaeus",
-     "categoria": "classico-greco",
-     "opere": [
-      "Geografia"
-     ],
-     "corrispondenza": "autore: «Ptolemy, active 2nd century»"
-    }
-   ],
-   "manifest": "https://collections.newberry.org/IIIF3/Presentation/Manifest/2KXJ8ZF908T7",
-   "pagina": "https://search.digital-scriptorium.org/catalog/DS17916",
-   "licenza": null,
-   "immagini": null,
-   "tipo": "carta"
-  },
-  {
    "id": "ds-ds17810",
    "fonte": "ds",
    "biblioteca": "Newberry Library",
@@ -345530,37 +345522,6 @@
    ],
    "manifest": "https://collections.newberry.org/IIIF3/Presentation/Manifest/2KXJ8ZSQXA9CR",
    "pagina": "https://search.digital-scriptorium.org/catalog/DS17810",
-   "licenza": null,
-   "immagini": null
-  },
-  {
-   "id": "ds-ds17890",
-   "fonte": "ds",
-   "biblioteca": "Newberry Library",
-   "citta": "Chicago",
-   "segnatura": "VAULT Case MS 4A 32 no. 2",
-   "datazione": "1578",
-   "secolo": [
-    16,
-    16
-   ],
-   "lingue": [
-    "it"
-   ],
-   "lingua_dedotta": false,
-   "titolo": "Parer di Lodouico Casteluetro sopra una comedia di Aristophano, & sopra ciascuna di Plauto",
-   "autori": [
-    {
-     "id": "plauto",
-     "autore": "Plauto",
-     "latino": "Plautus",
-     "categoria": "classico-latino",
-     "opere": [],
-     "corrispondenza": "titolo: «Parer di Lodouico Casteluetro sopra una comedia di Aristophano, & sopra ciascuna di Plauto»"
-    }
-   ],
-   "manifest": "https://collections.newberry.org/IIIF3/Presentation/Manifest/2KXJ8ZPBTHPK",
-   "pagina": "https://search.digital-scriptorium.org/catalog/DS17890",
    "licenza": null,
    "immagini": null
   },
@@ -345664,41 +345625,6 @@
    "licenza": null,
    "immagini": null,
    "musica": true
-  },
-  {
-   "id": "ds-ds18152",
-   "fonte": "ds",
-   "biblioteca": "Newberry Library",
-   "citta": "Chicago",
-   "segnatura": "VAULT folio Case MS 23",
-   "datazione": "between 1300 and 1350",
-   "secolo": [
-    13,
-    14
-   ],
-   "lingue": [
-    "la"
-   ],
-   "lingua_dedotta": false,
-   "titolo": "Aristotle, Physica, De caelo et Mundo, Metaphysica, Parva naturalis, etc.",
-   "autori": [
-    {
-     "id": "aristotele",
-     "autore": "Aristotele",
-     "latino": "Aristoteles",
-     "categoria": "classico-greco",
-     "opere": [
-      "Metafisica",
-      "Fisica",
-      "De caelo"
-     ],
-     "corrispondenza": "autore: «Aristotle»"
-    }
-   ],
-   "manifest": "https://collections.newberry.org/IIIF3/Presentation/Manifest/2KXJ8ZPBT0IO",
-   "pagina": "https://search.digital-scriptorium.org/catalog/DS18152",
-   "licenza": null,
-   "immagini": null
   },
   {
    "id": "mns-aipdig-omagvm9_ruk_______0qmeewe",
