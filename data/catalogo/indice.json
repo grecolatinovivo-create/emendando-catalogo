@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-06T03:30:03.110Z",
- "totale": 644650,
+ "aggiornato": "2026-11-06T16:07:13.090Z",
+ "totale": 644652,
  "con_autori": 37174,
  "miniati": 10979,
  "musica": 21118,
- "manoscritti": 532167,
+ "manoscritti": 532169,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 35301
+   "codici": 35302
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -93,7 +93,7 @@
   },
   "zh": {
    "nome": "cinese",
-   "codici": 9653
+   "codici": 9654
   },
   "pl": {
    "nome": "polacco",
@@ -453,11 +453,11 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 526863
+   "codici": 526864
   },
   "carta": {
    "nome": "carte manoscritte",
-   "codici": 2089
+   "codici": 2090
   },
   "carta_stampa": {
    "nome": "carte a stampa",
@@ -8298,8 +8298,8 @@
   },
   "yale": {
    "nome": "Yale University Library, Beinecke e altre (collections.library.yale.edu)",
-   "codici": 2972,
-   "carte": 165,
+   "codici": 2974,
+   "carte": 166,
    "carte_stampa": 50,
    "miniati": 513,
    "musica": 164,
@@ -8319,7 +8319,7 @@
     "es": 48,
     "it": 215,
     "?": 39,
-    "ar": 308,
+    "ar": 309,
     "syr": 9,
     "tr": 23,
     "fa": 73,
@@ -8336,6 +8336,7 @@
     "cu": 2,
     "ru": 9,
     "cop": 5,
+    "zh": 1,
     "ja": 18,
     "ko": 2,
     "gez": 6,
@@ -10752,7 +10753,7 @@
   {
    "file": "indice/yale-0.json",
    "fonte": "yale",
-   "righe": 2972
+   "righe": 2974
   },
   {
    "file": "indice/penn-0.json",
@@ -20672,7 +20673,7 @@
   3,
   37963,
   1,
-  2944,
+  2946,
   6093,
   2,
   1,
