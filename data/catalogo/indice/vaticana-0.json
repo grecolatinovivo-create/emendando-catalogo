@@ -3245,6 +3245,7 @@
 ["bav-barb-lat-6383","Barb. lat. 6383",263,"la",0,0,"","","","",1,"","","",""],
 ["bav-barb-lat-6387","Barb. lat. 6387",263,"la",0,0,"","","","",1,"","","",""],
 ["bav-barb-lat-6388","Barb. lat. 6388",263,"la",0,0,"","","","",1,"","","",""],
+["bav-barb-lat-6391","Barb. lat. 6391",263,"la",0,0,"","","","",1,"","","",""],
 ["bav-barb-lat-6401","Barb. lat. 6401",263,"la",0,0,"","","","",1,"","","",""],
 ["bav-barb-lat-6406","Barb. lat. 6406",263,"la",0,0,"","","","",1,"","","",""],
 ["bav-barb-lat-6408","Barb. lat. 6408",263,"la",0,0,"","","","",1,"","","",""],
@@ -19997,6 +19998,5 @@
 ["bav-vat-lat-214","Vat. lat. 214",263,"la",15,15,"","","","",1,"","","",""],
 ["bav-vat-lat-215","Vat. lat. 215",263,"la",15,15,"lattanzio","Firmiani Lactantii opera complura","","",1,"","","",""],
 ["bav-vat-lat-216","Vat. lat. 216",263,"la",15,15,"lattanzio","Firmiani Lactantii opera nonnulla","","",1,"","","",""],
-["bav-vat-lat-217","Vat. lat. 217",263,"la",0,0,"","","","",1,"","","",""],
-["bav-vat-lat-218","Vat. lat. 218",263,"la",15,15,"lattanzio","Firmiani Lactantii opera nonnulla","","",1,"","","",""]
+["bav-vat-lat-217","Vat. lat. 217",263,"la",0,0,"","","","",1,"","","",""]
 ]}
