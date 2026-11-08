@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-07T03:27:46.260Z",
+ "aggiornato": "2026-11-08T03:41:05.316Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -14,12 +14,12 @@
   },
   "bsb": {
    "nome": "Bayerische Staatsbibliothek (digitale-sammlungen.de)",
-   "codici": 935,
+   "codici": 938,
    "esito": "ok"
   },
   "berlino": {
    "nome": "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
-   "codici": 134,
+   "codici": 135,
    "esito": "ok"
   },
   "bodleian": {
@@ -70,7 +70,7 @@
   "malatestiana": {
    "nome": "Biblioteca Malatestiana, Cesena (Catalogo aperto dei manoscritti malatestiani; manifesti scritti dal catalogo)",
    "codici": 94,
-   "esito": "errore: schede lette in parte (mancano 61): riprenderà alla prossima esecuzione"
+   "esito": "errore: schede lette in parte (mancano 60): riprenderà alla prossima esecuzione"
   },
   "classense": {
    "nome": "Biblioteca Classense, Ravenna (www.cdc.classense.ra.it; elenco raccolto dal browser)",
@@ -423,7 +423,7 @@
    "esito": "ok"
   }
  },
- "totale": 11937,
+ "totale": 11941,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -12605,6 +12605,40 @@
    "immagini": null
   },
   {
+   "id": "bsb-bsb00164207",
+   "fonte": "bsb",
+   "biblioteca": "Bayerische Staatsbibliothek",
+   "citta": "München",
+   "segnatura": "Clm 4842",
+   "datazione": "1652",
+   "secolo": [
+    17,
+    17
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Commentarii in Aristotelis libros de coelo, de generatione et corruptione, de anima, de Metaphysicis, de meteoris",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "De anima",
+      "De generatione et corruptione"
+     ],
+     "corrispondenza": "titolo: «…Aristotelis libros de coelo, de generatione et corruptione, de anima, de Metaphysicis, d…»"
+    }
+   ],
+   "manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00164207/manifest",
+   "pagina": "https://www.digitale-sammlungen.de/view/bsb00164207",
+   "licenza": null,
+   "immagini": null
+  },
+  {
    "id": "bsb-bsb00164212",
    "fonte": "bsb",
    "biblioteca": "Bayerische Staatsbibliothek",
@@ -12702,6 +12736,41 @@
    ],
    "manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00164215/manifest",
    "pagina": "https://www.digitale-sammlungen.de/view/bsb00164215",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "bsb-bsb00164230",
+   "fonte": "bsb",
+   "biblioteca": "Bayerische Staatsbibliothek",
+   "citta": "München",
+   "segnatura": "Clm 4853 c",
+   "datazione": "1701-1702",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Caroli Meichelbeckh cursus philosophici p. I, II, III, IV: Physica particularis (de coelo, de ortu et interitu, de elemntis, de anima) et Metaphysica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica",
+      "Fisica",
+      "De anima"
+     ],
+     "corrispondenza": "titolo: «…tu, de elemntis, de anima) et Metaphysica»"
+    }
+   ],
+   "manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00164230/manifest",
+   "pagina": "https://www.digitale-sammlungen.de/view/bsb00164230",
    "licenza": null,
    "immagini": null
   },
@@ -19204,6 +19273,39 @@
    ],
    "manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00049621/manifest",
    "pagina": "https://www.digitale-sammlungen.de/view/bsb00049621",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "bsb-bsb00164581",
+   "fonte": "bsb",
+   "biblioteca": "Bayerische Staatsbibliothek",
+   "citta": "München",
+   "segnatura": "Clm 19514",
+   "datazione": "15. Jh.",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De beneficiis ecclesiasticis [u.a.]",
+   "autori": [
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [
+      "De beneficiis"
+     ],
+     "corrispondenza": "titolo: «De beneficiis ecclesiasticis [u.a.]»"
+    }
+   ],
+   "manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00164581/manifest",
+   "pagina": "https://www.digitale-sammlungen.de/view/bsb00164581",
    "licenza": null,
    "immagini": null
   },
@@ -310419,7 +310521,15 @@
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/64a66014-d534-4ff3-ac04-6178d105be09.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/64a66014-d534-4ff3-ac04-6178d105be09/",
    "licenza": "CC BY-NC 4.0",
-   "immagini": null
+   "immagini": null,
+   "riproduzioni": [
+    {
+     "id": "hd-bodleian_mslaudlat29",
+     "fonte": "heidelberg",
+     "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/bodleian_mslaudlat29/manifest.json",
+     "pagina": "https://digi.ub.uni-heidelberg.de/diglit/bodleian_mslaudlat29"
+    }
+   ]
   },
   {
    "id": "bod-138d165a-acb0-4269-ab7a-64babe8ba382",
@@ -311317,7 +311427,15 @@
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/f0e484d2-7549-4962-bae6-69edb5db2f87.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/f0e484d2-7549-4962-bae6-69edb5db2f87/",
    "licenza": "CC BY-NC 4.0",
-   "immagini": null
+   "immagini": null,
+   "riproduzioni": [
+    {
+     "id": "hd-bodleian_mslaudmisc323",
+     "fonte": "heidelberg",
+     "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/bodleian_mslaudmisc323/manifest.json",
+     "pagina": "https://digi.ub.uni-heidelberg.de/diglit/bodleian_mslaudmisc323"
+    }
+   ]
   },
   {
    "id": "bod-39648490-7d67-4a81-a904-70494a68b1d1",
@@ -311472,7 +311590,9 @@
     14,
     14
    ],
-   "lingue": [],
+   "lingue": [
+    "la"
+   ],
    "lingua_dedotta": false,
    "titolo": "Theological treatises, meditations and extracts",
    "autori": [
@@ -311540,7 +311660,15 @@
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/78ea2d5c-01ef-4b0a-87e2-dcb559cea873.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/78ea2d5c-01ef-4b0a-87e2-dcb559cea873/",
    "licenza": "CC BY-NC 4.0",
-   "immagini": null
+   "immagini": null,
+   "riproduzioni": [
+    {
+     "id": "hd-bodleian_mslaudmisc493",
+     "fonte": "heidelberg",
+     "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/bodleian_mslaudmisc493/manifest.json",
+     "pagina": "https://digi.ub.uni-heidelberg.de/diglit/bodleian_mslaudmisc493"
+    }
+   ]
   },
   {
    "id": "bod-aefef404-41c4-40d4-a82d-a94ad92adf2e",
@@ -330692,8 +330820,8 @@
     13
    ],
    "lingue": [
-    "it",
-    "la"
+    "la",
+    "it"
    ],
    "lingua_dedotta": false,
    "titolo": "Biography of Petrarch; Glosse de libris meteororum (Gloss on the Book of Meteors); Glosse de libris meteororum IV (Gloss on the Book of Meteors IV)",
@@ -332455,7 +332583,7 @@
      "corrispondenza": "autore: «Sallust, 86 B.C.-34 B.C.»"
     }
    ],
-   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:939443:MANIFEST:2",
+   "manifest": "https://nrs.lib.harvard.edu/URN-3:FHCL.HOUGH:26540600:MANIFEST:2",
    "pagina": "https://search.digital-scriptorium.org/catalog/DS10452",
    "licenza": null,
    "immagini": null
@@ -373432,6 +373560,39 @@
    ],
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN812464044/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN812464044",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN1878469096",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "Ms. Ham. 167",
+   "datazione": "1472",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epistolae ad familiares",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epistulae ad familiares"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1878469096/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1878469096",
    "licenza": "Public Domain Mark 1.0",
    "immagini": null
   },

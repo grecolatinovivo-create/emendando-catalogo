@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-07T21:25:36.891Z",
- "totale": 644654,
- "con_autori": 37174,
+ "aggiornato": "2026-11-08T03:41:05.316Z",
+ "totale": 644685,
+ "con_autori": 37182,
  "miniati": 10979,
- "musica": 21118,
- "manoscritti": 532171,
+ "musica": 21122,
+ "manoscritti": 532202,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,11 +37,11 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 105917
+   "codici": 105935
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 55796
+   "codici": 55801
   },
   "grc": {
    "nome": "greco",
@@ -57,11 +57,11 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 26558
+   "codici": 26560
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23468
+   "codici": 23475
   },
   "xx": {
    "nome": "altre lingue",
@@ -435,11 +435,11 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 7822
+   "codici": 7824
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7413
+   "codici": 7416
   },
   "cristiano": {
    "nome": "autori cristiani",
@@ -447,13 +447,13 @@
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 9718
+   "codici": 9721
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 526866
+   "codici": 526897
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -539,7 +539,7 @@
    "nome": "Cicerone",
    "latino": "Cicero",
    "categoria": "classico-latino",
-   "codici": 1381,
+   "codici": 1382,
    "forme": [
     "Ciceronis",
     "Ciceronem",
@@ -683,7 +683,7 @@
    "nome": "Seneca",
    "latino": "Seneca",
    "categoria": "classico-latino",
-   "codici": 512,
+   "codici": 513,
    "forme": [
     "Senecae",
     "Senecam",
@@ -1624,7 +1624,7 @@
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 2316,
+   "codici": 2318,
    "forme": [
     "Aristotelis",
     "Aristotle",
@@ -2380,7 +2380,7 @@
    "nome": "Ateneo",
    "latino": "Athenaeus",
    "categoria": "classico-greco",
-   "codici": 5,
+   "codici": 6,
    "forme": [
     "Athenaeus Naucratita",
     "Ateneo di Naucrati",
@@ -2437,7 +2437,7 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 2971,
+   "codici": 2972,
    "forme": [
     "Augustini",
     "Augustino",
@@ -2457,7 +2457,7 @@
    "nome": "Girolamo",
    "latino": "Hieronymus",
    "categoria": "cristiano",
-   "codici": 1384,
+   "codici": 1385,
    "forme": [
     "Hieronymi",
     "Hieronymo",
@@ -2569,7 +2569,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7122,
+   "codici": 7121,
    "forme": [
     "Bibliae",
     "Biblia sacra",
@@ -2771,7 +2771,7 @@
    "nome": "Isidoro di Siviglia",
    "latino": "Isidorus Hispalensis",
    "categoria": "medievale",
-   "codici": 688,
+   "codici": 689,
    "forme": [
     "Isidori Hispalensis",
     "Isidore of Seville",
@@ -2919,7 +2919,7 @@
    "nome": "Graziano",
    "latino": "Gratianus",
    "categoria": "medievale",
-   "codici": 251,
+   "codici": 252,
    "forme": [
     "Gratiani",
     "Gratian",
@@ -2984,7 +2984,7 @@
    "nome": "Ugo di San Vittore",
    "latino": "Hugo de Sancto Victore",
    "categoria": "medievale",
-   "codici": 318,
+   "codici": 319,
    "forme": [
     "Hugonis de Sancto Victore",
     "Hugo de S Victore",
@@ -3040,7 +3040,7 @@
    "nome": "Egidio Romano",
    "latino": "Aegidius Romanus",
    "categoria": "medievale",
-   "codici": 151,
+   "codici": 150,
    "forme": [
     "Aegidii Romani",
     "Giles of Rome",
@@ -3104,7 +3104,7 @@
    "nome": "Francesco Petrarca",
    "latino": "Franciscus Petrarca",
    "categoria": "medievale",
-   "codici": 457,
+   "codici": 458,
    "forme": [
     "Francisci Petrarcae",
     "Petrarca",
@@ -7362,10 +7362,10 @@
    "edizioni_principi": 0,
    "con_autori": 413,
    "lingue": {
-    "de": 1461,
+    "de": 1462,
     "la": 1206,
     "he": 46,
-    "?": 72,
+    "?": 71,
     "egy": 28,
     "grc": 3359,
     "cop": 1368,
@@ -7440,23 +7440,23 @@
   },
   "bsb": {
    "nome": "Bayerische Staatsbibliothek (digitale-sammlungen.de)",
-   "codici": 28787,
+   "codici": 28803,
    "carte": 197,
    "carte_stampa": 1,
    "miniati": 1158,
-   "musica": 8800,
+   "musica": 8804,
    "papiri": 93,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 2647,
+   "con_autori": 2651,
    "lingue": {
-    "?": 5804,
+    "?": 5807,
     "it": 529,
-    "de": 11322,
-    "la": 8471,
-    "fr": 958,
+    "de": 11325,
+    "la": 8481,
+    "fr": 959,
     "xx": 374,
     "en": 136,
     "he": 540,
@@ -7502,7 +7502,7 @@
    "prefissi": [
     "bsb-"
    ],
-   "pezzi_voci": 36,
+   "pezzi_voci": 37,
    "indice": [
     "indice/bsb-0.json",
     "indice/bsb-1.json"
@@ -7510,7 +7510,7 @@
   },
   "berlino": {
    "nome": "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
-   "codici": 3291,
+   "codici": 3305,
    "carte": 4,
    "carte_stampa": 0,
    "miniati": 2,
@@ -7520,18 +7520,18 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 327,
+   "con_autori": 328,
    "lingue": {
-    "la": 713,
-    "de": 1597,
+    "la": 715,
+    "de": 1600,
     "en": 13,
-    "fr": 97,
+    "fr": 98,
     "xx": 44,
     "he": 7,
     "grc": 22,
     "nl": 34,
     "it": 94,
-    "?": 734,
+    "?": 742,
     "sv": 8,
     "cu": 47,
     "oc": 1,
@@ -7565,12 +7565,12 @@
    "edizioni_principi": 0,
    "con_autori": 1438,
    "lingue": {
-    "la": 3787,
+    "la": 3788,
     "fa": 94,
     "fr": 312,
     "cy": 23,
     "en": 2515,
-    "?": 947,
+    "?": 946,
     "zh": 656,
     "xx": 391,
     "mnc": 6,
@@ -7622,7 +7622,7 @@
   },
   "gallica": {
    "nome": "Bibliothèque nationale de France (gallica.bnf.fr)",
-   "codici": 68446,
+   "codici": 68447,
    "carte": 85,
    "carte_stampa": 2,
    "miniati": 1968,
@@ -7632,10 +7632,10 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 9628,
+   "con_autori": 9629,
    "lingue": {
     "fr": 19837,
-    "la": 13167,
+    "la": 13168,
     "grc": 4110,
     "?": 4283,
     "he": 1567,
@@ -7936,7 +7936,7 @@
     "la": 88,
     "it": 7
    },
-   "esito": "errore: schede lette in parte (mancano 61): riprenderà alla prossima esecuzione",
+   "esito": "errore: schede lette in parte (mancano 60): riprenderà alla prossima esecuzione",
    "prefissi": [
     "mala-"
    ],
@@ -8259,8 +8259,8 @@
    "edizioni_principi": 0,
    "con_autori": 756,
    "lingue": {
-    "?": 1424,
-    "la": 2114,
+    "?": 1423,
+    "la": 2115,
     "fr": 203,
     "es": 51,
     "it": 204,
@@ -8441,7 +8441,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 932,
+   "con_autori": 931,
    "lingue": {
     "la": 2521,
     "it": 275,
@@ -10327,12 +10327,12 @@
    "incunaboli": 15587,
    "stampe": 72,
    "edizioni_principi": 172,
-   "con_autori": 4906,
+   "con_autori": 4908,
    "lingue": {
     "grc": 178,
-    "la": 6500,
+    "la": 6503,
     "de": 823,
-    "?": 7100,
+    "?": 7097,
     "it": 303,
     "es": 28,
     "fr": 726,
@@ -10575,7 +10575,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 1672,
+   "con_autori": 1673,
    "lingue": {
     "la": 21006,
     "it": 470,
@@ -10628,12 +10628,12 @@
   {
    "file": "indice/bsb-1.json",
    "fonte": "bsb",
-   "righe": 8787
+   "righe": 8803
   },
   {
    "file": "indice/berlino-0.json",
    "fonte": "berlino",
-   "righe": 3291
+   "righe": 3305
   },
   {
    "file": "indice/bodleian-0.json",
@@ -10658,7 +10658,7 @@
   {
    "file": "indice/gallica-3.json",
    "fonte": "gallica",
-   "righe": 8446
+   "righe": 8447
   },
   {
    "file": "indice/laurenziana-0.json",
@@ -20671,7 +20671,7 @@
   10,
   1,
   3,
-  37963,
+  37979,
   1,
   2946,
   6093,
@@ -20866,7 +20866,7 @@
   1,
   1553,
   24,
-  62712,
+  62713,
   28,
   752,
   4,
@@ -22943,7 +22943,7 @@
   17,
   5,
   175,
-  12164,
+  12178,
   7,
   16,
   27,
