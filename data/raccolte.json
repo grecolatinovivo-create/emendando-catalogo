@@ -1,8 +1,8 @@
 {
  "ambrosiana": {
-  "quando": "2026-11-07T02:48:51.182Z",
+  "quando": "2026-11-08T02:52:20.534Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-07T02:48:51.182Z"
+  "ultimo_ok": "2026-11-08T02:52:20.534Z"
  },
  "archive": {
   "quando": "2026-11-07T05:16:01.187Z",
@@ -40,9 +40,9 @@
   "ultimo_ok": "2026-11-07T04:50:29.245Z"
  },
  "bncf": {
-  "quando": "2026-11-07T02:48:51.182Z",
+  "quando": "2026-11-08T02:52:20.534Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-07T02:48:51.182Z"
+  "ultimo_ok": "2026-11-08T02:52:20.534Z"
  },
  "bnl": {
   "quando": "2026-11-07T03:47:48.409Z",
@@ -60,14 +60,14 @@
   "ultimo_ok": "2026-11-07T03:16:14.598Z"
  },
  "bub": {
-  "quando": "2026-11-07T02:48:51.182Z",
+  "quando": "2026-11-08T02:52:20.534Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-07T02:48:51.182Z"
+  "ultimo_ok": "2026-11-08T02:52:20.534Z"
  },
  "casanatense": {
-  "quando": "2026-11-07T02:48:51.182Z",
+  "quando": "2026-11-08T02:52:20.534Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-07T02:48:51.182Z"
+  "ultimo_ok": "2026-11-08T02:52:20.534Z"
  },
  "cbl": {
   "quando": "2026-11-07T04:29:48.628Z",
@@ -205,8 +205,8 @@
   "ultimo_ok": "2026-10-31T04:48:54.222Z"
  },
  "malatestiana": {
-  "quando": "2026-11-07T02:48:51.182Z",
-  "esito": "errore: schede lette in parte (mancano 61): riprenderà alla prossima esecuzione",
+  "quando": "2026-11-08T02:52:20.534Z",
+  "esito": "errore: schede lette in parte (mancano 60): riprenderà alla prossima esecuzione",
   "ultimo_ok": null
  },
  "manchester": {
@@ -230,9 +230,9 @@
   "ultimo_ok": "2026-11-08T01:49:18.310Z"
  },
  "montecassino": {
-  "quando": "2026-11-07T02:48:51.182Z",
+  "quando": "2026-11-08T02:52:20.534Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-07T02:48:51.182Z"
+  "ultimo_ok": "2026-11-08T02:52:20.534Z"
  },
  "musei": {
   "quando": "2026-11-07T04:33:11.626Z",
@@ -380,9 +380,9 @@
   "ultimo_ok": "2026-11-08T00:59:35.762Z"
  },
  "vallicelliana": {
-  "quando": "2026-11-07T02:48:51.182Z",
+  "quando": "2026-11-08T02:52:20.534Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-07T02:48:51.182Z"
+  "ultimo_ok": "2026-11-08T02:52:20.534Z"
  },
  "vaticana": {
   "quando": "2026-11-08T00:45:24.982Z",
