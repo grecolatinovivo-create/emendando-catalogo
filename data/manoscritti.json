@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-08T03:51:11.600Z",
+ "aggiornato": "2026-11-09T03:01:05.809Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -59,13 +59,13 @@
   },
   "bncf": {
    "nome": "Biblioteca Nazionale Centrale di Firenze (manoscritti pubblicati dalla Biblioteca su Internet Archive, archive.org)",
-   "codici": 73,
+   "codici": 76,
    "esito": "ok"
   },
   "vallicelliana": {
    "nome": "Biblioteca Vallicelliana, Roma (omnes.dbseret.com/vallicelliana)",
    "codici": 0,
-   "esito": "ok"
+   "esito": "errore: pagina 1: HTTP 404"
   },
   "malatestiana": {
    "nome": "Biblioteca Malatestiana, Cesena (Catalogo aperto dei manoscritti malatestiani; manifesti scritti dal catalogo)",
@@ -423,7 +423,7 @@
    "esito": "ok"
   }
  },
- "totale": 11941,
+ "totale": 11944,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -129755,6 +129755,88 @@
    "immagini": null
   },
   {
+   "id": "bncf-ii.-ii.-36",
+   "fonte": "bncf",
+   "biblioteca": "Biblioteca Nazionale Centrale di Firenze",
+   "citta": "Firenze",
+   "segnatura": "Fondo Nazionale II.II.36",
+   "datazione": "sec. XIV",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Giovanni Boccaccio, Filostrato , ms., sec. XIV, cart.,",
+   "autori": [
+    {
+     "id": "filostrato",
+     "autore": "Filostrato",
+     "latino": "Philostratus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Giovanni Boccaccio, Filostrato , ms., sec. XIV, cart.,»"
+    },
+    {
+     "id": "boccaccio",
+     "autore": "Giovanni Boccaccio",
+     "latino": "Iohannes Boccaccius",
+     "categoria": "medievale",
+     "opere": [
+      "Filostrato"
+     ],
+     "corrispondenza": "autore: «Giovanni Boccaccio»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/ii.-ii.-36/manifest.json",
+   "pagina": "https://archive.org/details/ii.-ii.-36",
+   "licenza": "Biblioteca Nazionale Centrale di Firenze: pubblico dominio, riproduzioni solo per fini non commerciali (art. 108 del Codice dei Beni Culturali)",
+   "immagini": null
+  },
+  {
+   "id": "bncf-ii.-ii.-37",
+   "fonte": "bncf",
+   "biblioteca": "Biblioteca Nazionale Centrale di Firenze",
+   "citta": "Firenze",
+   "segnatura": "Fondo Nazionale II.II.37",
+   "datazione": "sec. XIV",
+   "secolo": [
+    14,
+    14
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Giovanni Boccaccio, Filostrato , ms., sec. XIV, cart.,",
+   "autori": [
+    {
+     "id": "filostrato",
+     "autore": "Filostrato",
+     "latino": "Philostratus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Giovanni Boccaccio, Filostrato , ms., sec. XIV, cart.,»"
+    },
+    {
+     "id": "boccaccio",
+     "autore": "Giovanni Boccaccio",
+     "latino": "Iohannes Boccaccius",
+     "categoria": "medievale",
+     "opere": [
+      "Filostrato"
+     ],
+     "corrispondenza": "autore: «Giovanni Boccaccio»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/ii.-ii.-37/manifest.json",
+   "pagina": "https://archive.org/details/ii.-ii.-37",
+   "licenza": "Biblioteca Nazionale Centrale di Firenze: pubblico dominio, riproduzioni solo per fini non commerciali (art. 108 del Codice dei Beni Culturali)",
+   "immagini": null
+  },
+  {
    "id": "bncf-fondo-nazionale-ii.-ii.-38",
    "fonte": "bncf",
    "biblioteca": "Biblioteca Nazionale Centrale di Firenze",
@@ -130138,6 +130220,37 @@
    ],
    "manifest": "https://iiif.archive.org/iiif/3/ii-iv-214-images/manifest.json",
    "pagina": "https://archive.org/details/ii-iv-214-images",
+   "licenza": "Biblioteca Nazionale Centrale di Firenze: pubblico dominio, riproduzioni solo per fini non commerciali (art. 108 del Codice dei Beni Culturali)",
+   "immagini": null
+  },
+  {
+   "id": "bncf-ii.-ii.-87",
+   "fonte": "bncf",
+   "biblioteca": "Biblioteca Nazionale Centrale di Firenze",
+   "citta": "Firenze",
+   "segnatura": "Fondo Nazonale II.II.87",
+   "datazione": "sec. XV",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Marco Tullio Cicerone, Epistola a Quinto volgarizzata, ms., sec. XV, cart.,",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Marco Tullio Cicerone»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/ii.-ii.-87/manifest.json",
+   "pagina": "https://archive.org/details/ii.-ii.-87",
    "licenza": "Biblioteca Nazionale Centrale di Firenze: pubblico dominio, riproduzioni solo per fini non commerciali (art. 108 del Codice dei Beni Culturali)",
    "immagini": null
   },
