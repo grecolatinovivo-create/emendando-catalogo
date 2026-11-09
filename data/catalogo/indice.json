@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-09T04:48:32.786Z",
- "totale": 645141,
+ "aggiornato": "2026-11-09T06:12:47.067Z",
+ "totale": 645174,
  "con_autori": 37192,
- "miniati": 10978,
+ "miniati": 10979,
  "musica": 21122,
- "manoscritti": 532658,
+ "manoscritti": 532691,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 35302
+   "codici": 35303
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -65,11 +65,11 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 20309
+   "codici": 20342
   },
   "he": {
    "nome": "ebraico",
-   "codici": 19851
+   "codici": 19852
   },
   "pi": {
    "nome": "pali",
@@ -145,7 +145,7 @@
   },
   "ko": {
    "nome": "coreano",
-   "codici": 2393
+   "codici": 2391
   },
   "syr": {
    "nome": "siriaco",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 527353
+   "codici": 527386
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -9963,10 +9963,10 @@
   },
   "archive": {
    "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, John Carter Brown Library, Newberry Library, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
-   "codici": 15798,
+   "codici": 15831,
    "carte": 70,
    "carte_stampa": 0,
-   "miniati": 182,
+   "miniati": 183,
    "musica": 20,
    "papiri": 0,
    "epigrafi": 0,
@@ -9977,7 +9977,7 @@
    "lingue": {
     "tr": 247,
     "it": 1159,
-    "xx": 8223,
+    "xx": 8256,
     "la": 163,
     "grc": 10,
     "fr": 330,
@@ -9992,13 +9992,13 @@
     "hu": 1,
     "ja": 93,
     "nl": 3,
-    "ar": 650,
+    "ar": 651,
     "syr": 17,
     "fa": 481,
     "ru": 1,
     "hy": 3,
-    "ko": 1221,
-    "he": 30,
+    "ko": 1219,
+    "he": 31,
     "sa": 3198,
     "alg": 4,
     "sai": 2,
@@ -11003,7 +11003,7 @@
   {
    "file": "indice/archive-0.json",
    "fonte": "archive",
-   "righe": 15798
+   "righe": 15831
   },
   {
    "file": "indice/crossasia-0.json",
@@ -21084,7 +21084,7 @@
   192,
   32,
   4,
-  894,
+  896,
   420,
   1,
   1,
@@ -21280,7 +21280,7 @@
   1,
   1,
   2,
-  6986,
+  7019,
   1,
   1,
   1,
@@ -23374,7 +23374,7 @@
   1,
   9,
   181,
-  1232,
+  1230,
   232,
   32,
   6,
