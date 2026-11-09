@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-09T01:46:09.638Z",
- "totale": 644684,
+ "aggiornato": "2026-11-09T02:01:14.043Z",
+ "totale": 645128,
  "con_autori": 37178,
  "miniati": 10979,
  "musica": 21122,
- "manoscritti": 532201,
+ "manoscritti": 532645,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -65,7 +65,7 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 19863
+   "codici": 20309
   },
   "he": {
    "nome": "ebraico",
@@ -89,7 +89,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10470
+   "codici": 10468
   },
   "zh": {
    "nome": "cinese",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 526896
+   "codici": 527340
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -9428,7 +9428,7 @@
   },
   "mdc": {
    "nome": "Memòria Digital de Catalunya: Biblioteca de Catalunya, Ateneu Barcelonès, Biblioteca Museu Víctor Balaguer, Biblioteca Pública Episcopal de Barcelona (mdc.csuc.cat)",
-   "codici": 3811,
+   "codici": 4255,
    "carte": 1,
    "carte_stampa": 0,
    "miniati": 93,
@@ -9441,12 +9441,12 @@
    "con_autori": 37,
    "lingue": {
     "ca": 3212,
-    "es": 495,
+    "es": 493,
     "fr": 20,
     "la": 189,
     "ar": 4,
     "?": 31,
-    "xx": 5,
+    "xx": 451,
     "it": 11,
     "en": 3,
     "oc": 4,
@@ -9456,7 +9456,7 @@
    "prefissi": [
     "mdc-"
    ],
-   "pezzi_voci": 5,
+   "pezzi_voci": 6,
    "indice": [
     "indice/mdc-0.json"
    ]
@@ -10918,7 +10918,7 @@
   {
    "file": "indice/mdc-0.json",
    "fonte": "mdc",
-   "righe": 3811
+   "righe": 4255
   },
   {
    "file": "indice/ub-0.json",
@@ -20797,7 +20797,7 @@
   31,
   1,
   5,
-  155,
+  599,
   99,
   2408,
   210,
