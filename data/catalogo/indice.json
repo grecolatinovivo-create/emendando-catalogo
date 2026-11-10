@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-10T01:24:08.848Z",
- "totale": 645176,
+ "aggiornato": "2026-11-10T02:27:55.329Z",
+ "totale": 645240,
  "con_autori": 37192,
- "miniati": 10979,
+ "miniati": 10980,
  "musica": 21122,
- "manoscritti": 532693,
+ "manoscritti": 532757,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -41,7 +41,7 @@
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 55804
+   "codici": 55808
   },
   "grc": {
    "nome": "greco",
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 35303
+   "codici": 35321
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -61,11 +61,11 @@
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23474
+   "codici": 23479
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 20342
+   "codici": 20343
   },
   "he": {
    "nome": "ebraico",
@@ -85,7 +85,7 @@
   },
   "sa": {
    "nome": "sanscrito",
-   "codici": 10530
+   "codici": 10565
   },
   "es": {
    "nome": "spagnolo",
@@ -117,7 +117,7 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 4923
+   "codici": 4924
   },
   "pt": {
    "nome": "portoghese",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 527388
+   "codici": 527452
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -9591,7 +9591,7 @@
     "ca": 1,
     "?": 1
    },
-   "esito": "errore: fetch failed",
+   "esito": "errore: This operation was aborted",
    "prefissi": [
     "ucm-"
    ],
@@ -9657,7 +9657,7 @@
     "pt": 1,
     "nah": 1
    },
-   "esito": "ok",
+   "esito": "errore: HTTP 500 https://bibliotecadigital.rah.es/es/oai/oai.do?verb=ListRecords&resumptionToken=11236957-430f-41be-be5a-098efbec0fe2",
    "prefissi": [
     "rah-"
    ],
@@ -10108,10 +10108,10 @@
   },
   "sbbor": {
    "nome": "Staatsbibliothek zu Berlin: manoscritti non europei (tibetani, mongoli, sanscriti, islamici, ebraici, cristiano-orientali, africani; oai.sbb.berlin)",
-   "codici": 7731,
+   "codici": 7795,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 87,
+   "miniati": 88,
    "musica": 15,
    "papiri": 0,
    "epigrafi": 0,
@@ -10121,17 +10121,17 @@
    "con_autori": 88,
    "lingue": {
     "syr": 376,
-    "de": 17,
-    "ar": 5141,
-    "sa": 231,
-    "xx": 339,
-    "fa": 828,
+    "de": 22,
+    "ar": 5159,
+    "sa": 266,
+    "xx": 340,
+    "fa": 829,
     "tr": 453,
     "grc": 16,
     "cop": 137,
     "zh": 6,
     "la": 17,
-    "?": 30,
+    "?": 34,
     "he": 424,
     "hy": 98,
     "gn": 3,
@@ -11018,7 +11018,7 @@
   {
    "file": "indice/sbbor-0.json",
    "fonte": "sbbor",
-   "righe": 7731
+   "righe": 7795
   },
   {
    "file": "indice/nomfoundation-0.json",
@@ -22943,7 +22943,7 @@
   17,
   5,
   175,
-  12178,
+  12242,
   7,
   16,
   27,
