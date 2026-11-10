@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-09T06:12:47.067Z",
- "totale": 645174,
+ "aggiornato": "2026-11-10T01:24:08.848Z",
+ "totale": 645176,
  "con_autori": 37192,
  "miniati": 10979,
  "musica": 21122,
- "manoscritti": 532691,
+ "manoscritti": 532693,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -129,7 +129,7 @@
   },
   "is": {
    "nome": "islandese e norreno",
-   "codici": 3431
+   "codici": 3433
   },
   "ca": {
    "nome": "catalano",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 527386
+   "codici": 527388
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -9021,7 +9021,7 @@
   },
   "handrit": {
    "nome": "handrit.is: Reykjavík e Copenaghen (descrizioni TEI da github.com/Handrit/Manuscripts; manifesti scritti dal catalogo)",
-   "codici": 3822,
+   "codici": 3824,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 9,
@@ -9036,7 +9036,7 @@
     "xx": 28,
     "da": 226,
     "la": 293,
-    "is": 3068,
+    "is": 3070,
     "?": 253,
     "de": 29,
     "sv": 20,
@@ -9215,7 +9215,7 @@
     "ru": 2,
     "ga": 1
    },
-   "esito": "ok",
+   "esito": "errore: raccolta incompleta (NKS (Ny Kongelig Samling), pagina 5): riprenderà alla prossima esecuzione",
    "prefissi": [
     "kbdk-"
    ],
@@ -10868,7 +10868,7 @@
   {
    "file": "indice/handrit-0.json",
    "fonte": "handrit",
-   "righe": 3822
+   "righe": 3824
   },
   {
    "file": "indice/polona-0.json",
@@ -22966,7 +22966,7 @@
   61,
   956,
   4,
-  925,
+  927,
   3,
   60,
   1,
