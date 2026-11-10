@@ -804,18 +804,5 @@
 {"id":"hd-mzstb_hs_ii_275","fonte":"heidelberg","biblioteca":"Wissenschaftliche Stadtbibliothek Mainz","citta":"Mainz","segnatura":"Hs II 275","datazione":"1. Drittel 14. Jh.","secolo":[1,14],"lingue":["la"],"lingua_dedotta":false,"titolo":"Hugo Argentinensis","autori":[],"manifest":"https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_ii_275/manifest.json","pagina":"https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_ii_275","licenza":"Public Domain Mark 1.0","immagini":null},
 {"id":"hd-mzstb_hs_ii_280","fonte":"heidelberg","biblioteca":"Wissenschaftliche Stadtbibliothek Mainz","citta":"Mainz","segnatura":"Hs II 280","datazione":null,"secolo":null,"lingue":[],"lingua_dedotta":false,"titolo":"Handschrift","autori":[],"manifest":"https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_ii_280/manifest.json","pagina":"https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_ii_280","licenza":"Public Domain Mark 1.0","immagini":null},
 {"id":"hd-mzstb_hs_ii_291","fonte":"heidelberg","biblioteca":"Wissenschaftliche Stadtbibliothek Mainz","citta":"Mainz","segnatura":"Hs II 291","datazione":null,"secolo":null,"lingue":[],"lingua_dedotta":false,"titolo":"Handschrift","autori":[],"manifest":"https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_ii_291/manifest.json","pagina":"https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_ii_291","licenza":"Public Domain Mark 1.0","immagini":null},
-{"id":"hd-mzstb_hs_iii_63","fonte":"heidelberg","biblioteca":"Wissenschaftliche Stadtbibliothek Mainz","citta":"Mainz","segnatura":"Hs III 63","datazione":"1687","secolo":[17,17],"lingue":["la"],"lingua_dedotta":false,"titolo":"Bibliothekskatalog der Mainzer Kartause (Katalog III). Indizes I–IV","autori":[],"manifest":"https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_iii_63/manifest.json","pagina":"https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_iii_63","licenza":"Public Domain Mark 1.0","immagini":null},
-{"id":"hd-bodleian_mslaudlat110","fonte":"heidelberg","alias":"bod-06245a63-6d7b-4f61-934b-12dad0151bc1"},
-{"id":"hd-bodleian_mslaudmisc183_2","fonte":"heidelberg","alias":"bod-17932d23-6c76-4159-b963-1c358bf1470f"},
-{"id":"hd-bodleian_mslaudmisc227","fonte":"heidelberg","alias":"bod-18138679-13ca-4539-a51e-8fe7ca4e97bd"},
-{"id":"hd-bodleian_mslaudmisc313","fonte":"heidelberg","alias":"bod-bdaa17c4-c225-4f6b-b853-6cae55211776"},
-{"id":"hd-bodleian_mslaudmisc320","fonte":"heidelberg","alias":"bod-653897e2-bd72-4558-a570-9c3c9ae7d70d"},
-{"id":"hd-bodleian_mslaudmisc375","fonte":"heidelberg","alias":"bod-90e6a357-2809-4ce9-b4a0-40c4387d6cec"},
-{"id":"hd-bodleian_mslaudmisc405","fonte":"heidelberg","alias":"bod-ce696e6b-23f7-4ddf-ac23-93e0261e17a3"},
-{"id":"hd-bodleian_mslaudmisc41","fonte":"heidelberg","alias":"bod-ff275665-9d01-48c7-9caf-221bbc2f7b92"},
-{"id":"hd-bodleian_mslaudmisc472","fonte":"heidelberg","alias":"bod-eae43884-665d-4768-a94c-07c98bdfde1f"},
-{"id":"hd-bodleian_mslaudmisc478","fonte":"heidelberg","alias":"bod-3e87a12e-1f41-462d-a812-c4548d5243ad"},
-{"id":"hd-bodleian_mslaudmisc522","fonte":"heidelberg","alias":"bod-38aa3ec0-c8ec-4cd2-9555-42b1ac363626"},
-{"id":"hd-bodleian_mslaudmisc555","fonte":"heidelberg","alias":"bod-feba0838-d3d1-4677-b92a-ae6afaa542d3"},
-{"id":"hd-bodleian_mslaudmisc737","fonte":"heidelberg","alias":"bod-64f23824-d634-4ebd-a14b-a957eaa292c1"}
+{"id":"hd-mzstb_hs_iii_63","fonte":"heidelberg","biblioteca":"Wissenschaftliche Stadtbibliothek Mainz","citta":"Mainz","segnatura":"Hs III 63","datazione":"1687","secolo":[17,17],"lingue":["la"],"lingua_dedotta":false,"titolo":"Bibliothekskatalog der Mainzer Kartause (Katalog III). Indizes I–IV","autori":[],"manifest":"https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_iii_63/manifest.json","pagina":"https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_iii_63","licenza":"Public Domain Mark 1.0","immagini":null}
 ]}
