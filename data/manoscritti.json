@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-10T03:35:37.314Z",
+ "aggiornato": "2026-11-10T06:10:13.437Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -25,7 +25,7 @@
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
    "codici": 477,
-   "esito": "errore: fetch failed"
+   "esito": "ok"
   },
   "gallica": {
    "nome": "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -314,8 +314,8 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 1,
-   "esito": "ok"
+   "codici": 0,
+   "esito": "errore: manifesti letti in parte (mancano 14798): riprenderà alla prossima esecuzione"
   },
   "getty": {
    "nome": "J. Paul Getty Museum, Los Angeles: manoscritti (data.getty.edu; manifesti media.getty.edu)",
@@ -423,7 +423,7 @@
    "esito": "ok"
   }
  },
- "totale": 11944,
+ "totale": 11943,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -140302,38 +140302,6 @@
    "pagina": "https://www.manuscriptorium.com/apps/index.php?direct=record&pid=ZG____-BUZG__ZS_4484_35__41IR6X2-pl",
    "licenza": "CC BY-NC-SA",
    "immagini": null
-  },
-  {
-   "id": "nli-990001713580205171",
-   "fonte": "nli",
-   "biblioteca": "Bibliotheca Rosenthaliana, Allard Pierson, Universiteit van Amsterdam (copia digitale della National Library of Israel)",
-   "citta": "Amsterdam",
-   "segnatura": "NLI 990001713580205171",
-   "datazione": "תקנ\"ח (1798)",
-   "secolo": [
-    18,
-    18
-   ],
-   "lingue": [
-    "he"
-   ],
-   "lingua_dedotta": false,
-   "titolo": "Catonis disticha : תרגום של פתגמי קאטו. ; מנחת יעקב ; מטעמי יעקב",
-   "autori": [
-    {
-     "id": "disticha-catonis",
-     "autore": "Disticha Catonis",
-     "latino": "Disticha Catonis",
-     "categoria": "classico-latino",
-     "opere": [],
-     "corrispondenza": "titolo: «Catonis disticha : תרגום של פתגמי קאטו. ; מנחת יעקב ; מטעמי יעקב»"
-    }
-   ],
-   "manifest": "https://iiif.nli.org.il/IIIFv21/DOCID/PNX_MANUSCRIPTS990001713580205171-1/manifest",
-   "pagina": "https://www.nli.org.il/en/manuscripts/NNL_ALEPH990001713580205171/NLI",
-   "licenza": "Bibliotheca Rosenthaliana, Allard Pierson, Universiteit van Amsterdam, immagini della National Library of Israel (Ktiv): uso didattico consentito (In Copyright - Educational Use Permitted)",
-   "immagini": null,
-   "anteprima": "https://iiif.nli.org.il/IIIFv21/FL59107469/full/,300/0/default.jpg"
   },
   {
    "id": "mns-dspmns-dspsd_hs_43_______1tu0hz9-de",
