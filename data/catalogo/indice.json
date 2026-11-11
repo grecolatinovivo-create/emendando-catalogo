@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-11T13:36:09.625Z",
- "totale": 635495,
+ "aggiornato": "2026-11-11T14:33:50.507Z",
+ "totale": 635896,
  "con_autori": 37128,
- "miniati": 10315,
+ "miniati": 10320,
  "musica": 21104,
- "manoscritti": 523012,
+ "manoscritti": 523413,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,7 +37,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 105566
+   "codici": 105568
   },
   "?": {
    "nome": "lingua non indicata",
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 34757
+   "codici": 34832
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -65,7 +65,7 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 18783
+   "codici": 18877
   },
   "pi": {
    "nome": "pali",
@@ -75,13 +75,13 @@
    "nome": "slavo ecclesiastico",
    "codici": 14261
   },
+  "he": {
+   "nome": "ebraico",
+   "codici": 11170
+  },
   "lo": {
    "nome": "lao",
    "codici": 10880
-  },
-  "he": {
-   "nome": "ebraico",
-   "codici": 10769
   },
   "sa": {
    "nome": "sanscrito",
@@ -89,7 +89,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10427
+   "codici": 10428
   },
   "zh": {
    "nome": "cinese",
@@ -101,7 +101,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 7915
+   "codici": 7920
   },
   "en": {
    "nome": "inglese",
@@ -121,7 +121,7 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 4599
+   "codici": 4600
   },
   "bo": {
    "nome": "tibetano",
@@ -185,7 +185,7 @@
   },
   "arc": {
    "nome": "aramaico",
-   "codici": 526
+   "codici": 534
   },
   "ru": {
    "nome": "russo",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 517707
+   "codici": 518108
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -5495,6 +5495,7 @@
   "Ljubljana, Nar. Muz. Slov.",
   "Lodi",
   "LON Beth Din (copia digitale della National Library of Israel)",
+  "LON VALM (copia digitale della National Library of Israel)",
   "London, Brit. Mus.",
   "London, Brit. Mus.; Frankfurt/Main, Arch. Mus. (Kopie)",
   "London, Mus. of London",
@@ -5605,6 +5606,7 @@
   "Medical Historical Library, Cushing/Whitney Medical Library, New Haven",
   "Medieval Mile Museum, Kilkenny",
   "Medinaceli",
+  "MELBOURNE (copia digitale della National Library of Israel)",
   "Melrose, Abbotsford",
   "Melrose, Abbotsford House",
   "Mémoires d'Ici, Saint-Imier",
@@ -9707,10 +9709,10 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 3934,
+   "codici": 4335,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 272,
+   "miniati": 277,
    "musica": 0,
    "papiri": 0,
    "epigrafi": 0,
@@ -9719,14 +9721,15 @@
    "edizioni_principi": 0,
    "con_autori": 6,
    "lingue": {
-    "he": 3931,
-    "arc": 55,
-    "xx": 569,
-    "ar": 210,
-    "it": 36,
-    "fa": 42,
+    "he": 4332,
+    "arc": 63,
+    "xx": 663,
+    "ar": 285,
+    "fa": 43,
+    "es": 3,
+    "it": 41,
     "de": 44,
-    "la": 5,
+    "la": 7,
     "en": 1,
     "grc": 2,
     "tr": 5,
@@ -9734,16 +9737,15 @@
     "ka": 1,
     "nl": 1,
     "fr": 2,
-    "es": 2,
     "ca": 1,
     "oc": 2,
     "ru": 1
    },
-   "esito": "errore: manifesti letti in parte (mancano 11618): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 11217): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
-   "pezzi_voci": 5,
+   "pezzi_voci": 6,
    "indice": [
     "indice/nli-0.json"
    ]
@@ -10882,7 +10884,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 3934
+   "righe": 4335
   },
   {
    "file": "indice/getty-0.json",
@@ -12273,6 +12275,7 @@
   "museo",
   "museo",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -12383,6 +12386,7 @@
   "biblioteca",
   "biblioteca",
   "museo",
+  "biblioteca",
   "museo",
   "museo",
   "biblioteca",
@@ -14040,7 +14044,7 @@
   "biblioteca"
  ],
  "totali": {
-  "biblioteche": 1351,
+  "biblioteche": 1353,
   "musei": 1675,
   "senza_luogo": 1945
  },
@@ -18406,6 +18410,7 @@
   "lubiana",
   null,
   "gerusalemme",
+  "gerusalemme",
   "londra",
   "londra",
   "londra",
@@ -18516,6 +18521,7 @@
   "new-haven",
   "kilkenny",
   null,
+  "gerusalemme",
   null,
   null,
   "saint-imier",
@@ -20285,7 +20291,7 @@
   1,
   1,
   2,
-  72,
+  77,
   396,
   38,
   3,
@@ -20380,7 +20386,7 @@
   8,
   4,
   1631,
-  318,
+  553,
   1,
   1,
   1,
@@ -20960,7 +20966,7 @@
   31,
   5,
   1,
-  1,
+  6,
   14,
   13,
   2,
@@ -21434,7 +21440,8 @@
   3,
   58,
   1,
-  32,
+  33,
+  5,
   23,
   3,
   1,
@@ -21545,6 +21552,7 @@
   16,
   1,
   2,
+  1,
   1,
   1,
   2,
@@ -21778,7 +21786,7 @@
   1617,
   47,
   1,
-  3374,
+  3520,
   151,
   1,
   58,
@@ -22238,7 +22246,7 @@
   1,
   1,
   2,
-  10,
+  13,
   1,
   2,
   77,
