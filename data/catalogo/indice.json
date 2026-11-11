@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-11T08:54:41.261Z",
- "totale": 633583,
- "con_autori": 37126,
- "miniati": 10190,
+ "aggiornato": "2026-11-11T09:57:47.734Z",
+ "totale": 633924,
+ "con_autori": 37127,
+ "miniati": 10206,
  "musica": 21104,
- "manoscritti": 521100,
+ "manoscritti": 521441,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,7 +37,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 105564
+   "codici": 105566
   },
   "?": {
    "nome": "lingua non indicata",
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 34616
+   "codici": 34634
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -57,15 +57,15 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 26408
+   "codici": 26409
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23207
+   "codici": 23210
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 18520
+   "codici": 18571
   },
   "pi": {
    "nome": "pali",
@@ -93,7 +93,7 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 8858
+   "codici": 9199
   },
   "pl": {
    "nome": "polacco",
@@ -101,7 +101,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 7907
+   "codici": 7910
   },
   "en": {
    "nome": "inglese",
@@ -121,7 +121,7 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 4576
+   "codici": 4578
   },
   "bo": {
    "nome": "tibetano",
@@ -185,7 +185,7 @@
   },
   "arc": {
    "nome": "aramaico",
-   "codici": 491
+   "codici": 501
   },
   "ru": {
    "nome": "russo",
@@ -443,7 +443,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15620
+   "codici": 15621
   },
   "medievale": {
    "nome": "autori medievali",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 515795
+   "codici": 516136
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -2569,7 +2569,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7094,
+   "codici": 7095,
    "forme": [
     "Bibliae",
     "Biblia sacra",
@@ -9693,37 +9693,37 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 2022,
+   "codici": 2363,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 147,
+   "miniati": 163,
    "musica": 0,
    "papiri": 0,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 4,
+   "con_autori": 5,
    "lingue": {
-    "xx": 306,
-    "it": 28,
-    "he": 2020,
-    "fa": 19,
-    "ar": 69,
-    "de": 33,
-    "la": 3,
-    "arc": 20,
+    "xx": 357,
+    "it": 31,
+    "he": 2361,
+    "fa": 21,
+    "ar": 87,
+    "arc": 30,
+    "de": 36,
+    "la": 5,
     "en": 1,
     "grc": 1,
     "tr": 4,
     "pl": 1,
     "ka": 1,
     "nl": 1,
-    "fr": 1,
+    "fr": 2,
     "es": 2,
     "ca": 1
    },
-   "esito": "errore: manifesti letti in parte (mancano 13532): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 13191): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
@@ -10866,7 +10866,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 2022
+   "righe": 2363
   },
   {
    "file": "indice/getty-0.json",
@@ -21710,7 +21710,7 @@
   1617,
   47,
   1,
-  2020,
+  2361,
   151,
   1,
   58,
