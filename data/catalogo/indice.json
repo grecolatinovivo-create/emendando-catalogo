@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-11T17:34:03.482Z",
- "totale": 636099,
+ "aggiornato": "2026-11-11T18:30:41.270Z",
+ "totale": 636228,
  "con_autori": 37130,
- "miniati": 10349,
+ "miniati": 10350,
  "musica": 21104,
- "manoscritti": 523616,
+ "manoscritti": 523745,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,7 +37,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 105568
+   "codici": 105569
   },
   "?": {
    "nome": "lingua non indicata",
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 34853
+   "codici": 34865
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -61,11 +61,11 @@
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23219
+   "codici": 23220
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 18920
+   "codici": 18942
   },
   "pi": {
    "nome": "pali",
@@ -77,7 +77,7 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 11373
+   "codici": 11501
   },
   "lo": {
    "nome": "lao",
@@ -121,7 +121,7 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 4602
+   "codici": 4604
   },
   "bo": {
    "nome": "tibetano",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 518311
+   "codici": 518440
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -5286,6 +5286,7 @@
   "Jagsthausen, Schule",
   "Jatindramohan Sangrahashala, National Council of Education, Bengal (copie digitali di Penn), Kolkata",
   "Jávea, Mus. Arq. Mun.",
+  "JER Safrai (copia digitale della National Library of Israel)",
   "Jer. HEKHAL GOLDSCHMIDT (copia digitale della National Library of Israel)",
   "Jerash",
   "Jerash, Theater, bei",
@@ -9712,10 +9713,10 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 4538,
+   "codici": 4667,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 306,
+   "miniati": 307,
    "musica": 0,
    "papiri": 0,
    "epigrafi": 0,
@@ -9724,17 +9725,17 @@
    "edizioni_principi": 0,
    "con_autori": 8,
    "lingue": {
-    "he": 4535,
+    "he": 4663,
     "arc": 66,
-    "xx": 706,
-    "ar": 306,
-    "fa": 45,
+    "xx": 728,
+    "ar": 318,
+    "fa": 47,
     "es": 3,
+    "de": 46,
     "it": 48,
     "pt": 1,
     "nl": 2,
-    "de": 45,
-    "la": 7,
+    "la": 8,
     "en": 1,
     "grc": 2,
     "tr": 7,
@@ -9745,7 +9746,7 @@
     "oc": 2,
     "ru": 1
    },
-   "esito": "errore: manifesti letti in parte (mancano 6503): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 5953): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
@@ -10888,7 +10889,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 4538
+   "righe": 4667
   },
   {
    "file": "indice/getty-0.json",
@@ -12070,6 +12071,7 @@
   "museo",
   "biblioteca",
   "museo",
+  "biblioteca",
   "biblioteca",
   "museo",
   "museo",
@@ -14051,7 +14053,7 @@
   "biblioteca"
  ],
  "totali": {
-  "biblioteche": 1356,
+  "biblioteche": 1357,
   "musei": 1675,
   "senza_luogo": 1945
  },
@@ -18209,6 +18211,7 @@
   "calcutta",
   null,
   "gerusalemme",
+  "gerusalemme",
   null,
   null,
   null,
@@ -20396,7 +20399,7 @@
   8,
   4,
   1631,
-  553,
+  574,
   1,
   1,
   1,
@@ -20807,7 +20810,7 @@
   1,
   1,
   1,
-  16,
+  22,
   1,
   1,
   9,
@@ -21242,6 +21245,7 @@
   1,
   3279,
   2,
+  5,
   6,
   1,
   1,
@@ -21799,7 +21803,7 @@
   1617,
   47,
   1,
-  3636,
+  3733,
   151,
   1,
   58,
