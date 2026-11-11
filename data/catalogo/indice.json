@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-11T03:50:57.904Z",
- "totale": 632320,
+ "aggiornato": "2026-11-11T04:12:51.758Z",
+ "totale": 632325,
  "con_autori": 37123,
  "miniati": 10100,
  "musica": 21104,
- "manoscritti": 519837,
+ "manoscritti": 519842,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,15 +37,15 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 105775
+   "codici": 105562
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 55810
+   "codici": 58827
   },
   "grc": {
    "nome": "greco",
-   "codici": 40052
+   "codici": 40079
   },
   "ar": {
    "nome": "arabo",
@@ -57,11 +57,11 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 26540
+   "codici": 26407
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23423
+   "codici": 23190
   },
   "xx": {
    "nome": "altre lingue",
@@ -85,7 +85,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10428
+   "codici": 10425
   },
   "zh": {
    "nome": "cinese",
@@ -97,15 +97,15 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 7942
-  },
-  "en": {
-   "nome": "inglese",
-   "codici": 7871
+   "codici": 7888
   },
   "he": {
    "nome": "ebraico",
    "codici": 7602
+  },
+  "en": {
+   "nome": "inglese",
+   "codici": 7084
   },
   "cop": {
    "nome": "copto",
@@ -159,25 +159,17 @@
    "nome": "ceco",
    "codici": 1226
   },
-  "no": {
-   "nome": "no",
-   "codici": 1134
-  },
-  "da": {
-   "nome": "danese",
-   "codici": 978
-  },
   "khb": {
    "nome": "tai lü",
    "codici": 933
   },
   "sv": {
    "nome": "svedese",
-   "codici": 926
+   "codici": 870
   },
   "nl": {
    "nome": "nederlandese",
-   "codici": 886
+   "codici": 817
   },
   "akk": {
    "nome": "accadico",
@@ -186,6 +178,10 @@
   "hy": {
    "nome": "armeno",
    "codici": 665
+  },
+  "da": {
+   "nome": "danese",
+   "codici": 610
   },
   "arc": {
    "nome": "aramaico",
@@ -301,6 +297,10 @@
   },
   "oto": {
    "nome": "otomí e lingue otomiane",
+   "codici": 12
+  },
+  "no": {
+   "nome": "no",
    "codici": 12
   },
   "km": {
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 514532
+   "codici": 514537
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -10070,7 +10070,7 @@
   },
   "nb": {
    "nome": "Nasjonalbiblioteket, Oslo: manoscritti, manoscritti musicali e carte geografiche (api.nb.no; manifesti IIIF della biblioteca)",
-   "codici": 16677,
+   "codici": 16682,
    "carte": 477,
    "carte_stampa": 3145,
    "miniati": 8,
@@ -10082,17 +10082,14 @@
    "edizioni_principi": 0,
    "con_autori": 99,
    "lingue": {
-    "no": 1122,
-    "nl": 128,
-    "da": 368,
-    "la": 343,
-    "it": 60,
-    "de": 339,
-    "sv": 56,
-    "en": 787,
-    "?": 13292,
-    "fr": 175,
-    "es": 4,
+    "?": 16309,
+    "grc": 27,
+    "de": 106,
+    "la": 130,
+    "fr": 41,
+    "nl": 59,
+    "it": 6,
+    "es": 1,
     "ar": 1,
     "myn": 2
    },
@@ -10124,7 +10121,7 @@
     "sv": 825,
     "la": 385,
     "de": 32,
-    "fr": 6,
+    "fr": 7,
     "it": 3,
     "?": 12,
     "fi": 1,
@@ -10912,7 +10909,7 @@
   {
    "file": "indice/nb-0.json",
    "fonte": "nb",
-   "righe": 16677
+   "righe": 16682
   },
   {
    "file": "indice/manuscripta-0.json",
@@ -21689,7 +21686,7 @@
   82,
   3,
   40,
-  16677,
+  16682,
   67,
   1,
   1,
