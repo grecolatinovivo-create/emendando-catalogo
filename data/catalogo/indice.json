@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-11T14:33:50.507Z",
- "totale": 635896,
- "con_autori": 37128,
- "miniati": 10320,
+ "aggiornato": "2026-11-11T15:36:17.199Z",
+ "totale": 636098,
+ "con_autori": 37130,
+ "miniati": 10349,
  "musica": 21104,
- "manoscritti": 523413,
+ "manoscritti": 523615,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 34832
+   "codici": 34853
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -61,11 +61,11 @@
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23218
+   "codici": 23219
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 18877
+   "codici": 18920
   },
   "pi": {
    "nome": "pali",
@@ -77,7 +77,7 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 11170
+   "codici": 11372
   },
   "lo": {
    "nome": "lao",
@@ -101,7 +101,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 7920
+   "codici": 7927
   },
   "en": {
    "nome": "inglese",
@@ -117,11 +117,11 @@
   },
   "pt": {
    "nome": "portoghese",
-   "codici": 4882
+   "codici": 4883
   },
   "fa": {
    "nome": "persiano",
-   "codici": 4600
+   "codici": 4602
   },
   "bo": {
    "nome": "tibetano",
@@ -137,7 +137,7 @@
   },
   "tr": {
    "nome": "turco",
-   "codici": 2730
+   "codici": 2732
   },
   "egy": {
    "nome": "egiziano antico (geroglifico, ieratico, demotico)",
@@ -169,7 +169,7 @@
   },
   "nl": {
    "nome": "nederlandese",
-   "codici": 818
+   "codici": 819
   },
   "akk": {
    "nome": "accadico",
@@ -185,7 +185,7 @@
   },
   "arc": {
    "nome": "aramaico",
-   "codici": 534
+   "codici": 537
   },
   "ru": {
    "nome": "russo",
@@ -443,7 +443,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15622
+   "codici": 15624
   },
   "medievale": {
    "nome": "autori medievali",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 518108
+   "codici": 518310
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -2569,7 +2569,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7096,
+   "codici": 7098,
    "forme": [
     "Bibliae",
     "Biblia sacra",
@@ -5116,6 +5116,8 @@
   "Grolier Club, New York",
   "Gross Family Collection (copia digitale della National Library of Israel), Tel Aviv",
   "Gross William L. Tel Aviv Israel Ms. EE. (copia digitale della National Library of Israel)",
+  "Gross William L. Tel Aviv Israel Ms. IT. (copia digitale della National Library of Israel)",
+  "Gross William L. Tel Aviv Israel Ms. MO. (copia digitale della National Library of Israel)",
   "Groß-Gerau, Privatbesitz",
   "Groß-Gerau, Stadtmus.",
   "Groß-Gerau, StadtmusStadtmusStadtmus.",
@@ -5656,6 +5658,7 @@
   "Monteleone, S. Vict.",
   "Montpellier Méditerranée Métropole - Médiathèque centrale Emile Zola",
   "Montreal Museum of Fine Arts, Cambridge",
+  "MONTSERRAT Or. (copia digitale della National Library of Israel)",
   "Moravská galerie v Brně, Brno",
   "Moravská zemská knihovna v Brně, Brno",
   "Moravské zemské muzeum, Brno",
@@ -9709,39 +9712,40 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 4335,
+   "codici": 4537,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 277,
+   "miniati": 306,
    "musica": 0,
    "papiri": 0,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 6,
+   "con_autori": 8,
    "lingue": {
-    "he": 4332,
-    "arc": 63,
-    "xx": 663,
-    "ar": 285,
-    "fa": 43,
+    "he": 4534,
+    "arc": 66,
+    "xx": 706,
+    "ar": 306,
+    "fa": 45,
     "es": 3,
-    "it": 41,
-    "de": 44,
+    "it": 48,
+    "pt": 1,
+    "nl": 2,
+    "de": 45,
     "la": 7,
     "en": 1,
     "grc": 2,
-    "tr": 5,
+    "tr": 7,
     "pl": 1,
     "ka": 1,
-    "nl": 1,
     "fr": 2,
     "ca": 1,
     "oc": 2,
     "ru": 1
    },
-   "esito": "errore: manifesti letti in parte (mancano 11217): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 10101): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
@@ -10884,7 +10888,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 4335
+   "righe": 4537
   },
   {
    "file": "indice/getty-0.json",
@@ -11896,6 +11900,8 @@
   "biblioteca",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -12434,6 +12440,7 @@
   "museo",
   "museo",
   "museo",
+  "biblioteca",
   "biblioteca",
   "biblioteca",
   "biblioteca",
@@ -14044,7 +14051,7 @@
   "biblioteca"
  ],
  "totali": {
-  "biblioteche": 1353,
+  "biblioteche": 1356,
   "musei": 1675,
   "senza_luogo": 1945
  },
@@ -18031,6 +18038,8 @@
   "new-york",
   "tel-aviv",
   "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
   null,
   null,
   null,
@@ -18571,6 +18580,7 @@
   null,
   "montpellier",
   "cambridge",
+  "gerusalemme",
   "brno",
   "brno",
   "brno",
@@ -20291,7 +20301,7 @@
   1,
   1,
   2,
-  77,
+  84,
   396,
   38,
   3,
@@ -20553,7 +20563,7 @@
   288,
   182,
   1,
-  13,
+  14,
   1,
   3,
   2,
@@ -20966,7 +20976,7 @@
   31,
   5,
   1,
-  6,
+  7,
   14,
   13,
   2,
@@ -21060,7 +21070,9 @@
   1,
   5,
   14,
-  83,
+  149,
+  1,
+  1,
   1,
   1,
   2,
@@ -21440,8 +21452,8 @@
   3,
   58,
   1,
-  33,
-  5,
+  36,
+  10,
   23,
   3,
   1,
@@ -21602,6 +21614,7 @@
   1,
   1028,
   6,
+  1,
   1,
   469,
   6,
@@ -21786,7 +21799,7 @@
   1617,
   47,
   1,
-  3520,
+  3635,
   151,
   1,
   58,
@@ -22246,7 +22259,7 @@
   1,
   1,
   2,
-  13,
+  14,
   1,
   2,
   77,
