@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-10T06:10:13.437Z",
+ "aggiornato": "2026-11-11T03:31:50.919Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -80,7 +80,7 @@
   "leiden": {
    "nome": "Universiteitsbibliotheek Leiden (digitalcollections.universiteitleiden.nl)",
    "codici": 510,
-   "esito": "errore: raccolta incompleta (ubl_manuscripts, pagina 92): riprenderà alla prossima esecuzione"
+   "esito": "errore: raccolta incompleta (ubl_manuscripts, pagina 183): riprenderà alla prossima esecuzione"
   },
   "bamberga": {
    "nome": "Staatsbibliothek Bamberg, Bamberga (dati dal Handschriftenportal, handschriftenportal.de)",
@@ -220,7 +220,7 @@
   "kbdk": {
    "nome": "Det Kongelige Bibliotek, Copenaghen (digitalesamlinger.kb.dk; manifesti scritti dal catalogo con le immagini IIIF della biblioteca)",
    "codici": 37,
-   "esito": "errore: raccolta incompleta (NKS (Ny Kongelig Samling), pagina 5): riprenderà alla prossima esecuzione"
+   "esito": "ok"
   },
   "uva": {
    "nome": "Allard Pierson, Universiteit van Amsterdam (uvaerfgoed.nl)",
@@ -275,7 +275,7 @@
   "ucm": {
    "nome": "Universidad Complutense de Madrid, Biblioteca Histórica (patrimoniodigital.ucm.es)",
    "codici": 41,
-   "esito": "errore: This operation was aborted"
+   "esito": "errore: fetch failed"
   },
   "sevilla": {
    "nome": "Biblioteca de la Universidad de Sevilla (copie digitali su Internet Archive)",
@@ -285,7 +285,7 @@
   "rah": {
    "nome": "Real Academia de la Historia, Madrid (bibliotecadigital.rah.es; manifesti scritti dal catalogo)",
    "codici": 0,
-   "esito": "errore: HTTP 500 https://bibliotecadigital.rah.es/es/oai/oai.do?verb=ListRecords&resumptionToken=11236957-430f-41be-be5a-098efbec0fe2"
+   "esito": "ok"
   },
   "bnchile": {
    "nome": "Biblioteca Nacional de Chile, Santiago (memoriachilena.gob.cl; codici in pubblico dominio, immagini estratte dai PDF)",
@@ -310602,7 +310602,15 @@
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/64a66014-d534-4ff3-ac04-6178d105be09.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/64a66014-d534-4ff3-ac04-6178d105be09/",
    "licenza": "CC BY-NC 4.0",
-   "immagini": null
+   "immagini": null,
+   "riproduzioni": [
+    {
+     "id": "hd-bodleian_mslaudlat29",
+     "fonte": "heidelberg",
+     "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/bodleian_mslaudlat29/manifest.json",
+     "pagina": "https://digi.ub.uni-heidelberg.de/diglit/bodleian_mslaudlat29"
+    }
+   ]
   },
   {
    "id": "bod-138d165a-acb0-4269-ab7a-64babe8ba382",
@@ -311500,7 +311508,15 @@
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/f0e484d2-7549-4962-bae6-69edb5db2f87.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/f0e484d2-7549-4962-bae6-69edb5db2f87/",
    "licenza": "CC BY-NC 4.0",
-   "immagini": null
+   "immagini": null,
+   "riproduzioni": [
+    {
+     "id": "hd-bodleian_mslaudmisc323",
+     "fonte": "heidelberg",
+     "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/bodleian_mslaudmisc323/manifest.json",
+     "pagina": "https://digi.ub.uni-heidelberg.de/diglit/bodleian_mslaudmisc323"
+    }
+   ]
   },
   {
    "id": "bod-39648490-7d67-4a81-a904-70494a68b1d1",
@@ -311655,7 +311671,9 @@
     14,
     14
    ],
-   "lingue": [],
+   "lingue": [
+    "la"
+   ],
    "lingua_dedotta": false,
    "titolo": "Theological treatises, meditations and extracts",
    "autori": [
@@ -311723,7 +311741,15 @@
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/78ea2d5c-01ef-4b0a-87e2-dcb559cea873.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/78ea2d5c-01ef-4b0a-87e2-dcb559cea873/",
    "licenza": "CC BY-NC 4.0",
-   "immagini": null
+   "immagini": null,
+   "riproduzioni": [
+    {
+     "id": "hd-bodleian_mslaudmisc493",
+     "fonte": "heidelberg",
+     "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/bodleian_mslaudmisc493/manifest.json",
+     "pagina": "https://digi.ub.uni-heidelberg.de/diglit/bodleian_mslaudmisc493"
+    }
+   ]
   },
   {
    "id": "bod-aefef404-41c4-40d4-a82d-a94ad92adf2e",
