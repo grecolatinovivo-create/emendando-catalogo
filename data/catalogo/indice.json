@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-11T07:05:03.099Z",
- "totale": 632921,
+ "aggiornato": "2026-11-11T08:00:09.912Z",
+ "totale": 633272,
  "con_autori": 37125,
- "miniati": 10147,
+ "miniati": 10173,
  "musica": 21104,
- "manoscritti": 520438,
+ "manoscritti": 520789,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,7 +37,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 105563
+   "codici": 105564
   },
   "?": {
    "nome": "lingua non indicata",
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 34588
+   "codici": 34597
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -61,11 +61,11 @@
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23197
+   "codici": 23201
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 18425
+   "codici": 18474
   },
   "pi": {
    "nome": "pali",
@@ -85,23 +85,23 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10426
+   "codici": 10427
   },
   "zh": {
    "nome": "cinese",
    "codici": 9654
   },
+  "he": {
+   "nome": "ebraico",
+   "codici": 8547
+  },
   "pl": {
    "nome": "polacco",
    "codici": 8303
   },
-  "he": {
-   "nome": "ebraico",
-   "codici": 8197
-  },
   "it": {
    "nome": "italiano",
-   "codici": 7897
+   "codici": 7902
   },
   "en": {
    "nome": "inglese",
@@ -121,7 +121,7 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 4575
+   "codici": 4576
   },
   "bo": {
    "nome": "tibetano",
@@ -133,7 +133,7 @@
   },
   "ca": {
    "nome": "catalano",
-   "codici": 3418
+   "codici": 3419
   },
   "tr": {
    "nome": "turco",
@@ -185,7 +185,7 @@
   },
   "arc": {
    "nome": "aramaico",
-   "codici": 475
+   "codici": 480
   },
   "ru": {
    "nome": "russo",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 515133
+   "codici": 515484
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -9691,10 +9691,10 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 1360,
+   "codici": 1711,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 104,
+   "miniati": 130,
    "musica": 0,
    "papiri": 0,
    "epigrafi": 0,
@@ -9703,14 +9703,14 @@
    "edizioni_principi": 0,
    "con_autori": 3,
    "lingue": {
-    "he": 1359,
-    "ar": 41,
-    "xx": 211,
-    "fa": 18,
-    "it": 18,
-    "de": 23,
-    "la": 2,
-    "arc": 4,
+    "he": 1709,
+    "xx": 260,
+    "fa": 19,
+    "ar": 50,
+    "it": 23,
+    "de": 27,
+    "la": 3,
+    "arc": 9,
     "en": 1,
     "grc": 1,
     "tr": 4,
@@ -9718,13 +9718,14 @@
     "ka": 1,
     "nl": 1,
     "fr": 1,
-    "es": 1
+    "es": 2,
+    "ca": 1
    },
-   "esito": "errore: manifesti letti in parte (mancano 14201): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 13843): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
-   "pezzi_voci": 2,
+   "pezzi_voci": 3,
    "indice": [
     "indice/nli-0.json"
    ]
@@ -10863,7 +10864,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 1360
+   "righe": 1711
   },
   {
    "file": "indice/getty-0.json",
@@ -21702,7 +21703,7 @@
   1617,
   47,
   1,
-  1360,
+  1711,
   151,
   1,
   58,
