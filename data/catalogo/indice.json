@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-11T15:36:17.199Z",
- "totale": 636098,
+ "aggiornato": "2026-11-11T17:34:03.482Z",
+ "totale": 636099,
  "con_autori": 37130,
  "miniati": 10349,
  "musica": 21104,
- "manoscritti": 523615,
+ "manoscritti": 523616,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -77,7 +77,7 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 11372
+   "codici": 11373
   },
   "lo": {
    "nome": "lao",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 518310
+   "codici": 518311
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -9712,7 +9712,7 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 4537,
+   "codici": 4538,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 306,
@@ -9724,7 +9724,7 @@
    "edizioni_principi": 0,
    "con_autori": 8,
    "lingue": {
-    "he": 4534,
+    "he": 4535,
     "arc": 66,
     "xx": 706,
     "ar": 306,
@@ -9745,7 +9745,7 @@
     "oc": 2,
     "ru": 1
    },
-   "esito": "errore: manifesti letti in parte (mancano 10101): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 6503): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
@@ -10888,7 +10888,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 4537
+   "righe": 4538
   },
   {
    "file": "indice/getty-0.json",
@@ -21799,7 +21799,7 @@
   1617,
   47,
   1,
-  3635,
+  3636,
   151,
   1,
   58,
