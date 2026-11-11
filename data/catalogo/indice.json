@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-11T10:54:41.727Z",
- "totale": 634270,
- "con_autori": 37127,
- "miniati": 10221,
+ "aggiornato": "2026-11-11T11:47:55.385Z",
+ "totale": 634696,
+ "con_autori": 37128,
+ "miniati": 10262,
  "musica": 21104,
- "manoscritti": 521787,
+ "manoscritti": 522213,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 34642
+   "codici": 34676
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -61,11 +61,11 @@
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23215
+   "codici": 23218
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 18624
+   "codici": 18677
   },
   "pi": {
    "nome": "pali",
@@ -87,13 +87,13 @@
    "nome": "spagnolo",
    "codici": 10427
   },
+  "he": {
+   "nome": "ebraico",
+   "codici": 9971
+  },
   "zh": {
    "nome": "cinese",
    "codici": 9654
-  },
-  "he": {
-   "nome": "ebraico",
-   "codici": 9545
   },
   "pl": {
    "nome": "polacco",
@@ -101,7 +101,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 7912
+   "codici": 7914
   },
   "en": {
    "nome": "inglese",
@@ -185,7 +185,7 @@
   },
   "arc": {
    "nome": "aramaico",
-   "codici": 504
+   "codici": 507
   },
   "ru": {
    "nome": "russo",
@@ -443,7 +443,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15621
+   "codici": 15622
   },
   "medievale": {
    "nome": "autori medievali",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 516482
+   "codici": 516908
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -2569,7 +2569,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7095,
+   "codici": 7096,
    "forme": [
     "Bibliae",
     "Biblia sacra",
@@ -4439,6 +4439,7 @@
   "Balliol College, Oxford",
   "Banasa",
   "Bancroft Library, University of California, Berkeley (Center for the Tebtunis Papyri)",
+  "Bar-Ilan University Library (copia digitale della National Library of Israel), Ramat Gan",
   "Baranello, Mus. Civ.",
   "Barbadillo del Pez",
   "Barbara Bates Center for the Study of the History of Nursing, Philadelphia",
@@ -4605,6 +4606,7 @@
   "Biblioteka Uniwersytecka we Wrocławiu, Breslavia",
   "Biblioteka Uniwersytetu Zielonogórskiego, Zielona Góra",
   "Bibliotheca Gambalungae",
+  "Bibliotheca Rosenthaliana, Allard Pierson, Universiteit van Amsterdam (copia digitale della National Library of Israel)",
   "Bibliotheca Sefarad, Montreux",
   "Bibliothek",
   "Bibliothek des Metropolitankapitels, München",
@@ -4848,6 +4850,7 @@
   "Collección Ezquer Mérida",
   "Collection Auguste Rondel",
   "Collegio Germanico di S. Pastore",
+  "Collezione Feldman (copia digitale della National Library of Israel), Gerusalemme",
   "Collezione privata (2) (個人蔵２), Giappone",
   "Collezione privata (3) (個人蔵３), Giappone",
   "Collezione privata (13) (個人蔵１３), Giappone",
@@ -5107,6 +5110,7 @@
   "Graz, Landesmus. Joanneum",
   "Graz, Landesmus. Joanneum, Lapidarium Schloß Eggenberg",
   "Grolier Club, New York",
+  "Gross Family Collection (copia digitale della National Library of Israel), Tel Aviv",
   "Groß-Gerau, Privatbesitz",
   "Groß-Gerau, Stadtmus.",
   "Groß-Gerau, StadtmusStadtmusStadtmus.",
@@ -5274,6 +5278,7 @@
   "Jagsthausen, Schule",
   "Jatindramohan Sangrahashala, National Council of Education, Bengal (copie digitali di Penn), Kolkata",
   "Jávea, Mus. Arq. Mun.",
+  "Jer. HEKHAL GOLDSCHMIDT (copia digitale della National Library of Israel)",
   "Jerash",
   "Jerash, Theater, bei",
   "Jerusalem, Israel Mus.; Aalen, Limesmus. (Kopie); Milano, Arch. Mus. (Kopie)",
@@ -5483,6 +5488,7 @@
   "Liria (Llíria)",
   "Ljubljana, Nar. Muz. Slov.",
   "Lodi",
+  "LON Beth Din (copia digitale della National Library of Israel)",
   "London, Brit. Mus.",
   "London, Brit. Mus.; Frankfurt/Main, Arch. Mus. (Kopie)",
   "London, Mus. of London",
@@ -6286,6 +6292,7 @@
   "Rockefeller Museum",
   "Roggebiblioteket, Strängnäs",
   "Roma",
+  "Roma Cas (copia digitale della National Library of Israel)",
   "Roma, Accad. Belga",
   "Roma, American Academy",
   "Roma, Antiq. Celio",
@@ -9693,25 +9700,25 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 2709,
+   "codici": 3135,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 178,
+   "miniati": 219,
    "musica": 0,
    "papiri": 0,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 5,
+   "con_autori": 6,
    "lingue": {
-    "xx": 410,
-    "it": 33,
-    "he": 2707,
+    "he": 3133,
+    "xx": 463,
+    "it": 35,
+    "ar": 129,
+    "arc": 36,
     "fa": 39,
-    "ar": 95,
-    "arc": 33,
-    "de": 41,
+    "de": 44,
     "la": 5,
     "en": 1,
     "grc": 2,
@@ -9725,7 +9732,7 @@
     "oc": 1,
     "ru": 1
    },
-   "esito": "errore: manifesti letti in parte (mancano 12845): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 12419): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
@@ -10868,7 +10875,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 2709
+   "righe": 3135
   },
   {
    "file": "indice/getty-0.json",
@@ -11203,6 +11210,7 @@
   "biblioteca",
   "museo",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "biblioteca",
@@ -11427,6 +11435,7 @@
   "biblioteca",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -11612,6 +11621,7 @@
   "museo",
   "biblioteca",
   "museo",
+  "biblioteca",
   "biblioteca",
   "biblioteca",
   "biblioteca",
@@ -11871,6 +11881,7 @@
   "museo",
   "museo",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -12038,6 +12049,7 @@
   "museo",
   "biblioteca",
   "museo",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -12247,6 +12259,7 @@
   "museo",
   "museo",
   "museo",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -13050,6 +13063,7 @@
   "museo",
   "biblioteca",
   "museo",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -14012,7 +14026,7 @@
   "biblioteca"
  ],
  "totali": {
-  "biblioteche": 1337,
+  "biblioteche": 1344,
   "musei": 1675,
   "senza_luogo": 1945
  },
@@ -16570,6 +16584,12 @@
    "lat": 49.0902,
    "lon": 16.6039
   },
+  "ramat-gan": {
+   "nome": "Ramat Gan",
+   "paese": "IL",
+   "lat": 32.08227,
+   "lon": 34.81065
+  },
   "ramtek": {
    "nome": "Ramtek",
    "paese": "IN",
@@ -16844,6 +16864,12 @@
    "paese": "ES",
    "lat": 41.1191,
    "lon": 1.2454
+  },
+  "tel-aviv": {
+   "nome": "Tel Aviv",
+   "paese": "IL",
+   "lat": 32.08088,
+   "lon": 34.78057
   },
   "tepla": {
    "nome": "Teplá",
@@ -17310,6 +17336,7 @@
   "oxford",
   null,
   "berkeley",
+  "ramat-gan",
   null,
   null,
   "philadelphia",
@@ -17476,6 +17503,7 @@
   "breslavia",
   "zielona-gora",
   null,
+  "amsterdam",
   "montreux",
   null,
   "monaco-di-baviera",
@@ -17719,6 +17747,7 @@
   null,
   "parigi",
   null,
+  "gerusalemme",
   null,
   null,
   null,
@@ -17978,6 +18007,7 @@
   null,
   null,
   "new-york",
+  "tel-aviv",
   null,
   null,
   null,
@@ -18145,6 +18175,7 @@
   null,
   "calcutta",
   null,
+  "gerusalemme",
   null,
   null,
   null,
@@ -18354,6 +18385,7 @@
   null,
   "lubiana",
   null,
+  "gerusalemme",
   "londra",
   "londra",
   "londra",
@@ -19157,6 +19189,7 @@
   null,
   "strangnas",
   "roma",
+  "gerusalemme",
   "roma",
   "roma",
   "roma",
@@ -20325,6 +20358,7 @@
   8,
   4,
   1631,
+  20,
   1,
   1,
   1,
@@ -20491,6 +20525,7 @@
   288,
   182,
   1,
+  5,
   1,
   3,
   2,
@@ -20734,6 +20769,7 @@
   1,
   1,
   1,
+  5,
   1,
   1,
   9,
@@ -20993,6 +21029,7 @@
   1,
   5,
   14,
+  28,
   1,
   2,
   1,
@@ -21160,6 +21197,7 @@
   1,
   3279,
   2,
+  6,
   1,
   1,
   1,
@@ -21369,6 +21407,7 @@
   3,
   58,
   1,
+  25,
   23,
   3,
   1,
@@ -21712,7 +21751,7 @@
   1617,
   47,
   1,
-  2707,
+  3043,
   151,
   1,
   58,
@@ -22172,6 +22211,7 @@
   1,
   1,
   2,
+  1,
   1,
   2,
   77,
