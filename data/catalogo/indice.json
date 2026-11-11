@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-11T08:00:09.912Z",
- "totale": 633272,
- "con_autori": 37125,
- "miniati": 10173,
+ "aggiornato": "2026-11-11T08:54:41.261Z",
+ "totale": 633583,
+ "con_autori": 37126,
+ "miniati": 10190,
  "musica": 21104,
- "manoscritti": 520789,
+ "manoscritti": 521100,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 34597
+   "codici": 34616
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -61,11 +61,11 @@
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23201
+   "codici": 23207
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 18474
+   "codici": 18520
   },
   "pi": {
    "nome": "pali",
@@ -93,7 +93,7 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 8547
+   "codici": 8858
   },
   "pl": {
    "nome": "polacco",
@@ -101,7 +101,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 7902
+   "codici": 7907
   },
   "en": {
    "nome": "inglese",
@@ -185,7 +185,7 @@
   },
   "arc": {
    "nome": "aramaico",
-   "codici": 480
+   "codici": 491
   },
   "ru": {
    "nome": "russo",
@@ -443,7 +443,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15619
+   "codici": 15620
   },
   "medievale": {
    "nome": "autori medievali",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 515484
+   "codici": 515795
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -2569,7 +2569,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7093,
+   "codici": 7094,
    "forme": [
     "Bibliae",
     "Biblia sacra",
@@ -4486,6 +4486,7 @@
   "Besançon, Mus. des Beaux Arts et d'Arch.",
   "Besançon, Mus. des Beaux Arts et d'Arch. (Frament b); Besançon, S. Madeleine, Kirche, vermauert (Fragmente a u. c)",
   "Besançon, Mus. des Beaux Arts et d'Arch.?",
+  "Bevis of Hampton JER NLI (copia digitale della National Library of Israel)",
   "Béziers, Mus. Biterrois",
   "Bibioteka Wyższego Seminarium Duchownego w Płocku",
   "Bible Society, Cambridge",
@@ -5875,6 +5876,7 @@
   "Nin, Muz. Ninsk. Star.",
   "Nin, Ždrijac, Privatbesitz",
   "Niš, Nar. Muz.",
+  "NLI (copia digitale della National Library of Israel)",
   "Nonaka Usaien (野中烏犀圓), Saga",
   "Norcia",
   "Norcia, P.zzo Bucchi-Corazzini",
@@ -9691,26 +9693,26 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 1711,
+   "codici": 2022,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 130,
+   "miniati": 147,
    "musica": 0,
    "papiri": 0,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 3,
+   "con_autori": 4,
    "lingue": {
-    "he": 1709,
-    "xx": 260,
+    "xx": 306,
+    "it": 28,
+    "he": 2020,
     "fa": 19,
-    "ar": 50,
-    "it": 23,
-    "de": 27,
+    "ar": 69,
+    "de": 33,
     "la": 3,
-    "arc": 9,
+    "arc": 20,
     "en": 1,
     "grc": 1,
     "tr": 4,
@@ -9721,7 +9723,7 @@
     "es": 2,
     "ca": 1
    },
-   "esito": "errore: manifesti letti in parte (mancano 13843): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 13532): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
@@ -10864,7 +10866,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 1711
+   "righe": 2022
   },
   {
    "file": "indice/getty-0.json",
@@ -11246,6 +11248,7 @@
   "museo",
   "museo",
   "museo",
+  "biblioteca",
   "museo",
   "biblioteca",
   "biblioteca",
@@ -12636,6 +12639,7 @@
   "museo",
   "museo",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -14006,7 +14010,7 @@
   "biblioteca"
  ],
  "totali": {
-  "biblioteche": 1335,
+  "biblioteche": 1337,
   "musei": 1675,
   "senza_luogo": 1945
  },
@@ -17351,6 +17355,7 @@
   "besancon",
   "besancon",
   "besancon",
+  "gerusalemme",
   null,
   "plock",
   "cambridge",
@@ -18740,6 +18745,7 @@
   null,
   null,
   null,
+  "gerusalemme",
   "jp-saga",
   null,
   null,
@@ -20364,6 +20370,7 @@
   34,
   1,
   5,
+  1,
   3,
   2,
   3,
@@ -21703,7 +21710,7 @@
   1617,
   47,
   1,
-  1711,
+  2020,
   151,
   1,
   58,
@@ -21753,6 +21760,7 @@
   1,
   1,
   9,
+  1,
   14,
   1,
   1,
