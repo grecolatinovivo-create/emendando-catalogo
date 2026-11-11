@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-10T06:10:13.437Z",
- "totale": 632460,
- "con_autori": 37172,
- "miniati": 10124,
- "musica": 21122,
- "manoscritti": 519977,
+ "aggiornato": "2026-11-11T02:11:10.546Z",
+ "totale": 632320,
+ "con_autori": 37123,
+ "miniati": 10100,
+ "musica": 21104,
+ "manoscritti": 519837,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,7 +37,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 105897
+   "codici": 105775
   },
   "?": {
    "nome": "lingua non indicata",
@@ -45,7 +45,7 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 40055
+   "codici": 40052
   },
   "ar": {
    "nome": "arabo",
@@ -65,7 +65,7 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 18326
+   "codici": 18325
   },
   "pi": {
    "nome": "pali",
@@ -85,7 +85,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10442
+   "codici": 10428
   },
   "zh": {
    "nome": "cinese",
@@ -97,7 +97,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 7943
+   "codici": 7942
   },
   "en": {
    "nome": "inglese",
@@ -133,7 +133,7 @@
   },
   "ca": {
    "nome": "catalano",
-   "codici": 3419
+   "codici": 3418
   },
   "tr": {
    "nome": "turco",
@@ -217,7 +217,7 @@
   },
   "oc": {
    "nome": "occitano",
-   "codici": 174
+   "codici": 173
   },
   "jv": {
    "nome": "giavanese",
@@ -443,17 +443,17 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15646
+   "codici": 15617
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 9732
+   "codici": 9711
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 514672
+   "codici": 514532
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -2437,7 +2437,7 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 2971,
+   "codici": 2967,
    "forme": [
     "Augustini",
     "Augustino",
@@ -2457,7 +2457,7 @@
    "nome": "Girolamo",
    "latino": "Hieronymus",
    "categoria": "cristiano",
-   "codici": 1385,
+   "codici": 1384,
    "forme": [
     "Hieronymi",
     "Hieronymo",
@@ -2477,7 +2477,7 @@
    "nome": "Ambrogio",
    "latino": "Ambrosius",
    "categoria": "cristiano",
-   "codici": 431,
+   "codici": 430,
    "forme": [
     "Ambrosii",
     "Ambrosio",
@@ -2494,7 +2494,7 @@
    "nome": "Gregorio Magno",
    "latino": "Gregorius Magnus",
    "categoria": "cristiano",
-   "codici": 955,
+   "codici": 951,
    "forme": [
     "Gregorii Magni",
     "Gregorius I papa",
@@ -2549,7 +2549,7 @@
    "nome": "Giovanni Crisostomo",
    "latino": "Iohannes Chrysostomus",
    "categoria": "cristiano",
-   "codici": 1250,
+   "codici": 1247,
    "forme": [
     "Ioannes Chrysostomus",
     "Johannes Chrysostomus",
@@ -2569,7 +2569,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7102,
+   "codici": 7091,
    "forme": [
     "Bibliae",
     "Biblia sacra",
@@ -2674,7 +2674,7 @@
    "nome": "Cassiodoro",
    "latino": "Cassiodorus",
    "categoria": "cristiano",
-   "codici": 226,
+   "codici": 224,
    "forme": [
     "Cassiodori",
     "Cassiodore",
@@ -2686,7 +2686,7 @@
    "nome": "Origene",
    "latino": "Origenes",
    "categoria": "cristiano",
-   "codici": 347,
+   "codici": 345,
    "forme": [
     "Origenis",
     "Origen",
@@ -2713,7 +2713,7 @@
    "nome": "Atanasio",
    "latino": "Athanasius",
    "categoria": "cristiano",
-   "codici": 402,
+   "codici": 400,
    "forme": [
     "Athanasii",
     "Athanase",
@@ -2771,7 +2771,7 @@
    "nome": "Isidoro di Siviglia",
    "latino": "Isidorus Hispalensis",
    "categoria": "medievale",
-   "codici": 688,
+   "codici": 683,
    "forme": [
     "Isidori Hispalensis",
     "Isidore of Seville",
@@ -2783,7 +2783,7 @@
    "nome": "Beda",
    "latino": "Beda Venerabilis",
    "categoria": "medievale",
-   "codici": 737,
+   "codici": 736,
    "forme": [
     "Bedae",
     "Beda il Venerabile",
@@ -2797,7 +2797,7 @@
    "nome": "Alcuino",
    "latino": "Alcuinus",
    "categoria": "medievale",
-   "codici": 293,
+   "codici": 291,
    "forme": [
     "Alcuini",
     "Alcuin",
@@ -2839,7 +2839,7 @@
    "nome": "Pietro Lombardo",
    "latino": "Petrus Lombardus",
    "categoria": "medievale",
-   "codici": 370,
+   "codici": 369,
    "forme": [
     "Petri Lombardi",
     "Peter Lombard",
@@ -2865,7 +2865,7 @@
    "nome": "Bernardo di Chiaravalle",
    "latino": "Bernardus Claraevallensis",
    "categoria": "medievale",
-   "codici": 417,
+   "codici": 416,
    "forme": [
     "Bernardi Claraevallensis",
     "Bernardus abbas Claraevallensis",
@@ -2879,7 +2879,7 @@
    "nome": "Pietro Comestore",
    "latino": "Petrus Comestor",
    "categoria": "medievale",
-   "codici": 228,
+   "codici": 226,
    "forme": [
     "Petri Comestoris",
     "Peter Comestor",
@@ -2919,7 +2919,7 @@
    "nome": "Graziano",
    "latino": "Gratianus",
    "categoria": "medievale",
-   "codici": 251,
+   "codici": 248,
    "forme": [
     "Gratiani",
     "Gratian",
@@ -2930,7 +2930,7 @@
    "nome": "Decretali di Gregorio IX",
    "latino": "Decretales Gregorii IX",
    "categoria": "medievale",
-   "codici": 254,
+   "codici": 251,
    "forme": [
     "Gregorius IX",
     "Gregorii IX",
@@ -3066,7 +3066,7 @@
    "nome": "Guglielmo Durando",
    "latino": "Guillelmus Durandus",
    "categoria": "medievale",
-   "codici": 122,
+   "codici": 121,
    "forme": [
     "Guilelmus Durandus",
     "Gulielmus Durantis",
@@ -3155,7 +3155,7 @@
    "nome": "Giovanni Cassiano",
    "latino": "Iohannes Cassianus",
    "categoria": "cristiano",
-   "codici": 162,
+   "codici": 161,
    "forme": [
     "Johannes Cassianus",
     "Ioannes Cassianus",
@@ -3170,7 +3170,7 @@
    "nome": "Benedetto da Norcia",
    "latino": "Benedictus de Nursia",
    "categoria": "cristiano",
-   "codici": 106,
+   "codici": 104,
    "forme": [
     "Benedicti de Nursia",
     "Benedict of Nursia",
@@ -3247,7 +3247,7 @@
    "nome": "Giovanni d'Andrea",
    "latino": "Iohannes Andreae",
    "categoria": "medievale",
-   "codici": 233,
+   "codici": 231,
    "forme": [
     "Johannes Andreae",
     "Ioannes Andreae",
@@ -9113,7 +9113,7 @@
     "ru": 2,
     "ga": 1
    },
-   "esito": "errore: raccolta incompleta (NKS (Ny Kongelig Samling), pagina 5): riprenderà alla prossima esecuzione",
+   "esito": "ok",
    "prefissi": [
     "kbdk-"
    ],
@@ -9489,7 +9489,7 @@
     "ca": 1,
     "?": 1
    },
-   "esito": "errore: This operation was aborted",
+   "esito": "errore: fetch failed",
    "prefissi": [
     "ucm-"
    ],
@@ -9531,31 +9531,26 @@
   },
   "rah": {
    "nome": "Real Academia de la Historia, Madrid (bibliotecadigital.rah.es; manifesti scritti dal catalogo)",
-   "codici": 184,
+   "codici": 44,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 31,
-   "musica": 18,
+   "miniati": 7,
+   "musica": 0,
    "papiri": 0,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 49,
+   "con_autori": 0,
    "lingue": {
-    "la": 122,
-    "es": 52,
-    "grc": 3,
-    "ca": 1,
-    "it": 3,
-    "xx": 1,
-    "oc": 1,
+    "es": 38,
     "fr": 2,
+    "it": 2,
     "cai": 1,
     "pt": 1,
     "nah": 1
    },
-   "esito": "errore: HTTP 500 https://bibliotecadigital.rah.es/es/oai/oai.do?verb=ListRecords&resumptionToken=11236957-430f-41be-be5a-098efbec0fe2",
+   "esito": "ok",
    "prefissi": [
     "rah-"
    ],
@@ -10837,7 +10832,7 @@
   {
    "file": "indice/rah-0.json",
    "fonte": "rah",
-   "righe": 184
+   "righe": 44
   },
   {
    "file": "indice/bnchile-0.json",
@@ -22137,7 +22132,7 @@
   4,
   6,
   1,
-  184,
+  44,
   1265,
   913,
   26,
