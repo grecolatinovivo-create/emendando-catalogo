@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-11T12:41:22.618Z",
- "totale": 635078,
+ "aggiornato": "2026-11-11T13:36:09.625Z",
+ "totale": 635495,
  "con_autori": 37128,
- "miniati": 10304,
+ "miniati": 10315,
  "musica": 21104,
- "manoscritti": 522595,
+ "manoscritti": 523012,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 34710
+   "codici": 34757
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -65,7 +65,7 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 18727
+   "codici": 18783
   },
   "pi": {
    "nome": "pali",
@@ -79,6 +79,10 @@
    "nome": "lao",
    "codici": 10880
   },
+  "he": {
+   "nome": "ebraico",
+   "codici": 10769
+  },
   "sa": {
    "nome": "sanscrito",
    "codici": 10565
@@ -86,10 +90,6 @@
   "es": {
    "nome": "spagnolo",
    "codici": 10427
-  },
-  "he": {
-   "nome": "ebraico",
-   "codici": 10353
   },
   "zh": {
    "nome": "cinese",
@@ -185,7 +185,7 @@
   },
   "arc": {
    "nome": "aramaico",
-   "codici": 517
+   "codici": 526
   },
   "ru": {
    "nome": "russo",
@@ -207,13 +207,13 @@
    "nome": "malese",
    "codici": 253
   },
+  "oc": {
+   "nome": "occitano",
+   "codici": 175
+  },
   "shn": {
    "nome": "shan",
    "codici": 175
-  },
-  "oc": {
-   "nome": "occitano",
-   "codici": 174
   },
   "jv": {
    "nome": "giavanese",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 517290
+   "codici": 517707
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -5020,6 +5020,7 @@
   "Exeter College, Oxford",
   "Expozice Knihovny Latinské školy, Jáchymov",
   "Expozitura Latinské školy, Jáchymov",
+  "F (copia digitale della National Library of Israel)",
   "Facultés Loyola Paris",
   "Faculty of Classics Archives, University of Cambridge",
   "Fáiti",
@@ -5027,6 +5028,7 @@
   "Feltre, Mus. Civ.",
   "Ferento",
   "Fermo, Mus. Civ.",
+  "FERRARA TT (copia digitale della National Library of Israel)",
   "Ferrara, P.zzo d. Diamanti",
   "Fier, Apollonia, Arch. Mus.",
   "Fier, Muz. Hist.",
@@ -5055,6 +5057,7 @@
   "Forum Boarium",
   "Forum Vetus, Tempel der Roma und des Augustus",
   "Fragile Palm Leaves Foundation, Nonthaburi (copie del Buddhist Digital Resource Center)",
+  "Frank UB Oct. (copia digitale della National Library of Israel)",
   "Frankfurt, Arch. Mus.",
   "Frankfurt/Main, Arch. Mus.",
   "Frankfurt/Main, Arch. Mus., Inv.-Nr. α 22468",
@@ -9704,10 +9707,10 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 3517,
+   "codici": 3934,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 261,
+   "miniati": 272,
    "musica": 0,
    "papiri": 0,
    "epigrafi": 0,
@@ -9716,10 +9719,10 @@
    "edizioni_principi": 0,
    "con_autori": 6,
    "lingue": {
-    "he": 3515,
-    "arc": 46,
-    "xx": 513,
-    "ar": 163,
+    "he": 3931,
+    "arc": 55,
+    "xx": 569,
+    "ar": 210,
     "it": 36,
     "fa": 42,
     "de": 44,
@@ -9733,10 +9736,10 @@
     "fr": 2,
     "es": 2,
     "ca": 1,
-    "oc": 1,
+    "oc": 2,
     "ru": 1
    },
-   "esito": "errore: manifesti letti in parte (mancano 12036): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 11618): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
@@ -10879,7 +10882,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 3517
+   "righe": 3934
   },
   {
    "file": "indice/getty-0.json",
@@ -11797,11 +11800,13 @@
   "biblioteca",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
   "museo",
   "museo",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -11829,6 +11834,7 @@
   "museo",
   "museo",
   "museo",
+  "biblioteca",
   "biblioteca",
   "museo",
   "museo",
@@ -14034,7 +14040,7 @@
   "biblioteca"
  ],
  "totali": {
-  "biblioteche": 1348,
+  "biblioteche": 1351,
   "musei": 1675,
   "senza_luogo": 1945
  },
@@ -17925,6 +17931,7 @@
   "oxford",
   "jachymov",
   "jachymov",
+  "gerusalemme",
   null,
   "cambridge",
   null,
@@ -17932,6 +17939,7 @@
   null,
   null,
   null,
+  "gerusalemme",
   null,
   null,
   null,
@@ -17960,6 +17968,7 @@
   null,
   null,
   "nonthaburi",
+  "gerusalemme",
   "francoforte",
   null,
   null,
@@ -20276,7 +20285,7 @@
   1,
   1,
   2,
-  61,
+  72,
   396,
   38,
   3,
@@ -20371,7 +20380,7 @@
   8,
   4,
   1631,
-  74,
+  318,
   1,
   1,
   1,
@@ -20538,7 +20547,7 @@
   288,
   182,
   1,
-  11,
+  13,
   1,
   3,
   2,
@@ -20951,6 +20960,7 @@
   31,
   5,
   1,
+  1,
   14,
   13,
   2,
@@ -20958,6 +20968,7 @@
   3,
   1,
   2,
+  1,
   1,
   11,
   4,
@@ -20986,6 +20997,7 @@
   1,
   2,
   7019,
+  1,
   2,
   46,
   1,
@@ -21042,7 +21054,7 @@
   1,
   5,
   14,
-  82,
+  83,
   1,
   1,
   2,
@@ -21422,7 +21434,7 @@
   3,
   58,
   1,
-  31,
+  32,
   23,
   3,
   1,
@@ -21766,7 +21778,7 @@
   1617,
   47,
   1,
-  3227,
+  3374,
   151,
   1,
   58,
@@ -22226,7 +22238,7 @@
   1,
   1,
   2,
-  2,
+  10,
   1,
   2,
   77,
