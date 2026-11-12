@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-12T04:32:45.578Z",
- "totale": 636309,
+ "aggiornato": "2026-11-12T20:39:22.652Z",
+ "totale": 636312,
  "con_autori": 37130,
- "miniati": 10353,
+ "miniati": 10354,
  "musica": 21105,
- "manoscritti": 523826,
+ "manoscritti": 523829,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -57,7 +57,7 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 26411
+   "codici": 26412
   },
   "de": {
    "nome": "tedesco",
@@ -65,7 +65,7 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 18952
+   "codici": 18953
   },
   "pi": {
    "nome": "pali",
@@ -105,7 +105,7 @@
   },
   "en": {
    "nome": "inglese",
-   "codici": 7086
+   "codici": 7087
   },
   "cop": {
    "nome": "copto",
@@ -137,7 +137,7 @@
   },
   "tr": {
    "nome": "turco",
-   "codici": 2732
+   "codici": 2733
   },
   "egy": {
    "nome": "egiziano antico (geroglifico, ieratico, demotico)",
@@ -453,11 +453,11 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 518521
+   "codici": 518523
   },
   "carta": {
    "nome": "carte manoscritte",
-   "codici": 2090
+   "codici": 2091
   },
   "carta_stampa": {
    "nome": "carte a stampa",
@@ -8218,10 +8218,10 @@
   },
   "yale": {
    "nome": "Yale University Library, Beinecke e altre (collections.library.yale.edu)",
-   "codici": 2974,
-   "carte": 166,
+   "codici": 2977,
+   "carte": 167,
    "carte_stampa": 50,
-   "miniati": 513,
+   "miniati": 514,
    "musica": 164,
    "papiri": 0,
    "epigrafi": 0,
@@ -8230,10 +8230,10 @@
    "edizioni_principi": 0,
    "con_autori": 627,
    "lingue": {
-    "fr": 167,
-    "en": 587,
+    "fr": 168,
+    "en": 588,
     "nl": 25,
-    "xx": 70,
+    "xx": 71,
     "la": 1449,
     "de": 84,
     "es": 48,
@@ -8241,7 +8241,7 @@
     "?": 39,
     "ar": 309,
     "syr": 9,
-    "tr": 23,
+    "tr": 24,
     "fa": 73,
     "jv": 2,
     "pt": 4,
@@ -10664,7 +10664,7 @@
   {
    "file": "indice/yale-0.json",
    "fonte": "yale",
-   "righe": 2974
+   "righe": 2977
   },
   {
    "file": "indice/penn-0.json",
@@ -20420,7 +20420,7 @@
   3,
   37979,
   1,
-  2946,
+  2949,
   6093,
   2,
   1,
