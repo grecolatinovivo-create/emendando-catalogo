@@ -18,7 +18,7 @@ Come leggere le colonne:
 - **Ultima raccolta**: com'è andata l'ultima volta.
 
 <!-- inizio automatico -->
-Codici nel catalogo, in tutto: **636.304**, di cui **37.130** con almeno un autore riconosciuto.
+Codici nel catalogo, in tutto: **636.309**, di cui **37.130** con almeno un autore riconosciuto.
 
 | Biblioteca | Città | Codici totali | Di cui con autori riconosciuti | Lingue | Avanzamento della lettura | Come si aggiorna | Ultimo aggiornamento | Ultima raccolta |
 |---|---|---|---|---|---|---|---|---|
@@ -26,7 +26,7 @@ Codici nel catalogo, in tutto: **636.304**, di cui **37.130** con almeno un auto
 | e-codices (biblioteche svizzere: San Gallo, Einsiedeln, Bodmer e altre) | Svizzera | 2744 | 1186 | latino 2042, tedesco 674, francese 235, altre 417 | schede lette tutte (2745 schede) | ogni notte, da sola | 2026-11-12 | riuscita |
 | Bayerische Staatsbibliothek | Monaco di Baviera | 28.803 | 2651 | tedesco 11.325, latino 8481, non indicata 5807, altre 4412 | schede lette tutte (29.783 schede) | ogni notte, da sola | 2026-11-12 | riuscita |
 | Staatsbibliothek zu Berlin | Berlino | 3305 | 328 | tedesco 1600, non indicata 742, latino 715, altre 385 | schede lette tutte (3310 schede) | ogni notte, da sola | 2026-11-12 | riuscita |
-| Bodleian Libraries e college | Oxford | 10.065 | 1438 | latino 3787, inglese 2515, greco 984, altre 3564 | 10.602 schede lette su 10.602 | corsia propria: a ruota finché non sono letti tutti, poi ogni notte | 2026-11-11 | riuscita |
+| Bodleian Libraries e college | Oxford | 10.070 | 1438 | latino 3788, inglese 2517, greco 985, altre 3567 | 10.607 schede lette su 10.607 | corsia propria: a ruota finché non sono letti tutti, poi ogni notte | 2026-11-12 | riuscita |
 | Bibliothèque nationale de France (Gallica) | Parigi | 68.446 | 9628 | francese 19.837, latino 13.167, arabo 7504, altre 30.571 | 157.212 schede raccolte dal browser il 2026-10-25 (raccolta completa, 3 file); 84.198 manoscritti librari; fuori 73.014 schede (carte d'archivio 36.527, lettere e autografi 23.960, documenti e carte d'archivio 4717, pezzi di raccolte di stampe e di libri a stampa 2270, altre 5540) | va rifatta a mano dal browser (ultima raccolta: 2026-10-25) | 2026-11-12 | riuscita |
 | Biblioteca Medicea Laurenziana | Firenze | 4353 | 2459 | non indicata 3611, latino 728, italiano 5, altre 9 | schede lette tutte (4353 codici) | ogni notte, da sola | 2026-11-12 | riuscita |
 | Veneranda Biblioteca Ambrosiana (Biblioteca Digitale) | Milano | 1116 | 293 | latino 597, italiano 334, greco 192, altre 117 | schede lette tutte (0 codici della Biblioteca Digitale; 0 con la copia digitale) | corsia italia: a ruota finché la prima lettura non è finita, poi ogni notte (elenco ogni 6 giorni) | 2026-11-12 | riuscita |

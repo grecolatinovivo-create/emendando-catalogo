@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-12T03:52:40.532Z",
- "totale": 636304,
+ "aggiornato": "2026-11-12T04:32:45.578Z",
+ "totale": 636309,
  "con_autori": 37130,
  "miniati": 10353,
- "musica": 21104,
- "manoscritti": 523821,
+ "musica": 21105,
+ "manoscritti": 523826,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,7 +37,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 105569
+   "codici": 105570
   },
   "?": {
    "nome": "lingua non indicata",
@@ -45,7 +45,7 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 40080
+   "codici": 40081
   },
   "ar": {
    "nome": "arabo",
@@ -101,11 +101,11 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 7929
+   "codici": 7930
   },
   "en": {
    "nome": "inglese",
-   "codici": 7084
+   "codici": 7086
   },
   "cop": {
    "nome": "copto",
@@ -229,7 +229,7 @@
   },
   "cy": {
    "nome": "gallese",
-   "codici": 114
+   "codici": 116
   },
   "my": {
    "nome": "birmano",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 518516
+   "codici": 518521
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -7473,11 +7473,11 @@
   },
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
-   "codici": 10065,
+   "codici": 10070,
    "carte": 79,
    "carte_stampa": 0,
    "miniati": 53,
-   "musica": 160,
+   "musica": 161,
    "papiri": 0,
    "epigrafi": 0,
    "incunaboli": 0,
@@ -7485,11 +7485,11 @@
    "edizioni_principi": 0,
    "con_autori": 1438,
    "lingue": {
-    "la": 3787,
+    "la": 3788,
     "fa": 94,
     "fr": 312,
-    "cy": 23,
-    "en": 2515,
+    "cy": 25,
+    "en": 2517,
     "?": 947,
     "zh": 656,
     "xx": 391,
@@ -7501,8 +7501,8 @@
     "arc": 38,
     "th": 2,
     "ka": 7,
-    "it": 118,
-    "grc": 984,
+    "it": 119,
+    "grc": 985,
     "sa": 65,
     "bo": 2,
     "ar": 173,
@@ -10549,7 +10549,7 @@
   {
    "file": "indice/bodleian-0.json",
    "fonte": "bodleian",
-   "righe": 10065
+   "righe": 10070
   },
   {
    "file": "indice/gallica-0.json",
@@ -20641,7 +20641,7 @@
   7,
   1,
   12,
-  10339,
+  10341,
   1,
   1,
   17,
@@ -20785,7 +20785,7 @@
   37,
   3,
   1,
-  72,
+  74,
   2,
   19,
   1,
@@ -21485,7 +21485,7 @@
   1,
   2,
   21,
-  31,
+  32,
   6,
   1,
   1,
