@@ -5,19 +5,19 @@
   "ultimo_ok": "2026-11-13T10:08:40.686Z"
  },
  "archive": {
-  "quando": "2026-11-13T13:45:35.243Z",
+  "quando": "2026-11-13T14:40:25.973Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-13T13:45:35.243Z"
+  "ultimo_ok": "2026-11-13T14:40:25.973Z"
  },
  "auc": {
-  "quando": "2026-11-13T13:45:35.243Z",
+  "quando": "2026-11-13T14:40:25.973Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-13T13:45:35.243Z"
+  "ultimo_ok": "2026-11-13T14:40:25.973Z"
  },
  "auckland": {
-  "quando": "2026-11-13T13:45:35.243Z",
+  "quando": "2026-11-13T14:40:25.973Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-13T13:45:35.243Z"
+  "ultimo_ok": "2026-11-13T14:40:25.973Z"
  },
  "bamberga": {
   "quando": "2026-11-13T10:38:45.467Z",
@@ -175,9 +175,9 @@
   "ultimo_ok": "2026-11-13T07:29:20.819Z"
  },
  "kokusho": {
-  "quando": "2026-11-13T13:45:35.243Z",
+  "quando": "2026-11-13T14:40:25.973Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-13T13:45:35.243Z"
+  "ultimo_ok": "2026-11-13T14:40:25.973Z"
  },
  "laurenziana": {
   "quando": "2026-11-13T10:38:45.467Z",
@@ -250,9 +250,9 @@
   "ultimo_ok": "2026-11-13T10:09:09.648Z"
  },
  "ndl": {
-  "quando": "2026-11-13T13:45:35.243Z",
+  "quando": "2026-11-13T14:40:25.973Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-13T13:45:35.243Z"
+  "ultimo_ok": "2026-11-13T14:40:25.973Z"
  },
  "nlg": {
   "quando": "2026-11-13T10:38:45.467Z",
@@ -260,8 +260,8 @@
   "ultimo_ok": "2026-11-13T10:38:45.467Z"
  },
  "nli": {
-  "quando": "2026-11-13T13:45:35.243Z",
-  "esito": "errore: manifesti letti in parte (mancano 4214): riprenderà alla prossima esecuzione",
+  "quando": "2026-11-13T14:40:25.973Z",
+  "esito": "errore: manifesti letti in parte (mancano 2485): riprenderà alla prossima esecuzione",
   "ultimo_ok": "2026-11-09T06:09:50.661Z"
  },
  "nlw": {
@@ -275,9 +275,9 @@
   "ultimo_ok": "2026-11-13T07:57:58.362Z"
  },
  "northwestern": {
-  "quando": "2026-11-13T13:45:35.243Z",
+  "quando": "2026-11-13T14:40:25.973Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-13T13:45:35.243Z"
+  "ultimo_ok": "2026-11-13T14:40:25.973Z"
  },
  "onb": {
   "quando": "2026-11-13T10:38:45.467Z",
@@ -300,9 +300,9 @@
   "ultimo_ok": "2026-11-13T12:05:14.437Z"
  },
  "pergamos": {
-  "quando": "2026-11-13T13:45:35.243Z",
+  "quando": "2026-11-13T14:40:25.973Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-13T13:45:35.243Z"
+  "ultimo_ok": "2026-11-13T14:40:25.973Z"
  },
  "polona": {
   "quando": "2026-11-13T07:29:20.819Z",
@@ -325,9 +325,9 @@
   "ultimo_ok": "2026-11-13T12:39:16.346Z"
  },
  "rousanou": {
-  "quando": "2026-11-13T13:45:35.243Z",
+  "quando": "2026-11-13T14:40:25.973Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-13T13:45:35.243Z"
+  "ultimo_ok": "2026-11-13T14:40:25.973Z"
  },
  "sbbasia": {
   "quando": "2026-11-13T07:57:58.362Z",
@@ -355,9 +355,9 @@
   "ultimo_ok": "2026-10-24T19:49:16.763Z"
  },
  "toronto": {
-  "quando": "2026-11-13T13:45:35.243Z",
+  "quando": "2026-11-13T14:40:25.973Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-13T13:45:35.243Z"
+  "ultimo_ok": "2026-11-13T14:40:25.973Z"
  },
  "tubinga": {
   "quando": "2026-11-13T07:29:20.819Z",
