@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-13T14:44:53.552Z",
- "totale": 639480,
+ "aggiornato": "2026-11-13T15:41:06.381Z",
+ "totale": 639708,
  "con_autori": 37136,
- "miniati": 10635,
+ "miniati": 10653,
  "musica": 21105,
- "manoscritti": 526997,
+ "manoscritti": 527225,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -61,11 +61,11 @@
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23233
+   "codici": 23234
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 19512
+   "codici": 19565
   },
   "pi": {
    "nome": "pali",
@@ -73,7 +73,7 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 14410
+   "codici": 14627
   },
   "cu": {
    "nome": "slavo ecclesiastico",
@@ -89,7 +89,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10436
+   "codici": 10438
   },
   "zh": {
    "nome": "cinese",
@@ -97,7 +97,7 @@
   },
   "pl": {
    "nome": "polacco",
-   "codici": 8303
+   "codici": 8304
   },
   "it": {
    "nome": "italiano",
@@ -169,7 +169,7 @@
   },
   "nl": {
    "nome": "nederlandese",
-   "codici": 829
+   "codici": 832
   },
   "akk": {
    "nome": "accadico",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 521691
+   "codici": 521919
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -4846,6 +4846,7 @@
   "Clare College Archive, Cambridge",
   "Clare College Archives, Cambridge",
   "Clare College, Cambridge",
+  "Cleveland Klein (copia digitale della National Library of Israel)",
   "Clonalis House, Castlerea",
   "Cluj-Napoca, Muz. Naţ. Ist. Transilv.",
   "codices restituti, [sine loco]",
@@ -4878,6 +4879,7 @@
   "Conception Abbey and Seminary, Conception (Missouri)",
   "Concordia Sagittaria",
   "Concordia Sagittaria, P.zza d. Cattedrale",
+  "Confiansa de Ysrael Ms. Var. (copia digitale della National Library of Israel)",
   "Conservatoire",
   "Conservatoire et Jardin botaniques de la Ville de Genève",
   "Constanţa, Muz. Ist. Naţ. Arh.",
@@ -5447,6 +5449,7 @@
   "La Coruña, Mus. Hist. Arq.",
   "La Iglesuela del Cid",
   "La Puebla de Castro, Pfarrkirche",
+  "La Puerta de las Reencarnaciones JER NLI Var. (copia digitale della National Library of Israel)",
   "La Turbie",
   "La Turbie, Musée",
   "Ladenburg, Lobdengau-Mus.",
@@ -5661,6 +5664,7 @@
   "Ministère des Affaires étrangères, Rés",
   "Minneapolis Institute of Art",
   "Mirna Peč, Gorenji Globodol, Haus Nr. 29, vermauert",
+  "Mittheilung der Neusten und Vortheilhafthen Practischen Destileur Kunst und Liquerfabrikation JER NLI (copia digitale della National Library of Israel)",
   "Monastero di Rousanou, Meteore (copie digitali della Biblioteca di Kalambaka), Meteore (Kalambaka)",
   "Monastero di Santa Caterina del Sinai (microfilm della Library of Congress), Sinai (Egitto)",
   "Mönchengladbach, Städt. Mus. Schloss Rheydt",
@@ -5945,6 +5949,7 @@
   "Okresní muzeum Klatovy",
   "Okresní muzeum Mladá Boleslav",
   "Olomouc VK (copia digitale della National Library of Israel)",
+  "Olomouc VK D (copia digitale della National Library of Israel)",
   "Olomouc ZA (copia digitale della National Library of Israel)",
   "Olten, Hist. Mus.",
   "Orăştie, Muz. Etnogr. şi Arta Pop.",
@@ -9743,10 +9748,10 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 7909,
+   "codici": 8137,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 591,
+   "miniati": 609,
    "musica": 0,
    "papiri": 0,
    "epigrafi": 0,
@@ -9755,33 +9760,33 @@
    "edizioni_principi": 0,
    "con_autori": 14,
    "lingue": {
-    "he": 7572,
+    "he": 7789,
     "arc": 101,
-    "xx": 1297,
+    "xx": 1350,
     "ar": 649,
     "fa": 148,
-    "es": 11,
-    "de": 59,
+    "es": 13,
+    "de": 60,
     "it": 132,
     "pt": 5,
-    "nl": 12,
+    "nl": 15,
+    "pl": 2,
     "grc": 4,
     "en": 10,
     "fr": 8,
     "la": 15,
     "hu": 1,
     "tr": 34,
-    "pl": 1,
     "ka": 1,
     "ca": 1,
     "oc": 5,
     "ru": 1
    },
-   "esito": "errore: manifesti letti in parte (mancano 2485): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 697): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
-   "pezzi_voci": 10,
+   "pezzi_voci": 11,
    "indice": [
     "indice/nli-0.json"
    ]
@@ -10920,7 +10925,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 7909
+   "righe": 8137
   },
   {
    "file": "indice/getty-0.json",
@@ -11663,6 +11668,7 @@
   "biblioteca",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
   "museo",
   "biblioteca",
   "biblioteca",
@@ -11696,6 +11702,7 @@
   "museo",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "biblioteca",
@@ -12263,6 +12270,7 @@
   "museo",
   "museo",
   "museo",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -12479,6 +12487,7 @@
   "museo",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -12756,6 +12765,7 @@
   "biblioteca",
   "museo",
   "museo",
+  "biblioteca",
   "biblioteca",
   "biblioteca",
   "biblioteca",
@@ -14114,7 +14124,7 @@
   "biblioteca"
  ],
  "totali": {
-  "biblioteche": 1387,
+  "biblioteche": 1392,
   "musei": 1675,
   "senza_luogo": 1945
  },
@@ -17831,6 +17841,7 @@
   "cambridge",
   "cambridge",
   "cambridge",
+  "gerusalemme",
   "castlerea",
   null,
   null,
@@ -17863,6 +17874,7 @@
   "conception",
   null,
   null,
+  "gerusalemme",
   "parigi",
   "ginevra",
   null,
@@ -18432,6 +18444,7 @@
   null,
   null,
   null,
+  "gerusalemme",
   null,
   null,
   null,
@@ -18646,6 +18659,7 @@
   "parigi",
   "minneapolis",
   null,
+  "gerusalemme",
   "meteore",
   "sinai",
   null,
@@ -18929,6 +18943,7 @@
   null,
   "klatovy",
   "mlada-boleslav",
+  "gerusalemme",
   "gerusalemme",
   "gerusalemme",
   null,
@@ -20492,7 +20507,7 @@
   8,
   4,
   1631,
-  594,
+  599,
   1,
   1,
   1,
@@ -20659,7 +20674,7 @@
   288,
   182,
   1,
-  80,
+  99,
   1,
   3,
   2,
@@ -20896,6 +20911,7 @@
   1,
   1,
   3,
+  2,
   4,
   51,
   6,
@@ -20928,6 +20944,7 @@
   39,
   1,
   2,
+  1,
   1,
   13,
   2,
@@ -21173,7 +21190,7 @@
   1,
   5,
   14,
-  209,
+  267,
   1,
   2,
   1,
@@ -21358,7 +21375,7 @@
   20,
   1,
   2,
-  4,
+  5,
   89,
   632,
   9,
@@ -21496,6 +21513,7 @@
   1,
   7,
   3,
+  1,
   1,
   1,
   5,
@@ -21711,6 +21729,7 @@
   11,
   1,
   1,
+  1,
   38,
   1668,
   1,
@@ -21914,7 +21933,7 @@
   1617,
   47,
   1,
-  6725,
+  6863,
   151,
   1,
   58,
@@ -21964,7 +21983,7 @@
   1,
   1,
   9,
-  2,
+  3,
   14,
   1,
   1,
@@ -21995,6 +22014,7 @@
   3,
   2,
   2,
+  1,
   5,
   2,
   1,
