@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-13T11:04:16.349Z",
- "totale": 636312,
- "con_autori": 37130,
- "miniati": 10354,
+ "aggiornato": "2026-11-13T13:49:48.085Z",
+ "totale": 637963,
+ "con_autori": 37135,
+ "miniati": 10439,
  "musica": 21105,
- "manoscritti": 523829,
+ "manoscritti": 525480,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,7 +37,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 105570
+   "codici": 105576
   },
   "?": {
    "nome": "lingua non indicata",
@@ -45,11 +45,11 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 40081
+   "codici": 40082
   },
   "ar": {
    "nome": "arabo",
-   "codici": 34871
+   "codici": 34966
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -57,15 +57,15 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 26412
+   "codici": 26415
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23220
+   "codici": 23230
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 18953
+   "codici": 19236
   },
   "pi": {
    "nome": "pali",
@@ -77,7 +77,7 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 11574
+   "codici": 13214
   },
   "lo": {
    "nome": "lao",
@@ -89,7 +89,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10428
+   "codici": 10433
   },
   "zh": {
    "nome": "cinese",
@@ -101,11 +101,11 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 7930
+   "codici": 7973
   },
   "en": {
    "nome": "inglese",
-   "codici": 7087
+   "codici": 7094
   },
   "cop": {
    "nome": "copto",
@@ -117,11 +117,11 @@
   },
   "pt": {
    "nome": "portoghese",
-   "codici": 4883
+   "codici": 4884
   },
   "fa": {
    "nome": "persiano",
-   "codici": 4604
+   "codici": 4613
   },
   "bo": {
    "nome": "tibetano",
@@ -169,7 +169,7 @@
   },
   "nl": {
    "nome": "nederlandese",
-   "codici": 819
+   "codici": 820
   },
   "akk": {
    "nome": "accadico",
@@ -185,7 +185,7 @@
   },
   "arc": {
    "nome": "aramaico",
-   "codici": 537
+   "codici": 566
   },
   "ru": {
    "nome": "russo",
@@ -443,7 +443,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15624
+   "codici": 15629
   },
   "medievale": {
    "nome": "autori medievali",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 518523
+   "codici": 520174
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -2569,7 +2569,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7098,
+   "codici": 7103,
    "forme": [
     "Bibliae",
     "Biblia sacra",
@@ -4297,6 +4297,7 @@
   "American Philosophical Society, Filadelfia",
   "American University in Cairo, Rare Books and Special Collections Library, Il Cairo",
   "Amsoldingen, Schloss, Garten",
+  "AMST RITMAN BPH (copia digitale della National Library of Israel)",
   "Ancien fonds du Conservatoire",
   "Ancona",
   "Andelos Archaeological Museum",
@@ -5057,7 +5058,10 @@
   "Forum Boarium",
   "Forum Vetus, Tempel der Roma und des Augustus",
   "Fragile Palm Leaves Foundation, Nonthaburi (copie del Buddhist Digital Resource Center)",
+  "Frank UB Ffm W (copia digitale della National Library of Israel)",
+  "Frank UB Fragm. Hebr. V (copia digitale della National Library of Israel)",
   "Frank UB Oct. (copia digitale della National Library of Israel)",
+  "Frank UB Qu. (copia digitale della National Library of Israel)",
   "Frankfurt, Arch. Mus.",
   "Frankfurt/Main, Arch. Mus.",
   "Frankfurt/Main, Arch. Mus., Inv.-Nr. α 22468",
@@ -5118,6 +5122,7 @@
   "Gross William L. Tel Aviv Israel Ms. EE. (copia digitale della National Library of Israel)",
   "Gross William L. Tel Aviv Israel Ms. IT. (copia digitale della National Library of Israel)",
   "Gross William L. Tel Aviv Israel Ms. MO. (copia digitale della National Library of Israel)",
+  "Gross William L. Tel Aviv Israel Ms. OT. (copia digitale della National Library of Israel)",
   "Groß-Gerau, Privatbesitz",
   "Groß-Gerau, Stadtmus.",
   "Groß-Gerau, StadtmusStadtmusStadtmus.",
@@ -5296,6 +5301,7 @@
   "Jesus College, Oxford",
   "jetzt Wien ÖNB Cod. Ser.n. 2595, Lilienfeld",
   "Jihočeská vědecká knihovna v Českých Budějovicích, Zlatá Koruna",
+  "JM (copia digitale della National Library of Israel)",
   "John Carter Brown Library, Providence",
   "John Rylands Research Institute and Library, University of Manchester",
   "John Rylands University Library of Manchester, Cambridge",
@@ -5655,6 +5661,8 @@
   "Monheim, Haus Bürgel (Kopie)",
   "Montebello di Torriana, Castello",
   "Montebello di Torriana, Castello (frg. a); Berkeley (frg. b)",
+  "Montefiore (copia digitale della National Library of Israel)",
+  "Montefiore Library (copia digitale della National Library of Israel)",
   "Monteleone",
   "Monteleone, S. Vict.",
   "Montpellier Méditerranée Métropole - Médiathèque centrale Emile Zola",
@@ -5906,6 +5914,7 @@
   "Novalja, Sammlung Stomorica",
   "Novo Mesto, Dolenjski Muz.",
   "Novo Mesto, Gorenje Karteljevo, S. Primož in Felicijan, Kirche, vermauert",
+  "Nuernberg Mus Oct. Hs. (copia digitale della National Library of Israel)",
   "Nuoro",
   "Nyon, Mus. Rom.",
   "Ober-Mörlen, Langenhain-Ziegenberg, evangelische Kirche, vermauert",
@@ -6130,6 +6139,8 @@
   "Pförring, S. Sebastian, Kapelle, bei",
   "Pforzheim, Arch. Mus.",
   "Pharmaziemuseum der Universität Basel",
+  "PHIL UP (copia digitale della National Library of Israel)",
+  "PHIL UP Schoenberg (copia digitale della National Library of Israel)",
   "Pigorini National Museum of Prehistory and Ethnography",
   "Pio-Clementino museum",
   "Pisa, Duomo",
@@ -7190,6 +7201,7 @@
   "Wels, Stadtmus.",
   "Wels, Stadtmus. (Kopie)",
   "Wels, Stadtplatz 34, vermauert; Wels, Stadtmus. (Kopie)",
+  "Welt JER NLI (copia digitale della National Library of Israel)",
   "Western Michigan University, Kalamazoo",
   "Westminster College, Cambridge",
   "Wien, Kunsthist. Mus.",
@@ -7531,7 +7543,7 @@
     "pi": 1,
     "syr": 7
    },
-   "esito": "ok",
+   "esito": "errore: fetch failed",
    "prefissi": [
     "bod-"
    ],
@@ -9713,44 +9725,44 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 4741,
+   "codici": 6392,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 310,
+   "miniati": 395,
    "musica": 0,
    "papiri": 0,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 8,
+   "con_autori": 13,
    "lingue": {
-    "he": 4736,
-    "arc": 66,
-    "xx": 738,
-    "ar": 322,
-    "fa": 47,
-    "es": 3,
-    "de": 46,
-    "it": 50,
-    "pt": 1,
-    "nl": 2,
-    "la": 8,
-    "en": 1,
-    "grc": 2,
+    "he": 6376,
+    "arc": 95,
+    "xx": 1021,
+    "ar": 417,
+    "fa": 56,
+    "es": 8,
+    "de": 56,
+    "it": 93,
+    "pt": 2,
+    "nl": 3,
+    "la": 14,
+    "fr": 7,
+    "en": 8,
+    "grc": 3,
     "tr": 7,
     "pl": 1,
     "ka": 1,
-    "fr": 4,
     "ca": 1,
     "oc": 2,
     "ru": 1
    },
-   "esito": "errore: manifesti letti in parte (mancano 5878): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 4214): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
-   "pezzi_voci": 6,
+   "pezzi_voci": 8,
    "indice": [
     "indice/nli-0.json"
    ]
@@ -10889,7 +10901,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 4741
+   "righe": 6392
   },
   {
    "file": "indice/getty-0.json",
@@ -11083,6 +11095,7 @@
   "biblioteca",
   "museo",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -11841,8 +11854,11 @@
   "museo",
   "museo",
   "museo",
+  "biblioteca",
+  "biblioteca",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -11903,6 +11919,7 @@
   "biblioteca",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -12077,6 +12094,7 @@
   "museo",
   "museo",
   "museo",
+  "biblioteca",
   "biblioteca",
   "biblioteca",
   "biblioteca",
@@ -12440,6 +12458,8 @@
   "museo",
   "museo",
   "museo",
+  "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "biblioteca",
@@ -12691,6 +12711,7 @@
   "museo",
   "museo",
   "museo",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -12915,6 +12936,8 @@
   "museo",
   "museo",
   "biblioteca",
+  "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -13975,6 +13998,7 @@
   "museo",
   "museo",
   "museo",
+  "biblioteca",
   "biblioteca",
   "biblioteca",
   "museo",
@@ -14053,7 +14077,7 @@
   "biblioteca"
  ],
  "totali": {
-  "biblioteche": 1357,
+  "biblioteche": 1369,
   "musei": 1675,
   "senza_luogo": 1945
  },
@@ -17221,6 +17245,7 @@
   "philadelphia",
   "il-cairo",
   null,
+  "gerusalemme",
   "parigi",
   null,
   null,
@@ -17982,6 +18007,9 @@
   null,
   "nonthaburi",
   "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
   "francoforte",
   null,
   null,
@@ -18039,6 +18067,7 @@
   null,
   "new-york",
   "tel-aviv",
+  "gerusalemme",
   "gerusalemme",
   "gerusalemme",
   "gerusalemme",
@@ -18220,6 +18249,7 @@
   "oxford",
   "lilienfeld",
   "zlata-koruna",
+  "gerusalemme",
   "providence",
   "manchester",
   "cambridge",
@@ -18579,6 +18609,8 @@
   null,
   null,
   null,
+  "gerusalemme",
+  "gerusalemme",
   null,
   null,
   "montpellier",
@@ -18830,6 +18862,7 @@
   null,
   null,
   null,
+  "gerusalemme",
   null,
   null,
   null,
@@ -19054,6 +19087,8 @@
   null,
   null,
   "basilea",
+  "gerusalemme",
+  "gerusalemme",
   null,
   null,
   null,
@@ -20114,6 +20149,7 @@
   null,
   null,
   null,
+  "gerusalemme",
   "kalamazoo",
   "cambridge",
   "vienna",
@@ -20256,6 +20292,7 @@
   1,
   36,
   2,
+  18,
   1,
   1,
   1,
@@ -20399,7 +20436,7 @@
   8,
   4,
   1631,
-  575,
+  594,
   1,
   1,
   1,
@@ -20566,7 +20603,7 @@
   288,
   182,
   1,
-  15,
+  23,
   1,
   3,
   2,
@@ -21017,6 +21054,9 @@
   2,
   7019,
   1,
+  1,
+  20,
+  1,
   2,
   46,
   1,
@@ -21073,8 +21113,9 @@
   1,
   5,
   14,
-  149,
+  162,
   1,
+  2,
   1,
   1,
   1,
@@ -21124,7 +21165,7 @@
   14,
   19,
   1,
-  2,
+  3,
   1,
   36,
   4,
@@ -21255,6 +21296,7 @@
   20,
   1,
   2,
+  3,
   89,
   632,
   9,
@@ -21614,6 +21656,8 @@
   1,
   1,
   1,
+  1,
+  1,
   2,
   1,
   1028,
@@ -21803,7 +21847,7 @@
   1617,
   47,
   1,
-  3805,
+  5361,
   151,
   1,
   58,
@@ -21853,7 +21897,7 @@
   1,
   1,
   9,
-  1,
+  2,
   14,
   1,
   1,
@@ -21864,6 +21908,7 @@
   12,
   3,
   7,
+  1,
   1,
   2,
   1,
@@ -22089,6 +22134,8 @@
   2,
   3,
   10,
+  1,
+  3,
   1,
   1,
   1,
@@ -23147,6 +23194,7 @@
   2,
   1618,
   12,
+  1,
   1,
   1,
   113,
