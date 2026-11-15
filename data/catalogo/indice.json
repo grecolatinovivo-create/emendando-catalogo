@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-15T12:25:55.154Z",
- "totale": 640514,
+ "aggiornato": "2026-11-15T12:45:33.721Z",
+ "totale": 640515,
  "con_autori": 37166,
  "miniati": 10704,
  "musica": 21115,
- "manoscritti": 528031,
+ "manoscritti": 528032,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -65,7 +65,7 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 19637
+   "codici": 19638
   },
   "pi": {
    "nome": "pali",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 522724
+   "codici": 522725
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -8549,7 +8549,7 @@
     "tr": 8,
     "de": 1
    },
-   "esito": "errore: HTTP 429 https://www.loc.gov/collections/manuscripts-in-st-catherines-monastery-mount-sinai/?fo=json&c=100&sp=2",
+   "esito": "errore: HTTP 429 https://www.loc.gov/collections/manuscripts-in-st-catherines-monastery-mount-sinai/?fo=json&c=100&sp=1",
    "prefissi": [
     "loc-"
    ],
@@ -9733,7 +9733,7 @@
    "lingue": {
     "grc": 38
    },
-   "esito": "ok",
+   "esito": "errore: HTTP 523 https://opac.kalambakalibrary.org/iguana/iiif/3_28/manifest",
    "prefissi": [
     "rousanou-"
    ],
@@ -9936,7 +9936,7 @@
   },
   "archive": {
    "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, John Carter Brown Library, Newberry Library, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
-   "codici": 15831,
+   "codici": 15832,
    "carte": 70,
    "carte_stampa": 0,
    "miniati": 183,
@@ -9950,7 +9950,7 @@
    "lingue": {
     "tr": 247,
     "it": 1159,
-    "xx": 8256,
+    "xx": 8257,
     "la": 163,
     "grc": 10,
     "fr": 330,
@@ -10973,7 +10973,7 @@
   {
    "file": "indice/archive-0.json",
    "fonte": "archive",
-   "righe": 15831
+   "righe": 15832
   },
   {
    "file": "indice/crossasia-0.json",
@@ -21198,7 +21198,7 @@
   1,
   1,
   2,
-  7019,
+  7020,
   1,
   1,
   2,
