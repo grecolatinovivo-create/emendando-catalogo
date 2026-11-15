@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-15T10:34:40.265Z",
- "totale": 640352,
+ "aggiornato": "2026-11-15T12:08:01.327Z",
+ "totale": 640353,
  "con_autori": 37145,
  "miniati": 10664,
  "musica": 21106,
- "manoscritti": 527869,
+ "manoscritti": 527870,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -57,7 +57,7 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 26428
+   "codici": 26429
   },
   "de": {
    "nome": "tedesco",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 522563
+   "codici": 522564
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -7531,7 +7531,7 @@
   },
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
-   "codici": 10070,
+   "codici": 10071,
    "carte": 79,
    "carte_stampa": 0,
    "miniati": 53,
@@ -7545,7 +7545,7 @@
    "lingue": {
     "la": 3788,
     "fa": 94,
-    "fr": 312,
+    "fr": 313,
     "cy": 25,
     "en": 2517,
     "?": 947,
@@ -7589,7 +7589,7 @@
     "pi": 1,
     "syr": 7
    },
-   "esito": "errore: fetch failed",
+   "esito": "ok",
    "prefissi": [
     "bod-"
    ],
@@ -10608,7 +10608,7 @@
   {
    "file": "indice/bodleian-0.json",
    "fonte": "bodleian",
-   "righe": 10070
+   "righe": 10071
   },
   {
    "file": "indice/gallica-0.json",
@@ -20818,7 +20818,7 @@
   7,
   1,
   12,
-  10341,
+  10342,
   1,
   1,
   17,
