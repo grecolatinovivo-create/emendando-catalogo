@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-15T12:08:01.327Z",
- "totale": 640353,
- "con_autori": 37145,
- "miniati": 10664,
- "musica": 21106,
- "manoscritti": 527870,
+ "aggiornato": "2026-11-15T12:25:55.154Z",
+ "totale": 640514,
+ "con_autori": 37166,
+ "miniati": 10704,
+ "musica": 21115,
+ "manoscritti": 528031,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -33,23 +33,23 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 178227
+   "codici": 178234
   },
   "la": {
    "nome": "latino",
-   "codici": 105628
+   "codici": 105671
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 58840
+   "codici": 58841
   },
   "grc": {
    "nome": "greco",
-   "codici": 40085
+   "codici": 40096
   },
   "ar": {
    "nome": "arabo",
-   "codici": 35213
+   "codici": 35214
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -57,19 +57,19 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 26429
+   "codici": 26444
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23245
+   "codici": 23248
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 19636
+   "codici": 19637
   },
   "pi": {
    "nome": "pali",
-   "codici": 17844
+   "codici": 17846
   },
   "he": {
    "nome": "ebraico",
@@ -81,19 +81,19 @@
   },
   "lo": {
    "nome": "lao",
-   "codici": 10880
+   "codici": 10883
   },
   "sa": {
    "nome": "sanscrito",
-   "codici": 10565
+   "codici": 10566
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10450
+   "codici": 10451
   },
   "zh": {
    "nome": "cinese",
-   "codici": 9654
+   "codici": 9660
   },
   "pl": {
    "nome": "polacco",
@@ -101,11 +101,11 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 8020
+   "codici": 8026
   },
   "en": {
    "nome": "inglese",
-   "codici": 7099
+   "codici": 7129
   },
   "cop": {
    "nome": "copto",
@@ -117,11 +117,11 @@
   },
   "pt": {
    "nome": "portoghese",
-   "codici": 4952
+   "codici": 4955
   },
   "fa": {
    "nome": "persiano",
-   "codici": 4853
+   "codici": 4854
   },
   "bo": {
    "nome": "tibetano",
@@ -153,7 +153,7 @@
   },
   "gez": {
    "nome": "etiopico",
-   "codici": 1244
+   "codici": 1251
   },
   "cs": {
    "nome": "ceco",
@@ -169,7 +169,7 @@
   },
   "nl": {
    "nome": "nederlandese",
-   "codici": 832
+   "codici": 835
   },
   "akk": {
    "nome": "accadico",
@@ -207,17 +207,17 @@
    "nome": "malese",
    "codici": 253
   },
+  "jv": {
+   "nome": "giavanese",
+   "codici": 198
+  },
   "oc": {
    "nome": "occitano",
-   "codici": 178
+   "codici": 180
   },
   "shn": {
    "nome": "shan",
    "codici": 175
-  },
-  "jv": {
-   "nome": "giavanese",
-   "codici": 151
   },
   "myn": {
    "nome": "lingue maya",
@@ -225,7 +225,7 @@
   },
   "mnc": {
    "nome": "mancese",
-   "codici": 127
+   "codici": 128
   },
   "cy": {
    "nome": "gallese",
@@ -249,7 +249,7 @@
   },
   "ga": {
    "nome": "irlandese",
-   "codici": 62
+   "codici": 66
   },
   "sla": {
    "nome": "lingue slave (alfabeto cirillico)",
@@ -435,29 +435,29 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 7824
+   "codici": 7826
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7417
+   "codici": 7420
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15630
+   "codici": 15642
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 9720
+   "codici": 9725
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 522564
+   "codici": 522724
   },
   "carta": {
    "nome": "carte manoscritte",
-   "codici": 2091
+   "codici": 2092
   },
   "carta_stampa": {
    "nome": "carte a stampa",
@@ -611,7 +611,7 @@
    "nome": "Orazio",
    "latino": "Horatius",
    "categoria": "classico-latino",
-   "codici": 302,
+   "codici": 303,
    "forme": [
     "Horatii",
     "Horatio",
@@ -918,7 +918,7 @@
    "nome": "Boezio",
    "latino": "Boethius",
    "categoria": "classico-latino",
-   "codici": 759,
+   "codici": 760,
    "forme": [
     "Boetius",
     "Boethii",
@@ -1539,7 +1539,7 @@
    "nome": "Euripide",
    "latino": "Euripides",
    "categoria": "classico-greco",
-   "codici": 166,
+   "codici": 167,
    "forme": [
     "Euripidis",
     "Εὐριπίδης",
@@ -1624,7 +1624,7 @@
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 2318,
+   "codici": 2319,
    "forme": [
     "Aristotelis",
     "Aristotle",
@@ -1661,7 +1661,7 @@
    "nome": "Isocrate",
    "latino": "Isocrates",
    "categoria": "classico-greco",
-   "codici": 109,
+   "codici": 110,
    "forme": [
     "Isocratis",
     "Isokrates",
@@ -1741,7 +1741,7 @@
    "nome": "Polibio",
    "latino": "Polybius",
    "categoria": "classico-greco",
-   "codici": 48,
+   "codici": 49,
    "forme": [
     "Polybii",
     "Polybios",
@@ -2569,7 +2569,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7104,
+   "codici": 7115,
    "forme": [
     "Bibliae",
     "Biblia sacra",
@@ -2742,7 +2742,7 @@
    "nome": "Giovanni Damasceno",
    "latino": "Iohannes Damascenus",
    "categoria": "cristiano",
-   "codici": 337,
+   "codici": 338,
    "forme": [
     "Ioannes Damascenus",
     "Johannes Damascenus",
@@ -2879,7 +2879,7 @@
    "nome": "Pietro Comestore",
    "latino": "Petrus Comestor",
    "categoria": "medievale",
-   "codici": 226,
+   "codici": 227,
    "forme": [
     "Petri Comestoris",
     "Peter Comestor",
@@ -2891,7 +2891,7 @@
    "nome": "Iacopo da Varazze",
    "latino": "Iacobus de Voragine",
    "categoria": "medievale",
-   "codici": 439,
+   "codici": 442,
    "forme": [
     "Jacobus de Voragine",
     "Iacobus de Varagine",
@@ -3092,7 +3092,7 @@
    "nome": "Dante Alighieri",
    "latino": "Dantes Alagherius",
    "categoria": "medievale",
-   "codici": 304,
+   "codici": 305,
    "forme": [
     "Dantis Alagherii",
     "Dante Alagherii",
@@ -8592,10 +8592,10 @@
   },
   "wellcome": {
    "nome": "Wellcome Collection, Londra (api.wellcomecollection.org)",
-   "codici": 1618,
+   "codici": 1619,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 131,
+   "miniati": 128,
    "musica": 0,
    "papiri": 0,
    "epigrafi": 0,
@@ -8607,7 +8607,7 @@
     "grc": 14,
     "es": 8,
     "gn": 1,
-    "?": 355,
+    "?": 356,
     "ar": 200,
     "fa": 10,
     "pi": 1,
@@ -8615,14 +8615,14 @@
     "gez": 2,
     "he": 21,
     "xx": 44,
-    "la": 244,
+    "la": 243,
     "sa": 13,
     "ja": 3,
     "ms": 10,
     "th": 1,
     "bo": 2,
     "en": 470,
-    "it": 109,
+    "it": 107,
     "fr": 140,
     "de": 80,
     "nl": 4,
@@ -8640,48 +8640,48 @@
   },
   "bl": {
    "nome": "British Library, Londra (catalogo searcharchives.bl.uk; manifesti bl.digirati.io e, per i codici orientali e scientifici, Qatar Digital Library)",
-   "codici": 1795,
-   "carte": 5,
+   "codici": 1955,
+   "carte": 6,
    "carte_stampa": 0,
-   "miniati": 338,
-   "musica": 113,
+   "miniati": 381,
+   "musica": 122,
    "papiri": 0,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 489,
+   "con_autori": 510,
    "lingue": {
-    "la": 649,
-    "en": 381,
-    "nl": 8,
-    "zh": 43,
-    "ar": 344,
-    "fa": 38,
+    "ja": 9,
+    "la": 693,
+    "en": 411,
+    "grc": 35,
+    "nl": 11,
+    "zh": 49,
+    "ar": 345,
+    "fa": 39,
     "tr": 6,
-    "xx": 22,
+    "xx": 23,
     "?": 18,
-    "it": 70,
-    "gez": 251,
-    "de": 42,
-    "lo": 4,
-    "fr": 184,
-    "grc": 24,
-    "jv": 15,
+    "it": 78,
+    "gez": 258,
+    "de": 45,
+    "lo": 7,
+    "fr": 199,
+    "pi": 29,
+    "jv": 62,
     "bug": 22,
-    "pi": 27,
+    "pt": 4,
     "th": 26,
-    "ga": 6,
-    "sa": 14,
-    "pt": 1,
+    "ga": 10,
+    "sa": 15,
+    "oc": 6,
+    "es": 5,
     "syr": 3,
     "he": 4,
-    "es": 4,
-    "oc": 4,
     "cy": 1,
     "my": 6,
-    "ja": 2,
-    "mnc": 7,
+    "mnc": 8,
     "km": 1,
     "cop": 2,
     "shn": 1,
@@ -10753,12 +10753,12 @@
   {
    "file": "indice/wellcome-0.json",
    "fonte": "wellcome",
-   "righe": 1618
+   "righe": 1619
   },
   {
    "file": "indice/bl-0.json",
    "fonte": "bl",
-   "righe": 1795
+   "righe": 1955
   },
   {
    "file": "indice/isos-0.json",
@@ -20859,7 +20859,7 @@
   1,
   19,
   7,
-  1795,
+  1955,
   13,
   3,
   4,
@@ -23377,7 +23377,7 @@
   1,
   3,
   2,
-  1618,
+  1619,
   12,
   1,
   1,

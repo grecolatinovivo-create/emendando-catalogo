@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-15T10:34:40.265Z",
+ "aggiornato": "2026-11-15T12:25:55.154Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -25,7 +25,7 @@
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
    "codici": 477,
-   "esito": "errore: fetch failed"
+   "esito": "ok"
   },
   "gallica": {
    "nome": "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -159,7 +159,7 @@
   },
   "bl": {
    "nome": "British Library, Londra (catalogo searcharchives.bl.uk; manifesti bl.digirati.io e, per i codici orientali e scientifici, Qatar Digital Library)",
-   "codici": 168,
+   "codici": 173,
    "esito": "ok"
   },
   "isos": {
@@ -423,7 +423,7 @@
    "esito": "ok"
   }
  },
- "totale": 11943,
+ "totale": 11948,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -313962,6 +313962,39 @@
    "immagini": null
   },
   {
+   "id": "bl-032-002168680",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Add MS 11728",
+   "datazione": "2 Oct 1416",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Polybius, Historiae",
+   "autori": [
+    {
+     "id": "polibio",
+     "autore": "Polibio",
+     "latino": "Polybius",
+     "categoria": "classico-greco",
+     "opere": [
+      "Storie"
+     ],
+     "corrispondenza": "autore: «…f the 15th century (Scribe) ; Polybius, Greek historian, c 200–118 B…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100186868421.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/032-002168680",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
    "id": "bl-040-002041650",
    "fonte": "bl",
    "biblioteca": "British Library",
@@ -314043,6 +314076,38 @@
    ],
    "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100064356864.0x000001",
    "pagina": "https://searcharchives.bl.uk/catalog/040-002041690",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-032-002042307",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Add MS 12524",
+   "datazione": "4th quarter of the 15th century",
+   "secolo": [
+    4,
+    15
+   ],
+   "lingue": [
+    "en",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Geoffrey Chaucer, The Legend of Good Women ; Gilbert Banester, Tale of Guiscardo and Ghismonda",
+   "autori": [
+    {
+     "id": "orazio",
+     "autore": "Orazio",
+     "latino": "Horatius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «…725 (Former owner) ; Walpole, Horatio, 4th Earl of Orford, author,…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100165141846.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/032-002042307",
    "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
    "immagini": null
   },
@@ -314191,6 +314256,38 @@
    ],
    "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100055973162.0x000001",
    "pagina": "https://searcharchives.bl.uk/catalog/032-002087388",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-032-002093906",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Add MS 16165",
+   "datazione": "1423-1439",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "en",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Geoffrey Chaucer, Boece ; Edward of Norwich, The Master of the Game ; John Lydgate, The Temple of Glas , and other literary works, written by John Shirley",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «Geoffrey Chaucer, Boece ; Edward of Norwich, The Mast…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100181356657.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/032-002093906",
    "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
    "immagini": null
   },
@@ -315087,6 +315184,38 @@
    ],
    "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056659536.0x000001",
    "pagina": "https://searcharchives.bl.uk/catalog/040-002039449",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002039616",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Arundel MS 333",
+   "datazione": "1st quarter of the 16th century",
+   "secolo": [
+    1,
+    16
+   ],
+   "lingue": [
+    "ga",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collection of medical, metaphysical and physical tracts",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Aristoteles, Stagirita, Philosophus; obii…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100184246302.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002039616",
    "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
    "immagini": null
   },
@@ -319575,6 +319704,50 @@
    ],
    "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100056061197.0x000001",
    "pagina": "https://searcharchives.bl.uk/catalog/040-002106879",
+   "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
+   "immagini": null
+  },
+  {
+   "id": "bl-040-002107008",
+   "fonte": "bl",
+   "biblioteca": "British Library",
+   "citta": "Londra",
+   "segnatura": "Royal MS 15 A I",
+   "datazione": "3rd quarter of the 16th century",
+   "secolo": [
+    3,
+    16
+   ],
+   "lingue": [
+    "en",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Jane Lumley, translation of Isocrates, Archidamus",
+   "autori": [
+    {
+     "id": "euripide",
+     "autore": "Euripide",
+     "latino": "Euripides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Ifigenia"
+     ],
+     "corrispondenza": "descrizione: «…socrates’ other Orationes and Euripides’ play Iphigenia at Aulis (now…»"
+    },
+    {
+     "id": "isocrate",
+     "autore": "Isocrate",
+     "latino": "Isocrates",
+     "categoria": "classico-greco",
+     "opere": [
+      "Orazioni"
+     ],
+     "corrispondenza": "autore: «…I, 1594-1612 (Former owner) ; Isocrates, Attic orator, 436 BC-338 BC…»"
+    }
+   ],
+   "manifest": "https://bl.digirati.io/iiif/ark:/81055/vdc_100172082177.0x000001",
+   "pagina": "https://searcharchives.bl.uk/catalog/040-002107008",
    "licenza": "British Library (condizioni d'uso indicate nel manifesto, per lo più pubblico dominio)",
    "immagini": null
   },
