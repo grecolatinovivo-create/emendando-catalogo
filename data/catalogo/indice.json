@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-15T07:50:43.414Z",
- "totale": 640347,
- "con_autori": 37140,
+ "aggiornato": "2026-11-15T10:04:23.399Z",
+ "totale": 640352,
+ "con_autori": 37145,
  "miniati": 10664,
  "musica": 21106,
- "manoscritti": 527864,
+ "manoscritti": 527869,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,7 +37,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 105627
+   "codici": 105628
   },
   "?": {
    "nome": "lingua non indicata",
@@ -101,7 +101,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 8016
+   "codici": 8020
   },
   "en": {
    "nome": "inglese",
@@ -447,13 +447,13 @@
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 9715
+   "codici": 9720
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 522558
+   "codici": 522563
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -3092,7 +3092,7 @@
    "nome": "Dante Alighieri",
    "latino": "Dantes Alagherius",
    "categoria": "medievale",
-   "codici": 300,
+   "codici": 304,
    "forme": [
     "Dantis Alagherii",
     "Dante Alagherii",
@@ -3118,7 +3118,7 @@
    "nome": "Giovanni Boccaccio",
    "latino": "Iohannes Boccaccius",
    "categoria": "medievale",
-   "codici": 309,
+   "codici": 310,
    "forme": [
     "Johannes Boccaccius",
     "Boccaccio",
@@ -7837,7 +7837,7 @@
   },
   "bncf": {
    "nome": "Biblioteca Nazionale Centrale di Firenze (manoscritti pubblicati dalla Biblioteca su Internet Archive, archive.org)",
-   "codici": 1146,
+   "codici": 1151,
    "carte": 3,
    "carte_stampa": 0,
    "miniati": 20,
@@ -7847,12 +7847,12 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 196,
+   "con_autori": 201,
    "lingue": {
-    "it": 867,
+    "it": 871,
     "gl": 1,
     "?": 67,
-    "la": 223,
+    "la": 224,
     "fr": 10,
     "grc": 4,
     "es": 3,
@@ -10658,7 +10658,7 @@
   {
    "file": "indice/bncf-0.json",
    "fonte": "bncf",
-   "righe": 1146
+   "righe": 1151
   },
   {
    "file": "indice/vallicelliana-0.json",
@@ -20709,7 +20709,7 @@
   5721,
   3,
   296,
-  1146,
+  1151,
   49,
   765,
   1,
