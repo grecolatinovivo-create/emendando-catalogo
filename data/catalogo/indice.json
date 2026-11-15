@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-14T22:32:01.374Z",
- "totale": 640254,
- "con_autori": 37139,
+ "aggiornato": "2026-11-15T07:50:43.414Z",
+ "totale": 640347,
+ "con_autori": 37140,
  "miniati": 10664,
  "musica": 21106,
- "manoscritti": 527771,
+ "manoscritti": 527864,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,11 +37,11 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 105602
+   "codici": 105627
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 58832
+   "codici": 58840
   },
   "grc": {
    "nome": "greco",
@@ -57,11 +57,11 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 26424
+   "codici": 26428
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23243
+   "codici": 23245
   },
   "xx": {
    "nome": "altre lingue",
@@ -89,7 +89,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10438
+   "codici": 10450
   },
   "zh": {
    "nome": "cinese",
@@ -97,11 +97,11 @@
   },
   "pl": {
    "nome": "polacco",
-   "codici": 8304
+   "codici": 8303
   },
   "it": {
    "nome": "italiano",
-   "codici": 8013
+   "codici": 8016
   },
   "en": {
    "nome": "inglese",
@@ -117,7 +117,7 @@
   },
   "pt": {
    "nome": "portoghese",
-   "codici": 4888
+   "codici": 4952
   },
   "fa": {
    "nome": "persiano",
@@ -157,7 +157,7 @@
   },
   "cs": {
    "nome": "ceco",
-   "codici": 1226
+   "codici": 1227
   },
   "khb": {
    "nome": "tai lü",
@@ -447,13 +447,13 @@
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 9714
+   "codici": 9715
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 522465
+   "codici": 522558
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -2812,7 +2812,7 @@
    "nome": "Rabano Mauro",
    "latino": "Hrabanus Maurus",
    "categoria": "medievale",
-   "codici": 226,
+   "codici": 227,
    "forme": [
     "Rabanus Maurus",
     "Rhabanus Maurus",
@@ -2851,7 +2851,7 @@
    "nome": "Tommaso d'Aquino",
    "latino": "Thomas de Aquino",
    "categoria": "medievale",
-   "codici": 733,
+   "codici": 732,
    "forme": [
     "Thomae de Aquino",
     "Thomas Aquinas",
@@ -2944,7 +2944,7 @@
    "nome": "Corpus iuris civilis (Giustiniano)",
    "latino": "Corpus iuris civilis",
    "categoria": "medievale",
-   "codici": 749,
+   "codici": 750,
    "forme": [
     "Iustinianus",
     "Justinianus",
@@ -5817,6 +5817,7 @@
   "Muzeum a galerie v Prostějově",
   "Muzeum Brněnska - Památník písemnictví na Moravě, Rajhrad",
   "Muzeum Brněnska, Rajhrad",
+  "Muzeum Broumovska",
   "Muzeum Českého ráje v Turnově",
   "Muzeum hlavního města Prahy, Praga",
   "Muzeum Jindřichohradecka, Jindřichův Hradec",
@@ -8161,7 +8162,7 @@
   },
   "tubinga": {
    "nome": "Universitätsbibliothek Tübingen, Tubinga (dati dal Handschriftenportal, handschriftenportal.de)",
-   "codici": 273,
+   "codici": 284,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 0,
@@ -8171,15 +8172,15 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 34,
+   "con_autori": 35,
    "lingue": {
-    "la": 271,
+    "la": 274,
     "de": 58,
     "grc": 8,
     "he": 2,
     "fr": 1,
     "it": 2,
-    "?": 2
+    "?": 10
    },
    "esito": "ok",
    "prefissi": [
@@ -9050,9 +9051,9 @@
    "edizioni_principi": 0,
    "con_autori": 443,
    "lingue": {
-    "la": 3339,
+    "la": 3340,
     "?": 1913,
-    "pl": 8220,
+    "pl": 8219,
     "de": 1201,
     "fr": 1284,
     "it": 130,
@@ -9096,7 +9097,7 @@
   },
   "manuscriptorium": {
    "nome": "Manuscriptorium: Národní knihovna České republiky e altre biblioteche (manuscriptorium.com)",
-   "codici": 15189,
+   "codici": 15271,
    "carte": 63,
    "carte_stampa": 0,
    "miniati": 22,
@@ -9109,16 +9110,16 @@
    "con_autori": 1518,
    "lingue": {
     "?": 1709,
-    "la": 6051,
-    "de": 1660,
-    "cs": 1136,
-    "es": 672,
+    "la": 6072,
+    "de": 1662,
+    "cs": 1137,
+    "es": 684,
     "en": 81,
-    "fr": 461,
+    "fr": 465,
     "ar": 98,
     "ca": 7,
-    "pt": 4706,
-    "it": 284,
+    "pt": 4770,
+    "it": 287,
     "grc": 37,
     "xx": 65,
     "nl": 14,
@@ -9144,7 +9145,7 @@
    "prefissi": [
     "mns-"
    ],
-   "pezzi_voci": 19,
+   "pezzi_voci": 20,
    "indice": [
     "indice/manuscriptorium-0.json"
    ]
@@ -10707,7 +10708,7 @@
   {
    "file": "indice/tubinga-0.json",
    "fonte": "tubinga",
-   "righe": 273
+   "righe": 284
   },
   {
    "file": "indice/darmstadt-0.json",
@@ -10847,7 +10848,7 @@
   {
    "file": "indice/manuscriptorium-0.json",
    "fonte": "manuscriptorium",
-   "righe": 15189
+   "righe": 15271
   },
   {
    "file": "indice/kbdk-0.json",
@@ -12698,6 +12699,7 @@
   "biblioteca",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -14168,7 +14170,7 @@
   "biblioteca"
  ],
  "totali": {
-  "biblioteche": 1414,
+  "biblioteche": 1415,
   "musei": 1675,
   "senza_luogo": 1945
  },
@@ -18856,6 +18858,7 @@
   "prostejov",
   "rajhrad",
   "rajhrad",
+  null,
   "turnov",
   "praga",
   "jindrichuv-hradec",
@@ -20481,7 +20484,7 @@
   85,
   396,
   38,
-  3,
+  4,
   2,
   1,
   1,
@@ -20703,7 +20706,7 @@
   112,
   10,
   274,
-  5644,
+  5721,
   3,
   296,
   1146,
@@ -20732,9 +20735,9 @@
   4772,
   317,
   4,
-  7273,
+  7272,
   48,
-  42,
+  41,
   191,
   35,
   288,
@@ -21948,8 +21951,9 @@
   11,
   5,
   3,
+  1,
   14,
-  11,
+  16,
   129,
   1,
   35,
@@ -23256,7 +23260,7 @@
   1937,
   2678,
   20,
-  273,
+  284,
   1,
   299,
   2,
