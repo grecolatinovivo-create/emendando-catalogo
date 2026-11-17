@@ -761,18 +761,5 @@
 {"id":"hd-mzstb_hs_ii_279","fonte":"heidelberg","biblioteca":"Wissenschaftliche Stadtbibliothek Mainz","citta":"Mainz","segnatura":"Hs II 279","datazione":"15. Jh.","secolo":[15,15],"lingue":["la"],"lingua_dedotta":false,"titolo":"Breviarium ordinis Carthusiensis","autori":[],"manifest":"https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_ii_279/manifest.json","pagina":"https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_ii_279","licenza":"Public Domain Mark 1.0","immagini":null,"musica":true},
 {"id":"hd-mzstb_hs_ii_301","fonte":"heidelberg","biblioteca":"Wissenschaftliche Stadtbibliothek Mainz","citta":"Mainz","segnatura":"Hs II 301","datazione":"Ende 16., Anfang 17. Jh","secolo":[16,17],"lingue":["la"],"lingua_dedotta":false,"titolo":"Directorium novitiorum Cartusianum","autori":[],"manifest":"https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_ii_301/manifest.json","pagina":"https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_ii_301","licenza":"Public Domain Mark 1.0","immagini":null},
 {"id":"hd-mzstb_hs_ii_314","fonte":"heidelberg","biblioteca":"Wissenschaftliche Stadtbibliothek Mainz","citta":"Mainz","segnatura":"Hs II 314","datazione":"1498","secolo":[15,15],"lingue":["la"],"lingua_dedotta":false,"titolo":"Engelinus Becker","autori":[],"manifest":"https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_ii_314/manifest.json","pagina":"https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_ii_314","licenza":"Public Domain Mark 1.0","immagini":null},
-{"id":"hd-mzstb_hs_ii_419","fonte":"heidelberg","biblioteca":"Wissenschaftliche Stadtbibliothek Mainz","citta":"Mainz","segnatura":"Hs II 419","datazione":"1670","secolo":[17,17],"lingue":["la"],"lingua_dedotta":false,"titolo":"Sermones de diebus festis","autori":[],"manifest":"https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_ii_419/manifest.json","pagina":"https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_ii_419","licenza":"Public Domain Mark 1.0","immagini":null},
-{"id":"hd-bodleian_mslaudmisc113","fonte":"heidelberg","alias":"bod-e94ae62a-5b7e-4675-a090-fe7ec8b5b3c2"},
-{"id":"hd-bodleian_mslaudmisc184","fonte":"heidelberg","alias":"bod-4a9944f9-3d11-4cf1-b952-935cdc9c6957"},
-{"id":"hd-bodleian_mslaudmisc195","fonte":"heidelberg","alias":"bod-6dabfb31-0c4a-4b7f-b54c-19a9e22e84b4"},
-{"id":"hd-bodleian_mslaudmisc250","fonte":"heidelberg","alias":"bod-602a141c-6bf6-47ad-87eb-38e9bb8aee91"},
-{"id":"hd-bodleian_mslaudmisc317","fonte":"heidelberg","alias":"bod-e89747fb-774d-4ad8-9aef-21bd3c134861"},
-{"id":"hd-bodleian_mslaudmisc319","fonte":"heidelberg","alias":"bod-6177716c-4904-48b1-8051-3deb06a0b2c8"},
-{"id":"hd-bodleian_mslaudmisc324","fonte":"heidelberg","alias":"bod-cb234dc0-91c7-43cb-b143-c0c7ccde0c5d"},
-{"id":"hd-bodleian_mslaudmisc348","fonte":"heidelberg","alias":"bod-a0a4b87c-5007-42d7-bffc-cdd77af59ad1"},
-{"id":"hd-bodleian_mslaudmisc380","fonte":"heidelberg","alias":"bod-160d1a50-e7cf-4e50-a5a3-754ed3a7d349"},
-{"id":"hd-bodleian_mslaudmisc540","fonte":"heidelberg","alias":"bod-cf525948-1856-4985-8a22-3d41c3b230b8"},
-{"id":"hd-bodleian_mslaudmisc584","fonte":"heidelberg","alias":"bod-c5322a1c-db35-439b-9917-4a0977c84052"},
-{"id":"hd-bodleian_mslaudmisc81","fonte":"heidelberg","alias":"bod-4363e464-738a-4962-a723-edcf8c3526a5"},
-{"id":"hd-ubb_bi12","fonte":"heidelberg","alias":"ec-ubb-B-I-0012"}
+{"id":"hd-mzstb_hs_ii_419","fonte":"heidelberg","biblioteca":"Wissenschaftliche Stadtbibliothek Mainz","citta":"Mainz","segnatura":"Hs II 419","datazione":"1670","secolo":[17,17],"lingue":["la"],"lingua_dedotta":false,"titolo":"Sermones de diebus festis","autori":[],"manifest":"https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_ii_419/manifest.json","pagina":"https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_ii_419","licenza":"Public Domain Mark 1.0","immagini":null}
 ]}
