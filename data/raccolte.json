@@ -1,8 +1,8 @@
 {
  "ambrosiana": {
-  "quando": "2026-11-17T11:15:00.577Z",
+  "quando": "2026-11-18T10:45:04.095Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-17T11:15:00.577Z"
+  "ultimo_ok": "2026-11-18T10:45:04.095Z"
  },
  "archive": {
   "quando": "2026-11-17T14:17:53.643Z",
@@ -40,9 +40,9 @@
   "ultimo_ok": "2026-11-17T13:54:00.530Z"
  },
  "bncf": {
-  "quando": "2026-11-17T11:15:00.577Z",
+  "quando": "2026-11-18T10:45:04.095Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-17T11:15:00.577Z"
+  "ultimo_ok": "2026-11-18T10:45:04.095Z"
  },
  "bnl": {
   "quando": "2026-11-17T12:32:10.955Z",
@@ -60,14 +60,14 @@
   "ultimo_ok": "2026-11-17T11:24:32.048Z"
  },
  "bub": {
-  "quando": "2026-11-17T11:15:00.577Z",
+  "quando": "2026-11-18T10:45:04.095Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-17T11:15:00.577Z"
+  "ultimo_ok": "2026-11-18T10:45:04.095Z"
  },
  "casanatense": {
-  "quando": "2026-11-17T11:15:00.577Z",
+  "quando": "2026-11-18T10:45:04.095Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-17T11:15:00.577Z"
+  "ultimo_ok": "2026-11-18T10:45:04.095Z"
  },
  "cbl": {
   "quando": "2026-11-17T13:42:13.379Z",
@@ -205,8 +205,8 @@
   "ultimo_ok": "2026-10-31T04:48:54.222Z"
  },
  "malatestiana": {
-  "quando": "2026-11-17T11:15:00.577Z",
-  "esito": "errore: schede lette in parte (mancano 61): riprenderà alla prossima esecuzione",
+  "quando": "2026-11-18T10:45:04.095Z",
+  "esito": "errore: schede lette in parte (mancano 60): riprenderà alla prossima esecuzione",
   "ultimo_ok": null
  },
  "manchester": {
@@ -230,9 +230,9 @@
   "ultimo_ok": "2026-11-18T09:13:04.229Z"
  },
  "montecassino": {
-  "quando": "2026-11-17T11:15:00.577Z",
+  "quando": "2026-11-18T10:45:04.095Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-17T11:15:00.577Z"
+  "ultimo_ok": "2026-11-18T10:45:04.095Z"
  },
  "musei": {
   "quando": "2026-11-17T13:44:27.990Z",
@@ -380,7 +380,7 @@
   "ultimo_ok": "2026-11-18T08:06:33.522Z"
  },
  "vallicelliana": {
-  "quando": "2026-11-17T11:15:00.577Z",
+  "quando": "2026-11-18T10:45:04.095Z",
   "esito": "errore: pagina 1: HTTP 404",
   "ultimo_ok": "2026-11-08T02:52:20.534Z"
  },
