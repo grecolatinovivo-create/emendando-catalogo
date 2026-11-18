@@ -1,6 +1,6 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-18T11:44:30.453Z",
+ "aggiornato": "2026-11-18T13:54:03.160Z",
  "totale": 640533,
  "con_autori": 37166,
  "miniati": 10704,
@@ -7589,7 +7589,7 @@
     "pi": 1,
     "syr": 7
    },
-   "esito": "ok",
+   "esito": "errore: fetch failed",
    "prefissi": [
     "bod-"
    ],
@@ -8538,8 +8538,8 @@
    "lingue": {
     "ar": 410,
     "grc": 1753,
-    "fa": 5,
     "cop": 1,
+    "fa": 5,
     "gez": 27,
     "ka": 212,
     "hy": 33,
@@ -8549,7 +8549,7 @@
     "tr": 8,
     "de": 1
    },
-   "esito": "errore: HTTP 429 https://www.loc.gov/collections/manuscripts-in-st-catherines-monastery-mount-sinai/?fo=json&c=100&sp=4",
+   "esito": "ok",
    "prefissi": [
     "loc-"
    ],
