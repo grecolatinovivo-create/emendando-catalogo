@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-17T12:32:15.399Z",
+ "aggiornato": "2026-11-18T11:07:00.207Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -25,7 +25,7 @@
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
    "codici": 477,
-   "esito": "errore: fetch failed"
+   "esito": "ok"
   },
   "gallica": {
    "nome": "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -70,7 +70,7 @@
   "malatestiana": {
    "nome": "Biblioteca Malatestiana, Cesena (Catalogo aperto dei manoscritti malatestiani; manifesti scritti dal catalogo)",
    "codici": 94,
-   "esito": "errore: schede lette in parte (mancano 61): riprenderà alla prossima esecuzione"
+   "esito": "errore: schede lette in parte (mancano 60): riprenderà alla prossima esecuzione"
   },
   "classense": {
    "nome": "Biblioteca Classense, Ravenna (www.cdc.classense.ra.it; elenco raccolto dal browser)",
@@ -145,7 +145,7 @@
   "loc": {
    "nome": "Library of Congress: microfilm del Sinai e dei Patriarcati di Gerusalemme (loc.gov; manifesti scritti dal catalogo)",
    "codici": 34,
-   "esito": "errore: HTTP 429 https://www.loc.gov/collections/manuscripts-in-st-catherines-monastery-mount-sinai/?fo=json&c=100&sp=2"
+   "esito": "errore: HTTP 429 https://www.loc.gov/collections/manuscripts-in-st-catherines-monastery-mount-sinai/?fo=json&c=100&sp=4"
   },
   "nlg": {
    "nome": "Biblioteca Nazionale di Grecia, Atene (digitalcollections.nlg.gr; copie dei manifesti scritte dal catalogo)",
@@ -310602,7 +310602,15 @@
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/64a66014-d534-4ff3-ac04-6178d105be09.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/64a66014-d534-4ff3-ac04-6178d105be09/",
    "licenza": "CC BY-NC 4.0",
-   "immagini": null
+   "immagini": null,
+   "riproduzioni": [
+    {
+     "id": "hd-bodleian_mslaudlat29",
+     "fonte": "heidelberg",
+     "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/bodleian_mslaudlat29/manifest.json",
+     "pagina": "https://digi.ub.uni-heidelberg.de/diglit/bodleian_mslaudlat29"
+    }
+   ]
   },
   {
    "id": "bod-138d165a-acb0-4269-ab7a-64babe8ba382",
@@ -311500,7 +311508,15 @@
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/f0e484d2-7549-4962-bae6-69edb5db2f87.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/f0e484d2-7549-4962-bae6-69edb5db2f87/",
    "licenza": "CC BY-NC 4.0",
-   "immagini": null
+   "immagini": null,
+   "riproduzioni": [
+    {
+     "id": "hd-bodleian_mslaudmisc323",
+     "fonte": "heidelberg",
+     "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/bodleian_mslaudmisc323/manifest.json",
+     "pagina": "https://digi.ub.uni-heidelberg.de/diglit/bodleian_mslaudmisc323"
+    }
+   ]
   },
   {
    "id": "bod-39648490-7d67-4a81-a904-70494a68b1d1",
@@ -311655,7 +311671,9 @@
     14,
     14
    ],
-   "lingue": [],
+   "lingue": [
+    "la"
+   ],
    "lingua_dedotta": false,
    "titolo": "Theological treatises, meditations and extracts",
    "autori": [
@@ -311723,7 +311741,15 @@
    "manifest": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/78ea2d5c-01ef-4b0a-87e2-dcb559cea873.json",
    "pagina": "https://digital.bodleian.ox.ac.uk/objects/78ea2d5c-01ef-4b0a-87e2-dcb559cea873/",
    "licenza": "CC BY-NC 4.0",
-   "immagini": null
+   "immagini": null,
+   "riproduzioni": [
+    {
+     "id": "hd-bodleian_mslaudmisc493",
+     "fonte": "heidelberg",
+     "manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/bodleian_mslaudmisc493/manifest.json",
+     "pagina": "https://digi.ub.uni-heidelberg.de/diglit/bodleian_mslaudmisc493"
+    }
+   ]
   },
   {
    "id": "bod-aefef404-41c4-40d4-a82d-a94ad92adf2e",
