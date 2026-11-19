@@ -765,5 +765,17 @@
 {"id":"hd-mzstb_hs_ii_239","fonte":"heidelberg","biblioteca":"Wissenschaftliche Stadtbibliothek Mainz","citta":"Mainz","segnatura":"Hs II 239","datazione":"2. Drittel 15. Jh.","secolo":[2,15],"lingue":["de"],"lingua_dedotta":false,"titolo":"Goswinus de Ryt","autori":[],"manifest":"https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_ii_239/manifest.json","pagina":"https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_ii_239","licenza":"Public Domain Mark 1.0","immagini":null},
 {"id":"hd-mzstb_hs_ii_271","fonte":"heidelberg","biblioteca":"Wissenschaftliche Stadtbibliothek Mainz","citta":"Mainz","segnatura":"Hs II 271","datazione":"2. H. 15. Jh.","secolo":[2,15],"lingue":["la"],"lingua_dedotta":false,"titolo":"Theologische Sammelhandschrift mit Druck","autori":[],"manifest":"https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_ii_271/manifest.json","pagina":"https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_ii_271","licenza":"Public Domain Mark 1.0","immagini":null},
 {"id":"hd-mzstb_hs_ii_284","fonte":"heidelberg","biblioteca":"Wissenschaftliche Stadtbibliothek Mainz","citta":"Mainz","segnatura":"Hs II 284","datazione":null,"secolo":null,"lingue":[],"lingua_dedotta":false,"titolo":"Handschrift","autori":[],"manifest":"https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_ii_284/manifest.json","pagina":"https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_ii_284","licenza":"Public Domain Mark 1.0","immagini":null},
-{"id":"hd-mzstb_hs_iii_67","fonte":"heidelberg","biblioteca":"Wissenschaftliche Stadtbibliothek Mainz","citta":"Mainz","segnatura":"Hs III 67","datazione":"1706","secolo":[18,18],"lingue":["la"],"lingua_dedotta":false,"titolo":"Bibliothekskatalog der Mainzer Kartause (Katalog IV). Index materiarum","autori":[],"manifest":"https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_iii_67/manifest.json","pagina":"https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_iii_67","licenza":"Public Domain Mark 1.0","immagini":null}
+{"id":"hd-mzstb_hs_iii_67","fonte":"heidelberg","biblioteca":"Wissenschaftliche Stadtbibliothek Mainz","citta":"Mainz","segnatura":"Hs III 67","datazione":"1706","secolo":[18,18],"lingue":["la"],"lingua_dedotta":false,"titolo":"Bibliothekskatalog der Mainzer Kartause (Katalog IV). Index materiarum","autori":[],"manifest":"https://digi.ub.uni-heidelberg.de/diglit/iiif/mzstb_hs_iii_67/manifest.json","pagina":"https://digi.ub.uni-heidelberg.de/diglit/mzstb_hs_iii_67","licenza":"Public Domain Mark 1.0","immagini":null},
+{"id":"hd-bodleian_mslaudlat24","fonte":"heidelberg","alias":"bod-9eb8245e-89c2-4642-91d8-70ced8586d55"},
+{"id":"hd-bodleian_mslaudmisc203","fonte":"heidelberg","alias":"bod-000ea931-4540-4742-8555-9695f74c9260"},
+{"id":"hd-bodleian_mslaudmisc221","fonte":"heidelberg","alias":"bod-cab932e9-c4a7-4d00-b01a-82aab974d079"},
+{"id":"hd-bodleian_mslaudmisc315","fonte":"heidelberg","alias":"bod-17378174-70d8-4e5c-8713-6042a8a628de"},
+{"id":"hd-bodleian_mslaudmisc410","fonte":"heidelberg","alias":"bod-530d4fc6-48d9-463b-a92f-7f0b512d84c9"},
+{"id":"hd-bodleian_mslaudmisc492","fonte":"heidelberg","alias":"bod-a6bfe5c6-145e-480c-ad77-144e5529723f"},
+{"id":"hd-bodleian_mslaudmisc498","fonte":"heidelberg","alias":"bod-a5e7e2a9-1f3e-47ec-ba84-f3e34d5f4de4"},
+{"id":"hd-bodleian_mslaudmisc506","fonte":"heidelberg","alias":"bod-4a167112-db1a-46f1-a545-829e82a7830a"},
+{"id":"hd-bsb_cgm5249_75","fonte":"heidelberg","alias":"bsb-bsb00044098"},
+{"id":"hd-bsb_cgm_51","fonte":"heidelberg","alias":"bsb-bsb00088332"},
+{"id":"hd-ubb_av23","fonte":"heidelberg","alias":"ec-ubb-A-V-0023"},
+{"id":"hd-ubb_cv16","fonte":"heidelberg","alias":"ec-ubb-C-V-0016"}
 ]}
