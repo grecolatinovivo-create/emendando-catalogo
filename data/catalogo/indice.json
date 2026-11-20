@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-20T12:14:49.520Z",
- "totale": 640736,
+ "aggiornato": "2026-11-20T14:06:36.211Z",
+ "totale": 640735,
  "con_autori": 37207,
  "miniati": 10704,
  "musica": 21115,
- "manoscritti": 528253,
+ "manoscritti": 528252,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 35216
+   "codici": 35215
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -65,7 +65,7 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 19638
+   "codici": 19637
   },
   "pi": {
    "nome": "pali",
@@ -121,7 +121,7 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 4854
+   "codici": 4853
   },
   "bo": {
    "nome": "tibetano",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 522946
+   "codici": 522945
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -7591,7 +7591,7 @@
     "pi": 1,
     "syr": 7
    },
-   "esito": "errore: fetch failed",
+   "esito": "ok",
    "prefissi": [
     "bod-"
    ],
@@ -8400,7 +8400,7 @@
     "cu": 1,
     "lo": 1
    },
-   "esito": "ok",
+   "esito": "errore: HTTP 406",
    "prefissi": [
     "upenn-"
    ],
@@ -9337,7 +9337,7 @@
   },
   "auckland": {
    "nome": "Auckland Libraries, Sir George Grey Special Collections (kura.aucklandlibraries.govt.nz)",
-   "codici": 43,
+   "codici": 42,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 11,
@@ -9349,9 +9349,8 @@
    "edizioni_principi": 0,
    "con_autori": 14,
    "lingue": {
-    "ar": 8,
-    "fa": 6,
-    "xx": 1,
+    "ar": 7,
+    "fa": 5,
     "cs": 1,
     "fr": 1,
     "it": 1,
@@ -10880,7 +10879,7 @@
   {
    "file": "indice/auckland-0.json",
    "fonte": "auckland",
-   "righe": 43
+   "righe": 42
   },
   {
    "file": "indice/toronto-0.json",
@@ -20513,7 +20512,7 @@
   1508,
   3,
   1,
-  43,
+  42,
   1,
   5,
   5,
