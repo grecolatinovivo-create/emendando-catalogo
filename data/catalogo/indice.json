@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-19T11:38:58.739Z",
- "totale": 640534,
+ "aggiornato": "2026-11-20T09:19:25.060Z",
+ "totale": 640585,
  "con_autori": 37166,
  "miniati": 10704,
  "musica": 21115,
- "manoscritti": 528051,
+ "manoscritti": 528102,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -89,7 +89,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10451
+   "codici": 10502
   },
   "zh": {
    "nome": "cinese",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 522744
+   "codici": 522795
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -7589,7 +7589,7 @@
     "pi": 1,
     "syr": 7
    },
-   "esito": "ok",
+   "esito": "errore: fetch failed",
    "prefissi": [
     "bod-"
    ],
@@ -9543,7 +9543,7 @@
   },
   "ucm": {
    "nome": "Universidad Complutense de Madrid, Biblioteca Histórica (patrimoniodigital.ucm.es)",
-   "codici": 6471,
+   "codici": 6522,
    "carte": 21,
    "carte_stampa": 0,
    "miniati": 2,
@@ -9555,7 +9555,7 @@
    "edizioni_principi": 0,
    "con_autori": 120,
    "lingue": {
-    "es": 6003,
+    "es": 6054,
     "la": 389,
     "en": 3,
     "fr": 36,
@@ -9569,7 +9569,7 @@
     "ca": 1,
     "?": 1
    },
-   "esito": "errore: fetch failed",
+   "esito": "ok",
    "prefissi": [
     "ucm-"
    ],
@@ -10908,7 +10908,7 @@
   {
    "file": "indice/ucm-0.json",
    "fonte": "ucm",
-   "righe": 6471
+   "righe": 6522
   },
   {
    "file": "indice/sevilla-0.json",
@@ -23040,7 +23040,7 @@
   2,
   1,
   1,
-  6471,
+  6522,
   350,
   12,
   704,
