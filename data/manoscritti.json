@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-19T11:38:58.739Z",
+ "aggiornato": "2026-11-20T11:40:54.668Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -25,7 +25,7 @@
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
    "codici": 477,
-   "esito": "ok"
+   "esito": "errore: fetch failed"
   },
   "gallica": {
    "nome": "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -50,7 +50,7 @@
   "casanatense": {
    "nome": "Biblioteca Casanatense, Roma (casanatense.contentdm.oclc.org)",
    "codici": 2,
-   "esito": "ok"
+   "esito": "errore: HTTP 403"
   },
   "bub": {
    "nome": "Biblioteca Universitaria di Bologna (historica.unibo.it)",
@@ -80,7 +80,7 @@
   "leiden": {
    "nome": "Universiteitsbibliotheek Leiden (digitalcollections.universiteitleiden.nl)",
    "codici": 510,
-   "esito": "errore: raccolta incompleta (ubl_manuscripts, pagina 90): riprenderà alla prossima esecuzione"
+   "esito": "errore: raccolta incompleta (ubl_manuscripts, pagina 181): riprenderà alla prossima esecuzione"
   },
   "bamberga": {
    "nome": "Staatsbibliothek Bamberg, Bamberga (dati dal Handschriftenportal, handschriftenportal.de)",
@@ -134,7 +134,7 @@
   },
   "ds": {
    "nome": "Digital Scriptorium: istituzioni statunitensi (search.digital-scriptorium.org)",
-   "codici": 171,
+   "codici": 179,
    "esito": "ok"
   },
   "harvard": {
@@ -275,7 +275,7 @@
   "ucm": {
    "nome": "Universidad Complutense de Madrid, Biblioteca Histórica (patrimoniodigital.ucm.es)",
    "codici": 41,
-   "esito": "errore: fetch failed"
+   "esito": "ok"
   },
   "sevilla": {
    "nome": "Biblioteca de la Universidad de Sevilla (copie digitali su Internet Archive)",
@@ -423,7 +423,7 @@
    "esito": "ok"
   }
  },
- "totale": 11948,
+ "totale": 11956,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -320392,9 +320392,9 @@
     15
    ],
    "lingue": [
+    "la",
     "it",
-    "grc",
-    "la"
+    "grc"
    ],
    "lingua_dedotta": false,
    "titolo": "Epistolae ad familiares; Rime, Trionfi, etc.",
@@ -328263,6 +328263,262 @@
    "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-FITZWILLIAM-00229",
    "pagina": "https://cudl.lib.cam.ac.uk/view/MS-FITZWILLIAM-00229",
    "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "ds-ds30598",
+   "fonte": "ds",
+   "biblioteca": "Folger Shakespeare Library",
+   "citta": "Washington",
+   "segnatura": "MS V.a.82",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Elegiae",
+   "autori": [
+    {
+     "id": "tibullo",
+     "autore": "Tibullo",
+     "latino": "Tibullus",
+     "categoria": "classico-latino",
+     "opere": [
+      "Elegie"
+     ],
+     "corrispondenza": "autore: «Tibullus ; Ovid, 43 B.C.-17 A.D. or 18 A.D»"
+    },
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Tibullus ; Ovid, 43 B.C.-17 A.D. or 18 A.D»"
+    }
+   ],
+   "manifest": "https://digitalcollections.folger.edu/node/251644/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS30598",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds30599",
+   "fonte": "ds",
+   "biblioteca": "Folger Shakespeare Library",
+   "citta": "Washington",
+   "segnatura": "MS V.a.83",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De arte amandi manuscript, ca. 1400? / Ovidius.",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Ars amatoria"
+     ],
+     "corrispondenza": "autore: «Ovid, 43 B.C.-17 A.D. or 18 A.D., author.»"
+    }
+   ],
+   "manifest": "https://digitalcollections.folger.edu/node/251779/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS30599",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds30601",
+   "fonte": "ds",
+   "biblioteca": "Folger Shakespeare Library",
+   "citta": "Washington",
+   "segnatura": "MS V.a.88",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Selected works of Cicero manuscript, ca. 1465.",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius, author.»"
+    }
+   ],
+   "manifest": "https://digitalcollections.folger.edu/node/252055/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS30601",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds30585",
+   "fonte": "ds",
+   "biblioteca": "Folger Shakespeare Library",
+   "citta": "Washington",
+   "segnatura": "MS V.a.106",
+   "datazione": "1400-1499",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Ad Herennium rhetorica manuscript, 15th century / Marcii Tullii Ciceronis.",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Rhetorica ad Herennium"
+     ],
+     "corrispondenza": "titolo: «Ad Herennium rhetorica manuscript, 15th century / Marcii Tullii Ciceronis.»"
+    }
+   ],
+   "manifest": "https://digitalcollections.folger.edu/node/252506/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS30585",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds30587",
+   "fonte": "ds",
+   "biblioteca": "Folger Shakespeare Library",
+   "citta": "Washington",
+   "segnatura": "MS V.a.108",
+   "datazione": "1450-1499",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la",
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Satyrae ... etc. manuscript, ca. 15th century.",
+   "autori": [
+    {
+     "id": "ovidio",
+     "autore": "Ovidio",
+     "latino": "Ovidius",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Ovid, 43 B.C.-17 A.D. or 18 A.D. ; Pius II, Pope, 1405-1464.»"
+    }
+   ],
+   "manifest": "https://digitalcollections.folger.edu/node/252920/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS30587",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds30588",
+   "fonte": "ds",
+   "biblioteca": "Folger Shakespeare Library",
+   "citta": "Washington",
+   "segnatura": "MS V.a.111",
+   "datazione": "1300-1499",
+   "secolo": [
+    13,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Vita Alexandri Magni, libri 3-10 manuscript, 14th or 15th century.",
+   "autori": [
+    {
+     "id": "curzio-rufo",
+     "autore": "Curzio Rufo",
+     "latino": "Curtius Rufus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Curtius Rufus, Quintus, author.»"
+    }
+   ],
+   "manifest": "https://digitalcollections.folger.edu/node/253147/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS30588",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds30589",
+   "fonte": "ds",
+   "biblioteca": "Folger Shakespeare Library",
+   "citta": "Washington",
+   "segnatura": "MS V.a.112",
+   "datazione": "1400-1499",
+   "secolo": [
+    14,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De officiis ... etc. manuscript, 15th century.",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "De officiis"
+     ],
+     "corrispondenza": "autore: «Cicero, Marcus Tullius, author.»"
+    }
+   ],
+   "manifest": "https://digitalcollections.folger.edu/node/253492/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS30589",
+   "licenza": null,
+   "immagini": null
+  },
+  {
+   "id": "ds-ds30607",
+   "fonte": "ds",
+   "biblioteca": "Folger Shakespeare Library",
+   "citta": "Washington",
+   "segnatura": "MS V.b.40",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la",
+    "grc"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "De vita XII Caesarum manuscript, ca. 1470? / C. Suetonii Tranquilli.",
+   "autori": [
+    {
+     "id": "svetonio",
+     "autore": "Svetonio",
+     "latino": "Suetonius",
+     "categoria": "classico-latino",
+     "opere": [
+      "Vite dei Cesari"
+     ],
+     "corrispondenza": "autore: «Suetonius, ca. 69-approximately 122, author.»"
+    }
+   ],
+   "manifest": "https://digitalcollections.folger.edu/node/265680/manifest",
+   "pagina": "https://search.digital-scriptorium.org/catalog/DS30607",
+   "licenza": null,
    "immagini": null
   },
   {
