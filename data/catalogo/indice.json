@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-20T14:06:36.211Z",
- "totale": 640735,
- "con_autori": 37207,
+ "aggiornato": "2026-11-21T08:20:04.820Z",
+ "totale": 640809,
+ "con_autori": 37211,
  "miniati": 10704,
- "musica": 21115,
- "manoscritti": 528252,
+ "musica": 21119,
+ "manoscritti": 528326,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,11 +37,11 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 105821
+   "codici": 105846
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 58843
+   "codici": 58846
   },
   "grc": {
    "nome": "greco",
@@ -57,11 +57,11 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 26448
+   "codici": 26451
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23268
+   "codici": 23280
   },
   "xx": {
    "nome": "altre lingue",
@@ -97,7 +97,7 @@
   },
   "pl": {
    "nome": "polacco",
-   "codici": 8303
+   "codici": 8354
   },
   "it": {
    "nome": "italiano",
@@ -105,7 +105,7 @@
   },
   "en": {
    "nome": "inglese",
-   "codici": 7132
+   "codici": 7140
   },
   "cop": {
    "nome": "copto",
@@ -265,7 +265,7 @@
   },
   "uk": {
    "nome": "uk",
-   "codici": 59
+   "codici": 60
   },
   "mn": {
    "nome": "mongolo",
@@ -447,13 +447,13 @@
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 9737
+   "codici": 9741
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 522945
+   "codici": 523019
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -2839,7 +2839,7 @@
    "nome": "Pietro Lombardo",
    "latino": "Petrus Lombardus",
    "categoria": "medievale",
-   "codici": 369,
+   "codici": 372,
    "forme": [
     "Petri Lombardi",
     "Peter Lombard",
@@ -2851,7 +2851,7 @@
    "nome": "Tommaso d'Aquino",
    "latino": "Thomas de Aquino",
    "categoria": "medievale",
-   "codici": 733,
+   "codici": 734,
    "forme": [
     "Thomae de Aquino",
     "Thomas Aquinas",
@@ -8164,7 +8164,7 @@
   },
   "tubinga": {
    "nome": "Universitätsbibliothek Tübingen, Tubinga (dati dal Handschriftenportal, handschriftenportal.de)",
-   "codici": 284,
+   "codici": 286,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 0,
@@ -8182,7 +8182,7 @@
     "he": 2,
     "fr": 1,
     "it": 2,
-    "?": 10
+    "?": 12
    },
    "esito": "ok",
    "prefissi": [
@@ -9041,26 +9041,26 @@
   },
   "polona": {
    "nome": "Polona: Biblioteka Narodowa e altre biblioteche polacche (polona.pl)",
-   "codici": 13945,
+   "codici": 14017,
    "carte": 2,
    "carte_stampa": 0,
    "miniati": 184,
-   "musica": 888,
+   "musica": 892,
    "papiri": 0,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 443,
+   "con_autori": 447,
    "lingue": {
-    "la": 3340,
-    "?": 1913,
-    "pl": 8219,
-    "de": 1201,
-    "fr": 1284,
+    "la": 3365,
+    "?": 1914,
+    "pl": 8270,
+    "de": 1213,
+    "fr": 1287,
     "it": 130,
     "cs": 30,
-    "en": 87,
+    "en": 95,
     "ru": 303,
     "he": 19,
     "grc": 103,
@@ -9072,7 +9072,7 @@
     "cu": 501,
     "be": 6,
     "yi": 2,
-    "uk": 59,
+    "uk": 60,
     "tr": 19,
     "nl": 7,
     "sa": 12,
@@ -9224,7 +9224,7 @@
     "fr": 3,
     "it": 1
    },
-   "esito": "ok",
+   "esito": "errore: HTTP 403",
    "prefissi": [
     "uva-"
    ],
@@ -10709,7 +10709,7 @@
   {
    "file": "indice/tubinga-0.json",
    "fonte": "tubinga",
-   "righe": 284
+   "righe": 286
   },
   {
    "file": "indice/darmstadt-0.json",
@@ -10844,7 +10844,7 @@
   {
    "file": "indice/polona-0.json",
    "fonte": "polona",
-   "righe": 13945
+   "righe": 14017
   },
   {
    "file": "indice/manuscriptorium-0.json",
@@ -20737,10 +20737,10 @@
   3,
   99,
   5,
-  4772,
+  4831,
   317,
   4,
-  7272,
+  7285,
   48,
   41,
   191,
@@ -23267,7 +23267,7 @@
   1937,
   2678,
   20,
-  284,
+  286,
   1,
   299,
   2,
