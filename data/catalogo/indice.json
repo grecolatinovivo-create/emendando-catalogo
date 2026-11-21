@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-21T08:20:04.820Z",
- "totale": 640809,
- "con_autori": 37211,
+ "aggiornato": "2026-11-21T09:00:51.140Z",
+ "totale": 640810,
+ "con_autori": 37212,
  "miniati": 10704,
  "musica": 21119,
- "manoscritti": 528326,
+ "manoscritti": 528327,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,7 +37,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 105846
+   "codici": 105847
   },
   "?": {
    "nome": "lingua non indicata",
@@ -89,7 +89,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10504
+   "codici": 10505
   },
   "zh": {
    "nome": "cinese",
@@ -435,7 +435,7 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 7834
+   "codici": 7835
   },
   "classico-greco": {
    "nome": "classici greci",
@@ -443,7 +443,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15663
+   "codici": 15664
   },
   "medievale": {
    "nome": "autori medievali",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 523019
+   "codici": 523020
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -1117,7 +1117,7 @@
    "nome": "Fedro",
    "latino": "Phaedrus",
    "categoria": "classico-latino",
-   "codici": 13,
+   "codici": 14,
    "forme": [
     "Phaedrus Augusti libertus",
     "Phadrus",
@@ -2437,7 +2437,7 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 2972,
+   "codici": 2973,
    "forme": [
     "Augustini",
     "Augustino",
@@ -9503,7 +9503,7 @@
   },
   "realbiblioteca": {
    "nome": "Real Biblioteca (Palacio Real, Madrid) e Real Biblioteca del Monasterio de El Escorial (rbdigital.realbiblioteca.es, Patrimonio Nacional)",
-   "codici": 2178,
+   "codici": 2179,
    "carte": 1,
    "carte_stampa": 0,
    "miniati": 140,
@@ -9513,12 +9513,12 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 234,
+   "con_autori": 235,
    "lingue": {
     "fr": 57,
-    "es": 1094,
+    "es": 1095,
     "it": 63,
-    "la": 177,
+    "la": 178,
     "en": 9,
     "gl": 1,
     "ca": 20,
@@ -10904,7 +10904,7 @@
   {
    "file": "indice/realbiblioteca-0.json",
    "fonte": "realbiblioteca",
-   "righe": 2178
+   "righe": 2179
   },
   {
    "file": "indice/ucm-0.json",
@@ -22472,7 +22472,7 @@
   6,
   1,
   44,
-  1265,
+  1266,
   913,
   26,
   1,

@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-20T11:40:54.668Z",
+ "aggiornato": "2026-11-21T09:00:51.140Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -25,7 +25,7 @@
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
    "codici": 477,
-   "esito": "errore: fetch failed"
+   "esito": "ok"
   },
   "gallica": {
    "nome": "Bibliothèque nationale de France (gallica.bnf.fr)",
@@ -130,7 +130,7 @@
   "penn": {
    "nome": "University of Pennsylvania Libraries (colenda.library.upenn.edu)",
    "codici": 169,
-   "esito": "ok"
+   "esito": "errore: HTTP 406"
   },
   "ds": {
    "nome": "Digital Scriptorium: istituzioni statunitensi (search.digital-scriptorium.org)",
@@ -225,7 +225,7 @@
   "uva": {
    "nome": "Allard Pierson, Universiteit van Amsterdam (uvaerfgoed.nl)",
    "codici": 3,
-   "esito": "ok"
+   "esito": "errore: HTTP 403"
   },
   "vlaustria": {
    "nome": "Universitätsbibliothek Graz e Universitätsbibliothek Salzburg (unipub.uni-graz.at, eplus.uni-salzburg.at; elenco dalle sitemap, manifesti IIIF delle biblioteche)",
@@ -269,7 +269,7 @@
   },
   "realbiblioteca": {
    "nome": "Real Biblioteca (Palacio Real, Madrid) e Real Biblioteca del Monasterio de El Escorial (rbdigital.realbiblioteca.es, Patrimonio Nacional)",
-   "codici": 125,
+   "codici": 126,
    "esito": "ok"
   },
   "ucm": {
@@ -423,7 +423,7 @@
    "esito": "ok"
   }
  },
- "totale": 11956,
+ "totale": 11957,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -363032,6 +363032,46 @@
    "manifest": "https://rbdigital.realbiblioteca.es/files/manifests/II_00589.json",
    "pagina": "https://rbdigital.realbiblioteca.es/s/realbiblioteca/item/2501",
    "licenza": "Patrimonio Nacional, Real Biblioteca (Palacio Real): uso libero con citazione «Patrimonio Nacional. Real Biblioteca (Palacio Real), II/589»; riproduzione completa solo per collegamento al sito (rbdigital.realbiblioteca.es)",
+   "immagini": null
+  },
+  {
+   "id": "rbd-11721",
+   "fonte": "realbiblioteca",
+   "biblioteca": "Real Biblioteca (Palacio Real)",
+   "citta": "Madrid",
+   "segnatura": "II/591",
+   "datazione": "1788",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "es",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Phedri Augusti liberti Fabularum libri quinque cum interpretatione et notis Hispanicis Augustini Pauli de Castro, presbiteri et patritis Corduuensis in Mexicanis",
+   "autori": [
+    {
+     "id": "fedro",
+     "autore": "Fedro",
+     "latino": "Phaedrus",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "autore: «Fedro»"
+    },
+    {
+     "id": "agostino",
+     "autore": "Agostino",
+     "latino": "Augustinus",
+     "categoria": "cristiano",
+     "opere": [],
+     "corrispondenza": "titolo: «…retatione et notis Hispanicis Augustini Pauli de Castro, presbiteri e…»"
+    }
+   ],
+   "manifest": "https://rbdigital.rb.patrimonionacional.es/files/manifests/II_591.json",
+   "pagina": "https://rbdigital.realbiblioteca.es/s/realbiblioteca/item/11721",
+   "licenza": "Patrimonio Nacional, Real Biblioteca (Palacio Real): uso libero con citazione «Patrimonio Nacional. Real Biblioteca (Palacio Real), II/591»; riproduzione completa solo per collegamento al sito (rbdigital.realbiblioteca.es)",
    "immagini": null
   },
   {
