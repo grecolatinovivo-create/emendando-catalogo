@@ -20,14 +20,14 @@
   "ultimo_ok": "2026-11-20T14:02:16.100Z"
  },
  "bamberga": {
-  "quando": "2026-11-20T11:32:02.171Z",
+  "quando": "2026-11-21T10:47:39.517Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-20T11:32:02.171Z"
+  "ultimo_ok": "2026-11-21T10:47:39.517Z"
  },
  "berlino": {
-  "quando": "2026-11-20T11:32:02.171Z",
+  "quando": "2026-11-21T10:47:39.517Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-20T11:32:02.171Z"
+  "ultimo_ok": "2026-11-21T10:47:39.517Z"
  },
  "bl": {
   "quando": "2026-11-20T13:15:45.943Z",
@@ -55,9 +55,9 @@
   "ultimo_ok": "2026-11-20T12:59:21.005Z"
  },
  "bsb": {
-  "quando": "2026-11-20T11:32:02.171Z",
+  "quando": "2026-11-21T10:47:39.517Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-20T11:32:02.171Z"
+  "ultimo_ok": "2026-11-21T10:47:39.517Z"
  },
  "bub": {
   "quando": "2026-11-21T10:23:45.579Z",
@@ -75,9 +75,9 @@
   "ultimo_ok": "2026-11-20T13:15:45.943Z"
  },
  "colonia": {
-  "quando": "2026-11-20T11:32:02.171Z",
+  "quando": "2026-11-21T10:47:39.517Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-20T11:32:02.171Z"
+  "ultimo_ok": "2026-11-21T10:47:39.517Z"
  },
  "crossasia": {
   "quando": "2026-11-21T08:18:32.867Z",
@@ -100,14 +100,14 @@
   "ultimo_ok": "2026-11-21T08:16:03.456Z"
  },
  "ds": {
-  "quando": "2026-11-20T11:32:02.171Z",
+  "quando": "2026-11-21T10:47:39.517Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-20T11:32:02.171Z"
+  "ultimo_ok": "2026-11-21T10:47:39.517Z"
  },
  "ecodices": {
-  "quando": "2026-11-20T11:32:02.171Z",
+  "quando": "2026-11-21T10:47:39.517Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-20T11:32:02.171Z"
+  "ultimo_ok": "2026-11-21T10:47:39.517Z"
  },
  "elte": {
   "quando": "2026-11-20T12:51:53.680Z",
@@ -125,9 +125,9 @@
   "ultimo_ok": "2026-11-21T08:16:03.456Z"
  },
  "gallica": {
-  "quando": "2026-11-20T11:32:02.171Z",
+  "quando": "2026-11-21T10:47:39.517Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-20T11:32:02.171Z"
+  "ultimo_ok": "2026-11-21T10:47:39.517Z"
  },
  "getty": {
   "quando": "2026-11-20T13:13:32.344Z",
@@ -150,9 +150,9 @@
   "ultimo_ok": "2026-11-20T13:13:32.344Z"
  },
  "heidelberg": {
-  "quando": "2026-11-20T11:32:02.171Z",
+  "quando": "2026-11-21T10:47:39.517Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-20T11:32:02.171Z"
+  "ultimo_ok": "2026-11-21T10:47:39.517Z"
  },
  "ija": {
   "quando": "2026-11-20T13:43:30.671Z",
@@ -165,7 +165,7 @@
   "ultimo_ok": "2026-11-20T13:15:45.943Z"
  },
  "karlsruhe": {
-  "quando": "2026-11-20T11:32:02.171Z",
+  "quando": "2026-11-21T10:47:39.517Z",
   "esito": "sospesa: digital.blb-karlsruhe.de risponde 403",
   "ultimo_ok": "2026-10-24T19:49:16.763Z"
  },
@@ -180,13 +180,13 @@
   "ultimo_ok": "2026-11-20T14:02:16.100Z"
  },
  "laurenziana": {
-  "quando": "2026-11-20T11:32:02.171Z",
+  "quando": "2026-11-21T10:47:39.517Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-20T11:32:02.171Z"
+  "ultimo_ok": "2026-11-21T10:47:39.517Z"
  },
  "leiden": {
-  "quando": "2026-11-20T11:32:02.171Z",
-  "esito": "errore: raccolta incompleta (ubl_manuscripts, pagina 181): riprenderà alla prossima esecuzione",
+  "quando": "2026-11-21T10:47:39.517Z",
+  "esito": "errore: raccolta incompleta (bnm, pagina 56): riprenderà alla prossima esecuzione",
   "ultimo_ok": "2026-11-18T10:58:07.045Z"
  },
  "libfond": {
@@ -195,9 +195,9 @@
   "ultimo_ok": "2026-11-21T10:21:26.608Z"
  },
  "lipsia": {
-  "quando": "2026-11-20T11:32:02.171Z",
+  "quando": "2026-11-21T10:47:39.517Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-20T11:32:02.171Z"
+  "ultimo_ok": "2026-11-21T10:47:39.517Z"
  },
  "loc": {
   "quando": "2026-11-20T13:13:32.344Z",
@@ -255,9 +255,9 @@
   "ultimo_ok": "2026-11-20T14:02:16.100Z"
  },
  "nlg": {
-  "quando": "2026-11-20T11:32:02.171Z",
+  "quando": "2026-11-21T10:47:39.517Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-20T11:32:02.171Z"
+  "ultimo_ok": "2026-11-21T10:47:39.517Z"
  },
  "nli": {
   "quando": "2026-11-20T14:02:16.100Z",
@@ -280,9 +280,9 @@
   "ultimo_ok": "2026-11-20T14:02:16.100Z"
  },
  "onb": {
-  "quando": "2026-11-20T11:32:02.171Z",
+  "quando": "2026-11-21T10:47:39.517Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-20T11:32:02.171Z"
+  "ultimo_ok": "2026-11-21T10:47:39.517Z"
  },
  "papiri": {
   "quando": "2026-11-20T12:10:56.041Z",
@@ -350,7 +350,7 @@
   "ultimo_ok": "2026-11-20T12:59:18.700Z"
  },
  "stoccarda": {
-  "quando": "2026-11-20T11:32:02.171Z",
+  "quando": "2026-11-21T10:47:39.517Z",
   "esito": "sospesa: manifesti di Marburgo non raggiungibili",
   "ultimo_ok": "2026-10-24T19:49:16.763Z"
  },
@@ -405,7 +405,7 @@
   "ultimo_ok": "2026-11-20T13:15:45.943Z"
  },
  "wolfenbuettel": {
-  "quando": "2026-11-20T11:32:02.171Z",
+  "quando": "2026-11-21T10:47:39.517Z",
   "esito": "sospesa: server iiif.hab.de non raggiungibile",
   "ultimo_ok": "2026-10-24T19:49:16.763Z"
  },
