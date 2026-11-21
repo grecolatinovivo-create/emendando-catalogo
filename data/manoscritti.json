@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-21T13:30:32.607Z",
+ "aggiornato": "2026-11-21T13:38:23.042Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -154,7 +154,7 @@
   },
   "wellcome": {
    "nome": "Wellcome Collection, Londra (api.wellcomecollection.org)",
-   "codici": 38,
+   "codici": 37,
    "esito": "ok"
   },
   "bl": {
@@ -423,7 +423,7 @@
    "esito": "ok"
   }
  },
- "totale": 11958,
+ "totale": 11957,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -435998,34 +435998,6 @@
    ],
    "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b20294669",
    "pagina": "https://wellcomecollection.org/works/k96skg7h",
-   "licenza": "Wellcome Collection, Attribution 4.0 International (CC BY 4.0)",
-   "immagini": null
-  },
-  {
-   "id": "wel-rc844nbc",
-   "fonte": "wellcome",
-   "biblioteca": "Wellcome Collection",
-   "citta": "Londra",
-   "segnatura": "MS Arabic 8",
-   "datazione": null,
-   "secolo": null,
-   "lingue": [
-    "ar"
-   ],
-   "lingua_dedotta": false,
-   "titolo": "MS Arabic 8.",
-   "autori": [
-    {
-     "id": "ippocrate",
-     "autore": "Ippocrate",
-     "latino": "Hippocrates",
-     "categoria": "classico-greco",
-     "opere": [],
-     "corrispondenza": "autore: «Muḥammad Akbar ibn Muḥammad Shāh Arzānī ; Hippocrates»"
-    }
-   ],
-   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b20294669",
-   "pagina": "https://wellcomecollection.org/works/rc844nbc",
    "licenza": "Wellcome Collection, Attribution 4.0 International (CC BY 4.0)",
    "immagini": null
   },
