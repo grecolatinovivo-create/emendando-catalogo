@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-21T09:00:51.140Z",
+ "aggiornato": "2026-11-21T13:30:32.607Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -70,7 +70,7 @@
   "malatestiana": {
    "nome": "Biblioteca Malatestiana, Cesena (Catalogo aperto dei manoscritti malatestiani; manifesti scritti dal catalogo)",
    "codici": 94,
-   "esito": "errore: schede lette in parte (mancano 60): riprenderà alla prossima esecuzione"
+   "esito": "errore: schede lette in parte (mancano 61): riprenderà alla prossima esecuzione"
   },
   "classense": {
    "nome": "Biblioteca Classense, Ravenna (www.cdc.classense.ra.it; elenco raccolto dal browser)",
@@ -80,7 +80,7 @@
   "leiden": {
    "nome": "Universiteitsbibliotheek Leiden (digitalcollections.universiteitleiden.nl)",
    "codici": 510,
-   "esito": "errore: raccolta incompleta (ubl_manuscripts, pagina 181): riprenderà alla prossima esecuzione"
+   "esito": "errore: raccolta incompleta (bnm, pagina 56): riprenderà alla prossima esecuzione"
   },
   "bamberga": {
    "nome": "Staatsbibliothek Bamberg, Bamberga (dati dal Handschriftenportal, handschriftenportal.de)",
@@ -339,7 +339,7 @@
   },
   "archive": {
    "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, John Carter Brown Library, Newberry Library, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
-   "codici": 86,
+   "codici": 87,
    "esito": "ok"
   },
   "crossasia": {
@@ -423,7 +423,7 @@
    "esito": "ok"
   }
  },
- "totale": 11957,
+ "totale": 11958,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -68976,6 +68976,36 @@
    "pagina": "https://archive.org/details/P_MSS_1526_IV",
    "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
    "immagini": 163
+  },
+  {
+   "id": "ia-p-mss-1762",
+   "fonte": "archive",
+   "biblioteca": "Biblioteca Civica «Vincenzo Joppi», Udine",
+   "citta": "Udine",
+   "segnatura": "Fondo Principale 1762",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Manoscritto 1762 1762. Vitcolo [?] G.B. — Della metafisica degli antichissimi Filosofi Italiani. — https://www.techeudine.it/manoscritti https://www.techeudine.it/fondo-principale https://archive.org/details/inventario-del-fondo-principale/Inventario%20del%20Fondo%20Principale/",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Metafisica"
+     ],
+     "corrispondenza": "titolo: «…762. Vitcolo [?] G.B. — Della metafisica degli antichissimi Filosofi I…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/P_MSS_1762/manifest.json",
+   "pagina": "https://archive.org/details/P_MSS_1762",
+   "licenza": "Internet Archive: condizioni d'uso della biblioteca che ha pubblicato l'oggetto",
+   "immagini": 91
   },
   {
    "id": "ia-p-mss-4022",

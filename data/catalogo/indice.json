@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-21T11:04:33.832Z",
- "totale": 640809,
- "con_autori": 37211,
- "miniati": 10704,
+ "aggiornato": "2026-11-21T13:30:32.607Z",
+ "totale": 641348,
+ "con_autori": 37215,
+ "miniati": 10705,
  "musica": 21119,
- "manoscritti": 528326,
+ "manoscritti": 528865,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 35215
+   "codici": 35216
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -65,7 +65,7 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 19637
+   "codici": 20052
   },
   "pi": {
    "nome": "pali",
@@ -101,7 +101,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 8028
+   "codici": 8151
   },
   "en": {
    "nome": "inglese",
@@ -439,21 +439,21 @@
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7420
+   "codici": 7421
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15664
+   "codici": 15666
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 9740
+   "codici": 9741
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 523019
+   "codici": 523558
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -1624,7 +1624,7 @@
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 2319,
+   "codici": 2320,
    "forme": [
     "Aristotelis",
     "Aristotle",
@@ -2637,7 +2637,7 @@
    "nome": "Tertulliano",
    "latino": "Tertullianus",
    "categoria": "cristiano",
-   "codici": 57,
+   "codici": 59,
    "forme": [
     "Tertulliani",
     "Tertullian",
@@ -3092,7 +3092,7 @@
    "nome": "Dante Alighieri",
    "latino": "Dantes Alagherius",
    "categoria": "medievale",
-   "codici": 304,
+   "codici": 305,
    "forme": [
     "Dantis Alagherii",
     "Dante Alagherii",
@@ -9937,21 +9937,21 @@
   },
   "archive": {
    "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, John Carter Brown Library, Newberry Library, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
-   "codici": 15832,
+   "codici": 16371,
    "carte": 70,
    "carte_stampa": 0,
-   "miniati": 183,
+   "miniati": 184,
    "musica": 20,
    "papiri": 0,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 145,
+   "con_autori": 149,
    "lingue": {
     "tr": 247,
-    "it": 1159,
-    "xx": 8257,
+    "it": 1282,
+    "xx": 8672,
     "la": 163,
     "grc": 10,
     "fr": 330,
@@ -9966,7 +9966,7 @@
     "hu": 1,
     "ja": 93,
     "nl": 3,
-    "ar": 651,
+    "ar": 652,
     "syr": 17,
     "fa": 481,
     "ru": 1,
@@ -9991,7 +9991,7 @@
    "prefissi": [
     "ia-"
    ],
-   "pezzi_voci": 20,
+   "pezzi_voci": 21,
    "indice": [
     "indice/archive-0.json"
    ]
@@ -10974,7 +10974,7 @@
   {
    "file": "indice/archive-0.json",
    "fonte": "archive",
-   "righe": 15832
+   "righe": 16371
   },
   {
    "file": "indice/crossasia-0.json",
@@ -20650,7 +20650,7 @@
   52,
   60,
   814,
-  1296,
+  1419,
   156,
   85,
   373,
@@ -20804,7 +20804,7 @@
   1,
   15,
   6,
-  789,
+  790,
   18,
   1,
   1,
@@ -21205,7 +21205,7 @@
   1,
   1,
   2,
-  7020,
+  7435,
   1,
   1,
   2,
