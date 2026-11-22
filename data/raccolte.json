@@ -1,8 +1,8 @@
 {
  "ambrosiana": {
-  "quando": "2026-11-21T11:00:14.917Z",
+  "quando": "2026-11-22T10:21:51.924Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-21T11:00:14.917Z"
+  "ultimo_ok": "2026-11-22T10:21:51.924Z"
  },
  "archive": {
   "quando": "2026-11-21T13:25:36.749Z",
@@ -40,9 +40,9 @@
   "ultimo_ok": "2026-11-21T13:04:53.408Z"
  },
  "bncf": {
-  "quando": "2026-11-21T11:00:14.917Z",
+  "quando": "2026-11-22T10:21:51.924Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-21T11:00:14.917Z"
+  "ultimo_ok": "2026-11-22T10:21:51.924Z"
  },
  "bnl": {
   "quando": "2026-11-21T11:50:36.905Z",
@@ -60,12 +60,12 @@
   "ultimo_ok": "2026-11-21T10:47:39.517Z"
  },
  "bub": {
-  "quando": "2026-11-21T11:00:14.917Z",
+  "quando": "2026-11-22T10:21:51.924Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-21T11:00:14.917Z"
+  "ultimo_ok": "2026-11-22T10:21:51.924Z"
  },
  "casanatense": {
-  "quando": "2026-11-21T11:00:14.917Z",
+  "quando": "2026-11-22T10:21:51.924Z",
   "esito": "errore: HTTP 403",
   "ultimo_ok": "2026-11-19T10:54:09.134Z"
  },
@@ -205,8 +205,8 @@
   "ultimo_ok": "2026-11-21T12:48:45.604Z"
  },
  "malatestiana": {
-  "quando": "2026-11-21T11:00:14.917Z",
-  "esito": "errore: schede lette in parte (mancano 61): riprenderà alla prossima esecuzione",
+  "quando": "2026-11-22T10:21:51.924Z",
+  "esito": "errore: schede lette in parte (mancano 60): riprenderà alla prossima esecuzione",
   "ultimo_ok": null
  },
  "manchester": {
@@ -230,9 +230,9 @@
   "ultimo_ok": "2026-11-22T08:53:07.045Z"
  },
  "montecassino": {
-  "quando": "2026-11-21T11:00:14.917Z",
+  "quando": "2026-11-22T10:21:51.924Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-21T11:00:14.917Z"
+  "ultimo_ok": "2026-11-22T10:21:51.924Z"
  },
  "musei": {
   "quando": "2026-11-21T12:54:49.342Z",
@@ -380,7 +380,7 @@
   "ultimo_ok": "2026-11-22T07:38:05.435Z"
  },
  "vallicelliana": {
-  "quando": "2026-11-21T11:00:14.917Z",
+  "quando": "2026-11-22T10:21:51.924Z",
   "esito": "errore: pagina 1: HTTP 404",
   "ultimo_ok": "2026-11-08T02:52:20.534Z"
  },
