@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-21T13:38:23.042Z",
+ "aggiornato": "2026-11-23T16:52:46.868Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -70,7 +70,7 @@
   "malatestiana": {
    "nome": "Biblioteca Malatestiana, Cesena (Catalogo aperto dei manoscritti malatestiani; manifesti scritti dal catalogo)",
    "codici": 94,
-   "esito": "errore: schede lette in parte (mancano 61): riprenderà alla prossima esecuzione"
+   "esito": "errore: schede lette in parte (mancano 60): riprenderà alla prossima esecuzione"
   },
   "classense": {
    "nome": "Biblioteca Classense, Ravenna (www.cdc.classense.ra.it; elenco raccolto dal browser)",
@@ -80,7 +80,7 @@
   "leiden": {
    "nome": "Universiteitsbibliotheek Leiden (digitalcollections.universiteitleiden.nl)",
    "codici": 510,
-   "esito": "errore: raccolta incompleta (bnm, pagina 56): riprenderà alla prossima esecuzione"
+   "esito": "ok"
   },
   "bamberga": {
    "nome": "Staatsbibliothek Bamberg, Bamberga (dati dal Handschriftenportal, handschriftenportal.de)",
@@ -120,7 +120,7 @@
   "onb": {
    "nome": "Österreichische Nationalbibliothek, Vienna (onb.digital; manifesti api.onb.ac.at)",
    "codici": 367,
-   "esito": "ok"
+   "esito": "errore: fetch failed"
   },
   "yale": {
    "nome": "Yale University Library, Beinecke e altre (collections.library.yale.edu)",
@@ -199,7 +199,7 @@
   },
   "kokusho": {
    "nome": "Kokusho Database, National Institute of Japanese Literature (kokusho.nijl.ac.jp)",
-   "codici": 5,
+   "codici": 6,
    "esito": "ok"
   },
   "handrit": {
@@ -225,7 +225,7 @@
   "uva": {
    "nome": "Allard Pierson, Universiteit van Amsterdam (uvaerfgoed.nl)",
    "codici": 3,
-   "esito": "errore: HTTP 403"
+   "esito": "ok"
   },
   "vlaustria": {
    "nome": "Universitätsbibliothek Graz e Universitätsbibliothek Salzburg (unipub.uni-graz.at, eplus.uni-salzburg.at; elenco dalle sitemap, manifesti IIIF delle biblioteche)",
@@ -423,7 +423,7 @@
    "esito": "ok"
   }
  },
- "totale": 11957,
+ "totale": 11958,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -579,6 +579,36 @@
    "manifest": "https://digitalcollections.aucegypt.edu/iiif/2/p15795coll4:2948/manifest.json",
    "pagina": "https://digitalcollections.aucegypt.edu/digital/collection/p15795coll4/id/2948",
    "licenza": "Copyright 2013, American University in Cairo. All rights reserved.",
+   "immagini": null
+  },
+  {
+   "id": "nijl-300145315",
+   "fonte": "kokusho",
+   "biblioteca": "Archivio e biblioteca della prefettura di Kyoto (Kyōtogaku Rekisaikan) (京都府立京都学・歴彩館)",
+   "citta": "Kyoto",
+   "segnatura": "DIG-KYFU-50377",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "ja"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "幾何原本",
+   "autori": [
+    {
+     "id": "euclide",
+     "autore": "Euclide",
+     "latino": "Euclides",
+     "categoria": "classico-greco",
+     "opere": [
+      "Elementi"
+     ],
+     "corrispondenza": "titolo: «幾何原本»"
+    }
+   ],
+   "manifest": "https://kokusho.nijl.ac.jp/biblio/300145315/manifest",
+   "pagina": "https://kokusho.nijl.ac.jp/biblio/300145315",
+   "licenza": "condizioni del proprietario (kokusho.nijl.ac.jp/page/usage.html)",
    "immagini": null
   },
   {

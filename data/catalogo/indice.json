@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-23T12:32:25.805Z",
- "totale": 641349,
- "con_autori": 37214,
- "miniati": 10705,
- "musica": 21119,
- "manoscritti": 528866,
+ "aggiornato": "2026-11-23T16:52:46.868Z",
+ "totale": 643916,
+ "con_autori": 37215,
+ "miniati": 10708,
+ "musica": 21120,
+ "manoscritti": 531433,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -33,7 +33,7 @@
  "lingue": {
   "ja": {
    "nome": "giapponese",
-   "codici": 178234
+   "codici": 180801
   },
   "la": {
    "nome": "latino",
@@ -439,7 +439,7 @@
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7420
+   "codici": 7421
   },
   "cristiano": {
    "nome": "autori cristiani",
@@ -453,11 +453,11 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 523559
+   "codici": 526098
   },
   "carta": {
    "nome": "carte manoscritte",
-   "codici": 2092
+   "codici": 2120
   },
   "carta_stampa": {
    "nome": "carte a stampa",
@@ -2008,7 +2008,7 @@
    "nome": "Euclide",
    "latino": "Euclides",
    "categoria": "classico-greco",
-   "codici": 236,
+   "codici": 237,
    "forme": [
     "Euclidis",
     "Euklid",
@@ -7323,9 +7323,22 @@
   "Археографско одељење, Belgrado",
   "Дигитални репозиторијум, Belgrado",
   "Национальная библиотека Республики Казахстан, Almaty",
+  "九大坐春風 (Giappone)",
+  "九大崎門 (Giappone)",
+  "九大廣瀬 (Giappone)",
+  "九大朴庵 (Giappone)",
+  "九大樋口 (Giappone)",
+  "九大澤 (Giappone)",
+  "九大益田 (Giappone)",
+  "九大西田 (Giappone)",
+  "九大近藤 (Giappone)",
+  "九大逍遥 (Giappone)",
+  "九大音無 (Giappone)",
   "夢望庵文庫 (Giappone)",
   "嵐牛俳諧資 (Giappone)",
-  "西厳寺 (Giappone)"
+  "永井荷風断腸亭日乗自筆 (Giappone)",
+  "西厳寺 (Giappone)",
+  "阪大図加地 (Giappone)"
  ],
  "fonti": {
   "heidelberg": {
@@ -8970,25 +8983,25 @@
   },
   "kokusho": {
    "nome": "Kokusho Database, National Institute of Japanese Literature (kokusho.nijl.ac.jp)",
-   "codici": 139322,
-   "carte": 788,
+   "codici": 141889,
+   "carte": 816,
    "carte_stampa": 0,
-   "miniati": 298,
-   "musica": 311,
+   "miniati": 301,
+   "musica": 312,
    "papiri": 0,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 5,
+   "con_autori": 6,
    "lingue": {
-    "ja": 139322
+    "ja": 141889
    },
    "esito": "ok",
    "prefissi": [
     "nijl-"
    ],
-   "pezzi_voci": 175,
+   "pezzi_voci": 178,
    "indice": [
     "indice/kokusho-0.json",
     "indice/kokusho-1.json",
@@ -8996,7 +9009,8 @@
     "indice/kokusho-3.json",
     "indice/kokusho-4.json",
     "indice/kokusho-5.json",
-    "indice/kokusho-6.json"
+    "indice/kokusho-6.json",
+    "indice/kokusho-7.json"
    ]
   },
   "handrit": {
@@ -10834,7 +10848,12 @@
   {
    "file": "indice/kokusho-6.json",
    "fonte": "kokusho",
-   "righe": 19322
+   "righe": 20000
+  },
+  {
+   "file": "indice/kokusho-7.json",
+   "fonte": "kokusho",
+   "righe": 1889
   },
   {
    "file": "indice/handrit-0.json",
@@ -14170,10 +14189,23 @@
   "biblioteca",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
+  "biblioteca",
+  "biblioteca",
+  "biblioteca",
+  "biblioteca",
+  "biblioteca",
+  "biblioteca",
+  "biblioteca",
+  "biblioteca",
+  "biblioteca",
+  "biblioteca",
+  "biblioteca",
+  "biblioteca",
   "biblioteca"
  ],
  "totali": {
-  "biblioteche": 1417,
+  "biblioteche": 1430,
   "musei": 1675,
   "senza_luogo": 1945
  },
@@ -20369,6 +20401,19 @@
   "almaty",
   null,
   null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
   null
  ],
  "biblioteche_n": [
@@ -20386,7 +20431,7 @@
   1,
   52,
   157,
-  292,
+  927,
   1,
   1,
   4,
@@ -20475,7 +20520,7 @@
   420,
   68,
   12,
-  313,
+  763,
   1,
   1,
   1,
@@ -20636,7 +20681,7 @@
   30938,
   43,
   8,
-  10,
+  701,
   167,
   440,
   86,
@@ -23101,18 +23146,18 @@
   77,
   1092,
   726,
-  102,
-  743,
+  112,
+  943,
   278,
   4,
   94,
   4,
   845,
-  9,
+  259,
   203,
   39,
-  358,
-  142,
+  359,
+  160,
   1,
   46,
   4,
@@ -23128,7 +23173,7 @@
   92,
   1,
   256,
-  478,
+  479,
   39,
   16,
   77,
@@ -23462,8 +23507,21 @@
   21,
   18,
   2,
+  2,
+  4,
+  20,
+  1,
+  2,
+  5,
+  1,
+  8,
+  6,
+  2,
+  220,
   1156,
   240,
-  200
+  37,
+  200,
+  3
  ]
 }
