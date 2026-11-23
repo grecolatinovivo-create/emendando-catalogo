@@ -130,9 +130,9 @@
   "ultimo_ok": "2026-11-23T11:37:52.181Z"
  },
  "getty": {
-  "quando": "2026-11-22T13:03:00.186Z",
+  "quando": "2026-11-23T14:41:52.617Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-22T13:03:00.186Z"
+  "ultimo_ok": "2026-11-23T14:41:52.617Z"
  },
  "giappone": {
   "quando": "2026-11-23T14:33:11.871Z",
@@ -145,9 +145,9 @@
   "ultimo_ok": "2026-11-23T08:27:06.636Z"
  },
  "harvard": {
-  "quando": "2026-11-22T13:03:00.186Z",
+  "quando": "2026-11-23T14:41:52.617Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-22T13:03:00.186Z"
+  "ultimo_ok": "2026-11-23T14:41:52.617Z"
  },
  "heidelberg": {
   "quando": "2026-11-23T11:37:52.181Z",
@@ -200,9 +200,9 @@
   "ultimo_ok": "2026-11-23T11:37:52.181Z"
  },
  "loc": {
-  "quando": "2026-11-22T13:03:00.186Z",
+  "quando": "2026-11-23T14:41:52.617Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-22T13:03:00.186Z"
+  "ultimo_ok": "2026-11-23T14:41:52.617Z"
  },
  "malatestiana": {
   "quando": "2026-11-23T11:19:59.086Z",
@@ -295,7 +295,7 @@
   "ultimo_ok": "2026-11-22T12:45:07.146Z"
  },
  "penn": {
-  "quando": "2026-11-22T13:03:00.186Z",
+  "quando": "2026-11-23T14:41:52.617Z",
   "esito": "errore: HTTP 406",
   "ultimo_ok": "2026-11-19T13:11:14.420Z"
  },
@@ -395,7 +395,7 @@
   "ultimo_ok": "2026-11-23T14:32:40.772Z"
  },
  "walters": {
-  "quando": "2026-11-22T13:03:00.186Z",
+  "quando": "2026-11-23T14:41:52.617Z",
   "esito": "sospesa: le immagini di thedigitalwalters.org non si caricano nemmeno dal browser (errore 522 del server del museo, 25 ottobre 2026)",
   "ultimo_ok": null
  },
