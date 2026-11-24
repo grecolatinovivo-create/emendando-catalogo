@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-24T12:07:02.415Z",
- "totale": 643978,
- "con_autori": 37215,
+ "aggiornato": "2026-11-24T13:21:39.065Z",
+ "totale": 643979,
+ "con_autori": 37219,
  "miniati": 10708,
  "musica": 21120,
- "manoscritti": 531495,
+ "manoscritti": 531496,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,11 +37,11 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 105853
+   "codici": 105858
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 58854
+   "codici": 58850
   },
   "grc": {
    "nome": "greco",
@@ -439,21 +439,21 @@
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7421
+   "codici": 7422
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15666
+   "codici": 15667
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 9741
+   "codici": 9743
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 526160
+   "codici": 526161
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -2380,7 +2380,7 @@
    "nome": "Ateneo",
    "latino": "Athenaeus",
    "categoria": "classico-greco",
-   "codici": 5,
+   "codici": 6,
    "forme": [
     "Athenaeus Naucratita",
     "Ateneo di Naucrati",
@@ -2437,7 +2437,7 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 2973,
+   "codici": 2974,
    "forme": [
     "Augustini",
     "Augustino",
@@ -2771,7 +2771,7 @@
    "nome": "Isidoro di Siviglia",
    "latino": "Isidorus Hispalensis",
    "categoria": "medievale",
-   "codici": 684,
+   "codici": 685,
    "forme": [
     "Isidori Hispalensis",
     "Isidore of Seville",
@@ -2919,7 +2919,7 @@
    "nome": "Graziano",
    "latino": "Gratianus",
    "categoria": "medievale",
-   "codici": 249,
+   "codici": 250,
    "forme": [
     "Gratiani",
     "Gratian",
@@ -3104,7 +3104,7 @@
    "nome": "Francesco Petrarca",
    "latino": "Franciscus Petrarca",
    "categoria": "medievale",
-   "codici": 460,
+   "codici": 461,
    "forme": [
     "Francisci Petrarcae",
     "Petrarca",
@@ -7615,7 +7615,7 @@
   },
   "gallica": {
    "nome": "Bibliothèque nationale de France (gallica.bnf.fr)",
-   "codici": 68446,
+   "codici": 68447,
    "carte": 85,
    "carte_stampa": 2,
    "miniati": 1968,
@@ -7625,10 +7625,10 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 9628,
+   "con_autori": 9629,
    "lingue": {
     "fr": 19837,
-    "la": 13167,
+    "la": 13168,
     "grc": 4110,
     "?": 4283,
     "he": 1567,
@@ -7902,7 +7902,7 @@
     "?": 15,
     "la": 2
    },
-   "esito": "errore: pagina 1: HTTP 404",
+   "esito": "ok",
    "prefissi": [
     "vall-"
    ],
@@ -8252,8 +8252,8 @@
    "edizioni_principi": 0,
    "con_autori": 757,
    "lingue": {
-    "?": 1429,
-    "la": 2126,
+    "?": 1428,
+    "la": 2127,
     "fr": 204,
     "es": 51,
     "it": 206,
@@ -10312,12 +10312,12 @@
    "incunaboli": 15587,
    "stampe": 72,
    "edizioni_principi": 172,
-   "con_autori": 4906,
+   "con_autori": 4908,
    "lingue": {
     "grc": 178,
-    "la": 6500,
+    "la": 6503,
     "de": 823,
-    "?": 7100,
+    "?": 7097,
     "it": 303,
     "es": 28,
     "fr": 726,
@@ -10560,7 +10560,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 1672,
+   "con_autori": 1673,
    "lingue": {
     "la": 21019,
     "it": 470,
@@ -10643,7 +10643,7 @@
   {
    "file": "indice/gallica-3.json",
    "fonte": "gallica",
-   "righe": 8446
+   "righe": 8447
   },
   {
    "file": "indice/laurenziana-0.json",
@@ -20840,7 +20840,7 @@
   1,
   1553,
   24,
-  62712,
+  62713,
   28,
   752,
   4,
