@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-23T16:52:46.868Z",
- "totale": 643916,
+ "aggiornato": "2026-11-24T10:39:29.215Z",
+ "totale": 643922,
  "con_autori": 37215,
  "miniati": 10708,
  "musica": 21120,
- "manoscritti": 531433,
+ "manoscritti": 531439,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -41,7 +41,7 @@
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 58844
+   "codici": 58843
   },
   "grc": {
    "nome": "greco",
@@ -129,7 +129,7 @@
   },
   "is": {
    "nome": "islandese e norreno",
-   "codici": 3433
+   "codici": 3440
   },
   "ca": {
    "nome": "catalano",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 526098
+   "codici": 526104
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -9015,7 +9015,7 @@
   },
   "handrit": {
    "nome": "handrit.is: Reykjavík e Copenaghen (descrizioni TEI da github.com/Handrit/Manuscripts; manifesti scritti dal catalogo)",
-   "codici": 3824,
+   "codici": 3830,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 9,
@@ -9030,8 +9030,8 @@
     "xx": 28,
     "da": 226,
     "la": 293,
-    "is": 3070,
-    "?": 253,
+    "is": 3077,
+    "?": 252,
     "de": 29,
     "sv": 20,
     "nl": 2,
@@ -10858,7 +10858,7 @@
   {
    "file": "indice/handrit-0.json",
    "fonte": "handrit",
-   "righe": 3824
+   "righe": 3830
   },
   {
    "file": "indice/polona-0.json",
@@ -21663,7 +21663,7 @@
   4,
   3,
   18,
-  2162,
+  2167,
   1,
   1,
   4,
@@ -22922,7 +22922,7 @@
   61,
   956,
   4,
-  927,
+  928,
   3,
   60,
   1,
