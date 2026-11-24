@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-24T13:49:17.036Z",
- "totale": 643978,
- "con_autori": 37215,
+ "aggiornato": "2026-11-24T15:04:50.631Z",
+ "totale": 643989,
+ "con_autori": 37216,
  "miniati": 10708,
  "musica": 21120,
- "manoscritti": 531495,
+ "manoscritti": 531506,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 35216
+   "codici": 35227
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -447,13 +447,13 @@
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 9741
+   "codici": 9742
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 526160
+   "codici": 526171
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -3259,7 +3259,7 @@
    "nome": "Avicenna",
    "latino": "Avicenna",
    "categoria": "medievale",
-   "codici": 567,
+   "codici": 568,
    "forme": [
     "Avicennae",
     "Ibn Sina",
@@ -7546,7 +7546,7 @@
   },
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
-   "codici": 10071,
+   "codici": 10082,
    "carte": 79,
    "carte_stampa": 0,
    "miniati": 53,
@@ -7556,7 +7556,7 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 1438,
+   "con_autori": 1439,
    "lingue": {
     "la": 3788,
     "fa": 94,
@@ -7578,7 +7578,7 @@
     "grc": 985,
     "sa": 65,
     "bo": 2,
-    "ar": 173,
+    "ar": 184,
     "de": 105,
     "gez": 1,
     "tr": 10,
@@ -8564,7 +8564,7 @@
     "tr": 8,
     "de": 1
    },
-   "esito": "ok",
+   "esito": "errore: HTTP 429 https://www.loc.gov/collections/manuscripts-in-st-catherines-monastery-mount-sinai/?fo=json&c=100&sp=2",
    "prefissi": [
     "loc-"
    ],
@@ -10623,7 +10623,7 @@
   {
    "file": "indice/bodleian-0.json",
    "fonte": "bodleian",
-   "righe": 10071
+   "righe": 10082
   },
   {
    "file": "indice/gallica-0.json",
@@ -20869,7 +20869,7 @@
   7,
   1,
   12,
-  10342,
+  10353,
   1,
   1,
   17,
