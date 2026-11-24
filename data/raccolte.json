@@ -1,8 +1,8 @@
 {
  "ambrosiana": {
-  "quando": "2026-11-23T11:19:59.086Z",
+  "quando": "2026-11-24T13:05:09.715Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-23T11:19:59.086Z"
+  "ultimo_ok": "2026-11-24T13:05:09.715Z"
  },
  "archive": {
   "quando": "2026-11-23T16:46:28.922Z",
@@ -40,9 +40,9 @@
   "ultimo_ok": "2026-11-23T15:27:14.184Z"
  },
  "bncf": {
-  "quando": "2026-11-23T11:19:59.086Z",
+  "quando": "2026-11-24T13:05:09.715Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-23T11:19:59.086Z"
+  "ultimo_ok": "2026-11-24T13:05:09.715Z"
  },
  "bnl": {
   "quando": "2026-11-23T13:43:49.886Z",
@@ -60,12 +60,12 @@
   "ultimo_ok": "2026-11-23T11:37:52.181Z"
  },
  "bub": {
-  "quando": "2026-11-23T11:19:59.086Z",
+  "quando": "2026-11-24T13:05:09.715Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-23T11:19:59.086Z"
+  "ultimo_ok": "2026-11-24T13:05:09.715Z"
  },
  "casanatense": {
-  "quando": "2026-11-23T11:19:59.086Z",
+  "quando": "2026-11-24T13:05:09.715Z",
   "esito": "errore: HTTP 403",
   "ultimo_ok": "2026-11-19T10:54:09.134Z"
  },
@@ -205,7 +205,7 @@
   "ultimo_ok": "2026-11-23T14:41:52.617Z"
  },
  "malatestiana": {
-  "quando": "2026-11-23T11:19:59.086Z",
+  "quando": "2026-11-24T13:05:09.715Z",
   "esito": "errore: schede lette in parte (mancano 60): riprenderà alla prossima esecuzione",
   "ultimo_ok": null
  },
@@ -230,9 +230,9 @@
   "ultimo_ok": "2026-11-24T11:39:58.399Z"
  },
  "montecassino": {
-  "quando": "2026-11-23T11:19:59.086Z",
+  "quando": "2026-11-24T13:05:09.715Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-23T11:19:59.086Z"
+  "ultimo_ok": "2026-11-24T13:05:09.715Z"
  },
  "musei": {
   "quando": "2026-11-23T15:01:52.609Z",
@@ -380,9 +380,9 @@
   "ultimo_ok": "2026-11-24T10:35:14.732Z"
  },
  "vallicelliana": {
-  "quando": "2026-11-23T11:19:59.086Z",
-  "esito": "errore: pagina 1: HTTP 404",
-  "ultimo_ok": "2026-11-08T02:52:20.534Z"
+  "quando": "2026-11-24T13:05:09.715Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-11-24T13:05:09.715Z"
  },
  "vaticana": {
   "quando": "2026-11-24T02:57:59.334Z",
