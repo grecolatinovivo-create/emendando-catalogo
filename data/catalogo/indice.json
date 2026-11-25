@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-24T16:37:21.704Z",
- "totale": 636733,
+ "aggiornato": "2026-11-25T00:15:11.595Z",
+ "totale": 636735,
  "con_autori": 37204,
  "miniati": 10194,
  "musica": 21120,
- "manoscritti": 524250,
+ "manoscritti": 524252,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -45,7 +45,7 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 40095
+   "codici": 40096
   },
   "ar": {
    "nome": "arabo",
@@ -121,7 +121,7 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 4577
+   "codici": 4578
   },
   "bo": {
    "nome": "tibetano",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 518915
+   "codici": 518917
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -8212,7 +8212,7 @@
   },
   "yale": {
    "nome": "Yale University Library, Beinecke e altre (collections.library.yale.edu)",
-   "codici": 2978,
+   "codici": 2980,
    "carte": 167,
    "carte_stampa": 50,
    "miniati": 514,
@@ -8236,11 +8236,11 @@
     "ar": 309,
     "syr": 9,
     "tr": 24,
-    "fa": 73,
+    "fa": 74,
     "jv": 2,
     "pt": 4,
     "da": 1,
-    "grc": 81,
+    "grc": 82,
     "nah": 1,
     "he": 17,
     "arc": 2,
@@ -10654,7 +10654,7 @@
   {
    "file": "indice/yale-0.json",
    "fonte": "yale",
-   "righe": 2978
+   "righe": 2980
   },
   {
    "file": "indice/penn-0.json",
@@ -20389,7 +20389,7 @@
   3,
   37992,
   1,
-  2950,
+  2952,
   6093,
   2,
   1,
