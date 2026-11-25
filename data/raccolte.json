@@ -80,9 +80,9 @@
   "ultimo_ok": "2026-11-24T13:11:54.059Z"
  },
  "crossasia": {
-  "quando": "2026-11-24T12:02:55.088Z",
-  "esito": "errore: HTTP 502 https://iiif.crossasia.org/s/dllm/madoc/api/collections/19862?page=475",
-  "ultimo_ok": "2026-11-23T09:00:19.457Z"
+  "quando": "2026-11-25T10:02:59.098Z",
+  "esito": "ok",
+  "ultimo_ok": "2026-11-25T10:02:59.098Z"
  },
  "cudl": {
   "quando": "2026-11-24T15:03:24.569Z",
@@ -270,9 +270,9 @@
   "ultimo_ok": "2026-11-24T15:03:24.569Z"
  },
  "nomfoundation": {
-  "quando": "2026-11-24T12:02:55.088Z",
+  "quando": "2026-11-25T10:02:59.098Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-24T12:02:55.088Z"
+  "ultimo_ok": "2026-11-25T10:02:59.098Z"
  },
  "northwestern": {
   "quando": "2026-11-24T16:32:20.788Z",
@@ -330,14 +330,14 @@
   "ultimo_ok": "2026-11-24T16:32:20.788Z"
  },
  "sbbasia": {
-  "quando": "2026-11-24T12:02:55.088Z",
+  "quando": "2026-11-25T10:02:59.098Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-24T12:02:55.088Z"
+  "ultimo_ok": "2026-11-25T10:02:59.098Z"
  },
  "sbbor": {
-  "quando": "2026-11-24T12:02:55.088Z",
+  "quando": "2026-11-25T10:02:59.098Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-24T12:02:55.088Z"
+  "ultimo_ok": "2026-11-25T10:02:59.098Z"
  },
  "sevilla": {
   "quando": "2026-11-24T11:39:58.399Z",
