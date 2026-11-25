@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-25T19:10:29.771Z",
- "totale": 642749,
+ "aggiornato": "2026-11-25T19:22:34.576Z",
+ "totale": 642750,
  "con_autori": 37262,
  "miniati": 10585,
  "musica": 21138,
- "manoscritti": 530266,
+ "manoscritti": 530267,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 34954
+   "codici": 34955
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 524931
+   "codici": 524932
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -10516,7 +10516,7 @@
   },
   "vaticana": {
    "nome": "Biblioteca Apostolica Vaticana (digi.vatlib.it)",
-   "codici": 30933,
+   "codici": 30934,
    "carte": 2,
    "carte_stampa": 0,
    "miniati": 5,
@@ -10536,7 +10536,7 @@
     "xx": 105,
     "syr": 419,
     "cop": 213,
-    "ar": 494,
+    "ar": 495,
     "th": 1,
     "hy": 127,
     "he": 729,
@@ -11059,7 +11059,7 @@
   {
    "file": "indice/vaticana-1.json",
    "fonte": "vaticana",
-   "righe": 10933
+   "righe": 10934
   }
  ],
  "biblioteche_tipo": [
@@ -20566,7 +20566,7 @@
   3,
   2,
   3,
-  30938,
+  30939,
   43,
   8,
   701,
