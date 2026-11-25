@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-25T13:59:34.359Z",
- "totale": 636933,
+ "aggiornato": "2026-11-25T14:29:53.410Z",
+ "totale": 636938,
  "con_autori": 37256,
  "miniati": 10218,
  "musica": 21138,
- "manoscritti": 524450,
+ "manoscritti": 524455,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -41,7 +41,7 @@
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 58884
+   "codici": 58888
   },
   "grc": {
    "nome": "greco",
@@ -241,7 +241,7 @@
   },
   "hu": {
    "nome": "ungherese",
-   "codici": 90
+   "codici": 91
   },
   "cai": {
    "nome": "altre lingue indigene di Mesoamerica e America centrale",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 519115
+   "codici": 519120
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -9171,7 +9171,7 @@
   },
   "vlaustria": {
    "nome": "Universitätsbibliothek Graz e Universitätsbibliothek Salzburg (unipub.uni-graz.at, eplus.uni-salzburg.at; elenco dalle sitemap, manifesti IIIF delle biblioteche)",
-   "codici": 1361,
+   "codici": 1365,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 351,
@@ -9183,7 +9183,7 @@
    "edizioni_principi": 0,
    "con_autori": 208,
    "lingue": {
-    "?": 1146,
+    "?": 1150,
     "la": 184,
     "de": 89,
     "it": 2,
@@ -9205,7 +9205,7 @@
   },
   "elte": {
    "nome": "ELTE Egyetemi Könyvtár, Budapest: codici, frammenti e manoscritti (edit.elte.hu; manifesti IIIF della biblioteca)",
-   "codici": 327,
+   "codici": 328,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 0,
@@ -9217,7 +9217,7 @@
    "edizioni_principi": 0,
    "con_autori": 52,
    "lingue": {
-    "hu": 52,
+    "hu": 53,
     "la": 233,
     "de": 14,
     "?": 3,
@@ -10805,12 +10805,12 @@
   {
    "file": "indice/vlaustria-0.json",
    "fonte": "vlaustria",
-   "righe": 1361
+   "righe": 1365
   },
   {
    "file": "indice/elte-0.json",
    "fonte": "elte",
-   "righe": 327
+   "righe": 328
   },
   {
    "file": "indice/slv-0.json",
@@ -20927,7 +20927,7 @@
   3,
   2,
   1,
-  327,
+  328,
   1,
   1,
   22,
@@ -22985,7 +22985,7 @@
   116,
   22,
   1,
-  1339,
+  1343,
   2237,
   1937,
   2678,
