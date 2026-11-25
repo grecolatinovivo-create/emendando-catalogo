@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-23T16:52:46.868Z",
+ "aggiornato": "2026-11-25T13:59:34.359Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -35,7 +35,7 @@
   "laurenziana": {
    "nome": "Biblioteca Medicea Laurenziana, Firenze (tecabml.contentdm.oclc.org)",
    "codici": 1584,
-   "esito": "ok"
+   "esito": "errore: plutei: HTTP 403"
   },
   "ambrosiana": {
    "nome": "Veneranda Biblioteca Ambrosiana, Milano (ambrosiana.comperio.it; copie digitali digitallibrary.unicatt.it)",
@@ -65,7 +65,7 @@
   "vallicelliana": {
    "nome": "Biblioteca Vallicelliana, Roma (omnes.dbseret.com/vallicelliana)",
    "codici": 0,
-   "esito": "errore: pagina 1: HTTP 404"
+   "esito": "ok"
   },
   "malatestiana": {
    "nome": "Biblioteca Malatestiana, Cesena (Catalogo aperto dei manoscritti malatestiani; manifesti scritti dal catalogo)",
@@ -120,7 +120,7 @@
   "onb": {
    "nome": "Österreichische Nationalbibliothek, Vienna (onb.digital; manifesti api.onb.ac.at)",
    "codici": 367,
-   "esito": "errore: fetch failed"
+   "esito": "errore: ricerca di ÖNB Digital non leggibile (HTTP 403, da 0)"
   },
   "yale": {
    "nome": "Yale University Library, Beinecke e altre (collections.library.yale.edu)",
@@ -145,7 +145,7 @@
   "loc": {
    "nome": "Library of Congress: microfilm del Sinai e dei Patriarcati di Gerusalemme (loc.gov; manifesti scritti dal catalogo)",
    "codici": 34,
-   "esito": "ok"
+   "esito": "errore: HTTP 429 https://www.loc.gov/collections/manuscripts-in-st-catherines-monastery-mount-sinai/?fo=json&c=100&sp=2"
   },
   "nlg": {
    "nome": "Biblioteca Nazionale di Grecia, Atene (digitalcollections.nlg.gr; copie dei manifesti scritte dal catalogo)",
@@ -225,7 +225,7 @@
   "uva": {
    "nome": "Allard Pierson, Universiteit van Amsterdam (uvaerfgoed.nl)",
    "codici": 3,
-   "esito": "ok"
+   "esito": "errore: HTTP 403"
   },
   "vlaustria": {
    "nome": "Universitätsbibliothek Graz e Universitätsbibliothek Salzburg (unipub.uni-graz.at, eplus.uni-salzburg.at; elenco dalle sitemap, manifesti IIIF delle biblioteche)",
@@ -315,7 +315,7 @@
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
    "codici": 0,
-   "esito": "ok"
+   "esito": "errore: manifesti letti in parte (mancano 14171): riprenderà alla prossima esecuzione"
   },
   "getty": {
    "nome": "J. Paul Getty Museum, Los Angeles: manoscritti (data.getty.edu; manifesti media.getty.edu)",
@@ -369,7 +369,7 @@
   },
   "manuscripta": {
    "nome": "manuscripta.se: Kungliga biblioteket, Uppsala universitetsbibliotek e altre biblioteche svedesi (manifesti IIIF di manuscripta.se)",
-   "codici": 33,
+   "codici": 36,
    "esito": "ok"
   },
   "bnl": {
@@ -423,7 +423,7 @@
    "esito": "ok"
   }
  },
- "totale": 11958,
+ "totale": 11961,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -336145,6 +336145,103 @@
    ],
    "manifest": "https://www.manuscripta.se/iiif/102902/manifest.json",
    "pagina": "https://www.manuscripta.se/ms/102902",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-102937",
+   "fonte": "manuscripta",
+   "biblioteca": "Kungliga biblioteket",
+   "citta": "Stoccolma",
+   "segnatura": "Va 3",
+   "datazione": "13th century",
+   "secolo": [
+    13,
+    13
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Aristotle commentary, Ethica",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «Aristotle commentary, Ethica»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/102937/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/102937",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-102938",
+   "fonte": "manuscripta",
+   "biblioteca": "Kungliga biblioteket",
+   "citta": "Stoccolma",
+   "segnatura": "Va 5",
+   "datazione": "11th century",
+   "secolo": [
+    11,
+    11
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Consolatio Philosophiae",
+   "autori": [
+    {
+     "id": "boezio",
+     "autore": "Boezio",
+     "latino": "Boethius",
+     "categoria": "classico-latino",
+     "opere": [
+      "De consolatione philosophiae"
+     ],
+     "corrispondenza": "titolo: «Consolatio Philosophiae»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/102938/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/102938",
+   "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
+   "immagini": null
+  },
+  {
+   "id": "manuscripta-102939",
+   "fonte": "manuscripta",
+   "biblioteca": "Kungliga biblioteket",
+   "citta": "Stoccolma",
+   "segnatura": "Va 8",
+   "datazione": "15th century",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Epistuale ad familiares",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [
+      "Epistulae ad familiares"
+     ],
+     "corrispondenza": "titolo: «Epistuale ad familiares»"
+    }
+   ],
+   "manifest": "https://www.manuscripta.se/iiif/102939/manifest.json",
+   "pagina": "https://www.manuscripta.se/ms/102939",
    "licenza": "Public Domain Mark 1.0 (manuscripta.se)",
    "immagini": null
   },

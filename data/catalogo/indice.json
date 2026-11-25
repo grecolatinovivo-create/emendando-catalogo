@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-25T13:36:31.992Z",
- "totale": 636875,
- "con_autori": 37253,
+ "aggiornato": "2026-11-25T13:59:34.359Z",
+ "totale": 636933,
+ "con_autori": 37256,
  "miniati": 10218,
  "musica": 21138,
- "manoscritti": 524392,
+ "manoscritti": 524450,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,11 +37,11 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 105955
+   "codici": 105966
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 58854
+   "codici": 58884
   },
   "grc": {
    "nome": "greco",
@@ -57,11 +57,11 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 26436
+   "codici": 26452
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23251
+   "codici": 23254
   },
   "xx": {
    "nome": "altre lingue",
@@ -181,7 +181,7 @@
   },
   "da": {
    "nome": "danese",
-   "codici": 610
+   "codici": 611
   },
   "arc": {
    "nome": "aramaico",
@@ -435,11 +435,11 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 7835
+   "codici": 7837
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7421
+   "codici": 7422
   },
   "cristiano": {
    "nome": "autori cristiani",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 519057
+   "codici": 519115
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -539,7 +539,7 @@
    "nome": "Cicerone",
    "latino": "Cicero",
    "categoria": "classico-latino",
-   "codici": 1386,
+   "codici": 1387,
    "forme": [
     "Ciceronis",
     "Ciceronem",
@@ -918,7 +918,7 @@
    "nome": "Boezio",
    "latino": "Boethius",
    "categoria": "classico-latino",
-   "codici": 760,
+   "codici": 761,
    "forme": [
     "Boetius",
     "Boethii",
@@ -1624,7 +1624,7 @@
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 2320,
+   "codici": 2321,
    "forme": [
     "Aristotelis",
     "Aristotle",
@@ -6702,6 +6702,7 @@
   "Süttő, Kirche, bei?",
   "Svištov",
   "Svištov, Ist. Muz.",
+  "Swedish Museum of Natural History, Svezia",
   "Százhalombatta, Matrica Múz.",
   "Székesfehérvár, Szent István Király Múz.",
   "Szekszárd, Balogh Ádám Múz.",
@@ -10095,7 +10096,7 @@
   },
   "nb": {
    "nome": "Nasjonalbiblioteket, Oslo: manoscritti, manoscritti musicali e carte geografiche (api.nb.no; manifesti IIIF della biblioteca)",
-   "codici": 16682,
+   "codici": 16713,
    "carte": 477,
    "carte_stampa": 3145,
    "miniati": 8,
@@ -10107,10 +10108,10 @@
    "edizioni_principi": 0,
    "con_autori": 99,
    "lingue": {
-    "?": 16309,
+    "?": 16338,
     "grc": 27,
-    "de": 106,
-    "la": 130,
+    "de": 107,
+    "la": 131,
     "fr": 41,
     "nl": 59,
     "it": 6,
@@ -10129,7 +10130,7 @@
   },
   "manuscripta": {
    "nome": "manuscripta.se: Kungliga biblioteket, Uppsala universitetsbibliotek e altre biblioteche svedesi (manifesti IIIF di manuscripta.se)",
-   "codici": 1595,
+   "codici": 1622,
    "carte": 1,
    "carte_stampa": 0,
    "miniati": 8,
@@ -10139,16 +10140,16 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 94,
+   "con_autori": 97,
    "lingue": {
     "grc": 126,
-    "da": 38,
+    "da": 39,
     "sv": 825,
-    "la": 385,
-    "de": 32,
-    "fr": 7,
+    "la": 395,
+    "de": 34,
+    "fr": 23,
     "it": 3,
-    "?": 12,
+    "?": 13,
     "fi": 1,
     "es": 2,
     "is": 324,
@@ -10160,7 +10161,7 @@
    "prefissi": [
     "manuscripta-"
    ],
-   "pezzi_voci": 2,
+   "pezzi_voci": 3,
    "indice": [
     "indice/manuscripta-0.json"
    ]
@@ -10939,12 +10940,12 @@
   {
    "file": "indice/nb-0.json",
    "fonte": "nb",
-   "righe": 16682
+   "righe": 16713
   },
   {
    "file": "indice/manuscripta-0.json",
    "fonte": "manuscripta",
-   "righe": 1595
+   "righe": 1622
   },
   {
    "file": "indice/bnl-0.json",
@@ -13487,6 +13488,7 @@
   "museo",
   "museo",
   "museo",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -14047,7 +14049,7 @@
   "biblioteca"
  ],
  "totali": {
-  "biblioteche": 1351,
+  "biblioteche": 1352,
   "musei": 1675,
   "senza_luogo": 1945
  },
@@ -19621,6 +19623,7 @@
   null,
   null,
   null,
+  null,
   "tarragona",
   "tarragona",
   "tarragona",
@@ -21343,7 +21346,7 @@
   6,
   1,
   1,
-  941,
+  967,
   1,
   4,
   3,
@@ -21751,7 +21754,7 @@
   82,
   3,
   40,
-  16682,
+  16713,
   67,
   1,
   1,
@@ -22637,6 +22640,7 @@
   1,
   2,
   9,
+  1,
   8,
   7,
   11,
