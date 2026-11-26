@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-25T20:59:32.686Z",
- "totale": 645741,
+ "aggiornato": "2026-11-26T11:34:22.239Z",
+ "totale": 646170,
  "con_autori": 37270,
- "miniati": 10749,
+ "miniati": 10751,
  "musica": 21138,
- "manoscritti": 533258,
+ "manoscritti": 533687,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,7 +37,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 105989
+   "codici": 105990
   },
   "?": {
    "nome": "lingua non indicata",
@@ -45,11 +45,11 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 40106
+   "codici": 40107
   },
   "ar": {
    "nome": "arabo",
-   "codici": 35013
+   "codici": 35442
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -73,7 +73,7 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 17021
+   "codici": 17022
   },
   "cu": {
    "nome": "slavo ecclesiastico",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 527923
+   "codici": 528352
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -7801,10 +7801,10 @@
   },
   "bub": {
    "nome": "Biblioteca Universitaria di Bologna (historica.unibo.it)",
-   "codici": 907,
+   "codici": 1336,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 2,
+   "miniati": 4,
    "musica": 0,
    "papiri": 0,
    "epigrafi": 0,
@@ -7813,13 +7813,13 @@
    "edizioni_principi": 0,
    "con_autori": 14,
    "lingue": {
-    "la": 402,
+    "la": 403,
     "it": 215,
     "de": 1,
-    "grc": 59,
-    "he": 3,
+    "grc": 60,
+    "he": 4,
     "?": 2,
-    "ar": 429
+    "ar": 858
    },
    "esito": "ok",
    "prefissi": [
@@ -10652,7 +10652,7 @@
   {
    "file": "indice/bub-0.json",
    "fonte": "bub",
-   "righe": 907
+   "righe": 1336
   },
   {
    "file": "indice/bncf-0.json",
@@ -20722,7 +20722,7 @@
   2408,
   210,
   13379,
-  907,
+  1336,
   17,
   708,
   3,
