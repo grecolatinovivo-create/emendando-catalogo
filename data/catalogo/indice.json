@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-26T19:07:41.893Z",
- "totale": 647458,
+ "aggiornato": "2026-11-26T20:02:00.719Z",
+ "totale": 647852,
  "con_autori": 37278,
- "miniati": 10804,
+ "miniati": 10846,
  "musica": 21137,
- "manoscritti": 534975,
+ "manoscritti": 535369,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 35531
+   "codici": 35532
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -65,11 +65,11 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 20415
+   "codici": 20474
   },
   "he": {
    "nome": "ebraico",
-   "codici": 18270
+   "codici": 18644
   },
   "pi": {
    "nome": "pali",
@@ -89,7 +89,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10528
+   "codici": 10529
   },
   "zh": {
    "nome": "cinese",
@@ -101,7 +101,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 8193
+   "codici": 8197
   },
   "en": {
    "nome": "inglese",
@@ -121,7 +121,7 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 4688
+   "codici": 4695
   },
   "bo": {
    "nome": "tibetano",
@@ -181,7 +181,7 @@
   },
   "arc": {
    "nome": "aramaico",
-   "codici": 622
+   "codici": 627
   },
   "da": {
    "nome": "danese",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 529640
+   "codici": 530034
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -4920,6 +4920,7 @@
   "Dallas Museum of Art, Cambridge",
   "Damaskus, Nat. Mus.",
   "Dar al-Kutub, Cambridge",
+  "DARM Arch (copia digitale della National Library of Israel)",
   "DARM Arch R (copia digitale della National Library of Israel)",
   "Darmstadt, Hess. Landesmus.",
   "Darmstadt, Hess. Landesmus.?",
@@ -5701,6 +5702,7 @@
   "Mosonmagyaróvár, Hansági Múz.",
   "Moulay Idriss, Caïdat d’Oualili, Site arch. de Volubilis",
   "Mount Melleray Abbey, Cappoquin",
+  "Ms. Fr. (copia digitale della National Library of Israel)",
   "München, Arch. Staatsslg.",
   "München, Arch. Staatsslg.; Passau, Oberhaus-Mus. (Kopie)",
   "München, Arch. Staatsslg.; Seeon-Seebruck, Seebruck, Römermus. Bedaium (Kopie)",
@@ -5959,6 +5961,7 @@
   "Okla., Green Collection, Oklahoma City",
   "Okresní muzeum Klatovy",
   "Okresní muzeum Mladá Boleslav",
+  "Olomouc ZA (copia digitale della National Library of Israel)",
   "Olten, Hist. Mus.",
   "Orăştie, Muz. Etnogr. şi Arta Pop.",
   "Orbe, Boscéaz",
@@ -9778,10 +9781,10 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 11455,
+   "codici": 11849,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 691,
+   "miniati": 733,
    "musica": 0,
    "papiri": 0,
    "epigrafi": 0,
@@ -9790,15 +9793,15 @@
    "edizioni_principi": 0,
    "con_autori": 20,
    "lingue": {
-    "he": 11429,
-    "arc": 151,
-    "xx": 1778,
-    "ar": 533,
-    "fa": 127,
+    "he": 11803,
+    "arc": 156,
+    "xx": 1837,
+    "ar": 534,
+    "fa": 134,
     "tr": 15,
     "grc": 8,
-    "es": 22,
-    "it": 172,
+    "es": 23,
+    "it": 176,
     "de": 69,
     "la": 28,
     "nl": 32,
@@ -9811,7 +9814,7 @@
     "ca": 1,
     "oc": 2
    },
-   "esito": "errore: manifesti letti in parte (mancano 4055): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 3660): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
@@ -10959,7 +10962,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 11455
+   "righe": 11849
   },
   {
    "file": "indice/getty-0.json",
@@ -11776,6 +11779,7 @@
   "museo",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -12556,6 +12560,7 @@
   "museo",
   "museo",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -12810,6 +12815,7 @@
   "biblioteca",
   "museo",
   "museo",
+  "biblioteca",
   "biblioteca",
   "biblioteca",
   "biblioteca",
@@ -14182,7 +14188,7 @@
   "biblioteca"
  ],
  "totali": {
-  "biblioteche": 1416,
+  "biblioteche": 1419,
   "musei": 1675,
   "senza_luogo": 1945
  },
@@ -17974,6 +17980,7 @@
   null,
   "cambridge",
   "gerusalemme",
+  "gerusalemme",
   "darmstadt",
   "darmstadt",
   "darmstadt",
@@ -18754,6 +18761,7 @@
   null,
   null,
   "cappoquin",
+  "gerusalemme",
   "monaco-di-baviera",
   "monaco-di-baviera",
   "monaco-di-baviera",
@@ -19012,6 +19020,7 @@
   null,
   "klatovy",
   "mlada-boleslav",
+  "gerusalemme",
   null,
   null,
   null,
@@ -21068,6 +21077,7 @@
   1,
   7,
   1,
+  1,
   26,
   1,
   2,
@@ -21472,7 +21482,7 @@
   20,
   1,
   2,
-  4,
+  5,
   89,
   632,
   9,
@@ -21848,6 +21858,7 @@
   4,
   1,
   13,
+  1,
   10,
   1,
   1,
@@ -22026,7 +22037,7 @@
   1617,
   47,
   1,
-  8582,
+  8968,
   151,
   1,
   58,
@@ -22106,6 +22117,7 @@
   1,
   3,
   2,
+  5,
   2,
   1,
   2,
