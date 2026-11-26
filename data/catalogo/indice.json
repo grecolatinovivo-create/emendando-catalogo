@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-26T21:57:55.705Z",
- "totale": 648789,
+ "aggiornato": "2026-11-26T22:51:47.582Z",
+ "totale": 649042,
  "con_autori": 37279,
- "miniati": 10996,
+ "miniati": 11015,
  "musica": 21137,
- "manoscritti": 536306,
+ "manoscritti": 536559,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -61,15 +61,15 @@
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23308
+   "codici": 23309
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 20638
+   "codici": 20694
   },
   "he": {
    "nome": "ebraico",
-   "codici": 19286
+   "codici": 19528
   },
   "pi": {
    "nome": "pali",
@@ -89,7 +89,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10530
+   "codici": 10532
   },
   "zh": {
    "nome": "cinese",
@@ -97,7 +97,7 @@
   },
   "pl": {
    "nome": "polacco",
-   "codici": 8353
+   "codici": 8354
   },
   "it": {
    "nome": "italiano",
@@ -169,7 +169,7 @@
   },
   "nl": {
    "nome": "nederlandese",
-   "codici": 862
+   "codici": 865
   },
   "akk": {
    "nome": "accadico",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 530971
+   "codici": 531224
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -4852,6 +4852,7 @@
   "Clare College Archive, Cambridge",
   "Clare College Archives, Cambridge",
   "Clare College, Cambridge",
+  "Cleveland Klein (copia digitale della National Library of Israel)",
   "Clonalis House, Castlerea",
   "Cluj-Napoca, Muz. Naţ. Ist. Transilv.",
   "codices restituti, [sine loco]",
@@ -4884,6 +4885,7 @@
   "Conception Abbey and Seminary, Conception (Missouri)",
   "Concordia Sagittaria",
   "Concordia Sagittaria, P.zza d. Cattedrale",
+  "Confiansa de Ysrael Ms. Var. (copia digitale della National Library of Israel)",
   "Conservatoire",
   "Conservatoire et Jardin botaniques de la Ville de Genève",
   "Constanţa, Muz. Ist. Naţ. Arh.",
@@ -5469,6 +5471,7 @@
   "La Coruña, Mus. Hist. Arq.",
   "La Iglesuela del Cid",
   "La Puebla de Castro, Pfarrkirche",
+  "La Puerta de las Reencarnaciones JER NLI Var. (copia digitale della National Library of Israel)",
   "La Turbie",
   "La Turbie, Musée",
   "Ladenburg, Lobdengau-Mus.",
@@ -5684,6 +5687,7 @@
   "Ministère des Affaires étrangères, Rés",
   "Minneapolis Institute of Art",
   "Mirna Peč, Gorenji Globodol, Haus Nr. 29, vermauert",
+  "Mittheilung der Neusten und Vortheilhafthen Practischen Destileur Kunst und Liquerfabrikation JER NLI (copia digitale della National Library of Israel)",
   "Monastero di Rousanou, Meteore (copie digitali della Biblioteca di Kalambaka), Meteore (Kalambaka)",
   "Monastero di Santa Caterina del Sinai (microfilm della Library of Congress), Sinai (Egitto)",
   "Mönchengladbach, Städt. Mus. Schloss Rheydt",
@@ -9793,10 +9797,10 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 12786,
+   "codici": 13039,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 883,
+   "miniati": 902,
    "musica": 0,
    "papiri": 0,
    "epigrafi": 0,
@@ -9805,33 +9809,33 @@
    "edizioni_principi": 0,
    "con_autori": 21,
    "lingue": {
-    "he": 12445,
+    "he": 12687,
     "arc": 157,
-    "xx": 2001,
+    "xx": 2057,
     "ar": 761,
     "fa": 219,
     "tr": 41,
     "grc": 9,
-    "es": 24,
+    "es": 26,
     "it": 187,
-    "de": 70,
+    "de": 71,
     "la": 29,
-    "nl": 40,
+    "nl": 43,
     "pt": 11,
     "fr": 12,
     "ru": 6,
+    "pl": 2,
     "en": 13,
     "hu": 1,
-    "pl": 1,
     "ka": 1,
     "ca": 1,
     "oc": 5
    },
-   "esito": "errore: manifesti letti in parte (mancano 2512): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 1294): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
-   "pezzi_voci": 16,
+   "pezzi_voci": 17,
    "indice": [
     "indice/nli-0.json"
    ]
@@ -10975,7 +10979,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 12786
+   "righe": 13039
   },
   {
    "file": "indice/getty-0.json",
@@ -11724,6 +11728,7 @@
   "biblioteca",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
   "museo",
   "biblioteca",
   "biblioteca",
@@ -11757,6 +11762,7 @@
   "museo",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "biblioteca",
@@ -12340,6 +12346,7 @@
   "museo",
   "museo",
   "museo",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -12555,6 +12562,7 @@
   "biblioteca",
   "museo",
   "museo",
+  "biblioteca",
   "biblioteca",
   "biblioteca",
   "museo",
@@ -14213,7 +14221,7 @@
   "biblioteca"
  ],
  "totali": {
-  "biblioteche": 1431,
+  "biblioteche": 1435,
   "musei": 1675,
   "senza_luogo": 1945
  },
@@ -17936,6 +17944,7 @@
   "cambridge",
   "cambridge",
   "cambridge",
+  "gerusalemme",
   "castlerea",
   null,
   null,
@@ -17968,6 +17977,7 @@
   "conception",
   null,
   null,
+  "gerusalemme",
   "parigi",
   "ginevra",
   null,
@@ -18553,6 +18563,7 @@
   null,
   null,
   null,
+  "gerusalemme",
   null,
   null,
   null,
@@ -18768,6 +18779,7 @@
   "parigi",
   "minneapolis",
   null,
+  "gerusalemme",
   "meteore",
   "sinai",
   null,
@@ -20636,7 +20648,7 @@
   4,
   1631,
   1,
-  949,
+  954,
   1,
   1,
   1,
@@ -20804,7 +20816,7 @@
   288,
   182,
   1,
-  709,
+  728,
   1,
   3,
   2,
@@ -21045,6 +21057,7 @@
   1,
   1,
   3,
+  2,
   4,
   51,
   6,
@@ -21077,6 +21090,7 @@
   39,
   1,
   2,
+  1,
   1,
   13,
   2,
@@ -21333,7 +21347,7 @@
   1,
   5,
   14,
-  351,
+  409,
   1,
   2,
   3,
@@ -21522,7 +21536,7 @@
   20,
   1,
   2,
-  5,
+  6,
   89,
   632,
   9,
@@ -21661,6 +21675,7 @@
   1,
   7,
   3,
+  1,
   1,
   1,
   5,
@@ -21877,6 +21892,7 @@
   11,
   1,
   1,
+  1,
   38,
   1668,
   1,
@@ -22081,7 +22097,7 @@
   1617,
   47,
   1,
-  9760,
+  9924,
   151,
   1,
   58,
@@ -22131,7 +22147,7 @@
   1,
   1,
   9,
-  2,
+  3,
   14,
   1,
   1,
