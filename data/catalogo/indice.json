@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-26T13:14:55.756Z",
- "totale": 646192,
+ "aggiornato": "2026-11-26T14:21:25.860Z",
+ "totale": 646197,
  "con_autori": 37275,
  "miniati": 10751,
  "musica": 21138,
- "manoscritti": 533709,
+ "manoscritti": 533714,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,7 +37,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 105999
+   "codici": 106000
   },
   "?": {
    "nome": "lingua non indicata",
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 35442
+   "codici": 35447
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -105,7 +105,7 @@
   },
   "en": {
    "nome": "inglese",
-   "codici": 7139
+   "codici": 7140
   },
   "cop": {
    "nome": "copto",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 528374
+   "codici": 528379
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -7526,7 +7526,7 @@
   },
   "bodleian": {
    "nome": "Bodleian Libraries, Oxford (digital.bodleian.ox.ac.uk)",
-   "codici": 10082,
+   "codici": 10087,
    "carte": 79,
    "carte_stampa": 0,
    "miniati": 53,
@@ -7538,11 +7538,11 @@
    "edizioni_principi": 0,
    "con_autori": 1439,
    "lingue": {
-    "la": 3788,
+    "la": 3789,
     "fa": 94,
     "fr": 313,
     "cy": 25,
-    "en": 2517,
+    "en": 2518,
     "?": 947,
     "zh": 656,
     "xx": 391,
@@ -7558,7 +7558,7 @@
     "grc": 985,
     "sa": 65,
     "bo": 2,
-    "ar": 184,
+    "ar": 189,
     "de": 105,
     "gez": 1,
     "tr": 10,
@@ -10607,7 +10607,7 @@
   {
    "file": "indice/bodleian-0.json",
    "fonte": "bodleian",
-   "righe": 10082
+   "righe": 10087
   },
   {
    "file": "indice/gallica-0.json",
@@ -20815,7 +20815,7 @@
   7,
   1,
   12,
-  10353,
+  10358,
   1,
   1,
   1,
