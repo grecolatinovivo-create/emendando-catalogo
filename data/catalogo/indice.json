@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-26T14:21:25.860Z",
- "totale": 646197,
+ "aggiornato": "2026-11-26T16:47:37.145Z",
+ "totale": 646890,
  "con_autori": 37275,
- "miniati": 10751,
- "musica": 21138,
- "manoscritti": 533714,
+ "miniati": 10785,
+ "musica": 21137,
+ "manoscritti": 534407,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,7 +37,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 106000
+   "codici": 106001
   },
   "?": {
    "nome": "lingua non indicata",
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 35447
+   "codici": 35509
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -57,15 +57,15 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 26461
+   "codici": 26462
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23295
+   "codici": 23296
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 20151
+   "codici": 20277
   },
   "pi": {
    "nome": "pali",
@@ -73,7 +73,7 @@
   },
   "he": {
    "nome": "ebraico",
-   "codici": 17022
+   "codici": 17713
   },
   "cu": {
    "nome": "slavo ecclesiastico",
@@ -101,11 +101,11 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 8162
+   "codici": 8164
   },
   "en": {
    "nome": "inglese",
-   "codici": 7140
+   "codici": 7141
   },
   "cop": {
    "nome": "copto",
@@ -121,7 +121,7 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 4678
+   "codici": 4681
   },
   "bo": {
    "nome": "tibetano",
@@ -179,13 +179,13 @@
    "nome": "armeno",
    "codici": 665
   },
+  "arc": {
+   "nome": "aramaico",
+   "codici": 614
+  },
   "da": {
    "nome": "danese",
    "codici": 611
-  },
-  "arc": {
-   "nome": "aramaico",
-   "codici": 595
   },
   "ru": {
    "nome": "russo",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 528379
+   "codici": 529072
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -5685,6 +5685,8 @@
   "Monheim, Haus Bürgel (Kopie)",
   "Montebello di Torriana, Castello",
   "Montebello di Torriana, Castello (frg. a); Berkeley (frg. b)",
+  "Montefiore (copia digitale della National Library of Israel)",
+  "Montefiore Library (copia digitale della National Library of Israel)",
   "Monteleone",
   "Monteleone, S. Vict.",
   "Montpellier Méditerranée Métropole - Médiathèque centrale Emile Zola",
@@ -6164,6 +6166,7 @@
   "Pförring, S. Sebastian, Kapelle, bei",
   "Pforzheim, Arch. Mus.",
   "Pharmaziemuseum der Universität Basel",
+  "PHIL UP (copia digitale della National Library of Israel)",
   "PHIL UP Schoenberg (copia digitale della National Library of Israel)",
   "Pigorini National Museum of Prehistory and Ethnography",
   "Pio-Clementino museum",
@@ -8951,7 +8954,7 @@
     "ko": 30,
     "?": 4
    },
-   "esito": "ok",
+   "esito": "errore: raccolta incompleta (84000 record letti su 116052): riprenderà alla prossima esecuzione",
    "prefissi": [
     "ndl-"
    ],
@@ -9331,11 +9334,11 @@
   },
   "auckland": {
    "nome": "Auckland Libraries, Sir George Grey Special Collections (kura.aucklandlibraries.govt.nz)",
-   "codici": 42,
+   "codici": 40,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 11,
-   "musica": 4,
+   "miniati": 10,
+   "musica": 3,
    "papiri": 0,
    "epigrafi": 0,
    "incunaboli": 0,
@@ -9343,13 +9346,14 @@
    "edizioni_principi": 0,
    "con_autori": 14,
    "lingue": {
-    "ar": 7,
-    "fa": 5,
+    "ar": 6,
+    "fa": 6,
+    "xx": 1,
     "cs": 1,
     "fr": 1,
     "it": 1,
     "grc": 2,
-    "la": 24,
+    "la": 23,
     "de": 1,
     "en": 1,
     "nl": 1,
@@ -9771,10 +9775,10 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 10192,
+   "codici": 10887,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 637,
+   "miniati": 672,
    "musica": 0,
    "papiri": 0,
    "epigrafi": 0,
@@ -9783,32 +9787,32 @@
    "edizioni_principi": 0,
    "con_autori": 17,
    "lingue": {
-    "he": 10181,
-    "arc": 124,
-    "xx": 1515,
-    "ar": 448,
-    "fa": 118,
+    "he": 10872,
+    "arc": 143,
+    "xx": 1640,
+    "ar": 511,
+    "fa": 120,
     "tr": 14,
     "grc": 8,
     "es": 21,
-    "it": 141,
-    "de": 57,
-    "la": 25,
+    "it": 143,
+    "de": 58,
+    "la": 27,
     "nl": 31,
     "pt": 8,
-    "fr": 9,
+    "fr": 10,
     "ru": 6,
-    "en": 10,
+    "en": 11,
     "pl": 1,
     "ka": 1,
     "ca": 1,
     "oc": 2
    },
-   "esito": "errore: manifesti letti in parte (mancano 5325): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 4625): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
-   "pezzi_voci": 13,
+   "pezzi_voci": 14,
    "indice": [
     "indice/nli-0.json"
    ]
@@ -10882,7 +10886,7 @@
   {
    "file": "indice/auckland-0.json",
    "fonte": "auckland",
-   "righe": 42
+   "righe": 40
   },
   {
    "file": "indice/toronto-0.json",
@@ -10952,7 +10956,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 10192
+   "righe": 10887
   },
   {
    "file": "indice/getty-0.json",
@@ -12533,6 +12537,8 @@
   "museo",
   "museo",
   "museo",
+  "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "biblioteca",
@@ -13011,6 +13017,7 @@
   "biblioteca",
   "museo",
   "museo",
+  "biblioteca",
   "biblioteca",
   "biblioteca",
   "museo",
@@ -14169,7 +14176,7 @@
   "biblioteca"
  ],
  "totali": {
-  "biblioteche": 1410,
+  "biblioteche": 1413,
   "musei": 1675,
   "senza_luogo": 1945
  },
@@ -18725,6 +18732,8 @@
   null,
   null,
   null,
+  "gerusalemme",
+  "gerusalemme",
   null,
   null,
   "montpellier",
@@ -19204,6 +19213,7 @@
   null,
   null,
   "basilea",
+  "gerusalemme",
   "gerusalemme",
   null,
   null,
@@ -20501,7 +20511,7 @@
   1508,
   3,
   1,
-  42,
+  40,
   1,
   5,
   5,
@@ -20571,7 +20581,7 @@
   4,
   1631,
   1,
-  930,
+  949,
   1,
   1,
   1,
@@ -20739,7 +20749,7 @@
   288,
   182,
   1,
-  644,
+  652,
   1,
   3,
   2,
@@ -21204,8 +21214,8 @@
   3,
   2,
   1,
-  376,
-  46,
+  395,
+  47,
   1,
   2,
   46,
@@ -21264,12 +21274,12 @@
   1,
   5,
   14,
-  292,
+  304,
   1,
   2,
   3,
   4,
-  2,
+  3,
   1,
   2,
   1,
@@ -21318,7 +21328,7 @@
   14,
   19,
   1,
-  42,
+  43,
   1,
   36,
   4,
@@ -21451,7 +21461,7 @@
   20,
   1,
   2,
-  1,
+  4,
   89,
   632,
   9,
@@ -21813,6 +21823,8 @@
   1,
   1,
   1,
+  1,
+  1,
   2,
   1,
   1028,
@@ -22003,7 +22015,7 @@
   1617,
   47,
   1,
-  7390,
+  8018,
   151,
   1,
   58,
@@ -22292,6 +22304,7 @@
   2,
   3,
   10,
+  1,
   10,
   1,
   1,
