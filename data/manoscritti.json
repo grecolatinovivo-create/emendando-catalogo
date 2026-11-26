@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-25T20:05:22.944Z",
+ "aggiornato": "2026-11-26T12:28:48.155Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -19,7 +19,7 @@
   },
   "berlino": {
    "nome": "Staatsbibliothek zu Berlin (digital.staatsbibliothek-berlin.de)",
-   "codici": 135,
+   "codici": 136,
    "esito": "ok"
   },
   "bodleian": {
@@ -315,7 +315,7 @@
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
    "codici": 1,
-   "esito": "errore: manifesti letti in parte (mancano 6892): riprenderà alla prossima esecuzione"
+   "esito": "errore: manifesti letti in parte (mancano 5325): riprenderà alla prossima esecuzione"
   },
   "getty": {
    "nome": "J. Paul Getty Museum, Los Angeles: manoscritti (data.getty.edu; manifesti media.getty.edu)",
@@ -423,7 +423,7 @@
    "esito": "ok"
   }
  },
- "totale": 11962,
+ "totale": 11963,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -313598,7 +313598,7 @@
     "la"
    ],
    "lingua_dedotta": false,
-   "titolo": "Medieval and Early Renaissance Manuscripts (Collection of Distinction) ; [Comoediae].",
+   "titolo": "[Comoediae]. ; Medieval and Early Renaissance Manuscripts (Collection of Distinction)",
    "autori": [
     {
      "id": "terenzio",
@@ -376649,6 +376649,38 @@
    ],
    "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN847427242/manifest",
    "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN847427242",
+   "licenza": "Public Domain Mark 1.0",
+   "immagini": null
+  },
+  {
+   "id": "sbb-PPN1986250024",
+   "fonte": "berlino",
+   "biblioteca": "Staatsbibliothek zu Berlin",
+   "citta": "Berlin",
+   "segnatura": "PPN1986250024",
+   "datazione": "1500",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "grc",
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Berlin, Staatsbibliothek zu Berlin, Ms. Ham. 455; Nonnos, Dionysiacorum libri",
+   "autori": [
+    {
+     "id": "nonno",
+     "autore": "Nonno di Panopoli",
+     "latino": "Nonnus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Nonnus <Panopolitanus>»"
+    }
+   ],
+   "manifest": "https://content.staatsbibliothek-berlin.de/dc/PPN1986250024/manifest",
+   "pagina": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1986250024",
    "licenza": "Public Domain Mark 1.0",
    "immagini": null
   },
