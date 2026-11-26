@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-26T18:06:37.030Z",
- "totale": 647148,
- "con_autori": 37276,
- "miniati": 10795,
+ "aggiornato": "2026-11-26T19:07:41.893Z",
+ "totale": 647458,
+ "con_autori": 37278,
+ "miniati": 10804,
  "musica": 21137,
- "manoscritti": 534665,
+ "manoscritti": 534975,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 35527
+   "codici": 35531
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -57,19 +57,19 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 26463
+   "codici": 26464
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23302
+   "codici": 23307
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 20339
+   "codici": 20415
   },
   "he": {
    "nome": "ebraico",
-   "codici": 17969
+   "codici": 18270
   },
   "pi": {
    "nome": "pali",
@@ -89,7 +89,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10527
+   "codici": 10528
   },
   "zh": {
    "nome": "cinese",
@@ -101,11 +101,11 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 8166
+   "codici": 8193
   },
   "en": {
    "nome": "inglese",
-   "codici": 7141
+   "codici": 7143
   },
   "cop": {
    "nome": "copto",
@@ -137,7 +137,7 @@
   },
   "tr": {
    "nome": "turco",
-   "codici": 2742
+   "codici": 2743
   },
   "egy": {
    "nome": "egiziano antico (geroglifico, ieratico, demotico)",
@@ -169,7 +169,7 @@
   },
   "nl": {
    "nome": "nederlandese",
-   "codici": 853
+   "codici": 854
   },
   "akk": {
    "nome": "accadico",
@@ -443,7 +443,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15702
+   "codici": 15704
   },
   "medievale": {
    "nome": "autori medievali",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 529330
+   "codici": 529640
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -2569,7 +2569,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7141,
+   "codici": 7143,
    "forme": [
     "Bibliae",
     "Biblia sacra",
@@ -5072,9 +5072,11 @@
   "Forum Vetus, Tempel der Roma und des Augustus",
   "Fragile Palm Leaves Foundation, Nonthaburi (copie del Buddhist Digital Resource Center)",
   "Frank UB Barth (copia digitale della National Library of Israel)",
+  "Frank UB Ffm W (copia digitale della National Library of Israel)",
   "Frank UB Fol. (copia digitale della National Library of Israel)",
   "Frank UB Fragm. Hebr. I (copia digitale della National Library of Israel)",
   "Frank UB Fragm. Hebr. IV (copia digitale della National Library of Israel)",
+  "Frank UB Fragm. Hebr. V (copia digitale della National Library of Israel)",
   "Frank UB Lat. Oct. (copia digitale della National Library of Israel)",
   "Frank UB Oct. (copia digitale della National Library of Israel)",
   "Frank UB Qu. (copia digitale della National Library of Israel)",
@@ -9776,44 +9778,44 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 11145,
+   "codici": 11455,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 682,
+   "miniati": 691,
    "musica": 0,
    "papiri": 0,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 18,
+   "con_autori": 20,
    "lingue": {
-    "he": 11128,
+    "he": 11429,
     "arc": 151,
-    "xx": 1702,
-    "ar": 529,
+    "xx": 1778,
+    "ar": 533,
     "fa": 127,
-    "tr": 14,
+    "tr": 15,
     "grc": 8,
-    "es": 21,
-    "it": 145,
-    "de": 64,
+    "es": 22,
+    "it": 172,
+    "de": 69,
     "la": 28,
-    "nl": 31,
+    "nl": 32,
     "pt": 8,
-    "fr": 11,
+    "fr": 12,
     "ru": 6,
-    "en": 11,
+    "en": 13,
     "pl": 1,
     "ka": 1,
     "ca": 1,
     "oc": 2
    },
-   "esito": "errore: manifesti letti in parte (mancano 4367): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 4055): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
-   "pezzi_voci": 14,
+   "pezzi_voci": 15,
    "indice": [
     "indice/nli-0.json"
    ]
@@ -10957,7 +10959,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 11145
+   "righe": 11455
   },
   {
    "file": "indice/getty-0.json",
@@ -11923,6 +11925,8 @@
   "museo",
   "museo",
   "museo",
+  "biblioteca",
+  "biblioteca",
   "biblioteca",
   "biblioteca",
   "biblioteca",
@@ -14178,7 +14182,7 @@
   "biblioteca"
  ],
  "totali": {
-  "biblioteche": 1414,
+  "biblioteche": 1416,
   "musei": 1675,
   "senza_luogo": 1945
  },
@@ -18128,6 +18132,8 @@
   "gerusalemme",
   "gerusalemme",
   "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
   "francoforte",
   null,
   null,
@@ -21213,9 +21219,11 @@
   2,
   7435,
   1,
+  1,
   19,
   3,
   2,
+  1,
   1,
   395,
   47,
@@ -22018,7 +22026,7 @@
   1617,
   47,
   1,
-  8274,
+  8582,
   151,
   1,
   58,
