@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-26T20:02:00.719Z",
- "totale": 647852,
- "con_autori": 37278,
- "miniati": 10846,
+ "aggiornato": "2026-11-26T20:58:12.731Z",
+ "totale": 648334,
+ "con_autori": 37279,
+ "miniati": 10886,
  "musica": 21137,
- "manoscritti": 535369,
+ "manoscritti": 535851,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 35532
+   "codici": 35620
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -65,11 +65,11 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 20474
+   "codici": 20531
   },
   "he": {
    "nome": "ebraico",
-   "codici": 18644
+   "codici": 19011
   },
   "pi": {
    "nome": "pali",
@@ -101,7 +101,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 8197
+   "codici": 8199
   },
   "en": {
    "nome": "inglese",
@@ -121,7 +121,7 @@
   },
   "fa": {
    "nome": "persiano",
-   "codici": 4695
+   "codici": 4729
   },
   "bo": {
    "nome": "tibetano",
@@ -137,7 +137,7 @@
   },
   "tr": {
    "nome": "turco",
-   "codici": 2743
+   "codici": 2753
   },
   "egy": {
    "nome": "egiziano antico (geroglifico, ieratico, demotico)",
@@ -213,7 +213,7 @@
   },
   "oc": {
    "nome": "occitano",
-   "codici": 179
+   "codici": 182
   },
   "shn": {
    "nome": "shan",
@@ -241,7 +241,7 @@
   },
   "hu": {
    "nome": "ungherese",
-   "codici": 91
+   "codici": 92
   },
   "cai": {
    "nome": "altre lingue indigene di Mesoamerica e America centrale",
@@ -447,13 +447,13 @@
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 9762
+   "codici": 9763
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 530034
+   "codici": 530516
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -3259,7 +3259,7 @@
    "nome": "Avicenna",
    "latino": "Avicenna",
    "categoria": "medievale",
-   "codici": 567,
+   "codici": 568,
    "forme": [
     "Avicennae",
     "Ibn Sina",
@@ -5136,6 +5136,7 @@
   "Gradishtë",
   "Graf-von-Schönborn'sche Schlossbibliothek, Pommersfelden",
   "Grand, Musée",
+  "GRAZ UB Druck (copia digitale della National Library of Israel)",
   "Graz, Landesmus. Joanneum",
   "Graz, Landesmus. Joanneum, Lapidarium Schloß Eggenberg",
   "Grolier Club, New York",
@@ -5225,6 +5226,7 @@
   "Husitské muzeum v Táboře, Tábor",
   "Igel",
   "Iglesia parroquial",
+  "IMOLA Arch. Com. (copia digitale della National Library of Israel)",
   "in situ",
   "Indiana University",
   "Indiana University, Lilly Library, Bloomington",
@@ -5316,6 +5318,7 @@
   "Jagsthausen, Schule",
   "Jatindramohan Sangrahashala, National Council of Education, Bengal (copie digitali di Penn), Kolkata",
   "Jávea, Mus. Arq. Mun.",
+  "JER BEN ZVI (copia digitale della National Library of Israel)",
   "JER Safrai (copia digitale della National Library of Israel)",
   "Jer. HEKHAL GOLDSCHMIDT (copia digitale della National Library of Israel)",
   "Jerash",
@@ -5343,6 +5346,7 @@
   "Kappeln, Pfarrhaus, vermauert",
   "Karataš, Magazin",
   "Karatepe-Aslantaş Open-Air Museum",
+  "KARLSRUHE Ei (copia digitale della National Library of Israel)",
   "Karlsruhe, Bad. Landesmus.",
   "Karlsruhe, Bad. Landesmus.; Badenweiler, Thermen (Kopie)",
   "Karlsruhe, Bad. Landesmus.; Ettlingen, Albbrücke (Kopie)",
@@ -5702,7 +5706,9 @@
   "Mosonmagyaróvár, Hansági Múz.",
   "Moulay Idriss, Caïdat d’Oualili, Site arch. de Volubilis",
   "Mount Melleray Abbey, Cappoquin",
+  "Ms. Ar. (copia digitale della National Library of Israel)",
   "Ms. Fr. (copia digitale della National Library of Israel)",
+  "Ms. Yah. Ar. (copia digitale della National Library of Israel)",
   "München, Arch. Staatsslg.",
   "München, Arch. Staatsslg.; Passau, Oberhaus-Mus. (Kopie)",
   "München, Arch. Staatsslg.; Seeon-Seebruck, Seebruck, Römermus. Bedaium (Kopie)",
@@ -5961,6 +5967,7 @@
   "Okla., Green Collection, Oklahoma City",
   "Okresní muzeum Klatovy",
   "Okresní muzeum Mladá Boleslav",
+  "Olomouc VK (copia digitale della National Library of Israel)",
   "Olomouc ZA (copia digitale della National Library of Israel)",
   "Olten, Hist. Mus.",
   "Orăştie, Muz. Etnogr. şi Arta Pop.",
@@ -9781,27 +9788,27 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 11849,
+   "codici": 12331,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 733,
+   "miniati": 773,
    "musica": 0,
    "papiri": 0,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 20,
+   "con_autori": 21,
    "lingue": {
-    "he": 11803,
+    "he": 12170,
     "arc": 156,
-    "xx": 1837,
-    "ar": 534,
-    "fa": 134,
-    "tr": 15,
+    "xx": 1894,
+    "ar": 622,
+    "fa": 168,
+    "tr": 25,
     "grc": 8,
     "es": 23,
-    "it": 176,
+    "it": 178,
     "de": 69,
     "la": 28,
     "nl": 32,
@@ -9809,16 +9816,17 @@
     "fr": 12,
     "ru": 6,
     "en": 13,
+    "hu": 1,
     "pl": 1,
     "ka": 1,
     "ca": 1,
-    "oc": 2
+    "oc": 5
    },
-   "esito": "errore: manifesti letti in parte (mancano 3660): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 3068): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
-   "pezzi_voci": 15,
+   "pezzi_voci": 16,
    "indice": [
     "indice/nli-0.json"
    ]
@@ -10962,7 +10970,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 11849
+   "righe": 12331
   },
   {
    "file": "indice/getty-0.json",
@@ -11994,6 +12002,7 @@
   "museo",
   "biblioteca",
   "museo",
+  "biblioteca",
   "museo",
   "museo",
   "biblioteca",
@@ -12083,6 +12092,7 @@
   "biblioteca",
   "museo",
   "museo",
+  "biblioteca",
   "museo",
   "museo",
   "biblioteca",
@@ -12176,6 +12186,7 @@
   "museo",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -12201,6 +12212,7 @@
   "museo",
   "museo",
   "museo",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -12561,6 +12573,8 @@
   "museo",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -12815,6 +12829,7 @@
   "biblioteca",
   "museo",
   "museo",
+  "biblioteca",
   "biblioteca",
   "biblioteca",
   "biblioteca",
@@ -14188,7 +14203,7 @@
   "biblioteca"
  ],
  "totali": {
-  "biblioteche": 1419,
+  "biblioteche": 1426,
   "musei": 1675,
   "senza_luogo": 1945
  },
@@ -18195,6 +18210,7 @@
   null,
   null,
   null,
+  "gerusalemme",
   null,
   null,
   "new-york",
@@ -18284,6 +18300,7 @@
   "tabor",
   null,
   null,
+  "gerusalemme",
   null,
   null,
   "bloomington",
@@ -18377,6 +18394,7 @@
   null,
   "gerusalemme",
   "gerusalemme",
+  "gerusalemme",
   null,
   null,
   null,
@@ -18402,6 +18420,7 @@
   null,
   null,
   null,
+  "gerusalemme",
   "karlsruhe",
   "karlsruhe",
   "karlsruhe",
@@ -18762,6 +18781,8 @@
   null,
   "cappoquin",
   "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
   "monaco-di-baviera",
   "monaco-di-baviera",
   "monaco-di-baviera",
@@ -19020,6 +19041,7 @@
   null,
   "klatovy",
   "mlada-boleslav",
+  "gerusalemme",
   "gerusalemme",
   null,
   null,
@@ -20422,7 +20444,7 @@
   2,
   2,
   1,
-  1,
+  2,
   1,
   2,
   5,
@@ -20767,7 +20789,7 @@
   288,
   182,
   1,
-  652,
+  654,
   1,
   3,
   2,
@@ -21058,7 +21080,7 @@
   14,
   17,
   1,
-  25,
+  27,
   3,
   33,
   1,
@@ -21230,12 +21252,12 @@
   7435,
   1,
   1,
-  19,
+  20,
   3,
   2,
   1,
   1,
-  395,
+  396,
   47,
   1,
   2,
@@ -21292,6 +21314,7 @@
   1,
   1,
   2,
+  1,
   1,
   5,
   14,
@@ -21381,6 +21404,7 @@
   2,
   1,
   1,
+  5,
   11,
   5,
   101,
@@ -21472,6 +21496,7 @@
   1,
   3279,
   2,
+  1,
   5,
   6,
   1,
@@ -21496,6 +21521,7 @@
   16,
   53,
   29,
+  1,
   1,
   1,
   1,
@@ -21859,6 +21885,8 @@
   1,
   13,
   1,
+  1,
+  1,
   10,
   1,
   1,
@@ -22037,7 +22065,7 @@
   1617,
   47,
   1,
-  8968,
+  9431,
   151,
   1,
   58,
@@ -22116,6 +22144,7 @@
   78,
   1,
   3,
+  2,
   2,
   5,
   2,
