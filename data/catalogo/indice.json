@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-26T20:58:12.731Z",
- "totale": 648334,
+ "aggiornato": "2026-11-26T21:57:55.705Z",
+ "totale": 648789,
  "con_autori": 37279,
- "miniati": 10886,
+ "miniati": 10996,
  "musica": 21137,
- "manoscritti": 535851,
+ "manoscritti": 536306,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,7 +37,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 106002
+   "codici": 106003
   },
   "?": {
    "nome": "lingua non indicata",
@@ -45,11 +45,11 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 40109
+   "codici": 40110
   },
   "ar": {
    "nome": "arabo",
-   "codici": 35620
+   "codici": 35759
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -61,15 +61,15 @@
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23307
+   "codici": 23308
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 20531
+   "codici": 20638
   },
   "he": {
    "nome": "ebraico",
-   "codici": 19011
+   "codici": 19286
   },
   "pi": {
    "nome": "pali",
@@ -89,7 +89,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10529
+   "codici": 10530
   },
   "zh": {
    "nome": "cinese",
@@ -101,7 +101,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 8199
+   "codici": 8208
   },
   "en": {
    "nome": "inglese",
@@ -117,11 +117,11 @@
   },
   "pt": {
    "nome": "portoghese",
-   "codici": 4957
+   "codici": 4960
   },
   "fa": {
    "nome": "persiano",
-   "codici": 4729
+   "codici": 4780
   },
   "bo": {
    "nome": "tibetano",
@@ -137,7 +137,7 @@
   },
   "tr": {
    "nome": "turco",
-   "codici": 2753
+   "codici": 2769
   },
   "egy": {
    "nome": "egiziano antico (geroglifico, ieratico, demotico)",
@@ -169,7 +169,7 @@
   },
   "nl": {
    "nome": "nederlandese",
-   "codici": 854
+   "codici": 862
   },
   "akk": {
    "nome": "accadico",
@@ -181,7 +181,7 @@
   },
   "arc": {
    "nome": "aramaico",
-   "codici": 627
+   "codici": 628
   },
   "da": {
    "nome": "danese",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 530516
+   "codici": 530971
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -5706,6 +5706,7 @@
   "Mosonmagyaróvár, Hansági Múz.",
   "Moulay Idriss, Caïdat d’Oualili, Site arch. de Volubilis",
   "Mount Melleray Abbey, Cappoquin",
+  "Ms. AP Ar. (copia digitale della National Library of Israel)",
   "Ms. Ar. (copia digitale della National Library of Israel)",
   "Ms. Fr. (copia digitale della National Library of Israel)",
   "Ms. Yah. Ar. (copia digitale della National Library of Israel)",
@@ -6126,6 +6127,7 @@
   "P. Heid. Inv. Kopt. 685 (M. Meyer, Heidelberger Papyrussammlung",
   "P. Heid. Inv. Kopt. 686 (A. Kropp, Heidelberger Papyrussammlung",
   "Padova, Mus. Civ.",
+  "Page (copia digitale della National Library of Israel)",
   "Paks, Városi Múz.",
   "Palazzo Albani del Drago (Rome)",
   "Palermo",
@@ -6179,6 +6181,7 @@
   "Pforzheim, Arch. Mus.",
   "Pharmaziemuseum der Universität Basel",
   "PHIL UP (copia digitale della National Library of Israel)",
+  "PHIL UP CAJS Rar (copia digitale della National Library of Israel)",
   "PHIL UP Schoenberg (copia digitale della National Library of Israel)",
   "Pigorini National Museum of Prehistory and Ethnography",
   "Pio-Clementino museum",
@@ -6313,6 +6316,7 @@
   "Queens' College Library, Cambridge",
   "Queens' College, Cambridge",
   "Rabat, Mus. Arch.",
+  "Ramat Gan Israel (copia digitale della National Library of Israel)",
   "Rampur Raza Library P. 742, Cambridge",
   "Rampur Raza Library P. 3909, Cambridge",
   "Rampur Raza Library P. 3911, Cambridge",
@@ -7237,6 +7241,7 @@
   "Wadi Tumilat",
   "Wall0067, South Tower, Palmyrene Gate",
   "Wall0069, South Tower, Palmyrene Gate",
+  "WALLACH (copia digitale della National Library of Israel)",
   "Warszawa, Muz. Nar. War.",
   "Weilerswist, Rathaus?",
   "Weißenburg/Bayern, Römermus.",
@@ -9788,10 +9793,10 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 12331,
+   "codici": 12786,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 773,
+   "miniati": 883,
    "musica": 0,
    "papiri": 0,
    "epigrafi": 0,
@@ -9800,19 +9805,19 @@
    "edizioni_principi": 0,
    "con_autori": 21,
    "lingue": {
-    "he": 12170,
-    "arc": 156,
-    "xx": 1894,
-    "ar": 622,
-    "fa": 168,
-    "tr": 25,
-    "grc": 8,
-    "es": 23,
-    "it": 178,
-    "de": 69,
-    "la": 28,
-    "nl": 32,
-    "pt": 8,
+    "he": 12445,
+    "arc": 157,
+    "xx": 2001,
+    "ar": 761,
+    "fa": 219,
+    "tr": 41,
+    "grc": 9,
+    "es": 24,
+    "it": 187,
+    "de": 70,
+    "la": 29,
+    "nl": 40,
+    "pt": 11,
     "fr": 12,
     "ru": 6,
     "en": 13,
@@ -9822,7 +9827,7 @@
     "ca": 1,
     "oc": 5
    },
-   "esito": "errore: manifesti letti in parte (mancano 3068): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 2512): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
@@ -10970,7 +10975,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 12331
+   "righe": 12786
   },
   {
    "file": "indice/getty-0.json",
@@ -12575,6 +12580,7 @@
   "biblioteca",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -12992,6 +12998,7 @@
   "biblioteca",
   "biblioteca",
   "museo",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -13046,6 +13053,7 @@
   "biblioteca",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -13189,6 +13197,7 @@
   "biblioteca",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -14103,6 +14112,7 @@
   "museo",
   "museo",
   "museo",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -14203,7 +14213,7 @@
   "biblioteca"
  ],
  "totali": {
-  "biblioteche": 1426,
+  "biblioteche": 1431,
   "musei": 1675,
   "senza_luogo": 1945
  },
@@ -18783,6 +18793,7 @@
   "gerusalemme",
   "gerusalemme",
   "gerusalemme",
+  "gerusalemme",
   "monaco-di-baviera",
   "monaco-di-baviera",
   "monaco-di-baviera",
@@ -19200,6 +19211,7 @@
   "heidelberg",
   "heidelberg",
   null,
+  "gerusalemme",
   null,
   null,
   null,
@@ -19252,6 +19264,7 @@
   null,
   null,
   "basilea",
+  "gerusalemme",
   "gerusalemme",
   "gerusalemme",
   null,
@@ -19387,6 +19400,7 @@
   "cambridge",
   "cambridge",
   null,
+  "gerusalemme",
   "cambridge",
   "cambridge",
   "cambridge",
@@ -20311,6 +20325,7 @@
   null,
   null,
   null,
+  "gerusalemme",
   "varsavia",
   null,
   null,
@@ -20789,7 +20804,7 @@
   288,
   182,
   1,
-  654,
+  709,
   1,
   3,
   2,
@@ -21252,7 +21267,7 @@
   7435,
   1,
   1,
-  20,
+  21,
   3,
   2,
   1,
@@ -21318,7 +21333,7 @@
   1,
   5,
   14,
-  304,
+  351,
   1,
   2,
   3,
@@ -21887,6 +21902,7 @@
   1,
   1,
   1,
+  9,
   10,
   1,
   1,
@@ -22065,7 +22081,7 @@
   1617,
   47,
   1,
-  9431,
+  9760,
   151,
   1,
   58,
@@ -22304,6 +22320,7 @@
   1,
   1,
   8,
+  11,
   1,
   1,
   1,
@@ -22356,6 +22373,7 @@
   2,
   3,
   10,
+  1,
   1,
   10,
   1,
@@ -22491,6 +22509,7 @@
   7,
   54,
   5,
+  1,
   1,
   1,
   1,
@@ -23415,6 +23434,7 @@
   1,
   1,
   5,
+  1,
   2,
   1,
   3,
