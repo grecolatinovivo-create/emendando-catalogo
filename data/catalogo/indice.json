@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-26T22:51:47.582Z",
- "totale": 649042,
- "con_autori": 37279,
- "miniati": 11015,
+ "aggiornato": "2026-11-26T23:45:39.823Z",
+ "totale": 649450,
+ "con_autori": 37280,
+ "miniati": 11019,
  "musica": 21137,
- "manoscritti": 536559,
+ "manoscritti": 536967,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,7 +37,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 106003
+   "codici": 106004
   },
   "?": {
    "nome": "lingua non indicata",
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 35759
+   "codici": 35773
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -57,7 +57,7 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 26464
+   "codici": 26471
   },
   "de": {
    "nome": "tedesco",
@@ -65,11 +65,11 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 20694
+   "codici": 20752
   },
   "he": {
    "nome": "ebraico",
-   "codici": 19528
+   "codici": 19753
   },
   "pi": {
    "nome": "pali",
@@ -101,11 +101,11 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 8208
+   "codici": 8209
   },
   "en": {
    "nome": "inglese",
-   "codici": 7143
+   "codici": 7144
   },
   "cop": {
    "nome": "copto",
@@ -117,11 +117,11 @@
   },
   "pt": {
    "nome": "portoghese",
-   "codici": 4960
+   "codici": 4961
   },
   "fa": {
    "nome": "persiano",
-   "codici": 4780
+   "codici": 4928
   },
   "bo": {
    "nome": "tibetano",
@@ -181,7 +181,7 @@
   },
   "arc": {
    "nome": "aramaico",
-   "codici": 628
+   "codici": 630
   },
   "da": {
    "nome": "danese",
@@ -443,7 +443,7 @@
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15704
+   "codici": 15705
   },
   "medievale": {
    "nome": "autori medievali",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 531224
+   "codici": 531632
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -2569,7 +2569,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7143,
+   "codici": 7144,
    "forme": [
     "Bibliae",
     "Biblia sacra",
@@ -4923,6 +4923,7 @@
   "Damaskus, Nat. Mus.",
   "Dar al-Kutub, Cambridge",
   "DARM Arch (copia digitale della National Library of Israel)",
+  "DARM Arch F (copia digitale della National Library of Israel)",
   "DARM Arch R (copia digitale della National Library of Israel)",
   "Darmstadt, Hess. Landesmus.",
   "Darmstadt, Hess. Landesmus.?",
@@ -5144,10 +5145,15 @@
   "Grolier Club, New York",
   "Gross Family Collection (copia digitale della National Library of Israel), Tel Aviv",
   "Gross William L TLV (copia digitale della National Library of Israel)",
+  "Gross William L. Tel Aviv Israel (copia digitale della National Library of Israel)",
   "Gross William L. Tel Aviv Israel Ms. EE. (copia digitale della National Library of Israel)",
+  "Gross William L. Tel Aviv Israel Ms. EI. (copia digitale della National Library of Israel)",
   "Gross William L. Tel Aviv Israel Ms. IT. (copia digitale della National Library of Israel)",
+  "Gross William L. Tel Aviv Israel Ms. KU. (copia digitale della National Library of Israel)",
   "Gross William L. Tel Aviv Israel Ms. MO. (copia digitale della National Library of Israel)",
   "Gross William L. Tel Aviv Israel Ms. OT. (copia digitale della National Library of Israel)",
+  "Gross William L. Tel Aviv Israel Ms. PS. (copia digitale della National Library of Israel)",
+  "Gross William L. Tel Aviv Israel Ms. YM. (copia digitale della National Library of Israel)",
   "Groß-Gerau, Privatbesitz",
   "Groß-Gerau, Stadtmus.",
   "Groß-Gerau, StadtmusStadtmusStadtmus.",
@@ -5670,6 +5676,7 @@
   "Metropolitan Museum of Art",
   "Metz, Mus. d'Art de d'Histoire",
   "Metz, Mus. Nat. Hist. Art",
+  "Meza Gross William L. Tel Aviv Israel Ms. HO. (copia digitale della National Library of Israel)",
   "Michelstadt, Würzberg, Eulbacher Park",
   "Michelstadt, Würzberg, Eulbacher Park, vermauert",
   "Middelburg, Zeeuws Museum",
@@ -5943,6 +5950,7 @@
   "Nin, Ždrijac, Privatbesitz",
   "Niš, Nar. Muz.",
   "NLI (copia digitale della National Library of Israel)",
+  "NLI Ms. Heb. (copia digitale della National Library of Israel)",
   "Nonaka Usaien (野中烏犀圓), Saga",
   "Norcia",
   "Norcia, P.zzo Bucchi-Corazzini",
@@ -5973,6 +5981,7 @@
   "Okresní muzeum Klatovy",
   "Okresní muzeum Mladá Boleslav",
   "Olomouc VK (copia digitale della National Library of Israel)",
+  "Olomouc VK D (copia digitale della National Library of Israel)",
   "Olomouc ZA (copia digitale della National Library of Israel)",
   "Olten, Hist. Mus.",
   "Orăştie, Muz. Etnogr. şi Arta Pop.",
@@ -6356,6 +6365,7 @@
   "Riksantikvarieämbetet, Vitterhetsakademiens bibliotek, Stoccolma",
   "Riksarkivet, Stoccolma",
   "Ripatransone, Mus. Civ. Arch.",
+  "Risposta generale a tutte quelle blasfemie che si trovano ne I libri hebraici JER NLI Var. (copia digitale della National Library of Israel)",
   "Rîu de Mori, Ostrov, Kirche",
   "Rîu de Mori, Ostrov, Kirche, vermauert",
   "Rochester Institute of Technology, Cary Graphic Arts Collection",
@@ -9797,41 +9807,41 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 13039,
+   "codici": 13447,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 902,
+   "miniati": 906,
    "musica": 0,
    "papiri": 0,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 21,
+   "con_autori": 22,
    "lingue": {
-    "he": 12687,
-    "arc": 157,
-    "xx": 2057,
-    "ar": 761,
-    "fa": 219,
+    "he": 12912,
+    "arc": 159,
+    "xx": 2115,
+    "ar": 775,
+    "fa": 367,
     "tr": 41,
     "grc": 9,
     "es": 26,
-    "it": 187,
+    "it": 188,
+    "fr": 19,
     "de": 71,
-    "la": 29,
+    "la": 30,
     "nl": 43,
-    "pt": 11,
-    "fr": 12,
+    "pt": 12,
+    "en": 14,
     "ru": 6,
     "pl": 2,
-    "en": 13,
     "hu": 1,
     "ka": 1,
     "ca": 1,
     "oc": 5
    },
-   "esito": "errore: manifesti letti in parte (mancano 1294): riprenderà alla prossima esecuzione",
+   "esito": "errore: manifesti letti in parte (mancano 109): riprenderà alla prossima esecuzione",
    "prefissi": [
     "nli-"
    ],
@@ -10979,7 +10989,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 13039
+   "righe": 13447
   },
   {
    "file": "indice/getty-0.json",
@@ -11799,6 +11809,7 @@
   "biblioteca",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -12016,6 +12027,11 @@
   "biblioteca",
   "museo",
   "museo",
+  "biblioteca",
+  "biblioteca",
+  "biblioteca",
+  "biblioteca",
+  "biblioteca",
   "biblioteca",
   "biblioteca",
   "biblioteca",
@@ -12545,6 +12561,7 @@
   "museo",
   "museo",
   "museo",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -12817,6 +12834,7 @@
   "museo",
   "museo",
   "museo",
+  "biblioteca",
   "biblioteca",
   "biblioteca",
   "museo",
@@ -12849,6 +12867,7 @@
   "biblioteca",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -13231,6 +13250,7 @@
   "biblioteca",
   "biblioteca",
   "museo",
+  "biblioteca",
   "museo",
   "museo",
   "biblioteca",
@@ -14221,7 +14241,7 @@
   "biblioteca"
  ],
  "totali": {
-  "biblioteche": 1435,
+  "biblioteche": 1445,
   "musei": 1675,
   "senza_luogo": 1945
  },
@@ -18016,6 +18036,7 @@
   "cambridge",
   "gerusalemme",
   "gerusalemme",
+  "gerusalemme",
   "darmstadt",
   "darmstadt",
   "darmstadt",
@@ -18235,6 +18256,11 @@
   null,
   "new-york",
   "tel-aviv",
+  "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
   "gerusalemme",
   "gerusalemme",
   "gerusalemme",
@@ -18762,6 +18788,7 @@
   null,
   "metz",
   "metz",
+  "gerusalemme",
   "michelstadt",
   "michelstadt",
   null,
@@ -19035,6 +19062,7 @@
   null,
   null,
   "gerusalemme",
+  "gerusalemme",
   "jp-saga",
   null,
   null,
@@ -19064,6 +19092,7 @@
   null,
   "klatovy",
   "mlada-boleslav",
+  "gerusalemme",
   "gerusalemme",
   "gerusalemme",
   null,
@@ -19448,6 +19477,7 @@
   "stoccolma",
   "stoccolma",
   null,
+  "gerusalemme",
   null,
   null,
   "rochester",
@@ -20471,7 +20501,7 @@
   2,
   2,
   1,
-  2,
+  3,
   1,
   2,
   5,
@@ -20552,7 +20582,7 @@
   1,
   1,
   2,
-  108,
+  109,
   396,
   38,
   4,
@@ -20648,7 +20678,7 @@
   4,
   1631,
   1,
-  954,
+  957,
   1,
   1,
   1,
@@ -20816,7 +20846,7 @@
   288,
   182,
   1,
-  728,
+  729,
   1,
   3,
   2,
@@ -21065,7 +21095,7 @@
   1,
   1,
   1,
-  23,
+  118,
   1,
   1,
   9,
@@ -21109,7 +21139,7 @@
   14,
   17,
   1,
-  27,
+  29,
   3,
   33,
   1,
@@ -21127,6 +21157,7 @@
   20,
   1,
   7,
+  1,
   1,
   1,
   26,
@@ -21350,9 +21381,14 @@
   409,
   1,
   2,
+  2,
+  1,
   3,
+  6,
+  4,
   4,
   3,
+  1,
   1,
   2,
   1,
@@ -21875,6 +21911,7 @@
   1,
   2,
   8,
+  1,
   2,
   3,
   1,
@@ -22097,7 +22134,7 @@
   1617,
   47,
   1,
-  9924,
+  10117,
   151,
   1,
   58,
@@ -22148,6 +22185,7 @@
   1,
   9,
   3,
+  94,
   14,
   1,
   1,
@@ -22178,6 +22216,7 @@
   3,
   2,
   2,
+  1,
   5,
   2,
   1,
@@ -22560,6 +22599,7 @@
   1,
   398,
   2,
+  1,
   1,
   1,
   1,
