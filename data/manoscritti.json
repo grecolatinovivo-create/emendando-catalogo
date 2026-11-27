@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-26T12:28:48.155Z",
+ "aggiornato": "2026-11-27T11:32:58.960Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -59,7 +59,7 @@
   },
   "bncf": {
    "nome": "Biblioteca Nazionale Centrale di Firenze (manoscritti pubblicati dalla Biblioteca su Internet Archive, archive.org)",
-   "codici": 76,
+   "codici": 77,
    "esito": "ok"
   },
   "vallicelliana": {
@@ -145,7 +145,7 @@
   "loc": {
    "nome": "Library of Congress: microfilm del Sinai e dei Patriarcati di Gerusalemme (loc.gov; manifesti scritti dal catalogo)",
    "codici": 34,
-   "esito": "errore: HTTP 429 https://www.loc.gov/collections/manuscripts-in-st-catherines-monastery-mount-sinai/?fo=json&c=100&sp=2"
+   "esito": "ok"
   },
   "nlg": {
    "nome": "Biblioteca Nazionale di Grecia, Atene (digitalcollections.nlg.gr; copie dei manifesti scritte dal catalogo)",
@@ -225,7 +225,7 @@
   "uva": {
    "nome": "Allard Pierson, Universiteit van Amsterdam (uvaerfgoed.nl)",
    "codici": 3,
-   "esito": "errore: HTTP 403"
+   "esito": "ok"
   },
   "vlaustria": {
    "nome": "Universitätsbibliothek Graz e Universitätsbibliothek Salzburg (unipub.uni-graz.at, eplus.uni-salzburg.at; elenco dalle sitemap, manifesti IIIF delle biblioteche)",
@@ -275,7 +275,7 @@
   "ucm": {
    "nome": "Universidad Complutense de Madrid, Biblioteca Histórica (patrimoniodigital.ucm.es)",
    "codici": 41,
-   "esito": "ok"
+   "esito": "errore: fetch failed"
   },
   "sevilla": {
    "nome": "Biblioteca de la Universidad de Sevilla (copie digitali su Internet Archive)",
@@ -315,7 +315,7 @@
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
    "codici": 1,
-   "esito": "errore: manifesti letti in parte (mancano 5325): riprenderà alla prossima esecuzione"
+   "esito": "ok"
   },
   "getty": {
    "nome": "J. Paul Getty Museum, Los Angeles: manoscritti (data.getty.edu; manifesti media.getty.edu)",
@@ -423,7 +423,7 @@
    "esito": "ok"
   }
  },
- "totale": 11963,
+ "totale": 11964,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -129444,6 +129444,69 @@
    ],
    "manifest": "https://iiif.archive.org/iiif/3/conventi-soppressi-a.-v.-2769/manifest.json",
    "pagina": "https://archive.org/details/conventi-soppressi-a.-v.-2769",
+   "licenza": "Biblioteca Nazionale Centrale di Firenze: pubblico dominio, riproduzioni solo per fini non commerciali (art. 108 del Codice dei Beni Culturali)",
+   "immagini": null
+  },
+  {
+   "id": "bncf-c.-s.-b.-ii.-122",
+   "fonte": "bncf",
+   "biblioteca": "Biblioteca Nazionale Centrale di Firenze",
+   "citta": "Firenze",
+   "segnatura": "Conventi Soppressi B.II.122",
+   "datazione": "1462",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "it"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Sentenze in volgare tratte da diversi autori: Seneca, Boccaccio, Cicerone, Aristotele, Petrarca. Girolamo, Ambrogio, Gregorio, Agostino, Bernardo, Dante , ms., 24 settembre 1462, cart.,",
+   "autori": [
+    {
+     "id": "cicerone",
+     "autore": "Cicerone",
+     "latino": "Cicero",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…si autori: Seneca, Boccaccio, Cicerone, Aristotele, Petrarca. Girola…»"
+    },
+    {
+     "id": "seneca",
+     "autore": "Seneca",
+     "latino": "Seneca",
+     "categoria": "classico-latino",
+     "opere": [],
+     "corrispondenza": "titolo: «…are tratte da diversi autori: Seneca, Boccaccio, Cicerone, Aristot…»"
+    },
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…Seneca, Boccaccio, Cicerone, Aristotele, Petrarca. Girolamo, Ambrogio…»"
+    },
+    {
+     "id": "petrarca",
+     "autore": "Francesco Petrarca",
+     "latino": "Franciscus Petrarca",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "titolo: «…caccio, Cicerone, Aristotele, Petrarca. Girolamo, Ambrogio, Gregorio…»"
+    },
+    {
+     "id": "boccaccio",
+     "autore": "Giovanni Boccaccio",
+     "latino": "Iohannes Boccaccius",
+     "categoria": "medievale",
+     "opere": [],
+     "corrispondenza": "titolo: «…te da diversi autori: Seneca, Boccaccio, Cicerone, Aristotele, Petrar…»"
+    }
+   ],
+   "manifest": "https://iiif.archive.org/iiif/3/c.-s.-b.-ii.-122/manifest.json",
+   "pagina": "https://archive.org/details/c.-s.-b.-ii.-122",
    "licenza": "Biblioteca Nazionale Centrale di Firenze: pubblico dominio, riproduzioni solo per fini non commerciali (art. 108 del Codice dei Beni Culturali)",
    "immagini": null
   },

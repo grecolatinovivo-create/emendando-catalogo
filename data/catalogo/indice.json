@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-27T10:21:44.407Z",
- "totale": 649563,
- "con_autori": 37280,
+ "aggiornato": "2026-11-27T11:32:58.960Z",
+ "totale": 649567,
+ "con_autori": 37285,
  "miniati": 11026,
  "musica": 21137,
- "manoscritti": 537077,
+ "manoscritti": 537081,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15662,
@@ -37,7 +37,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 106013
+   "codici": 106012
   },
   "?": {
    "nome": "lingua non indicata",
@@ -101,7 +101,7 @@
   },
   "it": {
    "nome": "italiano",
-   "codici": 8209
+   "codici": 8214
   },
   "en": {
    "nome": "inglese",
@@ -435,11 +435,11 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 7838
+   "codici": 7839
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7424
+   "codici": 7425
   },
   "cristiano": {
    "nome": "autori cristiani",
@@ -447,13 +447,13 @@
   },
   "medievale": {
    "nome": "autori medievali",
-   "codici": 9763
+   "codici": 9768
   }
  },
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 531742
+   "codici": 531746
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -539,7 +539,7 @@
    "nome": "Cicerone",
    "latino": "Cicero",
    "categoria": "classico-latino",
-   "codici": 1387,
+   "codici": 1388,
    "forme": [
     "Ciceronis",
     "Ciceronem",
@@ -683,7 +683,7 @@
    "nome": "Seneca",
    "latino": "Seneca",
    "categoria": "classico-latino",
-   "codici": 513,
+   "codici": 514,
    "forme": [
     "Senecae",
     "Senecam",
@@ -1624,7 +1624,7 @@
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 2322,
+   "codici": 2323,
    "forme": [
     "Aristotelis",
     "Aristotle",
@@ -3092,7 +3092,7 @@
    "nome": "Dante Alighieri",
    "latino": "Dantes Alagherius",
    "categoria": "medievale",
-   "codici": 305,
+   "codici": 308,
    "forme": [
     "Dantis Alagherii",
     "Dante Alagherii",
@@ -3104,7 +3104,7 @@
    "nome": "Francesco Petrarca",
    "latino": "Franciscus Petrarca",
    "categoria": "medievale",
-   "codici": 460,
+   "codici": 462,
    "forme": [
     "Francisci Petrarcae",
     "Petrarca",
@@ -3118,7 +3118,7 @@
    "nome": "Giovanni Boccaccio",
    "latino": "Iohannes Boccaccius",
    "categoria": "medievale",
-   "codici": 310,
+   "codici": 312,
    "forme": [
     "Johannes Boccaccius",
     "Boccaccio",
@@ -7876,7 +7876,7 @@
   },
   "bncf": {
    "nome": "Biblioteca Nazionale Centrale di Firenze (manoscritti pubblicati dalla Biblioteca su Internet Archive, archive.org)",
-   "codici": 1150,
+   "codici": 1154,
    "carte": 3,
    "carte_stampa": 0,
    "miniati": 20,
@@ -7886,12 +7886,12 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 200,
+   "con_autori": 205,
    "lingue": {
-    "it": 870,
+    "it": 875,
     "gl": 1,
     "?": 67,
-    "la": 224,
+    "la": 223,
     "fr": 10,
     "grc": 4,
     "es": 3,
@@ -10703,7 +10703,7 @@
   {
    "file": "indice/bncf-0.json",
    "fonte": "bncf",
-   "righe": 1150
+   "righe": 1154
   },
   {
    "file": "indice/vallicelliana-0.json",
@@ -20839,7 +20839,7 @@
   5721,
   3,
   296,
-  1150,
+  1154,
   49,
   765,
   1,

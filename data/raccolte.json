@@ -1,8 +1,8 @@
 {
  "ambrosiana": {
-  "quando": "2026-11-26T11:29:44.933Z",
+  "quando": "2026-11-27T11:27:13.978Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-26T11:29:44.933Z"
+  "ultimo_ok": "2026-11-27T11:27:13.978Z"
  },
  "archive": {
   "quando": "2026-11-27T05:16:50.045Z",
@@ -40,9 +40,9 @@
   "ultimo_ok": "2026-11-27T04:49:03.750Z"
  },
  "bncf": {
-  "quando": "2026-11-26T11:29:44.933Z",
+  "quando": "2026-11-27T11:27:13.978Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-26T11:29:44.933Z"
+  "ultimo_ok": "2026-11-27T11:27:13.978Z"
  },
  "bnl": {
   "quando": "2026-11-27T03:48:36.188Z",
@@ -60,12 +60,12 @@
   "ultimo_ok": "2026-11-26T12:24:24.364Z"
  },
  "bub": {
-  "quando": "2026-11-26T11:29:44.933Z",
+  "quando": "2026-11-27T11:27:13.978Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-26T11:29:44.933Z"
+  "ultimo_ok": "2026-11-27T11:27:13.978Z"
  },
  "casanatense": {
-  "quando": "2026-11-26T11:29:44.933Z",
+  "quando": "2026-11-27T11:27:13.978Z",
   "esito": "errore: HTTP 403",
   "ultimo_ok": "2026-11-19T10:54:09.134Z"
  },
@@ -205,7 +205,7 @@
   "ultimo_ok": "2026-11-27T03:47:53.030Z"
  },
  "malatestiana": {
-  "quando": "2026-11-26T11:29:44.933Z",
+  "quando": "2026-11-27T11:27:13.978Z",
   "esito": "errore: schede lette in parte (mancano 60): riprenderà alla prossima esecuzione",
   "ultimo_ok": null
  },
@@ -230,9 +230,9 @@
   "ultimo_ok": "2026-11-27T10:18:34.530Z"
  },
  "montecassino": {
-  "quando": "2026-11-26T11:29:44.933Z",
+  "quando": "2026-11-27T11:27:13.978Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-26T11:29:44.933Z"
+  "ultimo_ok": "2026-11-27T11:27:13.978Z"
  },
  "musei": {
   "quando": "2026-11-27T04:35:28.325Z",
@@ -380,9 +380,9 @@
   "ultimo_ok": "2026-11-27T09:56:24.127Z"
  },
  "vallicelliana": {
-  "quando": "2026-11-26T11:29:44.933Z",
+  "quando": "2026-11-27T11:27:13.978Z",
   "esito": "ok",
-  "ultimo_ok": "2026-11-26T11:29:44.933Z"
+  "ultimo_ok": "2026-11-27T11:27:13.978Z"
  },
  "vaticana": {
   "quando": "2026-11-27T09:23:08.707Z",
