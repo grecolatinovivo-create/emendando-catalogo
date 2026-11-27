@@ -1,15 +1,15 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-27T00:06:46.080Z",
- "totale": 649553,
+ "aggiornato": "2026-11-27T04:46:41.191Z",
+ "totale": 649556,
  "con_autori": 37280,
  "miniati": 11026,
  "musica": 21137,
  "manoscritti": 537070,
  "papiri": 46179,
  "epigrafi": 50645,
- "stampe_antiche": 15659,
- "incunaboli": 15587,
+ "stampe_antiche": 15662,
+ "incunaboli": 15590,
  "edizioni_principi": 172,
  "nota": "Catalogo aperto dei manoscritti digitalizzati (IIIF) delle biblioteche agganciate, di ogni lingua ed epoca. Le righe dell'indice seguono «campi»; «biblioteca» è la posizione in «biblioteche»; «lingue» sono codici (vedi «lingue»), dichiarati dalla fonte oppure dedotti da fondo, segnatura o titolo quando «lingua_dedotta» è 1; il pezzo delle voci complete di un codice è fnv1a(id) % pezzi_voci della sua fonte (data/catalogo/voci/<fonte>-<pezzo>.json); la fonte di un id si riconosce dal prefisso; «tipo» è «carta» per le carte geografiche manoscritte, «carta_stampa» per le carte a stampa (categorie a parte, conteggi in «tipi» e, per fonte, in «carte» e «carte_stampa») e vuoto per i codici; «miniato» è 1 per i codici con miniature, iniziali decorate, disegni o illustrazioni e «musica» è 1 per i codici musicali (notazione, libri di canto, polifonia, intavolature, partiture, teoria), riconosciuti dai metadati delle fonti (conteggi in «miniati» e «musica» e, per fonte, negli stessi campi); «tipo» è «incunabolo» per gli stampati fino al 1500 e «stampa» per le edizioni principi del Cinquecento (stampe antiche, dal 27 ottobre 2026: contano in «totale» e in «biblioteche_n»; «manoscritti» e «stampe_antiche» sono i totali separati); «tipo» è «papiro» per i papiri (dal 28 ottobre 2026: fonte «papiri», con i dati papirologici nella voce completa in «papiro», e i papiri di Heidelberg e della BSB; contano in «totale» e in «biblioteche_n», totale separato in «papiri» e, per fonte, nello stesso campo); «tipo» è «epigrafe» per le iscrizioni (dal 28 ottobre 2026: fonte «epigrafi», con i dati epigrafici nella voce completa in «epigrafe», compresa «licenza_metadati»; contano in «totale» e in «biblioteche_n», totale separato in «epigrafi» e, per fonte, nello stesso campo); «editio_princeps» è l'id dell'edizione principe dei classici greci e latini (elenco curato in «edizioni_principi_elenco», con le copie digitali trovate; conteggio delle voci in «edizioni_principi»); «biblioteche_tipo» (dal 28 ottobre 2026), parallelo a «biblioteche», dice se il luogo è una «biblioteca» o un «museo» (musei e luoghi di conservazione di epigrafi e oggetti) oppure «non_indicato» (voce unica che riunisce i luoghi vuoti o segnaposto), e «totali» conta biblioteche e musei veri («totali.biblioteche», «totali.musei») e le voci senza luogo («totali.senza_luogo»); «biblioteche_luogo» dà per ogni biblioteca l'id del suo luogo in «luoghi» (città con paese ISO, lat e lon, da data/luoghi.json) o null.",
  "campi": [
@@ -37,7 +37,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 106010
+   "codici": 106011
   },
   "?": {
    "nome": "lingua non indicata",
@@ -61,7 +61,7 @@
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23310
+   "codici": 23312
   },
   "xx": {
    "nome": "altre lingue",
@@ -439,11 +439,11 @@
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7423
+   "codici": 7424
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15705
+   "codici": 15706
   },
   "medievale": {
    "nome": "autori medievali",
@@ -465,7 +465,7 @@
   },
   "incunabolo": {
    "nome": "incunaboli",
-   "codici": 15587
+   "codici": 15590
   },
   "stampa": {
    "nome": "edizioni principi del Cinquecento",
@@ -1624,7 +1624,7 @@
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 2321,
+   "codici": 2322,
    "forme": [
     "Aristotelis",
     "Aristotle",
@@ -2437,7 +2437,7 @@
    "nome": "Agostino",
    "latino": "Augustinus",
    "categoria": "cristiano",
-   "codici": 2977,
+   "codici": 2978,
    "forme": [
     "Augustini",
     "Augustino",
@@ -4614,7 +4614,6 @@
   "Bibliotheca Rosenthaliana, Allard Pierson, Universiteit van Amsterdam (copia digitale della National Library of Israel)",
   "Bibliotheca Sefarad, Montreux",
   "Bibliothek",
-  "Bibliothek des Metropolitankapitels, München",
   "Bibliothek Otto Schäfer, Schweinfurt",
   "Bibliothek, St. Pölten",
   "Bibliothèque cantonale et universitaire - Lausanne",
@@ -6724,7 +6723,7 @@
   "St John's College, Cambridge",
   "St John's College, Oxford",
   "Staatliche Bibliothek, Ansbach",
-  "Staatliche Bibliothek, Neuburg <Donau>",
+  "Staatliche Bibliothek, Neuburg ",
   "Staatliche Bibliothek, Passau",
   "Staatliche Bibliothek, Regensburg",
   "Staatliche Graphische Sammlung, München",
@@ -8589,7 +8588,7 @@
     "tr": 8,
     "de": 1
    },
-   "esito": "errore: HTTP 429 https://www.loc.gov/collections/manuscripts-in-st-catherines-monastery-mount-sinai/?fo=json&c=100&sp=2",
+   "esito": "ok",
    "prefissi": [
     "loc-"
    ],
@@ -10333,21 +10332,21 @@
   },
   "stampe": {
    "nome": "Stampe antiche: incunaboli e edizioni principi dei classici (Bayerische Staatsbibliothek e biblioteche bavaresi, Heidelberg, Bodleian, Cambridge, Boston Public Library e National Library of Medicine su Internet Archive, Vaticana, Gallica dal browser)",
-   "codici": 15659,
+   "codici": 15662,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 8,
    "musica": 17,
    "papiri": 0,
    "epigrafi": 0,
-   "incunaboli": 15587,
+   "incunaboli": 15590,
    "stampe": 72,
    "edizioni_principi": 172,
    "con_autori": 4906,
    "lingue": {
     "grc": 178,
-    "la": 6500,
-    "de": 823,
+    "la": 6501,
+    "de": 825,
     "?": 7100,
     "it": 303,
     "es": 28,
@@ -11069,7 +11068,7 @@
   {
    "file": "indice/stampe-0.json",
    "fonte": "stampe",
-   "righe": 15659
+   "righe": 15662
   },
   {
    "file": "indice/papiri-0.json",
@@ -11506,7 +11505,6 @@
   "biblioteca",
   "biblioteca",
   "museo",
-  "biblioteca",
   "biblioteca",
   "biblioteca",
   "biblioteca",
@@ -14261,7 +14259,7 @@
   "biblioteca"
  ],
  "totali": {
-  "biblioteche": 1455,
+  "biblioteche": 1454,
   "musei": 1675,
   "senza_luogo": 1945
  },
@@ -17746,7 +17744,6 @@
   "amsterdam",
   "montreux",
   null,
-  "monaco-di-baviera",
   null,
   "st-polten",
   "losanna",
@@ -20728,7 +20725,7 @@
   10,
   1,
   3,
-  37992,
+  37995,
   1,
   2952,
   6093,
@@ -20879,7 +20876,6 @@
   730,
   1,
   3,
-  2,
   24,
   77,
   13,
@@ -21225,7 +21221,7 @@
   1,
   5,
   1,
-  16,
+  18,
   2,
   14,
   12,
