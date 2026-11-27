@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-26T23:45:39.823Z",
- "totale": 649450,
+ "aggiornato": "2026-11-27T00:06:46.080Z",
+ "totale": 649553,
  "con_autori": 37280,
- "miniati": 11019,
+ "miniati": 11026,
  "musica": 21137,
- "manoscritti": 536967,
+ "manoscritti": 537070,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15659,
@@ -37,7 +37,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 106004
+   "codici": 106010
   },
   "?": {
    "nome": "lingua non indicata",
@@ -45,7 +45,7 @@
   },
   "grc": {
    "nome": "greco",
-   "codici": 40110
+   "codici": 40111
   },
   "ar": {
    "nome": "arabo",
@@ -57,19 +57,19 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 26471
+   "codici": 26472
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23309
+   "codici": 23310
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 20752
+   "codici": 20765
   },
   "he": {
    "nome": "ebraico",
-   "codici": 19753
+   "codici": 19855
   },
   "pi": {
    "nome": "pali",
@@ -181,7 +181,7 @@
   },
   "arc": {
    "nome": "aramaico",
-   "codici": 630
+   "codici": 631
   },
   "da": {
    "nome": "danese",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 531632
+   "codici": 531735
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -4880,6 +4880,7 @@
   "Colmar, Mus. d'Unterlinden",
   "Columbia University, Rare Book & Manuscript Library, New York",
   "Comitato per l'istruzione della città di Tanba-Sasayama, Aoyama Rekishimura (丹波篠山市教育委員会 青山歴史村)",
+  "Commentary on Job OX Corpus Christi (copia digitale della National Library of Israel)",
   "Como",
   "Como, Mus. Civ. Arch.",
   "Conception Abbey and Seminary, Conception (Missouri)",
@@ -5075,12 +5076,19 @@
   "Forum Boarium",
   "Forum Vetus, Tempel der Roma und des Augustus",
   "Fragile Palm Leaves Foundation, Nonthaburi (copie del Buddhist Digital Resource Center)",
+  "Frank UB Ausst (copia digitale della National Library of Israel)",
   "Frank UB Barth (copia digitale della National Library of Israel)",
   "Frank UB Ffm W (copia digitale della National Library of Israel)",
   "Frank UB Fol. (copia digitale della National Library of Israel)",
+  "Frank UB Fragm. Hebr. Hebr. III (copia digitale della National Library of Israel)",
   "Frank UB Fragm. Hebr. I (copia digitale della National Library of Israel)",
+  "Frank UB Fragm. Hebr. II (copia digitale della National Library of Israel)",
+  "Frank UB Fragm. Hebr. III (copia digitale della National Library of Israel)",
   "Frank UB Fragm. Hebr. IV (copia digitale della National Library of Israel)",
   "Frank UB Fragm. Hebr. V (copia digitale della National Library of Israel)",
+  "Frank UB Fragm. Hebr. VI (copia digitale della National Library of Israel)",
+  "Frank UB Fragm. Hebr. VIII (copia digitale della National Library of Israel)",
+  "Frank UB Fragm. III (copia digitale della National Library of Israel)",
   "Frank UB Lat. Oct. (copia digitale della National Library of Israel)",
   "Frank UB Oct. (copia digitale della National Library of Israel)",
   "Frank UB Qu. (copia digitale della National Library of Israel)",
@@ -5180,6 +5188,7 @@
   "Hainburg/Donau, Marc Aurel-Kaserne, Uhrturm",
   "Hajdina, Spodnja Hajdina, Mithraeum I",
   "Hamburg Mus Oct. (copia digitale della National Library of Israel)",
+  "Hanau (copia digitale della National Library of Israel)",
   "Hanau, Schloss Philippsruhe, Hist. Mus. Hanau",
   "Hanau, Steinheim, Mus. Schloss Steinheim",
   "Hanau, Steinheim, Mus. Schloss Steinheim; Großkrotzenburg, Heimatmus. (Kopie)",
@@ -6558,6 +6567,7 @@
   "Royal Greenwich Observatory Archives, Cambridge",
   "Royal Irish Academy, Dublino",
   "Royal Ontario Museum, Cambridge",
+  "Rudimentum Hebrae Lingua OX Corpus Christi (copia digitale della National Library of Israel)",
   "Rutgers University Libraries, New Brunswick (New Jersey)",
   "S. Antioco, Mus. Arch.",
   "S. Apollinare in Classe",
@@ -9807,10 +9817,10 @@
   },
   "nli": {
    "nome": "National Library of Israel, Gerusalemme: manoscritti di Ktiv (elenco da Europeana; manifesti iiif.nli.org.il)",
-   "codici": 13447,
+   "codici": 13550,
    "carte": 0,
    "carte_stampa": 0,
-   "miniati": 906,
+   "miniati": 913,
    "musica": 0,
    "papiri": 0,
    "epigrafi": 0,
@@ -9819,18 +9829,18 @@
    "edizioni_principi": 0,
    "con_autori": 22,
    "lingue": {
-    "he": 12912,
-    "arc": 159,
-    "xx": 2115,
+    "he": 13014,
+    "arc": 160,
+    "xx": 2128,
     "ar": 775,
     "fa": 367,
     "tr": 41,
-    "grc": 9,
+    "grc": 10,
     "es": 26,
     "it": 188,
-    "fr": 19,
-    "de": 71,
-    "la": 30,
+    "fr": 20,
+    "de": 72,
+    "la": 36,
     "nl": 43,
     "pt": 12,
     "en": 14,
@@ -9841,7 +9851,7 @@
     "ca": 1,
     "oc": 5
    },
-   "esito": "errore: manifesti letti in parte (mancano 109): riprenderà alla prossima esecuzione",
+   "esito": "ok",
    "prefissi": [
     "nli-"
    ],
@@ -10989,7 +10999,7 @@
   {
    "file": "indice/nli-0.json",
    "fonte": "nli",
-   "righe": 13447
+   "righe": 13550
   },
   {
    "file": "indice/getty-0.json",
@@ -11765,6 +11775,7 @@
   "museo",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "biblioteca",
@@ -11959,6 +11970,9 @@
   "museo",
   "museo",
   "museo",
+  "biblioteca",
+  "biblioteca",
+  "biblioteca",
   "biblioteca",
   "biblioteca",
   "biblioteca",
@@ -11970,6 +11984,10 @@
   "biblioteca",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
+  "biblioteca",
+  "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -12064,6 +12082,7 @@
   "museo",
   "museo",
   "museo",
+  "biblioteca",
   "biblioteca",
   "museo",
   "museo",
@@ -13444,6 +13463,7 @@
   "biblioteca",
   "biblioteca",
   "biblioteca",
+  "biblioteca",
   "museo",
   "museo",
   "museo",
@@ -14241,7 +14261,7 @@
   "biblioteca"
  ],
  "totali": {
-  "biblioteche": 1445,
+  "biblioteche": 1455,
   "musei": 1675,
   "senza_luogo": 1945
  },
@@ -17992,6 +18012,7 @@
   "colmar",
   "new-york",
   "jp-tanba-sasayama",
+  "gerusalemme",
   null,
   null,
   "conception",
@@ -18197,6 +18218,13 @@
   "gerusalemme",
   "gerusalemme",
   "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
+  "gerusalemme",
   "francoforte",
   null,
   null,
@@ -18291,6 +18319,7 @@
   null,
   null,
   null,
+  "gerusalemme",
   "gerusalemme",
   null,
   null,
@@ -19670,6 +19699,7 @@
   "cambridge",
   "dublino",
   "cambridge",
+  "gerusalemme",
   "new-brunswick",
   null,
   null,
@@ -20846,7 +20876,7 @@
   288,
   182,
   1,
-  729,
+  730,
   1,
   3,
   2,
@@ -21095,7 +21125,7 @@
   1,
   1,
   1,
-  118,
+  139,
   1,
   1,
   9,
@@ -21115,6 +21145,7 @@
   4,
   896,
   420,
+  1,
   1,
   4,
   39,
@@ -21312,9 +21343,16 @@
   7435,
   1,
   1,
+  1,
   21,
-  3,
+  1,
+  7,
   2,
+  12,
+  7,
+  1,
+  1,
+  9,
   1,
   1,
   396,
@@ -21415,6 +21453,7 @@
   1,
   3,
   1,
+  13,
   5,
   1,
   1,
@@ -21572,7 +21611,7 @@
   20,
   1,
   2,
-  6,
+  8,
   89,
   632,
   9,
@@ -22134,7 +22173,7 @@
   1617,
   47,
   1,
-  10117,
+  10140,
   151,
   1,
   58,
@@ -22237,7 +22276,7 @@
   1,
   1,
   1,
-  3,
+  8,
   1,
   1,
   1,
@@ -22793,6 +22832,7 @@
   1,
   103,
   10,
+  1,
   112,
   2,
   1,
