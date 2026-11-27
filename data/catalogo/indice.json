@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-27T04:46:41.191Z",
- "totale": 649556,
+ "aggiornato": "2026-11-27T10:07:28.573Z",
+ "totale": 649562,
  "con_autori": 37280,
  "miniati": 11026,
  "musica": 21137,
- "manoscritti": 537070,
+ "manoscritti": 537076,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15662,
@@ -37,7 +37,7 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 106011
+   "codici": 106012
   },
   "?": {
    "nome": "lingua non indicata",
@@ -57,7 +57,7 @@
   },
   "fr": {
    "nome": "francese",
-   "codici": 26472
+   "codici": 26473
   },
   "de": {
    "nome": "tedesco",
@@ -77,7 +77,7 @@
   },
   "cu": {
    "nome": "slavo ecclesiastico",
-   "codici": 14262
+   "codici": 14260
   },
   "lo": {
    "nome": "lao",
@@ -97,7 +97,7 @@
   },
   "pl": {
    "nome": "polacco",
-   "codici": 8354
+   "codici": 8360
   },
   "it": {
    "nome": "italiano",
@@ -157,7 +157,7 @@
   },
   "cs": {
    "nome": "ceco",
-   "codici": 1228
+   "codici": 1229
   },
   "khb": {
    "nome": "tai lü",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 531735
+   "codici": 531741
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -9079,7 +9079,7 @@
   },
   "polona": {
    "nome": "Polona: Biblioteka Narodowa e altre biblioteche polacche (polona.pl)",
-   "codici": 14017,
+   "codici": 14023,
    "carte": 2,
    "carte_stampa": 0,
    "miniati": 184,
@@ -9091,13 +9091,13 @@
    "edizioni_principi": 0,
    "con_autori": 447,
    "lingue": {
-    "la": 3365,
+    "la": 3366,
     "?": 1914,
-    "pl": 8270,
+    "pl": 8276,
     "de": 1213,
-    "fr": 1287,
+    "fr": 1288,
     "it": 130,
-    "cs": 30,
+    "cs": 31,
     "en": 95,
     "ru": 303,
     "he": 19,
@@ -9107,7 +9107,7 @@
     "lt": 15,
     "hy": 27,
     "fa": 10,
-    "cu": 501,
+    "cu": 499,
     "be": 6,
     "yi": 2,
     "uk": 60,
@@ -9262,7 +9262,7 @@
     "fr": 3,
     "it": 1
    },
-   "esito": "errore: HTTP 403",
+   "esito": "ok",
    "prefissi": [
     "uva-"
    ],
@@ -10893,7 +10893,7 @@
   {
    "file": "indice/polona-0.json",
    "fonte": "polona",
-   "righe": 14017
+   "righe": 14023
   },
   {
    "file": "indice/manuscriptorium-0.json",
@@ -20865,7 +20865,7 @@
   4831,
   317,
   4,
-  7285,
+  7291,
   48,
   41,
   191,
