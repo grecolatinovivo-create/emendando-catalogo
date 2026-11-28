@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-28T05:24:57.699Z",
- "totale": 649917,
+ "aggiornato": "2026-11-28T05:33:06.043Z",
+ "totale": 650345,
  "con_autori": 37295,
- "miniati": 11028,
+ "miniati": 11029,
  "musica": 21137,
- "manoscritti": 537111,
+ "manoscritti": 537539,
  "papiri": 46179,
  "epigrafi": 50965,
  "stampe_antiche": 15662,
@@ -49,7 +49,7 @@
   },
   "ar": {
    "nome": "arabo",
-   "codici": 35776
+   "codici": 35777
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -65,7 +65,7 @@
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 20766
+   "codici": 21191
   },
   "he": {
    "nome": "ebraico",
@@ -145,7 +145,7 @@
   },
   "ko": {
    "nome": "coreano",
-   "codici": 2391
+   "codici": 2393
   },
   "syr": {
    "nome": "siriaco",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 531776
+   "codici": 532204
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -9981,10 +9981,10 @@
   },
   "archive": {
    "nome": "Internet Archive (archive.org): manoscritti pubblicati da biblioteche di tutto il mondo (McGill, Columbia, BULAC, Sainte-Geneviève, Joppi di Udine, Starr di Berkeley, John Carter Brown Library, Newberry Library, Fragile Palm Leaves Foundation, biblioteche indiane e altre)",
-   "codici": 16371,
+   "codici": 16799,
    "carte": 70,
    "carte_stampa": 0,
-   "miniati": 184,
+   "miniati": 185,
    "musica": 20,
    "papiri": 0,
    "epigrafi": 0,
@@ -9995,7 +9995,7 @@
    "lingue": {
     "tr": 247,
     "it": 1282,
-    "xx": 8672,
+    "xx": 9097,
     "la": 163,
     "grc": 10,
     "fr": 330,
@@ -10010,12 +10010,12 @@
     "hu": 1,
     "ja": 93,
     "nl": 3,
-    "ar": 652,
+    "ar": 653,
     "syr": 17,
     "fa": 481,
     "ru": 1,
     "hy": 3,
-    "ko": 1219,
+    "ko": 1221,
     "he": 31,
     "sa": 3198,
     "alg": 4,
@@ -11023,7 +11023,7 @@
   {
    "file": "indice/archive-0.json",
    "fonte": "archive",
-   "righe": 16371
+   "righe": 16799
   },
   {
    "file": "indice/crossasia-0.json",
@@ -20922,7 +20922,7 @@
   1,
   15,
   6,
-  790,
+  791,
   18,
   1,
   1,
@@ -21330,7 +21330,7 @@
   1,
   1,
   2,
-  7435,
+  7860,
   1,
   1,
   1,
@@ -23426,7 +23426,7 @@
   1,
   9,
   181,
-  1230,
+  1232,
   232,
   32,
   6,
