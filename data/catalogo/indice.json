@@ -1,13 +1,13 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-28T04:44:23.042Z",
- "totale": 649597,
+ "aggiornato": "2026-11-28T05:17:48.870Z",
+ "totale": 649792,
  "con_autori": 37295,
  "miniati": 11028,
  "musica": 21137,
  "manoscritti": 537111,
  "papiri": 46179,
- "epigrafi": 50645,
+ "epigrafi": 50840,
  "stampe_antiche": 15662,
  "incunaboli": 15590,
  "edizioni_principi": 172,
@@ -37,15 +37,15 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 106020
+   "codici": 106024
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 58895
+   "codici": 58916
   },
   "grc": {
    "nome": "greco",
-   "codici": 40114
+   "codici": 40122
   },
   "ar": {
    "nome": "arabo",
@@ -141,7 +141,7 @@
   },
   "egy": {
    "nome": "egiziano antico (geroglifico, ieratico, demotico)",
-   "codici": 2399
+   "codici": 2414
   },
   "ko": {
    "nome": "coreano",
@@ -173,7 +173,7 @@
   },
   "akk": {
    "nome": "accadico",
-   "codici": 678
+   "codici": 825
   },
   "hy": {
    "nome": "armeno",
@@ -331,12 +331,12 @@
    "nome": "balinese",
    "codici": 7
   },
-  "be": {
-   "nome": "be",
-   "codici": 6
-  },
   "phn": {
    "nome": "fenicio",
+   "codici": 7
+  },
+  "be": {
+   "nome": "be",
    "codici": 6
   },
   "xsa": {
@@ -477,7 +477,7 @@
   },
   "epigrafe": {
    "nome": "epigrafi",
-   "codici": 50645
+   "codici": 50840
   }
  },
  "autori": {
@@ -10455,25 +10455,25 @@
   },
   "musei": {
    "nome": "Musei: oggetti scritti del Museo Egizio di Torino (immagini CC0) e modelli 3D di oggetti scritti su Sketchfab",
-   "codici": 2061,
+   "codici": 2256,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 0,
    "musica": 0,
    "papiri": 248,
-   "epigrafi": 1811,
+   "epigrafi": 2006,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
    "con_autori": 3,
    "lingue": {
-    "?": 169,
-    "la": 52,
-    "grc": 73,
-    "akk": 660,
-    "egy": 1078,
+    "?": 190,
+    "la": 56,
+    "grc": 81,
+    "akk": 807,
+    "egy": 1093,
     "arc": 8,
-    "phn": 1,
+    "phn": 2,
     "xib": 5,
     "xsa": 5,
     "ar": 11,
@@ -11093,7 +11093,7 @@
   {
    "file": "indice/musei-0.json",
    "fonte": "musei",
-   "righe": 2061
+   "righe": 2256
   },
   {
    "file": "indice/giappone-0.json",
@@ -21277,7 +21277,7 @@
   3,
   28,
   10,
-  22,
+  24,
   6,
   2,
   1,
@@ -21315,8 +21315,8 @@
   1,
   1,
   1,
-  10,
-  24,
+  13,
+  25,
   1,
   28,
   1,
@@ -21376,7 +21376,7 @@
   1,
   1,
   6,
-  24,
+  29,
   1,
   1,
   2,
@@ -21458,11 +21458,11 @@
   14,
   2,
   2,
-  650,
+  798,
   1,
   2,
   8,
-  4,
+  5,
   1450,
   1024,
   1,
@@ -21506,7 +21506,7 @@
   1,
   5,
   11,
-  5,
+  6,
   101,
   1,
   1,
@@ -21644,7 +21644,7 @@
   3003,
   13,
   10,
-  8,
+  9,
   1,
   2,
   1,
@@ -21756,8 +21756,8 @@
   4,
   36,
   4,
-  3,
-  18,
+  8,
+  22,
   2167,
   1,
   1,
@@ -22039,7 +22039,7 @@
   122,
   2,
   1,
-  7,
+  13,
   1,
   19,
   7,
@@ -22057,7 +22057,7 @@
   1,
   1,
   81,
-  1058,
+  1059,
   1,
   339,
   313,
@@ -23106,12 +23106,12 @@
   38,
   2,
   1,
-  19,
+  21,
   16,
   27,
   1,
   31,
-  26,
+  38,
   1,
   383,
   7,
@@ -23445,7 +23445,7 @@
   6882,
   891,
   282,
-  9,
+  11,
   5,
   1,
   5,
@@ -23469,7 +23469,7 @@
   2,
   6,
   1,
-  1,
+  2,
   1,
   1,
   2,
