@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-27T11:32:58.960Z",
+ "aggiornato": "2026-11-28T04:44:23.042Z",
  "nota": "Formato 1, per compatibilità: solo i codici con autori classici. Il catalogo completo è in data/catalogo/ (indice.json).",
  "fonti": {
   "heidelberg": {
@@ -154,7 +154,7 @@
   },
   "wellcome": {
    "nome": "Wellcome Collection, Londra (api.wellcomecollection.org)",
-   "codici": 37,
+   "codici": 39,
    "esito": "ok"
   },
   "bl": {
@@ -174,7 +174,7 @@
   },
   "cudl": {
    "nome": "Cambridge Digital Library: University Library e college (cudl.lib.cam.ac.uk)",
-   "codici": 127,
+   "codici": 134,
    "esito": "ok"
   },
   "cbl": {
@@ -423,7 +423,7 @@
    "esito": "ok"
   }
  },
- "totale": 11964,
+ "totale": 11973,
  "manoscritti": [
   {
    "id": "nijl-100319217",
@@ -322291,6 +322291,39 @@
    "immagini": null
   },
   {
+   "id": "cudl-ms-add-00631",
+   "fonte": "cudl",
+   "biblioteca": "Cambridge University Library",
+   "citta": "Cambridge",
+   "segnatura": "MS Add.631",
+   "datazione": "15th-16th c. (after 1473)",
+   "secolo": [
+    15,
+    15
+   ],
+   "lingue": [
+    "he"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Judah b. Yeḥiʾel Messer Leon, Commentary on the Physics ; Commentary on Ibn Rushd; Commentary on Aristotle's Physics",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [
+      "Fisica"
+     ],
+     "corrispondenza": "descrizione: «…. Qalonymos's translation) on Aristotle's Physics, and on a Hebrew tr…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-ADD-00631",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/MS-ADD-00631",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
    "id": "cudl-ms-add-06858",
    "fonte": "cudl",
    "biblioteca": "Cambridge University Library",
@@ -369879,6 +369912,155 @@
    "immagini": null
   },
   {
+   "id": "cudl-pr-sjc-aa-00006-00006",
+   "fonte": "cudl",
+   "biblioteca": "St John's College",
+   "citta": "Cambridge",
+   "segnatura": "Aa.6.6",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Catalogue of the birds of Suffolk: with an introduction and remarks on their distribution; Volume 1 ; Catalogue of the birds of Suffolk",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Uccelli"
+     ],
+     "corrispondenza": "titolo: «Catalogue of the birds of Suffolk: with an introduct…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/PR-SJC-AA-00006-00006",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/PR-SJC-AA-00006-00006",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-pr-sjc-aa-00006-00007",
+   "fonte": "cudl",
+   "biblioteca": "St John's College",
+   "citta": "Cambridge",
+   "segnatura": "Aa.6.7",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Catalogue of the birds of Suffolk: with an introduction and remarks on their distribution; Volume 2 ; Catalogue of the birds of Suffolk",
+   "autori": [
+    {
+     "id": "aristofane",
+     "autore": "Aristofane",
+     "latino": "Aristophanes",
+     "categoria": "classico-greco",
+     "opere": [
+      "Uccelli"
+     ],
+     "corrispondenza": "titolo: «Catalogue of the birds of Suffolk: with an introduct…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/PR-SJC-AA-00006-00007",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/PR-SJC-AA-00006-00007",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-pr-sjc-b-v-p-00008",
+   "fonte": "cudl",
+   "biblioteca": "St John's College",
+   "citta": "Cambridge",
+   "segnatura": "BV P8",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "grc",
+    "la",
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Pindari carmina: cum versione latina: accedunt lectionis varietas et adnotationes (Vol. 1) ; Odes",
+   "autori": [
+    {
+     "id": "pindaro",
+     "autore": "Pindaro",
+     "latino": "Pindarus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Pindar ; Christian Gottlob Heyne (1729–1812)»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/PR-SJC-B-V-P-00008",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/PR-SJC-B-V-P-00008",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-pr-sjc-b-v-p-00009",
+   "fonte": "cudl",
+   "biblioteca": "St John's College",
+   "citta": "Cambridge",
+   "segnatura": "BV P9",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "grc",
+    "la",
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Pindari carmina: cum versione latina: accedunt lectionis varietas et adnotationes; Volume 2 ; Odes",
+   "autori": [
+    {
+     "id": "pindaro",
+     "autore": "Pindaro",
+     "latino": "Pindarus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Pindar ; Christian Gottlob Heyne (1729–1812)»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/PR-SJC-B-V-P-00009",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/PR-SJC-B-V-P-00009",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-pr-sjc-mayor-h-00001",
+   "fonte": "cudl",
+   "biblioteca": "St John's College",
+   "citta": "Cambridge",
+   "segnatura": "Mayor H1",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "grc",
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Homeri Carmina ad optimum librorum fidem expressa ; Odysseia",
+   "autori": [
+    {
+     "id": "omero",
+     "autore": "Omero",
+     "latino": "Homerus",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "autore: «Homer ; Karl Wilhelm Dindorf»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/PR-SJC-MAYOR-H-00001",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/PR-SJC-MAYOR-H-00001",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
    "id": "bod-326e89d8-7d40-4cf4-8d65-246fa3e294de",
    "fonte": "bodleian",
    "biblioteca": "St John's College",
@@ -370092,6 +370274,39 @@
    ],
    "manifest": "https://cudl.lib.cam.ac.uk/iiif/MS-SJC-H-00019",
    "pagina": "https://cudl.lib.cam.ac.uk/view/MS-SJC-H-00019",
+   "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
+   "immagini": null
+  },
+  {
+   "id": "cudl-pr-sjc-q-00013-00007",
+   "fonte": "cudl",
+   "biblioteca": "St John's College",
+   "citta": "Cambridge",
+   "segnatura": "Q.13.7",
+   "datazione": "1733",
+   "secolo": [
+    18,
+    18
+   ],
+   "lingue": [
+    "en"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "The history of the Puritans or Protestant non-conformists: with an account of their principles; their attempts for a further reformation in the church; their sufferings; and the lives and characters of their principal divines ; The history of the Puritans",
+   "autori": [
+    {
+     "id": "teofrasto",
+     "autore": "Teofrasto",
+     "latino": "Theophrastus",
+     "categoria": "classico-greco",
+     "opere": [
+      "Caratteri"
+     ],
+     "corrispondenza": "titolo: «…sufferings; and the lives and characters of their principal divines ;…»"
+    }
+   ],
+   "manifest": "https://cudl.lib.cam.ac.uk/iiif/PR-SJC-Q-00013-00007",
+   "pagina": "https://cudl.lib.cam.ac.uk/view/PR-SJC-Q-00013-00007",
    "licenza": "Cambridge University Library: immagini scaricabili CC BY-NC 4.0 (zoom © University Library); metadati CC BY-NC-ND 4.0",
    "immagini": null
   },
@@ -436931,6 +437146,36 @@
    "immagini": null
   },
   {
+   "id": "wel-abnutdqc",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.127",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "Collection of antique and early medieval scientific treatises. This manuscript consists of four distinct works: &quot;De natura rerum&quot;, &quot;De die natali&quot;, &quot;Prae-exercitamenta&quot; a",
+   "autori": [
+    {
+     "id": "censorino",
+     "autore": "Censorino",
+     "latino": "Censorinus",
+     "categoria": "classico-latino",
+     "opere": [
+      "De die natali"
+     ],
+     "corrispondenza": "titolo: «…;De natura rerum&quot;, &quot;De die natali&quot;, &quot;Prae-exercitamen…»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b19603034",
+   "pagina": "https://wellcomecollection.org/works/abnutdqc",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null
+  },
+  {
    "id": "wel-qftazqnx",
    "fonte": "wellcome",
    "biblioteca": "Wellcome Collection",
@@ -436968,6 +437213,35 @@
    "pagina": "https://wellcomecollection.org/works/qftazqnx",
    "licenza": "Wellcome Collection, Public Domain Mark",
    "immagini": null
+  },
+  {
+   "id": "wel-abxzfgja",
+   "fonte": "wellcome",
+   "biblioteca": "Wellcome Collection",
+   "citta": "Londra",
+   "segnatura": "MS.190",
+   "datazione": null,
+   "secolo": null,
+   "lingue": [
+    "la"
+   ],
+   "lingua_dedotta": false,
+   "titolo": "A collection of carefully executed water-colour drawings of symbolic alchemical illustrations, and of alchemical apparatus: including also portraits of Hermes, Geber, Aristotle, and two other unnamed ",
+   "autori": [
+    {
+     "id": "aristotele",
+     "autore": "Aristotele",
+     "latino": "Aristoteles",
+     "categoria": "classico-greco",
+     "opere": [],
+     "corrispondenza": "titolo: «…o portraits of Hermes, Geber, Aristotle, and two other unnamed»"
+    }
+   ],
+   "manifest": "https://iiif.wellcomecollection.org/presentation/v2/b19177240",
+   "pagina": "https://wellcomecollection.org/works/abxzfgja",
+   "licenza": "Wellcome Collection, Public Domain Mark",
+   "immagini": null,
+   "miniato": true
   },
   {
    "id": "wel-nkn97vsa",

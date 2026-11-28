@@ -1,11 +1,11 @@
 {
  "versione": 2,
- "aggiornato": "2026-11-28T03:29:24.131Z",
- "totale": 649567,
- "con_autori": 37285,
- "miniati": 11026,
+ "aggiornato": "2026-11-28T04:44:23.042Z",
+ "totale": 649597,
+ "con_autori": 37295,
+ "miniati": 11028,
  "musica": 21137,
- "manoscritti": 537081,
+ "manoscritti": 537111,
  "papiri": 46179,
  "epigrafi": 50645,
  "stampe_antiche": 15662,
@@ -37,19 +37,19 @@
   },
   "la": {
    "nome": "latino",
-   "codici": 106012
+   "codici": 106020
   },
   "?": {
    "nome": "lingua non indicata",
-   "codici": 58891
+   "codici": 58895
   },
   "grc": {
    "nome": "greco",
-   "codici": 40111
+   "codici": 40114
   },
   "ar": {
    "nome": "arabo",
-   "codici": 35773
+   "codici": 35776
   },
   "ojp": {
    "nome": "giapponese antico",
@@ -61,15 +61,15 @@
   },
   "de": {
    "nome": "tedesco",
-   "codici": 23312
+   "codici": 23313
   },
   "xx": {
    "nome": "altre lingue",
-   "codici": 20765
+   "codici": 20766
   },
   "he": {
    "nome": "ebraico",
-   "codici": 19855
+   "codici": 19860
   },
   "pi": {
    "nome": "pali",
@@ -89,7 +89,7 @@
   },
   "es": {
    "nome": "spagnolo",
-   "codici": 10532
+   "codici": 10531
   },
   "zh": {
    "nome": "cinese",
@@ -105,7 +105,7 @@
   },
   "en": {
    "nome": "inglese",
-   "codici": 7144
+   "codici": 7158
   },
   "cop": {
    "nome": "copto",
@@ -205,7 +205,7 @@
   },
   "ms": {
    "nome": "malese",
-   "codici": 252
+   "codici": 253
   },
   "jv": {
    "nome": "giavanese",
@@ -435,15 +435,15 @@
  "categorie": {
   "classico-latino": {
    "nome": "classici latini",
-   "codici": 7839
+   "codici": 7840
   },
   "classico-greco": {
    "nome": "classici greci",
-   "codici": 7425
+   "codici": 7433
   },
   "cristiano": {
    "nome": "autori cristiani",
-   "codici": 15706
+   "codici": 15707
   },
   "medievale": {
    "nome": "autori medievali",
@@ -453,7 +453,7 @@
  "tipi": {
   "codice": {
    "nome": "codici",
-   "codici": 531746
+   "codici": 531776
   },
   "carta": {
    "nome": "carte manoscritte",
@@ -1280,7 +1280,7 @@
    "nome": "Censorino",
    "latino": "Censorinus",
    "categoria": "classico-latino",
-   "codici": 10,
+   "codici": 11,
    "forme": [
     "Censorini"
    ]
@@ -1388,7 +1388,7 @@
    "nome": "Omero",
    "latino": "Homerus",
    "categoria": "classico-greco",
-   "codici": 644,
+   "codici": 645,
    "forme": [
     "Homeri",
     "Homero",
@@ -1416,7 +1416,7 @@
    "nome": "Pindaro",
    "latino": "Pindarus",
    "categoria": "classico-greco",
-   "codici": 57,
+   "codici": 59,
    "forme": [
     "Pindari",
     "Pindar",
@@ -1550,7 +1550,7 @@
    "nome": "Aristofane",
    "latino": "Aristophanes",
    "categoria": "classico-greco",
-   "codici": 149,
+   "codici": 151,
    "forme": [
     "Aristophanis",
     "Aristophane",
@@ -1624,7 +1624,7 @@
    "nome": "Aristotele",
    "latino": "Aristoteles",
    "categoria": "classico-greco",
-   "codici": 2323,
+   "codici": 2325,
    "forme": [
     "Aristotelis",
     "Aristotle",
@@ -1637,7 +1637,7 @@
    "nome": "Teofrasto",
    "latino": "Theophrastus",
    "categoria": "classico-greco",
-   "codici": 126,
+   "codici": 127,
    "forme": [
     "Theophrasti",
     "Theophrast",
@@ -2569,7 +2569,7 @@
    "nome": "Bibbia",
    "latino": "Biblia",
    "categoria": "cristiano",
-   "codici": 7144,
+   "codici": 7145,
    "forme": [
     "Bibliae",
     "Biblia sacra",
@@ -2783,7 +2783,7 @@
    "nome": "Beda",
    "latino": "Beda Venerabilis",
    "categoria": "medievale",
-   "codici": 738,
+   "codici": 737,
    "forme": [
     "Bedae",
     "Beda il Venerabile",
@@ -3272,7 +3272,7 @@
    "nome": "Averroè",
    "latino": "Averroes",
    "categoria": "medievale",
-   "codici": 227,
+   "codici": 228,
    "forme": [
     "Averrois",
     "Ibn Rushd",
@@ -8631,7 +8631,7 @@
   },
   "wellcome": {
    "nome": "Wellcome Collection, Londra (api.wellcomecollection.org)",
-   "codici": 1613,
+   "codici": 1617,
    "carte": 0,
    "carte_stampa": 0,
    "miniati": 128,
@@ -8641,13 +8641,13 @@
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 84,
+   "con_autori": 85,
    "lingue": {
     "grc": 14,
-    "es": 8,
+    "es": 7,
     "gn": 1,
-    "?": 354,
-    "ar": 197,
+    "?": 356,
+    "ar": 199,
     "fa": 10,
     "pi": 1,
     "zh": 3,
@@ -8657,7 +8657,7 @@
     "la": 243,
     "sa": 13,
     "ja": 3,
-    "ms": 9,
+    "ms": 10,
     "th": 1,
     "bo": 2,
     "en": 470,
@@ -8813,43 +8813,43 @@
   },
   "cudl": {
    "nome": "Cambridge Digital Library: University Library e college (cudl.lib.cam.ac.uk)",
-   "codici": 5412,
+   "codici": 5438,
    "carte": 1,
    "carte_stampa": 0,
-   "miniati": 326,
+   "miniati": 328,
    "musica": 31,
    "papiri": 0,
    "epigrafi": 0,
    "incunaboli": 0,
    "stampe": 0,
    "edizioni_principi": 0,
-   "con_autori": 501,
+   "con_autori": 510,
    "lingue": {
     "fa": 452,
-    "en": 199,
+    "en": 213,
     "ko": 2,
     "nah": 1,
     "zh": 835,
     "ja": 464,
-    "la": 287,
-    "?": 916,
+    "la": 295,
+    "?": 918,
     "syr": 3,
-    "ar": 95,
+    "ar": 96,
     "gez": 5,
     "es": 2,
     "mnc": 4,
     "sa": 1360,
     "bo": 1,
     "mn": 4,
-    "xx": 551,
+    "xx": 552,
     "fr": 52,
     "it": 17,
-    "de": 5,
+    "de": 6,
     "nl": 2,
-    "he": 512,
+    "he": 517,
     "arc": 65,
     "akk": 4,
-    "grc": 273,
+    "grc": 276,
     "tr": 4,
     "is": 2,
     "cy": 1,
@@ -10798,7 +10798,7 @@
   {
    "file": "indice/wellcome-0.json",
    "fonte": "wellcome",
-   "righe": 1613
+   "righe": 1617
   },
   {
    "file": "indice/bl-0.json",
@@ -10818,7 +10818,7 @@
   {
    "file": "indice/cudl-0.json",
    "fonte": "cudl",
-   "righe": 5412
+   "righe": 5438
   },
   {
    "file": "indice/cbl-0.json",
@@ -21036,7 +21036,7 @@
   2,
   37,
   1,
-  4026,
+  4032,
   2,
   1,
   2,
@@ -22982,7 +22982,7 @@
   1,
   1,
   7,
-  18,
+  38,
   141,
   4,
   1,
@@ -23531,7 +23531,7 @@
   1,
   3,
   2,
-  1613,
+  1617,
   12,
   1,
   1,
